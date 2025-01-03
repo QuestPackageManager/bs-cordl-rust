@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct VerticalScrollIndicator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _handle: *mut crate::UnityEngine::RectTransform,
+    pub _handle: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _padding: f32,
     pub _progress: f32,
     pub _normalizedPageHeight: f32,

@@ -3,15 +3,21 @@
 #[derive(Debug)]
 pub struct BlockingCollection_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _collection: *mut crate::System::Collections::Concurrent::IProducerConsumerCollection_1<
-        T,
+    pub _collection: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Concurrent::IProducerConsumerCollection_1<T>,
     >,
     pub _boundedCapacity: i32,
-    pub _freeNodes: *mut crate::System::Threading::SemaphoreSlim,
-    pub _occupiedNodes: *mut crate::System::Threading::SemaphoreSlim,
+    pub _freeNodes: quest_hook::libil2cpp::Gc<crate::System::Threading::SemaphoreSlim>,
+    pub _occupiedNodes: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SemaphoreSlim,
+    >,
     pub _isDisposed: bool,
-    pub _consumersCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _producersCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
+    pub _consumersCancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub _producersCancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
     pub _currentAdders: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

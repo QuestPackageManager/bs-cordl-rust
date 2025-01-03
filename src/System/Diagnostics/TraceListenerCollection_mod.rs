@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TraceListenerCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub list: *mut crate::System::Collections::ArrayList,
+    pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
 #[cfg(feature = "System+Diagnostics+TraceListenerCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

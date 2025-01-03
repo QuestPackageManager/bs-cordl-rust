@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Yoga+YogaValue")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct YogaValue {
     pub value: f32,
     pub unit: crate::UnityEngine::Yoga::YogaUnit,

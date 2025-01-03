@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct RuntimeWrappedException {
     __cordl_parent: crate::System::Exception,
-    pub _wrappedException: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _wrappedException: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+RuntimeWrappedException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

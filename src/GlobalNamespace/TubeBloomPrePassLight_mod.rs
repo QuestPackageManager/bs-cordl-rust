@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct TubeBloomPrePassLight {
     __cordl_parent: crate::GlobalNamespace::BloomPrePassLight,
-    pub _mainEffectPostProcessEnabled: *mut crate::GlobalNamespace::BoolSO,
+    pub _mainEffectPostProcessEnabled: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BoolSO,
+    >,
     pub _width: f32,
     pub _overrideChildrenLength: bool,
     pub _length: f32,
@@ -16,7 +18,7 @@ pub struct TubeBloomPrePassLight {
     pub _lightWidthMultiplier: f32,
     pub _addWidthToLength: bool,
     pub _thickenWithDistance: bool,
-    pub _thickenCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub _thickenCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub _minDistance: f32,
     pub _maxDistance: f32,
     pub _minWidthMultiplier: f32,
@@ -25,8 +27,12 @@ pub struct TubeBloomPrePassLight {
     pub _bakedGlowWidthScale: f32,
     pub _forceUseBakedGlow: bool,
     pub _multiplyLengthByAlpha: bool,
-    pub _alphaToLengthCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _alphaToLengthBloomFogCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub _alphaToLengthCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
+    pub _alphaToLengthBloomFogCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
     pub _updateAlways: bool,
     pub _limitAlpha: bool,
     pub _minAlpha: f32,
@@ -37,21 +43,25 @@ pub struct TubeBloomPrePassLight {
     pub _overrideChildrenWidth: bool,
     pub _startWidth: f32,
     pub _endWidth: f32,
-    pub _parametricBoxController: *mut crate::GlobalNamespace::ParametricBoxController,
-    pub _dynamic3SliceSprite: *mut crate::GlobalNamespace::Parametric3SliceSpriteController,
+    pub _parametricBoxController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ParametricBoxController,
+    >,
+    pub _dynamic3SliceSprite: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Parametric3SliceSpriteController,
+    >,
     pub _initialized: bool,
     pub _enabledRenderers: bool,
     pub _parametricBoxControllerOnceParInitialized: bool,
     pub _bakedGlowOnceParInitialized: bool,
     pub _isParametricBoxControllerValid: bool,
     pub _isDynamic3SliceSpriteValid: bool,
-    pub didRefreshEvent: *mut crate::System::Action,
+    pub didRefreshEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _useCollision: bool,
     pub _collisionLength: f32,
     pub _multiplyLengthByAlphaBloomFogMultiplier: f32,
     pub _multiplyLengthByAlphaMultiplier: f32,
     pub _isDirty: bool,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "TubeBloomPrePassLight")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

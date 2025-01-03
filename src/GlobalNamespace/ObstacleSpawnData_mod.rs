@@ -1,6 +1,6 @@
 #[cfg(feature = "ObstacleSpawnData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ObstacleSpawnData {
     pub moveOffset: crate::UnityEngine::Vector3,
     pub obstacleWidth: f32,

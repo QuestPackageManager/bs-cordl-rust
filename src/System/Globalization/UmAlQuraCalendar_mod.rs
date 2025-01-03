@@ -346,7 +346,7 @@ for crate::System::Globalization::UmAlQuraCalendar {
 }
 #[cfg(feature = "System+Globalization+UmAlQuraCalendar+DateMapping")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UmAlQuraCalendar_DateMapping {
     pub HijriMonthsLengthFlags: i32,
     pub GregorianDate: crate::System::DateTime,

@@ -3,43 +3,69 @@
 #[derive(Debug)]
 pub struct DlcPromoPanelModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
-    pub _dlcPromoPanelData: *mut crate::GlobalNamespace::DlcPromoPanelDataSO,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _platformInit: *mut crate::BeatSaber::Init::IPlatformInit,
-    pub _metaRemoteAssetsManager: *mut crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager,
-    pub _notOwnedMusicPackPromoInfos: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+    pub _additionalContentModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAdditionalContentModel,
     >,
-    pub _ownedMusicPackPromoInfos: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub _analyticsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAnalyticsModel,
+    >,
+    pub _dlcPromoPanelData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DlcPromoPanelDataSO,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
+    pub _metaRemoteAssetsManager: quest_hook::libil2cpp::Gc<
+        crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager,
+    >,
+    pub _notOwnedMusicPackPromoInfos: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+        >,
+    >,
+    pub _ownedMusicPackPromoInfos: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+        >,
     >,
     pub _updatingNotOwnedPacks: bool,
     pub _initialized: bool,
-    pub _random: *mut crate::System::Random,
-    pub _promoInfos: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-    >,
-    pub _defaultPromoInfo: *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-    pub _initializationTask: *mut crate::System::Threading::Tasks::Task,
-    pub _cacheNextPackDataTask: *mut crate::System::Threading::Tasks::Task_1<
-        crate::System::ValueTuple_2<
+    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+    pub _promoInfos: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
             *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-            bool,
+        >,
+    >,
+    pub _defaultPromoInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+    >,
+    pub _initializationTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task,
+    >,
+    pub _cacheNextPackDataTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<
+            crate::System::ValueTuple_2<
+                *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                bool,
+            >,
         >,
     >,
     pub _loadDlcPromoPanelDataHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         *mut crate::GlobalNamespace::DlcPromoPanelDataSO,
     >,
-    pub _loadPackPromoInfoHandles: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::GlobalNamespace::PackPromoInfoSO,
+    pub _loadPackPromoInfoHandles: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                *mut crate::GlobalNamespace::PackPromoInfoSO,
+            >,
         >,
     >,
-    pub hotReloadDidStart: *mut crate::System::Action,
-    pub hotReloadDidFinish: *mut crate::System::Action,
+    pub hotReloadDidStart: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub hotReloadDidFinish: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "DlcPromoPanelModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -490,10 +516,10 @@ for crate::GlobalNamespace::DlcPromoPanelModel {
 pub struct DlcPromoPanelModel_PromoInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub promoType: crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType,
-    pub id: *mut quest_hook::libil2cpp::Il2CppString,
+    pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
-    pub bannerImage: *mut crate::UnityEngine::Sprite,
-    pub bannerPromoText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub bannerImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub bannerPromoText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub bannerPromoTextPosition: f32,
 }
 #[cfg(feature = "DlcPromoPanelModel+PromoInfo")]

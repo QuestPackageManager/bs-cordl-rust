@@ -3,34 +3,58 @@
 #[derive(Debug)]
 pub struct OVRTrackedKeyboardHands {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub LeftHandPresence: *mut crate::UnityEngine::GameObject,
-    pub RightHandPresence: *mut crate::UnityEngine::GameObject,
+    pub LeftHandPresence: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub RightHandPresence: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub handPresenceInitialized_: bool,
-    pub leftHandRoot_: *mut crate::UnityEngine::Transform,
-    pub rightHandRoot_: *mut crate::UnityEngine::Transform,
-    pub KeyboardTracker: *mut crate::GlobalNamespace::OVRTrackedKeyboard,
-    pub cameraRig_: *mut crate::GlobalNamespace::OVRCameraRig,
-    pub leftHand_: *mut crate::GlobalNamespace::OVRHand,
-    pub leftHandSkeleton_: *mut crate::GlobalNamespace::OVRSkeleton,
-    pub leftHandSkeletonRenderer_: *mut crate::GlobalNamespace::OVRSkeletonRenderer,
-    pub leftHandSkeletonRendererGO_: *mut crate::UnityEngine::GameObject,
-    pub leftHandSkinnedMeshRenderer_: *mut crate::UnityEngine::SkinnedMeshRenderer,
-    pub leftHandMeshRenderer_: *mut crate::GlobalNamespace::OVRMeshRenderer,
-    pub rightHand_: *mut crate::GlobalNamespace::OVRHand,
-    pub rightHandSkeleton_: *mut crate::GlobalNamespace::OVRSkeleton,
-    pub rightHandSkeletonRenderer_: *mut crate::GlobalNamespace::OVRSkeletonRenderer,
-    pub rightHandSkeletonRendererGO_: *mut crate::UnityEngine::GameObject,
-    pub rightHandMeshRenderer_: *mut crate::GlobalNamespace::OVRMeshRenderer,
-    pub rightHandSkinnedMeshRenderer_: *mut crate::UnityEngine::SkinnedMeshRenderer,
+    pub leftHandRoot_: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub rightHandRoot_: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub KeyboardTracker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRTrackedKeyboard,
+    >,
+    pub cameraRig_: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCameraRig>,
+    pub leftHand_: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHand>,
+    pub leftHandSkeleton_: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRSkeleton,
+    >,
+    pub leftHandSkeletonRenderer_: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRSkeletonRenderer,
+    >,
+    pub leftHandSkeletonRendererGO_: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub leftHandSkinnedMeshRenderer_: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::SkinnedMeshRenderer,
+    >,
+    pub leftHandMeshRenderer_: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRMeshRenderer,
+    >,
+    pub rightHand_: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHand>,
+    pub rightHandSkeleton_: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRSkeleton,
+    >,
+    pub rightHandSkeletonRenderer_: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRSkeletonRenderer,
+    >,
+    pub rightHandSkeletonRendererGO_: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub rightHandMeshRenderer_: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRMeshRenderer,
+    >,
+    pub rightHandSkinnedMeshRenderer_: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::SkinnedMeshRenderer,
+    >,
     pub _RightHandOverKeyboard_k__BackingField: bool,
     pub _LeftHandOverKeyboard_k__BackingField: bool,
     pub lastVisibilityEvent_: crate::System::Nullable_1<
         crate::GlobalNamespace::OVRTrackedKeyboardHands_TrackedKeyboardHandsVisibilityChangedEvent,
     >,
-    pub boneMappings_: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRTrackedKeyboardHands_HandBoneMapping,
+    pub boneMappings_: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::OVRTrackedKeyboardHands_HandBoneMapping,
+        >,
     >,
-    pub HandsMaterial: *mut crate::UnityEngine::Material,
+    pub HandsMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub keyboardPositionID_: i32,
     pub keyboardRotationID_: i32,
     pub keyboardScaleID_: i32,
@@ -276,15 +300,19 @@ for crate::GlobalNamespace::OVRTrackedKeyboardHands {
 }
 #[cfg(feature = "OVRTrackedKeyboardHands+HandBoneMapping")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRTrackedKeyboardHands_HandBoneMapping {
-    pub LeftHandTransform: *mut crate::UnityEngine::Transform,
-    pub LeftPresenceTransform: *mut crate::UnityEngine::Transform,
-    pub RightHandTransform: *mut crate::UnityEngine::Transform,
-    pub RightPresenceTransform: *mut crate::UnityEngine::Transform,
+    pub LeftHandTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub LeftPresenceTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub RightHandTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub RightPresenceTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub BoneName: crate::GlobalNamespace::OVRSkeleton_BoneId,
-    pub HandPresenceLeftBoneName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub HandPresenceRightBoneName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub HandPresenceLeftBoneName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub HandPresenceRightBoneName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "OVRTrackedKeyboardHands+HandBoneMapping")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -307,7 +335,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboardHands_HandBoneMapping {
 impl crate::GlobalNamespace::OVRTrackedKeyboardHands_HandBoneMapping {}
 #[cfg(feature = "OVRTrackedKeyboardHands+TrackedKeyboardHandsVisibilityChangedEvent")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRTrackedKeyboardHands_TrackedKeyboardHandsVisibilityChangedEvent {
     pub leftVisible: bool,
     pub rightVisible: bool,

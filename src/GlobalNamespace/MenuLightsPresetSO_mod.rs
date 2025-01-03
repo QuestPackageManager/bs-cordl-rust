@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct MenuLightsPresetSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _lightIdColorPairs: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::LightIdColorPair,
+    pub _lightIdColorPairs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::LightIdColorPair>,
     >,
 }
 #[cfg(feature = "MenuLightsPresetSO")]

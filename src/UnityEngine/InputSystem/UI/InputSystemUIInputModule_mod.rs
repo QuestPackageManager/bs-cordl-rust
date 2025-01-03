@@ -6,49 +6,87 @@ pub struct InputSystemUIInputModule {
     pub m_MoveRepeatDelay: f32,
     pub m_MoveRepeatRate: f32,
     pub m_TrackedDeviceDragThresholdMultiplier: f32,
-    pub m_XRTrackingOrigin: *mut crate::UnityEngine::Transform,
-    pub m_ActionsAsset: *mut crate::UnityEngine::InputSystem::InputActionAsset,
-    pub m_PointAction: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub m_MoveAction: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub m_SubmitAction: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub m_CancelAction: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub m_LeftClickAction: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub m_MiddleClickAction: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub m_RightClickAction: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub m_ScrollWheelAction: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub m_TrackedDevicePositionAction: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub m_TrackedDeviceOrientationAction: *mut crate::UnityEngine::InputSystem::InputActionReference,
+    pub m_XRTrackingOrigin: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub m_ActionsAsset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionAsset,
+    >,
+    pub m_PointAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
+    pub m_MoveAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
+    pub m_SubmitAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
+    pub m_CancelAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
+    pub m_LeftClickAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
+    pub m_MiddleClickAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
+    pub m_RightClickAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
+    pub m_ScrollWheelAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
+    pub m_TrackedDevicePositionAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
+    pub m_TrackedDeviceOrientationAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
     pub m_DeselectOnBackgroundClick: bool,
     pub m_PointerBehavior: crate::UnityEngine::InputSystem::UI::UIPointerBehavior,
     pub m_CursorLockBehavior: crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBehavior,
     pub m_ActionsHooked: bool,
     pub m_NeedToPurgeStalePointers: bool,
-    pub m_OnPointDelegate: *mut crate::System::Action_1<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    pub m_OnPointDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
-    pub m_OnMoveDelegate: *mut crate::System::Action_1<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    pub m_OnMoveDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
-    pub m_OnLeftClickDelegate: *mut crate::System::Action_1<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    pub m_OnLeftClickDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
-    pub m_OnRightClickDelegate: *mut crate::System::Action_1<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    pub m_OnRightClickDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
-    pub m_OnMiddleClickDelegate: *mut crate::System::Action_1<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    pub m_OnMiddleClickDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
-    pub m_OnScrollWheelDelegate: *mut crate::System::Action_1<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    pub m_OnScrollWheelDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
-    pub m_OnTrackedDevicePositionDelegate: *mut crate::System::Action_1<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    pub m_OnTrackedDevicePositionDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
-    pub m_OnTrackedDeviceOrientationDelegate: *mut crate::System::Action_1<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    pub m_OnTrackedDeviceOrientationDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
-    pub m_OnControlsChangedDelegate: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_OnControlsChangedDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub m_CurrentPointerId: i32,
     pub m_CurrentPointerIndex: i32,
@@ -61,7 +99,9 @@ pub struct InputSystemUIInputModule {
         crate::UnityEngine::InputSystem::UI::PointerModel,
     >,
     pub m_NavigationState: crate::UnityEngine::InputSystem::UI::NavigationModel,
-    pub m_LocalMultiPlayerRoot: *mut crate::UnityEngine::GameObject,
+    pub m_LocalMultiPlayerRoot: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1352,7 +1392,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputSystemUIInputModule_InputActionReferenceState {
     pub refCount: i32,
     pub enabledByInputModule: bool,

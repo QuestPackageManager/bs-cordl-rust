@@ -4,8 +4,8 @@
 pub struct VirtualMouseInput {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_CursorMode: crate::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode,
-    pub m_CursorGraphic: *mut crate::UnityEngine::UI::Graphic,
-    pub m_CursorTransform: *mut crate::UnityEngine::RectTransform,
+    pub m_CursorGraphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+    pub m_CursorTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_CursorSpeed: f32,
     pub m_ScrollSpeed: f32,
     pub m_StickAction: crate::UnityEngine::InputSystem::InputActionProperty,
@@ -15,12 +15,16 @@ pub struct VirtualMouseInput {
     pub m_ForwardButtonAction: crate::UnityEngine::InputSystem::InputActionProperty,
     pub m_BackButtonAction: crate::UnityEngine::InputSystem::InputActionProperty,
     pub m_ScrollWheelAction: crate::UnityEngine::InputSystem::InputActionProperty,
-    pub m_Canvas: *mut crate::UnityEngine::Canvas,
-    pub m_VirtualMouse: *mut crate::UnityEngine::InputSystem::Mouse,
-    pub m_SystemMouse: *mut crate::UnityEngine::InputSystem::Mouse,
-    pub m_AfterInputUpdateDelegate: *mut crate::System::Action,
-    pub m_ButtonActionTriggeredDelegate: *mut crate::System::Action_1<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    pub m_Canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+    pub m_VirtualMouse: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Mouse,
+    >,
+    pub m_SystemMouse: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Mouse>,
+    pub m_AfterInputUpdateDelegate: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub m_ButtonActionTriggeredDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
     pub m_LastTime: f64,
     pub m_LastStickValue: crate::UnityEngine::Vector2,

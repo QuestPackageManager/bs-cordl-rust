@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct MultiplayerLobbyAvatarController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _spawnEffect: *mut crate::UnityEngine::Playables::PlayableDirector,
-    pub _despawnVFXController: *mut crate::GlobalNamespace::VFXController,
+    pub _spawnEffect: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableDirector,
+    >,
+    pub _despawnVFXController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VFXController,
+    >,
     pub _spawnAvatarDelay: f32,
     pub _despawnAvatarDelay: f32,
     pub _destroyAvatarDelay: f32,
-    pub _visualObjects: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::GameObject,
+    pub _visualObjects: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
     >,
 }
 #[cfg(feature = "MultiplayerLobbyAvatarController")]

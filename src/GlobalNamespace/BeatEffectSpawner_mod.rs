@@ -5,14 +5,24 @@ pub struct BeatEffectSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _effectDuration: f32,
     pub _bombColorEffect: crate::UnityEngine::Color,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
-    pub _initData: *mut crate::GlobalNamespace::BeatEffectSpawner_InitData,
-    pub _bloomFog: *mut crate::GlobalNamespace::BloomFogSO,
-    pub _songController: *mut crate::GlobalNamespace::SongController,
-    pub _beatEffectPoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::BeatEffect,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatEffectSpawner_InitData,
+    >,
+    pub _bloomFog: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomFogSO>,
+    pub _songController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongController,
+    >,
+    pub _beatEffectPoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::BeatEffect,
+        >,
     >,
 }
 #[cfg(feature = "BeatEffectSpawner")]

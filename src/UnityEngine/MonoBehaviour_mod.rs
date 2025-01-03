@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MonoBehaviour {
     __cordl_parent: crate::UnityEngine::Behaviour,
-    pub m_CancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
+    pub m_CancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
 }
 #[cfg(feature = "UnityEngine+MonoBehaviour")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

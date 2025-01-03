@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct RIPEMD160Managed {
     __cordl_parent: crate::System::Security::Cryptography::RIPEMD160,
-    pub _buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _count: i64,
-    pub _stateMD160: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub _blockDWords: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub _stateMD160: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub _blockDWords: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
 #[cfg(feature = "System+Security+Cryptography+RIPEMD160Managed")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

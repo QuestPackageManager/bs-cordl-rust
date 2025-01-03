@@ -4,12 +4,14 @@
 pub struct Dstu7624Mac {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub macSize: i32,
-    pub engine: *mut crate::Org::BouncyCastle::Crypto::Engines::Dstu7624Engine,
+    pub engine: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Engines::Dstu7624Engine,
+    >,
     pub blockSize: i32,
-    pub c: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub cTemp: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub kDelta: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub c: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub cTemp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub kDelta: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub bufOff: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+Dstu7624Mac")]

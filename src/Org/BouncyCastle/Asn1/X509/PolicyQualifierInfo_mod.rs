@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct PolicyQualifierInfo {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub policyQualifierId: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub qualifier: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    pub policyQualifierId: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub qualifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+PolicyQualifierInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

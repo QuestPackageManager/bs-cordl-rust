@@ -8,22 +8,22 @@ pub struct ExpressionParser {
     pub _listSeparator: char,
     pub _exponentL: char,
     pub _exponentU: char,
-    pub _text: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub _text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub _pos: i32,
     pub _start: i32,
     pub _token: crate::System::Data::Tokens,
     pub _op: i32,
-    pub _ops: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Data::OperatorInfo,
+    pub _ops: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::OperatorInfo>,
     >,
     pub _topOperator: i32,
     pub _topNode: i32,
-    pub _table: *mut crate::System::Data::DataTable,
-    pub _nodeStack: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Data::ExpressionNode,
+    pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    pub _nodeStack: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::ExpressionNode>,
     >,
     pub _prevOperand: i32,
-    pub _expression: *mut crate::System::Data::ExpressionNode,
+    pub _expression: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
 }
 #[cfg(feature = "System+Data+ExpressionParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -319,9 +319,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::ExpressionParser
 }
 #[cfg(feature = "System+Data+ExpressionParser+ReservedWords")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ExpressionParser_ReservedWords {
-    pub _word: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _word: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _token: crate::System::Data::Tokens,
     pub _op: i32,
 }

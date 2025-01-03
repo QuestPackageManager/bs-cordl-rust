@@ -106,8 +106,10 @@ for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
 #[derive(Debug)]
 pub struct EndoUtilities_MapPointCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_endomorphism: *mut crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
-    pub m_point: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    pub m_endomorphism: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
+    >,
+    pub m_point: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

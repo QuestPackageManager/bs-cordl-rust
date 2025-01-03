@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct LightGroup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightGroupSO: *mut crate::GlobalNamespace::LightGroupSO,
-    pub _lightWithIdManager: *mut crate::GlobalNamespace::LightWithIdManager,
-    pub respawnEvent: *mut crate::System::Action_1<*mut crate::UnityEngine::GameObject>,
-    pub didRefreshContentEvent: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::GameObject,
+    pub _lightGroupSO: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
+    pub _lightWithIdManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightWithIdManager,
+    >,
+    pub respawnEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::GameObject>,
+    >,
+    pub didRefreshContentEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::GameObject>,
     >,
 }
 #[cfg(feature = "LightGroup")]

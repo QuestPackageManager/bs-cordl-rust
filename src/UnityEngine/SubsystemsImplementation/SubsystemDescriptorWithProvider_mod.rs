@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SubsystemDescriptorWithProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _id_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _id_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "UnityEngine+SubsystemsImplementation+SubsystemDescriptorWithProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

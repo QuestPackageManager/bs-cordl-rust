@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct RevAnnContent {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub status: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusEncodable,
-    pub certId: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertId,
-    pub willBeRevokedAt: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
-    pub badSinceDate: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
-    pub crlDetails: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    pub status: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusEncodable,
+    >,
+    pub certId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Crmf::CertId>,
+    pub willBeRevokedAt: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+    >,
+    pub badSinceDate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+    >,
+    pub crlDetails: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+RevAnnContent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

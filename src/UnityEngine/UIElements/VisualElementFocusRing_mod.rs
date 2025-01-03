@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct VisualElementFocusRing {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub root: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     pub _defaultFocusOrder_k__BackingField: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
-    pub m_FocusRing: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+    pub m_FocusRing: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing")]
@@ -280,10 +282,14 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 pub struct VisualElementFocusRing_FocusRingRecord {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_AutoIndex: i32,
-    pub m_Focusable: *mut crate::UnityEngine::UIElements::Focusable,
+    pub m_Focusable: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Focusable,
+    >,
     pub m_IsSlot: bool,
-    pub m_ScopeNavigationOrder: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+    pub m_ScopeNavigationOrder: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord")]

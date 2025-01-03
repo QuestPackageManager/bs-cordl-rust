@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct ScreenModeController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _curvedCanvases: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::HMUI::CurvedCanvasSettings,
+    pub _curvedCanvases: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::HMUI::CurvedCanvasSettings>,
     >,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _defaultModeData: *mut crate::HMUI::ScreenModeData,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
+    pub _defaultModeData: quest_hook::libil2cpp::Gc<crate::HMUI::ScreenModeData>,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "HMUI+ScreenModeController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

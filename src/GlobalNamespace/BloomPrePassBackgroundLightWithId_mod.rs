@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundLightWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    pub _bloomPrePassBackgroundColor: *mut crate::GlobalNamespace::BloomPrePassBackgroundColor,
+    pub _bloomPrePassBackgroundColor: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassBackgroundColor,
+    >,
 }
 #[cfg(feature = "BloomPrePassBackgroundLightWithId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

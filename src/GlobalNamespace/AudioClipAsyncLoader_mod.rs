@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct AudioClipAsyncLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cache: *mut crate::GlobalNamespace::IReferenceCountingCache_2<
-        i32,
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
+    pub _cache: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IReferenceCountingCache_2<
+            i32,
+            *mut crate::System::Threading::Tasks::Task_1<
+                *mut crate::UnityEngine::AudioClip,
+            >,
+        >,
     >,
-    pub _mediaAsyncLoader: *mut crate::GlobalNamespace::IMediaAsyncLoader,
+    pub _mediaAsyncLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMediaAsyncLoader,
+    >,
 }
 #[cfg(feature = "AudioClipAsyncLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CuttableBySaber {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub wasCutBySaberEvent: *mut crate::GlobalNamespace::CuttableBySaber_WasCutBySaberDelegate,
+    pub wasCutBySaberEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CuttableBySaber_WasCutBySaberDelegate,
+    >,
 }
 #[cfg(feature = "CuttableBySaber")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,22 +3,22 @@
 #[derive(Debug)]
 pub struct TMP_Text {
     __cordl_parent: crate::UnityEngine::UI::MaskableGraphic,
-    pub m_text: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_IsTextBackingStringDirty: bool,
-    pub m_TextPreprocessor: *mut crate::TMPro::ITextPreprocessor,
+    pub m_TextPreprocessor: quest_hook::libil2cpp::Gc<crate::TMPro::ITextPreprocessor>,
     pub m_isRightToLeft: bool,
-    pub m_fontAsset: *mut crate::TMPro::TMP_FontAsset,
-    pub m_currentFontAsset: *mut crate::TMPro::TMP_FontAsset,
+    pub m_fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    pub m_currentFontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     pub m_isSDFShader: bool,
-    pub m_sharedMaterial: *mut crate::UnityEngine::Material,
-    pub m_currentMaterial: *mut crate::UnityEngine::Material,
+    pub m_sharedMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub m_currentMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub m_currentMaterialIndex: i32,
-    pub m_fontSharedMaterials: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Material,
+    pub m_fontSharedMaterials: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
     >,
-    pub m_fontMaterial: *mut crate::UnityEngine::Material,
-    pub m_fontMaterials: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Material,
+    pub m_fontMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub m_fontMaterials: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
     >,
     pub m_isMaterialDirty: bool,
     pub m_fontColor32: crate::UnityEngine::Color32,
@@ -28,13 +28,15 @@ pub struct TMP_Text {
     pub m_enableVertexGradient: bool,
     pub m_colorMode: crate::TMPro::ColorMode,
     pub m_fontColorGradient: crate::TMPro::VertexGradient,
-    pub m_fontColorGradientPreset: *mut crate::TMPro::TMP_ColorGradient,
-    pub m_spriteAsset: *mut crate::TMPro::TMP_SpriteAsset,
+    pub m_fontColorGradientPreset: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TMP_ColorGradient,
+    >,
+    pub m_spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
     pub m_tintAllSprites: bool,
     pub m_tintSprite: bool,
     pub m_spriteColor: crate::UnityEngine::Color32,
-    pub m_StyleSheet: *mut crate::TMPro::TMP_StyleSheet,
-    pub m_TextStyle: *mut crate::TMPro::TMP_Style,
+    pub m_StyleSheet: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_StyleSheet>,
+    pub m_TextStyle: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Style>,
     pub m_TextStyleHashCode: i32,
     pub m_overrideHtmlColors: bool,
     pub m_faceColor: crate::UnityEngine::Color32,
@@ -68,8 +70,8 @@ pub struct TMP_Text {
     pub m_lineJustificationStack: crate::TMPro::TMP_TextProcessingStack_1<
         crate::TMPro::HorizontalAlignmentOptions,
     >,
-    pub m_textContainerLocalCorners: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub m_textContainerLocalCorners: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
     pub m_characterSpacing: f32,
     pub m_cSpacing: f32,
@@ -90,8 +92,8 @@ pub struct TMP_Text {
     pub m_wordWrappingRatios: f32,
     pub m_overflowMode: crate::TMPro::TextOverflowModes,
     pub m_firstOverflowCharacterIndex: i32,
-    pub m_linkedTextComponent: *mut crate::TMPro::TMP_Text,
-    pub parentLinkedComponent: *mut crate::TMPro::TMP_Text,
+    pub m_linkedTextComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+    pub parentLinkedComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
     pub m_isTextTruncated: bool,
     pub m_enableKerning: bool,
     pub m_GlyphHorizontalAdvanceAdjustment: f32,
@@ -125,26 +127,30 @@ pub struct TMP_Text {
     pub m_marginWidth: f32,
     pub m_marginHeight: f32,
     pub m_width: f32,
-    pub m_textInfo: *mut crate::TMPro::TMP_TextInfo,
+    pub m_textInfo: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
     pub m_havePropertiesChanged: bool,
     pub m_isUsingLegacyAnimationComponent: bool,
-    pub m_transform: *mut crate::UnityEngine::Transform,
-    pub m_rectTransform: *mut crate::UnityEngine::RectTransform,
+    pub m_transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub m_rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_PreviousRectTransformSize: crate::UnityEngine::Vector2,
     pub m_PreviousPivotPosition: crate::UnityEngine::Vector2,
     pub _autoSizeTextContainer_k__BackingField: bool,
     pub m_autoSizeTextContainer: bool,
-    pub m_mesh: *mut crate::UnityEngine::Mesh,
+    pub m_mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub m_isVolumetricText: bool,
-    pub OnPreRenderText: *mut crate::System::Action_1<*mut crate::TMPro::TMP_TextInfo>,
-    pub m_spriteAnimator: *mut crate::TMPro::TMP_SpriteAnimator,
+    pub OnPreRenderText: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::TMPro::TMP_TextInfo>,
+    >,
+    pub m_spriteAnimator: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAnimator>,
     pub m_flexibleHeight: f32,
     pub m_flexibleWidth: f32,
     pub m_minWidth: f32,
     pub m_minHeight: f32,
     pub m_maxWidth: f32,
     pub m_maxHeight: f32,
-    pub m_LayoutElement: *mut crate::UnityEngine::UI::LayoutElement,
+    pub m_LayoutElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::LayoutElement,
+    >,
     pub m_preferredWidth: f32,
     pub m_renderedWidth: f32,
     pub m_isPreferredWidthDirty: bool,
@@ -165,12 +171,12 @@ pub struct TMP_Text {
     pub m_isParsingText: bool,
     pub m_FXMatrix: crate::UnityEngine::Matrix4x4,
     pub m_isFXMatrixSet: bool,
-    pub m_TextProcessingArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::TMPro::TMP_Text_UnicodeChar,
+    pub m_TextProcessingArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
     >,
     pub m_InternalTextProcessingArraySize: i32,
-    pub m_internalCharacterInfo: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::TMPro::TMP_CharacterInfo,
+    pub m_internalCharacterInfo: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_CharacterInfo>,
     >,
     pub m_totalCharacterCount: i32,
     pub m_characterCount: i32,
@@ -205,15 +211,17 @@ pub struct TMP_Text {
     pub m_HighlightStateStack: crate::TMPro::TMP_TextProcessingStack_1<
         crate::TMPro::HighlightState,
     >,
-    pub m_colorGradientPreset: *mut crate::TMPro::TMP_ColorGradient,
+    pub m_colorGradientPreset: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TMP_ColorGradient,
+    >,
     pub m_colorGradientStack: crate::TMPro::TMP_TextProcessingStack_1<
         *mut crate::TMPro::TMP_ColorGradient,
     >,
     pub m_colorGradientPresetIsTinted: bool,
     pub m_tabSpacing: f32,
     pub m_spacing: f32,
-    pub m_TextStyleStacks: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::TMPro::TMP_TextProcessingStack_1<i32>,
+    pub m_TextStyleStacks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_TextProcessingStack_1<i32>>,
     >,
     pub m_TextStyleStackDepth: i32,
     pub m_ItalicAngleStack: crate::TMPro::TMP_TextProcessingStack_1<i32>,
@@ -224,17 +232,19 @@ pub struct TMP_Text {
     pub m_baselineOffsetStack: crate::TMPro::TMP_TextProcessingStack_1<f32>,
     pub m_xAdvance: f32,
     pub m_textElementType: crate::TMPro::TMP_TextElementType,
-    pub m_cached_TextElement: *mut crate::TMPro::TMP_TextElement,
+    pub m_cached_TextElement: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextElement>,
     pub m_Ellipsis: crate::TMPro::TMP_Text_SpecialCharacter,
     pub m_Underline: crate::TMPro::TMP_Text_SpecialCharacter,
-    pub m_defaultSpriteAsset: *mut crate::TMPro::TMP_SpriteAsset,
-    pub m_currentSpriteAsset: *mut crate::TMPro::TMP_SpriteAsset,
+    pub m_defaultSpriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+    pub m_currentSpriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
     pub m_spriteCount: i32,
     pub m_spriteIndex: i32,
     pub m_spriteAnimationID: i32,
     pub m_ignoreActiveState: bool,
     pub m_TextBackingArray: crate::TMPro::TMP_Text_TextBackingContainer,
-    pub k_Power: *mut quest_hook::libil2cpp::Il2CppArray<crate::System::Decimal>,
+    pub k_Power: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Decimal>,
+    >,
 }
 #[cfg(feature = "TMPro+TMP_Text")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3634,7 +3644,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Text {
 }
 #[cfg(feature = "TMPro+TMP_Text+CharacterSubstitution")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TMP_Text_CharacterSubstitution {
     pub index: i32,
     pub unicode: u32,
@@ -3672,11 +3682,11 @@ impl crate::TMPro::TMP_Text_CharacterSubstitution {
 }
 #[cfg(feature = "TMPro+TMP_Text+SpecialCharacter")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TMP_Text_SpecialCharacter {
-    pub character: *mut crate::TMPro::TMP_Character,
-    pub fontAsset: *mut crate::TMPro::TMP_FontAsset,
-    pub material: *mut crate::UnityEngine::Material,
+    pub character: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+    pub fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub materialIndex: i32,
 }
 #[cfg(feature = "TMPro+TMP_Text+SpecialCharacter")]
@@ -3712,9 +3722,9 @@ impl crate::TMPro::TMP_Text_SpecialCharacter {
 }
 #[cfg(feature = "TMPro+TMP_Text+TextBackingContainer")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TMP_Text_TextBackingContainer {
-    pub m_Array: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub m_Array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub m_Count: i32,
 }
 #[cfg(feature = "TMPro+TMP_Text+TextBackingContainer")]
@@ -3821,7 +3831,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "TMPro+TMP_Text+UnicodeChar")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TMP_Text_UnicodeChar {
     pub unicode: i32,
     pub stringIndex: i32,

@@ -58,7 +58,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime {
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstRuntime+HashCode64_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BurstRuntime_HashCode64_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

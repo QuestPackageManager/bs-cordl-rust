@@ -3,48 +3,50 @@
 #[derive(Debug)]
 pub struct LIV {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub onActivate: *mut crate::System::Action,
-    pub onPreRender: *mut crate::System::Action_1<
-        *mut crate::LIV::SDK::Unity::SDKRender,
+    pub onActivate: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub onPreRender: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::LIV::SDK::Unity::SDKRender>,
     >,
-    pub onPreRenderBackground: *mut crate::System::Action_1<
-        *mut crate::LIV::SDK::Unity::SDKRender,
+    pub onPreRenderBackground: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::LIV::SDK::Unity::SDKRender>,
     >,
-    pub onPostRenderBackground: *mut crate::System::Action_1<
-        *mut crate::LIV::SDK::Unity::SDKRender,
+    pub onPostRenderBackground: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::LIV::SDK::Unity::SDKRender>,
     >,
-    pub onPreRenderForeground: *mut crate::System::Action_1<
-        *mut crate::LIV::SDK::Unity::SDKRender,
+    pub onPreRenderForeground: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::LIV::SDK::Unity::SDKRender>,
     >,
-    pub onPostRenderForeground: *mut crate::System::Action_1<
-        *mut crate::LIV::SDK::Unity::SDKRender,
+    pub onPostRenderForeground: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::LIV::SDK::Unity::SDKRender>,
     >,
-    pub onPostRender: *mut crate::System::Action_1<
-        *mut crate::LIV::SDK::Unity::SDKRender,
+    pub onPostRender: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::LIV::SDK::Unity::SDKRender>,
     >,
-    pub onDeactivate: *mut crate::System::Action,
-    pub _stage: *mut crate::UnityEngine::Transform,
-    pub _stageTransform: *mut crate::UnityEngine::Transform,
-    pub _HMDCamera: *mut crate::UnityEngine::Camera,
-    pub _MRCameraPrefab: *mut crate::UnityEngine::Camera,
+    pub onDeactivate: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _stage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _stageTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _HMDCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    pub _MRCameraPrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub _disableStandardAssets: bool,
     pub _spectatorLayerMask: crate::UnityEngine::LayerMask,
-    pub _excludeBehaviours: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _excludeBehaviours: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _fixPostEffectsAlpha: bool,
     pub _isActive: bool,
-    pub _render: *mut crate::LIV::SDK::Unity::SDKRender,
+    pub _render: quest_hook::libil2cpp::Gc<crate::LIV::SDK::Unity::SDKRender>,
     pub _wasReady: bool,
     pub _invalidate: crate::LIV::SDK::Unity::INVALIDATION_FLAGS,
-    pub _stageCandidate: *mut crate::UnityEngine::Transform,
-    pub _HMDCameraCandidate: *mut crate::UnityEngine::Camera,
-    pub _MRCameraPrefabCandidate: *mut crate::UnityEngine::Camera,
-    pub _excludeBehavioursCandidate: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _stageCandidate: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _HMDCameraCandidate: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    pub _MRCameraPrefabCandidate: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    pub _excludeBehavioursCandidate: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _enabled: bool,
-    pub _waitForEndOfFrameCoroutine: *mut crate::UnityEngine::Coroutine,
+    pub _waitForEndOfFrameCoroutine: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Coroutine,
+    >,
 }
 #[cfg(feature = "LIV+SDK+Unity+LIV")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

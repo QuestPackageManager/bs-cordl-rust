@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct EventsTestSceneSetup {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    pub _sceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    >,
 }
 #[cfg(feature = "EventsTestSceneSetup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct MultiplayerLevelAnalytics {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _multiplayerLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
+    pub _multiplayerLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+    >,
+    pub _analyticsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAnalyticsModel,
+    >,
 }
 #[cfg(feature = "MultiplayerLevelAnalytics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

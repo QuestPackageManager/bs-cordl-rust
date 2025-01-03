@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct NamespaceListNode {
     __cordl_parent: crate::System::Xml::Schema::SyntaxTreeNode,
-    pub namespaceList: *mut crate::System::Xml::Schema::NamespaceList,
-    pub particle: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub namespaceList: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::NamespaceList,
+    >,
+    pub particle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Xml+Schema+NamespaceListNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -6,7 +6,7 @@ pub struct PropertyByRefUpdater {
     pub _object: crate::System::Nullable_1<
         crate::System::Linq::Expressions::Interpreter::LocalDefinition,
     >,
-    pub _property: *mut crate::System::Reflection::PropertyInfo,
+    pub _property: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+PropertyByRefUpdater")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

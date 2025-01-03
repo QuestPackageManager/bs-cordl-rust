@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct WTauNafPreCompInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_preComp: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+    pub m_preComp: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WTauNafPreCompInfo")]

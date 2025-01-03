@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct JsonSchemaWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _writer: *mut crate::Newtonsoft::Json::JsonWriter,
-    pub _resolver: *mut crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
+    pub _writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+    pub _resolver: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

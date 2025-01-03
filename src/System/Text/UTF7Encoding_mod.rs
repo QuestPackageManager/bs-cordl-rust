@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct UTF7Encoding {
     __cordl_parent: crate::System::Text::Encoding,
-    pub _base64Bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _base64Values: *mut quest_hook::libil2cpp::Il2CppArray<i8>,
-    pub _directEncode: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
+    pub _base64Bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _base64Values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i8>>,
+    pub _directEncode: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<bool>,
+    >,
     pub _allowOptionals: bool,
 }
 #[cfg(feature = "System+Text+UTF7Encoding")]

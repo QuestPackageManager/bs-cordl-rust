@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct KCtrBlockCipher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub IV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub ofbV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub ofbOutV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub IV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub ofbV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub ofbOutV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub initialised: bool,
     pub byteCount: i32,
     pub blockSize: i32,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+KCtrBlockCipher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

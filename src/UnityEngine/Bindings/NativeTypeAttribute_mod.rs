@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct NativeTypeAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Header_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _IntermediateScriptingStructName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Header_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _IntermediateScriptingStructName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _CodegenOptions_k__BackingField: crate::UnityEngine::Bindings::CodegenOptions,
 }
 #[cfg(feature = "UnityEngine+Bindings+NativeTypeAttribute")]

@@ -96,7 +96,7 @@ for crate::UnityEngine::UIElements::MeshGenerationContextUtils {
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MeshGenerationContextUtils_BorderParams {
     pub rect: crate::UnityEngine::Rect,
     pub playmodeTintColor: crate::UnityEngine::Color,
@@ -112,7 +112,7 @@ pub struct MeshGenerationContextUtils_BorderParams {
     pub topRightRadius: crate::UnityEngine::Vector2,
     pub bottomRightRadius: crate::UnityEngine::Vector2,
     pub bottomLeftRadius: crate::UnityEngine::Vector2,
-    pub material: *mut crate::UnityEngine::Material,
+    pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub leftColorPage: crate::UnityEngine::UIElements::ColorPage,
     pub topColorPage: crate::UnityEngine::UIElements::ColorPage,
     pub rightColorPage: crate::UnityEngine::UIElements::ColorPage,
@@ -152,7 +152,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MeshGenerationContextUtils_RectangleParams {
     pub rect: crate::UnityEngine::Rect,
     pub uv: crate::UnityEngine::Rect,
@@ -162,10 +162,12 @@ pub struct MeshGenerationContextUtils_RectangleParams {
     pub backgroundPositionY: crate::UnityEngine::UIElements::BackgroundPosition,
     pub backgroundRepeat: crate::UnityEngine::UIElements::BackgroundRepeat,
     pub backgroundSize: crate::UnityEngine::UIElements::BackgroundSize,
-    pub texture: *mut crate::UnityEngine::Texture,
-    pub sprite: *mut crate::UnityEngine::Sprite,
-    pub vectorImage: *mut crate::UnityEngine::UIElements::VectorImage,
-    pub material: *mut crate::UnityEngine::Material,
+    pub texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    pub sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub vectorImage: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VectorImage,
+    >,
+    pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub scaleMode: crate::UnityEngine::ScaleMode,
     pub playmodeTintColor: crate::UnityEngine::Color,
     pub topLeftRadius: crate::UnityEngine::Vector2,

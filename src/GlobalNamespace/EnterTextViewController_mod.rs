@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct EnterTextViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _textEntryController: *mut crate::GlobalNamespace::VRTextEntryController,
-    pub _titleText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _okButton: *mut crate::UnityEngine::UI::Button,
-    pub didFinishEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::EnterTextViewController,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _textEntryController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VRTextEntryController,
+    >,
+    pub _titleText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _okButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::EnterTextViewController,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "EnterTextViewController")]

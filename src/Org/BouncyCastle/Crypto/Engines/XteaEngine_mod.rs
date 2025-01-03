@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct XteaEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _S: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub _sum0: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub _sum1: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub _S: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub _sum0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub _sum1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub _initialised: bool,
     pub _forEncryption: bool,
 }

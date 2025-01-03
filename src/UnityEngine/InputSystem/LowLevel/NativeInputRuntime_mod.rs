@@ -4,18 +4,24 @@
 pub struct NativeInputRuntime {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_RunInBackground: bool,
-    pub m_ShutdownMethod: *mut crate::System::Action,
-    pub m_OnUpdate: *mut crate::UnityEngine::InputSystem::LowLevel::InputUpdateDelegate,
-    pub m_OnBeforeUpdate: *mut crate::System::Action_1<
-        crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+    pub m_ShutdownMethod: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub m_OnUpdate: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::InputUpdateDelegate,
     >,
-    pub m_OnShouldRunUpdate: *mut crate::System::Func_2<
-        crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-        bool,
+    pub m_OnBeforeUpdate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+        >,
+    >,
+    pub m_OnShouldRunUpdate: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+            bool,
+        >,
     >,
     pub m_PollingFrequency: f32,
     pub m_DidCallOnShutdown: bool,
-    pub m_FocusChangedMethod: *mut crate::System::Action_1<bool>,
+    pub m_FocusChangedMethod: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+NativeInputRuntime")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

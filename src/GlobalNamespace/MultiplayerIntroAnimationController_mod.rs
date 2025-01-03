@@ -3,27 +3,41 @@
 #[derive(Debug)]
 pub struct MultiplayerIntroAnimationController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _introPlayableDirector: *mut crate::UnityEngine::Playables::PlayableDirector,
-    pub _playerTimelineTrackNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _introPlayableDirector: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableDirector,
     >,
-    pub _ringTimelineTrackNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _playerTimelineTrackNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _playerTimelinePropertyNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::PropertyName,
+    pub _ringTimelineTrackNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _localPlayerTrackName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _localPlayerRingTrackName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _playerTimelinePropertyNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::PropertyName>,
+    >,
+    pub _localPlayerTrackName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _localPlayerRingTrackName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _localPlayerTimelinePropertyName: crate::UnityEngine::PropertyName,
     pub _firstConnectedPlayerStart: f32,
     pub _spawnDuration: f32,
-    pub _endMarkerName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _scoreRingManager: *mut crate::GlobalNamespace::MultiplayerScoreRingManager,
-    pub _multiplayerPlayersManager: *mut crate::GlobalNamespace::MultiplayerPlayersManager,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _layoutProvider: *mut crate::GlobalNamespace::MultiplayerLayoutProvider,
-    pub _onCompleted: *mut crate::System::Action,
+    pub _endMarkerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _scoreRingManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreRingManager,
+    >,
+    pub _multiplayerPlayersManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerPlayersManager,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub _layoutProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLayoutProvider,
+    >,
+    pub _onCompleted: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _introDuration: i64,
     pub _bindingFinished: bool,
 }

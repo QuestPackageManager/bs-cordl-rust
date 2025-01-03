@@ -3,18 +3,18 @@
 #[derive(Debug)]
 pub struct ArmoredInputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
-    pub input: *mut crate::System::IO::Stream,
+    pub input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub start: bool,
-    pub outBuf: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub outBuf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub bufPtr: i32,
-    pub crc: *mut crate::Org::BouncyCastle::Bcpg::Crc24,
+    pub crc: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::Crc24>,
     pub crcFound: bool,
     pub hasHeaders: bool,
-    pub header: *mut quest_hook::libil2cpp::Il2CppString,
+    pub header: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub newLineFound: bool,
     pub clearText: bool,
     pub restart: bool,
-    pub headerList: *mut crate::System::Collections::IList,
+    pub headerList: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub lastC: i32,
     pub isEndOfStream: bool,
 }

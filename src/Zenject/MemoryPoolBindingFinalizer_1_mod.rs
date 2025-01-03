@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct MemoryPoolBindingFinalizer_1<TContract: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::ProviderBindingFinalizer,
-    pub _poolBindInfo: *mut crate::Zenject::MemoryPoolBindInfo,
-    pub _factoryBindInfo: *mut crate::Zenject::FactoryBindInfo,
+    pub _poolBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::MemoryPoolBindInfo>,
+    pub _factoryBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
 #[cfg(feature = "Zenject+MemoryPoolBindingFinalizer_1")]

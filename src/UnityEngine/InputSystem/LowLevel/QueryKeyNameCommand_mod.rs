@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct QueryKeyNameCommand {
     padding: [u8; 268usize],
 }
@@ -90,7 +90,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryKeyNameCommand {
     feature = "UnityEngine+InputSystem+LowLevel+QueryKeyNameCommand+_nameBuffer_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct QueryKeyNameCommand__nameBuffer_e__FixedBuffer {
     pub FixedElementField: u8,
 }

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BaseStyleMatcher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_ContextStack: *mut crate::System::Collections::Generic::Stack_1<
-        crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext,
+    pub m_ContextStack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<
+            crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext,
+        >,
     >,
     pub m_CurrentContext: crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext,
 }
@@ -403,7 +405,7 @@ for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+BaseStyleMatcher+MatchContext")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BaseStyleMatcher_MatchContext {
     pub valueIndex: i32,
     pub matchedVariableCount: i32,

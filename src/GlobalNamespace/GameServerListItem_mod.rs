@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct GameServerListItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub serverName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub serverName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub capacity: i32,
     pub occupied: i32,
     pub password: bool,

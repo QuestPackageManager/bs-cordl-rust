@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Data+SqlTypes+SqlInt16")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SqlInt16 {
     pub m_fNotNull: bool,
     pub m_value: i16,

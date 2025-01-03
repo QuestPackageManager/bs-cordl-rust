@@ -4,12 +4,24 @@
 pub struct DTSweepContext {
     __cordl_parent: crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
     pub ALPHA: f32,
-    pub Front: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront,
-    pub _Head_k__BackingField: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-    pub _Tail_k__BackingField: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-    pub Basin: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepBasin,
-    pub EdgeEvent: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepEdgeEvent,
-    pub _comparator: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepPointComparator,
+    pub Front: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront,
+    >,
+    pub _Head_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    >,
+    pub _Tail_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    >,
+    pub Basin: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepBasin,
+    >,
+    pub EdgeEvent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepEdgeEvent,
+    >,
+    pub _comparator: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepPointComparator,
+    >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

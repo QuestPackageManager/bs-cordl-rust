@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HEU_HoudiniEngineError {
     __cordl_parent: crate::System::Exception,
-    pub _errorMsg: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _errorMsg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniEngineError")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

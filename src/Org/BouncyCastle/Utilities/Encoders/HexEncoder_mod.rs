@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct HexEncoder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub encodingTable: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub decodingTable: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub encodingTable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub decodingTable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+HexEncoder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

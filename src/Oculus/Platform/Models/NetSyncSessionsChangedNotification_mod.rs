@@ -4,7 +4,9 @@
 pub struct NetSyncSessionsChangedNotification {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ConnectionId: i64,
-    pub Sessions: *mut crate::Oculus::Platform::Models::NetSyncSessionList,
+    pub Sessions: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::NetSyncSessionList,
+    >,
 }
 #[cfg(feature = "Oculus+Platform+Models+NetSyncSessionsChangedNotification")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

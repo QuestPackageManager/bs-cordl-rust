@@ -3,13 +3,25 @@
 #[derive(Debug)]
 pub struct SignerInfo {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub issuerAndSerialNumber: *mut crate::Org::BouncyCastle::Asn1::Pkcs::IssuerAndSerialNumber,
-    pub digAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub authenticatedAttributes: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-    pub digEncryptionAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub encryptedDigest: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub unauthenticatedAttributes: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub issuerAndSerialNumber: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Pkcs::IssuerAndSerialNumber,
+    >,
+    pub digAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub authenticatedAttributes: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Set,
+    >,
+    pub digEncryptionAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub encryptedDigest: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub unauthenticatedAttributes: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Set,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+SignerInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct BloomFogParamsBehaviour {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
-    pub _bloomFogParams: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
+    pub _bloomFogParams: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomFogEnvironmentParams,
+    >,
     pub _blend: f32,
-    pub _bloomFog: *mut crate::GlobalNamespace::BloomFogSO,
+    pub _bloomFog: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomFogSO>,
     pub _initialized: bool,
 }
 #[cfg(feature = "BloomFogParamsBehaviour")]

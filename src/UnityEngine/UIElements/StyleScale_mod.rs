@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleScale")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StyleScale {
     pub m_Value: crate::UnityEngine::UIElements::Scale,
     pub m_Keyword: crate::UnityEngine::UIElements::StyleKeyword,

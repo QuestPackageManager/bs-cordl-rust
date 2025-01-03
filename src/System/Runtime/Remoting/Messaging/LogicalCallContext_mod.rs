@@ -3,16 +3,24 @@
 #[derive(Debug)]
 pub struct LogicalCallContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Datastore: *mut crate::System::Collections::Hashtable,
-    pub m_RemotingData: *mut crate::System::Runtime::Remoting::Messaging::CallContextRemotingData,
-    pub m_SecurityData: *mut crate::System::Runtime::Remoting::Messaging::CallContextSecurityData,
-    pub m_HostContext: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_IsCorrelationMgr: bool,
-    pub _sendHeaders: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Runtime::Remoting::Messaging::Header,
+    pub m_Datastore: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub m_RemotingData: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::CallContextRemotingData,
     >,
-    pub _recvHeaders: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Runtime::Remoting::Messaging::Header,
+    pub m_SecurityData: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::CallContextSecurityData,
+    >,
+    pub m_HostContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_IsCorrelationMgr: bool,
+    pub _sendHeaders: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Runtime::Remoting::Messaging::Header,
+        >,
+    >,
+    pub _recvHeaders: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Runtime::Remoting::Messaging::Header,
+        >,
     >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext")]
@@ -218,9 +226,11 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext+Reader")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LogicalCallContext_Reader {
-    pub m_ctx: *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
+    pub m_ctx: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext+Reader")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct MissionObjectiveStyleSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub titleTextStyle: *mut crate::GlobalNamespace::TextStyleSO,
-    pub titleColorStyle: *mut crate::GlobalNamespace::ColorStyleSO,
-    pub backgroundColorStyle: *mut crate::GlobalNamespace::ColorStyleSO,
+    pub titleTextStyle: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TextStyleSO>,
+    pub titleColorStyle: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorStyleSO>,
+    pub backgroundColorStyle: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorStyleSO,
+    >,
 }
 #[cfg(feature = "MissionObjectiveStyleSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

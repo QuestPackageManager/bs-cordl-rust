@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DataRowChangeEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub _Row_k__BackingField: *mut crate::System::Data::DataRow,
+    pub _Row_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
     pub _Action_k__BackingField: crate::System::Data::DataRowAction,
 }
 #[cfg(feature = "System+Data+DataRowChangeEventArgs")]

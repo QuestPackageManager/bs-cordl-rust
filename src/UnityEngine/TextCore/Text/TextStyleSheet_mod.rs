@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct TextStyleSheet {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub m_StyleList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::TextCore::Text::TextStyle,
+    pub m_StyleList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::TextCore::Text::TextStyle,
+        >,
     >,
-    pub m_StyleLookupDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::UnityEngine::TextCore::Text::TextStyle,
+    pub m_StyleLookupDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::UnityEngine::TextCore::Text::TextStyle,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextStyleSheet")]

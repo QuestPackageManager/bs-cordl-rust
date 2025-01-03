@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SpriteRenderer {
     __cordl_parent: crate::UnityEngine::Renderer,
-    pub m_SpriteChangeEvent: *mut crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::UnityEngine::SpriteRenderer,
+    pub m_SpriteChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::UnityEvent_1<*mut crate::UnityEngine::SpriteRenderer>,
     >,
 }
 #[cfg(feature = "UnityEngine+SpriteRenderer")]

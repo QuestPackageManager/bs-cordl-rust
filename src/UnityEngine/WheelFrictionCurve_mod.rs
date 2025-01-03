@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+WheelFrictionCurve")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct WheelFrictionCurve {
     pub m_ExtremumSlip: f32,
     pub m_ExtremumValue: f32,

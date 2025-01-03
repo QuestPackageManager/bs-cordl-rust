@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatmapSaveDataVersion4+FxEventBox")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FxEventBox {
     pub w: f32,
     pub d: crate::BeatmapSaveDataCommon::DistributionParamType,

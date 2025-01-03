@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct SonyLevelProductPackSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _levelPackProductData: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
-    pub _levelPackRedirectionData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+    pub _levelPackProductData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
+    >,
+    pub _levelPackRedirectionData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+        >,
     >,
 }
 #[cfg(feature = "SonyLevelProductPackSO")]

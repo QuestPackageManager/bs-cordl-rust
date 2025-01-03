@@ -6,7 +6,9 @@ pub struct ColorOverrideOption {
     pub _override: bool,
     pub _useFixedColor: bool,
     pub _fixedColor: crate::UnityEngine::Color,
-    pub _scriptableObjectColor: *mut crate::GlobalNamespace::ColorSO,
+    pub _scriptableObjectColor: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSO,
+    >,
 }
 #[cfg(feature = "StyledUITemplates+ColorOverrideOption")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

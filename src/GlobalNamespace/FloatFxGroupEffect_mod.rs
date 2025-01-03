@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct FloatFxGroupEffect {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _floatTween: *mut crate::Tweening::FloatTween,
-    pub _floatFxBeatmapEventCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    pub _initData: *mut crate::GlobalNamespace::FloatFxGroupEffect_InitData,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::SongTimeTweeningManager,
+    >,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _floatTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
+    pub _floatFxBeatmapEventCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FloatFxGroupEffect_InitData,
+    >,
 }
 #[cfg(feature = "FloatFxGroupEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -121,7 +129,9 @@ pub struct FloatFxGroupEffect_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub groupId: i32,
     pub elementId: i32,
-    pub target: *mut crate::GlobalNamespace::FloatFxGroupEffectTarget,
+    pub target: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FloatFxGroupEffectTarget,
+    >,
 }
 #[cfg(feature = "FloatFxGroupEffect+InitData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

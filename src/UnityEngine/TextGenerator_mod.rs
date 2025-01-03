@@ -4,18 +4,18 @@
 pub struct TextGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
-    pub m_LastString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_LastString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_LastSettings: crate::UnityEngine::TextGenerationSettings,
     pub m_HasGenerated: bool,
     pub m_LastValid: crate::UnityEngine::TextGenerationError,
-    pub m_Verts: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIVertex,
+    pub m_Verts: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
     >,
-    pub m_Characters: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UICharInfo,
+    pub m_Characters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::UICharInfo>,
     >,
-    pub m_Lines: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UILineInfo,
+    pub m_Lines: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::UILineInfo>,
     >,
     pub m_CachedVerts: bool,
     pub m_CachedCharacters: bool,

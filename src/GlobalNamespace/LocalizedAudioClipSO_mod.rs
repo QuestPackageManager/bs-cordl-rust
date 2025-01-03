@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct LocalizedAudioClipSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _localizedAudioClipInfo: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::LocalizedAudioClipSO_LocalizedAudioClipInfo,
+    pub _localizedAudioClipInfo: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::LocalizedAudioClipSO_LocalizedAudioClipInfo,
+        >,
     >,
-    pub _lastLocalizedAudioClipInfo: *mut crate::GlobalNamespace::LocalizedAudioClipSO_LocalizedAudioClipInfo,
+    pub _lastLocalizedAudioClipInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LocalizedAudioClipSO_LocalizedAudioClipInfo,
+    >,
 }
 #[cfg(feature = "LocalizedAudioClipSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -75,7 +79,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LocalizedAudi
 pub struct LocalizedAudioClipSO_LocalizedAudioClipInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub language: crate::BGLib::Polyglot::Language,
-    pub localizedAudioClip: *mut crate::UnityEngine::AudioClip,
+    pub localizedAudioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
 }
 #[cfg(feature = "LocalizedAudioClipSO+LocalizedAudioClipInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

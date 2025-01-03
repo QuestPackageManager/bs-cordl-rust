@@ -4,11 +4,13 @@
 pub struct Function {
     __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
     pub _functionType: crate::MS::Internal::Xml::XPath::Function_FunctionType,
-    pub _argumentList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::MS::Internal::Xml::XPath::AstNode,
+    pub _argumentList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::MS::Internal::Xml::XPath::AstNode,
+        >,
     >,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _prefix: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Function")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

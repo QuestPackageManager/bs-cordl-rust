@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ShaderWarmupSceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
-    pub _nextScenesTransitionSetupData_k__BackingField: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    pub _nextScenesTransitionSetupData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    >,
 }
 #[cfg(feature = "ShaderWarmupSceneSetupData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

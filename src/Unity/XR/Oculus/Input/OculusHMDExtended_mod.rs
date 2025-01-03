@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct OculusHMDExtended {
     __cordl_parent: crate::Unity::XR::Oculus::Input::OculusHMD,
-    pub _back_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _touchpad_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    pub _back_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _touchpad_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    >,
 }
 #[cfg(feature = "Unity+XR+Oculus+Input+OculusHMDExtended")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct BufferedStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub _stream: *mut crate::System::IO::Stream,
-    pub _buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _bufferSize: i32,
     pub _readPos: i32,
     pub _readLen: i32,
     pub _writePos: i32,
-    pub _lastSyncCompletedReadTask: *mut crate::System::Threading::Tasks::Task_1<i32>,
-    pub _asyncActiveSemaphore: *mut crate::System::Threading::SemaphoreSlim,
+    pub _lastSyncCompletedReadTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<i32>,
+    >,
+    pub _asyncActiveSemaphore: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SemaphoreSlim,
+    >,
 }
 #[cfg(feature = "System+IO+BufferedStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

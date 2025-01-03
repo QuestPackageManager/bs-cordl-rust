@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct DsaDigestSigner {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub dsa: *mut crate::Org::BouncyCastle::Crypto::IDsa,
-    pub digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub encoding: *mut crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding,
+    pub dsa: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsa>,
+    pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub encoding: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding,
+    >,
     pub forSigning: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+DsaDigestSigner")]

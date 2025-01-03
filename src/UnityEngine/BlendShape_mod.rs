@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+BlendShape")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BlendShape {
     pub m_FirstVertex: u32,
     pub m_VertexCount: u32,

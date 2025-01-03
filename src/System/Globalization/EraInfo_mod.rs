@@ -8,9 +8,9 @@ pub struct EraInfo {
     pub yearOffset: i32,
     pub minEraYear: i32,
     pub maxEraYear: i32,
-    pub eraName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub abbrevEraName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub englishEraName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub eraName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub abbrevEraName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub englishEraName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Globalization+EraInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

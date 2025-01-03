@@ -1,13 +1,13 @@
 #[cfg(feature = "UnityEngine+UI+Navigation")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Navigation {
     pub m_Mode: crate::UnityEngine::UI::Navigation_Mode,
     pub m_WrapAround: bool,
-    pub m_SelectOnUp: *mut crate::UnityEngine::UI::Selectable,
-    pub m_SelectOnDown: *mut crate::UnityEngine::UI::Selectable,
-    pub m_SelectOnLeft: *mut crate::UnityEngine::UI::Selectable,
-    pub m_SelectOnRight: *mut crate::UnityEngine::UI::Selectable,
+    pub m_SelectOnUp: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+    pub m_SelectOnDown: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+    pub m_SelectOnLeft: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+    pub m_SelectOnRight: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
 }
 #[cfg(feature = "UnityEngine+UI+Navigation")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HapticClip {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub json: *mut quest_hook::libil2cpp::Il2CppString,
+    pub json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Oculus+Haptics+HapticClip")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

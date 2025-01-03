@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct EnvironmentBrandingManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _brandingObjects: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::GameObject,
+    pub _brandingObjects: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
     >,
-    pub _replacementBrandingObjects: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::GameObject,
+    pub _replacementBrandingObjects: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
     >,
-    pub _initData: *mut crate::GlobalNamespace::EnvironmentBrandingManager_InitData,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentBrandingManager_InitData,
+    >,
 }
 #[cfg(feature = "EnvironmentBrandingManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

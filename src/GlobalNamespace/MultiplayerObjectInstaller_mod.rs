@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct MultiplayerObjectInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _inEnvironmentTextsPrefab: *mut crate::GlobalNamespace::MultiplayerScoreRingItem,
-    pub _fireworkItemControllerPrefab: *mut crate::GlobalNamespace::FireworkItemController,
-    pub _multiplayerResultsPyramidViewAvatarPrefab: *mut crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar,
+    pub _inEnvironmentTextsPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreRingItem,
+    >,
+    pub _fireworkItemControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FireworkItemController,
+    >,
+    pub _multiplayerResultsPyramidViewAvatarPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar,
+    >,
 }
 #[cfg(feature = "MultiplayerObjectInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

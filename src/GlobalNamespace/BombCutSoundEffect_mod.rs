@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct BombCutSoundEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioSource: *mut crate::UnityEngine::AudioSource,
-    pub didFinishEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::BombCutSoundEffect,
+    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::BombCutSoundEffect>,
     >,
-    pub _saber: *mut crate::GlobalNamespace::Saber,
+    pub _saber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
 }
 #[cfg(feature = "BombCutSoundEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

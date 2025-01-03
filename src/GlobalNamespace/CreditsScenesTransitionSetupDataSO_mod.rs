@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct CreditsScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::NoSetupDataSingleFixedSceneScenesTransitionSetupDataSO,
-    pub didFinishEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
+        >,
     >,
 }
 #[cfg(feature = "CreditsScenesTransitionSetupDataSO")]

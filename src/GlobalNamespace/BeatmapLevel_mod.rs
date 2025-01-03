@@ -5,15 +5,15 @@ pub struct BeatmapLevel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub version: i32,
     pub hasPrecalculatedData: bool,
-    pub levelID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub songName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub songSubName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub songAuthorName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub allMappers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub songName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub songSubName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub songAuthorName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub allMappers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub allLighters: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub allLighters: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub beatsPerMinute: f32,
     pub integratedLufs: f32,
@@ -22,19 +22,25 @@ pub struct BeatmapLevel {
     pub previewDuration: f32,
     pub songDuration: f32,
     pub contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
-    pub previewMediaData: *mut crate::GlobalNamespace::IPreviewMediaData,
-    pub _beatmapBasicDatas: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::System::ValueTuple_2<
-            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-            crate::GlobalNamespace::BeatmapDifficulty,
+    pub previewMediaData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IPreviewMediaData,
+    >,
+    pub _beatmapBasicDatas: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::System::ValueTuple_2<
+                *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+                crate::GlobalNamespace::BeatmapDifficulty,
+            >,
+            *mut crate::GlobalNamespace::BeatmapBasicData,
         >,
-        *mut crate::GlobalNamespace::BeatmapBasicData,
     >,
-    pub _characteristicsCache: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _characteristicsCache: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
     >,
-    pub _beatmapKeysCache: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::BeatmapKey,
+    pub _beatmapKeysCache: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::BeatmapKey>,
     >,
 }
 #[cfg(feature = "BeatmapLevel")]

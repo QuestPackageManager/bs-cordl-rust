@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct JoinQuickPlayViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _beatmapDifficultyDropdown: *mut crate::GlobalNamespace::BeatmapDifficultyDropdown,
-    pub _songPacksDropdown: *mut crate::GlobalNamespace::QuickPlaySongPacksDropdown,
-    pub _levelSelectionToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _joinButton: *mut crate::UnityEngine::UI::Button,
-    pub _cancelJoinButton: *mut crate::UnityEngine::UI::Button,
-    pub didFinishEvent: *mut crate::System::Action_1<bool>,
-    pub _multiplayerModeSettings: *mut crate::GlobalNamespace::MultiplayerModeSettings,
+    pub _beatmapDifficultyDropdown: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDifficultyDropdown,
+    >,
+    pub _songPacksDropdown: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::QuickPlaySongPacksDropdown,
+    >,
+    pub _levelSelectionToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _joinButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _cancelJoinButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+    pub _multiplayerModeSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerModeSettings,
+    >,
 }
 #[cfg(feature = "JoinQuickPlayViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

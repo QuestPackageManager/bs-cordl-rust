@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ControllerColliderHit {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Controller: *mut crate::UnityEngine::CharacterController,
-    pub m_Collider: *mut crate::UnityEngine::Collider,
+    pub m_Controller: quest_hook::libil2cpp::Gc<crate::UnityEngine::CharacterController>,
+    pub m_Collider: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
     pub m_Point: crate::UnityEngine::Vector3,
     pub m_Normal: crate::UnityEngine::Vector3,
     pub m_MoveDirection: crate::UnityEngine::Vector3,

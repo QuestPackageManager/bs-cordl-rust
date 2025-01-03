@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct HEU_DetailPrototype {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _prototypePrefab: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _prototypeTexture: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _prototypePrefab: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _prototypeTexture: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _bendFactor: f32,
     pub _dryColor: crate::UnityEngine::Color,
     pub _healthyColor: crate::UnityEngine::Color,

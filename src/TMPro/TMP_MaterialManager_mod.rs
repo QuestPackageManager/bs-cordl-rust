@@ -198,9 +198,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_MaterialManager {
 pub struct TMP_MaterialManager_FallbackMaterial {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub fallbackID: i64,
-    pub sourceMaterial: *mut crate::UnityEngine::Material,
+    pub sourceMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub sourceMaterialCRC: i32,
-    pub fallbackMaterial: *mut crate::UnityEngine::Material,
+    pub fallbackMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub count: i32,
 }
 #[cfg(feature = "TMPro+TMP_MaterialManager+FallbackMaterial")]
@@ -256,8 +256,8 @@ for crate::TMPro::TMP_MaterialManager_FallbackMaterial {
 #[derive(Debug)]
 pub struct TMP_MaterialManager_MaskingMaterial {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub baseMaterial: *mut crate::UnityEngine::Material,
-    pub stencilMaterial: *mut crate::UnityEngine::Material,
+    pub baseMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub stencilMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub count: i32,
     pub stencilID: i32,
 }

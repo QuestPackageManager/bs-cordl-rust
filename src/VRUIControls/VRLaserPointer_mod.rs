@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct VRLaserPointer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _renderer: *mut crate::UnityEngine::MeshRenderer,
+    pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
 }
 #[cfg(feature = "VRUIControls+VRLaserPointer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

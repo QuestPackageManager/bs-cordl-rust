@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct RecordingToolSceneSetup {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _sceneSetupData: *mut crate::GlobalNamespace::RecordingToolSceneSetupData,
+    pub _sceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecordingToolSceneSetupData,
+    >,
 }
 #[cfg(feature = "RecordingToolSceneSetup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

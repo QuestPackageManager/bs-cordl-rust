@@ -4,15 +4,21 @@
 pub struct ColorSchemesSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _colorOverrideType_k__BackingField: crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType,
-    pub didChangeOverrideSettingsEvent: *mut crate::System::Action,
-    pub _colorSchemesList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::ColorScheme,
+    pub didChangeOverrideSettingsEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _colorSchemesList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::ColorScheme,
+        >,
     >,
-    pub _colorSchemesDict: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::ColorScheme,
+    pub _colorSchemesDict: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::ColorScheme,
+        >,
     >,
-    pub _selectedColorSchemeId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _selectedColorSchemeId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _overrideDefaultColors: bool,
 }
 #[cfg(feature = "ColorSchemesSettings")]

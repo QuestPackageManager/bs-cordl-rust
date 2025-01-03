@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct Saber {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _saberBladeTopTransform: *mut crate::UnityEngine::Transform,
-    pub _saberBladeBottomTransform: *mut crate::UnityEngine::Transform,
-    pub _handleTransform: *mut crate::UnityEngine::Transform,
-    pub _saberType: *mut crate::GlobalNamespace::SaberTypeObject,
-    pub _movementData: *mut crate::GlobalNamespace::SaberMovementData,
+    pub _saberBladeTopTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _saberBladeBottomTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _handleTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _saberType: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberTypeObject>,
+    pub _movementData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SaberMovementData,
+    >,
     pub _saberBladeTopPos: crate::UnityEngine::Vector3,
     pub _saberBladeBottomPos: crate::UnityEngine::Vector3,
     pub _handlePos: crate::UnityEngine::Vector3,

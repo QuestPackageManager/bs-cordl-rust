@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct Dstu7564Mac {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub engine: *mut crate::Org::BouncyCastle::Crypto::Digests::Dstu7564Digest,
+    pub engine: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Digests::Dstu7564Digest,
+    >,
     pub macSize: i32,
     pub inputLength: u64,
-    pub paddedKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub invertedKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub paddedKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub invertedKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+Dstu7564Mac")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

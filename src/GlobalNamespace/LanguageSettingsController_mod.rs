@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct LanguageSettingsController {
     __cordl_parent: crate::GlobalNamespace::DropdownSettingsController,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
     pub _language: crate::BGLib::Polyglot::Language,
 }
 #[cfg(feature = "LanguageSettingsController")]

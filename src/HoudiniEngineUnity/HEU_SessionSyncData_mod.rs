@@ -6,7 +6,7 @@ pub struct HEU_SessionSyncData {
     pub _status: i32,
     pub _timeLastUpdate: f32,
     pub _timeStartConnection: f32,
-    pub _newNodeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _newNodeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _nodeTypeIndex: i32,
     pub _validForConnection: bool,
     pub _viewportHAPI: crate::HoudiniEngineUnity::HAPI_Viewport,

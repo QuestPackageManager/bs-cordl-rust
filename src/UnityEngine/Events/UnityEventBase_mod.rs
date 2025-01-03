@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct UnityEventBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Calls: *mut crate::UnityEngine::Events::InvokableCallList,
-    pub m_PersistentCalls: *mut crate::UnityEngine::Events::PersistentCallGroup,
+    pub m_Calls: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::InvokableCallList,
+    >,
+    pub m_PersistentCalls: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::PersistentCallGroup,
+    >,
     pub m_CallsDirty: bool,
 }
 #[cfg(feature = "UnityEngine+Events+UnityEventBase")]

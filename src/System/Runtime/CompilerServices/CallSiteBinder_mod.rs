@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct CallSiteBinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Cache: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Type,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub Cache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Type,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder")]
@@ -189,10 +191,14 @@ for crate::System::Runtime::CompilerServices::CallSiteBinder {
 #[derive(Debug)]
 pub struct CallSiteBinder_LambdaSignature_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Parameters: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-        *mut crate::System::Linq::Expressions::ParameterExpression,
+    pub Parameters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            *mut crate::System::Linq::Expressions::ParameterExpression,
+        >,
     >,
-    pub ReturnLabel: *mut crate::System::Linq::Expressions::LabelTarget,
+    pub ReturnLabel: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::LabelTarget,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder+LambdaSignature_1")]

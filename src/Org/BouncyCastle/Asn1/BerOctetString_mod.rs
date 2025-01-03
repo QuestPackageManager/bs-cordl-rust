@@ -4,8 +4,10 @@
 pub struct BerOctetString {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::DerOctetString,
     pub chunkSize: i32,
-    pub octs: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    pub octs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString")]
@@ -293,9 +295,11 @@ for crate::Org::BouncyCastle::Asn1::BerOctetString {
 #[derive(Debug)]
 pub struct BerOctetString_ChunkEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub octets: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub octets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub chunkSize: i32,
-    pub currentChunk: *mut crate::Org::BouncyCastle::Asn1::DerOctetString,
+    pub currentChunk: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerOctetString,
+    >,
     pub nextChunkPos: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]

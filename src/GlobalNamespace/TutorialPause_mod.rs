@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct TutorialPause {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _tutorialSongController: *mut crate::GlobalNamespace::TutorialSongController,
-    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
-    pub _audioListenerController: *mut crate::GlobalNamespace::AudioListenerController,
-    pub didPauseEvent: *mut crate::System::Action,
-    pub willResumeEvent: *mut crate::System::Action,
-    pub didResumeEvent: *mut crate::System::Action,
+    pub _tutorialSongController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSongController,
+    >,
+    pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
+    pub _audioListenerController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioListenerController,
+    >,
+    pub didPauseEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub willResumeEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub didResumeEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _pause: bool,
 }
 #[cfg(feature = "TutorialPause")]

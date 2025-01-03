@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+DrivenRectTransformTracker")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DrivenRectTransformTracker {}
 #[cfg(feature = "UnityEngine+DrivenRectTransformTracker")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

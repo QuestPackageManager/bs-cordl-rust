@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AssemblyInformationalVersionAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _InformationalVersion_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _InformationalVersion_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Reflection+AssemblyInformationalVersionAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct XPathDocumentNavigator {
     __cordl_parent: crate::System::Xml::XPath::XPathNavigator,
-    pub _pageCurrent: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::MS::Internal::Xml::Cache::XPathNode,
+    pub _pageCurrent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::MS::Internal::Xml::Cache::XPathNode>,
     >,
-    pub _pageParent: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::MS::Internal::Xml::Cache::XPathNode,
+    pub _pageParent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::MS::Internal::Xml::Cache::XPathNode>,
     >,
     pub _idxCurrent: i32,
     pub _idxParent: i32,

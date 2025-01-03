@@ -5,8 +5,8 @@ pub struct XPathNodePageInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pageNum: i32,
     pub _nodeCount: i32,
-    pub _pageNext: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::MS::Internal::Xml::Cache::XPathNode,
+    pub _pageNext: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::MS::Internal::Xml::Cache::XPathNode>,
     >,
 }
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathNodePageInfo")]

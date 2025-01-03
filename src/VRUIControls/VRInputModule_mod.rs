@@ -3,24 +3,30 @@
 #[derive(Debug)]
 pub struct VRInputModule {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseInputModule,
-    pub _vrPointer: *mut crate::VRUIControls::VRPointer,
-    pub _rumblePreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _hapticFeedbackManager: *mut crate::GlobalNamespace::HapticFeedbackManager,
+    pub _vrPointer: quest_hook::libil2cpp::Gc<crate::VRUIControls::VRPointer>,
+    pub _rumblePreset: quest_hook::libil2cpp::Gc<
+        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+    >,
+    pub _hapticFeedbackManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HapticFeedbackManager,
+    >,
     pub _useMouseForPressInput_k__BackingField: bool,
-    pub onProcessMousePressEvent: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::GameObject,
+    pub onProcessMousePressEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::GameObject>,
     >,
-    pub pointerDidClickEvent: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::EventSystems::PointerEventData,
+    pub pointerDidClickEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::EventSystems::PointerEventData>,
     >,
-    pub _pointerData: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::UnityEngine::EventSystems::PointerEventData,
+    pub _pointerData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::UnityEngine::EventSystems::PointerEventData,
+        >,
     >,
-    pub _componentList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Component,
+    pub _componentList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Component>,
     >,
-    pub _mouseState: *mut crate::VRUIControls::MouseState,
+    pub _mouseState: quest_hook::libil2cpp::Gc<crate::VRUIControls::MouseState>,
 }
 #[cfg(feature = "VRUIControls+VRInputModule")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

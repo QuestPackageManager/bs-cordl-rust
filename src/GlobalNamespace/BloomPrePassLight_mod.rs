@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct BloomPrePassLight {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightType: *mut crate::GlobalNamespace::BloomPrePassLightTypeSO,
-    pub _registeredWithLightType: *mut crate::GlobalNamespace::BloomPrePassLightTypeSO,
+    pub _lightType: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassLightTypeSO,
+    >,
+    pub _registeredWithLightType: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassLightTypeSO,
+    >,
     pub _isRegistered: bool,
     pub _isBeingDestroyed: bool,
 }
@@ -204,9 +208,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BloomPrePassL
 #[derive(Debug)]
 pub struct BloomPrePassLight_LightsDataItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub lightType: *mut crate::GlobalNamespace::BloomPrePassLightTypeSO,
-    pub lights: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::GlobalNamespace::BloomPrePassLight,
+    pub lightType: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassLightTypeSO,
+    >,
+    pub lights: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::GlobalNamespace::BloomPrePassLight,
+        >,
     >,
 }
 #[cfg(feature = "BloomPrePassLight+LightsDataItem")]
@@ -277,7 +285,7 @@ for crate::GlobalNamespace::BloomPrePassLight_LightsDataItem {
 }
 #[cfg(feature = "BloomPrePassLight+QuadData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BloomPrePassLight_QuadData {
     padding: [u8; 208usize],
 }
@@ -301,7 +309,7 @@ for crate::GlobalNamespace::BloomPrePassLight_QuadData {
 impl crate::GlobalNamespace::BloomPrePassLight_QuadData {}
 #[cfg(feature = "BloomPrePassLight+VertexData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BloomPrePassLight_VertexData {
     padding: [u8; 52usize],
 }

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct NewArrayInitInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
-    pub _elementType: *mut crate::System::Type,
+    pub _elementType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _elementCount: i32,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+NewArrayInitInstruction")]

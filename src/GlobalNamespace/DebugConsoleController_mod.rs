@@ -3,21 +3,31 @@
 #[derive(Debug)]
 pub struct DebugConsoleController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub onNewMessageToOutput: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        crate::UnityEngine::LogType,
+    pub onNewMessageToOutput: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            crate::UnityEngine::LogType,
+        >,
     >,
-    pub _stringsFromSTDIN: *mut crate::System::Collections::Generic::Queue_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _stringsFromSTDIN: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _container: *mut crate::Zenject::DiContainer,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _commandLineParserResult: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
-    pub _coroutineStarter: *mut crate::GlobalNamespace::ICoroutineStarter,
-    pub _commands: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::ConsoleCommandBase,
+    pub _coroutineStarter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ICoroutineStarter,
     >,
-    pub _commandsExecutionTask: *mut crate::System::Threading::Tasks::Task,
+    pub _commands: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::ConsoleCommandBase,
+        >,
+    >,
+    pub _commandsExecutionTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task,
+    >,
 }
 #[cfg(feature = "DebugConsoleController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -310,9 +320,9 @@ for crate::GlobalNamespace::DebugConsoleController {
 }
 #[cfg(feature = "DebugConsoleController+ConsoleMessage")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DebugConsoleController_ConsoleMessage {
-    pub Message: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Type: crate::UnityEngine::LogType,
 }
 #[cfg(feature = "DebugConsoleController+ConsoleMessage")]

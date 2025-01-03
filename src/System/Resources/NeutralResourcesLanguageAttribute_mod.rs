@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct NeutralResourcesLanguageAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _CultureName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _CultureName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _Location_k__BackingField: crate::System::Resources::UltimateResourceFallbackLocation,
 }
 #[cfg(feature = "System+Resources+NeutralResourcesLanguageAttribute")]

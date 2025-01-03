@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct RpcHandler_1<TType: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
     pub _messageType: crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
-    pub _rpcSerializer: *mut crate::GlobalNamespace::NetworkPacketSerializer_2<
-        TType,
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _rpcSerializer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NetworkPacketSerializer_2<
+            TType,
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     >,
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
 }

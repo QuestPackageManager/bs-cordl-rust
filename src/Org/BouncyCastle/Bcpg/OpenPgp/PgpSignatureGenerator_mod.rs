@@ -5,16 +5,22 @@ pub struct PgpSignatureGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub keyAlgorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
     pub hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-    pub privKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
-    pub sig: *mut crate::Org::BouncyCastle::Crypto::ISigner,
-    pub dig: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    pub privKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
+    >,
+    pub sig: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
+    pub dig: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     pub signatureType: i32,
     pub lastb: u8,
-    pub unhashed: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+    pub unhashed: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+        >,
     >,
-    pub hashed: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+    pub hashed: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpSignatureGenerator")]

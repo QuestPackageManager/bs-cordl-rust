@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TypeDependencyAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub typeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+TypeDependencyAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

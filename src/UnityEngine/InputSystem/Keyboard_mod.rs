@@ -3,17 +3,31 @@
 #[derive(Debug)]
 pub struct Keyboard {
     __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
-    pub _anyKey_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AnyKeyControl,
-    pub _shiftKey_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _ctrlKey_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _altKey_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _imeSelected_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    pub _anyKey_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AnyKeyControl,
+    >,
+    pub _shiftKey_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _ctrlKey_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _altKey_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _imeSelected_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
     pub m_TextInputListeners: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
         *mut crate::System::Action_1<char>,
     >,
-    pub m_KeyboardLayoutName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Keys: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::Controls::KeyControl,
+    pub m_KeyboardLayoutName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_Keys: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::Controls::KeyControl,
+        >,
     >,
     pub m_ImeCompositionListeners: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
         *mut crate::System::Action_1<

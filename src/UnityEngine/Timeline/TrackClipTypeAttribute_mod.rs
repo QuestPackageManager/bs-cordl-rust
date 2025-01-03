@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TrackClipTypeAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub inspectedType: *mut crate::System::Type,
+    pub inspectedType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub allowAutoCreate: bool,
 }
 #[cfg(feature = "UnityEngine+Timeline+TrackClipTypeAttribute")]

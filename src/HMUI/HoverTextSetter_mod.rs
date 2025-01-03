@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct HoverTextSetter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _hoverTextController: *mut crate::HMUI::HoverTextController,
-    pub _text: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _hoverTextController: quest_hook::libil2cpp::Gc<
+        crate::HMUI::HoverTextController,
+    >,
+    pub _text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "HMUI+HoverTextSetter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

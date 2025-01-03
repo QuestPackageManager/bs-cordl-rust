@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BloomFogParamsAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _bloomFog: *mut crate::GlobalNamespace::BloomFogSO,
+    pub _bloomFog: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomFogSO>,
 }
 #[cfg(feature = "BloomFogParamsAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

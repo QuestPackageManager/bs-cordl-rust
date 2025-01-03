@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DtlsTransport {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mRecordLayer: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer,
+    pub mRecordLayer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsTransport")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

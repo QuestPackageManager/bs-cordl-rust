@@ -3,18 +3,28 @@
 #[derive(Debug)]
 pub struct TutorialBeatmapObjectManager {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectManager,
-    pub _tutorialNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::TutorialNoteController,
+    pub _tutorialNotePoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::TutorialNoteController,
+        >,
     >,
-    pub _bombNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::BombNoteController,
+    pub _bombNotePoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::BombNoteController,
+        >,
     >,
-    pub _obstaclePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::ObstacleController,
+    pub _obstaclePoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     >,
-    pub _initData: *mut crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData,
-    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::VariableMovementDataProvider,
-    pub _random: *mut crate::System::Random,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData,
+    >,
+    pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VariableMovementDataProvider,
+    >,
+    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
 }
 #[cfg(feature = "TutorialBeatmapObjectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -6,28 +6,32 @@ pub struct TimelineClip {
     pub m_Version: i32,
     pub m_Start: f64,
     pub m_ClipIn: f64,
-    pub m_Asset: *mut crate::UnityEngine::Object,
+    pub m_Asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     pub m_Duration: f64,
     pub m_TimeScale: f64,
-    pub m_ParentTrack: *mut crate::UnityEngine::Timeline::TrackAsset,
+    pub m_ParentTrack: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::TrackAsset,
+    >,
     pub m_EaseInDuration: f64,
     pub m_EaseOutDuration: f64,
     pub m_BlendInDuration: f64,
     pub m_BlendOutDuration: f64,
-    pub m_MixInCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub m_MixOutCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub m_MixInCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    pub m_MixOutCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub m_BlendInCurveMode: crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode,
     pub m_BlendOutCurveMode: crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode,
-    pub m_ExposedParameterNames: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ExposedParameterNames: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub m_AnimationCurves: *mut crate::UnityEngine::AnimationClip,
+    pub m_AnimationCurves: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
     pub m_Recordable: bool,
     pub m_PostExtrapolationMode: crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation,
     pub m_PreExtrapolationMode: crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation,
     pub m_PostExtrapolationTime: f64,
     pub m_PreExtrapolationTime: f64,
-    pub m_DisplayName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_DisplayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

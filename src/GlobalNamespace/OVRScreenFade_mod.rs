@@ -10,9 +10,9 @@ pub struct OVRScreenFade {
     pub explicitFadeAlpha: f32,
     pub animatedFadeAlpha: f32,
     pub uiFadeAlpha: f32,
-    pub fadeRenderer: *mut crate::UnityEngine::MeshRenderer,
-    pub fadeMesh: *mut crate::UnityEngine::MeshFilter,
-    pub fadeMaterial: *mut crate::UnityEngine::Material,
+    pub fadeRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+    pub fadeMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
+    pub fadeMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub isFading: bool,
 }
 #[cfg(feature = "OVRScreenFade")]

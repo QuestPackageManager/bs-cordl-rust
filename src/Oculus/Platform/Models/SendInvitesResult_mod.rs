@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SendInvitesResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Invites: *mut crate::Oculus::Platform::Models::ApplicationInviteList,
+    pub Invites: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::ApplicationInviteList,
+    >,
 }
 #[cfg(feature = "Oculus+Platform+Models+SendInvitesResult")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

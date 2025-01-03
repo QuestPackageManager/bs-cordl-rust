@@ -3,15 +3,14 @@
 #[derive(Debug)]
 pub struct CircleSlider {
     __cordl_parent: crate::UnityEngine::UI::Selectable,
-    pub _handleRect: *mut crate::UnityEngine::RectTransform,
+    pub _handleRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _cursorRadius: f32,
     pub _normalizedValue: f32,
-    pub normalizedValueDidChangeEvent: *mut crate::System::Action_2<
-        *mut crate::HMUI::CircleSlider,
-        f32,
+    pub normalizedValueDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::HMUI::CircleSlider, f32>,
     >,
-    pub _containerRect: *mut crate::UnityEngine::RectTransform,
-    pub _handleGraphic: *mut crate::UnityEngine::UI::Graphic,
+    pub _containerRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub _handleGraphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     pub _tracker: crate::UnityEngine::DrivenRectTransformTracker,
 }
 #[cfg(feature = "HMUI+CircleSlider")]

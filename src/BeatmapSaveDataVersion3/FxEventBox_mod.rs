@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct FxEventBox {
     __cordl_parent: crate::BeatmapSaveDataVersion3::EventBox,
-    pub l: *mut crate::System::Collections::Generic::List_1<i32>,
+    pub l: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
     pub s: f32,
     pub t: crate::BeatmapSaveDataCommon::DistributionParamType,
     pub i: crate::BeatmapSaveDataCommon::EaseType,

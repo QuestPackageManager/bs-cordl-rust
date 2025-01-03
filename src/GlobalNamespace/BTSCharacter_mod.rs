@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct BTSCharacter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _characterName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _animator: *mut crate::UnityEngine::Animator,
-    pub _btsCharacterMaterialSwitcher: *mut crate::GlobalNamespace::BTSCharacterMaterialSwitcher,
-    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
-    pub _headTransform: *mut crate::UnityEngine::Transform,
+    pub _characterName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _animator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
+    pub _btsCharacterMaterialSwitcher: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BTSCharacterMaterialSwitcher,
+    >,
+    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
+    pub _headTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "BTSCharacter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

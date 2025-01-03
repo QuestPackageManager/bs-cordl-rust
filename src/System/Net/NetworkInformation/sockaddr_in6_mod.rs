@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Net+NetworkInformation+sockaddr_in6")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct sockaddr_in6 {
     pub sin6_family: u16,
     pub sin6_port: u16,

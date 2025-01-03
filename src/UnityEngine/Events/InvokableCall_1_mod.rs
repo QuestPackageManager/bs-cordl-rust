@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct InvokableCall_1<T1: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::Events::BaseInvokableCall,
-    pub Delegate: *mut crate::UnityEngine::Events::UnityAction_1<T1>,
+    pub Delegate: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::UnityAction_1<T1>,
+    >,
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
 }
 #[cfg(feature = "UnityEngine+Events+InvokableCall_1")]

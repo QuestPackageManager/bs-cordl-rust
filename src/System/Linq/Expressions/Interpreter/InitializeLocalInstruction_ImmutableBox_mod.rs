@@ -5,7 +5,7 @@
 #[derive(Debug)]
 pub struct InitializeLocalInstruction_ImmutableBox {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::InitializeLocalInstruction,
-    pub _defaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _defaultValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ImmutableBox"

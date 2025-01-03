@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerOutroAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _outroPlayableDirector: *mut crate::UnityEngine::Playables::PlayableDirector,
-    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
+    pub _outroPlayableDirector: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableDirector,
+    >,
+    pub _multiplayerController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerController,
+    >,
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerOutroAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

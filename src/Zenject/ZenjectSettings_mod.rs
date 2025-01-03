@@ -7,7 +7,9 @@ pub struct ZenjectSettings {
     pub _displayWarningWhenResolvingDuringInstall: bool,
     pub _validationRootResolveMethod: crate::Zenject::RootResolveMethods,
     pub _validationErrorResponse: crate::Zenject::ValidationErrorResponses,
-    pub _signalSettings: *mut crate::Zenject::ZenjectSettings_SignalSettings,
+    pub _signalSettings: quest_hook::libil2cpp::Gc<
+        crate::Zenject::ZenjectSettings_SignalSettings,
+    >,
 }
 #[cfg(feature = "Zenject+ZenjectSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

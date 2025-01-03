@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct EventDescriptorCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _events: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::ComponentModel::EventDescriptor,
+    pub _events: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::ComponentModel::EventDescriptor,
+        >,
     >,
-    pub _namedSort: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _namedSort: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _comparer: *mut crate::System::Collections::IComparer,
+    pub _comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     pub _eventsOwned: bool,
     pub _needSort: bool,
     pub _readOnly: bool,
@@ -530,7 +532,7 @@ for crate::System::ComponentModel::EventDescriptorCollection {
 #[derive(Debug)]
 pub struct EventDescriptorCollection_ArraySubsetEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _array: *mut crate::System::Array,
+    pub _array: quest_hook::libil2cpp::Gc<crate::System::Array>,
     pub _total: i32,
     pub _current: i32,
 }

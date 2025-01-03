@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct BeatmapLevelDataLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _loadRequests: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::BeatmapLevelDataLoadRequest,
+    pub _loadRequests: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::BeatmapLevelDataLoadRequest,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapLevelDataLoader")]

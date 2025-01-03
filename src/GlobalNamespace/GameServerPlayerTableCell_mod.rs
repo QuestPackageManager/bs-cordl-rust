@@ -3,31 +3,47 @@
 #[derive(Debug)]
 pub struct GameServerPlayerTableCell {
     __cordl_parent: crate::GlobalNamespace::TableCellWithSeparator,
-    pub _playerNameText: *mut crate::HMUI::CurvedTextMeshPro,
-    pub _localPlayerBackgroundImage: *mut crate::UnityEngine::UI::Image,
-    pub _suggestedLevelText: *mut crate::HMUI::CurvedTextMeshPro,
-    pub _suggestedCharacteristicIcon: *mut crate::HMUI::ImageView,
-    pub _suggestedDifficultyText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _emptySuggestedLevelText: *mut crate::HMUI::CurvedTextMeshPro,
-    pub _suggestedModifiersList: *mut crate::GlobalNamespace::GameplayModifierInfoListItemsList,
-    pub _emptySuggestedModifiersText: *mut crate::HMUI::CurvedTextMeshPro,
-    pub _mutePlayerButton: *mut crate::UnityEngine::UI::Button,
-    pub _kickPlayerButton: *mut crate::UnityEngine::UI::Button,
-    pub _useBeatmapButton: *mut crate::UnityEngine::UI::Button,
-    pub _useModifiersButton: *mut crate::UnityEngine::UI::Button,
-    pub _useBeatmapButtonHoverHint: *mut crate::HMUI::HoverHint,
-    pub _muteToggle: *mut crate::HMUI::ButtonSpriteSwapToggle,
-    pub _statusImageView: *mut crate::HMUI::ImageView,
-    pub _readyIcon: *mut crate::UnityEngine::Sprite,
-    pub _spectatingIcon: *mut crate::UnityEngine::Sprite,
-    pub _hostIcon: *mut crate::UnityEngine::Sprite,
-    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub kickPlayerEvent: *mut crate::System::Action_1<i32>,
-    pub useBeatmapEvent: *mut crate::System::Action_1<i32>,
-    pub useModifiersEvent: *mut crate::System::Action_1<i32>,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
-    pub _getLevelEntitlementCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
+    pub _playerNameText: quest_hook::libil2cpp::Gc<crate::HMUI::CurvedTextMeshPro>,
+    pub _localPlayerBackgroundImage: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Image,
+    >,
+    pub _suggestedLevelText: quest_hook::libil2cpp::Gc<crate::HMUI::CurvedTextMeshPro>,
+    pub _suggestedCharacteristicIcon: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
+    pub _suggestedDifficultyText: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TextMeshProUGUI,
+    >,
+    pub _emptySuggestedLevelText: quest_hook::libil2cpp::Gc<
+        crate::HMUI::CurvedTextMeshPro,
+    >,
+    pub _suggestedModifiersList: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierInfoListItemsList,
+    >,
+    pub _emptySuggestedModifiersText: quest_hook::libil2cpp::Gc<
+        crate::HMUI::CurvedTextMeshPro,
+    >,
+    pub _mutePlayerButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _kickPlayerButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _useBeatmapButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _useModifiersButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _useBeatmapButtonHoverHint: quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>,
+    pub _muteToggle: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonSpriteSwapToggle>,
+    pub _statusImageView: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
+    pub _readyIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _spectatingIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _hostIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiersModelSO,
+    >,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub kickPlayerEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    pub useBeatmapEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    pub useModifiersEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
+    pub _getLevelEntitlementCancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
 }
 #[cfg(feature = "GameServerPlayerTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

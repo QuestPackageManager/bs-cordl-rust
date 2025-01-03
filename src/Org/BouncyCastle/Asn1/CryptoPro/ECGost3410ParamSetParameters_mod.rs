@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct ECGost3410ParamSetParameters {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub p: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub q: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub a: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub b: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub x: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub y: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+    pub p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub a: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub y: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+CryptoPro+ECGost3410ParamSetParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

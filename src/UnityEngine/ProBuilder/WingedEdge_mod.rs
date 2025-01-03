@@ -4,10 +4,18 @@
 pub struct WingedEdge {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _edge_k__BackingField: crate::UnityEngine::ProBuilder::EdgeLookup,
-    pub _face_k__BackingField: *mut crate::UnityEngine::ProBuilder::Face,
-    pub _next_k__BackingField: *mut crate::UnityEngine::ProBuilder::WingedEdge,
-    pub _previous_k__BackingField: *mut crate::UnityEngine::ProBuilder::WingedEdge,
-    pub _opposite_k__BackingField: *mut crate::UnityEngine::ProBuilder::WingedEdge,
+    pub _face_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Face,
+    >,
+    pub _next_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::WingedEdge,
+    >,
+    pub _previous_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::WingedEdge,
+    >,
+    pub _opposite_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::WingedEdge,
+    >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+WingedEdge")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

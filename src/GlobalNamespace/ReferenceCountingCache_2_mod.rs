@@ -6,10 +6,11 @@ pub struct ReferenceCountingCache_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _items: *mut crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
-    pub _referencesCount: *mut crate::System::Collections::Generic::Dictionary_2<
-        TKey,
-        i32,
+    pub _items: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+    >,
+    pub _referencesCount: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<TKey, i32>,
     >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,

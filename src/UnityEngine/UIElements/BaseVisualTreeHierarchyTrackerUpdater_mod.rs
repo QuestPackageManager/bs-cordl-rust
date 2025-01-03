@@ -4,8 +4,12 @@
 pub struct BaseVisualTreeHierarchyTrackerUpdater {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
     pub m_State: crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater_State,
-    pub m_CurrentChangeElement: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_CurrentChangeParent: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_CurrentChangeElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_CurrentChangeParent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

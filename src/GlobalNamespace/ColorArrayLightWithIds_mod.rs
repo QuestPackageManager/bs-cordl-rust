@@ -3,19 +3,29 @@
 #[derive(Debug)]
 pub struct ColorArrayLightWithIds {
     __cordl_parent: crate::GlobalNamespace::LightWithIds,
-    pub _colorArrayLightWithIds: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId,
+    pub _colorArrayLightWithIds: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId,
+        >,
     >,
-    pub _materialController: *mut crate::GlobalNamespace::MaterialController,
-    pub _materialPropertyBlockControllers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _materialController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialController,
     >,
-    pub _colorsArrayPropertyName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _colorsArrayOffsetPropertyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _materialPropertyBlockControllers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+        >,
+    >,
+    pub _colorsArrayPropertyName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _colorsArrayOffsetPropertyName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _colorsArrayPropertyId: i32,
     pub _colorsArrayOffsetPropertyId: i32,
-    pub _colorsArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector4,
+    pub _colorsArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
 }
 #[cfg(feature = "ColorArrayLightWithIds")]
@@ -175,7 +185,9 @@ for crate::GlobalNamespace::ColorArrayLightWithIds {
 pub struct ColorArrayLightWithIds_ColorArrayLightWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIds_LightWithId,
     pub _index: i32,
-    pub didSetColorEvent: *mut crate::System::Action_2<i32, crate::UnityEngine::Color>,
+    pub didSetColorEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<i32, crate::UnityEngine::Color>,
+    >,
 }
 #[cfg(feature = "ColorArrayLightWithIds+ColorArrayLightWithId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

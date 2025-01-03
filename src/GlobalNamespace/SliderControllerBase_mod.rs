@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct SliderControllerBase {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
-    pub _cutoutAnimateEffect: *mut crate::GlobalNamespace::CutoutAnimateEffect,
+    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
+    pub _cutoutAnimateEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CutoutAnimateEffect,
+    >,
     pub _dissolving: bool,
 }
 #[cfg(feature = "SliderControllerBase")]

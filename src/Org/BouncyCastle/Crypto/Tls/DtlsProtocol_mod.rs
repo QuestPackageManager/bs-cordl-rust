@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DtlsProtocol {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mSecureRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub mSecureRandom: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsProtocol")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

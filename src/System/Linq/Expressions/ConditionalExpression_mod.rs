@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ConditionalExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
-    pub _Test_k__BackingField: *mut crate::System::Linq::Expressions::Expression,
-    pub _IfTrue_k__BackingField: *mut crate::System::Linq::Expressions::Expression,
+    pub _Test_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
+    pub _IfTrue_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+ConditionalExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct MultiplayerBadgesModelSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _positiveBadges: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::MultiplayerBadgeDataSO,
+    pub _positiveBadges: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::MultiplayerBadgeDataSO,
+        >,
     >,
-    pub _negativeBadges: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::MultiplayerBadgeDataSO,
+    pub _negativeBadges: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::MultiplayerBadgeDataSO,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerBadgesModelSO")]

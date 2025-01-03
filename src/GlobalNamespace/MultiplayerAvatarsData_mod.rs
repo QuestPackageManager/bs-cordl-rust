@@ -1,9 +1,11 @@
 #[cfg(feature = "MultiplayerAvatarsData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MultiplayerAvatarsData {
-    pub multiplayerAvatarsData: *mut crate::System::Collections::Generic::List_1<
-        crate::GlobalNamespace::MultiplayerAvatarData,
+    pub multiplayerAvatarsData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::MultiplayerAvatarData,
+        >,
     >,
     pub supportedAvatarTypeIdHashesBloomFilter: crate::GlobalNamespace::BitMask128,
 }

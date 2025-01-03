@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ProductInfoHeaderValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Comment_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _Product_k__BackingField: *mut crate::System::Net::Http::Headers::ProductHeaderValue,
+    pub _Comment_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _Product_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::Headers::ProductHeaderValue,
+    >,
 }
 #[cfg(feature = "System+Net+Http+Headers+ProductInfoHeaderValue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,15 +3,33 @@
 #[derive(Debug)]
 pub struct CenterStageScreenController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _defaultMenuLightsPreset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
-    pub _lobbyLightsPreset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
-    pub _countdownMenuLightsPreset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
-    pub _beatmapSelectionView: *mut crate::GlobalNamespace::BeatmapSelectionView,
-    pub _modifiersSelectionView: *mut crate::GlobalNamespace::ModifiersSelectionView,
-    pub _countdownController: *mut crate::GlobalNamespace::CountdownController,
-    pub _multiplayerLobbyCenterScreenLayoutAnimator: *mut crate::GlobalNamespace::MultiplayerLobbyCenterScreenLayoutAnimator,
-    pub _lobbyGameStateController: *mut crate::GlobalNamespace::ILobbyGameStateController,
-    pub _menuLightsManager: *mut crate::GlobalNamespace::MenuLightsManager,
+    pub _defaultMenuLightsPreset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsPresetSO,
+    >,
+    pub _lobbyLightsPreset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsPresetSO,
+    >,
+    pub _countdownMenuLightsPreset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsPresetSO,
+    >,
+    pub _beatmapSelectionView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapSelectionView,
+    >,
+    pub _modifiersSelectionView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ModifiersSelectionView,
+    >,
+    pub _countdownController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CountdownController,
+    >,
+    pub _multiplayerLobbyCenterScreenLayoutAnimator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLobbyCenterScreenLayoutAnimator,
+    >,
+    pub _lobbyGameStateController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyGameStateController,
+    >,
+    pub _menuLightsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsManager,
+    >,
     pub _countdownShown_k__BackingField: bool,
     pub _countdownEndTime: i64,
 }

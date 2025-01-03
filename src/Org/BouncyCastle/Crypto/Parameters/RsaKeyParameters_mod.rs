@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct RsaKeyParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub modulus: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub exponent: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub modulus: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub exponent: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+RsaKeyParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

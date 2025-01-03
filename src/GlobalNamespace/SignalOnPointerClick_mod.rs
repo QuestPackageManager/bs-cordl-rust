@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SignalOnPointerClick {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _inputFieldClickedSignal: *mut crate::GlobalNamespace::Signal,
+    pub _inputFieldClickedSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
 }
 #[cfg(feature = "SignalOnPointerClick")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

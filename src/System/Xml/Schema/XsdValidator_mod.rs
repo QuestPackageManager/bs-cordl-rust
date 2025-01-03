@@ -4,22 +4,28 @@
 pub struct XsdValidator {
     __cordl_parent: crate::System::Xml::Schema::BaseValidator,
     pub startIDConstraint: i32,
-    pub validationStack: *mut crate::System::Xml::HWStack,
-    pub attPresence: *mut crate::System::Collections::Hashtable,
-    pub nsManager: *mut crate::System::Xml::XmlNamespaceManager,
+    pub validationStack: quest_hook::libil2cpp::Gc<crate::System::Xml::HWStack>,
+    pub attPresence: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub nsManager: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
     pub bManageNamespaces: bool,
-    pub IDs: *mut crate::System::Collections::Hashtable,
-    pub idRefListHead: *mut crate::System::Xml::Schema::IdRefNode,
-    pub inlineSchemaParser: *mut crate::System::Xml::Schema::Parser,
+    pub IDs: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub idRefListHead: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IdRefNode>,
+    pub inlineSchemaParser: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::Parser,
+    >,
     pub processContents: crate::System::Xml::Schema::XmlSchemaContentProcessing,
-    pub NsXmlNs: *mut quest_hook::libil2cpp::Il2CppString,
-    pub NsXs: *mut quest_hook::libil2cpp::Il2CppString,
-    pub NsXsi: *mut quest_hook::libil2cpp::Il2CppString,
-    pub XsiType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub XsiNil: *mut quest_hook::libil2cpp::Il2CppString,
-    pub XsiSchemaLocation: *mut quest_hook::libil2cpp::Il2CppString,
-    pub XsiNoNamespaceSchemaLocation: *mut quest_hook::libil2cpp::Il2CppString,
-    pub XsdSchema: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NsXmlNs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub NsXs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub NsXsi: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub XsiType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub XsiNil: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub XsiSchemaLocation: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub XsiNoNamespaceSchemaLocation: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub XsdSchema: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Schema+XsdValidator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

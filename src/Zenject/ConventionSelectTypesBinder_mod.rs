@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ConventionSelectTypesBinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _bindInfo: *mut crate::Zenject::ConventionBindInfo,
+    pub _bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::ConventionBindInfo>,
 }
 #[cfg(feature = "Zenject+ConventionSelectTypesBinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

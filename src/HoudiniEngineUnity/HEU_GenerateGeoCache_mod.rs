@@ -24,83 +24,121 @@ pub struct HEU_GenerateGeoCache {
     pub _AssetID_k__BackingField: i32,
     pub _geoInfo: crate::HoudiniEngineUnity::HAPI_GeoInfo,
     pub _partInfo: crate::HoudiniEngineUnity::HAPI_PartInfo,
-    pub _partName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _vertexList: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _faceCounts: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _houdiniMaterialIDs: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _partName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _vertexList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub _faceCounts: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub _houdiniMaterialIDs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     pub _singleFaceUnityMaterial: bool,
     pub _singleFaceHoudiniMaterial: bool,
-    pub _unityMaterialInfos: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::HoudiniEngineUnity::HEU_UnityMaterialInfo,
+    pub _unityMaterialInfos: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::HoudiniEngineUnity::HEU_UnityMaterialInfo,
+        >,
     >,
     pub _unityMaterialAttrInfo: crate::HoudiniEngineUnity::HAPI_AttributeInfo,
-    pub _unityMaterialAttrName: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _unityMaterialAttrStringsMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _unityMaterialAttrName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub _unityMaterialAttrStringsMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub _substanceMaterialAttrNameInfo: crate::HoudiniEngineUnity::HAPI_AttributeInfo,
-    pub _substanceMaterialAttrName: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _substanceMaterialAttrStringsMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _substanceMaterialAttrName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub _substanceMaterialAttrStringsMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub _substanceMaterialAttrIndexInfo: crate::HoudiniEngineUnity::HAPI_AttributeInfo,
-    pub _substanceMaterialAttrIndex: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _inUseMaterials: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_MaterialData,
+    pub _substanceMaterialAttrIndex: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub _inUseMaterials: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_MaterialData,
+        >,
     >,
     pub _posAttrInfo: crate::HoudiniEngineUnity::HAPI_AttributeInfo,
-    pub _uvsAttrInfo: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::HoudiniEngineUnity::HAPI_AttributeInfo,
+    pub _uvsAttrInfo: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::HoudiniEngineUnity::HAPI_AttributeInfo>,
     >,
     pub _normalAttrInfo: crate::HoudiniEngineUnity::HAPI_AttributeInfo,
     pub _colorAttrInfo: crate::HoudiniEngineUnity::HAPI_AttributeInfo,
     pub _alphaAttrInfo: crate::HoudiniEngineUnity::HAPI_AttributeInfo,
     pub _tangentAttrInfo: crate::HoudiniEngineUnity::HAPI_AttributeInfo,
-    pub _posAttr: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _uvsAttr: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub _posAttr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub _uvsAttr: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<f32>>,
     >,
-    pub _normalAttr: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _colorAttr: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _alphaAttr: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _tangentAttr: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _groups: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _normalAttr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub _colorAttr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub _alphaAttr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub _tangentAttr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub _groups: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _hasGroupGeometry: bool,
-    pub _groupSplitVertexIndices: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _groupSplitVertexIndices: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        >,
     >,
-    pub _groupSplitFaceIndices: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::System::Collections::Generic::List_1<i32>,
+    pub _groupSplitFaceIndices: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::System::Collections::Generic::List_1<i32>,
+        >,
     >,
-    pub _groupVertexOffsets: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::System::Collections::Generic::List_1<i32>,
+    pub _groupVertexOffsets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::System::Collections::Generic::List_1<i32>,
+        >,
     >,
-    pub _allCollisionVertexList: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _allCollisionFaceIndices: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _allCollisionVertexList: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub _allCollisionFaceIndices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     pub _normalCosineThreshold: f32,
     pub _hasLODGroups: bool,
-    pub _LODTransitionValues: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub _LODTransitionValues: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
     pub _isMeshReadWrite: bool,
-    pub _colliderInfos: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo,
+    pub _colliderInfos: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo,
+        >,
     >,
-    pub _materialCache: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_MaterialData,
+    pub _materialCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_MaterialData,
+        >,
     >,
-    pub _materialIDToDataMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::HoudiniEngineUnity::HEU_MaterialData,
+    pub _materialIDToDataMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::HoudiniEngineUnity::HEU_MaterialData,
+        >,
     >,
-    pub _assetCacheFolderPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _meshIndexFormat: *mut crate::HoudiniEngineUnity::HEU_MeshIndexFormat,
+    pub _assetCacheFolderPath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _meshIndexFormat: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_MeshIndexFormat,
+    >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -636,11 +674,15 @@ pub struct HEU_GenerateGeoCache_HEU_ColliderInfo {
     pub _colliderSize: crate::UnityEngine::Vector3,
     pub _colliderRadius: f32,
     pub _convexCollider: bool,
-    pub _collisionGroupName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _collisionVertices: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub _collisionGroupName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _collisionIndices: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _collisionVertices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
+    pub _collisionIndices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     pub _meshTopology: crate::UnityEngine::MeshTopology,
     pub _isTrigger: bool,
 }

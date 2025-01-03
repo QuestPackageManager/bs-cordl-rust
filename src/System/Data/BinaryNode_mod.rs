@@ -4,8 +4,8 @@
 pub struct BinaryNode {
     __cordl_parent: crate::System::Data::ExpressionNode,
     pub _op: i32,
-    pub _left: *mut crate::System::Data::ExpressionNode,
-    pub _right: *mut crate::System::Data::ExpressionNode,
+    pub _left: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
+    pub _right: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
 }
 #[cfg(feature = "System+Data+BinaryNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

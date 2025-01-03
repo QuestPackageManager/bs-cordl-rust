@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct OVRSceneModelLoader {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _SceneManager_k__BackingField: *mut crate::GlobalNamespace::OVRSceneManager,
+    pub _SceneManager_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRSceneManager,
+    >,
     pub _sceneCaptureRequested: bool,
 }
 #[cfg(feature = "OVRSceneModelLoader")]

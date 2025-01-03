@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct StaticMemoryPoolBaseBase_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _stack: *mut crate::System::Collections::Generic::Stack_1<TValue>,
-    pub _onDespawnedMethod: *mut crate::System::Action_1<TValue>,
+    pub _stack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<TValue>,
+    >,
+    pub _onDespawnedMethod: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
     pub _activeCount: i32,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }

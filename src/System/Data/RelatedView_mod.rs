@@ -5,9 +5,9 @@ pub struct RelatedView {
     __cordl_parent: crate::System::Data::DataView,
     pub _parentKey: crate::System::Nullable_1<crate::System::Data::DataKey>,
     pub _childKey: crate::System::Data::DataKey,
-    pub _parentRowView: *mut crate::System::Data::DataRowView,
-    pub _filterValues: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _parentRowView: quest_hook::libil2cpp::Gc<crate::System::Data::DataRowView>,
+    pub _filterValues: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
 }
 #[cfg(feature = "System+Data+RelatedView")]

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ReadOnlyCollection_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub list: *mut crate::System::Collections::Generic::IList_1<T>,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Collections+ObjectModel+ReadOnlyCollection_1")]

@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct PublicKeyAndChallenge {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub pkacSeq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    pub spki: *mut crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
-    pub challenge: *mut crate::Org::BouncyCastle::Asn1::DerIA5String,
+    pub pkacSeq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    pub spki: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+    >,
+    pub challenge: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerIA5String,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Mozilla+PublicKeyAndChallenge")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

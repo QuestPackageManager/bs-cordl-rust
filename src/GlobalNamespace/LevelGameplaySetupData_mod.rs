@@ -4,7 +4,9 @@
 pub struct LevelGameplaySetupData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
-    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
+    >,
 }
 #[cfg(feature = "LevelGameplaySetupData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

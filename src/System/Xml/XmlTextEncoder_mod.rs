@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct XmlTextEncoder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub textWriter: *mut crate::System::IO::TextWriter,
+    pub textWriter: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
     pub inAttribute: bool,
     pub quoteChar: char,
-    pub attrValue: *mut crate::System::Text::StringBuilder,
+    pub attrValue: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub cacheAttrValue: bool,
     pub xmlCharType: crate::System::Xml::XmlCharType,
 }

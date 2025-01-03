@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct BindSignalToBinder_1<TSignal: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _bindStatement: *mut crate::Zenject::BindStatement,
-    pub _signalBindInfo: *mut crate::Zenject::SignalBindingBindInfo,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _bindStatement: quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
+    pub _signalBindInfo: quest_hook::libil2cpp::Gc<
+        crate::Zenject::SignalBindingBindInfo,
+    >,
     __cordl_phantom_TSignal: std::marker::PhantomData<TSignal>,
 }
 #[cfg(feature = "Zenject+BindSignalToBinder_1")]

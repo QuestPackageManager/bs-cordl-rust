@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ElGamalParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub p: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub g: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub l: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ElGamalParameters")]

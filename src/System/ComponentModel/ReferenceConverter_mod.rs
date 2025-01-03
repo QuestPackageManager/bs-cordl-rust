@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ReferenceConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
-    pub _type: *mut crate::System::Type,
+    pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+ComponentModel+ReferenceConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -173,7 +173,9 @@ for crate::System::ComponentModel::ReferenceConverter {
 #[derive(Debug)]
 pub struct ReferenceConverter_ReferenceComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _converter: *mut crate::System::ComponentModel::ReferenceConverter,
+    pub _converter: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::ReferenceConverter,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+ReferenceConverter+ReferenceComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

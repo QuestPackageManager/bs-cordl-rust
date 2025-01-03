@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct EventSystemListener {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub pointerDidEnterEvent: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::EventSystems::PointerEventData,
+    pub pointerDidEnterEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::EventSystems::PointerEventData>,
     >,
-    pub pointerDidExitEvent: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::EventSystems::PointerEventData,
+    pub pointerDidExitEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::EventSystems::PointerEventData>,
     >,
 }
 #[cfg(feature = "HMUI+EventSystemListener")]

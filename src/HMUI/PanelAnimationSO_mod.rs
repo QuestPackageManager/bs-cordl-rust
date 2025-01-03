@@ -4,10 +4,18 @@
 pub struct PanelAnimationSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _duration: f32,
-    pub _scaleXAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _scaleYAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _alphaAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _parentAlphaAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub _scaleXAnimationCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
+    pub _scaleYAnimationCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
+    pub _alphaAnimationCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
+    pub _parentAlphaAnimationCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
 }
 #[cfg(feature = "HMUI+PanelAnimationSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,20 +3,22 @@
 #[derive(Debug)]
 pub struct MissionObjectiveGameUIView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _notFailedIcon: *mut crate::UnityEngine::Sprite,
-    pub _failedIcon: *mut crate::UnityEngine::Sprite,
-    pub _notClearedIcon: *mut crate::UnityEngine::Sprite,
-    pub _clearedIcon: *mut crate::UnityEngine::Sprite,
-    pub _resultIcon: *mut crate::UnityEngine::UI::Image,
+    pub _notFailedIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _failedIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _notClearedIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _clearedIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _resultIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     pub _finalClearIconColor: crate::UnityEngine::Color,
     pub _finalFailIconColor: crate::UnityEngine::Color,
     pub _nonFinalIconColor: crate::UnityEngine::Color,
-    pub _clearedPS: *mut crate::UnityEngine::ParticleSystem,
+    pub _clearedPS: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
     pub _numberOfParticles: i32,
-    pub _nameText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _valueText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _conditionText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _missionObjectiveChecker: *mut crate::GlobalNamespace::MissionObjectiveChecker,
+    pub _nameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _valueText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _conditionText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _missionObjectiveChecker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionObjectiveChecker,
+    >,
 }
 #[cfg(feature = "MissionObjectiveGameUIView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

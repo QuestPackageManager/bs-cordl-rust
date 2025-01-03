@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SliderInteractionEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _sliderInteractionManager: *mut crate::GlobalNamespace::SliderInteractionManager,
+    pub _sliderInteractionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SliderInteractionManager,
+    >,
 }
 #[cfg(feature = "SliderInteractionEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

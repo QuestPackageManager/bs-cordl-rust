@@ -3,21 +3,29 @@
 #[derive(Debug)]
 pub struct OculusLevelProductCollectionModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _levelIdToProductData: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
+    pub _levelIdToProductData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
+        >,
     >,
-    pub _levelPackIdToProductData: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData,
+    pub _levelPackIdToProductData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData,
+        >,
     >,
-    pub _levelPackRedirectionData: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirectionData,
+    pub _levelPackRedirectionData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirectionData,
+        >,
     >,
-    pub _assetFileToSku: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _assetFileToSku: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "OculusLevelProductCollectionModel")]
@@ -172,7 +180,9 @@ for crate::GlobalNamespace::OculusLevelProductCollectionModel {
 pub struct OculusLevelProductCollectionModel_AdditionalSkus {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub checkAdditionalSkus: bool,
-    pub noEnvironmentKeywordsSku: *mut quest_hook::libil2cpp::Il2CppString,
+    pub noEnvironmentKeywordsSku: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "OculusLevelProductCollectionModel+AdditionalSkus")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -230,11 +240,15 @@ for crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus {
 #[derive(Debug)]
 pub struct OculusLevelProductCollectionModel_LevelPackProductData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _levelPackId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _sku: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _additionalSkus: *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus,
-    pub _levelProductsData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
+    pub _levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _sku: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _additionalSkus: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus,
+    >,
+    pub _levelProductsData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
+        >,
     >,
 }
 #[cfg(feature = "OculusLevelProductCollectionModel+LevelPackProductData")]
@@ -396,10 +410,14 @@ impl AsMut<
 #[derive(Debug)]
 pub struct OculusLevelProductCollectionModel_LevelPackRedirectionData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _targetLevelPackId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _shouldOwnLevelPackId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _redirectedSku: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _validUntilDate: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _targetLevelPackId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _shouldOwnLevelPackId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _redirectedSku: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _validUntilDate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "OculusLevelProductCollectionModel+LevelPackRedirectionData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -509,9 +527,11 @@ for crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirecti
 #[derive(Debug)]
 pub struct OculusLevelProductCollectionModel_LevelProductData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _levelId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _sku: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _additionalSkus: *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus,
+    pub _levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _sku: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _additionalSkus: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus,
+    >,
 }
 #[cfg(feature = "OculusLevelProductCollectionModel+LevelProductData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

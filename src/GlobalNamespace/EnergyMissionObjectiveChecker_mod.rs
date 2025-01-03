@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct EnergyMissionObjectiveChecker {
     __cordl_parent: crate::GlobalNamespace::MissionObjectiveChecker,
-    pub _energyCounter: *mut crate::GlobalNamespace::GameEnergyCounter,
+    pub _energyCounter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameEnergyCounter,
+    >,
 }
 #[cfg(feature = "EnergyMissionObjectiveChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

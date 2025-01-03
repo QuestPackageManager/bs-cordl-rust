@@ -4,7 +4,9 @@
 pub struct BerApplicationSpecificParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub tag: i32,
-    pub parser: *mut crate::Org::BouncyCastle::Asn1::Asn1StreamParser,
+    pub parser: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1StreamParser,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerApplicationSpecificParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

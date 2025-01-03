@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct Touchscreen {
     __cordl_parent: crate::UnityEngine::InputSystem::Pointer,
-    pub _primaryTouch_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::TouchControl,
+    pub _primaryTouch_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::TouchControl,
+    >,
     pub _touches_k__BackingField: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
         *mut crate::UnityEngine::InputSystem::Controls::TouchControl,
     >,

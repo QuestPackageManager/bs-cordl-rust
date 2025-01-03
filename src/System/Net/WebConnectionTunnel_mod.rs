@@ -3,20 +3,28 @@
 #[derive(Debug)]
 pub struct WebConnectionTunnel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Request_k__BackingField: *mut crate::System::Net::HttpWebRequest,
-    pub _ConnectUri_k__BackingField: *mut crate::System::Uri,
-    pub connectRequest: *mut crate::System::Net::HttpWebRequest,
+    pub _Request_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::HttpWebRequest,
+    >,
+    pub _ConnectUri_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    pub connectRequest: quest_hook::libil2cpp::Gc<crate::System::Net::HttpWebRequest>,
     pub ntlmAuthState: crate::System::Net::WebConnectionTunnel_NtlmAuthState,
     pub _Success_k__BackingField: bool,
     pub _CloseConnection_k__BackingField: bool,
     pub _StatusCode_k__BackingField: i32,
-    pub _StatusDescription_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _Challenge_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _StatusDescription_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _Headers_k__BackingField: *mut crate::System::Net::WebHeaderCollection,
-    pub _ProxyVersion_k__BackingField: *mut crate::System::Version,
-    pub _Data_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _Challenge_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub _Headers_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::WebHeaderCollection,
+    >,
+    pub _ProxyVersion_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Version>,
+    pub _Data_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
 }
 #[cfg(feature = "System+Net+WebConnectionTunnel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

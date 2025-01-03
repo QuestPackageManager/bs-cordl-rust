@@ -1,8 +1,10 @@
 #[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputBindingCompositeContext {
-    pub m_State: *mut crate::UnityEngine::InputSystem::InputActionState,
+    pub m_State: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionState,
+    >,
     pub m_BindingIndex: i32,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext")]
@@ -186,7 +188,7 @@ impl crate::UnityEngine::InputSystem::InputBindingCompositeContext {
     feature = "UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputBindingCompositeContext_DefaultComparer_1<
     TValue: quest_hook::libil2cpp::Type,
 > {
@@ -267,10 +269,12 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultCompare
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputBindingCompositeContext_PartBinding {
     pub _part_k__BackingField: i32,
-    pub _control_k__BackingField: *mut crate::UnityEngine::InputSystem::InputControl,
+    pub _control_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputControl,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

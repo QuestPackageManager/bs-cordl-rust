@@ -7,9 +7,9 @@ pub struct SemVer {
     pub m_Minor: i32,
     pub m_Patch: i32,
     pub m_Build: i32,
-    pub m_Type: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Metadata: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Date: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Metadata: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Date: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,16 +3,20 @@
 #[derive(Debug)]
 pub struct PlaybackRenderer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub texturesReadyEvent: *mut crate::System::Action,
-    pub _clearBackgroundShader: *mut crate::UnityEngine::Shader,
+    pub texturesReadyEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _clearBackgroundShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub _isSetup: bool,
-    pub _hmd: *mut crate::UnityEngine::Transform,
-    pub _camera: *mut crate::UnityEngine::Camera,
-    pub _cameraCalibration: *mut crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration,
-    pub _clipQuad: *mut crate::UnityEngine::GameObject,
-    pub _clipMaterial: *mut crate::UnityEngine::Material,
-    pub _screenshots: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+    pub _hmd: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    pub _cameraCalibration: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration,
+    >,
+    pub _clipQuad: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _clipMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _screenshots: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+        >,
     >,
 }
 #[cfg(feature = "PlaybackRenderer")]
@@ -231,11 +235,11 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlaybackRende
 #[derive(Debug)]
 pub struct PlaybackRenderer_PlaybackScreenshot {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _layerMask: crate::UnityEngine::LayerMask,
     pub _type: crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type,
-    pub _texture: *mut crate::UnityEngine::RenderTexture,
-    pub _path: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    pub _path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _backgroundColor: crate::UnityEngine::Color,
 }
 #[cfg(feature = "PlaybackRenderer+PlaybackScreenshot")]

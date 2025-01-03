@@ -1,6 +1,6 @@
 #[cfg(feature = "BitMask256")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BitMask256 {
     pub _d0: u64,
     pub _d1: u64,

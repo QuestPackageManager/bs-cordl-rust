@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AnimationPlayableAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
-    pub m_Clip: *mut crate::UnityEngine::AnimationClip,
+    pub m_Clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
     pub m_Position: crate::UnityEngine::Vector3,
     pub m_EulerAngles: crate::UnityEngine::Vector3,
     pub m_UseTrackMatchFields: bool,

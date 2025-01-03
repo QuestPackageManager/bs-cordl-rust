@@ -3,16 +3,24 @@
 #[derive(Debug)]
 pub struct BeatmapLevelDataLoadRequest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _task: *mut crate::System::Threading::Tasks::Task_1<
-        *mut crate::GlobalNamespace::IBeatmapLevelData,
+    pub _task: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::IBeatmapLevelData,
+        >,
     >,
-    pub _assetBundlePath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _levelDataAssetName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _internalCancellationSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _externalCancellationTokens: *mut crate::System::Collections::Generic::List_1<
-        crate::System::Threading::CancellationToken,
+    pub _assetBundlePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _levelDataAssetName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub assetBundle: *mut crate::UnityEngine::AssetBundle,
+    pub _internalCancellationSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub _externalCancellationTokens: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::System::Threading::CancellationToken,
+        >,
+    >,
+    pub assetBundle: quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
 }
 #[cfg(feature = "BeatmapLevelDataLoadRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

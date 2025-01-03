@@ -5,16 +5,26 @@
 #[derive(Debug)]
 pub struct ContentCatalogDataEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _InternalId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _Provider_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _Keys_k__BackingField: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _InternalId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _Dependencies_k__BackingField: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _Provider_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _Data_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _ResourceType_k__BackingField: *mut crate::System::Type,
+    pub _Keys_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    >,
+    pub _Dependencies_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    >,
+    pub _Data_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub _ResourceType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(
     feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogDataEntry"

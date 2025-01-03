@@ -4,16 +4,26 @@
 pub struct Challenge {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub CreationType: crate::Oculus::Platform::ChallengeCreationType,
-    pub Description: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub EndDate: crate::System::DateTime,
     pub _cordl_ID: u64,
-    pub InvitedUsersOptional: *mut crate::Oculus::Platform::Models::UserList,
-    pub InvitedUsers: *mut crate::Oculus::Platform::Models::UserList,
-    pub Leaderboard: *mut crate::Oculus::Platform::Models::Leaderboard,
-    pub ParticipantsOptional: *mut crate::Oculus::Platform::Models::UserList,
-    pub Participants: *mut crate::Oculus::Platform::Models::UserList,
+    pub InvitedUsersOptional: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::UserList,
+    >,
+    pub InvitedUsers: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::UserList,
+    >,
+    pub Leaderboard: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::Leaderboard,
+    >,
+    pub ParticipantsOptional: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::UserList,
+    >,
+    pub Participants: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::UserList,
+    >,
     pub StartDate: crate::System::DateTime,
-    pub Title: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Visibility: crate::Oculus::Platform::ChallengeVisibility,
 }
 #[cfg(feature = "Oculus+Platform+Models+Challenge")]

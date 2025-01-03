@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct Function {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _id: crate::System::Data::FunctionId,
-    pub _result: *mut crate::System::Type,
+    pub _result: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _isValidateArguments: bool,
     pub _isVariantArgumentList: bool,
     pub _argumentCount: i32,
-    pub _parameters: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    pub _parameters: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    >,
 }
 #[cfg(feature = "System+Data+Function")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

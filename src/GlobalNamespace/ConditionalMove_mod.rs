@@ -4,7 +4,7 @@
 pub struct ConditionalMove {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _offset: crate::UnityEngine::Vector3,
-    pub _value: *mut crate::GlobalNamespace::BoolSO,
+    pub _value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BoolSO>,
     pub _activateOnFalse: bool,
 }
 #[cfg(feature = "ConditionalMove")]

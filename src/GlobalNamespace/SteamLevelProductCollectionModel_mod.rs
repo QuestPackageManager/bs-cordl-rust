@@ -3,17 +3,23 @@
 #[derive(Debug)]
 pub struct SteamLevelProductCollectionModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _levelIdToProductData: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+    pub _levelIdToProductData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+        >,
     >,
-    pub _levelPackIdToProductData: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData,
+    pub _levelPackIdToProductData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData,
+        >,
     >,
-    pub _levelPackRedirectionData: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData,
+    pub _levelPackRedirectionData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectionData,
+        >,
     >,
     pub _maxPossibleInstalledDepots: i32,
 }
@@ -223,10 +229,12 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
 #[derive(Debug)]
 pub struct SteamLevelProductCollectionModel_LevelPackProductData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _levelPackId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _bundleId: u32,
-    pub _levelProductsData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+    pub _levelProductsData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+        >,
     >,
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelPackProductData")]
@@ -367,10 +375,14 @@ impl AsMut<
 #[derive(Debug)]
 pub struct SteamLevelProductCollectionModel_LevelPackRedirectionData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _targetLevelPackId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _shouldOwnLevelPackId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _targetLevelPackId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _shouldOwnLevelPackId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _redirectedBundleId: u32,
-    pub _validUntilDate: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _validUntilDate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelPackRedirectionData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -474,9 +486,11 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectio
 #[derive(Debug)]
 pub struct SteamLevelProductCollectionModel_LevelProductData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _levelId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _appId: u32,
-    pub _levelDepotData: *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData,
+    pub _levelDepotData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData,
+    >,
 }
 #[cfg(feature = "SteamLevelProductCollectionModel+LevelProductData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

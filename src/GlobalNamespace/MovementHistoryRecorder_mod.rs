@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MovementHistoryRecorder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _averagingValueRecorer: *mut crate::GlobalNamespace::AveragingValueRecorder,
+    pub _averagingValueRecorer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AveragingValueRecorder,
+    >,
     pub _increaseSpeed: f32,
     pub _decreaseSpeed: f32,
     pub _accum: f32,

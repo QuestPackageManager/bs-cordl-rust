@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct ArgInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _paramMap: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _paramMap: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub _inoutArgCount: i32,
-    pub _method: *mut crate::System::Reflection::MethodBase,
+    pub _method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+ArgInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+CountingBloomFilter")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CountingBloomFilter {
     pub m_Counters: crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer,
 }
@@ -95,7 +95,7 @@ impl crate::UnityEngine::UIElements::CountingBloomFilter {
 }
 #[cfg(feature = "UnityEngine+UIElements+CountingBloomFilter+_m_Counters_e__FixedBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CountingBloomFilter__m_Counters_e__FixedBuffer {
     pub FixedElementField: u8,
 }

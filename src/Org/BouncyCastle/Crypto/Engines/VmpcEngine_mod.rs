@@ -4,10 +4,10 @@
 pub struct VmpcEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub n: u8,
-    pub P: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub P: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub s: u8,
-    pub workingIV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub workingKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub workingIV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub workingKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+VmpcEngine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

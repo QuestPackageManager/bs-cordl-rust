@@ -5,42 +5,64 @@ pub struct StyleSheet {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_ImportedWithErrors: bool,
     pub m_ImportedWithWarnings: bool,
-    pub m_Rules: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UIElements::StyleRule,
+    pub m_Rules: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::StyleRule,
+        >,
     >,
-    pub m_ComplexSelectors: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+    pub m_ComplexSelectors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+        >,
     >,
-    pub floats: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub dimensions: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::UIElements::StyleSheets::Dimension,
+    pub floats: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub dimensions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::UIElements::StyleSheets::Dimension,
+        >,
     >,
-    pub colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
-    pub strings: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub colors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
     >,
-    pub assets: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
-    pub imports: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::UIElements::StyleSheet_ImportStruct,
+    pub strings: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub m_FlattenedImportedStyleSheets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::StyleSheet,
+    pub assets: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+    >,
+    pub imports: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::UIElements::StyleSheet_ImportStruct,
+        >,
+    >,
+    pub m_FlattenedImportedStyleSheets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::StyleSheet,
+        >,
     >,
     pub m_ContentHash: i32,
-    pub scalableImages: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::UIElements::StyleSheets::ScalableImage,
+    pub scalableImages: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::UIElements::StyleSheets::ScalableImage,
+        >,
     >,
-    pub orderedNameSelectors: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+    pub orderedNameSelectors: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+        >,
     >,
-    pub orderedTypeSelectors: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+    pub orderedTypeSelectors: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+        >,
     >,
-    pub orderedClassSelectors: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+    pub orderedClassSelectors: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+        >,
     >,
     pub m_IsDefaultStyleSheet: bool,
 }
@@ -602,11 +624,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Style
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StyleSheet_ImportStruct {
-    pub styleSheet: *mut crate::UnityEngine::UIElements::StyleSheet,
-    pub mediaQueries: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub styleSheet: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleSheet,
+    >,
+    pub mediaQueries: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]

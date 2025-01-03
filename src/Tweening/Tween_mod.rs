@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct Tween {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub onStart: *mut crate::System::Action,
-    pub onCompleted: *mut crate::System::Action,
-    pub onKilled: *mut crate::System::Action,
+    pub onStart: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub onCompleted: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub onKilled: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _progress: f32,
     pub _startTime: f32,
     pub _duration: f32,

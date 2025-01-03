@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DropdownMenuSeparator {
     __cordl_parent: crate::UnityEngine::UIElements::DropdownMenuItem,
-    pub _subMenuPath_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _subMenuPath_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+DropdownMenuSeparator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

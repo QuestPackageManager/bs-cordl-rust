@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AttributeCertificateHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub holder: *mut crate::Org::BouncyCastle::Asn1::X509::Holder,
+    pub holder: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Holder>,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+AttributeCertificateHolder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -4,7 +4,7 @@
 pub struct HeartbeatMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mType: u8,
-    pub mPayload: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mPayload: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mPaddingLength: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+HeartbeatMessage")]

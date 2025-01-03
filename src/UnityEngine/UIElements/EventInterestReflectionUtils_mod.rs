@@ -72,7 +72,7 @@ for crate::UnityEngine::UIElements::EventInterestReflectionUtils {
     feature = "UnityEngine+UIElements+EventInterestReflectionUtils+DefaultEventInterests"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct EventInterestReflectionUtils_DefaultEventInterests {
     pub DefaultActionCategories: i32,
     pub DefaultActionAtTargetCategories: i32,

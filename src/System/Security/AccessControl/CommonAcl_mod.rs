@@ -7,7 +7,9 @@ pub struct CommonAcl {
     pub is_canonical: bool,
     pub is_container: bool,
     pub is_ds: bool,
-    pub raw_acl: *mut crate::System::Security::AccessControl::RawAcl,
+    pub raw_acl: quest_hook::libil2cpp::Gc<
+        crate::System::Security::AccessControl::RawAcl,
+    >,
 }
 #[cfg(feature = "System+Security+AccessControl+CommonAcl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

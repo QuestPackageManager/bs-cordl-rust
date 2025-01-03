@@ -64,8 +64,8 @@ for crate::GlobalNamespace::BeatmapSaveDataHelpers {
 #[derive(Debug)]
 pub struct BeatmapSaveDataHelpers_VersionSerializedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _version: *mut quest_hook::libil2cpp::Il2CppString,
-    pub version: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "BeatmapSaveDataHelpers+VersionSerializedData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

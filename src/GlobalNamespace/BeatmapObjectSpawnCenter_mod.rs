@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct BeatmapObjectSpawnCenter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _distances: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapObjectSpawnCenter_PlayerCountToDistance,
+    pub _distances: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BeatmapObjectSpawnCenter_PlayerCountToDistance,
+        >,
     >,
     pub _defaultDistnace: f32,
-    pub spawnCenterDistanceWasFoundEvent: *mut crate::System::Action_1<f32>,
+    pub spawnCenterDistanceWasFoundEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<f32>,
+    >,
     pub _spawnCenterDistanceWasFound: bool,
     pub _spawnCenterDistance: f32,
 }

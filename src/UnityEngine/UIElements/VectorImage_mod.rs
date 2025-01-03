@@ -4,13 +4,17 @@
 pub struct VectorImage {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub version: i32,
-    pub atlas: *mut crate::UnityEngine::Texture2D,
-    pub vertices: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::UIElements::VectorImageVertex,
+    pub atlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    pub vertices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::UIElements::VectorImageVertex,
+        >,
     >,
-    pub indices: *mut quest_hook::libil2cpp::Il2CppArray<u16>,
-    pub settings: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::UIElements::GradientSettings,
+    pub indices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+    pub settings: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::UIElements::GradientSettings,
+        >,
     >,
     pub _cordl_size: crate::UnityEngine::Vector2,
 }

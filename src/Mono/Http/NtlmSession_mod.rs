@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct NtlmSession {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub message: *mut crate::Mono::Security::Protocol::Ntlm::MessageBase,
+    pub message: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Protocol::Ntlm::MessageBase,
+    >,
 }
 #[cfg(feature = "Mono+Http+NtlmSession")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

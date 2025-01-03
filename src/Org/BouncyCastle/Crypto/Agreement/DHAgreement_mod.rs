@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct DHAgreement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub key: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
-    pub dhParams: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
-    pub privateValue: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub key: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
+    >,
+    pub dhParams: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+    >,
+    pub privateValue: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+DHAgreement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

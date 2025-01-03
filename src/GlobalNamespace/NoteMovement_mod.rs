@@ -3,20 +3,24 @@
 #[derive(Debug)]
 pub struct NoteMovement {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _waiting: *mut crate::GlobalNamespace::NoteWaiting,
-    pub _floorMovement: *mut crate::GlobalNamespace::NoteFloorMovement,
-    pub _jump: *mut crate::GlobalNamespace::NoteJump,
-    pub _zOffset: f32,
-    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
-    pub didInitEvent: *mut crate::System::Action,
-    pub noteDidStartJumpEvent: *mut crate::System::Action,
-    pub noteDidFinishJumpEvent: *mut crate::System::Action,
-    pub noteDidPassMissedMarkerEvent: *mut crate::System::Action,
-    pub noteDidPassHalfJumpEvent: *mut crate::System::Action,
-    pub noteDidPassJumpThreeQuartersEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::NoteMovement,
+    pub _waiting: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteWaiting>,
+    pub _floorMovement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteFloorMovement,
     >,
-    pub noteDidMoveInJumpPhaseEvent: *mut crate::System::Action,
+    pub _jump: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
+    pub _zOffset: f32,
+    pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVariableMovementDataProvider,
+    >,
+    pub didInitEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub noteDidStartJumpEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub noteDidFinishJumpEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub noteDidPassMissedMarkerEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub noteDidPassHalfJumpEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub noteDidPassJumpThreeQuartersEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::NoteMovement>,
+    >,
+    pub noteDidMoveInJumpPhaseEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _position: crate::UnityEngine::Vector3,
     pub _prevPosition: crate::UnityEngine::Vector3,
     pub _localPosition: crate::UnityEngine::Vector3,

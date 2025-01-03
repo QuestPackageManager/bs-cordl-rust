@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct XRLayoutBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub parentLayout: *mut quest_hook::libil2cpp::Il2CppString,
-    pub interfaceName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub descriptor: *mut crate::UnityEngine::InputSystem::XR::XRDeviceDescriptor,
+    pub parentLayout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub interfaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub descriptor: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::XR::XRDeviceDescriptor,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+XRLayoutBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

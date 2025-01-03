@@ -5,13 +5,23 @@ pub struct RecordingToolManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub recordingToolEnabled: bool,
     pub performanceRecordingEnabled: bool,
-    pub configJsonData: *mut quest_hook::libil2cpp::Il2CppString,
-    pub recordingToolSettings: *mut crate::GlobalNamespace::RecordingToolSettings,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _configurationProcessor: *mut crate::GlobalNamespace::RecordingToolConfigurationProcessor,
-    pub _menuTransitionsHelper: *mut crate::GlobalNamespace::MenuTransitionsHelper,
-    pub _environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub configJsonData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub recordingToolSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecordingToolSettings,
+    >,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _configurationProcessor: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecordingToolConfigurationProcessor,
+    >,
+    pub _menuTransitionsHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuTransitionsHelper,
+    >,
+    pub _environmentsListModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentsListModel,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
     pub _currentRecordingIndex: i32,
 }
 #[cfg(feature = "RecordingToolManager")]
@@ -152,7 +162,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RecordingTool
 }
 #[cfg(feature = "RecordingToolManager+SetupData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RecordingToolManager_SetupData {
     pub profileSong: bool,
     pub runAutopilot: bool,

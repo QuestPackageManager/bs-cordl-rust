@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct ClampedDragger_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::Clickable,
-    pub dragging: *mut crate::System::Action,
-    pub draggingEnded: *mut crate::System::Action,
+    pub dragging: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub draggingEnded: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _dragDirection_k__BackingField: crate::UnityEngine::UIElements::ClampedDragger_1_DragDirection<
         T,
     >,
-    pub _slider_k__BackingField: *mut crate::UnityEngine::UIElements::BaseSlider_1<T>,
+    pub _slider_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseSlider_1<T>,
+    >,
     pub _startMousePosition_k__BackingField: crate::UnityEngine::Vector2,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

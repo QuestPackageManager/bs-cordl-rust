@@ -5,8 +5,8 @@ pub struct Task_WhenAllPromise {
     __cordl_parent: crate::System::Threading::Tasks::Task_1<
         crate::System::Threading::Tasks::VoidTaskResult,
     >,
-    pub m_tasks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Threading::Tasks::Task,
+    pub m_tasks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Threading::Tasks::Task>,
     >,
     pub m_count: i32,
 }

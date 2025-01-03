@@ -3,15 +3,17 @@
 #[derive(Debug)]
 pub struct HttpListenerRequestUriBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub rawUri: *mut quest_hook::libil2cpp::Il2CppString,
-    pub cookedUriScheme: *mut quest_hook::libil2cpp::Il2CppString,
-    pub cookedUriHost: *mut quest_hook::libil2cpp::Il2CppString,
-    pub cookedUriPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub cookedUriQuery: *mut quest_hook::libil2cpp::Il2CppString,
-    pub requestUriString: *mut crate::System::Text::StringBuilder,
-    pub rawOctets: *mut crate::System::Collections::Generic::List_1<u8>,
-    pub rawPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub requestUri: *mut crate::System::Uri,
+    pub rawUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub cookedUriScheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub cookedUriHost: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub cookedUriPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub cookedUriQuery: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub requestUriString: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    pub rawOctets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<u8>,
+    >,
+    pub rawPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub requestUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
 }
 #[cfg(feature = "System+Net+HttpListenerRequestUriBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

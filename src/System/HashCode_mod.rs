@@ -1,6 +1,6 @@
 #[cfg(feature = "System+HashCode")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HashCode {
     pub _v1: u32,
     pub _v2: u32,

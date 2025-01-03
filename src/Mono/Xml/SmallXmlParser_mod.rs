@@ -3,15 +3,19 @@
 #[derive(Debug)]
 pub struct SmallXmlParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub handler: *mut crate::Mono::Xml::SmallXmlParser_IContentHandler,
-    pub reader: *mut crate::System::IO::TextReader,
-    pub elementNames: *mut crate::System::Collections::Stack,
-    pub xmlSpaces: *mut crate::System::Collections::Stack,
-    pub xmlSpace: *mut quest_hook::libil2cpp::Il2CppString,
-    pub buffer: *mut crate::System::Text::StringBuilder,
-    pub nameBuffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub handler: quest_hook::libil2cpp::Gc<
+        crate::Mono::Xml::SmallXmlParser_IContentHandler,
+    >,
+    pub reader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
+    pub elementNames: quest_hook::libil2cpp::Gc<crate::System::Collections::Stack>,
+    pub xmlSpaces: quest_hook::libil2cpp::Gc<crate::System::Collections::Stack>,
+    pub xmlSpace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub buffer: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    pub nameBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub isWhitespace: bool,
-    pub attributes: *mut crate::Mono::Xml::SmallXmlParser_AttrListImpl,
+    pub attributes: quest_hook::libil2cpp::Gc<
+        crate::Mono::Xml::SmallXmlParser_AttrListImpl,
+    >,
     pub line: i32,
     pub column: i32,
     pub resetColumn: bool,
@@ -303,11 +307,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Xml::SmallXmlParser {
 #[derive(Debug)]
 pub struct SmallXmlParser_AttrListImpl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub attrNames: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub attrNames: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub attrValues: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub attrValues: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "Mono+Xml+SmallXmlParser+AttrListImpl")]

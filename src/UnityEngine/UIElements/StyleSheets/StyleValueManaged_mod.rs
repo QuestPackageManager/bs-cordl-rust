@@ -1,10 +1,10 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleValueManaged")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StyleValueManaged {
     pub id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     pub keyword: crate::UnityEngine::UIElements::StyleKeyword,
-    pub value: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleValueManaged")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

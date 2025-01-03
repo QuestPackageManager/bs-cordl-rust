@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ifreq_mtu {
     padding: [u8; 20usize],
 }
@@ -32,7 +32,7 @@ impl crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
     feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ifreq_mtu__ifr_name_e__FixedBuffer {
     pub FixedElementField: u8,
 }

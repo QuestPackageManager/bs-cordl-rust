@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct StyleRule {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Properties: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UIElements::StyleProperty,
+    pub m_Properties: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::StyleProperty,
+        >,
     >,
     pub line: i32,
     pub customPropertiesCount: i32,

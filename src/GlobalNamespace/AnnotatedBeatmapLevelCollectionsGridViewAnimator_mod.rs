@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct AnnotatedBeatmapLevelCollectionsGridViewAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _viewportTransform: *mut crate::UnityEngine::RectTransform,
-    pub _contentTransform: *mut crate::UnityEngine::RectTransform,
+    pub _viewportTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub _contentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _transitionDuration: f32,
     pub _easeType: crate::GlobalNamespace::EaseType,
     pub _padding: f32,
-    pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::TimeTweeningManager,
+    >,
     pub _columnWidth: f32,
     pub _rowHeight: f32,
     pub _visibleColumnCount: i32,
@@ -16,8 +18,8 @@ pub struct AnnotatedBeatmapLevelCollectionsGridViewAnimator {
     pub _rowCount: i32,
     pub _selectedColumn: i32,
     pub _selectedRow: i32,
-    pub _viewportSizeTween: *mut crate::Tweening::Vector2Tween,
-    pub _contentPositionTween: *mut crate::Tweening::Vector2Tween,
+    pub _viewportSizeTween: quest_hook::libil2cpp::Gc<crate::Tweening::Vector2Tween>,
+    pub _contentPositionTween: quest_hook::libil2cpp::Gc<crate::Tweening::Vector2Tween>,
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridViewAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

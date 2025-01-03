@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct HEU_VolumeCachePreset {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _objName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _geoName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _objName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _geoName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _uiExpanded: bool,
-    pub _volumeLayersPresets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_VolumeLayerPreset,
+    pub _volumeLayersPresets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_VolumeLayerPreset,
+        >,
     >,
-    pub _terrainDataPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _terrainDataPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _tile: i32,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_VolumeCachePreset")]

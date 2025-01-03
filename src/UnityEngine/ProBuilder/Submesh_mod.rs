@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Submesh {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Indexes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub m_Indexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub m_Topology: crate::UnityEngine::MeshTopology,
     pub m_SubmeshIndex: i32,
 }

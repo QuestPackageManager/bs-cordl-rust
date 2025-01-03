@@ -3,15 +3,17 @@
 #[derive(Debug)]
 pub struct DataExpression {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _originalExpression: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _originalExpression: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _parsed: bool,
     pub _bound: bool,
-    pub _expr: *mut crate::System::Data::ExpressionNode,
-    pub _table: *mut crate::System::Data::DataTable,
+    pub _expr: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
+    pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     pub _storageType: crate::System::Data::Common::StorageType,
-    pub _dataType: *mut crate::System::Type,
-    pub _dependency: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Data::DataColumn,
+    pub _dataType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _dependency: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
     >,
 }
 #[cfg(feature = "System+Data+DataExpression")]

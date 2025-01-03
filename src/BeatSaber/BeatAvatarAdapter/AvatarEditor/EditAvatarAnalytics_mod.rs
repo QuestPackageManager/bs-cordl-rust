@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct EditAvatarAnalytics {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _avatarEditorFlowCoordinator: *mut crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator,
-    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
-    pub _avatarDataModel: *mut crate::BeatSaber::BeatAvatarSDK::AvatarDataModel,
+    pub _avatarEditorFlowCoordinator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator,
+    >,
+    pub _analyticsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAnalyticsModel,
+    >,
+    pub _avatarDataModel: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarDataModel,
+    >,
     pub _lastEditMode: crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
 }
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarAnalytics")]

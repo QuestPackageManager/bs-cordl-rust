@@ -4,7 +4,9 @@
 pub struct WaitHandle {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub waitHandle: crate::System::IntPtr,
-    pub safeWaitHandle: *mut crate::Microsoft::Win32::SafeHandles::SafeWaitHandle,
+    pub safeWaitHandle: quest_hook::libil2cpp::Gc<
+        crate::Microsoft::Win32::SafeHandles::SafeWaitHandle,
+    >,
     pub hasThreadAffinity: bool,
 }
 #[cfg(feature = "System+Threading+WaitHandle")]

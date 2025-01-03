@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct NonMemoableDigest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mBaseDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    pub mBaseDigest: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IDigest,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+NonMemoableDigest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct FromBinder {
     __cordl_parent: crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-    pub _BindContainer_k__BackingField: *mut crate::Zenject::DiContainer,
-    pub _BindStatement_k__BackingField: *mut crate::Zenject::BindStatement,
+    pub _BindContainer_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Zenject::DiContainer,
+    >,
+    pub _BindStatement_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Zenject::BindStatement,
+    >,
 }
 #[cfg(feature = "Zenject+FromBinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

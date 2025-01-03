@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct EmitParticles {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _particleSystem: *mut crate::UnityEngine::ParticleSystem,
+    pub _particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
 #[cfg(feature = "EmitParticles")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct PublicKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _keyValue: *mut crate::System::Security::Cryptography::AsnEncodedData,
-    pub _params: *mut crate::System::Security::Cryptography::AsnEncodedData,
-    pub _oid: *mut crate::System::Security::Cryptography::Oid,
+    pub _keyValue: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::AsnEncodedData,
+    >,
+    pub _params: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::AsnEncodedData,
+    >,
+    pub _oid: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid>,
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+PublicKey")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

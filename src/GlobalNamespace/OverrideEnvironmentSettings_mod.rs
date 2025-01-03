@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct OverrideEnvironmentSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub didChangeOverrideSettingsEvent: *mut crate::System::Action,
+    pub didChangeOverrideSettingsEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _overrideEnvironments: bool,
-    pub _data: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::GlobalNamespace::EnvironmentType,
-        *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub _data: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::EnvironmentType,
+            *mut crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
     >,
 }
 #[cfg(feature = "OverrideEnvironmentSettings")]

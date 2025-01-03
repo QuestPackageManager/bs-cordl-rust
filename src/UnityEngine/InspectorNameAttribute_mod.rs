@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct InspectorNameAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
-    pub displayName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+InspectorNameAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

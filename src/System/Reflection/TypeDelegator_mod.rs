@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TypeDelegator {
     __cordl_parent: crate::System::Reflection::TypeInfo,
-    pub typeImpl: *mut crate::System::Type,
+    pub typeImpl: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Reflection+TypeDelegator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

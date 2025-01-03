@@ -6,7 +6,7 @@ pub struct DebugInfo {
     pub StartLine: i32,
     pub EndLine: i32,
     pub Index: i32,
-    pub FileName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub FileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub IsClear: bool,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo")]

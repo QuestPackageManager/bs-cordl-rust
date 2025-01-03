@@ -6,30 +6,44 @@ pub struct UIRenderDevice {
     pub m_MockDevice: bool,
     pub m_DefaultStencilState: crate::System::IntPtr,
     pub m_VertexDecl: crate::System::IntPtr,
-    pub m_FirstPage: *mut crate::UnityEngine::UIElements::UIR::Page,
+    pub m_FirstPage: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::Page,
+    >,
     pub m_NextPageVertexCount: u32,
     pub m_LargeMeshVertexCount: u32,
     pub m_IndexToVertexCountRatio: f32,
-    pub m_DeferredFrees: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree,
+    pub m_DeferredFrees: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree,
+            >,
         >,
     >,
-    pub m_Updates: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
+    pub m_Updates: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
+            >,
         >,
     >,
-    pub m_Fences: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub m_StandardMatProps: *mut crate::UnityEngine::MaterialPropertyBlock,
+    pub m_Fences: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub m_StandardMatProps: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MaterialPropertyBlock,
+    >,
     pub m_FrameIndex: u32,
     pub m_NextUpdateID: u32,
     pub m_DrawStats: crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics,
-    pub m_MeshHandles: *mut crate::UnityEngine::UIElements::UIR::LinkedPool_1<
-        *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+    pub m_MeshHandles: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::LinkedPool_1<
+            *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+        >,
     >,
-    pub m_DrawParams: *mut crate::UnityEngine::UIElements::UIR::DrawParams,
-    pub m_TextureSlotManager: *mut crate::UnityEngine::UIElements::UIR::TextureSlotManager,
+    pub m_DrawParams: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::DrawParams,
+    >,
+    pub m_TextureSlotManager: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::TextureSlotManager,
+    >,
     pub _maxVerticesPerPage_k__BackingField: u32,
     pub _breakBatches_k__BackingField: bool,
     pub _disposed_k__BackingField: bool,
@@ -692,10 +706,10 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UIRenderDevice_AllocToFree {
     pub alloc: crate::UnityEngine::UIElements::UIR::Alloc,
-    pub page: *mut crate::UnityEngine::UIElements::UIR::Page,
+    pub page: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Page>,
     pub vertices: bool,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
@@ -719,14 +733,16 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree {
 impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree {}
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UIRenderDevice_AllocToUpdate {
     pub id: u32,
     pub allocTime: u32,
-    pub meshHandle: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+    pub meshHandle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::MeshHandle,
+    >,
     pub permAllocVerts: crate::UnityEngine::UIElements::UIR::Alloc,
     pub permAllocIndices: crate::UnityEngine::UIElements::UIR::Alloc,
-    pub permPage: *mut crate::UnityEngine::UIElements::UIR::Page,
+    pub permPage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Page>,
     pub copyBackIndices: bool,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
@@ -750,10 +766,10 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {
 impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {}
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UIRenderDevice_DeviceToFree {
     pub handle: u32,
-    pub page: *mut crate::UnityEngine::UIElements::UIR::Page,
+    pub page: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Page>,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -787,7 +803,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UIRenderDevice_DrawStatistics {
     pub currentFrameIndex: i32,
     pub totalIndices: u32,
@@ -820,12 +836,14 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {
 impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {}
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UIRenderDevice_EvaluationState {
-    pub stateMatProps: *mut crate::UnityEngine::MaterialPropertyBlock,
-    pub defaultMat: *mut crate::UnityEngine::Material,
+    pub stateMatProps: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MaterialPropertyBlock,
+    >,
+    pub defaultMat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub curState: crate::UnityEngine::UIElements::UIR::State,
-    pub curPage: *mut crate::UnityEngine::UIElements::UIR::Page,
+    pub curPage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Page>,
     pub mustApplyMaterial: bool,
     pub mustApplyCommonBlock: bool,
     pub mustApplyStateBlock: bool,

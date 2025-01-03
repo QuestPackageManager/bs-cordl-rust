@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SmimeCapabilityVector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub capabilities: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+    pub capabilities: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Smime+SmimeCapabilityVector")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

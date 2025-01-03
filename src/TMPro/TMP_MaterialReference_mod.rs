@@ -1,8 +1,8 @@
 #[cfg(feature = "TMPro+TMP_MaterialReference")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TMP_MaterialReference {
-    pub material: *mut crate::UnityEngine::Material,
+    pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub referenceCount: i32,
 }
 #[cfg(feature = "TMPro+TMP_MaterialReference")]

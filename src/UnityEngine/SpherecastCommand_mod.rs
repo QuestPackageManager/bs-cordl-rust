@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+SpherecastCommand")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SpherecastCommand {
     pub _origin_k__BackingField: crate::UnityEngine::Vector3,
     pub _radius_k__BackingField: f32,

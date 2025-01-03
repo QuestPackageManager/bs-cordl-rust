@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct DeactivateAnimatorOnInputFocusCapture {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _animator: *mut crate::UnityEngine::Animator,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
+    pub _animator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
     pub _wasEnabled: bool,
 }
 #[cfg(feature = "DeactivateAnimatorOnInputFocusCapture")]

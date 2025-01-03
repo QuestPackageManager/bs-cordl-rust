@@ -11,19 +11,29 @@ pub struct XmlSchemaElement {
     pub block: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
     pub _cordl_final: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
     pub form: crate::System::Xml::Schema::XmlSchemaForm,
-    pub defaultValue: *mut quest_hook::libil2cpp::Il2CppString,
-    pub fixedValue: *mut quest_hook::libil2cpp::Il2CppString,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub refName: *mut crate::System::Xml::XmlQualifiedName,
-    pub substitutionGroup: *mut crate::System::Xml::XmlQualifiedName,
-    pub typeName: *mut crate::System::Xml::XmlQualifiedName,
-    pub _cordl_type: *mut crate::System::Xml::Schema::XmlSchemaType,
-    pub qualifiedName: *mut crate::System::Xml::XmlQualifiedName,
-    pub elementType: *mut crate::System::Xml::Schema::XmlSchemaType,
+    pub defaultValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub fixedValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub refName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub substitutionGroup: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlQualifiedName,
+    >,
+    pub typeName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaType,
+    >,
+    pub qualifiedName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub elementType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaType,
+    >,
     pub blockResolved: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
     pub finalResolved: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
-    pub constraints: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-    pub elementDecl: *mut crate::System::Xml::Schema::SchemaElementDecl,
+    pub constraints: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+    >,
+    pub elementDecl: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::SchemaElementDecl,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

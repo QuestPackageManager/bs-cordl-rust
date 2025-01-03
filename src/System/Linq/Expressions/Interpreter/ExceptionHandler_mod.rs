@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct ExceptionHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _exceptionType: *mut crate::System::Type,
+    pub _exceptionType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub LabelIndex: i32,
     pub HandlerStartIndex: i32,
     pub HandlerEndIndex: i32,
-    pub Filter: *mut crate::System::Linq::Expressions::Interpreter::ExceptionFilter,
+    pub Filter: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::ExceptionFilter,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ExceptionHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct BookmarksFoldersModel {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub myFolders: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub myFolders: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _bookmarksFolders: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::FileBrowserItem,
+    pub _bookmarksFolders: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::FileBrowserItem>,
     >,
 }
 #[cfg(feature = "BookmarksFoldersModel")]

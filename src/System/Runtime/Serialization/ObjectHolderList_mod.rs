@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ObjectHolderList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_values: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Runtime::Serialization::ObjectHolder,
+    pub m_values: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Runtime::Serialization::ObjectHolder,
+        >,
     >,
     pub m_count: i32,
 }

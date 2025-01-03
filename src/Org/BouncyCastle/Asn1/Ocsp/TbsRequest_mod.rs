@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct TbsRequest {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub requestorName: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    pub requestList: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    pub requestExtensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub requestorName: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    >,
+    pub requestList: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    >,
+    pub requestExtensions: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
     pub versionSet: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+TbsRequest")]

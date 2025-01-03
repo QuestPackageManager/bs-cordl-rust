@@ -5,15 +5,17 @@
 #[derive(Debug)]
 pub struct KdfDoublePipelineIterationBytesGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub prf: *mut crate::Org::BouncyCastle::Crypto::IMac,
+    pub prf: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
     pub h: i32,
-    pub fixedInputData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub fixedInputData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub maxSizeExcl: i32,
-    pub ios: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub ios: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub useCounter: bool,
     pub generatedBytes: i32,
-    pub a: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub k: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub k: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Crypto+Generators+KdfDoublePipelineIterationBytesGenerator"

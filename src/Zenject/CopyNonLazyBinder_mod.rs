@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct CopyNonLazyBinder {
     __cordl_parent: crate::Zenject::NonLazyBinder,
-    pub _secondaryBindInfos: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::BindInfo,
+    pub _secondaryBindInfos: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::Zenject::BindInfo>,
     >,
 }
 #[cfg(feature = "Zenject+CopyNonLazyBinder")]

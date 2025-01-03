@@ -1,23 +1,29 @@
 #[cfg(feature = "OVRGLTFScene")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRGLTFScene {
-    pub root: *mut crate::UnityEngine::GameObject,
-    pub nodes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::GameObject,
+    pub root: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub nodes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::GameObject>,
     >,
-    pub animationNodes: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::GlobalNamespace::OVRGLTFInputNode,
-        *mut crate::GlobalNamespace::OVRGLTFAnimatinonNode,
-    >,
-    pub animationNodeLookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut quest_hook::libil2cpp::Il2CppArray<
+    pub animationNodes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::OVRGLTFInputNode,
             *mut crate::GlobalNamespace::OVRGLTFAnimatinonNode,
         >,
     >,
-    pub morphTargetHandlers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
+    pub animationNodeLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::OVRGLTFAnimatinonNode,
+            >,
+        >,
+    >,
+    pub morphTargetHandlers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
+        >,
     >,
 }
 #[cfg(feature = "OVRGLTFScene")]

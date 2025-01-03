@@ -3,17 +3,19 @@
 #[derive(Debug)]
 pub struct RegexBoyerMoore {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Positive: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub NegativeASCII: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub NegativeUnicode: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub Positive: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub NegativeASCII: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
     >,
-    pub Pattern: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NegativeUnicode: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<i32>>,
+    >,
+    pub Pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub LowASCII: i32,
     pub HighASCII: i32,
     pub RightToLeft: bool,
     pub CaseInsensitive: bool,
-    pub _culture: *mut crate::System::Globalization::CultureInfo,
+    pub _culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexBoyerMoore")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

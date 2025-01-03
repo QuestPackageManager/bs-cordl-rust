@@ -7,12 +7,22 @@ pub struct SafeAreaRectChecker {
     pub _maxAngleX: f32,
     pub _minAngleY: f32,
     pub _maxAngleY: f32,
-    pub _activeObjectWhenInsideSafeArea: *mut crate::UnityEngine::GameObject,
-    pub _activeObjectWhenNotInsideSafeArea: *mut crate::UnityEngine::GameObject,
-    pub _rectTransformToCheck: *mut crate::UnityEngine::RectTransform,
-    pub _corners: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-    pub _mainCamera: *mut crate::GlobalNamespace::MainCamera,
-    pub _initData: *mut crate::GlobalNamespace::SafeAreaRectChecker_InitData,
+    pub _activeObjectWhenInsideSafeArea: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _activeObjectWhenNotInsideSafeArea: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _rectTransformToCheck: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
+    >,
+    pub _corners: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
+    pub _mainCamera: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainCamera>,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SafeAreaRectChecker_InitData,
+    >,
 }
 #[cfg(feature = "SafeAreaRectChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

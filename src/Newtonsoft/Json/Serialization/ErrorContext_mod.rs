@@ -4,10 +4,16 @@
 pub struct ErrorContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Traced_k__BackingField: bool,
-    pub _Error_k__BackingField: *mut crate::System::Exception,
-    pub _OriginalObject_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _Member_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _Path_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Error_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    pub _OriginalObject_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub _Member_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub _Path_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _Handled_k__BackingField: bool,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+ErrorContext")]

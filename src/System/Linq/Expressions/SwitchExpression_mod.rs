@@ -3,12 +3,20 @@
 #[derive(Debug)]
 pub struct SwitchExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
-    pub _SwitchValue_k__BackingField: *mut crate::System::Linq::Expressions::Expression,
-    pub _Cases_k__BackingField: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-        *mut crate::System::Linq::Expressions::SwitchCase,
+    pub _SwitchValue_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
     >,
-    pub _DefaultBody_k__BackingField: *mut crate::System::Linq::Expressions::Expression,
-    pub _Comparison_k__BackingField: *mut crate::System::Reflection::MethodInfo,
+    pub _Cases_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            *mut crate::System::Linq::Expressions::SwitchCase,
+        >,
+    >,
+    pub _DefaultBody_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
+    pub _Comparison_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MethodInfo,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+SwitchExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

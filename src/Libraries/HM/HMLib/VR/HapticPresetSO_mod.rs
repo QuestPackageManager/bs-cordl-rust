@@ -8,12 +8,16 @@ pub struct HapticPresetSO {
     pub _frequency: f32,
     pub _continuous: bool,
     pub _useAdvancedHapticsOnSupportedPlatforms: bool,
-    pub _ps5HapticsClip: *mut crate::UnityEngine::AudioClip,
+    pub _ps5HapticsClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     pub _hasPS5HapticsClip: crate::System::Nullable_1<bool>,
-    pub _oculusHapticsClip: *mut crate::Oculus::Haptics::HapticClip,
+    pub _oculusHapticsClip: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Haptics::HapticClip,
+    >,
     pub _priority: u32,
     pub _overrideForTouchController: bool,
-    pub _touchControllerOverrideHapticsClip: *mut crate::Oculus::Haptics::HapticClip,
+    pub _touchControllerOverrideHapticsClip: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Haptics::HapticClip,
+    >,
     pub _hasOculusHapticsClip: crate::System::Nullable_1<bool>,
 }
 #[cfg(feature = "Libraries+HM+HMLib+VR+HapticPresetSO")]

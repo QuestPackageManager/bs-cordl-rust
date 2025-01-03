@@ -4,8 +4,8 @@
 pub struct SmoothStepPositionGroupEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _event: crate::GlobalNamespace::BasicBeatmapEventType,
-    pub _elements: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Transform,
+    pub _elements: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
     >,
     pub _clampValue: bool,
     pub _eventValueMin: i32,
@@ -14,12 +14,18 @@ pub struct SmoothStepPositionGroupEventEffect {
     pub _movementVector: crate::UnityEngine::Vector3,
     pub _stepSize: f32,
     pub _easeType: crate::GlobalNamespace::EaseType,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-    pub _positionTween: *mut crate::Tweening::Vector3Tween,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::SongTimeTweeningManager,
+    >,
+    pub _positionTween: quest_hook::libil2cpp::Gc<crate::Tweening::Vector3Tween>,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _startPos: crate::UnityEngine::Vector3,
-    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "SmoothStepPositionGroupEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

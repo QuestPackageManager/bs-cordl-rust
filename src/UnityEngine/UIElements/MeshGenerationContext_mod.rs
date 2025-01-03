@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct MeshGenerationContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Painter2D: *mut crate::UnityEngine::UIElements::Painter2D,
-    pub painter: *mut crate::UnityEngine::UIElements::IStylePainter,
+    pub m_Painter2D: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Painter2D,
+    >,
+    pub painter: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IStylePainter,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

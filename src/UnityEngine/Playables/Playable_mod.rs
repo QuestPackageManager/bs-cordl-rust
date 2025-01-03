@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Playables+Playable")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Playable {
     pub m_Handle: crate::UnityEngine::Playables::PlayableHandle,
 }

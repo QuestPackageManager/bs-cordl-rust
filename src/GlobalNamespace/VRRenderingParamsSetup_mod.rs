@@ -4,8 +4,12 @@
 pub struct VRRenderingParamsSetup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _sceneType: crate::GlobalNamespace::SceneType,
-    pub _applicator: *mut crate::GlobalNamespace::IRenderingParamsApplicator,
-    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    pub _applicator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IRenderingParamsApplicator,
+    >,
+    pub _sceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    >,
 }
 #[cfg(feature = "VRRenderingParamsSetup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

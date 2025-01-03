@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeLabel")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RuntimeLabel {
     pub Index: i32,
     pub StackDepth: i32,

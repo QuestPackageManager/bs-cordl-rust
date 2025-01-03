@@ -3,22 +3,30 @@
 #[derive(Debug)]
 pub struct Dropdown {
     __cordl_parent: crate::UnityEngine::UI::Selectable,
-    pub m_Template: *mut crate::UnityEngine::RectTransform,
-    pub m_CaptionText: *mut crate::UnityEngine::UI::Text,
-    pub m_CaptionImage: *mut crate::UnityEngine::UI::Image,
-    pub m_ItemText: *mut crate::UnityEngine::UI::Text,
-    pub m_ItemImage: *mut crate::UnityEngine::UI::Image,
+    pub m_Template: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub m_CaptionText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub m_CaptionImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub m_ItemText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub m_ItemImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     pub m_Value: i32,
-    pub m_Options: *mut crate::UnityEngine::UI::Dropdown_OptionDataList,
-    pub m_OnValueChanged: *mut crate::UnityEngine::UI::Dropdown_DropdownEvent,
-    pub m_AlphaFadeSpeed: f32,
-    pub m_Dropdown: *mut crate::UnityEngine::GameObject,
-    pub m_Blocker: *mut crate::UnityEngine::GameObject,
-    pub m_Items: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UI::Dropdown_DropdownItem,
+    pub m_Options: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Dropdown_OptionDataList,
     >,
-    pub m_AlphaTweenRunner: *mut crate::UnityEngine::UI::CoroutineTween::TweenRunner_1<
-        crate::UnityEngine::UI::CoroutineTween::FloatTween,
+    pub m_OnValueChanged: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Dropdown_DropdownEvent,
+    >,
+    pub m_AlphaFadeSpeed: f32,
+    pub m_Dropdown: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub m_Blocker: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub m_Items: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UI::Dropdown_DropdownItem,
+        >,
+    >,
+    pub m_AlphaTweenRunner: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::CoroutineTween::TweenRunner_1<
+            crate::UnityEngine::UI::CoroutineTween::FloatTween,
+        >,
     >,
     pub validTemplate: bool,
 }
@@ -768,10 +776,10 @@ for crate::UnityEngine::UI::Dropdown_DropdownEvent {
 #[derive(Debug)]
 pub struct Dropdown_DropdownItem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_Text: *mut crate::UnityEngine::UI::Text,
-    pub m_Image: *mut crate::UnityEngine::UI::Image,
-    pub m_RectTransform: *mut crate::UnityEngine::RectTransform,
-    pub m_Toggle: *mut crate::UnityEngine::UI::Toggle,
+    pub m_Text: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub m_Image: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub m_RectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub m_Toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -986,8 +994,8 @@ for crate::UnityEngine::UI::Dropdown_DropdownItem {
 #[derive(Debug)]
 pub struct Dropdown_OptionData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Text: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Image: *mut crate::UnityEngine::Sprite,
+    pub m_Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Image: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+OptionData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1150,8 +1158,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Dropdown_Opti
 #[derive(Debug)]
 pub struct Dropdown_OptionDataList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Options: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UI::Dropdown_OptionData,
+    pub m_Options: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UI::Dropdown_OptionData,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+OptionDataList")]

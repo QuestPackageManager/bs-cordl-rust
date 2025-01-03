@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct EnableOnVisible {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub VisibilityChangedEvent: *mut crate::System::Action_1<bool>,
-    pub _components: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Behaviour,
+    pub VisibilityChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+    pub _components: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Behaviour>,
     >,
 }
 #[cfg(feature = "EnableOnVisible")]

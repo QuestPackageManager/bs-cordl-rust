@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct CADMessageBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _args: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _args: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub _serializedArgs: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _serializedArgs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub _propertyCount: i32,
-    pub _callContext: *mut crate::System::Runtime::Remoting::Messaging::CADArgHolder,
-    pub serializedMethod: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _callContext: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::CADArgHolder,
+    >,
+    pub serializedMethod: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+CADMessageBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct RequestStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub offset: i32,
     pub length: i32,
     pub remaining_body: i64,
     pub disposed: bool,
-    pub stream: *mut crate::System::IO::Stream,
+    pub stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
 }
 #[cfg(feature = "System+Net+RequestStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

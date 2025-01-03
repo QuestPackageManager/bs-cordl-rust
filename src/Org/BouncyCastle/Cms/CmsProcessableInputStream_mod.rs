@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CmsProcessableInputStream {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub input: *mut crate::System::IO::Stream,
+    pub input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub used: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableInputStream")]

@@ -3,16 +3,22 @@
 #[derive(Debug)]
 pub struct SongPackMasksModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub content: *mut crate::GlobalNamespace::SongPackMasksModelSO,
+    pub content: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongPackMasksModelSO>,
     pub allSongPackMask: crate::GlobalNamespace::SongPackMask,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub _songPackSerializedNameToMaskInfoDict: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        crate::GlobalNamespace::SongPackMasksModel_MaskInfo,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
     >,
-    pub _songPackMaskToSerializedNameDict: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::GlobalNamespace::SongPackMask,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _songPackSerializedNameToMaskInfoDict: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            crate::GlobalNamespace::SongPackMasksModel_MaskInfo,
+        >,
+    >,
+    pub _songPackMaskToSerializedNameDict: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::SongPackMask,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "SongPackMasksModel")]
@@ -142,9 +148,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongPackMasks
 }
 #[cfg(feature = "SongPackMasksModel+LocalizedText")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SongPackMasksModel_LocalizedText {
-    pub textKey: *mut quest_hook::libil2cpp::Il2CppString,
+    pub textKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub isPlural: bool,
 }
 #[cfg(feature = "SongPackMasksModel+LocalizedText")]
@@ -191,7 +197,7 @@ impl crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
 }
 #[cfg(feature = "SongPackMasksModel+MaskInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SongPackMasksModel_MaskInfo {
     pub localizedText: crate::GlobalNamespace::SongPackMasksModel_LocalizedText,
     pub mask: crate::GlobalNamespace::SongPackMask,

@@ -7,7 +7,7 @@ pub struct OneModifierComposite {
     pub binding: i32,
     pub overrideModifiersNeedToBePressedFirst: bool,
     pub m_ValueSizeInBytes: i32,
-    pub m_ValueType: *mut crate::System::Type,
+    pub m_ValueType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub m_BindingIsButton: bool,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Composites+OneModifierComposite")]

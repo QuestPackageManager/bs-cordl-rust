@@ -7,7 +7,7 @@ pub struct ReaderWriterCount {
     pub readercount: i32,
     pub writercount: i32,
     pub upgradecount: i32,
-    pub next: *mut crate::System::Threading::ReaderWriterCount,
+    pub next: quest_hook::libil2cpp::Gc<crate::System::Threading::ReaderWriterCount>,
 }
 #[cfg(feature = "System+Threading+ReaderWriterCount")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

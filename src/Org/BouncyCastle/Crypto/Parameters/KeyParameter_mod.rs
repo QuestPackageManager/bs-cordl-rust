@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct KeyParameter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+KeyParameter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

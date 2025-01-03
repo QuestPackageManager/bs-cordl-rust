@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct OtherInfo {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub keyInfo: *mut crate::Org::BouncyCastle::Asn1::X9::KeySpecificInfo,
-    pub partyAInfo: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub suppPubInfo: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    pub keyInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X9::KeySpecificInfo,
+    >,
+    pub partyAInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub suppPubInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+OtherInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

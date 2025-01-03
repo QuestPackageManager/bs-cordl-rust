@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SceneContextRegistryAdderAndRemover {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _registry: *mut crate::Zenject::SceneContextRegistry,
-    pub _sceneContext: *mut crate::Zenject::SceneContext,
+    pub _registry: quest_hook::libil2cpp::Gc<crate::Zenject::SceneContextRegistry>,
+    pub _sceneContext: quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
 }
 #[cfg(feature = "Zenject+SceneContextRegistryAdderAndRemover")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

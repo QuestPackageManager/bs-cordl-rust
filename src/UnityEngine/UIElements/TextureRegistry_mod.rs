@@ -3,15 +3,21 @@
 #[derive(Debug)]
 pub struct TextureRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Textures: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::TextureRegistry_TextureInfo,
+    pub m_Textures: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::TextureRegistry_TextureInfo,
+        >,
     >,
-    pub m_TextureToId: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::UnityEngine::Texture,
-        crate::UnityEngine::UIElements::TextureId,
+    pub m_TextureToId: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::UnityEngine::Texture,
+            crate::UnityEngine::UIElements::TextureId,
+        >,
     >,
-    pub m_FreeIds: *mut crate::System::Collections::Generic::Stack_1<
-        crate::UnityEngine::UIElements::TextureId,
+    pub m_FreeIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<
+            crate::UnityEngine::UIElements::TextureId,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TextureRegistry")]
@@ -144,9 +150,9 @@ for crate::UnityEngine::UIElements::TextureRegistry {
 }
 #[cfg(feature = "UnityEngine+UIElements+TextureRegistry+TextureInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TextureRegistry_TextureInfo {
-    pub texture: *mut crate::UnityEngine::Texture,
+    pub texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub dynamic: bool,
     pub refCount: i32,
 }

@@ -3,58 +3,84 @@
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _unconnectedPacketHeader: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _netManager: *mut crate::LiteNetLib::NetManager,
-    pub _encryptionLayer: *mut crate::GlobalNamespace::PacketEncryptionLayer,
-    pub _taskUtility: *mut crate::BGNet::Core::ITaskUtility,
-    pub _connections: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
+    pub _unconnectedPacketHeader: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
-    pub _pendingConnections: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
+    pub _netManager: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetManager>,
+    pub _encryptionLayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PacketEncryptionLayer,
     >,
-    pub _pendingRequests: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest,
+    pub _taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
+    pub _connections: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
+        >,
     >,
-    pub _pendingReconnections: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::Net::IPEndPoint,
+    pub _pendingConnections: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
+        >,
     >,
-    pub _userId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _userName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _connectionRequestHandler: *mut crate::GlobalNamespace::IConnectionRequestHandler,
+    pub _pendingRequests: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest,
+        >,
+    >,
+    pub _pendingReconnections: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::System::Net::IPEndPoint,
+        >,
+    >,
+    pub _userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _connectionRequestHandler: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectionRequestHandler,
+    >,
     pub _mode: crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode,
     pub _connectionState: crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState,
-    pub _backgroundSentryDisconnectCts: *mut crate::System::Threading::CancellationTokenSource,
-    pub _backgroundSentryShutdownCts: *mut crate::System::Threading::CancellationTokenSource,
+    pub _backgroundSentryDisconnectCts: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub _backgroundSentryShutdownCts: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
     pub _sentryDisconnected: bool,
     pub _sentryShutdown: bool,
     pub _lastPollUpdateTime: i64,
     pub _lastStatisticsUpdateTime: i64,
-    pub onInitializedEvent: *mut crate::System::Action,
-    pub onConnectedEvent: *mut crate::System::Action,
-    pub onDisconnectedEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::DisconnectedReason,
+    pub onInitializedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub onConnectedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub onDisconnectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
     >,
-    pub onConnectionFailedEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::ConnectionFailedReason,
+    pub onConnectionFailedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
     >,
-    pub onConnectionConnectedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::IConnection,
+    pub onConnectionConnectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::IConnection>,
     >,
-    pub onConnectionDisconnectedEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::IConnection,
-        crate::GlobalNamespace::DisconnectedReason,
+    pub onConnectionDisconnectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::IConnection,
+            crate::GlobalNamespace::DisconnectedReason,
+        >,
     >,
-    pub onReceivedDataEvent: *mut crate::System::Action_3<
-        *mut crate::GlobalNamespace::IConnection,
-        *mut crate::LiteNetLib::Utils::NetDataReader,
-        crate::BGNet::Core::DeliveryMethod,
+    pub onReceivedDataEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_3<
+            *mut crate::GlobalNamespace::IConnection,
+            *mut crate::LiteNetLib::Utils::NetDataReader,
+            crate::BGNet::Core::DeliveryMethod,
+        >,
     >,
-    pub onReceiveUnconnectedDataEvent: *mut crate::System::Action_2<
-        *mut crate::System::Net::IPEndPoint,
-        *mut crate::LiteNetLib::Utils::NetDataReader,
+    pub onReceiveUnconnectedDataEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::System::Net::IPEndPoint,
+            *mut crate::LiteNetLib::Utils::NetDataReader,
+        >,
     >,
-    pub onStatisticsUpdatedEvent: *mut crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate,
+    pub onStatisticsUpdatedEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate,
+    >,
 }
 #[cfg(feature = "LiteNetLibConnectionManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1141,11 +1167,11 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager {
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_ConnectToServerParams {
     __cordl_parent: crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase,
-    pub userId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub userName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub endPoint: *mut crate::System::Net::IPEndPoint,
-    pub serverUserId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub serverUserName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub endPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+    pub serverUserId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub serverUserName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub serverIsConnectionOwner: bool,
 }
 #[cfg(feature = "LiteNetLibConnectionManager+ConnectToServerParams")]
@@ -1219,7 +1245,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub connectionRequestHandler: *mut crate::GlobalNamespace::IConnectionRequestHandler,
+    pub connectionRequestHandler: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectionRequestHandler,
+    >,
     pub port: i32,
     pub filterUnencryptedTraffic: bool,
     pub enableUnconnectedMessages: bool,
@@ -1313,10 +1341,10 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionPara
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_NetPeerConnection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _userId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _userName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _isConnectionOwner: bool,
-    pub netPeer: *mut crate::LiteNetLib::NetPeer,
+    pub netPeer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1509,10 +1537,10 @@ impl AsMut<
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_NetPeerConnectionRequest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _userId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _userName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _isConnectionOwner: bool,
-    pub _request: *mut crate::LiteNetLib::ConnectionRequest,
+    pub _request: quest_hook::libil2cpp::Gc<crate::LiteNetLib::ConnectionRequest>,
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnectionRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1707,8 +1735,8 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_StartServerParams {
     __cordl_parent: crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase,
-    pub userId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub userName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "LiteNetLibConnectionManager+StartServerParams")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,47 +3,87 @@
 #[derive(Debug)]
 pub struct PlayerData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _playerId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _playerName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _playerId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _playerName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _shouldShowTutorialPrompt_k__BackingField: bool,
     pub _shouldShow360Warning_k__BackingField: bool,
     pub _agreedToEula_k__BackingField: bool,
     pub _didSelectLanguage_k__BackingField: bool,
     pub _agreedToMultiplayerDisclaimer_k__BackingField: bool,
     pub _didSelectRegionVersion_k__BackingField: i32,
-    pub _selectedAvatarSystemTypeId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _playerAgreements_k__BackingField: *mut crate::GlobalNamespace::PlayerAgreements,
+    pub _selectedAvatarSystemTypeId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _playerAgreements_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerAgreements,
+    >,
     pub _lastSelectedBeatmapDifficulty_k__BackingField: crate::GlobalNamespace::BeatmapDifficulty,
-    pub _lastSelectedBeatmapCharacteristic_k__BackingField: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-    pub _gameplayModifiers_k__BackingField: *mut crate::GlobalNamespace::GameplayModifiers,
-    pub _playerSpecificSettings_k__BackingField: *mut crate::GlobalNamespace::PlayerSpecificSettings,
-    pub _practiceSettings_k__BackingField: *mut crate::GlobalNamespace::PracticeSettings,
-    pub _playerAllOverallStatsData_k__BackingField: *mut crate::GlobalNamespace::PlayerAllOverallStatsData,
-    pub _levelsStatsData_k__BackingField: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::GlobalNamespace::BeatmapKey,
-        *mut crate::GlobalNamespace::PlayerLevelStatsData,
+    pub _lastSelectedBeatmapCharacteristic_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
-    pub _missionsStatsData_k__BackingField: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::PlayerMissionStatsData,
+    pub _gameplayModifiers_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
     >,
-    pub _showedMissionHelpIds_k__BackingField: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _playerSpecificSettings_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSpecificSettings,
     >,
-    pub _guestPlayerNames_k__BackingField: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _practiceSettings_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PracticeSettings,
     >,
-    pub _colorSchemesSettings_k__BackingField: *mut crate::GlobalNamespace::ColorSchemesSettings,
-    pub _overrideEnvironmentSettings_k__BackingField: *mut crate::GlobalNamespace::OverrideEnvironmentSettings,
-    pub _favoritesLevelIds_k__BackingField: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _playerAllOverallStatsData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerAllOverallStatsData,
     >,
-    pub _multiplayerModeSettings_k__BackingField: *mut crate::GlobalNamespace::MultiplayerModeSettings,
+    pub _levelsStatsData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::BeatmapKey,
+            *mut crate::GlobalNamespace::PlayerLevelStatsData,
+        >,
+    >,
+    pub _missionsStatsData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::PlayerMissionStatsData,
+        >,
+    >,
+    pub _showedMissionHelpIds_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+    pub _guestPlayerNames_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+    pub _colorSchemesSettings_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemesSettings,
+    >,
+    pub _overrideEnvironmentSettings_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OverrideEnvironmentSettings,
+    >,
+    pub _favoritesLevelIds_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+    pub _multiplayerModeSettings_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerModeSettings,
+    >,
     pub _userAgeCategory_k__BackingField: crate::GlobalNamespace::UserAgeCategory,
     pub _desiredSensitivityFlag_k__BackingField: crate::GlobalNamespace::PlayerSensitivityFlag,
     pub _currentDlcPromoDisplayCount_k__BackingField: i32,
-    pub _currentDlcPromoId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub favoriteLevelsSetDidChangeEvent: *mut crate::System::Action,
-    pub didIncreaseNumberOfGameplaysEvent: *mut crate::System::Action,
+    pub _currentDlcPromoId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub favoriteLevelsSetDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub didIncreaseNumberOfGameplaysEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
 }
 #[cfg(feature = "PlayerData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

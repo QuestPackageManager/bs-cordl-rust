@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct Logger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _logHandler_k__BackingField: *mut crate::UnityEngine::ILogHandler,
+    pub _logHandler_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ILogHandler,
+    >,
     pub _logEnabled_k__BackingField: bool,
     pub _filterLogType_k__BackingField: crate::UnityEngine::LogType,
 }

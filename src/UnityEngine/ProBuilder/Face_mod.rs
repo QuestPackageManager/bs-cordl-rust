@@ -3,17 +3,19 @@
 #[derive(Debug)]
 pub struct Face {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Indexes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub m_Indexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub m_SmoothingGroup: i32,
     pub m_Uv: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
-    pub m_Material: *mut crate::UnityEngine::Material,
+    pub m_Material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub m_SubmeshIndex: i32,
     pub m_ManualUV: bool,
     pub elementGroup: i32,
     pub m_TextureGroup: i32,
-    pub m_DistinctIndexes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub m_Edges: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::ProBuilder::Edge,
+    pub m_DistinctIndexes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub m_Edges: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ProBuilder::Edge>,
     >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Face")]

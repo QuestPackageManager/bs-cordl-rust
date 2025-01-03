@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct NullableScriptableObjectInstaller {
     __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
-    pub _installer: *mut crate::Zenject::ScriptableObjectInstaller,
+    pub _installer: quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
 }
 #[cfg(feature = "NullableScriptableObjectInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

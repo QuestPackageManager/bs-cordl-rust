@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct TemplateAsset {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElementAsset,
-    pub m_TemplateAlias: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_AttributeOverrides: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+    pub m_TemplateAlias: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_AttributeOverrides: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+        >,
     >,
-    pub m_SlotUsages: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
+    pub m_SlotUsages: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TemplateAsset")]
@@ -84,11 +88,11 @@ for crate::UnityEngine::UIElements::TemplateAsset {
 }
 #[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TemplateAsset_AttributeOverride {
-    pub m_ElementName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_AttributeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Value: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ElementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_AttributeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

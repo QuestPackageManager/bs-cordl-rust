@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerObservable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _connectedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerObservable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

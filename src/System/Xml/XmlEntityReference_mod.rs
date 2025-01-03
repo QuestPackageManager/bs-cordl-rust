@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct XmlEntityReference {
     __cordl_parent: crate::System::Xml::XmlLinkedNode,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub lastChild: *mut crate::System::Xml::XmlLinkedNode,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub lastChild: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlLinkedNode>,
 }
 #[cfg(feature = "System+Xml+XmlEntityReference")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

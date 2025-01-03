@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct InstanceProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_InstanceObjectToPrefabHandle: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::UnityEngine::GameObject,
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+    pub m_InstanceObjectToPrefabHandle: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
             *mut crate::UnityEngine::GameObject,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                *mut crate::UnityEngine::GameObject,
+            >,
         >,
     >,
 }

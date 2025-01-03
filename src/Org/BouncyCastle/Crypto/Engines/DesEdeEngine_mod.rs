@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct DesEdeEngine {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Engines::DesEngine,
-    pub workingKey1: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub workingKey2: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub workingKey3: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub workingKey1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub workingKey2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub workingKey3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub forEncryption: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+DesEdeEngine")]

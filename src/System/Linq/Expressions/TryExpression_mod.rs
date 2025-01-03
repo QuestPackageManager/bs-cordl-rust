@@ -3,13 +3,21 @@
 #[derive(Debug)]
 pub struct TryExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
-    pub _Type_k__BackingField: *mut crate::System::Type,
-    pub _Body_k__BackingField: *mut crate::System::Linq::Expressions::Expression,
-    pub _Handlers_k__BackingField: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-        *mut crate::System::Linq::Expressions::CatchBlock,
+    pub _Type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _Body_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
     >,
-    pub _Finally_k__BackingField: *mut crate::System::Linq::Expressions::Expression,
-    pub _Fault_k__BackingField: *mut crate::System::Linq::Expressions::Expression,
+    pub _Handlers_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            *mut crate::System::Linq::Expressions::CatchBlock,
+        >,
+    >,
+    pub _Finally_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
+    pub _Fault_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+TryExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

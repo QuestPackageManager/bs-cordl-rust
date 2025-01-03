@@ -3,14 +3,14 @@
 #[derive(Debug)]
 pub struct Set_1<TElement: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub buckets: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub slots: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Linq::Set_1_Slot<TElement>,
+    pub buckets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub slots: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Linq::Set_1_Slot<TElement>>,
     >,
     pub count: i32,
     pub freeList: i32,
-    pub comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<
-        TElement,
+    pub comparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEqualityComparer_1<TElement>,
     >,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
@@ -148,7 +148,7 @@ for crate::System::Linq::Set_1<TElement> {
 }
 #[cfg(feature = "System+Linq+Set_1+Slot")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Set_1_Slot<TElement: quest_hook::libil2cpp::Type> {
     pub hashCode: i32,
     pub value: TElement,

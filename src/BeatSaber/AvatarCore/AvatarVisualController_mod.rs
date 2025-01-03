@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AvatarVisualController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _avatarController: *mut crate::BeatSaber::AvatarCore::AvatarController,
+    pub _avatarController: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::AvatarController,
+    >,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarVisualController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

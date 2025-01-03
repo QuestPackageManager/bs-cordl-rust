@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct LightRotationBeatmapEventDataBox {
     __cordl_parent: crate::GlobalNamespace::BeatmapEventDataBox,
-    pub _lightRotationBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::GlobalNamespace::LightRotationBaseData,
+    pub _lightRotationBaseDataList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::LightRotationBaseData,
+        >,
     >,
     pub _axis: crate::GlobalNamespace::LightAxis,
     pub _rotationDirection: f32,

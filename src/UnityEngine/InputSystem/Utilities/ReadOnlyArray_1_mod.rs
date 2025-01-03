@@ -1,8 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ReadOnlyArray_1<TValue: quest_hook::libil2cpp::Type> {
-    pub m_Array: *mut quest_hook::libil2cpp::Il2CppArray<TValue>,
+    pub m_Array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
     pub m_StartIndex: i32,
     pub m_Length: i32,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -263,9 +263,9 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ReadOnlyArray_1_Enumerator<TValue: quest_hook::libil2cpp::Type> {
-    pub m_Array: *mut quest_hook::libil2cpp::Il2CppArray<TValue>,
+    pub m_Array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
     pub m_IndexStart: i32,
     pub m_IndexEnd: i32,
     pub m_Index: i32,

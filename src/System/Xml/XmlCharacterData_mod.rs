@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlCharacterData {
     __cordl_parent: crate::System::Xml::XmlLinkedNode,
-    pub data: *mut quest_hook::libil2cpp::Il2CppString,
+    pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+XmlCharacterData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRProfilerScope")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRProfilerScope {}
 #[cfg(feature = "OVRProfilerScope")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

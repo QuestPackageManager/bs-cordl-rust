@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct AeadParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub associatedText: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub nonce: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub key: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    pub associatedText: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub nonce: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub key: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    >,
     pub macSize: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+AeadParameters")]

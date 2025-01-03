@@ -3,26 +3,38 @@
 #[derive(Debug)]
 pub struct ServicePointScheduler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _ServicePoint_k__BackingField: *mut crate::System::Net::ServicePoint,
+    pub _ServicePoint_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::ServicePoint,
+    >,
     pub running: i32,
     pub maxIdleTime: i32,
-    pub schedulerEvent: *mut crate::System::Net::ServicePointScheduler_AsyncManualResetEvent,
-    pub defaultGroup: *mut crate::System::Net::ServicePointScheduler_ConnectionGroup,
-    pub groups: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::System::Net::ServicePointScheduler_ConnectionGroup,
+    pub schedulerEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Net::ServicePointScheduler_AsyncManualResetEvent,
     >,
-    pub operations: *mut crate::System::Collections::Generic::LinkedList_1<
-        crate::System::ValueTuple_2<
+    pub defaultGroup: quest_hook::libil2cpp::Gc<
+        crate::System::Net::ServicePointScheduler_ConnectionGroup,
+    >,
+    pub groups: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::System::Net::ServicePointScheduler_ConnectionGroup,
-            *mut crate::System::Net::WebOperation,
         >,
     >,
-    pub idleConnections: *mut crate::System::Collections::Generic::LinkedList_1<
-        crate::System::ValueTuple_3<
-            *mut crate::System::Net::ServicePointScheduler_ConnectionGroup,
-            *mut crate::System::Net::WebConnection,
-            *mut crate::System::Threading::Tasks::Task,
+    pub operations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedList_1<
+            crate::System::ValueTuple_2<
+                *mut crate::System::Net::ServicePointScheduler_ConnectionGroup,
+                *mut crate::System::Net::WebOperation,
+            >,
+        >,
+    >,
+    pub idleConnections: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedList_1<
+            crate::System::ValueTuple_3<
+                *mut crate::System::Net::ServicePointScheduler_ConnectionGroup,
+                *mut crate::System::Net::WebConnection,
+                *mut crate::System::Threading::Tasks::Task,
+            >,
         >,
     >,
     pub currentConnections: i32,
@@ -321,7 +333,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ServicePointSched
 #[derive(Debug)]
 pub struct ServicePointScheduler_AsyncManualResetEvent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_tcs: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<bool>,
+    pub m_tcs: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskCompletionSource_1<bool>,
+    >,
 }
 #[cfg(feature = "System+Net+ServicePointScheduler+AsyncManualResetEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -413,14 +427,22 @@ for crate::System::Net::ServicePointScheduler_AsyncManualResetEvent {
 #[derive(Debug)]
 pub struct ServicePointScheduler_ConnectionGroup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Scheduler_k__BackingField: *mut crate::System::Net::ServicePointScheduler,
-    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _cordl_ID: i32,
-    pub connections: *mut crate::System::Collections::Generic::LinkedList_1<
-        *mut crate::System::Net::WebConnection,
+    pub _Scheduler_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::ServicePointScheduler,
     >,
-    pub queue: *mut crate::System::Collections::Generic::LinkedList_1<
-        *mut crate::System::Net::WebOperation,
+    pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _cordl_ID: i32,
+    pub connections: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedList_1<
+            *mut crate::System::Net::WebConnection,
+        >,
+    >,
+    pub queue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedList_1<
+            *mut crate::System::Net::WebOperation,
+        >,
     >,
 }
 #[cfg(feature = "System+Net+ServicePointScheduler+ConnectionGroup")]

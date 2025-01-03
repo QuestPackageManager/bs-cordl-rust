@@ -10,17 +10,29 @@ pub struct RijndaelManagedTransform {
     pub m_blockSizeBytes: i32,
     pub m_inputBlockSize: i32,
     pub m_outputBlockSize: i32,
-    pub m_encryptKeyExpansion: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub m_decryptKeyExpansion: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub m_encryptKeyExpansion: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub m_decryptKeyExpansion: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     pub m_Nr: i32,
     pub m_Nb: i32,
     pub m_Nk: i32,
-    pub m_encryptindex: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub m_decryptindex: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub m_IV: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub m_lastBlockBuffer: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub m_depadBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub m_shiftRegister: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub m_encryptindex: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub m_decryptindex: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub m_IV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub m_lastBlockBuffer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub m_depadBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub m_shiftRegister: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
 }
 #[cfg(feature = "System+Security+Cryptography+RijndaelManagedTransform")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

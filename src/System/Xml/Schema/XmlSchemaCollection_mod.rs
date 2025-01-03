@@ -3,14 +3,16 @@
 #[derive(Debug)]
 pub struct XmlSchemaCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub collection: *mut crate::System::Collections::Hashtable,
-    pub nameTable: *mut crate::System::Xml::XmlNameTable,
-    pub schemaNames: *mut crate::System::Xml::Schema::SchemaNames,
-    pub wLock: *mut crate::System::Threading::ReaderWriterLock,
+    pub collection: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+    pub schemaNames: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNames>,
+    pub wLock: quest_hook::libil2cpp::Gc<crate::System::Threading::ReaderWriterLock>,
     pub timeout: i32,
     pub isThreadSafe: bool,
-    pub validationEventHandler: *mut crate::System::Xml::Schema::ValidationEventHandler,
-    pub xmlResolver: *mut crate::System::Xml::XmlResolver,
+    pub validationEventHandler: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::ValidationEventHandler,
+    >,
+    pub xmlResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

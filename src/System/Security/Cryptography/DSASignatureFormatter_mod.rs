@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DSASignatureFormatter {
     __cordl_parent: crate::System::Security::Cryptography::AsymmetricSignatureFormatter,
-    pub _oid: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Security+Cryptography+DSASignatureFormatter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

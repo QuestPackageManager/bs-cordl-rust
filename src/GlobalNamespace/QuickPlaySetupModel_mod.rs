@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct QuickPlaySetupModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
-    pub _client: *mut crate::System::Net::Http::HttpClient,
-    pub _request: *mut crate::System::Threading::Tasks::Task_1<
-        *mut crate::GlobalNamespace::QuickPlaySetupData,
+    pub _networkConfig: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INetworkConfig,
+    >,
+    pub _client: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpClient>,
+    pub _request: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::QuickPlaySetupData,
+        >,
     >,
     pub _lastRequestTime: crate::System::DateTime,
 }
@@ -156,8 +160,10 @@ for crate::GlobalNamespace::QuickPlaySetupModel {
 #[derive(Debug)]
 pub struct QuickPlaySetupModel_QuickPlaySetupDataFB {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub data: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::QuickPlaySetupData,
+    pub data: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::QuickPlaySetupData,
+        >,
     >,
 }
 #[cfg(feature = "QuickPlaySetupModel+QuickPlaySetupDataFB")]

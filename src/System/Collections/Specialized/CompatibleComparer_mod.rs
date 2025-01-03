@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct CompatibleComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _comparer: *mut crate::System::Collections::IComparer,
-    pub _hcp: *mut crate::System::Collections::IHashCodeProvider,
+    pub _comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
+    pub _hcp: quest_hook::libil2cpp::Gc<crate::System::Collections::IHashCodeProvider>,
 }
 #[cfg(feature = "System+Collections+Specialized+CompatibleComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

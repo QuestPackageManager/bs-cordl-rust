@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct MonoListItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub next: *mut crate::System::MonoListItem,
-    pub data: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub next: quest_hook::libil2cpp::Gc<crate::System::MonoListItem>,
+    pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+MonoListItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

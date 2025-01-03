@@ -5,8 +5,8 @@ pub struct SymmetricKeyEncSessionPacket {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::ContainedPacket,
     pub version: i32,
     pub encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-    pub s2k: *mut crate::Org::BouncyCastle::Bcpg::S2k,
-    pub secKeyData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub s2k: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::S2k>,
+    pub secKeyData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+SymmetricKeyEncSessionPacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

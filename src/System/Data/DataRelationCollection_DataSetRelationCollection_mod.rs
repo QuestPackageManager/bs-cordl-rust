@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct DataRelationCollection_DataSetRelationCollection {
     __cordl_parent: crate::System::Data::DataRelationCollection,
-    pub _dataSet: *mut crate::System::Data::DataSet,
-    pub _relations: *mut crate::System::Collections::ArrayList,
-    pub _delayLoadingRelations: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Data::DataRelation,
+    pub _dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+    pub _relations: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _delayLoadingRelations: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRelation>,
     >,
 }
 #[cfg(feature = "System+Data+DataRelationCollection+DataSetRelationCollection")]

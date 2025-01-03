@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AssemblyLoadEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub _LoadedAssembly_k__BackingField: *mut crate::System::Reflection::Assembly,
+    pub _LoadedAssembly_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::Assembly,
+    >,
 }
 #[cfg(feature = "System+AssemblyLoadEventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

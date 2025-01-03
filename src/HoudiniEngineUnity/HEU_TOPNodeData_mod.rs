@@ -4,16 +4,20 @@
 pub struct HEU_TOPNodeData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _nodeID: i32,
-    pub _nodeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _parentName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _workResultParentGO: *mut crate::UnityEngine::GameObject,
-    pub _workResults: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_TOPWorkResult,
+    pub _nodeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _parentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _workResultParentGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _workResults: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_TOPWorkResult,
+        >,
     >,
-    pub _tags: *mut crate::HoudiniEngineUnity::TOPNodeTags,
+    pub _tags: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::TOPNodeTags>,
     pub _showResults: bool,
     pub _pdgState: crate::HoudiniEngineUnity::HEU_TOPNodeData_PDGState,
-    pub _workItemTally: *mut crate::HoudiniEngineUnity::HEU_WorkItemTally,
+    pub _workItemTally: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_WorkItemTally,
+    >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_TOPNodeData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

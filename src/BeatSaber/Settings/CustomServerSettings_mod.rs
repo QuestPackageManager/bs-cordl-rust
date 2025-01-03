@@ -1,10 +1,10 @@
 #[cfg(feature = "BeatSaber+Settings+CustomServerSettings")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CustomServerSettings {
     pub useCustomEnvironment: bool,
     pub forceGameLiftEnvironment: bool,
-    pub hostName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub hostName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "BeatSaber+Settings+CustomServerSettings")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

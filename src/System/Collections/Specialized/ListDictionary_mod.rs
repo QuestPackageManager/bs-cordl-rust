@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct ListDictionary {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub head: *mut crate::System::Collections::Specialized::ListDictionary_DictionaryNode,
+    pub head: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Specialized::ListDictionary_DictionaryNode,
+    >,
     pub version: i32,
     pub count: i32,
-    pub comparer: *mut crate::System::Collections::IComparer,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+Specialized+ListDictionary")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -306,9 +308,11 @@ for crate::System::Collections::Specialized::ListDictionary {
 #[derive(Debug)]
 pub struct ListDictionary_DictionaryNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub key: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub value: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub next: *mut crate::System::Collections::Specialized::ListDictionary_DictionaryNode,
+    pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub next: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Specialized::ListDictionary_DictionaryNode,
+    >,
 }
 #[cfg(feature = "System+Collections+Specialized+ListDictionary+DictionaryNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -366,8 +370,12 @@ for crate::System::Collections::Specialized::ListDictionary_DictionaryNode {
 #[derive(Debug)]
 pub struct ListDictionary_NodeEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _list: *mut crate::System::Collections::Specialized::ListDictionary,
-    pub _current: *mut crate::System::Collections::Specialized::ListDictionary_DictionaryNode,
+    pub _list: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Specialized::ListDictionary,
+    >,
+    pub _current: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Specialized::ListDictionary_DictionaryNode,
+    >,
     pub _version: i32,
     pub _start: bool,
 }
@@ -528,7 +536,9 @@ for crate::System::Collections::Specialized::ListDictionary_NodeEnumerator {
 #[derive(Debug)]
 pub struct ListDictionary_NodeKeyValueCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _list: *mut crate::System::Collections::Specialized::ListDictionary,
+    pub _list: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Specialized::ListDictionary,
+    >,
     pub _isKeys: bool,
 }
 #[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection")]
@@ -688,8 +698,12 @@ for crate::System::Collections::Specialized::ListDictionary_NodeKeyValueCollecti
 #[derive(Debug)]
 pub struct NodeKeyValueCollection_ListDictionary_NodeKeyValueEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _list: *mut crate::System::Collections::Specialized::ListDictionary,
-    pub _current: *mut crate::System::Collections::Specialized::ListDictionary_DictionaryNode,
+    pub _list: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Specialized::ListDictionary,
+    >,
+    pub _current: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Specialized::ListDictionary_DictionaryNode,
+    >,
     pub _version: i32,
     pub _isKeys: bool,
     pub _start: bool,

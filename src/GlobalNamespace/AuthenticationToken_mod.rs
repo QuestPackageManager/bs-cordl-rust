@@ -1,11 +1,11 @@
 #[cfg(feature = "AuthenticationToken")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AuthenticationToken {
     pub platform: crate::GlobalNamespace::AuthenticationToken_Platform,
-    pub userId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub userName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub sessionToken: *mut quest_hook::libil2cpp::Il2CppString,
+    pub userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub sessionToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "AuthenticationToken")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

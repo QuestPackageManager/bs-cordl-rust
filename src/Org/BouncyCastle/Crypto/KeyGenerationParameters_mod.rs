@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct KeyGenerationParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
     pub strength: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+KeyGenerationParameters")]

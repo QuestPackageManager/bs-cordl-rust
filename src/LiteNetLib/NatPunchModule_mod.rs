@@ -3,17 +3,25 @@
 #[derive(Debug)]
 pub struct NatPunchModule {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _socket: *mut crate::LiteNetLib::NetSocket,
-    pub _requestEvents: *mut crate::System::Collections::Generic::Queue_1<
-        crate::LiteNetLib::NatPunchModule_RequestEventData,
+    pub _socket: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetSocket>,
+    pub _requestEvents: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<
+            crate::LiteNetLib::NatPunchModule_RequestEventData,
+        >,
     >,
-    pub _successEvents: *mut crate::System::Collections::Generic::Queue_1<
-        crate::LiteNetLib::NatPunchModule_SuccessEventData,
+    pub _successEvents: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<
+            crate::LiteNetLib::NatPunchModule_SuccessEventData,
+        >,
     >,
-    pub _cacheReader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    pub _cacheWriter: *mut crate::LiteNetLib::Utils::NetDataWriter,
-    pub _netPacketProcessor: *mut crate::LiteNetLib::Utils::NetPacketProcessor,
-    pub _natPunchListener: *mut crate::LiteNetLib::INatPunchListener,
+    pub _cacheReader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+    pub _cacheWriter: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+    pub _netPacketProcessor: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::Utils::NetPacketProcessor,
+    >,
+    pub _natPunchListener: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::INatPunchListener,
+    >,
 }
 #[cfg(feature = "LiteNetLib+NatPunchModule")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -218,8 +226,12 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NatPunchModule {
 #[derive(Debug)]
 pub struct NatPunchModule_NatIntroduceRequestPacket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Internal_k__BackingField: *mut crate::System::Net::IPEndPoint,
-    pub _Token_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Internal_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::IPEndPoint,
+    >,
+    pub _Token_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -322,9 +334,15 @@ for crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
 #[derive(Debug)]
 pub struct NatPunchModule_NatIntroduceResponsePacket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Internal_k__BackingField: *mut crate::System::Net::IPEndPoint,
-    pub _External_k__BackingField: *mut crate::System::Net::IPEndPoint,
-    pub _Token_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Internal_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::IPEndPoint,
+    >,
+    pub _External_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::IPEndPoint,
+    >,
+    pub _Token_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -451,7 +469,9 @@ for crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
 #[derive(Debug)]
 pub struct NatPunchModule_NatPunchPacket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Token_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Token_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _IsExternal_k__BackingField: bool,
 }
 #[cfg(feature = "LiteNetLib+NatPunchModule+NatPunchPacket")]
@@ -546,11 +566,11 @@ for crate::LiteNetLib::NatPunchModule_NatPunchPacket {
 }
 #[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NatPunchModule_RequestEventData {
-    pub LocalEndPoint: *mut crate::System::Net::IPEndPoint,
-    pub RemoteEndPoint: *mut crate::System::Net::IPEndPoint,
-    pub Token: *mut quest_hook::libil2cpp::Il2CppString,
+    pub LocalEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+    pub RemoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+    pub Token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -572,11 +592,11 @@ for crate::LiteNetLib::NatPunchModule_RequestEventData {
 impl crate::LiteNetLib::NatPunchModule_RequestEventData {}
 #[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NatPunchModule_SuccessEventData {
-    pub TargetEndPoint: *mut crate::System::Net::IPEndPoint,
+    pub TargetEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     pub Type: crate::LiteNetLib::NatAddressType,
-    pub Token: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct AbstractF2mCurve {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::ECCurve,
-    pub si: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub si: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::BigInteger,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+AbstractF2mCurve")]

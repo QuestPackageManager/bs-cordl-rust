@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct JsonFormatterConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _reader: *mut crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader,
-    pub _contract: *mut crate::Newtonsoft::Json::Serialization::JsonISerializableContract,
-    pub _member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+    pub _reader: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader,
+    >,
+    pub _contract: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonISerializableContract,
+    >,
+    pub _member: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonProperty,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonFormatterConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

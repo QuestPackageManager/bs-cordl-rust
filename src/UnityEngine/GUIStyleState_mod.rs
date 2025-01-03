@@ -4,7 +4,7 @@
 pub struct GUIStyleState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
-    pub m_SourceStyle: *mut crate::UnityEngine::GUIStyle,
+    pub m_SourceStyle: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
 }
 #[cfg(feature = "UnityEngine+GUIStyleState")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

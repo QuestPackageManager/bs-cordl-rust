@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct WebHeaderCollection {
     __cordl_parent: crate::System::Collections::Specialized::NameValueCollection,
-    pub m_CommonHeaders: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_CommonHeaders: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub m_NumCommonHeaders: i32,
-    pub m_InnerCollection: *mut crate::System::Collections::Specialized::NameValueCollection,
+    pub m_InnerCollection: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Specialized::NameValueCollection,
+    >,
     pub m_Type: crate::System::Net::WebHeaderCollectionType,
 }
 #[cfg(feature = "System+Net+WebHeaderCollection")]

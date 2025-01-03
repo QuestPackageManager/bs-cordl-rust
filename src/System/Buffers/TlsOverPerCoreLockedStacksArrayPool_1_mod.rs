@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct TlsOverPerCoreLockedStacksArrayPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Buffers::ArrayPool_1<T>,
-    pub _bucketArraySizes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _buckets: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
-            T,
+    pub _bucketArraySizes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub _buckets: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
+                T,
+            >,
         >,
     >,
     pub _callbackCreated: i32,
@@ -205,8 +209,8 @@ pub struct TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<
     T: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _arrays: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub _arrays: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<T>>,
     >,
     pub _count: i32,
     pub _firstStackItemMS: u32,
@@ -345,8 +349,12 @@ pub struct TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
     T: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _perCoreStacks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<T>,
+    pub _perCoreStacks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<
+                T,
+            >,
+        >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

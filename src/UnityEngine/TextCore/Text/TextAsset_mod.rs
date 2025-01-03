@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct TextAsset {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub m_Version: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_InstanceID: i32,
     pub m_HashCode: i32,
-    pub m_Material: *mut crate::UnityEngine::Material,
+    pub m_Material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub m_MaterialHashCode: i32,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextAsset")]

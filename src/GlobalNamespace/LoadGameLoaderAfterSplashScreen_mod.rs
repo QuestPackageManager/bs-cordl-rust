@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LoadGameLoaderAfterSplashScreen {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _camera: *mut crate::UnityEngine::Camera,
+    pub _camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
 }
 #[cfg(feature = "LoadGameLoaderAfterSplashScreen")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

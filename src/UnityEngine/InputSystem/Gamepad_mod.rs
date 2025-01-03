@@ -3,21 +3,51 @@
 #[derive(Debug)]
 pub struct Gamepad {
     __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
-    pub _buttonWest_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _buttonNorth_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _buttonSouth_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _buttonEast_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _leftStickButton_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _rightStickButton_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _startButton_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _selectButton_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _dpad_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::DpadControl,
-    pub _leftShoulder_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _rightShoulder_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _leftStick_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::StickControl,
-    pub _rightStick_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::StickControl,
-    pub _leftTrigger_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _rightTrigger_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    pub _buttonWest_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _buttonNorth_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _buttonSouth_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _buttonEast_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _leftStickButton_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _rightStickButton_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _startButton_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _selectButton_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _dpad_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::DpadControl,
+    >,
+    pub _leftShoulder_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _rightShoulder_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _leftStick_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::StickControl,
+    >,
+    pub _rightStick_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::StickControl,
+    >,
+    pub _leftTrigger_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _rightTrigger_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
     pub m_Rumble: crate::UnityEngine::InputSystem::Haptics::DualMotorRumble,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Gamepad")]

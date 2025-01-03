@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct LightGroupDuplicationGroup {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _duplicationGroupName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _lightGroups: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::LightGroupSO,
+    pub _duplicationGroupName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _lightGroups: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::LightGroupSO>,
     >,
 }
 #[cfg(feature = "BeatSaber+TrackDefinitions+LightGroupDuplicationGroup")]

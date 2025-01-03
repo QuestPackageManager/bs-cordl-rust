@@ -3,15 +3,15 @@
 #[derive(Debug)]
 pub struct ListenerAsyncResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub handle: *mut crate::System::Threading::ManualResetEvent,
+    pub handle: quest_hook::libil2cpp::Gc<crate::System::Threading::ManualResetEvent>,
     pub synch: bool,
     pub completed: bool,
-    pub cb: *mut crate::System::AsyncCallback,
-    pub state: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub exception: *mut crate::System::Exception,
-    pub context: *mut crate::System::Net::HttpListenerContext,
-    pub locker: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub forward: *mut crate::System::Net::ListenerAsyncResult,
+    pub cb: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+    pub state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    pub context: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListenerContext>,
+    pub locker: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub forward: quest_hook::libil2cpp::Gc<crate::System::Net::ListenerAsyncResult>,
     pub EndCalled: bool,
     pub InGet: bool,
 }

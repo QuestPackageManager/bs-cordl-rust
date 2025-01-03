@@ -1,23 +1,29 @@
 #[cfg(feature = "BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GetMultiplayerInstanceRequest {
-    pub version: *mut quest_hook::libil2cpp::Il2CppString,
+    pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub serviceEnvironment: crate::GlobalNamespace::ServiceEnvironment,
-    pub singleUseAuthToken: *mut quest_hook::libil2cpp::Il2CppString,
+    pub singleUseAuthToken: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub beatmapLevelSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     pub gameplayServerConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
-    pub userId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub privateGameSecret: *mut quest_hook::libil2cpp::Il2CppString,
-    pub privateGameCode: *mut quest_hook::libil2cpp::Il2CppString,
-    pub platform: crate::GlobalNamespace::AuthenticationToken_Platform,
-    pub authUserId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub gameliftRegionLatencies: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        i64,
+    pub userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub privateGameSecret: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub ticketId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub placementId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub privateGameCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub platform: crate::GlobalNamespace::AuthenticationToken_Platform,
+    pub authUserId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub gameliftRegionLatencies: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            i64,
+        >,
+    >,
+    pub ticketId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub placementId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+CapsulecastCommand")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CapsulecastCommand {
     pub _point1_k__BackingField: crate::UnityEngine::Vector3,
     pub _point2_k__BackingField: crate::UnityEngine::Vector3,

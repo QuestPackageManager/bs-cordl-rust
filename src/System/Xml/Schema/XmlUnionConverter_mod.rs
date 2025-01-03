@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct XmlUnionConverter {
     __cordl_parent: crate::System::Xml::Schema::XmlBaseConverter,
-    pub converters: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::Schema::XmlValueConverter,
+    pub converters: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::Schema::XmlValueConverter,
+        >,
     >,
     pub hasAtomicMember: bool,
     pub hasListMember: bool,

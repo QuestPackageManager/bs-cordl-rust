@@ -126,10 +126,14 @@ for crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator {
 #[derive(Debug)]
 pub struct BerOctetStringGenerator_BufferedBerOctetStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    pub _buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _off: i32,
-    pub _gen: *mut crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator,
-    pub _derOut: *mut crate::Org::BouncyCastle::Asn1::DerOutputStream,
+    pub _gen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator,
+    >,
+    pub _derOut: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerOutputStream,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetStringGenerator+BufferedBerOctetStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

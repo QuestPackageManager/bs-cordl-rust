@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct PgpLiteralDataGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub pkOut: *mut crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
+    pub pkOut: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
+    >,
     pub oldFormat: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpLiteralDataGenerator")]

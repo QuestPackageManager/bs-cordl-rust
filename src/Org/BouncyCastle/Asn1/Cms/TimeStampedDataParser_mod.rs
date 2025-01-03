@@ -3,12 +3,20 @@
 #[derive(Debug)]
 pub struct TimeStampedDataParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub dataUri: *mut crate::Org::BouncyCastle::Asn1::DerIA5String,
-    pub metaData: *mut crate::Org::BouncyCastle::Asn1::Cms::MetaData,
-    pub content: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetStringParser,
-    pub temporalEvidence: *mut crate::Org::BouncyCastle::Asn1::Cms::Evidence,
-    pub parser: *mut crate::Org::BouncyCastle::Asn1::Asn1SequenceParser,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub dataUri: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerIA5String>,
+    pub metaData: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::MetaData,
+    >,
+    pub content: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetStringParser,
+    >,
+    pub temporalEvidence: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::Evidence,
+    >,
+    pub parser: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1SequenceParser,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+TimeStampedDataParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

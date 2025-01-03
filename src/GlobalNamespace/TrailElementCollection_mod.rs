@@ -4,8 +4,8 @@
 pub struct TrailElementCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _capacity: i32,
-    pub _snapshots: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::TrailElement,
+    pub _snapshots: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::TrailElement>,
     >,
     pub _headIndex: i32,
     pub _totalDistance: f32,
@@ -171,7 +171,7 @@ for crate::GlobalNamespace::TrailElementCollection {
 }
 #[cfg(feature = "TrailElementCollection+InterpolationState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TrailElementCollection_InterpolationState {
     pub segmentIndex: i32,
     pub segmentLerp: f32,

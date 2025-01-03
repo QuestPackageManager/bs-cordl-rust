@@ -3,15 +3,19 @@
 #[derive(Debug)]
 pub struct FileBrowserTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _tableView: *mut crate::HMUI::TableView,
-    pub _cellPrefab: *mut crate::GlobalNamespace::FileBrowserTableCell,
-    pub _cellHeight: f32,
-    pub didSelectRow: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::FileBrowserTableView,
-        *mut crate::GlobalNamespace::FileBrowserItem,
+    pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+    pub _cellPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FileBrowserTableCell,
     >,
-    pub _items: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::FileBrowserItem,
+    pub _cellHeight: f32,
+    pub didSelectRow: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::FileBrowserTableView,
+            *mut crate::GlobalNamespace::FileBrowserItem,
+        >,
+    >,
+    pub _items: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::FileBrowserItem>,
     >,
 }
 #[cfg(feature = "FileBrowserTableView")]

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HEU_ScriptCallbackExample {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _msg: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "HEU_ScriptCallbackExample")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

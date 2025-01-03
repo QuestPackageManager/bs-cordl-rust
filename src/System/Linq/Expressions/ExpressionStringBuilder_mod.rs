@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct ExpressionStringBuilder {
     __cordl_parent: crate::System::Linq::Expressions::ExpressionVisitor,
-    pub _out: *mut crate::System::Text::StringBuilder,
-    pub _ids: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        i32,
+    pub _out: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    pub _ids: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            i32,
+        >,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+ExpressionStringBuilder")]

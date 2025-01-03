@@ -267,7 +267,9 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
 #[derive(Debug)]
 pub struct BeatmapDataLoader_BasicEventConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
-    pub _specialEventsFilter: *mut crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SpecialEventsFilter,
+    pub _specialEventsFilter: quest_hook::libil2cpp::Gc<
+        crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SpecialEventsFilter,
+    >,
     pub _canUseEnvironmentEventsAndShouldLoadDynamicEvents: bool,
 }
 #[cfg(
@@ -690,8 +692,10 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SliderConv
 #[derive(Debug)]
 pub struct BeatmapDataLoader_SpecialEventsFilter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _eventTypesToFilter: *mut crate::System::Collections::Generic::HashSet_1<
-        crate::BeatmapSaveDataCommon::BeatmapEventType,
+    pub _eventTypesToFilter: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            crate::BeatmapSaveDataCommon::BeatmapEventType,
+        >,
     >,
 }
 #[cfg(

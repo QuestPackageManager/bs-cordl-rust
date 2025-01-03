@@ -5,41 +5,75 @@
 #[derive(Debug)]
 pub struct BeatAvatarEditorViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _skinColorValuePicker: *mut crate::GlobalNamespace::NamedColorListController,
-    pub _headTopValuePicker: *mut crate::GlobalNamespace::NamedIntListController,
-    pub _eyesValuePicker: *mut crate::GlobalNamespace::NamedIntListController,
-    pub _handsValuePicker: *mut crate::GlobalNamespace::NamedIntListController,
-    pub _clothesValuePicker: *mut crate::GlobalNamespace::NamedIntListController,
-    pub _headTopPrimaryColorButtonController: *mut crate::GlobalNamespace::ColorPickerButtonController,
-    pub _headTopSecondaryColorButtonController: *mut crate::GlobalNamespace::ColorPickerButtonController,
-    pub _handsColorButtonController: *mut crate::GlobalNamespace::ColorPickerButtonController,
-    pub _clothesColorButtonControllerPrimary: *mut crate::GlobalNamespace::ColorPickerButtonController,
-    pub _clothesColorButtonControllerSecondary: *mut crate::GlobalNamespace::ColorPickerButtonController,
-    pub _clothesColorButtonControllerDetail: *mut crate::GlobalNamespace::ColorPickerButtonController,
-    pub _randomizeAllButton: *mut crate::UnityEngine::UI::Button,
-    pub _undoButton: *mut crate::UnityEngine::UI::Button,
-    pub _redoButton: *mut crate::UnityEngine::UI::Button,
-    pub _applyButton: *mut crate::UnityEngine::UI::Button,
-    pub _cancelButton: *mut crate::UnityEngine::UI::Button,
-    pub _applyButtonText: *mut crate::HMUI::CurvedTextMeshPro,
-    pub _eyesPreviewImage: *mut crate::UnityEngine::UI::Image,
-    pub _avatarPartsModel: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
-    pub _avatarDataModel: *mut crate::BeatSaber::BeatAvatarSDK::AvatarDataModel,
-    pub didRequestColorChangeEvent: *mut crate::System::Action_4<
-        *mut crate::System::Action_1<crate::UnityEngine::Color>,
-        crate::UnityEngine::Color,
-        crate::BeatSaber::BeatAvatarSDK::AvatarPart,
-        i32,
+    pub _skinColorValuePicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NamedColorListController,
     >,
-    pub randomizeAllButtonWasPressedEvent: *mut crate::System::Action,
-    pub didChangedAvatarPartEvent: *mut crate::System::Action_1<
-        crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+    pub _headTopValuePicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NamedIntListController,
     >,
-    pub cancelButtonWasPressedEvent: *mut crate::System::Action,
-    pub okButtonWasPressedEvent: *mut crate::System::Action,
-    pub _avatarEditHistory: *mut crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
-    pub _intPickerBinder: *mut crate::HMUI::ValueChangedBinder_1<i32>,
+    pub _eyesValuePicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NamedIntListController,
+    >,
+    pub _handsValuePicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NamedIntListController,
+    >,
+    pub _clothesValuePicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NamedIntListController,
+    >,
+    pub _headTopPrimaryColorButtonController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorPickerButtonController,
+    >,
+    pub _headTopSecondaryColorButtonController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorPickerButtonController,
+    >,
+    pub _handsColorButtonController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorPickerButtonController,
+    >,
+    pub _clothesColorButtonControllerPrimary: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorPickerButtonController,
+    >,
+    pub _clothesColorButtonControllerSecondary: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorPickerButtonController,
+    >,
+    pub _clothesColorButtonControllerDetail: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorPickerButtonController,
+    >,
+    pub _randomizeAllButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _undoButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _redoButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _applyButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _cancelButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _applyButtonText: quest_hook::libil2cpp::Gc<crate::HMUI::CurvedTextMeshPro>,
+    pub _eyesPreviewImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _avatarPartsModel: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
+    >,
+    pub _avatarDataModel: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarDataModel,
+    >,
+    pub didRequestColorChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_4<
+            *mut crate::System::Action_1<crate::UnityEngine::Color>,
+            crate::UnityEngine::Color,
+            crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+            i32,
+        >,
+    >,
+    pub randomizeAllButtonWasPressedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub didChangedAvatarPartEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::BeatSaber::BeatAvatarSDK::AvatarPart>,
+    >,
+    pub cancelButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub okButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _avatarEditHistory: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory,
+    >,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
+    pub _intPickerBinder: quest_hook::libil2cpp::Gc<
+        crate::HMUI::ValueChangedBinder_1<i32>,
+    >,
     pub _lastEditedPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
 }
 #[cfg(

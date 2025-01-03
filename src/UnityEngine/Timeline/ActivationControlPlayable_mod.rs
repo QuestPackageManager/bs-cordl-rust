@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ActivationControlPlayable {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
-    pub gameObject: *mut crate::UnityEngine::GameObject,
+    pub gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub postPlayback: crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState,
     pub m_InitialState: crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState,
 }

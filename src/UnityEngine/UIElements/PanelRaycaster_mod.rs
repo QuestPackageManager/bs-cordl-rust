@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct PanelRaycaster {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseRaycaster,
-    pub m_Panel: *mut crate::UnityEngine::UIElements::BaseRuntimePanel,
+    pub m_Panel: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseRuntimePanel,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelRaycaster")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

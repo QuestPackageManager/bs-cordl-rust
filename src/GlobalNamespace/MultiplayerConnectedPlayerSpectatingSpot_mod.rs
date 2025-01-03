@@ -3,14 +3,22 @@
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerSpectatingSpot {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _spectatingSpotManager: *mut crate::GlobalNamespace::MultiplayerSpectatingSpotManager,
-    pub hasBeenRemovedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+    pub _connectedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
     >,
-    pub isObservedChangedEvent: *mut crate::System::Action_1<bool>,
-    pub _observable_k__BackingField: *mut crate::GlobalNamespace::IMultiplayerObservable,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub _spectatingSpotManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerSpectatingSpotManager,
+    >,
+    pub hasBeenRemovedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
+    >,
+    pub isObservedChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+    pub _observable_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerObservable,
+    >,
     pub _playerFailed: bool,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerSpectatingSpot")]

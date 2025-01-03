@@ -3,19 +3,19 @@
 #[derive(Debug)]
 pub struct SchemaEntity {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub qname: *mut crate::System::Xml::XmlQualifiedName,
-    pub url: *mut quest_hook::libil2cpp::Il2CppString,
-    pub pubid: *mut quest_hook::libil2cpp::Il2CppString,
-    pub text: *mut quest_hook::libil2cpp::Il2CppString,
-    pub ndata: *mut crate::System::Xml::XmlQualifiedName,
+    pub qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub pubid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ndata: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub lineNumber: i32,
     pub linePosition: i32,
     pub isParameter: bool,
     pub isExternal: bool,
     pub parsingInProgress: bool,
     pub isDeclaredInExternal: bool,
-    pub baseURI: *mut quest_hook::libil2cpp::Il2CppString,
-    pub declaredURI: *mut quest_hook::libil2cpp::Il2CppString,
+    pub baseURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub declaredURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Schema+SchemaEntity")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

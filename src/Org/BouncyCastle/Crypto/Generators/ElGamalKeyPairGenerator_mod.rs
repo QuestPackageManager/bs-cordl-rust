@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ElGamalKeyPairGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub param: *mut crate::Org::BouncyCastle::Crypto::Parameters::ElGamalKeyGenerationParameters,
+    pub param: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ElGamalKeyGenerationParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+ElGamalKeyPairGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -5,15 +5,23 @@ pub struct HEU_ToolsInfo {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _paintBrushSize: f32,
     pub _paintBrushOpacity: f32,
-    pub _paintIntValue: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _paintFloatValue: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _paintStringValue: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _paintIntValue: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub _paintFloatValue: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
+    pub _paintStringValue: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _lastAttributesGeoID: i32,
     pub _lastAttributesPartID: i32,
-    pub _lastAttributeNodeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _lastAttributeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _lastAttributeNodeName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _lastAttributeName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _brushHandleColor: crate::UnityEngine::Color,
     pub _affectedAreaPaintColor: crate::UnityEngine::Color,
     pub _liveUpdate: bool,

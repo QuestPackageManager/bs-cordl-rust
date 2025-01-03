@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct XmlSchemaInference {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub rootSchema: *mut crate::System::Xml::Schema::XmlSchema,
-    pub schemaSet: *mut crate::System::Xml::Schema::XmlSchemaSet,
-    pub xtr: *mut crate::System::Xml::XmlReader,
-    pub nametable: *mut crate::System::Xml::NameTable,
-    pub TargetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
-    pub NamespaceManager: *mut crate::System::Xml::XmlNamespaceManager,
-    pub schemaList: *mut crate::System::Collections::ArrayList,
+    pub rootSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+    pub schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+    pub xtr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    pub nametable: quest_hook::libil2cpp::Gc<crate::System::Xml::NameTable>,
+    pub TargetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub NamespaceManager: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlNamespaceManager,
+    >,
+    pub schemaList: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub occurrence: crate::System::Xml::Schema::XmlSchemaInference_InferenceOption,
     pub typeInference: crate::System::Xml::Schema::XmlSchemaInference_InferenceOption,
 }

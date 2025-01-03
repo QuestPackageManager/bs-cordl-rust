@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct FaceInfo_Legacy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub PointSize: f32,
     pub Scale: f32,
     pub CharacterCount: i32,

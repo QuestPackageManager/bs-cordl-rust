@@ -1,10 +1,14 @@
 #[cfg(feature = "UnityEngine+UIElements+UQueryState_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UQueryState_1<T: quest_hook::libil2cpp::Type> {
-    pub m_Element: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_Matchers: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::RuleMatcher,
+    pub m_Element: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_Matchers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::RuleMatcher,
+        >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -259,7 +263,7 @@ for crate::UnityEngine::UIElements::UQueryState_1<T> {
 #[derive(Debug)]
 pub struct UQueryState_1_ActionQueryMatcher<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::UQuery_UQueryMatcher,
-    pub _callBack_k__BackingField: *mut crate::System::Action_1<T>,
+    pub _callBack_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
@@ -355,10 +359,12 @@ for crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<T> {
 }
 #[cfg(feature = "UnityEngine+UIElements+UQueryState_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UQueryState_1_Enumerator<T: quest_hook::libil2cpp::Type> {
-    pub iterationList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub iterationList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
     >,
     pub currentIndex: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -522,8 +528,8 @@ pub struct UQueryState_1_ListQueryMatcher_1<
     TElement: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::UnityEngine::UIElements::UQuery_UQueryMatcher,
-    pub _matches_k__BackingField: *mut crate::System::Collections::Generic::List_1<
-        TElement,
+    pub _matches_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<TElement>,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,

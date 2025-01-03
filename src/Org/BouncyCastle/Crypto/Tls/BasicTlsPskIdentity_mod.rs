@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct BasicTlsPskIdentity {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mIdentity: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mPsk: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mIdentity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mPsk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+BasicTlsPskIdentity")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

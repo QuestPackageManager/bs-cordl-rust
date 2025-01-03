@@ -6,9 +6,8 @@ pub struct SetPropertyBagBase_2<
     TElement: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::Unity::Properties::PropertyBag_1<TSet>,
-    pub m_Property: *mut crate::Unity::Properties::SetPropertyBagBase_2_SetElementProperty<
-        TSet,
-        TElement,
+    pub m_Property: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::SetPropertyBagBase_2_SetElementProperty<TSet, TElement>,
     >,
     __cordl_phantom_TSet: std::marker::PhantomData<TSet>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,

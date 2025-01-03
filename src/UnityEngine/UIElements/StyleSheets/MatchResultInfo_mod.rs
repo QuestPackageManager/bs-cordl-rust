@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+MatchResultInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MatchResultInfo {
     pub success: bool,
     pub triggerPseudoMask: crate::UnityEngine::UIElements::PseudoStates,

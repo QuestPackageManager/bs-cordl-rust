@@ -3,34 +3,50 @@
 #[derive(Debug)]
 pub struct NoteController {
     __cordl_parent: crate::GlobalNamespace::NoteControllerBase,
-    pub _noteMovement: *mut crate::GlobalNamespace::NoteMovement,
-    pub _noteTransform: *mut crate::UnityEngine::Transform,
+    pub _noteMovement: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMovement>,
+    pub _noteTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _hidden_k__BackingField: bool,
-    pub _didInitEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::INoteControllerDidInitEvent,
+    pub _didInitEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerDidInitEvent,
+        >,
     >,
-    pub _noteDidStartJumpEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::INoteControllerNoteDidStartJumpEvent,
+    pub _noteDidStartJumpEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteDidStartJumpEvent,
+        >,
     >,
-    pub _noteDidFinishJumpEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::INoteControllerNoteDidFinishJumpEvent,
+    pub _noteDidFinishJumpEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteDidFinishJumpEvent,
+        >,
     >,
-    pub _noteDidPassJumpThreeQuartersEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+    pub _noteDidPassJumpThreeQuartersEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+        >,
     >,
-    pub _noteWasCutEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::INoteControllerNoteWasCutEvent,
+    pub _noteWasCutEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteWasCutEvent,
+        >,
     >,
-    pub _noteWasMissedEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::INoteControllerNoteWasMissedEvent,
+    pub _noteWasMissedEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteWasMissedEvent,
+        >,
     >,
-    pub _noteDidStartDissolvingEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+    pub _noteDidStartDissolvingEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+        >,
     >,
-    pub _noteDidDissolveEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::INoteControllerNoteDidDissolveEvent,
+    pub _noteDidDissolveEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteDidDissolveEvent,
+        >,
     >,
-    pub _noteData: *mut crate::GlobalNamespace::NoteData,
+    pub _noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
     pub _dissolving: bool,
     pub _uniformScale: f32,
 }

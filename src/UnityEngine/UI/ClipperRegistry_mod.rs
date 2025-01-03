@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ClipperRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Clippers: *mut crate::UnityEngine::UI::Collections::IndexedSet_1<
-        *mut crate::UnityEngine::UI::IClipper,
+    pub m_Clippers: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Collections::IndexedSet_1<
+            *mut crate::UnityEngine::UI::IClipper,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UI+ClipperRegistry")]

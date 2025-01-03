@@ -1,11 +1,11 @@
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+FontReference")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FontReference {
-    pub familyName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub styleName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub familyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub styleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub faceIndex: i32,
-    pub filePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+FontReference")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

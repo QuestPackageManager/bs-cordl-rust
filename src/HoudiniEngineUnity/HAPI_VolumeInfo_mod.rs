@@ -1,6 +1,6 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_VolumeInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HAPI_VolumeInfo {
     pub nameSH: i32,
     pub _cordl_type: crate::HoudiniEngineUnity::HAPI_VolumeType,

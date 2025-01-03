@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HeaderAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
-    pub header: *mut quest_hook::libil2cpp::Il2CppString,
+    pub header: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+HeaderAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Numerics+DoubleUlong")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DoubleUlong {
     padding: [u8; 8usize],
 }

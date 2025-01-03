@@ -3,14 +3,16 @@
 #[derive(Debug)]
 pub struct TextEditor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub keyboardOnScreen: *mut crate::UnityEngine::TouchScreenKeyboard,
+    pub keyboardOnScreen: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TouchScreenKeyboard,
+    >,
     pub controlID: i32,
-    pub style: *mut crate::UnityEngine::GUIStyle,
+    pub style: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
     pub multiline: bool,
     pub hasHorizontalCursorPos: bool,
     pub isPasswordField: bool,
     pub scrollOffset: crate::UnityEngine::Vector2,
-    pub m_Content: *mut crate::UnityEngine::GUIContent,
+    pub m_Content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
     pub m_CursorIndex: i32,
     pub m_SelectIndex: i32,
     pub m_RevealCursor: bool,

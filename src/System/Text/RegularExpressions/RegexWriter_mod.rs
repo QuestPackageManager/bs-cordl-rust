@@ -1,17 +1,21 @@
 #[cfg(feature = "System+Text+RegularExpressions+RegexWriter")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RegexWriter {
     pub _emitted: crate::System::Collections::Generic::ValueListBuilder_1<i32>,
     pub _intStack: crate::System::Collections::Generic::ValueListBuilder_1<i32>,
-    pub _stringHash: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        i32,
+    pub _stringHash: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            i32,
+        >,
     >,
-    pub _stringTable: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _stringTable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _caps: *mut crate::System::Collections::Hashtable,
+    pub _caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub _trackCount: i32,
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexWriter")]

@@ -3,15 +3,15 @@
 #[derive(Debug)]
 pub struct WhirlpoolDigest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _rc: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
-    pub _buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _rc: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
+    pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _bufferPos: i32,
-    pub _bitCount: *mut quest_hook::libil2cpp::Il2CppArray<i16>,
-    pub _hash: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
-    pub _K: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
-    pub _L: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
-    pub _block: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
-    pub _state: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+    pub _bitCount: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
+    pub _hash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
+    pub _K: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
+    pub _L: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
+    pub _block: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
+    pub _state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+WhirlpoolDigest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

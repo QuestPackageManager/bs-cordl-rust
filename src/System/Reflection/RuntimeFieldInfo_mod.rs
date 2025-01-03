@@ -5,8 +5,8 @@ pub struct RuntimeFieldInfo {
     __cordl_parent: crate::System::Reflection::RtFieldInfo,
     pub klass: crate::System::IntPtr,
     pub fhandle: crate::System::RuntimeFieldHandle,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _cordl_type: *mut crate::System::Type,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub attrs: crate::System::Reflection::FieldAttributes,
 }
 #[cfg(feature = "System+Reflection+RuntimeFieldInfo")]

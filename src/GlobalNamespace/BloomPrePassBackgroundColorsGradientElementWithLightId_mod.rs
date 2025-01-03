@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundColorsGradientElementWithLightId {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    pub _bloomPrePassBackgroundColorsGradient: *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient,
-    pub _elements: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLightId_Elements,
+    pub _bloomPrePassBackgroundColorsGradient: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient,
+    >,
+    pub _elements: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLightId_Elements,
+        >,
     >,
 }
 #[cfg(feature = "BloomPrePassBackgroundColorsGradientElementWithLightId")]

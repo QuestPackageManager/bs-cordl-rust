@@ -3,19 +3,21 @@
 #[derive(Debug)]
 pub struct Srp6Client {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub N: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub g: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub privA: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub pubA: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub B: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub x: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub u: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub S: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub M1: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub M2: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub Key: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub N: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub privA: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub pubA: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub B: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub u: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub S: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub M1: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub M2: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub Key: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+Srp+Srp6Client")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

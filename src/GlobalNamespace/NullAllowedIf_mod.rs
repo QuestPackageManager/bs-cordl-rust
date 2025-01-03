@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct NullAllowedIf {
     __cordl_parent: crate::GlobalNamespace::NullAllowed,
-    pub propertyName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _valueToCompare: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _valueToCompare: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _comparisonOperation: crate::GlobalNamespace::ComparisonOperation,
 }
 #[cfg(feature = "NullAllowedIf")]

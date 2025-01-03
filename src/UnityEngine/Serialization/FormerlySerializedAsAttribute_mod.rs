@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct FormerlySerializedAsAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub m_oldName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_oldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+Serialization+FormerlySerializedAsAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

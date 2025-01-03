@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Jobs+JobHandle")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct JobHandle {
     pub jobGroup: u64,
     pub version: i32,

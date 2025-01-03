@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct TypeEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub assembly_name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub type_name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub assembly_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub type_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Runtime+Remoting+TypeEntry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

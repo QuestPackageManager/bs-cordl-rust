@@ -5,10 +5,12 @@ pub struct MirroredGameNoteController {
     __cordl_parent: crate::GlobalNamespace::MirroredNoteController_1<
         *mut crate::GlobalNamespace::IGameNoteMirrorable,
     >,
-    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
-    pub cubeNoteControllerDidInitEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MirroredGameNoteController,
+    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+    pub cubeNoteControllerDidInitEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::MirroredGameNoteController>,
     >,
 }
 #[cfg(feature = "MirroredGameNoteController")]

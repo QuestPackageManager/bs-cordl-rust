@@ -5,23 +5,43 @@ pub struct MultiplayerScoreRingManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _delayBetweenScoreUpdates: f32,
     pub _centerDistanceOffset: f32,
-    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
-    pub _multiplayerPlayersManager: *mut crate::GlobalNamespace::MultiplayerPlayersManager,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _spawnCenter: *mut crate::GlobalNamespace::BeatmapObjectSpawnCenter,
-    pub _layoutProvider: *mut crate::GlobalNamespace::MultiplayerLayoutProvider,
-    pub _scoreProvider: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
-    pub _scoreRingItemPool: *mut crate::GlobalNamespace::MultiplayerScoreRingItem_Pool,
-    pub _scoreRingItems: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::MultiplayerScoreRingItem,
+    pub _multiplayerController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerController,
     >,
-    pub _allActivePlayers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _multiplayerPlayersManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerPlayersManager,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub _spawnCenter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectSpawnCenter,
+    >,
+    pub _layoutProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLayoutProvider,
+    >,
+    pub _scoreProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreProvider,
+    >,
+    pub _scoreRingItemPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreRingItem_Pool,
+    >,
+    pub _scoreRingItems: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::MultiplayerScoreRingItem,
+        >,
+    >,
+    pub _allActivePlayers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     >,
     pub _currentlyScoreUpdateIndex: i32,
     pub _timeSinceLastScoreUpdate: f32,
-    pub _firstPlayerItem: *mut crate::GlobalNamespace::MultiplayerScoreRingItem,
+    pub _firstPlayerItem: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreRingItem,
+    >,
     pub _spawnCenterDistanceFound: bool,
     pub _playersSpawned: bool,
 }

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct X509Chain {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cordl_impl: *mut crate::System::Security::Cryptography::X509Certificates::X509ChainImpl,
+    pub _cordl_impl: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509ChainImpl,
+    >,
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Chain")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

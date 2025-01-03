@@ -3,18 +3,22 @@
 #[derive(Debug)]
 pub struct EnvironmentsListModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _envInfos: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub _envInfos: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
     >,
-    pub _normalEnvironmentSerializedNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _normalEnvironmentSerializedNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _normalEnvironmentNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _normalEnvironmentNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _envInfoMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub _envInfoMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
     >,
 }
 #[cfg(feature = "EnvironmentsListModel")]

@@ -174,11 +174,11 @@ for crate::BeatSaber::Init::GameVersion {
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+BuildInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GameVersion_BuildInfo {
     pub buildId: u64,
     pub platform: crate::BeatSaber::Init::RuntimePlatformType,
-    pub platformId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub platformId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub platformIdIntValue: i32,
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+BuildInfo")]
@@ -324,7 +324,7 @@ for crate::BeatSaber::Init::GameVersion_BuildInfo {
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+Content")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GameVersion_Content {
     pub major: u32,
     pub minor: u32,
@@ -466,7 +466,7 @@ for crate::BeatSaber::Init::GameVersion_Content {
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+Metadata")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GameVersion_Metadata {
     pub preReleaseLabel: crate::BeatSaber::Init::GameVersion_PreReleaseLabel,
     pub buildInfo: crate::System::Nullable_1<
@@ -624,10 +624,10 @@ for crate::BeatSaber::Init::GameVersion_Metadata {
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+PreReleaseLabel")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GameVersion_PreReleaseLabel {
     pub prefix: crate::BeatSaber::Init::GameVersion_PreReleasePrefix,
-    pub label: *mut quest_hook::libil2cpp::Il2CppString,
+    pub label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+PreReleaseLabel")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

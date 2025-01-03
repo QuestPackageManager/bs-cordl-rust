@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct LazyInstanceInjector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _instancesToInject: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _instancesToInject: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+LazyInstanceInjector")]

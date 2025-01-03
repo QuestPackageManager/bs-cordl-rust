@@ -1,6 +1,6 @@
 #[cfg(feature = "LIV+SDK+Unity+SDKClipPlane")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SDKClipPlane {
     pub transform: crate::LIV::SDK::Unity::SDKMatrix4x4,
     pub width: i32,

@@ -1,10 +1,10 @@
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+ObjectInitializationData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ObjectInitializationData {
-    pub m_Id: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_ObjectType: crate::UnityEngine::ResourceManagement::Util::SerializedType,
-    pub m_Data: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+ObjectInitializationData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

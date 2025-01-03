@@ -1,38 +1,100 @@
 #[cfg(feature = "OVR+OpenVR+IVRApplications")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IVRApplications {
-    pub AddApplicationManifest: *mut crate::OVR::OpenVR::IVRApplications__AddApplicationManifest,
-    pub RemoveApplicationManifest: *mut crate::OVR::OpenVR::IVRApplications__RemoveApplicationManifest,
-    pub IsApplicationInstalled: *mut crate::OVR::OpenVR::IVRApplications__IsApplicationInstalled,
-    pub GetApplicationCount: *mut crate::OVR::OpenVR::IVRApplications__GetApplicationCount,
-    pub GetApplicationKeyByIndex: *mut crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByIndex,
-    pub GetApplicationKeyByProcessId: *mut crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByProcessId,
-    pub LaunchApplication: *mut crate::OVR::OpenVR::IVRApplications__LaunchApplication,
-    pub LaunchTemplateApplication: *mut crate::OVR::OpenVR::IVRApplications__LaunchTemplateApplication,
-    pub LaunchApplicationFromMimeType: *mut crate::OVR::OpenVR::IVRApplications__LaunchApplicationFromMimeType,
-    pub LaunchDashboardOverlay: *mut crate::OVR::OpenVR::IVRApplications__LaunchDashboardOverlay,
-    pub CancelApplicationLaunch: *mut crate::OVR::OpenVR::IVRApplications__CancelApplicationLaunch,
-    pub IdentifyApplication: *mut crate::OVR::OpenVR::IVRApplications__IdentifyApplication,
-    pub GetApplicationProcessId: *mut crate::OVR::OpenVR::IVRApplications__GetApplicationProcessId,
-    pub GetApplicationsErrorNameFromEnum: *mut crate::OVR::OpenVR::IVRApplications__GetApplicationsErrorNameFromEnum,
-    pub GetApplicationPropertyString: *mut crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyString,
-    pub GetApplicationPropertyBool: *mut crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyBool,
-    pub GetApplicationPropertyUint64: *mut crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyUint64,
-    pub SetApplicationAutoLaunch: *mut crate::OVR::OpenVR::IVRApplications__SetApplicationAutoLaunch,
-    pub GetApplicationAutoLaunch: *mut crate::OVR::OpenVR::IVRApplications__GetApplicationAutoLaunch,
-    pub SetDefaultApplicationForMimeType: *mut crate::OVR::OpenVR::IVRApplications__SetDefaultApplicationForMimeType,
-    pub GetDefaultApplicationForMimeType: *mut crate::OVR::OpenVR::IVRApplications__GetDefaultApplicationForMimeType,
-    pub GetApplicationSupportedMimeTypes: *mut crate::OVR::OpenVR::IVRApplications__GetApplicationSupportedMimeTypes,
-    pub GetApplicationsThatSupportMimeType: *mut crate::OVR::OpenVR::IVRApplications__GetApplicationsThatSupportMimeType,
-    pub GetApplicationLaunchArguments: *mut crate::OVR::OpenVR::IVRApplications__GetApplicationLaunchArguments,
-    pub GetStartingApplication: *mut crate::OVR::OpenVR::IVRApplications__GetStartingApplication,
-    pub GetTransitionState: *mut crate::OVR::OpenVR::IVRApplications__GetTransitionState,
-    pub PerformApplicationPrelaunchCheck: *mut crate::OVR::OpenVR::IVRApplications__PerformApplicationPrelaunchCheck,
-    pub GetApplicationsTransitionStateNameFromEnum: *mut crate::OVR::OpenVR::IVRApplications__GetApplicationsTransitionStateNameFromEnum,
-    pub IsQuitUserPromptRequested: *mut crate::OVR::OpenVR::IVRApplications__IsQuitUserPromptRequested,
-    pub LaunchInternalProcess: *mut crate::OVR::OpenVR::IVRApplications__LaunchInternalProcess,
-    pub GetCurrentSceneProcessId: *mut crate::OVR::OpenVR::IVRApplications__GetCurrentSceneProcessId,
+    pub AddApplicationManifest: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__AddApplicationManifest,
+    >,
+    pub RemoveApplicationManifest: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__RemoveApplicationManifest,
+    >,
+    pub IsApplicationInstalled: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__IsApplicationInstalled,
+    >,
+    pub GetApplicationCount: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__GetApplicationCount,
+    >,
+    pub GetApplicationKeyByIndex: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByIndex,
+    >,
+    pub GetApplicationKeyByProcessId: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByProcessId,
+    >,
+    pub LaunchApplication: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__LaunchApplication,
+    >,
+    pub LaunchTemplateApplication: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__LaunchTemplateApplication,
+    >,
+    pub LaunchApplicationFromMimeType: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__LaunchApplicationFromMimeType,
+    >,
+    pub LaunchDashboardOverlay: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__LaunchDashboardOverlay,
+    >,
+    pub CancelApplicationLaunch: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__CancelApplicationLaunch,
+    >,
+    pub IdentifyApplication: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__IdentifyApplication,
+    >,
+    pub GetApplicationProcessId: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__GetApplicationProcessId,
+    >,
+    pub GetApplicationsErrorNameFromEnum: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__GetApplicationsErrorNameFromEnum,
+    >,
+    pub GetApplicationPropertyString: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyString,
+    >,
+    pub GetApplicationPropertyBool: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyBool,
+    >,
+    pub GetApplicationPropertyUint64: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyUint64,
+    >,
+    pub SetApplicationAutoLaunch: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__SetApplicationAutoLaunch,
+    >,
+    pub GetApplicationAutoLaunch: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__GetApplicationAutoLaunch,
+    >,
+    pub SetDefaultApplicationForMimeType: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__SetDefaultApplicationForMimeType,
+    >,
+    pub GetDefaultApplicationForMimeType: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__GetDefaultApplicationForMimeType,
+    >,
+    pub GetApplicationSupportedMimeTypes: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__GetApplicationSupportedMimeTypes,
+    >,
+    pub GetApplicationsThatSupportMimeType: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__GetApplicationsThatSupportMimeType,
+    >,
+    pub GetApplicationLaunchArguments: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__GetApplicationLaunchArguments,
+    >,
+    pub GetStartingApplication: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__GetStartingApplication,
+    >,
+    pub GetTransitionState: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__GetTransitionState,
+    >,
+    pub PerformApplicationPrelaunchCheck: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__PerformApplicationPrelaunchCheck,
+    >,
+    pub GetApplicationsTransitionStateNameFromEnum: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__GetApplicationsTransitionStateNameFromEnum,
+    >,
+    pub IsQuitUserPromptRequested: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__IsQuitUserPromptRequested,
+    >,
+    pub LaunchInternalProcess: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__LaunchInternalProcess,
+    >,
+    pub GetCurrentSceneProcessId: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRApplications__GetCurrentSceneProcessId,
+    >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRApplications")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

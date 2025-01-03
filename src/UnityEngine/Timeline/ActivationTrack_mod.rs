@@ -4,7 +4,9 @@
 pub struct ActivationTrack {
     __cordl_parent: crate::UnityEngine::Timeline::TrackAsset,
     pub m_PostPlaybackState: crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState,
-    pub m_ActivationMixer: *mut crate::UnityEngine::Timeline::ActivationMixerPlayable,
+    pub m_ActivationMixer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::ActivationMixerPlayable,
+    >,
 }
 #[cfg(feature = "UnityEngine+Timeline+ActivationTrack")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -4,8 +4,8 @@
 pub struct AvatarSystem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _typeIdentifier: crate::BeatSaber::AvatarCore::AvatarSystemIdentifier,
-    pub _supportedOptionalAvatarDataTypes: *mut crate::System::Collections::Generic::IReadOnlyCollection_1<
-        u32,
+    pub _supportedOptionalAvatarDataTypes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyCollection_1<u32>,
     >,
     pub _isFallbackSystem: bool,
     pub _selectionSortOrder: i32,

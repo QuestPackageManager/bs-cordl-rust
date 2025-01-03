@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct UrlAndHash {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mUrl: *mut quest_hook::libil2cpp::Il2CppString,
-    pub mSha1Hash: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub mSha1Hash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+UrlAndHash")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

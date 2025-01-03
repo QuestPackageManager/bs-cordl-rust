@@ -7,14 +7,24 @@ pub struct Context {
     pub context_id: i32,
     pub static_data: crate::System::UIntPtr,
     pub data: crate::System::UIntPtr,
-    pub server_context_sink_chain: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    pub client_context_sink_chain: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    pub context_properties: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Runtime::Remoting::Contexts::IContextProperty,
+    pub server_context_sink_chain: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessageSink,
     >,
-    pub _localDataStore: *mut crate::System::LocalDataStoreHolder,
-    pub context_dynamic_properties: *mut crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection,
-    pub callback_object: *mut crate::System::Runtime::Remoting::Contexts::ContextCallbackObject,
+    pub client_context_sink_chain: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessageSink,
+    >,
+    pub context_properties: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Runtime::Remoting::Contexts::IContextProperty,
+        >,
+    >,
+    pub _localDataStore: quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreHolder>,
+    pub context_dynamic_properties: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection,
+    >,
+    pub callback_object: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Contexts::ContextCallbackObject,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Contexts+Context")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

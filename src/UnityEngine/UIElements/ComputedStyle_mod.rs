@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+ComputedStyle")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ComputedStyle {
     pub inheritedData: crate::UnityEngine::UIElements::StyleDataRef_1<
         crate::UnityEngine::UIElements::InheritedData,
@@ -20,15 +20,19 @@ pub struct ComputedStyle {
     pub visualData: crate::UnityEngine::UIElements::StyleDataRef_1<
         crate::UnityEngine::UIElements::VisualData,
     >,
-    pub yogaNode: *mut crate::UnityEngine::Yoga::YogaNode,
-    pub customProperties: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+    pub yogaNode: quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
+    pub customProperties: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        >,
     >,
     pub matchingRulesHash: i64,
     pub dpiScaling: f32,
-    pub computedTransitions: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::UIElements::ComputedTransitionProperty,
+    pub computedTransitions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::UIElements::ComputedTransitionProperty,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ComputedStyle")]

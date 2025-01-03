@@ -3,14 +3,14 @@
 #[derive(Debug)]
 pub struct OVRGazePointer {
     __cordl_parent: crate::GlobalNamespace::OVRCursor,
-    pub gazeIcon: *mut crate::UnityEngine::Transform,
+    pub gazeIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub hideByDefault: bool,
     pub showTimeoutPeriod: f32,
     pub hideTimeoutPeriod: f32,
     pub dimOnHideRequest: bool,
     pub depthScaleMultiplier: f32,
     pub matchNormalOnPhysicsColliders: bool,
-    pub rayTransform: *mut crate::UnityEngine::Transform,
+    pub rayTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _hidden_k__BackingField: bool,
     pub _currentScale_k__BackingField: f32,
     pub depth: f32,
@@ -18,7 +18,9 @@ pub struct OVRGazePointer {
     pub positionSetsThisFrame: i32,
     pub lastShowRequestTime: f32,
     pub lastHideRequestTime: f32,
-    pub progressIndicator: *mut crate::GlobalNamespace::OVRProgressIndicator,
+    pub progressIndicator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRProgressIndicator,
+    >,
 }
 #[cfg(feature = "OVRGazePointer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

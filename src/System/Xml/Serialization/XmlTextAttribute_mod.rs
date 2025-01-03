@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct XmlTextAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub dataType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _cordl_type: *mut crate::System::Type,
+    pub dataType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlTextAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,18 +3,20 @@
 #[derive(Debug)]
 pub struct ColorGradientSlider {
     __cordl_parent: crate::HMUI::TextSlider,
-    pub _textPrefix: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _textPrefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _color0: crate::UnityEngine::Color,
     pub _color1: crate::UnityEngine::Color,
-    pub _gradientImages: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::HMUI::ImageViewBase,
+    pub _gradientImages: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::HMUI::ImageViewBase>,
     >,
     pub _darkColor: crate::UnityEngine::Color,
     pub _lightColor: crate::UnityEngine::Color,
-    pub colorDidChangeEvent: *mut crate::System::Action_3<
-        *mut crate::HMUI::ColorGradientSlider,
-        crate::UnityEngine::Color,
-        crate::GlobalNamespace::ColorChangeUIEventType,
+    pub colorDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_3<
+            *mut crate::HMUI::ColorGradientSlider,
+            crate::UnityEngine::Color,
+            crate::GlobalNamespace::ColorChangeUIEventType,
+        >,
     >,
 }
 #[cfg(feature = "HMUI+ColorGradientSlider")]

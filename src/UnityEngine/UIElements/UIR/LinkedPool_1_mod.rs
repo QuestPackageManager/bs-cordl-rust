@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct LinkedPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_CreateFunc: *mut crate::System::Func_1<T>,
-    pub m_ResetAction: *mut crate::System::Action_1<T>,
+    pub m_CreateFunc: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+    pub m_ResetAction: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     pub m_Limit: i32,
     pub m_PoolFirst: T,
     pub _Count_k__BackingField: i32,

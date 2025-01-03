@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SkinColorSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _id: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _color: crate::UnityEngine::Color,
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+SkinColorSO")]

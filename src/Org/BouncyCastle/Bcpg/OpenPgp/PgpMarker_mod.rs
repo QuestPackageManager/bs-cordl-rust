@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PgpMarker {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObject,
-    pub data: *mut crate::Org::BouncyCastle::Bcpg::MarkerPacket,
+    pub data: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MarkerPacket>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpMarker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

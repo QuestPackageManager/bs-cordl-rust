@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct RsaKeyPairGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyGenerationParameters,
+    pub parameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyGenerationParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+RsaKeyPairGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

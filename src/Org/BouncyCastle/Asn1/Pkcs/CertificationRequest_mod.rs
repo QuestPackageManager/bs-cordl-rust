@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct CertificationRequest {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub reqInfo: *mut crate::Org::BouncyCastle::Asn1::Pkcs::CertificationRequestInfo,
-    pub sigAlgId: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub sigBits: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
+    pub reqInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Pkcs::CertificationRequestInfo,
+    >,
+    pub sigAlgId: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub sigBits: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerBitString>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+CertificationRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

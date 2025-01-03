@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct LeaderboardTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _cellPrefab: *mut crate::GlobalNamespace::LeaderboardTableCell,
-    pub _tableView: *mut crate::HMUI::TableView,
+    pub _cellPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LeaderboardTableCell,
+    >,
+    pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
     pub _rowHeight: f32,
-    pub _scores: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LeaderboardTableView_ScoreData,
+    pub _scores: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LeaderboardTableView_ScoreData,
+        >,
     >,
     pub _specialScorePos: i32,
 }
@@ -125,7 +129,9 @@ for crate::GlobalNamespace::LeaderboardTableView {
 pub struct LeaderboardTableView_ScoreData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _score_k__BackingField: i32,
-    pub _playerName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _playerName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _rank_k__BackingField: i32,
     pub _fullCombo_k__BackingField: bool,
 }

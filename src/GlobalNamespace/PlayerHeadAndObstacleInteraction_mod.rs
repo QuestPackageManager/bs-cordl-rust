@@ -3,15 +3,21 @@
 #[derive(Debug)]
 pub struct PlayerHeadAndObstacleInteraction {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub headDidEnterObstaclesEvent: *mut crate::System::Action,
-    pub headDidEnterObstacleEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::ObstacleController,
+    pub _playerTransforms: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerTransforms,
+    >,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub headDidEnterObstaclesEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub headDidEnterObstacleEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::ObstacleController>,
     >,
     pub _lastFrameNumCheck: i32,
-    pub _intersectingObstacles: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::GlobalNamespace::ObstacleController,
+    pub _intersectingObstacles: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     >,
     pub _prevFrameNumberOfIntersectingObstaclesCount: i32,
 }

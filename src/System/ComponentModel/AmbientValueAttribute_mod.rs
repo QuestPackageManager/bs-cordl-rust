@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AmbientValueAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Value_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _Value_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+AmbientValueAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

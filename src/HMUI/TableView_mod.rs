@@ -3,45 +3,53 @@
 #[derive(Debug)]
 pub struct TableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _scrollView: *mut crate::HMUI::ScrollView,
+    pub _scrollView: quest_hook::libil2cpp::Gc<crate::HMUI::ScrollView>,
     pub _scrollToTopOnEnable: bool,
     pub _alignToCenter: bool,
     pub _spacing: f32,
-    pub _padding: *mut crate::HMUI::FloatRectOffset,
+    pub _padding: quest_hook::libil2cpp::Gc<crate::HMUI::FloatRectOffset>,
     pub _tableType: crate::HMUI::TableView_TableType,
     pub _selectionType: crate::HMUI::TableViewSelectionType,
     pub _canSelectSelectedCell: bool,
     pub _spawnCellsThatAreNotVisible: bool,
-    pub _preallocatedCells: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::HMUI::TableView_CellsGroup,
+    pub _preallocatedCells: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::HMUI::TableView_CellsGroup>,
     >,
-    pub didSelectCellWithIdxEvent: *mut crate::System::Action_2<
-        *mut crate::HMUI::TableView,
-        i32,
+    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::HMUI::TableView, i32>,
     >,
-    pub didDeselectCellWithIdxEvent: *mut crate::System::Action_2<
-        *mut crate::HMUI::TableView,
-        i32,
+    pub didDeselectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::HMUI::TableView, i32>,
     >,
-    pub didReloadDataEvent: *mut crate::System::Action_1<*mut crate::HMUI::TableView>,
-    pub didInsertCellsEvent: *mut crate::System::Action_1<*mut crate::HMUI::TableView>,
-    pub didDeleteCellsEvent: *mut crate::System::Action_1<*mut crate::HMUI::TableView>,
-    pub didChangeRectSizeEvent: *mut crate::System::Action_1<
-        *mut crate::HMUI::TableView,
+    pub didReloadDataEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::HMUI::TableView>,
     >,
-    pub _contentTransform: *mut crate::UnityEngine::RectTransform,
-    pub _viewportTransform: *mut crate::UnityEngine::RectTransform,
-    pub _dataSource: *mut crate::HMUI::TableView_IDataSource,
+    pub didInsertCellsEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::HMUI::TableView>,
+    >,
+    pub didDeleteCellsEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::HMUI::TableView>,
+    >,
+    pub didChangeRectSizeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::HMUI::TableView>,
+    >,
+    pub _contentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub _viewportTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub _dataSource: quest_hook::libil2cpp::Gc<crate::HMUI::TableView_IDataSource>,
     pub _numberOfCells: i32,
     pub _cellSize: f32,
-    pub _visibleCells: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HMUI::TableCell,
+    pub _visibleCells: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::HMUI::TableCell>,
     >,
-    pub _reusableCells: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::System::Collections::Generic::List_1<*mut crate::HMUI::TableCell>,
+    pub _reusableCells: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::System::Collections::Generic::List_1<*mut crate::HMUI::TableCell>,
+        >,
     >,
-    pub _selectedCellIdxs: *mut crate::System::Collections::Generic::HashSet_1<i32>,
+    pub _selectedCellIdxs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
     pub _prevMinIdx: i32,
     pub _prevMaxIdx: i32,
     pub _isInitialized: bool,
@@ -784,9 +792,9 @@ impl AsMut<crate::HMUI::ITableCellOwner> for crate::HMUI::TableView {
 #[derive(Debug)]
 pub struct TableView_CellsGroup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _reuseIdentifier: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _cells: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HMUI::TableCell,
+    pub _reuseIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _cells: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::HMUI::TableCell>,
     >,
 }
 #[cfg(feature = "HMUI+TableView+CellsGroup")]

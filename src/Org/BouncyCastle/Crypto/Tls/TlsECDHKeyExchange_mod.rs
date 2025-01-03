@@ -3,14 +3,28 @@
 #[derive(Debug)]
 pub struct TlsECDHKeyExchange {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsKeyExchange,
-    pub mTlsSigner: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSigner,
-    pub mNamedCurves: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub mClientECPointFormats: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mServerECPointFormats: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mServerPublicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub mAgreementCredentials: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsAgreementCredentials,
-    pub mECAgreePrivateKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
-    pub mECAgreePublicKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
+    pub mTlsSigner: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsSigner,
+    >,
+    pub mNamedCurves: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub mClientECPointFormats: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub mServerECPointFormats: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub mServerPublicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    >,
+    pub mAgreementCredentials: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsAgreementCredentials,
+    >,
+    pub mECAgreePrivateKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
+    >,
+    pub mECAgreePublicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsECDHKeyExchange")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

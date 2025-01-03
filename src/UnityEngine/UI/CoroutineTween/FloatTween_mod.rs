@@ -1,8 +1,10 @@
 #[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FloatTween {
-    pub m_Target: *mut crate::UnityEngine::UI::CoroutineTween::FloatTween_FloatTweenCallback,
+    pub m_Target: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::CoroutineTween::FloatTween_FloatTweenCallback,
+    >,
     pub m_StartValue: f32,
     pub m_TargetValue: f32,
     pub m_Duration: f32,

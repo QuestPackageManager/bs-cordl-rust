@@ -4,25 +4,35 @@
 pub struct HEU_Parameters {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _nodeID: i32,
-    pub _uiLabel: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _paramInts: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _paramFloats: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _paramStrings: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _uiLabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _paramInts: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub _paramFloats: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub _paramStrings: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _paramChoices: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::HoudiniEngineUnity::HAPI_ParmChoiceInfo,
+    pub _paramChoices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::HoudiniEngineUnity::HAPI_ParmChoiceInfo,
+        >,
     >,
-    pub _rootParameters: *mut crate::System::Collections::Generic::List_1<i32>,
-    pub _parameterList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_ParameterData,
+    pub _rootParameters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
     >,
-    pub _parameterModifiers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_ParameterModifier,
+    pub _parameterList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_ParameterData,
+        >,
+    >,
+    pub _parameterModifiers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_ParameterModifier,
+        >,
     >,
     pub _regenerateParameters: bool,
-    pub _presetData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _defaultPresetData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _presetData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _defaultPresetData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub _validParameters: bool,
     pub _showParameters: bool,
     pub _recacheUI: bool,

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LocalVariableInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cordl_type: *mut crate::System::Type,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub is_pinned: bool,
     pub position: u16,
 }

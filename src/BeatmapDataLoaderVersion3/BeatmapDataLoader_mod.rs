@@ -342,7 +342,9 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader {
 #[derive(Debug)]
 pub struct BeatmapDataLoader_BasicEventConverter {
     __cordl_parent: crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter,
-    pub _specialEventsFilter: *mut crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter,
+    pub _specialEventsFilter: quest_hook::libil2cpp::Gc<
+        crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter,
+    >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BasicEventConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -441,8 +443,12 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BasicEventConverter {
 #[derive(Debug)]
 pub struct BeatmapDataLoader_BeatmapDataItemConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _bpmTimeProcessor: *mut crate::GlobalNamespace::BpmTimeProcessor,
-    pub _rotationTimeProcessor: *mut crate::GlobalNamespace::RotationTimeProcessor,
+    pub _bpmTimeProcessor: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BpmTimeProcessor,
+    >,
+    pub _rotationTimeProcessor: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RotationTimeProcessor,
+    >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BeatmapDataItemConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1011,7 +1017,9 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxBaseDataConverto
 #[derive(Debug)]
 pub struct BeatmapDataLoader_FloatVfxEventBoxConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _fxEventsCollection: *mut crate::BeatmapSaveDataVersion3::FxEventsCollection,
+    pub _fxEventsCollection: quest_hook::libil2cpp::Gc<
+        crate::BeatmapSaveDataVersion3::FxEventsCollection,
+    >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxEventBoxConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1199,7 +1207,9 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxBaseDataConvertor 
 #[derive(Debug)]
 pub struct BeatmapDataLoader_IntVfxEventBoxConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _fxEventsCollection: *mut crate::BeatmapSaveDataVersion3::FxEventsCollection,
+    pub _fxEventsCollection: quest_hook::libil2cpp::Gc<
+        crate::BeatmapSaveDataVersion3::FxEventsCollection,
+    >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxEventBoxConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1902,8 +1912,10 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SliderConverter {
 #[derive(Debug)]
 pub struct BeatmapDataLoader_SpecialEventsFilter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _eventTypesToFilter: *mut crate::System::Collections::Generic::HashSet_1<
-        crate::BeatmapSaveDataCommon::BeatmapEventType,
+    pub _eventTypesToFilter: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            crate::BeatmapSaveDataCommon::BeatmapEventType,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SpecialEventsFilter")]

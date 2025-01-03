@@ -4,8 +4,8 @@
 pub struct XmlTypeAttribute {
     __cordl_parent: crate::System::Attribute,
     pub includeInSchema: bool,
-    pub ns: *mut quest_hook::libil2cpp::Il2CppString,
-    pub typeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlTypeAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

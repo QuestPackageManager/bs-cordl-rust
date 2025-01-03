@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct JPakeRound1Payload {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub participantId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub gx1: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub gx2: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub knowledgeProofForX1: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub participantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub gx1: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub gx2: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub knowledgeProofForX1: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::BigInteger,
+        >,
     >,
-    pub knowledgeProofForX2: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub knowledgeProofForX2: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::BigInteger,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakeRound1Payload")]

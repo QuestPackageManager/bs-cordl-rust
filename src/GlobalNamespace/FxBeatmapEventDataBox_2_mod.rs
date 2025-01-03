@@ -7,7 +7,9 @@ pub struct FxBeatmapEventDataBox_2<
 > {
     __cordl_parent: crate::GlobalNamespace::BeatmapEventDataBox,
     pub _beatStep: f32,
-    pub _fxBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<TIn>,
+    pub _fxBaseDataList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<TIn>,
+    >,
     __cordl_phantom_TIn: std::marker::PhantomData<TIn>,
     __cordl_phantom_TOut: std::marker::PhantomData<TOut>,
 }

@@ -5,8 +5,12 @@ pub struct BoundsField {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<
         crate::UnityEngine::Bounds,
     >,
-    pub m_CenterField: *mut crate::UnityEngine::UIElements::Vector3Field,
-    pub m_ExtentsField: *mut crate::UnityEngine::UIElements::Vector3Field,
+    pub m_CenterField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Vector3Field,
+    >,
+    pub m_ExtentsField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Vector3Field,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BoundsField")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -195,12 +199,24 @@ pub struct BoundsField_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         crate::UnityEngine::Bounds,
     >,
-    pub m_CenterXValue: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_CenterYValue: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_CenterZValue: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_ExtentsXValue: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_ExtentsYValue: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_ExtentsZValue: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    pub m_CenterXValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_CenterYValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_CenterZValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_ExtentsXValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_ExtentsYValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_ExtentsZValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BoundsField+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

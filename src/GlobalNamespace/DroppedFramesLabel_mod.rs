@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DroppedFramesLabel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _expectedFrameRate: i32,
     pub _resetInterval: i32,
     pub _totalNumberOfDroppedFrames: i32,

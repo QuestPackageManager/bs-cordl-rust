@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DerNull {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Null,
-    pub zeroBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub zeroBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerNull")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ScoringElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _noteData_k__BackingField: *mut crate::GlobalNamespace::NoteData,
+    pub _noteData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteData,
+    >,
     pub _multiplier_k__BackingField: i32,
     pub _maxMultiplier_k__BackingField: i32,
     pub _isFinished_k__BackingField: bool,

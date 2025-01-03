@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct RsaKeyGenerationParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::KeyGenerationParameters,
-    pub publicExponent: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub publicExponent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
     pub certainty: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+RsaKeyGenerationParameters")]

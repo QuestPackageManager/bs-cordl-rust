@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct FriendsViewController {
     __cordl_parent: crate::GlobalNamespace::NetworkPlayersViewController,
-    pub _enableOpenPartyToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _networkPlayerModel: *mut crate::GlobalNamespace::PlatformNetworkPlayerModel,
-    pub _networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
-    pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
+    pub _enableOpenPartyToggle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
+    >,
+    pub _networkPlayerModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlatformNetworkPlayerModel,
+    >,
+    pub _networkConfig: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INetworkConfig,
+    >,
+    pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
     pub _allowAnyoneToJoin: bool,
 }
 #[cfg(feature = "FriendsViewController")]

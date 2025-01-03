@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_HapticVibration_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VREvent_HapticVibration_t {
     pub containerHandle: u64,
     pub componentHandle: u64,

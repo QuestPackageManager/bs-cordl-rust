@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Tilemaps+TileDataNative")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TileDataNative {
     pub m_Sprite: i32,
     pub m_Color: crate::UnityEngine::Color,

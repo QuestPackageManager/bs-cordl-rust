@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct DetailPrototype {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Prototype: *mut crate::UnityEngine::GameObject,
-    pub m_PrototypeTexture: *mut crate::UnityEngine::Texture2D,
+    pub m_Prototype: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub m_PrototypeTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     pub m_HealthyColor: crate::UnityEngine::Color,
     pub m_DryColor: crate::UnityEngine::Color,
     pub m_MinWidth: f32,

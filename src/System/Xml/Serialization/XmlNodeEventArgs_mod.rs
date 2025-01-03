@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct XmlNodeEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub o: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub xmlNode: *mut crate::System::Xml::XmlNode,
+    pub o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub xmlNode: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
     pub lineNumber: i32,
     pub linePosition: i32,
 }

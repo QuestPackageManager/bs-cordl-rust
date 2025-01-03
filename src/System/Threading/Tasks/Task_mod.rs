@@ -4,13 +4,19 @@
 pub struct Task {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_taskId: i32,
-    pub m_action: *mut crate::System::Delegate,
-    pub m_stateObject: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_taskScheduler: *mut crate::System::Threading::Tasks::TaskScheduler,
-    pub m_parent: *mut crate::System::Threading::Tasks::Task,
+    pub m_action: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    pub m_stateObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_taskScheduler: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskScheduler,
+    >,
+    pub m_parent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     pub m_stateFlags: i32,
-    pub m_continuationObject: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_contingentProperties: *mut crate::System::Threading::Tasks::Task_ContingentProperties,
+    pub m_continuationObject: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub m_contingentProperties: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_ContingentProperties,
+    >,
 }
 #[cfg(feature = "System+Threading+Tasks+Task")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1972,15 +1978,25 @@ for crate::System::Threading::Tasks::Task {
 #[derive(Debug)]
 pub struct Task_ContingentProperties {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_capturedContext: *mut crate::System::Threading::ExecutionContext,
-    pub m_completionEvent: *mut crate::System::Threading::ManualResetEventSlim,
-    pub m_exceptionsHolder: *mut crate::System::Threading::Tasks::TaskExceptionHolder,
+    pub m_capturedContext: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ExecutionContext,
+    >,
+    pub m_completionEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ManualResetEventSlim,
+    >,
+    pub m_exceptionsHolder: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskExceptionHolder,
+    >,
     pub m_cancellationToken: crate::System::Threading::CancellationToken,
-    pub m_cancellationRegistration: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_cancellationRegistration: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub m_internalCancellationRequested: i32,
     pub m_completionCountdown: i32,
-    pub m_exceptionalChildren: *mut crate::System::Collections::Generic::LowLevelListWithIList_1<
-        *mut crate::System::Threading::Tasks::Task,
+    pub m_exceptionalChildren: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LowLevelListWithIList_1<
+            *mut crate::System::Threading::Tasks::Task,
+        >,
     >,
 }
 #[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]

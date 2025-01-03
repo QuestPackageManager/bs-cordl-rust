@@ -43,10 +43,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::Cryptography::
 #[derive(Debug)]
 pub struct PKCS8_EncryptedPrivateKeyInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _algorithm: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _iterations: i32,
-    pub _data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Security+Cryptography+PKCS8+EncryptedPrivateKeyInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -182,9 +182,9 @@ for crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
 pub struct PKCS8_PrivateKeyInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _version: i32,
-    pub _algorithm: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _list: *mut crate::System::Collections::ArrayList,
+    pub _algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
 #[cfg(feature = "Mono+Security+Cryptography+PKCS8+PrivateKeyInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SecureRandom {
     __cordl_parent: crate::System::Random,
-    pub generator: *mut crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
+    pub generator: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Security+SecureRandom")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

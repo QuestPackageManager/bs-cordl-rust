@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct ObjectSecurity {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub descriptor: *mut crate::System::Security::AccessControl::CommonSecurityDescriptor,
+    pub descriptor: quest_hook::libil2cpp::Gc<
+        crate::System::Security::AccessControl::CommonSecurityDescriptor,
+    >,
     pub sections_modified: crate::System::Security::AccessControl::AccessControlSections,
-    pub rw_lock: *mut crate::System::Threading::ReaderWriterLock,
+    pub rw_lock: quest_hook::libil2cpp::Gc<crate::System::Threading::ReaderWriterLock>,
 }
 #[cfg(feature = "System+Security+AccessControl+ObjectSecurity")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

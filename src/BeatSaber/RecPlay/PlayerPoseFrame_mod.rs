@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+RecPlay+PlayerPoseFrame")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PlayerPoseFrame {
     pub _cordl_time: f32,
     pub pose: crate::BeatSaber::RecPlay::PlayerPose,

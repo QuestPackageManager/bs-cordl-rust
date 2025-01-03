@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BombNoteController {
     __cordl_parent: crate::GlobalNamespace::NoteController,
-    pub _cuttableBySaber: *mut crate::GlobalNamespace::CuttableBySaber,
-    pub _wrapperGO: *mut crate::UnityEngine::GameObject,
+    pub _cuttableBySaber: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CuttableBySaber,
+    >,
+    pub _wrapperGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
 #[cfg(feature = "BombNoteController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct HEU_LoadBufferMesh {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_LoadBufferBase,
-    pub _geoCache: *mut crate::HoudiniEngineUnity::HEU_GenerateGeoCache,
-    pub _LODGroupMeshes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_GeoGroup,
+    pub _geoCache: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_GenerateGeoCache,
+    >,
+    pub _LODGroupMeshes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_GeoGroup,
+        >,
     >,
     pub _defaultMaterialKey: i32,
     pub _bGenerateUVs: bool,

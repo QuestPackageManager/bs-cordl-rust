@@ -4,7 +4,7 @@
 pub struct YogaConfig {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _ygConfig: crate::System::IntPtr,
-    pub _logger: *mut crate::UnityEngine::Yoga::Logger,
+    pub _logger: quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::Logger>,
 }
 #[cfg(feature = "UnityEngine+Yoga+YogaConfig")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

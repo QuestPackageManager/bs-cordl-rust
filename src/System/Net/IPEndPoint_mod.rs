@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct IPEndPoint {
     __cordl_parent: crate::System::Net::EndPoint,
-    pub _address: *mut crate::System::Net::IPAddress,
+    pub _address: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
     pub _port: i32,
 }
 #[cfg(feature = "System+Net+IPEndPoint")]

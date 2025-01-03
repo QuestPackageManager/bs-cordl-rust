@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MethodBinaryExpression {
     __cordl_parent: crate::System::Linq::Expressions::SimpleBinaryExpression,
-    pub _method: *mut crate::System::Reflection::MethodInfo,
+    pub _method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
 }
 #[cfg(feature = "System+Linq+Expressions+MethodBinaryExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

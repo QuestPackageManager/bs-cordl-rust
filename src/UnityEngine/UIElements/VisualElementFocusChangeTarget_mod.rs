@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct VisualElementFocusChangeTarget {
     __cordl_parent: crate::UnityEngine::UIElements::FocusChangeDirection,
-    pub _target_k__BackingField: *mut crate::UnityEngine::UIElements::Focusable,
+    pub _target_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Focusable,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusChangeTarget")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

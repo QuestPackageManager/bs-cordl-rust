@@ -1,15 +1,15 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+LinkInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LinkInfo {
     pub hashCode: i32,
     pub linkIdFirstCharacterIndex: i32,
     pub linkIdLength: i32,
     pub linkTextfirstCharacterIndex: i32,
     pub linkTextLength: i32,
-    pub linkId: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    pub m_LinkIdString: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_LinkTextString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub linkId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    pub m_LinkIdString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_LinkTextString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+LinkInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -8,16 +8,18 @@ pub struct Selectable {
     pub m_Transition: crate::UnityEngine::UI::Selectable_Transition,
     pub m_Colors: crate::UnityEngine::UI::ColorBlock,
     pub m_SpriteState: crate::UnityEngine::UI::SpriteState,
-    pub m_AnimationTriggers: *mut crate::UnityEngine::UI::AnimationTriggers,
+    pub m_AnimationTriggers: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::AnimationTriggers,
+    >,
     pub m_Interactable: bool,
-    pub m_TargetGraphic: *mut crate::UnityEngine::UI::Graphic,
+    pub m_TargetGraphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     pub m_GroupsAllowInteraction: bool,
     pub m_CurrentIndex: i32,
     pub _isPointerInside_k__BackingField: bool,
     pub _isPointerDown_k__BackingField: bool,
     pub _hasSelection_k__BackingField: bool,
-    pub m_CanvasGroupCache: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::CanvasGroup,
+    pub m_CanvasGroupCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::CanvasGroup>,
     >,
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]

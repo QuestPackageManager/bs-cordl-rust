@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+InputOriginInfo_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputOriginInfo_t {
     pub devicePath: u64,
     pub trackedDeviceIndex: u32,

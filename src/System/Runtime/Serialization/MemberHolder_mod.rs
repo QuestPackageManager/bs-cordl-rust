@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MemberHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _memberType: *mut crate::System::Type,
+    pub _memberType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _context: crate::System::Runtime::Serialization::StreamingContext,
 }
 #[cfg(feature = "System+Runtime+Serialization+MemberHolder")]

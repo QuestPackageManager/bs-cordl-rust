@@ -7,8 +7,10 @@ pub struct BakedReflectionProbe {
     pub _downsampleByHalfCount: i32,
     pub _size: crate::UnityEngine::Vector3,
     pub _offset: crate::UnityEngine::Vector3,
-    pub _reflectionProbeData: *mut crate::GlobalNamespace::ReflectionProbeDataSO,
-    pub _blackCubemap: *mut crate::UnityEngine::Cubemap,
+    pub _reflectionProbeData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ReflectionProbeDataSO,
+    >,
+    pub _blackCubemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
 }
 #[cfg(feature = "BakedReflectionProbe")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

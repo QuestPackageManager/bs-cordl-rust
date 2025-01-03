@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct SortColumnDescriptions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Descriptions: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::UnityEngine::UIElements::SortColumnDescription,
+    pub m_Descriptions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::UnityEngine::UIElements::SortColumnDescription,
+        >,
     >,
-    pub changed: *mut crate::System::Action,
+    pub changed: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "UnityEngine+UIElements+SortColumnDescriptions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -369,8 +371,10 @@ for crate::UnityEngine::UIElements::SortColumnDescriptions_UxmlObjectFactory_1<T
 #[derive(Debug)]
 pub struct SortColumnDescriptions_UxmlObjectTraits_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlObjectTraits_1<T>,
-    pub m_SortColumnDescriptions: *mut crate::UnityEngine::UIElements::UxmlObjectListAttributeDescription_1<
-        *mut crate::UnityEngine::UIElements::SortColumnDescription,
+    pub m_SortColumnDescriptions: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlObjectListAttributeDescription_1<
+            *mut crate::UnityEngine::UIElements::SortColumnDescription,
+        >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

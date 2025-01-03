@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CustomFormatRangeValuesSlider {
     __cordl_parent: crate::HMUI::RangeValuesTextSlider,
-    pub _formatString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _formatString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "HMUI+CustomFormatRangeValuesSlider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

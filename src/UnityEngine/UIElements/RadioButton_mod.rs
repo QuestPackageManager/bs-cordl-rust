@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct RadioButton {
     __cordl_parent: crate::UnityEngine::UIElements::BaseBoolField,
-    pub m_CheckmarkBackground: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_CheckmarkBackground: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButton")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -264,7 +266,9 @@ pub struct RadioButton_UxmlTraits {
         bool,
         *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
-    pub m_Text: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_Text: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButton+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

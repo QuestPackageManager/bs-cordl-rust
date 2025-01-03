@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SyncTimeProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
 }
 #[cfg(feature = "SyncTimeProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

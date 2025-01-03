@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct MacStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub stream: *mut crate::System::IO::Stream,
-    pub inMac: *mut crate::Org::BouncyCastle::Crypto::IMac,
-    pub outMac: *mut crate::Org::BouncyCastle::Crypto::IMac,
+    pub stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub inMac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
+    pub outMac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IO+MacStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

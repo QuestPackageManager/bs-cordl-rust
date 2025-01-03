@@ -1,8 +1,8 @@
 #[cfg(feature = "System+Drawing+Color")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Color {
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub value: i64,
     pub knownColor: i16,
     pub state: i16,

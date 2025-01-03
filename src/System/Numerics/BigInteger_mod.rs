@@ -1,9 +1,9 @@
 #[cfg(feature = "System+Numerics+BigInteger")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BigInteger {
     pub _sign: i32,
-    pub _bits: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub _bits: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
 #[cfg(feature = "System+Numerics+BigInteger")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct TlsMac {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub context: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
-    pub secret: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mac: *mut crate::Org::BouncyCastle::Crypto::IMac,
+    pub context: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+    >,
+    pub secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
     pub digestBlockSize: i32,
     pub digestOverhead: i32,
     pub macLength: i32,

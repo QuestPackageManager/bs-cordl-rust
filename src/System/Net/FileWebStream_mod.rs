@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct FileWebStream {
     __cordl_parent: crate::System::IO::FileStream,
-    pub m_request: *mut crate::System::Net::FileWebRequest,
+    pub m_request: quest_hook::libil2cpp::Gc<crate::System::Net::FileWebRequest>,
 }
 #[cfg(feature = "System+Net+FileWebStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

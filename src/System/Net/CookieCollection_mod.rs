@@ -4,7 +4,7 @@
 pub struct CookieCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_version: i32,
-    pub m_list: *mut crate::System::Collections::ArrayList,
+    pub m_list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub m_TimeStamp: crate::System::DateTime,
     pub m_has_other_versions: bool,
     pub m_IsReadOnly: bool,
@@ -230,7 +230,7 @@ for crate::System::Net::CookieCollection {
 #[derive(Debug)]
 pub struct CookieCollection_CookieCollectionEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_cookies: *mut crate::System::Net::CookieCollection,
+    pub m_cookies: quest_hook::libil2cpp::Gc<crate::System::Net::CookieCollection>,
     pub m_count: i32,
     pub m_index: i32,
     pub m_version: i32,

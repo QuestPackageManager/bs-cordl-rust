@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct PointerDispatchState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_PendingPointerCapture: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UIElements::IEventHandler,
+    pub m_PendingPointerCapture: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::IEventHandler,
+        >,
     >,
-    pub m_PointerCapture: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UIElements::IEventHandler,
+    pub m_PointerCapture: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::IEventHandler,
+        >,
     >,
-    pub m_ShouldSendCompatibilityMouseEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        bool,
+    pub m_ShouldSendCompatibilityMouseEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<bool>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerDispatchState")]

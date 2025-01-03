@@ -1,14 +1,16 @@
 #[cfg(feature = "BGNet+Core+GameLift+GetMultiplayerInstanceResponse")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GetMultiplayerInstanceResponse {
     pub errorCode: crate::GlobalNamespace::MultiplayerPlacementErrorCode,
-    pub playerSessionInfo: *mut crate::BGNet::Core::GameLift::PlayerSessionInfo,
+    pub playerSessionInfo: quest_hook::libil2cpp::Gc<
+        crate::BGNet::Core::GameLift::PlayerSessionInfo,
+    >,
     pub pollIntervalMs: i32,
-    pub ticketId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub ticketStatus: *mut quest_hook::libil2cpp::Il2CppString,
-    pub placementId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub placementStatus: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ticketId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ticketStatus: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub placementId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub placementStatus: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "BGNet+Core+GameLift+GetMultiplayerInstanceResponse")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

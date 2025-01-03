@@ -5,11 +5,17 @@ pub struct MinMaxSlider {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<
         crate::UnityEngine::Vector2,
     >,
-    pub _dragElement_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub _dragMinThumb_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub _dragMaxThumb_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub _clampedDragger_k__BackingField: *mut crate::UnityEngine::UIElements::ClampedDragger_1<
-        f32,
+    pub _dragElement_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub _dragMinThumb_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub _dragMaxThumb_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub _clampedDragger_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ClampedDragger_1<f32>,
     >,
     pub m_DragElementStartPos: crate::UnityEngine::Vector2,
     pub m_ValueStartPos: crate::UnityEngine::Vector2,
@@ -543,10 +549,18 @@ pub struct MinMaxSlider_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         crate::UnityEngine::Vector2,
     >,
-    pub m_MinValue: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_MaxValue: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_LowLimit: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_HighLimit: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    pub m_MinValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_MaxValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_LowLimit: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_HighLimit: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

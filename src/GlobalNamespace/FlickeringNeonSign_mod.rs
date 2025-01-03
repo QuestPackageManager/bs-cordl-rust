@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct FlickeringNeonSign {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _flickeringSprite: *mut crate::UnityEngine::SpriteRenderer,
-    pub _light: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
-    pub _particleSystems: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::ParticleSystem,
+    pub _flickeringSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
+    pub _light: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TubeBloomPrePassLight>,
+    pub _particleSystems: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ParticleSystem>,
     >,
     pub _minOnDelay: f32,
     pub _maxOnDelay: f32,
@@ -14,13 +14,13 @@ pub struct FlickeringNeonSign {
     pub _maxOffDelay: f32,
     pub _spriteOnColor: crate::UnityEngine::Color,
     pub _lightOnColor: crate::UnityEngine::Color,
-    pub _onMaterial: *mut crate::UnityEngine::Material,
-    pub _offMaterial: *mut crate::UnityEngine::Material,
-    pub _sparksAudioClips: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::AudioClip,
+    pub _onMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _offMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _sparksAudioClips: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
     >,
-    pub _sparksAudioClipPicker: *mut crate::GlobalNamespace::RandomObjectPicker_1<
-        *mut crate::UnityEngine::AudioClip,
+    pub _sparksAudioClipPicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RandomObjectPicker_1<*mut crate::UnityEngine::AudioClip>,
     >,
 }
 #[cfg(feature = "FlickeringNeonSign")]

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ProviderException {
     __cordl_parent: crate::UnityEngine::ResourceManagement::Exceptions::OperationException,
-    pub _Location_k__BackingField: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    pub _Location_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    >,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ProviderException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

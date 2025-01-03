@@ -5,8 +5,12 @@ pub struct GraphicSettingsConditionalActivator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _activatorType: crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType,
     pub _activateOnFalse: bool,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _sceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    >,
 }
 #[cfg(feature = "GraphicSettingsConditionalActivator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

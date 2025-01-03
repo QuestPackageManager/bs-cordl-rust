@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct FaceRebuildData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub face: *mut crate::UnityEngine::ProBuilder::Face,
-    pub vertices: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::ProBuilder::Vertex,
+    pub face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+    pub vertices: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::ProBuilder::Vertex,
+        >,
     >,
-    pub sharedIndexes: *mut crate::System::Collections::Generic::List_1<i32>,
-    pub sharedIndexesUV: *mut crate::System::Collections::Generic::List_1<i32>,
+    pub sharedIndexes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
+    pub sharedIndexesUV: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
     pub _appliedOffset: i32,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+FaceRebuildData")]

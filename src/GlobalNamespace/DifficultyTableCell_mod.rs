@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct DifficultyTableCell {
     __cordl_parent: crate::HMUI::TableCell,
-    pub _difficultyText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _bgImage: *mut crate::UnityEngine::UI::Image,
-    pub _highlightImage: *mut crate::UnityEngine::UI::Image,
-    pub _fillIndicator: *mut crate::GlobalNamespace::FillIndicator,
+    pub _difficultyText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _bgImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _highlightImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _fillIndicator: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FillIndicator>,
 }
 #[cfg(feature = "DifficultyTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

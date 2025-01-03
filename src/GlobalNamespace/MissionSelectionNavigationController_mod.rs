@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct MissionSelectionNavigationController {
     __cordl_parent: crate::HMUI::NavigationController,
-    pub _missionSelectionMapViewController: *mut crate::GlobalNamespace::MissionSelectionMapViewController,
-    pub _missionLevelDetailViewController: *mut crate::GlobalNamespace::MissionLevelDetailViewController,
-    pub didPressPlayButtonEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MissionSelectionNavigationController,
+    pub _missionSelectionMapViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionSelectionMapViewController,
+    >,
+    pub _missionLevelDetailViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionLevelDetailViewController,
+    >,
+    pub didPressPlayButtonEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::MissionSelectionNavigationController,
+        >,
     >,
 }
 #[cfg(feature = "MissionSelectionNavigationController")]

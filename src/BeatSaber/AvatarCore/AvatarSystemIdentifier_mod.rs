@@ -1,8 +1,8 @@
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemIdentifier")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AvatarSystemIdentifier {
-    pub value: *mut quest_hook::libil2cpp::Il2CppString,
+    pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub hash: u32,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemIdentifier")]

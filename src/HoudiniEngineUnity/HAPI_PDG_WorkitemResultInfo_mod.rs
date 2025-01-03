@@ -1,6 +1,6 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_WorkitemResultInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HAPI_PDG_WorkitemResultInfo {
     pub resultSH: i32,
     pub resultTagSH: i32,

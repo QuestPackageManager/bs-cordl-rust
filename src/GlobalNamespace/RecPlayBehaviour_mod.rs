@@ -3,16 +3,32 @@
 #[derive(Debug)]
 pub struct RecPlayBehaviour {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
-    pub _playerControllers: *mut crate::GlobalNamespace::PlayerVRControllersManager,
-    pub _vrCenterAdjust: *mut crate::GlobalNamespace::VRCenterAdjust,
-    pub _hmdCamera: *mut crate::UnityEngine::Camera,
-    pub _state: *mut crate::GlobalNamespace::RecPlayBehaviour_State,
-    pub _capturer: *mut crate::BeatSaber::RecPlay::PlayerPoseCapturer,
-    pub _sampler: *mut crate::BeatSaber::RecPlay::PlayerPoseSampler,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _playerTransforms: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerTransforms,
+    >,
+    pub _playerControllers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerVRControllersManager,
+    >,
+    pub _vrCenterAdjust: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VRCenterAdjust,
+    >,
+    pub _hmdCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    pub _state: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecPlayBehaviour_State,
+    >,
+    pub _capturer: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::RecPlay::PlayerPoseCapturer,
+    >,
+    pub _sampler: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::RecPlay::PlayerPoseSampler,
+    >,
     pub _headNoise: crate::BeatSaber::RecPlay::PoseNoise,
-    pub _recodingFilePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _recodingFilePath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _recording: bool,
     pub _playback: bool,
 }

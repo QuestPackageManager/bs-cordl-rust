@@ -5,14 +5,22 @@ pub struct MultiplayerLeadPlayerProvider {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _timeToGainFirstLead: f32,
     pub _timeToLooseLead: f32,
-    pub _scoreProvider: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
-    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
-    pub newLeaderWasSelectedEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _scoreProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreProvider,
+    >,
+    pub _multiplayerController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerController,
+    >,
+    pub newLeaderWasSelectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _currentLeadingPlayerStartTime: f32,
-    pub _currentlyDisplayedUser: *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
-    pub _currentlyLeadingUser: *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+    pub _currentlyDisplayedUser: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+    >,
+    pub _currentlyLeadingUser: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+    >,
 }
 #[cfg(feature = "MultiplayerLeadPlayerProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

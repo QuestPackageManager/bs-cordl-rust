@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct NavigateFocusRing {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Root: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_Ring: *mut crate::UnityEngine::UIElements::VisualElementFocusRing,
+    pub m_Root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    pub m_Ring: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElementFocusRing,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -221,12 +223,16 @@ for crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection {
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NavigateFocusRing_FocusableHierarchyTraversal {
-    pub currentFocusable: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub currentFocusable: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub validRect: crate::UnityEngine::Rect,
     pub firstPass: bool,
-    pub direction: *mut crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection,
+    pub direction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

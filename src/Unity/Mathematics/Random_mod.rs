@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Mathematics+Random")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Random {
     pub state: u32,
 }

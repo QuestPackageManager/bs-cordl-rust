@@ -6,16 +6,18 @@ pub struct BidirectionalDictionary_2<
     TSecond: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _firstToSecond: *mut crate::System::Collections::Generic::IDictionary_2<
-        TFirst,
-        TSecond,
+    pub _firstToSecond: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IDictionary_2<TFirst, TSecond>,
     >,
-    pub _secondToFirst: *mut crate::System::Collections::Generic::IDictionary_2<
-        TSecond,
-        TFirst,
+    pub _secondToFirst: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IDictionary_2<TSecond, TFirst>,
     >,
-    pub _duplicateFirstErrorMessage: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _duplicateSecondErrorMessage: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _duplicateFirstErrorMessage: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _duplicateSecondErrorMessage: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     __cordl_phantom_TFirst: std::marker::PhantomData<TFirst>,
     __cordl_phantom_TSecond: std::marker::PhantomData<TSecond>,
 }

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CookieParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_tokenizer: *mut crate::System::Net::CookieTokenizer,
+    pub m_tokenizer: quest_hook::libil2cpp::Gc<crate::System::Net::CookieTokenizer>,
 }
 #[cfg(feature = "System+Net+CookieParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

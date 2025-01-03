@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Profiling+LowLevel+Unsafe+ProfilerCategoryDescription")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ProfilerCategoryDescription {
     padding: [u8; 24usize],
 }

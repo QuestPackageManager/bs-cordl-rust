@@ -5,9 +5,8 @@ pub struct SubContainerCreatorByNewGameObjectMethod_1<
     TParam1: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::Zenject::SubContainerCreatorByNewGameObjectDynamicContext,
-    pub _installerMethod: *mut crate::System::Action_2<
-        *mut crate::Zenject::DiContainer,
-        TParam1,
+    pub _installerMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::Zenject::DiContainer, TParam1>,
     >,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
 }

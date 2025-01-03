@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct GameServerPlayerTableItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub playerName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub suggestedLevel: *mut quest_hook::libil2cpp::Il2CppString,
-    pub suggestedModifiers: *mut quest_hook::libil2cpp::Il2CppString,
+    pub playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub suggestedLevel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub suggestedModifiers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub isReady: bool,
 }
 #[cfg(feature = "GameServerPlayerTableItem")]

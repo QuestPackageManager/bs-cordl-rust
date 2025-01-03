@@ -10,21 +10,29 @@ pub struct ValidationState {
     pub ValidationSkipped: bool,
     pub ProcessContents: crate::System::Xml::Schema::XmlSchemaContentProcessing,
     pub Validity: crate::System::Xml::Schema::XmlSchemaValidity,
-    pub ElementDecl: *mut crate::System::Xml::Schema::SchemaElementDecl,
-    pub ElementDeclBeforeXsi: *mut crate::System::Xml::Schema::SchemaElementDecl,
-    pub LocalName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Namespace: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Constr: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::Schema::ConstraintStruct,
+    pub ElementDecl: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::SchemaElementDecl,
+    >,
+    pub ElementDeclBeforeXsi: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::SchemaElementDecl,
+    >,
+    pub LocalName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Namespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Constr: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::Schema::ConstraintStruct,
+        >,
     >,
     pub CurrentState: crate::System::Xml::Schema::StateUnion,
     pub HasMatched: bool,
-    pub CurPos: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::Schema::BitSet,
+    pub CurPos: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
     >,
-    pub AllElementsSet: *mut crate::System::Xml::Schema::BitSet,
-    pub RunningPositions: *mut crate::System::Collections::Generic::List_1<
-        crate::System::Xml::Schema::RangePositionInfo,
+    pub AllElementsSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+    pub RunningPositions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::System::Xml::Schema::RangePositionInfo,
+        >,
     >,
     pub TooComplex: bool,
 }

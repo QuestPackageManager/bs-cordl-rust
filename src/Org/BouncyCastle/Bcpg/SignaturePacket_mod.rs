@@ -9,17 +9,25 @@ pub struct SignaturePacket {
     pub keyId: i64,
     pub keyAlgorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
     pub hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-    pub signature: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
+    pub signature: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
+        >,
     >,
-    pub fingerprint: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub hashedData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+    pub fingerprint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub hashedData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+        >,
     >,
-    pub unhashedData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+    pub unhashedData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+        >,
     >,
-    pub signatureEncoding: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub signatureEncoding: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+SignaturePacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

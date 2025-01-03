@@ -4,12 +4,20 @@
 pub struct JsonSchemaGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _UndefinedSchemaIdHandling_k__BackingField: crate::Newtonsoft::Json::Schema::UndefinedSchemaIdHandling,
-    pub _contractResolver: *mut crate::Newtonsoft::Json::Serialization::IContractResolver,
-    pub _resolver: *mut crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
-    pub _stack: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema,
+    pub _contractResolver: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::IContractResolver,
     >,
-    pub _currentSchema: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+    pub _resolver: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
+    >,
+    pub _stack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema,
+        >,
+    >,
+    pub _currentSchema: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Schema::JsonSchema,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -356,8 +364,10 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
 #[derive(Debug)]
 pub struct JsonSchemaGenerator_TypeSchema {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Type_k__BackingField: *mut crate::System::Type,
-    pub _Schema_k__BackingField: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+    pub _Type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _Schema_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Schema::JsonSchema,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

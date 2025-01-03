@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct TimeStampRequest {
     __cordl_parent: crate::Org::BouncyCastle::X509::X509ExtensionBase,
-    pub req: *mut crate::Org::BouncyCastle::Asn1::Tsp::TimeStampReq,
-    pub extensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    pub req: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Tsp::TimeStampReq,
+    >,
+    pub extensions: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

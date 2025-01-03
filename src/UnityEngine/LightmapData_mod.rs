@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct LightmapData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Light: *mut crate::UnityEngine::Texture2D,
-    pub m_Dir: *mut crate::UnityEngine::Texture2D,
-    pub m_ShadowMask: *mut crate::UnityEngine::Texture2D,
+    pub m_Light: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    pub m_Dir: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    pub m_ShadowMask: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
 }
 #[cfg(feature = "UnityEngine+LightmapData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

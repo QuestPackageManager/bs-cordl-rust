@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct WingedEdgeEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Start: *mut crate::UnityEngine::ProBuilder::WingedEdge,
-    pub m_Current: *mut crate::UnityEngine::ProBuilder::WingedEdge,
+    pub m_Start: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
+    pub m_Current: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+WingedEdgeEnumerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

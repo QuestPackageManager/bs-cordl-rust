@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct OptionalValidity {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub notBefore: *mut crate::Org::BouncyCastle::Asn1::X509::Time,
-    pub notAfter: *mut crate::Org::BouncyCastle::Asn1::X509::Time,
+    pub notBefore: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Time>,
+    pub notAfter: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Time>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+OptionalValidity")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

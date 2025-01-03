@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PkixCertPathValidatorException {
     __cordl_parent: crate::Org::BouncyCastle::Security::GeneralSecurityException,
-    pub cause: *mut crate::System::Exception,
-    pub certPath: *mut crate::Org::BouncyCastle::Pkix::PkixCertPath,
+    pub cause: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    pub certPath: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Pkix::PkixCertPath,
+    >,
     pub index: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPathValidatorException")]

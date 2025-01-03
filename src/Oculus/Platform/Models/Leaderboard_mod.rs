@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct Leaderboard {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub ApiName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub DestinationOptional: *mut crate::Oculus::Platform::Models::Destination,
-    pub Destination: *mut crate::Oculus::Platform::Models::Destination,
+    pub ApiName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub DestinationOptional: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::Destination,
+    >,
+    pub Destination: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::Destination,
+    >,
     pub _cordl_ID: u64,
 }
 #[cfg(feature = "Oculus+Platform+Models+Leaderboard")]

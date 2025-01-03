@@ -6,10 +6,16 @@ pub struct ColumnResizer {
     pub m_Start: crate::UnityEngine::Vector2,
     pub m_Active: bool,
     pub m_Resizing: bool,
-    pub m_Header: *mut crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader,
-    pub m_Column: *mut crate::UnityEngine::UIElements::Column,
-    pub m_PreviewElement: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub _columnLayout_k__BackingField: *mut crate::UnityEngine::UIElements::ColumnLayout,
+    pub m_Header: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader,
+    >,
+    pub m_Column: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
+    pub m_PreviewElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub _columnLayout_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ColumnLayout,
+    >,
     pub _preview_k__BackingField: bool,
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+ColumnResizer")]

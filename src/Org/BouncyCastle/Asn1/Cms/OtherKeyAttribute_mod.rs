@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct OtherKeyAttribute {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub keyAttrId: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub keyAttr: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    pub keyAttrId: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub keyAttr: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+OtherKeyAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

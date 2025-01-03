@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LazyDerSet {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::DerSet,
-    pub encoded: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub encoded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+LazyDerSet")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

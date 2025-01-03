@@ -3,13 +3,27 @@
 #[derive(Debug)]
 pub struct DefaultScenesTransitionsFromInit {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _healthWarningScenesTransitionSetupData: *mut crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO,
-    pub _recordingToolScenesTransitionSetupData: *mut crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO,
-    pub _mainMenuScenesTransitionSetupData: *mut crate::GlobalNamespace::MenuScenesTransitionSetupDataSO,
-    pub _beatmapEditorScenesTransitionSetupData: *mut crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
-    pub _shaderWarmupScenesTransitionSetupData: *mut crate::GlobalNamespace::ShaderWarmupScenesTransitionSetupDataSO,
-    pub _startupErrorScenesTransitionSetupData: *mut crate::GlobalNamespace::StartupErrorScenesTransitionSetupDataSO,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
+    pub _healthWarningScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO,
+    >,
+    pub _recordingToolScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO,
+    >,
+    pub _mainMenuScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuScenesTransitionSetupDataSO,
+    >,
+    pub _beatmapEditorScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
+    >,
+    pub _shaderWarmupScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ShaderWarmupScenesTransitionSetupDataSO,
+    >,
+    pub _startupErrorScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StartupErrorScenesTransitionSetupDataSO,
+    >,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
 }
 #[cfg(feature = "DefaultScenesTransitionsFromInit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -113,11 +127,11 @@ for crate::GlobalNamespace::DefaultScenesTransitionsFromInit {
     feature = "DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct __c__DisplayClass9_0_DefaultScenesTransitionsFromInit___TransitionToNextScene_g__OnFinishCallback_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncVoidMethodBuilder,
-    pub __4__this: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub __4__this: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter,
 }
 #[cfg(

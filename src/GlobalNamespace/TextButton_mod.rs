@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct TextButton {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _text: *mut crate::UnityEngine::UI::Text,
-    pub _button: *mut crate::UnityEngine::UI::Button,
+    pub _text: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub _button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
 }
 #[cfg(feature = "TextButton")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

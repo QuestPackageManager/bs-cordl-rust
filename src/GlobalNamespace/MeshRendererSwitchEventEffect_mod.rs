@@ -4,14 +4,18 @@
 pub struct MeshRendererSwitchEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _beatmapEvent: crate::GlobalNamespace::BasicBeatmapEventType,
-    pub _deactivateOnBoostRenderers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::MeshRenderer,
+    pub _deactivateOnBoostRenderers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::MeshRenderer>,
     >,
-    pub _activateOnBoostRenderers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::MeshRenderer,
+    pub _activateOnBoostRenderers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::MeshRenderer>,
     >,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "MeshRendererSwitchEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

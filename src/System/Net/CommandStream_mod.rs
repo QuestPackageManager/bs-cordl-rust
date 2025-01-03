@@ -4,20 +4,24 @@
 pub struct CommandStream {
     __cordl_parent: crate::System::Net::NetworkStreamWrapper,
     pub _recoverableFailure: bool,
-    pub _request: *mut crate::System::Net::WebRequest,
+    pub _request: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
     pub _isAsync: bool,
     pub _aborted: bool,
-    pub _commands: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Net::CommandStream_PipelineEntry,
+    pub _commands: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Net::CommandStream_PipelineEntry,
+        >,
     >,
     pub _index: i32,
     pub _doRead: bool,
     pub _doSend: bool,
-    pub _currentResponseDescription: *mut crate::System::Net::ResponseDescription,
-    pub _abortReason: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _buffer: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _encoding: *mut crate::System::Text::Encoding,
-    pub _decoder: *mut crate::System::Text::Decoder,
+    pub _currentResponseDescription: quest_hook::libil2cpp::Gc<
+        crate::System::Net::ResponseDescription,
+    >,
+    pub _abortReason: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    pub _decoder: quest_hook::libil2cpp::Gc<crate::System::Text::Decoder>,
 }
 #[cfg(feature = "System+Net+CommandStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -361,7 +365,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::CommandStream {
 #[derive(Debug)]
 pub struct CommandStream_PipelineEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Command: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Command: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Flags: crate::System::Net::CommandStream_PipelineEntryFlags,
 }
 #[cfg(feature = "System+Net+CommandStream+PipelineEntry")]

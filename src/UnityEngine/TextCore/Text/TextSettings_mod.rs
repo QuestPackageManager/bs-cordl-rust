@@ -3,33 +3,57 @@
 #[derive(Debug)]
 pub struct TextSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub m_Version: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_DefaultFontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
-    pub m_DefaultFontAssetPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_FallbackFontAssets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::TextCore::Text::FontAsset,
+    pub m_Version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_DefaultFontAsset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::FontAsset,
+    >,
+    pub m_DefaultFontAssetPath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_FallbackFontAssets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
     >,
     pub m_MatchMaterialPreset: bool,
     pub m_MissingCharacterUnicode: i32,
     pub m_ClearDynamicDataOnBuild: bool,
-    pub m_DefaultSpriteAsset: *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
-    pub m_DefaultSpriteAssetPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_FallbackSpriteAssets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
+    pub m_DefaultSpriteAsset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::SpriteAsset,
+    >,
+    pub m_DefaultSpriteAssetPath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_FallbackSpriteAssets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
+        >,
     >,
     pub m_MissingSpriteCharacterUnicode: u32,
-    pub m_DefaultStyleSheet: *mut crate::UnityEngine::TextCore::Text::TextStyleSheet,
-    pub m_StyleSheetsResourcePath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_DefaultColorGradientPresetsPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_UnicodeLineBreakingRules: *mut crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules,
+    pub m_DefaultStyleSheet: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextStyleSheet,
+    >,
+    pub m_StyleSheetsResourcePath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_DefaultColorGradientPresetsPath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_UnicodeLineBreakingRules: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules,
+    >,
     pub m_UseModernHangulLineBreakingRules: bool,
     pub m_DisplayWarnings: bool,
-    pub m_FontLookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::UnityEngine::TextCore::Text::FontAsset,
+    pub m_FontLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
     >,
-    pub m_FontReferences: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap,
+    pub m_FontReferences: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextSettings")]
@@ -525,10 +549,12 @@ for crate::UnityEngine::TextCore::Text::TextSettings {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TextSettings_FontReferenceMap {
-    pub font: *mut crate::UnityEngine::Font,
-    pub fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
+    pub font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+    pub fontAsset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::FontAsset,
+    >,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

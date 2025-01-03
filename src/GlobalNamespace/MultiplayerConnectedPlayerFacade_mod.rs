@@ -3,15 +3,27 @@
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerFacade {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _outroAnimator: *mut crate::UnityEngine::GameObject,
-    pub _bigAvatarAnimator: *mut crate::GlobalNamespace::MultiplayerBigAvatarAnimator,
+    pub _outroAnimator: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _bigAvatarAnimator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerBigAvatarAnimator,
+    >,
     pub _bigAvatarDisappearDuration: f32,
     pub _bigAvatarDisappearEasing: crate::GlobalNamespace::EaseType,
-    pub _songTimeSyncController: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController,
-    pub _introAnimator: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerIntroAnimator,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _scoreDiffText: *mut crate::GlobalNamespace::MultiplayerScoreDiffText,
-    pub _beatmapObjectEventManager: *mut crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager,
+    pub _songTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController,
+    >,
+    pub _introAnimator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerIntroAnimator,
+    >,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub _scoreDiffText: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreDiffText,
+    >,
+    pub _beatmapObjectEventManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager,
+    >,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerFacade")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

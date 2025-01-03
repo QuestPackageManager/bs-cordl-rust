@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct PlayersSpecificSettingsAtGameStartModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _localPlayerSpecificSettings_k__BackingField: *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
-    pub _playersAtGameStartNetSerializable_k__BackingField: *mut crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _localPlayerSpecificSettings_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
+    >,
+    pub _playersAtGameStartNetSerializable_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
 }
 #[cfg(feature = "PlayersSpecificSettingsAtGameStartModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -4,7 +4,7 @@
 pub struct ValidationMarker {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _InstantiateFailed_k__BackingField: bool,
-    pub _MarkedType_k__BackingField: *mut crate::System::Type,
+    pub _MarkedType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "Zenject+ValidationMarker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

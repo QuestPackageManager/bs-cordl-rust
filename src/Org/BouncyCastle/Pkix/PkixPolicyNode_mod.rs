@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct PkixPolicyNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mChildren: *mut crate::System::Collections::IList,
+    pub mChildren: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub mDepth: i32,
-    pub mExpectedPolicies: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub mParent: *mut crate::Org::BouncyCastle::Pkix::PkixPolicyNode,
-    pub mPolicyQualifiers: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub mValidPolicy: *mut quest_hook::libil2cpp::Il2CppString,
+    pub mExpectedPolicies: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub mParent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Pkix::PkixPolicyNode,
+    >,
+    pub mPolicyQualifiers: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub mValidPolicy: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub mCritical: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixPolicyNode")]

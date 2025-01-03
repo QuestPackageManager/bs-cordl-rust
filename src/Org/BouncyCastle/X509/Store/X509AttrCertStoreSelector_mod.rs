@@ -3,13 +3,27 @@
 #[derive(Debug)]
 pub struct X509AttrCertStoreSelector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub attributeCert: *mut crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
-    pub attributeCertificateValid: *mut crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
-    pub holder: *mut crate::Org::BouncyCastle::X509::AttributeCertificateHolder,
-    pub issuer: *mut crate::Org::BouncyCastle::X509::AttributeCertificateIssuer,
-    pub serialNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub targetNames: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub targetGroups: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    pub attributeCert: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+    >,
+    pub attributeCertificateValid: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
+    >,
+    pub holder: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::AttributeCertificateHolder,
+    >,
+    pub issuer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::AttributeCertificateIssuer,
+    >,
+    pub serialNumber: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
+    pub targetNames: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub targetGroups: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509AttrCertStoreSelector")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

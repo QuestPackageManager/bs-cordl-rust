@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct HEU_SessionBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _sessionData: *mut crate::HoudiniEngineUnity::HEU_SessionData,
+    pub _sessionData: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_SessionData,
+    >,
     pub _UserNotifiedSessionInvalid_k__BackingField: bool,
-    pub _sessionErrorMsg: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _sessionErrorMsg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _LogErrorOverride_k__BackingField: bool,
     pub _ThrowErrorOverride_k__BackingField: bool,
     pub _LastCallResultCode_k__BackingField: crate::HoudiniEngineUnity::HAPI_Result,

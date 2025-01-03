@@ -34,7 +34,7 @@ pub struct GraphyManager {
     pub m_ramTextUpdateRate: i32,
     pub m_audioModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,
     pub m_findAudioListenerInCameraIfNull: crate::Tayx::Graphy::GraphyManager_LookForAudioListener,
-    pub m_audioListener: *mut crate::UnityEngine::AudioListener,
+    pub m_audioListener: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioListener>,
     pub m_audioGraphColor: crate::UnityEngine::Color,
     pub m_audioGraphResolution: i32,
     pub m_audioTextUpdateRate: i32,
@@ -45,13 +45,19 @@ pub struct GraphyManager {
     pub m_initialized: bool,
     pub m_active: bool,
     pub m_focused: bool,
-    pub m_fpsManager: *mut crate::Tayx::Graphy::Fps::G_FpsManager,
-    pub m_ramManager: *mut crate::Tayx::Graphy::Ram::G_RamManager,
-    pub m_audioManager: *mut crate::Tayx::Graphy::Audio::G_AudioManager,
-    pub m_advancedData: *mut crate::Tayx::Graphy::Advanced::G_AdvancedData,
-    pub m_fpsMonitor: *mut crate::Tayx::Graphy::Fps::G_FpsMonitor,
-    pub m_ramMonitor: *mut crate::Tayx::Graphy::Ram::G_RamMonitor,
-    pub m_audioMonitor: *mut crate::Tayx::Graphy::Audio::G_AudioMonitor,
+    pub m_fpsManager: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Fps::G_FpsManager>,
+    pub m_ramManager: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Ram::G_RamManager>,
+    pub m_audioManager: quest_hook::libil2cpp::Gc<
+        crate::Tayx::Graphy::Audio::G_AudioManager,
+    >,
+    pub m_advancedData: quest_hook::libil2cpp::Gc<
+        crate::Tayx::Graphy::Advanced::G_AdvancedData,
+    >,
+    pub m_fpsMonitor: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Fps::G_FpsMonitor>,
+    pub m_ramMonitor: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Ram::G_RamMonitor>,
+    pub m_audioMonitor: quest_hook::libil2cpp::Gc<
+        crate::Tayx::Graphy::Audio::G_AudioMonitor,
+    >,
     pub m_modulePresetState: crate::Tayx::Graphy::GraphyManager_ModulePreset,
 }
 #[cfg(feature = "Tayx+Graphy+GraphyManager")]

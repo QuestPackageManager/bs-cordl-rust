@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HttpListenerBasicIdentity {
     __cordl_parent: crate::System::Security::Principal::GenericIdentity,
-    pub password: *mut quest_hook::libil2cpp::Il2CppString,
+    pub password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Net+HttpListenerBasicIdentity")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

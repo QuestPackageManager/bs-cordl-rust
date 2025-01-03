@@ -3,14 +3,28 @@
 #[derive(Debug)]
 pub struct CmsSignedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub signedContent: *mut crate::Org::BouncyCastle::Cms::CmsProcessable,
-    pub signedData: *mut crate::Org::BouncyCastle::Asn1::Cms::SignedData,
-    pub contentInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
-    pub signerInfoStore: *mut crate::Org::BouncyCastle::Cms::SignerInformationStore,
-    pub attrCertStore: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
-    pub certificateStore: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
-    pub crlStore: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
-    pub hashes: *mut crate::System::Collections::IDictionary,
+    pub signedContent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsProcessable,
+    >,
+    pub signedData: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::SignedData,
+    >,
+    pub contentInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+    >,
+    pub signerInfoStore: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::SignerInformationStore,
+    >,
+    pub attrCertStore: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::Store::IX509Store,
+    >,
+    pub certificateStore: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::Store::IX509Store,
+    >,
+    pub crlStore: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::Store::IX509Store,
+    >,
+    pub hashes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

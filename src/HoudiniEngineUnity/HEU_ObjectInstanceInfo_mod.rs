@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct HEU_ObjectInstanceInfo {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _instancedInputs: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_InstancedInput,
+    pub _instancedInputs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_InstancedInput,
+        >,
     >,
-    pub _partTarget: *mut crate::HoudiniEngineUnity::HEU_PartData,
+    pub _partTarget: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PartData>,
     pub _instancedObjectNodeID: i32,
-    pub _instancedObjectPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _instances: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::GameObject,
+    pub _instancedObjectPath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _instances: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::GameObject>,
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ObjectInstanceInfo")]

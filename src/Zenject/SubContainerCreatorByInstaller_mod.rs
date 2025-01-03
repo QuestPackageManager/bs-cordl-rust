@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct SubContainerCreatorByInstaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _installerType: *mut crate::System::Type,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _extraArgs: *mut crate::System::Collections::Generic::List_1<
-        crate::Zenject::TypeValuePair,
+    pub _installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _extraArgs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
     >,
-    pub _containerBindInfo: *mut crate::Zenject::SubContainerCreatorBindInfo,
+    pub _containerBindInfo: quest_hook::libil2cpp::Gc<
+        crate::Zenject::SubContainerCreatorBindInfo,
+    >,
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

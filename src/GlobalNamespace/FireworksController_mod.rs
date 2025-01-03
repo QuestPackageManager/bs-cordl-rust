@@ -6,14 +6,18 @@ pub struct FireworksController {
     pub _spawnSize: crate::UnityEngine::Vector3,
     pub _minSpawnInterval: f32,
     pub _maxSpawnInterval: f32,
-    pub _directionalLights: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::DirectionalLight,
+    pub _directionalLights: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::DirectionalLight>,
     >,
     pub _lightsIntensity: f32,
     pub _currentLightId: i32,
-    pub _fireworkItemPool: *mut crate::GlobalNamespace::FireworkItemController_Pool,
-    pub _activeFireworks: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::FireworkItemController,
+    pub _fireworkItemPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FireworkItemController_Pool,
+    >,
+    pub _activeFireworks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::FireworkItemController,
+        >,
     >,
 }
 #[cfg(feature = "FireworksController")]

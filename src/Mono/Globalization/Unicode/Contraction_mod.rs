@@ -4,9 +4,9 @@
 pub struct Contraction {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Index: i32,
-    pub Source: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    pub Replacement: *mut quest_hook::libil2cpp::Il2CppString,
-    pub SortKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub Source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    pub Replacement: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub SortKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Globalization+Unicode+Contraction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

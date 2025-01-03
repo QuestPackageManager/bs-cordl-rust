@@ -3,21 +3,29 @@
 #[derive(Debug)]
 pub struct G_RamGraph {
     __cordl_parent: crate::Tayx::Graphy::Graph::G_Graph,
-    pub m_imageAllocated: *mut crate::UnityEngine::UI::Image,
-    pub m_imageReserved: *mut crate::UnityEngine::UI::Image,
-    pub m_imageMono: *mut crate::UnityEngine::UI::Image,
-    pub ShaderFull: *mut crate::UnityEngine::Shader,
-    pub ShaderLight: *mut crate::UnityEngine::Shader,
+    pub m_imageAllocated: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub m_imageReserved: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub m_imageMono: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub ShaderFull: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub ShaderLight: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub m_isInitialized: bool,
-    pub m_graphyManager: *mut crate::Tayx::Graphy::GraphyManager,
-    pub m_ramMonitor: *mut crate::Tayx::Graphy::Ram::G_RamMonitor,
+    pub m_graphyManager: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
+    pub m_ramMonitor: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Ram::G_RamMonitor>,
     pub m_resolution: i32,
-    pub m_shaderGraphAllocated: *mut crate::Tayx::Graphy::G_GraphShader,
-    pub m_shaderGraphReserved: *mut crate::Tayx::Graphy::G_GraphShader,
-    pub m_shaderGraphMono: *mut crate::Tayx::Graphy::G_GraphShader,
-    pub m_allocatedArray: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub m_reservedArray: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub m_monoArray: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub m_shaderGraphAllocated: quest_hook::libil2cpp::Gc<
+        crate::Tayx::Graphy::G_GraphShader,
+    >,
+    pub m_shaderGraphReserved: quest_hook::libil2cpp::Gc<
+        crate::Tayx::Graphy::G_GraphShader,
+    >,
+    pub m_shaderGraphMono: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::G_GraphShader>,
+    pub m_allocatedArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
+    pub m_reservedArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
+    pub m_monoArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub m_highestMemory: f32,
 }
 #[cfg(feature = "Tayx+Graphy+Ram+G_RamGraph")]

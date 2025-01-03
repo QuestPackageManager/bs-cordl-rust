@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct RsaBlindingFactorGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub key: *mut crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub key: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
+    >,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+RsaBlindingFactorGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

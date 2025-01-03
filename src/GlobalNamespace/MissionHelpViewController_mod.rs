@@ -3,14 +3,16 @@
 #[derive(Debug)]
 pub struct MissionHelpViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _okButton: *mut crate::UnityEngine::UI::Button,
-    pub _missionHelpGameObjectPairs: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MissionHelpViewController_MissionHelpGameObjectPair,
+    pub _okButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _missionHelpGameObjectPairs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MissionHelpViewController_MissionHelpGameObjectPair,
+        >,
     >,
-    pub didFinishEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MissionHelpViewController,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::MissionHelpViewController>,
     >,
-    pub _missionHelp: *mut crate::GlobalNamespace::MissionHelpSO,
+    pub _missionHelp: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionHelpSO>,
 }
 #[cfg(feature = "MissionHelpViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -144,8 +146,8 @@ for crate::GlobalNamespace::MissionHelpViewController {
 #[derive(Debug)]
 pub struct MissionHelpViewController_MissionHelpGameObjectPair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub missionHelp: *mut crate::GlobalNamespace::MissionHelpSO,
-    pub gameObject: *mut crate::UnityEngine::GameObject,
+    pub missionHelp: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionHelpSO>,
+    pub gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
 #[cfg(feature = "MissionHelpViewController+MissionHelpGameObjectPair")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,19 +3,43 @@
 #[derive(Debug)]
 pub struct Compiler {
     __cordl_parent: crate::System::Xml::Schema::BaseProcessor,
-    pub restrictionErrorMsg: *mut quest_hook::libil2cpp::Il2CppString,
-    pub attributes: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub attributeGroups: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub elements: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub schemaTypes: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub groups: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub notations: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub examplars: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub identityConstraints: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub complexTypeStack: *mut crate::System::Collections::Stack,
-    pub schemasToCompile: *mut crate::System::Collections::Hashtable,
-    pub importedSchemas: *mut crate::System::Collections::Hashtable,
-    pub schemaForSchema: *mut crate::System::Xml::Schema::XmlSchema,
+    pub restrictionErrorMsg: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub attributes: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub attributeGroups: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub elements: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub schemaTypes: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub groups: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub notations: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub examplars: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub identityConstraints: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub complexTypeStack: quest_hook::libil2cpp::Gc<crate::System::Collections::Stack>,
+    pub schemasToCompile: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
+    pub importedSchemas: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
+    pub schemaForSchema: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchema,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+Compiler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

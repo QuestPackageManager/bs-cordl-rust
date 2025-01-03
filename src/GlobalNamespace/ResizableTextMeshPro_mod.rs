@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ResizableTextMeshPro {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _textMeshPro: *mut crate::TMPro::TMP_Text,
-    pub _rectTransform: *mut crate::UnityEngine::RectTransform,
+    pub _textMeshPro: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+    pub _rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _textExtraSpace: f32,
 }
 #[cfg(feature = "ResizableTextMeshPro")]

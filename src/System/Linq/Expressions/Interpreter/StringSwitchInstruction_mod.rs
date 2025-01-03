@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct StringSwitchInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
-    pub _cases: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        i32,
+    pub _cases: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            i32,
+        >,
     >,
-    pub _nullCase: *mut crate::System::Runtime::CompilerServices::StrongBox_1<i32>,
+    pub _nullCase: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::StrongBox_1<i32>,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+StringSwitchInstruction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

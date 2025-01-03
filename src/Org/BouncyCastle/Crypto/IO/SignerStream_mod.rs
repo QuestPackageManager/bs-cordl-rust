@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct SignerStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub stream: *mut crate::System::IO::Stream,
-    pub inSigner: *mut crate::Org::BouncyCastle::Crypto::ISigner,
-    pub outSigner: *mut crate::Org::BouncyCastle::Crypto::ISigner,
+    pub stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub inSigner: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
+    pub outSigner: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IO+SignerStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

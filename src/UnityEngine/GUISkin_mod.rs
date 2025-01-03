@@ -3,37 +3,55 @@
 #[derive(Debug)]
 pub struct GUISkin {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub m_Font: *mut crate::UnityEngine::Font,
-    pub m_box: *mut crate::UnityEngine::GUIStyle,
-    pub m_button: *mut crate::UnityEngine::GUIStyle,
-    pub m_toggle: *mut crate::UnityEngine::GUIStyle,
-    pub m_label: *mut crate::UnityEngine::GUIStyle,
-    pub m_textField: *mut crate::UnityEngine::GUIStyle,
-    pub m_textArea: *mut crate::UnityEngine::GUIStyle,
-    pub m_window: *mut crate::UnityEngine::GUIStyle,
-    pub m_horizontalSlider: *mut crate::UnityEngine::GUIStyle,
-    pub m_horizontalSliderThumb: *mut crate::UnityEngine::GUIStyle,
-    pub m_horizontalSliderThumbExtent: *mut crate::UnityEngine::GUIStyle,
-    pub m_verticalSlider: *mut crate::UnityEngine::GUIStyle,
-    pub m_verticalSliderThumb: *mut crate::UnityEngine::GUIStyle,
-    pub m_verticalSliderThumbExtent: *mut crate::UnityEngine::GUIStyle,
-    pub m_SliderMixed: *mut crate::UnityEngine::GUIStyle,
-    pub m_horizontalScrollbar: *mut crate::UnityEngine::GUIStyle,
-    pub m_horizontalScrollbarThumb: *mut crate::UnityEngine::GUIStyle,
-    pub m_horizontalScrollbarLeftButton: *mut crate::UnityEngine::GUIStyle,
-    pub m_horizontalScrollbarRightButton: *mut crate::UnityEngine::GUIStyle,
-    pub m_verticalScrollbar: *mut crate::UnityEngine::GUIStyle,
-    pub m_verticalScrollbarThumb: *mut crate::UnityEngine::GUIStyle,
-    pub m_verticalScrollbarUpButton: *mut crate::UnityEngine::GUIStyle,
-    pub m_verticalScrollbarDownButton: *mut crate::UnityEngine::GUIStyle,
-    pub m_ScrollView: *mut crate::UnityEngine::GUIStyle,
-    pub m_CustomStyles: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::GUIStyle,
+    pub m_Font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+    pub m_box: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    pub m_button: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    pub m_toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    pub m_label: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    pub m_textField: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    pub m_textArea: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    pub m_window: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    pub m_horizontalSlider: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    pub m_horizontalSliderThumb: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    pub m_horizontalSliderThumbExtent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GUIStyle,
     >,
-    pub m_Settings: *mut crate::UnityEngine::GUISettings,
-    pub m_Styles: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::UnityEngine::GUIStyle,
+    pub m_verticalSlider: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    pub m_verticalSliderThumb: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    pub m_verticalSliderThumbExtent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GUIStyle,
+    >,
+    pub m_SliderMixed: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    pub m_horizontalScrollbar: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    pub m_horizontalScrollbarThumb: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GUIStyle,
+    >,
+    pub m_horizontalScrollbarLeftButton: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GUIStyle,
+    >,
+    pub m_horizontalScrollbarRightButton: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GUIStyle,
+    >,
+    pub m_verticalScrollbar: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    pub m_verticalScrollbarThumb: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GUIStyle,
+    >,
+    pub m_verticalScrollbarUpButton: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GUIStyle,
+    >,
+    pub m_verticalScrollbarDownButton: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GUIStyle,
+    >,
+    pub m_ScrollView: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    pub m_CustomStyles: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUIStyle>,
+    >,
+    pub m_Settings: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUISettings>,
+    pub m_Styles: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::UnityEngine::GUIStyle,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+GUISkin")]

@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct MockPlayerGamePoseGeneratorMirror {
     __cordl_parent: crate::GlobalNamespace::MockPlayerGamePoseGenerator,
-    pub _nodePoseSyncStateManager: *mut crate::GlobalNamespace::NodePoseSyncStateManager,
-    pub _mirroredPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
-    pub _onSongFinished: *mut crate::System::Action,
+    pub _nodePoseSyncStateManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NodePoseSyncStateManager,
+    >,
+    pub _mirroredPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
+    pub _onSongFinished: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "MockPlayerGamePoseGeneratorMirror")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,20 +3,26 @@
 #[derive(Debug)]
 pub struct ZStream {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub next_in: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub next_in: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub next_in_index: i32,
     pub avail_in: i32,
     pub total_in: i64,
-    pub next_out: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub next_out: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub next_out_index: i32,
     pub avail_out: i32,
     pub total_out: i64,
-    pub msg: *mut quest_hook::libil2cpp::Il2CppString,
-    pub dstate: *mut crate::Org::BouncyCastle::Utilities::Zlib::Deflate,
-    pub istate: *mut crate::Org::BouncyCastle::Utilities::Zlib::Inflate,
+    pub msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub dstate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Zlib::Deflate,
+    >,
+    pub istate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Zlib::Inflate,
+    >,
     pub data_type: i32,
     pub adler: i64,
-    pub _adler: *mut crate::Org::BouncyCastle::Utilities::Zlib::Adler32,
+    pub _adler: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Zlib::Adler32,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+ZStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

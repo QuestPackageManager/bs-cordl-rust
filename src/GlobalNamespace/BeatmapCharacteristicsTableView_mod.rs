@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct BeatmapCharacteristicsTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _tableView: *mut crate::HMUI::TableView,
-    pub _cellPrefab: *mut crate::GlobalNamespace::BeatmapCharacteristicTableCell,
-    pub _cellReuseIdentifier: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _cellWidth: f32,
-    pub didSelectCharacteristic: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+    pub _cellPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicTableCell,
     >,
-    pub _beatmapCharacteristicCollection: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
+    pub _cellReuseIdentifier: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _cellWidth: f32,
+    pub didSelectCharacteristic: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::BeatmapCharacteristicSO>,
+    >,
+    pub _beatmapCharacteristicCollection: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicCollection,
+    >,
     pub _isInitialized: bool,
     pub _selectedColumn: i32,
 }

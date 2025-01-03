@@ -17,16 +17,26 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct NetworkPlayersTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _tableView: *mut crate::HMUI::TableView,
-    pub _playerCellPrefab: *mut crate::GlobalNamespace::NetworkPlayerTableCell,
-    pub _optionsCellPrefab: *mut crate::GlobalNamespace::NetworkPlayerOptionsTableCell,
-    pub _headerCellPrefab: *mut crate::GlobalNamespace::LevelPackHeaderTableCell,
+    pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+    pub _playerCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NetworkPlayerTableCell,
+    >,
+    pub _optionsCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NetworkPlayerOptionsTableCell,
+    >,
+    pub _headerCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelPackHeaderTableCell,
+    >,
     pub _rowHeight: f32,
-    pub _cellInfo: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::NetworkPlayersTableView_CellInfo,
+    pub _cellInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::NetworkPlayersTableView_CellInfo,
+        >,
     >,
     pub _selectedCellIndex: i32,
-    pub _selectedPlayerID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _selectedPlayerID: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _selectedCellHasOptions: bool,
 }
 #[cfg(feature = "NetworkPlayersTableView")]
@@ -190,8 +200,8 @@ for crate::GlobalNamespace::NetworkPlayersTableView {
 pub struct NetworkPlayersTableView_CellInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType,
-    pub headerString: *mut quest_hook::libil2cpp::Il2CppString,
-    pub player: *mut crate::GlobalNamespace::INetworkPlayer,
+    pub headerString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
     pub lastCellInParty: bool,
 }
 #[cfg(feature = "NetworkPlayersTableView+CellInfo")]

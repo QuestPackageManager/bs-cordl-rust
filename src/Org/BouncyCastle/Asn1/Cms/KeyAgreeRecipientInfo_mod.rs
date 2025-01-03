@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct KeyAgreeRecipientInfo {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub originator: *mut crate::Org::BouncyCastle::Asn1::Cms::OriginatorIdentifierOrKey,
-    pub ukm: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub keyEncryptionAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub recipientEncryptedKeys: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub originator: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::OriginatorIdentifierOrKey,
+    >,
+    pub ukm: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
+    pub keyEncryptionAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub recipientEncryptedKeys: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+KeyAgreeRecipientInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

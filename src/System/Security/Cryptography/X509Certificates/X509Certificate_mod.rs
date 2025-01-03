@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct X509Certificate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cordl_impl: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
-    pub lazyCertHash: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub lazySerialNumber: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub lazyIssuer: *mut quest_hook::libil2cpp::Il2CppString,
-    pub lazySubject: *mut quest_hook::libil2cpp::Il2CppString,
-    pub lazyKeyAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
-    pub lazyKeyAlgorithmParameters: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub lazyPublicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _cordl_impl: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+    >,
+    pub lazyCertHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub lazySerialNumber: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub lazyIssuer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub lazySubject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub lazyKeyAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub lazyKeyAlgorithmParameters: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub lazyPublicKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub lazyNotBefore: crate::System::DateTime,
     pub lazyNotAfter: crate::System::DateTime,
 }

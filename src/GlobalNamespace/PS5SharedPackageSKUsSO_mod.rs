@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct PS5SharedPackageSKUsSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _availableSKUs: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::PS5PublisherSKUSettingsSO,
+    pub _availableSKUs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::PS5PublisherSKUSettingsSO,
+        >,
     >,
-    pub _conceptId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _conceptId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _buildType: crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType,
-    pub _buildVersion: *mut crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion,
-    pub _latestBuildVersion: *mut crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion,
+    pub _buildVersion: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion,
+    >,
+    pub _latestBuildVersion: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion,
+    >,
 }
 #[cfg(feature = "PS5SharedPackageSKUsSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -168,8 +174,10 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct PS5SharedPackageSKUsSO_PS5BuildVersion {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _masterVersion: *mut crate::GlobalNamespace::SonyVersion,
-    pub _contentVersion: *mut crate::GlobalNamespace::SonyContentVersion,
+    pub _masterVersion: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyVersion>,
+    pub _contentVersion: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyContentVersion,
+    >,
 }
 #[cfg(feature = "PS5SharedPackageSKUsSO+PS5BuildVersion")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

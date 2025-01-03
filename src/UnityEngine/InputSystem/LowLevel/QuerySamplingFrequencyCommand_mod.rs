@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+QuerySamplingFrequencyCommand")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct QuerySamplingFrequencyCommand {
     padding: [u8; 12usize],
 }

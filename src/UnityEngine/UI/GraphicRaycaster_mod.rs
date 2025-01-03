@@ -6,9 +6,9 @@ pub struct GraphicRaycaster {
     pub m_IgnoreReversedGraphics: bool,
     pub m_BlockingObjects: crate::UnityEngine::UI::GraphicRaycaster_BlockingObjects,
     pub m_BlockingMask: crate::UnityEngine::LayerMask,
-    pub m_Canvas: *mut crate::UnityEngine::Canvas,
-    pub m_RaycastResults: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UI::Graphic,
+    pub m_Canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+    pub m_RaycastResults: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::UI::Graphic>,
     >,
 }
 #[cfg(feature = "UnityEngine+UI+GraphicRaycaster")]

@@ -1,8 +1,8 @@
 #[cfg(feature = "System+ArraySegment_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ArraySegment_1<T: quest_hook::libil2cpp::Type> {
-    pub _array: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub _array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _offset: i32,
     pub _count: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -504,9 +504,9 @@ for crate::System::ArraySegment_1<T> {
 }
 #[cfg(feature = "System+ArraySegment_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ArraySegment_1_Enumerator<T: quest_hook::libil2cpp::Type> {
-    pub _array: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub _array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _start: i32,
     pub _end: i32,
     pub _current: i32,

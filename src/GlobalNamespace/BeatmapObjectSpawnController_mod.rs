@@ -3,19 +3,39 @@
 #[derive(Debug)]
 pub struct BeatmapObjectSpawnController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _beatmapObjectSpawnMovementData: *mut crate::GlobalNamespace::BeatmapObjectSpawnMovementData,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _beatmapObjectSpawner: *mut crate::GlobalNamespace::IBeatmapObjectSpawner,
-    pub _jumpOffsetYProvider: *mut crate::GlobalNamespace::IJumpOffsetYProvider,
-    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
-    pub _beatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
-    pub _initData: *mut crate::GlobalNamespace::BeatmapObjectSpawnController_InitData,
-    pub didInitEvent: *mut crate::System::Action,
+    pub _beatmapObjectSpawnMovementData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectSpawnMovementData,
+    >,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _beatmapObjectSpawner: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IBeatmapObjectSpawner,
+    >,
+    pub _jumpOffsetYProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IJumpOffsetYProvider,
+    >,
+    pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVariableMovementDataProvider,
+    >,
+    pub _beatmapData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IReadonlyBeatmapData,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectSpawnController_InitData,
+    >,
+    pub didInitEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _disableSpawning: bool,
     pub _isInitialized: bool,
-    pub _obstacleDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    pub _noteDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    pub _sliderDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _obstacleDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
+    pub _noteDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
+    pub _sliderDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "BeatmapObjectSpawnController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

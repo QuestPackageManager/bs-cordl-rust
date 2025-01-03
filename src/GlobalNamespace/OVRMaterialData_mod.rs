@@ -1,8 +1,8 @@
 #[cfg(feature = "OVRMaterialData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRMaterialData {
-    pub shader: *mut crate::UnityEngine::Shader,
+    pub shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub textureId: i32,
     pub texture: crate::GlobalNamespace::OVRTextureData,
     pub baseColorFactor: crate::UnityEngine::Color,

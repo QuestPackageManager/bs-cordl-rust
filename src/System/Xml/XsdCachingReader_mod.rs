@@ -3,25 +3,33 @@
 #[derive(Debug)]
 pub struct XsdCachingReader {
     __cordl_parent: crate::System::Xml::XmlReader,
-    pub coreReader: *mut crate::System::Xml::XmlReader,
-    pub coreReaderNameTable: *mut crate::System::Xml::XmlNameTable,
-    pub contentEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::ValidatingReaderNodeData,
+    pub coreReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    pub coreReaderNameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+    pub contentEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::ValidatingReaderNodeData,
+        >,
     >,
-    pub attributeEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::ValidatingReaderNodeData,
+    pub attributeEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::ValidatingReaderNodeData,
+        >,
     >,
-    pub cachedNode: *mut crate::System::Xml::ValidatingReaderNodeData,
+    pub cachedNode: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::ValidatingReaderNodeData,
+    >,
     pub cacheState: crate::System::Xml::XsdCachingReader_CachingReaderState,
     pub contentIndex: i32,
     pub attributeCount: i32,
     pub returnOriginalStringValues: bool,
-    pub cacheHandler: *mut crate::System::Xml::CachingEventHandler,
+    pub cacheHandler: quest_hook::libil2cpp::Gc<crate::System::Xml::CachingEventHandler>,
     pub currentAttrIndex: i32,
     pub currentContentIndex: i32,
     pub readAhead: bool,
-    pub lineInfo: *mut crate::System::Xml::IXmlLineInfo,
-    pub textNode: *mut crate::System::Xml::ValidatingReaderNodeData,
+    pub lineInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>,
+    pub textNode: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::ValidatingReaderNodeData,
+    >,
 }
 #[cfg(feature = "System+Xml+XsdCachingReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct FlyingScoreEffect {
     __cordl_parent: crate::GlobalNamespace::FlyingObjectEffect,
-    pub _fadeAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _maxCutDistanceScoreIndicator: *mut crate::UnityEngine::SpriteRenderer,
-    pub _text: *mut crate::TMPro::TextMeshPro,
+    pub _fadeAnimationCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
+    pub _maxCutDistanceScoreIndicator: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::SpriteRenderer,
+    >,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
     pub _color: crate::UnityEngine::Color,
     pub _colorAMultiplier: f32,
     pub _registeredToCallbacks: bool,
-    pub _cutScoreBuffer: *mut crate::GlobalNamespace::IReadonlyCutScoreBuffer,
+    pub _cutScoreBuffer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IReadonlyCutScoreBuffer,
+    >,
 }
 #[cfg(feature = "FlyingScoreEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

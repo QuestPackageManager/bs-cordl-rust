@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct HttpListenerPrefixCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub prefixes: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub prefixes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub listener: *mut crate::System::Net::HttpListener,
+    pub listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
 }
 #[cfg(feature = "System+Net+HttpListenerPrefixCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

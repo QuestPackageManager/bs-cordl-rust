@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct PS5ActivityIdsModelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _progressActivities: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::ProgressActivitySO,
+    pub _progressActivities: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::ProgressActivitySO,
+        >,
     >,
-    pub _competetiveActivities: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::CompetetiveActivitySO,
+    pub _competetiveActivities: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::CompetetiveActivitySO,
+        >,
     >,
 }
 #[cfg(feature = "PS5ActivityIdsModelSO")]

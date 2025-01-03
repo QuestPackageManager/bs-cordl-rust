@@ -1,6 +1,6 @@
 #[cfg(feature = "System+ReadOnlySpan_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ReadOnlySpan_1<T: quest_hook::libil2cpp::Type> {
     pub _pointer: crate::System::ByReference_1<T>,
     pub _length: i32,

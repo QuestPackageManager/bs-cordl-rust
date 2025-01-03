@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct PropagationPaths {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub trickleDownPath: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub trickleDownPath: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
     >,
-    pub targetElements: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub targetElements: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
     >,
-    pub bubbleUpPath: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub bubbleUpPath: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+PropagationPaths")]

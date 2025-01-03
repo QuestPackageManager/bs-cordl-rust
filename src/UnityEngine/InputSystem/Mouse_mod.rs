@@ -3,13 +3,27 @@
 #[derive(Debug)]
 pub struct Mouse {
     __cordl_parent: crate::UnityEngine::InputSystem::Pointer,
-    pub _scroll_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::DeltaControl,
-    pub _leftButton_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _middleButton_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _rightButton_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _backButton_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _forwardButton_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _clickCount_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::IntegerControl,
+    pub _scroll_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::DeltaControl,
+    >,
+    pub _leftButton_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _middleButton_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _rightButton_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _backButton_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _forwardButton_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _clickCount_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::IntegerControl,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Mouse")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

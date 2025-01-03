@@ -1,9 +1,9 @@
 #[cfg(feature = "System+Collections+DictionaryEntry")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DictionaryEntry {
-    pub _key: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _value: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+DictionaryEntry")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

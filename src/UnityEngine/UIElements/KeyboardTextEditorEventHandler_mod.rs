@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct KeyboardTextEditorEventHandler {
     __cordl_parent: crate::UnityEngine::UIElements::TextEditorEventHandler,
-    pub m_ImguiEvent: *mut crate::UnityEngine::Event,
+    pub m_ImguiEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
     pub m_Changed: bool,
 }
 #[cfg(feature = "UnityEngine+UIElements+KeyboardTextEditorEventHandler")]

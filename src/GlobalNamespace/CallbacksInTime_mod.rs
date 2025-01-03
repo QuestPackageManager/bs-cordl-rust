@@ -3,21 +3,29 @@
 #[derive(Debug)]
 pub struct CallbacksInTime {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub lastProcessedNode: *mut crate::System::Collections::Generic::LinkedListNode_1<
-        *mut crate::GlobalNamespace::BeatmapDataItem,
-    >,
-    pub aheadTime: f32,
-    pub beatmapEventDataForCallbacksAfterNodeRemoval: *mut crate::GlobalNamespace::BeatmapEventData,
-    pub _callbacksWithSubtypeIdentifier: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::System::ValueTuple_2<*mut crate::System::Type, i32>,
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub lastProcessedNode: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedListNode_1<
+            *mut crate::GlobalNamespace::BeatmapDataItem,
         >,
     >,
-    pub _callbacks: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Type,
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub aheadTime: f32,
+    pub beatmapEventDataForCallbacksAfterNodeRemoval: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapEventData,
+    >,
+    pub _callbacksWithSubtypeIdentifier: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::System::ValueTuple_2<*mut crate::System::Type, i32>,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+            >,
+        >,
+    >,
+    pub _callbacks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Type,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+            >,
         >,
     >,
 }

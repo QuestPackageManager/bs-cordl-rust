@@ -3,13 +3,23 @@
 #[derive(Debug)]
 pub struct FocusController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _focusRing_k__BackingField: *mut crate::UnityEngine::UIElements::IFocusRing,
-    pub m_SelectedTextElement: *mut crate::UnityEngine::UIElements::TextElement,
-    pub m_FocusedElements: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::FocusController_FocusedElement,
+    pub _focusRing_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IFocusRing,
     >,
-    pub m_LastFocusedElement: *mut crate::UnityEngine::UIElements::Focusable,
-    pub m_LastPendingFocusedElement: *mut crate::UnityEngine::UIElements::Focusable,
+    pub m_SelectedTextElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextElement,
+    >,
+    pub m_FocusedElements: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::FocusController_FocusedElement,
+        >,
+    >,
+    pub m_LastFocusedElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Focusable,
+    >,
+    pub m_LastPendingFocusedElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Focusable,
+    >,
     pub m_PendingFocusCount: i32,
     pub _imguiKeyboardControl_k__BackingField: i32,
 }
@@ -440,10 +450,14 @@ for crate::UnityEngine::UIElements::FocusController {
 }
 #[cfg(feature = "UnityEngine+UIElements+FocusController+FocusedElement")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FocusController_FocusedElement {
-    pub m_SubTreeRoot: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_FocusedElement: *mut crate::UnityEngine::UIElements::Focusable,
+    pub m_SubTreeRoot: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_FocusedElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Focusable,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+FocusController+FocusedElement")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

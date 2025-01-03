@@ -6,13 +6,13 @@ pub struct OVRGrabbable {
     pub m_allowOffhandGrab: bool,
     pub m_snapPosition: bool,
     pub m_snapOrientation: bool,
-    pub m_snapOffset: *mut crate::UnityEngine::Transform,
-    pub m_grabPoints: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Collider,
+    pub m_snapOffset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub m_grabPoints: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
     >,
     pub m_grabbedKinematic: bool,
-    pub m_grabbedCollider: *mut crate::UnityEngine::Collider,
-    pub m_grabbedBy: *mut crate::GlobalNamespace::OVRGrabber,
+    pub m_grabbedCollider: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+    pub m_grabbedBy: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGrabber>,
 }
 #[cfg(feature = "OVRGrabbable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

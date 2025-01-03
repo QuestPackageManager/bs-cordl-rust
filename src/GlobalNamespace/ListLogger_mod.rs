@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ListLogger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _messages: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::ListLogger_LogMessage,
+    pub _messages: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::ListLogger_LogMessage,
+        >,
     >,
 }
 #[cfg(feature = "ListLogger")]
@@ -188,8 +190,8 @@ for crate::GlobalNamespace::ListLogger {
 pub struct ListLogger_LogMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::GlobalNamespace::ListLogger_LogType,
-    pub message: *mut quest_hook::libil2cpp::Il2CppString,
-    pub context: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "ListLogger+LogMessage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

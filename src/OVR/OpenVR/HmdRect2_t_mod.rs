@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+HmdRect2_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HmdRect2_t {
     pub vTopLeft: crate::OVR::OpenVR::HmdVector2_t,
     pub vBottomRight: crate::OVR::OpenVR::HmdVector2_t,

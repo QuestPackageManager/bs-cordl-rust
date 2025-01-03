@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct StartupErrorFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub _startupErrorViewController: *mut crate::GlobalNamespace::StartupErrorViewController,
-    pub _startupErrorSceneSetupData: *mut crate::GlobalNamespace::StartupErrorSceneSetupData,
+    pub _startupErrorViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StartupErrorViewController,
+    >,
+    pub _startupErrorSceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StartupErrorSceneSetupData,
+    >,
 }
 #[cfg(feature = "StartupErrorFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

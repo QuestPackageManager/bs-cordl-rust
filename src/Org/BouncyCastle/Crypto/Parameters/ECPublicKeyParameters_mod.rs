@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ECPublicKeyParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::ECKeyParameters,
-    pub q: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    pub q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ECPublicKeyParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

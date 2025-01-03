@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct SongProfilingController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
-    pub _fps: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _sceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    >,
+    pub _fps: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
 #[cfg(feature = "SongProfilingController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

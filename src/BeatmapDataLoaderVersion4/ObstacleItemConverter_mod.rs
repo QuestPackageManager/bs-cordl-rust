@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ObstacleItemConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
-    pub _obstacles: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::Obstacle,
+    pub _obstacles: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::Obstacle>,
     >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+ObstacleItemConverter")]

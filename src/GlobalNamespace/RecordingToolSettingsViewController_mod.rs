@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct RecordingToolSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _continueButton: *mut crate::UnityEngine::UI::Button,
-    pub _textPageScrollView: *mut crate::HMUI::TextPageScrollView,
-    pub _recordingToolManager: *mut crate::GlobalNamespace::RecordingToolManager,
-    pub didFinishEvent: *mut crate::System::Action,
+    pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _textPageScrollView: quest_hook::libil2cpp::Gc<crate::HMUI::TextPageScrollView>,
+    pub _recordingToolManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecordingToolManager,
+    >,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "RecordingToolSettingsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1027,7 +1027,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Number {
 }
 #[cfg(feature = "System+Number+NumberBuffer+DigitsAndNullTerminator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NumberBuffer_Number_DigitsAndNullTerminator {}
 #[cfg(feature = "System+Number+NumberBuffer+DigitsAndNullTerminator")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1050,13 +1050,13 @@ for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
 impl crate::System::NumberBuffer_Number_DigitsAndNullTerminator {}
 #[cfg(feature = "System+Number+NumberBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Number_NumberBuffer {
     pub precision: i32,
     pub scale: i32,
     pub _sign: i32,
     pub _digits: crate::System::NumberBuffer_Number_DigitsAndNullTerminator,
-    pub _allDigits: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _allDigits: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Number+NumberBuffer")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

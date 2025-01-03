@@ -3,17 +3,21 @@
 #[derive(Debug)]
 pub struct Iso9796d2Signer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
+    pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
+    >,
     pub trailer: i32,
     pub keyBits: i32,
-    pub block: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mBuf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub block: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mBuf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub messageLength: i32,
     pub fullMessage: bool,
-    pub recoveredMessage: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub preSig: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub preBlock: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub recoveredMessage: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub preSig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub preBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Iso9796d2Signer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

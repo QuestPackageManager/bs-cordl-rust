@@ -5,9 +5,11 @@ pub struct XmlSchemaObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lineNum: i32,
     pub linePos: i32,
-    pub sourceUri: *mut quest_hook::libil2cpp::Il2CppString,
-    pub namespaces: *mut crate::System::Xml::Serialization::XmlSerializerNamespaces,
-    pub parent: *mut crate::System::Xml::Schema::XmlSchemaObject,
+    pub sourceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub namespaces: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlSerializerNamespaces,
+    >,
+    pub parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
     pub isProcessing: bool,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObject")]

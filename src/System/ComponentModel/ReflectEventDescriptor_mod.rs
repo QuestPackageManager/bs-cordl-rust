@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct ReflectEventDescriptor {
     __cordl_parent: crate::System::ComponentModel::EventDescriptor,
-    pub _type: *mut crate::System::Type,
-    pub _componentClass: *mut crate::System::Type,
-    pub _addMethod: *mut crate::System::Reflection::MethodInfo,
-    pub _removeMethod: *mut crate::System::Reflection::MethodInfo,
-    pub _realEvent: *mut crate::System::Reflection::EventInfo,
+    pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _componentClass: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _addMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    pub _removeMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    pub _realEvent: quest_hook::libil2cpp::Gc<crate::System::Reflection::EventInfo>,
     pub _filledMethods: bool,
 }
 #[cfg(feature = "System+ComponentModel+ReflectEventDescriptor")]

@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct X509ChainElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
-    pub status: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Security::Cryptography::X509Certificates::X509ChainStatus,
+    pub certificate: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
     >,
-    pub info: *mut quest_hook::libil2cpp::Il2CppString,
+    pub status: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Security::Cryptography::X509Certificates::X509ChainStatus,
+        >,
+    >,
+    pub info: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub compressed_status_flags: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainElement")]

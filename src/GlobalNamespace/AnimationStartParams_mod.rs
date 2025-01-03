@@ -5,7 +5,7 @@ pub struct AnimationStartParams {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _timeOffset: f32,
     pub _speed: f32,
-    pub _animation: *mut crate::UnityEngine::Animation,
+    pub _animation: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animation>,
 }
 #[cfg(feature = "AnimationStartParams")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct FloorLightTileInstaller {
     __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
-    pub _floorLightTilePrefab: *mut crate::Ice::FloorLightTile,
+    pub _floorLightTilePrefab: quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>,
 }
 #[cfg(feature = "Ice+FloorLightTileInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

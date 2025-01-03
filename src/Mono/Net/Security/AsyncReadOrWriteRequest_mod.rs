@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AsyncReadOrWriteRequest {
     __cordl_parent: crate::Mono::Net::Security::AsyncProtocolRequest,
-    pub _UserBuffer_k__BackingField: *mut crate::Mono::Net::Security::BufferOffsetSize,
+    pub _UserBuffer_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::BufferOffsetSize,
+    >,
     pub _CurrentSize_k__BackingField: i32,
 }
 #[cfg(feature = "Mono+Net+Security+AsyncReadOrWriteRequest")]

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PlayerPoseCapturer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub frames: *mut crate::System::Collections::Generic::List_1<
-        crate::BeatSaber::RecPlay::PlayerPoseFrame,
+    pub frames: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::BeatSaber::RecPlay::PlayerPoseFrame,
+        >,
     >,
 }
 #[cfg(feature = "BeatSaber+RecPlay+PlayerPoseCapturer")]

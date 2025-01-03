@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct XmlSchemaSimpleType {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaType,
-    pub content: *mut crate::System::Xml::Schema::XmlSchemaSimpleTypeContent,
+    pub content: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaSimpleTypeContent,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleType")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

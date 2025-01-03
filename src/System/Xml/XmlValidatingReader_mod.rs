@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct XmlValidatingReader {
     __cordl_parent: crate::System::Xml::XmlReader,
-    pub _cordl_impl: *mut crate::System::Xml::XmlValidatingReaderImpl,
+    pub _cordl_impl: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlValidatingReaderImpl,
+    >,
 }
 #[cfg(feature = "System+Xml+XmlValidatingReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

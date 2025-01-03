@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct EssCertID {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub certHash: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub issuerSerial: *mut crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
+    pub certHash: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub issuerSerial: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ess+EssCertID")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

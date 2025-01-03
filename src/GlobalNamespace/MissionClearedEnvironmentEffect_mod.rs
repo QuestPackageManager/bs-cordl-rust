@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct MissionClearedEnvironmentEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionObjectiveCheckersManager: *mut crate::GlobalNamespace::MissionObjectiveCheckersManager,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _missionObjectiveCheckersManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionObjectiveCheckersManager,
+    >,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
 }
 #[cfg(feature = "MissionClearedEnvironmentEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HoverHintPanel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _padding: crate::UnityEngine::Vector2,
     pub _containerPadding: crate::UnityEngine::Vector2,
     pub _separator: f32,

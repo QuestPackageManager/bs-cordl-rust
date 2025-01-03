@@ -4,9 +4,9 @@
 pub struct PermissionSet {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub state: crate::System::Security::Permissions::PermissionState,
-    pub list: *mut crate::System::Collections::ArrayList,
+    pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _declsec: bool,
-    pub _ignored: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
+    pub _ignored: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
 }
 #[cfg(feature = "System+Security+PermissionSet")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

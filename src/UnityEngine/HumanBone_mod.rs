@@ -1,9 +1,9 @@
 #[cfg(feature = "UnityEngine+HumanBone")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HumanBone {
-    pub m_BoneName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_HumanName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_BoneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_HumanName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub limit: crate::UnityEngine::HumanLimit,
 }
 #[cfg(feature = "UnityEngine+HumanBone")]

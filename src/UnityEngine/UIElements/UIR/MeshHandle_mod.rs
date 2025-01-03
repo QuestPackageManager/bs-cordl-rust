@@ -8,7 +8,7 @@ pub struct MeshHandle {
     pub allocVerts: crate::UnityEngine::UIElements::UIR::Alloc,
     pub allocIndices: crate::UnityEngine::UIElements::UIR::Alloc,
     pub triangleCount: u32,
-    pub allocPage: *mut crate::UnityEngine::UIElements::UIR::Page,
+    pub allocPage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Page>,
     pub allocTime: u32,
     pub updateAllocID: u32,
 }

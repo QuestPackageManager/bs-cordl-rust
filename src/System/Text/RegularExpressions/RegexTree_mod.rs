@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct RegexTree {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Root: *mut crate::System::Text::RegularExpressions::RegexNode,
-    pub Caps: *mut crate::System::Collections::Hashtable,
-    pub CapNumList: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub Root: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::RegexNode,
+    >,
+    pub Caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub CapNumList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub CapTop: i32,
-    pub CapNames: *mut crate::System::Collections::Hashtable,
-    pub CapsList: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub CapNames: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub CapsList: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub Options: crate::System::Text::RegularExpressions::RegexOptions,
 }

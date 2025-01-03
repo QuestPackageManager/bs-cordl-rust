@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct CmsProcessableByteArray {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cordl_type: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableByteArray")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

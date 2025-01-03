@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct KdfCounterParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub ki: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub fixedInputDataCounterPrefix: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub fixedInputDataCounterSuffix: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub ki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub fixedInputDataCounterPrefix: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub fixedInputDataCounterSuffix: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub r: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+KdfCounterParameters")]

@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct DeltaControl {
     __cordl_parent: crate::UnityEngine::InputSystem::Controls::Vector2Control,
-    pub _up_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    pub _down_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    pub _left_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    pub _right_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    pub _up_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
+    pub _down_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
+    pub _left_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
+    pub _right_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+DeltaControl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

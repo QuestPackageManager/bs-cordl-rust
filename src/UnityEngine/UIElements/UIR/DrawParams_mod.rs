@@ -3,17 +3,19 @@
 #[derive(Debug)]
 pub struct DrawParams {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub view: *mut crate::System::Collections::Generic::Stack_1<
-        crate::UnityEngine::Matrix4x4,
+    pub view: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<crate::UnityEngine::Matrix4x4>,
     >,
-    pub scissor: *mut crate::System::Collections::Generic::Stack_1<
-        crate::UnityEngine::Rect,
+    pub scissor: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<crate::UnityEngine::Rect>,
     >,
-    pub renderTexture: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::RenderTexture,
+    pub renderTexture: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::RenderTexture,
+        >,
     >,
-    pub defaultMaterial: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Material,
+    pub defaultMaterial: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Material>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+DrawParams")]

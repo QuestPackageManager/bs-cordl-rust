@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SettingsSubMenuInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _viewController: *mut crate::HMUI::ViewController,
-    pub _menuName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    pub _menuName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "SettingsSubMenuInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

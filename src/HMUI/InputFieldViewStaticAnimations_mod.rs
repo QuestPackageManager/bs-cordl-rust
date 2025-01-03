@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct InputFieldViewStaticAnimations {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _inputFieldView: *mut crate::HMUI::InputFieldView,
-    pub _normalClip: *mut crate::UnityEngine::AnimationClip,
-    pub _highlightedClip: *mut crate::UnityEngine::AnimationClip,
-    pub _pressedClip: *mut crate::UnityEngine::AnimationClip,
-    pub _disabledClip: *mut crate::UnityEngine::AnimationClip,
-    pub _selectedClip: *mut crate::UnityEngine::AnimationClip,
+    pub _inputFieldView: quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
+    pub _normalClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+    pub _highlightedClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+    pub _pressedClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+    pub _disabledClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+    pub _selectedClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
     pub _didStart: bool,
 }
 #[cfg(feature = "HMUI+InputFieldViewStaticAnimations")]

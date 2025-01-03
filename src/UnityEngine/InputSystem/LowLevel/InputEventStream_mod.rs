@@ -1,15 +1,23 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventStream")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputEventStream {
     pub m_NativeBuffer: crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer,
-    pub m_CurrentNativeEventReadPtr: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_CurrentNativeEventWritePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_CurrentNativeEventReadPtr: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub m_CurrentNativeEventWritePtr: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub m_RemainingNativeEventCount: i32,
     pub m_MaxAppendedEvents: i32,
     pub m_AppendBuffer: crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer,
-    pub m_CurrentAppendEventReadPtr: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_CurrentAppendEventWritePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_CurrentAppendEventReadPtr: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub m_CurrentAppendEventWritePtr: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub m_RemainingAppendEventCount: i32,
     pub m_NumEventsRetainedInBuffer: i32,
     pub m_IsOpen: bool,

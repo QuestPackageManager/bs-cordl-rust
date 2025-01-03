@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct LightmappingSceneSetup {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _beatmapLevelSo: *mut crate::GlobalNamespace::BeatmapLevelSO,
-    pub _beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _beatmapLevelSo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelSO,
+    >,
+    pub _beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSO,
+    >,
     pub _beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    pub _colorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
-    pub _standardLevelNoTransitionInstallerData: *mut crate::GlobalNamespace::StandardLevelNoTransitionInstallerData,
+    pub _colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
+    pub _standardLevelNoTransitionInstallerData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardLevelNoTransitionInstallerData,
+    >,
 }
 #[cfg(feature = "LightmappingSceneSetup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

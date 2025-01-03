@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MatchSparse {
     __cordl_parent: crate::System::Text::RegularExpressions::Match,
-    pub _caps: *mut crate::System::Collections::Hashtable,
+    pub _caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Text+RegularExpressions+MatchSparse")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,23 +3,35 @@
 #[derive(Debug)]
 pub struct TextGenerationSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub text: *mut quest_hook::libil2cpp::Il2CppString,
+    pub text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub screenRect: crate::UnityEngine::Rect,
     pub margins: crate::UnityEngine::Vector4,
     pub scale: f32,
-    pub fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
-    pub material: *mut crate::UnityEngine::Material,
-    pub spriteAsset: *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
-    pub styleSheet: *mut crate::UnityEngine::TextCore::Text::TextStyleSheet,
+    pub fontAsset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::FontAsset,
+    >,
+    pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub spriteAsset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::SpriteAsset,
+    >,
+    pub styleSheet: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextStyleSheet,
+    >,
     pub fontStyle: crate::UnityEngine::TextCore::Text::FontStyles,
-    pub textSettings: *mut crate::UnityEngine::TextCore::Text::TextSettings,
+    pub textSettings: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextSettings,
+    >,
     pub textAlignment: crate::UnityEngine::TextCore::Text::TextAlignment,
     pub overflowMode: crate::UnityEngine::TextCore::Text::TextOverflowMode,
     pub wordWrap: bool,
     pub wordWrappingRatio: f32,
     pub color: crate::UnityEngine::Color,
-    pub fontColorGradient: *mut crate::UnityEngine::TextCore::Text::TextColorGradient,
-    pub fontColorGradientPreset: *mut crate::UnityEngine::TextCore::Text::TextColorGradient,
+    pub fontColorGradient: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextColorGradient,
+    >,
+    pub fontColorGradientPreset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextColorGradient,
+    >,
     pub tintSprites: bool,
     pub overrideRichTextColors: bool,
     pub shouldConvertToLinearSpace: bool,

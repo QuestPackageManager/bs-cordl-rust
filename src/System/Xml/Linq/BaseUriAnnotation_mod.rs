@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BaseUriAnnotation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub baseUri: *mut quest_hook::libil2cpp::Il2CppString,
+    pub baseUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Linq+BaseUriAnnotation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct SurrogateSelector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_surrogates: *mut crate::System::Runtime::Serialization::SurrogateHashtable,
-    pub m_nextSelector: *mut crate::System::Runtime::Serialization::ISurrogateSelector,
+    pub m_surrogates: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::SurrogateHashtable,
+    >,
+    pub m_nextSelector: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISurrogateSelector,
+    >,
 }
 #[cfg(feature = "System+Runtime+Serialization+SurrogateSelector")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

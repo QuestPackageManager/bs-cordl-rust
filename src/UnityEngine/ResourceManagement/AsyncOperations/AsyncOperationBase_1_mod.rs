@@ -6,35 +6,49 @@ pub struct AsyncOperationBase_1<TObject: quest_hook::libil2cpp::Type> {
     pub _Result_k__BackingField: TObject,
     pub m_referenceCount: i32,
     pub m_Status: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationStatus,
-    pub m_Error: *mut crate::System::Exception,
-    pub m_RM: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
-    pub m_Version: i32,
-    pub m_DestroyedAction: *mut crate::GlobalNamespace::DelegateList_1<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+    pub m_Error: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    pub m_RM: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceManager,
     >,
-    pub m_CompletedActionT: *mut crate::GlobalNamespace::DelegateList_1<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            TObject,
+    pub m_Version: i32,
+    pub m_DestroyedAction: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DelegateList_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     >,
-    pub m_OnDestroyAction: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
+    pub m_CompletedActionT: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DelegateList_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                TObject,
+            >,
+        >,
     >,
-    pub m_dependencyCompleteAction: *mut crate::System::Action_1<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+    pub m_OnDestroyAction: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
+        >,
+    >,
+    pub m_dependencyCompleteAction: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        >,
     >,
     pub HasExecuted: bool,
-    pub Executed: *mut crate::System::Action,
+    pub Executed: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _IsRunning_k__BackingField: bool,
-    pub m_taskCompletionSource: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<
-        TObject,
+    pub m_taskCompletionSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskCompletionSource_1<TObject>,
     >,
-    pub m_taskCompletionSourceTypeless: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_taskCompletionSourceTypeless: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskCompletionSource_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
     pub m_InDeferredCallbackQueue: bool,
-    pub m_UpdateCallbacks: *mut crate::GlobalNamespace::DelegateList_1<f32>,
-    pub m_UpdateCallback: *mut crate::System::Action_1<f32>,
+    pub m_UpdateCallbacks: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DelegateList_1<f32>,
+    >,
+    pub m_UpdateCallback: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     __cordl_phantom_TObject: std::marker::PhantomData<TObject>,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationBase_1")]

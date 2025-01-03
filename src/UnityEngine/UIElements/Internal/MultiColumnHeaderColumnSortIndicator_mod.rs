@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MultiColumnHeaderColumnSortIndicator {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
-    pub m_IndexLabel: *mut crate::UnityEngine::UIElements::Label,
+    pub m_IndexLabel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Label>,
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnSortIndicator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

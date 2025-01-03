@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct QCStatement {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub qcStatementId: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub qcStatementInfo: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    pub qcStatementId: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub qcStatementInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+Qualified+QCStatement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

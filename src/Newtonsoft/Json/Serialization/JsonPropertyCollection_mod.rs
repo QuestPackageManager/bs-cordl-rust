@@ -6,9 +6,11 @@ pub struct JsonPropertyCollection {
         *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
     >,
-    pub _type: *mut crate::System::Type,
-    pub _list: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+    pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _list: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonPropertyCollection")]

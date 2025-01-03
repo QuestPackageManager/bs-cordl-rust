@@ -1,14 +1,16 @@
 #[cfg(feature = "System+Xml+Xsl+Runtime+StringConcat")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StringConcat {
-    pub s1: *mut quest_hook::libil2cpp::Il2CppString,
-    pub s2: *mut quest_hook::libil2cpp::Il2CppString,
-    pub s3: *mut quest_hook::libil2cpp::Il2CppString,
-    pub s4: *mut quest_hook::libil2cpp::Il2CppString,
-    pub delimiter: *mut quest_hook::libil2cpp::Il2CppString,
-    pub strList: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub s1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub s2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub s3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub s4: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub delimiter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub strList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub idxStr: i32,
 }

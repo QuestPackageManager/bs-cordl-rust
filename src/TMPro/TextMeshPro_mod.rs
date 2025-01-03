@@ -6,22 +6,24 @@ pub struct TextMeshPro {
     pub _SortingLayer: i32,
     pub _SortingLayerID: i32,
     pub _SortingOrder: i32,
-    pub OnPreRenderText: *mut crate::System::Action_1<*mut crate::TMPro::TMP_TextInfo>,
+    pub OnPreRenderText: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::TMPro::TMP_TextInfo>,
+    >,
     pub m_currentAutoSizeMode: bool,
     pub m_hasFontAssetChanged: bool,
     pub m_previousLossyScaleY: f32,
-    pub m_renderer: *mut crate::UnityEngine::Renderer,
-    pub m_meshFilter: *mut crate::UnityEngine::MeshFilter,
+    pub m_renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+    pub m_meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
     pub m_isFirstAllocation: bool,
     pub m_max_characters: i32,
     pub m_max_numberOfLines: i32,
-    pub m_subTextObjects: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::TMPro::TMP_SubMesh,
+    pub m_subTextObjects: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TMP_SubMesh>,
     >,
     pub m_maskType: crate::TMPro::MaskingTypes,
     pub m_EnvMapMatrix: crate::UnityEngine::Matrix4x4,
-    pub m_RectTransformCorners: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub m_RectTransformCorners: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
     pub m_isRegisteredForEvents: bool,
 }

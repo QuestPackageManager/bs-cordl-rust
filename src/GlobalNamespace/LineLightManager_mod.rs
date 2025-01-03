@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct LineLightManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _points: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-    pub _dirs: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-    pub _dirLengths: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+    pub _points: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+    >,
+    pub _dirs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+    >,
+    pub _dirLengths: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub _colors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+    >,
 }
 #[cfg(feature = "LineLightManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

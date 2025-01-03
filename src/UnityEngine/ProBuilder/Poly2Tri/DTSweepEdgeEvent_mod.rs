@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DTSweepEdgeEvent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub ConstrainedEdge: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+    pub ConstrainedEdge: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+    >,
     pub Right: bool,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepEdgeEvent")]

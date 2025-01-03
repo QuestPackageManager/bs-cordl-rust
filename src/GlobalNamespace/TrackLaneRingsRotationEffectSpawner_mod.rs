@@ -3,16 +3,22 @@
 #[derive(Debug)]
 pub struct TrackLaneRingsRotationEffectSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _trackLaneRingsRotationEffect: *mut crate::GlobalNamespace::TrackLaneRingsRotationEffect,
+    pub _trackLaneRingsRotationEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TrackLaneRingsRotationEffect,
+    >,
     pub _beatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _rotation: f32,
     pub _rotationStep: f32,
     pub _rotationStepType: crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType,
     pub _rotationPropagationSpeed: i32,
     pub _rotationFlexySpeed: f32,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _random: *mut crate::System::Random,
-    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "TrackLaneRingsRotationEffectSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

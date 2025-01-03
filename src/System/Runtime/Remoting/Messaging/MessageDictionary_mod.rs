@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct MessageDictionary {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _internalProperties: *mut crate::System::Collections::IDictionary,
-    pub _message: *mut crate::System::Runtime::Remoting::Messaging::IMethodMessage,
-    pub _methodKeys: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _internalProperties: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IDictionary,
+    >,
+    pub _message: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMethodMessage,
+    >,
+    pub _methodKeys: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _ownProperties: bool,
 }
@@ -389,8 +393,12 @@ for crate::System::Runtime::Remoting::Messaging::MessageDictionary {
 #[derive(Debug)]
 pub struct MessageDictionary_DictionaryEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _methodDictionary: *mut crate::System::Runtime::Remoting::Messaging::MessageDictionary,
-    pub _hashtableEnum: *mut crate::System::Collections::IDictionaryEnumerator,
+    pub _methodDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::MessageDictionary,
+    >,
+    pub _hashtableEnum: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IDictionaryEnumerator,
+    >,
     pub _posMethod: i32,
 }
 #[cfg(

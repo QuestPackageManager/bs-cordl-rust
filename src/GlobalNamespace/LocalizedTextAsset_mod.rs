@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct LocalizedTextAsset {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _textInfos: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::LocalizedTextAsset_TextInfo,
+    pub _textInfos: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::LocalizedTextAsset_TextInfo,
+        >,
     >,
-    pub _lastTextInfo: *mut crate::GlobalNamespace::LocalizedTextAsset_TextInfo,
+    pub _lastTextInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LocalizedTextAsset_TextInfo,
+    >,
 }
 #[cfg(feature = "LocalizedTextAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -95,7 +99,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LocalizedText
 pub struct LocalizedTextAsset_TextInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub language: crate::BGLib::Polyglot::Language,
-    pub localizedText: *mut crate::UnityEngine::TextAsset,
+    pub localizedText: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
 }
 #[cfg(feature = "LocalizedTextAsset+TextInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

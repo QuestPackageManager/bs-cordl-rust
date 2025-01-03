@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct AsyncOpHandlesCacheKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Handles: *mut crate::System::Collections::Generic::HashSet_1<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+    pub m_Handles: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+AsyncOpHandlesCacheKey")]

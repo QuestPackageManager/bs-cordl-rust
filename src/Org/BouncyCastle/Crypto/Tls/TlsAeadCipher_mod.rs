@@ -3,13 +3,23 @@
 #[derive(Debug)]
 pub struct TlsAeadCipher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub context: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+    pub context: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+    >,
     pub macSize: i32,
     pub record_iv_length: i32,
-    pub encryptCipher: *mut crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher,
-    pub decryptCipher: *mut crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher,
-    pub encryptImplicitNonce: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub decryptImplicitNonce: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub encryptCipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher,
+    >,
+    pub decryptCipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher,
+    >,
+    pub encryptImplicitNonce: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub decryptImplicitNonce: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub nonceMode: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsAeadCipher")]

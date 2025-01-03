@@ -7,12 +7,22 @@ pub struct IconSegmentedControl {
     pub _overrideCellSize: bool,
     pub _padding: f32,
     pub _hideCellBackground: bool,
-    pub _firstCellPrefab: *mut crate::HMUI::IconSegmentedControlCell,
-    pub _lastCellPrefab: *mut crate::HMUI::IconSegmentedControlCell,
-    pub _middleCellPrefab: *mut crate::HMUI::IconSegmentedControlCell,
-    pub _singleCellPrefab: *mut crate::HMUI::IconSegmentedControlCell,
-    pub _dataItems: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::HMUI::IconSegmentedControl_DataItem,
+    pub _firstCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::HMUI::IconSegmentedControlCell,
+    >,
+    pub _lastCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::HMUI::IconSegmentedControlCell,
+    >,
+    pub _middleCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::HMUI::IconSegmentedControlCell,
+    >,
+    pub _singleCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::HMUI::IconSegmentedControlCell,
+    >,
+    pub _dataItems: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::HMUI::IconSegmentedControl_DataItem,
+        >,
     >,
     pub _isInitialized: bool,
 }
@@ -129,8 +139,10 @@ for crate::HMUI::IconSegmentedControl {
 #[derive(Debug)]
 pub struct IconSegmentedControl_DataItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _icon_k__BackingField: *mut crate::UnityEngine::Sprite,
-    pub _hintText_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _icon_k__BackingField: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _hintText_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _interactable_k__BackingField: bool,
 }
 #[cfg(feature = "HMUI+IconSegmentedControl+DataItem")]

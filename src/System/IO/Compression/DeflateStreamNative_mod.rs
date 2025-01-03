@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct DeflateStreamNative {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub feeder: *mut crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite,
-    pub base_stream: *mut crate::System::IO::Stream,
-    pub z_stream: *mut crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle,
+    pub feeder: quest_hook::libil2cpp::Gc<
+        crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite,
+    >,
+    pub base_stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub z_stream: quest_hook::libil2cpp::Gc<
+        crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle,
+    >,
     pub data: crate::System::Runtime::InteropServices::GCHandle,
     pub disposed: bool,
-    pub io_buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub last_error: *mut crate::System::Exception,
+    pub io_buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub last_error: quest_hook::libil2cpp::Gc<crate::System::Exception>,
 }
 #[cfg(feature = "System+IO+Compression+DeflateStreamNative")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

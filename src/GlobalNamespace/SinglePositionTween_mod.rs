@@ -6,7 +6,9 @@ pub struct SinglePositionTween {
     pub transformReference: crate::UnityEngine::ExposedReference_1<
         *mut crate::UnityEngine::Transform,
     >,
-    pub _cordl_template: *mut crate::GlobalNamespace::CustomTweenBehaviour,
+    pub _cordl_template: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CustomTweenBehaviour,
+    >,
 }
 #[cfg(feature = "SinglePositionTween")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

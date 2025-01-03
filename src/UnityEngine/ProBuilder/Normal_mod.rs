@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ProBuilder+Normal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Normal {
     pub _normal_k__BackingField: crate::UnityEngine::Vector3,
     pub _tangent_k__BackingField: crate::UnityEngine::Vector4,

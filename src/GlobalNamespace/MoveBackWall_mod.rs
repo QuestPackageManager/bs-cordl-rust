@@ -4,11 +4,13 @@
 pub struct MoveBackWall {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _fadeInRegion: f32,
-    pub _meshRenderer: *mut crate::UnityEngine::MeshRenderer,
-    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
+    pub _meshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+    pub _playerTransforms: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerTransforms,
+    >,
     pub _thisZ: f32,
     pub _isVisible: bool,
-    pub _material: *mut crate::UnityEngine::Material,
+    pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
 #[cfg(feature = "MoveBackWall")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

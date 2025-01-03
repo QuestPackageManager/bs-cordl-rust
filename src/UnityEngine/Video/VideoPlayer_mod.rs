@@ -3,14 +3,30 @@
 #[derive(Debug)]
 pub struct VideoPlayer {
     __cordl_parent: crate::UnityEngine::Behaviour,
-    pub prepareCompleted: *mut crate::UnityEngine::Video::VideoPlayer_EventHandler,
-    pub loopPointReached: *mut crate::UnityEngine::Video::VideoPlayer_EventHandler,
-    pub started: *mut crate::UnityEngine::Video::VideoPlayer_EventHandler,
-    pub frameDropped: *mut crate::UnityEngine::Video::VideoPlayer_EventHandler,
-    pub errorReceived: *mut crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler,
-    pub seekCompleted: *mut crate::UnityEngine::Video::VideoPlayer_EventHandler,
-    pub clockResyncOccurred: *mut crate::UnityEngine::Video::VideoPlayer_TimeEventHandler,
-    pub frameReady: *mut crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler,
+    pub prepareCompleted: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Video::VideoPlayer_EventHandler,
+    >,
+    pub loopPointReached: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Video::VideoPlayer_EventHandler,
+    >,
+    pub started: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Video::VideoPlayer_EventHandler,
+    >,
+    pub frameDropped: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Video::VideoPlayer_EventHandler,
+    >,
+    pub errorReceived: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler,
+    >,
+    pub seekCompleted: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Video::VideoPlayer_EventHandler,
+    >,
+    pub clockResyncOccurred: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Video::VideoPlayer_TimeEventHandler,
+    >,
+    pub frameReady: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler,
+    >,
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

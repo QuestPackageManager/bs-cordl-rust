@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct PlayerConnection {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub m_PlayerEditorConnectionEvents: *mut crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents,
-    pub m_connectedPlayers: *mut crate::System::Collections::Generic::List_1<i32>,
+    pub m_PlayerEditorConnectionEvents: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents,
+    >,
+    pub m_connectedPlayers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
     pub m_IsInitilized: bool,
 }
 #[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerConnection")]

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+KeyboardState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct KeyboardState {
     pub keys: crate::UnityEngine::InputSystem::LowLevel::KeyboardState__keys_e__FixedBuffer,
 }
@@ -114,7 +114,7 @@ for crate::UnityEngine::InputSystem::LowLevel::KeyboardState {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+KeyboardState+_keys_e__FixedBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct KeyboardState__keys_e__FixedBuffer {
     pub FixedElementField: u8,
 }

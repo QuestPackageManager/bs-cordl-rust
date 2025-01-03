@@ -5,17 +5,21 @@ pub struct OVRSceneLoader {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub sceneCheckIntervalSeconds: f32,
     pub logCloseTime: f32,
-    pub mainCanvas: *mut crate::UnityEngine::Canvas,
-    pub logTextBox: *mut crate::UnityEngine::UI::Text,
-    pub loadSceneOperation: *mut crate::UnityEngine::AsyncOperation,
-    pub formattedLogText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub mainCanvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+    pub logTextBox: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub loadSceneOperation: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AsyncOperation,
+    >,
+    pub formattedLogText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub closeLogTimer: f32,
     pub closeLogDialogue: bool,
     pub canvasPosUpdated: bool,
-    pub scenePath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub sceneLoadDataPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub loadedAssetBundles: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::AssetBundle,
+    pub scenePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub sceneLoadDataPath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub loadedAssetBundles: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::AssetBundle>,
     >,
     pub currentSceneInfo: crate::GlobalNamespace::OVRSceneLoader_SceneInfo,
 }
@@ -183,10 +187,12 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneLoade
 }
 #[cfg(feature = "OVRSceneLoader+SceneInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRSceneLoader_SceneInfo {
-    pub scenes: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub scenes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub version: i64,
 }

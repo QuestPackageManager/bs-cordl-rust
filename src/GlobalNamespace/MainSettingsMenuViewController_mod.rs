@@ -3,15 +3,20 @@
 #[derive(Debug)]
 pub struct MainSettingsMenuViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub didSelectSettingsSubMenuEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::SettingsSubMenuInfo,
-        i32,
+    pub didSelectSettingsSubMenuEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::GlobalNamespace::SettingsSubMenuInfo, i32>,
     >,
-    pub _settingsSubMenuInfos: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SettingsSubMenuInfo,
+    pub _settingsSubMenuInfos: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SettingsSubMenuInfo,
+        >,
     >,
-    pub _settingsMenuSegmentedControl: *mut crate::HMUI::TextSegmentedControl,
-    pub _selectedSubMenuInfo: *mut crate::GlobalNamespace::SettingsSubMenuInfo,
+    pub _settingsMenuSegmentedControl: quest_hook::libil2cpp::Gc<
+        crate::HMUI::TextSegmentedControl,
+    >,
+    pub _selectedSubMenuInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsSubMenuInfo,
+    >,
     pub _selectedSubMenuInfoIdx: i32,
 }
 #[cfg(feature = "MainSettingsMenuViewController")]

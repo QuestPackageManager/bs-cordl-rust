@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct Pkcs8Generator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    pub algorithm: *mut quest_hook::libil2cpp::Il2CppString,
+    pub password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    pub algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub iterationCount: i32,
-    pub privKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub privKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    >,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+OpenSsl+Pkcs8Generator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

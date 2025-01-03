@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+Transform3x4")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Transform3x4 {
     pub v0: crate::UnityEngine::Vector4,
     pub v1: crate::UnityEngine::Vector4,

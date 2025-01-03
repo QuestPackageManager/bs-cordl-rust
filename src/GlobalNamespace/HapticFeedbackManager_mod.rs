@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct HapticFeedbackManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _rumbleHapticFeedbackPlayer: *mut crate::GlobalNamespace::RumbleHapticFeedbackPlayer,
-    pub _advancedHapticFeedbackPlayer: *mut crate::GlobalNamespace::IHapticFeedbackPlayer,
+    pub _rumbleHapticFeedbackPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RumbleHapticFeedbackPlayer,
+    >,
+    pub _advancedHapticFeedbackPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IHapticFeedbackPlayer,
+    >,
     pub hapticFeedbackEnabled: bool,
 }
 #[cfg(feature = "HapticFeedbackManager")]

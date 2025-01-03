@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct UIDocumentList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_AttachedUIDocuments: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::UIDocument,
+    pub m_AttachedUIDocuments: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::UIDocument,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIDocumentList")]

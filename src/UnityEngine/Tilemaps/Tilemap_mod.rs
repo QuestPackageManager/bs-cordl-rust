@@ -433,10 +433,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Tilemaps::Tilemap
 }
 #[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Tilemap_SyncTile {
     pub m_Position: crate::UnityEngine::Vector3Int,
-    pub m_Tile: *mut crate::UnityEngine::Tilemaps::TileBase,
+    pub m_Tile: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::TileBase>,
     pub m_TileData: crate::UnityEngine::Tilemaps::TileData,
 }
 #[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
@@ -459,7 +459,7 @@ for crate::UnityEngine::Tilemaps::Tilemap_SyncTile {
 impl crate::UnityEngine::Tilemaps::Tilemap_SyncTile {}
 #[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Tilemap_SyncTileCallbackSettings {
     pub hasSyncTileCallback: bool,
     pub hasPositionsChangedCallback: bool,

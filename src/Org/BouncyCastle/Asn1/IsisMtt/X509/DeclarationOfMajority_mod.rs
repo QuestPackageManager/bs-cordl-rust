@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DeclarationOfMajority {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub declaration: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
+    pub declaration: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

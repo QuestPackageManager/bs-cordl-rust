@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AssertionException {
     __cordl_parent: crate::System::Exception,
-    pub m_UserMessage: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_UserMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+Assertions+AssertionException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

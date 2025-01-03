@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct RemoteActivationAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _contextProperties: *mut crate::System::Collections::IList,
+    pub _contextProperties: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "System+Runtime+Remoting+Activation+RemoteActivationAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

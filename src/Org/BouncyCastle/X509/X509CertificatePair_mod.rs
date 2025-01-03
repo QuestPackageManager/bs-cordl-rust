@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct X509CertificatePair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub forward: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-    pub reverse: *mut crate::Org::BouncyCastle::X509::X509Certificate,
+    pub forward: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::X509Certificate,
+    >,
+    pub reverse: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::X509Certificate,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509CertificatePair")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

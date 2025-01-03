@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HoverTextController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _textMesh: *mut crate::TMPro::TextMeshProUGUI,
+    pub _textMesh: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _fadeInDelay: f32,
     pub _fadeInSpeed: f32,
     pub _fadeOutSpeed: f32,

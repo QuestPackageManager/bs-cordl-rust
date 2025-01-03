@@ -1,11 +1,11 @@
 #[cfg(feature = "UnityEngine+AssemblyFullName")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AssemblyFullName {
-    pub Name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Version: crate::UnityEngine::AssemblyVersion,
-    pub PublicKeyToken: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Culture: *mut quest_hook::libil2cpp::Il2CppString,
+    pub PublicKeyToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Culture: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+AssemblyFullName")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

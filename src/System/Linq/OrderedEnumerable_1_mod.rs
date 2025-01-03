@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct OrderedEnumerable_1<TElement: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub source: *mut crate::System::Collections::Generic::IEnumerable_1<TElement>,
+    pub source: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<TElement>,
+    >,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
 #[cfg(feature = "System+Linq+OrderedEnumerable_1")]

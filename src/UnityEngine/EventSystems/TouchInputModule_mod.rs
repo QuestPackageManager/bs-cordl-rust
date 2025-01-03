@@ -5,7 +5,9 @@ pub struct TouchInputModule {
     __cordl_parent: crate::UnityEngine::EventSystems::PointerInputModule,
     pub m_LastMousePosition: crate::UnityEngine::Vector2,
     pub m_MousePosition: crate::UnityEngine::Vector2,
-    pub m_InputPointerEvent: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    pub m_InputPointerEvent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::PointerEventData,
+    >,
     pub m_ForceModuleActive: bool,
 }
 #[cfg(feature = "UnityEngine+EventSystems+TouchInputModule")]

@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct ResourceManagerDiagnostics {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_ResourceManager: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
-    pub m_cachedDiagnosticInfo: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::UnityEngine::AddressableAssets::Utility::DiagnosticInfo,
+    pub m_ResourceManager: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceManager,
+    >,
+    pub m_cachedDiagnosticInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::UnityEngine::AddressableAssets::Utility::DiagnosticInfo,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+Utility+ResourceManagerDiagnostics")]

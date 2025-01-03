@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PauseAnimationController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _animator: *mut crate::UnityEngine::Animator,
-    pub resumeFromPauseAnimationDidFinishEvent: *mut crate::System::Action,
+    pub _animator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
+    pub resumeFromPauseAnimationDidFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
 }
 #[cfg(feature = "PauseAnimationController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

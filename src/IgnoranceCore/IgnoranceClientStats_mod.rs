@@ -1,6 +1,6 @@
 #[cfg(feature = "IgnoranceCore+IgnoranceClientStats")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IgnoranceClientStats {
     pub RTT: u32,
     pub BytesReceived: u64,

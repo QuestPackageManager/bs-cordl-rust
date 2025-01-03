@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct VideoProjectionInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _sceneSetupData: *mut crate::GlobalNamespace::EnvironmentSceneSetupData,
+    pub _sceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentSceneSetupData,
+    >,
 }
 #[cfg(feature = "VideoProjectionInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

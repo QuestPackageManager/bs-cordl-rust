@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct X9FieldID {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub id: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub parameters: *mut crate::Org::BouncyCastle::Asn1::Asn1Object,
+    pub id: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub parameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Object,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X9FieldID")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

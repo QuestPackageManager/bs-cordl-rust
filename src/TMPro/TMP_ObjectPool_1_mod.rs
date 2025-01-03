@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct TMP_ObjectPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Stack: *mut crate::System::Collections::Generic::Stack_1<T>,
-    pub m_ActionOnGet: *mut crate::UnityEngine::Events::UnityAction_1<T>,
-    pub m_ActionOnRelease: *mut crate::UnityEngine::Events::UnityAction_1<T>,
+    pub m_Stack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<T>,
+    >,
+    pub m_ActionOnGet: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::UnityAction_1<T>,
+    >,
+    pub m_ActionOnRelease: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::UnityAction_1<T>,
+    >,
     pub _countAll_k__BackingField: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

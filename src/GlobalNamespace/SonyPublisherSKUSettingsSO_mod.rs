@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct SonyPublisherSKUSettingsSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _skuName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _serviceIdPrefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _titleId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _productLabel: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _skuName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _serviceIdPrefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _titleId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _productLabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "SonyPublisherSKUSettingsSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputEventListener {}
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -110,8 +110,10 @@ impl AsMut<
 #[derive(Debug)]
 pub struct InputEventListener_DisposableObserver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub observer: *mut crate::System::IObserver_1<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    pub observer: quest_hook::libil2cpp::Gc<
+        crate::System::IObserver_1<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        >,
     >,
 }
 #[cfg(
@@ -213,9 +215,11 @@ pub struct InputEventListener_ObserverState {
             crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         >,
     >,
-    pub onEventDelegate: *mut crate::System::Action_2<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        *mut crate::UnityEngine::InputSystem::InputDevice,
+    pub onEventDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState")]

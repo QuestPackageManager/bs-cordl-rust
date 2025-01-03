@@ -16,9 +16,11 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVREnumerable_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVREnumerable_1<T: quest_hook::libil2cpp::Type> {
-    pub _enumerable: *mut crate::System::Collections::Generic::IEnumerable_1<T>,
+    pub _enumerable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "OVREnumerable_1")]
@@ -145,13 +147,17 @@ for crate::GlobalNamespace::OVREnumerable_1<T> {
 }
 #[cfg(feature = "OVREnumerable_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVREnumerable_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub _listIndex: i32,
     pub _type: crate::GlobalNamespace::Enumerator_OVREnumerable_1_CollectionType<T>,
     pub _listCount: i32,
-    pub _enumerator: *mut crate::System::Collections::Generic::IEnumerator_1<T>,
-    pub _list: *mut crate::System::Collections::Generic::IReadOnlyList_1<T>,
+    pub _enumerator: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerator_1<T>,
+    >,
+    pub _list: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<T>,
+    >,
     pub _setEnumerator: crate::System::Collections::Generic::HashSet_1_Enumerator<T>,
     pub _queueEnumerator: crate::System::Collections::Generic::Queue_1_Enumerator<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,

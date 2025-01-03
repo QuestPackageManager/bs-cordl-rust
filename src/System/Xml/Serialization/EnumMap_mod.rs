@@ -3,17 +3,19 @@
 #[derive(Debug)]
 pub struct EnumMap {
     __cordl_parent: crate::System::Xml::Serialization::ObjectMap,
-    pub _members: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::Serialization::EnumMap_EnumMapMember,
+    pub _members: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::Serialization::EnumMap_EnumMapMember,
+        >,
     >,
     pub _isFlags: bool,
-    pub _enumNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _enumNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _xmlNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _xmlNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _values: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+    pub _values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
 }
 #[cfg(feature = "System+Xml+Serialization+EnumMap")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -162,8 +164,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Serialization::En
 #[derive(Debug)]
 pub struct EnumMap_EnumMapMember {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _xmlName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _enumName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _xmlName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _enumName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _value: i64,
 }
 #[cfg(feature = "System+Xml+Serialization+EnumMap+EnumMapMember")]

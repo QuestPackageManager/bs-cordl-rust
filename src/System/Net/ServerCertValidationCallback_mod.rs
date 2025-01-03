@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ServerCertValidationCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_ValidationCallback: *mut crate::System::Net::Security::RemoteCertificateValidationCallback,
-    pub m_Context: *mut crate::System::Threading::ExecutionContext,
+    pub m_ValidationCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Security::RemoteCertificateValidationCallback,
+    >,
+    pub m_Context: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
 }
 #[cfg(feature = "System+Net+ServerCertValidationCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -112,9 +114,13 @@ for crate::System::Net::ServerCertValidationCallback {
 #[derive(Debug)]
 pub struct ServerCertValidationCallback_CallbackContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub request: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-    pub chain: *mut crate::System::Security::Cryptography::X509Certificates::X509Chain,
+    pub request: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub certificate: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+    >,
+    pub chain: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Chain,
+    >,
     pub sslPolicyErrors: crate::System::Net::Security::SslPolicyErrors,
     pub result: bool,
 }

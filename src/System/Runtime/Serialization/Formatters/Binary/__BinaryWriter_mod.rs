@@ -3,27 +3,53 @@
 #[derive(Debug)]
 pub struct __BinaryWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub sout: *mut crate::System::IO::Stream,
+    pub sout: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub formatterTypeStyle: crate::System::Runtime::Serialization::Formatters::FormatterTypeStyle,
-    pub objectMapTable: *mut crate::System::Collections::Hashtable,
-    pub objectWriter: *mut crate::System::Runtime::Serialization::Formatters::Binary::ObjectWriter,
-    pub dataWriter: *mut crate::System::IO::BinaryWriter,
+    pub objectMapTable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub objectWriter: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::ObjectWriter,
+    >,
+    pub dataWriter: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
     pub m_nestedObjectCount: i32,
     pub nullCount: i32,
-    pub binaryMethodCall: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryMethodCall,
-    pub binaryMethodReturn: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryMethodReturn,
-    pub binaryObject: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryObject,
-    pub binaryObjectWithMap: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithMap,
-    pub binaryObjectWithMapTyped: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithMapTyped,
-    pub binaryObjectString: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectString,
-    pub binaryArray: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryArray,
-    pub byteBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub binaryMethodCall: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::BinaryMethodCall,
+    >,
+    pub binaryMethodReturn: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::BinaryMethodReturn,
+    >,
+    pub binaryObject: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::BinaryObject,
+    >,
+    pub binaryObjectWithMap: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithMap,
+    >,
+    pub binaryObjectWithMapTyped: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithMapTyped,
+    >,
+    pub binaryObjectString: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectString,
+    >,
+    pub binaryArray: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::BinaryArray,
+    >,
+    pub byteBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub chunkSize: i32,
-    pub memberPrimitiveUnTyped: *mut crate::System::Runtime::Serialization::Formatters::Binary::MemberPrimitiveUnTyped,
-    pub memberPrimitiveTyped: *mut crate::System::Runtime::Serialization::Formatters::Binary::MemberPrimitiveTyped,
-    pub objectNull: *mut crate::System::Runtime::Serialization::Formatters::Binary::ObjectNull,
-    pub memberReference: *mut crate::System::Runtime::Serialization::Formatters::Binary::MemberReference,
-    pub binaryAssembly: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssembly,
+    pub memberPrimitiveUnTyped: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::MemberPrimitiveUnTyped,
+    >,
+    pub memberPrimitiveTyped: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::MemberPrimitiveTyped,
+    >,
+    pub objectNull: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::ObjectNull,
+    >,
+    pub memberReference: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::MemberReference,
+    >,
+    pub binaryAssembly: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssembly,
+    >,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+__BinaryWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

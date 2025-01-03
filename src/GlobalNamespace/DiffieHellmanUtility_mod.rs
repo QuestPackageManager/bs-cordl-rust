@@ -133,8 +133,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DiffieHellman
 #[derive(Debug)]
 pub struct DiffieHellmanUtility_DiffieHellmanKeyPair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dhBasicAgreement: *mut crate::Org::BouncyCastle::Crypto::Agreement::DHBasicAgreement,
-    pub _publicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _dhBasicAgreement: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Agreement::DHBasicAgreement,
+    >,
+    pub _publicKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -268,8 +270,10 @@ for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
 #[derive(Debug)]
 pub struct DiffieHellmanUtility_ElipticalCurveKeyPair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _ecdhBasicAgreement: *mut crate::Org::BouncyCastle::Crypto::Agreement::ECDHBasicAgreement,
-    pub _publicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _ecdhBasicAgreement: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Agreement::ECDHBasicAgreement,
+    >,
+    pub _publicKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -415,8 +419,8 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct DiffieHellmanUtility_OperationTimer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _stopwatch: *mut crate::System::Diagnostics::Stopwatch,
-    pub _operationName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _stopwatch: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::Stopwatch>,
+    pub _operationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

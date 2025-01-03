@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VRTextureBounds_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VRTextureBounds_t {
     pub uMin: f32,
     pub vMin: f32,

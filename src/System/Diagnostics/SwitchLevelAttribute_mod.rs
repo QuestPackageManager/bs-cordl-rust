@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SwitchLevelAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _cordl_type: *mut crate::System::Type,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Diagnostics+SwitchLevelAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

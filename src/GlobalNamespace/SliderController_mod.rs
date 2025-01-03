@@ -177,41 +177,65 @@ for crate::GlobalNamespace::Pool_SliderController_Short {
 #[derive(Debug)]
 pub struct SliderController {
     __cordl_parent: crate::GlobalNamespace::SliderControllerBase,
-    pub _sliderIntensityEffect: *mut crate::GlobalNamespace::SliderIntensityEffect,
-    pub _sliderMeshController: *mut crate::GlobalNamespace::SliderMeshController,
-    pub _sliderMovement: *mut crate::GlobalNamespace::SliderMovement,
+    pub _sliderIntensityEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SliderIntensityEffect,
+    >,
+    pub _sliderMeshController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SliderMeshController,
+    >,
+    pub _sliderMovement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SliderMovement,
+    >,
     pub _closeInteractionSaberPosSmoothParam: f32,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
-    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
-    pub _jumpOffsetYProvider: *mut crate::GlobalNamespace::IJumpOffsetYProvider,
-    pub _sliderDidFinishMovement: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::ISliderDidFinishJumpEvent,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
     >,
-    pub _sliderDidStartDissolving: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::ISliderDidStartDissolvingEvent,
+    pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
+    pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVariableMovementDataProvider,
     >,
-    pub _sliderDidDissolve: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::ISliderDidDissolveEvent,
+    pub _jumpOffsetYProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IJumpOffsetYProvider,
     >,
-    pub _sliderHeadDidMovePastCutMark: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::ISliderHeadDidMovePastCutMarkEvent,
+    pub _sliderDidFinishMovement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::ISliderDidFinishJumpEvent,
+        >,
     >,
-    pub _sliderTailDidMovePastCutMark: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::ISliderTailDidMovePastCutMarkEvent,
+    pub _sliderDidStartDissolving: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::ISliderDidStartDissolvingEvent,
+        >,
+    >,
+    pub _sliderDidDissolve: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::ISliderDidDissolveEvent,
+        >,
+    >,
+    pub _sliderHeadDidMovePastCutMark: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::ISliderHeadDidMovePastCutMarkEvent,
+        >,
+    >,
+    pub _sliderTailDidMovePastCutMark: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::ISliderTailDidMovePastCutMarkEvent,
+        >,
     >,
     pub _lengthType: crate::GlobalNamespace::SliderController_LengthType,
-    pub _sliderData: *mut crate::GlobalNamespace::SliderData,
+    pub _sliderData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
     pub _sliderSpawnData: crate::GlobalNamespace::SliderSpawnData,
-    pub _saber: *mut crate::GlobalNamespace::Saber,
+    pub _saber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
     pub _sliderDuration: f32,
     pub _initColor: crate::UnityEngine::Color,
     pub _attractingSaber: bool,
     pub _randomValue: f32,
     pub _zDistanceBetweenNotes: f32,
     pub _jumpOffsetY: f32,
-    pub _closeSmoothedSaberInteractionPos: *mut crate::GlobalNamespace::FixedUpdateVector3SmoothValue,
+    pub _closeSmoothedSaberInteractionPos: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FixedUpdateVector3SmoothValue,
+    >,
 }
 #[cfg(feature = "SliderController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -755,10 +779,18 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct SliderController_Pool {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::VariableMovementDataProvider,
-    pub _shortPool: *mut crate::GlobalNamespace::Pool_SliderController_Short,
-    pub _mediumPool: *mut crate::GlobalNamespace::Pool_SliderController_Medium,
-    pub _longPool: *mut crate::GlobalNamespace::Pool_SliderController_Long,
+    pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VariableMovementDataProvider,
+    >,
+    pub _shortPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Pool_SliderController_Short,
+    >,
+    pub _mediumPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Pool_SliderController_Medium,
+    >,
+    pub _longPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Pool_SliderController_Long,
+    >,
 }
 #[cfg(feature = "SliderController+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

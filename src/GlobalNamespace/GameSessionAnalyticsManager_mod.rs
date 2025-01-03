@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct GameSessionAnalyticsManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
-    pub _platformInit: *mut crate::BeatSaber::Init::IPlatformInit,
+    pub _analyticsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAnalyticsModel,
+    >,
+    pub _platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
     pub lastSessionStartTime: f32,
     pub _initialized: bool,
-    pub _initializationTask: *mut crate::System::Threading::Tasks::Task,
+    pub _initializationTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task,
+    >,
 }
 #[cfg(feature = "GameSessionAnalyticsManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

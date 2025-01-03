@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SocketException {
     __cordl_parent: crate::System::ComponentModel::Win32Exception,
-    pub m_EndPoint: *mut crate::System::Net::EndPoint,
+    pub m_EndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
 }
 #[cfg(feature = "System+Net+Sockets+SocketException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

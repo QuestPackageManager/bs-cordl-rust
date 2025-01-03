@@ -3,17 +3,29 @@
 #[derive(Debug)]
 pub struct ExecutionContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _syncContext: *mut crate::System::Threading::SynchronizationContext,
-    pub _syncContextNoFlow: *mut crate::System::Threading::SynchronizationContext,
-    pub _logicalCallContext: *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
-    pub _illogicalCallContext: *mut crate::System::Runtime::Remoting::Messaging::IllogicalCallContext,
-    pub _flags: crate::System::Threading::ExecutionContext_Flags,
-    pub _localValues: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Threading::IAsyncLocal,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _syncContext: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SynchronizationContext,
     >,
-    pub _localChangeNotifications: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Threading::IAsyncLocal,
+    pub _syncContextNoFlow: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SynchronizationContext,
+    >,
+    pub _logicalCallContext: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
+    >,
+    pub _illogicalCallContext: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IllogicalCallContext,
+    >,
+    pub _flags: crate::System::Threading::ExecutionContext_Flags,
+    pub _localValues: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Threading::IAsyncLocal,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    >,
+    pub _localChangeNotifications: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Threading::IAsyncLocal,
+        >,
     >,
 }
 #[cfg(feature = "System+Threading+ExecutionContext")]
@@ -519,9 +531,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Threading+ExecutionContext+Reader")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ExecutionContext_Reader {
-    pub m_ec: *mut crate::System::Threading::ExecutionContext,
+    pub m_ec: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
 }
 #[cfg(feature = "System+Threading+ExecutionContext+Reader")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

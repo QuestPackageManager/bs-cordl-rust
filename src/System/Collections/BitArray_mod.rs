@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct BitArray {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_array: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub m_array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub m_length: i32,
     pub _version: i32,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+BitArray")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -273,7 +273,7 @@ impl AsMut<crate::System::ICloneable> for crate::System::Collections::BitArray {
 #[derive(Debug)]
 pub struct BitArray_BitArrayEnumeratorSimple {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub bitarray: *mut crate::System::Collections::BitArray,
+    pub bitarray: quest_hook::libil2cpp::Gc<crate::System::Collections::BitArray>,
     pub index: i32,
     pub version: i32,
     pub currentElement: bool,

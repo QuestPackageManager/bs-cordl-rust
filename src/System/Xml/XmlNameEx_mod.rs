@@ -4,9 +4,11 @@
 pub struct XmlNameEx {
     __cordl_parent: crate::System::Xml::XmlName,
     pub flags: u8,
-    pub memberType: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
-    pub schemaType: *mut crate::System::Xml::Schema::XmlSchemaType,
-    pub decl: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub memberType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaSimpleType,
+    >,
+    pub schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
+    pub decl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Xml+XmlNameEx")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

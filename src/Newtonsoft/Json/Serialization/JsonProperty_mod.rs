@@ -5,18 +5,28 @@ pub struct JsonProperty {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _required: crate::System::Nullable_1<crate::Newtonsoft::Json::Required>,
     pub _hasExplicitDefaultValue: bool,
-    pub _defaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _defaultValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _hasGeneratedDefaultValue: bool,
-    pub _propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _skipPropertyNameEscape: bool,
-    pub _propertyType: *mut crate::System::Type,
-    pub _PropertyContract_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-    pub _DeclaringType_k__BackingField: *mut crate::System::Type,
+    pub _propertyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _PropertyContract_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonContract,
+    >,
+    pub _DeclaringType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _Order_k__BackingField: crate::System::Nullable_1<i32>,
-    pub _UnderlyingName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _ValueProvider_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::IValueProvider,
-    pub _AttributeProvider_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::IAttributeProvider,
-    pub _Converter_k__BackingField: *mut crate::Newtonsoft::Json::JsonConverter,
+    pub _UnderlyingName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _ValueProvider_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::IValueProvider,
+    >,
+    pub _AttributeProvider_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::IAttributeProvider,
+    >,
+    pub _Converter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::JsonConverter,
+    >,
     pub _Ignored_k__BackingField: bool,
     pub _Readable_k__BackingField: bool,
     pub _Writable_k__BackingField: bool,
@@ -37,20 +47,24 @@ pub struct JsonProperty {
     pub _TypeNameHandling_k__BackingField: crate::System::Nullable_1<
         crate::Newtonsoft::Json::TypeNameHandling,
     >,
-    pub _ShouldSerialize_k__BackingField: *mut crate::System::Predicate_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _ShouldSerialize_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Predicate_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub _ShouldDeserialize_k__BackingField: *mut crate::System::Predicate_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _ShouldDeserialize_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Predicate_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub _GetIsSpecified_k__BackingField: *mut crate::System::Predicate_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _GetIsSpecified_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Predicate_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub _SetIsSpecified_k__BackingField: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _SetIsSpecified_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
-    pub _ItemConverter_k__BackingField: *mut crate::Newtonsoft::Json::JsonConverter,
+    pub _ItemConverter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::JsonConverter,
+    >,
     pub _ItemIsReference_k__BackingField: crate::System::Nullable_1<bool>,
     pub _ItemTypeNameHandling_k__BackingField: crate::System::Nullable_1<
         crate::Newtonsoft::Json::TypeNameHandling,

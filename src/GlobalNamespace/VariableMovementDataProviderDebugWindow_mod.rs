@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct VariableMovementDataProviderDebugWindow {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::VariableMovementDataProvider,
+    pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VariableMovementDataProvider,
+    >,
     pub _njs: f32,
 }
 #[cfg(feature = "VariableMovementDataProviderDebugWindow")]

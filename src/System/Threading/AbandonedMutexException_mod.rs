@@ -4,7 +4,7 @@
 pub struct AbandonedMutexException {
     __cordl_parent: crate::System::SystemException,
     pub _mutexIndex: i32,
-    pub _mutex: *mut crate::System::Threading::Mutex,
+    pub _mutex: quest_hook::libil2cpp::Gc<crate::System::Threading::Mutex>,
 }
 #[cfg(feature = "System+Threading+AbandonedMutexException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,17 +3,25 @@
 #[derive(Debug)]
 pub struct User {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub DisplayName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub DisplayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cordl_ID: u64,
-    pub ImageURL: *mut quest_hook::libil2cpp::Il2CppString,
-    pub OculusID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Presence: *mut quest_hook::libil2cpp::Il2CppString,
-    pub PresenceDeeplinkMessage: *mut quest_hook::libil2cpp::Il2CppString,
-    pub PresenceDestinationApiName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub PresenceLobbySessionId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub PresenceMatchSessionId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ImageURL: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub OculusID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Presence: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub PresenceDeeplinkMessage: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub PresenceDestinationApiName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub PresenceLobbySessionId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub PresenceMatchSessionId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub PresenceStatus: crate::Oculus::Platform::UserPresenceStatus,
-    pub SmallImageUrl: *mut quest_hook::libil2cpp::Il2CppString,
+    pub SmallImageUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Oculus+Platform+Models+User")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

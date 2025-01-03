@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct ButtonSpriteSwap {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _normalStateSprite: *mut crate::UnityEngine::Sprite,
-    pub _highlightStateSprite: *mut crate::UnityEngine::Sprite,
-    pub _pressedStateSprite: *mut crate::UnityEngine::Sprite,
-    pub _disabledStateSprite: *mut crate::UnityEngine::Sprite,
-    pub _button: *mut crate::HMUI::NoTransitionsButton,
-    pub _images: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UI::Image,
+    pub _normalStateSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _highlightStateSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _pressedStateSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _disabledStateSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _button: quest_hook::libil2cpp::Gc<crate::HMUI::NoTransitionsButton>,
+    pub _images: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Image>,
     >,
     pub _didStart: bool,
 }

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AceEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub owner: *mut crate::System::Security::AccessControl::GenericAcl,
+    pub owner: quest_hook::libil2cpp::Gc<
+        crate::System::Security::AccessControl::GenericAcl,
+    >,
     pub current: i32,
 }
 #[cfg(feature = "System+Security+AccessControl+AceEnumerator")]

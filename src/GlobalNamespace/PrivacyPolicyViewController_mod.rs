@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct PrivacyPolicyViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _okButton: *mut crate::UnityEngine::UI::Button,
-    pub _iAcceptButton: *mut crate::UnityEngine::UI::Button,
-    pub _textPageScrollView: *mut crate::HMUI::TextPageScrollView,
-    pub _privacyPolicyLocalizedTextAsset: *mut crate::GlobalNamespace::LocalizedTextAsset,
-    pub _updateNoticeLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub didFinishEvent: *mut crate::System::Action,
+    pub _okButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _iAcceptButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _textPageScrollView: quest_hook::libil2cpp::Gc<crate::HMUI::TextPageScrollView>,
+    pub _privacyPolicyLocalizedTextAsset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LocalizedTextAsset,
+    >,
+    pub _updateNoticeLocalizationKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _showUpdate: bool,
     pub _showIAcceptPrompt: bool,
 }

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct GeneralNames {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub names: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    pub names: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+GeneralNames")]

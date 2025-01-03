@@ -3,23 +3,57 @@
 #[derive(Debug)]
 pub struct WMRSpatialController {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
-    pub _joystick_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
-    pub _touchpad_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
-    pub _grip_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    pub _gripPressed_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _menu_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _trigger_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    pub _triggerPressed_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _joystickClicked_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _touchpadClicked_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _touchpadTouched_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _deviceVelocity_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    pub _deviceAngularVelocity_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    pub _batteryLevel_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    pub _sourceLossRisk_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    pub _sourceLossMitigationDirection_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    pub _pointerPosition_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    pub _pointerRotation_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+    pub _joystick_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    >,
+    pub _touchpad_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    >,
+    pub _grip_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
+    pub _gripPressed_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _menu_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _trigger_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
+    pub _triggerPressed_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _joystickClicked_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _touchpadClicked_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _touchpadTouched_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _deviceVelocity_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
+    pub _deviceAngularVelocity_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
+    pub _batteryLevel_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
+    pub _sourceLossRisk_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
+    pub _sourceLossMitigationDirection_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
+    pub _pointerPosition_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
+    pub _pointerRotation_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+    >,
 }
 #[cfg(feature = "UnityEngine+XR+WindowsMR+Input+WMRSpatialController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct OVRManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub disabledCameras: *mut crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::UnityEngine::Camera,
+    pub disabledCameras: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::UnityEngine::Camera,
+        >,
     >,
     pub prevTimeScale: f32,
     pub useRecommendedMSAALevel: bool,
@@ -47,7 +49,9 @@ pub struct OVRManager {
     pub virtualGreenScreenApplyDepthCulling: bool,
     pub virtualGreenScreenDepthTolerance: f32,
     pub mrcActivationMode: crate::GlobalNamespace::OVRManager_MrcActivationMode,
-    pub instantiateMixedRealityCameraGameObject: *mut crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
+    pub instantiateMixedRealityCameraGameObject: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
+    >,
     pub launchMultimodalHandsControllersOnStartup: bool,
     pub isInsightPassthroughEnabled: bool,
     pub requestBodyTrackingPermissionOnStartup: bool,
@@ -66,8 +70,10 @@ pub struct OVRManager {
     pub _readOnlyControllerDrivenHandPosesType: crate::GlobalNamespace::OVRManager_ControllerDrivenHandPosesType,
     pub controllerDrivenHandPosesType: crate::GlobalNamespace::OVRManager_ControllerDrivenHandPosesType,
     pub _isSupportedPlatform_k__BackingField: bool,
-    pub eventListeners: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::GlobalNamespace::OVRManager_EventListener,
+    pub eventListeners: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::GlobalNamespace::OVRManager_EventListener,
+        >,
     >,
 }
 #[cfg(feature = "OVRManager")]

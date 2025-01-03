@@ -3,18 +3,24 @@
 #[derive(Debug)]
 pub struct SchemaDeclBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub name: *mut crate::System::Xml::XmlQualifiedName,
-    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub isDeclaredInExternal: bool,
     pub presence: crate::System::Xml::Schema::SchemaDeclBase_Use,
-    pub schemaType: *mut crate::System::Xml::Schema::XmlSchemaType,
-    pub datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
-    pub defaultValueRaw: *mut quest_hook::libil2cpp::Il2CppString,
-    pub defaultValueTyped: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
+    pub datatype: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaDatatype,
+    >,
+    pub defaultValueRaw: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub defaultValueTyped: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub maxLength: i64,
     pub minLength: i64,
-    pub values: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub values: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "System+Xml+Schema+SchemaDeclBase")]

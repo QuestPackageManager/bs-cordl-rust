@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct BeatmapEventData {
     __cordl_parent: crate::GlobalNamespace::BeatmapDataItem,
-    pub _previousSameTypeEventData_k__BackingField: *mut crate::GlobalNamespace::BeatmapEventData,
-    pub _nextSameTypeEventData_k__BackingField: *mut crate::GlobalNamespace::BeatmapEventData,
+    pub _previousSameTypeEventData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapEventData,
+    >,
+    pub _nextSameTypeEventData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapEventData,
+    >,
 }
 #[cfg(feature = "BeatmapEventData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

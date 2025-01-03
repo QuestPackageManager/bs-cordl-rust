@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FixedBitArray3 {
     pub _0: bool,
     pub _1: bool,

@@ -4,9 +4,9 @@
 pub struct X509CrlParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lazyAsn1: bool,
-    pub sCrlData: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
+    pub sCrlData: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
     pub sCrlDataObjectCount: i32,
-    pub currentCrlStream: *mut crate::System::IO::Stream,
+    pub currentCrlStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509CrlParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

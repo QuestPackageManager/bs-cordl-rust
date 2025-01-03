@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorCapabilities")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AndroidSensorCapabilities {
     pub sensorType: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorType,
 }

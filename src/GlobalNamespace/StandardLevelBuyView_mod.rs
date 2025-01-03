@@ -3,16 +3,20 @@
 #[derive(Debug)]
 pub struct StandardLevelBuyView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
-    pub _steamMessageGameObject: *mut crate::UnityEngine::GameObject,
-    pub _buyButton: *mut crate::UnityEngine::UI::Button,
-    pub _favoriteToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub didFavoriteToggleChangeEvent: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UI::Toggle,
+    pub _levelBar: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelBar>,
+    pub _steamMessageGameObject: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
     >,
-    pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-    pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
+    pub _buyButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _favoriteToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub didFavoriteToggleChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::UI::Toggle>,
+    >,
+    pub _beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+    pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
 }
 #[cfg(feature = "StandardLevelBuyView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

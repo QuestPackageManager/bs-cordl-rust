@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct DHParameter {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub p: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub g: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub l: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+    pub p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub l: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+DHParameter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

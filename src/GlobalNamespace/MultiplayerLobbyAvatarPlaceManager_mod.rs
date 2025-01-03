@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct MultiplayerLobbyAvatarPlaceManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lobbyStateDataModel: *mut crate::GlobalNamespace::ILobbyStateDataModel,
-    pub _avatarPlacesPool: *mut crate::GlobalNamespace::MultiplayerLobbyAvatarPlace_Pool,
-    pub _allPlaces: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::MultiplayerLobbyAvatarPlace,
+    pub _lobbyStateDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyStateDataModel,
+    >,
+    pub _avatarPlacesPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLobbyAvatarPlace_Pool,
+    >,
+    pub _allPlaces: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::MultiplayerLobbyAvatarPlace,
+        >,
     >,
     pub _innerCircleRadius: f32,
     pub _minOuterCircleRadius: f32,

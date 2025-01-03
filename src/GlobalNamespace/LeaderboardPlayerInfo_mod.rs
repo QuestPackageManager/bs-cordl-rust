@@ -3,12 +3,22 @@
 #[derive(Debug)]
 pub struct LeaderboardPlayerInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub serverKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _playerId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _playerName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _playerKey_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _authType_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _playerFriends_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub serverKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _playerId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _playerName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _playerKey_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _authType_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _playerFriends_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _succeeded_k__BackingField: bool,
 }
 #[cfg(feature = "LeaderboardPlayerInfo")]

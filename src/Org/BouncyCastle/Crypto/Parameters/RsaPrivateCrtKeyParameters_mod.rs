@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct RsaPrivateCrtKeyParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
-    pub e: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub p: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub q: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub dP: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub dQ: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub qInv: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub e: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub dP: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub dQ: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub qInv: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+RsaPrivateCrtKeyParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

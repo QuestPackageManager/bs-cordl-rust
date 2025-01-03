@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct QuoteInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
-    pub _operand: *mut crate::System::Linq::Expressions::Expression,
-    pub _hoistedVariables: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Linq::Expressions::ParameterExpression,
-        *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
+    pub _operand: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
+    pub _hoistedVariables: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Linq::Expressions::ParameterExpression,
+            *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        >,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+QuoteInstruction")]
@@ -116,14 +120,20 @@ for crate::System::Linq::Expressions::Interpreter::QuoteInstruction {
 #[derive(Debug)]
 pub struct QuoteInstruction_ExpressionQuoter {
     __cordl_parent: crate::System::Linq::Expressions::ExpressionVisitor,
-    pub _variables: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Linq::Expressions::ParameterExpression,
-        *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
-    >,
-    pub _frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
-    pub _shadowedVars: *mut crate::System::Collections::Generic::Stack_1<
-        *mut crate::System::Collections::Generic::HashSet_1<
+    pub _variables: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
             *mut crate::System::Linq::Expressions::ParameterExpression,
+            *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        >,
+    >,
+    pub _frame: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
+    >,
+    pub _shadowedVars: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<
+            *mut crate::System::Collections::Generic::HashSet_1<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
         >,
     >,
 }

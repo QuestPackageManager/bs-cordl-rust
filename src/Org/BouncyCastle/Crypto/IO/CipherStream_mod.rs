@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct CipherStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub stream: *mut crate::System::IO::Stream,
-    pub inCipher: *mut crate::Org::BouncyCastle::Crypto::IBufferedCipher,
-    pub outCipher: *mut crate::Org::BouncyCastle::Crypto::IBufferedCipher,
-    pub mInBuf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub inCipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBufferedCipher,
+    >,
+    pub outCipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBufferedCipher,
+    >,
+    pub mInBuf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mInPos: i32,
     pub inStreamEnded: bool,
 }

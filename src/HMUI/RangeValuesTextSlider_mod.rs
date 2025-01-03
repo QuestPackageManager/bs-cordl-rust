@@ -5,13 +5,12 @@ pub struct RangeValuesTextSlider {
     __cordl_parent: crate::HMUI::TextSlider,
     pub _minValue: f32,
     pub _maxValue: f32,
-    pub _decButton: *mut crate::UnityEngine::UI::Button,
-    pub _incButton: *mut crate::UnityEngine::UI::Button,
-    pub valueDidChangeEvent: *mut crate::System::Action_2<
-        *mut crate::HMUI::RangeValuesTextSlider,
-        f32,
+    pub _decButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _incButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub valueDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::HMUI::RangeValuesTextSlider, f32>,
     >,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
 }
 #[cfg(feature = "HMUI+RangeValuesTextSlider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

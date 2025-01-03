@@ -3,24 +3,44 @@
 #[derive(Debug)]
 pub struct WaypointsTestMenuViewController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _btsButton: *mut crate::UnityEngine::UI::Button,
-    pub _cancelButton: *mut crate::UnityEngine::UI::Button,
-    pub _progressText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _waypointsTestScenesTransitionSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-    pub _previewLevels: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::BeatmapLevelSO,
+    pub _btsButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _cancelButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _progressText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _waypointsTestScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
     >,
-    pub _characteristics: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _previewLevels: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::BeatmapLevelSO,
+        >,
     >,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _coroutineStarter: *mut crate::GlobalNamespace::ICoroutineStarter,
-    pub _environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
-    pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
-    pub _beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _characteristics: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
+    >,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _coroutineStarter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ICoroutineStarter,
+    >,
+    pub _environmentsListModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentsListModel,
+    >,
+    pub _audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioClipAsyncLoader,
+    >,
+    pub _beatmapDataLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataLoader,
+    >,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _isCancelled: bool,
     pub _waitingForLevelFinish: bool,
 }

@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct MultiplayerCoreInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _scoreSyncStateManagerPrefab: *mut crate::GlobalNamespace::ScoreSyncStateManager,
-    pub _multiplayerBadgesModel: *mut crate::GlobalNamespace::MultiplayerBadgesModelSO,
-    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _scoreSyncStateManagerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScoreSyncStateManager,
+    >,
+    pub _multiplayerBadgesModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerBadgesModelSO,
+    >,
+    pub _sceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
 }
 #[cfg(feature = "MultiplayerCoreInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

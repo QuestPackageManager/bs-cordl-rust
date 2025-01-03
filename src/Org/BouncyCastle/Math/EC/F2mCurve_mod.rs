@@ -7,7 +7,9 @@ pub struct F2mCurve {
     pub k1: i32,
     pub k2: i32,
     pub k3: i32,
-    pub m_infinity: *mut crate::Org::BouncyCastle::Math::EC::F2mPoint,
+    pub m_infinity: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::F2mPoint,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -366,8 +368,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::EC::F
 #[derive(Debug)]
 pub struct F2mCurve_DefaultF2mLookupTable {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
-    pub m_outer: *mut crate::Org::BouncyCastle::Math::EC::F2mCurve,
-    pub m_table: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+    pub m_outer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::F2mCurve>,
+    pub m_table: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
     pub m_size: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]

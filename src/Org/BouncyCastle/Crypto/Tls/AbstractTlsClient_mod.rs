@@ -3,12 +3,22 @@
 #[derive(Debug)]
 pub struct AbstractTlsClient {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsPeer,
-    pub mCipherFactory: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
-    pub mContext: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsClientContext,
-    pub mSupportedSignatureAlgorithms: *mut crate::System::Collections::IList,
-    pub mNamedCurves: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub mClientECPointFormats: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mServerECPointFormats: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mCipherFactory: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
+    >,
+    pub mContext: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsClientContext,
+    >,
+    pub mSupportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IList,
+    >,
+    pub mNamedCurves: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub mClientECPointFormats: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub mServerECPointFormats: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub mSelectedCipherSuite: i32,
     pub mSelectedCompressionMethod: i16,
 }

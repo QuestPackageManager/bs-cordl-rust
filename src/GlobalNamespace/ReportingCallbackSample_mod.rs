@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ReportingCallbackSample {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub InVRConsole: *mut crate::UnityEngine::UI::Text,
-    pub DestinationsConsole: *mut crate::UnityEngine::UI::Text,
+    pub InVRConsole: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub DestinationsConsole: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
 }
 #[cfg(feature = "ReportingCallbackSample")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

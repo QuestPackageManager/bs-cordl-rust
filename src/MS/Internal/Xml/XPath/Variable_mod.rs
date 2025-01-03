@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct Variable {
     __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
-    pub _localname: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _prefix: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _localname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Variable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,25 +3,29 @@
 #[derive(Debug)]
 pub struct InputFieldView {
     __cordl_parent: crate::UnityEngine::UI::Selectable,
-    pub _textView: *mut crate::TMPro::TextMeshProUGUI,
-    pub _textViewCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
-    pub _blinkingCaret: *mut crate::HMUI::ImageViewBase,
-    pub _placeholderText: *mut crate::UnityEngine::GameObject,
-    pub _clearSearchButton: *mut crate::UnityEngine::UI::Button,
+    pub _textView: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _textViewCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+    pub _blinkingCaret: quest_hook::libil2cpp::Gc<crate::HMUI::ImageViewBase>,
+    pub _placeholderText: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _clearSearchButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _useGlobalKeyboard: bool,
     pub _keyboardPositionOffset: crate::UnityEngine::Vector3,
     pub _useUppercase: bool,
     pub _textLengthLimit: i32,
     pub _caretOffset: f32,
-    pub selectionStateDidChangeEvent: *mut crate::System::Action_1<
-        crate::HMUI::InputFieldView_SelectionState,
+    pub selectionStateDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::HMUI::InputFieldView_SelectionState>,
     >,
     pub _selectionState: crate::HMUI::InputFieldView_SelectionState,
-    pub _text: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _hasKeyboardAssigned: bool,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
-    pub _onValueChanged: *mut crate::HMUI::InputFieldView_InputFieldChanged,
-    pub _blinkWaitYieldInstruction: *mut crate::UnityEngine::YieldInstruction,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
+    pub _onValueChanged: quest_hook::libil2cpp::Gc<
+        crate::HMUI::InputFieldView_InputFieldChanged,
+    >,
+    pub _blinkWaitYieldInstruction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::YieldInstruction,
+    >,
 }
 #[cfg(feature = "HMUI+InputFieldView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

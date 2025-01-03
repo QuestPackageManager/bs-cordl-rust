@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+HighlightState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HighlightState {
     pub color: crate::UnityEngine::Color32,
     pub padding: crate::TMPro::TMP_Offset,

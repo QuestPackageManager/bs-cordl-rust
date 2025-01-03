@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct FlyingObjectEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _moveAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub _moveAnimationCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
     pub _shakeFrequency: f32,
     pub _shakeStrength: f32,
-    pub _shakeStrengthAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub _shakeStrengthAnimationCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
     pub _initialized: bool,
     pub _shakeRotation: crate::UnityEngine::Quaternion,
     pub _rotation: crate::UnityEngine::Quaternion,
@@ -15,8 +19,10 @@ pub struct FlyingObjectEffect {
     pub _targetPos: crate::UnityEngine::Vector3,
     pub _duration: f32,
     pub _shake: bool,
-    pub _didFinishEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+    pub _didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+        >,
     >,
 }
 #[cfg(feature = "FlyingObjectEffect")]

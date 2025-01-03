@@ -3,18 +3,36 @@
 #[derive(Debug)]
 pub struct TlsSrpKeyExchange {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsKeyExchange,
-    pub mTlsSigner: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSigner,
-    pub mGroupVerifier: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSrpGroupVerifier,
-    pub mIdentity: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mPassword: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mServerPublicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub mSrpGroup: *mut crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
-    pub mSrpClient: *mut crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Client,
-    pub mSrpServer: *mut crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Server,
-    pub mSrpPeerCredentials: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub mSrpVerifier: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub mSrpSalt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mServerCredentials: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCredentials,
+    pub mTlsSigner: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsSigner,
+    >,
+    pub mGroupVerifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsSrpGroupVerifier,
+    >,
+    pub mIdentity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mPassword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mServerPublicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    >,
+    pub mSrpGroup: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
+    >,
+    pub mSrpClient: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Client,
+    >,
+    pub mSrpServer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Server,
+    >,
+    pub mSrpPeerCredentials: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
+    pub mSrpVerifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
+    pub mSrpSalt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mServerCredentials: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsSignerCredentials,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsSrpKeyExchange")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

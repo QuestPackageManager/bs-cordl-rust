@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SortKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub source: *mut quest_hook::libil2cpp::Il2CppString,
-    pub key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub options: crate::System::Globalization::CompareOptions,
     pub lcid: i32,
 }

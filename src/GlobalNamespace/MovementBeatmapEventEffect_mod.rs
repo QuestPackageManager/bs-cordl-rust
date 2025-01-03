@@ -5,20 +5,26 @@ pub struct MovementBeatmapEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _beatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _transitionSpeed: f32,
-    pub _movementData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MovementBeatmapEventEffect_MovementData,
+    pub _movementData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MovementBeatmapEventEffect_MovementData,
+        >,
     >,
-    pub _transforms: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Transform,
+    pub _transforms: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
     >,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
     pub _currentMovementDataIdx: i32,
     pub _currentPositionOffset: crate::UnityEngine::Vector3,
     pub _prevPositionOffset: crate::UnityEngine::Vector3,
-    pub _startLocalPositions: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub _startLocalPositions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
-    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "MovementBeatmapEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

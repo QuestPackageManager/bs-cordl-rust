@@ -3,20 +3,28 @@
 #[derive(Debug)]
 pub struct LevelFailedTextOverride {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _perLanguageOverrides: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::LevelFailedTextOverride_LanguageOverride,
-    >,
-    pub _beatmapLevelPacks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-            *mut crate::GlobalNamespace::BeatmapLevelPackSO,
+    pub _perLanguageOverrides: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::LevelFailedTextOverride_LanguageOverride,
         >,
     >,
-    pub _beatmapLevels: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-            *mut crate::GlobalNamespace::BeatmapLevelSO,
+    pub _beatmapLevelPacks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+                *mut crate::GlobalNamespace::BeatmapLevelPackSO,
+            >,
         >,
     >,
-    pub _levelFailedTextEffect: *mut crate::GlobalNamespace::LevelFailedText,
+    pub _beatmapLevels: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+                *mut crate::GlobalNamespace::BeatmapLevelSO,
+            >,
+        >,
+    >,
+    pub _levelFailedTextEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelFailedText,
+    >,
     pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
 }
 #[cfg(feature = "LevelFailedTextOverride")]
@@ -85,7 +93,7 @@ for crate::GlobalNamespace::LevelFailedTextOverride {
 pub struct LevelFailedTextOverride_LanguageOverride {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _language: crate::BGLib::Polyglot::Language,
-    pub _overrideText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _overrideText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "LevelFailedTextOverride+LanguageOverride")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

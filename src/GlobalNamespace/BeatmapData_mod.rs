@@ -7,38 +7,52 @@ pub struct BeatmapData {
     pub _cuttableNotesCount_k__BackingField: i32,
     pub _obstaclesCount_k__BackingField: i32,
     pub _bombsCount_k__BackingField: i32,
-    pub beatmapEventDataWasInsertedEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::BeatmapEventData,
-        *mut crate::System::Collections::Generic::LinkedListNode_1<
+    pub beatmapEventDataWasInsertedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::BeatmapEventData,
+            *mut crate::System::Collections::Generic::LinkedListNode_1<
+                *mut crate::GlobalNamespace::BeatmapDataItem,
+            >,
+        >,
+    >,
+    pub beatmapEventDataWillBeRemovedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::BeatmapEventData,
+            *mut crate::System::Collections::Generic::LinkedListNode_1<
+                *mut crate::GlobalNamespace::BeatmapDataItem,
+            >,
+        >,
+    >,
+    pub beatmapEventDataWasRemovedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::BeatmapEventData>,
+    >,
+    pub _allBeatmapData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ISortedList_1<
             *mut crate::GlobalNamespace::BeatmapDataItem,
         >,
     >,
-    pub beatmapEventDataWillBeRemovedEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::BeatmapEventData,
-        *mut crate::System::Collections::Generic::LinkedListNode_1<
+    pub _allBeatmapDataItemToNodeMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
             *mut crate::GlobalNamespace::BeatmapDataItem,
+            *mut crate::System::Collections::Generic::LinkedListNode_1<
+                *mut crate::GlobalNamespace::BeatmapDataItem,
+            >,
         >,
     >,
-    pub beatmapEventDataWasRemovedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::BeatmapEventData,
-    >,
-    pub _allBeatmapData: *mut crate::GlobalNamespace::ISortedList_1<
-        *mut crate::GlobalNamespace::BeatmapDataItem,
-    >,
-    pub _allBeatmapDataItemToNodeMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::GlobalNamespace::BeatmapDataItem,
-        *mut crate::System::Collections::Generic::LinkedListNode_1<
+    pub _beatmapDataItemsPerTypeAndId: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<
             *mut crate::GlobalNamespace::BeatmapDataItem,
         >,
-    >,
-    pub _beatmapDataItemsPerTypeAndId: *mut crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<
-        *mut crate::GlobalNamespace::BeatmapDataItem,
     >,
     pub _numberOfLines: i32,
-    pub _specialBasicBeatmapEventKeywords: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _specialBasicBeatmapEventKeywords: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _beatmapObjectsInTimeRowProcessor: *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor,
+    pub _beatmapObjectsInTimeRowProcessor: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor,
+    >,
     pub _prevAddedBeatmapObjectDataTime: f32,
     pub _isCreatingFilteredCopy: bool,
 }
@@ -580,8 +594,10 @@ for crate::GlobalNamespace::BeatmapData {
 #[derive(Debug)]
 pub struct BeatmapData_BeatmapDataBinaryHeapItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub node: *mut crate::System::Collections::Generic::LinkedListNode_1<
-        *mut crate::GlobalNamespace::BeatmapDataItem,
+    pub node: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedListNode_1<
+            *mut crate::GlobalNamespace::BeatmapDataItem,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapData+BeatmapDataBinaryHeapItem")]

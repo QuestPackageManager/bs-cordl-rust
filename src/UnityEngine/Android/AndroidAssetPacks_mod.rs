@@ -63,11 +63,11 @@ for crate::UnityEngine::Android::AndroidAssetPacks {
 #[derive(Debug)]
 pub struct AndroidAssetPacks_AssetPackManagerDownloadStatusCallback {
     __cordl_parent: crate::UnityEngine::AndroidJavaProxy,
-    pub m_Callback: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::Android::AndroidAssetPackInfo,
+    pub m_Callback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::Android::AndroidAssetPackInfo>,
     >,
-    pub m_AssetPacks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_AssetPacks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(
@@ -181,8 +181,10 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatu
 #[derive(Debug)]
 pub struct AndroidAssetPacks_AssetPackManagerMobileDataConfirmationCallback {
     __cordl_parent: crate::UnityEngine::AndroidJavaProxy,
-    pub m_Callback: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult,
+    pub m_Callback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult,
+        >,
     >,
 }
 #[cfg(
@@ -276,17 +278,23 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataCon
 #[derive(Debug)]
 pub struct AndroidAssetPacks_AssetPackManagerStatusQueryCallback {
     __cordl_parent: crate::UnityEngine::AndroidJavaProxy,
-    pub m_Callback: *mut crate::System::Action_2<
-        u64,
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::UnityEngine::Android::AndroidAssetPackState,
+    pub m_Callback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            u64,
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::Android::AndroidAssetPackState,
+            >,
         >,
     >,
-    pub m_AssetPackNames: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_AssetPackNames: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub m_States: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Android::AndroidAssetPackState,
+    pub m_States: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Android::AndroidAssetPackState,
+        >,
     >,
     pub m_Size: i64,
 }

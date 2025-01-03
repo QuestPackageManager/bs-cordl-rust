@@ -4,7 +4,7 @@
 pub struct SocketAddress {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Size: i32,
-    pub m_Buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub m_Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub m_changed: bool,
     pub m_hash: i32,
 }

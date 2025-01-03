@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct PemObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
-    pub headers: *mut crate::System::Collections::IList,
-    pub content: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub headers: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub content: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+Pem+PemObject")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

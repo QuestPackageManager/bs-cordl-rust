@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HapticsAudioClipPlayer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioSource: *mut crate::UnityEngine::AudioSource,
+    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _baseVolume: f32,
     pub _triggeredThisFrame: bool,
     pub _lastTriggerTime: f32,

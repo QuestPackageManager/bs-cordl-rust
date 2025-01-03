@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct TutorialInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _audioClip: *mut crate::UnityEngine::AudioClip,
+    pub _audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     pub _songBPM: f32,
-    pub _playerHeightDetectorPrefab: *mut crate::GlobalNamespace::PlayerHeightDetector,
-    pub _effectPoolsManualInstaller: *mut crate::GlobalNamespace::EffectPoolsManualInstaller,
-    pub _sceneSetupData: *mut crate::GlobalNamespace::TutorialSceneSetupData,
+    pub _playerHeightDetectorPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerHeightDetector,
+    >,
+    pub _effectPoolsManualInstaller: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EffectPoolsManualInstaller,
+    >,
+    pub _sceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSceneSetupData,
+    >,
 }
 #[cfg(feature = "TutorialInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

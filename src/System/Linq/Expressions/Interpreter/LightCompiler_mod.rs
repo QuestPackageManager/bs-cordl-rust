@@ -3,21 +3,35 @@
 #[derive(Debug)]
 pub struct LightCompiler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _instructions: *mut crate::System::Linq::Expressions::Interpreter::InstructionList,
-    pub _locals: *mut crate::System::Linq::Expressions::Interpreter::LocalVariables,
-    pub _debugInfos: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
+    pub _instructions: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::InstructionList,
     >,
-    pub _treeLabels: *mut crate::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<
-        *mut crate::System::Linq::Expressions::LabelTarget,
-        *mut crate::System::Linq::Expressions::Interpreter::LabelInfo,
+    pub _locals: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::LocalVariables,
     >,
-    pub _labelBlock: *mut crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
-    pub _exceptionForRethrowStack: *mut crate::System::Collections::Generic::Stack_1<
-        *mut crate::System::Linq::Expressions::ParameterExpression,
+    pub _debugInfos: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
+        >,
     >,
-    pub _parent: *mut crate::System::Linq::Expressions::Interpreter::LightCompiler,
-    pub _guard: *mut crate::System::Linq::Expressions::StackGuard,
+    pub _treeLabels: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<
+            *mut crate::System::Linq::Expressions::LabelTarget,
+            *mut crate::System::Linq::Expressions::Interpreter::LabelInfo,
+        >,
+    >,
+    pub _labelBlock: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+    >,
+    pub _exceptionForRethrowStack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<
+            *mut crate::System::Linq::Expressions::ParameterExpression,
+        >,
+    >,
+    pub _parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::LightCompiler,
+    >,
+    pub _guard: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::StackGuard>,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1246,12 +1260,16 @@ for crate::System::Linq::Expressions::Interpreter::LightCompiler {
 #[derive(Debug)]
 pub struct LightCompiler_QuoteVisitor {
     __cordl_parent: crate::System::Linq::Expressions::ExpressionVisitor,
-    pub _definedParameters: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Linq::Expressions::ParameterExpression,
-        i32,
+    pub _definedParameters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Linq::Expressions::ParameterExpression,
+            i32,
+        >,
     >,
-    pub _hoistedParameters: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::Linq::Expressions::ParameterExpression,
+    pub _hoistedParameters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::System::Linq::Expressions::ParameterExpression,
+        >,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor")]

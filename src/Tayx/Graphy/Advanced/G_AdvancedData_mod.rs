@@ -3,26 +3,34 @@
 #[derive(Debug)]
 pub struct G_AdvancedData {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_backgroundImages: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UI::Image,
+    pub m_backgroundImages: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::UI::Image>,
     >,
-    pub m_graphicsDeviceVersionText: *mut crate::UnityEngine::UI::Text,
-    pub m_processorTypeText: *mut crate::UnityEngine::UI::Text,
-    pub m_operatingSystemText: *mut crate::UnityEngine::UI::Text,
-    pub m_systemMemoryText: *mut crate::UnityEngine::UI::Text,
-    pub m_graphicsDeviceNameText: *mut crate::UnityEngine::UI::Text,
-    pub m_graphicsMemorySizeText: *mut crate::UnityEngine::UI::Text,
-    pub m_screenResolutionText: *mut crate::UnityEngine::UI::Text,
-    pub m_gameWindowResolutionText: *mut crate::UnityEngine::UI::Text,
+    pub m_graphicsDeviceVersionText: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Text,
+    >,
+    pub m_processorTypeText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub m_operatingSystemText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub m_systemMemoryText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub m_graphicsDeviceNameText: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Text,
+    >,
+    pub m_graphicsMemorySizeText: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Text,
+    >,
+    pub m_screenResolutionText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub m_gameWindowResolutionText: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Text,
+    >,
     pub m_updateRate: f32,
-    pub m_graphyManager: *mut crate::Tayx::Graphy::GraphyManager,
-    pub m_rectTransform: *mut crate::UnityEngine::RectTransform,
+    pub m_graphyManager: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
+    pub m_rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_deltaTime: f32,
-    pub m_sb: *mut crate::System::Text::StringBuilder,
+    pub m_sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub m_previousModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,
     pub m_currentModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,
-    pub m_windowStrings: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_windowStrings: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "Tayx+Graphy+Advanced+G_AdvancedData")]

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct KdfParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub shared: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub iv: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub shared: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+KdfParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

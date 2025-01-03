@@ -3,14 +3,16 @@
 #[derive(Debug)]
 pub struct OVRVirtualKeyboardSampleControls {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub ShowButton: *mut crate::UnityEngine::UI::Button,
-    pub MoveButton: *mut crate::UnityEngine::UI::Button,
-    pub HideButton: *mut crate::UnityEngine::UI::Button,
-    pub MoveNearButton: *mut crate::UnityEngine::UI::Button,
-    pub MoveFarButton: *mut crate::UnityEngine::UI::Button,
-    pub DestroyKeyboardButton: *mut crate::UnityEngine::UI::Button,
-    pub keyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
-    pub inputHandler: *mut crate::GlobalNamespace::OVRVirtualKeyboardSampleInputHandler,
+    pub ShowButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub MoveButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub HideButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub MoveNearButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub MoveFarButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub DestroyKeyboardButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub keyboard: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRVirtualKeyboard>,
+    pub inputHandler: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRVirtualKeyboardSampleInputHandler,
+    >,
     pub isMovingKeyboard_: bool,
     pub isMovingKeyboardFinished_: bool,
     pub keyboardMoveDistance_: f32,
@@ -181,24 +183,36 @@ for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
 }
 #[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
-    pub _textCommitField: *mut crate::UnityEngine::UI::InputField,
+    pub _textCommitField: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::InputField>,
     pub _position: crate::UnityEngine::Vector3,
     pub _rotation: crate::UnityEngine::Quaternion,
     pub _scale: crate::UnityEngine::Vector3,
-    pub _rightControllerDirectTransform: *mut crate::UnityEngine::Transform,
-    pub _rightControllerRootTransform: *mut crate::UnityEngine::Transform,
-    pub _leftControllerDirectTransform: *mut crate::UnityEngine::Transform,
-    pub _leftControllerRootTransform: *mut crate::UnityEngine::Transform,
+    pub _rightControllerDirectTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _rightControllerRootTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _leftControllerDirectTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _leftControllerRootTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
     pub _controllerRayInteraction: bool,
     pub _controllerDirectInteraction: bool,
-    pub _handLeft: *mut crate::GlobalNamespace::OVRHand,
-    pub _handRight: *mut crate::GlobalNamespace::OVRHand,
+    pub _handLeft: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHand>,
+    pub _handRight: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHand>,
     pub _handRayInteraction: bool,
     pub _handDirectInteraction: bool,
-    pub _controllerRaycaster: *mut crate::UnityEngine::EventSystems::OVRPhysicsRaycaster,
-    pub _handRaycaster: *mut crate::UnityEngine::EventSystems::OVRPhysicsRaycaster,
+    pub _controllerRaycaster: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::OVRPhysicsRaycaster,
+    >,
+    pub _handRaycaster: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::OVRPhysicsRaycaster,
+    >,
 }
 #[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

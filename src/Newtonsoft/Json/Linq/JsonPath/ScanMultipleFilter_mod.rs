@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ScanMultipleFilter {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
-    pub _names: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _names: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+ScanMultipleFilter")]

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+WordWrapState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct WordWrapState {
     pub previousWordBreak: i32,
     pub totalCharacterCount: i32,
@@ -32,7 +32,9 @@ pub struct WordWrapState {
     pub currentFontSize: f32,
     pub baselineOffset: f32,
     pub lineOffset: f32,
-    pub textInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+    pub textInfo: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextInfo,
+    >,
     pub lineInfo: crate::UnityEngine::TextCore::Text::LineInfo,
     pub vertexColor: crate::UnityEngine::Color32,
     pub underlineColor: crate::UnityEngine::Color32,
@@ -75,9 +77,13 @@ pub struct WordWrapState {
     >,
     pub lastBaseGlyphIndex: i32,
     pub spriteAnimationId: i32,
-    pub currentFontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
-    pub currentSpriteAsset: *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
-    pub currentMaterial: *mut crate::UnityEngine::Material,
+    pub currentFontAsset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::FontAsset,
+    >,
+    pub currentSpriteAsset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::SpriteAsset,
+    >,
+    pub currentMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub currentMaterialIndex: i32,
     pub meshExtents: crate::UnityEngine::TextCore::Text::Extents,
     pub tagNoParsing: bool,

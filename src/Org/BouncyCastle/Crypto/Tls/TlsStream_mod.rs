@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct TlsStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub handler: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol,
+    pub handler: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

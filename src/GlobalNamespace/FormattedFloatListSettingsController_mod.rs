@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct FormattedFloatListSettingsController {
     __cordl_parent: crate::GlobalNamespace::ListSettingsController,
-    pub _values: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _formattingString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub _formattingString: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub valueType: crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType,
-    pub valueDidChangeEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
-        f32,
+    pub valueDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
+            f32,
+        >,
     >,
     pub _value: f32,
     pub _min: f32,

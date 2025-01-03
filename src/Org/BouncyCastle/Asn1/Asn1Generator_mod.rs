@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Asn1Generator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _out: *mut crate::System::IO::Stream,
+    pub _out: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Generator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

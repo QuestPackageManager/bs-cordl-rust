@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct KeyPairPersistence {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _params: *mut crate::System::Security::Cryptography::CspParameters,
-    pub _keyvalue: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _filename: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _container: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _params: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::CspParameters,
+    >,
+    pub _keyvalue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _container: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Mono+Security+Cryptography+KeyPairPersistence")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

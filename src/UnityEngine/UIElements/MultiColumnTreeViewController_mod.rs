@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MultiColumnTreeViewController {
     __cordl_parent: crate::UnityEngine::UIElements::BaseTreeViewController,
-    pub m_ColumnController: *mut crate::UnityEngine::UIElements::MultiColumnController,
+    pub m_ColumnController: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::MultiColumnController,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnTreeViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

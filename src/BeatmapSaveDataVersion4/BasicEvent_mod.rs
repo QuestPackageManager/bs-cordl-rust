@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatmapSaveDataVersion4+BasicEvent")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BasicEvent {
     pub t: crate::BeatmapSaveDataCommon::BeatmapEventType,
     pub i: i32,

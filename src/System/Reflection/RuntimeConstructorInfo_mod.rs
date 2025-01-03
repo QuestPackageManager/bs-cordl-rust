@@ -4,8 +4,8 @@
 pub struct RuntimeConstructorInfo {
     __cordl_parent: crate::System::Reflection::ConstructorInfo,
     pub mhandle: crate::System::IntPtr,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub reftype: *mut crate::System::Type,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub reftype: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Reflection+RuntimeConstructorInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

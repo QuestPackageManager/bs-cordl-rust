@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CompleteCertificateRefs {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub otherCertIDs: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    pub otherCertIDs: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Esf+CompleteCertificateRefs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

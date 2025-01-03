@@ -5,9 +5,11 @@ pub struct StandardGameplaySceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
     pub autoRestart: bool,
     pub beatmapKey: crate::GlobalNamespace::BeatmapKey,
-    pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-    pub backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
-    pub gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+    pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+    pub backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
+    >,
     pub startPaused: bool,
 }
 #[cfg(feature = "StandardGameplaySceneSetupData")]

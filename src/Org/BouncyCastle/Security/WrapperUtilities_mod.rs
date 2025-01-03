@@ -97,7 +97,9 @@ for crate::Org::BouncyCastle::Security::WrapperUtilities {
 #[derive(Debug)]
 pub struct WrapperUtilities_BufferedCipherWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::IBufferedCipher,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBufferedCipher,
+    >,
     pub forWrapping: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities+BufferedCipherWrapper")]

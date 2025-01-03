@@ -3,13 +3,21 @@
 #[derive(Debug)]
 pub struct EndOfLifeNoticeViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _okButton: *mut crate::UnityEngine::UI::Button,
+    pub _okButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _duration: f32,
-    pub _endOfLifeNoticeTextMesh: *mut crate::TMPro::TextMeshProUGUI,
-    pub _endOfLifeNoticeLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _coroutineStarter: *mut crate::GlobalNamespace::ICoroutineStarter,
-    pub didFinishEvent: *mut crate::System::Action,
-    pub _enableOkButtonCoroutine: *mut crate::UnityEngine::Coroutine,
+    pub _endOfLifeNoticeTextMesh: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TextMeshProUGUI,
+    >,
+    pub _endOfLifeNoticeLocalizationKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _coroutineStarter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ICoroutineStarter,
+    >,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _enableOkButtonCoroutine: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Coroutine,
+    >,
 }
 #[cfg(feature = "EndOfLifeNoticeViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

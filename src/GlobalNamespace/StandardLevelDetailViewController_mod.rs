@@ -3,48 +3,88 @@
 #[derive(Debug)]
 pub struct StandardLevelDetailViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _standardLevelDetailView: *mut crate::GlobalNamespace::StandardLevelDetailView,
-    pub _standardLevelBuyView: *mut crate::GlobalNamespace::StandardLevelBuyView,
-    pub _standardLevelBuyInfoView: *mut crate::GlobalNamespace::StandardLevelBuyInfoView,
-    pub _loadingControl: *mut crate::GlobalNamespace::LoadingControl,
-    pub _noAllowedBeatmapInfoContainer: *mut crate::UnityEngine::GameObject,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub _dlcPromoPanelModel: *mut crate::GlobalNamespace::DlcPromoPanelModel,
-    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
-    pub _beatmapCharacteristicCollection: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
-    pub didPressActionButtonEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::StandardLevelDetailViewController,
+    pub _standardLevelDetailView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardLevelDetailView,
     >,
-    pub didPressOpenLevelPackButtonEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::StandardLevelDetailViewController,
-        *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub _standardLevelBuyView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardLevelBuyView,
     >,
-    pub levelFavoriteStatusDidChangeEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::StandardLevelDetailViewController,
-        bool,
+    pub _standardLevelBuyInfoView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardLevelBuyInfoView,
     >,
-    pub didPressPracticeButtonEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::StandardLevelDetailViewController,
-        *mut crate::GlobalNamespace::BeatmapLevel,
+    pub _loadingControl: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LoadingControl,
     >,
-    pub didChangeDifficultyBeatmapEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::StandardLevelDetailViewController,
+    pub _noAllowedBeatmapInfoContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
     >,
-    pub didChangeContentEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::StandardLevelDetailViewController,
-        crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
     >,
-    pub _ownedObjectsEventBinder: *mut crate::GlobalNamespace::EventBinder,
-    pub _eventBinder: *mut crate::GlobalNamespace::EventBinder,
-    pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-    pub _pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub _additionalContentModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAdditionalContentModel,
+    >,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub _dlcPromoPanelModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DlcPromoPanelModel,
+    >,
+    pub _analyticsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAnalyticsModel,
+    >,
+    pub _beatmapCharacteristicCollection: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicCollection,
+    >,
+    pub didPressActionButtonEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::StandardLevelDetailViewController,
+        >,
+    >,
+    pub didPressOpenLevelPackButtonEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::StandardLevelDetailViewController,
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
+        >,
+    >,
+    pub levelFavoriteStatusDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::StandardLevelDetailViewController,
+            bool,
+        >,
+    >,
+    pub didPressPracticeButtonEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::StandardLevelDetailViewController,
+            *mut crate::GlobalNamespace::BeatmapLevel,
+        >,
+    >,
+    pub didChangeDifficultyBeatmapEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::StandardLevelDetailViewController,
+        >,
+    >,
+    pub didChangeContentEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::StandardLevelDetailViewController,
+            crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
+        >,
+    >,
+    pub _ownedObjectsEventBinder: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EventBinder,
+    >,
+    pub _eventBinder: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EventBinder>,
+    pub _cancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub _beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+    pub _pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
     pub _canBuyPack: bool,
     pub _allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
-    pub _notAllowedCharacteristics: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _notAllowedCharacteristics: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
     >,
     pub _contentIsOwnedAndReady: bool,
 }
@@ -704,11 +744,13 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
-    pub __4__this: *mut crate::GlobalNamespace::StandardLevelDetailViewController,
+    pub __4__this: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardLevelDetailViewController,
+    >,
     pub token: crate::System::Threading::CancellationToken,
     pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
         crate::GlobalNamespace::OpenProductStoreResult,
@@ -777,11 +819,13 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWas
     feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
-    pub __4__this: *mut crate::GlobalNamespace::StandardLevelDetailViewController,
+    pub __4__this: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardLevelDetailViewController,
+    >,
     pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
         crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
     >,
@@ -858,11 +902,13 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
 }
 #[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
-    pub __4__this: *mut crate::GlobalNamespace::StandardLevelDetailViewController,
+    pub __4__this: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardLevelDetailViewController,
+    >,
     pub token: crate::System::Threading::CancellationToken,
     pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
         crate::GlobalNamespace::OpenProductStoreResult,
@@ -931,11 +977,13 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
     feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
-    pub __4__this: *mut crate::GlobalNamespace::StandardLevelDetailViewController,
+    pub __4__this: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardLevelDetailViewController,
+    >,
     pub token: crate::System::Threading::CancellationToken,
     pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
         crate::GlobalNamespace::EntitlementStatus,

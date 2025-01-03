@@ -4,8 +4,10 @@
 pub struct EnvironmentSceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
     pub hideBranding: bool,
-    pub environmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
-    pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub environmentInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentInfoSO,
+    >,
+    pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
 }
 #[cfg(feature = "EnvironmentSceneSetupData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct ControllersTransformSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _posXSlider: *mut crate::HMUI::RangeValuesTextSlider,
-    pub _posYSlider: *mut crate::HMUI::RangeValuesTextSlider,
-    pub _posZSlider: *mut crate::HMUI::RangeValuesTextSlider,
-    pub _rotXSlider: *mut crate::HMUI::RangeValuesTextSlider,
-    pub _rotYSlider: *mut crate::HMUI::RangeValuesTextSlider,
-    pub _rotZSlider: *mut crate::HMUI::RangeValuesTextSlider,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _posXSlider: quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
+    pub _posYSlider: quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
+    pub _posZSlider: quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
+    pub _rotXSlider: quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
+    pub _rotYSlider: quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
+    pub _rotZSlider: quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
 }
 #[cfg(feature = "ControllersTransformSettingsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

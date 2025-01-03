@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BufferOffsetSize {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub Offset: i32,
     pub Size: i32,
 }

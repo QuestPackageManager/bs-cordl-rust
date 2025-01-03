@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct Purchase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub DeveloperPayload: *mut quest_hook::libil2cpp::Il2CppString,
+    pub DeveloperPayload: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub ExpirationTime: crate::System::DateTime,
     pub GrantTime: crate::System::DateTime,
-    pub _cordl_ID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub ReportingId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Sku: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _cordl_ID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ReportingId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Sku: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Oculus+Platform+Models+Purchase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

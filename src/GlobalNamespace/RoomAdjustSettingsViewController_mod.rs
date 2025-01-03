@@ -3,13 +3,25 @@
 #[derive(Debug)]
 pub struct RoomAdjustSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _xStepValuePicker: *mut crate::GlobalNamespace::StepValuePicker,
-    pub _yStepValuePicker: *mut crate::GlobalNamespace::StepValuePicker,
-    pub _zStepValuePicker: *mut crate::GlobalNamespace::StepValuePicker,
-    pub _rotStepValuePicker: *mut crate::GlobalNamespace::StepValuePicker,
-    pub _resetButton: *mut crate::UnityEngine::UI::Button,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
+    pub _xStepValuePicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StepValuePicker,
+    >,
+    pub _yStepValuePicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StepValuePicker,
+    >,
+    pub _zStepValuePicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StepValuePicker,
+    >,
+    pub _rotStepValuePicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StepValuePicker,
+    >,
+    pub _resetButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _settingsApplicator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsApplicatorSO,
+    >,
 }
 #[cfg(feature = "RoomAdjustSettingsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

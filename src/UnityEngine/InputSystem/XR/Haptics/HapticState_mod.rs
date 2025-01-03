@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+HapticState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HapticState {
     pub _samplesQueued_k__BackingField: u32,
     pub _samplesAvailable_k__BackingField: u32,

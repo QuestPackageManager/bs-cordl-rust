@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct DynamicMetaObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _value: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _Expression_k__BackingField: *mut crate::System::Linq::Expressions::Expression,
-    pub _Restrictions_k__BackingField: *mut crate::System::Dynamic::BindingRestrictions,
+    pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _Expression_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
+    pub _Restrictions_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Dynamic::BindingRestrictions,
+    >,
 }
 #[cfg(feature = "System+Dynamic+DynamicMetaObject")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

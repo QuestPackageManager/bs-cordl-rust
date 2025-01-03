@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DependencyAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub dependentAssembly: *mut quest_hook::libil2cpp::Il2CppString,
+    pub dependentAssembly: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub loadHint: crate::System::Runtime::CompilerServices::LoadHint,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+DependencyAttribute")]

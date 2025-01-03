@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct PgpPbeEncryptedData {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedData,
-    pub keyData: *mut crate::Org::BouncyCastle::Bcpg::SymmetricKeyEncSessionPacket,
+    pub keyData: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::SymmetricKeyEncSessionPacket,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpPbeEncryptedData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

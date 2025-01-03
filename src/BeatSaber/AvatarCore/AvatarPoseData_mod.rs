@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarPoseData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AvatarPoseData {
     pub headPose: crate::UnityEngine::Pose,
     pub leftHandPose: crate::UnityEngine::Pose,

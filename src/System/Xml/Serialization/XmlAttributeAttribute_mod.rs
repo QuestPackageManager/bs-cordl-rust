@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct XmlAttributeAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub attributeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub dataType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _cordl_type: *mut crate::System::Type,
+    pub attributeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub dataType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub form: crate::System::Xml::Schema::XmlSchemaForm,
-    pub ns: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlAttributeAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

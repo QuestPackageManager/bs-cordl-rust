@@ -1,10 +1,12 @@
 #[cfg(feature = "UnityEngine+ArticulationJacobian")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ArticulationJacobian {
     pub rowsCount: i32,
     pub colsCount: i32,
-    pub matrixData: *mut crate::System::Collections::Generic::List_1<f32>,
+    pub matrixData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
 }
 #[cfg(feature = "UnityEngine+ArticulationJacobian")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

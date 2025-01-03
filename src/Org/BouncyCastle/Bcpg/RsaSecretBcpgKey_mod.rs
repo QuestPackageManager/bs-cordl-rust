@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct RsaSecretBcpgKey {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::BcpgObject,
-    pub d: *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
-    pub p: *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
-    pub q: *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
-    pub u: *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
-    pub expP: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub expQ: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub crt: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub d: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
+    pub p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
+    pub q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
+    pub u: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
+    pub expP: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub expQ: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub crt: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+RsaSecretBcpgKey")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

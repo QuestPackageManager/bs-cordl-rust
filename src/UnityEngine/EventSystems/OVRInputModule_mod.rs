@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct OVRInputModule {
     __cordl_parent: crate::UnityEngine::EventSystems::PointerInputModule,
-    pub rayTransform: *mut crate::UnityEngine::Transform,
-    pub m_Cursor: *mut crate::GlobalNamespace::OVRCursor,
+    pub rayTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub m_Cursor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCursor>,
     pub joyPadClickButton: crate::GlobalNamespace::OVRInput_Button,
     pub gazeClickKey: crate::UnityEngine::KeyCode,
     pub performSphereCastForGazepointer: bool,
@@ -14,23 +14,29 @@ pub struct OVRInputModule {
     pub swipeDragThreshold: f32,
     pub swipeDragScale: f32,
     pub InvertSwipeXAxis: bool,
-    pub activeGraphicRaycaster: *mut crate::GlobalNamespace::OVRRaycaster,
+    pub activeGraphicRaycaster: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRRaycaster,
+    >,
     pub angleDragThreshold: f32,
     pub m_SpherecastRadius: f32,
     pub m_NextAction: f32,
     pub m_LastMousePosition: crate::UnityEngine::Vector2,
     pub m_MousePosition: crate::UnityEngine::Vector2,
-    pub m_HorizontalAxis: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_VerticalAxis: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_SubmitButton: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_CancelButton: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_HorizontalAxis: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_VerticalAxis: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_SubmitButton: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_CancelButton: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_InputActionsPerSecond: f32,
     pub m_AllowActivationOnMobileDevice: bool,
-    pub m_VRRayPointerData: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::UnityEngine::EventSystems::OVRPointerEventData,
+    pub m_VRRayPointerData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::UnityEngine::EventSystems::OVRPointerEventData,
+        >,
     >,
-    pub m_MouseState: *mut crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
+    pub m_MouseState: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
+    >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+OVRInputModule")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

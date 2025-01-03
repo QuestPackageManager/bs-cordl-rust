@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ConfiguredTaskAwaitable {
     pub m_configuredTaskAwaiter: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter,
 }
@@ -56,9 +56,9 @@ impl crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable {
     feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable+ConfiguredTaskAwaiter"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ConfiguredTaskAwaitable_ConfiguredTaskAwaiter {
-    pub m_task: *mut crate::System::Threading::Tasks::Task,
+    pub m_task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     pub m_continueOnCapturedContext: bool,
 }
 #[cfg(

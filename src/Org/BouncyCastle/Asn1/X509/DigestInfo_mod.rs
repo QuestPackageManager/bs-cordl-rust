@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct DigestInfo {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub digest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub algID: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    pub digest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub algID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+DigestInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

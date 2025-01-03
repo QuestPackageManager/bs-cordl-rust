@@ -3,16 +3,16 @@
 #[derive(Debug)]
 pub struct G_RamManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_ramGraphGameObject: *mut crate::UnityEngine::GameObject,
-    pub m_backgroundImages: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UI::Image,
+    pub m_ramGraphGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub m_backgroundImages: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::UI::Image>,
     >,
-    pub m_graphyManager: *mut crate::Tayx::Graphy::GraphyManager,
-    pub m_ramGraph: *mut crate::Tayx::Graphy::Ram::G_RamGraph,
-    pub m_ramText: *mut crate::Tayx::Graphy::Ram::G_RamText,
-    pub m_rectTransform: *mut crate::UnityEngine::RectTransform,
-    pub m_childrenGameObjects: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::GameObject,
+    pub m_graphyManager: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
+    pub m_ramGraph: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Ram::G_RamGraph>,
+    pub m_ramText: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Ram::G_RamText>,
+    pub m_rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub m_childrenGameObjects: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::GameObject>,
     >,
     pub m_previousModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,
     pub m_currentModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,

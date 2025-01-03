@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct XRInputSubsystem {
     __cordl_parent: crate::UnityEngine::IntegratedSubsystem_1<Blacklisted>,
-    pub trackingOriginUpdated: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::XR::XRInputSubsystem,
+    pub trackingOriginUpdated: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::XR::XRInputSubsystem>,
     >,
-    pub boundaryChanged: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::XR::XRInputSubsystem,
+    pub boundaryChanged: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::XR::XRInputSubsystem>,
     >,
-    pub m_DeviceIdsCache: *mut crate::System::Collections::Generic::List_1<u64>,
+    pub m_DeviceIdsCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<u64>,
+    >,
 }
 #[cfg(feature = "UnityEngine+XR+XRInputSubsystem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

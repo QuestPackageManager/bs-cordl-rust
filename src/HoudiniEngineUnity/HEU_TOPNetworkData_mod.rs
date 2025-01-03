@@ -4,16 +4,18 @@
 pub struct HEU_TOPNetworkData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _nodeID: i32,
-    pub _nodeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _topNodes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_TOPNodeData,
+    pub _nodeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _topNodes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_TOPNodeData,
+        >,
     >,
-    pub _topNodeNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _topNodeNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _selectedTOPIndex: i32,
-    pub _parentName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _tags: *mut crate::HoudiniEngineUnity::TOPNodeTags,
+    pub _parentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _tags: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::TOPNodeTags>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_TOPNetworkData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

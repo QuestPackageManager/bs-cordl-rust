@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ProfanityFilter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _trie: *mut crate::GlobalNamespace::ProfanityFilter_TrieNode,
+    pub _trie: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ProfanityFilter_TrieNode,
+    >,
 }
 #[cfg(feature = "ProfanityFilter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -98,9 +100,11 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ProfanityFilt
 #[derive(Debug)]
 pub struct ProfanityFilter_TrieNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _children: *mut crate::System::Collections::Generic::Dictionary_2<
-        char,
-        *mut crate::GlobalNamespace::ProfanityFilter_TrieNode,
+    pub _children: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            char,
+            *mut crate::GlobalNamespace::ProfanityFilter_TrieNode,
+        >,
     >,
     pub _shortestWord: i32,
 }

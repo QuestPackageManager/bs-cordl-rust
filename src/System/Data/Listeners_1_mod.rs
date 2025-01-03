@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct Listeners_1<TElem: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _listeners: *mut crate::System::Collections::Generic::List_1<TElem>,
-    pub _filter: *mut crate::System::Data::Listeners_1_Func_2<TElem, TElem, bool>,
+    pub _listeners: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<TElem>,
+    >,
+    pub _filter: quest_hook::libil2cpp::Gc<
+        crate::System::Data::Listeners_1_Func_2<TElem, TElem, bool>,
+    >,
     pub _objectID: i32,
     pub _listenerReaderCount: i32,
     __cordl_phantom_TElem: std::marker::PhantomData<TElem>,

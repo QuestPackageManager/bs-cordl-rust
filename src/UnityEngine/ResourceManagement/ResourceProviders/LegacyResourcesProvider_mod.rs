@@ -103,7 +103,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesPr
 #[derive(Debug)]
 pub struct LegacyResourcesProvider_InternalOp {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_RequestOperation: *mut crate::UnityEngine::ResourceRequest,
+    pub m_RequestOperation: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceRequest,
+    >,
     pub m_ProvideHandle: crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
 }
 #[cfg(

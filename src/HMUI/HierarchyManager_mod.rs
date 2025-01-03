@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct HierarchyManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _screenSystem: *mut crate::HMUI::ScreenSystem,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
-    pub _rootFlowCoordinator: *mut crate::HMUI::FlowCoordinator,
+    pub _screenSystem: quest_hook::libil2cpp::Gc<crate::HMUI::ScreenSystem>,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
+    pub _rootFlowCoordinator: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
 }
 #[cfg(feature = "HMUI+HierarchyManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

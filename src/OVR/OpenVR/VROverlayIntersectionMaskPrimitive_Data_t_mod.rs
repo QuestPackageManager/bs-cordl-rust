@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VROverlayIntersectionMaskPrimitive_Data_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VROverlayIntersectionMaskPrimitive_Data_t {
     padding: [u8; 16usize],
 }

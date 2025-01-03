@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct ValidatingReaderNodeData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub localName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
-    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub nameWPrefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub rawValue: *mut quest_hook::libil2cpp::Il2CppString,
-    pub originalStringValue: *mut quest_hook::libil2cpp::Il2CppString,
+    pub localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub namespaceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub nameWPrefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub rawValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub originalStringValue: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub depth: i32,
-    pub attributePSVIInfo: *mut crate::System::Xml::AttributePSVIInfo,
+    pub attributePSVIInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::AttributePSVIInfo,
+    >,
     pub nodeType: crate::System::Xml::XmlNodeType,
     pub lineNo: i32,
     pub linePos: i32,

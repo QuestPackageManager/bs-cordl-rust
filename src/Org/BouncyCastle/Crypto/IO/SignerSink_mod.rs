@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SignerSink {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    pub mSigner: *mut crate::Org::BouncyCastle::Crypto::ISigner,
+    pub mSigner: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IO+SignerSink")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

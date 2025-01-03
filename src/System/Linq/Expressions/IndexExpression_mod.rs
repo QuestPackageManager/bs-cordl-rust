@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct IndexExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
-    pub _arguments: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::System::Linq::Expressions::Expression,
+    pub _arguments: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::System::Linq::Expressions::Expression,
+        >,
     >,
-    pub _Object_k__BackingField: *mut crate::System::Linq::Expressions::Expression,
-    pub _Indexer_k__BackingField: *mut crate::System::Reflection::PropertyInfo,
+    pub _Object_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
+    pub _Indexer_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::PropertyInfo,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+IndexExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

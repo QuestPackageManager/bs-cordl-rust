@@ -728,7 +728,7 @@ impl AsMut<crate::System::Collections::IEnumerable> for crate::UnityEngine::Anim
 #[derive(Debug)]
 pub struct Animation_Enumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Outer: *mut crate::UnityEngine::Animation,
+    pub m_Outer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animation>,
     pub m_CurrentIndex: i32,
 }
 #[cfg(feature = "UnityEngine+Animation+Enumerator")]

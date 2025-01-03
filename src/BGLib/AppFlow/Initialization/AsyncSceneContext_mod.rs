@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct AsyncSceneContext {
     __cordl_parent: crate::Zenject::SceneContext,
-    pub _asyncPreloaders: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BGLib::AppFlow::Initialization::AsyncPreloader,
+    pub _asyncPreloaders: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BGLib::AppFlow::Initialization::AsyncPreloader,
+        >,
     >,
-    pub _asyncInstallers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BGLib::AppFlow::Initialization::AsyncInstaller,
+    pub _asyncInstallers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BGLib::AppFlow::Initialization::AsyncInstaller,
+        >,
     >,
     pub _state: crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State,
-    pub _registry: *mut crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry,
+    pub _registry: quest_hook::libil2cpp::Gc<
+        crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry,
+    >,
 }
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -119,14 +119,14 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub OriginalJoint: *mut crate::UnityEngine::Transform,
+    pub OriginalJoint: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub FromPosition: crate::UnityEngine::Vector3,
     pub ToPosition: crate::UnityEngine::Vector3,
-    pub JointPairStart: *mut crate::UnityEngine::Transform,
-    pub JointPairEnd: *mut crate::UnityEngine::Transform,
+    pub JointPairStart: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub JointPairEnd: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub JointPairOrientation: crate::UnityEngine::Quaternion,
     pub CorrectionQuaternion: crate::System::Nullable_1<crate::UnityEngine::Quaternion>,
-    pub ParentTransform: *mut crate::UnityEngine::Transform,
+    pub ParentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub DegenerateJoint: bool,
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRSkeletonMetadata+BoneData")]
@@ -209,27 +209,43 @@ for crate::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetarget
 #[derive(Debug)]
 pub struct OVRUnityHumanoidSkeletonRetargeter {
     __cordl_parent: crate::GlobalNamespace::OVRSkeleton,
-    pub _sourceSkeletonData: *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata,
-    pub _sourceSkeletonTPoseData: *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata,
-    pub _targetSkeletonData: *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata,
-    pub _animatorTargetSkeleton: *mut crate::UnityEngine::Animator,
-    pub _customBoneIdToHumanBodyBone: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::GlobalNamespace::OVRSkeleton_BoneId,
-        crate::UnityEngine::HumanBodyBones,
+    pub _sourceSkeletonData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata,
     >,
-    pub _targetTPoseRotations: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::HumanBodyBones,
-        crate::UnityEngine::Quaternion,
+    pub _sourceSkeletonTPoseData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata,
+    >,
+    pub _targetSkeletonData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata,
+    >,
+    pub _animatorTargetSkeleton: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
+    pub _customBoneIdToHumanBodyBone: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::OVRSkeleton_BoneId,
+            crate::UnityEngine::HumanBodyBones,
+        >,
+    >,
+    pub _targetTPoseRotations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::HumanBodyBones,
+            crate::UnityEngine::Quaternion,
+        >,
     >,
     pub _lastSkelChangeCount: i32,
-    pub _adjustments: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment,
+    pub _adjustments: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment,
+        >,
     >,
-    pub _bodySectionsToAlign: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection,
+    pub _bodySectionsToAlign: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection,
+        >,
     >,
-    pub _bodySectionToPosition: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection,
+    pub _bodySectionToPosition: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection,
+        >,
     >,
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter")]
@@ -694,12 +710,14 @@ for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBones
 #[derive(Debug)]
 pub struct OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _BodyToBoneData_k__BackingField: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::HumanBodyBones,
-        *mut crate::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData,
+    pub _BodyToBoneData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::HumanBodyBones,
+            *mut crate::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData,
+        >,
     >,
-    pub _boneEnumValues: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::HumanBodyBones,
+    pub _boneEnumValues: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::HumanBodyBones>,
     >,
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRSkeletonMetadata")]

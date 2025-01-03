@@ -1,6 +1,6 @@
 #[cfg(feature = "LufsMetering+FilteringJob")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FilteringJob {
     pub inputData: crate::Unity::Collections::NativeArray_1<f32>,
     pub coefficients: crate::LufsMetering::FilterCoefficients,

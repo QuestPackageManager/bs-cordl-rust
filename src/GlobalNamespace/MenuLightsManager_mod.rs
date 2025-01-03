@@ -3,15 +3,20 @@
 #[derive(Debug)]
 pub struct MenuLightsManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _defaultPreset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
-    pub _lightManager: *mut crate::GlobalNamespace::LightWithIdManager,
-    pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub _preset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
-    pub _originalColors: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        crate::UnityEngine::Color,
+    pub _defaultPreset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsPresetSO,
     >,
-    pub _animationTween: *mut crate::Tweening::FloatTween,
+    pub _lightManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightWithIdManager,
+    >,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::TimeTweeningManager,
+    >,
+    pub _preset: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuLightsPresetSO>,
+    pub _originalColors: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, crate::UnityEngine::Color>,
+    >,
+    pub _animationTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
     pub _alphaMultiplier: f32,
 }
 #[cfg(feature = "MenuLightsManager")]

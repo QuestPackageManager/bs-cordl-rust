@@ -10,7 +10,9 @@ pub struct FlyingTextSpawner {
     pub _color: crate::UnityEngine::Color,
     pub _fontSize: f32,
     pub _shake: bool,
-    pub _flyingTextEffectPool: *mut crate::GlobalNamespace::FlyingTextEffect_Pool,
+    pub _flyingTextEffectPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FlyingTextEffect_Pool,
+    >,
 }
 #[cfg(feature = "FlyingTextSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BlueNoiseDithering {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _noiseTexture: *mut crate::UnityEngine::Texture2D,
+    pub _noiseTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
 }
 #[cfg(feature = "BlueNoiseDithering")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

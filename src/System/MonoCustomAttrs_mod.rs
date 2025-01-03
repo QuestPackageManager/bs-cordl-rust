@@ -341,7 +341,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::MonoCustomAttrs {
 #[derive(Debug)]
 pub struct MonoCustomAttrs_AttributeInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _usage: *mut crate::System::AttributeUsageAttribute,
+    pub _usage: quest_hook::libil2cpp::Gc<crate::System::AttributeUsageAttribute>,
     pub _inheritanceLevel: i32,
 }
 #[cfg(feature = "System+MonoCustomAttrs+AttributeInfo")]

@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct TriggerFloatFxGroupEffect {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _floatFxBeatmapEventCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    pub _initData: *mut crate::GlobalNamespace::TriggerFloatFxGroupEffect_InitData,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _floatFxBeatmapEventCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TriggerFloatFxGroupEffect_InitData,
+    >,
 }
 #[cfg(feature = "TriggerFloatFxGroupEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -100,7 +106,9 @@ pub struct TriggerFloatFxGroupEffect_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub groupId: i32,
     pub elementId: i32,
-    pub target: *mut crate::GlobalNamespace::FloatFxGroupEffectTarget,
+    pub target: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FloatFxGroupEffectTarget,
+    >,
 }
 #[cfg(feature = "TriggerFloatFxGroupEffect+InitData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

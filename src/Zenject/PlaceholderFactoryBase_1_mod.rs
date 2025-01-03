@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct PlaceholderFactoryBase_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _provider: *mut crate::Zenject::IProvider,
-    pub _injectContext: *mut crate::Zenject::InjectContext,
+    pub _provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+    pub _injectContext: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "Zenject+PlaceholderFactoryBase_1")]

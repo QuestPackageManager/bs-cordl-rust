@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundColorsGradientTintColorWithLightId {
     __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
-    pub _bloomPrePassBackgroundColorsGradient: *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient,
+    pub _bloomPrePassBackgroundColorsGradient: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient,
+    >,
     pub _useGrayscale: bool,
     pub grayscaleFactor: f32,
 }

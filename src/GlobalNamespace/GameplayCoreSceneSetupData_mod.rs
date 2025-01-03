@@ -4,27 +4,57 @@
 pub struct GameplayCoreSceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
     pub beatmapKey: crate::GlobalNamespace::BeatmapKey,
-    pub beatmapBasicData: *mut crate::GlobalNamespace::BeatmapBasicData,
-    pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-    pub gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-    pub playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
-    pub practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
+    pub beatmapBasicData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapBasicData,
+    >,
+    pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+    pub gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
+    >,
+    pub playerSpecificSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSpecificSettings,
+    >,
+    pub practiceSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PracticeSettings,
+    >,
     pub useTestNoteCutSoundEffects: bool,
-    pub targetEnvironmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
-    pub originalEnvironmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
-    pub colorScheme: *mut crate::GlobalNamespace::ColorScheme,
+    pub targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentInfoSO,
+    >,
+    pub originalEnvironmentInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentInfoSO,
+    >,
+    pub colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
     pub recordingToolData: crate::System::Nullable_1<
         crate::GlobalNamespace::RecordingToolManager_SetupData,
     >,
-    pub environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
-    pub _songAudioClip_k__BackingField: *mut crate::UnityEngine::AudioClip,
-    pub _beatmapLevelData_k__BackingField: *mut crate::GlobalNamespace::IBeatmapLevelData,
-    pub _transformedBeatmapData_k__BackingField: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub _beatmapLevelsEntitlementModel: *mut crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
-    pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
-    pub _beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
+    pub environmentsListModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentsListModel,
+    >,
+    pub _songAudioClip_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AudioClip,
+    >,
+    pub _beatmapLevelData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IBeatmapLevelData,
+    >,
+    pub _transformedBeatmapData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IReadonlyBeatmapData,
+    >,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub _beatmapLevelsEntitlementModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
+    >,
+    pub _audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioClipAsyncLoader,
+    >,
+    pub _beatmapDataLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataLoader,
+    >,
     pub _allowNullBeatmapLevelData: bool,
     pub _enableBeatmapDataCaching: bool,
 }

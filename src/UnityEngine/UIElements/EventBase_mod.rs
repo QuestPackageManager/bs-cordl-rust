@@ -8,16 +8,26 @@ pub struct EventBase {
     pub _eventId_k__BackingField: u64,
     pub _triggerEventId_k__BackingField: u64,
     pub _propagation_k__BackingField: crate::UnityEngine::UIElements::EventBase_EventPropagation,
-    pub _path_k__BackingField: *mut crate::UnityEngine::UIElements::PropagationPaths,
+    pub _path_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::PropagationPaths,
+    >,
     pub _lifeCycleStatus_k__BackingField: crate::UnityEngine::UIElements::EventBase_LifeCycleStatus,
-    pub _leafTarget_k__BackingField: *mut crate::UnityEngine::UIElements::IEventHandler,
-    pub m_Target: *mut crate::UnityEngine::UIElements::IEventHandler,
-    pub _skipElements_k__BackingField: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::IEventHandler,
+    pub _leafTarget_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IEventHandler,
+    >,
+    pub m_Target: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IEventHandler,
+    >,
+    pub _skipElements_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::IEventHandler,
+        >,
     >,
     pub _propagationPhase_k__BackingField: crate::UnityEngine::UIElements::PropagationPhase,
-    pub m_CurrentTarget: *mut crate::UnityEngine::UIElements::IEventHandler,
-    pub m_ImguiEvent: *mut crate::UnityEngine::Event,
+    pub m_CurrentTarget: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IEventHandler,
+    >,
+    pub m_ImguiEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
     pub _originalMousePosition_k__BackingField: crate::UnityEngine::Vector2,
 }
 #[cfg(feature = "UnityEngine+UIElements+EventBase")]

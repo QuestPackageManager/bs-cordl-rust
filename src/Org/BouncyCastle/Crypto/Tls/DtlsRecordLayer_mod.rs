@@ -3,23 +3,47 @@
 #[derive(Debug)]
 pub struct DtlsRecordLayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mTransport: *mut crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport,
-    pub mContext: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
-    pub mPeer: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsPeer,
-    pub mRecordQueue: *mut crate::Org::BouncyCastle::Crypto::Tls::ByteQueue,
+    pub mTransport: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport,
+    >,
+    pub mContext: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+    >,
+    pub mPeer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsPeer>,
+    pub mRecordQueue: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::ByteQueue,
+    >,
     pub mClosed: bool,
     pub mFailed: bool,
-    pub mReadVersion: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
-    pub mWriteVersion: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
+    pub mReadVersion: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
+    >,
+    pub mWriteVersion: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
+    >,
     pub mInHandshake: bool,
     pub mPlaintextLimit: i32,
-    pub mCurrentEpoch: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsEpoch,
-    pub mPendingEpoch: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsEpoch,
-    pub mReadEpoch: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsEpoch,
-    pub mWriteEpoch: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsEpoch,
-    pub mRetransmit: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit,
-    pub mRetransmitEpoch: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsEpoch,
-    pub mRetransmitTimeout: *mut crate::Org::BouncyCastle::Crypto::Tls::Timeout,
+    pub mCurrentEpoch: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::DtlsEpoch,
+    >,
+    pub mPendingEpoch: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::DtlsEpoch,
+    >,
+    pub mReadEpoch: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::DtlsEpoch,
+    >,
+    pub mWriteEpoch: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::DtlsEpoch,
+    >,
+    pub mRetransmit: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit,
+    >,
+    pub mRetransmitEpoch: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::DtlsEpoch,
+    >,
+    pub mRetransmitTimeout: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::Timeout,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsRecordLayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

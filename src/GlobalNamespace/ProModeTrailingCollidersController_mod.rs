@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct ProModeTrailingCollidersController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _mainSmallCuttableBySaber: *mut crate::GlobalNamespace::BoxCuttableBySaber,
-    pub _trailingSmallCuttableBySaberList: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BoxCuttableBySaber,
+    pub _mainSmallCuttableBySaber: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BoxCuttableBySaber,
     >,
-    pub _noteMovement: *mut crate::GlobalNamespace::NoteMovement,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _trailingSmallCuttableBySaberList: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BoxCuttableBySaber,
+        >,
+    >,
+    pub _noteMovement: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMovement>,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "ProModeTrailingCollidersController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,23 +3,33 @@
 #[derive(Debug)]
 pub struct SongProgressUIController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _slider: *mut crate::UnityEngine::UI::Slider,
-    pub _progressImage: *mut crate::UnityEngine::UI::Image,
-    pub _durationMinutesText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _durationSecondsText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _progressMinutesText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _progressSecondsText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _durationRectTransform: *mut crate::UnityEngine::RectTransform,
+    pub _slider: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Slider>,
+    pub _progressImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _durationMinutesText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _durationSecondsText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _progressMinutesText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _progressSecondsText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _durationRectTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
+    >,
     pub _durationTextOffsetShort: f32,
     pub _durationTextOffsetLong: f32,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _songController: *mut crate::GlobalNamespace::SongController,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
+    pub _songController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongController,
+    >,
     pub _prevMinutes: i32,
     pub _prevSeconds: i32,
-    pub _stringBuilder: *mut crate::System::Text::StringBuilder,
-    pub _progressImageRectTransform: *mut crate::UnityEngine::RectTransform,
+    pub _stringBuilder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    pub _progressImageRectTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
+    >,
     pub _songLength: f32,
-    pub _progressMinutesFormatString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _progressMinutesFormatString: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _songDidFinish: bool,
 }
 #[cfg(feature = "SongProgressUIController")]

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LevelFailedTextEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _animator: *mut crate::UnityEngine::Animator,
+    pub _animator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
 }
 #[cfg(feature = "LevelFailedTextEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

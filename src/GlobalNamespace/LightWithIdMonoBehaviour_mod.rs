@@ -4,7 +4,9 @@
 pub struct LightWithIdMonoBehaviour {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _ID: i32,
-    pub _lightManager: *mut crate::GlobalNamespace::LightWithIdManager,
+    pub _lightManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightWithIdManager,
+    >,
     pub _isRegistered: bool,
 }
 #[cfg(feature = "LightWithIdMonoBehaviour")]

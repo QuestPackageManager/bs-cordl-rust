@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct Button {
     __cordl_parent: crate::UnityEngine::UI::Selectable,
-    pub m_OnClick: *mut crate::UnityEngine::UI::Button_ButtonClickedEvent,
+    pub m_OnClick: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Button_ButtonClickedEvent,
+    >,
 }
 #[cfg(feature = "UnityEngine+UI+Button")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct LimitAvatarPoseRestriction {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _parameters: *mut crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction_Parameters,
+    pub _parameters: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction_Parameters,
+    >,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

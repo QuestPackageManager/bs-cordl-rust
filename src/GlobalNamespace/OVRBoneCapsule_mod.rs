@@ -4,8 +4,12 @@
 pub struct OVRBoneCapsule {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _BoneIndex_k__BackingField: i16,
-    pub _CapsuleRigidbody_k__BackingField: *mut crate::UnityEngine::Rigidbody,
-    pub _CapsuleCollider_k__BackingField: *mut crate::UnityEngine::CapsuleCollider,
+    pub _CapsuleRigidbody_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Rigidbody,
+    >,
+    pub _CapsuleCollider_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::CapsuleCollider,
+    >,
 }
 #[cfg(feature = "OVRBoneCapsule")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

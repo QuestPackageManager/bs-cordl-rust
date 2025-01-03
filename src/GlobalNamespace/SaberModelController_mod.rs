@@ -3,15 +3,21 @@
 #[derive(Debug)]
 pub struct SaberModelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _saberTrail: *mut crate::GlobalNamespace::SaberTrail,
-    pub _setSaberGlowColors: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SetSaberGlowColor,
+    pub _saberTrail: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberTrail>,
+    pub _setSaberGlowColors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SetSaberGlowColor,
+        >,
     >,
-    pub _setSaberFakeGlowColors: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SetSaberFakeGlowColor,
+    pub _setSaberFakeGlowColors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SetSaberFakeGlowColor,
+        >,
     >,
-    pub _saberLight: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
+    pub _saberLight: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TubeBloomPrePassLight,
+    >,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
 }
 #[cfg(feature = "SaberModelController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct Queue_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _array: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub _array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _head: i32,
     pub _tail: i32,
     pub _size: i32,
     pub _version: i32,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Collections+Generic+Queue_1")]
@@ -459,9 +459,9 @@ for crate::System::Collections::Generic::Queue_1<T> {
 }
 #[cfg(feature = "System+Collections+Generic+Queue_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Queue_1_Enumerator<T: quest_hook::libil2cpp::Type> {
-    pub _q: *mut crate::System::Collections::Generic::Queue_1<T>,
+    pub _q: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Queue_1<T>>,
     pub _version: i32,
     pub _index: i32,
     pub _currentElement: T,

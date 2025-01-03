@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalActivePlayerGameplayAnimator {
     __cordl_parent: crate::GlobalNamespace::MultiplayerGameplayAnimator,
-    pub _coreGameHUDController: *mut crate::GlobalNamespace::CoreGameHUDController,
-    pub _multiplayerPositionHUDController: *mut crate::GlobalNamespace::MultiplayerPositionHUDController,
-    pub _levelEndActionsPublisher: *mut crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
-    pub _fadeOutHUDTween: *mut crate::Tweening::FloatTween,
+    pub _coreGameHUDController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CoreGameHUDController,
+    >,
+    pub _multiplayerPositionHUDController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerPositionHUDController,
+    >,
+    pub _levelEndActionsPublisher: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
+    >,
+    pub _fadeOutHUDTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
     pub _initialized: bool,
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerGameplayAnimator")]

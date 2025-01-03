@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct ErrorMsgContent {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub pkiStatusInfo: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo,
-    pub errorCode: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub errorDetails: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiFreeText,
+    pub pkiStatusInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cmp::PkiStatusInfo,
+    >,
+    pub errorCode: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub errorDetails: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cmp::PkiFreeText,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+ErrorMsgContent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CmsProcessableFile {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _file: *mut crate::System::IO::FileInfo,
+    pub _file: quest_hook::libil2cpp::Gc<crate::System::IO::FileInfo>,
     pub _bufSize: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsProcessableFile")]

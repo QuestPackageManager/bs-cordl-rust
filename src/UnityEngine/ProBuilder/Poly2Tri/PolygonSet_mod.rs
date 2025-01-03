@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PolygonSet {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _polygons: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
+    pub _polygons: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PolygonSet")]

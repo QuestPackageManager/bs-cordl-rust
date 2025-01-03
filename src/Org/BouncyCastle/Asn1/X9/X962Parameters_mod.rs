@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct X962Parameters {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub _params: *mut crate::Org::BouncyCastle::Asn1::Asn1Object,
+    pub _params: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962Parameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

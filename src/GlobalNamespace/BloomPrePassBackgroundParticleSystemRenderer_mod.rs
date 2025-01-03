@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundParticleSystemRenderer {
     __cordl_parent: crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore,
-    pub _particleSystem: *mut crate::UnityEngine::ParticleSystem,
-    pub _renderer: *mut crate::UnityEngine::Renderer,
+    pub _particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+    pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
 }
 #[cfg(feature = "BloomPrePassBackgroundParticleSystemRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

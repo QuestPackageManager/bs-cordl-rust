@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct BufferedIesCipher {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::BufferedCipherBase,
-    pub engine: *mut crate::Org::BouncyCastle::Crypto::Engines::IesEngine,
+    pub engine: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Engines::IesEngine,
+    >,
     pub forEncryption: bool,
-    pub buffer: *mut crate::System::IO::MemoryStream,
+    pub buffer: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+BufferedIesCipher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

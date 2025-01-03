@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct SpawnRotationChevron {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    pub _lights: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+    pub _lights: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+        >,
     >,
     pub _color: crate::UnityEngine::Color,
     pub _lightAmount: f32,

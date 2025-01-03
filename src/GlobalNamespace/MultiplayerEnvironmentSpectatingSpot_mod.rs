@@ -6,10 +6,14 @@ pub struct MultiplayerEnvironmentSpectatingSpot {
     pub _preferredSpectatingSpot: bool,
     pub _displaySpotNumber: bool,
     pub _spotNumber: i32,
-    pub _spectatingSpotManager: *mut crate::GlobalNamespace::MultiplayerSpectatingSpotManager,
-    pub _activePlayersTimeOffsetAverage: *mut crate::GlobalNamespace::MultiplayerActivePlayersTimeOffsetAverage,
-    pub hasBeenRemovedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+    pub _spectatingSpotManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerSpectatingSpotManager,
+    >,
+    pub _activePlayersTimeOffsetAverage: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerActivePlayersTimeOffsetAverage,
+    >,
+    pub hasBeenRemovedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
     >,
 }
 #[cfg(feature = "MultiplayerEnvironmentSpectatingSpot")]

@@ -180,7 +180,7 @@ for crate::Mono::Security::X509::X509CertificateCollection {
 #[derive(Debug)]
 pub struct X509CertificateCollection_X509CertificateEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub enumerator: *mut crate::System::Collections::IEnumerator,
+    pub enumerator: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
 }
 #[cfg(
     feature = "Mono+Security+X509+X509CertificateCollection+X509CertificateEnumerator"

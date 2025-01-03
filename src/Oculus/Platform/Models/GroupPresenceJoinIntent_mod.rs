@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct GroupPresenceJoinIntent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub DeeplinkMessage: *mut quest_hook::libil2cpp::Il2CppString,
-    pub DestinationApiName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub LobbySessionId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub MatchSessionId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub DeeplinkMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub DestinationApiName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub LobbySessionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub MatchSessionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Oculus+Platform+Models+GroupPresenceJoinIntent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

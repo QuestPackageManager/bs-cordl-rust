@@ -3,14 +3,16 @@
 #[derive(Debug)]
 pub struct MissionGameplaySceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
-    pub missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MissionObjective,
+    pub missionObjectives: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionObjective>,
     >,
     pub autoRestart: bool,
     pub beatmapKey: crate::GlobalNamespace::BeatmapKey,
-    pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-    pub gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-    pub backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+    pub gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
+    >,
+    pub backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "MissionGameplaySceneSetupData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,16 +3,24 @@
 #[derive(Debug)]
 pub struct JsonSchemaBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _stack: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+    pub _stack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        >,
     >,
-    pub _resolver: *mut crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
-    pub _documentSchemas: *mut crate::System::Collections::Generic::IDictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+    pub _resolver: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
     >,
-    pub _currentSchema: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
-    pub _rootSchema: *mut crate::Newtonsoft::Json::Linq::JObject,
+    pub _documentSchemas: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IDictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        >,
+    >,
+    pub _currentSchema: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Schema::JsonSchema,
+    >,
+    pub _rootSchema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JObject>,
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

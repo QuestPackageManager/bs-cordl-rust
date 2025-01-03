@@ -1,8 +1,8 @@
 #[cfg(feature = "System+Reflection+ParameterModifier")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ParameterModifier {
-    pub _byRef: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
+    pub _byRef: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
 }
 #[cfg(feature = "System+Reflection+ParameterModifier")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

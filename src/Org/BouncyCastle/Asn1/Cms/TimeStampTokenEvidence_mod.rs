@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct TimeStampTokenEvidence {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub timeStampAndCrls: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Asn1::Cms::TimeStampAndCrl,
+    pub timeStampAndCrls: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::Cms::TimeStampAndCrl,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+TimeStampTokenEvidence")]

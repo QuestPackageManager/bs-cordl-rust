@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Pose")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Pose {
     pub position: crate::UnityEngine::Vector3,
     pub rotation: crate::UnityEngine::Quaternion,

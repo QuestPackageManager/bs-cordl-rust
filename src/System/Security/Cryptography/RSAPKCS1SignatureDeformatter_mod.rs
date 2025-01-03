@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct RSAPKCS1SignatureDeformatter {
     __cordl_parent: crate::System::Security::Cryptography::AsymmetricSignatureDeformatter,
-    pub rsa: *mut crate::System::Security::Cryptography::RSA,
-    pub hashName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub rsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
+    pub hashName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureDeformatter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

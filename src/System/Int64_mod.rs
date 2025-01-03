@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Int64")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Int64 {
     pub m_value: i64,
 }

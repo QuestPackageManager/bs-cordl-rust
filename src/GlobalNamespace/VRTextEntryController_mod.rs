@@ -3,16 +3,16 @@
 #[derive(Debug)]
 pub struct VRTextEntryController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _uiKeyboard: *mut crate::GlobalNamespace::UIKeyboard,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
-    pub _cursorText: *mut crate::TMPro::TextMeshProUGUI,
+    pub _uiKeyboard: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UIKeyboard>,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _cursorText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _maxLength: i32,
     pub _allowBlank: bool,
-    pub textDidChangeEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub textDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub okButtonWasPressedEvent: *mut crate::System::Action,
-    pub cancelButtonWasPressedEvent: *mut crate::System::Action,
+    pub okButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub cancelButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _stopBlinkingCursor: bool,
 }
 #[cfg(feature = "VRTextEntryController")]

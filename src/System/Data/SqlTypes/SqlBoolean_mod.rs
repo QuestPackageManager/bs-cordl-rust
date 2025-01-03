@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Data+SqlTypes+SqlBoolean")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SqlBoolean {
     pub m_value: u8,
 }

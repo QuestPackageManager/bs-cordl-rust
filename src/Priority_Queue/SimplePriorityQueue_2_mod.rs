@@ -6,21 +6,33 @@ pub struct SimplePriorityQueue_2<
     TPriority: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _queue: *mut crate::Priority_Queue::GenericPriorityQueue_2<
-        *mut crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<TItem, TPriority>,
-        TPriority,
+    pub _queue: quest_hook::libil2cpp::Gc<
+        crate::Priority_Queue::GenericPriorityQueue_2<
+            *mut crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<
+                TItem,
+                TPriority,
+            >,
+            TPriority,
+        >,
     >,
-    pub _itemToNodesCache: *mut crate::System::Collections::Generic::Dictionary_2<
-        TItem,
-        *mut crate::System::Collections::Generic::IList_1<
+    pub _itemToNodesCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            TItem,
+            *mut crate::System::Collections::Generic::IList_1<
+                *mut crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<
+                    TItem,
+                    TPriority,
+                >,
+            >,
+        >,
+    >,
+    pub _nullNodesCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
             *mut crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<
                 TItem,
                 TPriority,
             >,
         >,
-    >,
-    pub _nullNodesCache: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<TItem, TPriority>,
     >,
     __cordl_phantom_TItem: std::marker::PhantomData<TItem>,
     __cordl_phantom_TPriority: std::marker::PhantomData<TPriority>,

@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct AllElementsContentValidator {
     __cordl_parent: crate::System::Xml::Schema::ContentValidator,
-    pub elements: *mut crate::System::Collections::Hashtable,
-    pub particles: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub elements: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub particles: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub isRequired: *mut crate::System::Xml::Schema::BitSet,
+    pub isRequired: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
     pub countRequired: i32,
 }
 #[cfg(feature = "System+Xml+Schema+AllElementsContentValidator")]

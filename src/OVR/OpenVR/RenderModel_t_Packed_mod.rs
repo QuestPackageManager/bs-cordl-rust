@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+RenderModel_t_Packed")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RenderModel_t_Packed {
     pub rVertexData: crate::System::IntPtr,
     pub unVertexCount: u32,

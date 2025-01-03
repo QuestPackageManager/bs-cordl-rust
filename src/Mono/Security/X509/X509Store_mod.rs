@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct X509Store {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _storePath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _certificates: *mut crate::Mono::Security::X509::X509CertificateCollection,
-    pub _crls: *mut crate::System::Collections::ArrayList,
+    pub _storePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _certificates: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::X509::X509CertificateCollection,
+    >,
+    pub _crls: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _crl: bool,
     pub _newFormat: bool,
 }

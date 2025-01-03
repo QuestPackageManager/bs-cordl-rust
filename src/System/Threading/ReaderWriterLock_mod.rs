@@ -7,8 +7,8 @@ pub struct ReaderWriterLock {
     pub state: i32,
     pub readers: i32,
     pub writer_lock_owner: i32,
-    pub writer_queue: *mut crate::System::Threading::LockQueue,
-    pub reader_locks: *mut crate::System::Collections::Hashtable,
+    pub writer_queue: quest_hook::libil2cpp::Gc<crate::System::Threading::LockQueue>,
+    pub reader_locks: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Threading+ReaderWriterLock")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

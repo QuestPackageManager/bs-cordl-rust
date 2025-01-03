@@ -3,18 +3,20 @@
 #[derive(Debug)]
 pub struct AvatarSelectionView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _createButton: *mut crate::UnityEngine::UI::Button,
-    pub _editButton: *mut crate::UnityEngine::UI::Button,
-    pub _setAsPreferredButton: *mut crate::UnityEngine::UI::Button,
-    pub _currentlyPreferredText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _rectTransform: *mut crate::UnityEngine::RectTransform,
-    pub _backgroundImageView: *mut crate::HMUI::ImageView,
+    pub _createButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _editButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _setAsPreferredButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _currentlyPreferredText: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TextMeshProUGUI,
+    >,
+    pub _rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub _backgroundImageView: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
     pub _preferredColor: crate::UnityEngine::Color,
     pub _normalColor: crate::UnityEngine::Color,
-    pub didPressEditButtonEvent: *mut crate::System::Action,
-    pub didPressCreateButtonEvent: *mut crate::System::Action,
-    pub didPressPreferredButtonEvent: *mut crate::System::Action,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub didPressEditButtonEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub didPressCreateButtonEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub didPressPreferredButtonEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarSelectionView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

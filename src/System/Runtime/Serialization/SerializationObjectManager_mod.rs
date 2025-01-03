@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct SerializationObjectManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _objectSeenTable: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _objectSeenTable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
     pub _context: crate::System::Runtime::Serialization::StreamingContext,
-    pub _onSerializedHandler: *mut crate::System::Runtime::Serialization::SerializationEventHandler,
+    pub _onSerializedHandler: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::SerializationEventHandler,
+    >,
 }
 #[cfg(feature = "System+Runtime+Serialization+SerializationObjectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

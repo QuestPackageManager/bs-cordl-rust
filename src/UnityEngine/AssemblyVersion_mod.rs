@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+AssemblyVersion")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AssemblyVersion {
     pub major: u16,
     pub minor: u16,

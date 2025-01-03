@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct OtherRevRefs {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub otherRevRefType: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub otherRevRefs: *mut crate::Org::BouncyCastle::Asn1::Asn1Object,
+    pub otherRevRefType: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub otherRevRefs: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Object,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Esf+OtherRevRefs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

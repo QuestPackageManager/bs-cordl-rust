@@ -3,22 +3,24 @@
 #[derive(Debug)]
 pub struct MemberDescriptor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub displayName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub nameHash: i32,
-    pub attributeCollection: *mut crate::System::ComponentModel::AttributeCollection,
-    pub attributes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Attribute,
+    pub attributeCollection: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::AttributeCollection,
     >,
-    pub originalAttributes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Attribute,
+    pub attributes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+    >,
+    pub originalAttributes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
     >,
     pub attributesFiltered: bool,
     pub attributesFilled: bool,
     pub metadataVersion: i32,
-    pub category: *mut quest_hook::libil2cpp::Il2CppString,
-    pub description: *mut quest_hook::libil2cpp::Il2CppString,
-    pub lockCookie: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub category: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub lockCookie: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+ComponentModel+MemberDescriptor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

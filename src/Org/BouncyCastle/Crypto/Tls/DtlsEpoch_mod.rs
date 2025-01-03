@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct DtlsEpoch {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mReplayWindow: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsReplayWindow,
+    pub mReplayWindow: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::DtlsReplayWindow,
+    >,
     pub mEpoch: i32,
-    pub mCipher: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCipher,
+    pub mCipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCipher,
+    >,
     pub mSequenceNumber: i64,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsEpoch")]

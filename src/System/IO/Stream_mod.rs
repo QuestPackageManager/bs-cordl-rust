@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct Stream {
     __cordl_parent: crate::System::MarshalByRefObject,
-    pub _activeReadWriteTask: *mut crate::System::IO::Stream_ReadWriteTask,
-    pub _asyncActiveSemaphore: *mut crate::System::Threading::SemaphoreSlim,
+    pub _activeReadWriteTask: quest_hook::libil2cpp::Gc<
+        crate::System::IO::Stream_ReadWriteTask,
+    >,
+    pub _asyncActiveSemaphore: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SemaphoreSlim,
+    >,
 }
 #[cfg(feature = "System+IO+Stream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -802,9 +806,9 @@ impl AsMut<crate::System::IDisposable> for crate::System::IO::Stream {
 }
 #[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Stream_ReadWriteParameters {
-    pub Buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub Offset: i32,
     pub Count: i32,
 }
@@ -833,12 +837,12 @@ pub struct Stream_ReadWriteTask {
     __cordl_parent: crate::System::Threading::Tasks::Task_1<i32>,
     pub _isRead: bool,
     pub _apm: bool,
-    pub _stream: *mut crate::System::IO::Stream,
-    pub _buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _offset: i32,
     pub _count: i32,
-    pub _callback: *mut crate::System::AsyncCallback,
-    pub _context: *mut crate::System::Threading::ExecutionContext,
+    pub _callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+    pub _context: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
 }
 #[cfg(feature = "System+IO+Stream+ReadWriteTask")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -979,10 +983,14 @@ for crate::System::IO::Stream_ReadWriteTask {
 #[derive(Debug)]
 pub struct Stream_SynchronousAsyncResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _stateObject: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _stateObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _isWrite: bool,
-    pub _waitHandle: *mut crate::System::Threading::ManualResetEvent,
-    pub _exceptionInfo: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+    pub _waitHandle: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ManualResetEvent,
+    >,
+    pub _exceptionInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+    >,
     pub _endXxxCalled: bool,
     pub _bytesRead: i32,
 }
@@ -1163,14 +1171,16 @@ for crate::System::IO::Stream_SynchronousAsyncResult {
 }
 #[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Stream___ReadAsync_g__FinishReadAsync_44_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder_1<
         i32,
     >,
-    pub readTask: *mut crate::System::Threading::Tasks::Task_1<i32>,
-    pub localBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub readTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<i32>,
+    >,
+    pub localBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub localDestination: crate::System::Memory_1<u8>,
     pub __u__1: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<
         i32,

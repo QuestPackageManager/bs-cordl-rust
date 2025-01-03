@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct AlgorithmIdentifier {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub algorithm: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub parameters: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    pub algorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub parameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+AlgorithmIdentifier")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

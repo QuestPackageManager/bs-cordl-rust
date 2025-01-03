@@ -5,7 +5,9 @@ pub struct JsonReaderException {
     __cordl_parent: crate::Newtonsoft::Json::JsonException,
     pub _LineNumber_k__BackingField: i32,
     pub _LinePosition_k__BackingField: i32,
-    pub _Path_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Path_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+JsonReaderException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

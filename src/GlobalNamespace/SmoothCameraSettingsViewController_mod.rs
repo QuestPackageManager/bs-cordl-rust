@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct SmoothCameraSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _enabledToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _fovSettingsList: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _enabledToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _fovSettingsList: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FormattedFloatListSettingsController,
+    >,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
 }
 #[cfg(feature = "SmoothCameraSettingsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

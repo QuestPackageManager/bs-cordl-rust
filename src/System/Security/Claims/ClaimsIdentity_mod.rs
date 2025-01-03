@@ -3,25 +3,43 @@
 #[derive(Debug)]
 pub struct ClaimsIdentity {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_userSerializationData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub m_instanceClaims: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Security::Claims::Claim,
+    pub m_userSerializationData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
-    pub m_externalClaims: *mut crate::System::Collections::ObjectModel::Collection_1<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
+    pub m_instanceClaims: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
             *mut crate::System::Security::Claims::Claim,
         >,
     >,
-    pub m_nameType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_roleType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_version: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_actor: *mut crate::System::Security::Claims::ClaimsIdentity,
-    pub m_authenticationType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_bootstrapContext: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_label: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_serializedNameType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_serializedRoleType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_serializedClaims: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_externalClaims: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ObjectModel::Collection_1<
+            *mut crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Security::Claims::Claim,
+            >,
+        >,
+    >,
+    pub m_nameType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_roleType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_actor: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Claims::ClaimsIdentity,
+    >,
+    pub m_authenticationType: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_bootstrapContext: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub m_label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_serializedNameType: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_serializedRoleType: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_serializedClaims: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Security+Claims+ClaimsIdentity")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct StringWriter {
     __cordl_parent: crate::System::IO::TextWriter,
-    pub _sb: *mut crate::System::Text::StringBuilder,
+    pub _sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub _isOpen: bool,
 }
 #[cfg(feature = "System+IO+StringWriter")]

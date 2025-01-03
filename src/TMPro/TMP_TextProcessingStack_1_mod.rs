@@ -1,8 +1,8 @@
 #[cfg(feature = "TMPro+TMP_TextProcessingStack_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TMP_TextProcessingStack_1<T: quest_hook::libil2cpp::Type> {
-    pub itemStack: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub itemStack: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub index: i32,
     pub m_DefaultItem: T,
     pub m_Capacity: i32,

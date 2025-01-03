@@ -3,16 +3,22 @@
 #[derive(Debug)]
 pub struct SongStartSyncController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub _gameplayRpcManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IGameplayRpcManager,
+    >,
     pub _waitStartTime: f32,
     pub _songStarted: bool,
     pub _startTime: f32,
-    pub _sessionGameId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _songStartHandler: *mut crate::GlobalNamespace::SongStartHandler,
-    pub syncStartFailedEvent: *mut crate::System::Action,
-    pub syncStartSuccessEvent: *mut crate::System::Action_1<i64>,
-    pub syncResumeEvent: *mut crate::System::Action_1<i64>,
+    pub _sessionGameId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _songStartHandler: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongStartHandler,
+    >,
+    pub syncStartFailedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub syncStartSuccessEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>,
+    pub syncResumeEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>,
 }
 #[cfg(feature = "SongStartSyncController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

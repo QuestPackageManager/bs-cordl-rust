@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct InlineStyleAccess {
     __cordl_parent: crate::UnityEngine::UIElements::StyleValueCollection,
-    pub m_ValuesManaged: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::StyleSheets::StyleValueManaged,
+    pub m_ValuesManaged: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::StyleSheets::StyleValueManaged,
+        >,
     >,
-    pub _ve_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub _ve_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub m_HasInlineCursor: bool,
     pub m_InlineCursor: crate::UnityEngine::UIElements::StyleCursor,
     pub m_HasInlineTextShadow: bool,
@@ -1004,12 +1008,14 @@ for crate::UnityEngine::UIElements::InlineStyleAccess {
 }
 #[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess+InlineRule")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InlineStyleAccess_InlineRule {
-    pub sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
-    pub rule: *mut crate::UnityEngine::UIElements::StyleRule,
-    pub propertyIds: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+    pub sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+    pub rule: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRule>,
+    pub propertyIds: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess+InlineRule")]

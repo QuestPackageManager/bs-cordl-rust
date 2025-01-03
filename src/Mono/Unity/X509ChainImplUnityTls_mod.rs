@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct X509ChainImplUnityTls {
     __cordl_parent: crate::System::Security::Cryptography::X509Certificates::X509ChainImpl,
-    pub elements: *mut crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection,
+    pub elements: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection,
+    >,
     pub nativeCertificateChain: crate::Mono::Unity::UnityTls_unitytls_x509list_ref,
-    pub policy: *mut crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy,
-    pub chainStatusList: *mut crate::System::Collections::Generic::List_1<
-        crate::System::Security::Cryptography::X509Certificates::X509ChainStatus,
+    pub policy: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy,
+    >,
+    pub chainStatusList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::System::Security::Cryptography::X509Certificates::X509ChainStatus,
+        >,
     >,
     pub reverseOrder: bool,
 }

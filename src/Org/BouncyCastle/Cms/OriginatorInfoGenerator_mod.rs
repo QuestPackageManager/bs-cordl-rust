@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct OriginatorInfoGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub origCerts: *mut crate::System::Collections::IList,
-    pub origCrls: *mut crate::System::Collections::IList,
+    pub origCerts: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub origCrls: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+OriginatorInfoGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,15 +3,21 @@
 #[derive(Debug)]
 pub struct BeatmapCharacteristicCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _beatmapCharacteristicsBySerializedName: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _beatmapCharacteristicsBySerializedName: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
     >,
-    pub beatmapCharacteristics: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub beatmapCharacteristics: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
     >,
-    pub disabledBeatmapCharacteristics: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub disabledBeatmapCharacteristics: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapCharacteristicCollection")]

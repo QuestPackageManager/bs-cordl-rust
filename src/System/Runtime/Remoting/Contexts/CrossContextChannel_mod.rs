@@ -119,9 +119,15 @@ for crate::System::Runtime::Remoting::Contexts::CrossContextChannel {
 #[derive(Debug)]
 pub struct CrossContextChannel_ContextRestoreSink {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _next: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    pub _context: *mut crate::System::Runtime::Remoting::Contexts::Context,
-    pub _call: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
+    pub _next: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessageSink,
+    >,
+    pub _context: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Contexts::Context,
+    >,
+    pub _call: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessage,
+    >,
 }
 #[cfg(
     feature = "System+Runtime+Remoting+Contexts+CrossContextChannel+ContextRestoreSink"

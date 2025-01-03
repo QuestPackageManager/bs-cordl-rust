@@ -4,8 +4,8 @@
 pub struct ValueTypeFixupInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _containerID: i64,
-    pub _parentField: *mut crate::System::Reflection::FieldInfo,
-    pub _parentIndex: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _parentField: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+    pub _parentIndex: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
 #[cfg(feature = "System+Runtime+Serialization+ValueTypeFixupInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

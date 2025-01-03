@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+BoxcastCommand")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BoxcastCommand {
     pub _center_k__BackingField: crate::UnityEngine::Vector3,
     pub _halfExtents_k__BackingField: crate::UnityEngine::Vector3,

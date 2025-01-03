@@ -5,10 +5,12 @@ pub struct ObjectMapInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub objectId: i32,
     pub numMembers: i32,
-    pub memberNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub memberNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub memberTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    pub memberTypes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    >,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectMapInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

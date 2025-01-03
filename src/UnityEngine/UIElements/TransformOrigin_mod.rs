@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+TransformOrigin")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TransformOrigin {
     pub m_X: crate::UnityEngine::UIElements::Length,
     pub m_Y: crate::UnityEngine::UIElements::Length,

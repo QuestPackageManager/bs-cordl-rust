@@ -1,16 +1,20 @@
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LRUCache_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
     pub entryLimit: i32,
-    pub cache: *mut crate::System::Collections::Generic::Dictionary_2<
-        TKey,
-        crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>,
+    pub cache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            TKey,
+            crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>,
+        >,
     >,
-    pub lru: *mut crate::System::Collections::Generic::LinkedList_1<TKey>,
+    pub lru: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedList_1<TKey>,
+    >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -100,12 +104,14 @@ impl<
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LRUCache_2_Entry<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    pub lruNode: *mut crate::System::Collections::Generic::LinkedListNode_1<TKey>,
+    pub lruNode: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedListNode_1<TKey>,
+    >,
     pub Value: TValue,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,

@@ -3,23 +3,34 @@
 #[derive(Debug)]
 pub struct ControllerProfilesSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _profilesDropdown: *mut crate::HMUI::SimpleTextDropdown,
-    pub _handlingToggle: *mut crate::HMUI::ToggleWithCallbacks,
-    pub _interactableCanvasGroups: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::CanvasGroup,
+    pub _profilesDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
+    pub _handlingToggle: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleWithCallbacks>,
+    pub _interactableCanvasGroups: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::CanvasGroup>,
     >,
-    pub _transformSettingsViewControllers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatSaber::GameSettings::ControllersTransformSettings,
+    pub _transformSettingsViewControllers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatSaber::GameSettings::ControllersTransformSettings,
+        >,
     >,
-    pub _buttonsContainer: *mut crate::UnityEngine::GameObject,
-    pub _copyFromLeftButton: *mut crate::UnityEngine::UI::Button,
-    pub _copyFromRightButton: *mut crate::UnityEngine::UI::Button,
-    pub _copyFromProfileButton: *mut crate::UnityEngine::UI::Button,
-    pub _profileModel: *mut crate::BeatSaber::GameSettings::ControllerProfilesModel,
-    pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
-    pub onRequestSelectProfileToCopyFrom: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::ValueTuple_2<*mut quest_hook::libil2cpp::Il2CppString, i32>,
+    pub _buttonsContainer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _copyFromLeftButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _copyFromRightButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _copyFromProfileButton: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Button,
+    >,
+    pub _profileModel: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::GameSettings::ControllerProfilesModel,
+    >,
+    pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
+    pub onRequestSelectProfileToCopyFrom: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                crate::System::ValueTuple_2<
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                    i32,
+                >,
+            >,
         >,
     >,
 }

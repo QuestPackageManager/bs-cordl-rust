@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct BezierSplineEvaluator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _segments: *mut crate::System::Collections::Generic::List_1<
-        crate::GlobalNamespace::BezierCurve,
+    pub _segments: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::GlobalNamespace::BezierCurve>,
     >,
     pub _currentSegmentIndex: i32,
 }
@@ -173,7 +173,7 @@ for crate::GlobalNamespace::BezierSplineEvaluator {
 }
 #[cfg(feature = "BezierSplineEvaluator+CubicSolveResult")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BezierSplineEvaluator_CubicSolveResult {
     pub numberOfSolutions: i32,
     pub solution1: f32,

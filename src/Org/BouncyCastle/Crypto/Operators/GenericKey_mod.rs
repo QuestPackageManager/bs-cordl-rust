@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct GenericKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub algorithmIdentifier: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub representation: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub algorithmIdentifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub representation: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+GenericKey")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

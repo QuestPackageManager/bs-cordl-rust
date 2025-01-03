@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MPInteger {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::BcpgObject,
-    pub val: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub val: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+MPInteger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

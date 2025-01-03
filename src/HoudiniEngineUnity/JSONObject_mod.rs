@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct JSONObject {
     __cordl_parent: crate::HoudiniEngineUnity::JSONNode,
-    pub m_Dict: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::HoudiniEngineUnity::JSONNode,
+    pub m_Dict: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::HoudiniEngineUnity::JSONNode,
+        >,
     >,
     pub _cordl_inline: bool,
 }

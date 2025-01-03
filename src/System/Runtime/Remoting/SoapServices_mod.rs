@@ -206,8 +206,8 @@ for crate::System::Runtime::Remoting::SoapServices {
 #[derive(Debug)]
 pub struct SoapServices_TypeInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Attributes: *mut crate::System::Collections::Hashtable,
-    pub Elements: *mut crate::System::Collections::Hashtable,
+    pub Attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub Elements: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Runtime+Remoting+SoapServices+TypeInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

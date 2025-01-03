@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct NativeMethodAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _IsThreadSafe_k__BackingField: bool,
     pub _IsFreeFunction_k__BackingField: bool,
     pub _ThrowsException_k__BackingField: bool,

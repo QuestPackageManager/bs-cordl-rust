@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct XmlSerializationWriterInterpreter {
     __cordl_parent: crate::System::Xml::Serialization::XmlSerializationWriter,
-    pub _typeMap: *mut crate::System::Xml::Serialization::XmlMapping,
+    pub _typeMap: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlMapping,
+    >,
     pub _format: crate::System::Xml::Serialization::SerializationFormat,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter")]
@@ -451,8 +453,12 @@ for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
 #[derive(Debug)]
 pub struct XmlSerializationWriterInterpreter_CallbackInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _swi: *mut crate::System::Xml::Serialization::XmlSerializationWriterInterpreter,
-    pub _typeMap: *mut crate::System::Xml::Serialization::XmlTypeMapping,
+    pub _swi: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlSerializationWriterInterpreter,
+    >,
+    pub _typeMap: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTypeMapping,
+    >,
 }
 #[cfg(
     feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"

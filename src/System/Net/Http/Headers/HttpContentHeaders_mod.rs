@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HttpContentHeaders {
     __cordl_parent: crate::System::Net::Http::Headers::HttpHeaders,
-    pub content: *mut crate::System::Net::Http::HttpContent,
+    pub content: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpContent>,
 }
 #[cfg(feature = "System+Net+Http+Headers+HttpContentHeaders")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+RangeInt")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RangeInt {
     pub start: i32,
     pub length: i32,

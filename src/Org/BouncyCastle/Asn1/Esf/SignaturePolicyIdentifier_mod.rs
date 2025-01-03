@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SignaturePolicyIdentifier {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub sigPolicy: *mut crate::Org::BouncyCastle::Asn1::Esf::SignaturePolicyId,
+    pub sigPolicy: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Esf::SignaturePolicyId,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Esf+SignaturePolicyIdentifier")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

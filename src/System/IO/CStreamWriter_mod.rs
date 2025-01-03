@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CStreamWriter {
     __cordl_parent: crate::System::IO::StreamWriter,
-    pub driver: *mut crate::System::TermInfoDriver,
+    pub driver: quest_hook::libil2cpp::Gc<crate::System::TermInfoDriver>,
 }
 #[cfg(feature = "System+IO+CStreamWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

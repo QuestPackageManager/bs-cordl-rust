@@ -1,11 +1,13 @@
 #[cfg(feature = "UnityEngine+Playables+PlayableBinding")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PlayableBinding {
-    pub m_StreamName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_SourceObject: *mut crate::UnityEngine::Object,
-    pub m_SourceBindingType: *mut crate::System::Type,
-    pub m_CreateOutputMethod: *mut crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod,
+    pub m_StreamName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_SourceObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    pub m_SourceBindingType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub m_CreateOutputMethod: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod,
+    >,
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableBinding")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

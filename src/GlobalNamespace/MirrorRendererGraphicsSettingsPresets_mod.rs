@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct MirrorRendererGraphicsSettingsPresets {
     __cordl_parent: crate::GlobalNamespace::NamedPresetsSO,
-    pub _presets: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset,
+    pub _presets: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset,
+        >,
     >,
 }
 #[cfg(feature = "MirrorRendererGraphicsSettingsPresets")]

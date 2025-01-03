@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlCachedStream {
     __cordl_parent: crate::System::IO::MemoryStream,
-    pub uri: *mut crate::System::Uri,
+    pub uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
 }
 #[cfg(feature = "System+Xml+XmlCachedStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -6,8 +6,8 @@ pub struct PublicKeyEncSessionPacket {
     pub version: i32,
     pub keyId: i64,
     pub algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
-    pub data: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub data: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<u8>>,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+PublicKeyEncSessionPacket")]

@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct BsonWriter {
     __cordl_parent: crate::Newtonsoft::Json::JsonWriter,
-    pub _writer: *mut crate::Newtonsoft::Json::Bson::BsonBinaryWriter,
-    pub _root: *mut crate::Newtonsoft::Json::Bson::BsonToken,
-    pub _parent: *mut crate::Newtonsoft::Json::Bson::BsonToken,
-    pub _propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _writer: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Bson::BsonBinaryWriter,
+    >,
+    pub _root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>,
+    pub _parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>,
+    pub _propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

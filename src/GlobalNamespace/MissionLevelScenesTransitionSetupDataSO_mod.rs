@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct MissionLevelScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
-    pub _missionGameplaySceneInfo: *mut crate::GlobalNamespace::SceneInfo,
-    pub _gameCoreSceneInfo: *mut crate::GlobalNamespace::SceneInfo,
-    pub didFinishEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-        *mut crate::GlobalNamespace::MissionCompletionResults,
+    pub _missionGameplaySceneInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SceneInfo,
     >,
-    pub _missionId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::MissionCompletionResults,
+        >,
+    >,
+    pub _missionId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "MissionLevelScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

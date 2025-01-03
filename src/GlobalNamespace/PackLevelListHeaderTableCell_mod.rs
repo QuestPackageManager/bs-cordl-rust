@@ -4,11 +4,13 @@
 pub struct PackLevelListHeaderTableCell {
     __cordl_parent: crate::HMUI::TableCell,
     pub _selectedHighlightElementsColor: crate::UnityEngine::Color,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
-    pub _bgImage: *mut crate::UnityEngine::UI::Image,
-    pub _highlightImage: *mut crate::UnityEngine::UI::Image,
-    pub _arrowImage: *mut crate::UnityEngine::UI::Image,
-    pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _bgImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _highlightImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _arrowImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _cancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
 }
 #[cfg(feature = "PackLevelListHeaderTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

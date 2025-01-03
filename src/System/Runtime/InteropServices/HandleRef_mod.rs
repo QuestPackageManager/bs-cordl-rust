@@ -1,8 +1,8 @@
 #[cfg(feature = "System+Runtime+InteropServices+HandleRef")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HandleRef {
-    pub _wrapper: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _wrapper: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _handle: crate::System::IntPtr,
 }
 #[cfg(feature = "System+Runtime+InteropServices+HandleRef")]

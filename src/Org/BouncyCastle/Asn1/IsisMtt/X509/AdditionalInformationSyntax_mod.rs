@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AdditionalInformationSyntax {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub information: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+    pub information: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

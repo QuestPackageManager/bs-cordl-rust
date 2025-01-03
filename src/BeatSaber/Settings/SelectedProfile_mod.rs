@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+Settings+SelectedProfile")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SelectedProfile {
     pub builtIn: bool,
     pub index: i32,

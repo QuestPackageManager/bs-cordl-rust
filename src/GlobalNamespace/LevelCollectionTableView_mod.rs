@@ -3,34 +3,56 @@
 #[derive(Debug)]
 pub struct LevelCollectionTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _tableView: *mut crate::HMUI::TableView,
-    pub _alphabetScrollbar: *mut crate::HMUI::AlphabetScrollbar,
-    pub _levelCellPrefab: *mut crate::GlobalNamespace::LevelListTableCell,
-    pub _levelCellsReuseIdentifier: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _packCellPrefab: *mut crate::GlobalNamespace::LevelPackHeaderTableCell,
-    pub _packCellsReuseIdentifier: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _cellHeight: f32,
-    pub _additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
-    pub _entitlementModel: *mut crate::GlobalNamespace::IEntitlementModel,
-    pub _beatmapLevelsPromoModel: *mut crate::GlobalNamespace::BeatmapLevelsPromoModel,
-    pub didSelectLevelEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::LevelCollectionTableView,
-        *mut crate::GlobalNamespace::BeatmapLevel,
+    pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+    pub _alphabetScrollbar: quest_hook::libil2cpp::Gc<crate::HMUI::AlphabetScrollbar>,
+    pub _levelCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelListTableCell,
     >,
-    pub didSelectHeaderEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::LevelCollectionTableView,
+    pub _levelCellsReuseIdentifier: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _packCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelPackHeaderTableCell,
+    >,
+    pub _packCellsReuseIdentifier: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _cellHeight: f32,
+    pub _additionalContentModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAdditionalContentModel,
+    >,
+    pub _entitlementModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IEntitlementModel,
+    >,
+    pub _beatmapLevelsPromoModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsPromoModel,
+    >,
+    pub didSelectLevelEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::LevelCollectionTableView,
+            *mut crate::GlobalNamespace::BeatmapLevel,
+        >,
+    >,
+    pub didSelectHeaderEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::LevelCollectionTableView>,
     >,
     pub _isInitialized: bool,
-    pub _beatmapLevels: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::GlobalNamespace::BeatmapLevel,
+    pub _beatmapLevels: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::BeatmapLevel,
+        >,
     >,
     pub _selectedRow: i32,
-    pub _selectedBeatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-    pub _headerSprite: *mut crate::UnityEngine::Sprite,
-    pub _headerText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _selectedBeatmapLevel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevel,
+    >,
+    pub _headerSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _headerText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _showLevelPackHeader: bool,
-    pub _favoriteLevelIds: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _favoriteLevelIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "LevelCollectionTableView")]

@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct ConnectedPlayerOptionalAvatarDataProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub dataDidChangeEvent: *mut crate::System::Action_1<
-        crate::BeatSaber::AvatarCore::OptionalAvatarData,
+    pub dataDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::BeatSaber::AvatarCore::OptionalAvatarData>,
     >,
-    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _optionalAvatarDataSyncHandler: *mut crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler,
+    pub _connectedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub _optionalAvatarDataSyncHandler: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler,
+    >,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerOptionalAvatarDataProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct RecordingToolSceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
-    pub _nextScenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    pub _nextScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    >,
 }
 #[cfg(feature = "RecordingToolSceneSetupData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct Finger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _screen_k__BackingField: *mut crate::UnityEngine::InputSystem::Touchscreen,
+    pub _screen_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Touchscreen,
+    >,
     pub _index_k__BackingField: i32,
-    pub m_StateHistory: *mut crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<
-        crate::UnityEngine::InputSystem::LowLevel::TouchState,
+    pub m_StateHistory: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<
+            crate::UnityEngine::InputSystem::LowLevel::TouchState,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Finger")]

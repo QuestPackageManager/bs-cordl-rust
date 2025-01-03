@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct SongPreviewPlayerPauseOnInputFocusLost {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _songPreviewPlayer: *mut crate::GlobalNamespace::AudioPlayerBase,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
+    pub _songPreviewPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioPlayerBase,
+    >,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
 }
 #[cfg(feature = "SongPreviewPlayerPauseOnInputFocusLost")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

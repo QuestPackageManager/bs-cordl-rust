@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TrackBindingTypeAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _cordl_type: *mut crate::System::Type,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub flags: crate::UnityEngine::Timeline::TrackBindingFlags,
 }
 #[cfg(feature = "UnityEngine+Timeline+TrackBindingTypeAttribute")]

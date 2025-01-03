@@ -4,36 +4,46 @@
 pub struct OVRSkeleton {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _skeletonType: crate::GlobalNamespace::OVRSkeleton_SkeletonType,
-    pub _dataProvider: *mut crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider,
+    pub _dataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider,
+    >,
     pub _updateRootPose: bool,
     pub _updateRootScale: bool,
     pub _enablePhysicsCapsules: bool,
     pub _applyBoneTranslations: bool,
-    pub _bonesGO: *mut crate::UnityEngine::GameObject,
-    pub _bindPosesGO: *mut crate::UnityEngine::GameObject,
-    pub _capsulesGO: *mut crate::UnityEngine::GameObject,
-    pub _bones: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::OVRBone,
+    pub _bonesGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _bindPosesGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _capsulesGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _bones: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::GlobalNamespace::OVRBone>,
     >,
-    pub _bindPoses: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::OVRBone,
+    pub _bindPoses: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::GlobalNamespace::OVRBone>,
     >,
-    pub _capsules: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::OVRBoneCapsule,
+    pub _capsules: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::OVRBoneCapsule,
+        >,
     >,
     pub _skeleton: crate::GlobalNamespace::OVRPlugin_Skeleton2,
     pub wristFixupRotation: crate::UnityEngine::Quaternion,
     pub _IsInitialized_k__BackingField: bool,
     pub _IsDataValid_k__BackingField: bool,
     pub _IsDataHighConfidence_k__BackingField: bool,
-    pub _Bones_k__BackingField: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::GlobalNamespace::OVRBone,
+    pub _Bones_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::GlobalNamespace::OVRBone,
+        >,
     >,
-    pub _BindPoses_k__BackingField: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::GlobalNamespace::OVRBone,
+    pub _BindPoses_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::GlobalNamespace::OVRBone,
+        >,
     >,
-    pub _Capsules_k__BackingField: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::GlobalNamespace::OVRBoneCapsule,
+    pub _Capsules_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::GlobalNamespace::OVRBoneCapsule,
+        >,
     >,
     pub _SkeletonChangedCount_k__BackingField: i32,
 }
@@ -652,17 +662,17 @@ for crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
 }
 #[cfg(feature = "OVRSkeleton+SkeletonPoseData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRSkeleton_SkeletonPoseData {
     pub _RootPose_k__BackingField: crate::GlobalNamespace::OVRPlugin_Posef,
     pub _RootScale_k__BackingField: f32,
-    pub _BoneRotations_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_Quatf,
+    pub _BoneRotations_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Quatf>,
     >,
     pub _IsDataValid_k__BackingField: bool,
     pub _IsDataHighConfidence_k__BackingField: bool,
-    pub _BoneTranslations_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_Vector3f,
+    pub _BoneTranslations_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Vector3f>,
     >,
     pub _SkeletonChangedCount_k__BackingField: i32,
 }

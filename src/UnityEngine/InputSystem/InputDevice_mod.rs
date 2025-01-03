@@ -10,23 +10,37 @@ pub struct InputDevice {
     pub m_Description: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
     pub m_LastUpdateTimeInternal: f64,
     pub m_CurrentUpdateStepCount: u32,
-    pub m_AliasesForEachControl: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    pub m_AliasesForEachControl: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+        >,
     >,
-    pub m_UsagesForEachControl: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    pub m_UsagesForEachControl: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+        >,
     >,
-    pub m_UsageToControl: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputControl,
+    pub m_UsageToControl: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputControl,
+        >,
     >,
-    pub m_ChildrenForEachControl: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputControl,
+    pub m_ChildrenForEachControl: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputControl,
+        >,
     >,
-    pub m_StateOffsetToControlMap: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub m_ControlTreeNodes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode,
+    pub m_StateOffsetToControlMap: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u32>,
     >,
-    pub m_ControlTreeIndices: *mut quest_hook::libil2cpp::Il2CppArray<u16>,
+    pub m_ControlTreeNodes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode,
+        >,
+    >,
+    pub m_ControlTreeIndices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u16>,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputDevice")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -742,7 +756,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Inpu
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputDevice+ControlBitRangeNode")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputDevice_ControlBitRangeNode {
     pub endBitOffset: u16,
     pub leftChildIndex: i16,

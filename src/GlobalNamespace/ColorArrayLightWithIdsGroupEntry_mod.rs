@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct ColorArrayLightWithIdsGroupEntry {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _colorArrayLightWithIds: *mut crate::GlobalNamespace::ColorArrayLightWithIds,
-    pub _lightGroups: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::LightGroupSO,
+    pub _colorArrayLightWithIds: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorArrayLightWithIds,
     >,
-    pub _excludedLightIds: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _lightGroups: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::LightGroupSO>,
+    >,
+    pub _excludedLightIds: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
 }
 #[cfg(feature = "ColorArrayLightWithIdsGroupEntry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

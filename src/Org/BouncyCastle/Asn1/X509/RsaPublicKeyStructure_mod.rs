@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct RsaPublicKeyStructure {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub modulus: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub publicExponent: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub modulus: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub publicExponent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+RsaPublicKeyStructure")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct EncoderFallbackBuffer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub charStart: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub charEnd: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub encoder: *mut crate::System::Text::EncoderNLS,
+    pub charStart: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub charEnd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub encoder: quest_hook::libil2cpp::Gc<crate::System::Text::EncoderNLS>,
     pub setEncoder: bool,
     pub bUsedEncoder: bool,
     pub bFallingBack: bool,

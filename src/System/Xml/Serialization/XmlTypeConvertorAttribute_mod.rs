@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct XmlTypeConvertorAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Method_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Method_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlTypeConvertorAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

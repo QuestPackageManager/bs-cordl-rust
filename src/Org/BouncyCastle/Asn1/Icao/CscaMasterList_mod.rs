@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct CscaMasterList {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub certList: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub certList: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Icao+CscaMasterList")]

@@ -3,21 +3,37 @@
 #[derive(Debug)]
 pub struct MultiplayerLevelLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub _beatmapLevelsEntitlementModel: *mut crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
-    pub stillDownloadingSongEvent: *mut crate::System::Action,
-    pub countdownFinishedEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::ILevelGameplaySetupData,
-        *mut crate::GlobalNamespace::IBeatmapLevelData,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub _beatmapLevelsEntitlementModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
+    >,
+    pub stillDownloadingSongEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub countdownFinishedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::ILevelGameplaySetupData,
+            *mut crate::GlobalNamespace::IBeatmapLevelData,
+        >,
     >,
     pub _loaderState: crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState,
-    pub _getBeatmapCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _getBeatmapLevelResultTask: *mut crate::System::Threading::Tasks::Task_1<
-        crate::GlobalNamespace::LoadBeatmapLevelDataResult,
+    pub _getBeatmapCancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
     >,
-    pub _gameplaySetupData: *mut crate::GlobalNamespace::ILevelGameplaySetupData,
-    pub _beatmapLevelData: *mut crate::GlobalNamespace::IBeatmapLevelData,
+    pub _getBeatmapLevelResultTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::LoadBeatmapLevelDataResult,
+        >,
+    >,
+    pub _gameplaySetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILevelGameplaySetupData,
+    >,
+    pub _beatmapLevelData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IBeatmapLevelData,
+    >,
     pub _startTime: i64,
     pub _stillDownloadingCalled: bool,
 }

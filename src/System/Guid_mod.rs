@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Guid")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Guid {
     pub _a: i32,
     pub _b: i16,
@@ -534,15 +534,21 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Guid+GuidResult")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Guid_GuidResult {
     pub _parsedGuid: crate::System::Guid,
     pub _throwStyle: crate::System::Guid_GuidParseThrowStyle,
     pub _failure: crate::System::Guid_ParseFailureKind,
-    pub _failureMessageID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _failureMessageFormatArgument: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _failureArgumentName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _innerException: *mut crate::System::Exception,
+    pub _failureMessageID: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _failureMessageFormatArgument: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub _failureArgumentName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
 }
 #[cfg(feature = "System+Guid+GuidResult")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

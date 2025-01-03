@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct TutorialNoteCutEffectSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _failFlyingTextSpawner: *mut crate::GlobalNamespace::FlyingTextSpawner,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
+    pub _failFlyingTextSpawner: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FlyingTextSpawner,
+    >,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
 }
 #[cfg(feature = "TutorialNoteCutEffectSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

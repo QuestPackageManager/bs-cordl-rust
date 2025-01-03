@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+TransformData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TransformData {
     pub rotate: crate::UnityEngine::UIElements::Rotate,
     pub scale: crate::UnityEngine::UIElements::Scale,

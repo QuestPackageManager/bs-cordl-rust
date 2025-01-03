@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct LightColorGroupEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightGroups: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::LightGroup,
+    pub _lightGroups: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::LightGroup>,
     >,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _colorBoostBeatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    pub _lightColorGroupEffects: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LightColorGroupEffect,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _colorBoostBeatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
+    pub _lightColorGroupEffects: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LightColorGroupEffect,
+        >,
     >,
 }
 #[cfg(feature = "LightColorGroupEffectManager")]

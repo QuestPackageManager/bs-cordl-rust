@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ToggleableCanvasGroup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _canvasGroup: *mut crate::UnityEngine::CanvasGroup,
-    pub _toggle: *mut crate::UnityEngine::UI::Toggle,
+    pub _canvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+    pub _toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub _invertToggle: bool,
 }
 #[cfg(feature = "ToggleableCanvasGroup")]

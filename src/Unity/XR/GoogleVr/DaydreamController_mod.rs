@@ -3,17 +3,39 @@
 #[derive(Debug)]
 pub struct DaydreamController {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRController,
-    pub _touchpad_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
-    pub _volumeUp_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _recentered_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _volumeDown_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _recentering_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _app_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _home_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _touchpadClicked_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _touchpadTouched_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _deviceVelocity_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    pub _deviceAcceleration_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    pub _touchpad_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    >,
+    pub _volumeUp_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _recentered_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _volumeDown_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _recentering_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _app_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _home_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _touchpadClicked_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _touchpadTouched_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _deviceVelocity_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
+    pub _deviceAcceleration_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
 }
 #[cfg(feature = "Unity+XR+GoogleVr+DaydreamController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

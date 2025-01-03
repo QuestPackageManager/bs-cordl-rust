@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CustomStyleAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub ussStyle: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ussStyle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+Timeline+CustomStyleAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

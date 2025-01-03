@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BloomPrePassRenderDataSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub data: *mut crate::GlobalNamespace::BloomPrePassRenderDataSO_Data,
+    pub data: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassRenderDataSO_Data,
+    >,
 }
 #[cfg(feature = "BloomPrePassRenderDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -60,7 +62,9 @@ for crate::GlobalNamespace::BloomPrePassRenderDataSO {
 #[derive(Debug)]
 pub struct BloomPrePassRenderDataSO_Data {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub bloomPrePassRenderTexture: *mut crate::UnityEngine::RenderTexture,
+    pub bloomPrePassRenderTexture: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RenderTexture,
+    >,
     pub textureToScreenRatio: crate::UnityEngine::Vector2,
     pub viewMatrix: crate::UnityEngine::Matrix4x4,
     pub projectionMatrix: crate::UnityEngine::Matrix4x4,

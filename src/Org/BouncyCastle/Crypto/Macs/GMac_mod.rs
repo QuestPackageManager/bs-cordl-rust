@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct GMac {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::Modes::GcmBlockCipher,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Modes::GcmBlockCipher,
+    >,
     pub macSizeBits: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+GMac")]

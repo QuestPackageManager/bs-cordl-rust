@@ -3,20 +3,42 @@
 #[derive(Debug)]
 pub struct XmlAttributes {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub xmlAnyAttribute: *mut crate::System::Xml::Serialization::XmlAnyAttributeAttribute,
-    pub xmlAnyElements: *mut crate::System::Xml::Serialization::XmlAnyElementAttributes,
-    pub xmlArray: *mut crate::System::Xml::Serialization::XmlArrayAttribute,
-    pub xmlArrayItems: *mut crate::System::Xml::Serialization::XmlArrayItemAttributes,
-    pub xmlAttribute: *mut crate::System::Xml::Serialization::XmlAttributeAttribute,
-    pub xmlChoiceIdentifier: *mut crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute,
-    pub xmlDefaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub xmlElements: *mut crate::System::Xml::Serialization::XmlElementAttributes,
-    pub xmlEnum: *mut crate::System::Xml::Serialization::XmlEnumAttribute,
+    pub xmlAnyAttribute: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlAnyAttributeAttribute,
+    >,
+    pub xmlAnyElements: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlAnyElementAttributes,
+    >,
+    pub xmlArray: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlArrayAttribute,
+    >,
+    pub xmlArrayItems: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlArrayItemAttributes,
+    >,
+    pub xmlAttribute: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlAttributeAttribute,
+    >,
+    pub xmlChoiceIdentifier: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute,
+    >,
+    pub xmlDefaultValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub xmlElements: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlElementAttributes,
+    >,
+    pub xmlEnum: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlEnumAttribute,
+    >,
     pub xmlIgnore: bool,
     pub xmlns: bool,
-    pub xmlRoot: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-    pub xmlText: *mut crate::System::Xml::Serialization::XmlTextAttribute,
-    pub xmlType: *mut crate::System::Xml::Serialization::XmlTypeAttribute,
+    pub xmlRoot: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlRootAttribute,
+    >,
+    pub xmlText: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTextAttribute,
+    >,
+    pub xmlType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTypeAttribute,
+    >,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlAttributes")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

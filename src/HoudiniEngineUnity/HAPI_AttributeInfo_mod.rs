@@ -1,6 +1,6 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_AttributeInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HAPI_AttributeInfo {
     pub exists: bool,
     pub owner: crate::HoudiniEngineUnity::HAPI_AttributeOwner,

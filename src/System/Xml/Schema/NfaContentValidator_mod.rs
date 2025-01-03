@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct NfaContentValidator {
     __cordl_parent: crate::System::Xml::Schema::ContentValidator,
-    pub firstpos: *mut crate::System::Xml::Schema::BitSet,
-    pub followpos: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::Schema::BitSet,
+    pub firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+    pub followpos: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::Schema::BitSet>,
     >,
-    pub symbols: *mut crate::System::Xml::Schema::SymbolsDictionary,
-    pub positions: *mut crate::System::Xml::Schema::Positions,
+    pub symbols: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::SymbolsDictionary,
+    >,
+    pub positions: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::Positions>,
     pub endMarkerPos: i32,
 }
 #[cfg(feature = "System+Xml+Schema+NfaContentValidator")]

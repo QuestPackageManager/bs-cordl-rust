@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct UnityWebRequestAsyncOperation {
     __cordl_parent: crate::UnityEngine::AsyncOperation,
-    pub _webRequest_k__BackingField: *mut crate::UnityEngine::Networking::UnityWebRequest,
+    pub _webRequest_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Networking::UnityWebRequest,
+    >,
 }
 #[cfg(feature = "UnityEngine+Networking+UnityWebRequestAsyncOperation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

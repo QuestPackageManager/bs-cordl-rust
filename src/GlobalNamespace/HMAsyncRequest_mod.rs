@@ -4,7 +4,9 @@
 pub struct HMAsyncRequest {
     __cordl_parent: crate::GlobalNamespace::HMAutoincrementedRequestId,
     pub _cancelled: bool,
-    pub _cancelHander: *mut crate::GlobalNamespace::HMAsyncRequest_CancelHander,
+    pub _cancelHander: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HMAsyncRequest_CancelHander,
+    >,
 }
 #[cfg(feature = "HMAsyncRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

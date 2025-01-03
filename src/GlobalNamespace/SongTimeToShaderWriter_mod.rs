@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SongTimeToShaderWriter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
 }
 #[cfg(feature = "SongTimeToShaderWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

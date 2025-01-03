@@ -3,17 +3,19 @@
 #[derive(Debug)]
 pub struct StreamWriter {
     __cordl_parent: crate::System::IO::TextWriter,
-    pub _stream: *mut crate::System::IO::Stream,
-    pub _encoding: *mut crate::System::Text::Encoding,
-    pub _encoder: *mut crate::System::Text::Encoder,
-    pub _byteBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _charBuffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub _stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    pub _encoder: quest_hook::libil2cpp::Gc<crate::System::Text::Encoder>,
+    pub _byteBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _charBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub _charPos: i32,
     pub _charLen: i32,
     pub _autoFlush: bool,
     pub _haveWrittenPreamble: bool,
     pub _closable: bool,
-    pub _asyncWriteTask: *mut crate::System::Threading::Tasks::Task,
+    pub _asyncWriteTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task,
+    >,
 }
 #[cfg(feature = "System+IO+StreamWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

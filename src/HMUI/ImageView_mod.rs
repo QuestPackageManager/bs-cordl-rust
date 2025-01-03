@@ -4,16 +4,18 @@
 pub struct ImageView {
     __cordl_parent: crate::HMUI::ImageViewBase,
     pub _useScriptableObjectColors: bool,
-    pub _colorSo: *mut crate::GlobalNamespace::ColorSO,
-    pub _color0So: *mut crate::GlobalNamespace::ColorSO,
-    pub _color1So: *mut crate::GlobalNamespace::ColorSO,
+    pub _colorSo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _color0So: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _color1So: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
     pub _skew: f32,
     pub _gradient: bool,
     pub _color0: crate::UnityEngine::Color,
     pub _color1: crate::UnityEngine::Color,
     pub _gradientDirection: crate::HMUI::ImageView_GradientDirection,
     pub _flipGradientColors: bool,
-    pub _curvedCanvasSettingsHelper: *mut crate::HMUI::CurvedCanvasSettingsHelper,
+    pub _curvedCanvasSettingsHelper: quest_hook::libil2cpp::Gc<
+        crate::HMUI::CurvedCanvasSettingsHelper,
+    >,
 }
 #[cfg(feature = "HMUI+ImageView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

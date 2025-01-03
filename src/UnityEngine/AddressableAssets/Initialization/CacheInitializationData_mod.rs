@@ -4,7 +4,9 @@
 pub struct CacheInitializationData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_CompressionEnabled: bool,
-    pub m_CacheDirectoryOverride: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_CacheDirectoryOverride: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub m_ExpirationDelay: i32,
     pub m_LimitCacheSize: bool,
     pub m_MaximumCacheSize: i64,

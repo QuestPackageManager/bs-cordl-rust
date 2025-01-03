@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PreUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -43,7 +43,7 @@ impl crate::UnityEngine::PlayerLoop::PreUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PreUpdate_AIUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -65,7 +65,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_AIUpdate {
 impl crate::UnityEngine::PlayerLoop::PreUpdate_AIUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PreUpdate_CheckTexFieldInput {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -88,7 +88,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_CheckTexFieldInput {
 impl crate::UnityEngine::PlayerLoop::PreUpdate_CheckTexFieldInput {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+IMGUISendQueuedEvents")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PreUpdate_IMGUISendQueuedEvents {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+IMGUISendQueuedEvents")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -111,7 +111,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_IMGUISendQueuedEvents {
 impl crate::UnityEngine::PlayerLoop::PreUpdate_IMGUISendQueuedEvents {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PreUpdate_NewInputUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -134,7 +134,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_NewInputUpdate {
 impl crate::UnityEngine::PlayerLoop::PreUpdate_NewInputUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PreUpdate_Physics2DUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -157,7 +157,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_Physics2DUpdate {
 impl crate::UnityEngine::PlayerLoop::PreUpdate_Physics2DUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PreUpdate_PhysicsClothUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -180,7 +180,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsClothUpdate {
 impl crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsClothUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PreUpdate_PhysicsUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -202,7 +202,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsUpdate {
 impl crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PreUpdate_SendMouseEvents {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -225,7 +225,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_SendMouseEvents {
 impl crate::UnityEngine::PlayerLoop::PreUpdate_SendMouseEvents {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PreUpdate_UpdateVideo {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -247,7 +247,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_UpdateVideo {
 impl crate::UnityEngine::PlayerLoop::PreUpdate_UpdateVideo {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+WindUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PreUpdate_WindUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+WindUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -6,7 +6,9 @@ pub struct AvatarColorBehaviour {
     pub _startColor: crate::UnityEngine::Color,
     pub _endColor: crate::UnityEngine::Color,
     pub _easeType: crate::GlobalNamespace::EaseType,
-    pub _avatarVisualController: *mut crate::BeatSaber::AvatarCore::AvatarVisualController,
+    pub _avatarVisualController: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::AvatarVisualController,
+    >,
     pub _duration: f32,
 }
 #[cfg(feature = "AvatarColorBehaviour")]

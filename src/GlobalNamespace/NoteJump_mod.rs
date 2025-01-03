@@ -3,24 +3,36 @@
 #[derive(Debug)]
 pub struct NoteJump {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _rotatedObject: *mut crate::UnityEngine::Transform,
+    pub _rotatedObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _yAvoidanceUp: f32,
     pub _yAvoidanceDown: f32,
     pub _endDistanceOffset: f32,
-    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
-    pub _playerSpaceConvertor: *mut crate::GlobalNamespace::PlayerSpaceConvertor,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
-    pub noteJumpDidStartEvent: *mut crate::System::Action,
-    pub noteJumpDidFinishEvent: *mut crate::System::Action,
-    pub noteJumpDidPassMissedMarkerEvent: *mut crate::System::Action,
-    pub noteJumpDidPassThreeQuartersEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::NoteJump,
+    pub _playerTransforms: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerTransforms,
     >,
-    pub noteJumpDidPassHalfEvent: *mut crate::System::Action,
-    pub noteJumpDidUpdateProgressEvent: *mut crate::System::Action_1<f32>,
-    pub _randomRotations: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub _playerSpaceConvertor: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSpaceConvertor,
+    >,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
+    pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVariableMovementDataProvider,
+    >,
+    pub noteJumpDidStartEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub noteJumpDidFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub noteJumpDidPassMissedMarkerEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub noteJumpDidPassThreeQuartersEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::NoteJump>,
+    >,
+    pub noteJumpDidPassHalfEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub noteJumpDidUpdateProgressEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<f32>,
+    >,
+    pub _randomRotations: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
     pub _localPosition: crate::UnityEngine::Vector3,
     pub _noteTime: f32,

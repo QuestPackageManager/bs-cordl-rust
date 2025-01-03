@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct MissingMemberException {
     __cordl_parent: crate::System::MemberAccessException,
-    pub ClassName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub MemberName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Signature: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub ClassName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub MemberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "System+MissingMemberException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

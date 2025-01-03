@@ -3,28 +3,36 @@
 #[derive(Debug)]
 pub struct AnimatedSwitchView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _knobRectTransform: *mut crate::UnityEngine::RectTransform,
-    pub _backgroundImage: *mut crate::HMUI::ImageView,
-    pub _knobImage: *mut crate::HMUI::ImageView,
-    pub _onText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _offText: *mut crate::TMPro::TextMeshProUGUI,
+    pub _knobRectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub _backgroundImage: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
+    pub _knobImage: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
+    pub _onText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _offText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _switchAnimationSmooth: f32,
     pub _disableAnimationDuration: f32,
     pub _highlightAnimationDuration: f32,
     pub _horizontalStretchAmount: f32,
     pub _verticalStretchAmount: f32,
-    pub _onColors: *mut crate::HMUI::AnimatedSwitchView_ColorBlock,
-    pub _offColors: *mut crate::HMUI::AnimatedSwitchView_ColorBlock,
-    pub _onHighlightedColors: *mut crate::HMUI::AnimatedSwitchView_ColorBlock,
-    pub _offHighlightedColors: *mut crate::HMUI::AnimatedSwitchView_ColorBlock,
-    pub _disabledColors: *mut crate::HMUI::AnimatedSwitchView_ColorBlock,
+    pub _onColors: quest_hook::libil2cpp::Gc<crate::HMUI::AnimatedSwitchView_ColorBlock>,
+    pub _offColors: quest_hook::libil2cpp::Gc<
+        crate::HMUI::AnimatedSwitchView_ColorBlock,
+    >,
+    pub _onHighlightedColors: quest_hook::libil2cpp::Gc<
+        crate::HMUI::AnimatedSwitchView_ColorBlock,
+    >,
+    pub _offHighlightedColors: quest_hook::libil2cpp::Gc<
+        crate::HMUI::AnimatedSwitchView_ColorBlock,
+    >,
+    pub _disabledColors: quest_hook::libil2cpp::Gc<
+        crate::HMUI::AnimatedSwitchView_ColorBlock,
+    >,
     pub _animationState: crate::HMUI::AnimatedSwitchView_AnimationState,
     pub _switchAmount: f32,
     pub _highlightAmount: f32,
     pub _disabledAmount: f32,
     pub _originalKnobWidth: f32,
     pub _originalKnobHeight: f32,
-    pub _toggle: *mut crate::HMUI::ToggleWithCallbacks,
+    pub _toggle: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleWithCallbacks>,
 }
 #[cfg(feature = "HMUI+AnimatedSwitchView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

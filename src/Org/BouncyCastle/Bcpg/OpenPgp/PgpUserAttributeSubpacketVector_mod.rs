@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PgpUserAttributeSubpacketVector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub packets: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket,
+    pub packets: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpUserAttributeSubpacketVector")]

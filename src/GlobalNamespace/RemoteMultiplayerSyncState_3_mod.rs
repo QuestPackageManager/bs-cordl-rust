@@ -11,11 +11,9 @@ pub struct RemoteMultiplayerSyncState_3<
         TType,
         TState,
     >,
-    pub _player: *mut crate::GlobalNamespace::IConnectedPlayer,
-    pub _stateBuffer: *mut crate::GlobalNamespace::RemoteStateBuffer_3<
-        TStateTable,
-        TType,
-        TState,
+    pub _player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+    pub _stateBuffer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RemoteStateBuffer_3<TStateTable, TType, TState>,
     >,
     __cordl_phantom_TStateTable: std::marker::PhantomData<TStateTable>,
     __cordl_phantom_TType: std::marker::PhantomData<TType>,

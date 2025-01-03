@@ -3,43 +3,61 @@
 #[derive(Debug)]
 pub struct SchemaInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub elementDecls: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Xml::XmlQualifiedName,
-        *mut crate::System::Xml::Schema::SchemaElementDecl,
+    pub elementDecls: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Xml::XmlQualifiedName,
+            *mut crate::System::Xml::Schema::SchemaElementDecl,
+        >,
     >,
-    pub undeclaredElementDecls: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Xml::XmlQualifiedName,
-        *mut crate::System::Xml::Schema::SchemaElementDecl,
+    pub undeclaredElementDecls: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Xml::XmlQualifiedName,
+            *mut crate::System::Xml::Schema::SchemaElementDecl,
+        >,
     >,
-    pub generalEntities: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Xml::XmlQualifiedName,
-        *mut crate::System::Xml::Schema::SchemaEntity,
+    pub generalEntities: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Xml::XmlQualifiedName,
+            *mut crate::System::Xml::Schema::SchemaEntity,
+        >,
     >,
-    pub parameterEntities: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Xml::XmlQualifiedName,
-        *mut crate::System::Xml::Schema::SchemaEntity,
+    pub parameterEntities: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Xml::XmlQualifiedName,
+            *mut crate::System::Xml::Schema::SchemaEntity,
+        >,
     >,
-    pub docTypeName: *mut crate::System::Xml::XmlQualifiedName,
-    pub internalDtdSubset: *mut quest_hook::libil2cpp::Il2CppString,
+    pub docTypeName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub internalDtdSubset: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub hasNonCDataAttributes: bool,
     pub hasDefaultAttributes: bool,
-    pub targetNamespaces: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        bool,
+    pub targetNamespaces: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            bool,
+        >,
     >,
-    pub attributeDecls: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Xml::XmlQualifiedName,
-        *mut crate::System::Xml::Schema::SchemaAttDef,
+    pub attributeDecls: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Xml::XmlQualifiedName,
+            *mut crate::System::Xml::Schema::SchemaAttDef,
+        >,
     >,
     pub errorCount: i32,
     pub schemaType: crate::System::Xml::Schema::SchemaType,
-    pub elementDeclsByType: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Xml::XmlQualifiedName,
-        *mut crate::System::Xml::Schema::SchemaElementDecl,
+    pub elementDeclsByType: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Xml::XmlQualifiedName,
+            *mut crate::System::Xml::Schema::SchemaElementDecl,
+        >,
     >,
-    pub notations: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::System::Xml::Schema::SchemaNotation,
+    pub notations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::System::Xml::Schema::SchemaNotation,
+        >,
     >,
 }
 #[cfg(feature = "System+Xml+Schema+SchemaInfo")]

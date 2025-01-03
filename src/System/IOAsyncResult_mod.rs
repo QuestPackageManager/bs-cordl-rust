@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct IOAsyncResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub async_callback: *mut crate::System::AsyncCallback,
-    pub async_state: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub wait_handle: *mut crate::System::Threading::ManualResetEvent,
+    pub async_callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+    pub async_state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub wait_handle: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ManualResetEvent,
+    >,
     pub completed_synchronously: bool,
     pub completed: bool,
 }

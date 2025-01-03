@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct DefaultContractResolver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _nameTable: *mut crate::Newtonsoft::Json::DefaultJsonNameTable,
-    pub _contractCache: *mut crate::Newtonsoft::Json::Utilities::ThreadSafeStore_2<
-        *mut crate::System::Type,
-        *mut crate::Newtonsoft::Json::Serialization::JsonContract,
+    pub _nameTable: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::DefaultJsonNameTable,
+    >,
+    pub _contractCache: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::ThreadSafeStore_2<
+            *mut crate::System::Type,
+            *mut crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
     >,
     pub _DefaultMembersSearchFlags_k__BackingField: crate::System::Reflection::BindingFlags,
     pub _SerializeCompilerGeneratedMembers_k__BackingField: bool,
@@ -14,7 +18,9 @@ pub struct DefaultContractResolver {
     pub _IgnoreSerializableAttribute_k__BackingField: bool,
     pub _IgnoreIsSpecifiedMembers_k__BackingField: bool,
     pub _IgnoreShouldSerializeMembers_k__BackingField: bool,
-    pub _NamingStrategy_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::NamingStrategy,
+    pub _NamingStrategy_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::NamingStrategy,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultContractResolver")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -984,10 +990,12 @@ pub struct DefaultContractResolver_EnumerableDictionaryWrapper_2<
     TEnumeratorValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _e: *mut crate::System::Collections::Generic::IEnumerable_1<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            TEnumeratorKey,
-            TEnumeratorValue,
+    pub _e: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<
+            crate::System::Collections::Generic::KeyValuePair_2<
+                TEnumeratorKey,
+                TEnumeratorValue,
+            >,
         >,
     >,
     __cordl_phantom_TEnumeratorKey: std::marker::PhantomData<TEnumeratorKey>,

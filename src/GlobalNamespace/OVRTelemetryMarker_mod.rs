@@ -1,11 +1,13 @@
 #[cfg(feature = "OVRTelemetryMarker")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRTelemetryMarker {
     pub _State_k__BackingField: crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState,
     pub _MarkerId_k__BackingField: i32,
     pub _InstanceKey_k__BackingField: i32,
-    pub _client: *mut crate::GlobalNamespace::OVRTelemetry_TelemetryClient,
+    pub _client: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRTelemetry_TelemetryClient,
+    >,
 }
 #[cfg(feature = "OVRTelemetryMarker")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -195,7 +197,7 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRTelemetryM
 }
 #[cfg(feature = "OVRTelemetryMarker+OVRTelemetryMarkerState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRTelemetryMarker_OVRTelemetryMarkerState {
     pub _Sent_k__BackingField: bool,
     pub _Result_k__BackingField: crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,

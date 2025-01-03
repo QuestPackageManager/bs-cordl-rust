@@ -3,16 +3,18 @@
 #[derive(Debug)]
 pub struct ScreenSystem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _mainScreen: *mut crate::HMUI::Screen,
-    pub _leftScreen: *mut crate::HMUI::Screen,
-    pub _rightScreen: *mut crate::HMUI::Screen,
-    pub _bottomScreen: *mut crate::HMUI::Screen,
-    pub _topScreen: *mut crate::HMUI::Screen,
-    pub _backButton: *mut crate::UnityEngine::UI::Button,
-    pub _titleViewController: *mut crate::HMUI::TitleViewController,
-    pub backButtonWasPressedEvent: *mut crate::System::Action,
+    pub _mainScreen: quest_hook::libil2cpp::Gc<crate::HMUI::Screen>,
+    pub _leftScreen: quest_hook::libil2cpp::Gc<crate::HMUI::Screen>,
+    pub _rightScreen: quest_hook::libil2cpp::Gc<crate::HMUI::Screen>,
+    pub _bottomScreen: quest_hook::libil2cpp::Gc<crate::HMUI::Screen>,
+    pub _topScreen: quest_hook::libil2cpp::Gc<crate::HMUI::Screen>,
+    pub _backButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _titleViewController: quest_hook::libil2cpp::Gc<
+        crate::HMUI::TitleViewController,
+    >,
+    pub backButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _backButtonIsVisible: bool,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
 }
 #[cfg(feature = "HMUI+ScreenSystem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

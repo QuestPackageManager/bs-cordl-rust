@@ -178,8 +178,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::BGNet::Logging::Debug_ILogger 
 #[derive(Debug)]
 pub struct Debug_LoggerLinkedList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub logger: *mut crate::BGNet::Logging::Debug_ILogger,
-    pub next: *mut crate::BGNet::Logging::Debug_LoggerLinkedList,
+    pub logger: quest_hook::libil2cpp::Gc<crate::BGNet::Logging::Debug_ILogger>,
+    pub next: quest_hook::libil2cpp::Gc<crate::BGNet::Logging::Debug_LoggerLinkedList>,
 }
 #[cfg(feature = "BGNet+Logging+Debug+LoggerLinkedList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

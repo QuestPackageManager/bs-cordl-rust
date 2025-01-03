@@ -3,12 +3,20 @@
 #[derive(Debug)]
 pub struct GameObjectCreationParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _GroupName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _ParentTransform_k__BackingField: *mut crate::UnityEngine::Transform,
-    pub _ParentTransformGetter_k__BackingField: *mut crate::System::Func_2<
-        *mut crate::Zenject::InjectContext,
-        *mut crate::UnityEngine::Transform,
+    pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _GroupName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _ParentTransform_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _ParentTransformGetter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            *mut crate::Zenject::InjectContext,
+            *mut crate::UnityEngine::Transform,
+        >,
     >,
     pub _Position_k__BackingField: crate::System::Nullable_1<
         crate::UnityEngine::Vector3,

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ITilemap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Tilemap: *mut crate::UnityEngine::Tilemaps::Tilemap,
+    pub m_Tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::Tilemap>,
     pub m_AddToList: bool,
     pub m_RefreshCount: i32,
     pub m_RefreshPos: crate::Unity::Collections::NativeArray_1<

@@ -3,18 +3,22 @@
 #[derive(Debug)]
 pub struct SelectableCell {
     __cordl_parent: crate::HMUI::Interactable,
-    pub _wasPressedSignal: *mut crate::GlobalNamespace::Signal,
-    pub selectionDidChangeEvent: *mut crate::System::Action_3<
-        *mut crate::HMUI::SelectableCell,
-        crate::HMUI::SelectableCell_TransitionType,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _wasPressedSignal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
+    pub selectionDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_3<
+            *mut crate::HMUI::SelectableCell,
+            crate::HMUI::SelectableCell_TransitionType,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
-    pub highlightDidChangeEvent: *mut crate::System::Action_2<
-        *mut crate::HMUI::SelectableCell,
-        crate::HMUI::SelectableCell_TransitionType,
+    pub highlightDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::HMUI::SelectableCell,
+            crate::HMUI::SelectableCell_TransitionType,
+        >,
     >,
-    pub nonInteractableCellWasPressedEvent: *mut crate::System::Action_1<
-        *mut crate::HMUI::SelectableCell,
+    pub nonInteractableCellWasPressedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::HMUI::SelectableCell>,
     >,
     pub _highlighted_k__BackingField: bool,
     pub _selected_k__BackingField: bool,

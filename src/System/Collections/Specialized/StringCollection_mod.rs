@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct StringCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub data: *mut crate::System::Collections::ArrayList,
+    pub data: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
 #[cfg(feature = "System+Collections+Specialized+StringCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

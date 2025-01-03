@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SpriteGlyph {
     __cordl_parent: crate::UnityEngine::TextCore::Glyph,
-    pub sprite: *mut crate::UnityEngine::Sprite,
+    pub sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+SpriteGlyph")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

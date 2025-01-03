@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct RevRepContentBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub status: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
-    pub revCerts: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
-    pub crls: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+    pub status: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+    >,
+    pub revCerts: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+    >,
+    pub crls: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+RevRepContentBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

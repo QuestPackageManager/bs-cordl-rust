@@ -1,14 +1,16 @@
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathNode")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XPathNode {
-    pub _info: *mut crate::MS::Internal::Xml::Cache::XPathNodeInfoAtom,
+    pub _info: quest_hook::libil2cpp::Gc<
+        crate::MS::Internal::Xml::Cache::XPathNodeInfoAtom,
+    >,
     pub _idxSibling: u16,
     pub _idxParent: u16,
     pub _idxSimilar: u16,
     pub _posOffset: u16,
     pub _props: u32,
-    pub _value: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathNode")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -4,8 +4,8 @@
 pub struct Record {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sortOrder: i32,
-    pub category: *mut quest_hook::libil2cpp::Il2CppString,
-    pub message: *mut quest_hook::libil2cpp::Il2CppString,
+    pub category: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Assets+OVR+Scripts+Record")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

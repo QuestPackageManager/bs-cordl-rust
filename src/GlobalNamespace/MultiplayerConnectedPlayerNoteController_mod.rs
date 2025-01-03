@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerNoteController {
     __cordl_parent: crate::GlobalNamespace::NoteController,
-    pub _visualsWrapperGo: *mut crate::UnityEngine::GameObject,
+    pub _visualsWrapperGo: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerNoteController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

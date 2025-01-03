@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct HEU_UnityMaterialInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _unityMaterialPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _substancePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _unityMaterialPath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _substancePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _substanceIndex: i32,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_UnityMaterialInfo")]

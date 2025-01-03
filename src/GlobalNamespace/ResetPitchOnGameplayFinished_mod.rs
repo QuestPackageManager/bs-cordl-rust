@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ResetPitchOnGameplayFinished {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _gameplayLevelSceneTransitionEvents: *mut crate::GlobalNamespace::GameplayLevelSceneTransitionEvents,
-    pub _audioManager: *mut crate::GlobalNamespace::AudioManagerSO,
+    pub _gameplayLevelSceneTransitionEvents: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayLevelSceneTransitionEvents,
+    >,
+    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
 }
 #[cfg(feature = "ResetPitchOnGameplayFinished")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ReaderPositionInfo {
     __cordl_parent: crate::System::Xml::PositionInfo,
-    pub lineInfo: *mut crate::System::Xml::IXmlLineInfo,
+    pub lineInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>,
 }
 #[cfg(feature = "System+Xml+ReaderPositionInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

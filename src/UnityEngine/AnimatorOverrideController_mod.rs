@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AnimatorOverrideController {
     __cordl_parent: crate::UnityEngine::RuntimeAnimatorController,
-    pub OnOverrideControllerDirty: *mut crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCallback,
+    pub OnOverrideControllerDirty: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCallback,
+    >,
 }
 #[cfg(feature = "UnityEngine+AnimatorOverrideController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

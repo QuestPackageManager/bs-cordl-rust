@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MaterialPropertyBlockFloatCurve {
     __cordl_parent: crate::GlobalNamespace::MaterialPropertyBlockAnimator,
-    pub _curve: *mut crate::UnityEngine::AnimationCurve,
+    pub _curve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub _valueMultiplier: f32,
     pub _speedMultiplier: f32,
 }

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct VRPlatformEventsDebugger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
 }
 #[cfg(feature = "VRPlatformEventsDebugger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

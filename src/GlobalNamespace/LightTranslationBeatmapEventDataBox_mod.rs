@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct LightTranslationBeatmapEventDataBox {
     __cordl_parent: crate::GlobalNamespace::BeatmapEventDataBox,
-    pub _lightTranslationBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::GlobalNamespace::LightTranslationBaseData,
+    pub _lightTranslationBaseDataList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::LightTranslationBaseData,
+        >,
     >,
     pub _axis: crate::GlobalNamespace::LightAxis,
     pub _translationDirection: f32,

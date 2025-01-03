@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SmoothCameraSmoothnessSettingsController {
     __cordl_parent: crate::GlobalNamespace::ListSettingsController,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
 }
 #[cfg(feature = "SmoothCameraSmoothnessSettingsController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

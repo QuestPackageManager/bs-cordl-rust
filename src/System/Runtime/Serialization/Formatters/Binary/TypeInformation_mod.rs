@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct TypeInformation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub fullTypeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub assemblyString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub fullTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub assemblyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub hasTypeForwardedFrom: bool,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+TypeInformation")]

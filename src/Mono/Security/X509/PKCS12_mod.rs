@@ -3,16 +3,20 @@
 #[derive(Debug)]
 pub struct PKCS12 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _password: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _keyBags: *mut crate::System::Collections::ArrayList,
-    pub _secretBags: *mut crate::System::Collections::ArrayList,
-    pub _certs: *mut crate::Mono::Security::X509::X509CertificateCollection,
+    pub _password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _keyBags: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _secretBags: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _certs: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::X509::X509CertificateCollection,
+    >,
     pub _keyBagsChanged: bool,
     pub _secretBagsChanged: bool,
     pub _certsChanged: bool,
     pub _iterations: i32,
-    pub _safeBags: *mut crate::System::Collections::ArrayList,
-    pub _rng: *mut crate::System::Security::Cryptography::RandomNumberGenerator,
+    pub _safeBags: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _rng: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::RandomNumberGenerator,
+    >,
 }
 #[cfg(feature = "Mono+Security+X509+PKCS12")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -453,10 +457,10 @@ impl AsMut<crate::System::ICloneable> for crate::Mono::Security::X509::PKCS12 {
 #[derive(Debug)]
 pub struct PKCS12_DeriveBytes {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _hashName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _hashName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _iterations: i32,
-    pub _password: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

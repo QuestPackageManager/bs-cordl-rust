@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct DllImportAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _val: *mut quest_hook::libil2cpp::Il2CppString,
-    pub EntryPoint: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub EntryPoint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub CharSet: crate::System::Runtime::InteropServices::CharSet,
     pub SetLastError: bool,
     pub ExactSpelling: bool,

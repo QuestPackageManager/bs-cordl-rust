@@ -4,7 +4,9 @@
 pub struct BitMaskSparse {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bitCount_k__BackingField: i32,
-    pub _sparseSet: *mut crate::System::Collections::Generic::SortedSet_1<u32>,
+    pub _sparseSet: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::SortedSet_1<u32>,
+    >,
 }
 #[cfg(feature = "BitMaskSparse")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

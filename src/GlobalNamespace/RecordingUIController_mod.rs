@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct RecordingUIController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _circle: *mut crate::UnityEngine::GameObject,
+    pub _circle: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _updateTimeSpan: f32,
-    pub _initData: *mut crate::GlobalNamespace::RecordingUIController_InitData,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecordingUIController_InitData,
+    >,
     pub _lastUpdateTime: f32,
 }
 #[cfg(feature = "RecordingUIController")]

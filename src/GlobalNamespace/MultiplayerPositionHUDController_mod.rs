@@ -3,13 +3,21 @@
 #[derive(Debug)]
 pub struct MultiplayerPositionHUDController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _playerCountText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _positionText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _canvasGroup: *mut crate::UnityEngine::CanvasGroup,
-    pub _firstPlayerAnimationGo: *mut crate::UnityEngine::GameObject,
-    pub _scoreProvider: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
-    pub _playersManager: *mut crate::GlobalNamespace::MultiplayerPlayersManager,
-    pub _initData: *mut crate::GlobalNamespace::CoreGameHUDController_InitData,
+    pub _playerCountText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _positionText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _canvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+    pub _firstPlayerAnimationGo: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _scoreProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreProvider,
+    >,
+    pub _playersManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerPlayersManager,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CoreGameHUDController_InitData,
+    >,
     pub _prevPosition: i32,
 }
 #[cfg(feature = "MultiplayerPositionHUDController")]

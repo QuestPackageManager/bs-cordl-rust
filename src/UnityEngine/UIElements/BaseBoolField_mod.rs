@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct BaseBoolField {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<bool>,
-    pub m_Label: *mut crate::UnityEngine::UIElements::Label,
-    pub m_CheckMark: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_Clickable: *mut crate::UnityEngine::UIElements::Clickable,
-    pub m_OriginalText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Label: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Label>,
+    pub m_CheckMark: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_Clickable: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Clickable,
+    >,
+    pub m_OriginalText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseBoolField")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

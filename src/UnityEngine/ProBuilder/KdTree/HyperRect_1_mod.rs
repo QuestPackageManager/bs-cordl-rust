@@ -1,9 +1,9 @@
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+HyperRect_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HyperRect_1<T: quest_hook::libil2cpp::Type> {
-    pub minPoint: *mut quest_hook::libil2cpp::Il2CppArray<T>,
-    pub maxPoint: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub minPoint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    pub maxPoint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+HyperRect_1")]

@@ -1,14 +1,14 @@
 #[cfg(feature = "UnityEngine+Rendering+BatchRendererCullingOutput")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BatchRendererCullingOutput {
     pub cullingJobsFence: crate::Unity::Jobs::JobHandle,
     pub localToWorldMatrix: crate::UnityEngine::Matrix4x4,
-    pub cullingPlanes: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub cullingPlanes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub cullingPlaneCount: i32,
     pub receiverPlaneOffset: i32,
     pub receiverPlaneCount: i32,
-    pub cullingSplits: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub cullingSplits: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub cullingSplitCount: i32,
     pub viewType: crate::UnityEngine::Rendering::BatchCullingViewType,
     pub projectionType: crate::UnityEngine::Rendering::BatchCullingProjectionType,
@@ -16,7 +16,7 @@ pub struct BatchRendererCullingOutput {
     pub viewID: u64,
     pub cullingLayerMask: u32,
     pub sceneCullingMask: u64,
-    pub drawCommands: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub drawCommands: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+Rendering+BatchRendererCullingOutput")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

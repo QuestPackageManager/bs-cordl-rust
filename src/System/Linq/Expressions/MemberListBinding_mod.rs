@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct MemberListBinding {
     __cordl_parent: crate::System::Linq::Expressions::MemberBinding,
-    pub _Initializers_k__BackingField: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-        *mut crate::System::Linq::Expressions::ElementInit,
+    pub _Initializers_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            *mut crate::System::Linq::Expressions::ElementInit,
+        >,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+MemberListBinding")]

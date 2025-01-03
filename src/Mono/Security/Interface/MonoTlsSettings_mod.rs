@@ -3,26 +3,36 @@
 #[derive(Debug)]
 pub struct MonoTlsSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _RemoteCertificateValidationCallback_k__BackingField: *mut crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
-    pub _ClientCertificateSelectionCallback_k__BackingField: *mut crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback,
+    pub _RemoteCertificateValidationCallback_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
+    >,
+    pub _ClientCertificateSelectionCallback_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback,
+    >,
     pub _CertificateValidationTime_k__BackingField: crate::System::Nullable_1<
         crate::System::DateTime,
     >,
-    pub _TrustAnchors_k__BackingField: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
-    pub _UserSettings_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _CertificateSearchPaths_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _TrustAnchors_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+    >,
+    pub _UserSettings_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub _CertificateSearchPaths_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _SendCloseNotify_k__BackingField: bool,
-    pub _ClientCertificateIssuers_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _ClientCertificateIssuers_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _DisallowUnauthenticatedCertificateRequest_k__BackingField: bool,
     pub _EnabledProtocols_k__BackingField: crate::System::Nullable_1<
         crate::Mono::Security::Interface::TlsProtocols,
     >,
-    pub _EnabledCiphers_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::Mono::Security::Interface::CipherSuiteCode,
+    pub _EnabledCiphers_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::Mono::Security::Interface::CipherSuiteCode,
+        >,
     >,
     pub cloned: bool,
     pub checkCertName: bool,
@@ -30,7 +40,9 @@ pub struct MonoTlsSettings {
     pub useServicePointManagerCallback: crate::System::Nullable_1<bool>,
     pub skipSystemValidators: bool,
     pub callbackNeedsChain: bool,
-    pub certificateValidator: *mut crate::Mono::Security::Interface::ICertificateValidator,
+    pub certificateValidator: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Interface::ICertificateValidator,
+    >,
 }
 #[cfg(feature = "Mono+Security+Interface+MonoTlsSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

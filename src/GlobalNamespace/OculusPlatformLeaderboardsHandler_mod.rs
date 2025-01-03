@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct OculusPlatformLeaderboardsHandler {
     __cordl_parent: crate::GlobalNamespace::PlatformLeaderboardsHandler,
-    pub _leaderboardIdsModel: *mut crate::GlobalNamespace::LeaderboardIdsModel,
-    pub _oculusRequestIds: *mut crate::System::Collections::Generic::HashSet_1<u64>,
-    pub _gameplayModifiersModel: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
+    pub _leaderboardIdsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LeaderboardIdsModel,
+    >,
+    pub _oculusRequestIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<u64>,
+    >,
+    pub _gameplayModifiersModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiersModelSO,
+    >,
 }
 #[cfg(feature = "OculusPlatformLeaderboardsHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

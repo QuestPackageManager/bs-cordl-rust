@@ -3,11 +3,21 @@
 #[derive(Debug)]
 pub struct SignerInfoGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub certificate: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-    pub contentSigner: *mut crate::Org::BouncyCastle::Crypto::ISignatureFactory,
-    pub sigId: *mut crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
-    pub signedGen: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
-    pub unsignedGen: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+    pub certificate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::X509Certificate,
+    >,
+    pub contentSigner: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ISignatureFactory,
+    >,
+    pub sigId: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
+    >,
+    pub signedGen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+    >,
+    pub unsignedGen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+    >,
     pub isDirectSignature: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+SignerInfoGenerator")]

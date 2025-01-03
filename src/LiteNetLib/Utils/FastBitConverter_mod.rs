@@ -139,7 +139,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::FastBitConv
 }
 #[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FastBitConverter_ConverterHelperDouble {
     padding: [u8; 8usize],
 }
@@ -164,7 +164,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
 impl crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {}
 #[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FastBitConverter_ConverterHelperFloat {
     padding: [u8; 4usize],
 }

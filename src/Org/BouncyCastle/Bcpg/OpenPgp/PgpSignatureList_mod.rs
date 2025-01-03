@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PgpSignatureList {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObject,
-    pub sigs: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+    pub sigs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpSignatureList")]

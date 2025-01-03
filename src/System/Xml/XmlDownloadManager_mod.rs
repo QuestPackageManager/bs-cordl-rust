@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlDownloadManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub connections: *mut crate::System::Collections::Hashtable,
+    pub connections: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Xml+XmlDownloadManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

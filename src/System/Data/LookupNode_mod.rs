@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct LookupNode {
     __cordl_parent: crate::System::Data::ExpressionNode,
-    pub _relationName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _columnName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _column: *mut crate::System::Data::DataColumn,
-    pub _relation: *mut crate::System::Data::DataRelation,
+    pub _relationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _columnName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+    pub _relation: quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
 }
 #[cfg(feature = "System+Data+LookupNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

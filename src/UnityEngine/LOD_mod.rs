@@ -1,11 +1,11 @@
 #[cfg(feature = "UnityEngine+LOD")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LOD {
     pub screenRelativeTransitionHeight: f32,
     pub fadeTransitionWidth: f32,
-    pub renderers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Renderer,
+    pub renderers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Renderer>,
     >,
 }
 #[cfg(feature = "UnityEngine+LOD")]

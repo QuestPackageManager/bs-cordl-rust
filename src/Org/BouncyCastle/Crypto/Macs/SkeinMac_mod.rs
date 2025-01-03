@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SkeinMac {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub engine: *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine,
+    pub engine: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+SkeinMac")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

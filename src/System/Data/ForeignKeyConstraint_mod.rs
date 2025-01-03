@@ -8,14 +8,14 @@ pub struct ForeignKeyConstraint {
     pub _acceptRejectRule: crate::System::Data::AcceptRejectRule,
     pub _childKey: crate::System::Data::DataKey,
     pub _parentKey: crate::System::Data::DataKey,
-    pub _constraintName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _parentColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _constraintName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _parentColumnNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _childColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _childColumnNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _parentTableName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _parentTableName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Data+ForeignKeyConstraint")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

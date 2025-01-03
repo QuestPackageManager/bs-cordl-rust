@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct RandomNoteRotation {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _noteController: *mut crate::GlobalNamespace::NoteControllerBase,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _noteController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteControllerBase,
+    >,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "RandomNoteRotation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

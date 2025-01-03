@@ -3,17 +3,21 @@
 #[derive(Debug)]
 pub struct XmlSchemaAttribute {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaAnnotated,
-    pub defaultValue: *mut quest_hook::libil2cpp::Il2CppString,
-    pub fixedValue: *mut quest_hook::libil2cpp::Il2CppString,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub defaultValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub fixedValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub form: crate::System::Xml::Schema::XmlSchemaForm,
     pub _cordl_use: crate::System::Xml::Schema::XmlSchemaUse,
-    pub refName: *mut crate::System::Xml::XmlQualifiedName,
-    pub typeName: *mut crate::System::Xml::XmlQualifiedName,
-    pub qualifiedName: *mut crate::System::Xml::XmlQualifiedName,
-    pub _cordl_type: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
-    pub attributeType: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
-    pub attDef: *mut crate::System::Xml::Schema::SchemaAttDef,
+    pub refName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub typeName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub qualifiedName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaSimpleType,
+    >,
+    pub attributeType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaSimpleType,
+    >,
+    pub attDef: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

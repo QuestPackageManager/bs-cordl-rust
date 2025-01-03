@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BezierShape {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub points: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::ProBuilder::BezierPoint,
+    pub points: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::ProBuilder::BezierPoint,
+        >,
     >,
     pub closeLoop: bool,
     pub radius: f32,
@@ -12,7 +14,9 @@ pub struct BezierShape {
     pub columns: i32,
     pub smooth: bool,
     pub m_IsEditing: bool,
-    pub m_Mesh: *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+    pub m_Mesh: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+    >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+BezierShape")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

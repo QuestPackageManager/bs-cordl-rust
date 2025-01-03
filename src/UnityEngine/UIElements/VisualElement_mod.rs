@@ -5,18 +5,22 @@ pub struct VisualElement {
     __cordl_parent: crate::UnityEngine::UIElements::Focusable,
     pub _UnityEngine_UIElements_IStylePropertyAnimations_runningAnimationCount_k__BackingField: i32,
     pub _UnityEngine_UIElements_IStylePropertyAnimations_completedAnimationCount_k__BackingField: i32,
-    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_ClassList: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_ClassList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub m_PropertyBag: *mut crate::System::Collections::Generic::List_1<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            crate::UnityEngine::PropertyName,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_PropertyBag: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::System::Collections::Generic::KeyValuePair_2<
+                crate::UnityEngine::PropertyName,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     >,
     pub m_Flags: crate::UnityEngine::UIElements::VisualElementFlags,
-    pub m_ViewDataKey: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ViewDataKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_RenderHints: crate::UnityEngine::UIElements::RenderHints,
     pub lastLayout: crate::UnityEngine::Rect,
     pub lastPseudoPadding: crate::UnityEngine::Rect,
@@ -34,26 +38,36 @@ pub struct VisualElement {
     pub m_PseudoStates: crate::UnityEngine::UIElements::PseudoStates,
     pub _containedPointerIds_k__BackingField: i32,
     pub m_PickingMode: crate::UnityEngine::UIElements::PickingMode,
-    pub _yogaNode_k__BackingField: *mut crate::UnityEngine::Yoga::YogaNode,
+    pub _yogaNode_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Yoga::YogaNode,
+    >,
     pub m_Style: crate::UnityEngine::UIElements::ComputedStyle,
-    pub variableContext: *mut crate::UnityEngine::UIElements::StyleVariableContext,
+    pub variableContext: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleVariableContext,
+    >,
     pub inheritedStylesHash: i32,
     pub controlid: u32,
     pub imguiContainerDescendantCount: i32,
     pub _enabledSelf_k__BackingField: bool,
     pub m_LanguageDirection: crate::UnityEngine::UIElements::LanguageDirection,
     pub m_LocalLanguageDirection: crate::UnityEngine::UIElements::LanguageDirection,
-    pub _generateVisualContent_k__BackingField: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::MeshGenerationContext,
+    pub _generateVisualContent_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::MeshGenerationContext,
+        >,
     >,
     pub m_SubRenderTargetMode: crate::UnityEngine::UIElements::VisualElement_RenderTargetMode,
-    pub m_defaultMaterial: *mut crate::UnityEngine::Material,
-    pub m_RunningAnimations: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
+    pub m_defaultMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub m_RunningAnimations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
+        >,
     >,
     pub m_NextParentCachedVersion: u32,
     pub m_NextParentRequiredVersion: u32,
-    pub m_CachedNextParentWithEventCallback: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_CachedNextParentWithEventCallback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub m_EventCallbackCategories: i32,
     pub m_CachedEventCallbackParentCategories: i32,
     pub m_DefaultActionEventCategories: i32,
@@ -61,18 +75,34 @@ pub struct VisualElement {
     pub _hierarchy_k__BackingField: crate::UnityEngine::UIElements::VisualElement_Hierarchy,
     pub _isRootVisualContainer_k__BackingField: bool,
     pub _cacheAsBitmap_k__BackingField: bool,
-    pub m_PhysicalParent: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_LogicalParent: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_Children: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_PhysicalParent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
     >,
-    pub _elementPanel_k__BackingField: *mut crate::UnityEngine::UIElements::BaseVisualElementPanel,
-    pub m_VisualTreeAssetSource: *mut crate::UnityEngine::UIElements::VisualTreeAsset,
-    pub inlineStyleAccess: *mut crate::UnityEngine::UIElements::InlineStyleAccess,
-    pub styleSheetList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::StyleSheet,
+    pub m_LogicalParent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
     >,
-    pub m_TypeData: *mut crate::UnityEngine::UIElements::VisualElement_TypeData,
+    pub m_Children: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
+    >,
+    pub _elementPanel_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVisualElementPanel,
+    >,
+    pub m_VisualTreeAssetSource: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualTreeAsset,
+    >,
+    pub inlineStyleAccess: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::InlineStyleAccess,
+    >,
+    pub styleSheetList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::StyleSheet,
+        >,
+    >,
+    pub m_TypeData: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement_TypeData,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3963,9 +3993,13 @@ for crate::UnityEngine::UIElements::VisualElement {
 #[derive(Debug)]
 pub struct VisualElement_BaseVisualElementScheduledItem {
     __cordl_parent: crate::UnityEngine::UIElements::ScheduledItem,
-    pub _element_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub _element_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub isScheduled: bool,
-    pub m_Activator: *mut crate::UnityEngine::UIElements::VisualElementPanelActivator,
+    pub m_Activator: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElementPanelActivator,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4182,9 +4216,11 @@ for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem
 #[derive(Debug)]
 pub struct VisualElement_CustomStyleAccess {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_CustomProperties: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+    pub m_CustomProperties: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        >,
     >,
     pub m_DpiScaling: f32,
 }
@@ -4385,9 +4421,11 @@ for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VisualElement_Hierarchy {
-    pub m_Owner: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_Owner: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -4887,10 +4925,10 @@ for crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
 #[derive(Debug)]
 pub struct VisualElement_TypeData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _type_k__BackingField: *mut crate::System::Type,
-    pub m_FullTypeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_TypeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_TypeNamespace: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub m_FullTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_TypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_TypeNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5058,21 +5096,43 @@ for crate::UnityEngine::UIElements::VisualElement_UxmlFactory {
 #[derive(Debug)]
 pub struct VisualElement_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlTraits,
-    pub m_Name: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_ViewDataKey: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_PickingMode: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::PickingMode,
+    pub m_Name: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
-    pub m_Tooltip: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_UsageHints: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::UsageHints,
+    pub m_ViewDataKey: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
-    pub _focusIndex_k__BackingField: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_TabIndex: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub _focusable_k__BackingField: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_Class: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_ContentContainer: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_Style: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_PickingMode: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::PickingMode,
+        >,
+    >,
+    pub m_Tooltip: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_UsageHints: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::UsageHints,
+        >,
+    >,
+    pub _focusIndex_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub m_TabIndex: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub _focusable_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_Class: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_ContentContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_Style: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

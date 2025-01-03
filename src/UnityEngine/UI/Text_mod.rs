@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct Text {
     __cordl_parent: crate::UnityEngine::UI::MaskableGraphic,
-    pub m_FontData: *mut crate::UnityEngine::UI::FontData,
-    pub m_Text: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_TextCache: *mut crate::UnityEngine::TextGenerator,
-    pub m_TextCacheForLayout: *mut crate::UnityEngine::TextGenerator,
+    pub m_FontData: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::FontData>,
+    pub m_Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_TextCache: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextGenerator>,
+    pub m_TextCacheForLayout: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextGenerator,
+    >,
     pub m_DisableFontTextureRebuiltCallback: bool,
-    pub m_TempVerts: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::UIVertex,
+    pub m_TempVerts: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::UIVertex>,
     >,
 }
 #[cfg(feature = "UnityEngine+UI+Text")]

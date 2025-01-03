@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LoadObjectInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
-    pub _value: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LoadObjectInstruction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

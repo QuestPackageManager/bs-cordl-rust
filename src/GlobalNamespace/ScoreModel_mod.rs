@@ -107,7 +107,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoreModel {
 #[derive(Debug)]
 pub struct ScoreModel_MaxScoreCounterElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub noteScoreDefinition: *mut crate::GlobalNamespace::ScoreModel_NoteScoreDefinition,
+    pub noteScoreDefinition: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScoreModel_NoteScoreDefinition,
+    >,
     pub _cordl_time: f32,
 }
 #[cfg(feature = "ScoreModel+MaxScoreCounterElement")]

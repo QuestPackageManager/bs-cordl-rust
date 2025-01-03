@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct BpmController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _beatmapDataCallback: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _beatmapDataCallback: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
     pub _currentBpm: f32,
 }
 #[cfg(feature = "BpmController")]

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DefaultPKMacResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mac: *mut crate::Org::BouncyCastle::Crypto::IMac,
+    pub mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+DefaultPKMacResult")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct LocationWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_InternalLocation: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    pub m_InternalLocation: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    >,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceLocations+LocationWrapper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

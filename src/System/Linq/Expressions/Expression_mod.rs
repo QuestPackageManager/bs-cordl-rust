@@ -3464,7 +3464,7 @@ for crate::System::Linq::Expressions::Expression_DefaultExpressionProxy {
 pub struct Expression_ExtensionInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub NodeType: crate::System::Linq::Expressions::ExpressionType,
-    pub Type: *mut crate::System::Type,
+    pub Type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+ExtensionInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

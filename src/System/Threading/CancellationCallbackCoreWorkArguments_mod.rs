@@ -1,9 +1,11 @@
 #[cfg(feature = "System+Threading+CancellationCallbackCoreWorkArguments")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CancellationCallbackCoreWorkArguments {
-    pub _currArrayFragment: *mut crate::System::Threading::SparselyPopulatedArrayFragment_1<
-        *mut crate::System::Threading::CancellationCallbackInfo,
+    pub _currArrayFragment: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SparselyPopulatedArrayFragment_1<
+            *mut crate::System::Threading::CancellationCallbackInfo,
+        >,
     >,
     pub _currArrayIndex: i32,
 }

@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct HC256Engine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub p: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub q: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub q: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub cnt: u32,
-    pub key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub iv: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub initialised: bool,
-    pub buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub idx: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+HC256Engine")]

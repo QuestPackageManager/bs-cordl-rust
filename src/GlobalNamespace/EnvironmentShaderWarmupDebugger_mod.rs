@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct EnvironmentShaderWarmupDebugger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _renderersThatWereNotRendered: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Renderer,
+    pub _renderersThatWereNotRendered: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Renderer>,
     >,
-    pub _materialsThatWereNotRendered: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::UnityEngine::Material,
+    pub _materialsThatWereNotRendered: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<*mut crate::UnityEngine::Material>,
     >,
-    pub _reusableStringBuilder: *mut crate::System::Text::StringBuilder,
+    pub _reusableStringBuilder: quest_hook::libil2cpp::Gc<
+        crate::System::Text::StringBuilder,
+    >,
 }
 #[cfg(feature = "EnvironmentShaderWarmupDebugger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

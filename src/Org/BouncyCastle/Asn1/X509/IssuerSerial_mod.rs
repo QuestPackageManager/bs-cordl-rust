@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct IssuerSerial {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub issuer: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
-    pub serial: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub issuerUid: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
+    pub issuer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+    >,
+    pub serial: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub issuerUid: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerBitString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+IssuerSerial")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

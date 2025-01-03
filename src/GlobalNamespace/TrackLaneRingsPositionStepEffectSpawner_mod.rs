@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct TrackLaneRingsPositionStepEffectSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _trackLaneRingsManager: *mut crate::GlobalNamespace::TrackLaneRingsManager,
+    pub _trackLaneRingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TrackLaneRingsManager,
+    >,
     pub _beatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _minPositionStep: f32,
     pub _maxPositionStep: f32,
     pub _moveSpeed: f32,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "TrackLaneRingsPositionStepEffectSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

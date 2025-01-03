@@ -1,10 +1,12 @@
 #[cfg(feature = "BeatmapKey")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BeatmapKey {
-    pub beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSO,
+    >,
     pub difficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    pub levelId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "BeatmapKey")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

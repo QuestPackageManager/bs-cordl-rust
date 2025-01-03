@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct Certificate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mCertificateList: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+    pub mCertificateList: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+Certificate")]

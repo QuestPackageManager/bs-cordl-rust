@@ -1,30 +1,42 @@
 #[cfg(feature = "UnityEngine+InputSystem+InputBindingResolver")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputBindingResolver {
     pub totalProcessorCount: i32,
     pub totalCompositeCount: i32,
     pub totalInteractionCount: i32,
-    pub maps: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputActionMap,
+    pub maps: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputActionMap,
+        >,
     >,
-    pub controls: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputControl,
+    pub controls: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputControl,
+        >,
     >,
     pub memory: crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory,
-    pub interactions: *mut quest_hook::libil2cpp::Il2CppArray<Blacklisted>,
-    pub processors: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputProcessor,
+    pub interactions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<Blacklisted>,
     >,
-    pub composites: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputBindingComposite,
+    pub processors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputProcessor,
+        >,
+    >,
+    pub composites: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputBindingComposite,
+        >,
     >,
     pub bindingMask: crate::System::Nullable_1<
         crate::UnityEngine::InputSystem::InputBinding,
     >,
     pub m_IsControlOnlyResolve: bool,
-    pub m_Parameters: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
+    pub m_Parameters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputBindingResolver")]

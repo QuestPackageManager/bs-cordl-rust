@@ -3,14 +3,24 @@
 #[derive(Debug)]
 pub struct TlsBlockCipher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub context: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
-    pub randomData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub context: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+    >,
+    pub randomData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub useExplicitIV: bool,
     pub encryptThenMac: bool,
-    pub encryptCipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
-    pub decryptCipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
-    pub mWriteMac: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsMac,
-    pub mReadMac: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsMac,
+    pub encryptCipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    >,
+    pub decryptCipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    >,
+    pub mWriteMac: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsMac,
+    >,
+    pub mReadMac: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsMac,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsBlockCipher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

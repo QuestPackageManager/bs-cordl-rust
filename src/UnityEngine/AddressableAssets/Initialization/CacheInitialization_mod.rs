@@ -125,7 +125,7 @@ pub struct CacheInitialization_CacheInitOp {
     __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         bool,
     >,
-    pub m_Callback: *mut crate::System::Func_1<bool>,
+    pub m_Callback: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
     pub m_UpdateRequired: bool,
 }
 #[cfg(

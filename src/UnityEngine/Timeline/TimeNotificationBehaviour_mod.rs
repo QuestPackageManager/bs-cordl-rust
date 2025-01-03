@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct TimeNotificationBehaviour {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
-    pub m_Notifications: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
+    pub m_Notifications: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
+        >,
     >,
     pub m_PreviousTime: f64,
     pub m_NeedSortNotifications: bool,
@@ -205,10 +207,10 @@ for crate::UnityEngine::Timeline::TimeNotificationBehaviour {
 }
 #[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TimeNotificationBehaviour_NotificationEntry {
     pub _cordl_time: f64,
-    pub payload: *mut crate::UnityEngine::Playables::INotification,
+    pub payload: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotification>,
     pub notificationFired: bool,
     pub flags: crate::UnityEngine::Timeline::NotificationFlags,
 }

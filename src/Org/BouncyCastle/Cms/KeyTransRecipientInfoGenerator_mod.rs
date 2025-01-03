@@ -3,12 +3,24 @@
 #[derive(Debug)]
 pub struct KeyTransRecipientInfoGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub recipientTbsCert: *mut crate::Org::BouncyCastle::Asn1::X509::TbsCertificateStructure,
-    pub recipientPublicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub subjectKeyIdentifier: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub info: *mut crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
-    pub issuerAndSerialNumber: *mut crate::Org::BouncyCastle::Asn1::Cms::IssuerAndSerialNumber,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub recipientTbsCert: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::TbsCertificateStructure,
+    >,
+    pub recipientPublicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    >,
+    pub subjectKeyIdentifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub info: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+    >,
+    pub issuerAndSerialNumber: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::IssuerAndSerialNumber,
+    >,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+KeyTransRecipientInfoGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

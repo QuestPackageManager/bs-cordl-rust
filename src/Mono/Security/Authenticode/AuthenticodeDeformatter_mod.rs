@@ -3,19 +3,25 @@
 #[derive(Debug)]
 pub struct AuthenticodeDeformatter {
     __cordl_parent: crate::Mono::Security::Authenticode::AuthenticodeBase,
-    pub filename: *mut quest_hook::libil2cpp::Il2CppString,
-    pub rawdata: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub hash: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub coll: *mut crate::Mono::Security::X509::X509CertificateCollection,
-    pub signedHash: *mut crate::Mono::Security::ASN1,
+    pub filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub rawdata: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub hash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub coll: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::X509::X509CertificateCollection,
+    >,
+    pub signedHash: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
     pub timestamp: crate::System::DateTime,
-    pub signingCertificate: *mut crate::Mono::Security::X509::X509Certificate,
+    pub signingCertificate: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::X509::X509Certificate,
+    >,
     pub reason: i32,
     pub trustedRoot: bool,
     pub trustedTimestampRoot: bool,
-    pub entry: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub signerChain: *mut crate::Mono::Security::X509::X509Chain,
-    pub timestampChain: *mut crate::Mono::Security::X509::X509Chain,
+    pub entry: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub signerChain: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Chain>,
+    pub timestampChain: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::X509::X509Chain,
+    >,
 }
 #[cfg(feature = "Mono+Security+Authenticode+AuthenticodeDeformatter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

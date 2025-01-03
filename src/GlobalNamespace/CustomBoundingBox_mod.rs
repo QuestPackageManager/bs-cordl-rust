@@ -5,7 +5,7 @@ pub struct CustomBoundingBox {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _boundingBoxCenter: crate::UnityEngine::Vector3,
     pub _boundingBoxSize: crate::UnityEngine::Vector3,
-    pub _meshRenderer: *mut crate::UnityEngine::MeshRenderer,
+    pub _meshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
 }
 #[cfg(feature = "CustomBoundingBox")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

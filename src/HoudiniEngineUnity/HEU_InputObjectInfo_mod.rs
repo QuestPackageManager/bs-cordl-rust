@@ -3,16 +3,20 @@
 #[derive(Debug)]
 pub struct HEU_InputObjectInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _gameObject: *mut crate::UnityEngine::GameObject,
-    pub _terrainReference: *mut crate::UnityEngine::Terrain,
-    pub _boundingVolumeReference: *mut crate::GlobalNamespace::HEU_BoundingVolume,
-    pub _tilemapReference: *mut crate::UnityEngine::Tilemaps::Tilemap,
+    pub _gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _terrainReference: quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
+    pub _boundingVolumeReference: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HEU_BoundingVolume,
+    >,
+    pub _tilemapReference: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Tilemaps::Tilemap,
+    >,
     pub _syncdTransform: crate::UnityEngine::Matrix4x4,
     pub _useTransformOffset: bool,
     pub _translateOffset: crate::UnityEngine::Vector3,
     pub _rotateOffset: crate::UnityEngine::Vector3,
     pub _scaleOffset: crate::UnityEngine::Vector3,
-    pub _inputInterfaceType: *mut crate::System::Type,
+    pub _inputInterfaceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputObjectInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

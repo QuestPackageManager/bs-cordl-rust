@@ -3,11 +3,21 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalPlayerScoreDiffTextManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _scoreDiffText: *mut crate::GlobalNamespace::MultiplayerScoreDiffText,
-    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
-    pub _scoreProvider: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
-    pub _hudInitData: *mut crate::GlobalNamespace::CoreGameHUDController_InitData,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _scoreDiffText: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreDiffText,
+    >,
+    pub _multiplayerController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerController,
+    >,
+    pub _scoreProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreProvider,
+    >,
+    pub _hudInitData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CoreGameHUDController_InitData,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
     pub _timeToNextUpdate: f32,
     pub _wasLocalPlayerLeader: crate::System::Nullable_1<bool>,
 }

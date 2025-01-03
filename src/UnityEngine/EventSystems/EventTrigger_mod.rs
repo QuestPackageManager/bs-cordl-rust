@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct EventTrigger {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_Delegates: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
+    pub m_Delegates: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::EventSystems::EventTrigger_Entry,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
@@ -626,7 +628,9 @@ for crate::UnityEngine::EventSystems::EventTrigger {
 pub struct EventTrigger_Entry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub eventID: crate::UnityEngine::EventSystems::EventTriggerType,
-    pub callback: *mut crate::UnityEngine::EventSystems::EventTrigger_TriggerEvent,
+    pub callback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::EventTrigger_TriggerEvent,
+    >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger+Entry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

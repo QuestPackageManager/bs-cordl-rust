@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct IntVfxBeatmapEventDataBox {
     __cordl_parent: crate::GlobalNamespace::BeatmapEventDataBox,
-    pub _vfxBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::GlobalNamespace::IntFxBaseData,
+    pub _vfxBaseDataList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::IntFxBaseData,
+        >,
     >,
     pub _beatStep: f32,
 }

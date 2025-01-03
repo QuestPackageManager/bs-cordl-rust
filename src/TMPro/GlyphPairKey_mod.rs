@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+GlyphPairKey")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GlyphPairKey {
     pub firstGlyphIndex: u32,
     pub secondGlyphIndex: u32,

@@ -4,7 +4,7 @@
 pub struct UnaryNode {
     __cordl_parent: crate::System::Data::ExpressionNode,
     pub _op: i32,
-    pub _right: *mut crate::System::Data::ExpressionNode,
+    pub _right: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
 }
 #[cfg(feature = "System+Data+UnaryNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

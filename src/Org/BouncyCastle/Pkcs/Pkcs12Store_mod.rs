@@ -3,17 +3,31 @@
 #[derive(Debug)]
 pub struct Pkcs12Store {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub keys: *mut crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable,
-    pub localIds: *mut crate::System::Collections::IDictionary,
-    pub certs: *mut crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable,
-    pub chainCerts: *mut crate::System::Collections::IDictionary,
-    pub keyCerts: *mut crate::System::Collections::IDictionary,
-    pub keyAlgorithm: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub keyPrfAlgorithm: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub certAlgorithm: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub certPrfAlgorithm: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    pub keys: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable,
+    >,
+    pub localIds: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    pub certs: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable,
+    >,
+    pub chainCerts: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    pub keyCerts: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    pub keyAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub keyPrfAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub certAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub certPrfAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
     pub useDerEncoding: bool,
-    pub unmarkedKeyEntry: *mut crate::Org::BouncyCastle::Pkcs::AsymmetricKeyEntry,
+    pub unmarkedKeyEntry: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Pkcs::AsymmetricKeyEntry,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -496,7 +510,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Pkcs::Pkcs1
 #[derive(Debug)]
 pub struct Pkcs12Store_CertId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub id: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -608,8 +622,8 @@ for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
 #[derive(Debug)]
 pub struct Pkcs12Store_IgnoresCaseHashtable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub orig: *mut crate::System::Collections::IDictionary,
-    pub keys: *mut crate::System::Collections::IDictionary,
+    pub orig: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    pub keys: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

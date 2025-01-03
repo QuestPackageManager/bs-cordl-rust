@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct MailAddress {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _displayNameEncoding: *mut crate::System::Text::Encoding,
-    pub _displayName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _userName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _host: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _displayNameEncoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    pub _displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Net+Mail+MailAddress")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

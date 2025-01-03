@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct CombinedHash {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mContext: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
-    pub mMd5: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub mSha1: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    pub mContext: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+    >,
+    pub mMd5: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub mSha1: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CombinedHash")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

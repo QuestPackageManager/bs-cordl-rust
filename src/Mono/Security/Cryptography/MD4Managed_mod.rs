@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct MD4Managed {
     __cordl_parent: crate::Mono::Security::Cryptography::MD4,
-    pub state: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub count: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub x: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub digest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub count: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub digest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Security+Cryptography+MD4Managed")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

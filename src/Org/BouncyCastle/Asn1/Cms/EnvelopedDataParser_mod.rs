@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct EnvelopedDataParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _seq: *mut crate::Org::BouncyCastle::Asn1::Asn1SequenceParser,
-    pub _version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub _nextObject: *mut crate::Org::BouncyCastle::Asn1::IAsn1Convertible,
+    pub _seq: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1SequenceParser,
+    >,
+    pub _version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub _nextObject: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::IAsn1Convertible,
+    >,
     pub _originatorInfoCalled: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+EnvelopedDataParser")]

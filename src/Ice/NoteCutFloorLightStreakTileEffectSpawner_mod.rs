@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct NoteCutFloorLightStreakTileEffectSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _floorLightStreakTileEffect: *mut crate::Ice::FloorLightStreakTileEffect,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
+    pub _floorLightStreakTileEffect: quest_hook::libil2cpp::Gc<
+        crate::Ice::FloorLightStreakTileEffect,
+    >,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub _spawnColor: crate::UnityEngine::Color,
 }
 #[cfg(feature = "Ice+NoteCutFloorLightStreakTileEffectSpawner")]

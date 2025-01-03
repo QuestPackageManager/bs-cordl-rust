@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct PlayerSpecificSettingsAtStartNetSerializable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _activePlayerSpecificSettingsAtGameStart_k__BackingField: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
+    pub _activePlayerSpecificSettingsAtGameStart_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
+        >,
     >,
-    pub _activePlayersAtGameStart: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _activePlayersAtGameStart: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     >,
 }
 #[cfg(feature = "PlayerSpecificSettingsAtStartNetSerializable")]

@@ -4,8 +4,10 @@
 pub struct ResetLocalLeaderboardOnKey {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _keyCode: crate::UnityEngine::KeyCode,
-    pub _fileStorage: *mut crate::GlobalNamespace::IFileStorage,
-    pub _localLeaderboardsModel: *mut crate::GlobalNamespace::LocalLeaderboardsModel,
+    pub _fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+    pub _localLeaderboardsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LocalLeaderboardsModel,
+    >,
 }
 #[cfg(feature = "ResetLocalLeaderboardOnKey")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

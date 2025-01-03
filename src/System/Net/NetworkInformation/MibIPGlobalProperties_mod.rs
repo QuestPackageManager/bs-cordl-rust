@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct MibIPGlobalProperties {
     __cordl_parent: crate::System::Net::NetworkInformation::UnixIPGlobalProperties,
-    pub StatisticsFile: *mut quest_hook::libil2cpp::Il2CppString,
-    pub StatisticsFileIPv6: *mut quest_hook::libil2cpp::Il2CppString,
-    pub TcpFile: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Tcp6File: *mut quest_hook::libil2cpp::Il2CppString,
-    pub UdpFile: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Udp6File: *mut quest_hook::libil2cpp::Il2CppString,
+    pub StatisticsFile: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub StatisticsFileIPv6: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub TcpFile: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Tcp6File: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub UdpFile: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Udp6File: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Net+NetworkInformation+MibIPGlobalProperties")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -5,7 +5,9 @@ pub struct UITKTextHandle {
     __cordl_parent: crate::UnityEngine::TextCore::Text::TextHandle,
     pub _MeasuredSizes_k__BackingField: crate::UnityEngine::Vector2,
     pub _RoundedSizes_k__BackingField: crate::UnityEngine::Vector2,
-    pub m_TextElement: *mut crate::UnityEngine::UIElements::TextElement,
+    pub m_TextElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextElement,
+    >,
     pub isOverridingCursor: bool,
     pub currentLinkIDHash: i32,
     pub hasLinkTag: bool,

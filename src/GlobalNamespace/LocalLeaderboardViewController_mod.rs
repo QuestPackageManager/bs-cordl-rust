@@ -4,15 +4,27 @@
 pub struct LocalLeaderboardViewController {
     __cordl_parent: crate::GlobalNamespace::LeaderboardViewController,
     pub _maxNumberOfCells: i32,
-    pub _leaderboardTableView: *mut crate::GlobalNamespace::LocalLeaderboardTableView,
-    pub _clearLeaderboardsWrapper: *mut crate::UnityEngine::GameObject,
-    pub _clearLeaderboardsButton: *mut crate::HMUI::NoTransitionsButton,
-    pub _scopeSegmentedControl: *mut crate::HMUI::IconSegmentedControl,
-    pub _allTimeLeaderboardIcon: *mut crate::UnityEngine::Sprite,
-    pub _todayLeaderboardIcon: *mut crate::UnityEngine::Sprite,
-    pub _clearLeaderboardIcon: *mut crate::UnityEngine::Sprite,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _localLeaderboardsModel: *mut crate::GlobalNamespace::LocalLeaderboardsModel,
+    pub _leaderboardTableView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LocalLeaderboardTableView,
+    >,
+    pub _clearLeaderboardsWrapper: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _clearLeaderboardsButton: quest_hook::libil2cpp::Gc<
+        crate::HMUI::NoTransitionsButton,
+    >,
+    pub _scopeSegmentedControl: quest_hook::libil2cpp::Gc<
+        crate::HMUI::IconSegmentedControl,
+    >,
+    pub _allTimeLeaderboardIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _todayLeaderboardIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _clearLeaderboardIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _localLeaderboardsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LocalLeaderboardsModel,
+    >,
     pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
     pub _refreshIsNeeded: bool,
     pub _enableClear: bool,

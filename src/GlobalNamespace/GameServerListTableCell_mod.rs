@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct GameServerListTableCell {
     __cordl_parent: crate::HMUI::TableCell,
-    pub _serverName: *mut crate::HMUI::CurvedTextMeshPro,
-    pub _difficultiesText: *mut crate::HMUI::CurvedTextMeshPro,
-    pub _musicPackText: *mut crate::HMUI::CurvedTextMeshPro,
-    pub _playerCount: *mut crate::HMUI::CurvedTextMeshPro,
-    pub _passwordProtected: *mut crate::UnityEngine::GameObject,
-    pub _songPackMasksModel: *mut crate::GlobalNamespace::SongPackMasksModel,
+    pub _serverName: quest_hook::libil2cpp::Gc<crate::HMUI::CurvedTextMeshPro>,
+    pub _difficultiesText: quest_hook::libil2cpp::Gc<crate::HMUI::CurvedTextMeshPro>,
+    pub _musicPackText: quest_hook::libil2cpp::Gc<crate::HMUI::CurvedTextMeshPro>,
+    pub _playerCount: quest_hook::libil2cpp::Gc<crate::HMUI::CurvedTextMeshPro>,
+    pub _passwordProtected: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _songPackMasksModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPackMasksModel,
+    >,
 }
 #[cfg(feature = "GameServerListTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

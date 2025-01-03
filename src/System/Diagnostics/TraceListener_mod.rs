@@ -7,8 +7,8 @@ pub struct TraceListener {
     pub indentSize: i32,
     pub traceOptions: crate::System::Diagnostics::TraceOptions,
     pub needIndent: bool,
-    pub listenerName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub filter: *mut crate::System::Diagnostics::TraceFilter,
+    pub listenerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub filter: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::TraceFilter>,
 }
 #[cfg(feature = "System+Diagnostics+TraceListener")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct LightGroupEditorPrefabContext {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub lightGroups: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LightGroupSO,
+    pub lightGroups: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LightGroupSO,
+        >,
     >,
 }
 #[cfg(feature = "LightGroupEditorPrefabContext")]

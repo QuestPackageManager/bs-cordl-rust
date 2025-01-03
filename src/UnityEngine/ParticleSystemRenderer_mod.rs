@@ -1055,10 +1055,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ParticleSystemRen
 }
 #[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ParticleSystemRenderer_BakeTextureOutput {
-    pub vertices: *mut crate::UnityEngine::Texture2D,
-    pub indices: *mut crate::UnityEngine::Texture2D,
+    pub vertices: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    pub indices: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
 }
 #[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

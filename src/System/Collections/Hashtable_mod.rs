@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct Hashtable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _buckets: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Collections::Hashtable_bucket,
+    pub _buckets: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Collections::Hashtable_bucket>,
     >,
     pub _count: i32,
     pub _occupancy: i32,
@@ -12,10 +12,12 @@ pub struct Hashtable {
     pub _loadFactor: f32,
     pub _version: i32,
     pub _isWriterInProgress: bool,
-    pub _keys: *mut crate::System::Collections::ICollection,
-    pub _values: *mut crate::System::Collections::ICollection,
-    pub _keycomparer: *mut crate::System::Collections::IEqualityComparer,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _keys: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    pub _values: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    pub _keycomparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IEqualityComparer,
+    >,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+Hashtable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -843,13 +845,13 @@ for crate::System::Collections::Hashtable_HashtableDebugView {
 #[derive(Debug)]
 pub struct Hashtable_HashtableEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _hashtable: *mut crate::System::Collections::Hashtable,
+    pub _hashtable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub _bucket: i32,
     pub _version: i32,
     pub _current: bool,
     pub _getObjectRetType: i32,
-    pub _currentKey: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _currentValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _currentKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _currentValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1031,7 +1033,7 @@ for crate::System::Collections::Hashtable_HashtableEnumerator {
 #[derive(Debug)]
 pub struct Hashtable_KeyCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _hashtable: *mut crate::System::Collections::Hashtable,
+    pub _hashtable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1169,7 +1171,7 @@ for crate::System::Collections::Hashtable_KeyCollection {
 #[derive(Debug)]
 pub struct Hashtable_ValueCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _hashtable: *mut crate::System::Collections::Hashtable,
+    pub _hashtable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1304,10 +1306,10 @@ for crate::System::Collections::Hashtable_ValueCollection {
 }
 #[cfg(feature = "System+Collections+Hashtable+bucket")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Hashtable_bucket {
-    pub key: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub val: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub hash_coll: i32,
 }
 #[cfg(feature = "System+Collections+Hashtable+bucket")]

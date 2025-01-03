@@ -5,8 +5,8 @@ pub struct NetConnectRequestPacket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ConnectionTime: i64,
     pub ConnectionNumber: u8,
-    pub TargetAddress: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub Data: *mut crate::LiteNetLib::Utils::NetDataReader,
+    pub TargetAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub Data: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
 }
 #[cfg(feature = "LiteNetLib+NetConnectRequestPacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

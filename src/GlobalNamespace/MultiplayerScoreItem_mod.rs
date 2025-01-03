@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct MultiplayerScoreItem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _scoreText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _nameText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub _nameColorTween: *mut crate::Tweening::Tween_1<crate::UnityEngine::Color>,
-    pub _scoreColorTween: *mut crate::Tweening::Tween_1<crate::UnityEngine::Color>,
+    pub _scoreText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _nameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::TimeTweeningManager,
+    >,
+    pub _nameColorTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Color>,
+    >,
+    pub _scoreColorTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Color>,
+    >,
 }
 #[cfg(feature = "MultiplayerScoreItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

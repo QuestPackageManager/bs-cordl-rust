@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct SelectableStateController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub stateDidChangeEvent: *mut crate::System::Action_2<
-        crate::GlobalNamespace::SelectableStateController_ViewState,
-        bool,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::TimeTweeningManager,
+    >,
+    pub stateDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            crate::GlobalNamespace::SelectableStateController_ViewState,
+            bool,
+        >,
     >,
     pub _currentViewState_k__BackingField: crate::GlobalNamespace::SelectableStateController_ViewState,
 }

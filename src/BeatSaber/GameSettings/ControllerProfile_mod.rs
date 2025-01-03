@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct ControllerProfile {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub localizationKey: *mut quest_hook::libil2cpp::Il2CppString,
+    pub localizationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub index: i32,
     pub modifiable: bool,
     pub _alternativeHandling_k__BackingField: bool,
     pub _leftController_k__BackingField: crate::BeatSaber::GameSettings::Controller,
     pub _rightController_k__BackingField: crate::BeatSaber::GameSettings::Controller,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
 }
 #[cfg(feature = "BeatSaber+GameSettings+ControllerProfile")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

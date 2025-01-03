@@ -10,13 +10,15 @@ pub struct TextSelectingUtilities {
     pub m_MouseDragSelectsWholeWords: bool,
     pub m_DblClickInitPosStart: i32,
     pub m_DblClickInitPosEnd: i32,
-    pub m_TextHandle: *mut crate::UnityEngine::TextCore::Text::TextHandle,
+    pub m_TextHandle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextHandle,
+    >,
     pub m_RevealCursor: bool,
     pub m_CursorIndex: i32,
     pub m_SelectIndex: i32,
-    pub OnCursorIndexChange: *mut crate::System::Action,
-    pub OnSelectIndexChange: *mut crate::System::Action,
-    pub OnRevealCursorChange: *mut crate::System::Action,
+    pub OnCursorIndexChange: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub OnSelectIndexChange: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub OnRevealCursorChange: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "UnityEngine+TextSelectingUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ByteMatcher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub map: *mut crate::System::Collections::Hashtable,
-    pub starts: *mut crate::System::Collections::Hashtable,
+    pub map: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub starts: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+ByteMatcher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BasicConstraints {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub cA: *mut crate::Org::BouncyCastle::Asn1::DerBoolean,
-    pub pathLenConstraint: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+    pub cA: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerBoolean>,
+    pub pathLenConstraint: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerInteger,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+BasicConstraints")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

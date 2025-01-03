@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ProBuilder+PickerOptions")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PickerOptions {
     pub _depthTest_k__BackingField: bool,
     pub _rectSelectMode_k__BackingField: crate::UnityEngine::ProBuilder::RectSelectMode,

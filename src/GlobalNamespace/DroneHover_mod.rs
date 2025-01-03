@@ -5,18 +5,20 @@ pub struct DroneHover {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _hoverAreaPerAxis: crate::UnityEngine::Vector3,
     pub _speed: f32,
-    pub _compoundSins: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::DroneHover_SineLayer,
+    pub _compoundSins: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::DroneHover_SineLayer,
+        >,
     >,
-    pub _tiltTransforms: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Transform,
+    pub _tiltTransforms: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Transform>,
     >,
     pub _maxTiltAmount: f32,
     pub _tiltSpeed: f32,
     pub _tiltAheadOfTime: f32,
     pub _tiltToTarget: bool,
     pub _startPos: crate::UnityEngine::Vector3,
-    pub _cloth: *mut crate::UnityEngine::Cloth,
+    pub _cloth: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cloth>,
 }
 #[cfg(feature = "DroneHover")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

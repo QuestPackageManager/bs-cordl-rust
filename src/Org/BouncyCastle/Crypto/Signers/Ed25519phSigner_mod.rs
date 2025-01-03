@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct Ed25519phSigner {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub prehash: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub context: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub prehash: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub forSigning: bool,
-    pub privateKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::Ed25519PrivateKeyParameters,
-    pub publicKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::Ed25519PublicKeyParameters,
+    pub privateKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::Ed25519PrivateKeyParameters,
+    >,
+    pub publicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::Ed25519PublicKeyParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519phSigner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

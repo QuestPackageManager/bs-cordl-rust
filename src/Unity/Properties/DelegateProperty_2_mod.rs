@@ -6,9 +6,15 @@ pub struct DelegateProperty_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::Unity::Properties::Property_2<TContainer, TValue>,
-    pub m_Getter: *mut crate::Unity::Properties::PropertyGetter_2<TContainer, TValue>,
-    pub m_Setter: *mut crate::Unity::Properties::PropertySetter_2<TContainer, TValue>,
-    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Getter: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::PropertyGetter_2<TContainer, TValue>,
+    >,
+    pub m_Setter: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::PropertySetter_2<TContainer, TValue>,
+    >,
+    pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }

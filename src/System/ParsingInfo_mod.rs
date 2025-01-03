@@ -1,8 +1,8 @@
 #[cfg(feature = "System+ParsingInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ParsingInfo {
-    pub calendar: *mut crate::System::Globalization::Calendar,
+    pub calendar: quest_hook::libil2cpp::Gc<crate::System::Globalization::Calendar>,
     pub dayOfWeek: i32,
     pub timeMark: crate::System::DateTimeParse_TM,
     pub fUseHour12: bool,
@@ -10,7 +10,9 @@ pub struct ParsingInfo {
     pub fAllowInnerWhite: bool,
     pub fAllowTrailingWhite: bool,
     pub fCustomNumberParser: bool,
-    pub parseNumberDelegate: *mut crate::System::DateTimeParse_MatchNumberDelegate,
+    pub parseNumberDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::DateTimeParse_MatchNumberDelegate,
+    >,
 }
 #[cfg(feature = "System+ParsingInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

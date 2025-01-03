@@ -1,9 +1,9 @@
 #[cfg(feature = "UnityEngine+U2D+SpriteBone")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SpriteBone {
-    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Guid: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Guid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Position: crate::UnityEngine::Vector3,
     pub m_Rotation: crate::UnityEngine::Quaternion,
     pub m_Length: f32,

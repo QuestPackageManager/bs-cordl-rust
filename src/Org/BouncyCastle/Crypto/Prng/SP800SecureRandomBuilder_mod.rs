@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct SP800SecureRandomBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    pub mEntropySourceProvider: *mut crate::Org::BouncyCastle::Crypto::IEntropySourceProvider,
-    pub mPersonalizationString: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mRandom: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
+    pub mEntropySourceProvider: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IEntropySourceProvider,
+    >,
+    pub mPersonalizationString: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub mSecurityStrength: i32,
     pub mEntropyBitsRequired: i32,
 }
@@ -235,10 +241,14 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
 #[derive(Debug)]
 pub struct SP800SecureRandomBuilder_CtrDrbgProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mBlockCipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    pub mBlockCipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    >,
     pub mKeySizeInBits: i32,
-    pub mNonce: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mPersonalizationString: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mNonce: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mPersonalizationString: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub mSecurityStrength: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider")]
@@ -368,9 +378,11 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProv
 #[derive(Debug)]
 pub struct SP800SecureRandomBuilder_HMacDrbgProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mHMac: *mut crate::Org::BouncyCastle::Crypto::IMac,
-    pub mNonce: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mPersonalizationString: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mHMac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
+    pub mNonce: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mPersonalizationString: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub mSecurityStrength: i32,
 }
 #[cfg(
@@ -493,9 +505,11 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgPro
 #[derive(Debug)]
 pub struct SP800SecureRandomBuilder_HashDrbgProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub mNonce: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mPersonalizationString: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mDigest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub mNonce: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mPersonalizationString: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub mSecurityStrength: i32,
 }
 #[cfg(

@@ -246,14 +246,26 @@ for crate::UnityEngine::UIElements::SliderInt_UxmlFactory {
 #[derive(Debug)]
 pub struct SliderInt_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<i32>,
-    pub m_LowValue: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_HighValue: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_PageSize: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_ShowInputField: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_Direction: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::SliderDirection,
+    pub m_LowValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
     >,
-    pub m_Inverted: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    pub m_HighValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub m_PageSize: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub m_ShowInputField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_Direction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::SliderDirection,
+        >,
+    >,
+    pub m_Inverted: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+SliderInt+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

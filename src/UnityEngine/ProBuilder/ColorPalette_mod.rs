@@ -4,8 +4,8 @@
 pub struct ColorPalette {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _current_k__BackingField: crate::UnityEngine::Color,
-    pub m_Colors: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Color,
+    pub m_Colors: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Color>,
     >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ColorPalette")]

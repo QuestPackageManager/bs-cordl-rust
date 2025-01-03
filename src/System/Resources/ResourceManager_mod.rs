@@ -3,20 +3,30 @@
 #[derive(Debug)]
 pub struct ResourceManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub ResourceSets: *mut crate::System::Collections::Hashtable,
-    pub _resourceSets: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::System::Resources::ResourceSet,
+    pub ResourceSets: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub _resourceSets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::System::Resources::ResourceSet,
+        >,
     >,
-    pub MainAssembly: *mut crate::System::Reflection::Assembly,
-    pub _neutralResourcesCulture: *mut crate::System::Globalization::CultureInfo,
-    pub _lastUsedResourceCache: *mut crate::System::Resources::ResourceManager_CultureNameResourceSetPair,
+    pub MainAssembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+    pub _neutralResourcesCulture: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::CultureInfo,
+    >,
+    pub _lastUsedResourceCache: quest_hook::libil2cpp::Gc<
+        crate::System::Resources::ResourceManager_CultureNameResourceSetPair,
+    >,
     pub UseManifest: bool,
     pub UseSatelliteAssem: bool,
     pub _fallbackLoc: crate::System::Resources::UltimateResourceFallbackLocation,
-    pub _callingAssembly: *mut crate::System::Reflection::Assembly,
-    pub m_callingAssembly: *mut crate::System::Reflection::RuntimeAssembly,
-    pub resourceGroveler: *mut crate::System::Resources::IResourceGroveler,
+    pub _callingAssembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+    pub m_callingAssembly: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::RuntimeAssembly,
+    >,
+    pub resourceGroveler: quest_hook::libil2cpp::Gc<
+        crate::System::Resources::IResourceGroveler,
+    >,
 }
 #[cfg(feature = "System+Resources+ResourceManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -183,7 +193,7 @@ for crate::System::Resources::ResourceManager_CultureNameResourceSetPair {
 #[derive(Debug)]
 pub struct ResourceManager_ResourceManagerMediator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _rm: *mut crate::System::Resources::ResourceManager,
+    pub _rm: quest_hook::libil2cpp::Gc<crate::System::Resources::ResourceManager>,
 }
 #[cfg(feature = "System+Resources+ResourceManager+ResourceManagerMediator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

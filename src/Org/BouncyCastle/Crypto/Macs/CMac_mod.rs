@@ -3,15 +3,17 @@
 #[derive(Debug)]
 pub struct CMac {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub ZEROES: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mac: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub ZEROES: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mac: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub bufOff: i32,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    >,
     pub macSize: i32,
-    pub L: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub Lu: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub Lu2: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub L: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub Lu: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub Lu2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+CMac")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

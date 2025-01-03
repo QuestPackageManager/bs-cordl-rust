@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct BsonRegex {
     __cordl_parent: crate::Newtonsoft::Json::Bson::BsonToken,
-    pub _Pattern_k__BackingField: *mut crate::Newtonsoft::Json::Bson::BsonString,
-    pub _Options_k__BackingField: *mut crate::Newtonsoft::Json::Bson::BsonString,
+    pub _Pattern_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Bson::BsonString,
+    >,
+    pub _Options_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Bson::BsonString,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonRegex")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

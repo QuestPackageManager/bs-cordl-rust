@@ -3,19 +3,31 @@
 #[derive(Debug)]
 pub struct StyleVariableResolver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Matcher: *mut crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher,
-    pub m_ResolvedValues: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+    pub m_Matcher: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher,
     >,
-    pub m_ResolvedVarStack: *mut crate::System::Collections::Generic::Stack_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ResolvedValues: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        >,
     >,
-    pub m_Property: *mut crate::UnityEngine::UIElements::StyleProperty,
-    pub m_ContextStack: *mut crate::System::Collections::Generic::Stack_1<
-        crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext,
+    pub m_ResolvedVarStack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+    pub m_Property: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleProperty,
+    >,
+    pub m_ContextStack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<
+            crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext,
+        >,
     >,
     pub m_CurrentContext: crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext,
-    pub _variableContext_k__BackingField: *mut crate::UnityEngine::UIElements::StyleVariableContext,
+    pub _variableContext_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleVariableContext,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -283,11 +295,13 @@ for crate::UnityEngine::UIElements::StyleVariableResolver {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StyleVariableResolver_ResolveContext {
-    pub sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
-    pub handles: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::UIElements::StyleValueHandle,
+    pub sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+    pub handles: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::UIElements::StyleValueHandle,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]

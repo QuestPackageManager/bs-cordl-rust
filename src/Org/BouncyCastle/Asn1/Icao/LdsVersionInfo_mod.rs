@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct LdsVersionInfo {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub ldsVersion: *mut crate::Org::BouncyCastle::Asn1::DerPrintableString,
-    pub unicodeVersion: *mut crate::Org::BouncyCastle::Asn1::DerPrintableString,
+    pub ldsVersion: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerPrintableString,
+    >,
+    pub unicodeVersion: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerPrintableString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Icao+LdsVersionInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

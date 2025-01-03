@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct EmptyGameObjectProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _gameObjectBindInfo: quest_hook::libil2cpp::Gc<
+        crate::Zenject::GameObjectCreationParameters,
+    >,
 }
 #[cfg(feature = "Zenject+EmptyGameObjectProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

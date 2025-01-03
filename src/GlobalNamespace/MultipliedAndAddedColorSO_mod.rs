@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MultipliedAndAddedColorSO {
     __cordl_parent: crate::GlobalNamespace::ColorSO,
-    pub _baseColor: *mut crate::GlobalNamespace::SimpleColorSO,
+    pub _baseColor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SimpleColorSO>,
     pub _multiplierColor: crate::UnityEngine::Color,
     pub _addColor: crate::UnityEngine::Color,
 }

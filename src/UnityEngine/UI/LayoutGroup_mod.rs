@@ -3,15 +3,17 @@
 #[derive(Debug)]
 pub struct LayoutGroup {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
-    pub m_Padding: *mut crate::UnityEngine::RectOffset,
+    pub m_Padding: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectOffset>,
     pub m_ChildAlignment: crate::UnityEngine::TextAnchor,
-    pub m_Rect: *mut crate::UnityEngine::RectTransform,
+    pub m_Rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_Tracker: crate::UnityEngine::DrivenRectTransformTracker,
     pub m_TotalMinSize: crate::UnityEngine::Vector2,
     pub m_TotalPreferredSize: crate::UnityEngine::Vector2,
     pub m_TotalFlexibleSize: crate::UnityEngine::Vector2,
-    pub m_RectChildren: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::RectTransform,
+    pub m_RectChildren: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::RectTransform,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UI+LayoutGroup")]

@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct WebCompletionSource_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub completion: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<
-        *mut crate::System::Net::WebCompletionSource_1_Result<T>,
+    pub completion: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskCompletionSource_1<
+            *mut crate::System::Net::WebCompletionSource_1_Result<T>,
+        >,
     >,
-    pub currentResult: *mut crate::System::Net::WebCompletionSource_1_Result<T>,
+    pub currentResult: quest_hook::libil2cpp::Gc<
+        crate::System::Net::WebCompletionSource_1_Result<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Net+WebCompletionSource_1")]
@@ -209,7 +213,9 @@ for crate::System::Net::WebCompletionSource_1<T> {
 pub struct WebCompletionSource_1_Result<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Status_k__BackingField: crate::System::Net::WebCompletionSource_1_Status<T>,
-    pub _Error_k__BackingField: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+    pub _Error_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+    >,
     pub _Argument_k__BackingField: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

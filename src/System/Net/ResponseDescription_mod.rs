@@ -5,9 +5,11 @@ pub struct ResponseDescription {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Multiline: bool,
     pub Status: i32,
-    pub StatusDescription: *mut quest_hook::libil2cpp::Il2CppString,
-    pub StatusBuffer: *mut crate::System::Text::StringBuilder,
-    pub StatusCodeString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub StatusDescription: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub StatusBuffer: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    pub StatusCodeString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Net+ResponseDescription")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub loneValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub loneValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub position: i32,
 }
 #[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
@@ -109,7 +109,7 @@ for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator 
 #[derive(Debug)]
 pub struct XmlNamedNodeMap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub parent: *mut crate::System::Xml::XmlNode,
+    pub parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
     pub nodes: crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList,
 }
 #[cfg(feature = "System+Xml+XmlNamedNodeMap")]
@@ -316,9 +316,9 @@ for crate::System::Xml::XmlNamedNodeMap {
 }
 #[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XmlNamedNodeMap_SmallXmlNodeList {
-    pub field: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub field: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

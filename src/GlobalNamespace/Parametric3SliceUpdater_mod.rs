@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct Parametric3SliceUpdater {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _parametric3SliceSpriteController: *mut crate::GlobalNamespace::Parametric3SliceSpriteController,
+    pub _parametric3SliceSpriteController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Parametric3SliceSpriteController,
+    >,
 }
 #[cfg(feature = "Parametric3SliceUpdater")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ColorLutTextureConverter_OVRPassthroughColorLut_MapColorValuesJob {
     pub settings: crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings,
     pub target: crate::Unity::Collections::NativeArray_1<u8>,
@@ -53,7 +53,7 @@ for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapC
 }
 #[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings {
     pub _Width_k__BackingField: i32,
     pub _Height_k__BackingField: i32,
@@ -158,8 +158,8 @@ pub struct OVRPassthroughColorLut {
     pub _allocHandle: crate::System::Runtime::InteropServices::GCHandle,
     pub _lutData: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     pub _channelCount: i32,
-    pub _colorBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _locker: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _colorBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _locker: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "OVRPassthroughColorLut")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -794,7 +794,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
 }
 #[cfg(feature = "OVRPassthroughColorLut+WriteColorsAsBytesJob")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPassthroughColorLut_WriteColorsAsBytesJob {
     pub target: crate::Unity::Collections::NativeArray_1<u8>,
     pub source: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Color>,

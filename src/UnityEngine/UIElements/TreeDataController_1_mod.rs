@@ -4,8 +4,10 @@
 pub struct TreeDataController_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_TreeData: crate::UnityEngine::UIElements::TreeData_1<T>,
-    pub m_IteratorStack: *mut crate::System::Collections::Generic::Stack_1<
-        *mut crate::System::Collections::Generic::IEnumerator_1<i32>,
+    pub m_IteratorStack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<
+            *mut crate::System::Collections::Generic::IEnumerator_1<i32>,
+        >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

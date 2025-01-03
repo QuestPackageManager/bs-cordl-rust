@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct TaiwanCalendar {
     __cordl_parent: crate::System::Globalization::Calendar,
-    pub helper: *mut crate::System::Globalization::GregorianCalendarHelper,
+    pub helper: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::GregorianCalendarHelper,
+    >,
 }
 #[cfg(feature = "System+Globalization+TaiwanCalendar")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

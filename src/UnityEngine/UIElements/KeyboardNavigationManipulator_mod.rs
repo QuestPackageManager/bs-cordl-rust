@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct KeyboardNavigationManipulator {
     __cordl_parent: crate::UnityEngine::UIElements::Manipulator,
-    pub m_Action: *mut crate::System::Action_2<
-        crate::UnityEngine::UIElements::KeyboardNavigationOperation,
-        *mut crate::UnityEngine::UIElements::EventBase,
+    pub m_Action: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            crate::UnityEngine::UIElements::KeyboardNavigationOperation,
+            *mut crate::UnityEngine::UIElements::EventBase,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+KeyboardNavigationManipulator")]

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ProBuilder+Vector3Mask")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Vector3Mask {
     pub m_Mask: u8,
 }

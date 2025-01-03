@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ManifestBasedResourceGroveler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _mediator: *mut crate::System::Resources::ResourceManager_ResourceManagerMediator,
+    pub _mediator: quest_hook::libil2cpp::Gc<
+        crate::System::Resources::ResourceManager_ResourceManagerMediator,
+    >,
 }
 #[cfg(feature = "System+Resources+ManifestBasedResourceGroveler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

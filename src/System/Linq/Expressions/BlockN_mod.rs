@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BlockN {
     __cordl_parent: crate::System::Linq::Expressions::BlockExpression,
-    pub _expressions: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::System::Linq::Expressions::Expression,
+    pub _expressions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::System::Linq::Expressions::Expression,
+        >,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+BlockN")]

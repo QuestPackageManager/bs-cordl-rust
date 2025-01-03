@@ -5,13 +5,19 @@ pub struct StyleComplexSelector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ancestorHashes: crate::UnityEngine::UIElements::Hashes,
     pub m_Specificity: i32,
-    pub _rule_k__BackingField: *mut crate::UnityEngine::UIElements::StyleRule,
+    pub _rule_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleRule,
+    >,
     pub m_isSimple: bool,
-    pub m_Selectors: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UIElements::StyleSelector,
+    pub m_Selectors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::StyleSelector,
+        >,
     >,
     pub ruleIndex: i32,
-    pub nextInTable: *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+    pub nextInTable: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleComplexSelector,
+    >,
     pub orderInStyleSheet: i32,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector")]
@@ -213,7 +219,7 @@ for crate::UnityEngine::UIElements::StyleComplexSelector {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+PseudoStateData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StyleComplexSelector_PseudoStateData {
     pub state: crate::UnityEngine::UIElements::PseudoStates,
     pub negate: bool,

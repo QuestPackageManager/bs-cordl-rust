@@ -8,20 +8,36 @@ pub struct ColumnMover {
     pub m_Active: bool,
     pub m_Moving: bool,
     pub m_Cancelled: bool,
-    pub m_Header: *mut crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader,
-    pub m_PreviewElement: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_LocationPreviewElement: *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnMoveLocationPreview,
-    pub m_ColumnToMove: *mut crate::UnityEngine::UIElements::Column,
+    pub m_Header: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader,
+    >,
+    pub m_PreviewElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_LocationPreviewElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnMoveLocationPreview,
+    >,
+    pub m_ColumnToMove: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Column,
+    >,
     pub m_ColumnToMovePos: f32,
     pub m_ColumnToMoveWidth: f32,
-    pub m_DestinationColumn: *mut crate::UnityEngine::UIElements::Column,
-    pub m_MoveBeforeDestination: bool,
-    pub _columnLayout_k__BackingField: *mut crate::UnityEngine::UIElements::ColumnLayout,
-    pub activeChanged: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::Internal::ColumnMover,
+    pub m_DestinationColumn: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Column,
     >,
-    pub movingChanged: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::Internal::ColumnMover,
+    pub m_MoveBeforeDestination: bool,
+    pub _columnLayout_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ColumnLayout,
+    >,
+    pub activeChanged: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::Internal::ColumnMover,
+        >,
+    >,
+    pub movingChanged: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::Internal::ColumnMover,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+ColumnMover")]

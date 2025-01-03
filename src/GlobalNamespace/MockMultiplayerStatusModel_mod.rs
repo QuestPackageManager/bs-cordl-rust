@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MockMultiplayerStatusModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _multiplayerStatusData: *mut crate::GlobalNamespace::MultiplayerStatusData,
+    pub _multiplayerStatusData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerStatusData,
+    >,
 }
 #[cfg(feature = "MockMultiplayerStatusModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,8 +1,8 @@
 #[cfg(feature = "LevelDataAssetDownloadUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LevelDataAssetDownloadUpdate {
-    pub levelID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub bytesTotal: u32,
     pub bytesTransferred: u32,
     pub assetDownloadingState: crate::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState,

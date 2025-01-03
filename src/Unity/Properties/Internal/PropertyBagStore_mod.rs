@@ -77,7 +77,7 @@ for crate::Unity::Properties::Internal::PropertyBagStore {
 }
 #[cfg(feature = "Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PropertyBagStore_TypedStore_1<TContainer: quest_hook::libil2cpp::Type> {
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
 }

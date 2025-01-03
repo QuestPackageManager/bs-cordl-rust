@@ -4,7 +4,7 @@
 pub struct CertificateStatus {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mStatusType: u8,
-    pub mResponse: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub mResponse: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CertificateStatus")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

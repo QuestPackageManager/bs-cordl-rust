@@ -4,18 +4,26 @@
 pub struct HEU_Curve {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _geoID: i32,
-    pub _curveNodeData: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::CurveNodeData,
+    pub _curveNodeData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::CurveNodeData,
+        >,
     >,
-    pub _vertices: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    pub _vertices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
     pub _isEditable: bool,
-    pub _parameters: *mut crate::HoudiniEngineUnity::HEU_Parameters,
+    pub _parameters: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_Parameters,
+    >,
     pub _bUploadParameterPreset: bool,
-    pub _curveName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _targetGameObject: *mut crate::UnityEngine::GameObject,
+    pub _curveName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _targetGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _isGeoCurve: bool,
     pub _editState: crate::HoudiniEngineUnity::HEU_Curve_CurveEditState,
-    pub _parentAsset: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+    pub _parentAsset: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+    >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_Curve")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

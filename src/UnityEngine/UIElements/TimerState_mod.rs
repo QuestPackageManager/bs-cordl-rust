@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+TimerState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TimerState {
     pub _start_k__BackingField: i64,
     pub _now_k__BackingField: i64,

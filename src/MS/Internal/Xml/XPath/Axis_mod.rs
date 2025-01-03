@@ -4,12 +4,12 @@
 pub struct Axis {
     __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
     pub _axisType: crate::MS::Internal::Xml::XPath::Axis_AxisType,
-    pub _input: *mut crate::MS::Internal::Xml::XPath::AstNode,
-    pub _prefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _input: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+    pub _prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _nodeType: crate::System::Xml::XPath::XPathNodeType,
     pub abbrAxis: bool,
-    pub _urn: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _urn: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Axis")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

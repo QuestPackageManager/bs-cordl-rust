@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct WebRequestPrefixElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Prefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub creator: *mut crate::System::Net::IWebRequestCreate,
-    pub creatorType: *mut crate::System::Type,
+    pub Prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub creator: quest_hook::libil2cpp::Gc<crate::System::Net::IWebRequestCreate>,
+    pub creatorType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Net+WebRequestPrefixElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

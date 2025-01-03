@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct RaycastUITopLevelChecker {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub results: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::EventSystems::RaycastResult,
+    pub results: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::EventSystems::RaycastResult,
+        >,
     >,
-    pub _canvas: *mut crate::UnityEngine::Canvas,
+    pub _canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
 }
 #[cfg(feature = "HMUI+RaycastUITopLevelChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

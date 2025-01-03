@@ -5,9 +5,9 @@ pub struct XmlEncodedRawTextWriterIndent {
     __cordl_parent: crate::System::Xml::XmlEncodedRawTextWriter,
     pub indentLevel: i32,
     pub newLineOnAttributes: bool,
-    pub indentChars: *mut quest_hook::libil2cpp::Il2CppString,
+    pub indentChars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub mixedContent: bool,
-    pub mixedContentStack: *mut crate::System::Xml::BitStack,
+    pub mixedContentStack: quest_hook::libil2cpp::Gc<crate::System::Xml::BitStack>,
     pub conformanceLevel: crate::System::Xml::ConformanceLevel,
 }
 #[cfg(feature = "System+Xml+XmlEncodedRawTextWriterIndent")]

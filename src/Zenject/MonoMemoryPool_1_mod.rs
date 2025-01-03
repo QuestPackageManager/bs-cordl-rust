@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MonoMemoryPool_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::MemoryPool_1<TValue>,
-    pub _originalParent: *mut crate::UnityEngine::Transform,
+    pub _originalParent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "Zenject+MonoMemoryPool_1")]

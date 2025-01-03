@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct BasicEventItemConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
-    pub _basicEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::BasicEvent,
+    pub _basicEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::BasicEvent>,
     >,
-    pub _specialEventsFilter: *mut crate::BeatmapDataLoaderVersion4::SpecialEventsFilter,
-    pub _lightEventConverter: *mut crate::GlobalNamespace::IBeatmapLightEventConverter,
+    pub _specialEventsFilter: quest_hook::libil2cpp::Gc<
+        crate::BeatmapDataLoaderVersion4::SpecialEventsFilter,
+    >,
+    pub _lightEventConverter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IBeatmapLightEventConverter,
+    >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+BasicEventItemConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

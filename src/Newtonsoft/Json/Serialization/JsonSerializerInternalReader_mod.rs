@@ -1136,13 +1136,17 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
 #[derive(Debug)]
 pub struct JsonSerializerInternalReader_CreatorPropertyContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-    pub ConstructorProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+    pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Property: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonProperty,
+    >,
+    pub ConstructorProperty: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonProperty,
+    >,
     pub Presence: crate::System::Nullable_1<
         crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence,
     >,
-    pub Value: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub Value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Used: bool,
 }
 #[cfg(

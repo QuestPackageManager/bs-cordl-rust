@@ -4,8 +4,10 @@
 pub struct ControllerProfilesSaveData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub version: i32,
-    pub profiles: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatSaber::GameSettings::ControllerProfileSaveData,
+    pub profiles: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatSaber::GameSettings::ControllerProfileSaveData,
+        >,
     >,
 }
 #[cfg(feature = "BeatSaber+GameSettings+ControllerProfilesSaveData")]

@@ -3,20 +3,24 @@
 #[derive(Debug)]
 pub struct OVRTrackedKeyboardSampleControls {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub trackedKeyboard: *mut crate::GlobalNamespace::OVRTrackedKeyboard,
-    pub StartingFocusField: *mut crate::UnityEngine::UI::InputField,
-    pub NameValue: *mut crate::UnityEngine::UI::Text,
-    pub ConnectedValue: *mut crate::UnityEngine::UI::Text,
-    pub StateValue: *mut crate::UnityEngine::UI::Text,
-    pub SelectKeyboardValue: *mut crate::UnityEngine::UI::Text,
-    pub TypeValue: *mut crate::UnityEngine::UI::Text,
+    pub trackedKeyboard: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRTrackedKeyboard,
+    >,
+    pub StartingFocusField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::InputField,
+    >,
+    pub NameValue: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub ConnectedValue: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub StateValue: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub SelectKeyboardValue: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub TypeValue: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
     pub GoodStateColor: crate::UnityEngine::Color,
     pub BadStateColor: crate::UnityEngine::Color,
-    pub TrackingToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub ConnectionToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub RemoteKeyboardToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub ShaderButtons: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UI::Button,
+    pub TrackingToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub ConnectionToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub RemoteKeyboardToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub ShaderButtons: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Button>,
     >,
 }
 #[cfg(feature = "OVRTrackedKeyboardSampleControls")]

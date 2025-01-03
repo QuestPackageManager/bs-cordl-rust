@@ -82,8 +82,10 @@ for crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable
 #[derive(Debug)]
 pub struct VRControllersRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _recordingTextAsset: *mut crate::UnityEngine::TextAsset,
-    pub _recordingFileName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _recordingTextAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+    pub _recordingFileName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _mode: crate::GlobalNamespace::VRControllersRecorder_Mode,
     pub _dontMoveHead: bool,
     pub _changeToNonVRCamera: bool,
@@ -94,20 +96,26 @@ pub struct VRControllersRecorder {
     pub _cameraFOV: f32,
     pub _controllersTimeOffset: f32,
     pub _controllersSmooth: f32,
-    pub _controller0: *mut crate::GlobalNamespace::VRController,
-    pub _controller1: *mut crate::GlobalNamespace::VRController,
-    pub _headTransform: *mut crate::UnityEngine::Transform,
-    pub _camera: *mut crate::UnityEngine::Camera,
-    pub _recorderCamera: *mut crate::UnityEngine::Camera,
-    pub _spawnRotationTransform: *mut crate::UnityEngine::Transform,
-    pub _originTransform: *mut crate::UnityEngine::Transform,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
-    pub _controller0Transform: *mut crate::UnityEngine::Transform,
-    pub _controller1Transform: *mut crate::UnityEngine::Transform,
+    pub _controller0: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+    pub _controller1: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+    pub _headTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    pub _recorderCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    pub _spawnRotationTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _originTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
+    pub _controller0Transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _controller1Transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _hasHead: bool,
     pub _hasController0: bool,
     pub _hasController1: bool,
-    pub _state: *mut crate::GlobalNamespace::VRControllersRecorder_State,
+    pub _state: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VRControllersRecorder_State,
+    >,
     pub _keyframeIndex: i32,
 }
 #[cfg(feature = "VRControllersRecorder")]
@@ -830,8 +838,10 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct VRControllersRecorder_SavedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _keyframes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable,
+    pub _keyframes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable,
+        >,
     >,
 }
 #[cfg(feature = "VRControllersRecorder+SavedData")]
@@ -889,8 +899,10 @@ for crate::GlobalNamespace::VRControllersRecorder_SavedData {
 #[derive(Debug)]
 pub struct VRControllersRecorder_State {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _keyframes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+    pub _keyframes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::VRControllersRecorder_Keyframe,
+        >,
     >,
     pub leftControllerOffset: crate::UnityEngine::Pose,
     pub rightControllerOffset: crate::UnityEngine::Pose,

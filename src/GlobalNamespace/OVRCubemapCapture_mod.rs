@@ -7,7 +7,7 @@ pub struct OVRCubemapCapture {
     pub autoTriggerDelay: f32,
     pub autoTriggerElapse: f32,
     pub triggeredByKey: crate::UnityEngine::KeyCode,
-    pub pathName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub pathName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub cubemapSize: i32,
 }
 #[cfg(feature = "OVRCubemapCapture")]

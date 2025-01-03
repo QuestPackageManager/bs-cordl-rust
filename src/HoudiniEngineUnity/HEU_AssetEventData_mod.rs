@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct HEU_AssetEventData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Asset: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+    pub Asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
     pub CookSuccess: bool,
-    pub OutputObjects: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::GameObject,
+    pub OutputObjects: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::GameObject>,
     >,
     pub EventType: crate::HoudiniEngineUnity::HEU_AssetEventType,
 }

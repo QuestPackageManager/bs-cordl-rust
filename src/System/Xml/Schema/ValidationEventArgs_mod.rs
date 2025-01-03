@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ValidationEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub ex: *mut crate::System::Xml::Schema::XmlSchemaException,
+    pub ex: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaException>,
     pub severity: crate::System::Xml::Schema::XmlSeverityType,
 }
 #[cfg(feature = "System+Xml+Schema+ValidationEventArgs")]

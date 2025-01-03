@@ -5,10 +5,18 @@ pub struct QuaternionControl {
     __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<
         crate::UnityEngine::Quaternion,
     >,
-    pub _x_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    pub _y_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    pub _z_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    pub _w_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    pub _x_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
+    pub _y_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
+    pub _z_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
+    pub _w_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+QuaternionControl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AsyncInstantiateOperation_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::CustomYieldInstruction,
-    pub m_op: *mut crate::UnityEngine::AsyncInstantiateOperation,
+    pub m_op: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+AsyncInstantiateOperation_1")]

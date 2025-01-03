@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HEU_TreePrototypeInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _prefabPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _prefabPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _bendfactor: f32,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_TreePrototypeInfo")]

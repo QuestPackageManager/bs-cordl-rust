@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct JsonISerializableContract {
     __cordl_parent: crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-    pub _ISerializableCreator_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _ISerializableCreator_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonISerializableContract")]

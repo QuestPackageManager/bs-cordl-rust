@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct PlayerHeightToJumpOffsetYProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _playerHeightDetector: *mut crate::GlobalNamespace::PlayerHeightDetector,
+    pub _playerHeightDetector: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerHeightDetector,
+    >,
     pub _jumpOffsetY: f32,
 }
 #[cfg(feature = "PlayerHeightToJumpOffsetYProvider")]

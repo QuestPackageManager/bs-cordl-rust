@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct FloorLightTilesGrid {
     __cordl_parent: crate::GlobalNamespace::AbstractPoolContainer,
-    pub _floorLightTileMemoryPool: *mut crate::Ice::FloorLightTile_Pool,
-    pub _floorLightTileMemoryPoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::Ice::FloorLightTile,
+    pub _floorLightTileMemoryPool: quest_hook::libil2cpp::Gc<
+        crate::Ice::FloorLightTile_Pool,
     >,
-    pub _grid: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::Ice::FloorLightTile>,
+    pub _floorLightTileMemoryPoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<*mut crate::Ice::FloorLightTile>,
+    >,
+    pub _grid: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::Ice::FloorLightTile>,
+        >,
     >,
     pub _tileWidth: f32,
     pub _tileHeight: f32,

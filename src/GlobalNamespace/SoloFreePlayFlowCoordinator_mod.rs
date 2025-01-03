@@ -3,13 +3,27 @@
 #[derive(Debug)]
 pub struct SoloFreePlayFlowCoordinator {
     __cordl_parent: crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
-    pub _defaultLightsPreset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
-    pub _resultsClearedLightsPreset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
-    pub _resultsFailedLightsPreset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
-    pub _menuLightsManager: *mut crate::GlobalNamespace::MenuLightsManager,
-    pub _resultsViewController: *mut crate::GlobalNamespace::ResultsViewController,
-    pub _platformLeaderboardViewController: *mut crate::GlobalNamespace::PlatformLeaderboardViewController,
-    pub _platformLeaderboardsModel: *mut crate::GlobalNamespace::PlatformLeaderboardsModel,
+    pub _defaultLightsPreset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsPresetSO,
+    >,
+    pub _resultsClearedLightsPreset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsPresetSO,
+    >,
+    pub _resultsFailedLightsPreset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsPresetSO,
+    >,
+    pub _menuLightsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsManager,
+    >,
+    pub _resultsViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ResultsViewController,
+    >,
+    pub _platformLeaderboardViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlatformLeaderboardViewController,
+    >,
+    pub _platformLeaderboardsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlatformLeaderboardsModel,
+    >,
 }
 #[cfg(feature = "SoloFreePlayFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

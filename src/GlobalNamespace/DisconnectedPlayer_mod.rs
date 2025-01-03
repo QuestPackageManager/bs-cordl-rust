@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct DisconnectedPlayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _userId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _userName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _userId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _userName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _sortIndex_k__BackingField: i32,
     pub _multiplayerAvatarsData_k__BackingField: crate::GlobalNamespace::MultiplayerAvatarsData,
 }

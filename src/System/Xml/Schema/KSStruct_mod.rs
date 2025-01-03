@@ -4,9 +4,11 @@
 pub struct KSStruct {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub depth: i32,
-    pub ks: *mut crate::System::Xml::Schema::KeySequence,
-    pub fields: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::Schema::LocatedActiveAxis,
+    pub ks: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::KeySequence>,
+    pub fields: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::Schema::LocatedActiveAxis,
+        >,
     >,
 }
 #[cfg(feature = "System+Xml+Schema+KSStruct")]

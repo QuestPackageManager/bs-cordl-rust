@@ -3,20 +3,22 @@
 #[derive(Debug)]
 pub struct Context {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _scriptableObjectInstallers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::ScriptableObjectInstaller,
+    pub _scriptableObjectInstallers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::ScriptableObjectInstaller,
+        >,
     >,
-    pub _monoInstallers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::MonoInstaller,
+    pub _monoInstallers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::Zenject::MonoInstaller>,
     >,
-    pub _installerPrefabs: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::MonoInstaller,
+    pub _installerPrefabs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::Zenject::MonoInstaller>,
     >,
-    pub _normalInstallers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::InstallerBase,
+    pub _normalInstallers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::Zenject::InstallerBase>,
     >,
-    pub _normalInstallerTypes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Type,
+    pub _normalInstallerTypes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
     >,
 }
 #[cfg(feature = "Zenject+Context")]

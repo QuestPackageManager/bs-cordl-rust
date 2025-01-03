@@ -3,14 +3,14 @@
 #[derive(Debug)]
 pub struct NetworkPlayerOptionsTableCell {
     __cordl_parent: crate::HMUI::TableCell,
-    pub _buttons: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UI::Button,
+    pub _buttons: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Button>,
     >,
-    pub _buttonTexts: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::TMPro::TextMeshProUGUI,
+    pub _buttonTexts: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TextMeshProUGUI>,
     >,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
-    pub _player: *mut crate::GlobalNamespace::INetworkPlayer,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
+    pub _player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
 }
 #[cfg(feature = "NetworkPlayerOptionsTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

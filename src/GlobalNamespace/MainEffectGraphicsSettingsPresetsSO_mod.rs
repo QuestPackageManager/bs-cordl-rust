@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct MainEffectGraphicsSettingsPresetsSO {
     __cordl_parent: crate::GlobalNamespace::NamedPresetsSO,
-    pub _presets: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO_Preset,
+    pub _presets: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO_Preset,
+        >,
     >,
 }
 #[cfg(feature = "MainEffectGraphicsSettingsPresetsSO")]
@@ -97,7 +99,7 @@ for crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO {
 #[derive(Debug)]
 pub struct MainEffectGraphicsSettingsPresetsSO_Preset {
     __cordl_parent: crate::GlobalNamespace::NamedPreset,
-    pub mainEffect: *mut crate::GlobalNamespace::MainEffectSO,
+    pub mainEffect: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainEffectSO>,
 }
 #[cfg(feature = "MainEffectGraphicsSettingsPresetsSO+Preset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

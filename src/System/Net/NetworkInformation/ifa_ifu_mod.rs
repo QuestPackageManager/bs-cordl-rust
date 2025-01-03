@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Net+NetworkInformation+ifa_ifu")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ifa_ifu {
     padding: [u8; 8usize],
 }

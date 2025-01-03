@@ -3,23 +3,31 @@
 #[derive(Debug)]
 pub struct CreditsController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _creditsSceneSetupDataSO: *mut crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
-    pub _audioPlayer: *mut crate::GlobalNamespace::AudioPlayerBase,
-    pub _continueButton: *mut crate::UnityEngine::UI::Button,
-    pub _contentRectTransform: *mut crate::UnityEngine::RectTransform,
+    pub _creditsSceneSetupDataSO: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
+    >,
+    pub _audioPlayer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioPlayerBase>,
+    pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _contentRectTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
+    >,
     pub _overflowHeight: f32,
-    pub _contentWrapper: *mut crate::UnityEngine::RectTransform,
-    pub _beforeMusicPacksCredits: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::GameObject,
+    pub _contentWrapper: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub _beforeMusicPacksCredits: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
     >,
-    pub _afterMusicPacksCredits: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::GameObject,
+    pub _afterMusicPacksCredits: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
     >,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _packDefinitions: *mut crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::GlobalNamespace::PackDefinitionSO,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
     >,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _packDefinitions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::GlobalNamespace::PackDefinitionSO,
+        >,
+    >,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _didFinish: bool,
     pub _isPaused: bool,
 }

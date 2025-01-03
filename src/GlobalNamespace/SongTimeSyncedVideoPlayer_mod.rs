@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct SongTimeSyncedVideoPlayer {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    pub _videoPlayer: *mut crate::UnityEngine::Video::VideoPlayer,
-    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _gamePause: *mut crate::GlobalNamespace::IGamePause,
+    pub _videoPlayer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Video::VideoPlayer>,
+    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
+    pub _gamePause: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>,
     pub _environmentContext: crate::GlobalNamespace::EnvironmentContext,
     pub _color: crate::UnityEngine::Color,
-    pub _waitForDependenciesAndPlayCoroutine: *mut crate::UnityEngine::Coroutine,
+    pub _waitForDependenciesAndPlayCoroutine: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Coroutine,
+    >,
 }
 #[cfg(feature = "SongTimeSyncedVideoPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

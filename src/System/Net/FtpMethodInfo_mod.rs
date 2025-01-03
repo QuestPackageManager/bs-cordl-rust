@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct FtpMethodInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Method: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Operation: crate::System::Net::FtpOperation,
     pub Flags: crate::System::Net::FtpMethodFlags,
-    pub HttpCommand: *mut quest_hook::libil2cpp::Il2CppString,
+    pub HttpCommand: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Net+FtpMethodInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

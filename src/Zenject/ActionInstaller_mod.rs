@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ActionInstaller {
     __cordl_parent: crate::Zenject::Installer_1<*mut crate::Zenject::ActionInstaller>,
-    pub _installMethod: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+    pub _installMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+    >,
 }
 #[cfg(feature = "Zenject+ActionInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,16 +3,24 @@
 #[derive(Debug)]
 pub struct DataSet {
     __cordl_parent: crate::System::ComponentModel::MarshalByValueComponent,
-    pub _defaultViewManager: *mut crate::System::Data::DataViewManager,
-    pub _tableCollection: *mut crate::System::Data::DataTableCollection,
-    pub _relationCollection: *mut crate::System::Data::DataRelationCollection,
-    pub _extendedProperties: *mut crate::System::Data::PropertyCollection,
-    pub _dataSetName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _datasetPrefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _namespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _defaultViewManager: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataViewManager,
+    >,
+    pub _tableCollection: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataTableCollection,
+    >,
+    pub _relationCollection: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataRelationCollection,
+    >,
+    pub _extendedProperties: quest_hook::libil2cpp::Gc<
+        crate::System::Data::PropertyCollection,
+    >,
+    pub _dataSetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _datasetPrefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _enforceConstraints: bool,
     pub _caseSensitive: bool,
-    pub _culture: *mut crate::System::Globalization::CultureInfo,
+    pub _culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     pub _cultureUserSet: bool,
     pub _fInReadXml: bool,
     pub _fInLoadDiffgram: bool,
@@ -20,16 +28,26 @@ pub struct DataSet {
     pub _fInitInProgress: bool,
     pub _fEnableCascading: bool,
     pub _fIsSchemaLoading: bool,
-    pub _mainTableName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _mainTableName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _remotingFormat: crate::System::Data::SerializationFormat,
-    pub _defaultViewManagerLock: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _defaultViewManagerLock: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub _objectID: i32,
     pub _useDataSetSchemaOnly: bool,
     pub _udtIsWrapped: bool,
-    pub PropertyChanging: *mut crate::System::ComponentModel::PropertyChangedEventHandler,
-    pub MergeFailed: *mut crate::System::Data::MergeFailedEventHandler,
-    pub DataRowCreated: *mut crate::System::Data::DataRowCreatedEventHandler,
-    pub ClearFunctionCalled: *mut crate::System::Data::DataSetClearEventhandler,
+    pub PropertyChanging: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::PropertyChangedEventHandler,
+    >,
+    pub MergeFailed: quest_hook::libil2cpp::Gc<
+        crate::System::Data::MergeFailedEventHandler,
+    >,
+    pub DataRowCreated: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataRowCreatedEventHandler,
+    >,
+    pub ClearFunctionCalled: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataSetClearEventhandler,
+    >,
 }
 #[cfg(feature = "System+Data+DataSet")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

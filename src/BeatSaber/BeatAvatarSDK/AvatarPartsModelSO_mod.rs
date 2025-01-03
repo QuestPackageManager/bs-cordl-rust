@@ -3,26 +3,40 @@
 #[derive(Debug)]
 pub struct AvatarPartsModelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _headTops: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+    pub _headTops: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+        >,
     >,
-    pub _eyes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+    pub _eyes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+        >,
     >,
-    pub _mouths: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+    pub _mouths: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+        >,
     >,
-    pub _glasses: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+    pub _glasses: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+        >,
     >,
-    pub _facialHair: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+    pub _facialHair: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+        >,
     >,
-    pub _hands: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+    pub _hands: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+        >,
     >,
-    pub _clothes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+    pub _clothes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+        >,
     >,
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPartsModelSO")]

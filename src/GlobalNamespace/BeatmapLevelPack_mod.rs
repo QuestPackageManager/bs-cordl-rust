@@ -3,21 +3,25 @@
 #[derive(Debug)]
 pub struct BeatmapLevelPack {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub packID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub packName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub shortPackName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub coverImage: *mut crate::UnityEngine::Sprite,
-    pub smallCoverImage: *mut crate::UnityEngine::Sprite,
+    pub packID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub packName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub shortPackName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub coverImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub smallCoverImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub packBuyOption: crate::GlobalNamespace::PackBuyOption,
     pub contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
-    pub _beatmapLevels: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapLevel,
+    pub _beatmapLevels: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevel>,
     >,
-    pub _additionalBeatmapLevels: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::BeatmapLevel,
+    pub _additionalBeatmapLevels: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::BeatmapLevel,
+        >,
     >,
-    pub _allBeatmapLevels: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::BeatmapLevel,
+    pub _allBeatmapLevels: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::BeatmapLevel,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapLevelPack")]

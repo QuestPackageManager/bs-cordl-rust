@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundSpriteRenderer {
     __cordl_parent: crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore,
-    pub _spriteRenderer: *mut crate::UnityEngine::SpriteRenderer,
+    pub _spriteRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
 }
 #[cfg(feature = "BloomPrePassBackgroundSpriteRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct DHParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub p: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub g: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub q: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub j: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub j: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub m: i32,
     pub l: i32,
-    pub validation: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHValidationParameters,
+    pub validation: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::DHValidationParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

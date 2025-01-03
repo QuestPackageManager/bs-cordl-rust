@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct SoloModeSelectionViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _freePlayModeButton: *mut crate::UnityEngine::UI::Button,
-    pub _oneSaberModeButton: *mut crate::UnityEngine::UI::Button,
-    pub _noArrowsModeButton: *mut crate::UnityEngine::UI::Button,
-    pub _dismissButton: *mut crate::UnityEngine::UI::Button,
-    pub didFinishEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::SoloModeSelectionViewController,
-        crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
+    pub _freePlayModeButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _oneSaberModeButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _noArrowsModeButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _dismissButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::SoloModeSelectionViewController,
+            crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
+        >,
     >,
 }
 #[cfg(feature = "SoloModeSelectionViewController")]

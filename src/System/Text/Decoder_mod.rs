@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct Decoder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _fallback: *mut crate::System::Text::DecoderFallback,
-    pub _fallbackBuffer: *mut crate::System::Text::DecoderFallbackBuffer,
+    pub _fallback: quest_hook::libil2cpp::Gc<crate::System::Text::DecoderFallback>,
+    pub _fallbackBuffer: quest_hook::libil2cpp::Gc<
+        crate::System::Text::DecoderFallbackBuffer,
+    >,
 }
 #[cfg(feature = "System+Text+Decoder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

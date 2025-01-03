@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct X931SecureRandomBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    pub mEntropySourceProvider: *mut crate::Org::BouncyCastle::Crypto::IEntropySourceProvider,
-    pub mDateTimeVector: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mRandom: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
+    pub mEntropySourceProvider: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IEntropySourceProvider,
+    >,
+    pub mDateTimeVector: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+X931SecureRandomBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

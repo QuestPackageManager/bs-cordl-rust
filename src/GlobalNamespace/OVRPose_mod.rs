@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRPose")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPose {
     pub position: crate::UnityEngine::Vector3,
     pub orientation: crate::UnityEngine::Quaternion,

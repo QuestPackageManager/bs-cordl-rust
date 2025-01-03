@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DirectorControlPlayable {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
-    pub director: *mut crate::UnityEngine::Playables::PlayableDirector,
+    pub director: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableDirector,
+    >,
     pub m_SyncTime: bool,
     pub m_AssetDuration: f64,
 }

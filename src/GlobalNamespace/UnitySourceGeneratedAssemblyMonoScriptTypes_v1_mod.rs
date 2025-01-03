@@ -66,10 +66,10 @@ for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
 }
 #[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {
-    pub FilePathsData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub TypesData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub FilePathsData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub TypesData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub TotalTypes: i32,
     pub TotalFiles: i32,
     pub IsEditorOnly: bool,

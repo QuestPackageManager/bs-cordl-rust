@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct RuntimeResourceSet {
     __cordl_parent: crate::System::Resources::ResourceSet,
-    pub _resCache: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        crate::System::Resources::ResourceLocator,
+    pub _resCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            crate::System::Resources::ResourceLocator,
+        >,
     >,
-    pub _defaultReader: *mut crate::System::Resources::ResourceReader,
-    pub _caseInsensitiveTable: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        crate::System::Resources::ResourceLocator,
+    pub _defaultReader: quest_hook::libil2cpp::Gc<
+        crate::System::Resources::ResourceReader,
+    >,
+    pub _caseInsensitiveTable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            crate::System::Resources::ResourceLocator,
+        >,
     >,
     pub _haveReadFromReader: bool,
 }

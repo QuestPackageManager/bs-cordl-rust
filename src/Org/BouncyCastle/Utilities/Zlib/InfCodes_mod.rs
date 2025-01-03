@@ -5,7 +5,7 @@ pub struct InfCodes {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mode: i32,
     pub len: i32,
-    pub tree: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub tree: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub tree_index: i32,
     pub need: i32,
     pub lit: i32,
@@ -13,9 +13,9 @@ pub struct InfCodes {
     pub dist: i32,
     pub lbits: u8,
     pub dbits: u8,
-    pub ltree: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub ltree: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub ltree_index: i32,
-    pub dtree: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub dtree: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub dtree_index: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+InfCodes")]

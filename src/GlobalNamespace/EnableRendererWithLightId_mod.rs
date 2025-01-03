@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct EnableRendererWithLightId {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    pub _renderer: *mut crate::UnityEngine::Renderer,
+    pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
     pub _hideAlphaRangeMin: f32,
     pub _hideAlphaRangeMax: f32,
 }

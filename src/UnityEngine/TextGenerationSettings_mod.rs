@@ -1,8 +1,8 @@
 #[cfg(feature = "UnityEngine+TextGenerationSettings")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TextGenerationSettings {
-    pub font: *mut crate::UnityEngine::Font,
+    pub font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     pub color: crate::UnityEngine::Color,
     pub fontSize: i32,
     pub lineSpacing: f32,

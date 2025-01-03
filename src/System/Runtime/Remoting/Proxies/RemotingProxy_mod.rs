@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct RemotingProxy {
     __cordl_parent: crate::System::Runtime::Remoting::Proxies::RealProxy,
-    pub _sink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
+    pub _sink: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessageSink,
+    >,
     pub _hasEnvoySink: bool,
-    pub _ctorCall: *mut crate::System::Runtime::Remoting::Messaging::ConstructionCall,
+    pub _ctorCall: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::ConstructionCall,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Proxies+RemotingProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

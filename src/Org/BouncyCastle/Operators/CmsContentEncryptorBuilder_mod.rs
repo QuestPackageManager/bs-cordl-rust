@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct CmsContentEncryptorBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub encryptionOID: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    pub encryptionOID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
     pub keySize: i32,
-    pub helper: *mut crate::Org::BouncyCastle::Cms::EnvelopedDataHelper,
+    pub helper: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::EnvelopedDataHelper,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Operators+CmsContentEncryptorBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

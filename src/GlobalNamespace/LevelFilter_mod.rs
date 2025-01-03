@@ -1,19 +1,21 @@
 #[cfg(feature = "LevelFilter")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LevelFilter {
     pub songOwned: bool,
     pub songNotOwned: bool,
     pub songUnplayed: bool,
     pub difficulties: crate::GlobalNamespace::BeatmapDifficultyMask,
     pub songPacks: crate::GlobalNamespace::SongPackMask,
-    pub characteristicSerializedName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub characteristicSerializedName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub minBpm: f32,
     pub maxBpm: f32,
     pub sensitivity: crate::GlobalNamespace::PlayerSensitivityFlag,
-    pub searchText: *mut quest_hook::libil2cpp::Il2CppString,
-    pub limitIds: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub searchText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub limitIds: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "LevelFilter")]

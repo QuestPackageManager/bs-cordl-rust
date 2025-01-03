@@ -3,17 +3,23 @@
 #[derive(Debug)]
 pub struct LeaderboardScoreUploader {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub allScoresDidUploadEvent: *mut crate::System::Action,
-    pub _scoresToUpload: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+    pub allScoresDidUploadEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _scoresToUpload: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+        >,
     >,
-    pub _scoresToUploadForCurrentPlayer: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+    pub _scoresToUploadForCurrentPlayer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+        >,
     >,
-    pub _uploadScoreCallback: *mut crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback,
-    pub _playerId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _uploadScoreCallback: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback,
+    >,
+    pub _playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _uploading: bool,
-    pub _fileStorage: *mut crate::GlobalNamespace::IFileStorage,
+    pub _fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
 }
 #[cfg(feature = "LeaderboardScoreUploader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -190,9 +196,13 @@ for crate::GlobalNamespace::LeaderboardScoreUploader {
 #[derive(Debug)]
 pub struct LeaderboardScoreUploader_ScoreData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _playerId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _playerId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _beatmapKey_k__BackingField: crate::GlobalNamespace::BeatmapKey,
-    pub _gameplayModifiers_k__BackingField: *mut crate::GlobalNamespace::GameplayModifiers,
+    pub _gameplayModifiers_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
+    >,
     pub _multipliedScore_k__BackingField: i32,
     pub _modifiedScore_k__BackingField: i32,
     pub _fullCombo_k__BackingField: bool,
@@ -505,8 +515,10 @@ for crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
 #[derive(Debug)]
 pub struct LeaderboardScoreUploader_ScoresToUploadData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub scores: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+    pub scores: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+        >,
     >,
 }
 #[cfg(feature = "LeaderboardScoreUploader+ScoresToUploadData")]

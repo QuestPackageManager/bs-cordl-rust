@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct TraceJsonReader {
     __cordl_parent: crate::Newtonsoft::Json::JsonReader,
-    pub _innerReader: *mut crate::Newtonsoft::Json::JsonReader,
-    pub _textWriter: *mut crate::Newtonsoft::Json::JsonTextWriter,
-    pub _sw: *mut crate::System::IO::StringWriter,
+    pub _innerReader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+    pub _textWriter: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonTextWriter>,
+    pub _sw: quest_hook::libil2cpp::Gc<crate::System::IO::StringWriter>,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+TraceJsonReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

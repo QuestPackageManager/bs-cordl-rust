@@ -4,8 +4,10 @@
 pub struct FloatFxGroup {
     __cordl_parent: crate::GlobalNamespace::LightGroupSubsystem,
     pub _isTriggerOnly: bool,
-    pub _targets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::FloatFxGroupEffectTarget,
+    pub _targets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::FloatFxGroupEffectTarget,
+        >,
     >,
 }
 #[cfg(feature = "FloatFxGroup")]

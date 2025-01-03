@@ -3,16 +3,24 @@
 #[derive(Debug)]
 pub struct MultiplayerModeSelectionViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _quickPlayButton: *mut crate::UnityEngine::UI::Button,
-    pub _gameBrowserButton: *mut crate::UnityEngine::UI::Button,
-    pub _joinWithCodeButton: *mut crate::UnityEngine::UI::Button,
-    pub _createServerButton: *mut crate::UnityEngine::UI::Button,
-    pub _maintenanceMessageText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _customServerEndPointText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
-    pub didFinishEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::MultiplayerModeSelectionViewController,
-        crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
+    pub _quickPlayButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _gameBrowserButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _joinWithCodeButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _createServerButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _maintenanceMessageText: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TextMeshProUGUI,
+    >,
+    pub _customServerEndPointText: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TextMeshProUGUI,
+    >,
+    pub _networkConfig: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INetworkConfig,
+    >,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::MultiplayerModeSelectionViewController,
+            crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerModeSelectionViewController")]

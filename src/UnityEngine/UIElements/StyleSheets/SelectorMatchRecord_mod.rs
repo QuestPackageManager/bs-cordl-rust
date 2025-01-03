@@ -1,10 +1,12 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+SelectorMatchRecord")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SelectorMatchRecord {
-    pub sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
+    pub sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
     pub styleSheetIndexInStack: i32,
-    pub complexSelector: *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+    pub complexSelector: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleComplexSelector,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+SelectorMatchRecord")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

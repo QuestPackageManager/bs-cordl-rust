@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+GradientAlphaKey")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GradientAlphaKey {
     pub alpha: f32,
     pub _cordl_time: f32,

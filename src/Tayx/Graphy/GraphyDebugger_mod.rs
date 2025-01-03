@@ -5,12 +5,16 @@ pub struct GraphyDebugger {
     __cordl_parent: crate::Tayx::Graphy::Utils::G_Singleton_1<
         *mut crate::Tayx::Graphy::GraphyDebugger,
     >,
-    pub m_debugPackets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Tayx::Graphy::GraphyDebugger_DebugPacket,
+    pub m_debugPackets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Tayx::Graphy::GraphyDebugger_DebugPacket,
+        >,
     >,
-    pub m_fpsMonitor: *mut crate::Tayx::Graphy::Fps::G_FpsMonitor,
-    pub m_ramMonitor: *mut crate::Tayx::Graphy::Ram::G_RamMonitor,
-    pub m_audioMonitor: *mut crate::Tayx::Graphy::Audio::G_AudioMonitor,
+    pub m_fpsMonitor: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Fps::G_FpsMonitor>,
+    pub m_ramMonitor: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Ram::G_RamMonitor>,
+    pub m_audioMonitor: quest_hook::libil2cpp::Gc<
+        crate::Tayx::Graphy::Audio::G_AudioMonitor,
+    >,
 }
 #[cfg(feature = "Tayx+Graphy+GraphyDebugger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -376,7 +380,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugCondition")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GraphyDebugger_DebugCondition {
     pub Variable: crate::Tayx::Graphy::GraphyDebugger_DebugVariable,
     pub Comparer: crate::Tayx::Graphy::GraphyDebugger_DebugComparer,
@@ -411,17 +415,21 @@ pub struct GraphyDebugger_DebugPacket {
     pub InitSleepTime: f32,
     pub ExecuteSleepTime: f32,
     pub ConditionEvaluation: crate::Tayx::Graphy::GraphyDebugger_ConditionEvaluation,
-    pub DebugConditions: *mut crate::System::Collections::Generic::List_1<
-        crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
+    pub DebugConditions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
+        >,
     >,
     pub MessageType: crate::Tayx::Graphy::GraphyDebugger_MessageType,
-    pub Message: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub TakeScreenshot: bool,
-    pub ScreenshotFileName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ScreenshotFileName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub DebugBreak: bool,
-    pub UnityEvents: *mut crate::UnityEngine::Events::UnityEvent,
-    pub Callbacks: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Action,
+    pub UnityEvents: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
+    pub Callbacks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::Action>,
     >,
     pub canBeChecked: bool,
     pub executed: bool,

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SetMemberBinder {
     __cordl_parent: crate::System::Dynamic::DynamicMetaObjectBinder,
-    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _IgnoreCase_k__BackingField: bool,
 }
 #[cfg(feature = "System+Dynamic+SetMemberBinder")]

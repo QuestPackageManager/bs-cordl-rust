@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XText {
     __cordl_parent: crate::System::Xml::Linq::XNode,
-    pub text: *mut quest_hook::libil2cpp::Il2CppString,
+    pub text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Linq+XText")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

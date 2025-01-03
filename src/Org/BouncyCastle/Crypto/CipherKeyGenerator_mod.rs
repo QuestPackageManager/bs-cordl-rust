@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CipherKeyGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
     pub strength: i32,
     pub uninitialised: bool,
     pub defaultStrength: i32,

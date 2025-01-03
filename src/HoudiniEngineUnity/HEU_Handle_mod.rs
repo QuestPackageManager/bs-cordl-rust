@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct HEU_Handle {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _handleName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _handleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _handleType: crate::HoudiniEngineUnity::HEU_Handle_HEU_HandleType,
     pub _handleIndex: i32,
-    pub _handleParamTranslateBinding: *mut crate::HoudiniEngineUnity::HEU_HandleParamBinding,
-    pub _handleParamRotateBinding: *mut crate::HoudiniEngineUnity::HEU_HandleParamBinding,
-    pub _handleParamScaleBinding: *mut crate::HoudiniEngineUnity::HEU_HandleParamBinding,
+    pub _handleParamTranslateBinding: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_HandleParamBinding,
+    >,
+    pub _handleParamRotateBinding: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_HandleParamBinding,
+    >,
+    pub _handleParamScaleBinding: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_HandleParamBinding,
+    >,
     pub _handlePosition: crate::UnityEngine::Vector3,
     pub _handleRotation: crate::UnityEngine::Quaternion,
     pub _handleScale: crate::UnityEngine::Vector3,

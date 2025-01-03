@@ -3,18 +3,22 @@
 #[derive(Debug)]
 pub struct GradientTransitionSO {
     __cordl_parent: crate::GlobalNamespace::BaseTransitionSO,
-    pub _normalColor1: *mut crate::GlobalNamespace::ColorSO,
-    pub _normalColor2: *mut crate::GlobalNamespace::ColorSO,
-    pub _highlightColor1: *mut crate::GlobalNamespace::ColorSO,
-    pub _highlightColor2: *mut crate::GlobalNamespace::ColorSO,
-    pub _pressedColor1: *mut crate::GlobalNamespace::ColorSO,
-    pub _pressedColor2: *mut crate::GlobalNamespace::ColorSO,
-    pub _disabledColor1: *mut crate::GlobalNamespace::ColorSO,
-    pub _disabledColor2: *mut crate::GlobalNamespace::ColorSO,
-    pub _selectedColor1: *mut crate::GlobalNamespace::ColorSO,
-    pub _selectedColor2: *mut crate::GlobalNamespace::ColorSO,
-    pub _selectedAndHighlightedColor1: *mut crate::GlobalNamespace::ColorSO,
-    pub _selectedAndHighlightedColor2: *mut crate::GlobalNamespace::ColorSO,
+    pub _normalColor1: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _normalColor2: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _highlightColor1: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _highlightColor2: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _pressedColor1: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _pressedColor2: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _disabledColor1: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _disabledColor2: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _selectedColor1: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _selectedColor2: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _selectedAndHighlightedColor1: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSO,
+    >,
+    pub _selectedAndHighlightedColor2: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSO,
+    >,
 }
 #[cfg(feature = "GradientTransitionSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

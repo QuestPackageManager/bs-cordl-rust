@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct DefaultGroupManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_GroupOptions: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::IGroupBoxOption,
+    pub m_GroupOptions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::IGroupBoxOption,
+        >,
     >,
-    pub m_SelectedOption: *mut crate::UnityEngine::UIElements::IGroupBoxOption,
-    pub m_GroupBox: *mut crate::UnityEngine::UIElements::IGroupBox,
+    pub m_SelectedOption: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IGroupBoxOption,
+    >,
+    pub m_GroupBox: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBox>,
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultGroupManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct ColliderEventEffect {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    pub _effectCollider: *mut crate::UnityEngine::Collider,
+    pub _effectCollider: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
     pub _value: f32,
-    pub _environmentCollisionRepository: *mut crate::GlobalNamespace::EnvironmentCollisionRepository,
+    pub _environmentCollisionRepository: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentCollisionRepository,
+    >,
 }
 #[cfg(feature = "ColliderEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

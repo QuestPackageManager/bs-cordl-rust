@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct StreamContent {
     __cordl_parent: crate::System::Net::Http::HttpContent,
-    pub content: *mut crate::System::IO::Stream,
+    pub content: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub bufferSize: i32,
     pub cancellationToken: crate::System::Threading::CancellationToken,
     pub startPosition: i64,

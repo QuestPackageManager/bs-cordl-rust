@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MacSink {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    pub mMac: *mut crate::Org::BouncyCastle::Crypto::IMac,
+    pub mMac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IO+MacSink")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct Request {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub reqCert: *mut crate::Org::BouncyCastle::Asn1::Ocsp::CertID,
-    pub singleRequestExtensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    pub reqCert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Ocsp::CertID>,
+    pub singleRequestExtensions: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+Request")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

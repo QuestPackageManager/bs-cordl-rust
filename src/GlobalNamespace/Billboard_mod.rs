@@ -5,7 +5,7 @@ pub struct Billboard {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _rotationMode: crate::GlobalNamespace::Billboard_RotationMode,
     pub _flipDirection: bool,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "Billboard")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ContextualMenuManipulator {
     __cordl_parent: crate::UnityEngine::UIElements::MouseManipulator,
-    pub m_MenuBuilder: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+    pub m_MenuBuilder: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ContextualMenuManipulator")]

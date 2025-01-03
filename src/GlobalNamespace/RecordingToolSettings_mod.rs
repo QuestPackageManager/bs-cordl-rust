@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct RecordingToolSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub recordingSettings: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::RecordingSettings,
+    pub recordingSettings: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::RecordingSettings,
+        >,
     >,
 }
 #[cfg(feature = "RecordingToolSettings")]

@@ -1,10 +1,14 @@
 #[cfg(feature = "UnityEngine+UIElements+CanStartDragArgs")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CanStartDragArgs {
-    pub draggedElement: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub draggedElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub id: i32,
-    pub selectedIds: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    pub selectedIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<i32>,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+CanStartDragArgs")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+TextProcessingElement")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TextProcessingElement {
     pub elementType: crate::UnityEngine::TextCore::Text::TextProcessingElementType,
     pub unicode: u32,

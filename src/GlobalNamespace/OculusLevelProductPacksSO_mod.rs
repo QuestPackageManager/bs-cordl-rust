@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct OculusLevelProductPacksSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _levelPackProductData: *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData,
-    pub _levelPackRedirectionData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirectionData,
+    pub _levelPackProductData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData,
+    >,
+    pub _levelPackRedirectionData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirectionData,
+        >,
     >,
 }
 #[cfg(feature = "OculusLevelProductPacksSO")]

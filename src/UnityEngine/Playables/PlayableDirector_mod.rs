@@ -3,14 +3,14 @@
 #[derive(Debug)]
 pub struct PlayableDirector {
     __cordl_parent: crate::UnityEngine::Behaviour,
-    pub played: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::Playables::PlayableDirector,
+    pub played: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::Playables::PlayableDirector>,
     >,
-    pub paused: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::Playables::PlayableDirector,
+    pub paused: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::Playables::PlayableDirector>,
     >,
-    pub stopped: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::Playables::PlayableDirector,
+    pub stopped: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::Playables::PlayableDirector>,
     >,
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableDirector")]

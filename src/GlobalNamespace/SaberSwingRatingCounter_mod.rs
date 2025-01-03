@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SaberSwingRatingCounter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _saberMovementData: *mut crate::GlobalNamespace::ISaberMovementData,
+    pub _saberMovementData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ISaberMovementData,
+    >,
     pub _cutPlaneNormal: crate::UnityEngine::Vector3,
     pub _cutTime: f32,
     pub _afterCutRating: f32,
@@ -13,11 +15,15 @@ pub struct SaberSwingRatingCounter {
     pub _noteForward: crate::UnityEngine::Vector3,
     pub _rateBeforeCut: bool,
     pub _rateAfterCut: bool,
-    pub _didChangeReceivers: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver,
+    pub _didChangeReceivers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver,
+        >,
     >,
-    pub _didFinishReceivers: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver,
+    pub _didFinishReceivers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver,
+        >,
     >,
     pub _notePlaneCenter: crate::UnityEngine::Vector3,
     pub _beforeCutTopPos: crate::UnityEngine::Vector3,

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct X9ECParametersHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub parameters: *mut crate::Org::BouncyCastle::Asn1::X9::X9ECParameters,
+    pub parameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X9::X9ECParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X9ECParametersHolder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

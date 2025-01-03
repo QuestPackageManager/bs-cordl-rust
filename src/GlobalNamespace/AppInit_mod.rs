@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct AppInit {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _cameraGO: *mut crate::UnityEngine::GameObject,
-    pub _asyncSceneContext: *mut crate::BGLib::AppFlow::Initialization::AsyncSceneContext,
-    pub sceneSetupData: *mut crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData,
-    pub _setupData: *mut crate::GlobalNamespace::AppInitSetupData,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
+    pub _cameraGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _asyncSceneContext: quest_hook::libil2cpp::Gc<
+        crate::BGLib::AppFlow::Initialization::AsyncSceneContext,
+    >,
+    pub sceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData,
+    >,
+    pub _setupData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AppInitSetupData>,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
 }
 #[cfg(feature = "AppInit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

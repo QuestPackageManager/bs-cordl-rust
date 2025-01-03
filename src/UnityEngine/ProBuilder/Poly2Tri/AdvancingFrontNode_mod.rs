@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct AdvancingFrontNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Next: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-    pub Prev: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+    pub Next: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+    >,
+    pub Prev: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+    >,
     pub Value: f64,
-    pub Point: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-    pub Triangle: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+    pub Point: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    >,
+    pub Triangle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+    >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+AdvancingFrontNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

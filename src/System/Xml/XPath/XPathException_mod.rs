@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct XPathException {
     __cordl_parent: crate::System::SystemException,
-    pub res: *mut quest_hook::libil2cpp::Il2CppString,
-    pub args: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub args: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub message: *mut quest_hook::libil2cpp::Il2CppString,
+    pub message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+XPath+XPathException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

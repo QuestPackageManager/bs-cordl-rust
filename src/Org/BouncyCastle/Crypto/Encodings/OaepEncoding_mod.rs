@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct OaepEncoding {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub defHash: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mgf1Hash: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub engine: *mut crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub defHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mgf1Hash: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub engine: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
+    >,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
     pub forEncryption: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Encodings+OaepEncoding")]

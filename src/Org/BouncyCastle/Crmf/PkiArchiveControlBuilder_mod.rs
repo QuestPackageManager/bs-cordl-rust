@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct PkiArchiveControlBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub envGen: *mut crate::Org::BouncyCastle::Cms::CmsEnvelopedDataGenerator,
-    pub keyContent: *mut crate::Org::BouncyCastle::Cms::CmsProcessableByteArray,
+    pub envGen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsEnvelopedDataGenerator,
+    >,
+    pub keyContent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsProcessableByteArray,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+PkiArchiveControlBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

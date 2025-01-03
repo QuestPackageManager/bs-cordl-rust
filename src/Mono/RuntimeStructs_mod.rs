@@ -43,9 +43,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::RuntimeStructs {
 }
 #[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RuntimeStructs_GPtrArray {
-    pub data: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub len: i32,
 }
 #[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
@@ -68,13 +68,13 @@ for crate::Mono::RuntimeStructs_GPtrArray {
 impl crate::Mono::RuntimeStructs_GPtrArray {}
 #[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RuntimeStructs_GenericParamInfo {
-    pub pklass: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub pklass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub name: crate::System::IntPtr,
     pub flags: u16,
     pub token: u32,
-    pub constraints: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub constraints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -96,7 +96,7 @@ for crate::Mono::RuntimeStructs_GenericParamInfo {
 impl crate::Mono::RuntimeStructs_GenericParamInfo {}
 #[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RuntimeStructs_MonoClass {}
 #[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -118,11 +118,11 @@ for crate::Mono::RuntimeStructs_MonoClass {
 impl crate::Mono::RuntimeStructs_MonoClass {}
 #[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RuntimeStructs_RemoteClass {
     pub default_vtable: crate::System::IntPtr,
     pub xdomain_vtable: crate::System::IntPtr,
-    pub proxy_class: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub proxy_class: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub proxy_class_name: crate::System::IntPtr,
     pub interface_count: u32,
 }

@@ -75,7 +75,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRNetwork+FrameHeader")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRNetwork_FrameHeader {
     pub protocolIdentifier: u32,
     pub payloadType: i32,
@@ -123,20 +123,24 @@ impl crate::GlobalNamespace::OVRNetwork_FrameHeader {
 #[derive(Debug)]
 pub struct OVRNetwork_OVRNetworkTcpClient {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub connectionStateChangedCallback: *mut crate::System::Action,
-    pub payloadReceivedCallback: *mut crate::System::Action_4<
-        i32,
-        *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        i32,
-        i32,
+    pub connectionStateChangedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub payloadReceivedCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_4<
+            i32,
+            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            i32,
+            i32,
+        >,
     >,
-    pub tcpClient: *mut crate::System::Net::Sockets::TcpClient,
-    pub receivedBuffers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub tcpClient: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::TcpClient>,
+    pub receivedBuffers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<u8>>,
     >,
     pub receivedBufferIndex: i32,
     pub receivedBufferDataSize: i32,
-    pub readyReceiveDataEvent: *mut crate::System::Threading::ManualResetEvent,
+    pub readyReceiveDataEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ManualResetEvent,
+    >,
 }
 #[cfg(feature = "OVRNetwork+OVRNetworkTcpClient")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -265,10 +269,12 @@ for crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
 #[derive(Debug)]
 pub struct OVRNetwork_OVRNetworkTcpServer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub tcpListener: *mut crate::System::Net::Sockets::TcpListener,
-    pub clientsLock: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub clients: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Net::Sockets::TcpClient,
+    pub tcpListener: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::TcpListener>,
+    pub clientsLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub clients: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Net::Sockets::TcpClient,
+        >,
     >,
 }
 #[cfg(feature = "OVRNetwork+OVRNetworkTcpServer")]

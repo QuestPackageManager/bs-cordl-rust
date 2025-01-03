@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct ResolveProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _identifier: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _contractType: *mut crate::System::Type,
+    pub _identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _contractType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _isOptional: bool,
     pub _source: crate::Zenject::InjectSources,
     pub _matchAll: bool,

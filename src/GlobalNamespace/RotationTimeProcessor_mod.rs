@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct RotationTimeProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _rotationChangeDataList: *mut crate::System::Collections::Generic::List_1<
-        crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData,
+    pub _rotationChangeDataList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData,
+        >,
     >,
     pub currentBpmChangesDataIdx: i32,
 }
@@ -124,7 +126,7 @@ for crate::GlobalNamespace::RotationTimeProcessor {
 }
 #[cfg(feature = "RotationTimeProcessor+RotationChangeData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RotationTimeProcessor_RotationChangeData {
     pub beat: f32,
     pub rotation: i32,

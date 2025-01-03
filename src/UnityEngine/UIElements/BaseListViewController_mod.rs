@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct BaseListViewController {
     __cordl_parent: crate::UnityEngine::UIElements::CollectionViewController,
-    pub itemsSourceSizeChanged: *mut crate::System::Action,
-    pub itemsAdded: *mut crate::System::Action_1<
-        *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    pub itemsSourceSizeChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub itemsAdded: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     >,
-    pub itemsRemoved: *mut crate::System::Action_1<
-        *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    pub itemsRemoved: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseListViewController")]

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct AnniversaryManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _fireworksController: *mut crate::GlobalNamespace::FireworksController,
-    pub _mainMenuViewController: *mut crate::GlobalNamespace::MainMenuViewController,
+    pub _fireworksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FireworksController,
+    >,
+    pub _mainMenuViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MainMenuViewController,
+    >,
 }
 #[cfg(feature = "AnniversaryManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

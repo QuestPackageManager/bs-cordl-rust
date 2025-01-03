@@ -6,7 +6,9 @@ pub struct VectorImageRenderInfo {
         *mut crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo,
     >,
     pub useCount: i32,
-    pub firstGradientRemap: *mut crate::UnityEngine::UIElements::UIR::GradientRemap,
+    pub firstGradientRemap: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::GradientRemap,
+    >,
     pub gradientSettingsAlloc: crate::UnityEngine::UIElements::UIR::Alloc,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageRenderInfo")]

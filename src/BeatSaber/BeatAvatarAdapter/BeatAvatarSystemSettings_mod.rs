@@ -3,12 +3,24 @@
 #[derive(Debug)]
 pub struct BeatAvatarSystemSettings {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _avatarGameplayPrefab: *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-    pub _avatarResultsPrefab: *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-    pub _avatarHologramPrefab: *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-    pub _avatarEditorPrefab: *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-    pub _avatarSelectionViewPrefab: *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
-    pub _avatarForUnityEditorPrefab: *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+    pub _avatarGameplayPrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+    >,
+    pub _avatarResultsPrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+    >,
+    pub _avatarHologramPrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+    >,
+    pub _avatarEditorPrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+    >,
+    pub _avatarSelectionViewPrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+    >,
+    pub _avatarForUnityEditorPrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+    >,
 }
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarSystemSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

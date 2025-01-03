@@ -4,22 +4,48 @@
 pub struct X509ChainImplMono {
     __cordl_parent: crate::System::Security::Cryptography::X509Certificates::X509ChainImpl,
     pub location: crate::System::Security::Cryptography::X509Certificates::StoreLocation,
-    pub elements: *mut crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection,
-    pub policy: *mut crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy,
-    pub status: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Security::Cryptography::X509Certificates::X509ChainStatus,
+    pub elements: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection,
+    >,
+    pub policy: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy,
+    >,
+    pub status: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Security::Cryptography::X509Certificates::X509ChainStatus,
+        >,
     >,
     pub max_path_length: i32,
-    pub working_issuer_name: *mut crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName,
-    pub working_public_key: *mut crate::System::Security::Cryptography::AsymmetricAlgorithm,
-    pub bce_restriction: *mut crate::System::Security::Cryptography::X509Certificates::X509ChainElement,
-    pub roots: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
-    pub cas: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
-    pub root_store: *mut crate::System::Security::Cryptography::X509Certificates::X509Store,
-    pub ca_store: *mut crate::System::Security::Cryptography::X509Certificates::X509Store,
-    pub user_root_store: *mut crate::System::Security::Cryptography::X509Certificates::X509Store,
-    pub user_ca_store: *mut crate::System::Security::Cryptography::X509Certificates::X509Store,
-    pub collection: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
+    pub working_issuer_name: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName,
+    >,
+    pub working_public_key: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::AsymmetricAlgorithm,
+    >,
+    pub bce_restriction: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509ChainElement,
+    >,
+    pub roots: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
+    >,
+    pub cas: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
+    >,
+    pub root_store: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Store,
+    >,
+    pub ca_store: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Store,
+    >,
+    pub user_root_store: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Store,
+    >,
+    pub user_ca_store: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Store,
+    >,
+    pub collection: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
+    >,
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainImplMono")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

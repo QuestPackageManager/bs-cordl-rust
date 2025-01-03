@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+BlendShapeBufferRange")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BlendShapeBufferRange {
     pub m_StartIndex: u32,
     pub m_EndIndex: u32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+BMPAlloc")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BMPAlloc {
     pub page: i32,
     pub pageLine: u16,

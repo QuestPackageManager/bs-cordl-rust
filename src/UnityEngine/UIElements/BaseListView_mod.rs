@@ -5,31 +5,51 @@ pub struct BaseListView {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVerticalCollectionView,
     pub m_ShowBoundCollectionSize: bool,
     pub m_ShowFoldoutHeader: bool,
-    pub m_HeaderTitle: *mut quest_hook::libil2cpp::Il2CppString,
-    pub itemsAdded: *mut crate::System::Action_1<
-        *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    pub m_HeaderTitle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub itemsAdded: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     >,
-    pub itemsRemoved: *mut crate::System::Action_1<
-        *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    pub itemsRemoved: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     >,
-    pub itemsSourceSizeChanged: *mut crate::System::Action,
-    pub m_ListViewLabel: *mut crate::UnityEngine::UIElements::Label,
-    pub m_Foldout: *mut crate::UnityEngine::UIElements::Foldout,
-    pub m_ArraySizeField: *mut crate::UnityEngine::UIElements::TextField,
+    pub itemsSourceSizeChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub m_ListViewLabel: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Label,
+    >,
+    pub m_Foldout: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Foldout>,
+    pub m_ArraySizeField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextField,
+    >,
     pub m_IsOverMultiEditLimit: bool,
-    pub m_Footer: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_AddButton: *mut crate::UnityEngine::UIElements::Button,
-    pub m_RemoveButton: *mut crate::UnityEngine::UIElements::Button,
-    pub m_ItemAddedCallback: *mut crate::System::Action_1<
-        *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    pub m_Footer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
     >,
-    pub m_ItemRemovedCallback: *mut crate::System::Action_1<
-        *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    pub m_AddButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Button>,
+    pub m_RemoveButton: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Button,
     >,
-    pub m_ItemsSourceSizeChangedCallback: *mut crate::System::Action,
+    pub m_ItemAddedCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    >,
+    pub m_ItemRemovedCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    >,
+    pub m_ItemsSourceSizeChangedCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
     pub m_ReorderMode: crate::UnityEngine::UIElements::ListViewReorderMode,
-    pub reorderModeChanged: *mut crate::System::Action,
-    pub m_MaxMultiEditStr: *mut quest_hook::libil2cpp::Il2CppString,
+    pub reorderModeChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub m_MaxMultiEditStr: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseListView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -430,13 +450,23 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::BaseL
 #[derive(Debug)]
 pub struct BaseListView_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits,
-    pub m_ShowFoldoutHeader: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_HeaderTitle: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_ShowAddRemoveFooter: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_ReorderMode: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::ListViewReorderMode,
+    pub m_ShowFoldoutHeader: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
-    pub m_ShowBoundCollectionSize: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    pub m_HeaderTitle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_ShowAddRemoveFooter: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_ReorderMode: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::ListViewReorderMode,
+        >,
+    >,
+    pub m_ShowBoundCollectionSize: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseListView+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

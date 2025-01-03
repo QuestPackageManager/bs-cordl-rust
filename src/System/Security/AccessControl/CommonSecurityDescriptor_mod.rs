@@ -6,10 +6,18 @@ pub struct CommonSecurityDescriptor {
     pub is_container: bool,
     pub is_ds: bool,
     pub flags: crate::System::Security::AccessControl::ControlFlags,
-    pub owner: *mut crate::System::Security::Principal::SecurityIdentifier,
-    pub group: *mut crate::System::Security::Principal::SecurityIdentifier,
-    pub system_acl: *mut crate::System::Security::AccessControl::SystemAcl,
-    pub discretionary_acl: *mut crate::System::Security::AccessControl::DiscretionaryAcl,
+    pub owner: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Principal::SecurityIdentifier,
+    >,
+    pub group: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Principal::SecurityIdentifier,
+    >,
+    pub system_acl: quest_hook::libil2cpp::Gc<
+        crate::System::Security::AccessControl::SystemAcl,
+    >,
+    pub discretionary_acl: quest_hook::libil2cpp::Gc<
+        crate::System::Security::AccessControl::DiscretionaryAcl,
+    >,
 }
 #[cfg(feature = "System+Security+AccessControl+CommonSecurityDescriptor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

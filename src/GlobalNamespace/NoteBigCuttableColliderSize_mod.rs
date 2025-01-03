@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct NoteBigCuttableColliderSize {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _noteController: *mut crate::GlobalNamespace::NoteController,
-    pub _boxCollider: *mut crate::UnityEngine::BoxCollider,
+    pub _noteController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteController,
+    >,
+    pub _boxCollider: quest_hook::libil2cpp::Gc<crate::UnityEngine::BoxCollider>,
     pub _defaultColliderSize: crate::UnityEngine::Vector3,
 }
 #[cfg(feature = "NoteBigCuttableColliderSize")]

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct OculusPlatformAchievementHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _achievementIdsModel: *mut crate::GlobalNamespace::AchievementIdsModelSO,
+    pub _achievementIdsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementIdsModelSO,
+    >,
 }
 #[cfg(feature = "OculusPlatformAchievementHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

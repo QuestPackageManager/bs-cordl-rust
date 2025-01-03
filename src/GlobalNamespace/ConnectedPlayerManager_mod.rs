@@ -3,59 +3,83 @@
 #[derive(Debug)]
 pub struct ConnectedPlayerManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub connectedEvent: *mut crate::System::Action,
-    pub initializedEvent: *mut crate::System::Action,
-    pub disconnectedEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::DisconnectedReason,
+    pub connectedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub initializedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub disconnectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
     >,
-    pub connectionFailedEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::ConnectionFailedReason,
+    pub connectionFailedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
     >,
-    pub playerConnectedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub playerConnectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::IConnectedPlayer>,
     >,
-    pub playerDisconnectedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub playerDisconnectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::IConnectedPlayer>,
     >,
-    pub playerStateChangedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub playerStateChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::IConnectedPlayer>,
     >,
-    pub playerAvatarChangedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub playerAvatarChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::IConnectedPlayer>,
     >,
-    pub playerOrderChangedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub playerOrderChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::IConnectedPlayer>,
     >,
-    pub playerLatencyInitializedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub playerLatencyInitializedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::IConnectedPlayer>,
     >,
-    pub syncTimeInitializedEvent: *mut crate::System::Action,
+    pub syncTimeInitializedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _startTicks: i64,
-    pub _syncTimeOffset: *mut crate::GlobalNamespace::LongRollingAverage,
-    pub _timeProvider: *mut crate::BGNet::Core::ITimeProvider,
-    pub _taskUtility: *mut crate::BGNet::Core::ITaskUtility,
-    pub _connectionManager: *mut crate::GlobalNamespace::IConnectionManager,
-    pub _temporaryDataWriter: *mut crate::LiteNetLib::Utils::NetDataWriter,
-    pub _temporaryEncryptedDataWriter: *mut crate::LiteNetLib::Utils::NetDataWriter,
-    pub _reliableDataWriter: *mut crate::LiteNetLib::Utils::NetDataWriter,
-    pub _unreliableDataWriter: *mut crate::LiteNetLib::Utils::NetDataWriter,
-    pub _players: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
+    pub _syncTimeOffset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LongRollingAverage,
     >,
-    pub _localPlayerState: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
+    pub _taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
+    pub _connectionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectionManager,
+    >,
+    pub _temporaryDataWriter: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::Utils::NetDataWriter,
+    >,
+    pub _temporaryEncryptedDataWriter: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::Utils::NetDataWriter,
+    >,
+    pub _reliableDataWriter: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::Utils::NetDataWriter,
+    >,
+    pub _unreliableDataWriter: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::Utils::NetDataWriter,
+    >,
+    pub _players: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
+        >,
+    >,
+    pub _localPlayerState: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub _localPlayerAvatars: crate::GlobalNamespace::MultiplayerAvatarsData,
-    pub _encryptionKeys: *mut crate::GlobalNamespace::IDiffieHellmanKeyPair,
-    pub _encryptionRandom: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _localPlayer: *mut crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
+    pub _encryptionKeys: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IDiffieHellmanKeyPair,
+    >,
+    pub _encryptionRandom: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub _localPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
+    >,
     pub _lastConnectionId: u8,
     pub _lastPollTime: i64,
     pub _lastPollFrame: i32,
     pub _lastPingTime: i64,
-    pub _messageSerializer: *mut crate::GlobalNamespace::NetworkPacketSerializer_2<
-        crate::GlobalNamespace::ConnectedPlayerManager_InternalMessageType,
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _messageSerializer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NetworkPacketSerializer_2<
+            crate::GlobalNamespace::ConnectedPlayerManager_InternalMessageType,
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     >,
 }
 #[cfg(feature = "ConnectedPlayerManager")]
@@ -1338,13 +1362,17 @@ for crate::GlobalNamespace::ConnectedPlayerManager {
 #[derive(Debug)]
 pub struct ConnectedPlayerManager_ConnectedPlayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _userId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _userName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _isMe: bool,
     pub _isConnectionOwner: bool,
-    pub _manager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
-    pub _connection: *mut crate::GlobalNamespace::IConnection,
-    pub _parent: *mut crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
+    pub _manager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ConnectedPlayerManager,
+    >,
+    pub _connection: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+    pub _parent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
+    >,
     pub _connectionId: u8,
     pub _remoteConnectionId: u8,
     pub _sortIndex: i32,
@@ -1353,10 +1381,14 @@ pub struct ConnectedPlayerManager_ConnectedPlayer {
     pub _isKicked: bool,
     pub _playerState: crate::GlobalNamespace::PlayerStateHash,
     pub _playerAvatars: crate::GlobalNamespace::MultiplayerAvatarsData,
-    pub _publicEncryptionKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _random: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _encryptionState: *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
-    pub _latency: *mut crate::GlobalNamespace::LongRollingAverage,
+    pub _publicEncryptionKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub _random: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _encryptionState: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+    >,
+    pub _latency: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LongRollingAverage>,
 }
 #[cfg(feature = "ConnectedPlayerManager+ConnectedPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2441,8 +2473,8 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
 pub struct ConnectedPlayerManager_PlayerConnectedPacket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub remoteConnectionId: u8,
-    pub userId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub userName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub isConnectionOwner: bool,
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerConnectedPacket")]
@@ -2745,8 +2777,12 @@ pub struct ConnectedPlayerManager_PlayerIdentityPacket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub playerState: crate::GlobalNamespace::PlayerStateHash,
     pub playerAvatar: crate::GlobalNamespace::MultiplayerAvatarsData,
-    pub random: *mut crate::GlobalNamespace::ByteArrayNetSerializable,
-    pub publicEncryptionKey: *mut crate::GlobalNamespace::ByteArrayNetSerializable,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ByteArrayNetSerializable,
+    >,
+    pub publicEncryptionKey: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ByteArrayNetSerializable,
+    >,
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerIdentityPacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2900,7 +2936,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
 #[derive(Debug)]
 pub struct ConnectedPlayerManager_PlayerSortOrderPacket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub userId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub sortIndex: i32,
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerSortOrderPacket")]

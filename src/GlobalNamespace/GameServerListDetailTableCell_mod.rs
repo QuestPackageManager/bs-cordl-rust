@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct GameServerListDetailTableCell {
     __cordl_parent: crate::HMUI::TableCell,
-    pub _joinServerButton: *mut crate::UnityEngine::UI::Button,
-    pub joinServerButtonWasPressedEvent: *mut crate::System::Action,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _joinServerButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub joinServerButtonWasPressedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
 }
 #[cfg(feature = "GameServerListDetailTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct G_FpsMonitor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_fpsSamples: *mut quest_hook::libil2cpp::Il2CppArray<i16>,
-    pub m_fpsSamplesSorted: *mut quest_hook::libil2cpp::Il2CppArray<i16>,
+    pub m_fpsSamples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
+    pub m_fpsSamplesSorted: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i16>,
+    >,
     pub m_fpsSamplesCapacity: i16,
     pub m_onePercentSamples: i16,
     pub m_zero1PercentSamples: i16,

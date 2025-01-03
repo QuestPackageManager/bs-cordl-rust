@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct TouchScreenTextEditorEventHandler {
     __cordl_parent: crate::UnityEngine::UIElements::TextEditorEventHandler,
-    pub m_TouchKeyboardPoller: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    pub m_TouchKeyboardPoller: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    >,
     pub m_TouchKeyboardAllowsInPlaceEditing: bool,
     pub m_IsClicking: bool,
 }

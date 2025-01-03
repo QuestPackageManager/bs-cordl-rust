@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct X509CollectionStore {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _local: *mut crate::System::Collections::ICollection,
+    pub _local: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509CollectionStore")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

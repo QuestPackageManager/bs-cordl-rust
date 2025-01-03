@@ -6,12 +6,11 @@ pub struct HEU_SerializableDictionary_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        TKey,
-        TValue,
+    pub _dictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
     >,
-    pub _keys: *mut quest_hook::libil2cpp::Il2CppArray<TKey>,
-    pub _values: *mut quest_hook::libil2cpp::Il2CppArray<TValue>,
+    pub _keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
+    pub _values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }

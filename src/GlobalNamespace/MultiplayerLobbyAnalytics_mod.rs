@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct MultiplayerLobbyAnalytics {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _gameServerLobbyFlowCoordinator: *mut crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase,
-    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
+    pub _gameServerLobbyFlowCoordinator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase,
+    >,
+    pub _analyticsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAnalyticsModel,
+    >,
 }
 #[cfg(feature = "MultiplayerLobbyAnalytics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

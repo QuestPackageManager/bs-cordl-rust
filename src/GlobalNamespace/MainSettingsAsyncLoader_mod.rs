@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct MainSettingsAsyncLoader {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncInstaller,
-    pub _networkConfig: *mut crate::GlobalNamespace::NetworkConfigSO,
-    pub _hapticFeedbackControllerPrefab: *mut crate::GlobalNamespace::HapticFeedbackManager,
-    pub _audioManager: *mut crate::GlobalNamespace::AudioManagerSO,
-    pub _setupData: *mut crate::GlobalNamespace::AppInitSetupData,
+    pub _networkConfig: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NetworkConfigSO,
+    >,
+    pub _hapticFeedbackControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HapticFeedbackManager,
+    >,
+    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
+    pub _setupData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AppInitSetupData>,
     pub _commandLineParserResult: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
-    pub _settingManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _settingManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
 }
 #[cfg(feature = "MainSettingsAsyncLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

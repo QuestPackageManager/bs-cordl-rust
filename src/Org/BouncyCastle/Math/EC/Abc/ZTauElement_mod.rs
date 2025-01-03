@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ZTauElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub u: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub v: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub u: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub v: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Abc+ZTauElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

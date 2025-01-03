@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct EncryptedValueBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub wrapper: *mut crate::Org::BouncyCastle::Crypto::IKeyWrapper,
-    pub encryptor: *mut crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey,
-    pub padder: *mut crate::Org::BouncyCastle::Crmf::IEncryptedValuePadder,
+    pub wrapper: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IKeyWrapper,
+    >,
+    pub encryptor: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey,
+    >,
+    pub padder: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crmf::IEncryptedValuePadder,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+EncryptedValueBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

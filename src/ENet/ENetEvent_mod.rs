@@ -1,6 +1,6 @@
 #[cfg(feature = "ENet+ENetEvent")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ENetEvent {
     pub _cordl_type: crate::ENet::EventType,
     pub peer: crate::System::IntPtr,

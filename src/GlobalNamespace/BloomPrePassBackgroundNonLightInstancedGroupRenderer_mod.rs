@@ -3,28 +3,44 @@
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundNonLightInstancedGroupRenderer {
     __cordl_parent: crate::GlobalNamespace::BloomPrePassNonLightPass,
-    pub _renderers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer,
+    pub _renderers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer,
+        >,
     >,
-    pub _supportedProperties: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_SupportedProperty,
+    pub _supportedProperties: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_SupportedProperty,
+        >,
     >,
-    pub _reusableFloatArrays: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub _reusableFloatArrays: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+        >,
     >,
-    pub _reusableVectorArrays: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+    pub _reusableVectorArrays: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+        >,
     >,
-    pub _reusableMatrixArrays: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+    pub _reusableMatrixArrays: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+        >,
     >,
     pub _reusableArraysSize: i32,
-    pub _commandBuffer: *mut crate::UnityEngine::Rendering::CommandBuffer,
-    pub _reusableSetMaterialPropertyBlock: *mut crate::UnityEngine::MaterialPropertyBlock,
-    pub _reusableGetMaterialPropertyBlock: *mut crate::UnityEngine::MaterialPropertyBlock,
+    pub _commandBuffer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Rendering::CommandBuffer,
+    >,
+    pub _reusableSetMaterialPropertyBlock: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MaterialPropertyBlock,
+    >,
+    pub _reusableGetMaterialPropertyBlock: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MaterialPropertyBlock,
+    >,
 }
 #[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -196,7 +212,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 pub struct BloomPrePassBackgroundNonLightInstancedGroupRenderer_SupportedProperty {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub propertyType: crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_PropertyType,
-    pub propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub propertyId: i32,
 }
 #[cfg(

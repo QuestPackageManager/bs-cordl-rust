@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct SecretKeyPacket {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::ContainedPacket,
-    pub pubKeyPacket: *mut crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
-    pub secKeyData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub pubKeyPacket: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
+    >,
+    pub secKeyData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub s2kUsage: i32,
     pub encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
-    pub s2k: *mut crate::Org::BouncyCastle::Bcpg::S2k,
-    pub iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub s2k: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::S2k>,
+    pub iv: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+SecretKeyPacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

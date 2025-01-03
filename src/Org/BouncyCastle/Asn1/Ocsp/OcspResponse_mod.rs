@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct OcspResponse {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub responseStatus: *mut crate::Org::BouncyCastle::Asn1::Ocsp::OcspResponseStatus,
-    pub responseBytes: *mut crate::Org::BouncyCastle::Asn1::Ocsp::ResponseBytes,
+    pub responseStatus: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Ocsp::OcspResponseStatus,
+    >,
+    pub responseBytes: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Ocsp::ResponseBytes,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+OcspResponse")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct XmlReflectionImporter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub initialDefaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
-    pub attributeOverrides: *mut crate::System::Xml::Serialization::XmlAttributeOverrides,
-    pub includedTypes: *mut crate::System::Collections::ArrayList,
-    pub helper: *mut crate::System::Xml::Serialization::ReflectionHelper,
+    pub initialDefaultNamespace: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub attributeOverrides: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlAttributeOverrides,
+    >,
+    pub includedTypes: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub helper: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::ReflectionHelper,
+    >,
     pub arrayChoiceCount: i32,
-    pub relatedMaps: *mut crate::System::Collections::ArrayList,
+    pub relatedMaps: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub allowPrivateTypes: bool,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlReflectionImporter")]

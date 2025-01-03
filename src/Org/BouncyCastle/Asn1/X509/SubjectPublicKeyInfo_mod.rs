@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct SubjectPublicKeyInfo {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub algID: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub keyData: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
+    pub algID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub keyData: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerBitString>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+SubjectPublicKeyInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

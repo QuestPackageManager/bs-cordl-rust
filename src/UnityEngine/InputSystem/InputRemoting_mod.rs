@@ -1,10 +1,10 @@
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ChangeUsageMsg_InputRemoting_Data {
     pub deviceId: i32,
-    pub usages: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub usages: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
@@ -32,12 +32,18 @@ impl crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {}
 pub struct InputRemoting {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Flags: crate::UnityEngine::InputSystem::InputRemoting_Flags,
-    pub m_LocalManager: *mut crate::UnityEngine::InputSystem::InputManager,
-    pub m_Subscribers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputRemoting_Subscriber,
+    pub m_LocalManager: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputManager,
     >,
-    pub m_Senders: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::InputRemoting_RemoteSender,
+    pub m_Subscribers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputRemoting_Subscriber,
+        >,
+    >,
+    pub m_Senders: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::InputRemoting_RemoteSender,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
@@ -638,11 +644,11 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Message")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputRemoting_Message {
     pub participantId: i32,
     pub _cordl_type: crate::UnityEngine::InputSystem::InputRemoting_MessageType,
-    pub data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Message")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -885,7 +891,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputRemoting_RemoteInputDevice {
     pub remoteId: i32,
     pub localId: i32,
@@ -912,14 +918,18 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
 impl crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteSender")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputRemoting_RemoteSender {
     pub senderId: i32,
-    pub layouts: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    pub layouts: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+        >,
     >,
-    pub devices: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice,
+    pub devices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteSender")]
@@ -1100,9 +1110,11 @@ for crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
 #[derive(Debug)]
 pub struct InputRemoting_Subscriber {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub owner: *mut crate::UnityEngine::InputSystem::InputRemoting,
-    pub observer: *mut crate::System::IObserver_1<
-        crate::UnityEngine::InputSystem::InputRemoting_Message,
+    pub owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
+    pub observer: quest_hook::libil2cpp::Gc<
+        crate::System::IObserver_1<
+            crate::UnityEngine::InputSystem::InputRemoting_Message,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Subscriber")]
@@ -1180,13 +1192,13 @@ for crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NewDeviceMsg_InputRemoting_Data {
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub layout: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub layout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub deviceId: i32,
-    pub usages: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub usages: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub description: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
 }
@@ -1211,10 +1223,10 @@ for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
 impl crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NewLayoutMsg_InputRemoting_Data {
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub layoutJson: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub layoutJson: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub isOverride: bool,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]

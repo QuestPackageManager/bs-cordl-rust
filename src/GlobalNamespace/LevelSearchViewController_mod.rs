@@ -3,36 +3,58 @@
 #[derive(Debug)]
 pub struct LevelSearchViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _searchButton: *mut crate::UnityEngine::UI::Button,
-    pub _clearFiltersButton: *mut crate::UnityEngine::UI::Button,
-    pub _filterParamsText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _filterPlaceholder: *mut crate::UnityEngine::GameObject,
-    pub _searchTextInputFieldView: *mut crate::HMUI::InputFieldView,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _songPackMasksModel: *mut crate::GlobalNamespace::SongPackMasksModel,
-    pub _entitlementModel: *mut crate::GlobalNamespace::IEntitlementModel,
-    pub _beatmapCharacteristicCollection: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
-    pub _uiKeyboardManager: *mut crate::GlobalNamespace::UIKeyboardManager,
-    pub didPressSearchButtonEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::LevelSearchViewController,
-        crate::GlobalNamespace::LevelFilter,
+    pub _searchButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _clearFiltersButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _filterParamsText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _filterPlaceholder: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _searchTextInputFieldView: quest_hook::libil2cpp::Gc<
+        crate::HMUI::InputFieldView,
     >,
-    pub didFilterBeatmapLevelCollectionEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::BeatmapLevelPack,
-        crate::GlobalNamespace::LevelSelectionOptions,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
     >,
-    pub didStartLoadingEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::LevelSearchViewController,
+    pub _songPackMasksModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPackMasksModel,
     >,
-    pub _beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
-    pub _preferredBeatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _entitlementModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IEntitlementModel,
+    >,
+    pub _beatmapCharacteristicCollection: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicCollection,
+    >,
+    pub _uiKeyboardManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::UIKeyboardManager,
+    >,
+    pub didPressSearchButtonEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::LevelSearchViewController,
+            crate::GlobalNamespace::LevelFilter,
+        >,
+    >,
+    pub didFilterBeatmapLevelCollectionEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
+            crate::GlobalNamespace::LevelSelectionOptions,
+        >,
+    >,
+    pub didStartLoadingEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::LevelSearchViewController>,
+    >,
+    pub _beatmapLevelPack: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelPack,
+    >,
+    pub _preferredBeatmapCharacteristic: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSO,
+    >,
     pub _preferredBeatmapDifficulty: crate::System::Nullable_1<
         crate::GlobalNamespace::BeatmapDifficulty,
     >,
     pub _currentSearchFilter: crate::GlobalNamespace::LevelFilter,
-    pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _beatmapLevelPacks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub _cancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub _beatmapLevelPacks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevelPack>,
     >,
 }
 #[cfg(feature = "LevelSearchViewController")]

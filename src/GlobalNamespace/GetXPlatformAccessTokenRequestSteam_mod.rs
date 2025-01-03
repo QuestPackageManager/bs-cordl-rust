@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct GetXPlatformAccessTokenRequestSteam {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub platformToken: *mut quest_hook::libil2cpp::Il2CppString,
+    pub platformToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub platformUserId: i64,
 }
 #[cfg(feature = "GetXPlatformAccessTokenRequestSteam")]

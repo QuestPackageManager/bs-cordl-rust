@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct OVRCustomSkeleton {
     __cordl_parent: crate::GlobalNamespace::OVRSkeleton,
-    pub _customBones_V2: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Transform,
+    pub _customBones_V2: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Transform>,
     >,
     pub retargetingType: crate::GlobalNamespace::OVRCustomSkeleton_RetargetingType,
 }

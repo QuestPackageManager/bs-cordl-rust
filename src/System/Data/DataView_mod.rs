@@ -3,17 +3,23 @@
 #[derive(Debug)]
 pub struct DataView {
     __cordl_parent: crate::System::ComponentModel::MarshalByValueComponent,
-    pub _dataViewManager: *mut crate::System::Data::DataViewManager,
-    pub _table: *mut crate::System::Data::DataTable,
-    pub _locked: bool,
-    pub _index: *mut crate::System::Data::Index,
-    pub _findIndexes: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::System::Data::Index,
+    pub _dataViewManager: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataViewManager,
     >,
-    pub _sort: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _comparison: *mut crate::System::Comparison_1<*mut crate::System::Data::DataRow>,
-    pub _rowFilter: *mut crate::System::Data::IFilter,
+    pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    pub _locked: bool,
+    pub _index: quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
+    pub _findIndexes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::System::Data::Index,
+        >,
+    >,
+    pub _sort: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _comparison: quest_hook::libil2cpp::Gc<
+        crate::System::Comparison_1<*mut crate::System::Data::DataRow>,
+    >,
+    pub _rowFilter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
     pub _recordStates: crate::System::Data::DataViewRowState,
     pub _shouldOpen: bool,
     pub _open: bool,
@@ -21,22 +27,30 @@ pub struct DataView {
     pub _allowEdit: bool,
     pub _allowDelete: bool,
     pub _applyDefaultSort: bool,
-    pub _addNewRow: *mut crate::System::Data::DataRow,
-    pub _addNewMoved: *mut crate::System::ComponentModel::ListChangedEventArgs,
-    pub _onListChanged: *mut crate::System::ComponentModel::ListChangedEventHandler,
-    pub _delayedSort: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _addNewRow: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+    pub _addNewMoved: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::ListChangedEventArgs,
+    >,
+    pub _onListChanged: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::ListChangedEventHandler,
+    >,
+    pub _delayedSort: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _delayedRecordStates: crate::System::Data::DataViewRowState,
     pub _fInitInProgress: bool,
     pub _fEndInitInProgress: bool,
-    pub _rowViewCache: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Data::DataRow,
-        *mut crate::System::Data::DataRowView,
+    pub _rowViewCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Data::DataRow,
+            *mut crate::System::Data::DataRowView,
+        >,
     >,
-    pub _rowViewBuffer: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Data::DataRow,
-        *mut crate::System::Data::DataRowView,
+    pub _rowViewBuffer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Data::DataRow,
+            *mut crate::System::Data::DataRowView,
+        >,
     >,
-    pub _dvListener: *mut crate::System::Data::DataViewListener,
+    pub _dvListener: quest_hook::libil2cpp::Gc<crate::System::Data::DataViewListener>,
     pub _objectID: i32,
 }
 #[cfg(feature = "System+Data+DataView")]

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct LightSensor {
     __cordl_parent: crate::UnityEngine::InputSystem::Sensor,
-    pub _lightLevel_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    pub _lightLevel_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LightSensor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

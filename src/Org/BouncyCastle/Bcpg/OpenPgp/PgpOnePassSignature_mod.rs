@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct PgpOnePassSignature {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub sigPack: *mut crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket,
+    pub sigPack: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket,
+    >,
     pub signatureType: i32,
-    pub sig: *mut crate::Org::BouncyCastle::Crypto::ISigner,
+    pub sig: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
     pub lastb: u8,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpOnePassSignature")]

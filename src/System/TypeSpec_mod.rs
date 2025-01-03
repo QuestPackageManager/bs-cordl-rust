@@ -3,19 +3,19 @@
 #[derive(Debug)]
 pub struct TypeSpec {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub name: *mut crate::System::TypeIdentifier,
-    pub assembly_name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub nested: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::TypeIdentifier,
+    pub name: quest_hook::libil2cpp::Gc<crate::System::TypeIdentifier>,
+    pub assembly_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub nested: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::TypeIdentifier>,
     >,
-    pub generic_params: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::TypeSpec,
+    pub generic_params: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::TypeSpec>,
     >,
-    pub modifier_spec: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::ModifierSpec,
+    pub modifier_spec: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::ModifierSpec>,
     >,
     pub is_byref: bool,
-    pub display_fullname: *mut quest_hook::libil2cpp::Il2CppString,
+    pub display_fullname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+TypeSpec")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

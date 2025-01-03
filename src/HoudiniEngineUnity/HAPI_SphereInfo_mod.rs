@@ -1,8 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_SphereInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HAPI_SphereInfo {
-    pub center: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub center: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub radius: f32,
 }
 #[cfg(feature = "HoudiniEngineUnity+HAPI_SphereInfo")]

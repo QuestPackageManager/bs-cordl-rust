@@ -3,12 +3,20 @@
 #[derive(Debug)]
 pub struct Identity {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _objectUri: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _channelSink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    pub _envoySink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    pub _clientDynamicProperties: *mut crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection,
-    pub _serverDynamicProperties: *mut crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection,
-    pub _objRef: *mut crate::System::Runtime::Remoting::ObjRef,
+    pub _objectUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _channelSink: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessageSink,
+    >,
+    pub _envoySink: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessageSink,
+    >,
+    pub _clientDynamicProperties: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection,
+    >,
+    pub _serverDynamicProperties: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection,
+    >,
+    pub _objRef: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ObjRef>,
     pub _disposed: bool,
 }
 #[cfg(feature = "System+Runtime+Remoting+Identity")]

@@ -1,6 +1,6 @@
 #[cfg(feature = "QuaternionSerializable")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct QuaternionSerializable {
     pub _a: i32,
     pub _b: i32,

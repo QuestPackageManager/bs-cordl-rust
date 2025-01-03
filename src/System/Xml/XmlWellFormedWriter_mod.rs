@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AttributeValueCache_XmlWellFormedWriter_BufferChunk {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub buffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub index: i32,
     pub count: i32,
 }
@@ -71,7 +71,7 @@ for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_BufferChunk {
 pub struct AttributeValueCache_XmlWellFormedWriter_Item {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType,
-    pub data: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache+Item")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -161,35 +161,49 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct XmlWellFormedWriter {
     __cordl_parent: crate::System::Xml::XmlWriter,
-    pub writer: *mut crate::System::Xml::XmlWriter,
-    pub rawWriter: *mut crate::System::Xml::XmlRawWriter,
-    pub predefinedNamespaces: *mut crate::System::Xml::IXmlNamespaceResolver,
-    pub nsStack: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::XmlWellFormedWriter_Namespace,
+    pub writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
+    pub rawWriter: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlRawWriter>,
+    pub predefinedNamespaces: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::IXmlNamespaceResolver,
+    >,
+    pub nsStack: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Xml::XmlWellFormedWriter_Namespace,
+        >,
     >,
     pub nsTop: i32,
-    pub nsHashtable: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        i32,
+    pub nsHashtable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            i32,
+        >,
     >,
     pub useNsHashtable: bool,
-    pub elemScopeStack: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::XmlWellFormedWriter_ElementScope,
+    pub elemScopeStack: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Xml::XmlWellFormedWriter_ElementScope,
+        >,
     >,
     pub elemTop: i32,
-    pub attrStack: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::XmlWellFormedWriter_AttrName,
+    pub attrStack: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Xml::XmlWellFormedWriter_AttrName,
+        >,
     >,
     pub attrCount: i32,
-    pub attrHashTable: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        i32,
+    pub attrHashTable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            i32,
+        >,
     >,
     pub specAttr: crate::System::Xml::XmlWellFormedWriter_SpecialAttribute,
-    pub attrValueCache: *mut crate::System::Xml::XmlWellFormedWriter_AttributeValueCache,
-    pub curDeclPrefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub stateTable: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::XmlWellFormedWriter_State,
+    pub attrValueCache: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlWellFormedWriter_AttributeValueCache,
+    >,
+    pub curDeclPrefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub stateTable: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Xml::XmlWellFormedWriter_State>,
     >,
     pub currentState: crate::System::Xml::XmlWellFormedWriter_State,
     pub checkCharacters: bool,
@@ -199,7 +213,7 @@ pub struct XmlWellFormedWriter {
     pub dtdWritten: bool,
     pub xmlDeclFollows: bool,
     pub xmlCharType: crate::System::Xml::XmlCharType,
-    pub hasher: *mut crate::System::Xml::SecureStringHasher,
+    pub hasher: quest_hook::libil2cpp::Gc<crate::System::Xml::SecureStringHasher>,
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -857,11 +871,11 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlWellFormedWrit
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttrName")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XmlWellFormedWriter_AttrName {
-    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
-    pub localName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub namespaceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub prev: i32,
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttrName")]
@@ -914,10 +928,14 @@ impl crate::System::Xml::XmlWellFormedWriter_AttrName {
 #[derive(Debug)]
 pub struct XmlWellFormedWriter_AttributeValueCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub stringValue: *mut crate::System::Text::StringBuilder,
-    pub singleStringValue: *mut quest_hook::libil2cpp::Il2CppString,
-    pub items: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item,
+    pub stringValue: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    pub singleStringValue: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub items: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item,
+        >,
     >,
     pub firstItem: i32,
     pub lastItem: i32,
@@ -1149,14 +1167,14 @@ for crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+ElementScope")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XmlWellFormedWriter_ElementScope {
     pub prevNSTop: i32,
-    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub localName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
+    pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub namespaceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub xmlSpace: crate::System::Xml::XmlSpace,
-    pub xmlLang: *mut quest_hook::libil2cpp::Il2CppString,
+    pub xmlLang: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+ElementScope")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1215,10 +1233,10 @@ impl crate::System::Xml::XmlWellFormedWriter_ElementScope {
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+Namespace")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XmlWellFormedWriter_Namespace {
-    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
+    pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub namespaceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub kind: crate::System::Xml::XmlWellFormedWriter_NamespaceKind,
     pub prevNsIndex: i32,
 }
@@ -1285,7 +1303,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct XmlWellFormedWriter_NamespaceResolverProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub wfWriter: *mut crate::System::Xml::XmlWellFormedWriter,
+    pub wfWriter: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWellFormedWriter>,
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+NamespaceResolverProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VROverlayIntersectionParams_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VROverlayIntersectionParams_t {
     pub vSource: crate::OVR::OpenVR::HmdVector3_t,
     pub vDirection: crate::OVR::OpenVR::HmdVector3_t,

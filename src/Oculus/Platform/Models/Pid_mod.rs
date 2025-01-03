@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Pid {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Id: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Oculus+Platform+Models+Pid")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct QuestGraphicSettingsViewController {
     __cordl_parent: crate::GlobalNamespace::GraphicSettingsViewController,
-    pub _mirror: *mut crate::GlobalNamespace::PresetsSettingsController,
-    pub _120HzMode: *mut crate::UnityEngine::UI::Toggle,
-    pub _stinsonOnlyEntries: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::GameObject,
+    pub _mirror: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PresetsSettingsController,
+    >,
+    pub _120HzMode: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _stinsonOnlyEntries: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
     >,
 }
 #[cfg(feature = "QuestGraphicSettingsViewController")]

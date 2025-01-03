@@ -61,13 +61,17 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriverDataDescription {
 }
 #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriverDataDescription+PoseData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TrackedPoseDriverDataDescription_PoseData {
-    pub PoseNames: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub PoseNames: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub Poses: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
+    pub Poses: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriverDataDescription+PoseData")]

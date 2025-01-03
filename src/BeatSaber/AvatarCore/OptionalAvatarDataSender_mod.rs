@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct OptionalAvatarDataSender {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _avatarSystemCollection: *mut crate::BeatSaber::AvatarCore::AvatarSystemCollection,
-    pub _optionalAvatarDataSyncHandler: *mut crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler,
-    pub _optionalAvatarDataProvider: *mut crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider,
+    pub _avatarSystemCollection: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::AvatarSystemCollection,
+    >,
+    pub _optionalAvatarDataSyncHandler: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler,
+    >,
+    pub _optionalAvatarDataProvider: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider,
+    >,
     pub _currentAvatarDisplayContext: crate::BeatSaber::AvatarCore::AvatarDisplayContext,
-    pub _selectedAvatarTypeId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _selectedAvatarTypeId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarDataSender")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

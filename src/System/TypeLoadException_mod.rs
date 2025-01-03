@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct TypeLoadException {
     __cordl_parent: crate::System::SystemException,
-    pub ClassName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub AssemblyName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub MessageArg: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ClassName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub AssemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub MessageArg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub ResourceId: i32,
 }
 #[cfg(feature = "System+TypeLoadException")]

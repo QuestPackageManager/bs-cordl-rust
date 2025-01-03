@@ -4,7 +4,9 @@
 pub struct CallbackEventHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub isIMGUIContainer: bool,
-    pub m_CallbackRegistry: *mut crate::UnityEngine::UIElements::EventCallbackRegistry,
+    pub m_CallbackRegistry: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventCallbackRegistry,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+CallbackEventHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct CenterStageLobbyViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _beatmapSelectionView: *mut crate::GlobalNamespace::BeatmapSelectionView,
-    pub _modifiersSelectionView: *mut crate::GlobalNamespace::ModifiersSelectionView,
+    pub _beatmapSelectionView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapSelectionView,
+    >,
+    pub _modifiersSelectionView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ModifiersSelectionView,
+    >,
 }
 #[cfg(feature = "CenterStageLobbyViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

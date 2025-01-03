@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct XsdSimpleValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub xmlType: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
-    pub typedValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub xmlType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaSimpleType,
+    >,
+    pub typedValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Xml+Schema+XsdSimpleValue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

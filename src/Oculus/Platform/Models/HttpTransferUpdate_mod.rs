@@ -4,7 +4,7 @@
 pub struct HttpTransferUpdate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_ID: u64,
-    pub Payload: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub Payload: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub IsCompleted: bool,
 }
 #[cfg(feature = "Oculus+Platform+Models+HttpTransferUpdate")]

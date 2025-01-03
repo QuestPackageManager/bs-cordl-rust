@@ -3,12 +3,20 @@
 #[derive(Debug)]
 pub struct UnityXRController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub positionAction: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub rotationAction: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub thumbstickAction: *mut crate::UnityEngine::InputSystem::InputAction,
+    pub positionAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub rotationAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub thumbstickAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
     pub node: crate::UnityEngine::XR::XRNode,
     pub _manufacturerName_k__BackingField: crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName,
-    pub _hapticsHandler: *mut crate::GlobalNamespace::IUnityXRHapticsHandler,
+    pub _hapticsHandler: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IUnityXRHapticsHandler,
+    >,
 }
 #[cfg(feature = "UnityXRController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -168,9 +176,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UnityXRContro
 #[derive(Debug)]
 pub struct UnityXRController_Configuration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _positionActionReference_k__BackingField: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub _orientationActionReference_k__BackingField: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub _thumbstickActionReference_k__BackingField: *mut crate::UnityEngine::InputSystem::InputActionReference,
+    pub _positionActionReference_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
+    pub _orientationActionReference_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
+    pub _thumbstickActionReference_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
 }
 #[cfg(feature = "UnityXRController+Configuration")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

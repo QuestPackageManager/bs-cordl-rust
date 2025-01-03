@@ -5,7 +5,9 @@ pub struct MultiplayerConnectedPlayerDisappearingArrowController {
     __cordl_parent: crate::GlobalNamespace::DisappearingArrowControllerBase_1<
         *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
     >,
-    pub _gameNoteController: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+    pub _gameNoteController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+    >,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerDisappearingArrowController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

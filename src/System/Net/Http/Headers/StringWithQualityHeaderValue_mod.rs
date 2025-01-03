@@ -4,7 +4,9 @@
 pub struct StringWithQualityHeaderValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Quality_k__BackingField: crate::System::Nullable_1<f64>,
-    pub _Value_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Value_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Net+Http+Headers+StringWithQualityHeaderValue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

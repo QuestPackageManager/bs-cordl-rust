@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+Settings+AudioSettings")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AudioSettings {
     pub volume: f32,
     pub ambientVolumeScale: f32,

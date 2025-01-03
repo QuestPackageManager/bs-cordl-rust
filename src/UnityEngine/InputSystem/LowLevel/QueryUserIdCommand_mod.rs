@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryUserIdCommand")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct QueryUserIdCommand {
     padding: [u8; 520usize],
 }
@@ -88,7 +88,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryUserIdCommand {
     feature = "UnityEngine+InputSystem+LowLevel+QueryUserIdCommand+_idBuffer_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct QueryUserIdCommand__idBuffer_e__FixedBuffer {
     pub FixedElementField: u8,
 }

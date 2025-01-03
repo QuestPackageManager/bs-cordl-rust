@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct ThreadHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _start: *mut crate::System::Delegate,
-    pub _startArg: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _executionContext: *mut crate::System::Threading::ExecutionContext,
+    pub _start: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    pub _startArg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _executionContext: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ExecutionContext,
+    >,
 }
 #[cfg(feature = "System+Threading+ThreadHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

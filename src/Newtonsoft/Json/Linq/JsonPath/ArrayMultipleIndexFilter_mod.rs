@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ArrayMultipleIndexFilter {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
-    pub Indexes: *mut crate::System::Collections::Generic::List_1<i32>,
+    pub Indexes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+ArrayMultipleIndexFilter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

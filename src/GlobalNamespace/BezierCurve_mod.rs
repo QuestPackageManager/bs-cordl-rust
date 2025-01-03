@@ -1,6 +1,6 @@
 #[cfg(feature = "BezierCurve")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BezierCurve {
     pub p0: crate::UnityEngine::Vector3,
     pub p1: crate::UnityEngine::Vector3,

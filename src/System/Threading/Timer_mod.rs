@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct Timer {
     __cordl_parent: crate::System::MarshalByRefObject,
-    pub callback: *mut crate::System::Threading::TimerCallback,
-    pub state: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub callback: quest_hook::libil2cpp::Gc<crate::System::Threading::TimerCallback>,
+    pub state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub due_time_ms: i64,
     pub period_ms: i64,
     pub next_run: i64,
@@ -221,11 +221,11 @@ impl AsMut<crate::System::IDisposable> for crate::System::Threading::Timer {
 pub struct Timer_Scheduler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub needReSort: bool,
-    pub list: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Threading::Timer,
+    pub list: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::Threading::Timer>,
     >,
     pub current_next_run: i64,
-    pub changed: *mut crate::System::Threading::ManualResetEvent,
+    pub changed: quest_hook::libil2cpp::Gc<crate::System::Threading::ManualResetEvent>,
 }
 #[cfg(feature = "System+Threading+Timer+Scheduler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -384,7 +384,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Timer_Sched
 }
 #[cfg(feature = "System+Threading+Timer+TimerComparer")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Timer_TimerComparer {}
 #[cfg(feature = "System+Threading+Timer+TimerComparer")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

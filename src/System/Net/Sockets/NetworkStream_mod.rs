@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct NetworkStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub _streamSocket: *mut crate::System::Net::Sockets::Socket,
+    pub _streamSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     pub _ownsSocket: bool,
     pub _readable: bool,
     pub _writeable: bool,

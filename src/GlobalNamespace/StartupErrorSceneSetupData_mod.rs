@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct StartupErrorSceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
-    pub title: *mut quest_hook::libil2cpp::Il2CppString,
-    pub subtitle: *mut quest_hook::libil2cpp::Il2CppString,
+    pub title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub subtitle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "StartupErrorSceneSetupData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Runtime+CompilerServices+ValueTaskAwaiter")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ValueTaskAwaiter {
     pub _value: crate::System::Threading::Tasks::ValueTask,
 }

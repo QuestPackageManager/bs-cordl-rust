@@ -7,8 +7,10 @@ pub struct LightColorEventBox {
     pub t: crate::BeatmapSaveDataCommon::DistributionParamType,
     pub b: i32,
     pub i: crate::BeatmapSaveDataCommon::EaseType,
-    pub e: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BeatmapSaveDataVersion3::LightColorBaseData,
+    pub e: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BeatmapSaveDataVersion3::LightColorBaseData,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+LightColorEventBox")]

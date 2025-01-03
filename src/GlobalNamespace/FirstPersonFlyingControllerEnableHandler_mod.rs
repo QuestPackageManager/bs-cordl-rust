@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct FirstPersonFlyingControllerEnableHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _flyingController: *mut crate::GlobalNamespace::FirstPersonFlyingController,
+    pub _flyingController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FirstPersonFlyingController,
+    >,
     pub _commandLineParserResult: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
 }
 #[cfg(feature = "FirstPersonFlyingControllerEnableHandler")]

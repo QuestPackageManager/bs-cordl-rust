@@ -3,17 +3,23 @@
 #[derive(Debug)]
 pub struct InputStateHistory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _onRecordAdded_k__BackingField: *mut crate::System::Action_1<
-        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+    pub _onRecordAdded_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+        >,
     >,
-    pub _onShouldRecordStateChange_k__BackingField: *mut crate::System::Func_4<
-        *mut crate::UnityEngine::InputSystem::InputControl,
-        f64,
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        bool,
+    pub _onShouldRecordStateChange_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_4<
+            *mut crate::UnityEngine::InputSystem::InputControl,
+            f64,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            bool,
+        >,
     >,
-    pub m_Controls: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputControl,
+    pub m_Controls: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputControl,
+        >,
     >,
     pub m_ControlCount: i32,
     pub m_RecordBuffer: crate::Unity::Collections::NativeArray_1<u8>,
@@ -705,9 +711,11 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputStateHistory_Enumerator {
-    pub m_History: *mut crate::UnityEngine::InputSystem::LowLevel::InputStateHistory,
+    pub m_History: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory,
+    >,
     pub m_Index: i32,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
@@ -855,9 +863,11 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputStateHistory_Record {
-    pub m_Owner: *mut crate::UnityEngine::InputSystem::LowLevel::InputStateHistory,
+    pub m_Owner: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory,
+    >,
     pub m_IndexPlusOne: i32,
     pub m_Version: u32,
 }
@@ -1157,7 +1167,7 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputStateHistory_RecordHeader {
     padding: [u8; 17usize],
 }
@@ -1223,7 +1233,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
     feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer {
     pub FixedElementField: u8,
 }
@@ -1257,7 +1267,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__
     feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBuffer {
     pub FixedElementField: u8,
 }

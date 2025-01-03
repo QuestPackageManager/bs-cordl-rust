@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct ExtenderProvidedPropertyAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _ExtenderProperty_k__BackingField: *mut crate::System::ComponentModel::PropertyDescriptor,
-    pub _Provider_k__BackingField: *mut crate::System::ComponentModel::IExtenderProvider,
-    pub _ReceiverType_k__BackingField: *mut crate::System::Type,
+    pub _ExtenderProperty_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::PropertyDescriptor,
+    >,
+    pub _Provider_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::IExtenderProvider,
+    >,
+    pub _ReceiverType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+ComponentModel+ExtenderProvidedPropertyAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

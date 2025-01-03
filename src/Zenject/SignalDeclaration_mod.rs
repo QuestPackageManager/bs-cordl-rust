@@ -3,16 +3,22 @@
 #[derive(Debug)]
 pub struct SignalDeclaration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _subscriptions: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::SignalSubscription,
+    pub _subscriptions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::SignalSubscription,
+        >,
     >,
-    pub _asyncQueue: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _asyncQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
     pub _bindingId: crate::Zenject::BindingId,
     pub _missingHandlerResponses: crate::Zenject::SignalMissingHandlerResponses,
     pub _isAsync: bool,
-    pub _settings: *mut crate::Zenject::ZenjectSettings_SignalSettings,
+    pub _settings: quest_hook::libil2cpp::Gc<
+        crate::Zenject::ZenjectSettings_SignalSettings,
+    >,
     pub _TickPriority_k__BackingField: i32,
 }
 #[cfg(feature = "Zenject+SignalDeclaration")]

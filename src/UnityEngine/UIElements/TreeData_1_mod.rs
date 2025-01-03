@@ -1,16 +1,24 @@
 #[cfg(feature = "UnityEngine+UIElements+TreeData_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TreeData_1<T: quest_hook::libil2cpp::Type> {
-    pub m_RootItemIds: *mut crate::System::Collections::Generic::IList_1<i32>,
-    pub m_Tree: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+    pub m_RootItemIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<i32>,
     >,
-    pub m_ParentIds: *mut crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-    pub m_ChildrenIds: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::System::Collections::Generic::List_1<i32>,
+    pub m_Tree: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+        >,
+    >,
+    pub m_ParentIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+    >,
+    pub m_ChildrenIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::System::Collections::Generic::List_1<i32>,
+        >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

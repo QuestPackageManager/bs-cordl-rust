@@ -3,21 +3,23 @@
 #[derive(Debug)]
 pub struct KawaseBlurRendererSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _kawaseBlurShader: *mut crate::UnityEngine::Shader,
-    pub _additiveShader: *mut crate::UnityEngine::Shader,
-    pub _tintShader: *mut crate::UnityEngine::Shader,
-    pub _kawaseBlurMaterial: *mut crate::UnityEngine::Material,
-    pub _additiveMaterial: *mut crate::UnityEngine::Material,
-    pub _tintMaterial: *mut crate::UnityEngine::Material,
-    pub _commandBuffersMaterial: *mut crate::UnityEngine::Material,
-    pub _kernels: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _kawaseBlurShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub _additiveShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub _tintShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub _kawaseBlurMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _additiveMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _tintMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _commandBuffersMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _kernels: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<i32>>,
     >,
-    pub _bloomKernels: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel,
+    pub _bloomKernels: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel,
+        >,
     >,
-    pub _blurTextures: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::RenderTexture,
+    pub _blurTextures: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::RenderTexture>,
     >,
 }
 #[cfg(feature = "KawaseBlurRendererSO")]

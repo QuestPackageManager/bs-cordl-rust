@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct PkixCertPathValidatorResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub trustAnchor: *mut crate::Org::BouncyCastle::Pkix::TrustAnchor,
-    pub policyTree: *mut crate::Org::BouncyCastle::Pkix::PkixPolicyNode,
-    pub subjectPublicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    pub trustAnchor: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Pkix::TrustAnchor,
+    >,
+    pub policyTree: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Pkix::PkixPolicyNode,
+    >,
+    pub subjectPublicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPathValidatorResult")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

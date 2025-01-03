@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ConfiguredTaskAwaitable_1<TResult: quest_hook::libil2cpp::Type> {
     pub m_configuredTaskAwaiter: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<
         TResult,
@@ -73,11 +73,13 @@ impl<
     feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable_1+ConfiguredTaskAwaiter"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<
     TResult: quest_hook::libil2cpp::Type,
 > {
-    pub m_task: *mut crate::System::Threading::Tasks::Task_1<TResult>,
+    pub m_task: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<TResult>,
+    >,
     pub m_continueOnCapturedContext: bool,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }

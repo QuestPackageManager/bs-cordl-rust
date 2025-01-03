@@ -4,7 +4,7 @@
 pub struct MomentaryLoudnessBuffer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nextDataIndex: i32,
-    pub _buffer: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub _readingInterval: i32,
 }
 #[cfg(feature = "MomentaryLoudnessBuffer")]

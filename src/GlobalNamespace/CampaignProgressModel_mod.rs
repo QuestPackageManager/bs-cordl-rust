@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct CampaignProgressModel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _missionIds: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
     >,
-    pub _finalMissionId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _missionIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+    pub _finalMissionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _numberOfClearedMissionsDirty: bool,
     pub _numberOfClearedMissions: i32,
 }

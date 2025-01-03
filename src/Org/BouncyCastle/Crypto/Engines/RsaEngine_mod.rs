@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct RsaEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub core: *mut crate::Org::BouncyCastle::Crypto::IRsa,
+    pub core: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IRsa>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+RsaEngine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

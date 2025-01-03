@@ -4,9 +4,11 @@
 pub struct SchemaCollectionCompiler {
     __cordl_parent: crate::System::Xml::Schema::BaseProcessor,
     pub compileContentModel: bool,
-    pub examplars: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub complexTypeStack: *mut crate::System::Collections::Stack,
-    pub schema: *mut crate::System::Xml::Schema::XmlSchema,
+    pub examplars: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub complexTypeStack: quest_hook::libil2cpp::Gc<crate::System::Collections::Stack>,
+    pub schema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
 }
 #[cfg(feature = "System+Xml+Schema+SchemaCollectionCompiler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

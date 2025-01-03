@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+RefreshRate")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RefreshRate {
     pub numerator: u32,
     pub denominator: u32,

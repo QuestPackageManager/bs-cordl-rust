@@ -3,13 +3,21 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalActiveCenterRingLightsController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _verticalLinePositions: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _horizontalLines: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Transform,
+    pub _verticalLinePositions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
     >,
-    pub _centerResizeController: *mut crate::GlobalNamespace::MultiplayerCenterResizeController,
-    pub _layoutProvider: *mut crate::GlobalNamespace::MultiplayerLayoutProvider,
-    pub _beatmapObjectSpawnCenter: *mut crate::GlobalNamespace::BeatmapObjectSpawnCenter,
+    pub _horizontalLines: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
+    >,
+    pub _centerResizeController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerCenterResizeController,
+    >,
+    pub _layoutProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLayoutProvider,
+    >,
+    pub _beatmapObjectSpawnCenter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectSpawnCenter,
+    >,
     pub _edgeDistanceFromCenterCalculated: bool,
     pub _spawnCenterDistanceFound: bool,
 }

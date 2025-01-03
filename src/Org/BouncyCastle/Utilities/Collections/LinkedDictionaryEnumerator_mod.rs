@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct LinkedDictionaryEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub parent: *mut crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary,
+    pub parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary,
+    >,
     pub pos: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+LinkedDictionaryEnumerator")]

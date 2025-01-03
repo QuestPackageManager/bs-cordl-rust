@@ -6,7 +6,9 @@ pub struct ListChangedEventArgs {
     pub _ListChangedType_k__BackingField: crate::System::ComponentModel::ListChangedType,
     pub _NewIndex_k__BackingField: i32,
     pub _OldIndex_k__BackingField: i32,
-    pub _PropertyDescriptor_k__BackingField: *mut crate::System::ComponentModel::PropertyDescriptor,
+    pub _PropertyDescriptor_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::PropertyDescriptor,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+ListChangedEventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

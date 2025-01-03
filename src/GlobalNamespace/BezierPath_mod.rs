@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct BezierPath {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub bezierPathWasModifiedEvent: *mut crate::System::Action,
-    pub _points: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector3,
+    pub bezierPathWasModifiedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _points: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
     >,
     pub _controlMode: crate::GlobalNamespace::BezierPath_ControlMode,
-    pub _perAnchorNormalsAngle: *mut crate::System::Collections::Generic::List_1<f32>,
-    pub _neighbourDistances: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub _perAnchorNormalsAngle: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
+    pub _neighbourDistances: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
 }
 #[cfg(feature = "BezierPath")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

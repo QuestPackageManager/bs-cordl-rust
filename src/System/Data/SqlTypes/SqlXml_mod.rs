@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct SqlXml {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _createSqlReaderMethodInfo: *mut crate::System::Reflection::MethodInfo,
+    pub _createSqlReaderMethodInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MethodInfo,
+    >,
     pub _fNotNull: bool,
-    pub _stream: *mut crate::System::IO::Stream,
+    pub _stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _firstCreateReader: bool,
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlXml")]

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DelegateSerializationHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _delegate: *mut crate::System::Delegate,
+    pub _delegate: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
 }
 #[cfg(feature = "System+DelegateSerializationHolder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -137,13 +137,17 @@ for crate::System::DelegateSerializationHolder {
 #[derive(Debug)]
 pub struct DelegateSerializationHolder_DelegateEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
-    pub assembly: *mut quest_hook::libil2cpp::Il2CppString,
-    pub target: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub targetTypeAssembly: *mut quest_hook::libil2cpp::Il2CppString,
-    pub targetTypeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub methodName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub delegateEntry: *mut crate::System::DelegateSerializationHolder_DelegateEntry,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub assembly: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub targetTypeAssembly: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub targetTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub delegateEntry: quest_hook::libil2cpp::Gc<
+        crate::System::DelegateSerializationHolder_DelegateEntry,
+    >,
 }
 #[cfg(feature = "System+DelegateSerializationHolder+DelegateEntry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -6,7 +6,7 @@ pub struct PrefabResourceFactory_2<
     T: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _container: *mut crate::Zenject::DiContainer,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     __cordl_phantom_P1: std::marker::PhantomData<P1>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

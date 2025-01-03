@@ -3,21 +3,37 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalActivePlayerFacade {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _activeOnlyGameObjects: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::GameObject,
+    pub _activeOnlyGameObjects: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
     >,
-    pub _outroAnimator: *mut crate::UnityEngine::GameObject,
-    pub _songController: *mut crate::GlobalNamespace::IStartSeekSongController,
-    pub _introAnimator: *mut crate::GlobalNamespace::MultiplayerLocalActivePlayerIntroAnimator,
-    pub _gameSongController: *mut crate::GlobalNamespace::GameSongController,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _prepareLevelCompletionResults: *mut crate::GlobalNamespace::PrepareLevelCompletionResults,
-    pub _beatmapCallbacksUpdater: *mut crate::GlobalNamespace::BeatmapCallbacksUpdater,
-    pub playerDidFinishEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+    pub _outroAnimator: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _songController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IStartSeekSongController,
     >,
-    pub playerNetworkDidFailedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+    pub _introAnimator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLocalActivePlayerIntroAnimator,
+    >,
+    pub _gameSongController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameSongController,
+    >,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub _prepareLevelCompletionResults: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PrepareLevelCompletionResults,
+    >,
+    pub _beatmapCallbacksUpdater: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksUpdater,
+    >,
+    pub playerDidFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        >,
+    >,
+    pub playerNetworkDidFailedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerFacade")]

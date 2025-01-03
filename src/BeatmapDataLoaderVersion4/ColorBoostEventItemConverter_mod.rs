@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ColorBoostEventItemConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
-    pub _colorBoostEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::ColorBoostEvent,
+    pub _colorBoostEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::BeatmapSaveDataVersion4::ColorBoostEvent,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+ColorBoostEventItemConverter")]

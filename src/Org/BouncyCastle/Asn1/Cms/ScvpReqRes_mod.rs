@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ScvpReqRes {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub request: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
-    pub response: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+    pub request: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+    >,
+    pub response: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+ScvpReqRes")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -4,8 +4,8 @@
 pub struct BloomPrePassBackgroundTextureGradient {
     __cordl_parent: crate::GlobalNamespace::BloomPrePassNonLightPass,
     pub _tintColor: crate::UnityEngine::Color,
-    pub _texture: *mut crate::UnityEngine::Texture2D,
-    pub _material: *mut crate::UnityEngine::Material,
+    pub _texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
 #[cfg(feature = "BloomPrePassBackgroundTextureGradient")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

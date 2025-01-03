@@ -1,6 +1,6 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_CurveInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HAPI_CurveInfo {
     pub curveType: crate::HoudiniEngineUnity::HAPI_CurveType,
     pub curveCount: i32,

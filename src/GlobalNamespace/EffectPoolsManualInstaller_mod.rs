@@ -3,13 +3,25 @@
 #[derive(Debug)]
 pub struct EffectPoolsManualInstaller {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _flyingTextEffectPrefab: *mut crate::GlobalNamespace::FlyingTextEffect,
-    pub _flyingScoreEffectPrefab: *mut crate::GlobalNamespace::FlyingScoreEffect,
-    pub _beatEffectPrefab: *mut crate::GlobalNamespace::BeatEffect,
-    pub _shortBeatEffectPrefab: *mut crate::GlobalNamespace::BeatEffect,
-    pub _noteCutSoundEffectPrefab: *mut crate::GlobalNamespace::NoteCutSoundEffect,
-    pub _bombCutSoundEffectPrefab: *mut crate::GlobalNamespace::BombCutSoundEffect,
-    pub _flyingSpriteEffectPrefab: *mut crate::GlobalNamespace::FlyingSpriteEffect,
+    pub _flyingTextEffectPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FlyingTextEffect,
+    >,
+    pub _flyingScoreEffectPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FlyingScoreEffect,
+    >,
+    pub _beatEffectPrefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatEffect>,
+    pub _shortBeatEffectPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatEffect,
+    >,
+    pub _noteCutSoundEffectPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteCutSoundEffect,
+    >,
+    pub _bombCutSoundEffectPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BombCutSoundEffect,
+    >,
+    pub _flyingSpriteEffectPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FlyingSpriteEffect,
+    >,
 }
 #[cfg(feature = "EffectPoolsManualInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

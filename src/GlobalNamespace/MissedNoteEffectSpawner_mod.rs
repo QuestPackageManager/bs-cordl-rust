@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct MissedNoteEffectSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missedNoteFlyingSpriteSpawner: *mut crate::GlobalNamespace::FlyingSpriteSpawner,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
-    pub _initData: *mut crate::GlobalNamespace::CoreGameHUDController_InitData,
+    pub _missedNoteFlyingSpriteSpawner: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FlyingSpriteSpawner,
+    >,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CoreGameHUDController_InitData,
+    >,
     pub _spawnPosZ: f32,
 }
 #[cfg(feature = "MissedNoteEffectSpawner")]

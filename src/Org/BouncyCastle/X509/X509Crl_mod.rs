@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct X509Crl {
     __cordl_parent: crate::Org::BouncyCastle::X509::X509ExtensionBase,
-    pub c: *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
-    pub sigAlgName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub sigAlgParams: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub c: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+    >,
+    pub sigAlgName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub sigAlgParams: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub isIndirect: bool,
     pub hashValueSet: bool,
     pub hashValue: i32,

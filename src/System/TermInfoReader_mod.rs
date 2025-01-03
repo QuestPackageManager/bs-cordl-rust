@@ -6,7 +6,7 @@ pub struct TermInfoReader {
     pub boolSize: i32,
     pub numSize: i32,
     pub strOffsets: i32,
-    pub buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub booleansOffset: i32,
     pub intOffset: i32,
 }

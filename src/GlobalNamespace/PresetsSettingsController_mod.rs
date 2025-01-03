@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct PresetsSettingsController {
     __cordl_parent: crate::GlobalNamespace::ListSettingsController,
-    pub _presets: *mut crate::GlobalNamespace::NamedPresetsSO,
+    pub _presets: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NamedPresetsSO>,
     pub _limitNumberOfElements: bool,
     pub _numberOfElementsLimit: i32,
     pub _customIndex: i32,
-    pub valueDidChangeEvent: *mut crate::System::Action_1<i32>,
+    pub valueDidChangeEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
 }
 #[cfg(feature = "PresetsSettingsController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -4,8 +4,12 @@
 pub struct SignerInfoGeneratorBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub directSignature: bool,
-    pub signedGen: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
-    pub unsignedGen: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+    pub signedGen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+    >,
+    pub unsignedGen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+SignerInfoGeneratorBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

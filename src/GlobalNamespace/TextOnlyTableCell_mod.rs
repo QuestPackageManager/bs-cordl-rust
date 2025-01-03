@@ -4,9 +4,9 @@
 pub struct TextOnlyTableCell {
     __cordl_parent: crate::HMUI::TableCell,
     pub _selectedHighlightColor: crate::UnityEngine::Color,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
-    pub _bgImage: *mut crate::HMUI::ImageView,
-    pub _highlightImage: *mut crate::HMUI::ImageView,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _bgImage: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
+    pub _highlightImage: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
 }
 #[cfg(feature = "TextOnlyTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

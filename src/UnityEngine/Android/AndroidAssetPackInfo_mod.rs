@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AndroidAssetPackInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _status_k__BackingField: crate::UnityEngine::Android::AndroidAssetPackStatus,
     pub _size_k__BackingField: u64,
     pub _bytesDownloaded_k__BackingField: u64,

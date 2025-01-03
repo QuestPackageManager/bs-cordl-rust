@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MissMissionObjectiveChecker {
     __cordl_parent: crate::GlobalNamespace::SimpleValueMissionObjectiveChecker,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
 }
 #[cfg(feature = "MissMissionObjectiveChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

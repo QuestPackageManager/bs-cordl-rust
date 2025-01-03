@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct EditorAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _typeId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _EditorBaseTypeName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _EditorTypeName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _typeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _EditorBaseTypeName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _EditorTypeName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+EditorAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

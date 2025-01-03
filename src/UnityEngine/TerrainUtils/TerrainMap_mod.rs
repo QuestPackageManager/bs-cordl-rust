@@ -5,9 +5,11 @@ pub struct TerrainMap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_patchSize: crate::UnityEngine::Vector3,
     pub m_errorCode: crate::UnityEngine::TerrainUtils::TerrainMapStatusCode,
-    pub m_terrainTiles: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::TerrainUtils::TerrainTileCoord,
-        *mut crate::UnityEngine::Terrain,
+    pub m_terrainTiles: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::TerrainUtils::TerrainTileCoord,
+            *mut crate::UnityEngine::Terrain,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+TerrainUtils+TerrainMap")]

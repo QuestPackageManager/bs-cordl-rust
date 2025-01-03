@@ -7,10 +7,18 @@ pub struct SslClientAuthenticationOptions {
     pub _checkCertificateRevocation: crate::System::Security::Cryptography::X509Certificates::X509RevocationMode,
     pub _enabledSslProtocols: crate::System::Security::Authentication::SslProtocols,
     pub _allowRenegotiation: bool,
-    pub _LocalCertificateSelectionCallback_k__BackingField: *mut crate::System::Net::Security::LocalCertificateSelectionCallback,
-    pub _RemoteCertificateValidationCallback_k__BackingField: *mut crate::System::Net::Security::RemoteCertificateValidationCallback,
-    pub _TargetHost_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _ClientCertificates_k__BackingField: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+    pub _LocalCertificateSelectionCallback_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Security::LocalCertificateSelectionCallback,
+    >,
+    pub _RemoteCertificateValidationCallback_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Security::RemoteCertificateValidationCallback,
+    >,
+    pub _TargetHost_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _ClientCertificates_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+    >,
 }
 #[cfg(feature = "System+Net+Security+SslClientAuthenticationOptions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

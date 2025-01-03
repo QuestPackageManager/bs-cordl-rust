@@ -1,10 +1,10 @@
 #[cfg(feature = "System+Buffers+MemoryHandle")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MemoryHandle {
-    pub _pointer: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _pointer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _handle: crate::System::Runtime::InteropServices::GCHandle,
-    pub _pinnable: *mut crate::System::Buffers::IPinnable,
+    pub _pinnable: quest_hook::libil2cpp::Gc<crate::System::Buffers::IPinnable>,
 }
 #[cfg(feature = "System+Buffers+MemoryHandle")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

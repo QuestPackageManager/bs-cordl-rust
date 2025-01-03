@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct MissionCompletionResults {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
-    pub missionObjectiveResults: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MissionObjectiveResult,
+    pub levelCompletionResults: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelCompletionResults,
+    >,
+    pub missionObjectiveResults: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MissionObjectiveResult,
+        >,
     >,
 }
 #[cfg(feature = "MissionCompletionResults")]

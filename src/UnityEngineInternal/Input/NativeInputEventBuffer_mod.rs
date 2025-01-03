@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngineInternal+Input+NativeInputEventBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NativeInputEventBuffer {
     padding: [u8; 20usize],
 }

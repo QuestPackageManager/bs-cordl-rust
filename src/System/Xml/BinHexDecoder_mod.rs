@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BinHexDecoder {
     __cordl_parent: crate::System::Xml::IncrementalReadDecoder,
-    pub buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub curIndex: i32,
     pub endIndex: i32,
     pub hasHalfByteCached: bool,

@@ -5,10 +5,12 @@ pub struct ThreefishEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub blocksizeBytes: i32,
     pub blocksizeWords: i32,
-    pub currentBlock: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    pub t: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    pub kw: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher,
+    pub currentBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
+    pub t: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
+    pub kw: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher,
+    >,
     pub forEncryption: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine")]
@@ -623,8 +625,8 @@ for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish512Ciphe
 #[derive(Debug)]
 pub struct ThreefishEngine_ThreefishCipher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub t: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    pub kw: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+    pub t: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
+    pub kw: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+ThreefishCipher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

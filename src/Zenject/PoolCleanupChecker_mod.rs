@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct PoolCleanupChecker {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _poolFactories: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::IMemoryPool,
+    pub _poolFactories: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::Zenject::IMemoryPool>,
     >,
-    pub _ignoredPools: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Type,
+    pub _ignoredPools: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
     >,
 }
 #[cfg(feature = "Zenject+PoolCleanupChecker")]

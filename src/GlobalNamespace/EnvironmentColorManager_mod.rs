@@ -3,13 +3,23 @@
 #[derive(Debug)]
 pub struct EnvironmentColorManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _defaultColorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
-    pub _environmentColor0: *mut crate::GlobalNamespace::SimpleColorSO,
-    pub _environmentColor1: *mut crate::GlobalNamespace::SimpleColorSO,
-    pub _environmentColor0Boost: *mut crate::GlobalNamespace::SimpleColorSO,
-    pub _environmentColor1Boost: *mut crate::GlobalNamespace::SimpleColorSO,
-    pub _colorScheme: *mut crate::GlobalNamespace::ColorScheme,
-    pub didChangeColorEvent: *mut crate::System::Action,
+    pub _defaultColorScheme: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemeSO,
+    >,
+    pub _environmentColor0: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SimpleColorSO,
+    >,
+    pub _environmentColor1: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SimpleColorSO,
+    >,
+    pub _environmentColor0Boost: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SimpleColorSO,
+    >,
+    pub _environmentColor1Boost: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SimpleColorSO,
+    >,
+    pub _colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+    pub didChangeColorEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "EnvironmentColorManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

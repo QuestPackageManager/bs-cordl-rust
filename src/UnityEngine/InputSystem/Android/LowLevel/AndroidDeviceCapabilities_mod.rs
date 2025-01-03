@@ -1,13 +1,15 @@
 #[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AndroidDeviceCapabilities {
-    pub deviceDescriptor: *mut quest_hook::libil2cpp::Il2CppString,
+    pub deviceDescriptor: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub productId: i32,
     pub vendorId: i32,
     pub isVirtual: bool,
-    pub motionAxes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::Android::LowLevel::AndroidAxis,
+    pub motionAxes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::Android::LowLevel::AndroidAxis,
+        >,
     >,
     pub inputSources: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidInputSource,
 }

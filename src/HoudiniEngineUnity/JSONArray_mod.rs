@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct JSONArray {
     __cordl_parent: crate::HoudiniEngineUnity::JSONNode,
-    pub m_List: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::JSONNode,
+    pub m_List: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::JSONNode,
+        >,
     >,
     pub _cordl_inline: bool,
 }

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct DecoderFallbackBuffer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub byteStart: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub charEnd: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub byteStart: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub charEnd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Text+DecoderFallbackBuffer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

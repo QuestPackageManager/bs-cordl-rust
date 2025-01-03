@@ -11,15 +11,23 @@ pub struct MirrorRendererSO {
     pub _maxAntiAliasing: i32,
     pub _disableDepthTexture: bool,
     pub _enableBloomPrePass: bool,
-    pub _bloomPrePassRenderer: *mut crate::GlobalNamespace::BloomPrePassRendererSO,
-    pub _bloomPrePassEffect: *mut crate::GlobalNamespace::BloomPrePassEffectSO,
-    pub _clearDepthShader: *mut crate::UnityEngine::Shader,
-    pub _bloomPrePassRenderTexture: *mut crate::UnityEngine::RenderTexture,
-    pub _mirrorCamera: *mut crate::UnityEngine::Camera,
+    pub _bloomPrePassRenderer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassRendererSO,
+    >,
+    pub _bloomPrePassEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassEffectSO,
+    >,
+    pub _clearDepthShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub _bloomPrePassRenderTexture: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RenderTexture,
+    >,
+    pub _mirrorCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub _antialiasing: i32,
-    pub _renderTextures: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
-        *mut crate::UnityEngine::RenderTexture,
+    pub _renderTextures: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
+            *mut crate::UnityEngine::RenderTexture,
+        >,
     >,
     pub kLeftRect: crate::UnityEngine::Rect,
     pub kRightRect: crate::UnityEngine::Rect,
@@ -231,7 +239,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MirrorRendere
 }
 #[cfg(feature = "MirrorRendererSO+CameraTransformData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MirrorRendererSO_CameraTransformData {
     pub position: crate::UnityEngine::Vector3,
     pub rotation: crate::UnityEngine::Quaternion,

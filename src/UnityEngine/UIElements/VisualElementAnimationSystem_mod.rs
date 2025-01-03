@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct VisualElementAnimationSystem {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
-    pub m_Animations: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
+    pub m_Animations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
+        >,
     >,
-    pub m_IterationList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
+    pub m_IterationList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
+        >,
     >,
     pub m_HasNewAnimations: bool,
     pub m_IterationListDirty: bool,

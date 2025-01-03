@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Req {
     __cordl_parent: crate::Org::BouncyCastle::X509::X509ExtensionBase,
-    pub req: *mut crate::Org::BouncyCastle::Asn1::Ocsp::Request,
+    pub req: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Ocsp::Request>,
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+Req")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

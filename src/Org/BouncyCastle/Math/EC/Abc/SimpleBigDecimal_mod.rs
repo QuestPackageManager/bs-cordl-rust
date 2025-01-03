@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SimpleBigDecimal {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub bigInt: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub bigInt: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub scale: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Abc+SimpleBigDecimal")]

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BaseStateTransition {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _selectableStateController: *mut crate::GlobalNamespace::SelectableStateController,
+    pub _selectableStateController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SelectableStateController,
+    >,
     pub _viewState: crate::GlobalNamespace::SelectableStateController_ViewState,
 }
 #[cfg(feature = "BaseStateTransition")]

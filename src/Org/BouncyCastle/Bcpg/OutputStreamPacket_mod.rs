@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct OutputStreamPacket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub bcpgOut: *mut crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
+    pub bcpgOut: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OutputStreamPacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

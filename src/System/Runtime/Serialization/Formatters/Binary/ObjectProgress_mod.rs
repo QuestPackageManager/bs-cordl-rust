@@ -6,28 +6,36 @@ pub struct ObjectProgress {
     pub isInitial: bool,
     pub count: i32,
     pub expectedType: crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
-    pub expectedTypeInformation: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub expectedTypeInformation: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub objectTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE,
     pub memberTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberTypeE,
     pub memberValueEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE,
-    pub dtType: *mut crate::System::Type,
+    pub dtType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub numItems: i32,
     pub binaryTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
-    pub typeInformation: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub typeInformation: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub nullCount: i32,
     pub memberLength: i32,
-    pub binaryTypeEnumA: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
+    pub binaryTypeEnumA: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
+        >,
     >,
-    pub typeInformationA: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub typeInformationA: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub memberNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub memberNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub memberTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
-    pub pr: *mut crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord,
+    pub memberTypes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    >,
+    pub pr: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord,
+    >,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectProgress")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

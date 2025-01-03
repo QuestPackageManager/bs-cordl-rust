@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct XmlNodeReaderNavigator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub curNode: *mut crate::System::Xml::XmlNode,
-    pub elemNode: *mut crate::System::Xml::XmlNode,
-    pub logNode: *mut crate::System::Xml::XmlNode,
+    pub curNode: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+    pub elemNode: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+    pub logNode: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
     pub attrIndex: i32,
     pub logAttrIndex: i32,
-    pub nameTable: *mut crate::System::Xml::XmlNameTable,
-    pub doc: *mut crate::System::Xml::XmlDocument,
+    pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+    pub doc: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
     pub nAttrInd: i32,
     pub nDeclarationAttrCount: i32,
     pub nDocTypeAttrCount: i32,
@@ -17,11 +17,15 @@ pub struct XmlNodeReaderNavigator {
     pub nLogAttrInd: i32,
     pub bLogOnAttrVal: bool,
     pub bCreatedOnAttribute: bool,
-    pub decNodeAttributes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute,
+    pub decNodeAttributes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute,
+        >,
     >,
-    pub docTypeNodeAttributes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute,
+    pub docTypeNodeAttributes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute,
+        >,
     >,
     pub bOnAttrVal: bool,
 }
@@ -671,10 +675,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlNodeReaderNavi
 }
 #[cfg(feature = "System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XmlNodeReaderNavigator_VirtualAttribute {
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub value: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

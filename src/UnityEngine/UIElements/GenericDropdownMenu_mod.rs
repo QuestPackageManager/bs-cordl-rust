@@ -3,16 +3,30 @@
 #[derive(Debug)]
 pub struct GenericDropdownMenu {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Items: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::GenericDropdownMenu_MenuItem,
+    pub m_Items: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::GenericDropdownMenu_MenuItem,
+        >,
     >,
-    pub m_MenuContainer: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_OuterContainer: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_ScrollView: *mut crate::UnityEngine::UIElements::ScrollView,
-    pub m_PanelRootVisualContainer: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_TargetElement: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_MenuContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_OuterContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_ScrollView: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ScrollView,
+    >,
+    pub m_PanelRootVisualContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_TargetElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub m_DesiredRect: crate::UnityEngine::Rect,
-    pub m_NavigationManipulator: *mut crate::UnityEngine::UIElements::KeyboardNavigationManipulator,
+    pub m_NavigationManipulator: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::KeyboardNavigationManipulator,
+    >,
     pub _isSingleSelectionDropdown_k__BackingField: bool,
     pub _closeOnParentResize_k__BackingField: bool,
     pub m_MousePosition: crate::UnityEngine::Vector2,
@@ -452,11 +466,13 @@ for crate::UnityEngine::UIElements::GenericDropdownMenu {
 #[derive(Debug)]
 pub struct GenericDropdownMenu_MenuItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub element: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub action: *mut crate::System::Action,
-    pub actionUserData: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub element: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub action: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub actionUserData: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+GenericDropdownMenu+MenuItem")]

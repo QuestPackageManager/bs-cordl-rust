@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct LabelScopeInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _labels: *mut crate::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<
-        *mut crate::System::Linq::Expressions::LabelTarget,
-        *mut crate::System::Linq::Expressions::Interpreter::LabelInfo,
+    pub _labels: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<
+            *mut crate::System::Linq::Expressions::LabelTarget,
+            *mut crate::System::Linq::Expressions::Interpreter::LabelInfo,
+        >,
     >,
     pub Kind: crate::System::Linq::Expressions::Interpreter::LabelScopeKind,
-    pub Parent: *mut crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+    pub Parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LabelScopeInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

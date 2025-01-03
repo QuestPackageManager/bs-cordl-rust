@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MainAudioEffects {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioLowPassFilter: *mut crate::UnityEngine::AudioLowPassFilter,
+    pub _audioLowPassFilter: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AudioLowPassFilter,
+    >,
     pub _smooth: f32,
     pub _targetFrequency: f32,
 }

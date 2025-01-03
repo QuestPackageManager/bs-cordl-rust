@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BloomPrePassEffectContainerSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _bloomPrePassEffect: *mut crate::GlobalNamespace::BloomPrePassEffectSO,
+    pub _bloomPrePassEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassEffectSO,
+    >,
 }
 #[cfg(feature = "BloomPrePassEffectContainerSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct ServerIdentity {
     __cordl_parent: crate::System::Runtime::Remoting::Identity,
-    pub _objectType: *mut crate::System::Type,
-    pub _serverObject: *mut crate::System::MarshalByRefObject,
-    pub _serverSink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    pub _context: *mut crate::System::Runtime::Remoting::Contexts::Context,
-    pub _lease: *mut crate::System::Runtime::Remoting::Lifetime::Lease,
+    pub _objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _serverObject: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
+    pub _serverSink: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessageSink,
+    >,
+    pub _context: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Contexts::Context,
+    >,
+    pub _lease: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Lifetime::Lease,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+ServerIdentity")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

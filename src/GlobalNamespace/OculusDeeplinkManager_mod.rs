@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct OculusDeeplinkManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub didReceiveDeeplinkEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::Deeplink,
+    pub didReceiveDeeplinkEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::Deeplink>,
     >,
-    pub _currentDeeplink: *mut crate::GlobalNamespace::Deeplink,
+    pub _currentDeeplink: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
     pub _oculusPlatformWasInitialized: bool,
 }
 #[cfg(feature = "OculusDeeplinkManager")]

@@ -5,8 +5,12 @@ pub struct EnvironmentSpawnRotation {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _aheadTime: f32,
     pub _smooth: f32,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
     pub _currentRotation: f32,
     pub _prevRotation: f32,
     pub _targetRotation: f32,

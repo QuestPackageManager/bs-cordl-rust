@@ -3,12 +3,24 @@
 #[derive(Debug)]
 pub struct EncryptedValue {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub intendedAlg: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub symmAlg: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub encSymmKey: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
-    pub keyAlg: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub valueHint: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub encValue: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
+    pub intendedAlg: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub symmAlg: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub encSymmKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerBitString,
+    >,
+    pub keyAlg: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub valueHint: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub encValue: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerBitString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+EncryptedValue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

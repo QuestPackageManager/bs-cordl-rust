@@ -4,13 +4,15 @@
 pub struct GroupPresenceSample {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub IsJoinable: bool,
-    pub LobbySessionID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub MatchSessionID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub LobbySessionID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub MatchSessionID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub SuggestedUserID: u64,
-    pub InVRConsole: *mut crate::UnityEngine::UI::Text,
-    pub DestinationsConsole: *mut crate::UnityEngine::UI::Text,
-    pub DestinationAPINames: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub InVRConsole: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub DestinationsConsole: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub DestinationAPINames: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub LoggedInUserID: u64,
     pub DestinationIndex: i32,

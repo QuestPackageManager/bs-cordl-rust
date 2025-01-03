@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Xml+Linq+XHashtable_1+XHashtableState+Entry")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XHashtableState_XHashtable_1_Entry<TValue: quest_hook::libil2cpp::Type> {
     pub Value: TValue,
     pub HashCode: i32,
@@ -33,7 +33,9 @@ impl<
 #[derive(Debug)]
 pub struct XHashtable_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _state: *mut crate::System::Xml::Linq::XHashtable_1_XHashtableState<TValue>,
+    pub _state: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Linq::XHashtable_1_XHashtableState<TValue>,
+    >,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "System+Xml+Linq+XHashtable_1")]
@@ -238,13 +240,15 @@ for crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue> {
 #[derive(Debug)]
 pub struct XHashtable_1_XHashtableState<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _buckets: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _entries: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::Linq::XHashtableState_XHashtable_1_Entry<TValue>,
+    pub _buckets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub _entries: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Xml::Linq::XHashtableState_XHashtable_1_Entry<TValue>,
+        >,
     >,
     pub _numEntries: i32,
-    pub _extractKey: *mut crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<
-        TValue,
+    pub _extractKey: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue>,
     >,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }

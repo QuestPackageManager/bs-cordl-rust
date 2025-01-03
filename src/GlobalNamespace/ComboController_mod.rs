@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct ComboController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _playerHeadAndObstacleInteraction: *mut crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub comboDidChangeEvent: *mut crate::System::Action_1<i32>,
-    pub comboBreakingEventHappenedEvent: *mut crate::System::Action,
+    pub _playerHeadAndObstacleInteraction: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
+    >,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub comboDidChangeEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    pub comboBreakingEventHappenedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
     pub _combo: i32,
     pub _maxCombo: i32,
 }

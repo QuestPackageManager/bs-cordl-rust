@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct SubContainerCreatorCached {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _subCreator: *mut crate::Zenject::ISubContainerCreator,
+    pub _subCreator: quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator>,
     pub _isLookingUp: bool,
-    pub _subContainer: *mut crate::Zenject::DiContainer,
+    pub _subContainer: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
 }
 #[cfg(feature = "Zenject+SubContainerCreatorCached")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

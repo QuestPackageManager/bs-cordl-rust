@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct ToggleBinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _bindings: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Tuple_2<
-            *mut crate::UnityEngine::UI::Toggle,
-            *mut crate::UnityEngine::Events::UnityAction_1<bool>,
+    pub _bindings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Tuple_2<
+                *mut crate::UnityEngine::UI::Toggle,
+                *mut crate::UnityEngine::Events::UnityAction_1<bool>,
+            >,
         >,
     >,
     pub _enabled: bool,

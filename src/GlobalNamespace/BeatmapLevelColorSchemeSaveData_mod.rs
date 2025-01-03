@@ -4,7 +4,9 @@
 pub struct BeatmapLevelColorSchemeSaveData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub useOverride: bool,
-    pub colorScheme: *mut crate::GlobalNamespace::PlayerSaveData_ColorScheme,
+    pub colorScheme: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveData_ColorScheme,
+    >,
 }
 #[cfg(feature = "BeatmapLevelColorSchemeSaveData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

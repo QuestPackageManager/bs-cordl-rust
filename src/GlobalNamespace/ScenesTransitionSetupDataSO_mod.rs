@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct ScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _scenes_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SceneInfo,
+    pub _scenes_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::SceneInfo>,
     >,
-    pub _sceneSetupDataArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SceneSetupData,
+    pub _sceneSetupDataArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::SceneSetupData>,
     >,
-    pub beforeScenesWillBeActivatedEvent: *mut crate::System::Action,
+    pub beforeScenesWillBeActivatedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
 }
 #[cfg(feature = "ScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

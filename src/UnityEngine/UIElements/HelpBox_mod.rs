@@ -4,9 +4,9 @@
 pub struct HelpBox {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub m_HelpBoxMessageType: crate::UnityEngine::UIElements::HelpBoxMessageType,
-    pub m_Icon: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_IconClass: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Label: *mut crate::UnityEngine::UIElements::Label,
+    pub m_Icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    pub m_IconClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Label: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Label>,
 }
 #[cfg(feature = "UnityEngine+UIElements+HelpBox")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -193,9 +193,13 @@ for crate::UnityEngine::UIElements::HelpBox_UxmlFactory {
 #[derive(Debug)]
 pub struct HelpBox_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
-    pub m_Text: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_MessageType: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::HelpBoxMessageType,
+    pub m_Text: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_MessageType: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::HelpBoxMessageType,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlTraits")]

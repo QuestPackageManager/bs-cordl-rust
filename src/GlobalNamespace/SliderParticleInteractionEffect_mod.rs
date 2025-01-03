@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct SliderParticleInteractionEffect {
     __cordl_parent: crate::GlobalNamespace::SliderInteractionEffect,
-    pub _particleSystems: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::ParticleSystem,
+    pub _particleSystems: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ParticleSystem>,
     >,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
-    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+    pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
     pub _startColor: crate::UnityEngine::Color,
-    pub _saber: *mut crate::GlobalNamespace::Saber,
+    pub _saber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
 }
 #[cfg(feature = "SliderParticleInteractionEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -6,8 +6,8 @@ pub struct ExecutionOrderInstaller {
         *mut crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
         *mut crate::Zenject::ExecutionOrderInstaller,
     >,
-    pub _typeOrder: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Type,
+    pub _typeOrder: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
     >,
 }
 #[cfg(feature = "Zenject+ExecutionOrderInstaller")]

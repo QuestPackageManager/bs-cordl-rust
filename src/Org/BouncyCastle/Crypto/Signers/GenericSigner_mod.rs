@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct GenericSigner {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub engine: *mut crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
-    pub digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    pub engine: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
+    >,
+    pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     pub forSigning: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+GenericSigner")]

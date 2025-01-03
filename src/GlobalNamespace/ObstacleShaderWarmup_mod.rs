@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ObstacleShaderWarmup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _obstacleMaterialSetter: *mut crate::GlobalNamespace::ObstacleMaterialSetter,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _obstacleMaterialSetter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ObstacleMaterialSetter,
+    >,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
 }
 #[cfg(feature = "ObstacleShaderWarmup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

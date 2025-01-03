@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Playables+PlayableOutput")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PlayableOutput {
     pub m_Handle: crate::UnityEngine::Playables::PlayableOutputHandle,
 }

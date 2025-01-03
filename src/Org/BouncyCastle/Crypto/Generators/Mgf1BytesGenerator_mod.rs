@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct Mgf1BytesGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub hLen: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Mgf1BytesGenerator")]

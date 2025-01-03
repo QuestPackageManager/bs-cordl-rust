@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AbstractTlsPeer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mCloseHandle: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable,
+    pub mCloseHandle: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsPeer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

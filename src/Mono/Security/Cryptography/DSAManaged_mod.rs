@@ -5,17 +5,21 @@ pub struct DSAManaged {
     __cordl_parent: crate::System::Security::Cryptography::DSA,
     pub keypairGenerated: bool,
     pub m_disposed: bool,
-    pub p: *mut crate::Mono::Math::BigInteger,
-    pub q: *mut crate::Mono::Math::BigInteger,
-    pub g: *mut crate::Mono::Math::BigInteger,
-    pub x: *mut crate::Mono::Math::BigInteger,
-    pub y: *mut crate::Mono::Math::BigInteger,
-    pub j: *mut crate::Mono::Math::BigInteger,
-    pub seed: *mut crate::Mono::Math::BigInteger,
+    pub p: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    pub q: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    pub g: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    pub x: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    pub y: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    pub j: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    pub seed: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     pub counter: i32,
     pub j_missing: bool,
-    pub rng: *mut crate::System::Security::Cryptography::RandomNumberGenerator,
-    pub KeyGenerated: *mut crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler,
+    pub rng: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::RandomNumberGenerator,
+    >,
+    pub KeyGenerated: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler,
+    >,
 }
 #[cfg(feature = "Mono+Security+Cryptography+DSAManaged")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

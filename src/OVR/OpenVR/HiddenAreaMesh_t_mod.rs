@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+HiddenAreaMesh_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HiddenAreaMesh_t {
     pub pVertexData: crate::System::IntPtr,
     pub unTriangleCount: u32,

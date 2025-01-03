@@ -1,11 +1,13 @@
 #[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEvent")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DiagnosticEvent {
-    pub m_Graph: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Dependencies: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub m_Graph: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Dependencies: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     pub m_ObjectId: i32,
-    pub m_DisplayName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_DisplayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Stream: i32,
     pub m_Frame: i32,
     pub m_Value: i32,

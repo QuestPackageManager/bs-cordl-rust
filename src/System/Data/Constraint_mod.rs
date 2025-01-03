@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct Constraint {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _schemaName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _schemaName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _inCollection: bool,
-    pub _dataSet: *mut crate::System::Data::DataSet,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _extendedProperties: *mut crate::System::Data::PropertyCollection,
+    pub _dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _extendedProperties: quest_hook::libil2cpp::Gc<
+        crate::System::Data::PropertyCollection,
+    >,
 }
 #[cfg(feature = "System+Data+Constraint")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

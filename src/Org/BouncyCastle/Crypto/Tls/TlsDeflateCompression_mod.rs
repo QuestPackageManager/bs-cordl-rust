@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct TlsDeflateCompression {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub zIn: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
-    pub zOut: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+    pub zIn: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+    >,
+    pub zOut: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

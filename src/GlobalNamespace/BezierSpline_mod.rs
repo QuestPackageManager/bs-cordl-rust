@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct BezierSpline {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _segments: *mut crate::System::Collections::Generic::List_1<
-        crate::GlobalNamespace::BezierCurve,
+    pub _segments: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::GlobalNamespace::BezierCurve>,
     >,
-    pub _sourceDataPoints: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector3,
+    pub _sourceDataPoints: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
     >,
 }
 #[cfg(feature = "BezierSpline")]
@@ -145,10 +145,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BezierSpline 
 }
 #[cfg(feature = "BezierSpline+ComputeControlPointsResults")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BezierSpline_ComputeControlPointsResults {
-    pub p1: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub p2: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub p2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
 }
 #[cfg(feature = "BezierSpline+ComputeControlPointsResults")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

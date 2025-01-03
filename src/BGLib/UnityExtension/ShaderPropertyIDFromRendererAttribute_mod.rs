@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ShaderPropertyIDFromRendererAttribute {
     __cordl_parent: crate::BGLib::UnityExtension::ShaderPropertyIDAttribute,
-    pub propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "BGLib+UnityExtension+ShaderPropertyIDFromRendererAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct LightLambda {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _closure: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Runtime::CompilerServices::IStrongBox,
+    pub _closure: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Runtime::CompilerServices::IStrongBox,
+        >,
     >,
-    pub _interpreter: *mut crate::System::Linq::Expressions::Interpreter::Interpreter,
-    pub _delegateCreator: *mut crate::System::Linq::Expressions::Interpreter::LightDelegateCreator,
+    pub _interpreter: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::Interpreter,
+    >,
+    pub _delegateCreator: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::LightDelegateCreator,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2459,14 +2465,22 @@ for crate::System::Linq::Expressions::Interpreter::LightLambda {
 #[derive(Debug)]
 pub struct LightLambda_DebugViewPrinter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _interpreter: *mut crate::System::Linq::Expressions::Interpreter::Interpreter,
-    pub _tryStart: *mut crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-    pub _handlerEnter: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _interpreter: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::Interpreter,
     >,
-    pub _handlerExit: *mut crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-    pub _indent: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _tryStart: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+    >,
+    pub _handlerEnter: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+    pub _handlerExit: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+    >,
+    pub _indent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

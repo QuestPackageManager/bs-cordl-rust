@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct DfaContentValidator {
     __cordl_parent: crate::System::Xml::Schema::ContentValidator,
-    pub transitionTable: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub transitionTable: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<i32>>,
     >,
-    pub symbols: *mut crate::System::Xml::Schema::SymbolsDictionary,
+    pub symbols: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::SymbolsDictionary,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+DfaContentValidator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

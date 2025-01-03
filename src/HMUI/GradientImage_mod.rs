@@ -5,7 +5,9 @@ pub struct GradientImage {
     __cordl_parent: crate::UnityEngine::UI::Image,
     pub _color0: crate::UnityEngine::Color,
     pub _color1: crate::UnityEngine::Color,
-    pub _curvedCanvasSettingsHelper: *mut crate::HMUI::CurvedCanvasSettingsHelper,
+    pub _curvedCanvasSettingsHelper: quest_hook::libil2cpp::Gc<
+        crate::HMUI::CurvedCanvasSettingsHelper,
+    >,
 }
 #[cfg(feature = "HMUI+GradientImage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

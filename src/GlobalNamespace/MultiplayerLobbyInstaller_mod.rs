@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct MultiplayerLobbyInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _multiplayerLobbyAvatarControllerPrefab: *mut crate::GlobalNamespace::MultiplayerLobbyAvatarController,
-    pub _multiplayerAvatarPlacePrefab: *mut crate::GlobalNamespace::MultiplayerLobbyAvatarPlace,
+    pub _multiplayerLobbyAvatarControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLobbyAvatarController,
+    >,
+    pub _multiplayerAvatarPlacePrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLobbyAvatarPlace,
+    >,
 }
 #[cfg(feature = "MultiplayerLobbyInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

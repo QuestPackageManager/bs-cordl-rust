@@ -3,19 +3,27 @@
 #[derive(Debug)]
 pub struct SelectAvatarSystemCell {
     __cordl_parent: crate::HMUI::TableCell,
-    pub _avatarSystemCollection: *mut crate::BeatSaber::AvatarCore::AvatarSystemCollection,
-    pub didSetAvatarSystemPreferredEvent: *mut crate::System::Action_1<
-        *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+    pub _avatarSystemCollection: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::AvatarSystemCollection,
     >,
-    pub didRequestEditOfAvatarEvent: *mut crate::System::Action_1<
-        *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+    pub didSetAvatarSystemPreferredEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata>,
     >,
-    pub didRequestCreationOfAvatarEvent: *mut crate::System::Action_1<
-        *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+    pub didRequestEditOfAvatarEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata>,
     >,
-    pub _loadedAvatarSystemMetadata: *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-    pub _selectedAvatarSystemMetadata: *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-    pub _loadedSelectionView: *mut crate::BeatSaber::AvatarCore::AvatarSelectionView,
+    pub didRequestCreationOfAvatarEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata>,
+    >,
+    pub _loadedAvatarSystemMetadata: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+    >,
+    pub _selectedAvatarSystemMetadata: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+    >,
+    pub _loadedSelectionView: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::AvatarSelectionView,
+    >,
     pub _activateViewOnEnable: bool,
 }
 #[cfg(feature = "SelectAvatarSystemCell")]

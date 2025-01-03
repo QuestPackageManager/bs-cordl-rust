@@ -6,25 +6,35 @@ pub struct ReflectedMemberProperty_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::Unity::Properties::Property_2<TContainer, TValue>,
-    pub m_Info: *mut crate::Unity::Properties::IMemberInfo,
+    pub m_Info: quest_hook::libil2cpp::Gc<crate::Unity::Properties::IMemberInfo>,
     pub m_IsStructContainerType: bool,
-    pub m_GetStructValueAction: *mut crate::Unity::Properties::ReflectedMemberProperty_2_GetStructValueAction<
-        TContainer,
-        TValue,
+    pub m_GetStructValueAction: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::ReflectedMemberProperty_2_GetStructValueAction<
+            TContainer,
+            TValue,
+        >,
     >,
-    pub m_SetStructValueAction: *mut crate::Unity::Properties::ReflectedMemberProperty_2_SetStructValueAction<
-        TContainer,
-        TValue,
+    pub m_SetStructValueAction: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::ReflectedMemberProperty_2_SetStructValueAction<
+            TContainer,
+            TValue,
+        >,
     >,
-    pub m_GetClassValueAction: *mut crate::Unity::Properties::ReflectedMemberProperty_2_GetClassValueAction<
-        TContainer,
-        TValue,
+    pub m_GetClassValueAction: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::ReflectedMemberProperty_2_GetClassValueAction<
+            TContainer,
+            TValue,
+        >,
     >,
-    pub m_SetClassValueAction: *mut crate::Unity::Properties::ReflectedMemberProperty_2_SetClassValueAction<
-        TContainer,
-        TValue,
+    pub m_SetClassValueAction: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::ReflectedMemberProperty_2_SetClassValueAction<
+            TContainer,
+            TValue,
+        >,
     >,
-    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _IsReadOnly_k__BackingField: bool,
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+BatchCullingContext")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BatchCullingContext {
     pub cullingPlanes: crate::Unity::Collections::NativeArray_1<
         crate::UnityEngine::Plane,

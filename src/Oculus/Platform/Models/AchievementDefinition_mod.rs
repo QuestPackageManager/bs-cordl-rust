@@ -4,7 +4,7 @@
 pub struct AchievementDefinition {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Type: crate::Oculus::Platform::AchievementType,
-    pub Name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub BitfieldLength: u32,
     pub Target: u64,
 }

@@ -3,29 +3,51 @@
 #[derive(Debug)]
 pub struct WebOperation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Request_k__BackingField: *mut crate::System::Net::HttpWebRequest,
-    pub _Connection_k__BackingField: *mut crate::System::Net::WebConnection,
-    pub _ServicePoint_k__BackingField: *mut crate::System::Net::ServicePoint,
-    pub _WriteBuffer_k__BackingField: *mut crate::System::Net::BufferOffsetSize,
+    pub _Request_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::HttpWebRequest,
+    >,
+    pub _Connection_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::WebConnection,
+    >,
+    pub _ServicePoint_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::ServicePoint,
+    >,
+    pub _WriteBuffer_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::BufferOffsetSize,
+    >,
     pub _IsNtlmChallenge_k__BackingField: bool,
-    pub cts: *mut crate::System::Threading::CancellationTokenSource,
-    pub requestTask: *mut crate::System::Net::WebCompletionSource_1<
-        *mut crate::System::Net::WebRequestStream,
+    pub cts: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
     >,
-    pub requestWrittenTask: *mut crate::System::Net::WebCompletionSource_1<
-        *mut crate::System::Net::WebRequestStream,
+    pub requestTask: quest_hook::libil2cpp::Gc<
+        crate::System::Net::WebCompletionSource_1<
+            *mut crate::System::Net::WebRequestStream,
+        >,
     >,
-    pub responseTask: *mut crate::System::Net::WebCompletionSource_1<
-        *mut crate::System::Net::WebResponseStream,
+    pub requestWrittenTask: quest_hook::libil2cpp::Gc<
+        crate::System::Net::WebCompletionSource_1<
+            *mut crate::System::Net::WebRequestStream,
+        >,
     >,
-    pub finishedTask: *mut crate::System::Net::WebCompletionSource_1<
-        crate::System::ValueTuple_2<bool, *mut crate::System::Net::WebOperation>,
+    pub responseTask: quest_hook::libil2cpp::Gc<
+        crate::System::Net::WebCompletionSource_1<
+            *mut crate::System::Net::WebResponseStream,
+        >,
     >,
-    pub writeStream: *mut crate::System::Net::WebRequestStream,
-    pub responseStream: *mut crate::System::Net::WebResponseStream,
-    pub disposedInfo: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
-    pub closedInfo: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
-    pub priorityRequest: *mut crate::System::Net::WebOperation,
+    pub finishedTask: quest_hook::libil2cpp::Gc<
+        crate::System::Net::WebCompletionSource_1<
+            crate::System::ValueTuple_2<bool, *mut crate::System::Net::WebOperation>,
+        >,
+    >,
+    pub writeStream: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+    pub responseStream: quest_hook::libil2cpp::Gc<crate::System::Net::WebResponseStream>,
+    pub disposedInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+    >,
+    pub closedInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+    >,
+    pub priorityRequest: quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
     pub requestSent: i32,
     pub finished: i32,
 }

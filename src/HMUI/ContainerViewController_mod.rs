@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct ContainerViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _controllersContainer: *mut crate::UnityEngine::RectTransform,
-    pub _viewControllers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HMUI::ViewController,
+    pub _controllersContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
+    >,
+    pub _viewControllers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::HMUI::ViewController>,
     >,
 }
 #[cfg(feature = "HMUI+ContainerViewController")]

@@ -5,8 +5,8 @@ pub struct MonoBehaviourCallbackHooks {
     __cordl_parent: crate::UnityEngine::ResourceManagement::Util::ComponentSingleton_1<
         *mut crate::GlobalNamespace::MonoBehaviourCallbackHooks,
     >,
-    pub m_OnUpdateDelegate: *mut crate::System::Action_1<f32>,
-    pub m_OnLateUpdateDelegate: *mut crate::System::Action_1<f32>,
+    pub m_OnUpdateDelegate: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+    pub m_OnLateUpdateDelegate: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
 }
 #[cfg(feature = "MonoBehaviourCallbackHooks")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

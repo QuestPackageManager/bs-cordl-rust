@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct ConcurrentQueue_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _crossSegmentLock: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _tail: *mut crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
-    pub _head: *mut crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
+    pub _crossSegmentLock: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub _tail: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
+    >,
+    pub _head: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
@@ -481,15 +487,17 @@ for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
 #[derive(Debug)]
 pub struct ConcurrentQueue_1_Segment<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _slots: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Collections::Concurrent::Segment_ConcurrentQueue_1_Slot<T>,
+    pub _slots: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Collections::Concurrent::Segment_ConcurrentQueue_1_Slot<T>,
+        >,
     >,
     pub _slotsMask: i32,
     pub _headAndTail: crate::System::Collections::Concurrent::PaddedHeadAndTail,
     pub _preservedForObservation: bool,
     pub _frozenForEnqueues: bool,
-    pub _nextSegment: *mut crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<
-        T,
+    pub _nextSegment: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -624,7 +632,7 @@ for crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T> {
 }
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1+Segment+Slot")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Segment_ConcurrentQueue_1_Slot<T: quest_hook::libil2cpp::Type> {
     pub Item: T,
     pub SequenceNumber: i32,

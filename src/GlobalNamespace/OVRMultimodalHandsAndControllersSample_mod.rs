@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct OVRMultimodalHandsAndControllersSample {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub enableButton: *mut crate::UnityEngine::UI::Button,
-    pub disableButton: *mut crate::UnityEngine::UI::Button,
-    pub displayText: *mut crate::UnityEngine::UI::Text,
+    pub enableButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub disableButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub displayText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
 }
 #[cfg(feature = "OVRMultimodalHandsAndControllersSample")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

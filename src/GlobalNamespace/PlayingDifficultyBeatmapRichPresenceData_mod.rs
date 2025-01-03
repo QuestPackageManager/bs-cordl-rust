@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct PlayingDifficultyBeatmapRichPresenceData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _apiName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _localizedDescription: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _apiName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _localizedDescription: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
-    pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub _beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
 }
 #[cfg(feature = "PlayingDifficultyBeatmapRichPresenceData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

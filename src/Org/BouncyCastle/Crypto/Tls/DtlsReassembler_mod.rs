@@ -4,8 +4,8 @@
 pub struct DtlsReassembler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mMsgType: u8,
-    pub mBody: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mMissing: *mut crate::System::Collections::IList,
+    pub mBody: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mMissing: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReassembler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

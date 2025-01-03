@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct UxmlTemplateTraits {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlTraits,
-    pub m_Name: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_Path: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_Src: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_Name: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_Path: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_Src: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlTemplateTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

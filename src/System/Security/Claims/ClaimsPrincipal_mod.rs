@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct ClaimsPrincipal {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_version: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_serializedClaimsIdentities: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_identities: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Security::Claims::ClaimsIdentity,
+    pub m_version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_serializedClaimsIdentities: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_identities: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Security::Claims::ClaimsIdentity,
+        >,
     >,
 }
 #[cfg(feature = "System+Security+Claims+ClaimsPrincipal")]

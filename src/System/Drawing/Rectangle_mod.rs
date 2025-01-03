@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Drawing+Rectangle")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Rectangle {
     pub x: i32,
     pub y: i32,

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AdditionalContentModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub didInvalidateDataEvent: *mut crate::System::Action,
+    pub didInvalidateDataEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "AdditionalContentModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

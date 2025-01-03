@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SubContainerCreatorByNewPrefabMethod {
     __cordl_parent: crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext,
-    pub _installerMethod: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+    pub _installerMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::Zenject::DiContainer>,
+    >,
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabMethod")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

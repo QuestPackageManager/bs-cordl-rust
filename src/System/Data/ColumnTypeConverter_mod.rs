@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ColumnTypeConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
-    pub _values: *mut crate::System::ComponentModel::TypeConverter_StandardValuesCollection,
+    pub _values: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeConverter_StandardValuesCollection,
+    >,
 }
 #[cfg(feature = "System+Data+ColumnTypeConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

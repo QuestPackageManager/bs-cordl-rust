@@ -3,16 +3,18 @@
 #[derive(Debug)]
 pub struct X509Crl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub issuer: *mut quest_hook::libil2cpp::Il2CppString,
+    pub issuer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub version: u8,
     pub thisUpdate: crate::System::DateTime,
     pub nextUpdate: crate::System::DateTime,
-    pub entries: *mut crate::System::Collections::ArrayList,
-    pub signatureOID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub signature: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub extensions: *mut crate::Mono::Security::X509::X509ExtensionCollection,
-    pub encoded: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub hash_value: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub entries: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub signatureOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub extensions: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::X509::X509ExtensionCollection,
+    >,
+    pub encoded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub hash_value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Security+X509+X509Crl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -202,9 +204,11 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::X509::X509Crl 
 #[derive(Debug)]
 pub struct X509Crl_X509CrlEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub sn: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub sn: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub revocationDate: crate::System::DateTime,
-    pub extensions: *mut crate::Mono::Security::X509::X509ExtensionCollection,
+    pub extensions: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::X509::X509ExtensionCollection,
+    >,
 }
 #[cfg(feature = "Mono+Security+X509+X509Crl+X509CrlEntry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

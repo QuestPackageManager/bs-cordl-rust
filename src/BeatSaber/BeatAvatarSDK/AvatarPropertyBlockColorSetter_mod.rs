@@ -8,7 +8,7 @@ pub struct AvatarPropertyBlockColorSetter {
     pub _whiteBoost: f32,
     pub _editInPlayMode: bool,
     pub _ignoreRimLight: bool,
-    pub _renderer: *mut crate::UnityEngine::Renderer,
+    pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
     pub _rimLightColor: crate::UnityEngine::Color,
     pub _mainColor: crate::UnityEngine::Color,
     pub _boostColor: crate::UnityEngine::Color,

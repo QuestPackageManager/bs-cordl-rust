@@ -6,30 +6,40 @@ pub struct HEU_InputNode {
     pub _inputNodeType: crate::HoudiniEngineUnity::HEU_InputNode_InputNodeType,
     pub _inputObjectType: crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType,
     pub _pendingInputObjectType: crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType,
-    pub _inputObjects: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_InputObjectInfo,
+    pub _inputObjects: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_InputObjectInfo,
+        >,
     >,
-    pub _inputObjectsConnectedAssetIDs: *mut crate::System::Collections::Generic::List_1<
-        i32,
+    pub _inputObjectsConnectedAssetIDs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
     >,
-    pub _inputAsset: *mut crate::UnityEngine::GameObject,
-    pub _connectedInputAsset: *mut crate::UnityEngine::GameObject,
-    pub _inputAssetInfos: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_InputHDAInfo,
+    pub _inputAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _connectedInputAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _inputAssetInfos: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_InputHDAInfo,
+        >,
     >,
     pub _nodeID: i32,
     pub _inputIndex: i32,
     pub _requiresCook: bool,
     pub _requiresUpload: bool,
-    pub _inputName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _labelName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _paramName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _inputName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _labelName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _connectedNodeID: i32,
     pub _keepWorldTransform: bool,
     pub _packGeometryBeforeMerging: bool,
-    pub _parentAsset: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
-    pub _tilemapSettings: *mut crate::HoudiniEngineUnity::HEU_InputInterfaceTilemapSettings,
-    pub _uiCache: *mut crate::HoudiniEngineUnity::HEU_InputNodeUICache,
+    pub _parentAsset: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+    >,
+    pub _tilemapSettings: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_InputInterfaceTilemapSettings,
+    >,
+    pub _uiCache: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_InputNodeUICache,
+    >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

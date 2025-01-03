@@ -4,7 +4,9 @@
 pub struct InjectAttributeBase {
     __cordl_parent: crate::Zenject::Internal::PreserveAttribute,
     pub _Optional_k__BackingField: bool,
-    pub _Id_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _Id_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub _Source_k__BackingField: crate::Zenject::InjectSources,
 }
 #[cfg(feature = "Zenject+InjectAttributeBase")]

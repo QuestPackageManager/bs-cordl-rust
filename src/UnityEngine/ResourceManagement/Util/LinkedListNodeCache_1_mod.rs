@@ -4,7 +4,9 @@
 pub struct LinkedListNodeCache_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_NodesCreated: i32,
-    pub m_NodeCache: *mut crate::System::Collections::Generic::LinkedList_1<T>,
+    pub m_NodeCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedList_1<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+LinkedListNodeCache_1")]

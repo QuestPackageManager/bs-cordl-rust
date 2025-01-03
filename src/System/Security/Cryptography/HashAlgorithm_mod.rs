@@ -5,7 +5,7 @@ pub struct HashAlgorithm {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _disposed: bool,
     pub HashSizeValue: i32,
-    pub HashValue: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub HashValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub State: i32,
 }
 #[cfg(feature = "System+Security+Cryptography+HashAlgorithm")]

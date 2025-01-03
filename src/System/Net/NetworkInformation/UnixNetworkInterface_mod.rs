@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct UnixNetworkInterface {
     __cordl_parent: crate::System::Net::NetworkInformation::NetworkInterface,
-    pub ipproperties: *mut crate::System::Net::NetworkInformation::IPInterfaceProperties,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub addresses: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Net::IPAddress,
+    pub ipproperties: quest_hook::libil2cpp::Gc<
+        crate::System::Net::NetworkInformation::IPInterfaceProperties,
     >,
-    pub macAddress: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub addresses: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::Net::IPAddress>,
+    >,
+    pub macAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _cordl_type: crate::System::Net::NetworkInformation::NetworkInterfaceType,
 }
 #[cfg(feature = "System+Net+NetworkInformation+UnixNetworkInterface")]

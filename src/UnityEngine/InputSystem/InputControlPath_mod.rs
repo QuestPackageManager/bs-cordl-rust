@@ -470,7 +470,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputControlPath_ParsedPathComponent {
     pub m_Layout: crate::UnityEngine::InputSystem::Utilities::Substring,
     pub m_Usages: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
@@ -639,9 +639,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputControlPath_PathParser {
-    pub path: *mut quest_hook::libil2cpp::Il2CppString,
+    pub path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub length: i32,
     pub leftIndexInPath: i32,
     pub rightIndexInPath: i32,

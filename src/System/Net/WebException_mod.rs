@@ -4,7 +4,7 @@
 pub struct WebException {
     __cordl_parent: crate::System::InvalidOperationException,
     pub m_Status: crate::System::Net::WebExceptionStatus,
-    pub m_Response: *mut crate::System::Net::WebResponse,
+    pub m_Response: quest_hook::libil2cpp::Gc<crate::System::Net::WebResponse>,
     pub m_InternalStatus: crate::System::Net::WebExceptionInternalStatus,
 }
 #[cfg(feature = "System+Net+WebException")]

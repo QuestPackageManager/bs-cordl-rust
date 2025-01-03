@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct GameObjectContext {
     __cordl_parent: crate::Zenject::RunnableContext,
-    pub PreInstall: *mut crate::System::Action,
-    pub PostInstall: *mut crate::System::Action,
-    pub PreResolve: *mut crate::System::Action,
-    pub PostResolve: *mut crate::System::Action,
-    pub _kernel: *mut crate::Zenject::MonoKernel,
-    pub _container: *mut crate::Zenject::DiContainer,
+    pub PreInstall: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub PostInstall: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub PreResolve: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub PostResolve: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _kernel: quest_hook::libil2cpp::Gc<crate::Zenject::MonoKernel>,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
 }
 #[cfg(feature = "Zenject+GameObjectContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

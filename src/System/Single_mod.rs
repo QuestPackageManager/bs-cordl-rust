@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Single")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Single {
     pub m_value: f32,
 }

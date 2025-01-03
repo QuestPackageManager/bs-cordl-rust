@@ -4,9 +4,8 @@
 pub struct Interactable {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _interactable: bool,
-    pub interactableChangeEvent: *mut crate::System::Action_2<
-        *mut crate::HMUI::Interactable,
-        bool,
+    pub interactableChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::HMUI::Interactable, bool>,
     >,
 }
 #[cfg(feature = "HMUI+Interactable")]

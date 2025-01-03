@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct JsonConverterAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _converterType: *mut crate::System::Type,
-    pub _ConverterParameters_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _converterType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _ConverterParameters_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+JsonConverterAttribute")]

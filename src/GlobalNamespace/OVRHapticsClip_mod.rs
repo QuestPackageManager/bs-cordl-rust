@@ -5,7 +5,9 @@ pub struct OVRHapticsClip {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Count_k__BackingField: i32,
     pub _Capacity_k__BackingField: i32,
-    pub _Samples_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _Samples_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
 }
 #[cfg(feature = "OVRHapticsClip")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

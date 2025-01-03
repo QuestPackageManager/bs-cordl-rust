@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ModifiableContact")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ModifiableContact {
     pub contact: crate::UnityEngine::Vector3,
     pub separation: f32,

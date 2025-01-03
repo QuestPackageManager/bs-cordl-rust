@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct MultiplayerStatusData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub minimum_app_version: *mut quest_hook::libil2cpp::Il2CppString,
+    pub minimum_app_version: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub status: crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus,
     pub maintenance_start_time: i64,
     pub maintenance_end_time: i64,
-    pub user_message: *mut crate::GlobalNamespace::MultiplayerStatusData_UserMessage,
+    pub user_message: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerStatusData_UserMessage,
+    >,
     pub use_gamelift: bool,
     pub use_xplatform_auth: bool,
 }
@@ -206,8 +210,10 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct MultiplayerStatusData_UserMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub localizations: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::UserMessage_MultiplayerStatusData_LocalizedMessage,
+    pub localizations: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::UserMessage_MultiplayerStatusData_LocalizedMessage,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerStatusData+UserMessage")]
@@ -266,8 +272,8 @@ for crate::GlobalNamespace::MultiplayerStatusData_UserMessage {
 #[derive(Debug)]
 pub struct UserMessage_MultiplayerStatusData_LocalizedMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub language: *mut quest_hook::libil2cpp::Il2CppString,
-    pub message: *mut quest_hook::libil2cpp::Il2CppString,
+    pub language: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

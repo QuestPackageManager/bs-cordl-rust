@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Net+NetworkInformation+sockaddr_ll")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct sockaddr_ll {
     pub sll_family: u16,
     pub sll_protocol: u16,
@@ -8,7 +8,7 @@ pub struct sockaddr_ll {
     pub sll_hatype: u16,
     pub sll_pkttype: u8,
     pub sll_halen: u8,
-    pub sll_addr: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub sll_addr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "System+Net+NetworkInformation+sockaddr_ll")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

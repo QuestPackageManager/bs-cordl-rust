@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct MonoAsyncCall {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub msg: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub cb_method: crate::System::IntPtr,
-    pub cb_target: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub state: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub res: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub out_args: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub cb_target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub out_args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+MonoAsyncCall")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

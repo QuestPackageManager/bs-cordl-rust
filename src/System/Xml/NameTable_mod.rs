@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct NameTable {
     __cordl_parent: crate::System::Xml::XmlNameTable,
-    pub entries: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::NameTable_Entry,
+    pub entries: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::NameTable_Entry>,
     >,
     pub count: i32,
     pub mask: i32,
@@ -143,9 +143,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::NameTable {
 #[derive(Debug)]
 pub struct NameTable_Entry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub str: *mut quest_hook::libil2cpp::Il2CppString,
+    pub str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub hashCode: i32,
-    pub next: *mut crate::System::Xml::NameTable_Entry,
+    pub next: quest_hook::libil2cpp::Gc<crate::System::Xml::NameTable_Entry>,
 }
 #[cfg(feature = "System+Xml+NameTable+Entry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

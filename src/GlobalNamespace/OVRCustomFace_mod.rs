@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct OVRCustomFace {
     __cordl_parent: crate::GlobalNamespace::OVRFace,
-    pub _mappings: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
+    pub _mappings: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
+        >,
     >,
     pub retargetingType: crate::GlobalNamespace::OVRCustomFace_RetargetingType,
     pub _allowDuplicateMapping: bool,

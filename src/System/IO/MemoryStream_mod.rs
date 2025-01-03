@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MemoryStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub _buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _origin: i32,
     pub _position: i32,
     pub _length: i32,
@@ -12,7 +12,9 @@ pub struct MemoryStream {
     pub _writable: bool,
     pub _exposable: bool,
     pub _isOpen: bool,
-    pub _lastReadTask: *mut crate::System::Threading::Tasks::Task_1<i32>,
+    pub _lastReadTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<i32>,
+    >,
 }
 #[cfg(feature = "System+IO+MemoryStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

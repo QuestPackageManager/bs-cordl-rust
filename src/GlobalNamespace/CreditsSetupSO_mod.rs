@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct CreditsSetupSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub normalTextPrefab: *mut crate::UnityEngine::GameObject,
-    pub normalLocalizedTextPrefab: *mut crate::UnityEngine::GameObject,
-    pub titleTextPrefab: *mut crate::UnityEngine::GameObject,
-    pub titleLocalizedTextPrefab: *mut crate::UnityEngine::GameObject,
-    pub headerTextPrefab: *mut crate::UnityEngine::GameObject,
-    pub headerLocalizedTextPrefab: *mut crate::UnityEngine::GameObject,
+    pub normalTextPrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub normalLocalizedTextPrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub titleTextPrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub titleLocalizedTextPrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub headerTextPrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub headerLocalizedTextPrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
     pub columnCount: i32,
     pub spaceHeight: f32,
 }

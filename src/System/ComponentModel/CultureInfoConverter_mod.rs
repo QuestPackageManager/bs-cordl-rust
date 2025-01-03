@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CultureInfoConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
-    pub _values: *mut crate::System::ComponentModel::TypeConverter_StandardValuesCollection,
+    pub _values: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeConverter_StandardValuesCollection,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -200,7 +202,9 @@ for crate::System::ComponentModel::CultureInfoConverter {
 #[derive(Debug)]
 pub struct CultureInfoConverter_CultureComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _converter: *mut crate::System::ComponentModel::CultureInfoConverter,
+    pub _converter: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::CultureInfoConverter,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

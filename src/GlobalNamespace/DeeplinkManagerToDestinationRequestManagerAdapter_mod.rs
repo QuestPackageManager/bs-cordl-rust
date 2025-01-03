@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct DeeplinkManagerToDestinationRequestManagerAdapter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub _beatmapCharacteristicCollection: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
-    pub didSendMenuDestinationRequestEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MenuDestination,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
     >,
-    pub _currentMenuDestinationRequest: *mut crate::GlobalNamespace::MenuDestination,
+    pub _beatmapCharacteristicCollection: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicCollection,
+    >,
+    pub didSendMenuDestinationRequestEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::MenuDestination>,
+    >,
+    pub _currentMenuDestinationRequest: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuDestination,
+    >,
 }
 #[cfg(feature = "DeeplinkManagerToDestinationRequestManagerAdapter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

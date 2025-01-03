@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct LaunchDetails {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub DeeplinkMessage: *mut quest_hook::libil2cpp::Il2CppString,
-    pub DestinationApiName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub LaunchSource: *mut quest_hook::libil2cpp::Il2CppString,
+    pub DeeplinkMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub DestinationApiName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub LaunchSource: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub LaunchType: crate::Oculus::Platform::LaunchType,
-    pub TrackingID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub UsersOptional: *mut crate::Oculus::Platform::Models::UserList,
-    pub Users: *mut crate::Oculus::Platform::Models::UserList,
+    pub TrackingID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub UsersOptional: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::UserList,
+    >,
+    pub Users: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
 }
 #[cfg(feature = "Oculus+Platform+Models+LaunchDetails")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

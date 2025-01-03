@@ -4,12 +4,12 @@
 pub struct Gost28147Mac {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub bufOff: i32,
-    pub buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mac: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mac: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub firstStep: bool,
-    pub workingKey: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub macIV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub S: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub workingKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub macIV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub S: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+Gost28147Mac")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,9 +1,11 @@
 #[cfg(feature = "UnityEngine+EventSystems+RaycastResult")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RaycastResult {
-    pub m_GameObject: *mut crate::UnityEngine::GameObject,
-    pub _cordl_module: *mut crate::UnityEngine::EventSystems::BaseRaycaster,
+    pub m_GameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _cordl_module: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::BaseRaycaster,
+    >,
     pub distance: f32,
     pub index: f32,
     pub depth: i32,

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct FloatFxGroupEffectCollectionTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    pub _floatFxGroupEffectTargets: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::FloatFxGroupEffectTarget,
+    pub _floatFxGroupEffectTargets: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::FloatFxGroupEffectTarget,
+        >,
     >,
 }
 #[cfg(feature = "FloatFxGroupEffectCollectionTarget")]

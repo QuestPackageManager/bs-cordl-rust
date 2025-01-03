@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PgpEncryptedDataList {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObject,
-    pub list: *mut crate::System::Collections::IList,
-    pub data: *mut crate::Org::BouncyCastle::Bcpg::InputStreamPacket,
+    pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub data: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::InputStreamPacket,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

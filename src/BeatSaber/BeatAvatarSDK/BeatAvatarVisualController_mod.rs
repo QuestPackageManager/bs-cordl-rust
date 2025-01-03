@@ -3,29 +3,55 @@
 #[derive(Debug)]
 pub struct BeatAvatarVisualController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _headTopMeshFilter: *mut crate::UnityEngine::MeshFilter,
-    pub _glassesMeshFilter: *mut crate::UnityEngine::MeshFilter,
-    pub _facialHairMeshFilter: *mut crate::UnityEngine::MeshFilter,
-    pub _leftHandsHairMeshFilter: *mut crate::UnityEngine::MeshFilter,
-    pub _rightHandsHairMeshFilter: *mut crate::UnityEngine::MeshFilter,
-    pub _eyesSprite: *mut crate::UnityEngine::SpriteRenderer,
-    pub _mouthSprite: *mut crate::UnityEngine::SpriteRenderer,
-    pub _bodyMeshFilter: *mut crate::UnityEngine::MeshFilter,
-    pub _headTopPropertyBlockColorSetter: *mut crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter,
-    pub _glassesPropertyBlockColorSetter: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter,
-    pub _facialHairPropertyBlockColorSetter: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter,
-    pub _skinPropertyBlockColorSetter: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter,
-    pub _clothesPropertyBlockSetter: *mut crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter,
-    pub _leftHandPropertyBlockSetter: *mut crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter,
-    pub _rightHandPropertyBlockSetter: *mut crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter,
-    pub _avatarPartsModel: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
-    pub _avatarPartHighlightSetters: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::BeatSaber::BeatAvatarSDK::AvatarPart,
-        *mut crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDelegate,
+    pub _headTopMeshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
+    pub _glassesMeshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
+    pub _facialHairMeshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
+    pub _leftHandsHairMeshFilter: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MeshFilter,
+    >,
+    pub _rightHandsHairMeshFilter: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MeshFilter,
+    >,
+    pub _eyesSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
+    pub _mouthSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
+    pub _bodyMeshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
+    pub _headTopPropertyBlockColorSetter: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter,
+    >,
+    pub _glassesPropertyBlockColorSetter: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter,
+    >,
+    pub _facialHairPropertyBlockColorSetter: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter,
+    >,
+    pub _skinPropertyBlockColorSetter: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter,
+    >,
+    pub _clothesPropertyBlockSetter: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter,
+    >,
+    pub _leftHandPropertyBlockSetter: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter,
+    >,
+    pub _rightHandPropertyBlockSetter: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter,
+    >,
+    pub _avatarPartsModel: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
+    >,
+    pub _avatarPartHighlightSetters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+            *mut crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDelegate,
+        >,
     >,
     pub _lightColor: crate::UnityEngine::Color,
-    pub _avatarData: *mut crate::BeatSaber::BeatAvatarSDK::AvatarData,
-    pub _currentHighlighter: *mut crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDelegate,
+    pub _avatarData: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarData,
+    >,
+    pub _currentHighlighter: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDelegate,
+    >,
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+BeatAvatarVisualController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

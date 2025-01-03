@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+IntersectionMaskRectangle_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IntersectionMaskRectangle_t {
     pub m_flTopLeftX: f32,
     pub m_flTopLeftY: f32,

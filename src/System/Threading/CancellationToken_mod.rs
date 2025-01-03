@@ -1,8 +1,10 @@
 #[cfg(feature = "System+Threading+CancellationToken")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CancellationToken {
-    pub _source: *mut crate::System::Threading::CancellationTokenSource,
+    pub _source: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
 }
 #[cfg(feature = "System+Threading+CancellationToken")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

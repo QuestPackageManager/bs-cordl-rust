@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct ChainItemConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
-    pub _colorNotes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::ColorNote,
+    pub _colorNotes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::ColorNote>,
     >,
-    pub _chains: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::Chain,
+    pub _chains: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::Chain>,
     >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+ChainItemConverter")]

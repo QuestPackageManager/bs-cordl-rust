@@ -3,16 +3,24 @@
 #[derive(Debug)]
 pub struct MultiplayerLobbyAvatarManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lobbyStateDataModel: *mut crate::GlobalNamespace::ILobbyStateDataModel,
-    pub _avatarControllerFactory: *mut crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory,
+    pub _lobbyStateDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyStateDataModel,
+    >,
+    pub _avatarControllerFactory: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory,
+    >,
     pub _innerCircleRadius: f32,
     pub _minOuterCircleRadius: f32,
-    pub _playerIdToAvatarMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::MultiplayerLobbyAvatarController,
+    pub _playerIdToAvatarMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::MultiplayerLobbyAvatarController,
+        >,
     >,
-    pub _inProgressDespawnAnimations: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::GlobalNamespace::MultiplayerLobbyAvatarController,
+    pub _inProgressDespawnAnimations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::GlobalNamespace::MultiplayerLobbyAvatarController,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerLobbyAvatarManager")]

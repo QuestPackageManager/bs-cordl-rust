@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ParticleSystemEmitEventEffectInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _particleSystemEventControllerPrefab: *mut crate::GlobalNamespace::ParticleSystemEventController,
+    pub _particleSystemEventControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ParticleSystemEventController,
+    >,
     pub _particleSystemEventControllerInitialSize: i32,
 }
 #[cfg(feature = "ParticleSystemEmitEventEffectInstaller")]

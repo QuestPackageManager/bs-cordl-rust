@@ -8,7 +8,7 @@ pub struct Rotate {
     pub _randomize: bool,
     pub _randomMinMultiplier: crate::UnityEngine::Vector3,
     pub _randomMaxMultiplier: crate::UnityEngine::Vector3,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _startRotationAngles: crate::UnityEngine::Vector3,
     pub _randomizedMultiplier: crate::UnityEngine::Vector3,
 }

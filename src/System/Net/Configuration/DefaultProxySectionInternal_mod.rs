@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DefaultProxySectionInternal {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub webProxy: *mut crate::System::Net::IWebProxy,
+    pub webProxy: quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
 }
 #[cfg(feature = "System+Net+Configuration+DefaultProxySectionInternal")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

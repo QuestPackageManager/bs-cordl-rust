@@ -1953,7 +1953,7 @@ impl AsMut<crate::System::ICloneable> for crate::System::Array {
 #[derive(Debug)]
 pub struct Array_ArrayEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _array: *mut crate::System::Array,
+    pub _array: quest_hook::libil2cpp::Gc<crate::System::Array>,
     pub _index: i32,
     pub _endIndex: i32,
 }
@@ -2254,9 +2254,9 @@ for crate::System::Array_EmptyInternalEnumerator_1<T> {
 }
 #[cfg(feature = "System+Array+InternalEnumerator_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Array_InternalEnumerator_1<T: quest_hook::libil2cpp::Type> {
-    pub array: *mut crate::System::Array,
+    pub array: quest_hook::libil2cpp::Gc<crate::System::Array>,
     pub idx: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -2450,11 +2450,11 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Array_RawData {
 }
 #[cfg(feature = "System+Array+SorterGenericArray")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Array_SorterGenericArray {
-    pub keys: *mut crate::System::Array,
-    pub items: *mut crate::System::Array,
-    pub comparer: *mut crate::System::Collections::IComparer,
+    pub keys: quest_hook::libil2cpp::Gc<crate::System::Array>,
+    pub items: quest_hook::libil2cpp::Gc<crate::System::Array>,
+    pub comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
 }
 #[cfg(feature = "System+Array+SorterGenericArray")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -2600,15 +2600,15 @@ impl crate::System::Array_SorterGenericArray {
 }
 #[cfg(feature = "System+Array+SorterObjectArray")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Array_SorterObjectArray {
-    pub keys: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub keys: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub items: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub items: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub comparer: *mut crate::System::Collections::IComparer,
+    pub comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
 }
 #[cfg(feature = "System+Array+SorterObjectArray")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

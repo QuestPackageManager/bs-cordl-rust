@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct StackTrace {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub frames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Diagnostics::StackFrame,
+    pub frames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Diagnostics::StackFrame>,
     >,
-    pub captured_traces: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Diagnostics::StackTrace,
+    pub captured_traces: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Diagnostics::StackTrace>,
     >,
     pub debug_info: bool,
 }

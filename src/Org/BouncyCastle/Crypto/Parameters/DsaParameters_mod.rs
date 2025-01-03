@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct DsaParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub p: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub q: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub g: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub validation: *mut crate::Org::BouncyCastle::Crypto::Parameters::DsaValidationParameters,
+    pub p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub validation: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::DsaValidationParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DsaParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ViewControllerBase {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub didActivateEvent: *mut crate::HMUI::ViewControllerBase_DidActivateDelegate,
-    pub didDeactivateEvent: *mut crate::HMUI::ViewControllerBase_DidDeactivateDelegate,
+    pub didActivateEvent: quest_hook::libil2cpp::Gc<
+        crate::HMUI::ViewControllerBase_DidActivateDelegate,
+    >,
+    pub didDeactivateEvent: quest_hook::libil2cpp::Gc<
+        crate::HMUI::ViewControllerBase_DidDeactivateDelegate,
+    >,
 }
 #[cfg(feature = "HMUI+ViewControllerBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

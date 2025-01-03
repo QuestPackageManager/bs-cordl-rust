@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct StandardTaskContinuation {
     __cordl_parent: crate::System::Threading::Tasks::TaskContinuation,
-    pub m_task: *mut crate::System::Threading::Tasks::Task,
+    pub m_task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     pub m_options: crate::System::Threading::Tasks::TaskContinuationOptions,
-    pub m_taskScheduler: *mut crate::System::Threading::Tasks::TaskScheduler,
+    pub m_taskScheduler: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskScheduler,
+    >,
 }
 #[cfg(feature = "System+Threading+Tasks+StandardTaskContinuation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

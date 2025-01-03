@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DerUtf8String {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::DerStringBase,
-    pub str: *mut quest_hook::libil2cpp::Il2CppString,
+    pub str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerUtf8String")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

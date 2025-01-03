@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct G_RamText {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_allocatedSystemMemorySizeText: *mut crate::UnityEngine::UI::Text,
-    pub m_reservedSystemMemorySizeText: *mut crate::UnityEngine::UI::Text,
-    pub m_monoSystemMemorySizeText: *mut crate::UnityEngine::UI::Text,
-    pub m_graphyManager: *mut crate::Tayx::Graphy::GraphyManager,
-    pub m_ramMonitor: *mut crate::Tayx::Graphy::Ram::G_RamMonitor,
+    pub m_allocatedSystemMemorySizeText: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Text,
+    >,
+    pub m_reservedSystemMemorySizeText: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Text,
+    >,
+    pub m_monoSystemMemorySizeText: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Text,
+    >,
+    pub m_graphyManager: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
+    pub m_ramMonitor: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Ram::G_RamMonitor>,
     pub m_updateRate: f32,
     pub m_deltaTime: f32,
 }

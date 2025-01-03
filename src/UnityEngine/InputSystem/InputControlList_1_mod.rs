@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputControlList_1<TControl: quest_hook::libil2cpp::Type> {
     pub m_Count: i32,
     pub m_Indices: crate::Unity::Collections::NativeArray_1<u64>,
@@ -647,9 +647,9 @@ for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlList_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputControlList_1_Enumerator<TControl: quest_hook::libil2cpp::Type> {
-    pub m_Indices: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_Indices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Count: i32,
     pub m_Current: i32,
     __cordl_phantom_TControl: std::marker::PhantomData<TControl>,

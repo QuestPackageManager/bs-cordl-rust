@@ -6,7 +6,9 @@ pub struct DragEventsProcessor {
     pub m_IsRegistered: bool,
     pub m_DragState: crate::UnityEngine::UIElements::DragEventsProcessor_DragState,
     pub m_Start: crate::UnityEngine::Vector3,
-    pub m_Target: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_Target: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+DragEventsProcessor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

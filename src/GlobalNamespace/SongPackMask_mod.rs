@@ -1,6 +1,6 @@
 #[cfg(feature = "SongPackMask")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SongPackMask {
     pub _bloomFilter: crate::GlobalNamespace::BitMask256,
 }

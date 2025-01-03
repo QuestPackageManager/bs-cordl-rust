@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct MenuSceneSetup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _rootFlowCoordinator: *mut crate::HMUI::FlowCoordinator,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
-    pub _hierarchyManager: *mut crate::HMUI::HierarchyManager,
+    pub _rootFlowCoordinator: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
+    pub _hierarchyManager: quest_hook::libil2cpp::Gc<crate::HMUI::HierarchyManager>,
 }
 #[cfg(feature = "MenuSceneSetup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,13 +3,23 @@
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerGameplayAnimator {
     __cordl_parent: crate::GlobalNamespace::MultiplayerGameplayAnimator,
-    pub _bigAvatarAnimator: *mut crate::GlobalNamespace::MultiplayerBigAvatarAnimator,
-    pub _avatarScaleAnimator: *mut crate::GlobalNamespace::ScaleAnimator,
+    pub _bigAvatarAnimator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerBigAvatarAnimator,
+    >,
+    pub _avatarScaleAnimator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScaleAnimator,
+    >,
     pub _defaultLightsWidth: f32,
     pub _observedLightsWidth: f32,
-    pub _failController: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerLevelFailController,
-    pub _multiplayerLayoutProvider: *mut crate::GlobalNamespace::MultiplayerLayoutProvider,
-    pub _playerSpectatingSpot: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerSpectatingSpot,
+    pub _failController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerLevelFailController,
+    >,
+    pub _multiplayerLayoutProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLayoutProvider,
+    >,
+    pub _playerSpectatingSpot: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerSpectatingSpot,
+    >,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerGameplayAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

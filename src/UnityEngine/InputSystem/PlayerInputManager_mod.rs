@@ -7,22 +7,30 @@ pub struct PlayerInputManager {
     pub m_MaxPlayerCount: i32,
     pub m_AllowJoining: bool,
     pub m_JoinBehavior: crate::UnityEngine::InputSystem::PlayerJoinBehavior,
-    pub m_PlayerJoinedEvent: *mut crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent,
-    pub m_PlayerLeftEvent: *mut crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent,
+    pub m_PlayerJoinedEvent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent,
+    >,
+    pub m_PlayerLeftEvent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent,
+    >,
     pub m_JoinAction: crate::UnityEngine::InputSystem::InputActionProperty,
-    pub m_PlayerPrefab: *mut crate::UnityEngine::GameObject,
+    pub m_PlayerPrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_SplitScreen: bool,
     pub m_MaintainAspectRatioInSplitScreen: bool,
     pub m_FixedNumberOfSplitScreens: i32,
     pub m_SplitScreenRect: crate::UnityEngine::Rect,
     pub m_JoinActionDelegateHooked: bool,
     pub m_UnpairedDeviceUsedDelegateHooked: bool,
-    pub m_JoinActionDelegate: *mut crate::System::Action_1<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    pub m_JoinActionDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
-    pub m_UnpairedDeviceUsedDelegate: *mut crate::System::Action_2<
-        *mut crate::UnityEngine::InputSystem::InputControl,
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    pub m_UnpairedDeviceUsedDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::UnityEngine::InputSystem::InputControl,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        >,
     >,
     pub m_PlayerJoinedCallbacks: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         *mut crate::System::Action_1<*mut crate::UnityEngine::InputSystem::PlayerInput>,

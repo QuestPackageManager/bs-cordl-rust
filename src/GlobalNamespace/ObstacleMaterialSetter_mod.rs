@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct ObstacleMaterialSetter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lwCoreMaterial: *mut crate::UnityEngine::Material,
-    pub _hwCoreMaterial: *mut crate::UnityEngine::Material,
-    pub _texturedCoreMaterial: *mut crate::UnityEngine::Material,
-    pub _fakeGlowLWMaterial: *mut crate::UnityEngine::Material,
-    pub _fakeGlowTexturedMaterial: *mut crate::UnityEngine::Material,
-    pub _obstacleCoreRenderer: *mut crate::UnityEngine::Renderer,
-    pub _obstacleFakeGlowRenderer: *mut crate::UnityEngine::Renderer,
+    pub _lwCoreMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _hwCoreMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _texturedCoreMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _fakeGlowLWMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _fakeGlowTexturedMaterial: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Material,
+    >,
+    pub _obstacleCoreRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+    pub _obstacleFakeGlowRenderer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Renderer,
+    >,
 }
 #[cfg(feature = "ObstacleMaterialSetter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct VisualTreeUpdater {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Panel: *mut crate::UnityEngine::UIElements::BaseVisualElementPanel,
-    pub m_UpdaterArray: *mut crate::UnityEngine::UIElements::VisualTreeUpdater_UpdaterArray,
+    pub m_Panel: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVisualElementPanel,
+    >,
+    pub m_UpdaterArray: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualTreeUpdater_UpdaterArray,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -154,8 +158,10 @@ for crate::UnityEngine::UIElements::VisualTreeUpdater {
 #[derive(Debug)]
 pub struct VisualTreeUpdater_UpdaterArray {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_VisualTreeUpdaters: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UIElements::IVisualTreeUpdater,
+    pub m_VisualTreeUpdaters: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::IVisualTreeUpdater,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdater+UpdaterArray")]

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct EnableAfterDelay {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _component: *mut crate::UnityEngine::MonoBehaviour,
+    pub _component: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
 }
 #[cfg(feature = "EnableAfterDelay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

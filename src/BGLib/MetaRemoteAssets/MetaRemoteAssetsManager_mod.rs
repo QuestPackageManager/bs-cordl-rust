@@ -3,16 +3,28 @@
 #[derive(Debug)]
 pub struct MetaRemoteAssetsManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _accessToken: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _platform: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _initializationCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _initializationTask: *mut crate::System::Threading::Tasks::Task_1<bool>,
-    pub _updateCatalogTask: *mut crate::System::Threading::Tasks::Task,
-    pub _appId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _platformUserModel: *mut crate::GlobalNamespace::IPlatformUserModel,
-    pub _remoteCatalogLoader: *mut crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
-    pub _inBuildGameVersion: *mut quest_hook::libil2cpp::Il2CppString,
-    pub didCatalogLoadOrUpdateEvent: *mut crate::System::Action,
+    pub _accessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _platform: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _initializationCancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub _initializationTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<bool>,
+    >,
+    pub _updateCatalogTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task,
+    >,
+    pub _appId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _platformUserModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IPlatformUserModel,
+    >,
+    pub _remoteCatalogLoader: quest_hook::libil2cpp::Gc<
+        crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
+    >,
+    pub _inBuildGameVersion: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub didCatalogLoadOrUpdateEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -326,9 +338,13 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
 #[derive(Debug)]
 pub struct MetaRemoteAssetsManager_AddResourceLocatorInput {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub ResourceLocator: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
-    pub LocalHash: *mut quest_hook::libil2cpp::Il2CppString,
-    pub CatalogLocation: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    pub ResourceLocator: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+    >,
+    pub LocalHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub CatalogLocation: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    >,
 }
 #[cfg(
     feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"

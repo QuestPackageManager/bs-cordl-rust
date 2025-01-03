@@ -3,18 +3,24 @@
 #[derive(Debug)]
 pub struct Claim {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_issuer: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_originalIssuer: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_type: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_value: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_valueType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_userSerializationData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub m_properties: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_issuer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_originalIssuer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_valueType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_userSerializationData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
-    pub m_propertyLock: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_subject: *mut crate::System::Security::Claims::ClaimsIdentity,
+    pub m_properties: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+    pub m_propertyLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_subject: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Claims::ClaimsIdentity,
+    >,
 }
 #[cfg(feature = "System+Security+Claims+Claim")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

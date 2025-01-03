@@ -3,42 +3,49 @@
 #[derive(Debug)]
 pub struct Columns {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Columns: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::UnityEngine::UIElements::Column,
+    pub m_Columns: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::UnityEngine::UIElements::Column,
+        >,
     >,
-    pub m_DisplayColumns: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::Column,
+    pub m_DisplayColumns: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::Column,
+        >,
     >,
-    pub m_VisibleColumns: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::Column,
+    pub m_VisibleColumns: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::Column,
+        >,
     >,
     pub m_VisibleColumnsDirty: bool,
     pub m_StretchMode: crate::UnityEngine::UIElements::Columns_StretchMode,
     pub m_Reorderable: bool,
     pub m_Resizable: bool,
     pub m_ResizePreview: bool,
-    pub m_PrimaryColumnName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub changed: *mut crate::System::Action_1<
-        crate::UnityEngine::UIElements::ColumnsDataType,
+    pub m_PrimaryColumnName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub columnAdded: *mut crate::System::Action_2<
-        *mut crate::UnityEngine::UIElements::Column,
-        i32,
+    pub changed: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::UnityEngine::UIElements::ColumnsDataType>,
     >,
-    pub columnRemoved: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::Column,
+    pub columnAdded: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::UnityEngine::UIElements::Column, i32>,
     >,
-    pub columnChanged: *mut crate::System::Action_2<
-        *mut crate::UnityEngine::UIElements::Column,
-        crate::UnityEngine::UIElements::ColumnDataType,
+    pub columnRemoved: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::UIElements::Column>,
     >,
-    pub columnResized: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::Column,
+    pub columnChanged: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::UnityEngine::UIElements::Column,
+            crate::UnityEngine::UIElements::ColumnDataType,
+        >,
     >,
-    pub columnReordered: *mut crate::System::Action_3<
-        *mut crate::UnityEngine::UIElements::Column,
-        i32,
-        i32,
+    pub columnResized: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::UIElements::Column>,
+    >,
+    pub columnReordered: quest_hook::libil2cpp::Gc<
+        crate::System::Action_3<*mut crate::UnityEngine::UIElements::Column, i32, i32>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Columns")]
@@ -815,15 +822,27 @@ for crate::UnityEngine::UIElements::Columns_UxmlObjectFactory_1<T> {
 #[derive(Debug)]
 pub struct Columns_UxmlObjectTraits_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlObjectTraits_1<T>,
-    pub m_PrimaryColumnName: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_StretchMode: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::Columns_StretchMode,
+    pub m_PrimaryColumnName: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
-    pub m_Reorderable: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_Resizable: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_ResizePreview: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_Columns: *mut crate::UnityEngine::UIElements::UxmlObjectListAttributeDescription_1<
-        *mut crate::UnityEngine::UIElements::Column,
+    pub m_StretchMode: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::Columns_StretchMode,
+        >,
+    >,
+    pub m_Reorderable: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_Resizable: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_ResizePreview: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_Columns: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlObjectListAttributeDescription_1<
+            *mut crate::UnityEngine::UIElements::Column,
+        >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

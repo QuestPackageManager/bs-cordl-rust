@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ECGost3410Signer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub key: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECKeyParameters,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub key: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ECKeyParameters,
+    >,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
     pub forSigning: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+ECGost3410Signer")]

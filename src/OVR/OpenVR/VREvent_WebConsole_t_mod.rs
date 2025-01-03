@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_WebConsole_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VREvent_WebConsole_t {
     pub webConsoleHandle: u64,
 }

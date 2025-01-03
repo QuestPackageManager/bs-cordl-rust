@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PointLightWithIds {
     __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
-    pub _pointLight: *mut crate::GlobalNamespace::PointLight,
+    pub _pointLight: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PointLight>,
 }
 #[cfg(feature = "PointLightWithIds")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

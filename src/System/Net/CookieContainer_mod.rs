@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct CookieContainer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_domainTable: *mut crate::System::Collections::Hashtable,
+    pub m_domainTable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub m_maxCookieSize: i32,
     pub m_maxCookies: i32,
     pub m_maxCookiesPerDomain: i32,
     pub m_count: i32,
-    pub m_fqdnMyDomain: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_fqdnMyDomain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Net+CookieContainer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct PbmParameter {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub salt: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub owf: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub iterationCount: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub mac: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    pub salt: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
+    pub owf: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub iterationCount: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerInteger,
+    >,
+    pub mac: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PbmParameter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

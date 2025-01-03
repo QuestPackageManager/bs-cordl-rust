@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct SecurityElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub text: *mut quest_hook::libil2cpp::Il2CppString,
-    pub tag: *mut quest_hook::libil2cpp::Il2CppString,
-    pub attributes: *mut crate::System::Collections::ArrayList,
-    pub children: *mut crate::System::Collections::ArrayList,
+    pub text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub children: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
 #[cfg(feature = "System+Security+SecurityElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -275,8 +275,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Security::SecurityElem
 #[derive(Debug)]
 pub struct SecurityElement_SecurityAttribute {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _value: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Security+SecurityElement+SecurityAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

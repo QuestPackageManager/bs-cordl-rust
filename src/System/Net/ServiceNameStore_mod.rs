@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct ServiceNameStore {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub serviceNames: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub serviceNames: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub serviceNameCollection: *mut crate::System::Security::Authentication::ExtendedProtection::ServiceNameCollection,
+    pub serviceNameCollection: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Authentication::ExtendedProtection::ServiceNameCollection,
+    >,
 }
 #[cfg(feature = "System+Net+ServiceNameStore")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

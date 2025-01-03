@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct TaskUpdater_1<TTask: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _tasks: *mut crate::System::Collections::Generic::LinkedList_1<
-        *mut crate::Zenject::TaskUpdater_1_TaskInfo<TTask>,
+    pub _tasks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedList_1<
+            *mut crate::Zenject::TaskUpdater_1_TaskInfo<TTask>,
+        >,
     >,
-    pub _queuedTasks: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::TaskUpdater_1_TaskInfo<TTask>,
+    pub _queuedTasks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::TaskUpdater_1_TaskInfo<TTask>,
+        >,
     >,
     __cordl_phantom_TTask: std::marker::PhantomData<TTask>,
 }

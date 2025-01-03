@@ -5,7 +5,7 @@ pub struct IdnMapping {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub allow_unassigned: bool,
     pub use_std3: bool,
-    pub puny: *mut crate::System::Globalization::Punycode,
+    pub puny: quest_hook::libil2cpp::Gc<crate::System::Globalization::Punycode>,
 }
 #[cfg(feature = "System+Globalization+IdnMapping")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

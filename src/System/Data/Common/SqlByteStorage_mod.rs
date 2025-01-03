@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SqlByteStorage {
     __cordl_parent: crate::System::Data::Common::DataStorage,
-    pub _values: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Data::SqlTypes::SqlByte,
+    pub _values: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Data::SqlTypes::SqlByte>,
     >,
 }
 #[cfg(feature = "System+Data+Common+SqlByteStorage")]

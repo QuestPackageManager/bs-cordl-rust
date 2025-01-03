@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct RevRepContent {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub status: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    pub revCerts: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    pub crls: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    pub status: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    pub revCerts: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    >,
+    pub crls: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+RevRepContent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -4,22 +4,32 @@
 pub struct HydraulicCarSuspensionEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _contractEvent: crate::GlobalNamespace::BasicBeatmapEventType,
-    pub _contractEventValues: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _contractEventValues: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     pub _expandEvent: crate::GlobalNamespace::BasicBeatmapEventType,
-    pub _expandEventValues: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _springJoint: *mut crate::UnityEngine::SpringJoint,
+    pub _expandEventValues: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub _springJoint: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpringJoint>,
     pub _contractDistance: f32,
     pub _expandDistance: f32,
-    pub _rigidbody: *mut crate::UnityEngine::Rigidbody,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _contractEventValuesHashSet: *mut crate::System::Collections::Generic::HashSet_1<
-        i32,
+    pub _rigidbody: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rigidbody>,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
     >,
-    pub _expandEventValuesHashSet: *mut crate::System::Collections::Generic::HashSet_1<
-        i32,
+    pub _contractEventValuesHashSet: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
     >,
-    pub _contractBeatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    pub _expandBeatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _expandEventValuesHashSet: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
+    pub _contractBeatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
+    pub _expandBeatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "HydraulicCarSuspensionEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

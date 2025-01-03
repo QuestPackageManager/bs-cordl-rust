@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct MacCFBBlockCipher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub IV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub cfbV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub cfbOutV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub IV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub cfbV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub cfbOutV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub blockSize: i32,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+MacCFBBlockCipher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

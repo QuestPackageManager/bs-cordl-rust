@@ -197,7 +197,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::Prime
 pub struct Primes_MROutput {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mProvablyComposite: bool,
-    pub mFactor: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub mFactor: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Primes+MROutput")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -312,8 +312,8 @@ for crate::Org::BouncyCastle::Math::Primes_MROutput {
 #[derive(Debug)]
 pub struct Primes_STOutput {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mPrime: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub mPrimeSeed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mPrime: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub mPrimeSeed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mPrimeGenCounter: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Primes+STOutput")]

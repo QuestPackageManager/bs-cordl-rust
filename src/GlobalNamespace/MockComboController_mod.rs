@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct MockComboController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub comboDidChangeEvent: *mut crate::System::Action_1<i32>,
-    pub comboBreakingEventHappenedEvent: *mut crate::System::Action,
+    pub comboDidChangeEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    pub comboBreakingEventHappenedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
 }
 #[cfg(feature = "MockComboController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct CmsEnvelopedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub recipientInfoStore: *mut crate::Org::BouncyCastle::Cms::RecipientInformationStore,
-    pub contentInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
-    pub encAlg: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub unprotectedAttributes: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
+    pub recipientInfoStore: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::RecipientInformationStore,
+    >,
+    pub contentInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+    >,
+    pub encAlg: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub unprotectedAttributes: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Set,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

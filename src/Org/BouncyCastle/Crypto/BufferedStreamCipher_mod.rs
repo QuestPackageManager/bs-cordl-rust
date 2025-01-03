@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BufferedStreamCipher {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::BufferedCipherBase,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::IStreamCipher,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IStreamCipher,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+BufferedStreamCipher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

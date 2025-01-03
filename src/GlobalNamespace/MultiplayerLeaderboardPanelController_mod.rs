@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct MultiplayerLeaderboardPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _items: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MultiplayerLeaderboardPanelItem,
+    pub _items: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MultiplayerLeaderboardPanelItem,
+        >,
     >,
-    pub _scoreProvider: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
+    pub _scoreProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreProvider,
+    >,
 }
 #[cfg(feature = "MultiplayerLeaderboardPanelController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

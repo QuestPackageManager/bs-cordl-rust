@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct JsonSerializerInternalWriter {
     __cordl_parent: crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase,
-    pub _rootType: *mut crate::System::Type,
+    pub _rootType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _rootLevel: i32,
-    pub _serializeStack: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _serializeStack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalWriter")]

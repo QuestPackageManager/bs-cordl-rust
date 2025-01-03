@@ -4,7 +4,7 @@
 pub struct SupplementalDataEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mDataType: i32,
-    pub mData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SupplementalDataEntry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

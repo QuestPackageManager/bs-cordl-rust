@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct OcspResp {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub resp: *mut crate::Org::BouncyCastle::Asn1::Ocsp::OcspResponse,
+    pub resp: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Ocsp::OcspResponse,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+OcspResp")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

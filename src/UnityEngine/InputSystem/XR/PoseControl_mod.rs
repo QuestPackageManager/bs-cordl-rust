@@ -5,12 +5,24 @@ pub struct PoseControl {
     __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<
         crate::UnityEngine::InputSystem::XR::PoseState,
     >,
-    pub _isTracked_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _trackingState_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::IntegerControl,
-    pub _position_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    pub _rotation_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-    pub _velocity_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    pub _angularVelocity_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    pub _isTracked_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _trackingState_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::IntegerControl,
+    >,
+    pub _position_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
+    pub _rotation_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+    >,
+    pub _velocity_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
+    pub _angularVelocity_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+PoseControl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

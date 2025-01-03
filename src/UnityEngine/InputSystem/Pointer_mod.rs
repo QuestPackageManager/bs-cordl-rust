@@ -3,12 +3,24 @@
 #[derive(Debug)]
 pub struct Pointer {
     __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
-    pub _position_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
-    pub _delta_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::DeltaControl,
-    pub _radius_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
-    pub _pressure_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    pub _press_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _displayIndex_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::IntegerControl,
+    pub _position_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    >,
+    pub _delta_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::DeltaControl,
+    >,
+    pub _radius_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    >,
+    pub _pressure_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
+    pub _press_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _displayIndex_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::IntegerControl,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Pointer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

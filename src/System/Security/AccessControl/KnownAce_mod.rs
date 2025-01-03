@@ -4,7 +4,9 @@
 pub struct KnownAce {
     __cordl_parent: crate::System::Security::AccessControl::GenericAce,
     pub access_mask: i32,
-    pub identifier: *mut crate::System::Security::Principal::SecurityIdentifier,
+    pub identifier: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Principal::SecurityIdentifier,
+    >,
 }
 #[cfg(feature = "System+Security+AccessControl+KnownAce")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

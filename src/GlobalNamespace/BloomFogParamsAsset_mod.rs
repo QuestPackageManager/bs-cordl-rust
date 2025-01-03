@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BloomFogParamsAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
-    pub _template: *mut crate::GlobalNamespace::BloomFogParamsBehaviour,
+    pub _template: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomFogParamsBehaviour,
+    >,
 }
 #[cfg(feature = "BloomFogParamsAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct MaterialLightWithIds {
     __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
-    pub _meshRenderer: *mut crate::UnityEngine::MeshRenderer,
+    pub _meshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
     pub _setAlphaOnly: bool,
     pub _alphaIntoColor: bool,
     pub _setColorOnly: bool,
-    pub _colorProperty: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _colorProperty: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _color: crate::UnityEngine::Color,
     pub _alpha: f32,
     pub _propertyId: i32,

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ScrollToTopOnEnable {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _scrollView: *mut crate::HMUI::ScrollView,
+    pub _scrollView: quest_hook::libil2cpp::Gc<crate::HMUI::ScrollView>,
 }
 #[cfg(feature = "HMUI+ScrollToTopOnEnable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

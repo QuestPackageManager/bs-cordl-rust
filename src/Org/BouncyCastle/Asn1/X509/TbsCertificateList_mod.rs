@@ -5,7 +5,7 @@
 #[derive(Debug)]
 pub struct RevokedCertificatesEnumeration_TbsCertificateList_RevokedCertificatesEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub e: *mut crate::System::Collections::IEnumerator,
+    pub e: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration+RevokedCertificatesEnumerator"
@@ -125,14 +125,26 @@ for crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_TbsCert
 #[derive(Debug)]
 pub struct TbsCertificateList {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub signature: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub issuer: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
-    pub thisUpdate: *mut crate::Org::BouncyCastle::Asn1::X509::Time,
-    pub nextUpdate: *mut crate::Org::BouncyCastle::Asn1::X509::Time,
-    pub revokedCertificates: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    pub crlExtensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    pub seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub signature: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub issuer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Name,
+    >,
+    pub thisUpdate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::Time,
+    >,
+    pub nextUpdate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::Time,
+    >,
+    pub revokedCertificates: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    >,
+    pub crlExtensions: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -355,7 +367,7 @@ for crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList {
 #[derive(Debug)]
 pub struct TbsCertificateList_RevokedCertificatesEnumeration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub en: *mut crate::System::Collections::IEnumerable,
+    pub en: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration"

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct BeatmapCallbacksUpdater {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
     pub _prevSongTime: f32,
 }
 #[cfg(feature = "BeatmapCallbacksUpdater")]

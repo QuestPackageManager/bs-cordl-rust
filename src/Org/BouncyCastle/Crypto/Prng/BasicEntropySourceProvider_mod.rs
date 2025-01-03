@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BasicEntropySourceProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mSecureRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub mSecureRandom: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
     pub mPredictionResistant: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+BasicEntropySourceProvider")]
@@ -107,7 +109,9 @@ for crate::Org::BouncyCastle::Crypto::Prng::BasicEntropySourceProvider {
 #[derive(Debug)]
 pub struct BasicEntropySourceProvider_BasicEntropySource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mSecureRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub mSecureRandom: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
     pub mPredictionResistant: bool,
     pub mEntropySize: i32,
 }

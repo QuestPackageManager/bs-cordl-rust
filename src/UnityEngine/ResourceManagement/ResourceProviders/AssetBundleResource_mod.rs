@@ -3,20 +3,32 @@
 #[derive(Debug)]
 pub struct AssetBundleResource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_AssetBundle: *mut crate::UnityEngine::AssetBundle,
-    pub m_RequestOperation: *mut crate::UnityEngine::AsyncOperation,
-    pub m_WebRequestQueueOperation: *mut crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
+    pub m_AssetBundle: quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
+    pub m_RequestOperation: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AsyncOperation,
+    >,
+    pub m_WebRequestQueueOperation: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
+    >,
     pub m_ProvideHandle: crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
-    pub m_Options: *mut crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleRequestOptions,
+    pub m_Options: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleRequestOptions,
+    >,
     pub m_RequestCompletedCallbackCalled: bool,
     pub m_Retries: i32,
     pub m_Source: crate::UnityEngine::ResourceManagement::Util::BundleSource,
     pub m_BytesToDownload: i64,
     pub m_DownloadedBytes: i64,
     pub m_Completed: bool,
-    pub m_UnloadOperation: *mut crate::UnityEngine::AssetBundleUnloadOperation,
-    pub m_TransformedInternalId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_PreloadRequest: *mut crate::UnityEngine::AssetBundleRequest,
+    pub m_UnloadOperation: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AssetBundleUnloadOperation,
+    >,
+    pub m_TransformedInternalId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_PreloadRequest: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AssetBundleRequest,
+    >,
     pub m_PreloadCompleted: bool,
     pub m_LastDownloadedByteCount: u64,
     pub m_TimeoutTimer: f32,

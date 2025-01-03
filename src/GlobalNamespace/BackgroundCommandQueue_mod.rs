@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct BackgroundCommandQueue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _sync: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _commandsQueue: *mut crate::System::Collections::Generic::Queue_1<
-        *mut crate::GlobalNamespace::IBackgroundCommand,
+    pub _sync: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _commandsQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<
+            *mut crate::GlobalNamespace::IBackgroundCommand,
+        >,
     >,
     pub _isRunning: bool,
 }

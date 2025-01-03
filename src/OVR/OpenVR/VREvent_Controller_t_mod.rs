@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_Controller_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VREvent_Controller_t {
     pub button: u32,
 }

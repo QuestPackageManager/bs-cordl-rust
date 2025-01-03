@@ -3,17 +3,27 @@
 #[derive(Debug)]
 pub struct VerticalVirtualizationController_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::CollectionVirtualizationController,
-    pub m_Pool: *mut crate::UnityEngine::Pool::ObjectPool_1<T>,
-    pub m_CollectionView: *mut crate::UnityEngine::UIElements::BaseVerticalCollectionView,
-    pub m_ActiveItems: *mut crate::System::Collections::Generic::List_1<T>,
+    pub m_Pool: quest_hook::libil2cpp::Gc<crate::UnityEngine::Pool::ObjectPool_1<T>>,
+    pub m_CollectionView: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+    >,
+    pub m_ActiveItems: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<T>,
+    >,
     pub m_DraggedItem: T,
     pub m_LastFocusedElementIndex: i32,
-    pub m_LastFocusedElementTreeChildIndexes: *mut crate::System::Collections::Generic::List_1<
-        i32,
+    pub m_LastFocusedElementTreeChildIndexes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
     >,
-    pub m_VisibleItemPredicateDelegate: *mut crate::System::Func_2<T, bool>,
-    pub m_ScrollInsertionList: *mut crate::System::Collections::Generic::List_1<T>,
-    pub m_EmptyRows: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_VisibleItemPredicateDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<T, bool>,
+    >,
+    pub m_ScrollInsertionList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<T>,
+    >,
+    pub m_EmptyRows: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+UIElements+VerticalVirtualizationController_1")]

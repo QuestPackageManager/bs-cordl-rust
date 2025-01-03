@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct NoVRInputModule {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub onProcessMousePressEvent: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::GameObject,
+    pub onProcessMousePressEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::GameObject>,
     >,
-    pub pointerDidClickEvent: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::EventSystems::PointerEventData,
+    pub pointerDidClickEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::EventSystems::PointerEventData>,
     >,
 }
 #[cfg(feature = "NoVRInputModule")]

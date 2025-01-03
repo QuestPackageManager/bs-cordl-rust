@@ -3,19 +3,21 @@
 #[derive(Debug)]
 pub struct FileSystemEnumerable_1<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _enumerator: *mut crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<
-        TResult,
+    pub _enumerator: quest_hook::libil2cpp::Gc<
+        crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<
+            TResult,
+        >,
     >,
-    pub _transform: *mut crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<
-        TResult,
+    pub _transform: quest_hook::libil2cpp::Gc<
+        crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult>,
     >,
-    pub _options: *mut crate::System::IO::EnumerationOptions,
-    pub _directory: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _ShouldIncludePredicate_k__BackingField: *mut crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<
-        TResult,
+    pub _options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
+    pub _directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _ShouldIncludePredicate_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult>,
     >,
-    pub _ShouldRecursePredicate_k__BackingField: *mut crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<
-        TResult,
+    pub _ShouldRecursePredicate_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult>,
     >,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
@@ -234,8 +236,8 @@ pub struct FileSystemEnumerable_1_DelegateEnumerator<
     TResult: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::System::IO::Enumeration::FileSystemEnumerator_1<TResult>,
-    pub _enumerable: *mut crate::System::IO::Enumeration::FileSystemEnumerable_1<
-        TResult,
+    pub _enumerable: quest_hook::libil2cpp::Gc<
+        crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult>,
     >,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }

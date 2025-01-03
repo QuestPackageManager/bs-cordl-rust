@@ -8,22 +8,28 @@ pub struct StateBuffer_3<
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _currentIndex: i32,
-    pub _buffer: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
+    pub _buffer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
+                TStateTable,
+                TType,
+                TState,
+            >,
+        >,
+    >,
+    pub _interpolator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
             TStateTable,
             TType,
             TState,
         >,
     >,
-    pub _interpolator: *mut crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
-        TStateTable,
-        TType,
-        TState,
-    >,
-    pub _smoother: *mut crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
-        TStateTable,
-        TType,
-        TState,
+    pub _smoother: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
+            TStateTable,
+            TType,
+            TState,
+        >,
     >,
     __cordl_phantom_TStateTable: std::marker::PhantomData<TStateTable>,
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
@@ -615,7 +621,7 @@ for crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<TStateTable, TType, 
 }
 #[cfg(feature = "StateBuffer_3+TimestampedStateTable")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StateBuffer_3_TimestampedStateTable<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,

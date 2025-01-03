@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct DeactivateMenuControllersOnFocusCaptureOrTrackingLost {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _vrControllers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::VRController,
+    pub _vrControllers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::VRController>,
     >,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
 }
 #[cfg(feature = "DeactivateMenuControllersOnFocusCaptureOrTrackingLost")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct GlvTypeBParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_beta: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub m_lambda: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub m_splitParams: *mut crate::Org::BouncyCastle::Math::EC::Endo::ScalarSplitParameters,
+    pub m_beta: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub m_lambda: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub m_splitParams: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Endo::ScalarSplitParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+GlvTypeBParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -10,14 +10,14 @@ pub struct LightTransformGroup_3<
     pub _mirrorX: bool,
     pub _mirrorY: bool,
     pub _mirrorZ: bool,
-    pub _xTransforms: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Transform,
+    pub _xTransforms: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Transform>,
     >,
-    pub _yTransforms: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Transform,
+    pub _yTransforms: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Transform>,
     >,
-    pub _zTransforms: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Transform,
+    pub _zTransforms: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Transform>,
     >,
     __cordl_phantom_TX: std::marker::PhantomData<TX>,
     __cordl_phantom_TY: std::marker::PhantomData<TY>,

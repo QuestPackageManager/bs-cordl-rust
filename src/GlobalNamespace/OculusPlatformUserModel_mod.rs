@@ -3,17 +3,17 @@
 #[derive(Debug)]
 pub struct OculusPlatformUserModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _platformInit: *mut crate::BeatSaber::Init::IPlatformInit,
-    pub _userInfoTask: *mut crate::System::Threading::Tasks::Task_1<
-        *mut crate::GlobalNamespace::UserInfo,
+    pub _platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
+    pub _userInfoTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<*mut crate::GlobalNamespace::UserInfo>,
     >,
-    pub _userInfo: *mut crate::GlobalNamespace::UserInfo,
-    pub _friendsUserIds: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _userInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
+    pub _friendsUserIds: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _lastXPlatformTokenStatusChange: f32,
-    pub platformUserInfoDidChangeEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::UserInfo,
+    pub platformUserInfoDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::UserInfo>,
     >,
 }
 #[cfg(feature = "OculusPlatformUserModel")]
@@ -283,7 +283,7 @@ for crate::GlobalNamespace::OculusPlatformUserModel {
 }
 #[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<
@@ -291,7 +291,7 @@ pub struct OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
             *mut crate::Oculus::Platform::Models::User,
         >,
     >,
-    pub userId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
         *mut crate::Oculus::Platform::Message_1<
             *mut crate::Oculus::Platform::Models::User,

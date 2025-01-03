@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct PlayerEditorConnectionEvents {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub messageTypeSubscribers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageTypeSubscribers,
+    pub messageTypeSubscribers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageTypeSubscribers,
+        >,
     >,
-    pub connectionEvent: *mut crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_ConnectionChangeEvent,
-    pub disconnectionEvent: *mut crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_ConnectionChangeEvent,
+    pub connectionEvent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_ConnectionChangeEvent,
+    >,
+    pub disconnectionEvent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_ConnectionChangeEvent,
+    >,
 }
 #[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -272,9 +278,11 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
 #[derive(Debug)]
 pub struct PlayerEditorConnectionEvents_MessageTypeSubscribers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_messageTypeId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_messageTypeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub subscriberCount: i32,
-    pub messageCallback: *mut crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent,
+    pub messageCallback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent,
+    >,
 }
 #[cfg(
     feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageTypeSubscribers"

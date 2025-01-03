@@ -1,25 +1,61 @@
 #[cfg(feature = "OVR+OpenVR+IVRInput")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IVRInput {
-    pub SetActionManifestPath: *mut crate::OVR::OpenVR::IVRInput__SetActionManifestPath,
-    pub GetActionSetHandle: *mut crate::OVR::OpenVR::IVRInput__GetActionSetHandle,
-    pub GetActionHandle: *mut crate::OVR::OpenVR::IVRInput__GetActionHandle,
-    pub GetInputSourceHandle: *mut crate::OVR::OpenVR::IVRInput__GetInputSourceHandle,
-    pub UpdateActionState: *mut crate::OVR::OpenVR::IVRInput__UpdateActionState,
-    pub GetDigitalActionData: *mut crate::OVR::OpenVR::IVRInput__GetDigitalActionData,
-    pub GetAnalogActionData: *mut crate::OVR::OpenVR::IVRInput__GetAnalogActionData,
-    pub GetPoseActionData: *mut crate::OVR::OpenVR::IVRInput__GetPoseActionData,
-    pub GetSkeletalActionData: *mut crate::OVR::OpenVR::IVRInput__GetSkeletalActionData,
-    pub GetSkeletalBoneData: *mut crate::OVR::OpenVR::IVRInput__GetSkeletalBoneData,
-    pub GetSkeletalBoneDataCompressed: *mut crate::OVR::OpenVR::IVRInput__GetSkeletalBoneDataCompressed,
-    pub DecompressSkeletalBoneData: *mut crate::OVR::OpenVR::IVRInput__DecompressSkeletalBoneData,
-    pub TriggerHapticVibrationAction: *mut crate::OVR::OpenVR::IVRInput__TriggerHapticVibrationAction,
-    pub GetActionOrigins: *mut crate::OVR::OpenVR::IVRInput__GetActionOrigins,
-    pub GetOriginLocalizedName: *mut crate::OVR::OpenVR::IVRInput__GetOriginLocalizedName,
-    pub GetOriginTrackedDeviceInfo: *mut crate::OVR::OpenVR::IVRInput__GetOriginTrackedDeviceInfo,
-    pub ShowActionOrigins: *mut crate::OVR::OpenVR::IVRInput__ShowActionOrigins,
-    pub ShowBindingsForActionSet: *mut crate::OVR::OpenVR::IVRInput__ShowBindingsForActionSet,
+    pub SetActionManifestPath: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRInput__SetActionManifestPath,
+    >,
+    pub GetActionSetHandle: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRInput__GetActionSetHandle,
+    >,
+    pub GetActionHandle: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRInput__GetActionHandle,
+    >,
+    pub GetInputSourceHandle: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRInput__GetInputSourceHandle,
+    >,
+    pub UpdateActionState: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRInput__UpdateActionState,
+    >,
+    pub GetDigitalActionData: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRInput__GetDigitalActionData,
+    >,
+    pub GetAnalogActionData: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRInput__GetAnalogActionData,
+    >,
+    pub GetPoseActionData: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRInput__GetPoseActionData,
+    >,
+    pub GetSkeletalActionData: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRInput__GetSkeletalActionData,
+    >,
+    pub GetSkeletalBoneData: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRInput__GetSkeletalBoneData,
+    >,
+    pub GetSkeletalBoneDataCompressed: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRInput__GetSkeletalBoneDataCompressed,
+    >,
+    pub DecompressSkeletalBoneData: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRInput__DecompressSkeletalBoneData,
+    >,
+    pub TriggerHapticVibrationAction: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRInput__TriggerHapticVibrationAction,
+    >,
+    pub GetActionOrigins: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRInput__GetActionOrigins,
+    >,
+    pub GetOriginLocalizedName: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRInput__GetOriginLocalizedName,
+    >,
+    pub GetOriginTrackedDeviceInfo: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRInput__GetOriginTrackedDeviceInfo,
+    >,
+    pub ShowActionOrigins: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRInput__ShowActionOrigins,
+    >,
+    pub ShowBindingsForActionSet: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRInput__ShowBindingsForActionSet,
+    >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

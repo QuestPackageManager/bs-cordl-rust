@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct DefaultTlsEncryptionCredentials {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsEncryptionCredentials,
-    pub mContext: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
-    pub mCertificate: *mut crate::Org::BouncyCastle::Crypto::Tls::Certificate,
-    pub mPrivateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    pub mContext: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+    >,
+    pub mCertificate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+    >,
+    pub mPrivateKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsEncryptionCredentials")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

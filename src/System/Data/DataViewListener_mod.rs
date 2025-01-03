@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct DataViewListener {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dvWeak: *mut crate::System::WeakReference,
-    pub _table: *mut crate::System::Data::DataTable,
-    pub _index: *mut crate::System::Data::Index,
+    pub _dvWeak: quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
+    pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    pub _index: quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
     pub _objectID: i32,
 }
 #[cfg(feature = "System+Data+DataViewListener")]

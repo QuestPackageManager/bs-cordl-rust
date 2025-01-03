@@ -4,8 +4,8 @@
 pub struct IsoDateTimeConverter {
     __cordl_parent: crate::Newtonsoft::Json::Converters::DateTimeConverterBase,
     pub _dateTimeStyles: crate::System::Globalization::DateTimeStyles,
-    pub _dateTimeFormat: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _culture: *mut crate::System::Globalization::CultureInfo,
+    pub _dateTimeFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+IsoDateTimeConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

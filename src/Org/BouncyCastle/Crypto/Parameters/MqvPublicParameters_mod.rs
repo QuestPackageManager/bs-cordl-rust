@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct MqvPublicParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub staticPublicKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
-    pub ephemeralPublicKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
+    pub staticPublicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
+    >,
+    pub ephemeralPublicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+MqvPublicParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

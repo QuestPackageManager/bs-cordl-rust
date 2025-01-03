@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct FilterStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub s: *mut crate::System::IO::Stream,
+    pub s: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+FilterStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

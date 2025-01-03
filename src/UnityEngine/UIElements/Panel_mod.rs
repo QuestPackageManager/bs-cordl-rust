@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct Panel {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVisualElementPanel,
-    pub m_RootContainer: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_VisualTreeUpdater: *mut crate::UnityEngine::UIElements::VisualTreeUpdater,
-    pub m_StylePropertyAnimationSystem: *mut crate::UnityEngine::UIElements::IStylePropertyAnimationSystem,
-    pub m_PanelName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_RootContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_VisualTreeUpdater: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualTreeUpdater,
+    >,
+    pub m_StylePropertyAnimationSystem: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IStylePropertyAnimationSystem,
+    >,
+    pub m_PanelName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Version: u32,
     pub m_RepaintVersion: u32,
     pub m_HierarchyVersion: u32,
@@ -15,19 +21,33 @@ pub struct Panel {
     pub m_MarkerLayout: crate::Unity::Profiling::ProfilerMarker,
     pub m_MarkerBindings: crate::Unity::Profiling::ProfilerMarker,
     pub m_MarkerAnimations: crate::Unity::Profiling::ProfilerMarker,
-    pub _dispatcher_k__BackingField: *mut crate::UnityEngine::UIElements::EventDispatcher,
-    pub m_Scheduler: *mut crate::UnityEngine::UIElements::TimerEventScheduler,
-    pub _ownerObject_k__BackingField: *mut crate::UnityEngine::ScriptableObject,
+    pub _dispatcher_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventDispatcher,
+    >,
+    pub m_Scheduler: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TimerEventScheduler,
+    >,
+    pub _ownerObject_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ScriptableObject,
+    >,
     pub _contextType_k__BackingField: crate::UnityEngine::UIElements::ContextType,
-    pub _saveViewData_k__BackingField: *mut crate::UnityEngine::UIElements::SavePersistentViewData,
-    pub _getViewDataDictionary_k__BackingField: *mut crate::UnityEngine::UIElements::GetViewDataDictionary,
-    pub _focusController_k__BackingField: *mut crate::UnityEngine::UIElements::FocusController,
+    pub _saveViewData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::SavePersistentViewData,
+    >,
+    pub _getViewDataDictionary_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::GetViewDataDictionary,
+    >,
+    pub _focusController_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::FocusController,
+    >,
     pub _IMGUIEventInterests_k__BackingField: crate::UnityEngine::EventInterests,
     pub m_JustReceivedFocus: bool,
     pub _IMGUIContainersCount_k__BackingField: i32,
-    pub _rootIMGUIContainer_k__BackingField: *mut crate::UnityEngine::UIElements::IMGUIContainer,
-    pub m_StandardShader: *mut crate::UnityEngine::Shader,
-    pub m_Atlas: *mut crate::UnityEngine::UIElements::AtlasBase,
+    pub _rootIMGUIContainer_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IMGUIContainer,
+    >,
+    pub m_StandardShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub m_Atlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::AtlasBase>,
     pub m_ValidatingLayout: bool,
 }
 #[cfg(feature = "UnityEngine+UIElements+Panel")]

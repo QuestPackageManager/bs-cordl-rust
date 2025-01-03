@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct LinkedListNode_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub list: *mut crate::System::Collections::Generic::LinkedList_1<T>,
-    pub next: *mut crate::System::Collections::Generic::LinkedListNode_1<T>,
-    pub prev: *mut crate::System::Collections::Generic::LinkedListNode_1<T>,
+    pub list: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedList_1<T>,
+    >,
+    pub next: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedListNode_1<T>,
+    >,
+    pub prev: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedListNode_1<T>,
+    >,
     pub item: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

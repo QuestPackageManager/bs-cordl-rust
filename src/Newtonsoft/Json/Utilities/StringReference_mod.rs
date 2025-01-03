@@ -1,8 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+Utilities+StringReference")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StringReference {
-    pub _chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub _chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub _startIndex: i32,
     pub _length: i32,
 }

@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct ByteArrayNetSerializable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _length: i32,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _allowEmpty: bool,
     pub _minLength: i32,
     pub _maxLength: i32,

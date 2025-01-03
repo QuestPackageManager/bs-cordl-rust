@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct XmlToDatasetMap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _tableSchemaMap: *mut crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable,
-    pub _lastTableSchemaInfo: *mut crate::System::Data::XmlToDatasetMap_TableSchemaInfo,
+    pub _tableSchemaMap: quest_hook::libil2cpp::Gc<
+        crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable,
+    >,
+    pub _lastTableSchemaInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Data::XmlToDatasetMap_TableSchemaInfo,
+    >,
 }
 #[cfg(feature = "System+Data+XmlToDatasetMap")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -340,8 +344,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::XmlToDatasetMap 
 #[derive(Debug)]
 pub struct XmlToDatasetMap_TableSchemaInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub TableSchema: *mut crate::System::Data::DataTable,
-    pub ColumnsSchemaMap: *mut crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable,
+    pub TableSchema: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    pub ColumnsSchemaMap: quest_hook::libil2cpp::Gc<
+        crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable,
+    >,
 }
 #[cfg(feature = "System+Data+XmlToDatasetMap+TableSchemaInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -399,7 +405,9 @@ for crate::System::Data::XmlToDatasetMap_TableSchemaInfo {
 #[derive(Debug)]
 pub struct XmlToDatasetMap_XmlNodeIdHashtable {
     __cordl_parent: crate::System::Collections::Hashtable,
-    pub _id: *mut crate::System::Data::XmlToDatasetMap_XmlNodeIdentety,
+    pub _id: quest_hook::libil2cpp::Gc<
+        crate::System::Data::XmlToDatasetMap_XmlNodeIdentety,
+    >,
 }
 #[cfg(feature = "System+Data+XmlToDatasetMap+XmlNodeIdHashtable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -513,8 +521,8 @@ for crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
 #[derive(Debug)]
 pub struct XmlToDatasetMap_XmlNodeIdentety {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub LocalName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub NamespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
+    pub LocalName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub NamespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Data+XmlToDatasetMap+XmlNodeIdentety")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

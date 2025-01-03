@@ -3,17 +3,27 @@
 #[derive(Debug)]
 pub struct CurveAnimation {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _bezierCurve: *mut crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurve,
+    pub _bezierCurve: quest_hook::libil2cpp::Gc<
+        crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurve,
+    >,
     pub _duration: f32,
     pub _delay: f32,
-    pub _speedCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub _speedCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub _playOnAwake: bool,
-    pub onStart: *mut crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent,
-    pub afterDelay: *mut crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent,
-    pub onIterate: *mut crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent_1<
-        crate::UnityEngine::Vector3,
+    pub onStart: quest_hook::libil2cpp::Gc<
+        crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent,
     >,
-    pub onFinish: *mut crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent,
+    pub afterDelay: quest_hook::libil2cpp::Gc<
+        crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent,
+    >,
+    pub onIterate: quest_hook::libil2cpp::Gc<
+        crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent_1<
+            crate::UnityEngine::Vector3,
+        >,
+    >,
+    pub onFinish: quest_hook::libil2cpp::Gc<
+        crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent,
+    >,
     pub _isPlaying_k__BackingField: bool,
 }
 #[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation")]

@@ -3,25 +3,55 @@
 #[derive(Debug)]
 pub struct HealthWarningFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub _appInitScenesTransitionSetupDataContainer: *mut crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO,
-    pub _selectLanguageViewController: *mut crate::GlobalNamespace::SelectLanguageViewController,
-    pub _selectRegionViewController: *mut crate::GlobalNamespace::SelectRegionViewController,
-    pub _eulaViewController: *mut crate::GlobalNamespace::EulaViewController,
-    pub _privacyPolicyViewController: *mut crate::GlobalNamespace::PrivacyPolicyViewController,
-    pub _healthWarningViewController: *mut crate::GlobalNamespace::HealthWarningViewController,
-    pub _explicitContentWarningViewController: *mut crate::GlobalNamespace::ExplicitContentWarningViewController,
-    pub _noUserAgeWarningViewController: *mut crate::GlobalNamespace::NoUserAgeWarningViewController,
-    pub _endOfLifeNoticeViewController: *mut crate::GlobalNamespace::EndOfLifeNoticeViewController,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _fadeInOut: *mut crate::GlobalNamespace::FadeInOutController,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
-    pub _initData: *mut crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData,
-    pub _fileStorage: *mut crate::GlobalNamespace::IFileStorage,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub _platformInit: *mut crate::BeatSaber::Init::IPlatformInit,
-    pub _viewControllerTitles: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::HMUI::ViewController,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _appInitScenesTransitionSetupDataContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO,
+    >,
+    pub _selectLanguageViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SelectLanguageViewController,
+    >,
+    pub _selectRegionViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SelectRegionViewController,
+    >,
+    pub _eulaViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EulaViewController,
+    >,
+    pub _privacyPolicyViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PrivacyPolicyViewController,
+    >,
+    pub _healthWarningViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HealthWarningViewController,
+    >,
+    pub _explicitContentWarningViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ExplicitContentWarningViewController,
+    >,
+    pub _noUserAgeWarningViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoUserAgeWarningViewController,
+    >,
+    pub _endOfLifeNoticeViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EndOfLifeNoticeViewController,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _fadeInOut: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FadeInOutController,
+    >,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData,
+    >,
+    pub _fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
+    pub _viewControllerTitles: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::HMUI::ViewController,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub _selectedRegion: crate::GlobalNamespace::SelectRegionViewController_Region,
     pub _openedWithLanguage: crate::BGLib::Polyglot::Language,
@@ -298,7 +328,9 @@ for crate::GlobalNamespace::HealthWarningFlowCoordinator {
 #[derive(Debug)]
 pub struct HealthWarningFlowCoordinator_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub nextScenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    pub nextScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    >,
 }
 #[cfg(feature = "HealthWarningFlowCoordinator+InitData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

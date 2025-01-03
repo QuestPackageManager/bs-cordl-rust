@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct ListDictionaryInternal {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub head: *mut crate::System::Collections::ListDictionaryInternal_DictionaryNode,
+    pub head: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ListDictionaryInternal_DictionaryNode,
+    >,
     pub version: i32,
     pub count: i32,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+ListDictionaryInternal")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -283,9 +285,11 @@ for crate::System::Collections::ListDictionaryInternal {
 #[derive(Debug)]
 pub struct ListDictionaryInternal_DictionaryNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub key: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub value: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub next: *mut crate::System::Collections::ListDictionaryInternal_DictionaryNode,
+    pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub next: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ListDictionaryInternal_DictionaryNode,
+    >,
 }
 #[cfg(feature = "System+Collections+ListDictionaryInternal+DictionaryNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -343,8 +347,12 @@ for crate::System::Collections::ListDictionaryInternal_DictionaryNode {
 #[derive(Debug)]
 pub struct ListDictionaryInternal_NodeEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub list: *mut crate::System::Collections::ListDictionaryInternal,
-    pub current: *mut crate::System::Collections::ListDictionaryInternal_DictionaryNode,
+    pub list: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ListDictionaryInternal,
+    >,
+    pub current: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ListDictionaryInternal_DictionaryNode,
+    >,
     pub version: i32,
     pub start: bool,
 }
@@ -505,7 +513,9 @@ for crate::System::Collections::ListDictionaryInternal_NodeEnumerator {
 #[derive(Debug)]
 pub struct ListDictionaryInternal_NodeKeyValueCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub list: *mut crate::System::Collections::ListDictionaryInternal,
+    pub list: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ListDictionaryInternal,
+    >,
     pub isKeys: bool,
 }
 #[cfg(feature = "System+Collections+ListDictionaryInternal+NodeKeyValueCollection")]
@@ -665,8 +675,12 @@ for crate::System::Collections::ListDictionaryInternal_NodeKeyValueCollection {
 #[derive(Debug)]
 pub struct NodeKeyValueCollection_ListDictionaryInternal_NodeKeyValueEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub list: *mut crate::System::Collections::ListDictionaryInternal,
-    pub current: *mut crate::System::Collections::ListDictionaryInternal_DictionaryNode,
+    pub list: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ListDictionaryInternal,
+    >,
+    pub current: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ListDictionaryInternal_DictionaryNode,
+    >,
     pub version: i32,
     pub isKeys: bool,
     pub start: bool,

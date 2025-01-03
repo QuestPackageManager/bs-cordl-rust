@@ -3,24 +3,30 @@
 #[derive(Debug)]
 pub struct SceneContext {
     __cordl_parent: crate::Zenject::RunnableContext,
-    pub PreInstall: *mut crate::System::Action,
-    pub PostInstall: *mut crate::System::Action,
-    pub PreResolve: *mut crate::System::Action,
-    pub PostResolve: *mut crate::System::Action,
-    pub OnPreInstall: *mut crate::UnityEngine::Events::UnityEvent,
-    pub OnPostInstall: *mut crate::UnityEngine::Events::UnityEvent,
-    pub OnPreResolve: *mut crate::UnityEngine::Events::UnityEvent,
-    pub OnPostResolve: *mut crate::UnityEngine::Events::UnityEvent,
+    pub PreInstall: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub PostInstall: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub PreResolve: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub PostResolve: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub OnPreInstall: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
+    pub OnPostInstall: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
+    pub OnPreResolve: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
+    pub OnPostResolve: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
     pub _parentNewObjectsUnderSceneContext: bool,
-    pub _contractNames: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _contractNames: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _parentContractNames: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _parentContractNames: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _decoratorContexts: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::SceneDecoratorContext,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _decoratorContexts: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::SceneDecoratorContext,
+        >,
     >,
     pub _hasInstalled: bool,
     pub _hasResolved: bool,

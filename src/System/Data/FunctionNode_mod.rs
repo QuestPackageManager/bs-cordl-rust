@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct FunctionNode {
     __cordl_parent: crate::System::Data::ExpressionNode,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _info: i32,
     pub _argumentCount: i32,
-    pub _arguments: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Data::ExpressionNode,
+    pub _arguments: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::ExpressionNode>,
     >,
-    pub _capturedLimiter: *mut crate::System::Data::TypeLimiter,
+    pub _capturedLimiter: quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter>,
 }
 #[cfg(feature = "System+Data+FunctionNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

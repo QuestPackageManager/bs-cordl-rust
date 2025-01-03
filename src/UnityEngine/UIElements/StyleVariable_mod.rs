@@ -1,11 +1,13 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleVariable")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StyleVariable {
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
-    pub handles: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::UIElements::StyleValueHandle,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+    pub handles: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::UIElements::StyleValueHandle,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleVariable")]

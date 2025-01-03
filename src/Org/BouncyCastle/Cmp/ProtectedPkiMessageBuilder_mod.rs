@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct ProtectedPkiMessageBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub hdrBuilBuilder: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
-    pub body: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiBody,
-    pub generalInfos: *mut crate::System::Collections::IList,
-    pub extraCerts: *mut crate::System::Collections::IList,
+    pub hdrBuilBuilder: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder,
+    >,
+    pub body: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiBody>,
+    pub generalInfos: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub extraCerts: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Cmp+ProtectedPkiMessageBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

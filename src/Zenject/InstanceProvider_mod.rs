@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct InstanceProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _instance: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _instanceType: *mut crate::System::Type,
-    pub _container: *mut crate::Zenject::DiContainer,
+    pub _instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _instanceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
 }
 #[cfg(feature = "Zenject+InstanceProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

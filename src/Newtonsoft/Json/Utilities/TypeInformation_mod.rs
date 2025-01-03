@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TypeInformation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Type_k__BackingField: *mut crate::System::Type,
+    pub _Type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _TypeCode_k__BackingField: crate::Newtonsoft::Json::Utilities::PrimitiveTypeCode,
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+TypeInformation")]

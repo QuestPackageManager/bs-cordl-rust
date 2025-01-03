@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct XmlSchemaSubstitutionGroup {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaObject,
-    pub membersList: *mut crate::System::Collections::ArrayList,
-    pub examplar: *mut crate::System::Xml::XmlQualifiedName,
+    pub membersList: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub examplar: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSubstitutionGroup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

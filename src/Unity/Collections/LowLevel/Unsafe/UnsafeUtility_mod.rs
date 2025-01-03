@@ -405,7 +405,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+AlignOfHelper_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UnsafeUtility_AlignOfHelper_1<T: quest_hook::libil2cpp::Type> {
     pub dummy: u8,
     pub data: T,
@@ -434,7 +434,7 @@ impl<
 > crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_AlignOfHelper_1<T> {}
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+TypeFlagsCache_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UnsafeUtility_TypeFlagsCache_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

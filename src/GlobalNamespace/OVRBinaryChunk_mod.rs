@@ -1,8 +1,8 @@
 #[cfg(feature = "OVRBinaryChunk")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRBinaryChunk {
-    pub chunkStream: *mut crate::System::IO::Stream,
+    pub chunkStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub chunkLength: u32,
     pub chunkStart: i64,
 }

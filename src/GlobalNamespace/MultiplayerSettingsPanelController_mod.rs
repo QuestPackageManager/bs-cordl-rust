@@ -3,14 +3,24 @@
 #[derive(Debug)]
 pub struct MultiplayerSettingsPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _serverCodeView: *mut crate::GlobalNamespace::ServerCodeView,
-    pub _spectateToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _connectionSettingsWrapper: *mut crate::UnityEngine::GameObject,
-    pub _spectateSettingsWrapper: *mut crate::UnityEngine::GameObject,
-    pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
-    pub _lobbyPlayerData: *mut crate::GlobalNamespace::ILobbyPlayerData,
+    pub _serverCodeView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ServerCodeView,
+    >,
+    pub _spectateToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _connectionSettingsWrapper: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _spectateSettingsWrapper: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
+    pub _lobbyPlayerData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyPlayerData,
+    >,
     pub _refreshed: bool,
-    pub playerActiveStateChangedEvent: *mut crate::System::Action_1<bool>,
+    pub playerActiveStateChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<bool>,
+    >,
 }
 #[cfg(feature = "MultiplayerSettingsPanelController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

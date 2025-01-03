@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct TrackedDevice {
     __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
-    pub _trackingState_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::IntegerControl,
-    pub _isTracked_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _devicePosition_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    pub _deviceRotation_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+    pub _trackingState_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::IntegerControl,
+    >,
+    pub _isTracked_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _devicePosition_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
+    pub _deviceRotation_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+TrackedDevice")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

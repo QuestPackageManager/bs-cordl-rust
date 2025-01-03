@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct HololensHand {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRController,
-    pub _deviceVelocity_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    pub _airTap_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _sourceLossRisk_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    pub _sourceLossMitigationDirection_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    pub _deviceVelocity_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
+    pub _airTap_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _sourceLossRisk_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
+    pub _sourceLossMitigationDirection_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
 }
 #[cfg(feature = "UnityEngine+XR+WindowsMR+Input+HololensHand")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

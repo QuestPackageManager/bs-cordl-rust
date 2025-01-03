@@ -5,8 +5,12 @@ pub struct BoundsIntField {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<
         crate::UnityEngine::BoundsInt,
     >,
-    pub m_PositionField: *mut crate::UnityEngine::UIElements::Vector3IntField,
-    pub m_SizeField: *mut crate::UnityEngine::UIElements::Vector3IntField,
+    pub m_PositionField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Vector3IntField,
+    >,
+    pub m_SizeField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Vector3IntField,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BoundsIntField")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -197,12 +201,24 @@ pub struct BoundsIntField_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         crate::UnityEngine::BoundsInt,
     >,
-    pub m_PositionXValue: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_PositionYValue: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_PositionZValue: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_SizeXValue: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_SizeYValue: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_SizeZValue: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    pub m_PositionXValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub m_PositionYValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub m_PositionZValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub m_SizeXValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub m_SizeYValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub m_SizeZValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

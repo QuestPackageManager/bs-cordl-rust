@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BasicGcmMultiplier {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub H: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub H: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+BasicGcmMultiplier")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

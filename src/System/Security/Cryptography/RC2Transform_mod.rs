@@ -7,7 +7,7 @@ pub struct RC2Transform {
     pub R1: u16,
     pub R2: u16,
     pub R3: u16,
-    pub K: *mut quest_hook::libil2cpp::Il2CppArray<u16>,
+    pub K: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
     pub j: i32,
 }
 #[cfg(feature = "System+Security+Cryptography+RC2Transform")]

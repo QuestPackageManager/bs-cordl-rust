@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PanelSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub themeUss: *mut crate::UnityEngine::UIElements::ThemeStyleSheet,
-    pub m_TargetTexture: *mut crate::UnityEngine::RenderTexture,
+    pub themeUss: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ThemeStyleSheet,
+    >,
+    pub m_TargetTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     pub m_ScaleMode: crate::UnityEngine::UIElements::PanelScaleMode,
     pub m_ReferenceSpritePixelsPerUnit: f32,
     pub m_Scale: f32,
@@ -18,20 +20,29 @@ pub struct PanelSettings {
     pub m_ClearDepthStencil: bool,
     pub m_ClearColor: bool,
     pub m_ColorClearValue: crate::UnityEngine::Color,
-    pub m_PanelAccess: *mut crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess,
-    pub m_AttachedUIDocumentsList: *mut crate::UnityEngine::UIElements::UIDocumentList,
-    pub m_DynamicAtlasSettings: *mut crate::UnityEngine::UIElements::DynamicAtlasSettings,
-    pub m_AtlasBlitShader: *mut crate::UnityEngine::Shader,
-    pub m_RuntimeShader: *mut crate::UnityEngine::Shader,
-    pub m_RuntimeWorldShader: *mut crate::UnityEngine::Shader,
-    pub textSettings: *mut crate::UnityEngine::UIElements::PanelTextSettings,
+    pub m_PanelAccess: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess,
+    >,
+    pub m_AttachedUIDocumentsList: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIDocumentList,
+    >,
+    pub m_DynamicAtlasSettings: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::DynamicAtlasSettings,
+    >,
+    pub m_AtlasBlitShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub m_RuntimeShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub m_RuntimeWorldShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub textSettings: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::PanelTextSettings,
+    >,
     pub m_TargetRect: crate::UnityEngine::Rect,
     pub m_ResolvedScale: f32,
-    pub m_OldThemeUss: *mut crate::UnityEngine::UIElements::StyleSheet,
+    pub m_OldThemeUss: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleSheet,
+    >,
     pub _ScreenDPI_k__BackingField: f32,
-    pub m_AssignedScreenToPanel: *mut crate::System::Func_2<
-        crate::UnityEngine::Vector2,
-        crate::UnityEngine::Vector2,
+    pub m_AssignedScreenToPanel: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<crate::UnityEngine::Vector2, crate::UnityEngine::Vector2>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelSettings")]
@@ -626,8 +637,12 @@ for crate::UnityEngine::UIElements::PanelSettings {
 #[derive(Debug)]
 pub struct PanelSettings_RuntimePanelAccess {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Settings: *mut crate::UnityEngine::UIElements::PanelSettings,
-    pub m_RuntimePanel: *mut crate::UnityEngine::UIElements::BaseRuntimePanel,
+    pub m_Settings: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::PanelSettings,
+    >,
+    pub m_RuntimePanel: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseRuntimePanel,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelSettings+RuntimePanelAccess")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

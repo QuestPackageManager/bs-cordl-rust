@@ -5,7 +5,7 @@ pub struct Error {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Code: i32,
     pub HttpCode: i32,
-    pub Message: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Oculus+Platform+Models+Error")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

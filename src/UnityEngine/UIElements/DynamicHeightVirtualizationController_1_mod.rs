@@ -6,17 +6,20 @@ pub struct DynamicHeightVirtualizationController_1<T: quest_hook::libil2cpp::Typ
         T,
     >,
     pub m_HighestCachedIndex: i32,
-    pub m_ItemHeightCache: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        f32,
+    pub m_ItemHeightCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, f32>,
     >,
-    pub m_ContentHeightCache: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_ContentHeightCacheInfo<
-            T,
+    pub m_ContentHeightCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_ContentHeightCacheInfo<
+                T,
+            >,
         >,
     >,
-    pub m_WaitingCache: *mut crate::System::Collections::Generic::HashSet_1<i32>,
+    pub m_WaitingCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
     pub m_ForcedFirstVisibleItem: i32,
     pub m_ForcedLastVisibleItem: i32,
     pub m_StickToBottom: bool,
@@ -29,16 +32,26 @@ pub struct DynamicHeightVirtualizationController_1<T: quest_hook::libil2cpp::Typ
     pub m_DelayedScrollOffset: crate::UnityEngine::Vector2,
     pub m_AccumulatedHeight: f32,
     pub m_MinimumItemHeight: f32,
-    pub m_FillCallback: *mut crate::System::Action,
-    pub m_ScrollCallback: *mut crate::System::Action,
-    pub m_ScrollResetCallback: *mut crate::System::Action,
-    pub m_GeometryChangedCallback: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+    pub m_FillCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub m_ScrollCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub m_ScrollResetCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub m_GeometryChangedCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+        >,
     >,
-    pub m_ScheduledItem: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
-    pub m_ScrollScheduledItem: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
-    pub m_ScrollResetScheduledItem: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
-    pub m_IndexOutOfBoundsPredicate: *mut crate::System::Predicate_1<i32>,
+    pub m_ScheduledItem: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    >,
+    pub m_ScrollScheduledItem: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    >,
+    pub m_ScrollResetScheduledItem: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    >,
+    pub m_IndexOutOfBoundsPredicate: quest_hook::libil2cpp::Gc<
+        crate::System::Predicate_1<i32>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1")]
@@ -748,7 +761,7 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1<T> {
     feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+ContentHeightCacheInfo"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DynamicHeightVirtualizationController_1_ContentHeightCacheInfo<
     T: quest_hook::libil2cpp::Type,
 > {

@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct UIRLayoutUpdater {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
-    pub changeEventsList: *mut crate::System::Collections::Generic::List_1<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            crate::UnityEngine::Rect,
-            *mut crate::UnityEngine::UIElements::VisualElement,
+    pub changeEventsList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::System::Collections::Generic::KeyValuePair_2<
+                crate::UnityEngine::Rect,
+                *mut crate::UnityEngine::UIElements::VisualElement,
+            >,
         >,
     >,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+Settings+WindowSettings")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct WindowSettings {
     pub fullscreen: bool,
     pub resolution: crate::Unity::Mathematics::int2,

@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct ReliableChannel {
     __cordl_parent: crate::LiteNetLib::BaseChannel,
-    pub _outgoingAcks: *mut crate::LiteNetLib::NetPacket,
-    pub _pendingPackets: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::LiteNetLib::ReliableChannel_PendingPacket,
+    pub _outgoingAcks: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+    pub _pendingPackets: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::LiteNetLib::ReliableChannel_PendingPacket,
+        >,
     >,
-    pub _receivedPackets: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::LiteNetLib::NetPacket,
+    pub _receivedPackets: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::LiteNetLib::NetPacket>,
     >,
-    pub _earlyReceived: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
+    pub _earlyReceived: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<bool>,
+    >,
     pub _localSeqence: i32,
     pub _remoteSequence: i32,
     pub _localWindowStart: i32,
@@ -111,9 +115,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::ReliableChannel {
 }
 #[cfg(feature = "LiteNetLib+ReliableChannel+PendingPacket")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ReliableChannel_PendingPacket {
-    pub _packet: *mut crate::LiteNetLib::NetPacket,
+    pub _packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     pub _timeStamp: i64,
     pub _isSent: bool,
 }

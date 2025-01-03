@@ -3,25 +3,39 @@
 #[derive(Debug)]
 pub struct SimpleLevelStarter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _beatmapLevel: *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-        *mut crate::GlobalNamespace::BeatmapLevelSO,
+    pub _beatmapLevel: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+            *mut crate::GlobalNamespace::BeatmapLevelSO,
+        >,
     >,
-    pub _beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSO,
+    >,
     pub _beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
     pub _useTestNoteCutSoundEffects: bool,
     pub _overrideStrobeFilterSettingsToAllEffects: bool,
-    pub _recordingTextAsset: *mut crate::UnityEngine::TextAsset,
-    pub _prefabBindings: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Component,
+    pub _recordingTextAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+    pub _prefabBindings: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Component>,
     >,
     pub _forceOverrideEnvironment: bool,
-    pub _button: *mut crate::UnityEngine::UI::Button,
-    pub _menuTransitionsHelper: *mut crate::GlobalNamespace::MenuTransitionsHelper,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
-    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+    pub _button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _menuTransitionsHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuTransitionsHelper,
+    >,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _environmentsListModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentsListModel,
+    >,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
+    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
+    >,
 }
 #[cfg(feature = "SimpleLevelStarter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

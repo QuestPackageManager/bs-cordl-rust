@@ -3,18 +3,30 @@
 #[derive(Debug)]
 pub struct MissionLevelNoTransitionInstaller {
     __cordl_parent: crate::Zenject::NoTransitionInstaller,
-    pub _beatmapLevelSo: *mut crate::GlobalNamespace::BeatmapLevelSO,
-    pub _beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-    pub _beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    pub _colorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
-    pub _missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MissionObjective,
+    pub _beatmapLevelSo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelSO,
     >,
-    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-    pub _playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
-    pub _backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _scenesTransitionSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSO,
+    >,
+    pub _beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
+    pub _colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
+    pub _missionObjectives: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionObjective>,
+    >,
+    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
+    >,
+    pub _playerSpecificSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSpecificSettings,
+    >,
+    pub _backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _scenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+    >,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
 }
 #[cfg(feature = "MissionLevelNoTransitionInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

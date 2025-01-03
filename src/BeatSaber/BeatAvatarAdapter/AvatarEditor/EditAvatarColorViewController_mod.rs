@@ -5,16 +5,24 @@
 #[derive(Debug)]
 pub struct EditAvatarColorViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _hsvPanelController: *mut crate::GlobalNamespace::HSVPanelController,
-    pub _previousColorPanelController: *mut crate::GlobalNamespace::PreviousColorPanelController,
-    pub _cancelButton: *mut crate::UnityEngine::UI::Button,
-    pub _applyButton: *mut crate::UnityEngine::UI::Button,
-    pub didChangeColorEvent: *mut crate::System::Action_1<crate::UnityEngine::Color>,
-    pub didFinishEvent: *mut crate::System::Action_1<bool>,
-    pub _colorCallback: *mut crate::System::Action_1<crate::UnityEngine::Color>,
+    pub _hsvPanelController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HSVPanelController,
+    >,
+    pub _previousColorPanelController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PreviousColorPanelController,
+    >,
+    pub _cancelButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _applyButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub didChangeColorEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::UnityEngine::Color>,
+    >,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+    pub _colorCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::UnityEngine::Color>,
+    >,
     pub _initialColor: crate::UnityEngine::Color,
     pub _colorChanged: bool,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
 }
 #[cfg(
     feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarColorViewController"

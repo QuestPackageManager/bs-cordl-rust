@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct AchievementIdsModelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _achievementsIds: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::AchievementSO,
+    pub _achievementsIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::AchievementSO,
+        >,
     >,
 }
 #[cfg(feature = "AchievementIdsModelSO")]

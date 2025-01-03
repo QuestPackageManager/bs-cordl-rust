@@ -2,7 +2,7 @@
     feature = "UnityEngine+InputSystem+LowLevel+ActionEvent+_m_ValueData_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ActionEvent__m_ValueData_e__FixedBuffer {
     pub FixedElementField: u8,
 }

@@ -1,8 +1,8 @@
 #[cfg(feature = "System+Memory_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Memory_1<T: quest_hook::libil2cpp::Type> {
-    pub _object: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _index: i32,
     pub _length: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,

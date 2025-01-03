@@ -3,17 +3,19 @@
 #[derive(Debug)]
 pub struct ModalView {
     __cordl_parent: crate::HMUI::ModalViewBase,
-    pub _presentPanelAnimations: *mut crate::HMUI::PanelAnimationSO,
-    pub _dismissPanelAnimation: *mut crate::HMUI::PanelAnimationSO,
+    pub _presentPanelAnimations: quest_hook::libil2cpp::Gc<
+        crate::HMUI::PanelAnimationSO,
+    >,
+    pub _dismissPanelAnimation: quest_hook::libil2cpp::Gc<crate::HMUI::PanelAnimationSO>,
     pub _animateParentCanvas: bool,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub blockerClickedEvent: *mut crate::System::Action,
-    pub _previousParent: *mut crate::UnityEngine::Transform,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub blockerClickedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _previousParent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _isShown: bool,
     pub _viewIsValid: bool,
-    pub _mainCanvas: *mut crate::UnityEngine::Canvas,
-    pub _parentCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
-    pub _blockerGO: *mut crate::UnityEngine::GameObject,
+    pub _mainCanvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+    pub _parentCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+    pub _blockerGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _test: i32,
 }
 #[cfg(feature = "HMUI+ModalView")]

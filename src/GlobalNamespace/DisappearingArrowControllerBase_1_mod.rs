@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct DisappearingArrowControllerBase_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _transparentObjectMaterialPropertyBlocks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _transparentObjectMaterialPropertyBlocks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+        >,
     >,
-    pub _cubeMeshRenderer: *mut crate::UnityEngine::MeshRenderer,
-    pub _arrowCutoutEffect: *mut crate::GlobalNamespace::CutoutEffect,
+    pub _cubeMeshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+    pub _arrowCutoutEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CutoutEffect,
+    >,
     pub _disappearingNormalStart: f32,
     pub _disappearingNormalEnd: f32,
     pub _disappearingGhostStart: f32,

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct InternalsVisibleToAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _assemblyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _allInternalsVisible: bool,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+InternalsVisibleToAttribute")]

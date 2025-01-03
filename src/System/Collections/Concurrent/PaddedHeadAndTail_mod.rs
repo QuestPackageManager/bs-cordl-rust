@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Collections+Concurrent+PaddedHeadAndTail")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PaddedHeadAndTail {
     padding: [u8; 260usize],
 }

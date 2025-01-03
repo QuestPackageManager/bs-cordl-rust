@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct CustomTimelineTween {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub transforms: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Transform,
+    pub transforms: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
     >,
-    pub startPositions: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub startPositions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
 }
 #[cfg(feature = "CustomTimelineTween")]

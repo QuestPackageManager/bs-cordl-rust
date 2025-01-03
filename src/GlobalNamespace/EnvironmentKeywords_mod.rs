@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct EnvironmentKeywords {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _environmentKeywords: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _environmentKeywords: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _environmentKeywordsSet: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _environmentKeywordsSet: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "EnvironmentKeywords")]

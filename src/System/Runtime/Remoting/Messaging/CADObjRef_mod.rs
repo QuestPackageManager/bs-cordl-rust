@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct CADObjRef {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub objref: *mut crate::System::Runtime::Remoting::ObjRef,
+    pub objref: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ObjRef>,
     pub SourceDomain: i32,
-    pub TypeInfo: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub TypeInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+CADObjRef")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

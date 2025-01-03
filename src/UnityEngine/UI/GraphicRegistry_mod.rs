@@ -3,16 +3,20 @@
 #[derive(Debug)]
 pub struct GraphicRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Graphics: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::UnityEngine::Canvas,
-        *mut crate::UnityEngine::UI::Collections::IndexedSet_1<
-            *mut crate::UnityEngine::UI::Graphic,
+    pub m_Graphics: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::UnityEngine::Canvas,
+            *mut crate::UnityEngine::UI::Collections::IndexedSet_1<
+                *mut crate::UnityEngine::UI::Graphic,
+            >,
         >,
     >,
-    pub m_RaycastableGraphics: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::UnityEngine::Canvas,
-        *mut crate::UnityEngine::UI::Collections::IndexedSet_1<
-            *mut crate::UnityEngine::UI::Graphic,
+    pub m_RaycastableGraphics: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::UnityEngine::Canvas,
+            *mut crate::UnityEngine::UI::Collections::IndexedSet_1<
+                *mut crate::UnityEngine::UI::Graphic,
+            >,
         >,
     >,
 }

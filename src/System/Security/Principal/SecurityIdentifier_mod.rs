@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SecurityIdentifier {
     __cordl_parent: crate::System::Security::Principal::IdentityReference,
-    pub buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "System+Security+Principal+SecurityIdentifier")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

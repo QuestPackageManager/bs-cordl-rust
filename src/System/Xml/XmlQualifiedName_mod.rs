@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct XmlQualifiedName {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub ns: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub hash: i32,
 }
 #[cfg(feature = "System+Xml+XmlQualifiedName")]

@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct ObjectPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_List: *mut crate::System::Collections::Generic::List_1<T>,
-    pub m_CreateFunc: *mut crate::System::Func_1<T>,
-    pub m_ActionOnGet: *mut crate::System::Action_1<T>,
-    pub m_ActionOnRelease: *mut crate::System::Action_1<T>,
-    pub m_ActionOnDestroy: *mut crate::System::Action_1<T>,
+    pub m_List: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<T>,
+    >,
+    pub m_CreateFunc: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+    pub m_ActionOnGet: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+    pub m_ActionOnRelease: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+    pub m_ActionOnDestroy: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     pub m_MaxSize: i32,
     pub m_CollectionCheck: bool,
     pub _CountAll_k__BackingField: i32,

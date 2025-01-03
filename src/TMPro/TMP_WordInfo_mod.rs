@@ -1,8 +1,8 @@
 #[cfg(feature = "TMPro+TMP_WordInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TMP_WordInfo {
-    pub textComponent: *mut crate::TMPro::TMP_Text,
+    pub textComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
     pub firstCharacterIndex: i32,
     pub lastCharacterIndex: i32,
     pub characterCount: i32,

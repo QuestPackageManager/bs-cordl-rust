@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct UnityWebRequestResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Error_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Error_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _ResponseCode_k__BackingField: i64,
     pub _Result_k__BackingField: crate::UnityEngine::Networking::UnityWebRequest_Result,
-    pub _Method_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _Url_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Method_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _Url_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+UnityWebRequestResult")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

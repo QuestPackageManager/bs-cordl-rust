@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlDocumentWrapper {
     __cordl_parent: crate::Newtonsoft::Json::Converters::XmlNodeWrapper,
-    pub _document: *mut crate::System::Xml::XmlDocument,
+    pub _document: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XmlDocumentWrapper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

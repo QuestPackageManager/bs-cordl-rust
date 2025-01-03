@@ -7,15 +7,17 @@ pub struct RSAManaged {
     pub keyBlinding: bool,
     pub keypairGenerated: bool,
     pub m_disposed: bool,
-    pub d: *mut crate::Mono::Math::BigInteger,
-    pub p: *mut crate::Mono::Math::BigInteger,
-    pub q: *mut crate::Mono::Math::BigInteger,
-    pub dp: *mut crate::Mono::Math::BigInteger,
-    pub dq: *mut crate::Mono::Math::BigInteger,
-    pub qInv: *mut crate::Mono::Math::BigInteger,
-    pub n: *mut crate::Mono::Math::BigInteger,
-    pub e: *mut crate::Mono::Math::BigInteger,
-    pub KeyGenerated: *mut crate::Mono::Security::Cryptography::RSAManaged_KeyGeneratedEventHandler,
+    pub d: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    pub p: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    pub q: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    pub dp: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    pub dq: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    pub qInv: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    pub n: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    pub e: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    pub KeyGenerated: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Cryptography::RSAManaged_KeyGeneratedEventHandler,
+    >,
 }
 #[cfg(feature = "Mono+Security+Cryptography+RSAManaged")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

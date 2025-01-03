@@ -1,10 +1,14 @@
 #[cfg(feature = "System+Xml+Linq+NamespaceResolver")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NamespaceResolver {
     pub _scope: i32,
-    pub _declaration: *mut crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration,
-    pub _rover: *mut crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration,
+    pub _declaration: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration,
+    >,
+    pub _rover: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration,
+    >,
 }
 #[cfg(feature = "System+Xml+Linq+NamespaceResolver")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -92,10 +96,12 @@ impl crate::System::Xml::Linq::NamespaceResolver {
 #[derive(Debug)]
 pub struct NamespaceResolver_NamespaceDeclaration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub ns: *mut crate::System::Xml::Linq::XNamespace,
+    pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ns: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
     pub scope: i32,
-    pub prev: *mut crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration,
+    pub prev: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration,
+    >,
 }
 #[cfg(feature = "System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

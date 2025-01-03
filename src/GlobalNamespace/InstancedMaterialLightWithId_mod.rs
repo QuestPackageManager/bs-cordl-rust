@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct InstancedMaterialLightWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    pub _materialPropertyBlockColorSetter: *mut crate::GlobalNamespace::MaterialPropertyBlockColorSetter,
+    pub _materialPropertyBlockColorSetter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockColorSetter,
+    >,
     pub _setColorOnly: bool,
     pub _intensity: f32,
     pub _minAlpha: f32,

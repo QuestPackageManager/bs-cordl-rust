@@ -6,30 +6,42 @@ pub struct HEU_HoudiniAsset {
     pub _assetType: crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType,
     pub _assetInfo: crate::HoudiniEngineUnity::HAPI_AssetInfo,
     pub _nodeInfo: crate::HoudiniEngineUnity::HAPI_NodeInfo,
-    pub _assetName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _assetOpName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _assetHelp: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _assetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _assetOpName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _assetHelp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _assetID: i32,
-    pub _assetPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _assetPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _loadAssetFromMemory: bool,
     pub _alwaysOverwriteOnLoad: bool,
-    pub _assetFileObject: *mut crate::UnityEngine::Object,
-    pub _objectNodes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_ObjectNode,
+    pub _assetFileObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    pub _objectNodes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_ObjectNode,
+        >,
     >,
-    pub _rootGameObject: *mut crate::UnityEngine::GameObject,
-    pub _materialCache: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_MaterialData,
+    pub _rootGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _materialCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_MaterialData,
+        >,
     >,
-    pub _parameters: *mut crate::HoudiniEngineUnity::HEU_Parameters,
+    pub _parameters: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_Parameters,
+    >,
     pub _lastSyncedTransformMatrix: crate::UnityEngine::Matrix4x4,
-    pub _assetCacheFolderPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _subassetNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _assetCacheFolderPath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _subassetNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _selectedSubassetIndex: i32,
-    pub _savedAssetPreset: *mut crate::HoudiniEngineUnity::HEU_AssetPreset,
-    pub _recookPreset: *mut crate::HoudiniEngineUnity::HEU_RecookPreset,
+    pub _savedAssetPreset: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_AssetPreset,
+    >,
+    pub _recookPreset: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_RecookPreset,
+    >,
     pub _totalCookCount: i32,
     pub _requestBuildAction: crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction,
     pub _checkParameterChangeForCook: bool,
@@ -52,16 +64,30 @@ pub struct HEU_HoudiniAsset {
     pub _showInputNodesSection: bool,
     pub _showToolsSection: bool,
     pub _showTerrainSection: bool,
-    pub _instanceInputUIState: *mut crate::HoudiniEngineUnity::HEU_InstanceInputUIState,
-    pub _reloadEvent: *mut crate::HoudiniEngineUnity::ReloadEvent,
-    pub _cookedEvent: *mut crate::HoudiniEngineUnity::CookedEvent,
-    pub _bakedEvent: *mut crate::HoudiniEngineUnity::BakedEvent,
-    pub _reloadDataEvent: *mut crate::HoudiniEngineUnity::HEU_ReloadDataEvent,
-    pub _cookedDataEvent: *mut crate::HoudiniEngineUnity::HEU_CookedDataEvent,
-    pub _bakedDataEvent: *mut crate::HoudiniEngineUnity::HEU_BakedDataEvent,
-    pub _preAssetEvent: *mut crate::HoudiniEngineUnity::HEU_PreAssetEvent,
-    pub _refreshUIDelegate: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset_UpdateUIDelegate,
-    pub _downstreamConnectionCookedEvent: *mut crate::HoudiniEngineUnity::CookedEvent,
+    pub _instanceInputUIState: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_InstanceInputUIState,
+    >,
+    pub _reloadEvent: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::ReloadEvent>,
+    pub _cookedEvent: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CookedEvent>,
+    pub _bakedEvent: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::BakedEvent>,
+    pub _reloadDataEvent: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_ReloadDataEvent,
+    >,
+    pub _cookedDataEvent: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_CookedDataEvent,
+    >,
+    pub _bakedDataEvent: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_BakedDataEvent,
+    >,
+    pub _preAssetEvent: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_PreAssetEvent,
+    >,
+    pub _refreshUIDelegate: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_HoudiniAsset_UpdateUIDelegate,
+    >,
+    pub _downstreamConnectionCookedEvent: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::CookedEvent,
+    >,
     pub _generateUVs: bool,
     pub _generateTangents: bool,
     pub _generateNormals: bool,
@@ -77,12 +103,14 @@ pub struct HEU_HoudiniAsset {
     pub _bakeUpdateKeepPreviousTransformValues: bool,
     pub _pauseCooking: bool,
     pub _curveEditorEnabled: bool,
-    pub _curves: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_Curve,
+    pub _curves: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_Curve,
+        >,
     >,
     pub _curveDrawCollision: crate::HoudiniEngineUnity::HEU_Curve_CurveDrawCollision,
-    pub _curveDrawColliders: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Collider,
+    pub _curveDrawColliders: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Collider>,
     >,
     pub _curveDrawLayerMask: crate::UnityEngine::LayerMask,
     pub _curveProjectMaxDistance: f32,
@@ -91,22 +119,32 @@ pub struct HEU_HoudiniAsset {
     pub _curveCookOnDrag: bool,
     pub _curveFrameSelectedNodes: bool,
     pub _curveFrameSelectedNodeDistance: f32,
-    pub _inputNodes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_InputNode,
+    pub _inputNodes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_InputNode,
+        >,
     >,
-    pub _handles: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_Handle,
+    pub _handles: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_Handle,
+        >,
     >,
     pub _handlesEnabled: bool,
-    pub _volumeCaches: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_VolumeCache,
+    pub _volumeCaches: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_VolumeCache,
+        >,
     >,
-    pub _attributeStores: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_AttributesStore,
+    pub _attributeStores: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_AttributesStore,
+        >,
     >,
     pub _editableNodesToolsEnabled: bool,
-    pub _toolsInfo: *mut crate::HoudiniEngineUnity::HEU_ToolsInfo,
-    pub _serializedMetaData: *mut crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData,
+    pub _toolsInfo: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ToolsInfo>,
+    pub _serializedMetaData: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData,
+    >,
     pub _pendingAutoCookOnMouseRelease: bool,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset")]

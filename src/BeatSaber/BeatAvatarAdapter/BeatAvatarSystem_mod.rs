@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct BeatAvatarSystem {
     __cordl_parent: crate::BeatSaber::AvatarCore::AvatarSystem,
-    pub _avatarDataModel: *mut crate::BeatSaber::BeatAvatarSDK::AvatarDataModel,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _settings: *mut crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings,
+    pub _avatarDataModel: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarDataModel,
+    >,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _settings: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings,
+    >,
 }
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarSystem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

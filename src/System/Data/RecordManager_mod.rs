@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct RecordManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _table: *mut crate::System::Data::DataTable,
+    pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     pub _lastFreeRecord: i32,
     pub _minimumCapacity: i32,
     pub _recordCapacity: i32,
-    pub _freeRecordList: *mut crate::System::Collections::Generic::List_1<i32>,
-    pub _rows: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Data::DataRow,
+    pub _freeRecordList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
+    pub _rows: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRow>,
     >,
 }
 #[cfg(feature = "System+Data+RecordManager")]

@@ -3,13 +3,23 @@
 #[derive(Debug)]
 pub struct HeadInObstacleHapticEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _headHapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+    pub _headHapticPreset: quest_hook::libil2cpp::Gc<
+        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+    >,
     pub _minimalHapticDuration: f32,
-    pub _hapticFeedbackManager: *mut crate::GlobalNamespace::HapticFeedbackManager,
-    pub _playerHeadAndObstacleInteraction: *mut crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
-    pub _gamePause: *mut crate::GlobalNamespace::IGamePause,
-    pub _gameplayLevelSceneTransitionEvents: *mut crate::GlobalNamespace::GameplayLevelSceneTransitionEvents,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _hapticFeedbackManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HapticFeedbackManager,
+    >,
+    pub _playerHeadAndObstacleInteraction: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
+    >,
+    pub _gamePause: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>,
+    pub _gameplayLevelSceneTransitionEvents: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayLevelSceneTransitionEvents,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
     pub _isGamePaused: bool,
     pub _isLevelFinished: bool,
     pub _minimumTimeUntilHapticEnd: f32,

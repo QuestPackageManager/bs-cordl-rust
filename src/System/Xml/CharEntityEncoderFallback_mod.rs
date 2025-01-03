@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct CharEntityEncoderFallback {
     __cordl_parent: crate::System::Text::EncoderFallback,
-    pub fallbackBuffer: *mut crate::System::Xml::CharEntityEncoderFallbackBuffer,
-    pub textContentMarks: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub fallbackBuffer: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::CharEntityEncoderFallbackBuffer,
+    >,
+    pub textContentMarks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     pub endMarkPos: i32,
     pub curMarkPos: i32,
     pub startOffset: i32,

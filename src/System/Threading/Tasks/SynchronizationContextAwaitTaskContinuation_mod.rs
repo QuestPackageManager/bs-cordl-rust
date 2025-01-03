@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SynchronizationContextAwaitTaskContinuation {
     __cordl_parent: crate::System::Threading::Tasks::AwaitTaskContinuation,
-    pub m_syncContext: *mut crate::System::Threading::SynchronizationContext,
+    pub m_syncContext: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SynchronizationContext,
+    >,
 }
 #[cfg(feature = "System+Threading+Tasks+SynchronizationContextAwaitTaskContinuation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

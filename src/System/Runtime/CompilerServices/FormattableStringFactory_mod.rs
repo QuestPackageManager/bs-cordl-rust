@@ -61,9 +61,9 @@ for crate::System::Runtime::CompilerServices::FormattableStringFactory {
 #[derive(Debug)]
 pub struct FormattableStringFactory_ConcreteFormattableString {
     __cordl_parent: crate::System::FormattableString,
-    pub _format: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _arguments: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _arguments: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
 }
 #[cfg(

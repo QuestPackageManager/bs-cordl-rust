@@ -3,35 +3,49 @@
 #[derive(Debug)]
 pub struct NoteCutSoundEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioManager: *mut crate::GlobalNamespace::AudioManagerSO,
+    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
     pub _audioSamplesBeatAlignOffset: f32,
-    pub _longCutEffectsAudioClips: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::AudioClip,
+    pub _longCutEffectsAudioClips: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
     >,
-    pub _shortCutEffectsAudioClips: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::AudioClip,
+    pub _shortCutEffectsAudioClips: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
     >,
-    pub _testAudioClip: *mut crate::UnityEngine::AudioClip,
-    pub _initData: *mut crate::GlobalNamespace::NoteCutSoundEffectManager_InitData,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
-    pub _noteCutSoundEffectPool: *mut crate::GlobalNamespace::NoteCutSoundEffect_Pool,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
+    pub _testAudioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteCutSoundEffectManager_InitData,
+    >,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
+    pub _noteCutSoundEffectPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteCutSoundEffect_Pool,
+    >,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
     pub _handleWrongSaberTypeAsGood_k__BackingField: bool,
-    pub _randomLongCutSoundPicker: *mut crate::GlobalNamespace::RandomObjectPicker_1<
-        *mut crate::UnityEngine::AudioClip,
+    pub _randomLongCutSoundPicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RandomObjectPicker_1<*mut crate::UnityEngine::AudioClip>,
     >,
-    pub _randomShortCutSoundPicker: *mut crate::GlobalNamespace::RandomObjectPicker_1<
-        *mut crate::UnityEngine::AudioClip,
+    pub _randomShortCutSoundPicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RandomObjectPicker_1<*mut crate::UnityEngine::AudioClip>,
     >,
     pub _prevNoteATime: f32,
     pub _prevNoteBTime: f32,
-    pub _prevNoteASoundEffect: *mut crate::GlobalNamespace::NoteCutSoundEffect,
-    pub _prevNoteBSoundEffect: *mut crate::GlobalNamespace::NoteCutSoundEffect,
+    pub _prevNoteASoundEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteCutSoundEffect,
+    >,
+    pub _prevNoteBSoundEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteCutSoundEffect,
+    >,
     pub _beatAlignOffset: f32,
     pub _useTestAudioClips: bool,
-    pub _noteCutSoundEffectPoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::NoteCutSoundEffect,
+    pub _noteCutSoundEffectPoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::NoteCutSoundEffect,
+        >,
     >,
 }
 #[cfg(feature = "NoteCutSoundEffectManager")]

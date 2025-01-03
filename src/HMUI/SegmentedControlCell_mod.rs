@@ -4,7 +4,7 @@
 pub struct SegmentedControlCell {
     __cordl_parent: crate::HMUI::SelectableCell,
     pub _cellNumber_k__BackingField: i32,
-    pub _segmentedControl: *mut crate::HMUI::SegmentedControl,
+    pub _segmentedControl: quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
 }
 #[cfg(feature = "HMUI+SegmentedControlCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -109,10 +109,12 @@ for crate::GlobalNamespace::PerformanceToolLauncher {
 }
 #[cfg(feature = "PerformanceToolLauncher+Assets")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PerformanceToolLauncher_Assets {
-    pub visualizer: *mut crate::GlobalNamespace::PerformanceVisualizer,
-    pub recorder: *mut crate::GlobalNamespace::PerformanceRecorder,
+    pub visualizer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PerformanceVisualizer,
+    >,
+    pub recorder: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PerformanceRecorder>,
 }
 #[cfg(feature = "PerformanceToolLauncher+Assets")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -134,7 +136,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
 impl crate::GlobalNamespace::PerformanceToolLauncher_Assets {}
 #[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PerformanceToolLauncher_OverrideConfig {
     pub enableAutoplay: bool,
     pub enableRecording: bool,

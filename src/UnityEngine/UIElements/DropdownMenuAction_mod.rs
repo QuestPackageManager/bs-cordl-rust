@@ -3,16 +3,24 @@
 #[derive(Debug)]
 pub struct DropdownMenuAction {
     __cordl_parent: crate::UnityEngine::UIElements::DropdownMenuItem,
-    pub _name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _status_k__BackingField: crate::UnityEngine::UIElements::DropdownMenuAction_Status,
-    pub _eventInfo_k__BackingField: *mut crate::UnityEngine::UIElements::DropdownMenuEventInfo,
-    pub _userData_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub actionCallback: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::DropdownMenuAction,
+    pub _name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub actionStatusCallback: *mut crate::System::Func_2<
-        *mut crate::UnityEngine::UIElements::DropdownMenuAction,
-        crate::UnityEngine::UIElements::DropdownMenuAction_Status,
+    pub _status_k__BackingField: crate::UnityEngine::UIElements::DropdownMenuAction_Status,
+    pub _eventInfo_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::DropdownMenuEventInfo,
+    >,
+    pub _userData_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub actionCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::UIElements::DropdownMenuAction>,
+    >,
+    pub actionStatusCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            *mut crate::UnityEngine::UIElements::DropdownMenuAction,
+            crate::UnityEngine::UIElements::DropdownMenuAction_Status,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+DropdownMenuAction")]

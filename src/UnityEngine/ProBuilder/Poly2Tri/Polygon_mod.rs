@@ -3,19 +3,29 @@
 #[derive(Debug)]
 pub struct Polygon {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _points: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    pub _points: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     >,
-    pub _steinerPoints: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    pub _steinerPoints: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     >,
-    pub _holes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
+    pub _holes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
+        >,
     >,
-    pub _triangles: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+    pub _triangles: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        >,
     >,
-    pub _last: *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+    pub _last: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+    >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+Polygon")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct Merger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dataSet: *mut crate::System::Data::DataSet,
-    pub _dataTable: *mut crate::System::Data::DataTable,
+    pub _dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+    pub _dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     pub _preserveChanges: bool,
     pub _missingSchemaAction: crate::System::Data::MissingSchemaAction,
     pub _isStandAlonetable: bool,

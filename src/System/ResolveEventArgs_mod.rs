@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ResolveEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _RequestingAssembly_k__BackingField: *mut crate::System::Reflection::Assembly,
+    pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _RequestingAssembly_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::Assembly,
+    >,
 }
 #[cfg(feature = "System+ResolveEventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

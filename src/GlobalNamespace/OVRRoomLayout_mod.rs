@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRRoomLayout")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRRoomLayout {
     pub _Handle_k__BackingField: u64,
 }

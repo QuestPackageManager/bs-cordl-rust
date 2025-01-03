@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct RazorPageBaseTypeAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _BaseType_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _PageName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _BaseType_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _PageName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "JetBrains+Annotations+RazorPageBaseTypeAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

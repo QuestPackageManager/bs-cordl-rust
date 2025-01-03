@@ -1,8 +1,8 @@
 #[cfg(feature = "System+Xml+Linq+ElementWriter")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ElementWriter {
-    pub _writer: *mut crate::System::Xml::XmlWriter,
+    pub _writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
     pub _resolver: crate::System::Xml::Linq::NamespaceResolver,
 }
 #[cfg(feature = "System+Xml+Linq+ElementWriter")]

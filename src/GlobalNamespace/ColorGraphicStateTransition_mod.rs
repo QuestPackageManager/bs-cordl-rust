@@ -5,7 +5,7 @@ pub struct ColorGraphicStateTransition {
     __cordl_parent: crate::GlobalNamespace::ColorStateTransition_1<
         *mut crate::UnityEngine::UI::Graphic,
     >,
-    pub _colorTween: *mut crate::Tweening::ColorTween,
+    pub _colorTween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
 }
 #[cfg(feature = "ColorGraphicStateTransition")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

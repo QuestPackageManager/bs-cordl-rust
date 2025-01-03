@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct LegacySettingsV2 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mainSettings: *mut crate::BeatSaber::Settings::LegacySettingsV2_MainSettings,
-    pub graphicSettings: *mut crate::BeatSaber::Settings::LegacySettingsV2_GraphicSettings,
+    pub mainSettings: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::Settings::LegacySettingsV2_MainSettings,
+    >,
+    pub graphicSettings: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::Settings::LegacySettingsV2_GraphicSettings,
+    >,
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -234,7 +238,9 @@ pub struct LegacySettingsV2_CustomServerSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub useCustomServerEnvironment: bool,
     pub forceGameLiftServerEnvironment: bool,
-    pub customServerHostName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub customServerHostName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -366,8 +372,12 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct LegacySettingsV2_GraphicSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub performancePresetKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub customPreset: *mut crate::BeatSaber::Settings::LegacySettingsV2_PerformancePreset,
+    pub performancePresetKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub customPreset: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::Settings::LegacySettingsV2_PerformancePreset,
+    >,
     pub windowMode: crate::BeatSaber::Settings::LegacySettingsV2_WindowMode,
     pub windowResolution: crate::Unity::Mathematics::int2,
 }
@@ -440,12 +450,22 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct LegacySettingsV2_MainSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub audioSettings: *mut crate::BeatSaber::Settings::LegacySettingsV2_AudioSettings,
-    pub smoothCameraSettings: *mut crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings,
-    pub controllerSettings: *mut crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings,
-    pub customServerSettings: *mut crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings,
-    pub debugSettings: *mut crate::BeatSaber::Settings::LegacySettingsV2_DebugSettings,
-    pub language: *mut quest_hook::libil2cpp::Il2CppString,
+    pub audioSettings: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::Settings::LegacySettingsV2_AudioSettings,
+    >,
+    pub smoothCameraSettings: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings,
+    >,
+    pub controllerSettings: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings,
+    >,
+    pub customServerSettings: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings,
+    >,
+    pub debugSettings: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::Settings::LegacySettingsV2_DebugSettings,
+    >,
+    pub language: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub pauseButtonPressDurationLevel: i32,
     pub roomCenter: crate::Unity::Mathematics::float3,
     pub roomRotation: f32,
@@ -536,7 +556,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct LegacySettingsV2_PerformancePreset {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub presetNameLocalizationTag: *mut quest_hook::libil2cpp::Il2CppString,
+    pub presetNameLocalizationTag: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub renderViewportScale: f32,
     pub vrResolutionScale: f32,
     pub menuVRResolutionScaleMultiplier: f32,

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct NoteCutFloorLightStreakTileEffectSpawnerLightWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    pub _noteCutFloorLightStreakTileEffectSpawner: *mut crate::Ice::NoteCutFloorLightStreakTileEffectSpawner,
+    pub _noteCutFloorLightStreakTileEffectSpawner: quest_hook::libil2cpp::Gc<
+        crate::Ice::NoteCutFloorLightStreakTileEffectSpawner,
+    >,
 }
 #[cfg(feature = "Ice+NoteCutFloorLightStreakTileEffectSpawnerLightWithId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

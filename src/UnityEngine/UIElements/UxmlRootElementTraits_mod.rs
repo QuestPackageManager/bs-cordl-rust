@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct UxmlRootElementTraits {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlTraits,
-    pub m_Name: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_Class: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_Name: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_Class: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlRootElementTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

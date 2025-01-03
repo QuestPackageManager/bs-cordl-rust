@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct SortedSet_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub root: *mut crate::System::Collections::Generic::SortedSet_1_Node<T>,
-    pub comparer: *mut crate::System::Collections::Generic::IComparer_1<T>,
+    pub root: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::SortedSet_1_Node<T>,
+    >,
+    pub comparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IComparer_1<T>,
+    >,
     pub count: i32,
     pub version: i32,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub siInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub siInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::SerializationInfo,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Collections+Generic+SortedSet_1")]
@@ -801,7 +807,7 @@ for crate::System::Collections::Generic::SortedSet_1<T> {
 }
 #[cfg(feature = "System+Collections+Generic+SortedSet_1+ElementCount")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SortedSet_1_ElementCount<T: quest_hook::libil2cpp::Type> {
     pub UniqueCount: i32,
     pub UnfoundCount: i32,
@@ -830,14 +836,20 @@ impl<
 > crate::System::Collections::Generic::SortedSet_1_ElementCount<T> {}
 #[cfg(feature = "System+Collections+Generic+SortedSet_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SortedSet_1_Enumerator<T: quest_hook::libil2cpp::Type> {
-    pub _tree: *mut crate::System::Collections::Generic::SortedSet_1<T>,
-    pub _version: i32,
-    pub _stack: *mut crate::System::Collections::Generic::Stack_1<
-        *mut crate::System::Collections::Generic::SortedSet_1_Node<T>,
+    pub _tree: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::SortedSet_1<T>,
     >,
-    pub _current: *mut crate::System::Collections::Generic::SortedSet_1_Node<T>,
+    pub _version: i32,
+    pub _stack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<
+            *mut crate::System::Collections::Generic::SortedSet_1_Node<T>,
+        >,
+    >,
+    pub _current: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::SortedSet_1_Node<T>,
+    >,
     pub _reverse: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -1119,11 +1131,11 @@ for crate::System::Collections::Generic::SortedSet_1_Enumerator<T> {
 pub struct SortedSet_1_Node<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Item_k__BackingField: T,
-    pub _Left_k__BackingField: *mut crate::System::Collections::Generic::SortedSet_1_Node<
-        T,
+    pub _Left_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::SortedSet_1_Node<T>,
     >,
-    pub _Right_k__BackingField: *mut crate::System::Collections::Generic::SortedSet_1_Node<
-        T,
+    pub _Right_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::SortedSet_1_Node<T>,
     >,
     pub _Color_k__BackingField: crate::System::Collections::Generic::NodeColor,
     __cordl_phantom_T: std::marker::PhantomData<T>,

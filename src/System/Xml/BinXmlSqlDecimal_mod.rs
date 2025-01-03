@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Xml+BinXmlSqlDecimal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BinXmlSqlDecimal {
     pub m_bLen: u8,
     pub m_bPrec: u8,

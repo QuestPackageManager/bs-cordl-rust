@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct XmlTypeMapMemberAttribute {
     __cordl_parent: crate::System::Xml::Serialization::XmlTypeMapMember,
-    pub _attributeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _namespace: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _attributeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _namespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _form: crate::System::Xml::Schema::XmlSchemaForm,
-    pub _mappedType: *mut crate::System::Xml::Serialization::XmlTypeMapping,
+    pub _mappedType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTypeMapping,
+    >,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

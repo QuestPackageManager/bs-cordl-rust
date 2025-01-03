@@ -3,38 +3,52 @@
 #[derive(Debug)]
 pub struct NetManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _socket: *mut crate::LiteNetLib::NetSocket,
-    pub _logicThread: *mut crate::System::Threading::Thread,
-    pub _netEventsQueue: *mut crate::System::Collections::Generic::Queue_1<
-        *mut crate::LiteNetLib::NetEvent,
+    pub _socket: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetSocket>,
+    pub _logicThread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
+    pub _netEventsQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<*mut crate::LiteNetLib::NetEvent>,
     >,
-    pub _netEventsPool: *mut crate::System::Collections::Generic::Stack_1<
-        *mut crate::LiteNetLib::NetEvent,
+    pub _netEventsPool: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<*mut crate::LiteNetLib::NetEvent>,
     >,
-    pub _netEventListener: *mut crate::LiteNetLib::INetEventListener,
-    pub _deliveryEventListener: *mut crate::LiteNetLib::IDeliveryEventListener,
-    pub _peersDict: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Net::IPEndPoint,
-        *mut crate::LiteNetLib::NetPeer,
+    pub _netEventListener: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::INetEventListener,
     >,
-    pub _requestsDict: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Net::IPEndPoint,
-        *mut crate::LiteNetLib::ConnectionRequest,
+    pub _deliveryEventListener: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::IDeliveryEventListener,
     >,
-    pub _peersLock: *mut crate::System::Threading::ReaderWriterLockSlim,
-    pub _headPeer: *mut crate::LiteNetLib::NetPeer,
+    pub _peersDict: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Net::IPEndPoint,
+            *mut crate::LiteNetLib::NetPeer,
+        >,
+    >,
+    pub _requestsDict: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Net::IPEndPoint,
+            *mut crate::LiteNetLib::ConnectionRequest,
+        >,
+    >,
+    pub _peersLock: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ReaderWriterLockSlim,
+    >,
+    pub _headPeer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
     pub _connectedPeersCount: i32,
-    pub _connectedPeerListCache: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::LiteNetLib::NetPeer,
+    pub _connectedPeerListCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::LiteNetLib::NetPeer>,
     >,
-    pub _peersArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::LiteNetLib::NetPeer,
+    pub _peersArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::LiteNetLib::NetPeer>,
     >,
-    pub _extraPacketLayer: *mut crate::LiteNetLib::Layers::PacketLayerBase,
+    pub _extraPacketLayer: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::Layers::PacketLayerBase,
+    >,
     pub _lastPeerId: i32,
-    pub _peerIds: *mut crate::System::Collections::Generic::Queue_1<i32>,
+    pub _peerIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<i32>,
+    >,
     pub _channelsCount: u8,
-    pub NetPacketPool: *mut crate::LiteNetLib::NetPacketPool,
+    pub NetPacketPool: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacketPool>,
     pub UnconnectedMessagesEnabled: bool,
     pub NatPunchEnabled: bool,
     pub UpdateTime: i32,
@@ -51,9 +65,9 @@ pub struct NetManager {
     pub ReconnectDelay: i32,
     pub MaxConnectAttempts: i32,
     pub ReuseAddress: bool,
-    pub Statistics: *mut crate::LiteNetLib::NetStatistics,
+    pub Statistics: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetStatistics>,
     pub EnableStatistics: bool,
-    pub NatPunchModule: *mut crate::LiteNetLib::NatPunchModule,
+    pub NatPunchModule: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NatPunchModule>,
     pub AutoRecycle: bool,
     pub IPv6Enabled: bool,
     pub ThreadPriority: crate::System::Threading::ThreadPriority,
@@ -1179,10 +1193,10 @@ impl AsMut<
 }
 #[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NetManager_NetPeerEnumerator {
-    pub _initialPeer: *mut crate::LiteNetLib::NetPeer,
-    pub _p: *mut crate::LiteNetLib::NetPeer,
+    pub _initialPeer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
+    pub _p: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
 }
 #[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

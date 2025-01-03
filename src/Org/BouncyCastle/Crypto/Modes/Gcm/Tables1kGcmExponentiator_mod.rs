@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Tables1kGcmExponentiator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub lookupPowX2: *mut crate::System::Collections::IList,
+    pub lookupPowX2: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+Tables1kGcmExponentiator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

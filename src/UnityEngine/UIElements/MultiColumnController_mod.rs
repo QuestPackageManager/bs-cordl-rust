@@ -3,14 +3,22 @@
 #[derive(Debug)]
 pub struct MultiColumnController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub columnSortingChanged: *mut crate::System::Action,
-    pub headerContextMenuPopulateEvent: *mut crate::System::Action_2<
-        *mut crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
-        *mut crate::UnityEngine::UIElements::Column,
+    pub columnSortingChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub headerContextMenuPopulateEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+            *mut crate::UnityEngine::UIElements::Column,
+        >,
     >,
-    pub m_View: *mut crate::UnityEngine::UIElements::BaseVerticalCollectionView,
-    pub m_HeaderContainer: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_MultiColumnHeader: *mut crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader,
+    pub m_View: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+    >,
+    pub m_HeaderContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_MultiColumnHeader: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

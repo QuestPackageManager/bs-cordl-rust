@@ -3,17 +3,31 @@
 #[derive(Debug)]
 pub struct X509CrlStoreSelector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub certificateChecking: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-    pub dateAndTime: *mut crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
-    pub issuers: *mut crate::System::Collections::ICollection,
-    pub maxCrlNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub minCrlNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub attrCertChecking: *mut crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+    pub certificateChecking: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::X509Certificate,
+    >,
+    pub dateAndTime: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
+    >,
+    pub issuers: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    pub maxCrlNumber: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
+    pub minCrlNumber: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
+    pub attrCertChecking: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+    >,
     pub completeCrlEnabled: bool,
     pub deltaCrlIndicatorEnabled: bool,
-    pub issuingDistributionPoint: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub issuingDistributionPoint: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub issuingDistributionPointEnabled: bool,
-    pub maxBaseCrlNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub maxBaseCrlNumber: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

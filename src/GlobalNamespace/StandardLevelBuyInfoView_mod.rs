@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct StandardLevelBuyInfoView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
-    pub _buyLevelButton: *mut crate::UnityEngine::UI::Button,
-    pub _openPackButton: *mut crate::UnityEngine::UI::Button,
-    pub _buyPackButton: *mut crate::UnityEngine::UI::Button,
-    pub _steamMessageGameObject: *mut crate::UnityEngine::GameObject,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _buyLevelButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _openPackButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _buyPackButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _steamMessageGameObject: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
 }
 #[cfg(feature = "StandardLevelBuyInfoView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

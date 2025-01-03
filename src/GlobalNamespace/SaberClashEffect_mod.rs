@@ -3,12 +3,22 @@
 #[derive(Debug)]
 pub struct SaberClashEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _sparkleParticleSystem: *mut crate::UnityEngine::ParticleSystem,
-    pub _glowParticleSystem: *mut crate::UnityEngine::ParticleSystem,
-    pub _rumblePreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _saberClashChecker: *mut crate::GlobalNamespace::SaberClashChecker,
-    pub _hapticFeedbackController: *mut crate::GlobalNamespace::HapticFeedbackManager,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
+    pub _sparkleParticleSystem: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ParticleSystem,
+    >,
+    pub _glowParticleSystem: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ParticleSystem,
+    >,
+    pub _rumblePreset: quest_hook::libil2cpp::Gc<
+        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+    >,
+    pub _saberClashChecker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SaberClashChecker,
+    >,
+    pub _hapticFeedbackController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HapticFeedbackManager,
+    >,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub _sparkleParticleSystemEmmisionModule: crate::UnityEngine::ParticleSystem_EmissionModule,
     pub _glowParticleSystemEmmisionModule: crate::UnityEngine::ParticleSystem_EmissionModule,
     pub _sabersAreClashing: bool,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+RareData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RareData {
     pub cursor: crate::UnityEngine::UIElements::Cursor,
     pub textOverflow: crate::UnityEngine::UIElements::TextOverflow,

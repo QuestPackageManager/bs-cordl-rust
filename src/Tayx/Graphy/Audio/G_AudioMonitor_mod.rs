@@ -3,14 +3,16 @@
 #[derive(Debug)]
 pub struct G_AudioMonitor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_graphyManager: *mut crate::Tayx::Graphy::GraphyManager,
-    pub m_audioListener: *mut crate::UnityEngine::AudioListener,
+    pub m_graphyManager: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
+    pub m_audioListener: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioListener>,
     pub m_findAudioListenerInCameraIfNull: crate::Tayx::Graphy::GraphyManager_LookForAudioListener,
     pub m_FFTWindow: crate::UnityEngine::FFTWindow,
     pub m_spectrumSize: i32,
-    pub _Spectrum_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _SpectrumHighestValues_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        f32,
+    pub _Spectrum_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
+    pub _SpectrumHighestValues_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
     >,
     pub _MaxDB_k__BackingField: f32,
 }

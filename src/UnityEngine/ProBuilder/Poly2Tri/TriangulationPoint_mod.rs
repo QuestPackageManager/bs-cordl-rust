@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct TriangulationPoint {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Edges_k__BackingField: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+    pub _Edges_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+        >,
     >,
     pub X: f64,
     pub Y: f64,

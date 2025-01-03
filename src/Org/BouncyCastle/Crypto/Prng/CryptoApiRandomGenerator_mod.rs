@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CryptoApiRandomGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub rndProv: *mut crate::System::Security::Cryptography::RandomNumberGenerator,
+    pub rndProv: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::RandomNumberGenerator,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiRandomGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

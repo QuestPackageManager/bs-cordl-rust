@@ -3,23 +3,33 @@
 #[derive(Debug)]
 pub struct SceneStartHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
-    pub _playersAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
-    pub _readyPlayers: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
     >,
-    pub _playersSpecificSettings: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
+    pub _gameplayRpcManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IGameplayRpcManager,
+    >,
+    pub _playersAtGameStartModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
+    >,
+    pub _readyPlayers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+    pub _playersSpecificSettings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
+        >,
     >,
     pub _started: bool,
-    pub _sessionGameId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub sceneSetupDidFinishEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _sessionGameId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub sceneSetupDidFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub sceneSetupDidReceiveTooLateEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub sceneSetupDidReceiveTooLateEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "SceneStartHandler")]

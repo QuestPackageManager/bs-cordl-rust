@@ -5,7 +5,9 @@ pub struct OVRBone {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Id_k__BackingField: crate::GlobalNamespace::OVRSkeleton_BoneId,
     pub _ParentBoneIndex_k__BackingField: i16,
-    pub _Transform_k__BackingField: *mut crate::UnityEngine::Transform,
+    pub _Transform_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
 }
 #[cfg(feature = "OVRBone")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

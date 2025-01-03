@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct OVRBoundary {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub cachedGeometryList: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector3,
+    pub cachedGeometryList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
     >,
 }
 #[cfg(feature = "OVRBoundary")]
@@ -141,7 +141,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRBoundary {
 }
 #[cfg(feature = "OVRBoundary+BoundaryTestResult")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRBoundary_BoundaryTestResult {
     pub IsTriggering: bool,
     pub ClosestDistance: f32,

@@ -4,10 +4,10 @@
 pub struct TextInputBaseField_1<TValueType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<TValueType>,
     pub m_VisualInputTabIndex: i32,
-    pub m_TextInputBase: *mut crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
-        TValueType,
+    pub m_TextInputBase: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<TValueType>,
     >,
-    pub onIsReadOnlyChanged: *mut crate::System::Action_1<bool>,
+    pub onIsReadOnlyChanged: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
 }
 #[cfg(feature = "UnityEngine+UIElements+TextInputBaseField_1")]
@@ -450,9 +450,15 @@ for crate::UnityEngine::UIElements::TextInputBaseField_1<TValueType> {
 #[derive(Debug)]
 pub struct TextInputBaseField_1_TextInputBase<TValueType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
-    pub _textElement_k__BackingField: *mut crate::UnityEngine::UIElements::TextElement,
-    pub scrollView: *mut crate::UnityEngine::UIElements::ScrollView,
-    pub multilineContainer: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub _textElement_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextElement,
+    >,
+    pub scrollView: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ScrollView,
+    >,
+    pub multilineContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub _isDragging_k__BackingField: bool,
     pub scrollOffset: crate::UnityEngine::Vector2,
     pub m_ScrollViewWasClamped: bool,
@@ -1024,16 +1030,32 @@ pub struct TextInputBaseField_1_UxmlTraits<TValueType: quest_hook::libil2cpp::Ty
         *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
-    pub m_MaxLength: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_Password: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_MaskCharacter: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_IsReadOnly: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_IsDelayed: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_HideMobileInput: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_KeyboardType: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::TouchScreenKeyboardType,
+    pub m_MaxLength: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
     >,
-    pub m_AutoCorrection: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    pub m_Password: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_MaskCharacter: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_IsReadOnly: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_IsDelayed: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_HideMobileInput: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_KeyboardType: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::TouchScreenKeyboardType,
+        >,
+    >,
+    pub m_AutoCorrection: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
 }
 #[cfg(feature = "UnityEngine+UIElements+TextInputBaseField_1+UxmlTraits")]

@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct SteamPlatformAdditionalContentModel {
     __cordl_parent: crate::GlobalNamespace::AdditionalContentModel,
-    pub _steamLevelProductCollectionModel: *mut crate::GlobalNamespace::SteamLevelProductCollectionModel,
-    pub _entitlementsAppIds: *mut crate::System::Collections::Generic::HashSet_1<u32>,
-    pub _dataIsValidTaskCompletionSource: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<
-        bool,
+    pub _steamLevelProductCollectionModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SteamLevelProductCollectionModel,
     >,
-    pub _semaphoreSlim: *mut crate::System::Threading::SemaphoreSlim,
+    pub _entitlementsAppIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<u32>,
+    >,
+    pub _dataIsValidTaskCompletionSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskCompletionSource_1<bool>,
+    >,
+    pub _semaphoreSlim: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SemaphoreSlim,
+    >,
     pub _isDataValid: bool,
 }
 #[cfg(feature = "SteamPlatformAdditionalContentModel")]

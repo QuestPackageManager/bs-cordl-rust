@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct RuntimePanel {
     __cordl_parent: crate::UnityEngine::UIElements::BaseRuntimePanel,
-    pub m_PanelSettings: *mut crate::UnityEngine::UIElements::PanelSettings,
+    pub m_PanelSettings: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::PanelSettings,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+RuntimePanel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

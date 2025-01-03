@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SwitchSettingsController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _toggle: *mut crate::UnityEngine::UI::Toggle,
+    pub _toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub _on: bool,
 }
 #[cfg(feature = "SwitchSettingsController")]

@@ -7,10 +7,16 @@ pub struct GroupedEnumerable_3<
     TElement: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub source: *mut crate::System::Collections::Generic::IEnumerable_1<TSource>,
-    pub keySelector: *mut crate::System::Func_2<TSource, TKey>,
-    pub elementSelector: *mut crate::System::Func_2<TSource, TElement>,
-    pub comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+    pub source: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<TSource>,
+    >,
+    pub keySelector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TKey>>,
+    pub elementSelector: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<TSource, TElement>,
+    >,
+    pub comparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+    >,
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,

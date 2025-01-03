@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalInactiveClient {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
-    pub _nodePoseSyncStateManager: *mut crate::GlobalNamespace::INodePoseSyncStateManager,
+    pub _playerTransforms: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerTransforms,
+    >,
+    pub _nodePoseSyncStateManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INodePoseSyncStateManager,
+    >,
 }
 #[cfg(feature = "MultiplayerLocalInactiveClient")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

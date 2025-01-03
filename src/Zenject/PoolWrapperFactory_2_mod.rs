@@ -6,7 +6,7 @@ pub struct PoolWrapperFactory_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _pool: *mut crate::Zenject::IMemoryPool_2<TParam1, TValue>,
+    pub _pool: quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_2<TParam1, TValue>>,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }

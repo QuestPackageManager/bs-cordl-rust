@@ -1,10 +1,12 @@
 #[cfg(feature = "UnityEngine+XR+MeshGenerationResult")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MeshGenerationResult {
     pub _MeshId_k__BackingField: crate::UnityEngine::XR::MeshId,
-    pub _Mesh_k__BackingField: *mut crate::UnityEngine::Mesh,
-    pub _MeshCollider_k__BackingField: *mut crate::UnityEngine::MeshCollider,
+    pub _Mesh_k__BackingField: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub _MeshCollider_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MeshCollider,
+    >,
     pub _Status_k__BackingField: crate::UnityEngine::XR::MeshGenerationStatus,
     pub _Attributes_k__BackingField: crate::UnityEngine::XR::MeshVertexAttributes,
     pub _Timestamp_k__BackingField: u64,

@@ -3,14 +3,22 @@
 #[derive(Debug)]
 pub struct JsonSerializerInternalBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _currentErrorContext: *mut crate::Newtonsoft::Json::Serialization::ErrorContext,
-    pub _mappings: *mut crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _currentErrorContext: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::ErrorContext,
     >,
-    pub Serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
-    pub TraceWriter: *mut crate::Newtonsoft::Json::Serialization::ITraceWriter,
-    pub InternalSerializer: *mut crate::Newtonsoft::Json::Serialization::JsonSerializerProxy,
+    pub _mappings: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    >,
+    pub Serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+    pub TraceWriter: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::ITraceWriter,
+    >,
+    pub InternalSerializer: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonSerializerProxy,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

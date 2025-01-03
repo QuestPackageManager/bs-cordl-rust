@@ -4,17 +4,21 @@
 pub struct ReflectPropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
     pub state: crate::System::Collections::Specialized::BitVector32,
-    pub componentClass: *mut crate::System::Type,
-    pub _cordl_type: *mut crate::System::Type,
-    pub defaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub ambientValue: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub propInfo: *mut crate::System::Reflection::PropertyInfo,
-    pub getMethod: *mut crate::System::Reflection::MethodInfo,
-    pub setMethod: *mut crate::System::Reflection::MethodInfo,
-    pub shouldSerializeMethod: *mut crate::System::Reflection::MethodInfo,
-    pub resetMethod: *mut crate::System::Reflection::MethodInfo,
-    pub realChangedEvent: *mut crate::System::ComponentModel::EventDescriptor,
-    pub receiverType: *mut crate::System::Type,
+    pub componentClass: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub defaultValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub ambientValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub propInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+    pub getMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    pub setMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    pub shouldSerializeMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MethodInfo,
+    >,
+    pub resetMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    pub realChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::EventDescriptor,
+    >,
+    pub receiverType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+ComponentModel+ReflectPropertyDescriptor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

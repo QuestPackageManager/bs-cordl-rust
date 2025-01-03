@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct FadeInOnSceneTransitionFinished {
     __cordl_parent: crate::GlobalNamespace::ZenjectSafeBehaviour,
-    pub _fadeInOut: *mut crate::GlobalNamespace::FadeInOutController,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
+    pub _fadeInOut: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FadeInOutController,
+    >,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
 }
 #[cfg(feature = "FadeInOnSceneTransitionFinished")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

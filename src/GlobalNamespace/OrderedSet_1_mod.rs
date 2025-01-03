@@ -3,14 +3,16 @@
 #[derive(Debug)]
 pub struct OrderedSet_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _comparison: *mut crate::System::Comparison_1<T>,
+    pub _comparison: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
     pub _processOrder: crate::GlobalNamespace::OrderedSet_1_ProcessOrder<T>,
-    pub _sortIndices: *mut crate::System::Collections::Generic::Dictionary_2<
-        T,
-        *mut crate::GlobalNamespace::OrderedSet_1_Node<T>,
+    pub _sortIndices: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            T,
+            *mut crate::GlobalNamespace::OrderedSet_1_Node<T>,
+        >,
     >,
-    pub _head: *mut crate::GlobalNamespace::OrderedSet_1_Node<T>,
-    pub _tail: *mut crate::GlobalNamespace::OrderedSet_1_Node<T>,
+    pub _head: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OrderedSet_1_Node<T>>,
+    pub _tail: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OrderedSet_1_Node<T>>,
     pub _clearCount: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -361,8 +363,10 @@ for crate::GlobalNamespace::OrderedSet_1<T> {
 pub struct OrderedSet_1_Node<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub value: T,
-    pub previous: *mut crate::GlobalNamespace::OrderedSet_1_Node<T>,
-    pub next: *mut crate::GlobalNamespace::OrderedSet_1_Node<T>,
+    pub previous: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OrderedSet_1_Node<T>,
+    >,
+    pub next: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OrderedSet_1_Node<T>>,
     pub isRemoved: bool,
     pub clearCount: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,

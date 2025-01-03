@@ -113,8 +113,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::StencilMateri
 #[derive(Debug)]
 pub struct StencilMaterial_MatEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub baseMat: *mut crate::UnityEngine::Material,
-    pub customMat: *mut crate::UnityEngine::Material,
+    pub baseMat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub customMat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub count: i32,
     pub stencilId: i32,
     pub operation: crate::UnityEngine::Rendering::StencilOp,

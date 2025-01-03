@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct NoteCutter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _colliders: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Collider,
+    pub _colliders: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
     >,
-    pub _cuttableBySaberSortParams: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParams,
+    pub _cuttableBySaberSortParams: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParams,
+        >,
     >,
-    pub _comparer: *mut crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParamsComparer,
+    pub _comparer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParamsComparer,
+    >,
 }
 #[cfg(feature = "NoteCutter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -78,7 +82,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteCutter {
 #[derive(Debug)]
 pub struct NoteCutter_CuttableBySaberSortParams {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub cuttableBySaber: *mut crate::GlobalNamespace::CuttableBySaber,
+    pub cuttableBySaber: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CuttableBySaber,
+    >,
     pub distance: f32,
     pub pos: crate::UnityEngine::Vector3,
 }

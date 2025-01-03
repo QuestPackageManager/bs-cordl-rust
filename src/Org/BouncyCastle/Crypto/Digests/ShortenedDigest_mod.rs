@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ShortenedDigest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub baseDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    pub baseDigest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     pub length: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+ShortenedDigest")]

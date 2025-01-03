@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct FactoryBindInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _FactoryType_k__BackingField: *mut crate::System::Type,
-    pub _ProviderFunc_k__BackingField: *mut crate::System::Func_2<
-        *mut crate::Zenject::DiContainer,
-        *mut crate::Zenject::IProvider,
+    pub _FactoryType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _ProviderFunc_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            *mut crate::Zenject::DiContainer,
+            *mut crate::Zenject::IProvider,
+        >,
     >,
-    pub _Arguments_k__BackingField: *mut crate::System::Collections::Generic::List_1<
-        crate::Zenject::TypeValuePair,
+    pub _Arguments_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
     >,
 }
 #[cfg(feature = "Zenject+FactoryBindInfo")]

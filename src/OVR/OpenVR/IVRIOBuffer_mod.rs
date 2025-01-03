@@ -1,12 +1,14 @@
 #[cfg(feature = "OVR+OpenVR+IVRIOBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IVRIOBuffer {
-    pub Open: *mut crate::OVR::OpenVR::IVRIOBuffer__Open,
-    pub Close: *mut crate::OVR::OpenVR::IVRIOBuffer__Close,
-    pub Read: *mut crate::OVR::OpenVR::IVRIOBuffer__Read,
-    pub Write: *mut crate::OVR::OpenVR::IVRIOBuffer__Write,
-    pub PropertyContainer: *mut crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer,
+    pub Open: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVRIOBuffer__Open>,
+    pub Close: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVRIOBuffer__Close>,
+    pub Read: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVRIOBuffer__Read>,
+    pub Write: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVRIOBuffer__Write>,
+    pub PropertyContainer: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer,
+    >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRIOBuffer")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -4,8 +4,10 @@
 pub struct AsymmetricAlgorithm {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub KeySizeValue: i32,
-    pub LegalKeySizesValue: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Security::Cryptography::KeySizes,
+    pub LegalKeySizesValue: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Security::Cryptography::KeySizes,
+        >,
     >,
 }
 #[cfg(feature = "System+Security+Cryptography+AsymmetricAlgorithm")]

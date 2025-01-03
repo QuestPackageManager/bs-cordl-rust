@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DataEntry {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub dataOutput: *mut crate::UnityEngine::UI::Text,
+    pub dataOutput: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
 }
 #[cfg(feature = "Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

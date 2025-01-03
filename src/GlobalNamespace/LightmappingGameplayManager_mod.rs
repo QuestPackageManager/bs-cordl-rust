@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct LightmappingGameplayManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
 }
 #[cfg(feature = "LightmappingGameplayManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

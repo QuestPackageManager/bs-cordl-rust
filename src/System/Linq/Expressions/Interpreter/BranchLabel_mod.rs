@@ -6,7 +6,9 @@ pub struct BranchLabel {
     pub _targetIndex: i32,
     pub _stackDepth: i32,
     pub _continuationStackDepth: i32,
-    pub _forwardBranchFixups: *mut crate::System::Collections::Generic::List_1<i32>,
+    pub _forwardBranchFixups: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
     pub _LabelIndex_k__BackingField: i32,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+BranchLabel")]

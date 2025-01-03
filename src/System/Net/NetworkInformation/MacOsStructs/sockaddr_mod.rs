@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Net+NetworkInformation+MacOsStructs+sockaddr")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct sockaddr {
     pub sa_len: u8,
     pub sa_family: u8,

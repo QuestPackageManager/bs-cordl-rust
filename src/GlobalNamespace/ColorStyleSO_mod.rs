@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ColorStyleSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _colorStyle: *mut crate::GlobalNamespace::ColorStyle,
+    pub _colorStyle: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorStyle>,
 }
 #[cfg(feature = "ColorStyleSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

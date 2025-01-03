@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct CounterSignatureDigestCalculator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub alg: *mut quest_hook::libil2cpp::Il2CppString,
-    pub data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub alg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CounterSignatureDigestCalculator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct InternalDecoderBestFitFallback {
     __cordl_parent: crate::System::Text::DecoderFallback,
-    pub _encoding: *mut crate::System::Text::Encoding,
-    pub _arrayBestFit: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    pub _arrayBestFit: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<char>,
+    >,
     pub _cReplacement: char,
 }
 #[cfg(feature = "System+Text+InternalDecoderBestFitFallback")]

@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct XmlAutoDetectWriter {
     __cordl_parent: crate::System::Xml::XmlRawWriter,
-    pub wrapped: *mut crate::System::Xml::XmlRawWriter,
-    pub onRemove: *mut crate::System::Xml::OnRemoveWriter,
-    pub writerSettings: *mut crate::System::Xml::XmlWriterSettings,
-    pub eventCache: *mut crate::System::Xml::XmlEventCache,
-    pub textWriter: *mut crate::System::IO::TextWriter,
-    pub strm: *mut crate::System::IO::Stream,
+    pub wrapped: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlRawWriter>,
+    pub onRemove: quest_hook::libil2cpp::Gc<crate::System::Xml::OnRemoveWriter>,
+    pub writerSettings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriterSettings>,
+    pub eventCache: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlEventCache>,
+    pub textWriter: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
+    pub strm: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
 }
 #[cfg(feature = "System+Xml+XmlAutoDetectWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

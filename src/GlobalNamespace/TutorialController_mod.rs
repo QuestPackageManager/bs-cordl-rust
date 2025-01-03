@@ -3,15 +3,27 @@
 #[derive(Debug)]
 pub struct TutorialController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _tutorialSongController: *mut crate::GlobalNamespace::TutorialSongController,
-    pub _introTutorialController: *mut crate::GlobalNamespace::IntroTutorialController,
-    pub _audioFading: *mut crate::GlobalNamespace::AudioFading,
-    pub _tutorialSceneSetupData: *mut crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
-    pub _tutorialIntroStartedSignal: *mut crate::GlobalNamespace::Signal,
-    pub _tutorialFinishedSignal: *mut crate::GlobalNamespace::Signal,
-    pub _pauseController: *mut crate::GlobalNamespace::PauseController,
-    pub levelWillStartIntroEvent: *mut crate::System::Action,
-    pub levelDidStartEvent: *mut crate::System::Action,
+    pub _tutorialSongController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSongController,
+    >,
+    pub _introTutorialController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IntroTutorialController,
+    >,
+    pub _audioFading: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioFading>,
+    pub _tutorialSceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
+    >,
+    pub _tutorialIntroStartedSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _tutorialFinishedSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _pauseController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PauseController,
+    >,
+    pub levelWillStartIntroEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub levelDidStartEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _doingOutroTransition: bool,
 }
 #[cfg(feature = "TutorialController")]

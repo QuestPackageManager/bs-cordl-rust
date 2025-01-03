@@ -4,10 +4,16 @@
 pub struct UnityWebRequest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
-    pub m_DownloadHandler: *mut crate::UnityEngine::Networking::DownloadHandler,
-    pub m_UploadHandler: *mut crate::UnityEngine::Networking::UploadHandler,
-    pub m_CertificateHandler: *mut crate::UnityEngine::Networking::CertificateHandler,
-    pub m_Uri: *mut crate::System::Uri,
+    pub m_DownloadHandler: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Networking::DownloadHandler,
+    >,
+    pub m_UploadHandler: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Networking::UploadHandler,
+    >,
+    pub m_CertificateHandler: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Networking::CertificateHandler,
+    >,
+    pub m_Uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     pub _disposeCertificateHandlerOnDispose_k__BackingField: bool,
     pub _disposeDownloadHandlerOnDispose_k__BackingField: bool,
     pub _disposeUploadHandlerOnDispose_k__BackingField: bool,

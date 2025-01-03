@@ -5,7 +5,9 @@ pub struct MultiplayerModeSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub createServerPlayersCount: i32,
     pub quickPlayBeatmapDifficulty: crate::GlobalNamespace::BeatmapDifficultyMask,
-    pub quickPlaySongPackMaskSerializedName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub quickPlaySongPackMaskSerializedName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub quickPlayEnableLevelSelection: bool,
 }
 #[cfg(feature = "MultiplayerModeSettings")]

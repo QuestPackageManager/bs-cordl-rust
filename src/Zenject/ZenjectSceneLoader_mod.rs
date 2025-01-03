@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ZenjectSceneLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _projectKernel: *mut crate::Zenject::ProjectKernel,
-    pub _sceneContainer: *mut crate::Zenject::DiContainer,
+    pub _projectKernel: quest_hook::libil2cpp::Gc<crate::Zenject::ProjectKernel>,
+    pub _sceneContainer: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
 }
 #[cfg(feature = "Zenject+ZenjectSceneLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,8 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValue")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StylePropertyValue {
-    pub sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
+    pub sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
     pub handle: crate::UnityEngine::UIElements::StyleValueHandle,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValue")]

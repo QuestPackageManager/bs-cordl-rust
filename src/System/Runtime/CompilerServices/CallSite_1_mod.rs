@@ -4,7 +4,7 @@
 pub struct CallSite_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Runtime::CompilerServices::CallSite,
     pub Target: T,
-    pub Rules: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub Rules: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+CallSite_1")]

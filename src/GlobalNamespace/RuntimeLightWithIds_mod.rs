@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct RuntimeLightWithIds {
     __cordl_parent: crate::GlobalNamespace::LightWithIds,
-    pub _lightIntensityData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::RuntimeLightWithIds_LightIntensitiesWithId,
+    pub _lightIntensityData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::RuntimeLightWithIds_LightIntensitiesWithId,
+        >,
     >,
     pub _intensity: f32,
     pub _maxIntensity: f32,

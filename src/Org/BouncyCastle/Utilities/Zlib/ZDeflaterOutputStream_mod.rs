@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct ZDeflaterOutputStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub z: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+    pub z: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Zlib::ZStream>,
     pub flushLevel: i32,
-    pub buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub buf1: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub outp: *mut crate::System::IO::Stream,
+    pub buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub buf1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub outp: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+ZDeflaterOutputStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

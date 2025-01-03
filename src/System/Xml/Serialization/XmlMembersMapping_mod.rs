@@ -4,8 +4,10 @@
 pub struct XmlMembersMapping {
     __cordl_parent: crate::System::Xml::Serialization::XmlMapping,
     pub _hasWrapperElement: bool,
-    pub _mapping: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::Serialization::XmlMemberMapping,
+    pub _mapping: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::Serialization::XmlMemberMapping,
+        >,
     >,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlMembersMapping")]

@@ -117,12 +117,12 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AutoRecord {
 }
 #[cfg(feature = "AutoRecord+Beatmap")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AutoRecord_Beatmap {
     pub beatsPerMinute: f32,
     pub noteLineCount: i32,
-    pub items: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapDataItem,
+    pub items: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapDataItem>,
     >,
 }
 #[cfg(feature = "AutoRecord+Beatmap")]

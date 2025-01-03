@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct ProBuilderShape {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_Shape: *mut crate::UnityEngine::ProBuilder::Shapes::Shape,
+    pub m_Shape: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Shapes::Shape,
+    >,
     pub m_Size: crate::UnityEngine::Vector3,
     pub m_Rotation: crate::UnityEngine::Quaternion,
-    pub m_Mesh: *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+    pub m_Mesh: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+    >,
     pub m_PivotLocation: crate::UnityEngine::ProBuilder::PivotLocation,
     pub m_PivotPosition: crate::UnityEngine::Vector3,
     pub m_UnmodifiedMeshVersion: u16,

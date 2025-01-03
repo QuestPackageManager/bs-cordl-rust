@@ -3,14 +3,22 @@
 #[derive(Debug)]
 pub struct ECPoint {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-    pub m_x: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    pub m_y: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    pub m_zs: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    pub m_curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
+    pub m_x: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    >,
+    pub m_y: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    >,
+    pub m_zs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+        >,
     >,
     pub m_withCompression: bool,
-    pub m_preCompTable: *mut crate::System::Collections::IDictionary,
+    pub m_preCompTable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IDictionary,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECPoint")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -668,7 +676,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::EC::E
 #[derive(Debug)]
 pub struct ECPoint_ValidityCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_outer: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    pub m_outer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     pub m_decompressed: bool,
     pub m_checkOrder: bool,
 }

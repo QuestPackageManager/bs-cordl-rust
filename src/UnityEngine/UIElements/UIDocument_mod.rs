@@ -4,15 +4,29 @@
 pub struct UIDocument {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_UIDocumentCreationIndex: i32,
-    pub m_PanelSettings: *mut crate::UnityEngine::UIElements::PanelSettings,
-    pub m_PreviousPanelSettings: *mut crate::UnityEngine::UIElements::PanelSettings,
-    pub m_ParentUI: *mut crate::UnityEngine::UIElements::UIDocument,
-    pub m_ChildrenContent: *mut crate::UnityEngine::UIElements::UIDocumentList,
-    pub m_ChildrenContentCopy: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::UIDocument,
+    pub m_PanelSettings: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::PanelSettings,
     >,
-    pub sourceAsset: *mut crate::UnityEngine::UIElements::VisualTreeAsset,
-    pub m_RootVisualElement: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_PreviousPanelSettings: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::PanelSettings,
+    >,
+    pub m_ParentUI: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIDocument,
+    >,
+    pub m_ChildrenContent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIDocumentList,
+    >,
+    pub m_ChildrenContentCopy: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::UIDocument,
+        >,
+    >,
+    pub sourceAsset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualTreeAsset,
+    >,
+    pub m_RootVisualElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub m_FirstChildInsertIndex: i32,
     pub m_SortingOrder: f32,
 }

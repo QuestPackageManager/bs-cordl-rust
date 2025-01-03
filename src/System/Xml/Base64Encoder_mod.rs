@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct Base64Encoder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub leftOverBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub leftOverBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub leftOverBytesCount: i32,
-    pub charsLine: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub charsLine: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
 }
 #[cfg(feature = "System+Xml+Base64Encoder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

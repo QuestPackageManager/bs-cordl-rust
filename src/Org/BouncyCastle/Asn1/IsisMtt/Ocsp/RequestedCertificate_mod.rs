@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct RequestedCertificate {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub cert: *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
-    pub publicKeyCert: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub attributeCert: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub cert: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+    >,
+    pub publicKeyCert: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub attributeCert: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+Ocsp+RequestedCertificate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

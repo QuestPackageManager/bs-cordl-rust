@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct XmlSchemaAny {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaParticle,
-    pub ns: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub processContents: crate::System::Xml::Schema::XmlSchemaContentProcessing,
-    pub namespaceList: *mut crate::System::Xml::Schema::NamespaceList,
+    pub namespaceList: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::NamespaceList,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaAny")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

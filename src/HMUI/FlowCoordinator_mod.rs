@@ -3,30 +3,50 @@
 #[derive(Debug)]
 pub struct FlowCoordinator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _baseInputModule: *mut crate::UnityEngine::EventSystems::BaseInputModule,
-    pub _screenSystem: *mut crate::HMUI::ScreenSystem,
-    pub _parentFlowCoordinator: *mut crate::HMUI::FlowCoordinator,
-    pub _childFlowCoordinator: *mut crate::HMUI::FlowCoordinator,
-    pub _mainScreenViewControllers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HMUI::ViewController,
+    pub _baseInputModule: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::BaseInputModule,
     >,
-    pub _leftScreenViewController: *mut crate::HMUI::ViewController,
-    pub _rightScreenViewController: *mut crate::HMUI::ViewController,
-    pub _bottomScreenViewController: *mut crate::HMUI::ViewController,
-    pub _topScreenViewController: *mut crate::HMUI::ViewController,
+    pub _screenSystem: quest_hook::libil2cpp::Gc<crate::HMUI::ScreenSystem>,
+    pub _parentFlowCoordinator: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+    pub _childFlowCoordinator: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+    pub _mainScreenViewControllers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::HMUI::ViewController>,
+    >,
+    pub _leftScreenViewController: quest_hook::libil2cpp::Gc<
+        crate::HMUI::ViewController,
+    >,
+    pub _rightScreenViewController: quest_hook::libil2cpp::Gc<
+        crate::HMUI::ViewController,
+    >,
+    pub _bottomScreenViewController: quest_hook::libil2cpp::Gc<
+        crate::HMUI::ViewController,
+    >,
+    pub _topScreenViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _wasActivatedBefore: bool,
-    pub _title: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _providedMainViewController: *mut crate::HMUI::ViewController,
-    pub _providedLeftScreenViewController: *mut crate::HMUI::ViewController,
-    pub _providedRightScreenViewController: *mut crate::HMUI::ViewController,
-    pub _providedBottomScreenViewController: *mut crate::HMUI::ViewController,
-    pub _providedTopScreenViewController: *mut crate::HMUI::ViewController,
+    pub _title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _providedMainViewController: quest_hook::libil2cpp::Gc<
+        crate::HMUI::ViewController,
+    >,
+    pub _providedLeftScreenViewController: quest_hook::libil2cpp::Gc<
+        crate::HMUI::ViewController,
+    >,
+    pub _providedRightScreenViewController: quest_hook::libil2cpp::Gc<
+        crate::HMUI::ViewController,
+    >,
+    pub _providedBottomScreenViewController: quest_hook::libil2cpp::Gc<
+        crate::HMUI::ViewController,
+    >,
+    pub _providedTopScreenViewController: quest_hook::libil2cpp::Gc<
+        crate::HMUI::ViewController,
+    >,
     pub _viewControllersWereProvided: bool,
     pub _isInDidActivatePhase: bool,
     pub _isActivated: bool,
     pub _isInTransition: bool,
     pub _showBackButton: bool,
-    pub _prevEventSystem: *mut crate::UnityEngine::EventSystems::EventSystem,
+    pub _prevEventSystem: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::EventSystem,
+    >,
 }
 #[cfg(feature = "HMUI+FlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

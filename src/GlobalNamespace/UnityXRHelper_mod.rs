@@ -3,27 +3,53 @@
 #[derive(Debug)]
 pub struct UnityXRHelper {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _leftControllerConfiguration: *mut crate::GlobalNamespace::UnityXRController_Configuration,
-    pub _rightControllerConfiguration: *mut crate::GlobalNamespace::UnityXRController_Configuration,
-    pub _userPresenceActionReference: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub _headPositionActionReference: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub _headOrientationActionReference: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub _pauseGameActionReference: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub inputFocusWasCapturedEvent: *mut crate::System::Action,
-    pub inputFocusWasReleasedEvent: *mut crate::System::Action,
-    pub vrFocusWasCapturedEvent: *mut crate::System::Action,
-    pub vrFocusWasReleasedEvent: *mut crate::System::Action,
-    pub hmdUnmountedEvent: *mut crate::System::Action,
-    pub hmdMountedEvent: *mut crate::System::Action,
-    pub controllersDidChangeReferenceEvent: *mut crate::System::Action,
-    pub controllersDidDisconnectEvent: *mut crate::System::Action,
+    pub _leftControllerConfiguration: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::UnityXRController_Configuration,
+    >,
+    pub _rightControllerConfiguration: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::UnityXRController_Configuration,
+    >,
+    pub _userPresenceActionReference: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
+    pub _headPositionActionReference: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
+    pub _headOrientationActionReference: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
+    pub _pauseGameActionReference: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
+    pub inputFocusWasCapturedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub inputFocusWasReleasedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub vrFocusWasCapturedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub vrFocusWasReleasedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub hmdUnmountedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub hmdMountedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub controllersDidChangeReferenceEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub controllersDidDisconnectEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _hasVrFocus_k__BackingField: bool,
-    pub _leftController: *mut crate::GlobalNamespace::UnityXRController,
-    pub _rightController: *mut crate::GlobalNamespace::UnityXRController,
-    pub _headPositionAction: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub _headOrientationAction: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub _userPresenceAction: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub _pauseGameAction: *mut crate::UnityEngine::InputSystem::InputAction,
+    pub _leftController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::UnityXRController,
+    >,
+    pub _rightController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::UnityXRController,
+    >,
+    pub _headPositionAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub _headOrientationAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub _userPresenceAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub _pauseGameAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
     pub _scrollingLastFrame: bool,
     pub _userPresence: bool,
     pub _isPausePressed: bool,

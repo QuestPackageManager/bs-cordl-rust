@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct LightmapDataSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _lightmap1: *mut crate::UnityEngine::Texture2D,
-    pub _lightmap2: *mut crate::UnityEngine::Texture2D,
+    pub _lightmap1: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    pub _lightmap2: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
 }
 #[cfg(feature = "LightmapDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

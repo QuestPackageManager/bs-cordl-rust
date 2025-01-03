@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PlayerAgreements {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub agreedToEulaEvent: *mut crate::System::Action,
+    pub agreedToEulaEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub eulaVersion: i32,
     pub privacyPolicyVersion: i32,
     pub healthAndSafetyVersion: i32,

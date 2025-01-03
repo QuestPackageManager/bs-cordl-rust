@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+WordWrapState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct WordWrapState {
     pub previous_WordBreak: i32,
     pub total_CharacterCount: i32,
@@ -37,7 +37,7 @@ pub struct WordWrapState {
     pub glyphHorizontalAdvanceAdjustment: f32,
     pub cSpace: f32,
     pub mSpace: f32,
-    pub textInfo: *mut crate::TMPro::TMP_TextInfo,
+    pub textInfo: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
     pub lineInfo: crate::TMPro::TMP_LineInfo,
     pub vertexColor: crate::UnityEngine::Color32,
     pub underlineColor: crate::UnityEngine::Color32,
@@ -76,9 +76,9 @@ pub struct WordWrapState {
         crate::TMPro::HorizontalAlignmentOptions,
     >,
     pub spriteAnimationID: i32,
-    pub currentFontAsset: *mut crate::TMPro::TMP_FontAsset,
-    pub currentSpriteAsset: *mut crate::TMPro::TMP_SpriteAsset,
-    pub currentMaterial: *mut crate::UnityEngine::Material,
+    pub currentFontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    pub currentSpriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+    pub currentMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub currentMaterialIndex: i32,
     pub meshExtents: crate::TMPro::Extents,
     pub tagNoParsing: bool,

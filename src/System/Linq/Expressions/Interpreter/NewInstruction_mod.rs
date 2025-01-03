@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct NewInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
-    pub _constructor: *mut crate::System::Reflection::ConstructorInfo,
+    pub _constructor: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::ConstructorInfo,
+    >,
     pub _argumentCount: i32,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+NewInstruction")]

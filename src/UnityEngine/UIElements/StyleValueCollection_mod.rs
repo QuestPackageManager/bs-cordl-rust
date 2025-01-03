@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct StyleValueCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Values: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::StyleSheets::StyleValue,
+    pub m_Values: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::StyleSheets::StyleValue,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleValueCollection")]

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SingleResp {
     __cordl_parent: crate::Org::BouncyCastle::X509::X509ExtensionBase,
-    pub resp: *mut crate::Org::BouncyCastle::Asn1::Ocsp::SingleResponse,
+    pub resp: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Ocsp::SingleResponse,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+SingleResp")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,45 +3,67 @@
 #[derive(Debug)]
 pub struct MirroredBeatmapObjectManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _mirroredBasicGameNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::MirroredGameNoteController,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
     >,
-    pub _mirroredBurstSliderHeadGameNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::MirroredGameNoteController,
-    >,
-    pub _mirroredBurstSliderGameNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::MirroredGameNoteController,
-    >,
-    pub _mirroredBombNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::MirroredBombNoteController,
-    >,
-    pub _mirroredObstaclePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::MirroredObstacleController,
-    >,
-    pub _mirroredSlidersPoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::MirroredSliderController,
-    >,
-    pub _gameNoteControllersToMirroredGameNoteControllers: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::GlobalNamespace::IGameNoteMirrorable,
-        crate::System::ValueTuple_2<
+    pub _mirroredBasicGameNotePoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
             *mut crate::GlobalNamespace::MirroredGameNoteController,
-            *mut crate::GlobalNamespace::MemoryPoolContainer_1<
+        >,
+    >,
+    pub _mirroredBurstSliderHeadGameNotePoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::MirroredGameNoteController,
+        >,
+    >,
+    pub _mirroredBurstSliderGameNotePoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::MirroredGameNoteController,
+        >,
+    >,
+    pub _mirroredBombNotePoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::MirroredBombNoteController,
+        >,
+    >,
+    pub _mirroredObstaclePoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::MirroredObstacleController,
+        >,
+    >,
+    pub _mirroredSlidersPoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::MirroredSliderController,
+        >,
+    >,
+    pub _gameNoteControllersToMirroredGameNoteControllers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::GlobalNamespace::IGameNoteMirrorable,
+            crate::System::ValueTuple_2<
                 *mut crate::GlobalNamespace::MirroredGameNoteController,
+                *mut crate::GlobalNamespace::MemoryPoolContainer_1<
+                    *mut crate::GlobalNamespace::MirroredGameNoteController,
+                >,
             >,
         >,
     >,
-    pub _bombNoteControllersToMirroredBombNoteControllers: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::GlobalNamespace::INoteMirrorable,
-        *mut crate::GlobalNamespace::MirroredBombNoteController,
+    pub _bombNoteControllersToMirroredBombNoteControllers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::GlobalNamespace::INoteMirrorable,
+            *mut crate::GlobalNamespace::MirroredBombNoteController,
+        >,
     >,
-    pub _obstacleControllersToMirroredObstacleControllers: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::GlobalNamespace::ObstacleController,
-        *mut crate::GlobalNamespace::MirroredObstacleController,
+    pub _obstacleControllersToMirroredObstacleControllers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::GlobalNamespace::ObstacleController,
+            *mut crate::GlobalNamespace::MirroredObstacleController,
+        >,
     >,
-    pub _sliderControllersToMirroredSliderControllers: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::GlobalNamespace::SliderController,
-        *mut crate::GlobalNamespace::MirroredSliderController,
+    pub _sliderControllersToMirroredSliderControllers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::GlobalNamespace::SliderController,
+            *mut crate::GlobalNamespace::MirroredSliderController,
+        >,
     >,
 }
 #[cfg(feature = "MirroredBeatmapObjectManager")]

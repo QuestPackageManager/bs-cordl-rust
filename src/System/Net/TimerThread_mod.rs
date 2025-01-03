@@ -520,11 +520,11 @@ impl AsMut<crate::System::IDisposable> for crate::System::Net::TimerThread_Timer
 pub struct TimerThread_TimerNode {
     __cordl_parent: crate::System::Net::TimerThread_Timer,
     pub m_TimerState: crate::System::Net::TimerNode_TimerThread_TimerState,
-    pub m_Callback: *mut crate::System::Net::TimerThread_Callback,
-    pub m_Context: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_QueueLock: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub next: *mut crate::System::Net::TimerThread_TimerNode,
-    pub prev: *mut crate::System::Net::TimerThread_TimerNode,
+    pub m_Callback: quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_Callback>,
+    pub m_Context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_QueueLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub next: quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_TimerNode>,
+    pub prev: quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_TimerNode>,
 }
 #[cfg(feature = "System+Net+TimerThread+TimerNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -676,7 +676,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::TimerThread_Timer
 pub struct TimerThread_TimerQueue {
     __cordl_parent: crate::System::Net::TimerThread_Queue,
     pub m_ThisHandle: crate::System::IntPtr,
-    pub m_Timers: *mut crate::System::Net::TimerThread_TimerNode,
+    pub m_Timers: quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_TimerNode>,
 }
 #[cfg(feature = "System+Net+TimerThread+TimerQueue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

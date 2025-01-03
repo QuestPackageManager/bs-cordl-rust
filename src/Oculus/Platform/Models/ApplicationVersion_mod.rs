@@ -4,11 +4,11 @@
 pub struct ApplicationVersion {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub CurrentCode: i32,
-    pub CurrentName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub CurrentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub LatestCode: i32,
-    pub LatestName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub LatestName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub ReleaseDate: i64,
-    pub Size: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Size: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Oculus+Platform+Models+ApplicationVersion")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

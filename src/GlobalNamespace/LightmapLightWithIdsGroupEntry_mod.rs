@@ -3,14 +3,22 @@
 #[derive(Debug)]
 pub struct LightmapLightWithIdsGroupEntry {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightmapLightWithIds: *mut crate::GlobalNamespace::LightmapLightWithIds,
-    pub _groupLightData: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData,
+    pub _lightmapLightWithIds: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightmapLightWithIds,
     >,
-    pub _individualLightData: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId,
+    pub _groupLightData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData,
+        >,
     >,
-    pub _excludedLightIds: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _individualLightData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId,
+        >,
+    >,
+    pub _excludedLightIds: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     pub _groupLightsWeighting: crate::GlobalNamespace::ColorMixAndWeightingApproach,
 }
 #[cfg(feature = "LightmapLightWithIdsGroupEntry")]
@@ -133,7 +141,7 @@ for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry {
 #[derive(Debug)]
 pub struct LightmapLightWithIdsGroupEntry_GroupLightData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _lightGroup: *mut crate::GlobalNamespace::LightGroupSO,
+    pub _lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
     pub _groupIntensity: f32,
     pub _groupProbeHighlightsIntensityMultiplier: f32,
 }

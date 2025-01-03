@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct ComboUIController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _comboText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _animator: *mut crate::UnityEngine::Animator,
-    pub _comboController: *mut crate::GlobalNamespace::IComboController,
+    pub _comboText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _animator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
+    pub _comboController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IComboController,
+    >,
     pub _comboLostId: i32,
     pub _fullComboLost: bool,
 }

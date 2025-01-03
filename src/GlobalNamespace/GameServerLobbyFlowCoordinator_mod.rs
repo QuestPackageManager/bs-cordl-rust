@@ -3,44 +3,100 @@
 #[derive(Debug)]
 pub struct GameServerLobbyFlowCoordinator {
     __cordl_parent: crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase,
-    pub _screenMode: *mut crate::HMUI::ScreenModeSO,
-    pub _ambienceAudioClip: *mut crate::UnityEngine::AudioClip,
-    pub _serverPlayerListViewController: *mut crate::GlobalNamespace::ServerPlayerListViewController,
-    pub _selectModifiersViewController: *mut crate::GlobalNamespace::SelectModifiersViewController,
-    pub _multiplayerLevelSelectionFlowCoordinator: *mut crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator,
-    pub _multiplayerResultsViewController: *mut crate::GlobalNamespace::MultiplayerResultsViewController,
-    pub _simpleDialogPromptViewController: *mut crate::GlobalNamespace::SimpleDialogPromptViewController,
-    pub _connectionErrorDialogViewController: *mut crate::GlobalNamespace::ConnectionErrorDialogViewController,
-    pub _multiplayerSettingsPanelController: *mut crate::GlobalNamespace::MultiplayerSettingsPanelController,
-    pub _gameplaySetupViewController: *mut crate::GlobalNamespace::GameplaySetupViewController,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub _multiplayerLobbyController: *mut crate::GlobalNamespace::MultiplayerLobbyController,
-    pub _fadeInOutController: *mut crate::GlobalNamespace::FadeInOutController,
-    pub _centerStageScreenController: *mut crate::GlobalNamespace::CenterStageScreenController,
-    pub _lobbyStateDataModel: *mut crate::GlobalNamespace::ILobbyStateDataModel,
-    pub _lobbyGameStateModel: *mut crate::GlobalNamespace::LobbyGameStateModel,
-    pub _lobbyPlayersDataModel: *mut crate::GlobalNamespace::ILobbyPlayersDataModel,
-    pub _lobbyGameStateController: *mut crate::GlobalNamespace::ILobbyGameStateController,
-    pub _lobbyPlayerPermissionsModel: *mut crate::GlobalNamespace::LobbyPlayerPermissionsModel,
-    pub _lobbySetupViewController: *mut crate::GlobalNamespace::LobbySetupViewController,
-    pub _unifiedNetworkPlayerModel: *mut crate::GlobalNamespace::IUnifiedNetworkPlayerModel,
-    pub _screenModeController: *mut crate::HMUI::ScreenModeController,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _platformLeaderboardsModel: *mut crate::GlobalNamespace::PlatformLeaderboardsModel,
-    pub _songPreviewPlayer: *mut crate::GlobalNamespace::SongPreviewPlayer,
-    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
-    pub _lastSimpleLevelSelectionFlowCoordinatorState: *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
-    pub _isAlreadyFinishing: bool,
-    pub _missingEntitlementsStringBuilder: *mut crate::System::Text::StringBuilder,
-    pub _playerIdsWithoutEntitlements: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _screenMode: quest_hook::libil2cpp::Gc<crate::HMUI::ScreenModeSO>,
+    pub _ambienceAudioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    pub _serverPlayerListViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ServerPlayerListViewController,
     >,
-    pub _canStartGameCts: *mut crate::System::Threading::CancellationTokenSource,
-    pub willFinishEvent: *mut crate::System::Action,
-    pub didFinishEvent: *mut crate::System::Action,
-    pub startGameOrReadyEvent: *mut crate::System::Action,
-    pub didSetupEvent: *mut crate::System::Action,
-    pub didOpenInvitePanelEvent: *mut crate::System::Action,
+    pub _selectModifiersViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SelectModifiersViewController,
+    >,
+    pub _multiplayerLevelSelectionFlowCoordinator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator,
+    >,
+    pub _multiplayerResultsViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerResultsViewController,
+    >,
+    pub _simpleDialogPromptViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SimpleDialogPromptViewController,
+    >,
+    pub _connectionErrorDialogViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ConnectionErrorDialogViewController,
+    >,
+    pub _multiplayerSettingsPanelController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerSettingsPanelController,
+    >,
+    pub _gameplaySetupViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplaySetupViewController,
+    >,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub _multiplayerLobbyController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLobbyController,
+    >,
+    pub _fadeInOutController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FadeInOutController,
+    >,
+    pub _centerStageScreenController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CenterStageScreenController,
+    >,
+    pub _lobbyStateDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyStateDataModel,
+    >,
+    pub _lobbyGameStateModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LobbyGameStateModel,
+    >,
+    pub _lobbyPlayersDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyPlayersDataModel,
+    >,
+    pub _lobbyGameStateController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyGameStateController,
+    >,
+    pub _lobbyPlayerPermissionsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LobbyPlayerPermissionsModel,
+    >,
+    pub _lobbySetupViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LobbySetupViewController,
+    >,
+    pub _unifiedNetworkPlayerModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IUnifiedNetworkPlayerModel,
+    >,
+    pub _screenModeController: quest_hook::libil2cpp::Gc<
+        crate::HMUI::ScreenModeController,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _platformLeaderboardsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlatformLeaderboardsModel,
+    >,
+    pub _songPreviewPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPreviewPlayer,
+    >,
+    pub _analyticsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAnalyticsModel,
+    >,
+    pub _lastSimpleLevelSelectionFlowCoordinatorState: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
+    >,
+    pub _isAlreadyFinishing: bool,
+    pub _missingEntitlementsStringBuilder: quest_hook::libil2cpp::Gc<
+        crate::System::Text::StringBuilder,
+    >,
+    pub _playerIdsWithoutEntitlements: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+    pub _canStartGameCts: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub willFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub startGameOrReadyEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub didSetupEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub didOpenInvitePanelEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _rejoinQuickPlay_k__BackingField: bool,
 }
 #[cfg(feature = "GameServerLobbyFlowCoordinator")]

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct BaseReorderableDragAndDropController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_View: *mut crate::UnityEngine::UIElements::BaseVerticalCollectionView,
-    pub m_SortedSelectedIds: *mut crate::System::Collections::Generic::List_1<i32>,
+    pub m_View: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+    >,
+    pub m_SortedSelectedIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
     pub _enableReordering_k__BackingField: bool,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]

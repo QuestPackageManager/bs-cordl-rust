@@ -3,17 +3,19 @@
 #[derive(Debug)]
 pub struct RegexCode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Codes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub Strings: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub Codes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub Strings: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub TrackCount: i32,
-    pub Caps: *mut crate::System::Collections::Hashtable,
+    pub Caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub CapSize: i32,
     pub FCPrefix: crate::System::Nullable_1<
         crate::System::Text::RegularExpressions::RegexPrefix,
     >,
-    pub BMPrefix: *mut crate::System::Text::RegularExpressions::RegexBoyerMoore,
+    pub BMPrefix: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::RegexBoyerMoore,
+    >,
     pub Anchors: i32,
     pub RightToLeft: bool,
 }

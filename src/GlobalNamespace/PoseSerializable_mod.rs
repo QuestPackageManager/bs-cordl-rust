@@ -1,6 +1,6 @@
 #[cfg(feature = "PoseSerializable")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PoseSerializable {
     pub position: crate::GlobalNamespace::Vector3Serializable,
     pub rotation: crate::GlobalNamespace::QuaternionSerializable,

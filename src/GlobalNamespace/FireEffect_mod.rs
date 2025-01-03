@@ -6,19 +6,37 @@ pub struct FireEffect {
     pub _groupId: i32,
     pub _elementId: i32,
     pub _lightId: i32,
-    pub _flipBookPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
-    pub _bloomPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _flipBookPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
+    pub _bloomPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
     pub _useEmissionColor: bool,
-    pub _privatePointLightPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
-    pub _emissionTextureColorPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
-    pub _bloomPrePassRenderer: *mut crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer,
+    pub _privatePointLightPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
+    pub _emissionTextureColorPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
+    pub _bloomPrePassRenderer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer,
+    >,
     pub _bloomIntensityMultiplier: f32,
     pub _pointLightColor: crate::UnityEngine::Color,
     pub _contributeCustomLightColor: bool,
-    pub _customLightColorContribution: *mut crate::GlobalNamespace::ColorSO,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _lightWithIdManager: *mut crate::GlobalNamespace::LightWithIdManager,
-    pub _lightColorBeatmapEventCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _customLightColorContribution: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSO,
+    >,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _lightWithIdManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightWithIdManager,
+    >,
+    pub _lightColorBeatmapEventCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "FireEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

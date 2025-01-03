@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct MultiplayerPlayerResultsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
-    pub multiplayerLevelCompletionResults: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-    pub badge: *mut crate::GlobalNamespace::MultiplayerBadgeAwardData,
+    pub connectedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
+    pub multiplayerLevelCompletionResults: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+    >,
+    pub badge: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerBadgeAwardData,
+    >,
 }
 #[cfg(feature = "MultiplayerPlayerResultsData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

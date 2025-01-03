@@ -1,6 +1,6 @@
 #[cfg(feature = "System+IO+Enumeration+FileSystemEntry")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FileSystemEntry {
     pub _directoryEntry: crate::GlobalNamespace::Sys_Interop_DirectoryEntry,
     pub _status: crate::System::IO::FileStatus,
@@ -199,7 +199,7 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FileSystemEntry___fileNameBuffer_e__FixedBuffer {
     pub FixedElementField: char,
 }

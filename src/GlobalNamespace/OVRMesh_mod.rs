@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct OVRMesh {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _dataProvider: *mut crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider,
+    pub _dataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider,
+    >,
     pub _meshType: crate::GlobalNamespace::OVRMesh_MeshType,
-    pub _mesh: *mut crate::UnityEngine::Mesh,
+    pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub _IsInitialized_k__BackingField: bool,
 }
 #[cfg(feature = "OVRMesh")]

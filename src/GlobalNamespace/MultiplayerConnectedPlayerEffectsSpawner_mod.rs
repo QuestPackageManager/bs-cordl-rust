@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerEffectsSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _noteDebrisSpawner: *mut crate::GlobalNamespace::NoteDebrisSpawner,
-    pub _bombExplosionEffect: *mut crate::GlobalNamespace::BombExplosionEffect,
-    pub _beatmapObjectEventManager: *mut crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager,
+    pub _noteDebrisSpawner: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteDebrisSpawner,
+    >,
+    pub _bombExplosionEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BombExplosionEffect,
+    >,
+    pub _beatmapObjectEventManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager,
+    >,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerEffectsSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

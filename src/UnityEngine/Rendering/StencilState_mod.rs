@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+StencilState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StencilState {
     pub m_Enabled: u8,
     pub m_ReadMask: u8,

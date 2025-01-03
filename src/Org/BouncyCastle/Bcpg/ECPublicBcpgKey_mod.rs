@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ECPublicBcpgKey {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::BcpgObject,
-    pub oid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub point: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub oid: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub point: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+ECPublicBcpgKey")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,14 +3,16 @@
 #[derive(Debug)]
 pub struct AvatarShadowController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _spriteRenderer: *mut crate::UnityEngine::SpriteRenderer,
+    pub _spriteRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
     pub _distanceScale: f32,
     pub _scale: f32,
     pub _alpha: f32,
     pub _floorYPos: f32,
     pub _floorYPosLocal: bool,
-    pub _avatarController: *mut crate::BeatSaber::AvatarCore::AvatarController,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _avatarController: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::AvatarController,
+    >,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarShadowController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

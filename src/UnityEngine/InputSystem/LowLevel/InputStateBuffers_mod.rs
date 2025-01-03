@@ -1,13 +1,15 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBuffers")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputStateBuffers {
     pub sizePerBuffer: u32,
     pub totalSize: u32,
-    pub defaultStateBuffer: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub noiseMaskBuffer: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub resetMaskBuffer: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_AllBuffers: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub defaultStateBuffer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub noiseMaskBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub resetMaskBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_AllBuffers: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_PlayerStateBuffers: crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBuffers")]
@@ -191,9 +193,11 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBuffers+DoubleBuffers")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputStateBuffers_DoubleBuffers {
-    pub deviceToBufferMapping: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub deviceToBufferMapping: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBuffers+DoubleBuffers")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Xml+Schema+XsdDateTime")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XsdDateTime {
     pub dt: crate::System::DateTime,
     pub extra: u32,
@@ -310,7 +310,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XsdDateTime+Parser")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XsdDateTime_Parser {
     pub typeCode: crate::System::Xml::Schema::XsdDateTime_DateTimeTypeCode,
     pub year: i32,
@@ -323,7 +323,7 @@ pub struct XsdDateTime_Parser {
     pub kind: crate::System::Xml::Schema::XsdDateTime_XsdDateTimeKind,
     pub zoneHour: i32,
     pub zoneMinute: i32,
-    pub text: *mut quest_hook::libil2cpp::Il2CppString,
+    pub text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub length: i32,
 }
 #[cfg(feature = "System+Xml+Schema+XsdDateTime+Parser")]

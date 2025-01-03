@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BaseRaycaster {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
-    pub m_RootRaycaster: *mut crate::UnityEngine::EventSystems::BaseRaycaster,
+    pub m_RootRaycaster: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::BaseRaycaster,
+    >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+BaseRaycaster")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

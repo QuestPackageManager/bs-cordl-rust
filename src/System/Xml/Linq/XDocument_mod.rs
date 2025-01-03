@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XDocument {
     __cordl_parent: crate::System::Xml::Linq::XContainer,
-    pub _declaration: *mut crate::System::Xml::Linq::XDeclaration,
+    pub _declaration: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XDeclaration>,
 }
 #[cfg(feature = "System+Xml+Linq+XDocument")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

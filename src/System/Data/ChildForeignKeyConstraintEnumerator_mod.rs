@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ChildForeignKeyConstraintEnumerator {
     __cordl_parent: crate::System::Data::ForeignKeyConstraintEnumerator,
-    pub _table: *mut crate::System::Data::DataTable,
+    pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
 }
 #[cfg(feature = "System+Data+ChildForeignKeyConstraintEnumerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

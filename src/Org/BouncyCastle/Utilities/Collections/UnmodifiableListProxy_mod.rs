@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct UnmodifiableListProxy {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableList,
-    pub l: *mut crate::System::Collections::IList,
+    pub l: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableListProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

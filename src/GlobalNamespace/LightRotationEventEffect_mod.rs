@@ -6,13 +6,19 @@ pub struct LightRotationEventEffect {
     pub _event: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _rotationVector: crate::UnityEngine::Vector3,
     pub _rotationSpeedMultiplier: f32,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _random: *mut crate::System::Random,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
+    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _startRotation: crate::UnityEngine::Quaternion,
     pub _rotationSpeed: f32,
-    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "LightRotationEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

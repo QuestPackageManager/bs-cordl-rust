@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct MD2Digest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub X: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub X: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub xOff: i32,
-    pub M: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub M: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mOff: i32,
-    pub C: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub C: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub COff: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+MD2Digest")]

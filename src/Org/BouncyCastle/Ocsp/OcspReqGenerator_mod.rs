@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct OcspReqGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub list: *mut crate::System::Collections::IList,
-    pub requestorName: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    pub requestExtensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub requestorName: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    >,
+    pub requestExtensions: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+OcspReqGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -228,8 +232,10 @@ for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
 #[derive(Debug)]
 pub struct OcspReqGenerator_RequestObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub certId: *mut crate::Org::BouncyCastle::Ocsp::CertificateID,
-    pub extensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    pub certId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,
+    pub extensions: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+OcspReqGenerator+RequestObject")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

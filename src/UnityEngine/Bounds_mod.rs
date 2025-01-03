@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Bounds")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Bounds {
     pub m_Center: crate::UnityEngine::Vector3,
     pub m_Extents: crate::UnityEngine::Vector3,

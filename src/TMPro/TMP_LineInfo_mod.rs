@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+TMP_LineInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TMP_LineInfo {
     pub controlCharacterCount: i32,
     pub characterCount: i32,

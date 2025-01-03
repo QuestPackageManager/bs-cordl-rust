@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LanguageDropdown {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub dropdown: *mut crate::UnityEngine::UI::Dropdown,
+    pub dropdown: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown>,
 }
 #[cfg(feature = "BGLib+Polyglot+LanguageDropdown")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

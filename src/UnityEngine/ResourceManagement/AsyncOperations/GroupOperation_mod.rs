@@ -7,15 +7,21 @@ pub struct GroupOperation {
             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     >,
-    pub m_InternalOnComplete: *mut crate::System::Action_1<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+    pub m_InternalOnComplete: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        >,
     >,
     pub m_LoadedCount: i32,
     pub m_Settings: crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation_GroupOperationSettings,
-    pub debugName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _UnityEngine_ResourceManagement_AsyncOperations_ICachable_Key_k__BackingField: *mut crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
-    pub m_CachedDependencyLocations: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub debugName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _UnityEngine_ResourceManagement_AsyncOperations_ICachable_Key_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
+    >,
+    pub m_CachedDependencyLocations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation")]

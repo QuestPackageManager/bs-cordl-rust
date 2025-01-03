@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct MonoChunkStream {
     __cordl_parent: crate::System::Net::WebReadStream,
-    pub _Headers_k__BackingField: *mut crate::System::Net::WebHeaderCollection,
-    pub _Decoder_k__BackingField: *mut crate::System::Net::MonoChunkParser,
+    pub _Headers_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::WebHeaderCollection,
+    >,
+    pub _Decoder_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::MonoChunkParser,
+    >,
 }
 #[cfg(feature = "System+Net+MonoChunkStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

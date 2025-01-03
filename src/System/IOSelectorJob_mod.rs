@@ -4,8 +4,8 @@
 pub struct IOSelectorJob {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub operation: crate::System::IOOperation,
-    pub callback: *mut crate::System::IOAsyncCallback,
-    pub state: *mut crate::System::IOAsyncResult,
+    pub callback: quest_hook::libil2cpp::Gc<crate::System::IOAsyncCallback>,
+    pub state: quest_hook::libil2cpp::Gc<crate::System::IOAsyncResult>,
 }
 #[cfg(feature = "System+IOSelectorJob")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

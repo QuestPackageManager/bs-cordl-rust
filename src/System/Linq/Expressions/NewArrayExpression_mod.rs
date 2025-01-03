@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct NewArrayExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
-    pub _Type_k__BackingField: *mut crate::System::Type,
-    pub _Expressions_k__BackingField: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-        *mut crate::System::Linq::Expressions::Expression,
+    pub _Type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _Expressions_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            *mut crate::System::Linq::Expressions::Expression,
+        >,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+NewArrayExpression")]

@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct CancellationCallbackInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
-    pub StateForCallback: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub TargetExecutionContext: *mut crate::System::Threading::ExecutionContext,
-    pub CancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
+    pub Callback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+    >,
+    pub StateForCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub TargetExecutionContext: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ExecutionContext,
+    >,
+    pub CancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
 }
 #[cfg(feature = "System+Threading+CancellationCallbackInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

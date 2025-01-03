@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct OperatingSystem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _version: *mut crate::System::Version,
+    pub _version: quest_hook::libil2cpp::Gc<crate::System::Version>,
     pub _platform: crate::System::PlatformID,
-    pub _servicePack: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _versionString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _servicePack: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _versionString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+OperatingSystem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

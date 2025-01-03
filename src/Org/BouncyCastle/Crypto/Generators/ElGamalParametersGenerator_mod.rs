@@ -5,7 +5,9 @@ pub struct ElGamalParametersGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_size: i32,
     pub certainty: i32,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+ElGamalParametersGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

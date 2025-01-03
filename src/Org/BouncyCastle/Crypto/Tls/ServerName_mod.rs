@@ -4,7 +4,7 @@
 pub struct ServerName {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mNameType: u8,
-    pub mName: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub mName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+ServerName")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

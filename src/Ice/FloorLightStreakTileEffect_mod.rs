@@ -4,10 +4,14 @@
 pub struct FloorLightStreakTileEffect {
     __cordl_parent: crate::GlobalNamespace::AbstractPoolContainer,
     pub _stayOnTileDuration: f32,
-    pub _floorLightTilesGrid: *mut crate::Ice::FloorLightTilesGrid,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _elementsPool: *mut crate::GlobalNamespace::SimpleMemoryPool_1<
-        *mut crate::Ice::FloorLightStreakTileEffect_Element,
+    pub _floorLightTilesGrid: quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTilesGrid>,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
+    pub _elementsPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SimpleMemoryPool_1<
+            *mut crate::Ice::FloorLightStreakTileEffect_Element,
+        >,
     >,
 }
 #[cfg(feature = "Ice+FloorLightStreakTileEffect")]
@@ -134,8 +138,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::Ice::FloorLightStreakTileEffec
 #[derive(Debug)]
 pub struct FloorLightStreakTileEffect_Element {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub didMoveToNextTile: *mut crate::System::Action_1<
-        *mut crate::Ice::FloorLightStreakTileEffect_Element,
+    pub didMoveToNextTile: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::Ice::FloorLightStreakTileEffect_Element>,
     >,
     pub _currentTileY: i32,
     pub _lineIndex: i32,

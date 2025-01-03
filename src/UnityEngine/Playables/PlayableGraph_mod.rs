@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Playables+PlayableGraph")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PlayableGraph {
     pub m_Handle: crate::System::IntPtr,
     pub m_Version: u32,

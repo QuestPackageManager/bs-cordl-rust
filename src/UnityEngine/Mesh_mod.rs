@@ -4724,7 +4724,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Mesh {
 }
 #[cfg(feature = "UnityEngine+Mesh+MeshData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Mesh_MeshData {
     pub m_Ptr: crate::System::IntPtr,
 }
@@ -4929,9 +4929,9 @@ impl crate::UnityEngine::Mesh_MeshData {
 }
 #[cfg(feature = "UnityEngine+Mesh+MeshDataArray")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Mesh_MeshDataArray {
-    pub m_Ptrs: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_Ptrs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Length: i32,
 }
 #[cfg(feature = "UnityEngine+Mesh+MeshDataArray")]

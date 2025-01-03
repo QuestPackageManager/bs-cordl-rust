@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct TlsSessionImpl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mSessionID: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mSessionParameters: *mut crate::Org::BouncyCastle::Crypto::Tls::SessionParameters,
+    pub mSessionID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mSessionParameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::SessionParameters,
+    >,
     pub mResumable: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsSessionImpl")]

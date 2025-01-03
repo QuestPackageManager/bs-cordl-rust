@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+Hashes")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Hashes {
     pub hashes: crate::UnityEngine::UIElements::Hashes__hashes_e__FixedBuffer,
 }
@@ -28,7 +28,7 @@ impl crate::UnityEngine::UIElements::Hashes {
 }
 #[cfg(feature = "UnityEngine+UIElements+Hashes+_hashes_e__FixedBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Hashes__hashes_e__FixedBuffer {
     pub FixedElementField: i32,
 }

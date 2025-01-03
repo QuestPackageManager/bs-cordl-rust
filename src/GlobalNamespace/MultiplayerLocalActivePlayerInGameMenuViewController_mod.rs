@@ -3,23 +3,39 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalActivePlayerInGameMenuViewController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _disconnectButton: *mut crate::UnityEngine::UI::Button,
-    pub _disconnectButtonLocalizedText: *mut crate::BGLib::Polyglot::LocalizedTextMeshProUGUI,
-    pub _giveUpButton: *mut crate::UnityEngine::UI::Button,
-    pub _resumeButton: *mut crate::UnityEngine::UI::Button,
-    pub _mainBar: *mut crate::UnityEngine::GameObject,
-    pub _disconnectPromptView: *mut crate::GlobalNamespace::DisconnectPromptView,
-    pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
-    pub _menuWrapperGameObject: *mut crate::UnityEngine::GameObject,
-    pub _menuControllersGameObject: *mut crate::UnityEngine::GameObject,
-    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
-    pub _localPlayerInGameMenuInitData: *mut crate::GlobalNamespace::LocalPlayerInGameMenuInitData,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _disconnectHelper: *mut crate::GlobalNamespace::MultiplayerLocalPlayerDisconnectHelper,
-    pub didPressDisconnectButtonEvent: *mut crate::System::Action,
-    pub didPressGiveUpButtonEvent: *mut crate::System::Action,
-    pub didPressResumeButtonEvent: *mut crate::System::Action,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _disconnectButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _disconnectButtonLocalizedText: quest_hook::libil2cpp::Gc<
+        crate::BGLib::Polyglot::LocalizedTextMeshProUGUI,
+    >,
+    pub _giveUpButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _resumeButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _mainBar: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _disconnectPromptView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DisconnectPromptView,
+    >,
+    pub _levelBar: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelBar>,
+    pub _menuWrapperGameObject: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _menuControllersGameObject: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _connectedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
+    pub _localPlayerInGameMenuInitData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LocalPlayerInGameMenuInitData,
+    >,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
+    pub _disconnectHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLocalPlayerDisconnectHelper,
+    >,
+    pub didPressDisconnectButtonEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub didPressGiveUpButtonEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub didPressResumeButtonEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _disabledInteractionRemainingTime: f32,
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerInGameMenuViewController")]

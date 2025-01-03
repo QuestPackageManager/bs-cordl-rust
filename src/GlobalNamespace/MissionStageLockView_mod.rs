@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct MissionStageLockView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _text: *mut crate::TMPro::TMP_Text,
-    pub _rectTransform: *mut crate::UnityEngine::RectTransform,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+    pub _rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _dstPosY: f32,
     pub _animationDuration: f32,
     pub _startAnimationTime: f32,

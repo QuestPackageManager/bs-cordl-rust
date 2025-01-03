@@ -5,26 +5,30 @@ pub struct HEU_AttributesStore {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _geoID: i32,
     pub _partID: i32,
-    pub _geoName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _attributeDatas: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_AttributeData,
+    pub _geoName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _attributeDatas: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_AttributeData,
+        >,
     >,
     pub _hasColorAttribute: bool,
-    pub _localMaterial: *mut crate::UnityEngine::Material,
-    pub _outputTransform: *mut crate::UnityEngine::Transform,
-    pub _positionAttributeValues: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub _localMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _outputTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _positionAttributeValues: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
-    pub _vertexIndices: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _outputGameObject: *mut crate::UnityEngine::GameObject,
-    pub _outputMesh: *mut crate::UnityEngine::Mesh,
-    pub _outputMaterials: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Material,
+    pub _vertexIndices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
     >,
-    pub _outputCollider: *mut crate::UnityEngine::MeshCollider,
-    pub _outputColliderMesh: *mut crate::UnityEngine::Mesh,
-    pub _outputMeshCollider: *mut crate::UnityEngine::MeshCollider,
-    pub _localMeshCollider: *mut crate::UnityEngine::MeshCollider,
+    pub _outputGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _outputMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub _outputMaterials: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+    >,
+    pub _outputCollider: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshCollider>,
+    pub _outputColliderMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub _outputMeshCollider: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshCollider>,
+    pub _localMeshCollider: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshCollider>,
     pub _outputMeshRendererInitiallyEnabled: bool,
     pub _outputMeshColliderInitiallyEnabled: bool,
 }

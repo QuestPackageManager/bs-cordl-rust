@@ -1,14 +1,14 @@
 #[cfg(feature = "TMPro+TMP_LinkInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TMP_LinkInfo {
-    pub textComponent: *mut crate::TMPro::TMP_Text,
+    pub textComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
     pub hashCode: i32,
     pub linkIdFirstCharacterIndex: i32,
     pub linkIdLength: i32,
     pub linkTextfirstCharacterIndex: i32,
     pub linkTextLength: i32,
-    pub linkID: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub linkID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
 }
 #[cfg(feature = "TMPro+TMP_LinkInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

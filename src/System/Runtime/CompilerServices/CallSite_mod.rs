@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CallSite {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _binder: *mut crate::System::Runtime::CompilerServices::CallSiteBinder,
+    pub _binder: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::CallSiteBinder,
+    >,
     pub _match: bool,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+CallSite")]

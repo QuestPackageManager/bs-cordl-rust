@@ -3,13 +3,21 @@
 #[derive(Debug)]
 pub struct Thread {
     __cordl_parent: crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject,
-    pub internal_thread: *mut crate::System::Threading::InternalThread,
-    pub m_ThreadStartArg: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub pending_exception: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_Delegate: *mut crate::System::MulticastDelegate,
-    pub m_ExecutionContext: *mut crate::System::Threading::ExecutionContext,
+    pub internal_thread: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::InternalThread,
+    >,
+    pub m_ThreadStartArg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub pending_exception: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub m_Delegate: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    pub m_ExecutionContext: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ExecutionContext,
+    >,
     pub m_ExecutionContextBelongsToOuterScope: bool,
-    pub principal: *mut crate::System::Security::Principal::IPrincipal,
+    pub principal: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Principal::IPrincipal,
+    >,
     pub principal_version: i32,
 }
 #[cfg(feature = "System+Threading+Thread")]

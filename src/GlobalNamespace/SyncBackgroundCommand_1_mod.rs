@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SyncBackgroundCommand_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _taskCompletionSource: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<
-        T,
+    pub _taskCompletionSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskCompletionSource_1<T>,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

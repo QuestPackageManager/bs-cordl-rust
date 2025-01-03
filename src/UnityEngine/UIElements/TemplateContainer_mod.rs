@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct TemplateContainer {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
-    pub _templateId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_ContentContainer: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_TemplateSource: *mut crate::UnityEngine::UIElements::VisualTreeAsset,
+    pub _templateId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_ContentContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_TemplateSource: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualTreeAsset,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TemplateContainer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -231,7 +237,9 @@ for crate::UnityEngine::UIElements::TemplateContainer_UxmlFactory {
 #[derive(Debug)]
 pub struct TemplateContainer_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
-    pub m_Template: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_Template: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TemplateContainer+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

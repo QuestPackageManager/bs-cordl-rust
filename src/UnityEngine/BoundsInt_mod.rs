@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+BoundsInt")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BoundsInt {
     pub m_Position: crate::UnityEngine::Vector3Int,
     pub m_Size: crate::UnityEngine::Vector3Int,
@@ -333,7 +333,7 @@ impl AsMut<crate::System::IFormattable> for crate::UnityEngine::BoundsInt {
 }
 #[cfg(feature = "UnityEngine+BoundsInt+PositionEnumerator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BoundsInt_PositionEnumerator {
     pub _min: crate::UnityEngine::Vector3Int,
     pub _max: crate::UnityEngine::Vector3Int,

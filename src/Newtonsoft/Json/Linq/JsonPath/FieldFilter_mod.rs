@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct FieldFilter {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
-    pub Name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+FieldFilter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,18 +3,22 @@
 #[derive(Debug)]
 pub struct SymmetricTransform {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub algo: *mut crate::System::Security::Cryptography::SymmetricAlgorithm,
+    pub algo: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::SymmetricAlgorithm,
+    >,
     pub encrypt: bool,
     pub BlockSizeByte: i32,
-    pub temp: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub temp2: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub workBuff: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub workout: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub temp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub temp2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub workBuff: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub workout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub padmode: crate::System::Security::Cryptography::PaddingMode,
     pub FeedBackByte: i32,
     pub m_disposed: bool,
     pub lastBlock: bool,
-    pub _rng: *mut crate::System::Security::Cryptography::RandomNumberGenerator,
+    pub _rng: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::RandomNumberGenerator,
+    >,
 }
 #[cfg(feature = "Mono+Security+Cryptography+SymmetricTransform")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

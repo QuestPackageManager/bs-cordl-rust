@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct SP800SecureRandom {
     __cordl_parent: crate::Org::BouncyCastle::Security::SecureRandom,
-    pub mDrbgProvider: *mut crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider,
+    pub mDrbgProvider: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider,
+    >,
     pub mPredictionResistant: bool,
-    pub mRandomSource: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    pub mEntropySource: *mut crate::Org::BouncyCastle::Crypto::IEntropySource,
-    pub mDrbg: *mut crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg,
+    pub mRandomSource: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
+    pub mEntropySource: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IEntropySource,
+    >,
+    pub mDrbg: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandom")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

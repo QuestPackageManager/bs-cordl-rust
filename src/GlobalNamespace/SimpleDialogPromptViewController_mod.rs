@@ -3,15 +3,15 @@
 #[derive(Debug)]
 pub struct SimpleDialogPromptViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _titleText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _messageText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _buttons: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UI::Button,
+    pub _titleText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _messageText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _buttons: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Button>,
     >,
-    pub _buttonTexts: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::TMPro::TextMeshProUGUI,
+    pub _buttonTexts: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TextMeshProUGUI>,
     >,
-    pub _didFinishAction: *mut crate::System::Action_1<i32>,
+    pub _didFinishAction: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
 }
 #[cfg(feature = "SimpleDialogPromptViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct LocalBuilder {
     __cordl_parent: crate::System::Reflection::LocalVariableInfo,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub ilgen: *mut crate::System::Reflection::Emit::ILGenerator,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ilgen: quest_hook::libil2cpp::Gc<crate::System::Reflection::Emit::ILGenerator>,
     pub startOffset: i32,
     pub endOffset: i32,
 }

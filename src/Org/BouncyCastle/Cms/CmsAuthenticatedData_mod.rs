@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct CmsAuthenticatedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub recipientInfoStore: *mut crate::Org::BouncyCastle::Cms::RecipientInformationStore,
-    pub contentInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
-    pub macAlg: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub authAttrs: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-    pub unauthAttrs: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-    pub mac: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub recipientInfoStore: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::RecipientInformationStore,
+    >,
+    pub contentInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+    >,
+    pub macAlg: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub authAttrs: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
+    pub unauthAttrs: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
+    pub mac: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SignalReceiver {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_Events: *mut crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue,
+    pub m_Events: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue,
+    >,
 }
 #[cfg(feature = "UnityEngine+Timeline+SignalReceiver")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -234,11 +236,15 @@ for crate::UnityEngine::Timeline::SignalReceiver {
 #[derive(Debug)]
 pub struct SignalReceiver_EventKeyValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Signals: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Timeline::SignalAsset,
+    pub m_Signals: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Timeline::SignalAsset,
+        >,
     >,
-    pub m_Events: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Events::UnityEvent,
+    pub m_Events: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Events::UnityEvent,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+Timeline+SignalReceiver+EventKeyValue")]

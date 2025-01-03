@@ -3,25 +3,25 @@
 #[derive(Debug)]
 pub struct SocketAsyncResult {
     __cordl_parent: crate::System::IOAsyncResult,
-    pub socket: *mut crate::System::Net::Sockets::Socket,
+    pub socket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     pub operation: crate::System::Net::Sockets::SocketOperation,
-    pub DelayedException: *mut crate::System::Exception,
-    pub EndPoint: *mut crate::System::Net::EndPoint,
+    pub DelayedException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    pub EndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
     pub Buffer: crate::System::Memory_1<u8>,
     pub Offset: i32,
     pub Size: i32,
     pub SockFlags: crate::System::Net::Sockets::SocketFlags,
-    pub AcceptSocket: *mut crate::System::Net::Sockets::Socket,
-    pub Addresses: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Net::IPAddress,
+    pub AcceptSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
+    pub Addresses: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Net::IPAddress>,
     >,
     pub Port: i32,
-    pub Buffers: *mut crate::System::Collections::Generic::IList_1<
-        crate::System::ArraySegment_1<u8>,
+    pub Buffers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<crate::System::ArraySegment_1<u8>>,
     >,
     pub ReuseSocket: bool,
     pub CurrentAddress: i32,
-    pub AcceptedSocket: *mut crate::System::Net::Sockets::Socket,
+    pub AcceptedSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     pub Total: i32,
     pub error: i32,
     pub EndCalled: i32,

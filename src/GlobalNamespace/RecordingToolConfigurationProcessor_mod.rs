@@ -4,10 +4,16 @@
 pub struct RecordingToolConfigurationProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _commandLineParserResult: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
-    pub _logger: *mut crate::GlobalNamespace::IBeatSaberLogger,
-    pub _posesSerializer: *mut crate::GlobalNamespace::IPosesSerializer,
-    pub _environmentListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
+    pub _logger: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberLogger>,
+    pub _posesSerializer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IPosesSerializer,
+    >,
+    pub _environmentListModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentsListModel,
+    >,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
 }
 #[cfg(feature = "RecordingToolConfigurationProcessor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -363,15 +369,17 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor_ColorSaveData {
 #[derive(Debug)]
 pub struct RecordingToolConfigurationProcessor_PlaybackScreenshot {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
-    pub includedLayers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub includedLayers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub excludedLayers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub excludedLayers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub backgroundColor: *mut crate::GlobalNamespace::RecordingToolConfigurationProcessor_ColorSaveData,
+    pub backgroundColor: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecordingToolConfigurationProcessor_ColorSaveData,
+    >,
 }
 #[cfg(feature = "RecordingToolConfigurationProcessor+PlaybackScreenshot")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -429,30 +437,32 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor_PlaybackScreensh
 #[derive(Debug)]
 pub struct RecordingToolConfigurationProcessor_RecordingConfiguration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mode: *mut quest_hook::libil2cpp::Il2CppString,
-    pub packID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub levelID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub difficulty: *mut quest_hook::libil2cpp::Il2CppString,
-    pub characteristic: *mut quest_hook::libil2cpp::Il2CppString,
+    pub mode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub packID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub difficulty: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub characteristic: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub runLevel: bool,
     pub recordPerformance: bool,
-    pub recordingMode: *mut quest_hook::libil2cpp::Il2CppString,
-    pub recordingPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub cameraView: *mut quest_hook::libil2cpp::Il2CppString,
+    pub recordingMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub recordingPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub cameraView: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub addDateTimeSuffixToRecordingName: bool,
     pub screenshotRecording: bool,
     pub screenshotWidth: i32,
     pub screenshotHeight: i32,
     pub framerate: i32,
-    pub playbackScreenshots: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::RecordingToolConfigurationProcessor_PlaybackScreenshot,
+    pub playbackScreenshots: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::RecordingToolConfigurationProcessor_PlaybackScreenshot,
+        >,
     >,
     pub practice: bool,
     pub startSongTime: f32,
     pub songSpeedMultiplier: f32,
     pub overrideEnvironments: bool,
-    pub environmentType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub environmentName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub environmentType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub environmentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub saveToOldFormat: bool,
 }
 #[cfg(feature = "RecordingToolConfigurationProcessor+RecordingConfiguration")]
@@ -511,8 +521,10 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingConfigu
 #[derive(Debug)]
 pub struct RecordingToolConfigurationProcessor_RecordingToolConfiguration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub recordingConfigurations: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingConfiguration,
+    pub recordingConfigurations: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingConfiguration,
+        >,
     >,
 }
 #[cfg(feature = "RecordingToolConfigurationProcessor+RecordingToolConfiguration")]

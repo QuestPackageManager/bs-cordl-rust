@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ShaderWarmupSceneSetup {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _sharedWarmupColorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
+    pub _sharedWarmupColorScheme: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemeSO,
+    >,
 }
 #[cfg(feature = "ShaderWarmupSceneSetup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -5,9 +5,11 @@
 #[derive(Debug)]
 pub struct EnvironmentTrackDefinitionsListModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _environmentTracksTypeMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::GlobalNamespace::EnvironmentInfoSO,
-        *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel,
+    pub _environmentTracksTypeMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::GlobalNamespace::EnvironmentInfoSO,
+            *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel,
+        >,
     >,
 }
 #[cfg(

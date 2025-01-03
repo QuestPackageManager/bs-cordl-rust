@@ -152,12 +152,14 @@ for crate::UnityEngine::UIElements::UIR::MeshBuilder {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+MeshBuilder+AllocMeshData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MeshBuilder_AllocMeshData {
-    pub alloc: *mut crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator,
-    pub texture: *mut crate::UnityEngine::Texture,
+    pub alloc: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator,
+    >,
+    pub texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub svgTexture: crate::UnityEngine::UIElements::TextureId,
-    pub material: *mut crate::UnityEngine::Material,
+    pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub flags: crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags,
     pub colorAlloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
 }

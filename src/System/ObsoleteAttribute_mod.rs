@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ObsoleteAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _message: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _error: bool,
 }
 #[cfg(feature = "System+ObsoleteAttribute")]

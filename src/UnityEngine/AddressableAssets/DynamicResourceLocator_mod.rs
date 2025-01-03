@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct DynamicResourceLocator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Addressables: *mut crate::UnityEngine::AddressableAssets::AddressablesImpl,
-    pub m_AtlasSpriteProviderId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Addressables: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AddressablesImpl,
+    >,
+    pub m_AtlasSpriteProviderId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+DynamicResourceLocator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

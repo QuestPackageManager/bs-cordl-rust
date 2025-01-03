@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct DTSweepBasin {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub leftNode: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-    pub bottomNode: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-    pub rightNode: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+    pub leftNode: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+    >,
+    pub bottomNode: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+    >,
+    pub rightNode: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+    >,
     pub width: f64,
     pub leftHighest: bool,
 }

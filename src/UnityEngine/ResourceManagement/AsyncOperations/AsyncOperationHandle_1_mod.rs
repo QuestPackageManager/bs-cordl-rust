@@ -1,12 +1,14 @@
 #[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationHandle_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AsyncOperationHandle_1<TObject: quest_hook::libil2cpp::Type> {
-    pub m_InternalOp: *mut crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        TObject,
+    pub m_InternalOp: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+            TObject,
+        >,
     >,
     pub m_Version: i32,
-    pub m_LocationName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_LocationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_UnloadSceneOpExcludeReleaseCallback: bool,
     __cordl_phantom_TObject: std::marker::PhantomData<TObject>,
 }

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct SerializationFieldInfo {
     __cordl_parent: crate::System::Reflection::FieldInfo,
-    pub m_field: *mut crate::System::Reflection::RuntimeFieldInfo,
-    pub m_serializationName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_field: quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeFieldInfo>,
+    pub m_serializationName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Runtime+Serialization+SerializationFieldInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct PaddedBufferedBlockCipher {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::BufferedBlockCipher,
-    pub padding: *mut crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding,
+    pub padding: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Paddings+PaddedBufferedBlockCipher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

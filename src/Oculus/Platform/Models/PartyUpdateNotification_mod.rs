@@ -6,10 +6,10 @@ pub struct PartyUpdateNotification {
     pub Action: crate::Oculus::Platform::PartyUpdateAction,
     pub PartyId: u64,
     pub SenderId: u64,
-    pub UpdateTimestamp: *mut quest_hook::libil2cpp::Il2CppString,
-    pub UserAlias: *mut quest_hook::libil2cpp::Il2CppString,
+    pub UpdateTimestamp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub UserAlias: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub UserId: u64,
-    pub UserName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub UserName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Oculus+Platform+Models+PartyUpdateNotification")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

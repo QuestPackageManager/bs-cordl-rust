@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct SafeBag {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub bagID: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub bagValue: *mut crate::Org::BouncyCastle::Asn1::Asn1Object,
-    pub bagAttributes: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
+    pub bagID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub bagValue: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+    pub bagAttributes: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Set,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+SafeBag")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

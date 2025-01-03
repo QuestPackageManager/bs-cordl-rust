@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DelegatingTypeDescriptionProvider {
     __cordl_parent: crate::System::ComponentModel::TypeDescriptionProvider,
-    pub _type: *mut crate::System::Type,
+    pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+ComponentModel+DelegatingTypeDescriptionProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

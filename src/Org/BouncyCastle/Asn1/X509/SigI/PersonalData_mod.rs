@@ -3,12 +3,22 @@
 #[derive(Debug)]
 pub struct PersonalData {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub nameOrPseudonym: *mut crate::Org::BouncyCastle::Asn1::X509::SigI::NameOrPseudonym,
-    pub nameDistinguisher: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub dateOfBirth: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
-    pub placeOfBirth: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
-    pub gender: *mut quest_hook::libil2cpp::Il2CppString,
-    pub postalAddress: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+    pub nameOrPseudonym: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::SigI::NameOrPseudonym,
+    >,
+    pub nameDistinguisher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
+    pub dateOfBirth: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+    >,
+    pub placeOfBirth: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+    >,
+    pub gender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub postalAddress: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+SigI+PersonalData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

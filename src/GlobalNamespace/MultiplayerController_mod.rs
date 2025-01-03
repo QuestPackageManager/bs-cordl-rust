@@ -3,32 +3,66 @@
 #[derive(Debug)]
 pub struct MultiplayerController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _loadingEnvironment: *mut crate::UnityEngine::GameObject,
-    pub _multiplayerLevelSceneSetupData: *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
-    pub _playersManager: *mut crate::GlobalNamespace::MultiplayerPlayersManager,
-    pub _sceneStartSyncController: *mut crate::GlobalNamespace::SceneStartSyncController,
-    pub _songStartSyncController: *mut crate::GlobalNamespace::SongStartSyncController,
-    pub _multiplayerLevelFinishedController: *mut crate::GlobalNamespace::MultiplayerLevelFinishedController,
-    pub _fadeInOutController: *mut crate::GlobalNamespace::FadeInOutController,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _introAnimationController: *mut crate::GlobalNamespace::MultiplayerIntroAnimationController,
-    pub _outroAnimationController: *mut crate::GlobalNamespace::MultiplayerOutroAnimationController,
-    pub _menuRpcManager: *mut crate::GlobalNamespace::IMenuRpcManager,
-    pub _gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
-    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
-    pub _diContainer: *mut crate::Zenject::DiContainer,
-    pub _badgesProvider: *mut crate::GlobalNamespace::MultiplayerBadgesProvider,
-    pub stateChangedEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::MultiplayerController_State,
+    pub _loadingEnvironment: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _multiplayerLevelSceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+    >,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
+    pub _playersManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerPlayersManager,
+    >,
+    pub _sceneStartSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SceneStartSyncController,
+    >,
+    pub _songStartSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongStartSyncController,
+    >,
+    pub _multiplayerLevelFinishedController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLevelFinishedController,
+    >,
+    pub _fadeInOutController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FadeInOutController,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub _introAnimationController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerIntroAnimationController,
+    >,
+    pub _outroAnimationController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerOutroAnimationController,
+    >,
+    pub _menuRpcManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMenuRpcManager,
+    >,
+    pub _gameplayRpcManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IGameplayRpcManager,
+    >,
+    pub _sceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    >,
+    pub _diContainer: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _badgesProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerBadgesProvider,
+    >,
+    pub stateChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::MultiplayerController_State>,
     >,
     pub _startTime: f32,
     pub _localPlayerSyncStartState: crate::GlobalNamespace::MultiplayerPlayerStartState,
     pub _state: crate::GlobalNamespace::MultiplayerController_State,
-    pub _sessionGameId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _resultsData: *mut crate::GlobalNamespace::MultiplayerResultsData,
-    pub _playersSpecificSettingsAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
-    pub _timeoutGetGameStateCoroutine: *mut crate::UnityEngine::Coroutine,
+    pub _sessionGameId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _resultsData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerResultsData,
+    >,
+    pub _playersSpecificSettingsAtGameStartModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
+    >,
+    pub _timeoutGetGameStateCoroutine: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Coroutine,
+    >,
 }
 #[cfg(feature = "MultiplayerController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

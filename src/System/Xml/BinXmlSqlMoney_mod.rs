@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Xml+BinXmlSqlMoney")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BinXmlSqlMoney {
     pub data: i64,
 }

@@ -5,8 +5,10 @@ pub struct EnvironmentsAsyncInstaller {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         *mut crate::GlobalNamespace::EnvironmentInfoSO,
     >,
-    pub _environmentInfos: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub _environmentInfos: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
     >,
 }
 #[cfg(feature = "Environments+Definitions+EnvironmentsAsyncInstaller")]

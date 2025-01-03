@@ -1,9 +1,9 @@
 #[cfg(feature = "System+Net+NetworkInformation+ifaddrs")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ifaddrs {
     pub ifa_next: crate::System::IntPtr,
-    pub ifa_name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ifa_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub ifa_flags: u32,
     pub ifa_addr: crate::System::IntPtr,
     pub ifa_netmask: crate::System::IntPtr,

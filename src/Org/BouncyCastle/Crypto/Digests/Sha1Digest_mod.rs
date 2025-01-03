@@ -8,7 +8,7 @@ pub struct Sha1Digest {
     pub H3: u32,
     pub H4: u32,
     pub H5: u32,
-    pub X: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub X: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub xOff: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Sha1Digest")]

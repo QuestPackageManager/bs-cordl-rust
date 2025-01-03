@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct MultiplayerCenterTextAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _text: *mut crate::TMPro::TextMeshPro,
-    pub _scalingTarget: *mut crate::UnityEngine::Transform,
-    pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub _fadeInTween: *mut crate::Tweening::Tween_1<f32>,
-    pub _fadeOutTween: *mut crate::Tweening::Tween_1<f32>,
-    pub _fontSizeTween: *mut crate::Tweening::Tween_1<f32>,
-    pub _colorTween: *mut crate::Tweening::Tween_1<crate::UnityEngine::Color>,
-    pub _offsetTween: *mut crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
+    pub _scalingTarget: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::TimeTweeningManager,
+    >,
+    pub _fadeInTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _fadeOutTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _fontSizeTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _colorTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Color>,
+    >,
+    pub _offsetTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
+    >,
 }
 #[cfg(feature = "MultiplayerCenterTextAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

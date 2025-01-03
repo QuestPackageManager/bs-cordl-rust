@@ -260,7 +260,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative {
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MeshBuilderNative_NativeBorderParams {
     pub rect: crate::UnityEngine::Rect,
     pub leftColor: crate::UnityEngine::Color,
@@ -301,7 +301,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
 impl crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {}
 #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MeshBuilderNative_NativeColorPage {
     pub isValid: i32,
     pub pageAndID: crate::UnityEngine::Color32,
@@ -327,7 +327,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
 impl crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {}
 #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MeshBuilderNative_NativeRectParams {
     pub rect: crate::UnityEngine::Rect,
     pub subRect: crate::UnityEngine::Rect,

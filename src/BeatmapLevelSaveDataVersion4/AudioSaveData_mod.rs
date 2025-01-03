@@ -3,15 +3,17 @@
 #[derive(Debug)]
 pub struct AudioSaveData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub version: *mut quest_hook::libil2cpp::Il2CppString,
-    pub songChecksum: *mut quest_hook::libil2cpp::Il2CppString,
+    pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub songChecksum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub songSampleCount: i32,
     pub songFrequency: i32,
-    pub bpmData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatmapLevelSaveDataVersion4::BpmData,
+    pub bpmData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatmapLevelSaveDataVersion4::BpmData,
+        >,
     >,
-    pub lufsData: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapLevelSaveDataVersion4::LufsData,
+    pub lufsData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapLevelSaveDataVersion4::LufsData>,
     >,
 }
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+AudioSaveData")]

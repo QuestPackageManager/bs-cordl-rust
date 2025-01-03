@@ -6,36 +6,52 @@ pub struct ProviderOperation_1<TObject: quest_hook::libil2cpp::Type> {
         TObject,
     >,
     pub m_ReleaseDependenciesOnFailure: bool,
-    pub m_CompletionCallback: *mut crate::System::Action_4<
-        i32,
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        bool,
-        *mut crate::System::Exception,
-    >,
-    pub m_GetDepCallback: *mut crate::System::Action_2<
-        i32,
-        *mut crate::System::Collections::Generic::IList_1<
+    pub m_CompletionCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_4<
+            i32,
             *mut quest_hook::libil2cpp::Il2CppObject,
+            bool,
+            *mut crate::System::Exception,
         >,
     >,
-    pub m_GetProgressCallback: *mut crate::System::Func_1<f32>,
-    pub m_GetDownloadProgressCallback: *mut crate::System::Func_1<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
+    pub m_GetDepCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            i32,
+            *mut crate::System::Collections::Generic::IList_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
+        >,
     >,
-    pub m_WaitForCompletionCallback: *mut crate::System::Func_1<bool>,
+    pub m_GetProgressCallback: quest_hook::libil2cpp::Gc<crate::System::Func_1<f32>>,
+    pub m_GetDownloadProgressCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Func_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
+        >,
+    >,
+    pub m_WaitForCompletionCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Func_1<bool>,
+    >,
     pub m_ProviderCompletedCalled: bool,
     pub m_DownloadStatus: crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
-    pub m_Provider: *mut crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
+    pub m_Provider: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
+    >,
     pub m_DepOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         *mut crate::System::Collections::Generic::IList_1<
             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     >,
-    pub m_Location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    pub m_Location: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    >,
     pub m_ProvideHandleVersion: i32,
     pub m_NeedsRelease: bool,
-    pub _UnityEngine_ResourceManagement_AsyncOperations_ICachable_Key_k__BackingField: *mut crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
-    pub m_ResourceManager: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
+    pub _UnityEngine_ResourceManagement_AsyncOperations_ICachable_Key_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
+    >,
+    pub m_ResourceManager: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceManager,
+    >,
     __cordl_phantom_TObject: std::marker::PhantomData<TObject>,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+ProviderOperation_1")]

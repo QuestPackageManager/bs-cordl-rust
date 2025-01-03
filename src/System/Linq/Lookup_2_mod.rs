@@ -6,11 +6,17 @@ pub struct Lookup_2<
     TElement: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
-    pub groupings: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
+    pub comparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
     >,
-    pub lastGrouping: *mut crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
+    pub groupings: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
+        >,
+    >,
+    pub lastGrouping: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
+    >,
     pub count: i32,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
@@ -284,10 +290,16 @@ pub struct Lookup_2_Grouping<
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub key: TKey,
     pub hashCode: i32,
-    pub elements: *mut quest_hook::libil2cpp::Il2CppArray<TElement>,
+    pub elements: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<TElement>,
+    >,
     pub count: i32,
-    pub hashNext: *mut crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
-    pub next: *mut crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
+    pub hashNext: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
+    >,
+    pub next: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
+    >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }

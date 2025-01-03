@@ -5,9 +5,9 @@ pub struct DigestRandomGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub stateCounter: i64,
     pub seedCounter: i64,
-    pub digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub state: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+DigestRandomGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct TlsNullCipher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub context: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
-    pub writeMac: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsMac,
-    pub readMac: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsMac,
+    pub context: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+    >,
+    pub writeMac: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsMac,
+    >,
+    pub readMac: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsMac,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsNullCipher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct RemoteProviderException {
     __cordl_parent: crate::UnityEngine::ResourceManagement::Exceptions::ProviderException,
-    pub _WebRequestResult_k__BackingField: *mut crate::UnityEngine::ResourceManagement::Util::UnityWebRequestResult,
+    pub _WebRequestResult_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::Util::UnityWebRequestResult,
+    >,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+RemoteProviderException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+Rotate")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Rotate {
     pub m_Angle: crate::UnityEngine::UIElements::Angle,
     pub m_Axis: crate::UnityEngine::Vector3,

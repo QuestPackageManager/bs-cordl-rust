@@ -4,12 +4,20 @@
 pub struct BurstFireEffect {
     __cordl_parent: crate::GlobalNamespace::FireEffect,
     pub _fadeOutDuration: f32,
-    pub _flipbookFadeOutCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _bloomFadeOutCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _songTimeTweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
+    pub _flipbookFadeOutCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
+    pub _bloomFadeOutCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
+    pub _songTimeTweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::SongTimeTweeningManager,
+    >,
     pub _environmentContext: crate::GlobalNamespace::EnvironmentContext,
-    pub _fadeOutTween: *mut crate::Tweening::FloatTween,
+    pub _fadeOutTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
 }
 #[cfg(feature = "BurstFireEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

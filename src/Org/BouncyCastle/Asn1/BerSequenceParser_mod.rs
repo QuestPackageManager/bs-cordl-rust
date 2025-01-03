@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BerSequenceParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _parser: *mut crate::Org::BouncyCastle::Asn1::Asn1StreamParser,
+    pub _parser: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1StreamParser,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerSequenceParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

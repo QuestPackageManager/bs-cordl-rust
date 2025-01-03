@@ -3,15 +3,33 @@
 #[derive(Debug)]
 pub struct NoteCutHapticEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _normalPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _chainHeadPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _chainLinkPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _bombPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _badCutPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _arcHeadPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _arcTailPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _arcHeadAndTailPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _hapticFeedbackManager: *mut crate::GlobalNamespace::HapticFeedbackManager,
+    pub _normalPreset: quest_hook::libil2cpp::Gc<
+        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+    >,
+    pub _chainHeadPreset: quest_hook::libil2cpp::Gc<
+        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+    >,
+    pub _chainLinkPreset: quest_hook::libil2cpp::Gc<
+        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+    >,
+    pub _bombPreset: quest_hook::libil2cpp::Gc<
+        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+    >,
+    pub _badCutPreset: quest_hook::libil2cpp::Gc<
+        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+    >,
+    pub _arcHeadPreset: quest_hook::libil2cpp::Gc<
+        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+    >,
+    pub _arcTailPreset: quest_hook::libil2cpp::Gc<
+        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+    >,
+    pub _arcHeadAndTailPreset: quest_hook::libil2cpp::Gc<
+        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+    >,
+    pub _hapticFeedbackManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HapticFeedbackManager,
+    >,
 }
 #[cfg(feature = "NoteCutHapticEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

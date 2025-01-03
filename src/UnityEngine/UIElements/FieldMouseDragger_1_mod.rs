@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct FieldMouseDragger_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::BaseFieldMouseDragger,
-    pub m_DrivenField: *mut crate::UnityEngine::UIElements::IValueField_1<T>,
-    pub m_DragElement: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_DrivenField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IValueField_1<T>,
+    >,
+    pub m_DragElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub m_DragHotZone: crate::UnityEngine::Rect,
     pub _dragging_k__BackingField: bool,
     pub _startValue_k__BackingField: T,

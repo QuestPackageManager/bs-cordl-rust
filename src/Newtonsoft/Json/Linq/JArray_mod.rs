@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct JArray {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JContainer,
-    pub _values: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Newtonsoft::Json::Linq::JToken,
+    pub _values: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Linq::JToken,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JArray")]

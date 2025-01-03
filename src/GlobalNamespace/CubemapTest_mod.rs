@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct CubemapTest {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _camera: *mut crate::UnityEngine::Camera,
-    pub _cubemapMaterial: *mut crate::UnityEngine::Material,
-    pub _flatMaterial: *mut crate::UnityEngine::Material,
-    pub _cubemapRenderTexture: *mut crate::UnityEngine::RenderTexture,
-    pub _downsampledCubemapRenderTexture: *mut crate::UnityEngine::RenderTexture,
-    pub _cubemapFlatTexture: *mut crate::UnityEngine::RenderTexture,
+    pub _camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    pub _cubemapMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _flatMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _cubemapRenderTexture: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RenderTexture,
+    >,
+    pub _downsampledCubemapRenderTexture: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RenderTexture,
+    >,
+    pub _cubemapFlatTexture: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RenderTexture,
+    >,
 }
 #[cfg(feature = "CubemapTest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct MonoTlsStream {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub provider: *mut crate::Mono::Net::Security::MobileTlsProvider,
-    pub networkStream: *mut crate::System::Net::Sockets::NetworkStream,
-    pub request: *mut crate::System::Net::HttpWebRequest,
-    pub settings: *mut crate::Mono::Security::Interface::MonoTlsSettings,
-    pub sslStream: *mut crate::System::Net::Security::SslStream,
-    pub sslStreamLock: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub provider: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::MobileTlsProvider,
+    >,
+    pub networkStream: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Sockets::NetworkStream,
+    >,
+    pub request: quest_hook::libil2cpp::Gc<crate::System::Net::HttpWebRequest>,
+    pub settings: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Interface::MonoTlsSettings,
+    >,
+    pub sslStream: quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream>,
+    pub sslStreamLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub status: crate::System::Net::WebExceptionStatus,
     pub _CertificateValidationFailed_k__BackingField: bool,
 }

@@ -4,15 +4,17 @@
 pub struct ColorSaturationValueSlider {
     __cordl_parent: crate::HMUI::Slider2D,
     pub _hue: f32,
-    pub _graphics: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UI::Graphic,
+    pub _graphics: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Graphic>,
     >,
     pub _darkColor: crate::UnityEngine::Color,
     pub _lightColor: crate::UnityEngine::Color,
-    pub colorSaturationOrValueDidChangeEvent: *mut crate::System::Action_3<
-        *mut crate::GlobalNamespace::ColorSaturationValueSlider,
-        crate::UnityEngine::Vector2,
-        crate::GlobalNamespace::ColorChangeUIEventType,
+    pub colorSaturationOrValueDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_3<
+            *mut crate::GlobalNamespace::ColorSaturationValueSlider,
+            crate::UnityEngine::Vector2,
+            crate::GlobalNamespace::ColorChangeUIEventType,
+        >,
     >,
 }
 #[cfg(feature = "ColorSaturationValueSlider")]

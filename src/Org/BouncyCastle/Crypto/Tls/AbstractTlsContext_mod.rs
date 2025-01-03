@@ -3,13 +3,25 @@
 #[derive(Debug)]
 pub struct AbstractTlsContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mNonceRandom: *mut crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
-    pub mSecureRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    pub mSecurityParameters: *mut crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
-    pub mClientVersion: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
-    pub mServerVersion: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
-    pub mSession: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSession,
-    pub mUserObject: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub mNonceRandom: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
+    >,
+    pub mSecureRandom: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
+    pub mSecurityParameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
+    >,
+    pub mClientVersion: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
+    >,
+    pub mServerVersion: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
+    >,
+    pub mSession: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsSession,
+    >,
+    pub mUserObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

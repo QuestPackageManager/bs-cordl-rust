@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct PasswordRecipientInfoGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub keyDerivationAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub keyEncryptionKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-    pub keyEncryptionKeyOID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub keyDerivationAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub keyEncryptionKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    >,
+    pub keyEncryptionKeyOID: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+PasswordRecipientInfoGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

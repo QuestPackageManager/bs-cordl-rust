@@ -7,15 +7,27 @@ pub struct TimeStampTokenGenerator {
     pub accuracyMillis: i32,
     pub accuracyMicros: i32,
     pub ordering: bool,
-    pub tsa: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    pub tsaPolicyOID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub key: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-    pub digestOID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub signedAttr: *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
-    pub unsignedAttr: *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
-    pub x509Certs: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
-    pub x509Crls: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
+    pub tsa: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    >,
+    pub tsaPolicyOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub key: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    >,
+    pub cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
+    pub digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub signedAttr: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+    >,
+    pub unsignedAttr: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+    >,
+    pub x509Certs: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::Store::IX509Store,
+    >,
+    pub x509Crls: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::Store::IX509Store,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampTokenGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

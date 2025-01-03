@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SortedList_SyncSortedList {
     __cordl_parent: crate::System::Collections::SortedList,
-    pub _list: *mut crate::System::Collections::SortedList,
-    pub _root: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
+    pub _root: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+SortedList+SyncSortedList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct X931Rng {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mEngine: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
-    pub mEntropySource: *mut crate::Org::BouncyCastle::Crypto::IEntropySource,
-    pub mDT: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mI: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mR: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mEngine: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    >,
+    pub mEntropySource: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IEntropySource,
+    >,
+    pub mDT: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mR: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mReseedCounter: i64,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+X931Rng")]

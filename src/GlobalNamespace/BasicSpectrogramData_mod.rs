@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct BasicSpectrogramData {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioSource: *mut crate::UnityEngine::AudioSource,
+    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _instantChangeThreshold: f32,
     pub _hasData: bool,
     pub _hasProcessedData: bool,
-    pub _samples: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _processedSamples: *mut crate::System::Collections::Generic::List_1<f32>,
+    pub _samples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub _processedSamples: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
 }
 #[cfg(feature = "BasicSpectrogramData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

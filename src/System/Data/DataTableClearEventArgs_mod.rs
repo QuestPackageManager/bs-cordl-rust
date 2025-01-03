@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DataTableClearEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub _Table_k__BackingField: *mut crate::System::Data::DataTable,
+    pub _Table_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataTable,
+    >,
 }
 #[cfg(feature = "System+Data+DataTableClearEventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

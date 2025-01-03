@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct XmlAsyncCheckWriter {
     __cordl_parent: crate::System::Xml::XmlWriter,
-    pub coreWriter: *mut crate::System::Xml::XmlWriter,
-    pub lastTask: *mut crate::System::Threading::Tasks::Task,
+    pub coreWriter: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
+    pub lastTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
 }
 #[cfg(feature = "System+Xml+XmlAsyncCheckWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

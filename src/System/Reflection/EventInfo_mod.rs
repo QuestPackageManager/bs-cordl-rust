@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct EventInfo {
     __cordl_parent: crate::System::Reflection::MemberInfo,
-    pub cached_add_event: *mut crate::System::Reflection::EventInfo_AddEventAdapter,
+    pub cached_add_event: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::EventInfo_AddEventAdapter,
+    >,
 }
 #[cfg(feature = "System+Reflection+EventInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

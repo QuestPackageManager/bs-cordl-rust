@@ -4,15 +4,21 @@
 pub struct DynamicAtlasPage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _textureId_k__BackingField: crate::UnityEngine::UIElements::TextureId,
-    pub _atlas_k__BackingField: *mut crate::UnityEngine::RenderTexture,
+    pub _atlas_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RenderTexture,
+    >,
     pub _format_k__BackingField: crate::UnityEngine::RenderTextureFormat,
     pub _filterMode_k__BackingField: crate::UnityEngine::FilterMode,
     pub _minSize_k__BackingField: crate::UnityEngine::Vector2Int,
     pub _maxSize_k__BackingField: crate::UnityEngine::Vector2Int,
     pub m_1Padding: i32,
     pub m_2Padding: i32,
-    pub m_Allocator: *mut crate::UnityEngine::UIElements::UIR::Allocator2D,
-    pub m_Blitter: *mut crate::UnityEngine::UIElements::UIR::TextureBlitter,
+    pub m_Allocator: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::Allocator2D,
+    >,
+    pub m_Blitter: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::TextureBlitter,
+    >,
     pub m_CurrentSize: crate::UnityEngine::Vector2Int,
     pub _disposed_k__BackingField: bool,
 }

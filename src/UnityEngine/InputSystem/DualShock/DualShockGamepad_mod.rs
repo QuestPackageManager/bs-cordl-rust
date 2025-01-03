@@ -3,15 +3,33 @@
 #[derive(Debug)]
 pub struct DualShockGamepad {
     __cordl_parent: crate::UnityEngine::InputSystem::Gamepad,
-    pub _touchpadButton_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _optionsButton_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _shareButton_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _L1_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _R1_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _L2_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _R2_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _L3_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _R3_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    pub _touchpadButton_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _optionsButton_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _shareButton_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _L1_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _R1_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _L2_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _R2_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _L3_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _R3_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+DualShock+DualShockGamepad")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

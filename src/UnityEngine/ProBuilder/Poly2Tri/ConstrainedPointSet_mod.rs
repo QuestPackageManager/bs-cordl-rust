@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ConstrainedPointSet {
     __cordl_parent: crate::UnityEngine::ProBuilder::Poly2Tri::PointSet,
-    pub _EdgeIndex_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _EdgeIndex_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+ConstrainedPointSet")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

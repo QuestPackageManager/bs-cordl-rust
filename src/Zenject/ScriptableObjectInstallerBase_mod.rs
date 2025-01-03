@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ScriptableObjectInstallerBase {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _container: *mut crate::Zenject::DiContainer,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
 }
 #[cfg(feature = "Zenject+ScriptableObjectInstallerBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

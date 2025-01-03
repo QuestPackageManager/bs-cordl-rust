@@ -7,14 +7,24 @@ pub struct MultiplayerScoreDiffText {
     pub _normalBackgroundColor: crate::UnityEngine::Color,
     pub _leadingBackgroundColor: crate::UnityEngine::Color,
     pub _useAutomaticLeadPlayerSelection: bool,
-    pub _onPlatformText: *mut crate::TMPro::TextMeshPro,
-    pub _backgroundSpriteRenderer: *mut crate::UnityEngine::SpriteRenderer,
-    pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
-    pub _leadPlayerProvider: *mut crate::GlobalNamespace::MultiplayerLeadPlayerProvider,
+    pub _onPlatformText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
+    pub _backgroundSpriteRenderer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::SpriteRenderer,
+    >,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::TimeTweeningManager,
+    >,
+    pub _connectedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
+    pub _leadPlayerProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLeadPlayerProvider,
+    >,
     pub _currentBackgroundColor: crate::UnityEngine::Color,
     pub _state: crate::GlobalNamespace::MultiplayerScoreDiffText_State,
-    pub _onPlatformTextAlphaTween: *mut crate::Tweening::FloatTween,
+    pub _onPlatformTextAlphaTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::FloatTween,
+    >,
 }
 #[cfg(feature = "MultiplayerScoreDiffText")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

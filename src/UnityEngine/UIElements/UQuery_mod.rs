@@ -286,7 +286,9 @@ for crate::UnityEngine::UIElements::UQuery_IsOfType_1<T> {
 #[derive(Debug)]
 pub struct UQuery_SingleQueryMatcher {
     __cordl_parent: crate::UnityEngine::UIElements::UQuery_UQueryMatcher,
-    pub _match_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub _match_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery+SingleQueryMatcher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -404,8 +406,10 @@ for crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher {
 #[derive(Debug)]
 pub struct UQuery_UQueryMatcher {
     __cordl_parent: crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal,
-    pub m_Matchers: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::RuleMatcher,
+    pub m_Matchers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::RuleMatcher,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher")]

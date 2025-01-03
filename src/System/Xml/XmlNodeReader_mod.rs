@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlNodeReader {
     __cordl_parent: crate::System::Xml::XmlReader,
-    pub readerNav: *mut crate::System::Xml::XmlNodeReaderNavigator,
+    pub readerNav: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNodeReaderNavigator>,
     pub nodeType: crate::System::Xml::XmlNodeType,
     pub curDepth: i32,
     pub readState: crate::System::Xml::ReadState,
@@ -11,7 +11,9 @@ pub struct XmlNodeReader {
     pub bResolveEntity: bool,
     pub bStartFromDocument: bool,
     pub bInReadBinary: bool,
-    pub readBinaryHelper: *mut crate::System::Xml::ReadContentAsBinaryHelper,
+    pub readBinaryHelper: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::ReadContentAsBinaryHelper,
+    >,
 }
 #[cfg(feature = "System+Xml+XmlNodeReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

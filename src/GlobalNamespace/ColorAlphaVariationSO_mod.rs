@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ColorAlphaVariationSO {
     __cordl_parent: crate::GlobalNamespace::ColorSO,
-    pub _baseColor: *mut crate::GlobalNamespace::NoAlphaColorSO,
-    pub _alpha: *mut crate::GlobalNamespace::AlphaSO,
+    pub _baseColor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoAlphaColorSO>,
+    pub _alpha: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AlphaSO>,
 }
 #[cfg(feature = "ColorAlphaVariationSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

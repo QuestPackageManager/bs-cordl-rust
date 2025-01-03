@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct VRControllersValueSettingsOffsets {
     __cordl_parent: crate::GlobalNamespace::VRControllerTransformOffset,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub _controllersProfile: *mut crate::BeatSaber::GameSettings::ControllerProfilesModel,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _controllersProfile: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::GameSettings::ControllerProfilesModel,
+    >,
 }
 #[cfg(feature = "VRControllersValueSettingsOffsets")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

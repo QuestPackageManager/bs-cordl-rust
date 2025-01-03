@@ -5,17 +5,25 @@ pub struct OnScreenStick {
     __cordl_parent: crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
     pub m_MovementRange: f32,
     pub m_DynamicOriginRange: f32,
-    pub m_ControlPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ControlPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Behaviour: crate::UnityEngine::InputSystem::OnScreen::OnScreenStick_Behaviour,
     pub m_UseIsolatedInputActions: bool,
-    pub m_PointerDownAction: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub m_PointerMoveAction: *mut crate::UnityEngine::InputSystem::InputAction,
+    pub m_PointerDownAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub m_PointerMoveAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
     pub m_StartPos: crate::UnityEngine::Vector3,
     pub m_PointerDownPos: crate::UnityEngine::Vector2,
-    pub m_RaycastResults: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::EventSystems::RaycastResult,
+    pub m_RaycastResults: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::EventSystems::RaycastResult,
+        >,
     >,
-    pub m_PointerEventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    pub m_PointerEventData: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::PointerEventData,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

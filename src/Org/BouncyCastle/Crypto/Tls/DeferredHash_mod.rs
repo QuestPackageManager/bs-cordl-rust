@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct DeferredHash {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mContext: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
-    pub mBuf: *mut crate::Org::BouncyCastle::Crypto::Tls::DigestInputBuffer,
-    pub mHashes: *mut crate::System::Collections::IDictionary,
+    pub mContext: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+    >,
+    pub mBuf: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::DigestInputBuffer,
+    >,
+    pub mHashes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     pub mPrfHashAlgorithm: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DeferredHash")]

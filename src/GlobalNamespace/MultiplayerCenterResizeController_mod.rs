@@ -4,8 +4,12 @@
 pub struct MultiplayerCenterResizeController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _platformWidth: f32,
-    pub _layoutProvider: *mut crate::GlobalNamespace::MultiplayerLayoutProvider,
-    pub edgeDistanceFromCenterWasCalculatedEvent: *mut crate::System::Action_1<f32>,
+    pub _layoutProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLayoutProvider,
+    >,
+    pub edgeDistanceFromCenterWasCalculatedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<f32>,
+    >,
     pub _isEdgeDistanceFromCenterCalculated_k__BackingField: bool,
     pub _edgeDistanceFromCenter_k__BackingField: f32,
 }

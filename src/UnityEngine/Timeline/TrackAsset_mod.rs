@@ -4,28 +4,40 @@
 pub struct TrackAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
     pub m_Version: i32,
-    pub m_AnimClip: *mut crate::UnityEngine::AnimationClip,
+    pub m_AnimClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
     pub m_Locked: bool,
     pub m_Muted: bool,
-    pub m_CustomPlayableFullTypename: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Curves: *mut crate::UnityEngine::AnimationClip,
-    pub m_Parent: *mut crate::UnityEngine::Playables::PlayableAsset,
-    pub m_Children: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::ScriptableObject,
+    pub m_CustomPlayableFullTypename: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_Curves: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+    pub m_Parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableAsset,
+    >,
+    pub m_Children: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::ScriptableObject,
+        >,
     >,
     pub m_ItemsHash: i32,
-    pub m_ClipsCache: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Timeline::TimelineClip,
+    pub m_ClipsCache: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::Timeline::TimelineClip,
+        >,
     >,
     pub m_Start: crate::UnityEngine::Timeline::DiscreteTime,
     pub m_End: crate::UnityEngine::Timeline::DiscreteTime,
     pub m_CacheSorted: bool,
     pub m_SupportsNotifications: crate::System::Nullable_1<bool>,
-    pub m_ChildTrackCache: *mut crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::UnityEngine::Timeline::TrackAsset,
+    pub m_ChildTrackCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::UnityEngine::Timeline::TrackAsset,
+        >,
     >,
-    pub m_Clips: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Timeline::TimelineClip,
+    pub m_Clips: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Timeline::TimelineClip,
+        >,
     >,
     pub m_Markers: crate::UnityEngine::Timeline::MarkerList,
 }
@@ -1334,16 +1346,22 @@ for crate::UnityEngine::Timeline::TrackAsset_TrackAssetUpgrade {
 }
 #[cfg(feature = "UnityEngine+Timeline+TrackAsset+TransientBuildData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TrackAsset_TransientBuildData {
-    pub trackList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Timeline::TrackAsset,
+    pub trackList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Timeline::TrackAsset,
+        >,
     >,
-    pub clipList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Timeline::TimelineClip,
+    pub clipList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Timeline::TimelineClip,
+        >,
     >,
-    pub markerList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Timeline::IMarker,
+    pub markerList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Timeline::IMarker,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+Timeline+TrackAsset+TransientBuildData")]

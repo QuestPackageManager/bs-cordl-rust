@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct DateTimeFormatInfoScanner {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_dateWords: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_dateWords: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub _ymdFlags: crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern,
 }

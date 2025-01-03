@@ -3,15 +3,19 @@
 #[derive(Debug)]
 pub struct SpectrogramRowPropertyAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
     pub _dataIndex: i32,
-    pub _propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _multiplier: f32,
-    pub _animationCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub _animationCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub propertyId: i32,
     pub _isInitialized: bool,
     pub _spectrogramValue: f32,
-    pub _spectrogramData: *mut crate::GlobalNamespace::BasicSpectrogramData,
+    pub _spectrogramData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BasicSpectrogramData,
+    >,
 }
 #[cfg(feature = "SpectrogramRowPropertyAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

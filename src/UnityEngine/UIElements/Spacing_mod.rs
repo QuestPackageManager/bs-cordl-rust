@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+Spacing")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Spacing {
     pub left: f32,
     pub top: f32,

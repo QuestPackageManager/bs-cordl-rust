@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRSharable")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRSharable {
     pub _Handle_k__BackingField: u64,
 }

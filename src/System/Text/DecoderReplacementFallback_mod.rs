@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DecoderReplacementFallback {
     __cordl_parent: crate::System::Text::DecoderFallback,
-    pub _strDefault: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _strDefault: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Text+DecoderReplacementFallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

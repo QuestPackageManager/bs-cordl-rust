@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MultiplayerOffsetPositionByLocalPlayerPosition {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _multiplayerPlayersManager: *mut crate::GlobalNamespace::MultiplayerPlayersManager,
+    pub _multiplayerPlayersManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerPlayersManager,
+    >,
     pub _positionOffset: crate::UnityEngine::Vector3,
     pub _rotationOffset: crate::UnityEngine::Quaternion,
     pub _lastParentPosition: crate::UnityEngine::Vector3,

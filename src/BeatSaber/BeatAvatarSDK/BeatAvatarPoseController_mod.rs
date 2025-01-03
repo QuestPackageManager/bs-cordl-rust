@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct BeatAvatarPoseController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _headTransform: *mut crate::UnityEngine::Transform,
-    pub _leftHandTransform: *mut crate::UnityEngine::Transform,
-    pub _rightHandTransform: *mut crate::UnityEngine::Transform,
-    pub _bodyTransform: *mut crate::UnityEngine::Transform,
-    pub _headBodyOffset: *mut crate::BeatSaber::BeatAvatarSDK::HeadBodyOffsetSO,
+    pub _headTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _leftHandTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _rightHandTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _bodyTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _headBodyOffset: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::HeadBodyOffsetSO,
+    >,
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+BeatAvatarPoseController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -6,15 +6,16 @@ pub struct KeyedFactoryBase_2<
     TKey: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _typePairs: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::ModestTree::Util::ValuePair_2<TKey, *mut crate::System::Type>,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _typePairs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::ModestTree::Util::ValuePair_2<TKey, *mut crate::System::Type>,
+        >,
     >,
-    pub _typeMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        TKey,
-        *mut crate::System::Type,
+    pub _typeMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<TKey, *mut crate::System::Type>,
     >,
-    pub _fallbackType: *mut crate::System::Type,
+    pub _fallbackType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     __cordl_phantom_TBase: std::marker::PhantomData<TBase>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
 }

@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct PosesPlayback {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
-    pub _logger: *mut crate::GlobalNamespace::IBeatSaberLogger,
-    pub _transforms: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Transform,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
     >,
-    pub _data: *mut crate::GlobalNamespace::PosesRecordingData,
+    pub _logger: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberLogger>,
+    pub _transforms: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
+    >,
+    pub _data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingData>,
     pub _keyframeIndex: i32,
 }
 #[cfg(feature = "PosesPlayback")]

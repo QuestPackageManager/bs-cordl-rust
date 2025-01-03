@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalActivePlayerIntroAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _introPlayableDirector: *mut crate::UnityEngine::Playables::PlayableDirector,
+    pub _introPlayableDirector: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableDirector,
+    >,
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerIntroAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

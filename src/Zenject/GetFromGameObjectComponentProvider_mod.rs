@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct GetFromGameObjectComponentProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _gameObject: *mut crate::UnityEngine::GameObject,
-    pub _componentType: *mut crate::System::Type,
+    pub _gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _matchSingle: bool,
 }
 #[cfg(feature = "Zenject+GetFromGameObjectComponentProvider")]

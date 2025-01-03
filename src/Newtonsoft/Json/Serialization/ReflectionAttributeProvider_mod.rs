@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ReflectionAttributeProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _attributeProvider: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _attributeProvider: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+ReflectionAttributeProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

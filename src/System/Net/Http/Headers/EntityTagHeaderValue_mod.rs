@@ -4,7 +4,9 @@
 pub struct EntityTagHeaderValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _IsWeak_k__BackingField: bool,
-    pub _Tag_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Tag_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Net+Http+Headers+EntityTagHeaderValue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

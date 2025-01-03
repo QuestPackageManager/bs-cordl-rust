@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct ConditionalSpriteSwitcher {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _sprite0: *mut crate::UnityEngine::Sprite,
-    pub _material0: *mut crate::UnityEngine::Material,
-    pub _sprite1: *mut crate::UnityEngine::Sprite,
-    pub _material1: *mut crate::UnityEngine::Material,
-    pub _value: *mut crate::GlobalNamespace::BoolSO,
-    pub _spriteRenderer: *mut crate::UnityEngine::SpriteRenderer,
+    pub _sprite0: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _material0: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _sprite1: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _material1: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BoolSO>,
+    pub _spriteRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
 }
 #[cfg(feature = "ConditionalSpriteSwitcher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

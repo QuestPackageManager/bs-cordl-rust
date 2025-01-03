@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TlsException {
     __cordl_parent: crate::System::Exception,
-    pub alert: *mut crate::Mono::Security::Interface::Alert,
+    pub alert: quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::Alert>,
 }
 #[cfg(feature = "Mono+Security+Interface+TlsException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

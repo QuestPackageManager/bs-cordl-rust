@@ -3,24 +3,30 @@
 #[derive(Debug)]
 pub struct TMP_Dropdown {
     __cordl_parent: crate::UnityEngine::UI::Selectable,
-    pub m_Template: *mut crate::UnityEngine::RectTransform,
-    pub m_CaptionText: *mut crate::TMPro::TMP_Text,
-    pub m_CaptionImage: *mut crate::UnityEngine::UI::Image,
-    pub m_Placeholder: *mut crate::UnityEngine::UI::Graphic,
-    pub m_ItemText: *mut crate::TMPro::TMP_Text,
-    pub m_ItemImage: *mut crate::UnityEngine::UI::Image,
+    pub m_Template: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub m_CaptionText: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+    pub m_CaptionImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub m_Placeholder: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+    pub m_ItemText: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+    pub m_ItemImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     pub m_Value: i32,
-    pub m_Options: *mut crate::TMPro::TMP_Dropdown_OptionDataList,
-    pub m_OnValueChanged: *mut crate::TMPro::TMP_Dropdown_DropdownEvent,
-    pub m_AlphaFadeSpeed: f32,
-    pub m_Dropdown: *mut crate::UnityEngine::GameObject,
-    pub m_Blocker: *mut crate::UnityEngine::GameObject,
-    pub m_Items: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_Dropdown_DropdownItem,
+    pub m_Options: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_OptionDataList>,
+    pub m_OnValueChanged: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TMP_Dropdown_DropdownEvent,
     >,
-    pub m_AlphaTweenRunner: *mut crate::TMPro::TweenRunner_1<crate::TMPro::FloatTween>,
+    pub m_AlphaFadeSpeed: f32,
+    pub m_Dropdown: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub m_Blocker: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub m_Items: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::TMPro::TMP_Dropdown_DropdownItem,
+        >,
+    >,
+    pub m_AlphaTweenRunner: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TweenRunner_1<crate::TMPro::FloatTween>,
+    >,
     pub validTemplate: bool,
-    pub m_Coroutine: *mut crate::UnityEngine::Coroutine,
+    pub m_Coroutine: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
 }
 #[cfg(feature = "TMPro+TMP_Dropdown")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -790,10 +796,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Dropdown_DropdownEv
 #[derive(Debug)]
 pub struct TMP_Dropdown_DropdownItem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_Text: *mut crate::TMPro::TMP_Text,
-    pub m_Image: *mut crate::UnityEngine::UI::Image,
-    pub m_RectTransform: *mut crate::UnityEngine::RectTransform,
-    pub m_Toggle: *mut crate::UnityEngine::UI::Toggle,
+    pub m_Text: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+    pub m_Image: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub m_RectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub m_Toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
 }
 #[cfg(feature = "TMPro+TMP_Dropdown+DropdownItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1007,8 +1013,8 @@ for crate::TMPro::TMP_Dropdown_DropdownItem {
 #[derive(Debug)]
 pub struct TMP_Dropdown_OptionData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Text: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Image: *mut crate::UnityEngine::Sprite,
+    pub m_Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Image: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
 }
 #[cfg(feature = "TMPro+TMP_Dropdown+OptionData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1171,8 +1177,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Dropdown_OptionData
 #[derive(Debug)]
 pub struct TMP_Dropdown_OptionDataList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Options: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_Dropdown_OptionData,
+    pub m_Options: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::TMPro::TMP_Dropdown_OptionData,
+        >,
     >,
 }
 #[cfg(feature = "TMPro+TMP_Dropdown+OptionDataList")]

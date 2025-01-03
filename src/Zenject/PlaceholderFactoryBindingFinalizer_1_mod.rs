@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PlaceholderFactoryBindingFinalizer_1<TContract: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::ProviderBindingFinalizer,
-    pub _factoryBindInfo: *mut crate::Zenject::FactoryBindInfo,
+    pub _factoryBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
 #[cfg(feature = "Zenject+PlaceholderFactoryBindingFinalizer_1")]

@@ -2,13 +2,15 @@
     feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DebugView_InstructionList_InstructionView {
     pub _index: i32,
     pub _stackDepth: i32,
     pub _continuationsDepth: i32,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _instruction: *mut crate::System::Linq::Expressions::Interpreter::Instruction,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _instruction: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::Instruction,
+    >,
 }
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
@@ -68,24 +70,32 @@ impl crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_In
 #[derive(Debug)]
 pub struct InstructionList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _instructions: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Linq::Expressions::Interpreter::Instruction,
+    pub _instructions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Linq::Expressions::Interpreter::Instruction,
+        >,
     >,
-    pub _objects: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _objects: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
     pub _currentStackDepth: i32,
     pub _maxStackDepth: i32,
     pub _currentContinuationsDepth: i32,
     pub _maxContinuationDepth: i32,
     pub _runtimeLabelCount: i32,
-    pub _labels: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Linq::Expressions::Interpreter::BranchLabel,
+    pub _labels: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Linq::Expressions::Interpreter::BranchLabel,
+        >,
     >,
-    pub _debugCookies: *mut crate::System::Collections::Generic::List_1<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            i32,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _debugCookies: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::System::Collections::Generic::KeyValuePair_2<
+                i32,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     >,
 }

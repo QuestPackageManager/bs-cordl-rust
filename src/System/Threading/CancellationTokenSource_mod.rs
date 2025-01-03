@@ -3,17 +3,23 @@
 #[derive(Debug)]
 pub struct CancellationTokenSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _kernelEvent: *mut crate::System::Threading::ManualResetEvent,
-    pub _registeredCallbacksLists: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Threading::SparselyPopulatedArray_1<
-            *mut crate::System::Threading::CancellationCallbackInfo,
+    pub _kernelEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ManualResetEvent,
+    >,
+    pub _registeredCallbacksLists: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Threading::SparselyPopulatedArray_1<
+                *mut crate::System::Threading::CancellationCallbackInfo,
+            >,
         >,
     >,
     pub _state: i32,
     pub _threadIDExecutingCallbacks: i32,
     pub _disposed: bool,
-    pub _executingCallback: *mut crate::System::Threading::CancellationCallbackInfo,
-    pub _timer: *mut crate::System::Threading::Timer,
+    pub _executingCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationCallbackInfo,
+    >,
+    pub _timer: quest_hook::libil2cpp::Gc<crate::System::Threading::Timer>,
 }
 #[cfg(feature = "System+Threading+CancellationTokenSource")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

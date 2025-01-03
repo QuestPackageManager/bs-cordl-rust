@@ -7,7 +7,7 @@ pub struct NetSyncSession {
     pub Muted: bool,
     pub SessionId: u64,
     pub UserId: u64,
-    pub VoipGroup: *mut quest_hook::libil2cpp::Il2CppString,
+    pub VoipGroup: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Oculus+Platform+Models+NetSyncSession")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

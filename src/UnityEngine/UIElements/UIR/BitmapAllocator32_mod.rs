@@ -1,12 +1,16 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+BitmapAllocator32")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BitmapAllocator32 {
     pub m_PageHeight: i32,
-    pub m_Pages: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page,
+    pub m_Pages: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::UIR::BitmapAllocator32_Page,
+        >,
     >,
-    pub m_AllocMap: *mut crate::System::Collections::Generic::List_1<u32>,
+    pub m_AllocMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<u32>,
+    >,
     pub m_EntryWidth: i32,
     pub m_EntryHeight: i32,
 }
@@ -116,7 +120,7 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+BitmapAllocator32+Page")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BitmapAllocator32_Page {
     pub x: u16,
     pub y: u16,

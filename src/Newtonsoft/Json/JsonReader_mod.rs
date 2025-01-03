@@ -4,19 +4,23 @@
 pub struct JsonReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tokenType: crate::Newtonsoft::Json::JsonToken,
-    pub _value: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _quoteChar: char,
     pub _currentState: crate::Newtonsoft::Json::JsonReader_State,
     pub _currentPosition: crate::Newtonsoft::Json::JsonPosition,
-    pub _culture: *mut crate::System::Globalization::CultureInfo,
+    pub _culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     pub _dateTimeZoneHandling: crate::Newtonsoft::Json::DateTimeZoneHandling,
     pub _maxDepth: crate::System::Nullable_1<i32>,
     pub _hasExceededMaxDepth: bool,
     pub _dateParseHandling: crate::Newtonsoft::Json::DateParseHandling,
     pub _floatParseHandling: crate::Newtonsoft::Json::FloatParseHandling,
-    pub _dateFormatString: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _stack: *mut crate::System::Collections::Generic::List_1<
-        crate::Newtonsoft::Json::JsonPosition,
+    pub _dateFormatString: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _stack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::Newtonsoft::Json::JsonPosition,
+        >,
     >,
     pub _CloseInput_k__BackingField: bool,
     pub _SupportMultipleContent_k__BackingField: bool,

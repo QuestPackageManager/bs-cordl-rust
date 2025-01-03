@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ClientActivatedIdentity {
     __cordl_parent: crate::System::Runtime::Remoting::ServerIdentity,
-    pub _targetThis: *mut crate::System::MarshalByRefObject,
+    pub _targetThis: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
 }
 #[cfg(feature = "System+Runtime+Remoting+ClientActivatedIdentity")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

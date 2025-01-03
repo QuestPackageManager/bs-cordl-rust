@@ -1,15 +1,17 @@
 #[cfg(feature = "IgnoranceCore+IgnoranceServerStats")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IgnoranceServerStats {
     pub BytesReceived: u64,
     pub BytesSent: u64,
     pub PacketsReceived: u64,
     pub PacketsSent: u64,
     pub PeersCount: u64,
-    pub PeerStats: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        crate::IgnoranceCore::IgnoranceClientStats,
+    pub PeerStats: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            crate::IgnoranceCore::IgnoranceClientStats,
+        >,
     >,
 }
 #[cfg(feature = "IgnoranceCore+IgnoranceServerStats")]

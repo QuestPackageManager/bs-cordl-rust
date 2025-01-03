@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct TypeMember {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cordl_type: *mut crate::System::Type,
-    pub member: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub member: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Serialization+TypeMember")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

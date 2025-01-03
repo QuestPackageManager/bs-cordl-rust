@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+LODParameters")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LODParameters {
     pub m_IsOrthographic: i32,
     pub m_CameraPosition: crate::UnityEngine::Vector3,

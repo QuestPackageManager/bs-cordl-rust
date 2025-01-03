@@ -1,50 +1,132 @@
 #[cfg(feature = "OVR+OpenVR+IVRCompositor")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IVRCompositor {
-    pub SetTrackingSpace: *mut crate::OVR::OpenVR::IVRCompositor__SetTrackingSpace,
-    pub GetTrackingSpace: *mut crate::OVR::OpenVR::IVRCompositor__GetTrackingSpace,
-    pub WaitGetPoses: *mut crate::OVR::OpenVR::IVRCompositor__WaitGetPoses,
-    pub GetLastPoses: *mut crate::OVR::OpenVR::IVRCompositor__GetLastPoses,
-    pub GetLastPoseForTrackedDeviceIndex: *mut crate::OVR::OpenVR::IVRCompositor__GetLastPoseForTrackedDeviceIndex,
-    pub Submit: *mut crate::OVR::OpenVR::IVRCompositor__Submit,
-    pub ClearLastSubmittedFrame: *mut crate::OVR::OpenVR::IVRCompositor__ClearLastSubmittedFrame,
-    pub PostPresentHandoff: *mut crate::OVR::OpenVR::IVRCompositor__PostPresentHandoff,
-    pub GetFrameTiming: *mut crate::OVR::OpenVR::IVRCompositor__GetFrameTiming,
-    pub GetFrameTimings: *mut crate::OVR::OpenVR::IVRCompositor__GetFrameTimings,
-    pub GetFrameTimeRemaining: *mut crate::OVR::OpenVR::IVRCompositor__GetFrameTimeRemaining,
-    pub GetCumulativeStats: *mut crate::OVR::OpenVR::IVRCompositor__GetCumulativeStats,
-    pub FadeToColor: *mut crate::OVR::OpenVR::IVRCompositor__FadeToColor,
-    pub GetCurrentFadeColor: *mut crate::OVR::OpenVR::IVRCompositor__GetCurrentFadeColor,
-    pub FadeGrid: *mut crate::OVR::OpenVR::IVRCompositor__FadeGrid,
-    pub GetCurrentGridAlpha: *mut crate::OVR::OpenVR::IVRCompositor__GetCurrentGridAlpha,
-    pub SetSkyboxOverride: *mut crate::OVR::OpenVR::IVRCompositor__SetSkyboxOverride,
-    pub ClearSkyboxOverride: *mut crate::OVR::OpenVR::IVRCompositor__ClearSkyboxOverride,
-    pub CompositorBringToFront: *mut crate::OVR::OpenVR::IVRCompositor__CompositorBringToFront,
-    pub CompositorGoToBack: *mut crate::OVR::OpenVR::IVRCompositor__CompositorGoToBack,
-    pub CompositorQuit: *mut crate::OVR::OpenVR::IVRCompositor__CompositorQuit,
-    pub IsFullscreen: *mut crate::OVR::OpenVR::IVRCompositor__IsFullscreen,
-    pub GetCurrentSceneFocusProcess: *mut crate::OVR::OpenVR::IVRCompositor__GetCurrentSceneFocusProcess,
-    pub GetLastFrameRenderer: *mut crate::OVR::OpenVR::IVRCompositor__GetLastFrameRenderer,
-    pub CanRenderScene: *mut crate::OVR::OpenVR::IVRCompositor__CanRenderScene,
-    pub ShowMirrorWindow: *mut crate::OVR::OpenVR::IVRCompositor__ShowMirrorWindow,
-    pub HideMirrorWindow: *mut crate::OVR::OpenVR::IVRCompositor__HideMirrorWindow,
-    pub IsMirrorWindowVisible: *mut crate::OVR::OpenVR::IVRCompositor__IsMirrorWindowVisible,
-    pub CompositorDumpImages: *mut crate::OVR::OpenVR::IVRCompositor__CompositorDumpImages,
-    pub ShouldAppRenderWithLowResources: *mut crate::OVR::OpenVR::IVRCompositor__ShouldAppRenderWithLowResources,
-    pub ForceInterleavedReprojectionOn: *mut crate::OVR::OpenVR::IVRCompositor__ForceInterleavedReprojectionOn,
-    pub ForceReconnectProcess: *mut crate::OVR::OpenVR::IVRCompositor__ForceReconnectProcess,
-    pub SuspendRendering: *mut crate::OVR::OpenVR::IVRCompositor__SuspendRendering,
-    pub GetMirrorTextureD3D11: *mut crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureD3D11,
-    pub ReleaseMirrorTextureD3D11: *mut crate::OVR::OpenVR::IVRCompositor__ReleaseMirrorTextureD3D11,
-    pub GetMirrorTextureGL: *mut crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureGL,
-    pub ReleaseSharedGLTexture: *mut crate::OVR::OpenVR::IVRCompositor__ReleaseSharedGLTexture,
-    pub LockGLSharedTextureForAccess: *mut crate::OVR::OpenVR::IVRCompositor__LockGLSharedTextureForAccess,
-    pub UnlockGLSharedTextureForAccess: *mut crate::OVR::OpenVR::IVRCompositor__UnlockGLSharedTextureForAccess,
-    pub GetVulkanInstanceExtensionsRequired: *mut crate::OVR::OpenVR::IVRCompositor__GetVulkanInstanceExtensionsRequired,
-    pub GetVulkanDeviceExtensionsRequired: *mut crate::OVR::OpenVR::IVRCompositor__GetVulkanDeviceExtensionsRequired,
-    pub SetExplicitTimingMode: *mut crate::OVR::OpenVR::IVRCompositor__SetExplicitTimingMode,
-    pub SubmitExplicitTimingData: *mut crate::OVR::OpenVR::IVRCompositor__SubmitExplicitTimingData,
+    pub SetTrackingSpace: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__SetTrackingSpace,
+    >,
+    pub GetTrackingSpace: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__GetTrackingSpace,
+    >,
+    pub WaitGetPoses: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__WaitGetPoses,
+    >,
+    pub GetLastPoses: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__GetLastPoses,
+    >,
+    pub GetLastPoseForTrackedDeviceIndex: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__GetLastPoseForTrackedDeviceIndex,
+    >,
+    pub Submit: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVRCompositor__Submit>,
+    pub ClearLastSubmittedFrame: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__ClearLastSubmittedFrame,
+    >,
+    pub PostPresentHandoff: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__PostPresentHandoff,
+    >,
+    pub GetFrameTiming: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__GetFrameTiming,
+    >,
+    pub GetFrameTimings: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__GetFrameTimings,
+    >,
+    pub GetFrameTimeRemaining: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__GetFrameTimeRemaining,
+    >,
+    pub GetCumulativeStats: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__GetCumulativeStats,
+    >,
+    pub FadeToColor: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__FadeToColor,
+    >,
+    pub GetCurrentFadeColor: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__GetCurrentFadeColor,
+    >,
+    pub FadeGrid: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVRCompositor__FadeGrid>,
+    pub GetCurrentGridAlpha: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__GetCurrentGridAlpha,
+    >,
+    pub SetSkyboxOverride: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__SetSkyboxOverride,
+    >,
+    pub ClearSkyboxOverride: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__ClearSkyboxOverride,
+    >,
+    pub CompositorBringToFront: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__CompositorBringToFront,
+    >,
+    pub CompositorGoToBack: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__CompositorGoToBack,
+    >,
+    pub CompositorQuit: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__CompositorQuit,
+    >,
+    pub IsFullscreen: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__IsFullscreen,
+    >,
+    pub GetCurrentSceneFocusProcess: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__GetCurrentSceneFocusProcess,
+    >,
+    pub GetLastFrameRenderer: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__GetLastFrameRenderer,
+    >,
+    pub CanRenderScene: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__CanRenderScene,
+    >,
+    pub ShowMirrorWindow: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__ShowMirrorWindow,
+    >,
+    pub HideMirrorWindow: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__HideMirrorWindow,
+    >,
+    pub IsMirrorWindowVisible: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__IsMirrorWindowVisible,
+    >,
+    pub CompositorDumpImages: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__CompositorDumpImages,
+    >,
+    pub ShouldAppRenderWithLowResources: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__ShouldAppRenderWithLowResources,
+    >,
+    pub ForceInterleavedReprojectionOn: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__ForceInterleavedReprojectionOn,
+    >,
+    pub ForceReconnectProcess: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__ForceReconnectProcess,
+    >,
+    pub SuspendRendering: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__SuspendRendering,
+    >,
+    pub GetMirrorTextureD3D11: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureD3D11,
+    >,
+    pub ReleaseMirrorTextureD3D11: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__ReleaseMirrorTextureD3D11,
+    >,
+    pub GetMirrorTextureGL: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureGL,
+    >,
+    pub ReleaseSharedGLTexture: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__ReleaseSharedGLTexture,
+    >,
+    pub LockGLSharedTextureForAccess: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__LockGLSharedTextureForAccess,
+    >,
+    pub UnlockGLSharedTextureForAccess: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__UnlockGLSharedTextureForAccess,
+    >,
+    pub GetVulkanInstanceExtensionsRequired: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__GetVulkanInstanceExtensionsRequired,
+    >,
+    pub GetVulkanDeviceExtensionsRequired: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__GetVulkanDeviceExtensionsRequired,
+    >,
+    pub SetExplicitTimingMode: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__SetExplicitTimingMode,
+    >,
+    pub SubmitExplicitTimingData: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRCompositor__SubmitExplicitTimingData,
+    >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRCompositor")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

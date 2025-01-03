@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlDocumentFragment {
     __cordl_parent: crate::System::Xml::XmlNode,
-    pub lastChild: *mut crate::System::Xml::XmlLinkedNode,
+    pub lastChild: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlLinkedNode>,
 }
 #[cfg(feature = "System+Xml+XmlDocumentFragment")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

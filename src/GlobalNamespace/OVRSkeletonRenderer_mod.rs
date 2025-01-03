@@ -3,24 +3,34 @@
 #[derive(Debug)]
 pub struct OVRSkeletonRenderer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _dataProvider: *mut crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider,
+    pub _dataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider,
+    >,
     pub _confidenceBehavior: crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior,
     pub _systemGestureBehavior: crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior,
     pub _renderPhysicsCapsules: bool,
-    pub _skeletonMaterial: *mut crate::UnityEngine::Material,
-    pub _skeletonDefaultMaterial: *mut crate::UnityEngine::Material,
-    pub _capsuleMaterial: *mut crate::UnityEngine::Material,
-    pub _capsuleDefaultMaterial: *mut crate::UnityEngine::Material,
-    pub _systemGestureMaterial: *mut crate::UnityEngine::Material,
-    pub _systemGestureDefaultMaterial: *mut crate::UnityEngine::Material,
-    pub _boneVisualizations: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization,
+    pub _skeletonMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _skeletonDefaultMaterial: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Material,
     >,
-    pub _capsuleVisualizations: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization,
+    pub _capsuleMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _capsuleDefaultMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _systemGestureMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _systemGestureDefaultMaterial: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Material,
     >,
-    pub _ovrSkeleton: *mut crate::GlobalNamespace::OVRSkeleton,
-    pub _skeletonGO: *mut crate::UnityEngine::GameObject,
+    pub _boneVisualizations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization,
+        >,
+    >,
+    pub _capsuleVisualizations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization,
+        >,
+    >,
+    pub _ovrSkeleton: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSkeleton>,
+    pub _skeletonGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _scale: f32,
     pub _IsInitialized_k__BackingField: bool,
     pub _IsDataValid_k__BackingField: bool,
@@ -224,12 +234,12 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSkeletonRe
 #[derive(Debug)]
 pub struct OVRSkeletonRenderer_BoneVisualization {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub BoneGO: *mut crate::UnityEngine::GameObject,
-    pub BoneBegin: *mut crate::UnityEngine::Transform,
-    pub BoneEnd: *mut crate::UnityEngine::Transform,
-    pub Line: *mut crate::UnityEngine::LineRenderer,
-    pub RenderMaterial: *mut crate::UnityEngine::Material,
-    pub SystemGestureMaterial: *mut crate::UnityEngine::Material,
+    pub BoneGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub BoneBegin: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub BoneEnd: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub Line: quest_hook::libil2cpp::Gc<crate::UnityEngine::LineRenderer>,
+    pub RenderMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub SystemGestureMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
 #[cfg(feature = "OVRSkeletonRenderer+BoneVisualization")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -326,12 +336,12 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
 #[derive(Debug)]
 pub struct OVRSkeletonRenderer_CapsuleVisualization {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub CapsuleGO: *mut crate::UnityEngine::GameObject,
-    pub BoneCapsule: *mut crate::GlobalNamespace::OVRBoneCapsule,
+    pub CapsuleGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub BoneCapsule: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
     pub capsuleScale: crate::UnityEngine::Vector3,
-    pub Renderer: *mut crate::UnityEngine::MeshRenderer,
-    pub RenderMaterial: *mut crate::UnityEngine::Material,
-    pub SystemGestureMaterial: *mut crate::UnityEngine::Material,
+    pub Renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+    pub RenderMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub SystemGestureMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
 #[cfg(feature = "OVRSkeletonRenderer+CapsuleVisualization")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -494,7 +504,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider
 }
 #[cfg(feature = "OVRSkeletonRenderer+SkeletonRendererData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRSkeletonRenderer_SkeletonRendererData {
     pub _RootScale_k__BackingField: f32,
     pub _IsDataValid_k__BackingField: bool,

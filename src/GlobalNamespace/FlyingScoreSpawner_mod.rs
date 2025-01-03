@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct FlyingScoreSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _flyingScoreEffectPool: *mut crate::GlobalNamespace::FlyingScoreEffect_Pool,
-    pub _initData: *mut crate::GlobalNamespace::FlyingScoreSpawner_InitData,
+    pub _flyingScoreEffectPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FlyingScoreEffect_Pool,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FlyingScoreSpawner_InitData,
+    >,
 }
 #[cfg(feature = "FlyingScoreSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

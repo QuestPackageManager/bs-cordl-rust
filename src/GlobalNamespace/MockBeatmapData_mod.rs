@@ -5,17 +5,17 @@ pub struct MockBeatmapData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _numberOfLines_k__BackingField: i32,
     pub _songEndTime_k__BackingField: f32,
-    pub _leftNotes_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MockNoteData,
+    pub _leftNotes_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockNoteData>,
     >,
-    pub _rightNotes_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MockNoteData,
+    pub _rightNotes_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockNoteData>,
     >,
-    pub _bombNotes_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MockNoteData,
+    pub _bombNotes_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockNoteData>,
     >,
-    pub _obstacles_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MockObstacleData,
+    pub _obstacles_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockObstacleData>,
     >,
 }
 #[cfg(feature = "MockBeatmapData")]

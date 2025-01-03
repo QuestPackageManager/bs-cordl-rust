@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct GameplayModifierToggle {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _gameplayModifier: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-    pub _nameText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _multiplierText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _hoverTextSetter: *mut crate::HMUI::HoverTextSetter,
-    pub _icon: *mut crate::UnityEngine::UI::Image,
-    pub _toggle: *mut crate::UnityEngine::UI::Toggle,
+    pub _gameplayModifier: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierParamsSO,
+    >,
+    pub _nameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _multiplierText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _hoverTextSetter: quest_hook::libil2cpp::Gc<crate::HMUI::HoverTextSetter>,
+    pub _icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub _positiveColor: crate::UnityEngine::Color,
 }
 #[cfg(feature = "GameplayModifierToggle")]

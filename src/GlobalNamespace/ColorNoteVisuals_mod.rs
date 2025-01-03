@@ -4,20 +4,26 @@
 pub struct ColorNoteVisuals {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _defaultColorAlpha: f32,
-    pub _noteController: *mut crate::GlobalNamespace::NoteControllerBase,
-    pub _materialPropertyBlockControllers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _noteController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteControllerBase,
     >,
-    pub _arrowMeshRenderers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::MeshRenderer,
+    pub _materialPropertyBlockControllers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+        >,
     >,
-    pub _circleMeshRenderers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::MeshRenderer,
+    pub _arrowMeshRenderers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::MeshRenderer>,
     >,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
-    pub didInitEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::ColorNoteVisuals,
-        *mut crate::GlobalNamespace::NoteControllerBase,
+    pub _circleMeshRenderers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::MeshRenderer>,
+    >,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+    pub didInitEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::ColorNoteVisuals,
+            *mut crate::GlobalNamespace::NoteControllerBase,
+        >,
     >,
     pub _noteColor: crate::UnityEngine::Color,
 }

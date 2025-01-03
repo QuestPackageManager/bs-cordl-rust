@@ -3,16 +3,28 @@
 #[derive(Debug)]
 pub struct PackDefinitionSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPackSO,
-    pub _order: i32,
-    pub _leaderboardIds: *mut crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds,
-    pub _levelProductPacks: *mut crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks,
-    pub _tags: crate::GlobalNamespace::PackDefinitionSO_Tags,
-    pub _packPromoInfoReference: *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-        *mut crate::GlobalNamespace::PackPromoInfoSO,
+    pub _beatmapLevelPack: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelPackSO,
     >,
-    pub _perceivedLoudnessPerLevel: *mut crate::GlobalNamespace::PerceivedLoudnessSO,
-    pub _credits: *mut crate::GlobalNamespace::PackDefinitionSO_Credits,
+    pub _order: i32,
+    pub _leaderboardIds: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds,
+    >,
+    pub _levelProductPacks: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks,
+    >,
+    pub _tags: crate::GlobalNamespace::PackDefinitionSO_Tags,
+    pub _packPromoInfoReference: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+            *mut crate::GlobalNamespace::PackPromoInfoSO,
+        >,
+    >,
+    pub _perceivedLoudnessPerLevel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PerceivedLoudnessSO,
+    >,
+    pub _credits: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PackDefinitionSO_Credits,
+    >,
 }
 #[cfg(feature = "PackDefinitionSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -296,7 +308,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PackDefinitio
 pub struct PackDefinitionSO_Credits {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub order: i32,
-    pub creditsPrefab: *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+    pub creditsPrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+    >,
 }
 #[cfg(feature = "PackDefinitionSO+Credits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -351,11 +365,21 @@ for crate::GlobalNamespace::PackDefinitionSO_Credits {
 #[derive(Debug)]
 pub struct PackDefinitionSO_LeaderboardIds {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _riftLeaderboardIds: *mut crate::GlobalNamespace::LeaderboardIdsSO,
-    pub _questLeaderboardIds: *mut crate::GlobalNamespace::LeaderboardIdsSO,
-    pub _steamLeaderboardIds: *mut crate::GlobalNamespace::LeaderboardIdsSO,
-    pub _ps4LeaderboardIds: *mut crate::GlobalNamespace::SonyLeaderboardIdsSO,
-    pub _ps5LeaderboardIds: *mut crate::GlobalNamespace::SonyLeaderboardIdsSO,
+    pub _riftLeaderboardIds: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LeaderboardIdsSO,
+    >,
+    pub _questLeaderboardIds: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LeaderboardIdsSO,
+    >,
+    pub _steamLeaderboardIds: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LeaderboardIdsSO,
+    >,
+    pub _ps4LeaderboardIds: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyLeaderboardIdsSO,
+    >,
+    pub _ps5LeaderboardIds: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyLeaderboardIdsSO,
+    >,
 }
 #[cfg(feature = "PackDefinitionSO+LeaderboardIds")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -530,11 +554,21 @@ for crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds {
 #[derive(Debug)]
 pub struct PackDefinitionSO_LevelProductPacks {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _steamLevelProductPacks: *mut crate::GlobalNamespace::SteamLevelProductPacksSO,
-    pub _oculusLevelProductPacks: *mut crate::GlobalNamespace::OculusLevelProductPacksSO,
-    pub _sonyLevelProductPackSource: *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO,
-    pub _ps4LevelProductPacks: *mut crate::GlobalNamespace::PS4LevelProductPacksSO,
-    pub _ps5LevelProductPacks: *mut crate::GlobalNamespace::PS5LevelProductPacksSO,
+    pub _steamLevelProductPacks: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SteamLevelProductPacksSO,
+    >,
+    pub _oculusLevelProductPacks: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OculusLevelProductPacksSO,
+    >,
+    pub _sonyLevelProductPackSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyLevelProductPackSourceSO,
+    >,
+    pub _ps4LevelProductPacks: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PS4LevelProductPacksSO,
+    >,
+    pub _ps5LevelProductPacks: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PS5LevelProductPacksSO,
+    >,
 }
 #[cfg(feature = "PackDefinitionSO+LevelProductPacks")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

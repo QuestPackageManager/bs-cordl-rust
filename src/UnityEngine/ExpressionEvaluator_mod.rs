@@ -234,8 +234,8 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct ExpressionEvaluator_Expression {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub rpnTokens: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub rpnTokens: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub hasVariables: bool,
 }
@@ -402,7 +402,7 @@ for crate::UnityEngine::ExpressionEvaluator_Operator {
 }
 #[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ExpressionEvaluator_PcgRandom {
     pub increment: u64,
     pub state: u64,

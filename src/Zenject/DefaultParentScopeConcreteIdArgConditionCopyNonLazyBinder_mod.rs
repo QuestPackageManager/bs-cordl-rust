@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {
     __cordl_parent: crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-    pub _SubContainerCreatorBindInfo_k__BackingField: *mut crate::Zenject::SubContainerCreatorBindInfo,
+    pub _SubContainerCreatorBindInfo_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Zenject::SubContainerCreatorBindInfo,
+    >,
 }
 #[cfg(feature = "Zenject+DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

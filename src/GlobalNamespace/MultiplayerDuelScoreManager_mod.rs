@@ -3,12 +3,22 @@
 #[derive(Debug)]
 pub struct MultiplayerDuelScoreManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _scoreItem: *mut crate::GlobalNamespace::MultiplayerScoreItem,
+    pub _scoreItem: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreItem,
+    >,
     pub _delayBetweenScoreUpdates: f32,
-    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
-    pub _scoreProvider: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _opponentPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _multiplayerController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerController,
+    >,
+    pub _scoreProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreProvider,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub _opponentPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
     pub _timeSinceLastScoreUpdate: f32,
 }
 #[cfg(feature = "MultiplayerDuelScoreManager")]

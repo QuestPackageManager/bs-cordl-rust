@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct WaitUntil {
     __cordl_parent: crate::UnityEngine::CustomYieldInstruction,
-    pub m_Predicate: *mut crate::System::Func_1<bool>,
+    pub m_Predicate: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
 }
 #[cfg(feature = "UnityEngine+WaitUntil")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

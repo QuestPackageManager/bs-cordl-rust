@@ -3,21 +3,29 @@
 #[derive(Debug)]
 pub struct RenderChain {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_FirstCommand: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+    pub m_FirstCommand: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+    >,
     pub m_DirtyTracker: crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking,
-    pub m_CommandPool: *mut crate::UnityEngine::UIElements::UIR::LinkedPool_1<
-        *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+    pub m_CommandPool: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::LinkedPool_1<
+            *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+        >,
     >,
-    pub m_TexturePool: *mut crate::UnityEngine::UIElements::UIR::BasicNodePool_1<
-        crate::UnityEngine::UIElements::UIR::TextureEntry,
+    pub m_TexturePool: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::BasicNodePool_1<
+            crate::UnityEngine::UIElements::UIR::TextureEntry,
+        >,
     >,
-    pub m_RenderNodesData: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData,
+    pub m_RenderNodesData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData,
+        >,
     >,
-    pub m_DefaultShader: *mut crate::UnityEngine::Shader,
-    pub m_DefaultWorldSpaceShader: *mut crate::UnityEngine::Shader,
-    pub m_DefaultMat: *mut crate::UnityEngine::Material,
-    pub m_DefaultWorldSpaceMat: *mut crate::UnityEngine::Material,
+    pub m_DefaultShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub m_DefaultWorldSpaceShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub m_DefaultMat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub m_DefaultWorldSpaceMat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub m_BlockDirtyRegistration: bool,
     pub m_StaticIndex: i32,
     pub m_ActiveRenderNodes: i32,
@@ -25,22 +33,40 @@ pub struct RenderChain {
     pub m_Stats: crate::UnityEngine::UIElements::UIR::ChainBuilderStats,
     pub m_StatsElementsAdded: u32,
     pub m_StatsElementsRemoved: u32,
-    pub m_TextureRegistry: *mut crate::UnityEngine::UIElements::TextureRegistry,
-    pub _opacityIdAccelerator_k__BackingField: *mut crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator,
+    pub m_TextureRegistry: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextureRegistry,
+    >,
+    pub _opacityIdAccelerator_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator,
+    >,
     pub _disposed_k__BackingField: bool,
-    pub _panel_k__BackingField: *mut crate::UnityEngine::UIElements::BaseVisualElementPanel,
-    pub _device_k__BackingField: *mut crate::UnityEngine::UIElements::UIR::UIRenderDevice,
-    pub _atlas_k__BackingField: *mut crate::UnityEngine::UIElements::AtlasBase,
-    pub _vectorImageManager_k__BackingField: *mut crate::UnityEngine::UIElements::UIR::VectorImageManager,
-    pub _vertsPool_k__BackingField: *mut crate::UnityEngine::UIElements::UIR::TempAllocator_1<
-        crate::UnityEngine::UIElements::Vertex,
+    pub _panel_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVisualElementPanel,
     >,
-    pub _indicesPool_k__BackingField: *mut crate::UnityEngine::UIElements::UIR::TempAllocator_1<
-        u16,
+    pub _device_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::UIRenderDevice,
     >,
-    pub _jobManager_k__BackingField: *mut crate::UnityEngine::UIElements::UIR::JobManager,
+    pub _atlas_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::AtlasBase,
+    >,
+    pub _vectorImageManager_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::VectorImageManager,
+    >,
+    pub _vertsPool_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::TempAllocator_1<
+            crate::UnityEngine::UIElements::Vertex,
+        >,
+    >,
+    pub _indicesPool_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>,
+    >,
+    pub _jobManager_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::JobManager,
+    >,
     pub shaderInfoAllocator: crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator,
-    pub _painter_k__BackingField: *mut crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter,
+    pub _painter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter,
+    >,
     pub _drawStats_k__BackingField: bool,
     pub _drawInCameras_k__BackingField: bool,
 }
@@ -834,16 +860,20 @@ for crate::UnityEngine::UIElements::UIR::RenderChain {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RenderChain_DepthOrderedDirtyTracking {
-    pub heads: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub heads: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
     >,
-    pub tails: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub tails: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
     >,
-    pub minDepths: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub maxDepths: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub minDepths: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub maxDepths: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub dirtyID: u32,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
@@ -916,7 +946,7 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking 
     feature = "UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RenderChain_RenderChainStaticIndexAllocator {}
 #[cfg(
     feature = "UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
@@ -973,15 +1003,21 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAllo
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+RenderNodeData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RenderChain_RenderNodeData {
-    pub standardMaterial: *mut crate::UnityEngine::Material,
-    pub initialMaterial: *mut crate::UnityEngine::Material,
-    pub matPropBlock: *mut crate::UnityEngine::MaterialPropertyBlock,
-    pub firstCommand: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
-    pub device: *mut crate::UnityEngine::UIElements::UIR::UIRenderDevice,
-    pub vectorAtlas: *mut crate::UnityEngine::Texture,
-    pub shaderInfoAtlas: *mut crate::UnityEngine::Texture,
+    pub standardMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub initialMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub matPropBlock: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MaterialPropertyBlock,
+    >,
+    pub firstCommand: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+    >,
+    pub device: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::UIRenderDevice,
+    >,
+    pub vectorAtlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    pub shaderInfoAtlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub dpiScale: f32,
     pub transformConstants: crate::Unity::Collections::NativeSlice_1<
         crate::UnityEngine::UIElements::UIR::Transform3x4,

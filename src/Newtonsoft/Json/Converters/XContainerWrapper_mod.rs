@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct XContainerWrapper {
     __cordl_parent: crate::Newtonsoft::Json::Converters::XObjectWrapper,
-    pub _childNodes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Newtonsoft::Json::Converters::IXmlNode,
+    pub _childNodes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Converters::IXmlNode,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XContainerWrapper")]

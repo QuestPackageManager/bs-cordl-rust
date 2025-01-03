@@ -7,18 +7,22 @@ pub struct RemoteStateBuffer_3<
     TState: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState>,
-    pub _receivedStates: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
-            TStateTable,
-            TType,
-            TState,
+    pub _receivedStates: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
+                TStateTable,
+                TType,
+                TState,
+            >,
         >,
     >,
-    pub _receivedDeltas: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
-            TStateTable,
-            TType,
-            TState,
+    pub _receivedDeltas: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
+                TStateTable,
+                TType,
+                TState,
+            >,
         >,
     >,
     pub _receivedStateIndex: i32,

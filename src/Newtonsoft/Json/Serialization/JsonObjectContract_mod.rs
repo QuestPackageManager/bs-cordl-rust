@@ -13,23 +13,37 @@ pub struct JsonObjectContract {
     pub _ItemNullValueHandling_k__BackingField: crate::System::Nullable_1<
         crate::Newtonsoft::Json::NullValueHandling,
     >,
-    pub _Properties_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::JsonPropertyCollection,
-    pub _ExtensionDataSetter_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::ExtensionDataSetter,
-    pub _ExtensionDataGetter_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::ExtensionDataGetter,
-    pub _ExtensionDataNameResolver_k__BackingField: *mut crate::System::Func_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Properties_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonPropertyCollection,
+    >,
+    pub _ExtensionDataSetter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::ExtensionDataSetter,
+    >,
+    pub _ExtensionDataGetter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::ExtensionDataGetter,
+    >,
+    pub _ExtensionDataNameResolver_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub ExtensionDataIsJToken: bool,
     pub _hasRequiredOrDefaultValueProperties: crate::System::Nullable_1<bool>,
-    pub _overrideCreator: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _overrideCreator: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
-    pub _parameterizedCreator: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _parameterizedCreator: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
-    pub _creatorParameters: *mut crate::Newtonsoft::Json::Serialization::JsonPropertyCollection,
-    pub _extensionDataValueType: *mut crate::System::Type,
+    pub _creatorParameters: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonPropertyCollection,
+    >,
+    pub _extensionDataValueType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonObjectContract")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

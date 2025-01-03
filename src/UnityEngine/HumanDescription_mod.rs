@@ -1,10 +1,12 @@
 #[cfg(feature = "UnityEngine+HumanDescription")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HumanDescription {
-    pub human: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::HumanBone>,
-    pub skeleton: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::SkeletonBone,
+    pub human: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::HumanBone>,
+    >,
+    pub skeleton: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::SkeletonBone>,
     >,
     pub m_ArmTwist: f32,
     pub m_ForeArmTwist: f32,
@@ -14,7 +16,9 @@ pub struct HumanDescription {
     pub m_LegStretch: f32,
     pub m_FeetSpacing: f32,
     pub m_GlobalScale: f32,
-    pub m_RootMotionBoneName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_RootMotionBoneName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub m_HasTranslationDoF: bool,
     pub m_HasExtraRoot: bool,
     pub m_SkeletonHasParents: bool,

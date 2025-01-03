@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct LocalizedTextMesh {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub text: *mut crate::UnityEngine::TextMesh,
-    pub key: *mut quest_hook::libil2cpp::Il2CppString,
+    pub text: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextMesh>,
+    pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "BGLib+Polyglot+LocalizedTextMesh")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

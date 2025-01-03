@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct ColorSchemeColorToggleController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _colorGraphics: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UI::Graphic,
+    pub _colorGraphics: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Graphic>,
     >,
-    pub _toggle: *mut crate::UnityEngine::UI::Toggle,
+    pub _toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
 }
 #[cfg(feature = "ColorSchemeColorToggleController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

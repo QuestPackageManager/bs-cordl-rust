@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct SettingsNavigationController {
     __cordl_parent: crate::HMUI::NavigationController,
-    pub _okButton: *mut crate::UnityEngine::UI::Button,
-    pub _applyButton: *mut crate::UnityEngine::UI::Button,
-    pub _cancelButton: *mut crate::UnityEngine::UI::Button,
-    pub didFinishEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::SettingsNavigationController_FinishAction,
+    pub _okButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _applyButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _cancelButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::GlobalNamespace::SettingsNavigationController_FinishAction,
+        >,
     >,
 }
 #[cfg(feature = "SettingsNavigationController")]

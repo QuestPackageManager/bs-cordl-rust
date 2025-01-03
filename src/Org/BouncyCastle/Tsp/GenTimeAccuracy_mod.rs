@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct GenTimeAccuracy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub accuracy: *mut crate::Org::BouncyCastle::Asn1::Tsp::Accuracy,
+    pub accuracy: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Tsp::Accuracy,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+GenTimeAccuracy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

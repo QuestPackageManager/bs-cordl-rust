@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Profiling+DebugScreenCapture")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DebugScreenCapture {
     pub _RawImageDataReference_k__BackingField: crate::Unity::Collections::NativeArray_1<
         u8,

@@ -1,9 +1,9 @@
 #[cfg(feature = "UnityEngine+JNINativeMethod")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct JNINativeMethod {
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub signature: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub fnPtr: crate::System::IntPtr,
 }
 #[cfg(feature = "UnityEngine+JNINativeMethod")]

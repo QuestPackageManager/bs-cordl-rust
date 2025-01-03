@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct CbcBlockCipherMac {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub bufOff: i32,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
-    pub padding: *mut crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    >,
+    pub padding: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding,
+    >,
     pub macSize: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+CbcBlockCipherMac")]

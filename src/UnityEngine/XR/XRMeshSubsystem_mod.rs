@@ -69,7 +69,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::XR::XRMeshSubsyst
 }
 #[cfg(feature = "UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XRMeshSubsystem_MeshTransformList {
     pub m_Self: crate::System::IntPtr,
 }

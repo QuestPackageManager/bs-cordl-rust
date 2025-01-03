@@ -4,7 +4,9 @@
 pub struct TaskFactory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_defaultCancellationToken: crate::System::Threading::CancellationToken,
-    pub m_defaultScheduler: *mut crate::System::Threading::Tasks::TaskScheduler,
+    pub m_defaultScheduler: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskScheduler,
+    >,
     pub m_defaultCreationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
     pub m_defaultContinuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
 }
@@ -367,8 +369,10 @@ pub struct TaskFactory_CompleteOnInvokePromise {
     __cordl_parent: crate::System::Threading::Tasks::Task_1<
         *mut crate::System::Threading::Tasks::Task,
     >,
-    pub _tasks: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::System::Threading::Tasks::Task,
+    pub _tasks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::System::Threading::Tasks::Task,
+        >,
     >,
 }
 #[cfg(feature = "System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise")]

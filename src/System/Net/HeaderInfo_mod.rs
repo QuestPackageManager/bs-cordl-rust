@@ -5,8 +5,8 @@ pub struct HeaderInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub IsRequestRestricted: bool,
     pub IsResponseRestricted: bool,
-    pub Parser: *mut crate::System::Net::HeaderParser,
-    pub HeaderName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Parser: quest_hook::libil2cpp::Gc<crate::System::Net::HeaderParser>,
+    pub HeaderName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub AllowMultiValues: bool,
 }
 #[cfg(feature = "System+Net+HeaderInfo")]

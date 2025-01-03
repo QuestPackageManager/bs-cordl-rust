@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct IllogicalCallContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Datastore: *mut crate::System::Collections::Hashtable,
-    pub m_HostContext: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_Datastore: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub m_HostContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+IllogicalCallContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

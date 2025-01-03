@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct BeatmapCharacteristicsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _beatmapCharacteristicsTableView: *mut crate::GlobalNamespace::BeatmapCharacteristicsTableView,
-    pub didSelectBeatmapCharacteristicEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _beatmapCharacteristicsTableView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicsTableView,
     >,
-    pub _beatmapCharacteristicCollection: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
+    pub didSelectBeatmapCharacteristicEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::BeatmapCharacteristicSO>,
+    >,
+    pub _beatmapCharacteristicCollection: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicCollection,
+    >,
     pub _selectedBeatmapCharacteristicNum: i32,
 }
 #[cfg(feature = "BeatmapCharacteristicsViewController")]

@@ -161,16 +161,24 @@ pub struct EncryptionUtility_EncryptionState {
     pub _lastSentSequenceNum: i32,
     pub _hasReceivedSequenceNum: bool,
     pub _lastReceivedSequenceNum: u32,
-    pub _receivedSequenceNumBuffer: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
-    pub sendKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub receiveKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _sendMacKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _receiveMacKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _sendMacQueue: *mut crate::System::Collections::Concurrent::ConcurrentQueue_1<
-        *mut crate::Org::BouncyCastle::Crypto::Macs::HMac,
+    pub _receivedSequenceNumBuffer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<bool>,
     >,
-    pub _receiveMacQueue: *mut crate::System::Collections::Concurrent::ConcurrentQueue_1<
-        *mut crate::Org::BouncyCastle::Crypto::Macs::HMac,
+    pub sendKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub receiveKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _sendMacKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _receiveMacKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub _sendMacQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Concurrent::ConcurrentQueue_1<
+            *mut crate::Org::BouncyCastle::Crypto::Macs::HMac,
+        >,
+    >,
+    pub _receiveMacQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Concurrent::ConcurrentQueue_1<
+            *mut crate::Org::BouncyCastle::Crypto::Macs::HMac,
+        >,
     >,
 }
 #[cfg(feature = "EncryptionUtility+EncryptionState")]

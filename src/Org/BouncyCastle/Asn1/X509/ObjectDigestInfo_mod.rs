@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct ObjectDigestInfo {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub digestedObjectType: *mut crate::Org::BouncyCastle::Asn1::DerEnumerated,
-    pub otherObjectTypeID: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub digestAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub objectDigest: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
+    pub digestedObjectType: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerEnumerated,
+    >,
+    pub otherObjectTypeID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub digestAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub objectDigest: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerBitString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+ObjectDigestInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

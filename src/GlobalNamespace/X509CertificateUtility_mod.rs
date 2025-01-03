@@ -161,7 +161,7 @@ for crate::GlobalNamespace::X509CertificateUtility {
 #[derive(Debug)]
 pub struct X509CertificateUtility_PasswordFinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub _password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
 }
 #[cfg(feature = "X509CertificateUtility+PasswordFinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -268,7 +268,7 @@ for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
 #[derive(Debug)]
 pub struct X509CertificateUtility_RSACertificateEncryptionProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _signer: *mut crate::Org::BouncyCastle::Crypto::ISigner,
+    pub _signer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
 }
 #[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

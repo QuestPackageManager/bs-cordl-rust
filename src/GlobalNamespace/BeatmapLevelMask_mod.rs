@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BeatmapLevelMask {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _bloomFilter: *mut crate::GlobalNamespace::BitMaskSparse,
+    pub _bloomFilter: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskSparse>,
 }
 #[cfg(feature = "BeatmapLevelMask")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

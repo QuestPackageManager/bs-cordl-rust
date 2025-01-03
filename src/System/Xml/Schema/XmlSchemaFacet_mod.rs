@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlSchemaFacet {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaAnnotated,
-    pub value: *mut quest_hook::libil2cpp::Il2CppString,
+    pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub isFixed: bool,
     pub facetType: crate::System::Xml::Schema::FacetType,
 }

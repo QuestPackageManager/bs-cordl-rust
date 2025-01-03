@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplier")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ExpressionMultiplier {
     pub m_Type: crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplierType,
     pub min: i32,

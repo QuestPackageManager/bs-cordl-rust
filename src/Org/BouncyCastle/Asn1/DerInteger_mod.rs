@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DerInteger {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Object,
-    pub bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub start: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerInteger")]

@@ -6,7 +6,7 @@ pub struct AnimatorInstaller {
         *mut crate::UnityEngine::Animator,
         *mut crate::Zenject::AnimatorInstaller,
     >,
-    pub _animator: *mut crate::UnityEngine::Animator,
+    pub _animator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
 }
 #[cfg(feature = "Zenject+AnimatorInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

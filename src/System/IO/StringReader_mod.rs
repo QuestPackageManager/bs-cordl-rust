@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct StringReader {
     __cordl_parent: crate::System::IO::TextReader,
-    pub _s: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _pos: i32,
     pub _length: i32,
 }

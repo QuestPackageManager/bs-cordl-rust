@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+PlayerLoop+TimeUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TimeUpdate {}
 #[cfg(feature = "UnityEngine+PlayerLoop+TimeUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -29,7 +29,7 @@ impl crate::UnityEngine::PlayerLoop::TimeUpdate {
     feature = "UnityEngine+PlayerLoop+TimeUpdate+WaitForLastPresentationAndUpdateTime"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TimeUpdate_WaitForLastPresentationAndUpdateTime {}
 #[cfg(
     feature = "UnityEngine+PlayerLoop+TimeUpdate+WaitForLastPresentationAndUpdateTime"

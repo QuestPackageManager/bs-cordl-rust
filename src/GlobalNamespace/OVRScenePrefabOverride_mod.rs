@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct OVRScenePrefabOverride {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Prefab: *mut crate::GlobalNamespace::OVRSceneAnchor,
-    pub ClassificationLabel: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Prefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
+    pub ClassificationLabel: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _editorClassificationIndex: i32,
 }
 #[cfg(feature = "OVRScenePrefabOverride")]

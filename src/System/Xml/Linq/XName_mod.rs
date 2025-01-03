@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct XName {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _ns: *mut crate::System::Xml::Linq::XNamespace,
-    pub _localName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _ns: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
+    pub _localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _hashCode: i32,
 }
 #[cfg(feature = "System+Xml+Linq+XName")]

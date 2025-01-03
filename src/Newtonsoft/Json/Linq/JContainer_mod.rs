@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct JContainer {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JToken,
-    pub _listChanged: *mut crate::System::ComponentModel::ListChangedEventHandler,
-    pub _addingNew: *mut crate::System::ComponentModel::AddingNewEventHandler,
-    pub _collectionChanged: *mut crate::System::Collections::Specialized::NotifyCollectionChangedEventHandler,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _listChanged: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::ListChangedEventHandler,
+    >,
+    pub _addingNew: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::AddingNewEventHandler,
+    >,
+    pub _collectionChanged: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Specialized::NotifyCollectionChangedEventHandler,
+    >,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _busy: bool,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]

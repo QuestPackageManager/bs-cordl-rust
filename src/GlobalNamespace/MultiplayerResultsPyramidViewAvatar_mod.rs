@@ -3,45 +3,61 @@
 #[derive(Debug)]
 pub struct MultiplayerResultsPyramidViewAvatar {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _badgeDirector: *mut crate::UnityEngine::Playables::PlayableDirector,
-    pub _ghostFirstTrackName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _ghostSecondTrackName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _standWithAvatarTransform: *mut crate::UnityEngine::Transform,
+    pub _badgeDirector: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableDirector,
+    >,
+    pub _ghostFirstTrackName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _ghostSecondTrackName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _standWithAvatarTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
     pub _perPositionRotation: f32,
     pub _localPlayerColor: crate::UnityEngine::Color,
-    pub _positionText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _nameText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _nameBackground: *mut crate::HMUI::ImageView,
-    pub _badgeCanvas: *mut crate::UnityEngine::CanvasGroup,
-    pub _badgeTitles: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::TMPro::TextMeshProUGUI,
+    pub _positionText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _nameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _nameBackground: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
+    pub _badgeCanvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+    pub _badgeTitles: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TextMeshProUGUI>,
     >,
-    pub _badgeImages: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::HMUI::ImageView,
+    pub _badgeImages: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::HMUI::ImageView>,
     >,
-    pub _badgeSubtitleText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _badgeSubtitleCanvas: *mut crate::UnityEngine::CanvasGroup,
-    pub _ghostDuplicationEffect: *mut crate::GlobalNamespace::GhostDuplicationEffect,
+    pub _badgeSubtitleText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _badgeSubtitleCanvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+    pub _ghostDuplicationEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GhostDuplicationEffect,
+    >,
     pub _ghostAppear: crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams,
     pub _ghostReceive: crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams,
-    pub _trophyImage: *mut crate::HMUI::ImageView,
-    pub _firstPlaceTrophy: *mut crate::UnityEngine::Sprite,
-    pub _secondPlaceTrophy: *mut crate::UnityEngine::Sprite,
-    pub _thirdPlaceTrophy: *mut crate::UnityEngine::Sprite,
+    pub _trophyImage: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
+    pub _firstPlaceTrophy: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _secondPlaceTrophy: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _thirdPlaceTrophy: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub _firstPlaceColor: crate::UnityEngine::Color,
-    pub _personalBestVisual: *mut crate::UnityEngine::GameObject,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _personalBestVisual: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
     pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
-    pub _riseTween: *mut crate::Tweening::Vector3Tween,
-    pub _avatarRiseTween: *mut crate::Tweening::Vector3Tween,
-    pub _badgePositionTween: *mut crate::Tweening::Vector3Tween,
-    pub _badgeOpacityTween: *mut crate::Tweening::FloatTween,
-    pub _nameOpacityTween: *mut crate::Tweening::FloatTween,
-    pub _namePositionTween: *mut crate::Tweening::Vector3Tween,
-    pub _localGlowTween: *mut crate::Tweening::ColorTween,
-    pub _titleMakingSpaceForBadgeTween: *mut crate::Tweening::Vector3Tween,
+    pub _riseTween: quest_hook::libil2cpp::Gc<crate::Tweening::Vector3Tween>,
+    pub _avatarRiseTween: quest_hook::libil2cpp::Gc<crate::Tweening::Vector3Tween>,
+    pub _badgePositionTween: quest_hook::libil2cpp::Gc<crate::Tweening::Vector3Tween>,
+    pub _badgeOpacityTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
+    pub _nameOpacityTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
+    pub _namePositionTween: quest_hook::libil2cpp::Gc<crate::Tweening::Vector3Tween>,
+    pub _localGlowTween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
+    pub _titleMakingSpaceForBadgeTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Vector3Tween,
+    >,
     pub _originalBadgeLocalPos: crate::UnityEngine::Vector3,
-    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _connectedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
 }
 #[cfg(feature = "MultiplayerResultsPyramidViewAvatar")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

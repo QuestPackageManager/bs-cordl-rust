@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct StartupErrorNoTransitionInstaller {
     __cordl_parent: crate::Zenject::NoTransitionInstaller,
-    pub _startupErrorSceneSetupData: *mut crate::GlobalNamespace::StartupErrorSceneSetupData,
-    pub _scenesTransitionSetupData: *mut crate::GlobalNamespace::StartupErrorScenesTransitionSetupDataSO,
+    pub _startupErrorSceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StartupErrorSceneSetupData,
+    >,
+    pub _scenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StartupErrorScenesTransitionSetupDataSO,
+    >,
 }
 #[cfg(feature = "StartupErrorNoTransitionInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

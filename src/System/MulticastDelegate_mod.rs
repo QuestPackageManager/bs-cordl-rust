@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MulticastDelegate {
     __cordl_parent: crate::System::Delegate,
-    pub delegates: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Delegate>,
+    pub delegates: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Delegate>,
+    >,
 }
 #[cfg(feature = "System+MulticastDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

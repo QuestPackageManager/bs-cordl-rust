@@ -7,11 +7,15 @@ pub struct Allocator2D {
     pub m_MaxSize: crate::UnityEngine::Vector2Int,
     pub m_MaxAllocSize: crate::UnityEngine::Vector2Int,
     pub m_RowHeightBias: i32,
-    pub m_Rows: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+    pub m_Rows: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+        >,
     >,
-    pub m_Areas: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
+    pub m_Areas: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D")]
@@ -146,10 +150,12 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Allocator2D_Alloc2D {
     pub rect: crate::UnityEngine::RectInt,
-    pub row: *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+    pub row: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+    >,
     pub alloc: crate::UnityEngine::UIElements::UIR::Alloc,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
@@ -194,7 +200,9 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
 pub struct Allocator2D_Area {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rect: crate::UnityEngine::RectInt,
-    pub allocator: *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator,
+    pub allocator: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::BestFitAllocator,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Area")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -255,10 +263,16 @@ pub struct Allocator2D_Row {
         *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
     >,
     pub rect: crate::UnityEngine::RectInt,
-    pub area: *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
-    pub allocator: *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator,
+    pub area: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
+    >,
+    pub allocator: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::BestFitAllocator,
+    >,
     pub alloc: crate::UnityEngine::UIElements::UIR::Alloc,
-    pub next: *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+    pub next: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Row")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

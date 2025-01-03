@@ -3,17 +3,17 @@
 #[derive(Debug)]
 pub struct BasicUIAudioManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _buttonClickEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::Signal,
+    pub _buttonClickEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::Signal>,
     >,
-    pub _audioSource: *mut crate::UnityEngine::AudioSource,
-    pub _clickSounds: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::AudioClip,
+    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    pub _clickSounds: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
     >,
     pub _minPitch: f32,
     pub _maxPitch: f32,
-    pub _randomSoundPicker: *mut crate::GlobalNamespace::RandomObjectPicker_1<
-        *mut crate::UnityEngine::AudioClip,
+    pub _randomSoundPicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RandomObjectPicker_1<*mut crate::UnityEngine::AudioClip>,
     >,
 }
 #[cfg(feature = "BasicUIAudioManager")]

@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct XmlRegisteredNonCachedStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub stream: *mut crate::System::IO::Stream,
-    pub downloadManager: *mut crate::System::Xml::XmlDownloadManager,
-    pub host: *mut quest_hook::libil2cpp::Il2CppString,
+    pub stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub downloadManager: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlDownloadManager,
+    >,
+    pub host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+XmlRegisteredNonCachedStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

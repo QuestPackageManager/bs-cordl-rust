@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DynamicProxyMetaObject_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Dynamic::DynamicMetaObject,
-    pub _proxy: *mut crate::Newtonsoft::Json::Utilities::DynamicProxy_1<T>,
+    pub _proxy: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::DynamicProxy_1<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1")]

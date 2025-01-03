@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BufferedReadStream {
     __cordl_parent: crate::System::Net::WebReadStream,
-    pub readBuffer: *mut crate::System::Net::BufferOffsetSize,
+    pub readBuffer: quest_hook::libil2cpp::Gc<crate::System::Net::BufferOffsetSize>,
 }
 #[cfg(feature = "System+Net+BufferedReadStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

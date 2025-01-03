@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TransformDispatchData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TransformDispatchData {
     pub transformedID: crate::Unity::Collections::NativeArray_1<i32>,
     pub parentID: crate::Unity::Collections::NativeArray_1<i32>,

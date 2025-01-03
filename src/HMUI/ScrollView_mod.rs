@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct ScrollView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _viewport: *mut crate::UnityEngine::RectTransform,
-    pub _contentRectTransform: *mut crate::UnityEngine::RectTransform,
+    pub _viewport: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub _contentRectTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
+    >,
     pub _scrollViewDirection: crate::HMUI::ScrollView_ScrollViewDirection,
-    pub _pageUpButton: *mut crate::UnityEngine::UI::Button,
-    pub _pageDownButton: *mut crate::UnityEngine::UI::Button,
-    pub _verticalScrollIndicator: *mut crate::HMUI::VerticalScrollIndicator,
+    pub _pageUpButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _pageDownButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _verticalScrollIndicator: quest_hook::libil2cpp::Gc<
+        crate::HMUI::VerticalScrollIndicator,
+    >,
     pub _smooth: f32,
     pub _joystickScrollSpeed: f32,
     pub _joystickQuickSnapMaxTime: f32,
@@ -19,12 +23,20 @@ pub struct ScrollView {
     pub _scrollingLastFrame: bool,
     pub _isHoveredByPointer: bool,
     pub _shouldAnimate: bool,
-    pub _platformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub scrollPositionChangedEvent: *mut crate::System::Action_1<f32>,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _platformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
+    pub scrollPositionChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<f32>,
+    >,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _destinationPos: f32,
-    pub _scrollFocusPositions: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _eventSystemListener: *mut crate::HMUI::EventSystemListener,
+    pub _scrollFocusPositions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
+    pub _eventSystemListener: quest_hook::libil2cpp::Gc<
+        crate::HMUI::EventSystemListener,
+    >,
     pub _lastJoystickScrollDirection: crate::HMUI::ScrollView_ScrollDirection,
     pub _joystickScrollStartTime: f32,
 }

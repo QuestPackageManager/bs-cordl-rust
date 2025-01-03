@@ -1,12 +1,12 @@
 #[cfg(feature = "System+ParamsArray")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ParamsArray {
-    pub _arg0: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _arg1: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _arg2: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _args: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _args: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
 }
 #[cfg(feature = "System+ParamsArray")]

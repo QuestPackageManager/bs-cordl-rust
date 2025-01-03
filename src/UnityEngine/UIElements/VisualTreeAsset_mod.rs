@@ -5,25 +5,41 @@ pub struct VisualTreeAsset {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_ImportedWithErrors: bool,
     pub m_ImportedWithWarnings: bool,
-    pub m_Usings: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
+    pub m_Usings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
+        >,
     >,
-    pub inlineSheet: *mut crate::UnityEngine::UIElements::StyleSheet,
-    pub m_VisualElementAssets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::VisualElementAsset,
+    pub inlineSheet: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleSheet,
     >,
-    pub m_TemplateAssets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::TemplateAsset,
+    pub m_VisualElementAssets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::VisualElementAsset,
+        >,
     >,
-    pub m_UxmlObjectEntries: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry,
+    pub m_TemplateAssets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::TemplateAsset,
+        >,
     >,
-    pub m_UxmlObjectIds: *mut crate::System::Collections::Generic::List_1<i32>,
-    pub m_AssetEntries: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry,
+    pub m_UxmlObjectEntries: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry,
+        >,
     >,
-    pub m_Slots: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
+    pub m_UxmlObjectIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
+    pub m_AssetEntries: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry,
+        >,
+    >,
+    pub m_Slots: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
+        >,
     >,
     pub m_ContentContainerId: i32,
     pub m_ContentHash: i32,
@@ -655,12 +671,12 @@ for crate::UnityEngine::UIElements::VisualTreeAsset {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VisualTreeAsset_AssetEntry {
-    pub path: *mut quest_hook::libil2cpp::Il2CppString,
-    pub typeFullName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub asset: *mut crate::UnityEngine::Object,
-    pub m_CachedType: *mut crate::System::Type,
+    pub path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub typeFullName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    pub m_CachedType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -707,9 +723,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VisualTreeAsset_SlotDefinition {
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub insertionPointId: i32,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
@@ -733,9 +749,9 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
 impl crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {}
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VisualTreeAsset_SlotUsageEntry {
-    pub slotName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub slotName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub assetId: i32,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
@@ -759,11 +775,13 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
 impl crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {}
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VisualTreeAsset_UsingEntry {
-    pub alias: *mut quest_hook::libil2cpp::Il2CppString,
-    pub path: *mut quest_hook::libil2cpp::Il2CppString,
-    pub asset: *mut crate::UnityEngine::UIElements::VisualTreeAsset,
+    pub alias: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub asset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualTreeAsset,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -895,11 +913,13 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VisualTreeAsset_UxmlObjectEntry {
     pub parentId: i32,
-    pub uxmlObjectAssets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::UxmlObjectAsset,
+    pub uxmlObjectAssets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::UxmlObjectAsset,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]

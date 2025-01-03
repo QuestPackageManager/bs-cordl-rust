@@ -3,33 +3,61 @@
 #[derive(Debug)]
 pub struct InputControlAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
-    pub _layout_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _variants_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _format_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _usage_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _usages_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _layout_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _parameters_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _processors_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _alias_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _aliases_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _variants_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _useStateFrom_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _format_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _usage_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _usages_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub _parameters_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _processors_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _alias_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _aliases_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub _useStateFrom_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _bit_k__BackingField: u32,
     pub _offset_k__BackingField: u32,
     pub _sizeInBits_k__BackingField: u32,
     pub _arraySize_k__BackingField: i32,
-    pub _displayName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _shortDisplayName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _displayName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _shortDisplayName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _noisy_k__BackingField: bool,
     pub _synthetic_k__BackingField: bool,
     pub _dontReset_k__BackingField: bool,
-    pub _defaultState_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _minValue_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _maxValue_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _defaultState_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub _minValue_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub _maxValue_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

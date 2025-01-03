@@ -3,17 +3,25 @@
 #[derive(Debug)]
 pub struct MultiplayerLobbyConnectionController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _unifiedNetworkPlayerModel: *mut crate::GlobalNamespace::IUnifiedNetworkPlayerModel,
-    pub connectionSuccessEvent: *mut crate::System::Action,
-    pub connectionFailedEvent: *mut crate::System::Action_2<
-        crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
-        crate::GlobalNamespace::ConnectionFailedReason,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub _unifiedNetworkPlayerModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IUnifiedNetworkPlayerModel,
+    >,
+    pub connectionSuccessEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub connectionFailedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
+            crate::GlobalNamespace::ConnectionFailedReason,
+        >,
     >,
     pub _connectionState_k__BackingField: crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionState,
     pub _connectionType_k__BackingField: crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
     pub _connectionFailedReason_k__BackingField: crate::GlobalNamespace::ConnectionFailedReason,
-    pub _partyConfig: *mut crate::GlobalNamespace::UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig,
+    pub _partyConfig: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig,
+    >,
     pub _retryAttemptsLeft: i32,
 }
 #[cfg(feature = "MultiplayerLobbyConnectionController")]

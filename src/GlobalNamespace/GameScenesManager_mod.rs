@@ -3,37 +3,55 @@
 #[derive(Debug)]
 pub struct GameScenesManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _emptyTransitionSceneInfo: *mut crate::GlobalNamespace::SceneInfo,
-    pub _zenjectSceneLoader: *mut crate::Zenject::ZenjectSceneLoader,
-    pub transitionDidStartEvent: *mut crate::System::Action_2<
-        crate::GlobalNamespace::GameScenesManager_SceneTransitionType,
-        f32,
+    pub _emptyTransitionSceneInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SceneInfo,
     >,
-    pub beforeDismissingScenesEvent: *mut crate::System::Action_1<
-        *mut crate::System::Collections::Generic::List_1<
+    pub _zenjectSceneLoader: quest_hook::libil2cpp::Gc<
+        crate::Zenject::ZenjectSceneLoader,
+    >,
+    pub transitionDidStartEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            crate::GlobalNamespace::GameScenesManager_SceneTransitionType,
+            f32,
+        >,
+    >,
+    pub beforeDismissingScenesEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    >,
+    pub transitionDidFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_3<
+            crate::GlobalNamespace::GameScenesManager_SceneTransitionType,
+            *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+            *mut crate::Zenject::DiContainer,
+        >,
+    >,
+    pub installEarlyBindingsEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+            *mut crate::Zenject::DiContainer,
+        >,
+    >,
+    pub _currentSceneTransitionType: crate::GlobalNamespace::GameScenesManager_SceneTransitionType,
+    pub _scenesStack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::GameScenesManager_ScenesStackData,
+        >,
+    >,
+    pub _neverUnloadScenes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
             *mut quest_hook::libil2cpp::Il2CppString,
         >,
     >,
-    pub transitionDidFinishEvent: *mut crate::System::Action_3<
-        crate::GlobalNamespace::GameScenesManager_SceneTransitionType,
-        *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
-        *mut crate::Zenject::DiContainer,
-    >,
-    pub installEarlyBindingsEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
-        *mut crate::Zenject::DiContainer,
-    >,
-    pub _currentSceneTransitionType: crate::GlobalNamespace::GameScenesManager_SceneTransitionType,
-    pub _scenesStack: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::GameScenesManager_ScenesStackData,
-    >,
-    pub _neverUnloadScenes: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub _sceneNameToSceneOperationHandlesDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+    pub _sceneNameToSceneOperationHandlesDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+            >,
         >,
     >,
 }
@@ -898,10 +916,14 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct GameScenesManager_ScenesStackData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _sceneNames_k__BackingField: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _sceneNames_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _container_k__BackingField: *mut crate::Zenject::DiContainer,
+    pub _container_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Zenject::DiContainer,
+    >,
 }
 #[cfg(feature = "GameScenesManager+ScenesStackData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

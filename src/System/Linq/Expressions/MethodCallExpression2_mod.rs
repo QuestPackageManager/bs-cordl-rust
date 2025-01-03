@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct MethodCallExpression2 {
     __cordl_parent: crate::System::Linq::Expressions::MethodCallExpression,
-    pub _arg0: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _arg1: *mut crate::System::Linq::Expressions::Expression,
+    pub _arg0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _arg1: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
 }
 #[cfg(feature = "System+Linq+Expressions+MethodCallExpression2")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

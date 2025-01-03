@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct ResultsTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _tableView: *mut crate::HMUI::TableView,
-    pub _cellPrefab: *mut crate::GlobalNamespace::ResultsTableCell,
+    pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+    pub _cellPrefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsTableCell>,
     pub _rowHeight: f32,
-    pub _dataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
+    pub _dataList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
+        >,
     >,
 }
 #[cfg(feature = "ResultsTableView")]

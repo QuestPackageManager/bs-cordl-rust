@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct SpectrogramRow {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _meshRenderers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::MeshRenderer,
+    pub _meshRenderers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::MeshRenderer>,
     >,
     pub _dataIndex: i32,
-    pub _spectrogramData: *mut crate::GlobalNamespace::BasicSpectrogramData,
+    pub _spectrogramData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BasicSpectrogramData,
+    >,
 }
 #[cfg(feature = "SpectrogramRow")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

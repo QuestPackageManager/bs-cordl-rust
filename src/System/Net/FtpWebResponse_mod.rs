@@ -3,16 +3,18 @@
 #[derive(Debug)]
 pub struct FtpWebResponse {
     __cordl_parent: crate::System::Net::WebResponse,
-    pub _responseStream: *mut crate::System::IO::Stream,
+    pub _responseStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _contentLength: i64,
-    pub _responseUri: *mut crate::System::Uri,
+    pub _responseUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     pub _statusCode: crate::System::Net::FtpStatusCode,
-    pub _statusLine: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _ftpRequestHeaders: *mut crate::System::Net::WebHeaderCollection,
+    pub _statusLine: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _ftpRequestHeaders: quest_hook::libil2cpp::Gc<
+        crate::System::Net::WebHeaderCollection,
+    >,
     pub _lastModified: crate::System::DateTime,
-    pub _bannerMessage: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _welcomeMessage: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _exitMessage: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _bannerMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _welcomeMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _exitMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Net+FtpWebResponse")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

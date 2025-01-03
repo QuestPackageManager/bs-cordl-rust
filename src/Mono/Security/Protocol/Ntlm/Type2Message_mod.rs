@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct Type2Message {
     __cordl_parent: crate::Mono::Security::Protocol::Ntlm::MessageBase,
-    pub _nonce: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _targetName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _targetInfo: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _nonce: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _targetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _targetInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Security+Protocol+Ntlm+Type2Message")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

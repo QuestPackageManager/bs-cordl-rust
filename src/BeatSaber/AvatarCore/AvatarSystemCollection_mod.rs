@@ -3,19 +3,27 @@
 #[derive(Debug)]
 pub struct AvatarSystemCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _availableAvatarSystems: *mut crate::System::Collections::Generic::Dictionary_2<
-        u32,
-        *mut crate::BeatSaber::AvatarCore::IAvatarSystem,
+    pub _availableAvatarSystems: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            u32,
+            *mut crate::BeatSaber::AvatarCore::IAvatarSystem,
+        >,
     >,
-    pub _availableUserSelectableAvatarSystems: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BeatSaber::AvatarCore::IAvatarSystem,
+    pub _availableUserSelectableAvatarSystems: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BeatSaber::AvatarCore::IAvatarSystem,
+        >,
     >,
-    pub _supportedOptionalAvatarDataTypes: *mut crate::System::Collections::Generic::IReadOnlyCollection_1<
-        u32,
+    pub _supportedOptionalAvatarDataTypes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyCollection_1<u32>,
     >,
-    pub _fallbackAvatarSystem: *mut crate::BeatSaber::AvatarCore::IAvatarSystem,
-    pub _availableAvatarSystemList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::BeatSaber::AvatarCore::IAvatarSystem,
+    pub _fallbackAvatarSystem: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::IAvatarSystem,
+    >,
+    pub _availableAvatarSystemList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::BeatSaber::AvatarCore::IAvatarSystem,
+        >,
     >,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemCollection")]

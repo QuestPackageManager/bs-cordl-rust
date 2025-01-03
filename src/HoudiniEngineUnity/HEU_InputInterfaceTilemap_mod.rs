@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct HEU_InputInterfaceTilemap {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_InputInterface,
-    pub settings: *mut crate::HoudiniEngineUnity::HEU_InputInterfaceTilemapSettings,
+    pub settings: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_InputInterfaceTilemapSettings,
+    >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -130,8 +132,8 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
 #[derive(Debug)]
 pub struct HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_InputData,
-    pub _tilemap: *mut crate::UnityEngine::Tilemaps::Tilemap,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::Tilemap>,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap+HEU_InputDataTilemap")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

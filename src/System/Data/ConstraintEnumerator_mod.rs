@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct ConstraintEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _tables: *mut crate::System::Collections::IEnumerator,
-    pub _constraints: *mut crate::System::Collections::IEnumerator,
-    pub _currentObject: *mut crate::System::Data::Constraint,
+    pub _tables: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    pub _constraints: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    pub _currentObject: quest_hook::libil2cpp::Gc<crate::System::Data::Constraint>,
 }
 #[cfg(feature = "System+Data+ConstraintEnumerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

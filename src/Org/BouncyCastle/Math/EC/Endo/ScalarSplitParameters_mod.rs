@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct ScalarSplitParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_v1A: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub m_v1B: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub m_v2A: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub m_v2B: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub m_g1: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub m_g2: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub m_v1A: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub m_v1B: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub m_v2A: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub m_v2B: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub m_g1: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub m_g2: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub m_bits: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+ScalarSplitParameters")]

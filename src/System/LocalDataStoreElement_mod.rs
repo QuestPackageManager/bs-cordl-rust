@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LocalDataStoreElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_value: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_cookie: i64,
 }
 #[cfg(feature = "System+LocalDataStoreElement")]

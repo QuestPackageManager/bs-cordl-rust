@@ -4,16 +4,16 @@
 pub struct OVRBody {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _bodyState: crate::GlobalNamespace::OVRPlugin_BodyState,
-    pub _boneRotations: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_Quatf,
+    pub _boneRotations: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Quatf>,
     >,
-    pub _boneTranslations: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_Vector3f,
+    pub _boneTranslations: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Vector3f>,
     >,
     pub _dataChangedSinceLastQuery: bool,
     pub _hasData: bool,
-    pub _onPermissionGranted: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _onPermissionGranted: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "OVRBody")]

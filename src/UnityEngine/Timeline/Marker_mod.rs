@@ -4,7 +4,9 @@
 pub struct Marker {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_Time: f64,
-    pub _parent_k__BackingField: *mut crate::UnityEngine::Timeline::TrackAsset,
+    pub _parent_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::TrackAsset,
+    >,
 }
 #[cfg(feature = "UnityEngine+Timeline+Marker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

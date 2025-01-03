@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MethodProviderWithContainer_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _method: *mut crate::System::Func_2<*mut crate::Zenject::DiContainer, TValue>,
+    pub _method: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<*mut crate::Zenject::DiContainer, TValue>,
+    >,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "Zenject+MethodProviderWithContainer_1")]

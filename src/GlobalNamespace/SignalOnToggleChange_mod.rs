@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct SignalOnToggleChange {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _toggleValueChangeSignal: *mut crate::GlobalNamespace::Signal,
-    pub _toggle: *mut crate::UnityEngine::UI::Toggle,
+    pub _toggleValueChangeSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
 }
 #[cfg(feature = "SignalOnToggleChange")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

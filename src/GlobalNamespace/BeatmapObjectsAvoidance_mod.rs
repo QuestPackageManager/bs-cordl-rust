@@ -6,19 +6,43 @@ pub struct BeatmapObjectsAvoidance {
     pub _zOffset: f32,
     pub _yOffset: f32,
     pub _gravity: crate::UnityEngine::Vector2,
-    pub _towardsPlayerWrapperTransform: *mut crate::UnityEngine::Transform,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _beatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
-    pub _beatmapObjectSpawnController: *mut crate::GlobalNamespace::BeatmapObjectSpawnController,
-    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
-    pub _jumpOffsetYProvider: *mut crate::GlobalNamespace::IJumpOffsetYProvider,
-    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
-    pub _avoidanceYOffsetEvaluatorProvider: *mut crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator,
-    pub _pathEvaluator: *mut crate::GlobalNamespace::BeatmapObjectAvoidancePathEvaluator,
-    pub _tiltEvaluator: *mut crate::GlobalNamespace::BeatmapObjectAvoidanceTiltEvaluator,
-    pub _pathBezierSplineEvaluator: *mut crate::GlobalNamespace::BezierSplineEvaluator,
-    pub _accelerationBezierSplineEvaluator: *mut crate::GlobalNamespace::BezierSplineEvaluator,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _towardsPlayerWrapperTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
+    pub _beatmapData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IReadonlyBeatmapData,
+    >,
+    pub _beatmapObjectSpawnController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectSpawnController,
+    >,
+    pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVariableMovementDataProvider,
+    >,
+    pub _jumpOffsetYProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IJumpOffsetYProvider,
+    >,
+    pub _playerTransforms: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerTransforms,
+    >,
+    pub _avoidanceYOffsetEvaluatorProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator,
+    >,
+    pub _pathEvaluator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectAvoidancePathEvaluator,
+    >,
+    pub _tiltEvaluator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectAvoidanceTiltEvaluator,
+    >,
+    pub _pathBezierSplineEvaluator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BezierSplineEvaluator,
+    >,
+    pub _accelerationBezierSplineEvaluator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BezierSplineEvaluator,
+    >,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "BeatmapObjectsAvoidance")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

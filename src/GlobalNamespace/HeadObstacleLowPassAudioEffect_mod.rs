@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct HeadObstacleLowPassAudioEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _playerHeadAndObstacleInteraction: *mut crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
-    pub _mainAudioEffects: *mut crate::GlobalNamespace::MainAudioEffects,
+    pub _playerHeadAndObstacleInteraction: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
+    >,
+    pub _mainAudioEffects: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MainAudioEffects,
+    >,
     pub _headWasInObstacle: bool,
 }
 #[cfg(feature = "HeadObstacleLowPassAudioEffect")]

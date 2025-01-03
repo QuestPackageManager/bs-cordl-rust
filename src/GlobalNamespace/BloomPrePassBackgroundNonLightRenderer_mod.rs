@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundNonLightRenderer {
     __cordl_parent: crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore,
-    pub _renderer: *mut crate::UnityEngine::Renderer,
-    pub _meshFilter: *mut crate::UnityEngine::MeshFilter,
+    pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+    pub _meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
     pub _isPartOfInstancedRendering: bool,
-    pub _cachedTransform: *mut crate::UnityEngine::Transform,
+    pub _cachedTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "BloomPrePassBackgroundNonLightRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

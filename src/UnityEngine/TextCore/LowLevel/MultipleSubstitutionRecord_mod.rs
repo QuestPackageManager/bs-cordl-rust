@@ -1,9 +1,11 @@
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+MultipleSubstitutionRecord")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MultipleSubstitutionRecord {
     pub m_TargetGlyphID: u32,
-    pub m_SubstituteGlyphIDs: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub m_SubstituteGlyphIDs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u32>,
+    >,
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+MultipleSubstitutionRecord")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

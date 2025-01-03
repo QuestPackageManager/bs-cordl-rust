@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct EnumConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
-    pub values: *mut crate::System::ComponentModel::TypeConverter_StandardValuesCollection,
-    pub _cordl_type: *mut crate::System::Type,
+    pub values: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeConverter_StandardValuesCollection,
+    >,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+ComponentModel+EnumConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

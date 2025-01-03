@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct HttpClientHandler {
     __cordl_parent: crate::System::Net::Http::HttpMessageHandler,
-    pub _delegatingHandler: *mut crate::System::Net::Http::IMonoHttpClientHandler,
+    pub _delegatingHandler: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::IMonoHttpClientHandler,
+    >,
     pub _clientCertificateOptions: crate::System::Net::Http::ClientCertificateOption,
 }
 #[cfg(feature = "System+Net+Http+HttpClientHandler")]

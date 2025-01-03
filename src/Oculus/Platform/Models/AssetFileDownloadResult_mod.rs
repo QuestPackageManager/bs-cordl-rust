@@ -4,7 +4,7 @@
 pub struct AssetFileDownloadResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub AssetId: u64,
-    pub Filepath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Filepath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Oculus+Platform+Models+AssetFileDownloadResult")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

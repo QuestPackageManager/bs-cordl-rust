@@ -3,15 +3,17 @@
 #[derive(Debug)]
 pub struct BinaryMethodReturn {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub returnValue: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub args: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub returnValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub args: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub callContext: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub argTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    pub callContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub argTypes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    >,
     pub bArgsPrimitive: bool,
     pub messageEnum: crate::System::Runtime::Serialization::Formatters::Binary::MessageEnum,
-    pub returnType: *mut crate::System::Type,
+    pub returnType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryMethodReturn")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

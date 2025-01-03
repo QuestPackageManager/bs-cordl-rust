@@ -77,12 +77,16 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvi
 #[derive(Debug)]
 pub struct BundledAssetProvider_InternalOp {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_AssetBundle: *mut crate::UnityEngine::AssetBundle,
-    pub m_PreloadRequest: *mut crate::UnityEngine::AssetBundleRequest,
-    pub m_RequestOperation: *mut crate::UnityEngine::AssetBundleRequest,
-    pub m_Result: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_AssetBundle: quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
+    pub m_PreloadRequest: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AssetBundleRequest,
+    >,
+    pub m_RequestOperation: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AssetBundleRequest,
+    >,
+    pub m_Result: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_ProvideHandle: crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
-    pub subObjectName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub subObjectName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider+InternalOp"

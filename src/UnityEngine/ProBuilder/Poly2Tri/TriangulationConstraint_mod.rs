@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct TriangulationConstraint {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub P: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-    pub Q: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    pub P: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    >,
+    pub Q: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationConstraint")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

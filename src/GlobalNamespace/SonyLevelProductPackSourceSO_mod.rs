@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct SonyLevelProductPackSourceSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _levelProductPackSource: *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource,
-    pub _levelProductRedirectionSources: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource,
+    pub _levelProductPackSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource,
+    >,
+    pub _levelProductRedirectionSources: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource,
+        >,
     >,
 }
 #[cfg(feature = "SonyLevelProductPackSourceSO")]
@@ -115,9 +119,13 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO {
 pub struct SonyLevelProductPackSourceSO_LevelProductPackSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _packIndex: i32,
-    pub _levelPack: *mut crate::GlobalNamespace::BeatmapLevelPackSO,
-    pub _levelProductsData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
+    pub _levelPack: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelPackSO,
+    >,
+    pub _levelProductsData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
+        >,
     >,
 }
 #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductPackSource")]
@@ -235,9 +243,13 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource 
 #[derive(Debug)]
 pub struct SonyLevelProductPackSourceSO_LevelProductRedirectionSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _sourceLevelPackId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _redirectedProductLabel: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _validUntilDate: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _sourceLevelPackId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _redirectedProductLabel: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _validUntilDate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductRedirectionSource")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -335,11 +347,11 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirection
 pub struct SonyLevelProductPackSourceSO_LevelProductSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _levelIndex: i32,
-    pub _ps5SieeDcCode: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _ps5SieaAcCode: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _ps4SieeDcCode: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _ps4SieaAcCode: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _level: *mut crate::GlobalNamespace::BeatmapLevelSO,
+    pub _ps5SieeDcCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _ps5SieaAcCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _ps4SieeDcCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _ps4SieaAcCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _level: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
 }
 #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductSource")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

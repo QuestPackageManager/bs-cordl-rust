@@ -5,14 +5,22 @@ pub struct GameObjectIntSwitchEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _beatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _defaultValue: i32,
-    pub _gameObjectsValueLists: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList,
+    pub _gameObjectsValueLists: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList,
+        >,
     >,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    pub _valueToListMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
+    pub _valueToListMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList,
+        >,
     >,
     pub _previousActiveIdx: i32,
 }
@@ -106,8 +114,8 @@ for crate::GlobalNamespace::GameObjectIntSwitchEventEffect {
 pub struct GameObjectIntSwitchEventEffect_GameObjectValueList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub value: i32,
-    pub gameObjects: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::GameObject,
+    pub gameObjects: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
     >,
     pub _isActive_k__BackingField: bool,
 }

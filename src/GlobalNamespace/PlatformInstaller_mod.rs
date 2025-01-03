@@ -8,7 +8,9 @@ pub struct PlatformInstaller {
         *mut crate::GlobalNamespace::PlatformInstaller,
     >,
     pub _isTest: bool,
-    pub _mockPlatformAdditionalContentModelInitialData: *mut crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
+    pub _mockPlatformAdditionalContentModelInitialData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
+    >,
 }
 #[cfg(feature = "PlatformInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -5,8 +5,10 @@
 #[derive(Debug)]
 pub struct DesignerOptionCollection_DesignerOptionService_WrappedPropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
-    pub target: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub property: *mut crate::System::ComponentModel::PropertyDescriptor,
+    pub target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub property: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::PropertyDescriptor,
+    >,
 }
 #[cfg(
     feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection+WrappedPropertyDescriptor"
@@ -184,7 +186,9 @@ for crate::System::ComponentModel::Design::DesignerOptionCollection_DesignerOpti
 #[derive(Debug)]
 pub struct DesignerOptionConverter_DesignerOptionService_OptionPropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
-    pub _option: *mut crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionCollection,
+    pub _option: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionCollection,
+    >,
 }
 #[cfg(
     feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter+OptionPropertyDescriptor"
@@ -407,11 +411,15 @@ for crate::System::ComponentModel::Design::DesignerOptionService {
 #[derive(Debug)]
 pub struct DesignerOptionService_DesignerOptionCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _service: *mut crate::System::ComponentModel::Design::DesignerOptionService,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _value: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _children: *mut crate::System::Collections::ArrayList,
-    pub _properties: *mut crate::System::ComponentModel::PropertyDescriptorCollection,
+    pub _service: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::Design::DesignerOptionService,
+    >,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _children: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _properties: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::PropertyDescriptorCollection,
+    >,
 }
 #[cfg(
     feature = "System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection"

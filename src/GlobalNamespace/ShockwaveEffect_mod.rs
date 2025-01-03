@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ShockwaveEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _shockwavePS: *mut crate::UnityEngine::ParticleSystem,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _shockwavePS: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
     pub _shockwavePSEmitParams: crate::UnityEngine::ParticleSystem_EmitParams,
     pub _prevShockwaveParticleSpawnTime: f32,
 }

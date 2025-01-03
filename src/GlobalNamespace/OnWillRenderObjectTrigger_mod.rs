@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct OnWillRenderObjectTrigger {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _overrideShader: *mut crate::UnityEngine::Shader,
+    pub _overrideShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub _renderQueue: i32,
-    pub _material: *mut crate::UnityEngine::Material,
-    pub _mesh: *mut crate::UnityEngine::Mesh,
-    pub _meshFilter: *mut crate::UnityEngine::MeshFilter,
-    pub _meshRenderer: *mut crate::UnityEngine::MeshRenderer,
+    pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub _meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
+    pub _meshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
 }
 #[cfg(feature = "OnWillRenderObjectTrigger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

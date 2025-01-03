@@ -1,8 +1,10 @@
 #[cfg(feature = "System+Runtime+Serialization+StreamingContext")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StreamingContext {
-    pub m_additionalContext: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_additionalContext: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub m_state: crate::System::Runtime::Serialization::StreamingContextStates,
 }
 #[cfg(feature = "System+Runtime+Serialization+StreamingContext")]

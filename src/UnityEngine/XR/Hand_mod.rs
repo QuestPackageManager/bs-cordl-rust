@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+XR+Hand")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Hand {
     pub m_DeviceId: u64,
     pub m_FeatureIndex: u32,

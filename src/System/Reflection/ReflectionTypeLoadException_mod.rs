@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct ReflectionTypeLoadException {
     __cordl_parent: crate::System::SystemException,
-    pub _Types_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Type,
+    pub _Types_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     >,
-    pub _LoaderExceptions_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Exception,
+    pub _LoaderExceptions_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Exception>,
     >,
 }
 #[cfg(feature = "System+Reflection+ReflectionTypeLoadException")]

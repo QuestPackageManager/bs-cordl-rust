@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct GenericPolynomialExtensionField {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub subfield: *mut crate::Org::BouncyCastle::Math::Field::IFiniteField,
-    pub minimalPolynomial: *mut crate::Org::BouncyCastle::Math::Field::IPolynomial,
+    pub subfield: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::Field::IFiniteField,
+    >,
+    pub minimalPolynomial: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::Field::IPolynomial,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Field+GenericPolynomialExtensionField")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct SignalSubscription {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _pool: *mut crate::Zenject::SignalSubscription_Pool,
-    pub _callback: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _pool: quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscription_Pool>,
+    pub _callback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub _declaration: *mut crate::Zenject::SignalDeclaration,
+    pub _declaration: quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
     pub _signalId: crate::Zenject::BindingId,
 }
 #[cfg(feature = "Zenject+SignalSubscription")]

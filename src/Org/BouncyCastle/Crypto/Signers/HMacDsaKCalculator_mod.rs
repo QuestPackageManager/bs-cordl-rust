@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct HMacDsaKCalculator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub hMac: *mut crate::Org::BouncyCastle::Crypto::Macs::HMac,
-    pub K: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub V: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub n: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub hMac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Macs::HMac>,
+    pub K: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub V: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+HMacDsaKCalculator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

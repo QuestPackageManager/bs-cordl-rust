@@ -4,15 +4,21 @@
 pub struct RegionInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub regionId: i32,
-    pub iso2Name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub iso3Name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub win3Name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub englishName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub nativeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub currencySymbol: *mut quest_hook::libil2cpp::Il2CppString,
-    pub isoCurrencySymbol: *mut quest_hook::libil2cpp::Il2CppString,
-    pub currencyEnglishName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub currencyNativeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub iso2Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub iso3Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub win3Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub englishName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub nativeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub currencySymbol: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub isoCurrencySymbol: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub currencyEnglishName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub currencyNativeName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Globalization+RegionInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

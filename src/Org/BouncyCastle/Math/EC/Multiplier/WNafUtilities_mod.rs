@@ -305,7 +305,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities {
 #[derive(Debug)]
 pub struct WNafUtilities_ConfigureBasepointCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
+    pub m_curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
     pub m_confWidth: i32,
 }
 #[cfg(
@@ -419,9 +419,13 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_ConfigureBasep
 #[derive(Debug)]
 pub struct WNafUtilities_MapPointCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_infoP: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo,
+    pub m_infoP: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo,
+    >,
     pub m_includeNegated: bool,
-    pub m_pointMap: *mut crate::Org::BouncyCastle::Math::EC::ECPointMap,
+    pub m_pointMap: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::ECPointMap,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+MapPointCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -530,7 +534,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_MapPointCallba
 #[derive(Debug)]
 pub struct WNafUtilities_PrecomputeCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_p: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    pub m_p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     pub m_minWidth: i32,
     pub m_includeNegated: bool,
 }
@@ -669,9 +673,13 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeCall
 #[derive(Debug)]
 pub struct WNafUtilities_PrecomputeWithPointMapCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_point: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    pub m_pointMap: *mut crate::Org::BouncyCastle::Math::EC::ECPointMap,
-    pub m_fromWNaf: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo,
+    pub m_point: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+    pub m_pointMap: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::ECPointMap,
+    >,
+    pub m_fromWNaf: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo,
+    >,
     pub m_includeNegated: bool,
 }
 #[cfg(

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct NetSyncSetSessionPropertyResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Session: *mut crate::Oculus::Platform::Models::NetSyncSession,
+    pub Session: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::NetSyncSession,
+    >,
 }
 #[cfg(feature = "Oculus+Platform+Models+NetSyncSetSessionPropertyResult")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+BatchFilterSettings")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BatchFilterSettings {
     pub renderingLayerMask: u32,
     pub layer: u8,

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct LinkedDictionary {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub hash: *mut crate::System::Collections::IDictionary,
-    pub keys: *mut crate::System::Collections::IList,
+    pub hash: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    pub keys: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+LinkedDictionary")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

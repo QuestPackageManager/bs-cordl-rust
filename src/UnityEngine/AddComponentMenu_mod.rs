@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AddComponentMenu {
     __cordl_parent: crate::System::Attribute,
-    pub m_AddComponentMenu: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_AddComponentMenu: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub m_Ordering: i32,
 }
 #[cfg(feature = "UnityEngine+AddComponentMenu")]

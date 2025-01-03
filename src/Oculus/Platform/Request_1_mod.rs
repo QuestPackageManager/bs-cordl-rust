@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct Request_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Oculus::Platform::Request,
-    pub callback_: *mut crate::Oculus::Platform::Message_1_Callback<T>,
+    pub callback_: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Message_1_Callback<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "Oculus+Platform+Request_1")]

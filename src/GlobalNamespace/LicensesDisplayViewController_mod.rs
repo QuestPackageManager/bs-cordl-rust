@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct LicensesDisplayViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _textPageScrollView: *mut crate::HMUI::TextPageScrollView,
-    pub _textAsset: *mut crate::UnityEngine::TextAsset,
+    pub _textPageScrollView: quest_hook::libil2cpp::Gc<crate::HMUI::TextPageScrollView>,
+    pub _textAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
 }
 #[cfg(feature = "LicensesDisplayViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

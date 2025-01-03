@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct PgpObjectFactory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
+    pub bcpgIn: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpObjectFactory")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

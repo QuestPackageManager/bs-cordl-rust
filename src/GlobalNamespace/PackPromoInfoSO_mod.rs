@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct PackPromoInfoSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _promoBannerInfo: *mut crate::GlobalNamespace::PromoBannerInfoSO,
-    pub _levelsPromoInfo: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
+    pub _promoBannerInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PromoBannerInfoSO,
+    >,
+    pub _levelsPromoInfo: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
+        >,
     >,
 }
 #[cfg(feature = "PackPromoInfoSO")]
@@ -94,8 +98,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PackPromoInfo
 #[derive(Debug)]
 pub struct PackPromoInfoSO_LevelPromoInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _levelID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _promoBannerInfo: *mut crate::GlobalNamespace::PromoBannerInfoSO,
+    pub _levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _promoBannerInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PromoBannerInfoSO,
+    >,
 }
 #[cfg(feature = "PackPromoInfoSO+LevelPromoInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

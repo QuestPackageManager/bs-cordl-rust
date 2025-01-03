@@ -8,8 +8,12 @@ pub struct BloomFogSO {
     pub _transition: f32,
     pub _autoExposureLimit: f32,
     pub _noteSpawnIntensity: f32,
-    pub _defaultFogParams: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
-    pub _transitionFogParams: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
+    pub _defaultFogParams: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomFogEnvironmentParams,
+    >,
+    pub _transitionFogParams: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomFogEnvironmentParams,
+    >,
 }
 #[cfg(feature = "BloomFogSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

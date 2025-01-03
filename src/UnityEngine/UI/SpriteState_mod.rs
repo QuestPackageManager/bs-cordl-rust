@@ -1,11 +1,11 @@
 #[cfg(feature = "UnityEngine+UI+SpriteState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SpriteState {
-    pub m_HighlightedSprite: *mut crate::UnityEngine::Sprite,
-    pub m_PressedSprite: *mut crate::UnityEngine::Sprite,
-    pub m_SelectedSprite: *mut crate::UnityEngine::Sprite,
-    pub m_DisabledSprite: *mut crate::UnityEngine::Sprite,
+    pub m_HighlightedSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub m_PressedSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub m_SelectedSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub m_DisabledSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
 }
 #[cfg(feature = "UnityEngine+UI+SpriteState")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

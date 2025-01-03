@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct XmlSchemaAppInfo {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaObject,
-    pub source: *mut quest_hook::libil2cpp::Il2CppString,
-    pub markup: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::XmlNode,
+    pub source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub markup: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlNode>,
     >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaAppInfo")]

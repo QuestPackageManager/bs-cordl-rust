@@ -7,7 +7,9 @@ pub struct GhostEffectAsset {
     pub arrayReference: crate::UnityEngine::ExposedReference_1<
         *mut crate::GlobalNamespace::TimelineArrayReference,
     >,
-    pub _cordl_template: *mut crate::GlobalNamespace::GhostEffectBehaviour,
+    pub _cordl_template: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GhostEffectBehaviour,
+    >,
 }
 #[cfg(feature = "GhostEffectAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

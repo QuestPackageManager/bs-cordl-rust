@@ -3,28 +3,36 @@
 #[derive(Debug)]
 pub struct ServicePoint {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub uri: *mut crate::System::Uri,
+    pub uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     pub lastDnsResolve: crate::System::DateTime,
-    pub protocolVersion: *mut crate::System::Version,
-    pub host: *mut crate::System::Net::IPHostEntry,
+    pub protocolVersion: quest_hook::libil2cpp::Gc<crate::System::Version>,
+    pub host: quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry>,
     pub usesProxy: bool,
     pub sendContinue: bool,
     pub useConnect: bool,
-    pub hostE: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub hostE: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub useNagle: bool,
-    pub endPointCallback: *mut crate::System::Net::BindIPEndPoint,
+    pub endPointCallback: quest_hook::libil2cpp::Gc<crate::System::Net::BindIPEndPoint>,
     pub tcp_keepalive: bool,
     pub tcp_keepalive_time: i32,
     pub tcp_keepalive_interval: i32,
     pub disposed: bool,
     pub connectionLeaseTimeout: i32,
     pub receiveBufferSize: i32,
-    pub _Key_k__BackingField: *mut crate::System::Net::ServicePointManager_SPKey,
-    pub _Scheduler_k__BackingField: *mut crate::System::Net::ServicePointScheduler,
+    pub _Key_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::ServicePointManager_SPKey,
+    >,
+    pub _Scheduler_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::ServicePointScheduler,
+    >,
     pub connectionLimit: i32,
     pub maxIdleTime: i32,
-    pub m_ServerCertificateOrBytes: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_ClientCertificateOrBytes: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_ServerCertificateOrBytes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub m_ClientCertificateOrBytes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
 }
 #[cfg(feature = "System+Net+ServicePoint")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

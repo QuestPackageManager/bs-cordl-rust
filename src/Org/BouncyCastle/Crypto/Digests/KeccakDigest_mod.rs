@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct KeccakDigest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub state: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    pub dataQueue: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
+    pub dataQueue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub rate: i32,
     pub bitsInQueue: i32,
     pub fixedOutputLength: i32,

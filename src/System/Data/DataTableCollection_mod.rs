@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct DataTableCollection {
     __cordl_parent: crate::System::Data::InternalDataCollectionBase,
-    pub _dataSet: *mut crate::System::Data::DataSet,
-    pub _list: *mut crate::System::Collections::ArrayList,
+    pub _dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+    pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _defaultNameIndex: i32,
-    pub _delayedAddRangeTables: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Data::DataTable,
+    pub _delayedAddRangeTables: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
     >,
-    pub _onCollectionChangedDelegate: *mut crate::System::ComponentModel::CollectionChangeEventHandler,
-    pub _onCollectionChangingDelegate: *mut crate::System::ComponentModel::CollectionChangeEventHandler,
+    pub _onCollectionChangedDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::CollectionChangeEventHandler,
+    >,
+    pub _onCollectionChangingDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::CollectionChangeEventHandler,
+    >,
     pub _objectID: i32,
 }
 #[cfg(feature = "System+Data+DataTableCollection")]

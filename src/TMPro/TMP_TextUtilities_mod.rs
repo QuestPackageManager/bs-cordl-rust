@@ -250,7 +250,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_TextUtilities {
 }
 #[cfg(feature = "TMPro+TMP_TextUtilities+LineSegment")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TMP_TextUtilities_LineSegment {
     pub Point1: crate::UnityEngine::Vector3,
     pub Point2: crate::UnityEngine::Vector3,

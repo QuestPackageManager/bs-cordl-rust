@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct HEU_ObjectNode {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _objName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _parentAsset: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+    pub _objName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _parentAsset: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+    >,
     pub _objectInfo: crate::HoudiniEngineUnity::HAPI_ObjectInfo,
-    pub _geoNodes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_GeoNode,
+    pub _geoNodes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_GeoNode,
+        >,
     >,
     pub _objectTransform: crate::HoudiniEngineUnity::HAPI_Transform,
 }

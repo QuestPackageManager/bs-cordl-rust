@@ -119,7 +119,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Globalization+HebrewNumber+HebrewValue")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HebrewNumber_HebrewValue {
     pub token: crate::System::Globalization::HebrewNumber_HebrewToken,
     pub value: i16,

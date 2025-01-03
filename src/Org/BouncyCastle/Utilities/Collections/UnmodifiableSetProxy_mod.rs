@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct UnmodifiableSetProxy {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSet,
-    pub s: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    pub s: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableSetProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

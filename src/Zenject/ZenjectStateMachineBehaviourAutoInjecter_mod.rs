@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ZenjectStateMachineBehaviourAutoInjecter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _animator: *mut crate::UnityEngine::Animator,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _animator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
 }
 #[cfg(feature = "Zenject+ZenjectStateMachineBehaviourAutoInjecter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,9 +1,11 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_Viewport")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HAPI_Viewport {
-    pub position: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub rotationQuaternion: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub position: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub rotationQuaternion: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
     pub offset: f32,
 }
 #[cfg(feature = "HoudiniEngineUnity+HAPI_Viewport")]

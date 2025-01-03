@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct Srp6VerifierGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub N: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub g: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    pub N: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+Srp+Srp6VerifierGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

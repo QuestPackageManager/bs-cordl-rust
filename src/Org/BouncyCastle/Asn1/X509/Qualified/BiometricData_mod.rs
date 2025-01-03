@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct BiometricData {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub typeOfBiometricData: *mut crate::Org::BouncyCastle::Asn1::X509::Qualified::TypeOfBiometricData,
-    pub hashAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub biometricDataHash: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub sourceDataUri: *mut crate::Org::BouncyCastle::Asn1::DerIA5String,
+    pub typeOfBiometricData: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::Qualified::TypeOfBiometricData,
+    >,
+    pub hashAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub biometricDataHash: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub sourceDataUri: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerIA5String,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+Qualified+BiometricData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

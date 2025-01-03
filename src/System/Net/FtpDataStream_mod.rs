@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct FtpDataStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub _request: *mut crate::System::Net::FtpWebRequest,
-    pub _networkStream: *mut crate::System::Net::Sockets::NetworkStream,
+    pub _request: quest_hook::libil2cpp::Gc<crate::System::Net::FtpWebRequest>,
+    pub _networkStream: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Sockets::NetworkStream,
+    >,
     pub _writeable: bool,
     pub _readable: bool,
     pub _isFullyRead: bool,

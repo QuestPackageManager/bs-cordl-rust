@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct ISO9796d1Encoding {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub engine: *mut crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
+    pub engine: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
+    >,
     pub forEncryption: bool,
     pub bitSize: i32,
     pub padBits: i32,
-    pub modulus: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub modulus: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Encodings+ISO9796d1Encoding")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

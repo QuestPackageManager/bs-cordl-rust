@@ -3,14 +3,16 @@
 #[derive(Debug)]
 pub struct BeatmapLevelPackSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _packID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _packName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _shortPackName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _coverImage: *mut crate::UnityEngine::Sprite,
-    pub _smallCoverImage: *mut crate::UnityEngine::Sprite,
+    pub _packID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _packName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _shortPackName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _coverImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _smallCoverImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub _packBuyOption: crate::GlobalNamespace::PackBuyOption,
     pub _contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
-    pub _beatmapLevelCollection: *mut crate::GlobalNamespace::BeatmapLevelCollectionSO,
+    pub _beatmapLevelCollection: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelCollectionSO,
+    >,
 }
 #[cfg(feature = "BeatmapLevelPackSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

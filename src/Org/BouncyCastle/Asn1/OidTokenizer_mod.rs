@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct OidTokenizer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub oid: *mut quest_hook::libil2cpp::Il2CppString,
+    pub oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub index: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+OidTokenizer")]

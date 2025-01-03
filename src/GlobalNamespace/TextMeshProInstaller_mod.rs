@@ -5,8 +5,8 @@ pub struct TextMeshProInstaller {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         *mut crate::TMPro::TMP_FontAsset,
     >,
-    pub _fontAssets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_FontAsset,
+    pub _fontAssets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_FontAsset>,
     >,
 }
 #[cfg(feature = "TextMeshProInstaller")]

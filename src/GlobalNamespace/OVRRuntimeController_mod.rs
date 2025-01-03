@@ -4,17 +4,21 @@
 pub struct OVRRuntimeController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_controller: crate::GlobalNamespace::OVRInput_Controller,
-    pub m_controllerModelShader: *mut crate::UnityEngine::Shader,
+    pub m_controllerModelShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub m_supportAnimation: bool,
-    pub m_controllerObject: *mut crate::UnityEngine::GameObject,
-    pub m_controllerModelPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_controllerObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub m_controllerModelPath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub m_modelSupported: bool,
     pub m_hasInputFocus: bool,
     pub m_hasInputFocusPrev: bool,
     pub m_controllerConnectedPrev: bool,
-    pub m_animationNodes: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::GlobalNamespace::OVRGLTFInputNode,
-        *mut crate::GlobalNamespace::OVRGLTFAnimatinonNode,
+    pub m_animationNodes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::OVRGLTFInputNode,
+            *mut crate::GlobalNamespace::OVRGLTFAnimatinonNode,
+        >,
     >,
 }
 #[cfg(feature = "OVRRuntimeController")]

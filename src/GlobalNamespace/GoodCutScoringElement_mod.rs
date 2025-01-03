@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct GoodCutScoringElement {
     __cordl_parent: crate::GlobalNamespace::ScoringElement,
-    pub _cutScoreBuffer: *mut crate::GlobalNamespace::CutScoreBuffer,
+    pub _cutScoreBuffer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CutScoreBuffer,
+    >,
     pub _multiplierEventType: crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType,
     pub _wouldBeCorrectCutBestPossibleMultiplierEventType: crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType,
 }

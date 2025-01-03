@@ -5,8 +5,10 @@
 #[derive(Debug)]
 pub struct X509Certificate2ImplMono {
     __cordl_parent: crate::System::Security::Cryptography::X509Certificates::X509Certificate2ImplUnix,
-    pub intermediateCerts: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection,
-    pub _cert: *mut crate::Mono::Security::X509::X509Certificate,
+    pub intermediateCerts: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection,
+    >,
+    pub _cert: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
 }
 #[cfg(
     feature = "System+Security+Cryptography+X509Certificates+X509Certificate2ImplMono"

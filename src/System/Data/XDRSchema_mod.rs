@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct XDRSchema {
     __cordl_parent: crate::System::Data::XMLSchema,
-    pub _schemaName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _schemaUri: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _schemaRoot: *mut crate::System::Xml::XmlElement,
-    pub _ds: *mut crate::System::Data::DataSet,
+    pub _schemaName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _schemaUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _schemaRoot: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
+    pub _ds: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
 }
 #[cfg(feature = "System+Data+XDRSchema")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -244,8 +244,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::XDRSchema {
 #[derive(Debug)]
 pub struct XDRSchema_NameType {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _cordl_type: *mut crate::System::Type,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Data+XDRSchema+NameType")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

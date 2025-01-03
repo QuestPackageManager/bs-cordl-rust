@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct MACTripleDES {
     __cordl_parent: crate::System::Security::Cryptography::KeyedHashAlgorithm,
-    pub m_encryptor: *mut crate::System::Security::Cryptography::ICryptoTransform,
-    pub _cs: *mut crate::System::Security::Cryptography::CryptoStream,
-    pub _ts: *mut crate::System::Security::Cryptography::TailStream,
+    pub m_encryptor: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::ICryptoTransform,
+    >,
+    pub _cs: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::CryptoStream,
+    >,
+    pub _ts: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::TailStream,
+    >,
     pub m_bytesPerBlock: i32,
-    pub des: *mut crate::System::Security::Cryptography::TripleDES,
+    pub des: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::TripleDES>,
 }
 #[cfg(feature = "System+Security+Cryptography+MACTripleDES")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

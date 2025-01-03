@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct SpecialEventsForKeyword {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _keyword: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _specialEvents: *mut crate::System::Collections::Generic::List_1<
-        crate::BeatmapSaveDataCommon::BeatmapEventType,
+    pub _keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _specialEvents: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::BeatmapSaveDataCommon::BeatmapEventType,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventsForKeyword")]

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct HandsMovementMissionObjectiveChecker {
     __cordl_parent: crate::GlobalNamespace::SimpleValueMissionObjectiveChecker,
-    pub _saberActivityCounter: *mut crate::GlobalNamespace::SaberActivityCounter,
+    pub _saberActivityCounter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SaberActivityCounter,
+    >,
 }
 #[cfg(feature = "HandsMovementMissionObjectiveChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

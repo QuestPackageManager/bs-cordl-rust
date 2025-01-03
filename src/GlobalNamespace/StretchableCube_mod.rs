@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct StretchableCube {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _uvs: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-    pub _mesh: *mut crate::UnityEngine::Mesh,
+    pub _uvs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+    >,
+    pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
 }
 #[cfg(feature = "StretchableCube")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

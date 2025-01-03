@@ -3,15 +3,19 @@
 #[derive(Debug)]
 pub struct TextSelectingManipulator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_SelectingUtilities: *mut crate::UnityEngine::TextSelectingUtilities,
+    pub m_SelectingUtilities: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextSelectingUtilities,
+    >,
     pub selectAllOnMouseUp: bool,
-    pub m_TextElement: *mut crate::UnityEngine::UIElements::TextElement,
+    pub m_TextElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextElement,
+    >,
     pub m_ClickStartPosition: crate::UnityEngine::Vector2,
     pub m_Dragged: bool,
     pub m_IsClicking: bool,
     pub m_ConsecutiveMouseDownCount: i32,
     pub m_LastMouseDownTimeStamp: i64,
-    pub m_ImguiEvent: *mut crate::UnityEngine::Event,
+    pub m_ImguiEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
 }
 #[cfg(feature = "UnityEngine+UIElements+TextSelectingManipulator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

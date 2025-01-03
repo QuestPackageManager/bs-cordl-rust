@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct ImmediateRankUIPanel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _rankText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _relativeScoreText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _relativeScoreAndImmediateRankCounter: *mut crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter,
-    pub _stringBuilder: *mut crate::System::Text::StringBuilder,
+    pub _rankText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _relativeScoreText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _relativeScoreAndImmediateRankCounter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter,
+    >,
+    pub _stringBuilder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub _prevRelativeScore: f32,
     pub _prevImmediateRank: crate::GlobalNamespace::RankModel_Rank,
 }

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PlayerLobbyPermissionConfigurationNetSerializable {
     __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
-    pub _userId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _isServerOwner: bool,
     pub _hasRecommendBeatmapsPermission: bool,
     pub _hasRecommendGameplayModifiersPermission: bool,

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TubeLightAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
-    pub _template: *mut crate::GlobalNamespace::TubeLightBehaviour,
+    pub _template: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TubeLightBehaviour>,
 }
 #[cfg(feature = "TubeLightAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

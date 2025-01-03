@@ -3,13 +3,21 @@
 #[derive(Debug)]
 pub struct BeatmapCharacteristicSelectionViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _beatmapCharacteristicSegmentedControl: *mut crate::HMUI::IconSegmentedControl,
-    pub _beatmapCharacteristicCollection: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
-    pub didSelectBeatmapCharacteristicEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController,
-        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _beatmapCharacteristicSegmentedControl: quest_hook::libil2cpp::Gc<
+        crate::HMUI::IconSegmentedControl,
     >,
-    pub _selectedBeatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _beatmapCharacteristicCollection: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicCollection,
+    >,
+    pub didSelectBeatmapCharacteristicEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
+    >,
+    pub _selectedBeatmapCharacteristic: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSO,
+    >,
 }
 #[cfg(feature = "BeatmapCharacteristicSelectionViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

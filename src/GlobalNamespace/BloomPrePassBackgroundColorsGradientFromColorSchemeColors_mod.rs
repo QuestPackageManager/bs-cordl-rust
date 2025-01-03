@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundColorsGradientFromColorSchemeColors {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _bloomPrePassBackgroundColorsGradient: *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient,
-    pub _elements: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors_Element,
+    pub _bloomPrePassBackgroundColorsGradient: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient,
     >,
-    pub _colorProvider: *mut crate::GlobalNamespace::IEnvironmentColorProvider,
+    pub _elements: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors_Element,
+        >,
+    >,
+    pub _colorProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IEnvironmentColorProvider,
+    >,
 }
 #[cfg(feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

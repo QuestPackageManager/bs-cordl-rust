@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct PromoBannerInfoSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _bannerImage: *mut crate::UnityEngine::Sprite,
-    pub _bannerPromoText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _bannerImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _bannerPromoText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _bannerPromoTextPosition: f32,
 }
 #[cfg(feature = "PromoBannerInfoSO")]

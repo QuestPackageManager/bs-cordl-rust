@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Experimental+U2D+SpriteIntermediateRendererInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SpriteIntermediateRendererInfo {
     pub SpriteID: i32,
     pub TextureID: i32,

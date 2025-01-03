@@ -3,16 +3,24 @@
 #[derive(Debug)]
 pub struct JobManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_NudgeJobs: *mut crate::UnityEngine::UIElements::UIR::NativePagedList_1<
-        crate::UnityEngine::UIElements::UIR::NudgeJobData,
+    pub m_NudgeJobs: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::NativePagedList_1<
+            crate::UnityEngine::UIElements::UIR::NudgeJobData,
+        >,
     >,
-    pub m_ConvertMeshJobs: *mut crate::UnityEngine::UIElements::UIR::NativePagedList_1<
-        crate::UnityEngine::UIElements::UIR::ConvertMeshJobData,
+    pub m_ConvertMeshJobs: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::NativePagedList_1<
+            crate::UnityEngine::UIElements::UIR::ConvertMeshJobData,
+        >,
     >,
-    pub m_CopyClosingMeshJobs: *mut crate::UnityEngine::UIElements::UIR::NativePagedList_1<
-        crate::UnityEngine::UIElements::UIR::CopyClosingMeshJobData,
+    pub m_CopyClosingMeshJobs: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::NativePagedList_1<
+            crate::UnityEngine::UIElements::UIR::CopyClosingMeshJobData,
+        >,
     >,
-    pub m_JobMerger: *mut crate::UnityEngine::UIElements::UIR::JobMerger,
+    pub m_JobMerger: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::JobMerger,
+    >,
     pub _disposed_k__BackingField: bool,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+JobManager")]

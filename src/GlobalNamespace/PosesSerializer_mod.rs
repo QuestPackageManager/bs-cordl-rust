@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PosesSerializer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _logger: *mut crate::GlobalNamespace::IBeatSaberLogger,
-    pub _recordingConverter: *mut crate::GlobalNamespace::RecordingConverter,
+    pub _logger: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberLogger>,
+    pub _recordingConverter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecordingConverter,
+    >,
 }
 #[cfg(feature = "PosesSerializer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct DsaParametersGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     pub L: i32,
     pub N: i32,
     pub certainty: i32,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
     pub use186_3: bool,
     pub usageIndex: i32,
 }

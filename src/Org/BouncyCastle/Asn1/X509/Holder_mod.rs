@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub baseCertificateID: *mut crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
-    pub entityName: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
-    pub objectDigestInfo: *mut crate::Org::BouncyCastle::Asn1::X509::ObjectDigestInfo,
+    pub baseCertificateID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
+    >,
+    pub entityName: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+    >,
+    pub objectDigestInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::ObjectDigestInfo,
+    >,
     pub version: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+Holder")]

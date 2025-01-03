@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct Gost3410KeyPairGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub param: *mut crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyGenerationParameters,
+    pub param: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyGenerationParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Gost3410KeyPairGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

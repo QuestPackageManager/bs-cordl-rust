@@ -4,11 +4,15 @@
 pub struct HMAC {
     __cordl_parent: crate::System::Security::Cryptography::KeyedHashAlgorithm,
     pub blockSizeValue: i32,
-    pub m_hashName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_hash1: *mut crate::System::Security::Cryptography::HashAlgorithm,
-    pub m_hash2: *mut crate::System::Security::Cryptography::HashAlgorithm,
-    pub m_inner: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub m_outer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub m_hashName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_hash1: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::HashAlgorithm,
+    >,
+    pub m_hash2: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::HashAlgorithm,
+    >,
+    pub m_inner: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub m_outer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub m_hashing: bool,
 }
 #[cfg(feature = "System+Security+Cryptography+HMAC")]

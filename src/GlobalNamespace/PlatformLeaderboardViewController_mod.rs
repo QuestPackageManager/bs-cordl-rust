@@ -3,25 +3,47 @@
 #[derive(Debug)]
 pub struct PlatformLeaderboardViewController {
     __cordl_parent: crate::GlobalNamespace::LeaderboardViewController,
-    pub _leaderboardTableView: *mut crate::GlobalNamespace::LeaderboardTableView,
-    pub _scopeSegmentedControl: *mut crate::HMUI::IconSegmentedControl,
-    pub _loadingControl: *mut crate::GlobalNamespace::LoadingControl,
-    pub _globalLeaderboardIcon: *mut crate::UnityEngine::Sprite,
-    pub _aroundPlayerLeaderboardIcon: *mut crate::UnityEngine::Sprite,
-    pub _friendsLeaderboardIcon: *mut crate::UnityEngine::Sprite,
-    pub _levelStatsView: *mut crate::GlobalNamespace::LevelStatsView,
-    pub _leaderboardsModel: *mut crate::GlobalNamespace::PlatformLeaderboardsModel,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _getScoresAsyncRequest: *mut crate::GlobalNamespace::HMAsyncRequest,
-    pub _scores: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LeaderboardTableView_ScoreData,
+    pub _leaderboardTableView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LeaderboardTableView,
     >,
-    pub _playerScorePos: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _scopeSegmentedControl: quest_hook::libil2cpp::Gc<
+        crate::HMUI::IconSegmentedControl,
+    >,
+    pub _loadingControl: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LoadingControl,
+    >,
+    pub _globalLeaderboardIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _aroundPlayerLeaderboardIcon: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Sprite,
+    >,
+    pub _friendsLeaderboardIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _levelStatsView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelStatsView,
+    >,
+    pub _leaderboardsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlatformLeaderboardsModel,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _getScoresAsyncRequest: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HMAsyncRequest,
+    >,
+    pub _scores: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LeaderboardTableView_ScoreData,
+        >,
+    >,
+    pub _playerScorePos: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
     pub _refreshIsNeeded: bool,
     pub _hasScoresData: bool,
-    pub _scoreScopes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope,
+    pub _scoreScopes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope,
+        >,
     >,
 }
 #[cfg(feature = "PlatformLeaderboardViewController")]

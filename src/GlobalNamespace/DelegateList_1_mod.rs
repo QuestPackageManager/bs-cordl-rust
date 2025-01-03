@@ -3,19 +3,25 @@
 #[derive(Debug)]
 pub struct DelegateList_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_acquireFunc: *mut crate::System::Func_2<
-        *mut crate::System::Action_1<T>,
-        *mut crate::System::Collections::Generic::LinkedListNode_1<
+    pub m_acquireFunc: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
             *mut crate::System::Action_1<T>,
+            *mut crate::System::Collections::Generic::LinkedListNode_1<
+                *mut crate::System::Action_1<T>,
+            >,
         >,
     >,
-    pub m_releaseFunc: *mut crate::System::Action_1<
-        *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut crate::System::Action_1<T>,
+    pub m_releaseFunc: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::System::Collections::Generic::LinkedListNode_1<
+                *mut crate::System::Action_1<T>,
+            >,
         >,
     >,
-    pub m_callbacks: *mut crate::System::Collections::Generic::LinkedList_1<
-        *mut crate::System::Action_1<T>,
+    pub m_callbacks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedList_1<
+            *mut crate::System::Action_1<T>,
+        >,
     >,
     pub m_invoking: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,

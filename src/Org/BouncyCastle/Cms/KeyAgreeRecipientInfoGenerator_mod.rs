@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct KeyAgreeRecipientInfoGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub keyAgreementOID: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub keyEncryptionOID: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub recipientCerts: *mut crate::System::Collections::IList,
-    pub senderKeyPair: *mut crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
+    pub keyAgreementOID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub keyEncryptionOID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub recipientCerts: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub senderKeyPair: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+KeyAgreeRecipientInfoGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

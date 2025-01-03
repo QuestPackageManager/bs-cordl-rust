@@ -1,6 +1,6 @@
 #[cfg(feature = "LIV+SDK+Unity+SDKTrackedSpace")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SDKTrackedSpace {
     pub trackedSpaceWorldPosition: crate::LIV::SDK::Unity::SDKVector3,
     pub trackedSpaceWorldRotation: crate::LIV::SDK::Unity::SDKQuaternion,

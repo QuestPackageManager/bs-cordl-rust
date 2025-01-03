@@ -4,7 +4,7 @@
 pub struct AsyncComputeOperation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _timeoutMs: i32,
-    pub _stopwatch: *mut crate::System::Diagnostics::Stopwatch,
+    pub _stopwatch: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::Stopwatch>,
 }
 #[cfg(feature = "AsyncComputeOperation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

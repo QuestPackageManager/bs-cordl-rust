@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TaskCanceledException {
     __cordl_parent: crate::System::OperationCanceledException,
-    pub _canceledTask: *mut crate::System::Threading::Tasks::Task,
+    pub _canceledTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
 }
 #[cfg(feature = "System+Threading+Tasks+TaskCanceledException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

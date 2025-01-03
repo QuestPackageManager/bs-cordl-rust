@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+RichTextTagAttribute")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RichTextTagAttribute {
     pub nameHashCode: i32,
     pub valueHashCode: i32,

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct PgpSecretKeyRingBundle {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub secretRings: *mut crate::System::Collections::IDictionary,
-    pub order: *mut crate::System::Collections::IList,
+    pub secretRings: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    pub order: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpSecretKeyRingBundle")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

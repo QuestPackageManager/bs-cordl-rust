@@ -3,15 +3,27 @@
 #[derive(Debug)]
 pub struct BeatEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _spriteRenderer: *mut crate::UnityEngine::SpriteRenderer,
-    pub _spriteTransform: *mut crate::UnityEngine::Transform,
-    pub _tubeBloomPrePassLight: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
-    pub _lightIntensityCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _spriteXScaleCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _spriteYScaleCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _transparencyCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _didFinishEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::IBeatEffectDidFinishEvent,
+    pub _spriteRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
+    pub _spriteTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _tubeBloomPrePassLight: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TubeBloomPrePassLight,
+    >,
+    pub _lightIntensityCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
+    pub _spriteXScaleCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
+    pub _spriteYScaleCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
+    pub _transparencyCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
+    pub _didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::IBeatEffectDidFinishEvent,
+        >,
     >,
     pub _animationDuration: f32,
     pub _elapsedTime: f32,

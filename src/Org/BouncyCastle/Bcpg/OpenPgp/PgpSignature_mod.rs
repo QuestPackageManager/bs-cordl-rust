@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct PgpSignature {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub sigPck: *mut crate::Org::BouncyCastle::Bcpg::SignaturePacket,
+    pub sigPck: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::SignaturePacket,
+    >,
     pub signatureType: i32,
-    pub trustPck: *mut crate::Org::BouncyCastle::Bcpg::TrustPacket,
-    pub sig: *mut crate::Org::BouncyCastle::Crypto::ISigner,
+    pub trustPck: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::TrustPacket>,
+    pub sig: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
     pub lastb: u8,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpSignature")]

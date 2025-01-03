@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct X509V1CertificateGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub tbsGen: *mut crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator,
-    pub sigOID: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub sigAlgId: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub signatureAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
+    pub tbsGen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::V1TbsCertificateGenerator,
+    >,
+    pub sigOID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub sigAlgId: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub signatureAlgorithm: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509V1CertificateGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

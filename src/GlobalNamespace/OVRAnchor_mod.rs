@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRAnchor")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRAnchor {
     pub _Handle_k__BackingField: u64,
     pub _Uuid_k__BackingField: crate::System::Guid,

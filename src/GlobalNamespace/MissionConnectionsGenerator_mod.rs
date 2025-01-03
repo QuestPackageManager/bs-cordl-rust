@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct MissionConnectionsGenerator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionNodesManager: *mut crate::GlobalNamespace::MissionNodesManager,
-    pub _nodeConnectionPref: *mut crate::GlobalNamespace::MissionNodeConnection,
-    pub _connectionsCanvas: *mut crate::UnityEngine::GameObject,
-    pub _missionNodes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::MissionNode,
+    pub _missionNodesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionNodesManager,
+    >,
+    pub _nodeConnectionPref: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionNodeConnection,
+    >,
+    pub _connectionsCanvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _missionNodes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::MissionNode,
+        >,
     >,
 }
 #[cfg(feature = "MissionConnectionsGenerator")]

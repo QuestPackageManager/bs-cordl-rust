@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+SphericalHarmonicsL2")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SphericalHarmonicsL2 {
     pub shr0: f32,
     pub shr1: f32,

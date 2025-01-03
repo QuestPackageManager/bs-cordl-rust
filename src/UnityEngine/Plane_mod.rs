@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Plane")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Plane {
     pub m_Normal: crate::UnityEngine::Vector3,
     pub m_Distance: f32,

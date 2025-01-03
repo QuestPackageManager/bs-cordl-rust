@@ -6,14 +6,20 @@ pub struct WebProxy {
     pub _UseRegistry: bool,
     pub _BypassOnLocal: bool,
     pub m_EnableAutoproxy: bool,
-    pub _ProxyAddress: *mut crate::System::Uri,
-    pub _BypassList: *mut crate::System::Collections::ArrayList,
-    pub _Credentials: *mut crate::System::Net::ICredentials,
-    pub _RegExBypassList: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Text::RegularExpressions::Regex,
+    pub _ProxyAddress: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    pub _BypassList: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _Credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+    pub _RegExBypassList: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Text::RegularExpressions::Regex,
+        >,
     >,
-    pub _ProxyHostAddresses: *mut crate::System::Collections::Hashtable,
-    pub m_ScriptEngine: *mut crate::System::Net::AutoWebProxyScriptEngine,
+    pub _ProxyHostAddresses: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
+    pub m_ScriptEngine: quest_hook::libil2cpp::Gc<
+        crate::System::Net::AutoWebProxyScriptEngine,
+    >,
 }
 #[cfg(feature = "System+Net+WebProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

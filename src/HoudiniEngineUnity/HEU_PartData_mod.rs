@@ -4,29 +4,35 @@
 pub struct HEU_PartData {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _partID: i32,
-    pub _partName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _partName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _objectNodeID: i32,
     pub _geoID: i32,
     pub _partType: crate::HoudiniEngineUnity::HAPI_PartType,
-    pub _geoNode: *mut crate::HoudiniEngineUnity::HEU_GeoNode,
+    pub _geoNode: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoNode>,
     pub _isAttribInstancer: bool,
     pub _isPartInstanced: bool,
     pub _partPointCount: i32,
     pub _isObjectInstancer: bool,
     pub _objectInstancesGenerated: bool,
-    pub _objectInstanceInfos: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo,
+    pub _objectInstanceInfos: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo,
+        >,
     >,
     pub _terrainOffsetPosition: crate::UnityEngine::Vector3,
-    pub _assetDBTerrainData: *mut crate::UnityEngine::Object,
+    pub _assetDBTerrainData: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     pub _isPartEditable: bool,
     pub _partOutputType: crate::HoudiniEngineUnity::HEU_PartData_PartOutputType,
-    pub _curve: *mut crate::HoudiniEngineUnity::HEU_Curve,
-    pub _attributesStore: *mut crate::HoudiniEngineUnity::HEU_AttributesStore,
+    pub _curve: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Curve>,
+    pub _attributesStore: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_AttributesStore,
+    >,
     pub _haveInstancesBeenGenerated: bool,
     pub _meshVertexCount: i32,
-    pub _generatedOutput: *mut crate::HoudiniEngineUnity::HEU_GeneratedOutput,
-    pub _volumeLayerName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _generatedOutput: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_GeneratedOutput,
+    >,
+    pub _volumeLayerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PartData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

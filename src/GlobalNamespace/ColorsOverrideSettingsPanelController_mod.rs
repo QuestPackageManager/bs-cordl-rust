@@ -3,19 +3,31 @@
 #[derive(Debug)]
 pub struct ColorsOverrideSettingsPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _overrideColorsToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _detailsPanelGO: *mut crate::UnityEngine::GameObject,
-    pub _colorSchemeDropDown: *mut crate::GlobalNamespace::ColorSchemeDropdown,
-    pub _editColorSchemeController: *mut crate::GlobalNamespace::EditColorSchemeController,
-    pub _editColorSchemeModalView: *mut crate::HMUI::ModalView,
-    pub _editColorSchemeButton: *mut crate::UnityEngine::UI::Button,
-    pub _colorOverrideTypeDropdown: *mut crate::HMUI::SimpleTextDropdown,
-    pub _presentPanelAnimation: *mut crate::HMUI::PanelAnimationSO,
-    pub _dismissPanelAnimation: *mut crate::HMUI::PanelAnimationSO,
-    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
-    pub _colorSchemesSettings: *mut crate::GlobalNamespace::ColorSchemesSettings,
+    pub _overrideColorsToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _detailsPanelGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _colorSchemeDropDown: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemeDropdown,
+    >,
+    pub _editColorSchemeController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EditColorSchemeController,
+    >,
+    pub _editColorSchemeModalView: quest_hook::libil2cpp::Gc<crate::HMUI::ModalView>,
+    pub _editColorSchemeButton: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Button,
+    >,
+    pub _colorOverrideTypeDropdown: quest_hook::libil2cpp::Gc<
+        crate::HMUI::SimpleTextDropdown,
+    >,
+    pub _presentPanelAnimation: quest_hook::libil2cpp::Gc<crate::HMUI::PanelAnimationSO>,
+    pub _dismissPanelAnimation: quest_hook::libil2cpp::Gc<crate::HMUI::PanelAnimationSO>,
+    pub _analyticsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAnalyticsModel,
+    >,
+    pub _colorSchemesSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemesSettings,
+    >,
     pub _initialized: bool,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _isDirty: bool,
 }
 #[cfg(feature = "ColorsOverrideSettingsPanelController")]

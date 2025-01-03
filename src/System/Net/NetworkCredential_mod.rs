@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct NetworkCredential {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_domain: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_userName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_password: *mut crate::System::Security::SecureString,
+    pub m_domain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_password: quest_hook::libil2cpp::Gc<crate::System::Security::SecureString>,
 }
 #[cfg(feature = "System+Net+NetworkCredential")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

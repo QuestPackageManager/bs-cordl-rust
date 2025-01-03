@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct BooleanQueryExpression {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-    pub Left: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub Right: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub Left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub Right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+BooleanQueryExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

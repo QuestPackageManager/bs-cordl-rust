@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+Settings+DebugSettings")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DebugSettings {
     pub showBeatmapLevelVersion: bool,
 }

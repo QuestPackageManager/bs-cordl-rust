@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct AsyncComputeManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _asyncComputeRequests: *mut crate::System::Collections::Concurrent::BlockingCollection_1<
-        *mut crate::GlobalNamespace::AsyncComputeOperation,
+    pub _asyncComputeRequests: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Concurrent::BlockingCollection_1<
+            *mut crate::GlobalNamespace::AsyncComputeOperation,
+        >,
     >,
-    pub _computeThread: *mut crate::System::Threading::Thread,
+    pub _computeThread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
     pub _disposed: bool,
 }
 #[cfg(feature = "AsyncComputeManager")]

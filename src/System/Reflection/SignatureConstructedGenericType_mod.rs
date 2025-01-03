@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct SignatureConstructedGenericType {
     __cordl_parent: crate::System::Reflection::SignatureType,
-    pub _genericTypeDefinition: *mut crate::System::Type,
-    pub _genericTypeArguments: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Type,
+    pub _genericTypeDefinition: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _genericTypeArguments: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     >,
 }
 #[cfg(feature = "System+Reflection+SignatureConstructedGenericType")]

@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct X509CertPairStoreSelector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub certPair: *mut crate::Org::BouncyCastle::X509::X509CertificatePair,
-    pub forwardSelector: *mut crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
-    pub reverseSelector: *mut crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
+    pub certPair: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::X509CertificatePair,
+    >,
+    pub forwardSelector: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
+    >,
+    pub reverseSelector: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509CertPairStoreSelector")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct PlayerHeightSettingsController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
-    pub _setButton: *mut crate::UnityEngine::UI::Button,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub valueDidChangeEvent: *mut crate::System::Action_1<f32>,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _setButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub valueDidChangeEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _value: f32,
 }
 #[cfg(feature = "PlayerHeightSettingsController")]

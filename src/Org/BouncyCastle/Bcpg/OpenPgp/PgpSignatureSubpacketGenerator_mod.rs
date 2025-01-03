@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PgpSignatureSubpacketGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub list: *mut crate::System::Collections::IList,
+    pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpSignatureSubpacketGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,19 +3,27 @@
 #[derive(Debug)]
 pub struct SkeinEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub threefish: *mut crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine,
+    pub threefish: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine,
+    >,
     pub outputSizeBytes: i32,
-    pub chain: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    pub initialState: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    pub key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub preMessageParameters: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+    pub chain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
+    pub initialState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
+    pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub preMessageParameters: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+        >,
     >,
-    pub postMessageParameters: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+    pub postMessageParameters: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+        >,
     >,
-    pub ubi: *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI,
-    pub singleByte: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub ubi: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI,
+    >,
+    pub singleByte: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -358,7 +366,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
 #[derive(Debug)]
 pub struct SkeinEngine_Configuration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -433,7 +441,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
 pub struct SkeinEngine_Parameter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: i32,
-    pub value: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -516,11 +524,15 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
 #[derive(Debug)]
 pub struct SkeinEngine_UBI {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub tweak: *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak,
-    pub engine: *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine,
-    pub currentBlock: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub tweak: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak,
+    >,
+    pub engine: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine,
+    >,
+    pub currentBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub currentOffset: i32,
-    pub message: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+    pub message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -645,7 +657,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI {
 #[derive(Debug)]
 pub struct SkeinEngine_UbiTweak {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub tweak: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+    pub tweak: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     pub extendedPosition: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]

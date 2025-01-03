@@ -3,18 +3,22 @@
 #[derive(Debug)]
 pub struct SortedList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub keys: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub keys: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub values: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub values: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _size: i32,
     pub version: i32,
-    pub comparer: *mut crate::System::Collections::IComparer,
-    pub keyList: *mut crate::System::Collections::SortedList_KeyList,
-    pub valueList: *mut crate::System::Collections::SortedList_ValueList,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
+    pub keyList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::SortedList_KeyList,
+    >,
+    pub valueList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::SortedList_ValueList,
+    >,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+SortedList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -518,7 +522,7 @@ impl AsMut<crate::System::ICloneable> for crate::System::Collections::SortedList
 #[derive(Debug)]
 pub struct SortedList_KeyList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub sortedList: *mut crate::System::Collections::SortedList,
+    pub sortedList: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
 }
 #[cfg(feature = "System+Collections+SortedList+KeyList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -821,9 +825,9 @@ for crate::System::Collections::SortedList_SortedListDebugView {
 #[derive(Debug)]
 pub struct SortedList_SortedListEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _sortedList: *mut crate::System::Collections::SortedList,
-    pub _key: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _value: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _sortedList: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
+    pub _key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _index: i32,
     pub _startIndex: i32,
     pub _endIndex: i32,
@@ -1015,7 +1019,7 @@ for crate::System::Collections::SortedList_SortedListEnumerator {
 #[derive(Debug)]
 pub struct SortedList_ValueList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub sortedList: *mut crate::System::Collections::SortedList,
+    pub sortedList: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
 }
 #[cfg(feature = "System+Collections+SortedList+ValueList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

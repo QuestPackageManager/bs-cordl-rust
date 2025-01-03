@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ByteQueue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub databuf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub databuf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub skipped: i32,
     pub available: i32,
     pub readOnlyBuf: bool,

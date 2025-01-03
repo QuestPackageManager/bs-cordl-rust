@@ -4,11 +4,15 @@
 pub struct SortColumnDescription {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ColumnIndex: i32,
-    pub m_ColumnName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ColumnName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_SortDirection: crate::UnityEngine::UIElements::SortDirection,
-    pub _column_k__BackingField: *mut crate::UnityEngine::UIElements::Column,
-    pub changed: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::SortColumnDescription,
+    pub _column_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Column,
+    >,
+    pub changed: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::SortColumnDescription,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+SortColumnDescription")]
@@ -305,10 +309,16 @@ for crate::UnityEngine::UIElements::SortColumnDescription_UxmlObjectFactory_1<T>
 #[derive(Debug)]
 pub struct SortColumnDescription_UxmlObjectTraits_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlObjectTraits_1<T>,
-    pub m_ColumnName: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_ColumnIndex: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_SortDescription: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::SortDirection,
+    pub m_ColumnName: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_ColumnIndex: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub m_SortDescription: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::SortDirection,
+        >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

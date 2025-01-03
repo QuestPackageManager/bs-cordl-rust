@@ -5,7 +5,9 @@ pub struct ContinuationTaskFromResultTask_1<
     TAntecedentResult: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::System::Threading::Tasks::Task,
-    pub m_antecedent: *mut crate::System::Threading::Tasks::Task_1<TAntecedentResult>,
+    pub m_antecedent: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<TAntecedentResult>,
+    >,
     __cordl_phantom_TAntecedentResult: std::marker::PhantomData<TAntecedentResult>,
 }
 #[cfg(feature = "System+Threading+Tasks+ContinuationTaskFromResultTask_1")]

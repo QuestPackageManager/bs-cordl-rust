@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct OidEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _oids: *mut crate::System::Security::Cryptography::OidCollection,
+    pub _oids: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::OidCollection,
+    >,
     pub _current: i32,
 }
 #[cfg(feature = "System+Security+Cryptography+OidEnumerator")]

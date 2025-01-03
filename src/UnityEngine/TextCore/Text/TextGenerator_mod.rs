@@ -4,36 +4,44 @@
 pub struct TextGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_TextBackingArray: crate::UnityEngine::TextCore::Text::TextBackingContainer,
-    pub m_TextProcessingArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::TextCore::Text::TextProcessingElement,
+    pub m_TextProcessingArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::TextCore::Text::TextProcessingElement,
+        >,
     >,
     pub m_InternalTextProcessingArraySize: i32,
     pub m_VertexBufferAutoSizeReduction: bool,
-    pub m_HtmlTag: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub m_HtmlTag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub m_HighlightState: crate::UnityEngine::TextCore::Text::HighlightState,
     pub m_IsIgnoringAlignment: bool,
-    pub m_RectTransformCorners: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub m_RectTransformCorners: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
     pub m_MarginWidth: f32,
     pub m_MarginHeight: f32,
     pub m_PreferredWidth: f32,
     pub m_PreferredHeight: f32,
-    pub m_CurrentFontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
-    pub m_CurrentMaterial: *mut crate::UnityEngine::Material,
+    pub m_CurrentFontAsset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::FontAsset,
+    >,
+    pub m_CurrentMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub m_CurrentMaterialIndex: i32,
     pub m_MaterialReferenceStack: crate::UnityEngine::TextCore::Text::TextProcessingStack_1<
         crate::UnityEngine::TextCore::Text::MaterialReference,
     >,
     pub m_Padding: f32,
-    pub m_CurrentSpriteAsset: *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
+    pub m_CurrentSpriteAsset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::SpriteAsset,
+    >,
     pub m_TotalCharacterCount: i32,
     pub m_FontSize: f32,
     pub m_FontScaleMultiplier: f32,
     pub m_CurrentFontSize: f32,
     pub m_SizeStack: crate::UnityEngine::TextCore::Text::TextProcessingStack_1<f32>,
-    pub m_TextStyleStacks: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
+    pub m_TextStyleStacks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
+        >,
     >,
     pub m_TextStyleStackDepth: i32,
     pub m_FontStyleInternal: crate::UnityEngine::TextCore::Text::FontStyles,
@@ -72,7 +80,9 @@ pub struct TextGenerator {
     pub m_ItalicAngleStack: crate::UnityEngine::TextCore::Text::TextProcessingStack_1<
         i32,
     >,
-    pub m_ColorGradientPreset: *mut crate::UnityEngine::TextCore::Text::TextColorGradient,
+    pub m_ColorGradientPreset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextColorGradient,
+    >,
     pub m_ColorGradientStack: crate::UnityEngine::TextCore::Text::TextProcessingStack_1<
         *mut crate::UnityEngine::TextCore::Text::TextColorGradient,
     >,
@@ -118,7 +128,9 @@ pub struct TextGenerator {
     pub m_isTextLayoutPhase: bool,
     pub m_SpriteIndex: i32,
     pub m_SpriteColor: crate::UnityEngine::Color32,
-    pub m_CachedTextElement: *mut crate::UnityEngine::TextCore::Text::TextElement,
+    pub m_CachedTextElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextElement,
+    >,
     pub m_HighlightColor: crate::UnityEngine::Color32,
     pub m_CharWidthAdjDelta: f32,
     pub m_MaxFontSize: f32,
@@ -128,8 +140,10 @@ pub struct TextGenerator {
     pub m_IsAutoSizePointSizeSet: bool,
     pub m_StartOfLineAscender: f32,
     pub m_LineSpacingDelta: f32,
-    pub m_MaterialReferences: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::TextCore::Text::MaterialReference,
+    pub m_MaterialReferences: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::TextCore::Text::MaterialReference,
+        >,
     >,
     pub m_SpriteCount: i32,
     pub m_StyleStack: crate::UnityEngine::TextCore::Text::TextProcessingStack_1<i32>,
@@ -142,21 +156,28 @@ pub struct TextGenerator {
     pub m_FXRotation: crate::UnityEngine::Quaternion,
     pub m_LastBaseGlyphIndex: i32,
     pub m_PageAscender: f32,
-    pub m_XmlAttribute: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::TextCore::Text::RichTextTagAttribute,
+    pub m_XmlAttribute: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::TextCore::Text::RichTextTagAttribute,
+        >,
     >,
-    pub m_AttributeParameterValues: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub m_MaterialReferenceIndexLookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        i32,
+    pub m_AttributeParameterValues: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
+    pub m_MaterialReferenceIndexLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
     >,
     pub m_IsCalculatingPreferredValues: bool,
-    pub m_DefaultSpriteAsset: *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
+    pub m_DefaultSpriteAsset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::SpriteAsset,
+    >,
     pub m_TintSprite: bool,
     pub m_Ellipsis: crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter,
     pub m_Underline: crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter,
-    pub m_InternalTextElementInfo: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::TextCore::Text::TextElementInfo,
+    pub m_InternalTextElementInfo: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::TextCore::Text::TextElementInfo,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator")]
@@ -764,11 +785,15 @@ for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallb
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TextGenerator_SpecialCharacter {
-    pub character: *mut crate::UnityEngine::TextCore::Text::Character,
-    pub fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
-    pub material: *mut crate::UnityEngine::Material,
+    pub character: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::Character,
+    >,
+    pub fontAsset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::FontAsset,
+    >,
+    pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub materialIndex: i32,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]

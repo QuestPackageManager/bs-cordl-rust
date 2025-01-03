@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct StreamReader {
     __cordl_parent: crate::System::IO::TextReader,
-    pub _stream: *mut crate::System::IO::Stream,
-    pub _encoding: *mut crate::System::Text::Encoding,
-    pub _decoder: *mut crate::System::Text::Decoder,
-    pub _byteBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _charBuffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub _stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    pub _decoder: quest_hook::libil2cpp::Gc<crate::System::Text::Decoder>,
+    pub _byteBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _charBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub _charPos: i32,
     pub _charLen: i32,
     pub _byteLen: i32,
@@ -17,7 +17,7 @@ pub struct StreamReader {
     pub _checkPreamble: bool,
     pub _isBlocked: bool,
     pub _closable: bool,
-    pub _asyncReadTask: *mut crate::System::Threading::Tasks::Task,
+    pub _asyncReadTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
 }
 #[cfg(feature = "System+IO+StreamReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

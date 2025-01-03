@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MonoSslServerAuthenticationOptions {
     __cordl_parent: crate::Mono::Net::Security::MonoSslAuthenticationOptions,
-    pub _Options_k__BackingField: *mut crate::System::Net::Security::SslServerAuthenticationOptions,
+    pub _Options_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Security::SslServerAuthenticationOptions,
+    >,
 }
 #[cfg(feature = "Mono+Net+Security+MonoSslServerAuthenticationOptions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

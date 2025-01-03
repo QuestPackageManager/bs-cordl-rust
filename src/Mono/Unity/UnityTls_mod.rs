@@ -136,7 +136,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UnityTls_unitytls_errorstate {
     pub magic: u32,
     pub code: crate::Mono::Unity::UnityTls_unitytls_error_code,
@@ -167,37 +167,99 @@ pub struct UnityTls_unitytls_interface_struct {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub UNITYTLS_INVALID_HANDLE: u64,
     pub UNITYTLS_TLSCTX_PROTOCOLRANGE_DEFAULT: crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange,
-    pub unitytls_errorstate_create: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_create_t,
-    pub unitytls_errorstate_raise_error: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_raise_error_t,
-    pub unitytls_key_get_ref: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_t,
-    pub unitytls_key_parse_der: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_der_t,
-    pub unitytls_key_parse_pem: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pem_t,
-    pub unitytls_key_free: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t,
-    pub unitytls_x509_export_der: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_der_t,
-    pub unitytls_x509list_get_ref: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_ref_t,
-    pub unitytls_x509list_get_x509: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_x509_t,
-    pub unitytls_x509list_create: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_create_t,
-    pub unitytls_x509list_append: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_t,
-    pub unitytls_x509list_append_der: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t,
-    pub unitytls_x509list_append_pem: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t,
-    pub unitytls_x509list_free: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_free_t,
-    pub unitytls_x509verify_default_ca: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_default_ca_t,
-    pub unitytls_x509verify_explicit_ca: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t,
-    pub unitytls_tlsctx_create_server: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_server_t,
-    pub unitytls_tlsctx_create_client: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_client_t,
-    pub unitytls_tlsctx_server_require_client_authentication: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_server_require_client_authentication_t,
-    pub unitytls_tlsctx_set_certificate_callback: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_certificate_callback_t,
-    pub unitytls_tlsctx_set_trace_callback: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_callback_t,
-    pub unitytls_tlsctx_set_x509verify_callback: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x509verify_callback_t,
-    pub unitytls_tlsctx_set_supported_ciphersuites: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_supported_ciphersuites_t,
-    pub unitytls_tlsctx_get_ciphersuite: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_ciphersuite_t,
-    pub unitytls_tlsctx_get_protocol: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_protocol_t,
-    pub unitytls_tlsctx_process_handshake: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_process_handshake_t,
-    pub unitytls_tlsctx_read: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_t,
-    pub unitytls_tlsctx_write: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write_t,
-    pub unitytls_tlsctx_notify_close: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notify_close_t,
-    pub unitytls_tlsctx_free: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_t,
-    pub unitytls_random_generate_bytes: *mut crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t,
+    pub unitytls_errorstate_create: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_create_t,
+    >,
+    pub unitytls_errorstate_raise_error: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_raise_error_t,
+    >,
+    pub unitytls_key_get_ref: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_t,
+    >,
+    pub unitytls_key_parse_der: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_der_t,
+    >,
+    pub unitytls_key_parse_pem: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pem_t,
+    >,
+    pub unitytls_key_free: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t,
+    >,
+    pub unitytls_x509_export_der: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_der_t,
+    >,
+    pub unitytls_x509list_get_ref: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_ref_t,
+    >,
+    pub unitytls_x509list_get_x509: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_x509_t,
+    >,
+    pub unitytls_x509list_create: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_create_t,
+    >,
+    pub unitytls_x509list_append: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_t,
+    >,
+    pub unitytls_x509list_append_der: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t,
+    >,
+    pub unitytls_x509list_append_pem: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t,
+    >,
+    pub unitytls_x509list_free: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_free_t,
+    >,
+    pub unitytls_x509verify_default_ca: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_default_ca_t,
+    >,
+    pub unitytls_x509verify_explicit_ca: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t,
+    >,
+    pub unitytls_tlsctx_create_server: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_server_t,
+    >,
+    pub unitytls_tlsctx_create_client: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_client_t,
+    >,
+    pub unitytls_tlsctx_server_require_client_authentication: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_server_require_client_authentication_t,
+    >,
+    pub unitytls_tlsctx_set_certificate_callback: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_certificate_callback_t,
+    >,
+    pub unitytls_tlsctx_set_trace_callback: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_callback_t,
+    >,
+    pub unitytls_tlsctx_set_x509verify_callback: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x509verify_callback_t,
+    >,
+    pub unitytls_tlsctx_set_supported_ciphersuites: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_supported_ciphersuites_t,
+    >,
+    pub unitytls_tlsctx_get_ciphersuite: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_ciphersuite_t,
+    >,
+    pub unitytls_tlsctx_get_protocol: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_protocol_t,
+    >,
+    pub unitytls_tlsctx_process_handshake: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_process_handshake_t,
+    >,
+    pub unitytls_tlsctx_read: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_t,
+    >,
+    pub unitytls_tlsctx_write: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write_t,
+    >,
+    pub unitytls_tlsctx_notify_close: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notify_close_t,
+    >,
+    pub unitytls_tlsctx_free: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_t,
+    >,
+    pub unitytls_random_generate_bytes: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t,
+    >,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -367,7 +429,7 @@ for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UnityTls_unitytls_key {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -389,7 +451,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key {
 impl crate::Mono::Unity::UnityTls_unitytls_key {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UnityTls_unitytls_key_ref {
     pub handle: u64,
 }
@@ -427,7 +489,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UnityTls_unitytls_tlsctx {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -449,11 +511,15 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
 impl crate::Mono::Unity::UnityTls_unitytls_tlsctx {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UnityTls_unitytls_tlsctx_callbacks {
-    pub read: *mut crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback,
-    pub write: *mut crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback,
-    pub data: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub read: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback,
+    >,
+    pub write: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback,
+    >,
+    pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -559,7 +625,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UnityTls_unitytls_tlsctx_protocolrange {
     pub min: crate::Mono::Unity::UnityTls_unitytls_protocol,
     pub max: crate::Mono::Unity::UnityTls_unitytls_protocol,
@@ -884,7 +950,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UnityTls_unitytls_x509_ref {
     pub handle: u64,
 }
@@ -908,7 +974,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
 impl crate::Mono::Unity::UnityTls_unitytls_x509_ref {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UnityTls_unitytls_x509list {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -930,7 +996,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list {
 impl crate::Mono::Unity::UnityTls_unitytls_x509list {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UnityTls_unitytls_x509list_ref {
     pub handle: u64,
 }
@@ -954,7 +1020,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
 impl crate::Mono::Unity::UnityTls_unitytls_x509list_ref {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UnityTls_unitytls_x509name {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

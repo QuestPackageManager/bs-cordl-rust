@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct IfNotBoundBinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _BindInfo_k__BackingField: *mut crate::Zenject::BindInfo,
+    pub _BindInfo_k__BackingField: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
 }
 #[cfg(feature = "Zenject+IfNotBoundBinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct GPUBufferAllocator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Low: *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator,
-    pub m_High: *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator,
+    pub m_Low: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::BestFitAllocator,
+    >,
+    pub m_High: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::BestFitAllocator,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+GPUBufferAllocator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

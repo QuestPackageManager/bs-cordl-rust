@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct NetSocket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _udpSocketv4: *mut crate::System::Net::Sockets::Socket,
-    pub _udpSocketv6: *mut crate::System::Net::Sockets::Socket,
-    pub _threadv4: *mut crate::System::Threading::Thread,
-    pub _threadv6: *mut crate::System::Threading::Thread,
-    pub _listener: *mut crate::LiteNetLib::INetSocketListener,
+    pub _udpSocketv4: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
+    pub _udpSocketv6: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
+    pub _threadv4: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
+    pub _threadv6: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
+    pub _listener: quest_hook::libil2cpp::Gc<crate::LiteNetLib::INetSocketListener>,
     pub _LocalPort_k__BackingField: i32,
     pub IsRunning: bool,
 }

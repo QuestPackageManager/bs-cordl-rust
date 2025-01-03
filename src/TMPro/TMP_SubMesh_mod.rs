@@ -3,18 +3,20 @@
 #[derive(Debug)]
 pub struct TMP_SubMesh {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_fontAsset: *mut crate::TMPro::TMP_FontAsset,
-    pub m_spriteAsset: *mut crate::TMPro::TMP_SpriteAsset,
-    pub m_material: *mut crate::UnityEngine::Material,
-    pub m_sharedMaterial: *mut crate::UnityEngine::Material,
-    pub m_fallbackMaterial: *mut crate::UnityEngine::Material,
-    pub m_fallbackSourceMaterial: *mut crate::UnityEngine::Material,
+    pub m_fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    pub m_spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+    pub m_material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub m_sharedMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub m_fallbackMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub m_fallbackSourceMaterial: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Material,
+    >,
     pub m_isDefaultMaterial: bool,
     pub m_padding: f32,
-    pub m_renderer: *mut crate::UnityEngine::Renderer,
-    pub m_meshFilter: *mut crate::UnityEngine::MeshFilter,
-    pub m_mesh: *mut crate::UnityEngine::Mesh,
-    pub m_TextComponent: *mut crate::TMPro::TextMeshPro,
+    pub m_renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+    pub m_meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
+    pub m_mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub m_TextComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
     pub m_isRegisteredForEvents: bool,
 }
 #[cfg(feature = "TMPro+TMP_SubMesh")]

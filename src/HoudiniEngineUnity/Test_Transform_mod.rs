@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Test_Transform {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cordl_self: *mut crate::UnityEngine::Transform,
+    pub _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Transform")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

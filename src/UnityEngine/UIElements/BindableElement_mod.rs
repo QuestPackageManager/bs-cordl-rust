@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct BindableElement {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
-    pub _binding_k__BackingField: *mut crate::UnityEngine::UIElements::IBinding,
-    pub _bindingPath_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _binding_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IBinding,
+    >,
+    pub _bindingPath_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BindableElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -162,7 +166,9 @@ for crate::UnityEngine::UIElements::BindableElement_UxmlFactory {
 #[derive(Debug)]
 pub struct BindableElement_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
-    pub m_PropertyPath: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_PropertyPath: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BindableElement+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,19 +3,45 @@
 #[derive(Debug)]
 pub struct GearVRTrackedController {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRController,
-    pub _touchpad_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
-    pub _trigger_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    pub _back_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _triggerPressed_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _touchpadClicked_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _touchpadTouched_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _trackingState_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::IntegerControl,
-    pub _isTracked_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _devicePosition_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    pub _deviceRotation_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-    pub _deviceAngularVelocity_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    pub _deviceAcceleration_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    pub _deviceAngularAcceleration_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    pub _touchpad_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    >,
+    pub _trigger_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
+    pub _back_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _triggerPressed_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _touchpadClicked_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _touchpadTouched_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _trackingState_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::IntegerControl,
+    >,
+    pub _isTracked_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _devicePosition_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
+    pub _deviceRotation_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+    >,
+    pub _deviceAngularVelocity_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
+    pub _deviceAcceleration_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
+    pub _deviceAngularAcceleration_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
 }
 #[cfg(feature = "Unity+XR+Oculus+Input+GearVRTrackedController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

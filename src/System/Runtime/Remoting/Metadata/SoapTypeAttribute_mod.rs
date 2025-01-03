@@ -4,10 +4,12 @@
 pub struct SoapTypeAttribute {
     __cordl_parent: crate::System::Runtime::Remoting::Metadata::SoapAttribute,
     pub _useAttribute: bool,
-    pub _xmlElementName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _xmlNamespace: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _xmlTypeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _xmlTypeNamespace: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _xmlElementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _xmlNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _xmlTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _xmlTypeNamespace: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _isType: bool,
     pub _isElement: bool,
 }

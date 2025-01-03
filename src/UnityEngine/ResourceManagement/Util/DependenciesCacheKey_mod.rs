@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct DependenciesCacheKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Dependencies: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    pub m_Dependencies: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
     >,
     pub m_DependenciesHash: i32,
 }

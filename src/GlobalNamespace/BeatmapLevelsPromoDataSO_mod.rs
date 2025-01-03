@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BeatmapLevelsPromoDataSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _promo: *mut crate::GlobalNamespace::BeatmapLevelsPromoDataSO_BeatmapLevelsPromo,
+    pub _promo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsPromoDataSO_BeatmapLevelsPromo,
+    >,
 }
 #[cfg(feature = "BeatmapLevelsPromoDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -88,17 +90,25 @@ for crate::GlobalNamespace::BeatmapLevelsPromoDataSO {
 #[derive(Debug)]
 pub struct BeatmapLevelsPromoDataSO_BeatmapLevelsPromo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _promotedBeatmapLevelPacks: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _promotedBeatmapLevelPacks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _updatedBeatmapLevelPacks: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _updatedBeatmapLevelPacks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _promotedBeatmapLevels: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _promotedBeatmapLevels: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _updatedBeatmapLevels: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _updatedBeatmapLevels: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapLevelsPromoDataSO+BeatmapLevelsPromo")]

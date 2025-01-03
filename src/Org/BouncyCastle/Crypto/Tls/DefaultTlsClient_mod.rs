@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DefaultTlsClient {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsClient,
-    pub mDHVerifier: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsDHVerifier,
+    pub mDHVerifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsDHVerifier,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsClient")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

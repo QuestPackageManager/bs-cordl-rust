@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct CmpCertificate {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub x509v3PKCert: *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
-    pub x509v2AttrCert: *mut crate::Org::BouncyCastle::Asn1::X509::AttributeCertificate,
+    pub x509v3PKCert: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+    >,
+    pub x509v2AttrCert: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AttributeCertificate,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+CmpCertificate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

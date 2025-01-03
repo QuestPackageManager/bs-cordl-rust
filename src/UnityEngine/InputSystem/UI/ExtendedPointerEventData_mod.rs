@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ExtendedPointerEventData {
     __cordl_parent: crate::UnityEngine::EventSystems::PointerEventData,
-    pub _control_k__BackingField: *mut crate::UnityEngine::InputSystem::InputControl,
-    pub _device_k__BackingField: *mut crate::UnityEngine::InputSystem::InputDevice,
+    pub _control_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputControl,
+    >,
+    pub _device_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputDevice,
+    >,
     pub _touchId_k__BackingField: i32,
     pub _pointerType_k__BackingField: crate::UnityEngine::InputSystem::UI::UIPointerType,
     pub _uiToolkitPointerId_k__BackingField: i32,

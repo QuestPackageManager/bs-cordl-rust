@@ -3,14 +3,22 @@
 #[derive(Debug)]
 pub struct ISO9797Alg3Mac {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mac: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mac: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub bufOff: i32,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
-    pub padding: *mut crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    >,
+    pub padding: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Paddings::IBlockCipherPadding,
+    >,
     pub macSize: i32,
-    pub lastKey2: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-    pub lastKey3: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    pub lastKey2: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    >,
+    pub lastKey3: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+ISO9797Alg3Mac")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct SonyBackgroundExecutionHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub didGoToBackgroundExecutionEvent: *mut crate::System::Action,
-    pub didGoToForegroundExecutionEvent: *mut crate::System::Action,
+    pub didGoToBackgroundExecutionEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub didGoToForegroundExecutionEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
     pub _isInBackgroundExecution: bool,
 }
 #[cfg(feature = "SonyBackgroundExecutionHelper")]

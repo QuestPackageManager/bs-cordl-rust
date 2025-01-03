@@ -1,18 +1,26 @@
 #[cfg(feature = "UnityEngine+UIElements+TransitionData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TransitionData {
-    pub transitionDelay: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::TimeValue,
+    pub transitionDelay: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::TimeValue,
+        >,
     >,
-    pub transitionDuration: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::TimeValue,
+    pub transitionDuration: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::TimeValue,
+        >,
     >,
-    pub transitionProperty: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::StylePropertyName,
+    pub transitionProperty: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::StylePropertyName,
+        >,
     >,
-    pub transitionTimingFunction: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::EasingFunction,
+    pub transitionTimingFunction: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::EasingFunction,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TransitionData")]

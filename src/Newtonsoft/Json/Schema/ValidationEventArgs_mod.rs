@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ValidationEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub _ex: *mut crate::Newtonsoft::Json::Schema::JsonSchemaException,
+    pub _ex: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Schema::JsonSchemaException,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+ValidationEventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

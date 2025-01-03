@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DecoderFallbackException {
     __cordl_parent: crate::System::ArgumentException,
-    pub _bytesUnknown: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _bytesUnknown: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _index: i32,
 }
 #[cfg(feature = "System+Text+DecoderFallbackException")]

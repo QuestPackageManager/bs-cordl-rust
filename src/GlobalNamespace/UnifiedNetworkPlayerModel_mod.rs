@@ -3,27 +3,35 @@
 #[derive(Debug)]
 pub struct UnifiedNetworkPlayerModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _gameLiftNetworkPlayerModel: *mut crate::GlobalNamespace::GameLiftNetworkPlayerModel,
-    pub _platformNetworkPlayerModel: *mut crate::GlobalNamespace::PlatformNetworkPlayerModel,
-    pub connectedPlayerManagerCreatedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::INetworkPlayerModel,
+    pub _gameLiftNetworkPlayerModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameLiftNetworkPlayerModel,
     >,
-    pub connectedPlayerManagerDestroyedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::INetworkPlayerModel,
+    pub _platformNetworkPlayerModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlatformNetworkPlayerModel,
     >,
-    pub partySizeChangedEvent: *mut crate::System::Action_1<i32>,
-    pub partyRefreshingEvent: *mut crate::System::Action,
-    pub partyChangedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::INetworkPlayerModel,
+    pub connectedPlayerManagerCreatedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayerModel>,
     >,
-    pub joinRequestedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::INetworkPlayer,
+    pub connectedPlayerManagerDestroyedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayerModel>,
     >,
-    pub inviteRequestedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::INetworkPlayer,
+    pub partySizeChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    pub partyRefreshingEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub partyChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayerModel>,
     >,
-    pub _partyMessageHandler: *mut crate::GlobalNamespace::PartyMessageHandler,
-    pub _friendPartyMessageHandler: *mut crate::GlobalNamespace::PartyMessageHandler,
+    pub joinRequestedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
+    >,
+    pub inviteRequestedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
+    >,
+    pub _partyMessageHandler: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PartyMessageHandler,
+    >,
+    pub _friendPartyMessageHandler: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PartyMessageHandler,
+    >,
     pub _activeNetworkPlayerModelType: crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelType,
 }
 #[cfg(feature = "UnifiedNetworkPlayerModel")]
@@ -758,8 +766,8 @@ pub struct UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     pub configuration: crate::GlobalNamespace::GameplayServerConfiguration,
-    pub secret: *mut quest_hook::libil2cpp::Il2CppString,
-    pub code: *mut quest_hook::libil2cpp::Il2CppString,
+    pub secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnifiedNetworkPlayerModel+JoinMatchmakingPartyConfig")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

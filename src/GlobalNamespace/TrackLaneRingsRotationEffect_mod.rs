@@ -3,19 +3,25 @@
 #[derive(Debug)]
 pub struct TrackLaneRingsRotationEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _trackLaneRingsManager: *mut crate::GlobalNamespace::TrackLaneRingsManager,
+    pub _trackLaneRingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TrackLaneRingsManager,
+    >,
     pub _startupRotationAngle: f32,
     pub _startupRotationStep: f32,
     pub _startupRotationPropagationSpeed: i32,
     pub _startupRotationFlexySpeed: f32,
-    pub _activeRingRotationEffects: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::TrackLaneRingsRotationEffect_RingRotationEffect,
+    pub _activeRingRotationEffects: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::TrackLaneRingsRotationEffect_RingRotationEffect,
+        >,
     >,
-    pub _ringRotationEffectsPool: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::TrackLaneRingsRotationEffect_RingRotationEffect,
+    pub _ringRotationEffectsPool: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::TrackLaneRingsRotationEffect_RingRotationEffect,
+        >,
     >,
-    pub ringRotationEffectsToDelete: *mut crate::System::Collections::Generic::List_1<
-        i32,
+    pub ringRotationEffectsToDelete: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
     >,
 }
 #[cfg(feature = "TrackLaneRingsRotationEffect")]

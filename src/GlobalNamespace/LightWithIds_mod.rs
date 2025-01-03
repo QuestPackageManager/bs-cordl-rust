@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct LightWithIds {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightManager: *mut crate::GlobalNamespace::LightWithIdManager,
-    pub _lightWithIds: *mut crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::GlobalNamespace::LightWithIds_LightWithId,
+    pub _lightManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightWithIdManager,
+    >,
+    pub _lightWithIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::GlobalNamespace::LightWithIds_LightWithId,
+        >,
     >,
     pub _isRegistered: bool,
     pub _childrenColorWasSet: bool,
@@ -210,7 +214,9 @@ pub struct LightWithIds_LightWithId {
     pub _lightId: i32,
     pub _color: crate::UnityEngine::Color,
     pub _isRegistered: bool,
-    pub _parentLightWithIds: *mut crate::GlobalNamespace::LightWithIds,
+    pub _parentLightWithIds: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightWithIds,
+    >,
 }
 #[cfg(feature = "LightWithIds+LightWithId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

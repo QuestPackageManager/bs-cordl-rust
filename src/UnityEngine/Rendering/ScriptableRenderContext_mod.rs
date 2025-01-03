@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+ScriptableRenderContext")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ScriptableRenderContext {
     pub m_Ptr: crate::System::IntPtr,
 }

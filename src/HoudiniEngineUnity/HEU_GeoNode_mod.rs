@@ -4,16 +4,24 @@
 pub struct HEU_GeoNode {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _geoInfo: crate::HoudiniEngineUnity::HAPI_GeoInfo,
-    pub _geoName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _parts: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_PartData,
+    pub _geoName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _parts: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_PartData,
+        >,
     >,
-    pub _containerObjectNode: *mut crate::HoudiniEngineUnity::HEU_ObjectNode,
-    pub _inputNode: *mut crate::HoudiniEngineUnity::HEU_InputNode,
-    pub _geoCurve: *mut crate::HoudiniEngineUnity::HEU_Curve,
-    pub _volumeCache: *mut crate::HoudiniEngineUnity::HEU_VolumeCache,
-    pub _volumeCaches: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_VolumeCache,
+    pub _containerObjectNode: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_ObjectNode,
+    >,
+    pub _inputNode: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
+    pub _geoCurve: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Curve>,
+    pub _volumeCache: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_VolumeCache,
+    >,
+    pub _volumeCaches: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_VolumeCache,
+        >,
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeoNode")]

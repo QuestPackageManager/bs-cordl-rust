@@ -3,13 +3,14 @@
 #[derive(Debug)]
 pub struct ObstacleControllerBase {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
-    pub didInitEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::ObstacleControllerBase,
+    pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVariableMovementDataProvider,
     >,
-    pub didStartDissolvingEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::ObstacleControllerBase,
-        f32,
+    pub didInitEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::ObstacleControllerBase>,
+    >,
+    pub didStartDissolvingEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::GlobalNamespace::ObstacleControllerBase, f32>,
     >,
 }
 #[cfg(feature = "ObstacleControllerBase")]

@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct OculusMRCManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _instantiateMixedRealityBackgroundCameraGameObject: *mut crate::System::Func_2<
-        *mut crate::UnityEngine::GameObject,
-        *mut crate::UnityEngine::GameObject,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
     >,
-    pub _instantiateMixedRealityForegroundCameraGameObject: *mut crate::System::Func_2<
-        *mut crate::UnityEngine::GameObject,
-        *mut crate::UnityEngine::GameObject,
+    pub _instantiateMixedRealityBackgroundCameraGameObject: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            *mut crate::UnityEngine::GameObject,
+            *mut crate::UnityEngine::GameObject,
+        >,
+    >,
+    pub _instantiateMixedRealityForegroundCameraGameObject: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            *mut crate::UnityEngine::GameObject,
+            *mut crate::UnityEngine::GameObject,
+        >,
     >,
     pub _enableMixedReality_k__BackingField: bool,
     pub _extraHiddenLayers_k__BackingField: crate::UnityEngine::LayerMask,
@@ -39,7 +45,9 @@ pub struct OculusMRCManager {
     pub _virtualGreenScreenApplyDepthCulling_k__BackingField: bool,
     pub _virtualGreenScreenDepthTolerance_k__BackingField: f32,
     pub _mrcActivationMode_k__BackingField: crate::GlobalNamespace::OVRManager_MrcActivationMode,
-    pub _instantiateMixedRealityCameraGameObject: *mut crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
+    pub _instantiateMixedRealityCameraGameObject: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
+    >,
 }
 #[cfg(feature = "OculusMRCManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

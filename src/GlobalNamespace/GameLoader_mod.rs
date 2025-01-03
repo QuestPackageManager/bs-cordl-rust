@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct GameLoader {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _context: *mut crate::Zenject::SceneContext,
+    pub _context: quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
     pub _handle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
     >,

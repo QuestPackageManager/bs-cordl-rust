@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct StaticMemoryPool_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::StaticMemoryPoolBase_1<TValue>,
-    pub _onSpawnMethod: *mut crate::System::Action_1<TValue>,
+    pub _onSpawnMethod: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "Zenject+StaticMemoryPool_1")]

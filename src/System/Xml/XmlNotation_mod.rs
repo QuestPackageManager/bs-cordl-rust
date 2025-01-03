@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct XmlNotation {
     __cordl_parent: crate::System::Xml::XmlNode,
-    pub publicId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub systemId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub publicId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub systemId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+XmlNotation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

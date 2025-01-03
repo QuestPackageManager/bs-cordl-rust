@@ -3,22 +3,48 @@
 #[derive(Debug)]
 pub struct RecordStream {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mHandler: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol,
-    pub mInput: *mut crate::System::IO::Stream,
-    pub mOutput: *mut crate::System::IO::Stream,
-    pub mPendingCompression: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCompression,
-    pub mReadCompression: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCompression,
-    pub mWriteCompression: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCompression,
-    pub mPendingCipher: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCipher,
-    pub mReadCipher: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCipher,
-    pub mWriteCipher: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCipher,
-    pub mReadSeqNo: *mut crate::Org::BouncyCastle::Crypto::Tls::RecordStream_SequenceNumber,
-    pub mWriteSeqNo: *mut crate::Org::BouncyCastle::Crypto::Tls::RecordStream_SequenceNumber,
-    pub mBuffer: *mut crate::System::IO::MemoryStream,
-    pub mHandshakeHash: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
-    pub mHandshakeHashUpdater: *mut crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    pub mReadVersion: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
-    pub mWriteVersion: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
+    pub mHandler: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol,
+    >,
+    pub mInput: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub mOutput: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub mPendingCompression: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCompression,
+    >,
+    pub mReadCompression: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCompression,
+    >,
+    pub mWriteCompression: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCompression,
+    >,
+    pub mPendingCipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCipher,
+    >,
+    pub mReadCipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCipher,
+    >,
+    pub mWriteCipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCipher,
+    >,
+    pub mReadSeqNo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::RecordStream_SequenceNumber,
+    >,
+    pub mWriteSeqNo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::RecordStream_SequenceNumber,
+    >,
+    pub mBuffer: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
+    pub mHandshakeHash: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
+    >,
+    pub mHandshakeHashUpdater: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
+    >,
+    pub mReadVersion: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
+    >,
+    pub mWriteVersion: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
+    >,
     pub mRestrictReadVersion: bool,
     pub mPlaintextLimit: i32,
     pub mCompressedLimit: i32,
@@ -379,7 +405,9 @@ for crate::Org::BouncyCastle::Crypto::Tls::RecordStream {
 #[derive(Debug)]
 pub struct RecordStream_HandshakeHashUpdateStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    pub mOuter: *mut crate::Org::BouncyCastle::Crypto::Tls::RecordStream,
+    pub mOuter: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::RecordStream,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream+HandshakeHashUpdateStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CurveData {
     pub startPoint: crate::UnityEngine::Vector3,
     pub endPoint: crate::UnityEngine::Vector3,

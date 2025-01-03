@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct RSAPKCS1SignatureDescription {
     __cordl_parent: crate::System::Security::Cryptography::SignatureDescription,
-    pub _hashAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _hashAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureDescription")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

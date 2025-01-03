@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct MessageImprint {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub hashAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub hashedMessage: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub hashAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub hashedMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Tsp+MessageImprint")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

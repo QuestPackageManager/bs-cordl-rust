@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct BTSCharacterDataModel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _prefabsWithIds: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId,
+    pub _prefabsWithIds: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId,
+        >,
     >,
-    pub _animationClipsWithIds: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId,
+    pub _animationClipsWithIds: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId,
+        >,
     >,
 }
 #[cfg(feature = "BTSCharacterDataModel")]
@@ -106,7 +110,9 @@ for crate::GlobalNamespace::BTSCharacterDataModel {
 pub struct BTSCharacterDataModel_AnimationClipWithId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _id: i32,
-    pub _animationClipAssetReference: *mut crate::UnityEngine::AddressableAssets::AssetReference,
+    pub _animationClipAssetReference: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReference,
+    >,
 }
 #[cfg(feature = "BTSCharacterDataModel+AnimationClipWithId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -185,7 +191,9 @@ for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
 pub struct BTSCharacterDataModel_PrefabWithId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _id: i32,
-    pub _prefabAssetReference: *mut crate::UnityEngine::AddressableAssets::AssetReference,
+    pub _prefabAssetReference: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReference,
+    >,
 }
 #[cfg(feature = "BTSCharacterDataModel+PrefabWithId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

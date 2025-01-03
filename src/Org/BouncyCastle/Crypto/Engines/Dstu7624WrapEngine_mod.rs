@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct Dstu7624WrapEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub param: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-    pub engine: *mut crate::Org::BouncyCastle::Crypto::Engines::Dstu7624Engine,
+    pub param: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    >,
+    pub engine: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Engines::Dstu7624Engine,
+    >,
     pub forWrapping: bool,
     pub blockSize: i32,
 }

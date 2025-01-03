@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct RsaBlindingParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub publicKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
-    pub blindingFactor: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub publicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
+    >,
+    pub blindingFactor: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+RsaBlindingParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

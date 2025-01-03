@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct RBTree_1<K: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _pageTable: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Data::RBTree_1_TreePage<K>,
+    pub _pageTable: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Data::RBTree_1_TreePage<K>,
+        >,
     >,
-    pub _pageTableMap: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _pageTableMap: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     pub _inUsePageCount: i32,
     pub _nextFreePageLine: i32,
     pub root: i32,
@@ -979,7 +983,7 @@ for crate::System::Data::RBTree_1<K> {
 }
 #[cfg(feature = "System+Data+RBTree_1+Node")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RBTree_1_Node<K: quest_hook::libil2cpp::Type> {
     pub _selfId: i32,
     pub _leftId: i32,
@@ -1023,7 +1027,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Data+RBTree_1+NodePath")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RBTree_1_NodePath<K: quest_hook::libil2cpp::Type> {
     pub _nodeID: i32,
     pub _mainTreeNodeID: i32,
@@ -1066,9 +1070,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_NodePath<K> {
 }
 #[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RBTree_1_RBTreeEnumerator<K: quest_hook::libil2cpp::Type> {
-    pub _tree: *mut crate::System::Data::RBTree_1<K>,
+    pub _tree: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>,
     pub _version: i32,
     pub _index: i32,
     pub _mainTreeNodeId: i32,
@@ -1246,10 +1250,10 @@ for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
 #[derive(Debug)]
 pub struct RBTree_1_TreePage<K: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _slots: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Data::RBTree_1_Node<K>,
+    pub _slots: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Data::RBTree_1_Node<K>>,
     >,
-    pub _slotMap: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _slotMap: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub _inUseCount: i32,
     pub _pageId: i32,
     pub _nextFreeSlotLine: i32,

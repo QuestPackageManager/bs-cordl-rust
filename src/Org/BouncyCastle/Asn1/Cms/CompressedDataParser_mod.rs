@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct CompressedDataParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub _compressionAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub _encapContentInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfoParser,
+    pub _version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub _compressionAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub _encapContentInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::ContentInfoParser,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+CompressedDataParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

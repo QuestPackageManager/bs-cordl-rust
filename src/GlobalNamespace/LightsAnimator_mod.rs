@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct LightsAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lights: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+    pub _lights: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+        >,
     >,
-    pub _directionalLights: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::DirectionalLight,
+    pub _directionalLights: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::DirectionalLight>,
     >,
-    pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub _tween: *mut crate::Tweening::ColorTween,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::TimeTweeningManager,
+    >,
+    pub _tween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
 }
 #[cfg(feature = "LightsAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

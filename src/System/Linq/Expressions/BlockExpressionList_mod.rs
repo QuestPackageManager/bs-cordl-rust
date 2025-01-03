@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BlockExpressionList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _block: *mut crate::System::Linq::Expressions::BlockExpression,
-    pub _arg0: *mut crate::System::Linq::Expressions::Expression,
+    pub _block: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::BlockExpression,
+    >,
+    pub _arg0: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
 }
 #[cfg(feature = "System+Linq+Expressions+BlockExpressionList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

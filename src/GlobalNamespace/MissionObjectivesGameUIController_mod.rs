@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct MissionObjectivesGameUIController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionObjectiveGameUIViewPrefab: *mut crate::GlobalNamespace::MissionObjectiveGameUIView,
+    pub _missionObjectiveGameUIViewPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionObjectiveGameUIView,
+    >,
     pub _separator: f32,
     pub _elementWidth: f32,
-    pub _missionObjectiveCheckersManager: *mut crate::GlobalNamespace::MissionObjectiveCheckersManager,
-    pub _missionObjectiveGameUIViews: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::MissionObjectiveGameUIView,
+    pub _missionObjectiveCheckersManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionObjectiveCheckersManager,
+    >,
+    pub _missionObjectiveGameUIViews: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::MissionObjectiveGameUIView,
+        >,
     >,
 }
 #[cfg(feature = "MissionObjectivesGameUIController")]

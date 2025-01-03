@@ -5,7 +5,7 @@ pub struct OVRMixedRealityCaptureTest {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub inited: bool,
     pub currentMode: crate::GlobalNamespace::OVRMixedRealityCaptureTest_CameraMode,
-    pub defaultExternalCamera: *mut crate::UnityEngine::Camera,
+    pub defaultExternalCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub defaultFov: crate::GlobalNamespace::OVRPlugin_Fovf,
 }
 #[cfg(feature = "OVRMixedRealityCaptureTest")]

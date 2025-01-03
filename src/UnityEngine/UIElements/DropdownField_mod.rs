@@ -148,8 +148,12 @@ pub struct DropdownField_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         *mut quest_hook::libil2cpp::Il2CppString,
     >,
-    pub m_Index: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_Choices: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_Index: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub m_Choices: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+DropdownField+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

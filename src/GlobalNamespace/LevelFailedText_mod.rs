@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct LevelFailedText {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _text: *mut crate::TMPro::TMP_Text,
-    pub _localizedText: *mut crate::BGLib::Polyglot::LocalizedTextMeshPro,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+    pub _localizedText: quest_hook::libil2cpp::Gc<
+        crate::BGLib::Polyglot::LocalizedTextMeshPro,
+    >,
 }
 #[cfg(feature = "LevelFailedText")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct MemoryTraceWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _traceMessages: *mut crate::System::Collections::Generic::Queue_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _traceMessages: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _lock: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _lock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _LevelFilter_k__BackingField: crate::System::Diagnostics::TraceLevel,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+MemoryTraceWriter")]

@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct EnumTableViewDataSource_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _cellPrefab: *mut crate::GlobalNamespace::TextOnlyTableCell,
+    pub _cellPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TextOnlyTableCell,
+    >,
     pub _cellHeight: f32,
-    pub _values: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub _values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "EnumTableViewDataSource_1")]

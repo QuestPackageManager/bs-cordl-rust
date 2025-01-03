@@ -10,13 +10,15 @@ pub struct TextContainer {
     pub m_isDefaultWidth: bool,
     pub m_isDefaultHeight: bool,
     pub m_isAutoFitting: bool,
-    pub m_corners: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-    pub m_worldCorners: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub m_corners: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
+    pub m_worldCorners: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
     pub m_margins: crate::UnityEngine::Vector4,
-    pub m_rectTransform: *mut crate::UnityEngine::RectTransform,
-    pub m_textMeshPro: *mut crate::TMPro::TextMeshPro,
+    pub m_rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub m_textMeshPro: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
 }
 #[cfg(feature = "TMPro+TextContainer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

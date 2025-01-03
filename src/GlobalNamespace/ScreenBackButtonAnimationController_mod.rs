@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct ScreenBackButtonAnimationController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _animator: *mut crate::UnityEngine::Animator,
-    pub _animationHashes: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType,
-        i32,
+    pub _animator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
+    pub _animationHashes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType,
+            i32,
+        >,
     >,
 }
 #[cfg(feature = "ScreenBackButtonAnimationController")]

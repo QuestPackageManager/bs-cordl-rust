@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_Data_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VREvent_Data_t {
     padding: [u8; 32usize],
 }

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct InputSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub m_SupportedDevices: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_SupportedDevices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub m_UpdateMode: crate::UnityEngine::InputSystem::InputSettings_UpdateMode,
     pub m_MaxEventBytesPerUpdate: i32,
@@ -23,8 +23,10 @@ pub struct InputSettings {
     pub m_MultiTapDelayTime: f32,
     pub m_DisableRedundantEventsMerging: bool,
     pub m_ShortcutKeysConsumeInputs: bool,
-    pub m_FeatureFlags: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_FeatureFlags: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputSettings")]

@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct IconSegmentedControlCell {
     __cordl_parent: crate::HMUI::SegmentedControlCell,
-    pub _icon: *mut crate::UnityEngine::UI::Image,
-    pub _hoverHint: *mut crate::HMUI::HoverHint,
-    pub _backgroundGameObject: *mut crate::UnityEngine::GameObject,
+    pub _icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _hoverHint: quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>,
+    pub _backgroundGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
 #[cfg(feature = "HMUI+IconSegmentedControlCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct LeaderboardIdsSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _leaderboardIds: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+    pub _leaderboardIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+        >,
     >,
 }
 #[cfg(feature = "LeaderboardIdsSO")]
@@ -144,8 +146,12 @@ for crate::GlobalNamespace::LeaderboardIdsSO {
 #[derive(Debug)]
 pub struct LeaderboardIdsSO_LeaderboardIdData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _difficultyBeatmapId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _platformLeaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _difficultyBeatmapId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _platformLeaderboardId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "LeaderboardIdsSO+LeaderboardIdData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

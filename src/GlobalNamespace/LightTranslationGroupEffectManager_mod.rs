@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct LightTranslationGroupEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightTranslationGroups: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::LightTranslationGroup,
+    pub _lightTranslationGroups: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::LightTranslationGroup,
+        >,
     >,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _lightTranslationGroupEffects: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LightTranslationGroupEffect,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _lightTranslationGroupEffects: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LightTranslationGroupEffect,
+        >,
     >,
 }
 #[cfg(feature = "LightTranslationGroupEffectManager")]

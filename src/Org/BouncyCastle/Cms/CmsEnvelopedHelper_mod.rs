@@ -164,9 +164,11 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper {
 #[derive(Debug)]
 pub struct CmsEnvelopedHelper_CmsAuthenticatedSecureReadable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub algorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub mac: *mut crate::Org::BouncyCastle::Crypto::IMac,
-    pub readable: *mut crate::Org::BouncyCastle::Cms::CmsReadable,
+    pub algorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
+    pub readable: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsReadable>,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsAuthenticatedSecureReadable"
@@ -305,9 +307,13 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureRead
 #[derive(Debug)]
 pub struct CmsEnvelopedHelper_CmsEnvelopedSecureReadable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub algorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::IBufferedCipher,
-    pub readable: *mut crate::Org::BouncyCastle::Cms::CmsReadable,
+    pub algorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBufferedCipher,
+    >,
+    pub readable: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsReadable>,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsEnvelopedSecureReadable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

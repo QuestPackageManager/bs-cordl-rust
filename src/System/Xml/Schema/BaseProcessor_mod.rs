@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct BaseProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub nameTable: *mut crate::System::Xml::XmlNameTable,
-    pub schemaNames: *mut crate::System::Xml::Schema::SchemaNames,
-    pub eventHandler: *mut crate::System::Xml::Schema::ValidationEventHandler,
-    pub compilationSettings: *mut crate::System::Xml::Schema::XmlSchemaCompilationSettings,
+    pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+    pub schemaNames: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNames>,
+    pub eventHandler: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::ValidationEventHandler,
+    >,
+    pub compilationSettings: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaCompilationSettings,
+    >,
     pub errorCount: i32,
-    pub NsXml: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NsXml: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Schema+BaseProcessor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

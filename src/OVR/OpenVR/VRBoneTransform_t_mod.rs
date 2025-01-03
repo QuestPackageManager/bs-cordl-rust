@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VRBoneTransform_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VRBoneTransform_t {
     pub position: crate::OVR::OpenVR::HmdVector4_t,
     pub orientation: crate::OVR::OpenVR::HmdQuaternionf_t,

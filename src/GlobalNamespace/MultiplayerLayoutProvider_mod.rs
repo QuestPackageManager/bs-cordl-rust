@@ -5,9 +5,8 @@ pub struct MultiplayerLayoutProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _layout_k__BackingField: crate::GlobalNamespace::MultiplayerPlayerLayout,
     pub _activePlayerSpotsCount_k__BackingField: i32,
-    pub playersLayoutWasCalculatedEvent: *mut crate::System::Action_2<
-        crate::GlobalNamespace::MultiplayerPlayerLayout,
-        i32,
+    pub playersLayoutWasCalculatedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<crate::GlobalNamespace::MultiplayerPlayerLayout, i32>,
     >,
 }
 #[cfg(feature = "MultiplayerLayoutProvider")]

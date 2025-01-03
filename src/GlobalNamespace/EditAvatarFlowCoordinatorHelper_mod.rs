@@ -3,16 +3,26 @@
 #[derive(Debug)]
 pub struct EditAvatarFlowCoordinatorHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _avatarSystemSelectionFlowCoordinator: *mut crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _avatarSystemCollection: *mut crate::BeatSaber::AvatarCore::AvatarSystemCollection,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub didFinishEvent: *mut crate::System::Action_2<
-        *mut crate::HMUI::FlowCoordinator,
-        crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
+    pub _avatarSystemSelectionFlowCoordinator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
     >,
-    pub _parentFlowCoordinator: *mut crate::HMUI::FlowCoordinator,
-    pub _singleAvatarEditorFlowCoordinator: *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _avatarSystemCollection: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::AvatarSystemCollection,
+    >,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::HMUI::FlowCoordinator,
+            crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
+        >,
+    >,
+    pub _parentFlowCoordinator: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+    pub _singleAvatarEditorFlowCoordinator: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+    >,
 }
 #[cfg(feature = "EditAvatarFlowCoordinatorHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

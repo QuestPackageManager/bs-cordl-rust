@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct TeeInputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
-    pub input: *mut crate::System::IO::Stream,
-    pub tee: *mut crate::System::IO::Stream,
+    pub input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub tee: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+TeeInputStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

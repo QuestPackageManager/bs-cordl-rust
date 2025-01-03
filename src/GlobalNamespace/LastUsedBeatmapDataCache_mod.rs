@@ -1,12 +1,20 @@
 #[cfg(feature = "LastUsedBeatmapDataCache")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LastUsedBeatmapDataCache {
-    pub cachedReadonlyBeatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
+    pub cachedReadonlyBeatmapData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IReadonlyBeatmapData,
+    >,
     pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
-    pub _environmentInfo: *mut crate::GlobalNamespace::IEnvironmentInfo,
-    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-    pub _playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+    pub _environmentInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IEnvironmentInfo,
+    >,
+    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
+    >,
+    pub _playerSpecificSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSpecificSettings,
+    >,
 }
 #[cfg(feature = "LastUsedBeatmapDataCache")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct PosesRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
-    pub _transforms: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Transform,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
     >,
-    pub _data: *mut crate::GlobalNamespace::PosesRecordingData,
+    pub _transforms: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
+    >,
+    pub _data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingData>,
 }
 #[cfg(feature = "PosesRecorder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

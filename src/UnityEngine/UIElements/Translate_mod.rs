@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+Translate")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Translate {
     pub m_X: crate::UnityEngine::UIElements::Length,
     pub m_Y: crate::UnityEngine::UIElements::Length,

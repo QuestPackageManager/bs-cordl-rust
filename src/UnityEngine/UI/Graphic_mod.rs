@@ -3,27 +3,35 @@
 #[derive(Debug)]
 pub struct Graphic {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
-    pub m_Material: *mut crate::UnityEngine::Material,
+    pub m_Material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub m_Color: crate::UnityEngine::Color,
     pub m_SkipLayoutUpdate: bool,
     pub m_SkipMaterialUpdate: bool,
     pub m_RaycastTarget: bool,
     pub m_RaycastTargetCache: bool,
     pub m_RaycastPadding: crate::UnityEngine::Vector4,
-    pub m_RectTransform: *mut crate::UnityEngine::RectTransform,
-    pub m_CanvasRenderer: *mut crate::UnityEngine::CanvasRenderer,
-    pub m_Canvas: *mut crate::UnityEngine::Canvas,
+    pub m_RectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub m_CanvasRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasRenderer>,
+    pub m_Canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     pub m_VertsDirty: bool,
     pub m_MaterialDirty: bool,
-    pub m_OnDirtyLayoutCallback: *mut crate::UnityEngine::Events::UnityAction,
-    pub m_OnDirtyVertsCallback: *mut crate::UnityEngine::Events::UnityAction,
-    pub m_OnDirtyMaterialCallback: *mut crate::UnityEngine::Events::UnityAction,
-    pub m_CachedMesh: *mut crate::UnityEngine::Mesh,
-    pub m_CachedUvs: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector2,
+    pub m_OnDirtyLayoutCallback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::UnityAction,
     >,
-    pub m_ColorTweenRunner: *mut crate::UnityEngine::UI::CoroutineTween::TweenRunner_1<
-        crate::UnityEngine::UI::CoroutineTween::ColorTween,
+    pub m_OnDirtyVertsCallback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::UnityAction,
+    >,
+    pub m_OnDirtyMaterialCallback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::UnityAction,
+    >,
+    pub m_CachedMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub m_CachedUvs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+    >,
+    pub m_ColorTweenRunner: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::CoroutineTween::TweenRunner_1<
+            crate::UnityEngine::UI::CoroutineTween::ColorTween,
+        >,
     >,
     pub _useLegacyMeshGeneration_k__BackingField: bool,
 }

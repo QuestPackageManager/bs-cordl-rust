@@ -3,18 +3,26 @@
 #[derive(Debug)]
 pub struct G_AudioGraph {
     __cordl_parent: crate::Tayx::Graphy::Graph::G_Graph,
-    pub m_imageGraph: *mut crate::UnityEngine::UI::Image,
-    pub m_imageGraphHighestValues: *mut crate::UnityEngine::UI::Image,
-    pub ShaderFull: *mut crate::UnityEngine::Shader,
-    pub ShaderLight: *mut crate::UnityEngine::Shader,
+    pub m_imageGraph: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub m_imageGraphHighestValues: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Image,
+    >,
+    pub ShaderFull: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub ShaderLight: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub m_isInitialized: bool,
-    pub m_graphyManager: *mut crate::Tayx::Graphy::GraphyManager,
-    pub m_audioMonitor: *mut crate::Tayx::Graphy::Audio::G_AudioMonitor,
+    pub m_graphyManager: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
+    pub m_audioMonitor: quest_hook::libil2cpp::Gc<
+        crate::Tayx::Graphy::Audio::G_AudioMonitor,
+    >,
     pub m_resolution: i32,
-    pub m_shaderGraph: *mut crate::Tayx::Graphy::G_GraphShader,
-    pub m_shaderGraphHighestValues: *mut crate::Tayx::Graphy::G_GraphShader,
-    pub m_graphArray: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub m_graphArrayHighestValue: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub m_shaderGraph: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::G_GraphShader>,
+    pub m_shaderGraphHighestValues: quest_hook::libil2cpp::Gc<
+        crate::Tayx::Graphy::G_GraphShader,
+    >,
+    pub m_graphArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub m_graphArrayHighestValue: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
 }
 #[cfg(feature = "Tayx+Graphy+Audio+G_AudioGraph")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

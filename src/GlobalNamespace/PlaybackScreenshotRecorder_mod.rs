@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PlaybackScreenshotRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _directory: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _playbackRenderer: *mut crate::GlobalNamespace::PlaybackRenderer,
+    pub _directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _playbackRenderer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlaybackRenderer,
+    >,
     pub _frameNumber: i32,
 }
 #[cfg(feature = "PlaybackScreenshotRecorder")]

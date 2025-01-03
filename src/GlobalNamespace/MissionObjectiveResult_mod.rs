@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MissionObjectiveResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _missionObjective_k__BackingField: *mut crate::GlobalNamespace::MissionObjective,
+    pub _missionObjective_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionObjective,
+    >,
     pub _cleared_k__BackingField: bool,
     pub _value_k__BackingField: i32,
 }

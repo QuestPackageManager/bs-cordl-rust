@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SharedStatics {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _maker: *mut crate::System::Security::Util::Tokenizer_StringMaker,
+    pub _maker: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Util::Tokenizer_StringMaker,
+    >,
 }
 #[cfg(feature = "System+SharedStatics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

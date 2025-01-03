@@ -1,6 +1,6 @@
 #[cfg(feature = "LIV+SDK+Unity+SDKVector3")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SDKVector3 {
     pub x: f32,
     pub y: f32,

@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct MainEffectController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _mainEffectContainer: *mut crate::GlobalNamespace::MainEffectContainerSO,
-    pub _fadeValue: *mut crate::GlobalNamespace::FloatSO,
-    pub afterImageEffectEvent: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::RenderTexture,
+    pub _mainEffectContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MainEffectContainerSO,
     >,
-    pub _imageEffectController: *mut crate::GlobalNamespace::ImageEffectController,
+    pub _fadeValue: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatSO>,
+    pub afterImageEffectEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::RenderTexture>,
+    >,
+    pub _imageEffectController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ImageEffectController,
+    >,
 }
 #[cfg(feature = "MainEffectController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

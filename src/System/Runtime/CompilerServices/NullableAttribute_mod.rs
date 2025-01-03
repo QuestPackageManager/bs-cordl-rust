@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct NullableAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub NullableFlags: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub NullableFlags: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+NullableAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

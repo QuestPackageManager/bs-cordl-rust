@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ECMqvBasicAgreement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub privParams: *mut crate::Org::BouncyCastle::Crypto::Parameters::MqvPrivateParameters,
+    pub privParams: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::MqvPrivateParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+ECMqvBasicAgreement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

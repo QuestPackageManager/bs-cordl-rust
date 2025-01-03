@@ -6,8 +6,8 @@ pub struct OVRFaceExpressions {
     pub _ValidExpressions_k__BackingField: bool,
     pub _EyeFollowingBlendshapesValid_k__BackingField: bool,
     pub _currentFaceState: crate::GlobalNamespace::OVRPlugin_FaceState,
-    pub _onPermissionGranted: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _onPermissionGranted: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "OVRFaceExpressions")]
@@ -451,9 +451,11 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRFaceExpressions_FaceExpressionsEnumerator {
-    pub _faceExpressions: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub _faceExpressions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
     pub _index: i32,
     pub _count: i32,
 }

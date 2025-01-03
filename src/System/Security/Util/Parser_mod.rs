@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct Parser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _doc: *mut crate::System::Security::SecurityDocument,
-    pub _t: *mut crate::System::Security::Util::Tokenizer,
+    pub _doc: quest_hook::libil2cpp::Gc<crate::System::Security::SecurityDocument>,
+    pub _t: quest_hook::libil2cpp::Gc<crate::System::Security::Util::Tokenizer>,
 }
 #[cfg(feature = "System+Security+Util+Parser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

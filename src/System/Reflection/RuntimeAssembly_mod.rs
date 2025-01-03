@@ -4,15 +4,17 @@
 pub struct RuntimeAssembly {
     __cordl_parent: crate::System::Reflection::Assembly,
     pub _mono_assembly: crate::System::IntPtr,
-    pub _evidence: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub resolve_event_holder: *mut crate::System::Reflection::Assembly_ResolveEventHolder,
-    pub _minimum: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _optional: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _refuse: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _granted: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _denied: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _evidence: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub resolve_event_holder: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::Assembly_ResolveEventHolder,
+    >,
+    pub _minimum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _optional: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _refuse: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _granted: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _denied: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub fromByteArray: bool,
-    pub assemblyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Reflection+RuntimeAssembly")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

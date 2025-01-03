@@ -3,19 +3,25 @@
 #[derive(Debug)]
 pub struct PropertyDescriptorCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cachedFoundProperties: *mut crate::System::Collections::IDictionary,
+    pub _cachedFoundProperties: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IDictionary,
+    >,
     pub _cachedIgnoreCase: bool,
-    pub _properties: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::ComponentModel::PropertyDescriptor,
+    pub _properties: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::ComponentModel::PropertyDescriptor,
+        >,
     >,
-    pub _namedSort: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _namedSort: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _comparer: *mut crate::System::Collections::IComparer,
+    pub _comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
     pub _propsOwned: bool,
     pub _needSort: bool,
     pub _readOnly: bool,
-    pub _internalSyncObject: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _internalSyncObject: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub _Count_k__BackingField: i32,
 }
 #[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
@@ -744,7 +750,9 @@ for crate::System::ComponentModel::PropertyDescriptorCollection {
 #[derive(Debug)]
 pub struct PropertyDescriptorCollection_PropertyDescriptorEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _owner: *mut crate::System::ComponentModel::PropertyDescriptorCollection,
+    pub _owner: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::PropertyDescriptorCollection,
+    >,
     pub _index: i32,
 }
 #[cfg(

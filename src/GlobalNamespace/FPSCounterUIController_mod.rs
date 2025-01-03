@@ -4,12 +4,14 @@
 pub struct FPSCounterUIController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _uiUpdateTimeInterval: f32,
-    pub _currentFPSText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _lowestFPSText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _highestFPSText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _droppedFramesText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
-    pub _fpsCounter: *mut crate::GlobalNamespace::FPSCounter,
+    pub _currentFPSText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _lowestFPSText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _highestFPSText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _droppedFramesText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
+    pub _fpsCounter: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FPSCounter>,
     pub _timeToUpdateUI: f32,
 }
 #[cfg(feature = "FPSCounterUIController")]

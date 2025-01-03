@@ -4,8 +4,12 @@
 pub struct AbstractTlsKeyExchange {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mKeyExchange: i32,
-    pub mSupportedSignatureAlgorithms: *mut crate::System::Collections::IList,
-    pub mContext: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+    pub mSupportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IList,
+    >,
+    pub mContext: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsKeyExchange")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

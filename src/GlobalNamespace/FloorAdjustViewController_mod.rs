@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct FloorAdjustViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _yIncButton: *mut crate::UnityEngine::UI::Button,
-    pub _yDecButton: *mut crate::UnityEngine::UI::Button,
-    pub _playerHeightText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
+    pub _yIncButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _yDecButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _playerHeightText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _settingsApplicator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsApplicatorSO,
+    >,
     pub _playerHeight: f32,
 }
 #[cfg(feature = "FloorAdjustViewController")]

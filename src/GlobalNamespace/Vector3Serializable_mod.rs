@@ -1,6 +1,6 @@
 #[cfg(feature = "Vector3Serializable")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Vector3Serializable {
     pub _x: i32,
     pub _y: i32,

@@ -1,16 +1,16 @@
 #[cfg(feature = "System+Reflection+MonoEventInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MonoEventInfo {
-    pub declaring_type: *mut crate::System::Type,
-    pub reflected_type: *mut crate::System::Type,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub add_method: *mut crate::System::Reflection::MethodInfo,
-    pub remove_method: *mut crate::System::Reflection::MethodInfo,
-    pub raise_method: *mut crate::System::Reflection::MethodInfo,
+    pub declaring_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub reflected_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub add_method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    pub remove_method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    pub raise_method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     pub attrs: crate::System::Reflection::EventAttributes,
-    pub other_methods: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Reflection::MethodInfo,
+    pub other_methods: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::MethodInfo>,
     >,
 }
 #[cfg(feature = "System+Reflection+MonoEventInfo")]

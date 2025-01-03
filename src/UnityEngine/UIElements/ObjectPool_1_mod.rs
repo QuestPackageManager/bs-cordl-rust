@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct ObjectPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Stack: *mut crate::System::Collections::Generic::Stack_1<T>,
+    pub m_Stack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<T>,
+    >,
     pub m_MaxSize: i32,
-    pub CreateFunc: *mut crate::System::Func_1<T>,
+    pub CreateFunc: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+UIElements+ObjectPool_1")]

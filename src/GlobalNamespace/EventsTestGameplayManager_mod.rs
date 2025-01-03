@@ -5,30 +5,44 @@ pub struct EventsTestGameplayManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _moveTime: bool,
     pub _spawnTestBox: bool,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _beatmapData: *mut crate::GlobalNamespace::BeatmapData,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
     pub _basicBeatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _floatValue: f32,
-    pub _beatmapEventDataBoxGroupLists: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapEventDataBoxGroupList,
+    pub _beatmapEventDataBoxGroupLists: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BeatmapEventDataBoxGroupList,
+        >,
     >,
-    pub groupState: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
-    pub _beatmapEventTypeBindings: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::KeyCode,
-        crate::GlobalNamespace::BasicBeatmapEventType,
+    pub groupState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
+    pub _beatmapEventTypeBindings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::KeyCode,
+            crate::GlobalNamespace::BasicBeatmapEventType,
+        >,
     >,
-    pub _intBindings: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::KeyCode,
-        i32,
+    pub _intBindings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::KeyCode,
+            i32,
+        >,
     >,
-    pub _beatmapValuesBindings: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::KeyCode,
-        i32,
+    pub _beatmapValuesBindings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::KeyCode,
+            i32,
+        >,
     >,
-    pub _floatValuesBindings: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::KeyCode,
-        f32,
+    pub _floatValuesBindings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::KeyCode,
+            f32,
+        >,
     >,
     pub _rotatingLasers: bool,
 }

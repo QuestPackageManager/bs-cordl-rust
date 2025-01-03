@@ -3,22 +3,32 @@
 #[derive(Debug)]
 pub struct LocalLeaderboardsModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub newScoreWasAddedToLeaderboardEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
+    pub newScoreWasAddedToLeaderboardEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
+        >,
     >,
-    pub _fileStorage: *mut crate::GlobalNamespace::IFileStorage,
+    pub _fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
     pub _maxNumberOfScoresInLeaderboard: i32,
-    pub _lastScorePositions: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
-        i32,
+    pub _lastScorePositions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
+            i32,
+        >,
     >,
-    pub _lastScoreLeaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _leaderboardsData: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+    pub _lastScoreLeaderboardId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _dailyLeaderboardsData: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+    pub _leaderboardsData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+        >,
+    >,
+    pub _dailyLeaderboardsData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+        >,
     >,
 }
 #[cfg(feature = "LocalLeaderboardsModel")]
@@ -512,9 +522,11 @@ for crate::GlobalNamespace::LocalLeaderboardsModel {
 #[derive(Debug)]
 pub struct LocalLeaderboardsModel_LeaderboardData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _scores: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+    pub _leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _scores: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+        >,
     >,
 }
 #[cfg(feature = "LocalLeaderboardsModel+LeaderboardData")]
@@ -585,8 +597,10 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct LocalLeaderboardsModel_SavedLeaderboardsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _leaderboardsData: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+    pub _leaderboardsData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+        >,
     >,
 }
 #[cfg(feature = "LocalLeaderboardsModel+SavedLeaderboardsData")]
@@ -646,7 +660,7 @@ for crate::GlobalNamespace::LocalLeaderboardsModel_SavedLeaderboardsData {
 pub struct LocalLeaderboardsModel_ScoreData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _score: i32,
-    pub _playerName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _fullCombo: bool,
     pub _timestamp: i64,
 }

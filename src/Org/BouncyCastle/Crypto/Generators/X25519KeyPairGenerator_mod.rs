@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct X25519KeyPairGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+X25519KeyPairGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

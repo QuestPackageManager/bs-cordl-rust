@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct NamedIntListSettingsController {
     __cordl_parent: crate::GlobalNamespace::ListSettingsController,
-    pub _textValuePairs: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::NamedIntListSettingsController_TextValuePair,
+    pub _textValuePairs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::NamedIntListSettingsController_TextValuePair,
+        >,
     >,
-    pub valueDidChangeEvent: *mut crate::System::Action_1<i32>,
+    pub valueDidChangeEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     pub _selectedIndex: i32,
 }
 #[cfg(feature = "NamedIntListSettingsController")]
@@ -135,7 +137,7 @@ for crate::GlobalNamespace::NamedIntListSettingsController {
 #[derive(Debug)]
 pub struct NamedIntListSettingsController_TextValuePair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub text: *mut quest_hook::libil2cpp::Il2CppString,
+    pub text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub value: i32,
 }
 #[cfg(feature = "NamedIntListSettingsController+TextValuePair")]

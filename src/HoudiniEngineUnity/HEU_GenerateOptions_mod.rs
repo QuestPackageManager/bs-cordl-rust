@@ -1,6 +1,6 @@
 #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateOptions")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HEU_GenerateOptions {
     pub _generateUVs: bool,
     pub _generateTangents: bool,

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct BeatAvatar {
     __cordl_parent: crate::BeatSaber::AvatarCore::Avatar,
-    pub _avatarVisualController: *mut crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController,
-    pub _avatarPoseController: *mut crate::BeatSaber::BeatAvatarSDK::BeatAvatarPoseController,
+    pub _avatarVisualController: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController,
+    >,
+    pub _avatarPoseController: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::BeatAvatarPoseController,
+    >,
 }
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatar")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

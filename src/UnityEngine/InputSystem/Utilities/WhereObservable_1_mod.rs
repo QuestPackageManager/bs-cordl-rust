@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct WhereObservable_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Source: *mut crate::System::IObservable_1<TValue>,
-    pub m_Predicate: *mut crate::System::Func_2<TValue, bool>,
+    pub m_Source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
+    pub m_Predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TValue, bool>>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+WhereObservable_1")]
@@ -113,10 +113,10 @@ for crate::UnityEngine::InputSystem::Utilities::WhereObservable_1<TValue> {
 #[derive(Debug)]
 pub struct WhereObservable_1_Where<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Observable: *mut crate::UnityEngine::InputSystem::Utilities::WhereObservable_1<
-        TValue,
+    pub m_Observable: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Utilities::WhereObservable_1<TValue>,
     >,
-    pub m_Observer: *mut crate::System::IObserver_1<TValue>,
+    pub m_Observer: quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TValue>>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+WhereObservable_1+Where")]

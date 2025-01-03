@@ -16,8 +16,12 @@ pub struct TrackedPoseDriver {
     pub m_PositionBound: bool,
     pub m_TrackingStateBound: bool,
     pub m_IsFirstUpdate: bool,
-    pub m_PositionAction: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub m_RotationAction: *mut crate::UnityEngine::InputSystem::InputAction,
+    pub m_PositionAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub m_RotationAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

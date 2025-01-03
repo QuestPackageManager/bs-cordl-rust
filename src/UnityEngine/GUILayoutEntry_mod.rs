@@ -11,7 +11,7 @@ pub struct GUILayoutEntry {
     pub stretchWidth: i32,
     pub stretchHeight: i32,
     pub consideredForMargin: bool,
-    pub m_Style: *mut crate::UnityEngine::GUIStyle,
+    pub m_Style: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
 }
 #[cfg(feature = "UnityEngine+GUILayoutEntry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

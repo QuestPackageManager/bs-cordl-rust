@@ -677,7 +677,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Unity+Burst+BurstString+FormatOptions")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BurstString_FormatOptions {
     pub Kind: crate::Unity::Burst::BurstString_NumberFormatKind,
     pub AlignAndSize: i8,
@@ -753,9 +753,9 @@ impl crate::Unity::Burst::BurstString_FormatOptions {
 }
 #[cfg(feature = "Unity+Burst+BurstString+NumberBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BurstString_NumberBuffer {
-    pub _buffer: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Kind: crate::Unity::Burst::BurstString_NumberBufferKind,
     pub DigitsCount: i32,
     pub Scale: i32,
@@ -899,7 +899,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Unity+Burst+BurstString+tBigInt")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BurstString_tBigInt {
     pub m_length: i32,
     pub m_blocks: crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer,
@@ -992,7 +992,7 @@ impl crate::Unity::Burst::BurstString_tBigInt {
 }
 #[cfg(feature = "Unity+Burst+BurstString+tFloatUnion32")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BurstString_tFloatUnion32 {
     padding: [u8; 4usize],
 }
@@ -1041,7 +1041,7 @@ impl crate::Unity::Burst::BurstString_tFloatUnion32 {
 }
 #[cfg(feature = "Unity+Burst+BurstString+tFloatUnion64")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BurstString_tFloatUnion64 {
     padding: [u8; 8usize],
 }
@@ -1090,7 +1090,7 @@ impl crate::Unity::Burst::BurstString_tFloatUnion64 {
 }
 #[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct tBigInt_BurstString__m_blocks_e__FixedBuffer {
     pub FixedElementField: u32,
 }

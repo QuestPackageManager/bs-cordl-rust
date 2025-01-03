@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct ProviderData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Ref: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Type: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Id: *mut quest_hook::libil2cpp::Il2CppString,
-    pub CustomProperties: *mut crate::System::Collections::Hashtable,
-    pub CustomData: *mut crate::System::Collections::IList,
+    pub Ref: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub CustomProperties: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
+    pub CustomData: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "System+Runtime+Remoting+ProviderData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

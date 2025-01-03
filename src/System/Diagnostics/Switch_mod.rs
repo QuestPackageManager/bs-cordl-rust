@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct Switch {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub description: *mut quest_hook::libil2cpp::Il2CppString,
-    pub displayName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub switchValueString: *mut quest_hook::libil2cpp::Il2CppString,
-    pub defaultValue: *mut quest_hook::libil2cpp::Il2CppString,
+    pub description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub switchValueString: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub defaultValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Diagnostics+Switch")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ScheduleRuntimeClip {
     __cordl_parent: crate::UnityEngine::Timeline::RuntimeClipBase,
-    pub m_Clip: *mut crate::UnityEngine::Timeline::TimelineClip,
+    pub m_Clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
     pub m_Playable: crate::UnityEngine::Playables::Playable,
     pub m_ParentMixer: crate::UnityEngine::Playables::Playable,
     pub m_StartDelay: f64,

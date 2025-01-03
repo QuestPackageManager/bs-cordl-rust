@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CastReferenceToEnumInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::CastInstruction,
-    pub _t: *mut crate::System::Type,
+    pub _t: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+CastReferenceToEnumInstruction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

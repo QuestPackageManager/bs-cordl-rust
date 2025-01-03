@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct Destination {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub ApiName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub DeeplinkMessage: *mut quest_hook::libil2cpp::Il2CppString,
-    pub DisplayName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ApiName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub DeeplinkMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub DisplayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Oculus+Platform+Models+Destination")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

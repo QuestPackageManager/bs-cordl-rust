@@ -5,7 +5,7 @@ pub struct ColorTMPTextStateTransition {
     __cordl_parent: crate::GlobalNamespace::ColorStateTransition_1<
         *mut crate::TMPro::TMP_Text,
     >,
-    pub _colorTween: *mut crate::Tweening::ColorTween,
+    pub _colorTween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
 }
 #[cfg(feature = "ColorTMPTextStateTransition")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

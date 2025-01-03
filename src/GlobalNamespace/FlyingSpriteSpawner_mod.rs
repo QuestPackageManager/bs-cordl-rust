@@ -3,15 +3,17 @@
 #[derive(Debug)]
 pub struct FlyingSpriteSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _sprite: *mut crate::UnityEngine::Sprite,
-    pub _material: *mut crate::UnityEngine::Material,
+    pub _sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _duration: f32,
     pub _xSpread: f32,
     pub _targetYPos: f32,
     pub _targetZPos: f32,
     pub _color: crate::UnityEngine::Color,
     pub _shake: bool,
-    pub _flyingSpriteEffectPool: *mut crate::GlobalNamespace::FlyingSpriteEffect_Pool,
+    pub _flyingSpriteEffectPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FlyingSpriteEffect_Pool,
+    >,
 }
 #[cfg(feature = "FlyingSpriteSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

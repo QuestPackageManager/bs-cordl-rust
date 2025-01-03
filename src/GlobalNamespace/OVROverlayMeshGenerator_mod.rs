@@ -3,20 +3,22 @@
 #[derive(Debug)]
 pub struct OVROverlayMeshGenerator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _Mesh: *mut crate::UnityEngine::Mesh,
-    pub _Verts: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector3,
+    pub _Mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub _Verts: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
     >,
-    pub _UV: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector2,
+    pub _UV: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
     >,
-    pub _Tris: *mut crate::System::Collections::Generic::List_1<i32>,
-    pub _Overlay: *mut crate::GlobalNamespace::OVROverlay,
-    pub _MeshFilter: *mut crate::UnityEngine::MeshFilter,
-    pub _MeshCollider: *mut crate::UnityEngine::MeshCollider,
-    pub _MeshRenderer: *mut crate::UnityEngine::MeshRenderer,
-    pub _CameraRoot: *mut crate::UnityEngine::Transform,
-    pub _Transform: *mut crate::UnityEngine::Transform,
+    pub _Tris: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
+    pub _Overlay: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVROverlay>,
+    pub _MeshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
+    pub _MeshCollider: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshCollider>,
+    pub _MeshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+    pub _CameraRoot: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _Transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _LastShape: crate::GlobalNamespace::OVROverlay_OverlayShape,
     pub _LastPosition: crate::UnityEngine::Vector3,
     pub _LastRotation: crate::UnityEngine::Quaternion,
@@ -24,7 +26,7 @@ pub struct OVROverlayMeshGenerator {
     pub _LastDestRectLeft: crate::UnityEngine::Rect,
     pub _LastDestRectRight: crate::UnityEngine::Rect,
     pub _LastSrcRectLeft: crate::UnityEngine::Rect,
-    pub _LastTexture: *mut crate::UnityEngine::Texture,
+    pub _LastTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub _Awake: bool,
 }
 #[cfg(feature = "OVROverlayMeshGenerator")]

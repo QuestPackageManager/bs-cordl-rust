@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DsaPublicKeyParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::DsaKeyParameters,
-    pub y: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub y: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DsaPublicKeyParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct BeatmapCharacteristicSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _icon: *mut crate::UnityEngine::Sprite,
-    pub _descriptionLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _characteristicNameLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _serializedName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _compoundIdPartName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _descriptionLocalizationKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _characteristicNameLocalizationKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _serializedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _compoundIdPartName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _sortingOrder: i32,
     pub _containsRotationEvents: bool,
     pub _requires360Movement: bool,

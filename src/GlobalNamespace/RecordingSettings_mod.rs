@@ -3,23 +3,27 @@
 #[derive(Debug)]
 pub struct RecordingSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub gameMode: *mut quest_hook::libil2cpp::Il2CppString,
-    pub pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
-    pub level: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+    pub level: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     pub difficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    pub characteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub characteristic: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSO,
+    >,
     pub runLevel: bool,
     pub recordPerformance: bool,
     pub recordingMode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
-    pub recordingPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub recordingPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub cameraView: crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
     pub addDateTimeSuffixToRecordingName: bool,
     pub screenshotRecording: bool,
     pub screenshotWidth: i32,
     pub screenshotHeight: i32,
     pub framerate: i32,
-    pub playbackScreenshots: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+    pub playbackScreenshots: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+        >,
     >,
     pub practice: bool,
     pub startSongTime: f32,
@@ -28,7 +32,9 @@ pub struct RecordingSettings {
     pub environmentType: crate::System::Nullable_1<
         crate::GlobalNamespace::EnvironmentType,
     >,
-    pub environmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub environmentInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentInfoSO,
+    >,
     pub saveToOldFormat: bool,
 }
 #[cfg(feature = "RecordingSettings")]

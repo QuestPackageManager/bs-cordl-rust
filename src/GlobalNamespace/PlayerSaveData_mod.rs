@@ -44,11 +44,15 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct PlayerSaveData {
     __cordl_parent: crate::GlobalNamespace::VersionSaveData,
-    pub localPlayers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::PlayerSaveData_LocalPlayer,
+    pub localPlayers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::PlayerSaveData_LocalPlayer,
+        >,
     >,
-    pub guestPlayers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::PlayerSaveData_GuestPlayer,
+    pub guestPlayers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::PlayerSaveData_GuestPlayer,
+        >,
     >,
 }
 #[cfg(feature = "PlayerSaveData")]
@@ -151,7 +155,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct PlayerSaveData_ColorScheme {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub colorSchemeId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub colorSchemeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub saberAColor: crate::UnityEngine::Color,
     pub saberBColor: crate::UnityEngine::Color,
     pub environmentColor0: crate::UnityEngine::Color,
@@ -255,10 +259,14 @@ for crate::GlobalNamespace::PlayerSaveData_ColorScheme {
 pub struct PlayerSaveData_ColorSchemesSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub overrideDefaultColors: bool,
-    pub selectedColorSchemeId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub selectedColorSchemeId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub colorOverrideType: crate::GlobalNamespace::PlayerSaveData_ColorOverrideType,
-    pub colorSchemes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::PlayerSaveData_ColorScheme,
+    pub colorSchemes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::PlayerSaveData_ColorScheme,
+        >,
     >,
 }
 #[cfg(feature = "PlayerSaveData+ColorSchemesSettings")]
@@ -428,7 +436,7 @@ for crate::GlobalNamespace::PlayerSaveData_GameplayModifiers {
 #[derive(Debug)]
 pub struct PlayerSaveData_GuestPlayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub playerName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "PlayerSaveData+GuestPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -483,39 +491,69 @@ for crate::GlobalNamespace::PlayerSaveData_GuestPlayer {
 #[derive(Debug)]
 pub struct PlayerSaveData_LocalPlayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub playerId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub playerName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub shouldShowTutorialPrompt: bool,
     pub shouldShow360Warning: bool,
     pub agreedToEula: bool,
     pub didSelectLanguage: bool,
     pub agreedToMultiplayerDisclaimer: bool,
     pub didSelectRegionVersion: i32,
-    pub selectedAvatarSystemTypeId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub playerAgreements: *mut crate::GlobalNamespace::PlayerSaveData_PlayerAgreementsData,
+    pub selectedAvatarSystemTypeId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub playerAgreements: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveData_PlayerAgreementsData,
+    >,
     pub lastSelectedBeatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    pub lastSelectedBeatmapCharacteristicName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub gameplayModifiers: *mut crate::GlobalNamespace::PlayerSaveData_GameplayModifiers,
-    pub playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings,
-    pub practiceSettings: *mut crate::GlobalNamespace::PlayerSaveData_PracticeSettings,
-    pub playerAllOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData,
-    pub levelsStatsData: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData,
+    pub lastSelectedBeatmapCharacteristicName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub missionsStatsData: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData,
+    pub gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveData_GameplayModifiers,
     >,
-    pub showedMissionHelpIds: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub playerSpecificSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings,
     >,
-    pub colorSchemesSettings: *mut crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings,
-    pub overrideEnvironmentSettings: *mut crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings,
-    pub favoritesLevelIds: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub practiceSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveData_PracticeSettings,
     >,
-    pub multiplayerModeSettings: *mut crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings,
+    pub playerAllOverallStatsData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData,
+    >,
+    pub levelsStatsData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData,
+        >,
+    >,
+    pub missionsStatsData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData,
+        >,
+    >,
+    pub showedMissionHelpIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+    pub colorSchemesSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings,
+    >,
+    pub overrideEnvironmentSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings,
+    >,
+    pub favoritesLevelIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+    pub multiplayerModeSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings,
+    >,
     pub currentDlcPromoDisplayCount: i32,
-    pub currentDlcPromoId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub currentDlcPromoId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub userAgeCategory: crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData,
     pub desiredSensitivityFlag: crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData,
 }
@@ -573,9 +611,15 @@ for crate::GlobalNamespace::PlayerSaveData_LocalPlayer {
 pub struct PlayerSaveData_MultiplayerModeSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub createServerNumberOfPlayers: i32,
-    pub quickPlayDifficulty: *mut quest_hook::libil2cpp::Il2CppString,
-    pub quickPlaySongPackMask: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub quickPlaySongPackMaskSerializedName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub quickPlayDifficulty: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub quickPlaySongPackMask: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub quickPlaySongPackMaskSerializedName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub quickPlayEnableLevelSelection: bool,
 }
 #[cfg(feature = "PlayerSaveData+MultiplayerModeSettings")]
@@ -634,8 +678,12 @@ for crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings {
 pub struct PlayerSaveData_OverrideEnvironmentSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub overrideEnvironments: bool,
-    pub overrideNormalEnvironmentName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub override360EnvironmentName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub overrideNormalEnvironmentName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub override360EnvironmentName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "PlayerSaveData+OverrideEnvironmentSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -753,10 +801,18 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerAgreementsData {
 #[derive(Debug)]
 pub struct PlayerSaveData_PlayerAllOverallStatsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub campaignOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
-    pub soloFreePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
-    pub partyFreePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
-    pub onlinePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
+    pub campaignOverallStatsData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
+    >,
+    pub soloFreePlayOverallStatsData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
+    >,
+    pub partyFreePlayOverallStatsData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
+    >,
+    pub onlinePlayOverallStatsData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
+    >,
 }
 #[cfg(feature = "PlayerSaveData+PlayerAllOverallStatsData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -872,9 +928,11 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData {
 #[derive(Debug)]
 pub struct PlayerSaveData_PlayerLevelStatsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub levelId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub difficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    pub beatmapCharacteristicName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub beatmapCharacteristicName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub highScore: i32,
     pub maxCombo: i32,
     pub fullCombo: bool,
@@ -936,7 +994,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData {
 #[derive(Debug)]
 pub struct PlayerSaveData_PlayerMissionStatsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub missionId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub missionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub cleared: bool,
 }
 #[cfg(feature = "PlayerSaveData+PlayerMissionStatsData")]

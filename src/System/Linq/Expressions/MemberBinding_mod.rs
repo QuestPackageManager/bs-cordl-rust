@@ -4,7 +4,9 @@
 pub struct MemberBinding {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _BindingType_k__BackingField: crate::System::Linq::Expressions::MemberBindingType,
-    pub _Member_k__BackingField: *mut crate::System::Reflection::MemberInfo,
+    pub _Member_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MemberInfo,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+MemberBinding")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct OnScreenButton {
     __cordl_parent: crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
-    pub m_ControlPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ControlPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenButton")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

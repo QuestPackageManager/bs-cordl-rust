@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ScopeExpression {
     __cordl_parent: crate::System::Linq::Expressions::BlockExpression,
-    pub _variables: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::System::Linq::Expressions::ParameterExpression,
+    pub _variables: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::System::Linq::Expressions::ParameterExpression,
+        >,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+ScopeExpression")]

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct InstantMenuButtonTrigger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub menuButtonTriggeredEvent: *mut crate::System::Action,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
+    pub menuButtonTriggeredEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "InstantMenuButtonTrigger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -230,7 +230,7 @@ for crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+MemoryHelpers+BitRegion")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MemoryHelpers_BitRegion {
     pub bitOffset: u32,
     pub sizeInBits: u32,

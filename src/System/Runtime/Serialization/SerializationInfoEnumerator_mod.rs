@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct SerializationInfoEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _members: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _members: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _data: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _data: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub _types: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    pub _types: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    >,
     pub _numItems: i32,
     pub _currItem: i32,
     pub _current: bool,

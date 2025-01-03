@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+RenderModel_Vertex_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RenderModel_Vertex_t {
     pub vPosition: crate::OVR::OpenVR::HmdVector3_t,
     pub vNormal: crate::OVR::OpenVR::HmdVector3_t,

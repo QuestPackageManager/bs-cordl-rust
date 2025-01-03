@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct LanguagePackInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub EnglishName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub NativeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Tag: *mut quest_hook::libil2cpp::Il2CppString,
+    pub EnglishName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub NativeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Oculus+Platform+Models+LanguagePackInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

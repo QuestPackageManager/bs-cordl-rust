@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct RC2CbcParameter {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub iv: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub iv: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+RC2CbcParameter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

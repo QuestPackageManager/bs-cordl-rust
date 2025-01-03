@@ -4,9 +4,15 @@
 pub struct BestFitAllocator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _totalSize_k__BackingField: u32,
-    pub m_FirstBlock: *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
-    pub m_FirstAvailableBlock: *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
-    pub m_BlockPool: *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool,
+    pub m_FirstBlock: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
+    >,
+    pub m_FirstAvailableBlock: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
+    >,
+    pub m_BlockPool: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool,
+    >,
     pub m_HighWatermark: u32,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator")]
@@ -157,10 +163,18 @@ pub struct BestFitAllocator_Block {
     >,
     pub start: u32,
     pub end: u32,
-    pub prev: *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
-    pub next: *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
-    pub prevAvailable: *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
-    pub nextAvailable: *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
+    pub prev: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
+    >,
+    pub next: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
+    >,
+    pub prevAvailable: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
+    >,
+    pub nextAvailable: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
+    >,
     pub allocated: bool,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+Block")]

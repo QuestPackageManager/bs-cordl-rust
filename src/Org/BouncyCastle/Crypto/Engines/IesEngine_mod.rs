@@ -3,15 +3,27 @@
 #[derive(Debug)]
 pub struct IesEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub agree: *mut crate::Org::BouncyCastle::Crypto::IBasicAgreement,
-    pub kdf: *mut crate::Org::BouncyCastle::Crypto::IDerivationFunction,
-    pub mac: *mut crate::Org::BouncyCastle::Crypto::IMac,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::BufferedBlockCipher,
-    pub macBuf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub agree: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBasicAgreement,
+    >,
+    pub kdf: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IDerivationFunction,
+    >,
+    pub mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::BufferedBlockCipher,
+    >,
+    pub macBuf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub forEncryption: bool,
-    pub privParam: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    pub pubParam: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    pub param: *mut crate::Org::BouncyCastle::Crypto::Parameters::IesParameters,
+    pub privParam: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    >,
+    pub pubParam: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    >,
+    pub param: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::IesParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+IesEngine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

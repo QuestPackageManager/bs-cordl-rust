@@ -5,7 +5,7 @@ pub struct LeafRangeNode {
     __cordl_parent: crate::System::Xml::Schema::LeafNode,
     pub min: crate::System::Decimal,
     pub max: crate::System::Decimal,
-    pub nextIteration: *mut crate::System::Xml::Schema::BitSet,
+    pub nextIteration: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
 }
 #[cfg(feature = "System+Xml+Schema+LeafRangeNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

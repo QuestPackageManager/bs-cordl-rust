@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct MonoTypeInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub full_name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub default_ctor: *mut crate::System::Reflection::RuntimeConstructorInfo,
+    pub full_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub default_ctor: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::RuntimeConstructorInfo,
+    >,
 }
 #[cfg(feature = "System+MonoTypeInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct FlyingTextEffect {
     __cordl_parent: crate::GlobalNamespace::FlyingObjectEffect,
-    pub _text: *mut crate::TMPro::TextMeshPro,
-    pub _fadeAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
+    pub _fadeAnimationCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
     pub _color: crate::UnityEngine::Color,
 }
 #[cfg(feature = "FlyingTextEffect")]

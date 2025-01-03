@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct RandomDsaKCalculator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub q: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+RandomDsaKCalculator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

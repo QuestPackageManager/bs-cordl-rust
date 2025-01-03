@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerLevelFailController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _failVFXController: *mut crate::GlobalNamespace::VFXController,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
-    pub playerDidFailEvent: *mut crate::System::Action,
+    pub _failVFXController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VFXController,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub _connectedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
+    pub playerDidFailEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _wasActive: bool,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerLevelFailController")]

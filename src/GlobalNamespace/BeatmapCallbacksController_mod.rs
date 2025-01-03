@@ -3,14 +3,24 @@
 #[derive(Debug)]
 pub struct BeatmapCallbacksController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub willStartProcessingCallbacksThisFrameEvent: *mut crate::System::Action_1<f32>,
-    pub didProcessAllCallbacksThisFrameEvent: *mut crate::System::Action,
-    pub _callbacksInTimes: *mut crate::System::Collections::Generic::Dictionary_2<
-        f32,
-        *mut crate::GlobalNamespace::CallbacksInTime,
+    pub willStartProcessingCallbacksThisFrameEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<f32>,
     >,
-    pub _beatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
-    pub _callCallbacksBehavior: *mut crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior,
+    pub didProcessAllCallbacksThisFrameEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub _callbacksInTimes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            f32,
+            *mut crate::GlobalNamespace::CallbacksInTime,
+        >,
+    >,
+    pub _beatmapData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IReadonlyBeatmapData,
+    >,
+    pub _callCallbacksBehavior: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior,
+    >,
     pub _startFilterTime: f32,
     pub _prevSongTime: f32,
     pub _songTime: f32,
@@ -480,9 +490,11 @@ for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehavior {
 #[derive(Debug)]
 pub struct BeatmapCallbacksController_CallCallbacksBehaviorWithLastState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _replayState: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::System::ValueTuple_2<*mut crate::System::Type, i32>,
-        *mut crate::GlobalNamespace::BeatmapDataItem,
+    pub _replayState: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::System::ValueTuple_2<*mut crate::System::Type, i32>,
+            *mut crate::GlobalNamespace::BeatmapDataItem,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehaviorWithLastState")]
@@ -668,7 +680,9 @@ for crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior {
 #[derive(Debug)]
 pub struct BeatmapCallbacksController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub beatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
+    pub beatmapData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IReadonlyBeatmapData,
+    >,
     pub startFilterTime: f32,
     pub shouldKeepReplayState: bool,
 }

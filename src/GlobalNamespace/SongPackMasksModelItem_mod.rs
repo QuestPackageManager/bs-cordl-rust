@@ -4,8 +4,10 @@
 pub struct SongPackMasksModelItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _type: crate::GlobalNamespace::SongPackDataType,
-    pub _serializedName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _beatmapLevelPackId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _serializedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _beatmapLevelPackId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _includeTags: crate::GlobalNamespace::PackDefinitionSO_Tags,
     pub _excludeTags: crate::GlobalNamespace::PackDefinitionSO_Tags,
 }

@@ -4,10 +4,12 @@
 pub struct XmlReflectionMember {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub isReturnValue: bool,
-    pub memberName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub memberType: *mut crate::System::Type,
-    pub xmlAttributes: *mut crate::System::Xml::Serialization::XmlAttributes,
-    pub declaringType: *mut crate::System::Type,
+    pub memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub memberType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub xmlAttributes: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlAttributes,
+    >,
+    pub declaringType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlReflectionMember")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

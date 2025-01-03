@@ -7,13 +7,15 @@ pub struct MenuNeonLightsGenerator {
     pub _radius: f32,
     pub _angle: f32,
     pub _numberOfElements: i32,
-    pub _intensityCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub _intensityCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub _intensityMultiplier: f32,
-    pub _lengthCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub _lengthCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub _lengthMultiplier: f32,
-    pub _widthCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub _widthCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub _widthMultiplier: f32,
-    pub _neonLightPrefab: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+    pub _neonLightPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TubeBloomPrePassLight,
+    >,
     pub _afterSpawnRotation: crate::UnityEngine::Vector3,
 }
 #[cfg(feature = "MenuNeonLightsGenerator")]

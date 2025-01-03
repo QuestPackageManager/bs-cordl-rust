@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct TextWriter {
     __cordl_parent: crate::System::MarshalByRefObject,
-    pub CoreNewLine: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    pub CoreNewLineStr: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _internalFormatProvider: *mut crate::System::IFormatProvider,
+    pub CoreNewLine: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    pub CoreNewLineStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _internalFormatProvider: quest_hook::libil2cpp::Gc<
+        crate::System::IFormatProvider,
+    >,
 }
 #[cfg(feature = "System+IO+TextWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

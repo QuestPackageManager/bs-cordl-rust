@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SqlXmlStreamWrapper {
     __cordl_parent: crate::System::IO::Stream,
-    pub _stream: *mut crate::System::IO::Stream,
+    pub _stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _lPosition: i64,
     pub _isClosed: bool,
 }

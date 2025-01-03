@@ -6,7 +6,7 @@ pub struct BasicMockPlayerScoreCalculator {
     pub _hitFrequency: f32,
     pub _minScore: i32,
     pub _maxScore: i32,
-    pub _random: *mut crate::System::Random,
+    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
 }
 #[cfg(feature = "BasicMockPlayerScoreCalculator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

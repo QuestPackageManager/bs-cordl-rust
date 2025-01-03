@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct AdvancingFront {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Head: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-    pub Tail: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-    pub Search: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+    pub Head: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+    >,
+    pub Tail: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+    >,
+    pub Search: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+    >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+AdvancingFront")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

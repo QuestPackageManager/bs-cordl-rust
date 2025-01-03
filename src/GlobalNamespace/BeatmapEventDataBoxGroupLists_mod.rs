@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct BeatmapEventDataBoxGroupLists {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _beatmapEventDataBoxGroupListDict: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::GlobalNamespace::BeatmapEventDataBoxGroupList,
+    pub _beatmapEventDataBoxGroupListDict: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::GlobalNamespace::BeatmapEventDataBoxGroupList,
+        >,
     >,
-    pub _beatmapData: *mut crate::GlobalNamespace::BeatmapData,
-    pub _beatToTimeConverter: *mut crate::GlobalNamespace::IBeatToTimeConverter,
+    pub _beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+    pub _beatToTimeConverter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IBeatToTimeConverter,
+    >,
     pub _updateBeatmapDataOnInsert: bool,
-    pub _lightEventConverter: *mut crate::GlobalNamespace::IBeatmapLightEventConverter,
+    pub _lightEventConverter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IBeatmapLightEventConverter,
+    >,
 }
 #[cfg(feature = "BeatmapEventDataBoxGroupLists")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

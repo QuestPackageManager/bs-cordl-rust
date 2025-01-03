@@ -4,9 +4,11 @@
 pub struct AlphaFloatFxGroupEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _staticColor: crate::UnityEngine::Color,
-    pub _property: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _materialPropertyBlockControllers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _property: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _materialPropertyBlockControllers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+        >,
     >,
     pub _propertyId: i32,
     pub _isInitialized: bool,

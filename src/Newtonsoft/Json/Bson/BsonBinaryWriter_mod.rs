@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BsonBinaryWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _writer: *mut crate::System::IO::BinaryWriter,
-    pub _largeByteBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _writer: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
+    pub _largeByteBuffer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub _DateTimeKindHandling_k__BackingField: crate::System::DateTimeKind,
 }
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonBinaryWriter")]

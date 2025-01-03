@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct HelpURLAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub m_Url: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Dispatcher: bool,
-    pub m_DispatchingFieldName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_DispatchingFieldName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "UnityEngine+HelpURLAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct IdRefNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Id: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub LineNo: i32,
     pub LinePos: i32,
-    pub Next: *mut crate::System::Xml::Schema::IdRefNode,
+    pub Next: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IdRefNode>,
 }
 #[cfg(feature = "System+Xml+Schema+IdRefNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

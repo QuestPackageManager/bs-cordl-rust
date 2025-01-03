@@ -4,7 +4,7 @@
 pub struct ShaderVariant_ShaderVariantsSO_Variant {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _passType: crate::UnityEngine::Rendering::PassType,
-    pub _keywords: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _keywords: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "ShaderVariantsSO+ShaderVariant+Variant")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -89,8 +89,10 @@ for crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
 #[derive(Debug)]
 pub struct ShaderVariantsSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _shaderVariants: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant,
+    pub _shaderVariants: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant,
+        >,
     >,
 }
 #[cfg(feature = "ShaderVariantsSO")]
@@ -181,10 +183,12 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ShaderVariant
 #[derive(Debug)]
 pub struct ShaderVariantsSO_ShaderVariant {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _variants: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant,
+    pub _variants: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant,
+        >,
     >,
-    pub _shader: *mut crate::UnityEngine::Shader,
+    pub _shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
 }
 #[cfg(feature = "ShaderVariantsSO+ShaderVariant")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

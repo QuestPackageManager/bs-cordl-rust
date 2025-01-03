@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct TimeStampAndCrl {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub timeStamp: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
-    pub crl: *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+    pub timeStamp: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+    >,
+    pub crl: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::CertificateList,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+TimeStampAndCrl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

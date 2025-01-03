@@ -3,22 +3,28 @@
 #[derive(Debug)]
 pub struct SerializationInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_members: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_members: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub m_data: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_data: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub m_types: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
-    pub m_nameToIndex: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        i32,
+    pub m_types: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    >,
+    pub m_nameToIndex: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            i32,
+        >,
     >,
     pub m_currMember: i32,
-    pub m_converter: *mut crate::System::Runtime::Serialization::IFormatterConverter,
-    pub m_fullTypeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_assemName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub objectType: *mut crate::System::Type,
+    pub m_converter: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IFormatterConverter,
+    >,
+    pub m_fullTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_assemName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub isFullTypeNameSetExplicit: bool,
     pub isAssemblyNameSetExplicit: bool,
     pub requireSameTokenInPartialTrust: bool,

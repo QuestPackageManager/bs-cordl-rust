@@ -277,7 +277,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::TypeUtility
 }
 #[cfg(feature = "Unity+Properties+TypeUtility+Cache_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TypeUtility_Cache_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -552,7 +552,9 @@ for crate::Unity::Properties::TypeUtility_NonConstructable {
 #[derive(Debug)]
 pub struct TypeUtility_TypeConstructorVisitor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub TypeConstructor: *mut crate::Unity::Properties::TypeUtility_ITypeConstructor,
+    pub TypeConstructor: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::TypeUtility_ITypeConstructor,
+    >,
 }
 #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructorVisitor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -637,9 +639,11 @@ for crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
 #[derive(Debug)]
 pub struct TypeUtility_TypeConstructor_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_ExplicitConstructor: *mut crate::System::Func_1<T>,
-    pub m_ImplicitConstructor: *mut crate::System::Func_1<T>,
-    pub m_OverrideConstructor: *mut crate::Unity::Properties::IConstructor_1<T>,
+    pub m_ExplicitConstructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+    pub m_ImplicitConstructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+    pub m_OverrideConstructor: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::IConstructor_1<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructor_1")]

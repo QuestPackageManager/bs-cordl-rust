@@ -4,7 +4,7 @@
 pub struct DisplayText {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub contentType: i32,
-    pub contents: *mut crate::Org::BouncyCastle::Asn1::IAsn1String,
+    pub contents: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::IAsn1String>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+DisplayText")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,8 +1,8 @@
 #[cfg(feature = "Unity+IO+Archive+ArchiveFileInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ArchiveFileInfo {
-    pub Filename: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub FileSize: u64,
 }
 #[cfg(feature = "Unity+IO+Archive+ArchiveFileInfo")]

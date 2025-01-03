@@ -1,8 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Substring {
-    pub m_String: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_String: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Index: i32,
     pub m_Length: i32,
 }

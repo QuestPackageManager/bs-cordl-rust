@@ -4,7 +4,7 @@
 pub struct ButtonState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _button: crate::UnityEngine::EventSystems::PointerEventData_InputButton,
-    pub _eventData: *mut crate::VRUIControls::MouseButtonEventData,
+    pub _eventData: quest_hook::libil2cpp::Gc<crate::VRUIControls::MouseButtonEventData>,
     pub _pressedValue: f32,
 }
 #[cfg(feature = "VRUIControls+ButtonState")]

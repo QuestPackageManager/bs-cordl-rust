@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SurrogateKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_type: *mut crate::System::Type,
+    pub m_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub m_context: crate::System::Runtime::Serialization::StreamingContext,
 }
 #[cfg(feature = "System+Runtime+Serialization+SurrogateKey")]

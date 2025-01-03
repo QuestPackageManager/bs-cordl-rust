@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct TextValueField_1<TValueType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1<TValueType>,
-    pub m_Dragger: *mut crate::UnityEngine::UIElements::BaseFieldMouseDragger,
+    pub m_Dragger: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseFieldMouseDragger,
+    >,
     pub m_UpdateTextFromValue: bool,
     pub m_ForceUpdateDisplay: bool,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
@@ -377,7 +379,9 @@ pub struct TextValueField_1_TextValueInput<TValueType: quest_hook::libil2cpp::Ty
     __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
         TValueType,
     >,
-    pub _formatString_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _formatString_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
 }
 #[cfg(feature = "UnityEngine+UIElements+TextValueField_1+TextValueInput")]

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BoxCuttableBySaber {
     __cordl_parent: crate::GlobalNamespace::CuttableBySaber,
-    pub _collider: *mut crate::UnityEngine::BoxCollider,
+    pub _collider: quest_hook::libil2cpp::Gc<crate::UnityEngine::BoxCollider>,
     pub _canBeCut: bool,
     pub _radius: f32,
 }

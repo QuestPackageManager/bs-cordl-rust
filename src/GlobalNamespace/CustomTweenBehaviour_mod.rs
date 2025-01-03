@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct CustomTweenBehaviour {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
-    pub _transforms: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Transform,
+    pub _transforms: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
     >,
     pub startLocationCurrentPosition: bool,
     pub startLocalPos: crate::UnityEngine::Vector3,
@@ -19,12 +19,16 @@ pub struct CustomTweenBehaviour {
     pub _randomizedMinDurationMultiplier: f32,
     pub _duration: f32,
     pub _perItemDuration: f32,
-    pub _originalLocalPos: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub _originalLocalPos: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
     pub _initialized: bool,
-    pub _randomizedOrder: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _randomizedDuration: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub _randomizedOrder: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub _randomizedDuration: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
 }
 #[cfg(feature = "CustomTweenBehaviour")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

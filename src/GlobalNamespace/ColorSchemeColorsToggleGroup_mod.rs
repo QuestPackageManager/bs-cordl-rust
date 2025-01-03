@@ -3,19 +3,35 @@
 #[derive(Debug)]
 pub struct ColorSchemeColorsToggleGroup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _saberAColorToggleController: *mut crate::GlobalNamespace::ColorSchemeColorToggleController,
-    pub _saberBColorToggleController: *mut crate::GlobalNamespace::ColorSchemeColorToggleController,
-    pub _environmentColor0ToggleController: *mut crate::GlobalNamespace::ColorSchemeColorToggleController,
-    pub _environmentColor1ToggleController: *mut crate::GlobalNamespace::ColorSchemeColorToggleController,
-    pub _obstaclesColorToggleController: *mut crate::GlobalNamespace::ColorSchemeColorToggleController,
-    pub _environmentColor0BoostToggleController: *mut crate::GlobalNamespace::ColorSchemeColorToggleController,
-    pub _environmentColor1BoostToggleController: *mut crate::GlobalNamespace::ColorSchemeColorToggleController,
-    pub selectedColorDidChangeEvent: *mut crate::System::Action_1<
-        crate::UnityEngine::Color,
+    pub _saberAColorToggleController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemeColorToggleController,
     >,
-    pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
-    pub _selectedColorToggleController: *mut crate::GlobalNamespace::ColorSchemeColorToggleController,
-    pub _colorScheme: *mut crate::GlobalNamespace::ColorScheme,
+    pub _saberBColorToggleController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemeColorToggleController,
+    >,
+    pub _environmentColor0ToggleController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemeColorToggleController,
+    >,
+    pub _environmentColor1ToggleController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemeColorToggleController,
+    >,
+    pub _obstaclesColorToggleController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemeColorToggleController,
+    >,
+    pub _environmentColor0BoostToggleController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemeColorToggleController,
+    >,
+    pub _environmentColor1BoostToggleController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemeColorToggleController,
+    >,
+    pub selectedColorDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::UnityEngine::Color>,
+    >,
+    pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
+    pub _selectedColorToggleController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemeColorToggleController,
+    >,
+    pub _colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
 }
 #[cfg(feature = "ColorSchemeColorsToggleGroup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

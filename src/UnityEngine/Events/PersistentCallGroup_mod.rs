@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PersistentCallGroup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Calls: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Events::PersistentCall,
+    pub m_Calls: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Events::PersistentCall,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+Events+PersistentCallGroup")]

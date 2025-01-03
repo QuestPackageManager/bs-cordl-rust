@@ -2,10 +2,12 @@
     feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor {
-    pub _node: *mut crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
-    pub _instance: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _node: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
+    >,
+    pub _instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(
     feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
@@ -254,11 +256,13 @@ for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExt
     feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor {
-    pub _node: *mut crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
-    pub _objectType: *mut crate::System::Type,
-    pub _instance: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _node: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
+    >,
+    pub _objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(
     feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
@@ -1057,8 +1061,12 @@ for crate::System::ComponentModel::TypeDescriptor {
 #[derive(Debug)]
 pub struct TypeDescriptor_AttributeFilterCacheItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _filter: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
-    pub FilteredMembers: *mut crate::System::Collections::ICollection,
+    pub _filter: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+    >,
+    pub FilteredMembers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ICollection,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1141,8 +1149,12 @@ for crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
 #[derive(Debug)]
 pub struct TypeDescriptor_FilterCacheItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _filterService: *mut crate::System::ComponentModel::Design::ITypeDescriptorFilterService,
-    pub FilteredMembers: *mut crate::System::Collections::ICollection,
+    pub _filterService: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::Design::ITypeDescriptorFilterService,
+    >,
+    pub FilteredMembers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ICollection,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+FilterCacheItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1350,8 +1362,12 @@ for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
 #[derive(Debug)]
 pub struct TypeDescriptor_MergedTypeDescriptor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _primary: *mut crate::System::ComponentModel::ICustomTypeDescriptor,
-    pub _secondary: *mut crate::System::ComponentModel::ICustomTypeDescriptor,
+    pub _primary: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::ICustomTypeDescriptor,
+    >,
+    pub _secondary: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::ICustomTypeDescriptor,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1635,8 +1651,12 @@ for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
 #[derive(Debug)]
 pub struct TypeDescriptor_TypeDescriptionNode {
     __cordl_parent: crate::System::ComponentModel::TypeDescriptionProvider,
-    pub Next: *mut crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
-    pub Provider: *mut crate::System::ComponentModel::TypeDescriptionProvider,
+    pub Next: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
+    >,
+    pub Provider: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeDescriptionProvider,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

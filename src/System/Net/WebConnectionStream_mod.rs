@@ -5,12 +5,18 @@ pub struct WebConnectionStream {
     __cordl_parent: crate::System::IO::Stream,
     pub closed: bool,
     pub disposed: bool,
-    pub locker: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub locker: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub read_timeout: i32,
     pub write_timeout: i32,
-    pub _Request_k__BackingField: *mut crate::System::Net::HttpWebRequest,
-    pub _Connection_k__BackingField: *mut crate::System::Net::WebConnection,
-    pub _Operation_k__BackingField: *mut crate::System::Net::WebOperation,
+    pub _Request_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::HttpWebRequest,
+    >,
+    pub _Connection_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::WebConnection,
+    >,
+    pub _Operation_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::WebOperation,
+    >,
 }
 #[cfg(feature = "System+Net+WebConnectionStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

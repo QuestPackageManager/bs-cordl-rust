@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct NetSerializer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+    pub _writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     pub _maxStringLength: i32,
-    pub _registeredTypes: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Type,
-        *mut crate::LiteNetLib::Utils::NetSerializer_CustomType,
+    pub _registeredTypes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Type,
+            *mut crate::LiteNetLib::Utils::NetSerializer_CustomType,
+        >,
     >,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
@@ -703,8 +705,10 @@ for crate::LiteNetLib::Utils::NetSerializer_CharSerializer_1<T> {
 #[derive(Debug)]
 pub struct NetSerializer_ClassInfo_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _serializers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
+    pub _serializers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
+        >,
     >,
     pub _membersCount: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -888,7 +892,7 @@ for crate::LiteNetLib::Utils::NetSerializer_CustomType {
 #[derive(Debug)]
 pub struct NetSerializer_CustomTypeClass_1<TProperty: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_CustomType,
-    pub _constructor: *mut crate::System::Func_1<TProperty>,
+    pub _constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<TProperty>>,
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeClass_1")]
@@ -979,13 +983,11 @@ for crate::LiteNetLib::Utils::NetSerializer_CustomTypeClass_1<TProperty> {
 #[derive(Debug)]
 pub struct NetSerializer_CustomTypeStatic_1<TProperty: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_CustomType,
-    pub _writer: *mut crate::System::Action_2<
-        *mut crate::LiteNetLib::Utils::NetDataWriter,
-        TProperty,
+    pub _writer: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::LiteNetLib::Utils::NetDataWriter, TProperty>,
     >,
-    pub _reader: *mut crate::System::Func_2<
-        *mut crate::LiteNetLib::Utils::NetDataReader,
-        TProperty,
+    pub _reader: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<*mut crate::LiteNetLib::Utils::NetDataReader, TProperty>,
     >,
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
 }
@@ -1314,8 +1316,8 @@ for crate::LiteNetLib::Utils::NetSerializer_DoubleSerializer_1<T> {
 #[derive(Debug)]
 pub struct NetSerializer_EnumByteSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
-    pub Property: *mut crate::System::Reflection::PropertyInfo,
-    pub PropertyType: *mut crate::System::Type,
+    pub Property: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+    pub PropertyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+EnumByteSerializer_1")]
@@ -1532,7 +1534,7 @@ pub struct NetSerializer_FastCallClass_2<
         TClass,
         TProperty,
     >,
-    pub _constructor: *mut crate::System::Func_1<TProperty>,
+    pub _constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<TProperty>>,
     __cordl_phantom_TClass: std::marker::PhantomData<TClass>,
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
 }
@@ -1895,15 +1897,16 @@ pub struct NetSerializer_FastCallSpecific_2<
     TProperty: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCall_1<TClass>,
-    pub Getter: *mut crate::System::Func_2<TClass, TProperty>,
-    pub Setter: *mut crate::System::Action_2<TClass, TProperty>,
-    pub GetterArr: *mut crate::System::Func_2<
-        TClass,
-        *mut quest_hook::libil2cpp::Il2CppArray<TProperty>,
+    pub Getter: quest_hook::libil2cpp::Gc<crate::System::Func_2<TClass, TProperty>>,
+    pub Setter: quest_hook::libil2cpp::Gc<crate::System::Action_2<TClass, TProperty>>,
+    pub GetterArr: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<TClass, *mut quest_hook::libil2cpp::Il2CppArray<TProperty>>,
     >,
-    pub SetterArr: *mut crate::System::Action_2<
-        TClass,
-        *mut quest_hook::libil2cpp::Il2CppArray<TProperty>,
+    pub SetterArr: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            TClass,
+            *mut quest_hook::libil2cpp::Il2CppArray<TProperty>,
+        >,
     >,
     __cordl_phantom_TClass: std::marker::PhantomData<TClass>,
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
@@ -2053,13 +2056,11 @@ pub struct NetSerializer_FastCallStatic_2<
         TClass,
         TProperty,
     >,
-    pub _writer: *mut crate::System::Action_2<
-        *mut crate::LiteNetLib::Utils::NetDataWriter,
-        TProperty,
+    pub _writer: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::LiteNetLib::Utils::NetDataWriter, TProperty>,
     >,
-    pub _reader: *mut crate::System::Func_2<
-        *mut crate::LiteNetLib::Utils::NetDataReader,
-        TProperty,
+    pub _reader: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<*mut crate::LiteNetLib::Utils::NetDataReader, TProperty>,
     >,
     __cordl_phantom_TClass: std::marker::PhantomData<TClass>,
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,

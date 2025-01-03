@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ResponseBytes {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub responseType: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub response: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    pub responseType: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub response: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+ResponseBytes")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

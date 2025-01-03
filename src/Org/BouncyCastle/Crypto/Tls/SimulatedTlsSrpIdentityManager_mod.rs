@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct SimulatedTlsSrpIdentityManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mGroup: *mut crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
-    pub mVerifierGenerator: *mut crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6VerifierGenerator,
-    pub mMac: *mut crate::Org::BouncyCastle::Crypto::IMac,
+    pub mGroup: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
+    >,
+    pub mVerifierGenerator: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6VerifierGenerator,
+    >,
+    pub mMac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SimulatedTlsSrpIdentityManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

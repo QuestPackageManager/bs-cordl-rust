@@ -1,8 +1,10 @@
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+NamedValue")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NamedValue {
-    pub _name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _value_k__BackingField: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+NamedValue")]

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleLength")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StyleLength {
     pub m_Value: crate::UnityEngine::UIElements::Length,
     pub m_Keyword: crate::UnityEngine::UIElements::StyleKeyword,

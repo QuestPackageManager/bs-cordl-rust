@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct NoPauseGamePause {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub didPauseEvent: *mut crate::System::Action,
-    pub willResumeEvent: *mut crate::System::Action,
-    pub didResumeEvent: *mut crate::System::Action,
+    pub didPauseEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub willResumeEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub didResumeEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _pause: bool,
 }
 #[cfg(feature = "NoPauseGamePause")]

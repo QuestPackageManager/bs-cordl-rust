@@ -4,7 +4,9 @@
 pub struct ActivateOnPlatform {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _vrPlatformSdk: crate::GlobalNamespace::VRPlatformSDK,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
 }
 #[cfg(feature = "ActivateOnPlatform")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

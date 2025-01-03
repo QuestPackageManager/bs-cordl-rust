@@ -3,21 +3,41 @@
 #[derive(Debug)]
 pub struct OVRControllerHelper {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_modelOculusTouchQuestAndRiftSLeftController: *mut crate::UnityEngine::GameObject,
-    pub m_modelOculusTouchQuestAndRiftSRightController: *mut crate::UnityEngine::GameObject,
-    pub m_modelOculusTouchRiftLeftController: *mut crate::UnityEngine::GameObject,
-    pub m_modelOculusTouchRiftRightController: *mut crate::UnityEngine::GameObject,
-    pub m_modelOculusTouchQuest2LeftController: *mut crate::UnityEngine::GameObject,
-    pub m_modelOculusTouchQuest2RightController: *mut crate::UnityEngine::GameObject,
-    pub m_modelMetaTouchProLeftController: *mut crate::UnityEngine::GameObject,
-    pub m_modelMetaTouchProRightController: *mut crate::UnityEngine::GameObject,
-    pub m_modelMetaTouchPlusLeftController: *mut crate::UnityEngine::GameObject,
-    pub m_modelMetaTouchPlusRightController: *mut crate::UnityEngine::GameObject,
+    pub m_modelOculusTouchQuestAndRiftSLeftController: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub m_modelOculusTouchQuestAndRiftSRightController: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub m_modelOculusTouchRiftLeftController: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub m_modelOculusTouchRiftRightController: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub m_modelOculusTouchQuest2LeftController: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub m_modelOculusTouchQuest2RightController: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub m_modelMetaTouchProLeftController: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub m_modelMetaTouchProRightController: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub m_modelMetaTouchPlusLeftController: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub m_modelMetaTouchPlusRightController: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
     pub m_controller: crate::GlobalNamespace::OVRInput_Controller,
     pub m_showState: crate::GlobalNamespace::OVRInput_InputDeviceShowState,
     pub showWhenHandsArePoweredByNaturalControllerPoses: bool,
-    pub m_animator: *mut crate::UnityEngine::Animator,
-    pub m_activeController: *mut crate::UnityEngine::GameObject,
+    pub m_animator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
+    pub m_activeController: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_controllerModelsInitialized: bool,
     pub m_hasInputFocus: bool,
     pub m_hasInputFocusPrev: bool,

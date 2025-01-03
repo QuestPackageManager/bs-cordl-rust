@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct HttpListenerContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub request: *mut crate::System::Net::HttpListenerRequest,
-    pub response: *mut crate::System::Net::HttpListenerResponse,
-    pub user: *mut crate::System::Security::Principal::IPrincipal,
-    pub cnc: *mut crate::System::Net::HttpConnection,
-    pub error: *mut quest_hook::libil2cpp::Il2CppString,
+    pub request: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListenerRequest>,
+    pub response: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListenerResponse>,
+    pub user: quest_hook::libil2cpp::Gc<crate::System::Security::Principal::IPrincipal>,
+    pub cnc: quest_hook::libil2cpp::Gc<crate::System::Net::HttpConnection>,
+    pub error: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub err_status: i32,
-    pub Listener: *mut crate::System::Net::HttpListener,
+    pub Listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
 }
 #[cfg(feature = "System+Net+HttpListenerContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

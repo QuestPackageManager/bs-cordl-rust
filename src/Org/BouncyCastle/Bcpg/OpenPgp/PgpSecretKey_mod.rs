@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct PgpSecretKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub secret: *mut crate::Org::BouncyCastle::Bcpg::SecretKeyPacket,
-    pub _cordl_pub: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+    pub secret: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::SecretKeyPacket,
+    >,
+    pub _cordl_pub: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpSecretKey")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

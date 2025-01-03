@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ButtonStripField {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<i32>,
-    pub m_Buttons: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::Button,
+    pub m_Buttons: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::Button,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ButtonStripField")]

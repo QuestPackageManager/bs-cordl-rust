@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+BackgroundSize")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BackgroundSize {
     pub m_SizeType: crate::UnityEngine::UIElements::BackgroundSizeType,
     pub m_X: crate::UnityEngine::UIElements::Length,

@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct BadNoteCutEffectSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _failFlyingSpriteSpawner: *mut crate::GlobalNamespace::FlyingSpriteSpawner,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
-    pub _initData: *mut crate::GlobalNamespace::CoreGameHUDController_InitData,
+    pub _failFlyingSpriteSpawner: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FlyingSpriteSpawner,
+    >,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CoreGameHUDController_InitData,
+    >,
 }
 #[cfg(feature = "BadNoteCutEffectSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

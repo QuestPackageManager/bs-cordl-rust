@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct NoTransitionsToggle {
     __cordl_parent: crate::UnityEngine::UI::Toggle,
-    pub selectionStateDidChangeEvent: *mut crate::System::Action_1<
-        crate::HMUI::UISelectionState,
+    pub selectionStateDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::HMUI::UISelectionState>,
     >,
     pub _selectionState: crate::HMUI::UISelectionState,
 }

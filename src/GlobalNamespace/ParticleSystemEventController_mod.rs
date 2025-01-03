@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ParticleSystemEventController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _particleSystem: *mut crate::UnityEngine::ParticleSystem,
+    pub _particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
     pub _particleSystemFullDuration: f32,
     pub _startTime_k__BackingField: f32,
 }

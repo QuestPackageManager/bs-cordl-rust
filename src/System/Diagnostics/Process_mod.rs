@@ -6,36 +6,48 @@ pub struct Process {
     pub haveProcessId: bool,
     pub processId: i32,
     pub haveProcessHandle: bool,
-    pub m_processHandle: *mut crate::Microsoft::Win32::SafeHandles::SafeProcessHandle,
+    pub m_processHandle: quest_hook::libil2cpp::Gc<
+        crate::Microsoft::Win32::SafeHandles::SafeProcessHandle,
+    >,
     pub isRemoteMachine: bool,
-    pub machineName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub machineName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_processAccess: i32,
-    pub threads: *mut crate::System::Diagnostics::ProcessThreadCollection,
-    pub modules: *mut crate::System::Diagnostics::ProcessModuleCollection,
+    pub threads: quest_hook::libil2cpp::Gc<
+        crate::System::Diagnostics::ProcessThreadCollection,
+    >,
+    pub modules: quest_hook::libil2cpp::Gc<
+        crate::System::Diagnostics::ProcessModuleCollection,
+    >,
     pub haveWorkingSetLimits: bool,
     pub havePriorityClass: bool,
-    pub startInfo: *mut crate::System::Diagnostics::ProcessStartInfo,
+    pub startInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Diagnostics::ProcessStartInfo,
+    >,
     pub watchForExit: bool,
     pub watchingForExit: bool,
-    pub onExited: *mut crate::System::EventHandler,
+    pub onExited: quest_hook::libil2cpp::Gc<crate::System::EventHandler>,
     pub exited: bool,
     pub exitCode: i32,
     pub signaled: bool,
     pub haveExitTime: bool,
     pub raisedOnExited: bool,
-    pub registeredWaitHandle: *mut crate::System::Threading::RegisteredWaitHandle,
-    pub waitHandle: *mut crate::System::Threading::WaitHandle,
-    pub synchronizingObject: *mut crate::System::ComponentModel::ISynchronizeInvoke,
-    pub standardOutput: *mut crate::System::IO::StreamReader,
-    pub standardInput: *mut crate::System::IO::StreamWriter,
-    pub standardError: *mut crate::System::IO::StreamReader,
+    pub registeredWaitHandle: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::RegisteredWaitHandle,
+    >,
+    pub waitHandle: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitHandle>,
+    pub synchronizingObject: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::ISynchronizeInvoke,
+    >,
+    pub standardOutput: quest_hook::libil2cpp::Gc<crate::System::IO::StreamReader>,
+    pub standardInput: quest_hook::libil2cpp::Gc<crate::System::IO::StreamWriter>,
+    pub standardError: quest_hook::libil2cpp::Gc<crate::System::IO::StreamReader>,
     pub disposed: bool,
     pub outputStreamReadMode: crate::System::Diagnostics::Process_StreamReadMode,
     pub errorStreamReadMode: crate::System::Diagnostics::Process_StreamReadMode,
     pub inputStreamReadMode: crate::System::Diagnostics::Process_StreamReadMode,
-    pub output: *mut crate::System::Diagnostics::AsyncStreamReader,
-    pub error: *mut crate::System::Diagnostics::AsyncStreamReader,
-    pub process_name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub output: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::AsyncStreamReader>,
+    pub error: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::AsyncStreamReader>,
+    pub process_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Diagnostics+Process")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -634,15 +646,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Diagnostics::Process {
 }
 #[cfg(feature = "System+Diagnostics+Process+ProcInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Process_ProcInfo {
     pub process_handle: crate::System::IntPtr,
     pub pid: i32,
-    pub envVariables: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub envVariables: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub UserName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Domain: *mut quest_hook::libil2cpp::Il2CppString,
+    pub UserName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Domain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Password: crate::System::IntPtr,
     pub LoadUserProfile: bool,
 }

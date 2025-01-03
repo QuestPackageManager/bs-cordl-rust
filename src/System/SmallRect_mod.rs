@@ -1,6 +1,6 @@
 #[cfg(feature = "System+SmallRect")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SmallRect {
     pub Left: i16,
     pub Top: i16,

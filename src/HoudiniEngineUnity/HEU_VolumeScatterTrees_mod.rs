@@ -3,19 +3,31 @@
 #[derive(Debug)]
 pub struct HEU_VolumeScatterTrees {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _treePrototypInfos: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_TreePrototypeInfo,
+    pub _treePrototypInfos: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_TreePrototypeInfo,
+        >,
     >,
-    pub _colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
-    pub _heightScales: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _lightmapColors: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Color32,
+    pub _colors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
     >,
-    pub _positions: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-    pub _prototypeIndices: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _rotations: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _widthScales: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _terrainTiles: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _heightScales: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
+    pub _lightmapColors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+    >,
+    pub _positions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
+    pub _prototypeIndices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub _rotations: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub _widthScales: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub _terrainTiles: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_VolumeScatterTrees")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

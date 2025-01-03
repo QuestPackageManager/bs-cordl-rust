@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SmoothCamera {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _camera: *mut crate::UnityEngine::Camera,
-    pub _mainCamera: *mut crate::GlobalNamespace::MainCamera,
+    pub _camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    pub _mainCamera: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainCamera>,
     pub _thirdPersonPosition: crate::UnityEngine::Vector3,
     pub _thirdPersonEulerAngles: crate::UnityEngine::Vector3,
     pub _thirdPersonEnabled: bool,

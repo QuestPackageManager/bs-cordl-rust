@@ -7,18 +7,30 @@ pub struct NoteDebrisSpawner {
     pub _cutDirMultiplier: f32,
     pub _fromCenterSpeed: f32,
     pub _moveSpeedMultiplier: f32,
-    pub _normalNotesDebrisPool: *mut crate::GlobalNamespace::NoteDebris_Pool,
-    pub _burstSliderHeadNotesDebrisPool: *mut crate::GlobalNamespace::NoteDebris_Pool,
-    pub _burstSliderElementNotesDebrisPool: *mut crate::GlobalNamespace::NoteDebris_Pool,
-    pub _random: *mut crate::System::Random,
-    pub _determinismConfig: *mut crate::GlobalNamespace::DeterminismConfig,
-    pub _poolForNoteGameplayType: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::GlobalNamespace::NoteData_GameplayType,
-        *mut crate::GlobalNamespace::NoteDebris_Pool,
+    pub _normalNotesDebrisPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteDebris_Pool,
     >,
-    pub _poolForNoteDebris: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::GlobalNamespace::NoteDebris,
-        *mut crate::GlobalNamespace::NoteDebris_Pool,
+    pub _burstSliderHeadNotesDebrisPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteDebris_Pool,
+    >,
+    pub _burstSliderElementNotesDebrisPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteDebris_Pool,
+    >,
+    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+    pub _determinismConfig: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DeterminismConfig,
+    >,
+    pub _poolForNoteGameplayType: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::NoteData_GameplayType,
+            *mut crate::GlobalNamespace::NoteDebris_Pool,
+        >,
+    >,
+    pub _poolForNoteDebris: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::GlobalNamespace::NoteDebris,
+            *mut crate::GlobalNamespace::NoteDebris_Pool,
+        >,
     >,
 }
 #[cfg(feature = "NoteDebrisSpawner")]

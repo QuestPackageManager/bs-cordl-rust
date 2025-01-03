@@ -10,14 +10,16 @@ pub struct SubContainerCreatorByMethod_6<
     TParam6: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::Zenject::SubContainerCreatorByMethodBase,
-    pub _installMethod: *mut crate::System::Action_7<
-        *mut crate::Zenject::DiContainer,
-        TParam1,
-        TParam2,
-        TParam3,
-        TParam4,
-        TParam5,
-        TParam6,
+    pub _installMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Action_7<
+            *mut crate::Zenject::DiContainer,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+        >,
     >,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,

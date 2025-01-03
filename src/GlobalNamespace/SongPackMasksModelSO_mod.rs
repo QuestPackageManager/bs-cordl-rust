@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct SongPackMasksModelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _defaultSongPackMaskItems: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _defaultSongPackMaskItems: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _customSongPackMaskItems: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SongPackMasksModelItem,
+    pub _customSongPackMaskItems: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SongPackMasksModelItem,
+        >,
     >,
 }
 #[cfg(feature = "SongPackMasksModelSO")]

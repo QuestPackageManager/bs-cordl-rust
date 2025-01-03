@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MomentaryLoudnessHistory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _rmsValues: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub _rmsValues: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub _nextRmsIndex: i32,
     pub _historyFull: bool,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ContactFilter2D")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ContactFilter2D {
     pub useTriggers: bool,
     pub useLayerMask: bool,

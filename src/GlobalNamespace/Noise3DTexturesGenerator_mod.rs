@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct Noise3DTexturesGenerator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _data: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple,
+    pub _data: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple,
+        >,
     >,
 }
 #[cfg(feature = "Noise3DTexturesGenerator")]
@@ -92,10 +94,12 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator {
 }
 #[cfg(feature = "Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Noise3DTexturesGenerator_MaterialPropertyNameCouple {
-    pub texturePropertyName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub material: *mut crate::UnityEngine::Material,
+    pub texturePropertyName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
 #[cfg(feature = "Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -118,11 +122,15 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple 
 impl crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple {}
 #[cfg(feature = "Noise3DTexturesGenerator+MaterialTextureParamsCouple")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Noise3DTexturesGenerator_MaterialTextureParamsCouple {
-    pub globalPropertyName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub materialPropertyNameCouples: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple,
+    pub globalPropertyName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub materialPropertyNameCouples: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple,
+        >,
     >,
 }
 #[cfg(feature = "Noise3DTexturesGenerator+MaterialTextureParamsCouple")]

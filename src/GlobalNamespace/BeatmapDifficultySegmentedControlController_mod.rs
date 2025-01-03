@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct BeatmapDifficultySegmentedControlController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _difficultySegmentedControl: *mut crate::HMUI::TextSegmentedControl,
-    pub didSelectDifficultyEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
-        crate::GlobalNamespace::BeatmapDifficulty,
+    pub _difficultySegmentedControl: quest_hook::libil2cpp::Gc<
+        crate::HMUI::TextSegmentedControl,
     >,
-    pub _difficulties: *mut crate::System::Collections::Generic::List_1<
-        crate::GlobalNamespace::BeatmapDifficulty,
+    pub didSelectDifficultyEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
+            crate::GlobalNamespace::BeatmapDifficulty,
+        >,
+    >,
+    pub _difficulties: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::BeatmapDifficulty,
+        >,
     >,
     pub _selectedDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
 }

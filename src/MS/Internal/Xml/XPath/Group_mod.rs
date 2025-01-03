@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Group {
     __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
-    pub _groupNode: *mut crate::MS::Internal::Xml::XPath::AstNode,
+    pub _groupNode: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Group")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

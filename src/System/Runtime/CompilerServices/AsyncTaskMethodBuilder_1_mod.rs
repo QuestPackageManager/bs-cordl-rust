@@ -1,9 +1,11 @@
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncTaskMethodBuilder_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AsyncTaskMethodBuilder_1<TResult: quest_hook::libil2cpp::Type> {
     pub m_coreState: crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore,
-    pub m_task: *mut crate::System::Threading::Tasks::Task_1<TResult>,
+    pub m_task: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<TResult>,
+    >,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncTaskMethodBuilder_1")]

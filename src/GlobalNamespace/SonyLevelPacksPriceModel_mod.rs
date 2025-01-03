@@ -4,8 +4,10 @@
 pub struct SonyLevelPacksPriceModel {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _pricePerLevel: f32,
-    pub _pricePairBundlePairs: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair,
+    pub _pricePairBundlePairs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair,
+        >,
     >,
 }
 #[cfg(feature = "SonyLevelPacksPriceModel")]

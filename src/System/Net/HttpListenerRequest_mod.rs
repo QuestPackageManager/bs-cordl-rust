@@ -3,24 +3,26 @@
 #[derive(Debug)]
 pub struct HttpListenerRequest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub accept_types: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub accept_types: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub content_length: i64,
     pub cl_set: bool,
-    pub cookies: *mut crate::System::Net::CookieCollection,
-    pub headers: *mut crate::System::Net::WebHeaderCollection,
-    pub method: *mut quest_hook::libil2cpp::Il2CppString,
-    pub input_stream: *mut crate::System::IO::Stream,
-    pub version: *mut crate::System::Version,
-    pub query_string: *mut crate::System::Collections::Specialized::NameValueCollection,
-    pub raw_url: *mut quest_hook::libil2cpp::Il2CppString,
-    pub url: *mut crate::System::Uri,
-    pub referrer: *mut crate::System::Uri,
-    pub user_languages: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub cookies: quest_hook::libil2cpp::Gc<crate::System::Net::CookieCollection>,
+    pub headers: quest_hook::libil2cpp::Gc<crate::System::Net::WebHeaderCollection>,
+    pub method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub input_stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub version: quest_hook::libil2cpp::Gc<crate::System::Version>,
+    pub query_string: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Specialized::NameValueCollection,
     >,
-    pub context: *mut crate::System::Net::HttpListenerContext,
+    pub raw_url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub url: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    pub referrer: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    pub user_languages: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub context: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListenerContext>,
     pub is_chunked: bool,
     pub ka_set: bool,
     pub keep_alive: bool,

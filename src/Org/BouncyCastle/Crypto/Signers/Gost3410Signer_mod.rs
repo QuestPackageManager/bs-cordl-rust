@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct Gost3410Signer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub key: *mut crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub key: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters,
+    >,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Gost3410Signer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

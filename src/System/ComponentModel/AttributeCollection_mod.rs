@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct AttributeCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _attributes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Attribute,
+    pub _attributes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
     >,
-    pub _foundAttributeTypes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::ComponentModel::AttributeCollection_AttributeEntry,
+    pub _foundAttributeTypes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::ComponentModel::AttributeCollection_AttributeEntry,
+        >,
     >,
     pub _index: i32,
 }
@@ -227,9 +229,9 @@ for crate::System::ComponentModel::AttributeCollection {
 }
 #[cfg(feature = "System+ComponentModel+AttributeCollection+AttributeEntry")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AttributeCollection_AttributeEntry {
-    pub _cordl_type: *mut crate::System::Type,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub index: i32,
 }
 #[cfg(feature = "System+ComponentModel+AttributeCollection+AttributeEntry")]

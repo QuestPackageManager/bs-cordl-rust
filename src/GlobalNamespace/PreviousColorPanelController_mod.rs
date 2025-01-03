@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct PreviousColorPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _graphics: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UI::Graphic,
+    pub _graphics: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Graphic>,
     >,
-    pub _button: *mut crate::UnityEngine::UI::Button,
-    pub colorWasSelectedEvent: *mut crate::System::Action_1<crate::UnityEngine::Color>,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub colorWasSelectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::UnityEngine::Color>,
+    >,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _color: crate::UnityEngine::Color,
     pub _graphicsColor: crate::UnityEngine::Color,
 }

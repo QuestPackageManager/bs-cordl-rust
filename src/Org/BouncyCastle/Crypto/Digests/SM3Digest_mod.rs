@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct SM3Digest {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Digests::GeneralDigest,
-    pub V: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub inwords: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub V: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub inwords: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub xOff: i32,
-    pub W: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub W: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SM3Digest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

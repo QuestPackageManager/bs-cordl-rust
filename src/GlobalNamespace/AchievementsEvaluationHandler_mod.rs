@@ -3,34 +3,90 @@
 #[derive(Debug)]
 pub struct AchievementsEvaluationHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _clearedLevel100Achievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _totalScore100MillionAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _24HoursPlayedAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _kilometersTravelled100Achievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _15ExpertLevelsRankSAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _15ExpertLevelsFullComboAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _15HardLevelsRankSAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _15HardLevelsFullComboAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _expertLevelClearedWithoutModifiersAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _fullComboExpertWithoutModifiersAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _goodCuts10000Achievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _resultMinRankANormalWithoutModifiersAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _resultMinRankSHardWithoutModifiersAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _resultMinRankSSExpertWithoutModifiersAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _combo50NormalWithoutModifiersAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _combo100HardWithoutModifiersAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _combo500ExpertWithoutModifiersAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _clearedLevelWithoutModifiersAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _clearedLevelWithSongSpeedFasterModifierAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _clearedLevelWithInstaFailModifierAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _clearedLevelWithDisappearingArrowsModifierAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _clearedLevelWithBatteryEnergyModifierAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _cleared30MissionsAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _finalMissionClearedAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _allMissionClearedAchievement: *mut crate::GlobalNamespace::AchievementSO,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _missionNodesManager: *mut crate::GlobalNamespace::IMissionNodesManager,
-    pub _achievementsModel: *mut crate::GlobalNamespace::AchievementsModelSO,
+    pub _clearedLevel100Achievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _totalScore100MillionAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _24HoursPlayedAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _kilometersTravelled100Achievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _15ExpertLevelsRankSAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _15ExpertLevelsFullComboAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _15HardLevelsRankSAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _15HardLevelsFullComboAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _expertLevelClearedWithoutModifiersAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _fullComboExpertWithoutModifiersAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _goodCuts10000Achievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _resultMinRankANormalWithoutModifiersAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _resultMinRankSHardWithoutModifiersAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _resultMinRankSSExpertWithoutModifiersAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _combo50NormalWithoutModifiersAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _combo100HardWithoutModifiersAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _combo500ExpertWithoutModifiersAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _clearedLevelWithoutModifiersAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _clearedLevelWithSongSpeedFasterModifierAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _clearedLevelWithInstaFailModifierAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _clearedLevelWithDisappearingArrowsModifierAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _clearedLevelWithBatteryEnergyModifierAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _cleared30MissionsAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _finalMissionClearedAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _allMissionClearedAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _missionNodesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMissionNodesManager,
+    >,
+    pub _achievementsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementsModelSO,
+    >,
 }
 #[cfg(feature = "AchievementsEvaluationHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

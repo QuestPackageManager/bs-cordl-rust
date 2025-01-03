@@ -1,8 +1,10 @@
 #[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ColorTween {
-    pub m_Target: *mut crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenCallback,
+    pub m_Target: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenCallback,
+    >,
     pub m_StartColor: crate::UnityEngine::Color,
     pub m_TargetColor: crate::UnityEngine::Color,
     pub m_TweenMode: crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenMode,

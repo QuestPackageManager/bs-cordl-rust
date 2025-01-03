@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BeatmapEventDataBoxGroupProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dirtyBoxGroups: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+    pub _dirtyBoxGroups: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapEventDataBoxGroupProcessor")]

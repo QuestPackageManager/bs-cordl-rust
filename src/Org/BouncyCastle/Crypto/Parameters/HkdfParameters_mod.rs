@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct HkdfParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub ikm: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub ikm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub skipExpand: bool,
-    pub salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub info: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub info: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+HkdfParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

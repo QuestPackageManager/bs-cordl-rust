@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct JTokenWriter {
     __cordl_parent: crate::Newtonsoft::Json::JsonWriter,
-    pub _token: *mut crate::Newtonsoft::Json::Linq::JContainer,
-    pub _parent: *mut crate::Newtonsoft::Json::Linq::JContainer,
-    pub _value: *mut crate::Newtonsoft::Json::Linq::JValue,
-    pub _current: *mut crate::Newtonsoft::Json::Linq::JToken,
+    pub _token: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JContainer>,
+    pub _parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JContainer>,
+    pub _value: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+    pub _current: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JTokenWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

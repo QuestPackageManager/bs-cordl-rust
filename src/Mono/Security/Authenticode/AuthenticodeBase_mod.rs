@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct AuthenticodeBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub fileblock: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub fs: *mut crate::System::IO::Stream,
+    pub fileblock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub fs: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub blockNo: i32,
     pub blockLength: i32,
     pub peOffset: i32,

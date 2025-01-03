@@ -5,8 +5,10 @@ pub struct AnimationPreviewUpdateCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Output: crate::UnityEngine::Animations::AnimationPlayableOutput,
     pub m_Graph: crate::UnityEngine::Playables::PlayableGraph,
-    pub m_PreviewComponents: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Animations::IAnimationWindowPreview,
+    pub m_PreviewComponents: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Animations::IAnimationWindowPreview,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationPreviewUpdateCallback")]

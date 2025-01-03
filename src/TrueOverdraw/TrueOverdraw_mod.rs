@@ -4,14 +4,18 @@
 pub struct TrueOverdraw {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _overdrawType_k__BackingField: crate::TrueOverdraw::TrueOverdraw_OverdrawType,
-    pub _renderers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Renderer,
+    pub _renderers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Renderer>,
     >,
-    pub _cachedSharedMaterials: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+    pub _cachedSharedMaterials: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+        >,
     >,
-    pub _cachedMaterialInstances: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+    pub _cachedMaterialInstances: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+        >,
     >,
 }
 #[cfg(feature = "TrueOverdraw+TrueOverdraw")]

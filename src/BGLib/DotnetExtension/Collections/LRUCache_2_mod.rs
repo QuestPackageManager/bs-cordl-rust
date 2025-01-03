@@ -6,19 +6,25 @@ pub struct LRUCache_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub itemWillBeRemovedFromCacheEvent: *mut crate::System::Action_2<TKey, TValue>,
-    pub _cacheContent: *mut crate::System::Collections::Generic::LinkedList_1<
-        *mut crate::BGLib::DotnetExtension::Collections::LRUCache_2_CacheElement<
-            TKey,
-            TValue,
-        >,
+    pub itemWillBeRemovedFromCacheEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<TKey, TValue>,
     >,
-    pub _index: *mut crate::System::Collections::Generic::Dictionary_2<
-        TKey,
-        *mut crate::System::Collections::Generic::LinkedListNode_1<
+    pub _cacheContent: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedList_1<
             *mut crate::BGLib::DotnetExtension::Collections::LRUCache_2_CacheElement<
                 TKey,
                 TValue,
+            >,
+        >,
+    >,
+    pub _index: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            TKey,
+            *mut crate::System::Collections::Generic::LinkedListNode_1<
+                *mut crate::BGLib::DotnetExtension::Collections::LRUCache_2_CacheElement<
+                    TKey,
+                    TValue,
+                >,
             >,
         >,
     >,

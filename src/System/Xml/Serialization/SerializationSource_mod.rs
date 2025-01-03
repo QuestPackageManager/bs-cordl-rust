@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct SerializationSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub includedTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
-    pub namspace: *mut quest_hook::libil2cpp::Il2CppString,
+    pub includedTypes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    >,
+    pub namspace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub canBeGenerated: bool,
 }
 #[cfg(feature = "System+Xml+Serialization+SerializationSource")]

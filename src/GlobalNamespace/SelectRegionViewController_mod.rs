@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct SelectRegionViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _continueButton: *mut crate::UnityEngine::UI::Button,
-    pub _regionSelectionDropdown: *mut crate::HMUI::SimpleTextDropdown,
-    pub _regionLocalizationKeys: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::SelectRegionViewController_RegionToLocalizationKeyPair,
+    pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _regionSelectionDropdown: quest_hook::libil2cpp::Gc<
+        crate::HMUI::SimpleTextDropdown,
     >,
-    pub didPressContinueButtonEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::SelectRegionViewController_Region,
+    pub _regionLocalizationKeys: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::SelectRegionViewController_RegionToLocalizationKeyPair,
+        >,
+    >,
+    pub didPressContinueButtonEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::GlobalNamespace::SelectRegionViewController_Region,
+        >,
     >,
 }
 #[cfg(feature = "SelectRegionViewController")]
@@ -161,10 +167,10 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "SelectRegionViewController+RegionToLocalizationKeyPair")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SelectRegionViewController_RegionToLocalizationKeyPair {
     pub region: crate::GlobalNamespace::SelectRegionViewController_Region,
-    pub localizationKey: *mut quest_hook::libil2cpp::Il2CppString,
+    pub localizationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "SelectRegionViewController+RegionToLocalizationKeyPair")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

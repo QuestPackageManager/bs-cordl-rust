@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct UserAttributePacket {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::ContainedPacket,
-    pub subpackets: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket,
+    pub subpackets: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+UserAttributePacket")]

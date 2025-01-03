@@ -3,17 +3,19 @@
 #[derive(Debug)]
 pub struct PSVRHelper {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub inputFocusWasCapturedEvent: *mut crate::System::Action,
-    pub inputFocusWasReleasedEvent: *mut crate::System::Action,
-    pub vrFocusWasCapturedEvent: *mut crate::System::Action,
-    pub vrFocusWasReleasedEvent: *mut crate::System::Action,
-    pub hmdUnmountedEvent: *mut crate::System::Action,
-    pub hmdMountedEvent: *mut crate::System::Action,
-    pub controllersDidChangeReferenceEvent: *mut crate::System::Action,
-    pub controllersDidDisconnectEvent: *mut crate::System::Action,
+    pub inputFocusWasCapturedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub inputFocusWasReleasedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub vrFocusWasCapturedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub vrFocusWasReleasedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub hmdUnmountedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub hmdMountedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub controllersDidChangeReferenceEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub controllersDidDisconnectEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _didGetNodeStatesThisFrame: bool,
-    pub _nodeStates: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::XR::XRNodeState,
+    pub _nodeStates: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::XR::XRNodeState>,
     >,
     pub _hasInputFocus: bool,
     pub _hasVrFocus: bool,

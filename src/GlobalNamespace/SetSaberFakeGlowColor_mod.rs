@@ -4,9 +4,13 @@
 pub struct SetSaberFakeGlowColor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _tintColor: crate::UnityEngine::Color,
-    pub _saberTypeObject: *mut crate::GlobalNamespace::SaberTypeObject,
-    pub _parametric3SliceSprite: *mut crate::GlobalNamespace::Parametric3SliceSpriteController,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
+    pub _saberTypeObject: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SaberTypeObject,
+    >,
+    pub _parametric3SliceSprite: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Parametric3SliceSpriteController,
+    >,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub _saberType: crate::GlobalNamespace::SaberType,
 }
 #[cfg(feature = "SetSaberFakeGlowColor")]

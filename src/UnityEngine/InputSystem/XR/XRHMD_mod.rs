@@ -3,12 +3,24 @@
 #[derive(Debug)]
 pub struct XRHMD {
     __cordl_parent: crate::UnityEngine::InputSystem::TrackedDevice,
-    pub _leftEyePosition_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    pub _leftEyeRotation_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-    pub _rightEyePosition_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    pub _rightEyeRotation_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl,
-    pub _centerEyePosition_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    pub _centerEyeRotation_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+    pub _leftEyePosition_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
+    pub _leftEyeRotation_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+    >,
+    pub _rightEyePosition_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
+    pub _rightEyeRotation_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+    >,
+    pub _centerEyePosition_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
+    pub _centerEyeRotation_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+XRHMD")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

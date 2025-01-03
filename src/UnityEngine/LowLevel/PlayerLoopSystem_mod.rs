@@ -1,12 +1,16 @@
 #[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystem")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PlayerLoopSystem {
-    pub _cordl_type: *mut crate::System::Type,
-    pub subSystemList: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::LowLevel::PlayerLoopSystem,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub subSystemList: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::LowLevel::PlayerLoopSystem,
+        >,
     >,
-    pub updateDelegate: *mut crate::UnityEngine::LowLevel::PlayerLoopSystem_UpdateFunction,
+    pub updateDelegate: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::LowLevel::PlayerLoopSystem_UpdateFunction,
+    >,
     pub updateFunction: crate::System::IntPtr,
     pub loopConditionFunction: crate::System::IntPtr,
 }

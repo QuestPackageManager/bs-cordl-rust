@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct MissionLevelFinishedController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _prepareLevelCompletionResults: *mut crate::GlobalNamespace::PrepareLevelCompletionResults,
-    pub _missionLevelSceneSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-    pub _missionObjectiveCheckersManager: *mut crate::GlobalNamespace::MissionObjectiveCheckersManager,
-    pub _gameplayManager: *mut crate::GlobalNamespace::ILevelEndActions,
+    pub _prepareLevelCompletionResults: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PrepareLevelCompletionResults,
+    >,
+    pub _missionLevelSceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+    >,
+    pub _missionObjectiveCheckersManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionObjectiveCheckersManager,
+    >,
+    pub _gameplayManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILevelEndActions,
+    >,
 }
 #[cfg(feature = "MissionLevelFinishedController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

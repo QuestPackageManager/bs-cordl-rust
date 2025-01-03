@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ServiceLocator {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub issuer: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
-    pub locator: *mut crate::Org::BouncyCastle::Asn1::Asn1Object,
+    pub issuer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Name,
+    >,
+    pub locator: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+ServiceLocator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

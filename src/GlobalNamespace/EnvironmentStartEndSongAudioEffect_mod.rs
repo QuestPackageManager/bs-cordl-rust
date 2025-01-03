@@ -8,19 +8,25 @@ pub struct EnvironmentStartEndSongAudioEffect {
     pub _songStartAudioClipVolume: f32,
     pub _songFinishedAudioClipVolume: f32,
     pub _songFailedAudioClipVolume: f32,
-    pub _songStartAudioClips: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::AudioClip,
+    pub _songStartAudioClips: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
     >,
-    pub _songFinishedAudioClips: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::AudioClip,
+    pub _songFinishedAudioClips: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
     >,
-    pub _songFailedAudioClips: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::AudioClip,
+    pub _songFailedAudioClips: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
     >,
-    pub _levelEndActions: *mut crate::GlobalNamespace::ILevelEndActions,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _gamePause: *mut crate::GlobalNamespace::IGamePause,
-    pub _audioEffectsPlayer: *mut crate::GlobalNamespace::EnvironmentAudioEffectsPlayer,
+    pub _levelEndActions: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILevelEndActions,
+    >,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
+    pub _gamePause: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>,
+    pub _audioEffectsPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentAudioEffectsPlayer,
+    >,
     pub _environmentContext: crate::GlobalNamespace::EnvironmentContext,
     pub _songFinishedPlayed: bool,
     pub _isWaitingToPlayStartAudio: bool,

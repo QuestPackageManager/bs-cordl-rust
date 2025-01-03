@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct ResultObjectiveListItem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _icon: *mut crate::UnityEngine::UI::Image,
-    pub _iconGlow: *mut crate::UnityEngine::UI::Image,
-    pub _titleText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _conditionText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _valueText: *mut crate::TMPro::TextMeshProUGUI,
+    pub _icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _iconGlow: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _titleText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _conditionText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _valueText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
 #[cfg(feature = "ResultObjectiveListItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,9 +1,9 @@
 #[cfg(feature = "System+Xml+Linq+NamespaceCache")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NamespaceCache {
-    pub _ns: *mut crate::System::Xml::Linq::XNamespace,
-    pub _namespaceName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _ns: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
+    pub _namespaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Linq+NamespaceCache")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

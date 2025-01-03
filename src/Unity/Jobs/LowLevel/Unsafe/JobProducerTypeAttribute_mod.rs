@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct JobProducerTypeAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _ProducerType_k__BackingField: *mut crate::System::Type,
+    pub _ProducerType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobProducerTypeAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

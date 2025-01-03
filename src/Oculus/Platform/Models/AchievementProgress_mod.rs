@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct AchievementProgress {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Bitfield: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Bitfield: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Count: u64,
     pub IsUnlocked: bool,
-    pub Name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub UnlockTime: crate::System::DateTime,
 }
 #[cfg(feature = "Oculus+Platform+Models+AchievementProgress")]

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AuthorizationRule {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub identity: *mut crate::System::Security::Principal::IdentityReference,
+    pub identity: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Principal::IdentityReference,
+    >,
     pub accessMask: i32,
     pub isInherited: bool,
     pub inheritanceFlags: crate::System::Security::AccessControl::InheritanceFlags,

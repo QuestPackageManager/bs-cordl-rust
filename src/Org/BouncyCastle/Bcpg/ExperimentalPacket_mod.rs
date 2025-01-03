@@ -4,7 +4,7 @@
 pub struct ExperimentalPacket {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::ContainedPacket,
     pub tag: crate::Org::BouncyCastle::Bcpg::PacketTag,
-    pub contents: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub contents: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+ExperimentalPacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

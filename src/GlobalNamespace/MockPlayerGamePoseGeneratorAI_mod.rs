@@ -3,29 +3,33 @@
 #[derive(Debug)]
 pub struct MockPlayerGamePoseGeneratorAI {
     __cordl_parent: crate::GlobalNamespace::MockPlayerGamePoseGenerator,
-    pub _scoreCalculator: *mut crate::GlobalNamespace::IMockPlayerScoreCalculator,
+    pub _scoreCalculator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMockPlayerScoreCalculator,
+    >,
     pub _lastKnowScore: i32,
     pub _songStartTime: i64,
     pub _timeScale: f32,
-    pub _onSongFinished: *mut crate::System::Action,
-    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+    pub _onSongFinished: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
+    >,
     pub _lastEventTime: f32,
     pub _lastHeadPose: crate::UnityEngine::Pose,
     pub _lastLeftHandPose: crate::UnityEngine::Pose,
     pub _lastRightHandPose: crate::UnityEngine::Pose,
     pub _lastSongTime: f32,
     pub _lineCount: i32,
-    pub _leftNotes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MockNoteData,
+    pub _leftNotes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockNoteData>,
     >,
-    pub _rightNotes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MockNoteData,
+    pub _rightNotes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockNoteData>,
     >,
-    pub _bombNotes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MockNoteData,
+    pub _bombNotes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockNoteData>,
     >,
-    pub _obstacles: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MockObstacleData,
+    pub _obstacles: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MockObstacleData>,
     >,
     pub _leftNoteIndex: i32,
     pub _rightNoteIndex: i32,

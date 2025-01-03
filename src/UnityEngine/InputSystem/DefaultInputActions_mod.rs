@@ -3,24 +3,58 @@
 #[derive(Debug)]
 pub struct DefaultInputActions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _asset_k__BackingField: *mut crate::UnityEngine::InputSystem::InputActionAsset,
-    pub m_Player: *mut crate::UnityEngine::InputSystem::InputActionMap,
-    pub m_PlayerActionsCallbackInterface: *mut crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions,
-    pub m_Player_Move: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub m_Player_Look: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub m_Player_Fire: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub m_UI: *mut crate::UnityEngine::InputSystem::InputActionMap,
-    pub m_UIActionsCallbackInterface: *mut crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions,
-    pub m_UI_Navigate: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub m_UI_Submit: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub m_UI_Cancel: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub m_UI_Point: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub m_UI_Click: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub m_UI_ScrollWheel: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub m_UI_MiddleClick: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub m_UI_RightClick: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub m_UI_TrackedDevicePosition: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub m_UI_TrackedDeviceOrientation: *mut crate::UnityEngine::InputSystem::InputAction,
+    pub _asset_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionAsset,
+    >,
+    pub m_Player: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionMap,
+    >,
+    pub m_PlayerActionsCallbackInterface: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions,
+    >,
+    pub m_Player_Move: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub m_Player_Look: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub m_Player_Fire: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub m_UI: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
+    pub m_UIActionsCallbackInterface: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions,
+    >,
+    pub m_UI_Navigate: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub m_UI_Submit: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub m_UI_Cancel: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub m_UI_Point: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub m_UI_Click: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub m_UI_ScrollWheel: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub m_UI_MiddleClick: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub m_UI_RightClick: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub m_UI_TrackedDevicePosition: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub m_UI_TrackedDeviceOrientation: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
     pub m_KeyboardMouseSchemeIndex: i32,
     pub m_GamepadSchemeIndex: i32,
     pub m_TouchSchemeIndex: i32,
@@ -696,9 +730,11 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
 }
 #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DefaultInputActions_PlayerActions {
-    pub m_Wrapper: *mut crate::UnityEngine::InputSystem::DefaultInputActions,
+    pub m_Wrapper: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::DefaultInputActions,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -826,9 +862,11 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
 }
 #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+UIActions")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DefaultInputActions_UIActions {
-    pub m_Wrapper: *mut crate::UnityEngine::InputSystem::DefaultInputActions,
+    pub m_Wrapper: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::DefaultInputActions,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+UIActions")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

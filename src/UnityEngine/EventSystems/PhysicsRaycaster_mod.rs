@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct PhysicsRaycaster {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseRaycaster,
-    pub m_EventCamera: *mut crate::UnityEngine::Camera,
+    pub m_EventCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub m_EventMask: crate::UnityEngine::LayerMask,
     pub m_MaxRayIntersections: i32,
     pub m_LastMaxRayIntersections: i32,
-    pub m_Hits: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+    pub m_Hits: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+    >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct OidCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _list: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Security::Cryptography::Oid,
+    pub _list: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Security::Cryptography::Oid,
+        >,
     >,
 }
 #[cfg(feature = "System+Security+Cryptography+OidCollection")]

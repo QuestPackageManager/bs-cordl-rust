@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct HeadsetHapticSettingsSampleController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _formattedFloatListSettingsController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
+    pub _formattedFloatListSettingsController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FormattedFloatListSettingsController,
+    >,
     pub _hapticSamplePlayDelay: f32,
     pub _hapticSampleDuration: f32,
-    pub _headHapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _hapticFeedbackManager: *mut crate::GlobalNamespace::HapticFeedbackManager,
+    pub _headHapticPreset: quest_hook::libil2cpp::Gc<
+        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+    >,
+    pub _hapticFeedbackManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HapticFeedbackManager,
+    >,
     pub _nextHapticSamplePlayTime: f32,
     pub _nextHapticSamplePlayTimeEnd: f32,
 }

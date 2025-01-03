@@ -3,20 +3,26 @@
 #[derive(Debug)]
 pub struct BeatmapLevelsRepository {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _beatmapLevelPacks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub _beatmapLevelPacks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevelPack>,
     >,
-    pub _idToBeatmapLevelPack: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub _idToBeatmapLevelPack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
+        >,
     >,
-    pub _idToBeatmapLevel: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::BeatmapLevel,
+    pub _idToBeatmapLevel: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::BeatmapLevel,
+        >,
     >,
-    pub _beatmapLevelIdToBeatmapLevelPackId: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _beatmapLevelIdToBeatmapLevelPackId: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapLevelsRepository")]

@@ -3,14 +3,16 @@
 #[derive(Debug)]
 pub struct ParticleSystemEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightColor0: *mut crate::GlobalNamespace::ColorSO,
-    pub _lightColor1: *mut crate::GlobalNamespace::ColorSO,
-    pub _highlightColor0: *mut crate::GlobalNamespace::ColorSO,
-    pub _highlightColor1: *mut crate::GlobalNamespace::ColorSO,
+    pub _lightColor0: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _lightColor1: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _highlightColor0: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _highlightColor1: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
     pub _lightOnStart: bool,
     pub _colorEvent: crate::GlobalNamespace::BasicBeatmapEventType,
-    pub _particleSystem: *mut crate::UnityEngine::ParticleSystem,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
     pub _lightIsOn: bool,
     pub _offColor: crate::UnityEngine::Color,
     pub _highlightValue: f32,
@@ -18,11 +20,13 @@ pub struct ParticleSystemEventEffect {
     pub _highlightColor: crate::UnityEngine::Color,
     pub kFadeSpeed: f32,
     pub _mainModule: crate::UnityEngine::ParticleSystem_MainModule,
-    pub _particles: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::ParticleSystem_Particle,
+    pub _particles: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ParticleSystem_Particle>,
     >,
     pub _particleColor: crate::UnityEngine::Color,
-    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "ParticleSystemEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

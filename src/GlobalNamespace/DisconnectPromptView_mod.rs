@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct DisconnectPromptView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _presentPanelAnimation: *mut crate::HMUI::PanelAnimationSO,
-    pub _dismissPanelAnimation: *mut crate::HMUI::PanelAnimationSO,
-    pub _promptGameObject: *mut crate::UnityEngine::GameObject,
-    pub _okButton: *mut crate::UnityEngine::UI::Button,
-    pub _cancelButton: *mut crate::UnityEngine::UI::Button,
-    pub didViewFinishEvent: *mut crate::System::Action_1<bool>,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _presentPanelAnimation: quest_hook::libil2cpp::Gc<crate::HMUI::PanelAnimationSO>,
+    pub _dismissPanelAnimation: quest_hook::libil2cpp::Gc<crate::HMUI::PanelAnimationSO>,
+    pub _promptGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _okButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _cancelButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub didViewFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
 }
 #[cfg(feature = "DisconnectPromptView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

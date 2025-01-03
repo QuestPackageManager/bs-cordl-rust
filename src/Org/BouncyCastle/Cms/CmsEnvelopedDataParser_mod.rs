@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct CmsEnvelopedDataParser {
     __cordl_parent: crate::Org::BouncyCastle::Cms::CmsContentInfoParser,
-    pub recipientInfoStore: *mut crate::Org::BouncyCastle::Cms::RecipientInformationStore,
-    pub envelopedData: *mut crate::Org::BouncyCastle::Asn1::Cms::EnvelopedDataParser,
-    pub _encAlg: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub _unprotectedAttributes: *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+    pub recipientInfoStore: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::RecipientInformationStore,
+    >,
+    pub envelopedData: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::EnvelopedDataParser,
+    >,
+    pub _encAlg: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub _unprotectedAttributes: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+    >,
     pub _attrNotRead: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataParser")]

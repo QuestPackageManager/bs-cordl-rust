@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct HkdfBytesGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub hMacHash: *mut crate::Org::BouncyCastle::Crypto::Macs::HMac,
+    pub hMacHash: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Macs::HMac,
+    >,
     pub hashLen: i32,
-    pub info: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub currentT: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub info: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub currentT: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub generatedBytes: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+HkdfBytesGenerator")]

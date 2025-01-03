@@ -1,18 +1,22 @@
 #[cfg(feature = "UnityEngine+InputSystem+InputBinding")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputBinding {
-    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Id: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Path: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Interactions: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Processors: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Groups: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Action: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Interactions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Processors: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Groups: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Action: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Flags: crate::UnityEngine::InputSystem::InputBinding_Flags,
-    pub m_OverridePath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_OverrideInteractions: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_OverrideProcessors: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_OverridePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_OverrideInteractions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_OverrideProcessors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputBinding")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

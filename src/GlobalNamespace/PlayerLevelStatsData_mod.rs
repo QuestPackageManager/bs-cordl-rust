@@ -9,9 +9,11 @@ pub struct PlayerLevelStatsData {
     pub _maxRank: crate::GlobalNamespace::RankModel_Rank,
     pub _validScore: bool,
     pub _playCount: i32,
-    pub _levelID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _difficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    pub _beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSO,
+    >,
 }
 #[cfg(feature = "PlayerLevelStatsData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct XmlMapping {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub map: *mut crate::System::Xml::Serialization::ObjectMap,
-    pub relatedMaps: *mut crate::System::Collections::ArrayList,
+    pub map: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::ObjectMap>,
+    pub relatedMaps: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub format: crate::System::Xml::Serialization::SerializationFormat,
-    pub source: *mut crate::System::Xml::Serialization::SerializationSource,
-    pub _elementName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _namespace: *mut quest_hook::libil2cpp::Il2CppString,
-    pub key: *mut quest_hook::libil2cpp::Il2CppString,
+    pub source: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::SerializationSource,
+    >,
+    pub _elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _namespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlMapping")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct QuestAppInit {
     __cordl_parent: crate::BeatSaber::Init::BSAppInit,
-    pub _mainSystemInit: *mut crate::GlobalNamespace::MainSystemInit,
-    pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
-    pub _defaultScenesTransitionsFromInit: *mut crate::GlobalNamespace::DefaultScenesTransitionsFromInit,
+    pub _mainSystemInit: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MainSystemInit,
+    >,
+    pub _settingsApplicator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsApplicatorSO,
+    >,
+    pub _defaultScenesTransitionsFromInit: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DefaultScenesTransitionsFromInit,
+    >,
 }
 #[cfg(feature = "QuestAppInit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

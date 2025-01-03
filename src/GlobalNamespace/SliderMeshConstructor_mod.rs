@@ -3,18 +3,20 @@
 #[derive(Debug)]
 pub struct SliderMeshConstructor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _meshFilter: *mut crate::UnityEngine::MeshFilter,
-    pub reusableVerts: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub _meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
+    pub reusableVerts: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
-    pub reusableUvs: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub reusableUvs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
-    pub reusableNormals: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub reusableNormals: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
-    pub reusableTriangles: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _mesh: *mut crate::UnityEngine::Mesh,
+    pub reusableTriangles: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
 }
 #[cfg(feature = "SliderMeshConstructor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

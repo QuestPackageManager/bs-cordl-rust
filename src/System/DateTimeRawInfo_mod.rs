@@ -1,8 +1,8 @@
 #[cfg(feature = "System+DateTimeRawInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DateTimeRawInfo {
-    pub num: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub num: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub numCount: i32,
     pub month: i32,
     pub year: i32,

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct StackBuilderSink {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _target: *mut crate::System::MarshalByRefObject,
-    pub _rp: *mut crate::System::Runtime::Remoting::Proxies::RealProxy,
+    pub _target: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
+    pub _rp: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Proxies::RealProxy,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+StackBuilderSink")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

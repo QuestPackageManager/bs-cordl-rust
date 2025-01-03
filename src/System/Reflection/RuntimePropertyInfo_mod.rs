@@ -7,7 +7,9 @@ pub struct RuntimePropertyInfo {
     pub prop: crate::System::IntPtr,
     pub info: crate::System::Reflection::MonoPropertyInfo,
     pub cached: crate::System::Reflection::PInfo,
-    pub cached_getter: *mut crate::System::Reflection::RuntimePropertyInfo_GetterAdapter,
+    pub cached_getter: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::RuntimePropertyInfo_GetterAdapter,
+    >,
 }
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

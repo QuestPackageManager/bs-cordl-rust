@@ -3,24 +3,34 @@
 #[derive(Debug)]
 pub struct Preprocessor {
     __cordl_parent: crate::System::Xml::Schema::BaseProcessor,
-    pub Xmlns: *mut quest_hook::libil2cpp::Il2CppString,
-    pub NsXsi: *mut quest_hook::libil2cpp::Il2CppString,
-    pub targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
-    pub rootSchema: *mut crate::System::Xml::Schema::XmlSchema,
-    pub currentSchema: *mut crate::System::Xml::Schema::XmlSchema,
+    pub Xmlns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub NsXsi: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub rootSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+    pub currentSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     pub elementFormDefault: crate::System::Xml::Schema::XmlSchemaForm,
     pub attributeFormDefault: crate::System::Xml::Schema::XmlSchemaForm,
     pub blockDefault: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
     pub finalDefault: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
-    pub schemaLocations: *mut crate::System::Collections::Hashtable,
-    pub chameleonSchemas: *mut crate::System::Collections::Hashtable,
-    pub referenceNamespaces: *mut crate::System::Collections::Hashtable,
-    pub processedExternals: *mut crate::System::Collections::Hashtable,
-    pub lockList: *mut crate::System::Collections::SortedList,
-    pub readerSettings: *mut crate::System::Xml::XmlReaderSettings,
-    pub rootSchemaForRedefine: *mut crate::System::Xml::Schema::XmlSchema,
-    pub redefinedList: *mut crate::System::Collections::ArrayList,
-    pub xmlResolver: *mut crate::System::Xml::XmlResolver,
+    pub schemaLocations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
+    pub chameleonSchemas: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
+    pub referenceNamespaces: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
+    pub processedExternals: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
+    pub lockList: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
+    pub readerSettings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
+    pub rootSchemaForRedefine: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchema,
+    >,
+    pub redefinedList: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub xmlResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
 }
 #[cfg(feature = "System+Xml+Schema+Preprocessor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

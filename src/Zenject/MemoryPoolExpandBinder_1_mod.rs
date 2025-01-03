@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MemoryPoolExpandBinder_1<TContract: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>,
-    pub _MemoryPoolBindInfo_k__BackingField: *mut crate::Zenject::MemoryPoolBindInfo,
+    pub _MemoryPoolBindInfo_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Zenject::MemoryPoolBindInfo,
+    >,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
 #[cfg(feature = "Zenject+MemoryPoolExpandBinder_1")]

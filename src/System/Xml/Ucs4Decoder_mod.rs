@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Ucs4Decoder {
     __cordl_parent: crate::System::Text::Decoder,
-    pub lastBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub lastBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub lastBytesCount: i32,
 }
 #[cfg(feature = "System+Xml+Ucs4Decoder")]

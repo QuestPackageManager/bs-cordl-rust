@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct DataRow {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _table: *mut crate::System::Data::DataTable,
-    pub _columns: *mut crate::System::Data::DataColumnCollection,
+    pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    pub _columns: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumnCollection>,
     pub _oldRecord: i32,
     pub _newRecord: i32,
     pub _tempRecord: i32,
@@ -13,9 +13,9 @@ pub struct DataRow {
     pub _inChangingEvent: bool,
     pub _inDeletingEvent: bool,
     pub _inCascade: bool,
-    pub _lastChangedColumn: *mut crate::System::Data::DataColumn,
+    pub _lastChangedColumn: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     pub _countColumnChange: i32,
-    pub _error: *mut crate::System::Data::DataError,
+    pub _error: quest_hook::libil2cpp::Gc<crate::System::Data::DataError>,
     pub _rbTreeNodeId: i32,
     pub _objectID: i32,
 }

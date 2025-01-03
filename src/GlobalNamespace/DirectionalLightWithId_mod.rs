@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DirectionalLightWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    pub _light: *mut crate::GlobalNamespace::DirectionalLight,
+    pub _light: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DirectionalLight>,
     pub _intensity: f32,
     pub _minIntensity: f32,
 }

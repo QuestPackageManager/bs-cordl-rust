@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct AnimatorMoveHandlerManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _handlers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::IAnimatorMoveHandler,
+    pub _handlers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::IAnimatorMoveHandler,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+AnimatorMoveHandlerManager")]

@@ -3,18 +3,20 @@
 #[derive(Debug)]
 pub struct LeaderboardUploadData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub playerName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub playerId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub score: *mut quest_hook::libil2cpp::Il2CppString,
-    pub leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub songName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub songSubName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub authorName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub bpm: *mut quest_hook::libil2cpp::Il2CppString,
-    pub difficulty: *mut quest_hook::libil2cpp::Il2CppString,
-    pub infoHash: *mut quest_hook::libil2cpp::Il2CppString,
-    pub modifiers: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub score: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub songName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub songSubName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub authorName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub bpm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub difficulty: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub infoHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub modifiers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "LeaderboardUploadData")]

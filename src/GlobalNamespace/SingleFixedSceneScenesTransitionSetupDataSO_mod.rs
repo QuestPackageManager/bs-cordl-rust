@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SingleFixedSceneScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
-    pub _sceneInfo: *mut crate::GlobalNamespace::SceneInfo,
+    pub _sceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
 }
 #[cfg(feature = "SingleFixedSceneScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

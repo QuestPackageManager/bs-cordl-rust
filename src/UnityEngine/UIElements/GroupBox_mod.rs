@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct GroupBox {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
-    pub m_TitleLabel: *mut crate::UnityEngine::UIElements::Label,
+    pub m_TitleLabel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Label>,
 }
 #[cfg(feature = "UnityEngine+UIElements+GroupBox")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -192,7 +192,9 @@ for crate::UnityEngine::UIElements::GroupBox_UxmlFactory {
 #[derive(Debug)]
 pub struct GroupBox_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
-    pub m_Text: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_Text: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+GroupBox+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

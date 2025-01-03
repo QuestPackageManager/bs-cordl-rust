@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct DisposableManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _disposables: *mut crate::System::Collections::Generic::List_1<
-        crate::Zenject::DisposableManager_DisposableInfo,
+    pub _disposables: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::Zenject::DisposableManager_DisposableInfo,
+        >,
     >,
-    pub _lateDisposables: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::DisposableManager_LateDisposableInfo,
+    pub _lateDisposables: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::DisposableManager_LateDisposableInfo,
+        >,
     >,
     pub _disposed: bool,
     pub _lateDisposed: bool,
@@ -216,9 +220,9 @@ impl AsMut<crate::System::IDisposable> for crate::Zenject::DisposableManager {
 }
 #[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DisposableManager_DisposableInfo {
-    pub Disposable: *mut crate::System::IDisposable,
+    pub Disposable: quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     pub Priority: i32,
 }
 #[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
@@ -257,7 +261,7 @@ impl crate::Zenject::DisposableManager_DisposableInfo {
 #[derive(Debug)]
 pub struct DisposableManager_LateDisposableInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub LateDisposable: *mut crate::Zenject::ILateDisposable,
+    pub LateDisposable: quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>,
     pub Priority: i32,
 }
 #[cfg(feature = "Zenject+DisposableManager+LateDisposableInfo")]

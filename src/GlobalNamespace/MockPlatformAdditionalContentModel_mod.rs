@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct MockPlatformAdditionalContentModel {
     __cordl_parent: crate::GlobalNamespace::AdditionalContentModel,
-    pub _levelsEntitlements: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::MockPlatformEntitlement,
+    pub _levelsEntitlements: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::MockPlatformEntitlement,
+        >,
     >,
-    pub _levelPacksEntitlements: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::MockPlatformEntitlement,
+    pub _levelPacksEntitlements: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::MockPlatformEntitlement,
+        >,
     >,
     pub _packBetterBuyThanLevel: bool,
     pub randomMillisecondsResponseTime: crate::UnityEngine::RangeInt,

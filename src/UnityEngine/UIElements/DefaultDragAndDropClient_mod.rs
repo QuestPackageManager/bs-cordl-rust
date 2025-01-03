@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct DefaultDragAndDropClient {
     __cordl_parent: crate::UnityEngine::UIElements::DragAndDropData,
-    pub m_GenericData: *mut crate::System::Collections::Hashtable,
-    pub m_DraggedInfoLabel: *mut crate::UnityEngine::UIElements::Label,
+    pub m_GenericData: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub m_DraggedInfoLabel: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Label,
+    >,
     pub m_VisualMode: crate::UnityEngine::UIElements::DragVisualMode,
-    pub m_UnityObjectReferences: *mut crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::UnityEngine::Object,
+    pub m_UnityObjectReferences: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::UnityEngine::Object,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultDragAndDropClient")]

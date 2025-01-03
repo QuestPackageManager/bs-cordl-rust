@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct ResizablePanel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _rectTransform: *mut crate::UnityEngine::RectTransform,
-    pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub _resizeTween: *mut crate::Tweening::Vector2Tween,
+    pub _rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::TimeTweeningManager,
+    >,
+    pub _resizeTween: quest_hook::libil2cpp::Gc<crate::Tweening::Vector2Tween>,
 }
 #[cfg(feature = "ResizablePanel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct PresentHiddenSettingsAfterNClicks {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _hiddenSettingsButton: *mut crate::UnityEngine::UI::Button,
-    pub _hiddenSettingsViewController: *mut crate::HMUI::ViewController,
+    pub _hiddenSettingsButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _hiddenSettingsViewController: quest_hook::libil2cpp::Gc<
+        crate::HMUI::ViewController,
+    >,
     pub _numberOfClicksRequired: i32,
-    pub _settingsFlowCoordinator: *mut crate::GlobalNamespace::SettingsFlowCoordinator,
+    pub _settingsFlowCoordinator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsFlowCoordinator,
+    >,
     pub _currentNumberOfClicks: i32,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
 }
 #[cfg(feature = "PresentHiddenSettingsAfterNClicks")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

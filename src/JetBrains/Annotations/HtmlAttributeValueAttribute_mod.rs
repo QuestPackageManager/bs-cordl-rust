@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct HtmlAttributeValueAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "JetBrains+Annotations+HtmlAttributeValueAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

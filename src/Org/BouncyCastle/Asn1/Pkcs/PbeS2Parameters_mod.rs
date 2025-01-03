@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct PbeS2Parameters {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub func: *mut crate::Org::BouncyCastle::Asn1::Pkcs::KeyDerivationFunc,
-    pub scheme: *mut crate::Org::BouncyCastle::Asn1::Pkcs::EncryptionScheme,
+    pub func: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Pkcs::KeyDerivationFunc,
+    >,
+    pub scheme: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Pkcs::EncryptionScheme,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+PbeS2Parameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

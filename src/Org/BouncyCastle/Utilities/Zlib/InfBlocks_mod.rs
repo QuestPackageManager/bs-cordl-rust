@@ -7,21 +7,25 @@ pub struct InfBlocks {
     pub left: i32,
     pub table: i32,
     pub index: i32,
-    pub blens: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub bb: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub tb: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub codes: *mut crate::Org::BouncyCastle::Utilities::Zlib::InfCodes,
+    pub blens: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub bb: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub tb: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub codes: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Zlib::InfCodes,
+    >,
     pub last: i32,
     pub bitk: i32,
     pub bitb: i32,
-    pub hufts: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub window: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub hufts: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub window: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub end: i32,
     pub read: i32,
     pub write: i32,
-    pub checkfn: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub checkfn: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub check: i64,
-    pub inftree: *mut crate::Org::BouncyCastle::Utilities::Zlib::InfTree,
+    pub inftree: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Zlib::InfTree,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+InfBlocks")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

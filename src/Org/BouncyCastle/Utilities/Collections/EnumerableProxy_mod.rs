@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct EnumerableProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub inner: *mut crate::System::Collections::IEnumerable,
+    pub inner: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+EnumerableProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

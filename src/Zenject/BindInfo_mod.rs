@@ -5,30 +5,34 @@ pub struct BindInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub MarkAsCreationBinding: bool,
     pub MarkAsUniqueSingleton: bool,
-    pub ConcreteIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub ConcreteIdentifier: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub SaveProvider: bool,
     pub OnlyBindIfNotBound: bool,
     pub RequireExplicitScope: bool,
-    pub Identifier: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub ContractTypes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Type,
+    pub Identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub ContractTypes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
     >,
     pub BindingInheritanceMethod: crate::Zenject::BindingInheritanceMethods,
     pub InvalidBindResponse: crate::Zenject::InvalidBindResponses,
     pub NonLazy: bool,
-    pub Condition: *mut crate::Zenject::BindingCondition,
+    pub Condition: quest_hook::libil2cpp::Gc<crate::Zenject::BindingCondition>,
     pub ToChoice: crate::Zenject::ToChoices,
-    pub ContextInfo: *mut quest_hook::libil2cpp::Il2CppString,
-    pub ToTypes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Type,
+    pub ContextInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ToTypes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
     >,
     pub Scope: crate::Zenject::ScopeTypes,
-    pub Arguments: *mut crate::System::Collections::Generic::List_1<
-        crate::Zenject::TypeValuePair,
+    pub Arguments: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
     >,
-    pub InstantiatedCallback: *mut crate::System::Action_2<
-        *mut crate::Zenject::InjectContext,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub InstantiatedCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::Zenject::InjectContext,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+BindInfo")]

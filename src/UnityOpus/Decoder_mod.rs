@@ -5,7 +5,7 @@ pub struct Decoder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub decoder: crate::System::IntPtr,
     pub channels: crate::UnityOpus::NumChannels,
-    pub softclipMem: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub softclipMem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub disposedValue: bool,
 }
 #[cfg(feature = "UnityOpus+Decoder")]

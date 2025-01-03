@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct ConsoleCommandBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _console: *mut crate::GlobalNamespace::DebugConsoleController,
-    pub _arguments: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::ArgumentBase,
+    pub _console: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DebugConsoleController,
+    >,
+    pub _arguments: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::ArgumentBase>,
     >,
 }
 #[cfg(feature = "ConsoleCommandBase")]

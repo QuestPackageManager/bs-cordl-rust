@@ -4,18 +4,17 @@
 pub struct SectionTableView {
     __cordl_parent: crate::HMUI::TableView,
     pub _unfoldSectionsByDefault: bool,
-    pub didSelectRowInSectionEvent: *mut crate::System::Action_3<
-        *mut crate::HMUI::SectionTableView,
-        i32,
-        i32,
+    pub didSelectRowInSectionEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_3<*mut crate::HMUI::SectionTableView, i32, i32>,
     >,
-    pub didSelectHeaderEvent: *mut crate::System::Action_2<
-        *mut crate::HMUI::SectionTableView,
-        i32,
+    pub didSelectHeaderEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::HMUI::SectionTableView, i32>,
     >,
-    pub _dataSource: *mut crate::HMUI::SectionTableView_IDataSource,
-    pub _sections: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::HMUI::SectionTableView_Section,
+    pub _dataSource: quest_hook::libil2cpp::Gc<
+        crate::HMUI::SectionTableView_IDataSource,
+    >,
+    pub _sections: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::HMUI::SectionTableView_Section>,
     >,
 }
 #[cfg(feature = "HMUI+SectionTableView")]
@@ -396,7 +395,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SectionTableView_IDataSo
 }
 #[cfg(feature = "HMUI+SectionTableView+Section")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SectionTableView_Section {
     pub unfolded: bool,
     pub startBaseRow: i32,

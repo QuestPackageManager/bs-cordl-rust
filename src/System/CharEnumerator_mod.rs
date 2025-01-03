@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CharEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _str: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _index: i32,
     pub _currentElement: char,
 }

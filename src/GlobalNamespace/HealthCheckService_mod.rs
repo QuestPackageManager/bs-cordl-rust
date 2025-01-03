@@ -4,10 +4,12 @@
 pub struct HealthCheckService {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _port: i32,
-    pub _runThread: *mut crate::System::Threading::Thread,
+    pub _runThread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
     pub _disposed: bool,
-    pub _manualResetEvent: *mut crate::System::Threading::ManualResetEvent,
-    pub _listener: *mut crate::System::Net::HttpListener,
+    pub _manualResetEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ManualResetEvent,
+    >,
+    pub _listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
 }
 #[cfg(feature = "HealthCheckService")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

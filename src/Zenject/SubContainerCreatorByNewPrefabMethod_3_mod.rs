@@ -7,11 +7,13 @@ pub struct SubContainerCreatorByNewPrefabMethod_3<
     TParam3: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext,
-    pub _installerMethod: *mut crate::System::Action_4<
-        *mut crate::Zenject::DiContainer,
-        TParam1,
-        TParam2,
-        TParam3,
+    pub _installerMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Action_4<
+            *mut crate::Zenject::DiContainer,
+            TParam1,
+            TParam2,
+            TParam3,
+        >,
     >,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,

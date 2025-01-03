@@ -4,20 +4,38 @@
 pub struct NoteCutCoreEffectsSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _shockWaveYPos: f32,
-    pub _noteCutParticlesEffect: *mut crate::GlobalNamespace::NoteCutParticlesEffect,
-    pub _noteDebrisSpawner: *mut crate::GlobalNamespace::NoteDebrisSpawner,
-    pub _noteCutHapticEffect: *mut crate::GlobalNamespace::NoteCutHapticEffect,
-    pub _shockwaveEffect: *mut crate::GlobalNamespace::ShockwaveEffect,
-    pub _bombExplosionEffect: *mut crate::GlobalNamespace::BombExplosionEffect,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
-    pub _sliderInteractionManagers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::SliderInteractionManager,
+    pub _noteCutParticlesEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteCutParticlesEffect,
     >,
-    pub _colorTypeToSliderInteractionManagerDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::GlobalNamespace::ColorType,
-        *mut crate::GlobalNamespace::SliderInteractionManager,
+    pub _noteDebrisSpawner: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteDebrisSpawner,
+    >,
+    pub _noteCutHapticEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteCutHapticEffect,
+    >,
+    pub _shockwaveEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ShockwaveEffect,
+    >,
+    pub _bombExplosionEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BombExplosionEffect,
+    >,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
+    pub _sliderInteractionManagers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::SliderInteractionManager,
+        >,
+    >,
+    pub _colorTypeToSliderInteractionManagerDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::ColorType,
+            *mut crate::GlobalNamespace::SliderInteractionManager,
+        >,
     >,
 }
 #[cfg(feature = "NoteCutCoreEffectsSpawner")]

@@ -3,19 +3,21 @@
 #[derive(Debug)]
 pub struct AlphabetScrollbar {
     __cordl_parent: crate::HMUI::Interactable,
-    pub _tableView: *mut crate::HMUI::TableView,
+    pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
     pub _characterHeight: f32,
     pub _normalColor: crate::UnityEngine::Color,
-    pub _textPrefab: *mut crate::TMPro::TextMeshProUGUI,
-    pub _prealocatedTexts: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::TMPro::TextMeshProUGUI,
+    pub _textPrefab: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _prealocatedTexts: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TextMeshProUGUI>,
     >,
-    pub _highlightImage: *mut crate::UnityEngine::UI::Image,
-    pub _characterScrollData: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::GlobalNamespace::AlphabetScrollInfo_Data,
+    pub _highlightImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _characterScrollData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::AlphabetScrollInfo_Data,
+        >,
     >,
-    pub _texts: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TextMeshProUGUI,
+    pub _texts: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TextMeshProUGUI>,
     >,
     pub _highlightedCharacterIndex: i32,
     pub _pointerIsDown: bool,

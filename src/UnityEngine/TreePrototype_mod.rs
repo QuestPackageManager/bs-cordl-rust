@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TreePrototype {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Prefab: *mut crate::UnityEngine::GameObject,
+    pub m_Prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_BendFactor: f32,
     pub m_NavMeshLod: i32,
 }

@@ -3,19 +3,37 @@
 #[derive(Debug)]
 pub struct SignerInformation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub sid: *mut crate::Org::BouncyCastle::Cms::SignerID,
-    pub info: *mut crate::Org::BouncyCastle::Asn1::Cms::SignerInfo,
-    pub digestAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub encryptionAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub signedAttributeSet: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-    pub unsignedAttributeSet: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-    pub content: *mut crate::Org::BouncyCastle::Cms::CmsProcessable,
-    pub signature: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub contentType: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub digestCalculator: *mut crate::Org::BouncyCastle::Cms::IDigestCalculator,
-    pub resultDigest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub signedAttributeTable: *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
-    pub unsignedAttributeTable: *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+    pub sid: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::SignerID>,
+    pub info: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::SignerInfo>,
+    pub digestAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub encryptionAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub signedAttributeSet: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Set,
+    >,
+    pub unsignedAttributeSet: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Set,
+    >,
+    pub content: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsProcessable,
+    >,
+    pub signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub contentType: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub digestCalculator: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::IDigestCalculator,
+    >,
+    pub resultDigest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub signedAttributeTable: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+    >,
+    pub unsignedAttributeTable: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+    >,
     pub isCounterSignature: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+SignerInformation")]

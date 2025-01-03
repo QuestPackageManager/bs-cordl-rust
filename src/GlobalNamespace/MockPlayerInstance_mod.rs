@@ -3,15 +3,23 @@
 #[derive(Debug)]
 pub struct MockPlayerInstance {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _id: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _userId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _userName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _timeProvider: *mut crate::BGNet::Core::ITimeProvider,
-    pub _taskUtility: *mut crate::BGNet::Core::ITaskUtility,
-    pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::MultiplayerSessionManager,
-    pub _connectedPlayerManager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
-    pub _fsm: *mut crate::GlobalNamespace::MockPlayerFiniteStateMachine,
+    pub _id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
+    pub _taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
+    pub _cancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerSessionManager,
+    >,
+    pub _connectedPlayerManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ConnectedPlayerManager,
+    >,
+    pub _fsm: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MockPlayerFiniteStateMachine,
+    >,
 }
 #[cfg(feature = "MockPlayerInstance")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

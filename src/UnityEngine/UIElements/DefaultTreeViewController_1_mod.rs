@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct DefaultTreeViewController_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::TreeViewController,
-    pub m_TreeDataController: *mut crate::UnityEngine::UIElements::TreeDataController_1<
-        T,
+    pub m_TreeDataController: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TreeDataController_1<T>,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

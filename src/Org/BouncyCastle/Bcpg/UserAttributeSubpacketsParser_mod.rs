@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct UserAttributeSubpacketsParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub input: *mut crate::System::IO::Stream,
+    pub input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+UserAttributeSubpacketsParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

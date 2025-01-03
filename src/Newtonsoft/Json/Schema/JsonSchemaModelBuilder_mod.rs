@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct JsonSchemaModelBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _nodes: *mut crate::Newtonsoft::Json::Schema::JsonSchemaNodeCollection,
-    pub _nodeModels: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
-        *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+    pub _nodes: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Schema::JsonSchemaNodeCollection,
     >,
-    pub _node: *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+    pub _nodeModels: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+            *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+        >,
+    >,
+    pub _node: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaModelBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

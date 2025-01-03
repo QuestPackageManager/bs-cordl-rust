@@ -3,14 +3,16 @@
 #[derive(Debug)]
 pub struct InputAction {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Type: crate::UnityEngine::InputSystem::InputActionType,
-    pub m_ExpectedControlType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Id: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Processors: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Interactions: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_SingletonActionBindings: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::InputBinding,
+    pub m_ExpectedControlType: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_Id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Processors: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Interactions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_SingletonActionBindings: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::InputSystem::InputBinding>,
     >,
     pub m_Flags: crate::UnityEngine::InputSystem::InputAction_ActionFlags,
     pub m_BindingMask: crate::System::Nullable_1<
@@ -21,7 +23,9 @@ pub struct InputAction {
     pub m_ControlStartIndex: i32,
     pub m_ControlCount: i32,
     pub m_ActionIndexInState: i32,
-    pub m_ActionMap: *mut crate::UnityEngine::InputSystem::InputActionMap,
+    pub m_ActionMap: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionMap,
+    >,
     pub m_OnStarted: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         *mut crate::System::Action_1<
             crate::UnityEngine::InputSystem::InputAction_CallbackContext,
@@ -766,9 +770,11 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputAction+CallbackContext")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputAction_CallbackContext {
-    pub m_State: *mut crate::UnityEngine::InputSystem::InputActionState,
+    pub m_State: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionState,
+    >,
     pub m_ActionIndex: i32,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputAction+CallbackContext")]

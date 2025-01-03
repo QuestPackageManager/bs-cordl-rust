@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct InvokableCallList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_PersistentCalls: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Events::BaseInvokableCall,
+    pub m_PersistentCalls: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Events::BaseInvokableCall,
+        >,
     >,
-    pub m_RuntimeCalls: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Events::BaseInvokableCall,
+    pub m_RuntimeCalls: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Events::BaseInvokableCall,
+        >,
     >,
-    pub m_ExecutingCalls: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Events::BaseInvokableCall,
+    pub m_ExecutingCalls: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Events::BaseInvokableCall,
+        >,
     >,
     pub m_NeedsUpdate: bool,
 }

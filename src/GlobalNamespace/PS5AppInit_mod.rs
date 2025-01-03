@@ -3,17 +3,33 @@
 #[derive(Debug)]
 pub struct PS5AppInit {
     __cordl_parent: crate::BeatSaber::Init::BSAppInit,
-    pub _mainSystemInit: *mut crate::GlobalNamespace::MainSystemInit,
-    pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
-    pub _defaultScenesTransitionsFromInit: *mut crate::GlobalNamespace::DefaultScenesTransitionsFromInit,
-    pub _appInitScenesTransitionSetupDataContainer: *mut crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO,
-    pub _ps5SharedPackageSKUs: *mut crate::GlobalNamespace::PS5SharedPackageSKUsSO,
-    pub _sonyOnGoingToBackgroundSaveHandler: *mut crate::GlobalNamespace::SonyOnGoingToBackgroundSaveHandler,
-    pub _ps5AdvancedHapticPlayerPrefab: *mut crate::UnityEngine::GameObject,
-    pub _playerDataModel: *mut crate::Zenject::LazyInject_1<
-        *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _mainSystemInit: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MainSystemInit,
     >,
-    pub _backgroundExecutionHelper: *mut crate::GlobalNamespace::SonyBackgroundExecutionHelper,
+    pub _settingsApplicator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsApplicatorSO,
+    >,
+    pub _defaultScenesTransitionsFromInit: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DefaultScenesTransitionsFromInit,
+    >,
+    pub _appInitScenesTransitionSetupDataContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO,
+    >,
+    pub _ps5SharedPackageSKUs: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PS5SharedPackageSKUsSO,
+    >,
+    pub _sonyOnGoingToBackgroundSaveHandler: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyOnGoingToBackgroundSaveHandler,
+    >,
+    pub _ps5AdvancedHapticPlayerPrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::Zenject::LazyInject_1<*mut crate::GlobalNamespace::PlayerDataModel>,
+    >,
+    pub _backgroundExecutionHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyBackgroundExecutionHelper,
+    >,
     pub _launchingWithFPFCEnabled: bool,
 }
 #[cfg(feature = "PS5AppInit")]

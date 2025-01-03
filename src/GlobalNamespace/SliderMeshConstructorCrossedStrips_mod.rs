@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SliderMeshConstructorCrossedStrips {
     __cordl_parent: crate::GlobalNamespace::SliderMeshConstructor,
-    pub _triangleMap: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _triangleMap: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
 #[cfg(feature = "SliderMeshConstructorCrossedStrips")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct ElGamalPublicBcpgKey {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::BcpgObject,
-    pub p: *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
-    pub g: *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
-    pub y: *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
+    pub p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
+    pub g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
+    pub y: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+ElGamalPublicBcpgKey")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

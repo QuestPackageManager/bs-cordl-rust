@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct TaskCompletionSource_1<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _task: *mut crate::System::Threading::Tasks::Task_1<TResult>,
+    pub _task: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<TResult>,
+    >,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+Threading+Tasks+TaskCompletionSource_1")]

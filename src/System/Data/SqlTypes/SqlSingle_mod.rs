@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Data+SqlTypes+SqlSingle")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SqlSingle {
     pub _fNotNull: bool,
     pub _value: f32,

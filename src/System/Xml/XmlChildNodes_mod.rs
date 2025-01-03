@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlChildNodes {
     __cordl_parent: crate::System::Xml::XmlNodeList,
-    pub container: *mut crate::System::Xml::XmlNode,
+    pub container: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
 }
 #[cfg(feature = "System+Xml+XmlChildNodes")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

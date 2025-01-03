@@ -1,8 +1,10 @@
 #[cfg(feature = "System+Text+ValueStringBuilder")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ValueStringBuilder {
-    pub _arrayToReturnToPool: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub _arrayToReturnToPool: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<char>,
+    >,
     pub _chars: crate::System::Span_1<char>,
     pub _pos: i32,
 }

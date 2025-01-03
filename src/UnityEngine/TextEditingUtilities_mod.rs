@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct TextEditingUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_TextSelectingUtility: *mut crate::UnityEngine::TextSelectingUtilities,
-    pub m_TextHandle: *mut crate::UnityEngine::TextCore::Text::TextHandle,
+    pub m_TextSelectingUtility: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextSelectingUtilities,
+    >,
+    pub m_TextHandle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextHandle,
+    >,
     pub m_CursorIndexSavedState: i32,
     pub isCompositionActive: bool,
     pub m_UpdateImeWindowPosition: bool,
     pub multiline: bool,
-    pub m_Text: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+TextEditingUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

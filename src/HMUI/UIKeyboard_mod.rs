@@ -3,15 +3,15 @@
 #[derive(Debug)]
 pub struct UIKeyboard {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _okButton: *mut crate::UnityEngine::UI::Button,
+    pub _okButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _startsUpperCase: bool,
-    pub okButtonWasPressedEvent: *mut crate::System::Action,
-    pub keyWasPressedEvent: *mut crate::System::Action_1<char>,
-    pub deleteButtonWasPressedEvent: *mut crate::System::Action,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub okButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub keyWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>,
+    pub deleteButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _shouldCapitalize: bool,
-    pub _letterBtnTexts: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TextMeshProUGUI,
+    pub _letterBtnTexts: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TextMeshProUGUI>,
     >,
 }
 #[cfg(feature = "HMUI+UIKeyboard")]

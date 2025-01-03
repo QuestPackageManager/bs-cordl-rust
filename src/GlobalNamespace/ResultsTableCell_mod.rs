@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct ResultsTableCell {
     __cordl_parent: crate::GlobalNamespace::TableCellWithSeparator,
-    pub _border: *mut crate::UnityEngine::GameObject,
-    pub _orderText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _nameText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _scoreText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _rankText: *mut crate::TMPro::TextMeshProUGUI,
+    pub _border: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _orderText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _nameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _scoreText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _rankText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
 #[cfg(feature = "ResultsTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

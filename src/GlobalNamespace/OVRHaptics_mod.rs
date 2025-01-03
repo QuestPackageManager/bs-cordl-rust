@@ -50,7 +50,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHaptics {
 pub struct OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _ReadCount_k__BackingField: i32,
-    pub _Clip_k__BackingField: *mut crate::GlobalNamespace::OVRHapticsClip,
+    pub _Clip_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRHapticsClip,
+    >,
 }
 #[cfg(feature = "OVRHaptics+OVRHapticsOutput+ClipPlaybackTracker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -266,7 +268,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHaptics_Co
 #[derive(Debug)]
 pub struct OVRHaptics_OVRHapticsChannel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_output: *mut crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput,
+    pub m_output: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput,
+    >,
 }
 #[cfg(feature = "OVRHaptics+OVRHapticsChannel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -373,11 +377,15 @@ pub struct OVRHaptics_OVRHapticsOutput {
     pub m_numPredictionHits: i32,
     pub m_numPredictionMisses: i32,
     pub m_numUnderruns: i32,
-    pub m_pendingClips: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker,
+    pub m_pendingClips: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker,
+        >,
     >,
     pub m_controller: u32,
-    pub m_nativeBuffer: *mut crate::GlobalNamespace::OVRNativeBuffer,
+    pub m_nativeBuffer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRNativeBuffer,
+    >,
     pub PrevSampleRateHz: i32,
 }
 #[cfg(feature = "OVRHaptics+OVRHapticsOutput")]

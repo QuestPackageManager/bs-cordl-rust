@@ -3,18 +3,28 @@
 #[derive(Debug)]
 pub struct MaterialPropertyValuesSetter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
-    pub _floats: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValuePair,
+    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
     >,
-    pub _vectors: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValuePair,
+    pub _floats: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValuePair,
+        >,
     >,
-    pub _colors: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValuePair,
+    pub _vectors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValuePair,
+        >,
     >,
-    pub _ints: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePair,
+    pub _colors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValuePair,
+        >,
+    >,
+    pub _ints: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePair,
+        >,
     >,
 }
 #[cfg(feature = "MaterialPropertyValuesSetter")]
@@ -352,7 +362,7 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValue
 #[derive(Debug)]
 pub struct MaterialPropertyValuesSetter_PropertyValuePairBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _propertyId_k__BackingField: i32,
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyValuePairBase")]

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XContainer {
     __cordl_parent: crate::System::Xml::Linq::XNode,
-    pub content: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub content: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Xml+Linq+XContainer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -342,9 +342,11 @@ pub struct XContainer_ContentReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _eCache: crate::System::Xml::Linq::NamespaceCache,
     pub _aCache: crate::System::Xml::Linq::NamespaceCache,
-    pub _lineInfo: *mut crate::System::Xml::IXmlLineInfo,
-    pub _currentContainer: *mut crate::System::Xml::Linq::XContainer,
-    pub _baseUri: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _lineInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>,
+    pub _currentContainer: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Linq::XContainer,
+    >,
+    pub _baseUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Linq+XContainer+ContentReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

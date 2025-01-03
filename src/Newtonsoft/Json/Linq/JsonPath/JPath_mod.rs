@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct JPath {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _expression: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _Filters_k__BackingField: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+    pub _expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _Filters_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
+        >,
     >,
     pub _currentIndex: i32,
 }

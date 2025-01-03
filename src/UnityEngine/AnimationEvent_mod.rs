@@ -4,14 +4,18 @@
 pub struct AnimationEvent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Time: f32,
-    pub m_FunctionName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_StringParameter: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_ObjectReferenceParameter: *mut crate::UnityEngine::Object,
+    pub m_FunctionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_StringParameter: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_ObjectReferenceParameter: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Object,
+    >,
     pub m_FloatParameter: f32,
     pub m_IntParameter: i32,
     pub m_MessageOptions: i32,
     pub m_Source: crate::UnityEngine::AnimationEventSource,
-    pub m_StateSender: *mut crate::UnityEngine::AnimationState,
+    pub m_StateSender: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationState>,
     pub m_AnimatorStateInfo: crate::UnityEngine::AnimatorStateInfo,
     pub m_AnimatorClipInfo: crate::UnityEngine::AnimatorClipInfo,
 }

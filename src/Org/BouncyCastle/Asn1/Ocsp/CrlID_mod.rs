@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct CrlID {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub crlUrl: *mut crate::Org::BouncyCastle::Asn1::DerIA5String,
-    pub crlNum: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub crlTime: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+    pub crlUrl: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerIA5String>,
+    pub crlNum: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub crlTime: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+CrlID")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -6,34 +6,48 @@ pub struct JsonContract {
     pub IsNullable: bool,
     pub IsConvertable: bool,
     pub IsEnum: bool,
-    pub NonNullableUnderlyingType: *mut crate::System::Type,
+    pub NonNullableUnderlyingType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub InternalReadType: crate::Newtonsoft::Json::ReadType,
     pub ContractType: crate::Newtonsoft::Json::Serialization::JsonContractType,
     pub IsReadOnlyOrFixedSize: bool,
     pub IsSealed: bool,
     pub IsInstantiable: bool,
-    pub _onDeserializedCallbacks: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Newtonsoft::Json::Serialization::SerializationCallback,
+    pub _onDeserializedCallbacks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Serialization::SerializationCallback,
+        >,
     >,
-    pub _onDeserializingCallbacks: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Newtonsoft::Json::Serialization::SerializationCallback,
+    pub _onDeserializingCallbacks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Serialization::SerializationCallback,
+        >,
     >,
-    pub _onSerializedCallbacks: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Newtonsoft::Json::Serialization::SerializationCallback,
+    pub _onSerializedCallbacks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Serialization::SerializationCallback,
+        >,
     >,
-    pub _onSerializingCallbacks: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Newtonsoft::Json::Serialization::SerializationCallback,
+    pub _onSerializingCallbacks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Serialization::SerializationCallback,
+        >,
     >,
-    pub _onErrorCallbacks: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
+    pub _onErrorCallbacks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
+        >,
     >,
-    pub _createdType: *mut crate::System::Type,
-    pub _UnderlyingType_k__BackingField: *mut crate::System::Type,
+    pub _createdType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _UnderlyingType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _IsReference_k__BackingField: crate::System::Nullable_1<bool>,
-    pub _Converter_k__BackingField: *mut crate::Newtonsoft::Json::JsonConverter,
-    pub _InternalConverter_k__BackingField: *mut crate::Newtonsoft::Json::JsonConverter,
-    pub _DefaultCreator_k__BackingField: *mut crate::System::Func_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _Converter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::JsonConverter,
+    >,
+    pub _InternalConverter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::JsonConverter,
+    >,
+    pub _DefaultCreator_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _DefaultCreatorNonPublic_k__BackingField: bool,
 }

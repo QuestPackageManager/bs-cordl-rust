@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CoalesceConversionBinaryExpression {
     __cordl_parent: crate::System::Linq::Expressions::BinaryExpression,
-    pub _conversion: *mut crate::System::Linq::Expressions::LambdaExpression,
+    pub _conversion: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::LambdaExpression,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+CoalesceConversionBinaryExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

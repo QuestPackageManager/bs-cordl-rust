@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlTextWriterBase64Encoder {
     __cordl_parent: crate::System::Xml::Base64Encoder,
-    pub xmlTextEncoder: *mut crate::System::Xml::XmlTextEncoder,
+    pub xmlTextEncoder: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextEncoder>,
 }
 #[cfg(feature = "System+Xml+XmlTextWriterBase64Encoder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

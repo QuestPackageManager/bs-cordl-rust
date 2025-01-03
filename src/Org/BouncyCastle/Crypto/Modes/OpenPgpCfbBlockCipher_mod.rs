@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct OpenPgpCfbBlockCipher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub IV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub FR: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub FRE: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    pub IV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub FR: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub FRE: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    >,
     pub blockSize: i32,
     pub count: i32,
     pub forEncryption: bool,

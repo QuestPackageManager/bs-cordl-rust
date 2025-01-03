@@ -3,27 +3,35 @@
 #[derive(Debug)]
 pub struct LevelListTableCell {
     __cordl_parent: crate::HMUI::TableCell,
-    pub _backgroundImage: *mut crate::UnityEngine::UI::Image,
-    pub _canvasGroup: *mut crate::UnityEngine::CanvasGroup,
-    pub _coverImage: *mut crate::UnityEngine::UI::Image,
-    pub _songNameText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _songAuthorText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _favoritesBadgeImage: *mut crate::UnityEngine::UI::Image,
-    pub _songDurationText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _songBpmText: *mut crate::TMPro::TextMeshProUGUI,
+    pub _backgroundImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _canvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+    pub _coverImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _songNameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _songAuthorText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _favoritesBadgeImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _songDurationText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _songBpmText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _highlightBackgroundColor: crate::UnityEngine::Color,
     pub _selectedBackgroundColor: crate::UnityEngine::Color,
     pub _selectedAndHighlightedBackgroundColor: crate::UnityEngine::Color,
     pub _notOwnedAlpha: f32,
-    pub _promoBadgeGo: *mut crate::UnityEngine::GameObject,
-    pub _updatedBadgeGo: *mut crate::UnityEngine::GameObject,
-    pub _defaultCoverImage: *mut crate::UnityEngine::Sprite,
-    pub _refreshingAvailabilityCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _settingDataCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub _promoBadgeGo: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _updatedBadgeGo: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _defaultCoverImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _refreshingAvailabilityCancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub _settingDataCancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub _beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     pub _notOwned: bool,
-    pub _refreshingAvailabilityLevelID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _settingDataFromLevelId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _refreshingAvailabilityLevelID: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _settingDataFromLevelId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "LevelListTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct MatchCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _regex: *mut crate::System::Text::RegularExpressions::Regex,
-    pub _matches: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Text::RegularExpressions::Match,
+    pub _regex: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::Regex,
+    >,
+    pub _matches: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Text::RegularExpressions::Match,
+        >,
     >,
     pub _done: bool,
-    pub _input: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _beginning: i32,
     pub _length: i32,
     pub _startat: i32,
@@ -660,7 +664,9 @@ for crate::System::Text::RegularExpressions::MatchCollection {
 #[derive(Debug)]
 pub struct MatchCollection_Enumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _collection: *mut crate::System::Text::RegularExpressions::MatchCollection,
+    pub _collection: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::MatchCollection,
+    >,
     pub _index: i32,
 }
 #[cfg(feature = "System+Text+RegularExpressions+MatchCollection+Enumerator")]

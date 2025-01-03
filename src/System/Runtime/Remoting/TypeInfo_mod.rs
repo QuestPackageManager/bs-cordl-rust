@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct TypeInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub serverType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub serverHierarchy: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub serverType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub serverHierarchy: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub interfacesImplemented: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub interfacesImplemented: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "System+Runtime+Remoting+TypeInfo")]

@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct TaskExceptionHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_task: *mut crate::System::Threading::Tasks::Task,
-    pub m_faultExceptions: *mut crate::System::Collections::Generic::LowLevelListWithIList_1<
-        *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+    pub m_task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    pub m_faultExceptions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LowLevelListWithIList_1<
+            *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        >,
     >,
-    pub m_cancellationException: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+    pub m_cancellationException: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+    >,
     pub m_isHandled: bool,
 }
 #[cfg(feature = "System+Threading+Tasks+TaskExceptionHolder")]

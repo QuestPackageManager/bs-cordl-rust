@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+DynamicBitfield")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DynamicBitfield {
     pub array: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<u64>,
     pub length: i32,

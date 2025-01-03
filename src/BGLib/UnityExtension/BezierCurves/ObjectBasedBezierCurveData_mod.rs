@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ObjectBasedBezierCurveData {
     __cordl_parent: crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData,
-    pub _startPointTransform: *mut crate::UnityEngine::Transform,
-    pub _endPointTransform: *mut crate::UnityEngine::Transform,
+    pub _startPointTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _endPointTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurveData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

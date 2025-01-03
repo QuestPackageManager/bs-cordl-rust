@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ExtendedPropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
-    pub _extenderInfo: *mut crate::System::ComponentModel::ReflectPropertyDescriptor,
-    pub _provider: *mut crate::System::ComponentModel::IExtenderProvider,
+    pub _extenderInfo: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::ReflectPropertyDescriptor,
+    >,
+    pub _provider: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::IExtenderProvider,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+ExtendedPropertyDescriptor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

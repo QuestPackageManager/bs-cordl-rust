@@ -4,8 +4,8 @@
 pub struct ToggleGroup {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_AllowSwitchOff: bool,
-    pub m_Toggles: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UI::Toggle,
+    pub m_Toggles: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::UI::Toggle>,
     >,
 }
 #[cfg(feature = "UnityEngine+UI+ToggleGroup")]

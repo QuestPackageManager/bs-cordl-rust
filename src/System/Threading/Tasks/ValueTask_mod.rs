@@ -1,8 +1,8 @@
 #[cfg(feature = "System+Threading+Tasks+ValueTask")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ValueTask {
-    pub _obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _token: i16,
     pub _continueOnCapturedContext: bool,
 }
@@ -199,7 +199,9 @@ pub struct ValueTask_ValueTaskSourceAsTask {
     __cordl_parent: crate::System::Threading::Tasks::Task_1<
         crate::System::Threading::Tasks::VoidTaskResult,
     >,
-    pub _source: *mut crate::System::Threading::Tasks::Sources::IValueTaskSource,
+    pub _source: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Sources::IValueTaskSource,
+    >,
     pub _token: i16,
 }
 #[cfg(feature = "System+Threading+Tasks+ValueTask+ValueTaskSourceAsTask")]

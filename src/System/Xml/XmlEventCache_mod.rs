@@ -3,18 +3,20 @@
 #[derive(Debug)]
 pub struct XmlEventCache {
     __cordl_parent: crate::System::Xml::XmlRawWriter,
-    pub pages: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::System::Xml::XmlEventCache_XmlEvent,
+    pub pages: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                crate::System::Xml::XmlEventCache_XmlEvent,
+            >,
         >,
     >,
-    pub pageCurr: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::XmlEventCache_XmlEvent,
+    pub pageCurr: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Xml::XmlEventCache_XmlEvent>,
     >,
     pub pageSize: i32,
     pub hasRootNode: bool,
     pub singleText: crate::System::Xml::Xsl::Runtime::StringConcat,
-    pub baseUri: *mut quest_hook::libil2cpp::Il2CppString,
+    pub baseUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+XmlEventCache")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -517,13 +519,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlEventCache {
 }
 #[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XmlEventCache_XmlEvent {
     pub eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-    pub s1: *mut quest_hook::libil2cpp::Il2CppString,
-    pub s2: *mut quest_hook::libil2cpp::Il2CppString,
-    pub s3: *mut quest_hook::libil2cpp::Il2CppString,
-    pub o: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub s1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub s2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub s3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

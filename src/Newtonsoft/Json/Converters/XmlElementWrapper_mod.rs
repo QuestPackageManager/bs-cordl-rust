@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlElementWrapper {
     __cordl_parent: crate::Newtonsoft::Json::Converters::XmlNodeWrapper,
-    pub _element: *mut crate::System::Xml::XmlElement,
+    pub _element: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XmlElementWrapper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

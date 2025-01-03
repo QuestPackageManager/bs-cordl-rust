@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ObstacleDissolve {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _obstacleController: *mut crate::GlobalNamespace::ObstacleControllerBase,
-    pub _cutoutAnimateEffect: *mut crate::GlobalNamespace::CutoutAnimateEffect,
+    pub _obstacleController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ObstacleControllerBase,
+    >,
+    pub _cutoutAnimateEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CutoutAnimateEffect,
+    >,
 }
 #[cfg(feature = "ObstacleDissolve")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

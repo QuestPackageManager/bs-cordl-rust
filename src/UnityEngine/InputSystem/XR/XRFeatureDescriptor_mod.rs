@@ -1,10 +1,12 @@
 #[cfg(feature = "UnityEngine+InputSystem+XR+XRFeatureDescriptor")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XRFeatureDescriptor {
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub usageHints: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::InputSystem::XR::UsageHint,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub usageHints: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::InputSystem::XR::UsageHint,
+        >,
     >,
     pub featureType: crate::UnityEngine::InputSystem::XR::FeatureType,
     pub customSize: u32,

@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct XmlName {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub localName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub ns: *mut quest_hook::libil2cpp::Il2CppString,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub hashCode: i32,
-    pub ownerDoc: *mut crate::System::Xml::XmlDocument,
-    pub next: *mut crate::System::Xml::XmlName,
+    pub ownerDoc: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
+    pub next: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlName>,
 }
 #[cfg(feature = "System+Xml+XmlName")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

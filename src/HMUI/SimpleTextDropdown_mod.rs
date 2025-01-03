@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct SimpleTextDropdown {
     __cordl_parent: crate::HMUI::DropdownWithTableView,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
-    pub _cellPrefab: *mut crate::GlobalNamespace::SimpleTextTableCell,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _cellPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SimpleTextTableCell,
+    >,
     pub _cellSize: f32,
-    pub _texts: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _texts: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub _initialized: bool,
 }

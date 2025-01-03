@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct AsyncProtocolRequest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Parent_k__BackingField: *mut crate::Mono::Net::Security::MobileAuthenticatedStream,
+    pub _Parent_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::MobileAuthenticatedStream,
+    >,
     pub _RunSynchronously_k__BackingField: bool,
     pub _UserResult_k__BackingField: i32,
     pub Started: i32,
     pub RequestedSize: i32,
     pub WriteRequested: i32,
-    pub locker: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub locker: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Mono+Net+Security+AsyncProtocolRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct XObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub parent: *mut crate::System::Xml::Linq::XContainer,
-    pub annotations: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XContainer>,
+    pub annotations: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Xml+Linq+XObject")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

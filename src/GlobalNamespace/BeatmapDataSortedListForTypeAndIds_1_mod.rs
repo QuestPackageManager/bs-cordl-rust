@@ -3,17 +3,23 @@
 #[derive(Debug)]
 pub struct BeatmapDataSortedListForTypeAndIds_1<TBase: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _items: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::System::ValueTuple_2<*mut crate::System::Type, i32>,
-        *mut crate::GlobalNamespace::ISortedList_1<TBase>,
+    pub _items: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::System::ValueTuple_2<*mut crate::System::Type, i32>,
+            *mut crate::GlobalNamespace::ISortedList_1<TBase>,
+        >,
     >,
-    pub _sortedListsDataProcessors: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Type,
-        *mut crate::GlobalNamespace::ISortedListItemProcessor_1<TBase>,
+    pub _sortedListsDataProcessors: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Type,
+            *mut crate::GlobalNamespace::ISortedListItemProcessor_1<TBase>,
+        >,
     >,
-    pub _itemToNodeMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        TBase,
-        *mut crate::System::Collections::Generic::LinkedListNode_1<TBase>,
+    pub _itemToNodeMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            TBase,
+            *mut crate::System::Collections::Generic::LinkedListNode_1<TBase>,
+        >,
     >,
     __cordl_phantom_TBase: std::marker::PhantomData<TBase>,
 }

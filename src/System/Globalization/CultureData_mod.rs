@@ -3,23 +3,25 @@
 #[derive(Debug)]
 pub struct CultureData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub sAM1159: *mut quest_hook::libil2cpp::Il2CppString,
-    pub sPM2359: *mut quest_hook::libil2cpp::Il2CppString,
-    pub sTimeSeparator: *mut quest_hook::libil2cpp::Il2CppString,
-    pub saLongTimes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub sAM1159: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub sPM2359: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub sTimeSeparator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub saLongTimes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub saShortTimes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub saShortTimes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub iFirstDayOfWeek: i32,
     pub iFirstWeekOfYear: i32,
-    pub waCalendars: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub calendars: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Globalization::CalendarData,
+    pub waCalendars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub calendars: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Globalization::CalendarData,
+        >,
     >,
-    pub sISO639Language: *mut quest_hook::libil2cpp::Il2CppString,
-    pub sRealName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub sISO639Language: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub sRealName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub bUseOverrides: bool,
     pub calendarId: i32,
     pub numberIndex: i32,
@@ -28,7 +30,7 @@ pub struct CultureData {
     pub iDefaultMacCodePage: i32,
     pub iDefaultEbcdicCodePage: i32,
     pub isRightToLeft: bool,
-    pub sListSeparator: *mut quest_hook::libil2cpp::Il2CppString,
+    pub sListSeparator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Globalization+CultureData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -710,7 +712,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::Culture
 }
 #[cfg(feature = "System+Globalization+CultureData+NumberFormatEntryManaged")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CultureData_NumberFormatEntryManaged {
     pub currency_decimal_digits: i32,
     pub currency_decimal_separator: i32,

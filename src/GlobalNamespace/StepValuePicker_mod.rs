@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct StepValuePicker {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _decButton: *mut crate::UnityEngine::UI::Button,
-    pub _incButton: *mut crate::UnityEngine::UI::Button,
-    pub _valueText: *mut crate::TMPro::TextMeshProUGUI,
-    pub decButtonWasPressedEvent: *mut crate::System::Action,
-    pub incButtonWasPressedEvent: *mut crate::System::Action,
+    pub _decButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _incButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _valueText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub decButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub incButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "StepValuePicker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

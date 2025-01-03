@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+XR+MeshId")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MeshId {
     pub m_SubId1: u64,
     pub m_SubId2: u64,

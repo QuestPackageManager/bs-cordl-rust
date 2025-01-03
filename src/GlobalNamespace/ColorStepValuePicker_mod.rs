@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct ColorStepValuePicker {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _decButton: *mut crate::UnityEngine::UI::Button,
-    pub _incButton: *mut crate::UnityEngine::UI::Button,
-    pub _valueImage: *mut crate::HMUI::ImageView,
-    pub decButtonWasPressedEvent: *mut crate::System::Action,
-    pub incButtonWasPressedEvent: *mut crate::System::Action,
+    pub _decButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _incButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _valueImage: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
+    pub decButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub incButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "ColorStepValuePicker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

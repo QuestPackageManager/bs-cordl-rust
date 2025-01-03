@@ -21,7 +21,7 @@ pub struct OculusSettings {
     pub TargetQuest: bool,
     pub TargetQuest2: bool,
     pub TargetQuestPro: bool,
-    pub SystemSplashScreen: *mut crate::UnityEngine::Texture2D,
+    pub SystemSplashScreen: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
 }
 #[cfg(feature = "Unity+XR+Oculus+OculusSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

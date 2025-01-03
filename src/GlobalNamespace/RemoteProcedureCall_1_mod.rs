@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct RemoteProcedureCall_1<T0: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
-    pub _value0: *mut crate::GlobalNamespace::RemoteProcedureCall_TypeWrapper_1<T0>,
+    pub _value0: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RemoteProcedureCall_TypeWrapper_1<T0>,
+    >,
     __cordl_phantom_T0: std::marker::PhantomData<T0>,
 }
 #[cfg(feature = "RemoteProcedureCall_1")]

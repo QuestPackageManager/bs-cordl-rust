@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+PropertyName")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PropertyName {
     pub id: i32,
 }

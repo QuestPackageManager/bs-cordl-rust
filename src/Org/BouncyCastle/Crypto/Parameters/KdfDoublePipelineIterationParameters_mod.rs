@@ -5,10 +5,12 @@
 #[derive(Debug)]
 pub struct KdfDoublePipelineIterationParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub ki: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub ki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub useCounter: bool,
     pub r: i32,
-    pub fixedInputData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub fixedInputData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Crypto+Parameters+KdfDoublePipelineIterationParameters"

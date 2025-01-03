@@ -3,16 +3,16 @@
 #[derive(Debug)]
 pub struct HEU_ShelfToolData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _toolType: crate::HoudiniEngineUnity::HEU_ShelfToolData_ToolType,
-    pub _toolTip: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _iconPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _assetPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _helpURL: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _targets: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _toolTip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _iconPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _assetPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _helpURL: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _targets: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _jsonPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _jsonPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ShelfToolData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

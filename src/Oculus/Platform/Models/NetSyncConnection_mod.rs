@@ -7,7 +7,7 @@ pub struct NetSyncConnection {
     pub DisconnectReason: crate::Oculus::Platform::NetSyncDisconnectReason,
     pub SessionId: u64,
     pub Status: crate::Oculus::Platform::NetSyncConnectionStatus,
-    pub ZoneId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ZoneId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Oculus+Platform+Models+NetSyncConnection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

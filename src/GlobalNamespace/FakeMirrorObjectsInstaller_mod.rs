@@ -3,14 +3,30 @@
 #[derive(Debug)]
 pub struct FakeMirrorObjectsInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _mirroredGameNoteControllerPrefab: *mut crate::GlobalNamespace::MirroredGameNoteController,
-    pub _mirroredBurstSliderHeadGameNoteControllerPrefab: *mut crate::GlobalNamespace::MirroredGameNoteController,
-    pub _mirroredBurstSliderGameNoteControllerPrefab: *mut crate::GlobalNamespace::MirroredGameNoteController,
-    pub _mirroredBombNoteControllerPrefab: *mut crate::GlobalNamespace::MirroredBombNoteController,
-    pub _mirroredObstacleControllerPrefab: *mut crate::GlobalNamespace::MirroredObstacleController,
-    pub _mirroredSliderControllerPrefab: *mut crate::GlobalNamespace::MirroredSliderController,
-    pub _mirrorRendererGraphicsSettingsPresets: *mut crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _mirroredGameNoteControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MirroredGameNoteController,
+    >,
+    pub _mirroredBurstSliderHeadGameNoteControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MirroredGameNoteController,
+    >,
+    pub _mirroredBurstSliderGameNoteControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MirroredGameNoteController,
+    >,
+    pub _mirroredBombNoteControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MirroredBombNoteController,
+    >,
+    pub _mirroredObstacleControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MirroredObstacleController,
+    >,
+    pub _mirroredSliderControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MirroredSliderController,
+    >,
+    pub _mirrorRendererGraphicsSettingsPresets: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets,
+    >,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
 }
 #[cfg(feature = "FakeMirrorObjectsInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

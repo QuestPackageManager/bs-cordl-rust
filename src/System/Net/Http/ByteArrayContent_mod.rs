@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ByteArrayContent {
     __cordl_parent: crate::System::Net::Http::HttpContent,
-    pub content: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub content: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub offset: i32,
     pub count: i32,
 }

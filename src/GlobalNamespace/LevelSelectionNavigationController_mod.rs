@@ -3,33 +3,53 @@
 #[derive(Debug)]
 pub struct LevelSelectionNavigationController {
     __cordl_parent: crate::HMUI::NavigationController,
-    pub _levelFilteringNavigationController: *mut crate::GlobalNamespace::LevelFilteringNavigationController,
-    pub _levelCollectionNavigationController: *mut crate::GlobalNamespace::LevelCollectionNavigationController,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub didChangeLevelDetailContentEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::LevelSelectionNavigationController,
-        crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
+    pub _levelFilteringNavigationController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelFilteringNavigationController,
     >,
-    pub didSelectLevelPackEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::LevelSelectionNavigationController,
-        *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub _levelCollectionNavigationController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelCollectionNavigationController,
     >,
-    pub didPressActionButtonEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::LevelSelectionNavigationController,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
     >,
-    pub didPressPracticeButtonEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::LevelSelectionNavigationController,
-        *mut crate::GlobalNamespace::BeatmapLevel,
+    pub didChangeLevelDetailContentEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::LevelSelectionNavigationController,
+            crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
+        >,
     >,
-    pub didChangeDifficultyBeatmapEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::LevelSelectionNavigationController,
+    pub didSelectLevelPackEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::LevelSelectionNavigationController,
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
+        >,
+    >,
+    pub didPressActionButtonEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::LevelSelectionNavigationController,
+        >,
+    >,
+    pub didPressPracticeButtonEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::LevelSelectionNavigationController,
+            *mut crate::GlobalNamespace::BeatmapLevel,
+        >,
+    >,
+    pub didChangeDifficultyBeatmapEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::LevelSelectionNavigationController,
+        >,
     >,
     pub _hidePacksIfOneOrNone: bool,
     pub _hidePracticeButton: bool,
-    pub _actionButtonText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _actionButtonText: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
-    pub _notAllowedCharacteristics: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _notAllowedCharacteristics: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
     >,
 }
 #[cfg(feature = "LevelSelectionNavigationController")]

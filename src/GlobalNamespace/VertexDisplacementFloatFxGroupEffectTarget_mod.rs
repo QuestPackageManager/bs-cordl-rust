@@ -4,11 +4,13 @@
 pub struct VertexDisplacementFloatFxGroupEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _displacementRanges: crate::UnityEngine::Vector3,
-    pub _xAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _yAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _zAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _displacementController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
-    pub _renderer: *mut crate::UnityEngine::Renderer,
+    pub _xAnimationCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    pub _yAnimationCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    pub _zAnimationCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    pub _displacementController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
+    pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
     pub _useTestValue: bool,
     pub _testFloatValue: f32,
     pub _bounds: crate::UnityEngine::Bounds,

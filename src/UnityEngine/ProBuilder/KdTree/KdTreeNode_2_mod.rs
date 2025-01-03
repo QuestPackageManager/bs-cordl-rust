@@ -6,16 +6,16 @@ pub struct KdTreeNode_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Point: *mut quest_hook::libil2cpp::Il2CppArray<TKey>,
+    pub Point: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
     pub Value: TValue,
-    pub Duplicates: *mut crate::System::Collections::Generic::List_1<TValue>,
-    pub LeftChild: *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<
-        TKey,
-        TValue,
+    pub Duplicates: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<TValue>,
     >,
-    pub RightChild: *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<
-        TKey,
-        TValue,
+    pub LeftChild: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+    >,
+    pub RightChild: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
     >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,

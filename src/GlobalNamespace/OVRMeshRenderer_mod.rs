@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct OVRMeshRenderer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _dataProvider: *mut crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider,
-    pub _ovrMesh: *mut crate::GlobalNamespace::OVRMesh,
-    pub _ovrSkeleton: *mut crate::GlobalNamespace::OVRSkeleton,
+    pub _dataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider,
+    >,
+    pub _ovrMesh: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRMesh>,
+    pub _ovrSkeleton: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSkeleton>,
     pub _confidenceBehavior: crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior,
     pub _systemGestureBehavior: crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior,
-    pub _systemGestureMaterial: *mut crate::UnityEngine::Material,
-    pub _originalMaterial: *mut crate::UnityEngine::Material,
-    pub _skinnedMeshRenderer: *mut crate::UnityEngine::SkinnedMeshRenderer,
+    pub _systemGestureMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _originalMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _skinnedMeshRenderer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::SkinnedMeshRenderer,
+    >,
     pub _IsInitialized_k__BackingField: bool,
     pub _IsDataValid_k__BackingField: bool,
     pub _IsDataHighConfidence_k__BackingField: bool,
@@ -265,7 +269,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider {
 }
 #[cfg(feature = "OVRMeshRenderer+MeshRendererData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRMeshRenderer_MeshRendererData {
     pub _IsDataValid_k__BackingField: bool,
     pub _IsDataHighConfidence_k__BackingField: bool,

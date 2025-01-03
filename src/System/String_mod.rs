@@ -2825,7 +2825,7 @@ for crate::System::String {
 }
 #[cfg(feature = "System+String+ProbabilisticMap")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct String_ProbabilisticMap {}
 #[cfg(feature = "System+String+ProbabilisticMap")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

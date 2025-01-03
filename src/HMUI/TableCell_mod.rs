@@ -4,8 +4,8 @@
 pub struct TableCell {
     __cordl_parent: crate::HMUI::SelectableCell,
     pub _idx_k__BackingField: i32,
-    pub _reuseIdentifier: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _tableCellOwner: *mut crate::HMUI::ITableCellOwner,
+    pub _reuseIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _tableCellOwner: quest_hook::libil2cpp::Gc<crate::HMUI::ITableCellOwner>,
 }
 #[cfg(feature = "HMUI+TableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

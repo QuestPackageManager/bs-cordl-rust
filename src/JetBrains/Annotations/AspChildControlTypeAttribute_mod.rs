@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct AspChildControlTypeAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _TagName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _ControlType_k__BackingField: *mut crate::System::Type,
+    pub _TagName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _ControlType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "JetBrains+Annotations+AspChildControlTypeAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

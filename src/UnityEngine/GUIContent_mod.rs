@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct GUIContent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Text: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Image: *mut crate::UnityEngine::Texture,
-    pub m_Tooltip: *mut quest_hook::libil2cpp::Il2CppString,
-    pub OnTextChanged: *mut crate::System::Action,
+    pub m_Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Image: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    pub m_Tooltip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub OnTextChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "UnityEngine+GUIContent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

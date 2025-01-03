@@ -15,38 +15,56 @@ pub struct OVRTrackedKeyboard {
     pub textureFiltering: crate::GlobalNamespace::OVRTextureQualityFiltering,
     pub mipmapBias: f32,
     pub PassthroughBorderMultiplier: f32,
-    pub keyboardModelShader: *mut crate::UnityEngine::Shader,
-    pub keyboardModelAlphaBlendShader: *mut crate::UnityEngine::Shader,
+    pub keyboardModelShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub keyboardModelAlphaBlendShader: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Shader,
+    >,
     pub currentKeyboardPresentationStyles: crate::GlobalNamespace::OVRPlugin_TrackedKeyboardPresentationStyles,
-    pub projectedPassthroughOpaque_: *mut crate::GlobalNamespace::OVROverlay,
-    pub activeKeyboardRenderers_: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::MeshRenderer,
+    pub projectedPassthroughOpaque_: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVROverlay,
     >,
-    pub activeKeyboardMesh_: *mut crate::UnityEngine::GameObject,
-    pub keyboardMeshNodes_: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::GameObject,
+    pub activeKeyboardRenderers_: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::MeshRenderer>,
     >,
-    pub activeKeyboardMeshRenderer_: *mut crate::UnityEngine::MeshRenderer,
-    pub passthroughQuad_: *mut crate::UnityEngine::GameObject,
-    pub opaqueShader_: *mut crate::UnityEngine::Shader,
-    pub dynamicQualityTexture_: *mut crate::UnityEngine::Texture2D,
+    pub activeKeyboardMesh_: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub keyboardMeshNodes_: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+    >,
+    pub activeKeyboardMeshRenderer_: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MeshRenderer,
+    >,
+    pub passthroughQuad_: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub opaqueShader_: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub dynamicQualityTexture_: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     pub untrackedPosition_: crate::UnityEngine::Vector3,
-    pub KeyLabelModeShader: *mut crate::UnityEngine::Shader,
-    pub PassthroughShader: *mut crate::UnityEngine::Shader,
-    pub projectedPassthroughRoot: *mut crate::UnityEngine::Transform,
-    pub projectedPassthroughMesh: *mut crate::UnityEngine::MeshFilter,
-    pub ProjectedPassthroughKeyLabel: *mut crate::GlobalNamespace::OVRPassthroughLayer,
-    pub TrackedKeyboardActiveChanged: *mut crate::System::Action_1<
-        crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent,
+    pub KeyLabelModeShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub PassthroughShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub projectedPassthroughRoot: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
     >,
-    pub TrackedKeyboardVisibilityChanged: *mut crate::System::Action_1<
-        crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedEvent,
+    pub projectedPassthroughMesh: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MeshFilter,
     >,
-    pub ActiveKeyboardTransform: *mut crate::UnityEngine::Transform,
+    pub ProjectedPassthroughKeyLabel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRPassthroughLayer,
+    >,
+    pub TrackedKeyboardActiveChanged: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent,
+        >,
+    >,
+    pub TrackedKeyboardVisibilityChanged: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedEvent,
+        >,
+    >,
+    pub ActiveKeyboardTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
     pub HandsOverKeyboard: bool,
-    pub cameraRig_: *mut crate::GlobalNamespace::OVRCameraRig,
-    pub updateKeyboardRoutine_: *mut crate::UnityEngine::Coroutine,
-    pub keyboardBoundingBox_: *mut crate::UnityEngine::BoxCollider,
+    pub cameraRig_: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCameraRig>,
+    pub updateKeyboardRoutine_: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
+    pub keyboardBoundingBox_: quest_hook::libil2cpp::Gc<crate::UnityEngine::BoxCollider>,
     pub staleTimeoutCounter_: f32,
     pub reacquisitionTimer_: f32,
     pub sendFilteredPoseEventTimer_: f32,
@@ -604,7 +622,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardSetActiveEvent")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent {
     pub IsEnabled: bool,
 }
@@ -660,9 +678,11 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardVisibilityChangedEvent")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedEvent {
-    pub ActiveKeyboardName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ActiveKeyboardName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub State: crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardState,
     pub TrackingTimeout: bool,
 }

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ReflectionValueProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _memberInfo: *mut crate::System::Reflection::MemberInfo,
+    pub _memberInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+ReflectionValueProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

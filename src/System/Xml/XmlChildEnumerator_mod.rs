@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct XmlChildEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub container: *mut crate::System::Xml::XmlNode,
-    pub child: *mut crate::System::Xml::XmlNode,
+    pub container: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+    pub child: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
     pub isFirst: bool,
 }
 #[cfg(feature = "System+Xml+XmlChildEnumerator")]

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct SubContainerCreatorByMethodBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _containerBindInfo: *mut crate::Zenject::SubContainerCreatorBindInfo,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _containerBindInfo: quest_hook::libil2cpp::Gc<
+        crate::Zenject::SubContainerCreatorBindInfo,
+    >,
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByMethodBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

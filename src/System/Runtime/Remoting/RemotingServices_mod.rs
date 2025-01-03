@@ -537,8 +537,8 @@ for crate::System::Runtime::Remoting::RemotingServices {
 #[derive(Debug)]
 pub struct RemotingServices_CACD {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub d: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub c: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub d: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub c: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Runtime+Remoting+RemotingServices+CACD")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct AccessDescription {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub accessMethod: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub accessLocation: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    pub accessMethod: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub accessLocation: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+AccessDescription")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

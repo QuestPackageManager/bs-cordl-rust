@@ -3,17 +3,23 @@
 #[derive(Debug)]
 pub struct RunLevelMenuDestination {
     __cordl_parent: crate::GlobalNamespace::MenuDestination,
-    pub beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
-    pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub beatmapLevelPack: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelPack,
+    >,
+    pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     pub beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    pub beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-    pub gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+    pub beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSO,
+    >,
+    pub gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
+    >,
     pub practice: bool,
     pub startSongTime: f32,
     pub songSpeedMultiplier: f32,
     pub overrideEnvironments: bool,
-    pub environmentType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub environmentName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub environmentType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub environmentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub quitAppAfterRun: bool,
 }
 #[cfg(feature = "RunLevelMenuDestination")]

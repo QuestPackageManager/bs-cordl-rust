@@ -3,38 +3,62 @@
 #[derive(Debug)]
 pub struct UIRStylePainter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Owner: *mut crate::UnityEngine::UIElements::UIR::RenderChain,
-    pub m_Entries: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
+    pub m_Owner: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::RenderChain,
     >,
-    pub m_Atlas: *mut crate::UnityEngine::UIElements::AtlasBase,
-    pub m_VectorImageManager: *mut crate::UnityEngine::UIElements::UIR::VectorImageManager,
+    pub m_Entries: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
+        >,
+    >,
+    pub m_Atlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::AtlasBase>,
+    pub m_VectorImageManager: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::VectorImageManager,
+    >,
     pub m_CurrentEntry: crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
     pub m_ClosingInfo: crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo,
     pub m_MaskDepth: i32,
     pub m_StencilRef: i32,
     pub m_ClipRectID: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     pub m_SVGBackgroundEntryIndex: i32,
-    pub m_VertsPool: *mut crate::UnityEngine::UIElements::UIR::TempAllocator_1<
-        crate::UnityEngine::UIElements::Vertex,
-    >,
-    pub m_IndicesPool: *mut crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>,
-    pub m_MeshWriteDataPool: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::MeshWriteData,
-    >,
-    pub m_NextMeshWriteDataPoolItem: i32,
-    pub m_RepeatRectUVList: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV,
+    pub m_VertsPool: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::TempAllocator_1<
+            crate::UnityEngine::UIElements::Vertex,
         >,
     >,
-    pub m_AllocRawVertsIndicesDelegate: *mut crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator,
-    pub m_AllocThroughDrawMeshDelegate: *mut crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator,
-    pub _meshGenerationContext_k__BackingField: *mut crate::UnityEngine::UIElements::MeshGenerationContext,
-    pub _currentElement_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_IndicesPool: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>,
+    >,
+    pub m_MeshWriteDataPool: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::MeshWriteData,
+        >,
+    >,
+    pub m_NextMeshWriteDataPoolItem: i32,
+    pub m_RepeatRectUVList: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV,
+            >,
+        >,
+    >,
+    pub m_AllocRawVertsIndicesDelegate: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator,
+    >,
+    pub m_AllocThroughDrawMeshDelegate: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator,
+    >,
+    pub _meshGenerationContext_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::MeshGenerationContext,
+    >,
+    pub _currentElement_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub _totalVertices_k__BackingField: i32,
     pub _totalIndices_k__BackingField: i32,
-    pub m_TextInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+    pub m_TextInfo: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextInfo,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -660,14 +684,16 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+ClosingInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UIRStylePainter_ClosingInfo {
     pub needsClosing: bool,
     pub popViewMatrix: bool,
     pub popScissorClip: bool,
     pub blitAndPopRenderTexture: bool,
     pub PopDefaultMaterial: bool,
-    pub clipUnregisterDrawCommand: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+    pub clipUnregisterDrawCommand: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+    >,
     pub clipperRegisterVertices: crate::Unity::Collections::NativeSlice_1<
         crate::UnityEngine::UIElements::Vertex,
     >,
@@ -696,16 +722,18 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Closing
 impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo {}
 #[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+Entry")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UIRStylePainter_Entry {
     pub vertices: crate::Unity::Collections::NativeSlice_1<
         crate::UnityEngine::UIElements::Vertex,
     >,
     pub indices: crate::Unity::Collections::NativeSlice_1<u16>,
-    pub material: *mut crate::UnityEngine::Material,
+    pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub fontTexSDFScale: f32,
     pub texture: crate::UnityEngine::UIElements::TextureId,
-    pub customCommand: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+    pub customCommand: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+    >,
     pub clipRectID: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     pub addFlags: crate::UnityEngine::UIElements::UIR::VertexFlags,
     pub uvIsDisplacement: bool,
@@ -737,7 +765,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry 
     feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+RepeatRectUV"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UIRStylePainter_RepeatRectUV {
     pub rect: crate::UnityEngine::Rect,
     pub uv: crate::UnityEngine::Rect,

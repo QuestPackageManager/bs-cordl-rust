@@ -4,15 +4,19 @@
 pub struct MaskableGraphic {
     __cordl_parent: crate::UnityEngine::UI::Graphic,
     pub m_ShouldRecalculateStencil: bool,
-    pub m_MaskMaterial: *mut crate::UnityEngine::Material,
-    pub m_ParentMask: *mut crate::UnityEngine::UI::RectMask2D,
+    pub m_MaskMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub m_ParentMask: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::RectMask2D>,
     pub m_Maskable: bool,
     pub m_IsMaskingGraphic: bool,
     pub m_IncludeForMasking: bool,
-    pub m_OnCullStateChanged: *mut crate::UnityEngine::UI::MaskableGraphic_CullStateChangedEvent,
+    pub m_OnCullStateChanged: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::MaskableGraphic_CullStateChangedEvent,
+    >,
     pub m_ShouldRecalculate: bool,
     pub m_StencilValue: i32,
-    pub m_Corners: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    pub m_Corners: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
 }
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

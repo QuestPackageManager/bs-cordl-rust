@@ -3,33 +3,49 @@
 #[derive(Debug)]
 pub struct GameServerPlayersTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _tableView: *mut crate::HMUI::TableView,
-    pub _gameServerPlayerCellPrefab: *mut crate::GlobalNamespace::GameServerPlayerTableCell,
-    pub _gameServerPlayerCellWithoutSongsPrefab: *mut crate::GlobalNamespace::GameServerPlayerTableCell,
-    pub _gameServerPlayerCellWithoutModifiersPrefab: *mut crate::GlobalNamespace::GameServerPlayerTableCell,
-    pub _tableHeaderSongGo: *mut crate::UnityEngine::GameObject,
-    pub _tableHeaderModifiersGo: *mut crate::UnityEngine::GameObject,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _entitlementModel: *mut crate::GlobalNamespace::IEntitlementModel,
-    pub selectSuggestedLevelEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::BeatmapKey,
+    pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+    pub _gameServerPlayerCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameServerPlayerTableCell,
     >,
-    pub selectSuggestedGameplayModifiersEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::GameplayModifiers,
+    pub _gameServerPlayerCellWithoutSongsPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameServerPlayerTableCell,
     >,
-    pub kickPlayerEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _gameServerPlayerCellWithoutModifiersPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameServerPlayerTableCell,
+    >,
+    pub _tableHeaderSongGo: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _tableHeaderModifiersGo: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _entitlementModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IEntitlementModel,
+    >,
+    pub selectSuggestedLevelEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::BeatmapKey>,
+    >,
+    pub selectSuggestedGameplayModifiersEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::GameplayModifiers>,
+    >,
+    pub kickPlayerEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _initialized: bool,
     pub _hasKickPermissions: bool,
     pub _allowSelection: bool,
     pub _showSongSelection: bool,
     pub _showModifierSelection: bool,
-    pub _selectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
-    pub _sortedConnectedPlayers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _selectedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
     >,
-    pub _lobbyPlayersDataModel: *mut crate::GlobalNamespace::ILobbyPlayersDataModel,
+    pub _sortedConnectedPlayers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
+    >,
+    pub _lobbyPlayersDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyPlayersDataModel,
+    >,
 }
 #[cfg(feature = "GameServerPlayersTableView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

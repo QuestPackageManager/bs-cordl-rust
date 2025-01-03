@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct X448Agreement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub privateKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::X448PrivateKeyParameters,
+    pub privateKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::X448PrivateKeyParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+X448Agreement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

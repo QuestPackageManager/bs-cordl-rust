@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct MemoryPoolContainer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _activeItems: *mut crate::GlobalNamespace::LazyCopyHashSet_1<T>,
-    pub _memoryPool: *mut crate::Zenject::IMemoryPool_1<T>,
+    pub _activeItems: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<T>,
+    >,
+    pub _memoryPool: quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "MemoryPoolContainer_1")]

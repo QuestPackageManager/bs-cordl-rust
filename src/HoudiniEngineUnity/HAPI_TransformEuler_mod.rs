@@ -1,11 +1,13 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_TransformEuler")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HAPI_TransformEuler {
-    pub position: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub rotationEuler: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub scale: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub shear: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub position: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub rotationEuler: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
+    pub scale: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub shear: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub rotationOrder: crate::HoudiniEngineUnity::HAPI_XYZOrder,
     pub rstOrder: crate::HoudiniEngineUnity::HAPI_RSTOrder,
 }

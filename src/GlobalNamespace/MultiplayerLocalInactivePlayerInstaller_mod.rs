@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _audioManager: *mut crate::GlobalNamespace::AudioManagerSO,
-    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _optionalAvatarDataSender: *mut crate::BeatSaber::AvatarCore::OptionalAvatarDataSender,
+    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
+    pub _sceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _optionalAvatarDataSender: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::OptionalAvatarDataSender,
+    >,
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

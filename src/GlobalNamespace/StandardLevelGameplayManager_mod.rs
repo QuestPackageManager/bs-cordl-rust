@@ -3,19 +3,37 @@
 #[derive(Debug)]
 pub struct StandardLevelGameplayManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
-    pub _gameSongController: *mut crate::GlobalNamespace::GameSongController,
-    pub _gameEnergyCounter: *mut crate::GlobalNamespace::GameEnergyCounter,
-    pub _pauseController: *mut crate::GlobalNamespace::PauseController,
-    pub _initData: *mut crate::GlobalNamespace::StandardLevelGameplayManager_InitData,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
-    pub _beatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
-    pub _returnToMenuController: *mut crate::GlobalNamespace::IReturnToMenuController,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub levelWillStartIntroEvent: *mut crate::System::Action,
-    pub levelDidStartEvent: *mut crate::System::Action,
-    pub levelFinishedEvent: *mut crate::System::Action,
-    pub levelFailedEvent: *mut crate::System::Action,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
+    pub _gameSongController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameSongController,
+    >,
+    pub _gameEnergyCounter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameEnergyCounter,
+    >,
+    pub _pauseController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PauseController,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardLevelGameplayManager_InitData,
+    >,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
+    pub _beatmapData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IReadonlyBeatmapData,
+    >,
+    pub _returnToMenuController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IReturnToMenuController,
+    >,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub levelWillStartIntroEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub levelDidStartEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub levelFinishedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub levelFailedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _gameState: crate::GlobalNamespace::StandardLevelGameplayManager_GameState,
     pub _levelEndStateType: crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType,
     pub _prePauseGameState: crate::GlobalNamespace::StandardLevelGameplayManager_GameState,

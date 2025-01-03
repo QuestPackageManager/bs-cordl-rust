@@ -3,15 +3,19 @@
 #[derive(Debug)]
 pub struct AvatarTweenController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _avatarTransform: *mut crate::UnityEngine::Transform,
-    pub _headParent: *mut crate::UnityEngine::Transform,
-    pub _leftHandTransform: *mut crate::UnityEngine::Transform,
-    pub _rightHandTransform: *mut crate::UnityEngine::Transform,
-    pub _bodyTransform: *mut crate::UnityEngine::Transform,
-    pub _headInnerTransform: *mut crate::UnityEngine::Transform,
-    pub _leftHandInnerTransform: *mut crate::UnityEngine::Transform,
-    pub _rightHandInnerTransform: *mut crate::UnityEngine::Transform,
-    pub _bodyInnerTransform: *mut crate::UnityEngine::Transform,
+    pub _avatarTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _headParent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _leftHandTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _rightHandTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _bodyTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _headInnerTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _leftHandInnerTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _rightHandInnerTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _bodyInnerTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _popDuration: f32,
     pub _popEaseType: crate::GlobalNamespace::EaseType,
     pub _headPopAmount: f32,
@@ -27,39 +31,45 @@ pub struct AvatarTweenController {
     pub _disappearSquash: crate::UnityEngine::Vector3,
     pub _disappearScaleEase: crate::GlobalNamespace::EaseType,
     pub _disappearPositionEase: crate::GlobalNamespace::EaseType,
-    pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub _sharedCoroutineStarter: *mut crate::GlobalNamespace::ICoroutineStarter,
-    pub _popHeadTween: *mut crate::Tweening::Tween_1<f32>,
-    pub _popLeftHandTween: *mut crate::Tweening::Tween_1<f32>,
-    pub _popRightHandTween: *mut crate::Tweening::Tween_1<f32>,
-    pub _popClothesTween: *mut crate::Tweening::Tween_1<f32>,
-    pub _appearHeadPositionTween: *mut crate::Tweening::Tween_1<
-        crate::UnityEngine::Vector3,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::TimeTweeningManager,
     >,
-    pub _appearHeadScaleTween: *mut crate::Tweening::Tween_1<
-        crate::UnityEngine::Vector3,
+    pub _sharedCoroutineStarter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ICoroutineStarter,
     >,
-    pub _appearBodyPositionTween: *mut crate::Tweening::Tween_1<
-        crate::UnityEngine::Vector3,
+    pub _popHeadTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _popLeftHandTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _popRightHandTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _popClothesTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _appearHeadPositionTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
     >,
-    pub _appearBodyScaleTween: *mut crate::Tweening::Tween_1<
-        crate::UnityEngine::Vector3,
+    pub _appearHeadScaleTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
     >,
-    pub _appearRightHandPositionTween: *mut crate::Tweening::Tween_1<
-        crate::UnityEngine::Vector3,
+    pub _appearBodyPositionTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
     >,
-    pub _appearRightHandScaleTween: *mut crate::Tweening::Tween_1<
-        crate::UnityEngine::Vector3,
+    pub _appearBodyScaleTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
     >,
-    pub _appearLeftHandPositionTween: *mut crate::Tweening::Tween_1<
-        crate::UnityEngine::Vector3,
+    pub _appearRightHandPositionTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
     >,
-    pub _appearLeftHandScaleTween: *mut crate::Tweening::Tween_1<
-        crate::UnityEngine::Vector3,
+    pub _appearRightHandScaleTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
     >,
-    pub _disappearScaleTween: *mut crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
-    pub _disappearPositionTween: *mut crate::Tweening::Tween_1<
-        crate::UnityEngine::Vector3,
+    pub _appearLeftHandPositionTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
+    >,
+    pub _appearLeftHandScaleTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
+    >,
+    pub _disappearScaleTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
+    >,
+    pub _disappearPositionTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
     >,
     pub _avatarLocalPosition: crate::UnityEngine::Vector3,
     pub _avatarLocalScale: crate::UnityEngine::Vector3,

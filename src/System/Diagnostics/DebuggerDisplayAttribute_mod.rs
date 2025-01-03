@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct DebuggerDisplayAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub value: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Diagnostics+DebuggerDisplayAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

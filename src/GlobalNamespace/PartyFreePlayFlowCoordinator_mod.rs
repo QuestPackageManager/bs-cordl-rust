@@ -3,14 +3,28 @@
 #[derive(Debug)]
 pub struct PartyFreePlayFlowCoordinator {
     __cordl_parent: crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
-    pub _defaultLightsPreset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
-    pub _resultsClearedLightsPreset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
-    pub _resultsFailedLightsPreset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
-    pub _menuLightsManager: *mut crate::GlobalNamespace::MenuLightsManager,
-    pub _resultsViewController: *mut crate::GlobalNamespace::ResultsViewController,
-    pub _localLeaderboardViewController: *mut crate::GlobalNamespace::LocalLeaderboardViewController,
-    pub _enterNameViewController: *mut crate::GlobalNamespace::EnterPlayerGuestNameViewController,
-    pub _fileStorage: *mut crate::GlobalNamespace::IFileStorage,
+    pub _defaultLightsPreset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsPresetSO,
+    >,
+    pub _resultsClearedLightsPreset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsPresetSO,
+    >,
+    pub _resultsFailedLightsPreset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsPresetSO,
+    >,
+    pub _menuLightsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsManager,
+    >,
+    pub _resultsViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ResultsViewController,
+    >,
+    pub _localLeaderboardViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LocalLeaderboardViewController,
+    >,
+    pub _enterNameViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnterPlayerGuestNameViewController,
+    >,
+    pub _fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
 }
 #[cfg(feature = "PartyFreePlayFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

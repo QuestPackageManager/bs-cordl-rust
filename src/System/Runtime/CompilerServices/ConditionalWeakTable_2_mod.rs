@@ -6,10 +6,12 @@ pub struct ConditionalWeakTable_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub data: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Runtime::CompilerServices::Ephemeron,
+    pub data: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Runtime::CompilerServices::Ephemeron,
+        >,
     >,
-    pub _lock: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _lock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _cordl_size: i32,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -477,9 +479,8 @@ pub struct ConditionalWeakTable_2_Enumerator<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _table: *mut crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<
-        TKey,
-        TValue,
+    pub _table: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<TKey, TValue>,
     >,
     pub _currentIndex: i32,
     pub _current: crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct Asn1KeyWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub algorithm: *mut quest_hook::libil2cpp::Il2CppString,
-    pub wrapper: *mut crate::Org::BouncyCastle::Crypto::IKeyWrapper,
+    pub algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub wrapper: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IKeyWrapper,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1KeyWrapper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

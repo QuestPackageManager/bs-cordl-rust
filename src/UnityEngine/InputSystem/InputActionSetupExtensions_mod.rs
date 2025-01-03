@@ -452,10 +452,14 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputActionSetupExtensions_BindingSyntax {
-    pub m_ActionMap: *mut crate::UnityEngine::InputSystem::InputActionMap,
-    pub m_Action: *mut crate::UnityEngine::InputSystem::InputAction,
+    pub m_ActionMap: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionMap,
+    >,
+    pub m_Action: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
     pub m_BindingIndexInMap: i32,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax")]
@@ -822,10 +826,14 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputActionSetupExtensions_CompositeSyntax {
-    pub m_Action: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub m_ActionMap: *mut crate::UnityEngine::InputSystem::InputActionMap,
+    pub m_Action: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub m_ActionMap: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionMap,
+    >,
     pub m_BindingIndexInMap: i32,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax")]
@@ -889,9 +897,11 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax
     feature = "UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputActionSetupExtensions_ControlSchemeSyntax {
-    pub m_Asset: *mut crate::UnityEngine::InputSystem::InputActionAsset,
+    pub m_Asset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionAsset,
+    >,
     pub m_ControlSchemeIndex: i32,
     pub m_ControlScheme: crate::UnityEngine::InputSystem::InputControlScheme,
 }

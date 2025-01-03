@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct X9ECParameters {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub fieldID: *mut crate::Org::BouncyCastle::Asn1::X9::X9FieldID,
-    pub curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-    pub g: *mut crate::Org::BouncyCastle::Asn1::X9::X9ECPoint,
-    pub n: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub h: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub fieldID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X9::X9FieldID,
+    >,
+    pub curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
+    pub g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECPoint>,
+    pub n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub h: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X9ECParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -4,12 +4,16 @@
 pub struct TimeStampResponseGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub status: crate::Org::BouncyCastle::Asn1::Cmp::PkiStatus,
-    pub statusStrings: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+    pub statusStrings: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+    >,
     pub failInfo: i32,
-    pub tokenGenerator: *mut crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator,
-    pub acceptedAlgorithms: *mut crate::System::Collections::IList,
-    pub acceptedPolicies: *mut crate::System::Collections::IList,
-    pub acceptedExtensions: *mut crate::System::Collections::IList,
+    pub tokenGenerator: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator,
+    >,
+    pub acceptedAlgorithms: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub acceptedPolicies: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub acceptedExtensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponseGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

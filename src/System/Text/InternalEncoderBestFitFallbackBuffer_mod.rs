@@ -4,7 +4,9 @@
 pub struct InternalEncoderBestFitFallbackBuffer {
     __cordl_parent: crate::System::Text::EncoderFallbackBuffer,
     pub _cBestFit: char,
-    pub _oFallback: *mut crate::System::Text::InternalEncoderBestFitFallback,
+    pub _oFallback: quest_hook::libil2cpp::Gc<
+        crate::System::Text::InternalEncoderBestFitFallback,
+    >,
     pub _iCount: i32,
     pub _iSize: i32,
 }

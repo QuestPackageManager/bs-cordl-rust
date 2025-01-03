@@ -5,8 +5,10 @@ pub struct ColorSchemesAsyncInstaller {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         *mut crate::GlobalNamespace::ColorSchemeSO,
     >,
-    pub _colorSchemes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::ColorSchemeSO,
+    pub _colorSchemes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::ColorSchemeSO,
+        >,
     >,
 }
 #[cfg(feature = "Environments+Definitions+ColorSchemesAsyncInstaller")]

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct NjsEventConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
-    pub _noteJumpMovementSpeedEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::NoteJumpMovementSpeedEvent,
+    pub _noteJumpMovementSpeedEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::BeatmapSaveDataVersion4::NoteJumpMovementSpeedEvent,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+NjsEventConverter")]

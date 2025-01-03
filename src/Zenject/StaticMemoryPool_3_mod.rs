@@ -7,7 +7,9 @@ pub struct StaticMemoryPool_3<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::Zenject::StaticMemoryPoolBase_1<TValue>,
-    pub _onSpawnMethod: *mut crate::System::Action_3<TParam1, TParam2, TValue>,
+    pub _onSpawnMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Action_3<TParam1, TParam2, TValue>,
+    >,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,

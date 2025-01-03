@@ -4,13 +4,17 @@
 pub struct OVRSceneSampleController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub quitKey: crate::UnityEngine::KeyCode,
-    pub fadeInTexture: *mut crate::UnityEngine::Texture,
+    pub fadeInTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub speedRotationIncrement: f32,
-    pub playerController: *mut crate::GlobalNamespace::OVRPlayerController,
-    pub cameraController: *mut crate::GlobalNamespace::OVRCameraRig,
-    pub layerName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub playerController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRPlayerController,
+    >,
+    pub cameraController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRCameraRig,
+    >,
+    pub layerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub visionMode: bool,
-    pub gridCube: *mut crate::GlobalNamespace::OVRGridCube,
+    pub gridCube: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGridCube>,
 }
 #[cfg(feature = "OVRSceneSampleController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ColorNoteItemConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
-    pub _colorNotes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::ColorNote,
+    pub _colorNotes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::ColorNote>,
     >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+ColorNoteItemConverter")]

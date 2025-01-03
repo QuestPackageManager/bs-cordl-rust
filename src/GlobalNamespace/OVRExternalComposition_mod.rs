@@ -3,29 +3,41 @@
 #[derive(Debug)]
 pub struct OVRExternalComposition {
     __cordl_parent: crate::GlobalNamespace::OVRComposition,
-    pub previousMainCameraObject: *mut crate::UnityEngine::GameObject,
-    pub foregroundCameraGameObject: *mut crate::UnityEngine::GameObject,
-    pub foregroundCamera: *mut crate::UnityEngine::Camera,
-    pub backgroundCameraGameObject: *mut crate::UnityEngine::GameObject,
-    pub backgroundCamera: *mut crate::UnityEngine::Camera,
+    pub previousMainCameraObject: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub foregroundCameraGameObject: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub foregroundCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    pub backgroundCameraGameObject: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub backgroundCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub skipFrame: bool,
     pub fpsThreshold: f32,
     pub isFrameSkipped: bool,
     pub renderCombinedFrame: bool,
-    pub audioListener: *mut crate::UnityEngine::AudioListener,
-    pub audioFilter: *mut crate::GlobalNamespace::OVRMRAudioFilter,
-    pub mrcRenderTextureArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::RenderTexture,
+    pub audioListener: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioListener>,
+    pub audioFilter: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRMRAudioFilter>,
+    pub mrcRenderTextureArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::RenderTexture>,
     >,
     pub frameIndex: i32,
     pub lastMrcEncodeFrameSyncId: i32,
-    pub mrcForegroundRenderTextureArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::RenderTexture,
+    pub mrcForegroundRenderTextureArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::RenderTexture>,
     >,
-    pub cameraPoseTimeArray: *mut quest_hook::libil2cpp::Il2CppArray<f64>,
-    pub cachedAudioDataArray: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub audioDataLock: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub cachedAudioData: *mut crate::System::Collections::Generic::List_1<f32>,
+    pub cameraPoseTimeArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f64>,
+    >,
+    pub cachedAudioDataArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
+    pub audioDataLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub cachedAudioData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
     pub cachedChannels: i32,
 }
 #[cfg(feature = "OVRExternalComposition")]

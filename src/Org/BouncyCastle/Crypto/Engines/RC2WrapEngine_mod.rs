@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct RC2WrapEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub engine: *mut crate::Org::BouncyCastle::Crypto::Modes::CbcBlockCipher,
-    pub parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    pub paramPlusIV: *mut crate::Org::BouncyCastle::Crypto::Parameters::ParametersWithIV,
-    pub iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub engine: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Modes::CbcBlockCipher,
+    >,
+    pub parameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    >,
+    pub paramPlusIV: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ParametersWithIV,
+    >,
+    pub iv: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub forWrapping: bool,
-    pub sr: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    pub sha1: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub digest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub sr: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
+    pub sha1: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub digest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+RC2WrapEngine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

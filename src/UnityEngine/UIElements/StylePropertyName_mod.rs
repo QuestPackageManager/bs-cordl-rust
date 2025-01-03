@@ -1,9 +1,11 @@
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyName")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StylePropertyName {
     pub _id_k__BackingField: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-    pub _name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyName")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct VFXController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _particleSystems: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::ParticleSystem,
+    pub _particleSystems: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ParticleSystem>,
     >,
-    pub _animation: *mut crate::UnityEngine::Animation,
+    pub _animation: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animation>,
     pub _deactivateAfterAnimationDuration: bool,
 }
 #[cfg(feature = "VFXController")]

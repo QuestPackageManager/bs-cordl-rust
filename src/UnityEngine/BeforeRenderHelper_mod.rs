@@ -64,10 +64,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::BeforeRenderHelpe
 }
 #[cfg(feature = "UnityEngine+BeforeRenderHelper+OrderBlock")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BeforeRenderHelper_OrderBlock {
     pub order: i32,
-    pub callback: *mut crate::UnityEngine::Events::UnityAction,
+    pub callback: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
 }
 #[cfg(feature = "UnityEngine+BeforeRenderHelper+OrderBlock")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

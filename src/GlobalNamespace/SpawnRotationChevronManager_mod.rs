@@ -7,23 +7,49 @@ pub struct SpawnRotationChevronManager {
     pub _fadeOutTime: f32,
     pub _jumpStartOffsetTime: f32,
     pub _cutOffsetTime: f32,
-    pub _fadeInLightAmountCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _fadeOutLightAmountCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _chevronPool: *mut crate::GlobalNamespace::SpawnRotationChevron_Pool,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _beatmapObjectSpawnController: *mut crate::GlobalNamespace::BeatmapObjectSpawnController,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
-    pub _spawnRotationDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    pub _beatmapObjectDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    pub _directionToDataDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData,
+    pub _fadeInLightAmountCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
     >,
-    pub _activeDirections: *mut crate::System::Collections::Generic::HashSet_1<i32>,
-    pub _reusableDirectionsList: *mut crate::System::Collections::Generic::List_1<i32>,
-    pub _queuedDirectionData: *mut crate::System::Collections::Generic::Queue_1<
-        crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData,
+    pub _fadeOutLightAmountCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
+    pub _chevronPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SpawnRotationChevron_Pool,
+    >,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
+    pub _beatmapObjectSpawnController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectSpawnController,
+    >,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVariableMovementDataProvider,
+    >,
+    pub _spawnRotationDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
+    pub _beatmapObjectDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
+    pub _directionToDataDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData,
+        >,
+    >,
+    pub _activeDirections: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
+    pub _reusableDirectionsList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
+    pub _queuedDirectionData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<
+            crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData,
+        >,
     >,
     pub _currentSpawnRotation: f32,
 }
@@ -150,7 +176,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager {
 #[derive(Debug)]
 pub struct SpawnRotationChevronManager_DirectionData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub chevron: *mut crate::GlobalNamespace::SpawnRotationChevron,
+    pub chevron: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SpawnRotationChevron>,
     pub fullyLit: bool,
     pub fadeOutStartTime: f32,
     pub fadeInEndTime: f32,
@@ -208,7 +234,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
 }
 #[cfg(feature = "SpawnRotationChevronManager+QueuedDirectionData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SpawnRotationChevronManager_QueuedDirectionData {
     pub _cordl_time: f32,
     pub duration: f32,

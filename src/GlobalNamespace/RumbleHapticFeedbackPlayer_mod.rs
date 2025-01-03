@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct RumbleHapticFeedbackPlayer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _rumblesByNode: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::XR::XRNode,
-        *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut quest_hook::libil2cpp::Il2CppObject,
-            *mut crate::GlobalNamespace::RumbleHapticFeedbackPlayer_RumbleData,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
+    pub _rumblesByNode: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::XR::XRNode,
+            *mut crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut crate::GlobalNamespace::RumbleHapticFeedbackPlayer_RumbleData,
+            >,
         >,
     >,
 }

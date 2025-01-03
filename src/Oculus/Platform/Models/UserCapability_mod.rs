@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct UserCapability {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Description: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub IsEnabled: bool,
-    pub Name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub ReasonCode: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ReasonCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Oculus+Platform+Models+UserCapability")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

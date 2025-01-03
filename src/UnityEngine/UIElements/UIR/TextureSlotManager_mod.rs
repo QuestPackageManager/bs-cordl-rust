@@ -3,17 +3,19 @@
 #[derive(Debug)]
 pub struct TextureSlotManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Textures: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::UIElements::TextureId,
+    pub m_Textures: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::UIElements::TextureId>,
     >,
-    pub m_Tickets: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub m_Tickets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub m_CurrentTicket: i32,
     pub m_FirstUsedTicket: i32,
-    pub m_GpuTextures: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector4,
+    pub m_GpuTextures: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
     pub _FreeSlots_k__BackingField: i32,
-    pub textureRegistry: *mut crate::UnityEngine::UIElements::TextureRegistry,
+    pub textureRegistry: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextureRegistry,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+TextureSlotManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

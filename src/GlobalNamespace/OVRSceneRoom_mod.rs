@@ -3,34 +3,42 @@
 #[derive(Debug)]
 pub struct OVRSceneRoom {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _Floor_k__BackingField: *mut crate::GlobalNamespace::OVRScenePlane,
-    pub _Ceiling_k__BackingField: *mut crate::GlobalNamespace::OVRScenePlane,
-    pub _Walls_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::OVRScenePlane,
+    pub _Floor_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRScenePlane,
     >,
-    pub _walls: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::OVRScenePlane,
+    pub _Ceiling_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRScenePlane,
     >,
-    pub _orderedRoomGuids: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::System::Guid,
-        i32,
+    pub _Walls_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::OVRScenePlane>,
     >,
-    pub _wallOrderComparer: *mut crate::System::Comparison_1<
-        *mut crate::GlobalNamespace::OVRScenePlane,
+    pub _walls: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::OVRScenePlane,
+        >,
     >,
-    pub _sceneAnchor: *mut crate::GlobalNamespace::OVRSceneAnchor,
-    pub _sceneManager: *mut crate::GlobalNamespace::OVRSceneManager,
-    pub _uuidToQuery: *mut crate::System::Collections::Generic::HashSet_1<
-        crate::System::Guid,
+    pub _orderedRoomGuids: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<crate::System::Guid, i32>,
     >,
-    pub _roomAnchors: *mut crate::System::Collections::Generic::List_1<
-        crate::GlobalNamespace::OVRAnchor,
+    pub _wallOrderComparer: quest_hook::libil2cpp::Gc<
+        crate::System::Comparison_1<*mut crate::GlobalNamespace::OVRScenePlane>,
+    >,
+    pub _sceneAnchor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
+    pub _sceneManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRSceneManager,
+    >,
+    pub _uuidToQuery: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<crate::System::Guid>,
+    >,
+    pub _roomAnchors: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::GlobalNamespace::OVRAnchor>,
     >,
     pub _taskCount: i32,
-    pub _onFetchAnchorsCompleted: *mut crate::System::Action_1<bool>,
-    pub _onAnchorLocalizationCompleted: *mut crate::System::Action_2<
-        bool,
-        crate::GlobalNamespace::OVRAnchor,
+    pub _onFetchAnchorsCompleted: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<bool>,
+    >,
+    pub _onAnchorLocalizationCompleted: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<bool, crate::GlobalNamespace::OVRAnchor>,
     >,
 }
 #[cfg(feature = "OVRSceneRoom")]

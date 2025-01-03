@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct TriangulationDebugContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _tcx: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
+    pub _tcx: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
+    >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationDebugContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

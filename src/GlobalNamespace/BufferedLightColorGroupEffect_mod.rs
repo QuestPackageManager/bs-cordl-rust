@@ -3,19 +3,29 @@
 #[derive(Debug)]
 pub struct BufferedLightColorGroupEffect {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
-    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _colorBoostBeatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    pub _lightColorBeatmapEventCallbackWrappers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _colorBoostBeatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
+    pub _lightColorBeatmapEventCallbackWrappers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+        >,
     >,
     pub _lastIndex: i32,
-    pub _timesBuffer: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _colorsBuffer: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector4,
+    pub _timesBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub _colorsBuffer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
-    pub _elementIdsBuffer: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub _elementIdsBuffer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
     pub _useBoostColors: bool,
     pub _didReceiveEventThisFrame: bool,
 }
@@ -152,8 +162,10 @@ for crate::GlobalNamespace::BufferedLightColorGroupEffect {
 #[derive(Debug)]
 pub struct BufferedLightColorGroupEffect_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub lightGroup: *mut crate::GlobalNamespace::LightGroup,
-    pub materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroup>,
+    pub materialPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
 }
 #[cfg(feature = "BufferedLightColorGroupEffect+InitData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

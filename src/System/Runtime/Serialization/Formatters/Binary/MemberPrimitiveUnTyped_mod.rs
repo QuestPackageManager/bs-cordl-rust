@@ -4,7 +4,7 @@
 pub struct MemberPrimitiveUnTyped {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub typeInformation: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
-    pub value: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+MemberPrimitiveUnTyped")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

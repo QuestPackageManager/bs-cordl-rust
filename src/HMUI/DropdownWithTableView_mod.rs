@@ -3,15 +3,14 @@
 #[derive(Debug)]
 pub struct DropdownWithTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _button: *mut crate::UnityEngine::UI::Button,
-    pub _tableView: *mut crate::HMUI::TableView,
-    pub _modalView: *mut crate::HMUI::ModalViewBase,
+    pub _button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+    pub _modalView: quest_hook::libil2cpp::Gc<crate::HMUI::ModalViewBase>,
     pub _extraSpace: f32,
     pub _numberOfVisibleCells: i32,
     pub _hideOnSelection: bool,
-    pub didSelectCellWithIdxEvent: *mut crate::System::Action_2<
-        *mut crate::HMUI::DropdownWithTableView,
-        i32,
+    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::HMUI::DropdownWithTableView, i32>,
     >,
     pub _selectedIndex_k__BackingField: i32,
 }

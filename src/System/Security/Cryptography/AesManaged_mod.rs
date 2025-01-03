@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AesManaged {
     __cordl_parent: crate::System::Security::Cryptography::Aes,
-    pub m_rijndael: *mut crate::System::Security::Cryptography::RijndaelManaged,
+    pub m_rijndael: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::RijndaelManaged,
+    >,
 }
 #[cfg(feature = "System+Security+Cryptography+AesManaged")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,17 +3,39 @@
 #[derive(Debug)]
 pub struct OpenVRControllerWMR {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRController,
-    pub _deviceVelocity_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    pub _deviceAngularVelocity_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    pub _touchpadClick_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _touchpadTouch_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _gripPressed_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _triggerPressed_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _menu_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _trigger_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    pub _grip_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    pub _touchpad_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
-    pub _joystick_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    pub _deviceVelocity_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
+    pub _deviceAngularVelocity_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
+    pub _touchpadClick_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _touchpadTouch_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _gripPressed_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _triggerPressed_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _menu_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _trigger_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
+    pub _grip_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
+    pub _touchpad_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    >,
+    pub _joystick_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    >,
 }
 #[cfg(feature = "Unity+XR+OpenVR+OpenVRControllerWMR")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerGameNoteController {
     __cordl_parent: crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController,
-    pub cubeNoteControllerDidInitEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+    pub cubeNoteControllerDidInitEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+        >,
     >,
     pub _noteVisualModifierType: crate::GlobalNamespace::NoteVisualModifierType,
     pub _gameplayType: crate::GlobalNamespace::NoteData_GameplayType,

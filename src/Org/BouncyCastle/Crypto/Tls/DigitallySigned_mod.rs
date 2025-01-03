@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct DigitallySigned {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mAlgorithm: *mut crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
-    pub mSignature: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
+    >,
+    pub mSignature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DigitallySigned")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

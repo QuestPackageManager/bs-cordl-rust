@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AvatarColorAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
-    pub _template: *mut crate::GlobalNamespace::AvatarColorBehaviour,
+    pub _template: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AvatarColorBehaviour,
+    >,
 }
 #[cfg(feature = "AvatarColorAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

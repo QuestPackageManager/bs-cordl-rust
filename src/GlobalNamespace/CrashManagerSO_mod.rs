@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct CrashManagerSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _logString: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _stackTrace: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _logString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _stackTrace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "CrashManagerSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

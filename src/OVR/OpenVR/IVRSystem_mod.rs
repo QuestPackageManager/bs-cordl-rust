@@ -1,54 +1,148 @@
 #[cfg(feature = "OVR+OpenVR+IVRSystem")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IVRSystem {
-    pub GetRecommendedRenderTargetSize: *mut crate::OVR::OpenVR::IVRSystem__GetRecommendedRenderTargetSize,
-    pub GetProjectionMatrix: *mut crate::OVR::OpenVR::IVRSystem__GetProjectionMatrix,
-    pub GetProjectionRaw: *mut crate::OVR::OpenVR::IVRSystem__GetProjectionRaw,
-    pub ComputeDistortion: *mut crate::OVR::OpenVR::IVRSystem__ComputeDistortion,
-    pub GetEyeToHeadTransform: *mut crate::OVR::OpenVR::IVRSystem__GetEyeToHeadTransform,
-    pub GetTimeSinceLastVsync: *mut crate::OVR::OpenVR::IVRSystem__GetTimeSinceLastVsync,
-    pub GetD3D9AdapterIndex: *mut crate::OVR::OpenVR::IVRSystem__GetD3D9AdapterIndex,
-    pub GetDXGIOutputInfo: *mut crate::OVR::OpenVR::IVRSystem__GetDXGIOutputInfo,
-    pub GetOutputDevice: *mut crate::OVR::OpenVR::IVRSystem__GetOutputDevice,
-    pub IsDisplayOnDesktop: *mut crate::OVR::OpenVR::IVRSystem__IsDisplayOnDesktop,
-    pub SetDisplayVisibility: *mut crate::OVR::OpenVR::IVRSystem__SetDisplayVisibility,
-    pub GetDeviceToAbsoluteTrackingPose: *mut crate::OVR::OpenVR::IVRSystem__GetDeviceToAbsoluteTrackingPose,
-    pub ResetSeatedZeroPose: *mut crate::OVR::OpenVR::IVRSystem__ResetSeatedZeroPose,
-    pub GetSeatedZeroPoseToStandingAbsoluteTrackingPose: *mut crate::OVR::OpenVR::IVRSystem__GetSeatedZeroPoseToStandingAbsoluteTrackingPose,
-    pub GetRawZeroPoseToStandingAbsoluteTrackingPose: *mut crate::OVR::OpenVR::IVRSystem__GetRawZeroPoseToStandingAbsoluteTrackingPose,
-    pub GetSortedTrackedDeviceIndicesOfClass: *mut crate::OVR::OpenVR::IVRSystem__GetSortedTrackedDeviceIndicesOfClass,
-    pub GetTrackedDeviceActivityLevel: *mut crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceActivityLevel,
-    pub ApplyTransform: *mut crate::OVR::OpenVR::IVRSystem__ApplyTransform,
-    pub GetTrackedDeviceIndexForControllerRole: *mut crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceIndexForControllerRole,
-    pub GetControllerRoleForTrackedDeviceIndex: *mut crate::OVR::OpenVR::IVRSystem__GetControllerRoleForTrackedDeviceIndex,
-    pub GetTrackedDeviceClass: *mut crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceClass,
-    pub IsTrackedDeviceConnected: *mut crate::OVR::OpenVR::IVRSystem__IsTrackedDeviceConnected,
-    pub GetBoolTrackedDeviceProperty: *mut crate::OVR::OpenVR::IVRSystem__GetBoolTrackedDeviceProperty,
-    pub GetFloatTrackedDeviceProperty: *mut crate::OVR::OpenVR::IVRSystem__GetFloatTrackedDeviceProperty,
-    pub GetInt32TrackedDeviceProperty: *mut crate::OVR::OpenVR::IVRSystem__GetInt32TrackedDeviceProperty,
-    pub GetUint64TrackedDeviceProperty: *mut crate::OVR::OpenVR::IVRSystem__GetUint64TrackedDeviceProperty,
-    pub GetMatrix34TrackedDeviceProperty: *mut crate::OVR::OpenVR::IVRSystem__GetMatrix34TrackedDeviceProperty,
-    pub GetArrayTrackedDeviceProperty: *mut crate::OVR::OpenVR::IVRSystem__GetArrayTrackedDeviceProperty,
-    pub GetStringTrackedDeviceProperty: *mut crate::OVR::OpenVR::IVRSystem__GetStringTrackedDeviceProperty,
-    pub GetPropErrorNameFromEnum: *mut crate::OVR::OpenVR::IVRSystem__GetPropErrorNameFromEnum,
-    pub PollNextEvent: *mut crate::OVR::OpenVR::IVRSystem__PollNextEvent,
-    pub PollNextEventWithPose: *mut crate::OVR::OpenVR::IVRSystem__PollNextEventWithPose,
-    pub GetEventTypeNameFromEnum: *mut crate::OVR::OpenVR::IVRSystem__GetEventTypeNameFromEnum,
-    pub GetHiddenAreaMesh: *mut crate::OVR::OpenVR::IVRSystem__GetHiddenAreaMesh,
-    pub GetControllerState: *mut crate::OVR::OpenVR::IVRSystem__GetControllerState,
-    pub GetControllerStateWithPose: *mut crate::OVR::OpenVR::IVRSystem__GetControllerStateWithPose,
-    pub TriggerHapticPulse: *mut crate::OVR::OpenVR::IVRSystem__TriggerHapticPulse,
-    pub GetButtonIdNameFromEnum: *mut crate::OVR::OpenVR::IVRSystem__GetButtonIdNameFromEnum,
-    pub GetControllerAxisTypeNameFromEnum: *mut crate::OVR::OpenVR::IVRSystem__GetControllerAxisTypeNameFromEnum,
-    pub IsInputAvailable: *mut crate::OVR::OpenVR::IVRSystem__IsInputAvailable,
-    pub IsSteamVRDrawingControllers: *mut crate::OVR::OpenVR::IVRSystem__IsSteamVRDrawingControllers,
-    pub ShouldApplicationPause: *mut crate::OVR::OpenVR::IVRSystem__ShouldApplicationPause,
-    pub ShouldApplicationReduceRenderingWork: *mut crate::OVR::OpenVR::IVRSystem__ShouldApplicationReduceRenderingWork,
-    pub DriverDebugRequest: *mut crate::OVR::OpenVR::IVRSystem__DriverDebugRequest,
-    pub PerformFirmwareUpdate: *mut crate::OVR::OpenVR::IVRSystem__PerformFirmwareUpdate,
-    pub AcknowledgeQuit_Exiting: *mut crate::OVR::OpenVR::IVRSystem__AcknowledgeQuit_Exiting,
-    pub AcknowledgeQuit_UserPrompt: *mut crate::OVR::OpenVR::IVRSystem__AcknowledgeQuit_UserPrompt,
+    pub GetRecommendedRenderTargetSize: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetRecommendedRenderTargetSize,
+    >,
+    pub GetProjectionMatrix: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetProjectionMatrix,
+    >,
+    pub GetProjectionRaw: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetProjectionRaw,
+    >,
+    pub ComputeDistortion: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__ComputeDistortion,
+    >,
+    pub GetEyeToHeadTransform: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetEyeToHeadTransform,
+    >,
+    pub GetTimeSinceLastVsync: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetTimeSinceLastVsync,
+    >,
+    pub GetD3D9AdapterIndex: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetD3D9AdapterIndex,
+    >,
+    pub GetDXGIOutputInfo: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetDXGIOutputInfo,
+    >,
+    pub GetOutputDevice: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetOutputDevice,
+    >,
+    pub IsDisplayOnDesktop: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__IsDisplayOnDesktop,
+    >,
+    pub SetDisplayVisibility: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__SetDisplayVisibility,
+    >,
+    pub GetDeviceToAbsoluteTrackingPose: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetDeviceToAbsoluteTrackingPose,
+    >,
+    pub ResetSeatedZeroPose: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__ResetSeatedZeroPose,
+    >,
+    pub GetSeatedZeroPoseToStandingAbsoluteTrackingPose: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetSeatedZeroPoseToStandingAbsoluteTrackingPose,
+    >,
+    pub GetRawZeroPoseToStandingAbsoluteTrackingPose: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetRawZeroPoseToStandingAbsoluteTrackingPose,
+    >,
+    pub GetSortedTrackedDeviceIndicesOfClass: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetSortedTrackedDeviceIndicesOfClass,
+    >,
+    pub GetTrackedDeviceActivityLevel: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceActivityLevel,
+    >,
+    pub ApplyTransform: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__ApplyTransform,
+    >,
+    pub GetTrackedDeviceIndexForControllerRole: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceIndexForControllerRole,
+    >,
+    pub GetControllerRoleForTrackedDeviceIndex: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetControllerRoleForTrackedDeviceIndex,
+    >,
+    pub GetTrackedDeviceClass: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceClass,
+    >,
+    pub IsTrackedDeviceConnected: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__IsTrackedDeviceConnected,
+    >,
+    pub GetBoolTrackedDeviceProperty: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetBoolTrackedDeviceProperty,
+    >,
+    pub GetFloatTrackedDeviceProperty: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetFloatTrackedDeviceProperty,
+    >,
+    pub GetInt32TrackedDeviceProperty: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetInt32TrackedDeviceProperty,
+    >,
+    pub GetUint64TrackedDeviceProperty: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetUint64TrackedDeviceProperty,
+    >,
+    pub GetMatrix34TrackedDeviceProperty: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetMatrix34TrackedDeviceProperty,
+    >,
+    pub GetArrayTrackedDeviceProperty: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetArrayTrackedDeviceProperty,
+    >,
+    pub GetStringTrackedDeviceProperty: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetStringTrackedDeviceProperty,
+    >,
+    pub GetPropErrorNameFromEnum: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetPropErrorNameFromEnum,
+    >,
+    pub PollNextEvent: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__PollNextEvent,
+    >,
+    pub PollNextEventWithPose: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__PollNextEventWithPose,
+    >,
+    pub GetEventTypeNameFromEnum: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetEventTypeNameFromEnum,
+    >,
+    pub GetHiddenAreaMesh: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetHiddenAreaMesh,
+    >,
+    pub GetControllerState: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetControllerState,
+    >,
+    pub GetControllerStateWithPose: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetControllerStateWithPose,
+    >,
+    pub TriggerHapticPulse: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__TriggerHapticPulse,
+    >,
+    pub GetButtonIdNameFromEnum: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetButtonIdNameFromEnum,
+    >,
+    pub GetControllerAxisTypeNameFromEnum: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__GetControllerAxisTypeNameFromEnum,
+    >,
+    pub IsInputAvailable: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__IsInputAvailable,
+    >,
+    pub IsSteamVRDrawingControllers: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__IsSteamVRDrawingControllers,
+    >,
+    pub ShouldApplicationPause: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__ShouldApplicationPause,
+    >,
+    pub ShouldApplicationReduceRenderingWork: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__ShouldApplicationReduceRenderingWork,
+    >,
+    pub DriverDebugRequest: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__DriverDebugRequest,
+    >,
+    pub PerformFirmwareUpdate: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__PerformFirmwareUpdate,
+    >,
+    pub AcknowledgeQuit_Exiting: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__AcknowledgeQuit_Exiting,
+    >,
+    pub AcknowledgeQuit_UserPrompt: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSystem__AcknowledgeQuit_UserPrompt,
+    >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRSystem")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

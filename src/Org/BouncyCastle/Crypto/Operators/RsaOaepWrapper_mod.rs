@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct RsaOaepWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub algId: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub engine: *mut crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
+    pub algId: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub engine: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+RsaOaepWrapper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

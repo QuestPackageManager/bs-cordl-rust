@@ -3,19 +3,27 @@
 #[derive(Debug)]
 pub struct InputActionAsset {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub m_ActionMaps: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputActionMap,
+    pub m_ActionMaps: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputActionMap,
+        >,
     >,
-    pub m_ControlSchemes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::InputControlScheme,
+    pub m_ControlSchemes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::InputControlScheme,
+        >,
     >,
-    pub m_SharedStateForAllMaps: *mut crate::UnityEngine::InputSystem::InputActionState,
+    pub m_SharedStateForAllMaps: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionState,
+    >,
     pub m_BindingMask: crate::System::Nullable_1<
         crate::UnityEngine::InputSystem::InputBinding,
     >,
     pub m_ParameterOverridesCount: i32,
-    pub m_ParameterOverrides: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
+    pub m_ParameterOverrides: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
+        >,
     >,
     pub m_Devices: crate::UnityEngine::InputSystem::InputActionMap_DeviceArray,
 }
@@ -538,14 +546,18 @@ for crate::UnityEngine::InputSystem::InputActionAsset {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputActionAsset_ReadFileJson {
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub maps: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::InputActionMap_ReadMapJson,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub maps: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::InputActionMap_ReadMapJson,
+        >,
     >,
-    pub controlSchemes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson,
+    pub controlSchemes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
@@ -583,14 +595,18 @@ impl crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputActionAsset_WriteFileJson {
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub maps: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub maps: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson,
+        >,
     >,
-    pub controlSchemes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson,
+    pub controlSchemes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]

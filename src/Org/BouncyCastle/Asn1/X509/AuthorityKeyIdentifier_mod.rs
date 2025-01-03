@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct AuthorityKeyIdentifier {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub keyidentifier: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub certissuer: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
-    pub certserno: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+    pub keyidentifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub certissuer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+    >,
+    pub certserno: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+AuthorityKeyIdentifier")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -136,15 +136,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_DefaultControls {
 }
 #[cfg(feature = "TMPro+TMP_DefaultControls+Resources")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TMP_DefaultControls_Resources {
-    pub standard: *mut crate::UnityEngine::Sprite,
-    pub background: *mut crate::UnityEngine::Sprite,
-    pub inputField: *mut crate::UnityEngine::Sprite,
-    pub knob: *mut crate::UnityEngine::Sprite,
-    pub checkmark: *mut crate::UnityEngine::Sprite,
-    pub dropdown: *mut crate::UnityEngine::Sprite,
-    pub mask: *mut crate::UnityEngine::Sprite,
+    pub standard: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub background: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub inputField: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub knob: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub checkmark: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub dropdown: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub mask: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
 }
 #[cfg(feature = "TMPro+TMP_DefaultControls+Resources")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -1,14 +1,28 @@
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IVRScreenshots {
-    pub RequestScreenshot: *mut crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot,
-    pub HookScreenshot: *mut crate::OVR::OpenVR::IVRScreenshots__HookScreenshot,
-    pub GetScreenshotPropertyType: *mut crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType,
-    pub GetScreenshotPropertyFilename: *mut crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename,
-    pub UpdateScreenshotProgress: *mut crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress,
-    pub TakeStereoScreenshot: *mut crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot,
-    pub SubmitScreenshot: *mut crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot,
+    pub RequestScreenshot: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot,
+    >,
+    pub HookScreenshot: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRScreenshots__HookScreenshot,
+    >,
+    pub GetScreenshotPropertyType: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType,
+    >,
+    pub GetScreenshotPropertyFilename: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename,
+    >,
+    pub UpdateScreenshotProgress: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress,
+    >,
+    pub TakeStereoScreenshot: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot,
+    >,
+    pub SubmitScreenshot: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot,
+    >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

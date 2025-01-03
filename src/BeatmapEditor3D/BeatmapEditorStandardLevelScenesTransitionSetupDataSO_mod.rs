@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct BeatmapEditorStandardLevelScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
-    pub _standardGameplaySceneInfo: *mut crate::GlobalNamespace::SceneInfo,
-    pub _beatmapEditorGameplaySceneInfo: *mut crate::GlobalNamespace::SceneInfo,
-    pub _gameCoreSceneInfo: *mut crate::GlobalNamespace::SceneInfo,
-    pub didFinishEvent: *mut crate::System::Action_2<
-        *mut crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
-        *mut crate::GlobalNamespace::LevelCompletionResults,
+    pub _standardGameplaySceneInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SceneInfo,
+    >,
+    pub _beatmapEditorGameplaySceneInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SceneInfo,
+    >,
+    pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::LevelCompletionResults,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapEditor3D+BeatmapEditorStandardLevelScenesTransitionSetupDataSO")]

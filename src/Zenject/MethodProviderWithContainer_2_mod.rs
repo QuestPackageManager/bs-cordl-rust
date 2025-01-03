@@ -6,10 +6,8 @@ pub struct MethodProviderWithContainer_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _method: *mut crate::System::Func_3<
-        *mut crate::Zenject::DiContainer,
-        TParam1,
-        TValue,
+    pub _method: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<*mut crate::Zenject::DiContainer, TParam1, TValue>,
     >,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,

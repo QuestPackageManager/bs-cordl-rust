@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct PosesRecordingSaveData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub objectIds: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub objectIds: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub keyframes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe,
+    pub keyframes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe,
+        >,
     >,
-    pub externalCameraCalibration: *mut crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData,
+    pub externalCameraCalibration: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData,
+    >,
 }
 #[cfg(feature = "PosesRecordingSaveData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -246,8 +250,10 @@ for crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData {
 #[derive(Debug)]
 pub struct PosesRecordingSaveData_TransformsSaveKeyframe {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub poses: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData,
+    pub poses: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData,
+        >,
     >,
     pub _cordl_time: f32,
 }

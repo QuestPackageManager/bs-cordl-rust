@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AbstractTlsSigner {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mContext: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+    pub mContext: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsSigner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

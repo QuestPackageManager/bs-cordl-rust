@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct ReceiveState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Resp: *mut crate::System::Net::ResponseDescription,
+    pub Resp: quest_hook::libil2cpp::Gc<crate::System::Net::ResponseDescription>,
     pub ValidThrough: i32,
-    pub Buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub Connection: *mut crate::System::Net::CommandStream,
+    pub Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub Connection: quest_hook::libil2cpp::Gc<crate::System::Net::CommandStream>,
 }
 #[cfg(feature = "System+Net+ReceiveState")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

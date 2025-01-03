@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Test_Mesh {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cordl_self: *mut crate::UnityEngine::Mesh,
+    pub _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Mesh")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

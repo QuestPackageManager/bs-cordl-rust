@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct PanelEventHandler {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
-    pub m_Panel: *mut crate::UnityEngine::UIElements::BaseRuntimePanel,
-    pub m_PointerEvent: *mut crate::UnityEngine::UIElements::PanelEventHandler_PointerEvent,
+    pub m_Panel: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseRuntimePanel,
+    >,
+    pub m_PointerEvent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::PanelEventHandler_PointerEvent,
+    >,
     pub m_LastClickTime: f32,
     pub m_Selecting: bool,
-    pub m_Event: *mut crate::UnityEngine::Event,
+    pub m_Event: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -695,7 +699,9 @@ for crate::UnityEngine::UIElements::PanelEventHandler {
 pub struct PanelEventHandler_PointerEvent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pointerId_k__BackingField: i32,
-    pub _pointerType_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _pointerType_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _isPrimary_k__BackingField: bool,
     pub _button_k__BackingField: i32,
     pub _pressedButtons_k__BackingField: i32,

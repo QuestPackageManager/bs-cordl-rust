@@ -4,8 +4,8 @@
 pub struct AsyncOperation {
     __cordl_parent: crate::UnityEngine::YieldInstruction,
     pub m_Ptr: crate::System::IntPtr,
-    pub m_completeCallback: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::AsyncOperation,
+    pub m_completeCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::AsyncOperation>,
     >,
 }
 #[cfg(feature = "UnityEngine+AsyncOperation")]

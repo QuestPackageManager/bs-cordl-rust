@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct MainMenuDestinationRequestController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _destinationRequestManager: *mut crate::GlobalNamespace::IDestinationRequestManager,
-    pub _menuScenesTransitionSetupData: *mut crate::GlobalNamespace::MenuScenesTransitionSetupDataSO,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
-    pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
+    pub _destinationRequestManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IDestinationRequestManager,
+    >,
+    pub _menuScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuScenesTransitionSetupDataSO,
+    >,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
+    pub _cancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
 }
 #[cfg(feature = "MainMenuDestinationRequestController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

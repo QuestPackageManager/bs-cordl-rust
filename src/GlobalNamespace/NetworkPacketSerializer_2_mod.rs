@@ -6,23 +6,28 @@ pub struct NetworkPacketSerializer_2<
     TData: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _messsageHandlers: *mut crate::System::Collections::Generic::Dictionary_2<
-        u8,
-        *mut crate::System::Action_3<
-            *mut crate::LiteNetLib::Utils::NetDataReader,
-            i32,
-            TData,
+    pub _messsageHandlers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            u8,
+            *mut crate::System::Action_3<
+                *mut crate::LiteNetLib::Utils::NetDataReader,
+                i32,
+                TData,
+            >,
         >,
     >,
-    pub _typeRegistry: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Type,
-        u8,
+    pub _typeRegistry: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<*mut crate::System::Type, u8>,
     >,
-    pub _subSerializerRegistry: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData>,
-        u8,
+    pub _subSerializerRegistry: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData>,
+            u8,
+        >,
     >,
-    pub _internalWriter: *mut crate::LiteNetLib::Utils::NetDataWriter,
+    pub _internalWriter: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::Utils::NetDataWriter,
+    >,
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
     __cordl_phantom_TData: std::marker::PhantomData<TData>,
 }

@@ -4,24 +4,30 @@
 pub struct SaberBurnMarkSparkles {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub kRenderOffset: crate::UnityEngine::Vector3,
-    pub _sparklesPS: *mut crate::UnityEngine::ParticleSystem,
-    pub _burnMarksPSPrefab: *mut crate::UnityEngine::ParticleSystem,
-    pub _collider: *mut crate::UnityEngine::Collider,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
-    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
-    pub _sabers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::Saber,
+    pub _sparklesPS: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+    pub _burnMarksPSPrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ParticleSystem,
+    >,
+    pub _collider: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+    pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
+    pub _sabers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::Saber>,
     >,
     pub _plane: crate::UnityEngine::Plane,
-    pub _prevBurnMarkPos: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub _prevBurnMarkPos: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
-    pub _prevBurnMarkPosValid: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
-    pub _burnMarksPS: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::ParticleSystem,
+    pub _prevBurnMarkPosValid: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<bool>,
     >,
-    pub _burnMarksEmissionModules: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::ParticleSystem_EmissionModule,
+    pub _burnMarksPS: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ParticleSystem>,
+    >,
+    pub _burnMarksEmissionModules: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::ParticleSystem_EmissionModule,
+        >,
     >,
     pub _sparklesEmitParams: crate::UnityEngine::ParticleSystem_EmitParams,
 }

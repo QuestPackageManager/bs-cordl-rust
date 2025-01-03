@@ -129,27 +129,61 @@ for crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSy
 pub struct StylePropertyAnimationSystem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_CurrentTimeMs: i64,
-    pub m_Floats: *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat,
-    pub m_Ints: *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt,
-    pub m_Lengths: *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength,
-    pub m_Colors: *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor,
-    pub m_Backgrounds: *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackground,
-    pub m_FontDefinitions: *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefinition,
-    pub m_Fonts: *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont,
-    pub m_TextShadows: *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShadow,
-    pub m_Scale: *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale,
-    pub m_Rotate: *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate,
-    pub m_Translate: *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslate,
-    pub m_TransformOrigin: *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransformOrigin,
-    pub m_BackgroundPosition: *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundPosition,
-    pub m_BackgroundRepeat: *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundRepeat,
-    pub m_BackgroundSize: *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundSize,
-    pub m_AllValues: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values,
+    pub m_Floats: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat,
     >,
-    pub m_PropertyToValues: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-        *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values,
+    pub m_Ints: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt,
+    >,
+    pub m_Lengths: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength,
+    >,
+    pub m_Colors: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor,
+    >,
+    pub m_Backgrounds: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackground,
+    >,
+    pub m_FontDefinitions: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefinition,
+    >,
+    pub m_Fonts: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont,
+    >,
+    pub m_TextShadows: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShadow,
+    >,
+    pub m_Scale: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale,
+    >,
+    pub m_Rotate: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate,
+    >,
+    pub m_Translate: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslate,
+    >,
+    pub m_TransformOrigin: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransformOrigin,
+    >,
+    pub m_BackgroundPosition: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundPosition,
+    >,
+    pub m_BackgroundRepeat: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundRepeat,
+    >,
+    pub m_BackgroundSize: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundSize,
+    >,
+    pub m_AllValues: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values,
+        >,
+    >,
+    pub m_PropertyToValues: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            *mut crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem")]
@@ -743,23 +777,31 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+AnimationDataSet_2"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StylePropertyAnimationSystem_AnimationDataSet_2<
     TTimingData: quest_hook::libil2cpp::Type,
     TStyleData: quest_hook::libil2cpp::Type,
 > {
-    pub elements: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub elements: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
     >,
-    pub properties: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+    pub properties: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+        >,
     >,
-    pub timing: *mut quest_hook::libil2cpp::Il2CppArray<TTimingData>,
-    pub style: *mut quest_hook::libil2cpp::Il2CppArray<TStyleData>,
+    pub timing: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<TTimingData>,
+    >,
+    pub style: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TStyleData>>,
     pub count: i32,
-    pub indices: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
-        i32,
+    pub indices: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
+            i32,
+        >,
     >,
     __cordl_phantom_TTimingData: std::marker::PhantomData<TTimingData>,
     __cordl_phantom_TStyleData: std::marker::PhantomData<TStyleData>,
@@ -1003,9 +1045,11 @@ impl<
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StylePropertyAnimationSystem_ElementPropertyPair {
-    pub element: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub element: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub property: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
 }
 #[cfg(
@@ -1507,10 +1551,12 @@ pub struct StylePropertyAnimationSystem_ValuesBackgroundSize {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::BackgroundSize,
     >,
-    pub _SameFunc_k__BackingField: *mut crate::System::Func_3<
-        crate::UnityEngine::UIElements::BackgroundSize,
-        crate::UnityEngine::UIElements::BackgroundSize,
-        bool,
+    pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<
+            crate::UnityEngine::UIElements::BackgroundSize,
+            crate::UnityEngine::UIElements::BackgroundSize,
+            bool,
+        >,
     >,
 }
 #[cfg(
@@ -1672,10 +1718,8 @@ pub struct StylePropertyAnimationSystem_ValuesColor {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::Color,
     >,
-    pub _SameFunc_k__BackingField: *mut crate::System::Func_3<
-        crate::UnityEngine::Color,
-        crate::UnityEngine::Color,
-        bool,
+    pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<crate::UnityEngine::Color, crate::UnityEngine::Color, bool>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesColor")]
@@ -1811,7 +1855,9 @@ pub struct StylePropertyAnimationSystem_ValuesDiscrete_1<
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         T,
     >,
-    pub _SameFunc_k__BackingField: *mut crate::System::Func_3<T, T, bool>,
+    pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<T, T, bool>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesDiscrete_1")]
@@ -1930,7 +1976,9 @@ pub struct StylePropertyAnimationSystem_ValuesFloat {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         f32,
     >,
-    pub _SameFunc_k__BackingField: *mut crate::System::Func_3<f32, f32, bool>,
+    pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<f32, f32, bool>,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFloat")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2222,7 +2270,9 @@ pub struct StylePropertyAnimationSystem_ValuesInt {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         i32,
     >,
-    pub _SameFunc_k__BackingField: *mut crate::System::Func_3<i32, i32, bool>,
+    pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<i32, i32, bool>,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesInt")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2338,10 +2388,12 @@ pub struct StylePropertyAnimationSystem_ValuesLength {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::Length,
     >,
-    pub _SameFunc_k__BackingField: *mut crate::System::Func_3<
-        crate::UnityEngine::UIElements::Length,
-        crate::UnityEngine::UIElements::Length,
-        bool,
+    pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<
+            crate::UnityEngine::UIElements::Length,
+            crate::UnityEngine::UIElements::Length,
+            bool,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesLength")]
@@ -2489,10 +2541,12 @@ pub struct StylePropertyAnimationSystem_ValuesRotate {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::Rotate,
     >,
-    pub _SameFunc_k__BackingField: *mut crate::System::Func_3<
-        crate::UnityEngine::UIElements::Rotate,
-        crate::UnityEngine::UIElements::Rotate,
-        bool,
+    pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<
+            crate::UnityEngine::UIElements::Rotate,
+            crate::UnityEngine::UIElements::Rotate,
+            bool,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesRotate")]
@@ -2626,10 +2680,12 @@ pub struct StylePropertyAnimationSystem_ValuesScale {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::Scale,
     >,
-    pub _SameFunc_k__BackingField: *mut crate::System::Func_3<
-        crate::UnityEngine::UIElements::Scale,
-        crate::UnityEngine::UIElements::Scale,
-        bool,
+    pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<
+            crate::UnityEngine::UIElements::Scale,
+            crate::UnityEngine::UIElements::Scale,
+            bool,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesScale")]
@@ -2763,10 +2819,12 @@ pub struct StylePropertyAnimationSystem_ValuesTextShadow {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::TextShadow,
     >,
-    pub _SameFunc_k__BackingField: *mut crate::System::Func_3<
-        crate::UnityEngine::UIElements::TextShadow,
-        crate::UnityEngine::UIElements::TextShadow,
-        bool,
+    pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<
+            crate::UnityEngine::UIElements::TextShadow,
+            crate::UnityEngine::UIElements::TextShadow,
+            bool,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTextShadow")]
@@ -2902,10 +2960,12 @@ pub struct StylePropertyAnimationSystem_ValuesTransformOrigin {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::TransformOrigin,
     >,
-    pub _SameFunc_k__BackingField: *mut crate::System::Func_3<
-        crate::UnityEngine::UIElements::TransformOrigin,
-        crate::UnityEngine::UIElements::TransformOrigin,
-        bool,
+    pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<
+            crate::UnityEngine::UIElements::TransformOrigin,
+            crate::UnityEngine::UIElements::TransformOrigin,
+            bool,
+        >,
     >,
 }
 #[cfg(
@@ -3067,10 +3127,12 @@ pub struct StylePropertyAnimationSystem_ValuesTranslate {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::Translate,
     >,
-    pub _SameFunc_k__BackingField: *mut crate::System::Func_3<
-        crate::UnityEngine::UIElements::Translate,
-        crate::UnityEngine::UIElements::Translate,
-        bool,
+    pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<
+            crate::UnityEngine::UIElements::Translate,
+            crate::UnityEngine::UIElements::Translate,
+            bool,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTranslate")]
@@ -3217,11 +3279,15 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslate
 pub struct StylePropertyAnimationSystem_Values_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values,
     pub m_CurrentTimeMs: i64,
-    pub m_CurrentFrameEventsState: *mut crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
-        T,
+    pub m_CurrentFrameEventsState: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
+            T,
+        >,
     >,
-    pub m_NextFrameEventsState: *mut crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
-        T,
+    pub m_NextFrameEventsState: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
+            T,
+        >,
     >,
     pub running: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_AnimationDataSet_2<
         crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TimingData<
@@ -3722,7 +3788,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<T> {
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+EmptyData"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Values_1_StylePropertyAnimationSystem_EmptyData<
     T: quest_hook::libil2cpp::Type,
 > {
@@ -3759,7 +3825,7 @@ impl<
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+StyleData"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Values_1_StylePropertyAnimationSystem_StyleData<
     T: quest_hook::libil2cpp::Type,
 > {
@@ -3800,13 +3866,13 @@ impl<
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TimingData"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Values_1_StylePropertyAnimationSystem_TimingData<
     T: quest_hook::libil2cpp::Type,
 > {
     pub startTimeMs: i64,
     pub durationMs: i32,
-    pub easingCurve: *mut crate::System::Func_2<f32, f32>,
+    pub easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     pub easedProgress: f32,
     pub reversingShorteningFactor: f32,
     pub isStarted: bool,
@@ -3849,17 +3915,21 @@ pub struct Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
     T: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub elementPropertyStateDelta: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
-        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_TransitionState,
-    >,
-    pub elementPropertyQueuedEvents: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
-        *mut crate::System::Collections::Generic::Queue_1<
-            *mut crate::UnityEngine::UIElements::EventBase,
+    pub elementPropertyStateDelta: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
+            crate::UnityEngine::UIElements::StylePropertyAnimationSystem_TransitionState,
         >,
     >,
-    pub panel: *mut crate::UnityEngine::UIElements::IPanel,
+    pub elementPropertyQueuedEvents: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
+            *mut crate::System::Collections::Generic::Queue_1<
+                *mut crate::UnityEngine::UIElements::EventBase,
+            >,
+        >,
+    >,
+    pub panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
     pub m_ChangesCount: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

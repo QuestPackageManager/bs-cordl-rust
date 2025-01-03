@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct FileBrowserItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _displayName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _fullPath_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _displayName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _fullPath_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _isDirectory_k__BackingField: bool,
 }
 #[cfg(feature = "FileBrowserItem")]

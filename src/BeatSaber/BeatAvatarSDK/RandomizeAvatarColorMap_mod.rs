@@ -4,7 +4,9 @@
 pub struct RandomizeAvatarColorMap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _totalIndices_k__BackingField: i32,
-    pub _colorIndices_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _colorIndices_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+RandomizeAvatarColorMap")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

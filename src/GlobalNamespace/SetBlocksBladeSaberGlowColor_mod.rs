@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct SetBlocksBladeSaberGlowColor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _saber: *mut crate::GlobalNamespace::SaberTypeObject,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
-    pub _blocksBlade: *mut crate::GlobalNamespace::BlocksBlade,
+    pub _saber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberTypeObject>,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+    pub _blocksBlade: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BlocksBlade>,
 }
 #[cfg(feature = "SetBlocksBladeSaberGlowColor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

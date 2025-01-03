@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct HttpHeaderValueCollection_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub list: *mut crate::System::Collections::Generic::List_1<T>,
-    pub headers: *mut crate::System::Net::Http::Headers::HttpHeaders,
-    pub headerInfo: *mut crate::System::Net::Http::Headers::HeaderInfo,
-    pub invalidValues: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    pub headers: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::Headers::HttpHeaders,
+    >,
+    pub headerInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::Headers::HeaderInfo,
+    >,
+    pub invalidValues: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

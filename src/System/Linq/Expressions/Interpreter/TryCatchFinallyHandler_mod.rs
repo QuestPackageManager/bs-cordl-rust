@@ -8,8 +8,10 @@ pub struct TryCatchFinallyHandler {
     pub FinallyStartIndex: i32,
     pub FinallyEndIndex: i32,
     pub GotoEndTargetIndex: i32,
-    pub _handlers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Linq::Expressions::Interpreter::ExceptionHandler,
+    pub _handlers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Linq::Expressions::Interpreter::ExceptionHandler,
+        >,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+TryCatchFinallyHandler")]

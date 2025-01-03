@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct EnvironmentAudioEffectsPlayer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioSource: *mut crate::UnityEngine::AudioSource,
+    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
 }
 #[cfg(feature = "EnvironmentAudioEffectsPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

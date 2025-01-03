@@ -5,7 +5,9 @@ pub struct EnabledViewStateTransition {
     __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
         *mut crate::UnityEngine::Behaviour,
     >,
-    pub _transition: *mut crate::GlobalNamespace::EnabledTransitionSO,
+    pub _transition: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnabledTransitionSO,
+    >,
 }
 #[cfg(feature = "EnabledViewStateTransition")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

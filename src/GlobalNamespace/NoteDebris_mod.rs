@@ -3,17 +3,21 @@
 #[derive(Debug)]
 pub struct NoteDebris {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _meshTransform: *mut crate::UnityEngine::Transform,
-    pub _physics: *mut crate::GlobalNamespace::NoteDebrisPhysics,
-    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
-    pub _cutoutCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub _meshTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _physics: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebrisPhysics>,
+    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
+    pub _cutoutCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub _maxCutPointCenterDistance: f32,
-    pub _centroidComputationMesh: *mut crate::UnityEngine::Mesh,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
+    pub _centroidComputationMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub _elapsedTime: f32,
     pub _lifeTime: f32,
-    pub _didFinishEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::INoteDebrisDidFinishEvent,
+    pub _didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteDebrisDidFinishEvent,
+        >,
     >,
 }
 #[cfg(feature = "NoteDebris")]

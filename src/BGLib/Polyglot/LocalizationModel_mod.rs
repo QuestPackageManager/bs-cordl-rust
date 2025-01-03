@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct LocalizationModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub localization: *mut crate::BGLib::Polyglot::Localization,
-    pub inputFiles: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BGLib::Polyglot::LocalizationAsset,
+    pub localization: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Localization>,
+    pub inputFiles: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BGLib::Polyglot::LocalizationAsset,
+        >,
     >,
-    pub selectedCulture: *mut crate::System::Globalization::CultureInfo,
-    pub _onChangeLanguage: *mut crate::System::Action_1<
-        *mut crate::BGLib::Polyglot::LocalizationModel,
+    pub selectedCulture: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::CultureInfo,
+    >,
+    pub _onChangeLanguage: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::BGLib::Polyglot::LocalizationModel>,
     >,
 }
 #[cfg(feature = "BGLib+Polyglot+LocalizationModel")]

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StateEvent {
     padding: [u8; 25usize],
 }
@@ -176,7 +176,7 @@ for crate::UnityEngine::InputSystem::LowLevel::StateEvent {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+StateEvent+_stateData_e__FixedBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StateEvent__stateData_e__FixedBuffer {
     pub FixedElementField: u8,
 }

@@ -3,14 +3,24 @@
 #[derive(Debug)]
 pub struct SonyPlatformAdditionalContentModel {
     __cordl_parent: crate::GlobalNamespace::AdditionalContentModel,
-    pub _entitlementsLabels: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _entitlementsLabels: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _semaphoreSlim: *mut crate::System::Threading::SemaphoreSlim,
+    pub _semaphoreSlim: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SemaphoreSlim,
+    >,
     pub _isDataValid: bool,
-    pub _sonyCommerceHelper: *mut crate::GlobalNamespace::ISonyCommerceHelper,
-    pub _sonyLevelProductCollectionModel: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
+    pub _sonyCommerceHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ISonyCommerceHelper,
+    >,
+    pub _sonyLevelProductCollectionModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyLevelProductCollectionModel,
+    >,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
 }
 #[cfg(feature = "SonyPlatformAdditionalContentModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

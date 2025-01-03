@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct ProcurationSyntax {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub country: *mut quest_hook::libil2cpp::Il2CppString,
-    pub typeOfSubstitution: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
-    pub thirdPerson: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    pub certRef: *mut crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
+    pub country: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub typeOfSubstitution: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+    >,
+    pub thirdPerson: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    >,
+    pub certRef: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+ProcurationSyntax")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

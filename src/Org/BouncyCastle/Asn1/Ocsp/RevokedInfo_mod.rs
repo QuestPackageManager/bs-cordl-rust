@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct RevokedInfo {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub revocationTime: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
-    pub revocationReason: *mut crate::Org::BouncyCastle::Asn1::X509::CrlReason,
+    pub revocationTime: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+    >,
+    pub revocationReason: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::CrlReason,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+RevokedInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

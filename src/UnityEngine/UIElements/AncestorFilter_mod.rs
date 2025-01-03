@@ -4,7 +4,9 @@
 pub struct AncestorFilter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_CountingBloomFilter: crate::UnityEngine::UIElements::CountingBloomFilter,
-    pub m_HashStack: *mut crate::System::Collections::Generic::Stack_1<i32>,
+    pub m_HashStack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<i32>,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+AncestorFilter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

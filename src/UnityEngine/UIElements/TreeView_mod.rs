@@ -3,19 +3,17 @@
 #[derive(Debug)]
 pub struct TreeView {
     __cordl_parent: crate::UnityEngine::UIElements::BaseTreeView,
-    pub m_MakeItem: *mut crate::System::Func_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_MakeItem: quest_hook::libil2cpp::Gc<
+        crate::System::Func_1<*mut crate::UnityEngine::UIElements::VisualElement>,
     >,
-    pub m_BindItem: *mut crate::System::Action_2<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-        i32,
+    pub m_BindItem: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::UnityEngine::UIElements::VisualElement, i32>,
     >,
-    pub _unbindItem_k__BackingField: *mut crate::System::Action_2<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-        i32,
+    pub _unbindItem_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::UnityEngine::UIElements::VisualElement, i32>,
     >,
-    pub _destroyItem_k__BackingField: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub _destroyItem_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::UIElements::VisualElement>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TreeView")]

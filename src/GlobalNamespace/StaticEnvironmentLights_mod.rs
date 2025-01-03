@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct StaticEnvironmentLights {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightColors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
-    pub _materials: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Material,
+    pub _lightColors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+    >,
+    pub _materials: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
     >,
 }
 #[cfg(feature = "StaticEnvironmentLights")]

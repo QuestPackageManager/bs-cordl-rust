@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BaseEventData {
     __cordl_parent: crate::UnityEngine::EventSystems::AbstractEventData,
-    pub m_EventSystem: *mut crate::UnityEngine::EventSystems::EventSystem,
+    pub m_EventSystem: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::EventSystem,
+    >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+BaseEventData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct OVRFace {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _faceExpressions: *mut crate::GlobalNamespace::OVRFaceExpressions,
+    pub _faceExpressions: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRFaceExpressions,
+    >,
     pub _blendShapeStrengthMultiplier: f32,
-    pub _skinnedMeshRenderer: *mut crate::UnityEngine::SkinnedMeshRenderer,
+    pub _skinnedMeshRenderer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::SkinnedMeshRenderer,
+    >,
 }
 #[cfg(feature = "OVRFace")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

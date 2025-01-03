@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct ApplicationInvite {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub DestinationOptional: *mut crate::Oculus::Platform::Models::Destination,
-    pub Destination: *mut crate::Oculus::Platform::Models::Destination,
+    pub DestinationOptional: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::Destination,
+    >,
+    pub Destination: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::Destination,
+    >,
     pub _cordl_ID: u64,
     pub IsActive: bool,
-    pub LobbySessionId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub MatchSessionId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub RecipientOptional: *mut crate::Oculus::Platform::Models::User,
-    pub Recipient: *mut crate::Oculus::Platform::Models::User,
+    pub LobbySessionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub MatchSessionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub RecipientOptional: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::User,
+    >,
+    pub Recipient: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
 }
 #[cfg(feature = "Oculus+Platform+Models+ApplicationInvite")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct ScoreUIController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _scoreText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
-    pub _initData: *mut crate::GlobalNamespace::ScoreUIController_InitData,
-    pub _stringBuilder: *mut crate::System::Text::StringBuilder,
+    pub _scoreText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _scoreController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IScoreController,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScoreUIController_InitData,
+    >,
+    pub _stringBuilder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
 }
 #[cfg(feature = "ScoreUIController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

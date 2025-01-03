@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ImageEffectController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _renderImageCallback: *mut crate::GlobalNamespace::ImageEffectController_RenderImageCallback,
+    pub _renderImageCallback: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ImageEffectController_RenderImageCallback,
+    >,
 }
 #[cfg(feature = "ImageEffectController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

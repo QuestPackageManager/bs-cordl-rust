@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HEU_VolumeLayerPreset {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _layerName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _layerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _strength: f32,
     pub _uiExpanded: bool,
     pub _tile: i32,

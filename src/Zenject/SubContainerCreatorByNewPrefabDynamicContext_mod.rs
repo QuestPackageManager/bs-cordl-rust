@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct SubContainerCreatorByNewPrefabDynamicContext {
     __cordl_parent: crate::Zenject::SubContainerCreatorDynamicContext,
-    pub _prefabProvider: *mut crate::Zenject::IPrefabProvider,
-    pub _gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
+    pub _prefabProvider: quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabProvider>,
+    pub _gameObjectBindInfo: quest_hook::libil2cpp::Gc<
+        crate::Zenject::GameObjectCreationParameters,
+    >,
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabDynamicContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

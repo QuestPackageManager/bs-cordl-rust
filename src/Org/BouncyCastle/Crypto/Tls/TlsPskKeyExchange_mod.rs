@@ -3,23 +3,53 @@
 #[derive(Debug)]
 pub struct TlsPskKeyExchange {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsKeyExchange,
-    pub mPskIdentity: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity,
-    pub mPskIdentityManager: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentityManager,
-    pub mDHVerifier: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsDHVerifier,
-    pub mDHParameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
-    pub mNamedCurves: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub mClientECPointFormats: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mServerECPointFormats: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mPskIdentityHint: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mPsk: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mDHAgreePrivateKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
-    pub mDHAgreePublicKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters,
-    pub mECAgreePrivateKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
-    pub mECAgreePublicKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
-    pub mServerPublicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub mRsaServerPublicKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
-    pub mServerCredentials: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsEncryptionCredentials,
-    pub mPremasterSecret: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mPskIdentity: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity,
+    >,
+    pub mPskIdentityManager: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentityManager,
+    >,
+    pub mDHVerifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsDHVerifier,
+    >,
+    pub mDHParameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+    >,
+    pub mNamedCurves: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub mClientECPointFormats: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub mServerECPointFormats: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub mPskIdentityHint: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub mPsk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mDHAgreePrivateKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
+    >,
+    pub mDHAgreePublicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters,
+    >,
+    pub mECAgreePrivateKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
+    >,
+    pub mECAgreePublicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
+    >,
+    pub mServerPublicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    >,
+    pub mRsaServerPublicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
+    >,
+    pub mServerCredentials: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsEncryptionCredentials,
+    >,
+    pub mPremasterSecret: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsPskKeyExchange")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

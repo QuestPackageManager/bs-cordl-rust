@@ -3,42 +3,84 @@
 #[derive(Debug)]
 pub struct MultiplayerPlayersManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _activeLocalPlayerControllerPrefab: *mut crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade,
-    pub _activeLocalPlayerDuelControllerPrefab: *mut crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade,
-    pub _inactiveLocalPlayerControllerPrefab: *mut crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade,
-    pub _connectedPlayerControllerPrefab: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
-    pub _connectedPlayerDuelControllerPrefab: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _beatmapObjectSpawnCenter: *mut crate::GlobalNamespace::BeatmapObjectSpawnCenter,
-    pub _layoutProvider: *mut crate::GlobalNamespace::MultiplayerLayoutProvider,
-    pub _fadeInOutController: *mut crate::GlobalNamespace::FadeInOutController,
-    pub _container: *mut crate::Zenject::DiContainer,
+    pub _activeLocalPlayerControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade,
+    >,
+    pub _activeLocalPlayerDuelControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade,
+    >,
+    pub _inactiveLocalPlayerControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade,
+    >,
+    pub _connectedPlayerControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
+    >,
+    pub _connectedPlayerDuelControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub _beatmapObjectSpawnCenter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectSpawnCenter,
+    >,
+    pub _layoutProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLayoutProvider,
+    >,
+    pub _fadeInOutController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FadeInOutController,
+    >,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _playerSpawningFinished_k__BackingField: bool,
-    pub playerSpawningDidFinishEvent: *mut crate::System::Action,
-    pub didSwitchPlayerToInactiveEvent: *mut crate::System::Action,
-    pub playerDidFinishEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+    pub playerSpawningDidFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub didSwitchPlayerToInactiveEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub playerDidFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        >,
     >,
-    pub playerNetworkDidFailedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+    pub playerNetworkDidFailedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        >,
     >,
-    pub _activeLocalPlayerFacade: *mut crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade,
-    pub _inactiveLocalPlayerFacade: *mut crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade,
-    pub _currentEventsPublisher: *mut crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
-    pub _currentStartSeekSongControllerProvider: *mut crate::GlobalNamespace::IStartSeekSongControllerProvider,
-    pub _activeLocalPlayerFactory: *mut crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade_Factory,
-    pub _inactiveLocalPlayerFactory: *mut crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory,
-    pub _connectedPlayerFactory: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory,
-    pub _connectedPlayerControllersMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
+    pub _activeLocalPlayerFacade: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade,
     >,
-    pub _connectedPlayerCenterFacingRotationsMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        f32,
+    pub _inactiveLocalPlayerFacade: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade,
     >,
-    pub _allActiveAtGameStartPlayers: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _currentEventsPublisher: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
+    >,
+    pub _currentStartSeekSongControllerProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IStartSeekSongControllerProvider,
+    >,
+    pub _activeLocalPlayerFactory: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade_Factory,
+    >,
+    pub _inactiveLocalPlayerFactory: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory,
+    >,
+    pub _connectedPlayerFactory: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory,
+    >,
+    pub _connectedPlayerControllersMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
+        >,
+    >,
+    pub _connectedPlayerCenterFacingRotationsMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            f32,
+        >,
+    >,
+    pub _allActiveAtGameStartPlayers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerPlayersManager")]

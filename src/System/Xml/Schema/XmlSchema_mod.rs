@@ -7,33 +7,55 @@ pub struct XmlSchema {
     pub elementFormDefault: crate::System::Xml::Schema::XmlSchemaForm,
     pub blockDefault: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
     pub finalDefault: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
-    pub targetNs: *mut quest_hook::libil2cpp::Il2CppString,
-    pub version: *mut quest_hook::libil2cpp::Il2CppString,
-    pub includes: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-    pub items: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-    pub id: *mut quest_hook::libil2cpp::Il2CppString,
-    pub moreAttributes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::XmlAttribute,
+    pub targetNs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub includes: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+    >,
+    pub items: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+    >,
+    pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub moreAttributes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlAttribute>,
     >,
     pub isCompiled: bool,
     pub isCompiledBySet: bool,
     pub isPreprocessed: bool,
     pub isRedefined: bool,
     pub errorCount: i32,
-    pub attributes: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub attributeGroups: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub elements: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub types: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub groups: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub notations: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub identityConstraints: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub importedSchemas: *mut crate::System::Collections::ArrayList,
-    pub importedNamespaces: *mut crate::System::Collections::ArrayList,
+    pub attributes: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub attributeGroups: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub elements: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub types: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub groups: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub notations: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub identityConstraints: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub importedSchemas: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ArrayList,
+    >,
+    pub importedNamespaces: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ArrayList,
+    >,
     pub schemaId: i32,
-    pub baseUri: *mut crate::System::Uri,
+    pub baseUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     pub isChameleon: bool,
-    pub ids: *mut crate::System::Collections::Hashtable,
-    pub document: *mut crate::System::Xml::XmlDocument,
+    pub ids: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub document: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchema")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

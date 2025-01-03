@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct OtherRevocationInfoFormat {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub otherRevInfoFormat: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub otherRevInfo: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    pub otherRevInfoFormat: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub otherRevInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+OtherRevocationInfoFormat")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

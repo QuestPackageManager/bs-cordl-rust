@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AttitudeSensor {
     __cordl_parent: crate::UnityEngine::InputSystem::Sensor,
-    pub _attitude_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+    pub _attitude_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+AttitudeSensor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

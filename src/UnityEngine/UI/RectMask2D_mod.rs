@@ -3,24 +3,34 @@
 #[derive(Debug)]
 pub struct RectMask2D {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
-    pub m_VertexClipper: *mut crate::UnityEngine::UI::RectangularVertexClipper,
-    pub m_RectTransform: *mut crate::UnityEngine::RectTransform,
-    pub m_MaskableTargets: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::UnityEngine::UI::MaskableGraphic,
+    pub m_VertexClipper: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::RectangularVertexClipper,
     >,
-    pub m_ClipTargets: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::UnityEngine::UI::IClippable,
+    pub m_RectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub m_MaskableTargets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::UnityEngine::UI::MaskableGraphic,
+        >,
+    >,
+    pub m_ClipTargets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::UnityEngine::UI::IClippable,
+        >,
     >,
     pub m_ShouldRecalculateClipRects: bool,
-    pub m_Clippers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UI::RectMask2D,
+    pub m_Clippers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UI::RectMask2D,
+        >,
     >,
     pub m_LastClipRectCanvasSpace: crate::UnityEngine::Rect,
     pub m_ForceClip: bool,
     pub m_Padding: crate::UnityEngine::Vector4,
     pub m_Softness: crate::UnityEngine::Vector2Int,
-    pub m_Canvas: *mut crate::UnityEngine::Canvas,
-    pub m_Corners: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    pub m_Canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+    pub m_Corners: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
 }
 #[cfg(feature = "UnityEngine+UI+RectMask2D")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

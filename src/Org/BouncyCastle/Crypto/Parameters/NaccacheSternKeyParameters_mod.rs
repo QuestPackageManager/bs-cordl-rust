@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct NaccacheSternKeyParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub g: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub n: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     pub lowerSigmaBound: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyParameters")]

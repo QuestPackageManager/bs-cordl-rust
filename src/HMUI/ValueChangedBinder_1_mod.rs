@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct ValueChangedBinder_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _bindings: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Tuple_2<
-            *mut crate::HMUI::IValueChanger_1<T>,
-            *mut crate::System::Action_1<T>,
+    pub _bindings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Tuple_2<
+                *mut crate::HMUI::IValueChanger_1<T>,
+                *mut crate::System::Action_1<T>,
+            >,
         >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,

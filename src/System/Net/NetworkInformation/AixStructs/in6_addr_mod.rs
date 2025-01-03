@@ -1,8 +1,8 @@
 #[cfg(feature = "System+Net+NetworkInformation+AixStructs+in6_addr")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct in6_addr {
-    pub u6_addr8: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub u6_addr8: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "System+Net+NetworkInformation+AixStructs+in6_addr")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

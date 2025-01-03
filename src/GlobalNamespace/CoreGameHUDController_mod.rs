@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct CoreGameHUDController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _songProgressPanelGO: *mut crate::UnityEngine::GameObject,
-    pub _relativeScoreGO: *mut crate::UnityEngine::GameObject,
-    pub _immediateRankGO: *mut crate::UnityEngine::GameObject,
-    pub _energyPanelGO: *mut crate::UnityEngine::GameObject,
-    pub _canvasGroup: *mut crate::UnityEngine::CanvasGroup,
+    pub _songProgressPanelGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _relativeScoreGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _immediateRankGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _energyPanelGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _canvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
 }
 #[cfg(feature = "CoreGameHUDController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

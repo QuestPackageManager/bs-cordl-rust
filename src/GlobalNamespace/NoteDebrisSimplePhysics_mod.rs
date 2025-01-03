@@ -5,7 +5,7 @@ pub struct NoteDebrisSimplePhysics {
     __cordl_parent: crate::GlobalNamespace::NoteDebrisPhysics,
     pub _currentLinearVelocity: crate::UnityEngine::Vector3,
     pub _currentAngularVelocityDegrees: crate::UnityEngine::Vector3,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _gravity: crate::UnityEngine::Vector3,
     pub _firstUpdate: bool,
     pub _position: crate::UnityEngine::Vector3,

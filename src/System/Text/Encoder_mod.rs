@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct Encoder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _fallback: *mut crate::System::Text::EncoderFallback,
-    pub _fallbackBuffer: *mut crate::System::Text::EncoderFallbackBuffer,
+    pub _fallback: quest_hook::libil2cpp::Gc<crate::System::Text::EncoderFallback>,
+    pub _fallbackBuffer: quest_hook::libil2cpp::Gc<
+        crate::System::Text::EncoderFallbackBuffer,
+    >,
 }
 #[cfg(feature = "System+Text+Encoder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

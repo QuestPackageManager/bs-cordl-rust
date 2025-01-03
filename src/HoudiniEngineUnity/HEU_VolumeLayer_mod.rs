@@ -3,17 +3,19 @@
 #[derive(Debug)]
 pub struct HEU_VolumeLayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _layerName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _part: *mut crate::HoudiniEngineUnity::HEU_PartData,
+    pub _layerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _part: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PartData>,
     pub _strength: f32,
     pub _uiExpanded: bool,
     pub _tile: i32,
     pub _xLength: i32,
     pub _yLength: i32,
     pub _hasLayerAttributes: bool,
-    pub _terrainLayer: *mut crate::UnityEngine::TerrainLayer,
+    pub _terrainLayer: quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainLayer>,
     pub _layerType: crate::HoudiniEngineUnity::HFLayerType,
-    pub _detailPrototype: *mut crate::HoudiniEngineUnity::HEU_DetailPrototype,
+    pub _detailPrototype: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_DetailPrototype,
+    >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_VolumeLayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

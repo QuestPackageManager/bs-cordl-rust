@@ -3,12 +3,20 @@
 #[derive(Debug)]
 pub struct AddressablesImpl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_ResourceManager: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
-    pub m_InstanceProvider: *mut crate::UnityEngine::ResourceManagement::ResourceProviders::IInstanceProvider,
+    pub m_ResourceManager: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceManager,
+    >,
+    pub m_InstanceProvider: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::IInstanceProvider,
+    >,
     pub m_CatalogRequestsTimeout: i32,
-    pub SceneProvider: *mut crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider,
-    pub m_ResourceLocators: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::AddressableAssets::ResourceLocatorInfo,
+    pub SceneProvider: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider,
+    >,
+    pub m_ResourceLocators: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::AddressableAssets::ResourceLocatorInfo,
+        >,
     >,
     pub m_InitializationOperation: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
@@ -23,21 +31,31 @@ pub struct AddressablesImpl {
             *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
         >,
     >,
-    pub m_OnHandleCompleteAction: *mut crate::System::Action_1<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+    pub m_OnHandleCompleteAction: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        >,
     >,
-    pub m_OnSceneHandleCompleteAction: *mut crate::System::Action_1<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+    pub m_OnSceneHandleCompleteAction: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        >,
     >,
-    pub m_OnHandleDestroyedAction: *mut crate::System::Action_1<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+    pub m_OnHandleDestroyedAction: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        >,
     >,
-    pub m_resultToHandle: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+    pub m_resultToHandle: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        >,
     >,
-    pub m_SceneInstances: *mut crate::System::Collections::Generic::HashSet_1<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+    pub m_SceneInstances: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        >,
     >,
     pub m_ActiveCleanBundleCacheOperation: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         bool,
@@ -2400,12 +2418,16 @@ pub struct AddressablesImpl_LoadResourceLocationKeyOp {
             *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         >,
     >,
-    pub m_Keys: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_locations: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    pub m_Keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_locations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
     >,
-    pub m_Addressables: *mut crate::UnityEngine::AddressableAssets::AddressablesImpl,
-    pub m_ResourceType: *mut crate::System::Type,
+    pub m_Addressables: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AddressablesImpl,
+    >,
+    pub m_ResourceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(
     feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
@@ -2528,13 +2550,17 @@ pub struct AddressablesImpl_LoadResourceLocationKeysOp {
             *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         >,
     >,
-    pub m_Key: *mut crate::System::Collections::IEnumerable,
+    pub m_Key: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     pub m_MergeMode: crate::UnityEngine::AddressableAssets::Addressables_MergeMode,
-    pub m_locations: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    pub m_locations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
     >,
-    pub m_Addressables: *mut crate::UnityEngine::AddressableAssets::AddressablesImpl,
-    pub m_ResourceType: *mut crate::System::Type,
+    pub m_Addressables: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AddressablesImpl,
+    >,
+    pub m_ResourceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(
     feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"

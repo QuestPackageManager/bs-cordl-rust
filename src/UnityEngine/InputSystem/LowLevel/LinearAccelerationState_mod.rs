@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+LinearAccelerationState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LinearAccelerationState {
     pub acceleration: crate::UnityEngine::Vector3,
 }

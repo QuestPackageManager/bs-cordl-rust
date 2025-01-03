@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MultiColumnListViewController {
     __cordl_parent: crate::UnityEngine::UIElements::BaseListViewController,
-    pub m_ColumnController: *mut crate::UnityEngine::UIElements::MultiColumnController,
+    pub m_ColumnController: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::MultiColumnController,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnListViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct XmlNodeConverter {
     __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
-    pub _DeserializeRootElementName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _DeserializeRootElementName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _WriteArrayAttribute_k__BackingField: bool,
     pub _OmitRootObject_k__BackingField: bool,
     pub _EncodeSpecialCharacters_k__BackingField: bool,

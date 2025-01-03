@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkPositionAdjustment")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MarkPositionAdjustment {
     pub m_XPositionAdjustment: f32,
     pub m_YPositionAdjustment: f32,

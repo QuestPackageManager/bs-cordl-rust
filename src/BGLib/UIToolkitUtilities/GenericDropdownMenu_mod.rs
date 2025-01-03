@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct GenericDropdownMenu {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dropdownMenu: *mut crate::UnityEngine::UIElements::GenericDropdownMenu,
+    pub _dropdownMenu: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::GenericDropdownMenu,
+    >,
 }
 #[cfg(feature = "BGLib+UIToolkitUtilities+GenericDropdownMenu")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

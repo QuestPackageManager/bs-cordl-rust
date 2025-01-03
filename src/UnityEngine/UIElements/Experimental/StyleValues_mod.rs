@@ -1,8 +1,10 @@
 #[cfg(feature = "UnityEngine+UIElements+Experimental+StyleValues")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StyleValues {
-    pub m_StyleValues: *mut crate::UnityEngine::UIElements::StyleValueCollection,
+    pub m_StyleValues: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleValueCollection,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Experimental+StyleValues")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -1,12 +1,12 @@
 #[cfg(feature = "BGLib+DotnetExtension+CommandLine+ArgumentOption")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ArgumentOption {
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub identifiers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub identifiers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub hint: *mut quest_hook::libil2cpp::Il2CppString,
+    pub hint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cordl_type: crate::BGLib::DotnetExtension::CommandLine::ArgumentType,
 }
 #[cfg(feature = "BGLib+DotnetExtension+CommandLine+ArgumentOption")]

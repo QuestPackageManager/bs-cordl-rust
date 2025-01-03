@@ -4,12 +4,20 @@
 pub struct ListViewDragger {
     __cordl_parent: crate::UnityEngine::UIElements::DragEventsProcessor,
     pub m_LastDragPosition: crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
-    pub m_DragHoverBar: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_DragHoverItemMarker: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_DragHoverSiblingMarker: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_DragHoverBar: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_DragHoverItemMarker: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_DragHoverSiblingMarker: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub m_LeftIndentation: f32,
     pub m_SiblingBottom: f32,
-    pub _dragAndDropController_k__BackingField: *mut crate::UnityEngine::UIElements::ICollectionDragAndDropController,
+    pub _dragAndDropController_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ICollectionDragAndDropController,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ListViewDragger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -365,12 +373,14 @@ for crate::UnityEngine::UIElements::ListViewDragger {
 }
 #[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ListViewDragger_DragPosition {
     pub insertAtIndex: i32,
     pub parentId: i32,
     pub childIndex: i32,
-    pub recycledItem: *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+    pub recycledItem: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ReusableCollectionItem,
+    >,
     pub dropPosition: crate::UnityEngine::UIElements::DragAndDropPosition,
 }
 #[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]

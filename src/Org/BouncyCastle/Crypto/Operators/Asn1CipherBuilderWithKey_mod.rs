@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct Asn1CipherBuilderWithKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub encKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-    pub algorithmIdentifier: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    pub encKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    >,
+    pub algorithmIdentifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1CipherBuilderWithKey")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

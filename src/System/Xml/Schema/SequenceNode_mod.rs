@@ -92,13 +92,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::SequenceN
 }
 #[cfg(feature = "System+Xml+Schema+SequenceNode+SequenceConstructPosContext")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SequenceNode_SequenceConstructPosContext {
-    pub this_: *mut crate::System::Xml::Schema::SequenceNode,
-    pub firstpos: *mut crate::System::Xml::Schema::BitSet,
-    pub lastpos: *mut crate::System::Xml::Schema::BitSet,
-    pub lastposLeft: *mut crate::System::Xml::Schema::BitSet,
-    pub firstposRight: *mut crate::System::Xml::Schema::BitSet,
+    pub this_: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SequenceNode>,
+    pub firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+    pub lastpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+    pub lastposLeft: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+    pub firstposRight: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
 }
 #[cfg(feature = "System+Xml+Schema+SequenceNode+SequenceConstructPosContext")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

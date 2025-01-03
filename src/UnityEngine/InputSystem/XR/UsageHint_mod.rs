@@ -1,8 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+XR+UsageHint")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UsageHint {
-    pub content: *mut quest_hook::libil2cpp::Il2CppString,
+    pub content: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+UsageHint")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "System+TimeSpan")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TimeSpan {
     pub _ticks: i64,
 }

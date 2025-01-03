@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SceneInfo {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _sceneName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _disabledRootObjects: bool,
 }
 #[cfg(feature = "SceneInfo")]

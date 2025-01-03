@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct EventBasedNatPunchListener {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub NatIntroductionRequest: *mut crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionRequest,
-    pub NatIntroductionSuccess: *mut crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionSuccess,
+    pub NatIntroductionRequest: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionRequest,
+    >,
+    pub NatIntroductionSuccess: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionSuccess,
+    >,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

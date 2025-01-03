@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct SongPacksDropdown {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _simpleTextDropdown: *mut crate::HMUI::SimpleTextDropdown,
-    pub _songPackMasksModel: *mut crate::GlobalNamespace::SongPackMasksModel,
-    pub didSelectCellWithIdxEvent: *mut crate::System::Action_1<i32>,
+    pub _simpleTextDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
+    pub _songPackMasksModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPackMasksModel,
+    >,
+    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<i32>,
+    >,
     pub _initialized: bool,
-    pub _songPackSerializedNames: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _songPackSerializedNames: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "SongPacksDropdown")]

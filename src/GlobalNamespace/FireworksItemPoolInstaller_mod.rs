@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct FireworksItemPoolInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _fireworksController: *mut crate::GlobalNamespace::FireworksController,
-    pub _fireworkItemControllerPrefab: *mut crate::GlobalNamespace::FireworkItemController,
+    pub _fireworksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FireworksController,
+    >,
+    pub _fireworkItemControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FireworkItemController,
+    >,
 }
 #[cfg(feature = "FireworksItemPoolInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

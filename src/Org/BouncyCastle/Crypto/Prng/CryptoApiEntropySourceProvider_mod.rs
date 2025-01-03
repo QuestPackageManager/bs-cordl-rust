@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CryptoApiEntropySourceProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mRng: *mut crate::System::Security::Cryptography::RandomNumberGenerator,
+    pub mRng: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::RandomNumberGenerator,
+    >,
     pub mPredictionResistant: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider")]
@@ -124,7 +126,9 @@ for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
 #[derive(Debug)]
 pub struct CryptoApiEntropySourceProvider_CryptoApiEntropySource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mRng: *mut crate::System::Security::Cryptography::RandomNumberGenerator,
+    pub mRng: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::RandomNumberGenerator,
+    >,
     pub mPredictionResistant: bool,
     pub mEntropySize: i32,
 }

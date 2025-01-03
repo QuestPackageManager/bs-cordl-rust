@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct TreeViewReorderableDragAndDropController {
     __cordl_parent: crate::UnityEngine::UIElements::BaseReorderableDragAndDropController,
-    pub m_DropData: *mut crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_DropData,
-    pub m_TreeView: *mut crate::UnityEngine::UIElements::BaseTreeView,
-    pub m_ExpandDropItemScheduledItem: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
-    pub m_ExpandDropItemCallback: *mut crate::System::Action,
+    pub m_DropData: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_DropData,
+    >,
+    pub m_TreeView: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseTreeView,
+    >,
+    pub m_ExpandDropItemScheduledItem: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    >,
+    pub m_ExpandDropItemCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -179,8 +185,10 @@ for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
 #[derive(Debug)]
 pub struct TreeViewReorderableDragAndDropController_DropData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub expandedIdsBeforeDrag: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub draggedIds: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub expandedIdsBeforeDrag: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub draggedIds: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub lastItemId: i32,
     pub expandItemBeginTimerMs: f32,
     pub expandItemBeginPosition: crate::UnityEngine::Vector2,

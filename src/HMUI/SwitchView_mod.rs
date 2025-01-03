@@ -4,15 +4,27 @@
 pub struct SwitchView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _animationType: crate::HMUI::SwitchView_AnimationType,
-    pub _normalAnimationClip: *mut crate::UnityEngine::AnimationClip,
-    pub _highlightedAnimationClip: *mut crate::UnityEngine::AnimationClip,
-    pub _pressedAnimationClip: *mut crate::UnityEngine::AnimationClip,
-    pub _disabledAnimationClip: *mut crate::UnityEngine::AnimationClip,
-    pub _onAnimationClip: *mut crate::UnityEngine::AnimationClip,
-    pub _offAnimationClip: *mut crate::UnityEngine::AnimationClip,
-    pub _selectedAnimationClip: *mut crate::UnityEngine::AnimationClip,
-    pub _selectedAndHighlightedAnimationClip: *mut crate::UnityEngine::AnimationClip,
-    pub _toggle: *mut crate::HMUI::ToggleWithCallbacks,
+    pub _normalAnimationClip: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationClip,
+    >,
+    pub _highlightedAnimationClip: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationClip,
+    >,
+    pub _pressedAnimationClip: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationClip,
+    >,
+    pub _disabledAnimationClip: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationClip,
+    >,
+    pub _onAnimationClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+    pub _offAnimationClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+    pub _selectedAnimationClip: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationClip,
+    >,
+    pub _selectedAndHighlightedAnimationClip: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationClip,
+    >,
+    pub _toggle: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleWithCallbacks>,
 }
 #[cfg(feature = "HMUI+SwitchView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

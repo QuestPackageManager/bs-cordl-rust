@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct HEU_InputNodeUICache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _inputObjectCache: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache,
+    pub _inputObjectCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache,
+        >,
     >,
-    pub _inputAssetCache: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache,
+    pub _inputAssetCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache,
+        >,
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache")]

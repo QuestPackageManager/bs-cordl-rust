@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct UnitySynchronizationContext {
     __cordl_parent: crate::System::Threading::SynchronizationContext,
-    pub m_AsyncWorkQueue: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UnitySynchronizationContext_WorkRequest,
+    pub m_AsyncWorkQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UnitySynchronizationContext_WorkRequest,
+        >,
     >,
-    pub m_CurrentFrameWork: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UnitySynchronizationContext_WorkRequest,
+    pub m_CurrentFrameWork: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UnitySynchronizationContext_WorkRequest,
+        >,
     >,
     pub m_MainThreadID: i32,
     pub m_TrackedCount: i32,
@@ -194,11 +198,15 @@ for crate::UnityEngine::UnitySynchronizationContext {
 }
 #[cfg(feature = "UnityEngine+UnitySynchronizationContext+WorkRequest")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UnitySynchronizationContext_WorkRequest {
-    pub m_DelagateCallback: *mut crate::System::Threading::SendOrPostCallback,
-    pub m_DelagateState: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_WaitHandle: *mut crate::System::Threading::ManualResetEvent,
+    pub m_DelagateCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SendOrPostCallback,
+    >,
+    pub m_DelagateState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_WaitHandle: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ManualResetEvent,
+    >,
 }
 #[cfg(feature = "UnityEngine+UnitySynchronizationContext+WorkRequest")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

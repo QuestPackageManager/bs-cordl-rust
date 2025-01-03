@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct FactoryFromBinderBase {
     __cordl_parent: crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-    pub _BindContainer_k__BackingField: *mut crate::Zenject::DiContainer,
-    pub _FactoryBindInfo_k__BackingField: *mut crate::Zenject::FactoryBindInfo,
-    pub _ContractType_k__BackingField: *mut crate::System::Type,
+    pub _BindContainer_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Zenject::DiContainer,
+    >,
+    pub _FactoryBindInfo_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Zenject::FactoryBindInfo,
+    >,
+    pub _ContractType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "Zenject+FactoryFromBinderBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

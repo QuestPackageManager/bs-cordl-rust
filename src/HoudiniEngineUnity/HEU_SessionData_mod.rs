@@ -6,11 +6,15 @@ pub struct HEU_SessionData {
     pub _HAPISession: crate::HoudiniEngineUnity::HAPI_Session,
     pub _serverProcessID: i32,
     pub _initialized: bool,
-    pub _pipeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _pipeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _port: i32,
-    pub _sessionClassType: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _sessionClassType: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _isDefaultSession: bool,
-    pub _sessionSync: *mut crate::HoudiniEngineUnity::HEU_SessionSyncData,
+    pub _sessionSync: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_SessionSyncData,
+    >,
     pub _connectionState: crate::HoudiniEngineUnity::SessionConnectionState,
     pub _sessionMode: crate::HoudiniEngineUnity::SessionMode,
 }

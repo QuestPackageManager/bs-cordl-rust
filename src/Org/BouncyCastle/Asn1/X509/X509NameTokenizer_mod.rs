@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct X509NameTokenizer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub value: *mut quest_hook::libil2cpp::Il2CppString,
+    pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub index: i32,
     pub separator: char,
-    pub buffer: *mut crate::System::Text::StringBuilder,
+    pub buffer: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+X509NameTokenizer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

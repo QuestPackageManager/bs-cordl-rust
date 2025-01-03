@@ -3,20 +3,30 @@
 #[derive(Debug)]
 pub struct PlayerStatisticsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _statsScopeSegmentedControl: *mut crate::HMUI::TextSegmentedControl,
-    pub _playedLevelsCountText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _clearedLevelsCountText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _failedLevelsCountText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _timePlayedText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _goodCutsCountText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _badCutsCountCountText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _missedCountText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _totalScoreText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _fullComboCountText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _handDistanceTravelledText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _statsScopeDatas: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData,
+    pub _statsScopeSegmentedControl: quest_hook::libil2cpp::Gc<
+        crate::HMUI::TextSegmentedControl,
+    >,
+    pub _playedLevelsCountText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _clearedLevelsCountText: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TextMeshProUGUI,
+    >,
+    pub _failedLevelsCountText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _timePlayedText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _goodCutsCountText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _badCutsCountCountText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _missedCountText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _totalScoreText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _fullComboCountText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _handDistanceTravelledText: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TextMeshProUGUI,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _statsScopeDatas: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData,
+        >,
     >,
 }
 #[cfg(feature = "PlayerStatisticsViewController")]
@@ -202,11 +212,15 @@ for crate::GlobalNamespace::PlayerStatisticsViewController {
 }
 #[cfg(feature = "PlayerStatisticsViewController+StatsScopeData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PlayerStatisticsViewController_StatsScopeData {
-    pub _text_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _playerOverallStatsDataFunc_k__BackingField: *mut crate::System::Func_1<
-        *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+    pub _text_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _playerOverallStatsDataFunc_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_1<
+            *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
     >,
 }
 #[cfg(feature = "PlayerStatisticsViewController+StatsScopeData")]

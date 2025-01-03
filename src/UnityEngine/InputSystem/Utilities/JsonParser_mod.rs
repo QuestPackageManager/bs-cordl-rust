@@ -1,8 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct JsonParser {
-    pub m_Text: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Length: i32,
     pub m_Position: i32,
     pub m_MatchAnyElementInArray: bool,
@@ -232,7 +232,7 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct JsonParser_JsonString {
     pub text: crate::UnityEngine::InputSystem::Utilities::Substring,
     pub hasEscapes: bool,
@@ -352,21 +352,25 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct JsonParser_JsonValue {
     pub _cordl_type: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValueType,
     pub boolValue: bool,
     pub realValue: f64,
     pub integerValue: i64,
     pub stringValue: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
-    pub arrayValue: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    pub arrayValue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+        >,
     >,
-    pub objectValue: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    pub objectValue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+        >,
     >,
-    pub anyValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub anyValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

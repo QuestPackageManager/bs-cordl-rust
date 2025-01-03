@@ -46,8 +46,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7 {
 #[derive(Debug)]
 pub struct PKCS7_ContentInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub contentType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub content: *mut crate::Mono::Security::ASN1,
+    pub contentType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub content: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
 }
 #[cfg(feature = "Mono+Security+PKCS7+ContentInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -233,9 +233,11 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7_ContentI
 pub struct PKCS7_EncryptedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _version: u8,
-    pub _content: *mut crate::Mono::Security::PKCS7_ContentInfo,
-    pub _encryptionAlgorithm: *mut crate::Mono::Security::PKCS7_ContentInfo,
-    pub _encrypted: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _content: quest_hook::libil2cpp::Gc<crate::Mono::Security::PKCS7_ContentInfo>,
+    pub _encryptionAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::PKCS7_ContentInfo,
+    >,
+    pub _encrypted: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Security+PKCS7+EncryptedData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -336,11 +338,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7_Encrypte
 pub struct PKCS7_SignedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub version: u8,
-    pub hashAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
-    pub contentInfo: *mut crate::Mono::Security::PKCS7_ContentInfo,
-    pub certs: *mut crate::Mono::Security::X509::X509CertificateCollection,
-    pub crls: *mut crate::System::Collections::ArrayList,
-    pub signerInfo: *mut crate::Mono::Security::PKCS7_SignerInfo,
+    pub hashAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub contentInfo: quest_hook::libil2cpp::Gc<crate::Mono::Security::PKCS7_ContentInfo>,
+    pub certs: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::X509::X509CertificateCollection,
+    >,
+    pub crls: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub signerInfo: quest_hook::libil2cpp::Gc<crate::Mono::Security::PKCS7_SignerInfo>,
     pub mda: bool,
 }
 #[cfg(feature = "Mono+Security+PKCS7+SignedData")]
@@ -463,13 +467,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7_SignedDa
 pub struct PKCS7_SignerInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub version: u8,
-    pub hashAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
-    pub authenticatedAttributes: *mut crate::System::Collections::ArrayList,
-    pub unauthenticatedAttributes: *mut crate::System::Collections::ArrayList,
-    pub signature: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub issuer: *mut quest_hook::libil2cpp::Il2CppString,
-    pub serial: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub ski: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub hashAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub authenticatedAttributes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ArrayList,
+    >,
+    pub unauthenticatedAttributes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ArrayList,
+    >,
+    pub signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub issuer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub serial: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub ski: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Security+PKCS7+SignerInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

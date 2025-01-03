@@ -486,19 +486,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::OpenVR {
 #[derive(Debug)]
 pub struct OpenVR_COpenVRContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_pVRSystem: *mut crate::OVR::OpenVR::CVRSystem,
-    pub m_pVRChaperone: *mut crate::OVR::OpenVR::CVRChaperone,
-    pub m_pVRChaperoneSetup: *mut crate::OVR::OpenVR::CVRChaperoneSetup,
-    pub m_pVRCompositor: *mut crate::OVR::OpenVR::CVRCompositor,
-    pub m_pVROverlay: *mut crate::OVR::OpenVR::CVROverlay,
-    pub m_pVRRenderModels: *mut crate::OVR::OpenVR::CVRRenderModels,
-    pub m_pVRExtendedDisplay: *mut crate::OVR::OpenVR::CVRExtendedDisplay,
-    pub m_pVRSettings: *mut crate::OVR::OpenVR::CVRSettings,
-    pub m_pVRApplications: *mut crate::OVR::OpenVR::CVRApplications,
-    pub m_pVRScreenshots: *mut crate::OVR::OpenVR::CVRScreenshots,
-    pub m_pVRTrackedCamera: *mut crate::OVR::OpenVR::CVRTrackedCamera,
-    pub m_pVRInput: *mut crate::OVR::OpenVR::CVRInput,
-    pub m_pVRSpatialAnchors: *mut crate::OVR::OpenVR::CVRSpatialAnchors,
+    pub m_pVRSystem: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRSystem>,
+    pub m_pVRChaperone: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRChaperone>,
+    pub m_pVRChaperoneSetup: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::CVRChaperoneSetup,
+    >,
+    pub m_pVRCompositor: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRCompositor>,
+    pub m_pVROverlay: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVROverlay>,
+    pub m_pVRRenderModels: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::CVRRenderModels,
+    >,
+    pub m_pVRExtendedDisplay: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::CVRExtendedDisplay,
+    >,
+    pub m_pVRSettings: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRSettings>,
+    pub m_pVRApplications: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::CVRApplications,
+    >,
+    pub m_pVRScreenshots: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRScreenshots>,
+    pub m_pVRTrackedCamera: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::CVRTrackedCamera,
+    >,
+    pub m_pVRInput: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRInput>,
+    pub m_pVRSpatialAnchors: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::CVRSpatialAnchors,
+    >,
 }
 #[cfg(feature = "OVR+OpenVR+OpenVR+COpenVRContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

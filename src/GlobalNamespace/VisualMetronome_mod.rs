@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct VisualMetronome {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioSource: *mut crate::UnityEngine::AudioSource,
+    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _leftPadding: f32,
     pub _rightPadding: f32,
-    pub _ticker: *mut crate::UnityEngine::RectTransform,
-    pub _movingTicker: *mut crate::UnityEngine::RectTransform,
-    pub _tickerImage: *mut crate::UnityEngine::UI::Graphic,
-    pub _movingTickerImage: *mut crate::UnityEngine::UI::Graphic,
+    pub _ticker: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub _movingTicker: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub _tickerImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+    pub _movingTickerImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     pub _metronomeInterval: f32,
     pub _normalTickerSize: crate::UnityEngine::Vector2,
     pub _tickTickerSize0: crate::UnityEngine::Vector2,

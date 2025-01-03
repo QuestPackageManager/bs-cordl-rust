@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+GlyphMetrics")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GlyphMetrics {
     pub m_Width: f32,
     pub m_Height: f32,

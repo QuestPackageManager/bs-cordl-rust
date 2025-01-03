@@ -1,16 +1,18 @@
 #[cfg(feature = "LIV+SDK+Unity+SDKApplicationOutput")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SDKApplicationOutput {
     pub supportedFeatures: crate::LIV::SDK::Unity::FEATURES,
-    pub engineName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub engineVersion: *mut quest_hook::libil2cpp::Il2CppString,
-    pub applicationName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub applicationVersion: *mut quest_hook::libil2cpp::Il2CppString,
-    pub xrDeviceName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub graphicsAPI: *mut quest_hook::libil2cpp::Il2CppString,
-    pub sdkID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub sdkVersion: *mut quest_hook::libil2cpp::Il2CppString,
+    pub engineName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub engineVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub applicationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub applicationVersion: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub xrDeviceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub graphicsAPI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub sdkID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub sdkVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "LIV+SDK+Unity+SDKApplicationOutput")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

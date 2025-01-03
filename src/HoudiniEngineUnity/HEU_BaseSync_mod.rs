@@ -5,22 +5,30 @@ pub struct HEU_BaseSync {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _cookNodeID: i32,
     pub _sessionID: i64,
-    pub _nodeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _nodeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _initialized: bool,
     pub _syncing: bool,
     pub _deleteParent: bool,
-    pub _generatedOutputs: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_GeneratedOutput,
+    pub _generatedOutputs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_GeneratedOutput,
+        >,
     >,
-    pub _outputCacheDirectory: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _outputCacheFilePaths: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _outputCacheDirectory: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _outputCacheFilePaths: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub _generateOptions: crate::HoudiniEngineUnity::HEU_GenerateOptions,
-    pub _log: *mut crate::System::Text::StringBuilder,
-    pub _error: *mut crate::System::Text::StringBuilder,
+    pub _log: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    pub _error: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub _sessionSyncAutoCook: bool,
-    pub _loadTask: *mut crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo,
+    pub _loadTask: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo,
+    >,
     pub _totalCookCount: i32,
     pub _firstSyncComplete: bool,
 }

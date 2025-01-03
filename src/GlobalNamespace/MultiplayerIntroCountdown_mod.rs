@@ -9,16 +9,26 @@ pub struct MultiplayerIntroCountdown {
     pub _partsDistance: f32,
     pub _startLocalPosition: crate::UnityEngine::Vector3,
     pub _targetLocalPosition: crate::UnityEngine::Vector3,
-    pub _readyClip: *mut crate::UnityEngine::AudioClip,
-    pub _setClip: *mut crate::UnityEngine::AudioClip,
-    pub _goClip: *mut crate::UnityEngine::AudioClip,
-    pub _buildUpClip: *mut crate::UnityEngine::AudioClip,
-    pub _textController0: *mut crate::GlobalNamespace::MultiplayerIntroCountdownTextController,
-    pub _textController1: *mut crate::GlobalNamespace::MultiplayerIntroCountdownTextController,
-    pub _audioSource: *mut crate::UnityEngine::AudioSource,
-    pub _multiplayerOffsetByLocalPlayerPosition: *mut crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition,
-    pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub _currentTextController: *mut crate::GlobalNamespace::MultiplayerIntroCountdownTextController,
+    pub _readyClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    pub _setClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    pub _goClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    pub _buildUpClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    pub _textController0: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerIntroCountdownTextController,
+    >,
+    pub _textController1: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerIntroCountdownTextController,
+    >,
+    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    pub _multiplayerOffsetByLocalPlayerPosition: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition,
+    >,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::TimeTweeningManager,
+    >,
+    pub _currentTextController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerIntroCountdownTextController,
+    >,
     pub _fontSize: f32,
     pub _alpha: f32,
 }

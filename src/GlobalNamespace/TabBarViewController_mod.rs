@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct TabBarViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _segmentedControll: *mut crate::HMUI::TextSegmentedControl,
-    pub _contentSizeFilter: *mut crate::UnityEngine::UI::ContentSizeFitter,
-    pub _labels: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _segmentedControll: quest_hook::libil2cpp::Gc<crate::HMUI::TextSegmentedControl>,
+    pub _contentSizeFilter: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::ContentSizeFitter,
     >,
-    pub _items: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::TabBarViewController_TabBarItem,
+    pub _labels: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub _items: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::TabBarViewController_TabBarItem,
+        >,
     >,
     pub _shouldReloadData: bool,
 }
@@ -166,8 +170,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TabBarViewCon
 #[derive(Debug)]
 pub struct TabBarViewController_TabBarItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub title: *mut quest_hook::libil2cpp::Il2CppString,
-    pub action: *mut crate::System::Action,
+    pub title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub action: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "TabBarViewController+TabBarItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

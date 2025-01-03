@@ -13,7 +13,7 @@ pub struct RipeMD320Digest {
     pub H7: i32,
     pub H8: i32,
     pub H9: i32,
-    pub X: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub X: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub xOff: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+RipeMD320Digest")]

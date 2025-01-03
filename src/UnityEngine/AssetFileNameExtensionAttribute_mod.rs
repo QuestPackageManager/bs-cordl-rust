@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct AssetFileNameExtensionAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _preferredExtension_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _otherExtensions_k__BackingField: *mut crate::System::Collections::Generic::IEnumerable_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _preferredExtension_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _otherExtensions_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+AssetFileNameExtensionAttribute")]

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CertificateID {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub id: *mut crate::Org::BouncyCastle::Asn1::Ocsp::CertID,
+    pub id: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Ocsp::CertID>,
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+CertificateID")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

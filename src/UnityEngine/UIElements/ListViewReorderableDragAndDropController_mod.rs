@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ListViewReorderableDragAndDropController {
     __cordl_parent: crate::UnityEngine::UIElements::BaseReorderableDragAndDropController,
-    pub m_ListView: *mut crate::UnityEngine::UIElements::BaseListView,
+    pub m_ListView: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseListView,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ListViewReorderableDragAndDropController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

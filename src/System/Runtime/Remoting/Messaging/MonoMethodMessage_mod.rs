@@ -3,24 +3,30 @@
 #[derive(Debug)]
 pub struct MonoMethodMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub method: *mut crate::System::Reflection::RuntimeMethodInfo,
-    pub args: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub method: quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeMethodInfo>,
+    pub args: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub names: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub names: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub arg_types: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub ctx: *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
-    pub rval: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub exc: *mut crate::System::Exception,
-    pub asyncResult: *mut crate::System::Runtime::Remoting::Messaging::AsyncResult,
+    pub arg_types: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub ctx: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
+    >,
+    pub rval: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub exc: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    pub asyncResult: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::AsyncResult,
+    >,
     pub call_type: crate::System::Runtime::Remoting::Messaging::CallType,
-    pub uri: *mut quest_hook::libil2cpp::Il2CppString,
-    pub properties: *mut crate::System::Runtime::Remoting::Messaging::MCMDictionary,
-    pub identity: *mut crate::System::Runtime::Remoting::Identity,
-    pub methodSignature: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Type,
+    pub uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub properties: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::MCMDictionary,
+    >,
+    pub identity: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Identity>,
+    pub methodSignature: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+MonoMethodMessage")]

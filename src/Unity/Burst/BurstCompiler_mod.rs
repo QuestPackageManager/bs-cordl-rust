@@ -538,7 +538,7 @@ for crate::Unity::Burst::BurstCompiler_BurstCompilerHelper {
 #[derive(Debug)]
 pub struct BurstCompiler_CommandBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _builder: *mut crate::System::Text::StringBuilder,
+    pub _builder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub _hasArgs: bool,
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler+CommandBuilder")]
@@ -663,7 +663,9 @@ for crate::Unity::Burst::BurstCompiler_CommandBuilder {
 #[derive(Debug)]
 pub struct BurstCompiler_FakeDelegate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Method_k__BackingField: *mut crate::System::Reflection::MethodInfo,
+    pub _Method_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MethodInfo,
+    >,
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler+FakeDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -734,7 +736,7 @@ for crate::Unity::Burst::BurstCompiler_FakeDelegate {
 #[derive(Debug)]
 pub struct BurstCompiler_StaticTypeReinitAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub reinitType: *mut crate::System::Type,
+    pub reinitType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ResourceProviderBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_ProviderId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ProviderId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_BehaviourFlags: crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderBehaviourFlags,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
@@ -229,7 +229,7 @@ pub struct ResourceProviderBase_BaseInitAsyncOp {
     __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         bool,
     >,
-    pub m_CallBack: *mut crate::System::Func_1<bool>,
+    pub m_CallBack: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
 }
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"

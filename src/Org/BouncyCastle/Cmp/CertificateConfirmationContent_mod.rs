@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct CertificateConfirmationContent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub digestAlgFinder: *mut crate::Org::BouncyCastle::Cms::DefaultDigestAlgorithmIdentifierFinder,
-    pub content: *mut crate::Org::BouncyCastle::Asn1::Cmp::CertConfirmContent,
+    pub digestAlgFinder: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::DefaultDigestAlgorithmIdentifierFinder,
+    >,
+    pub content: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cmp::CertConfirmContent,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cmp+CertificateConfirmationContent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

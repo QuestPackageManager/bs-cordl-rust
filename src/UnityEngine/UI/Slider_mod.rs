@@ -3,19 +3,25 @@
 #[derive(Debug)]
 pub struct Slider {
     __cordl_parent: crate::UnityEngine::UI::Selectable,
-    pub m_FillRect: *mut crate::UnityEngine::RectTransform,
-    pub m_HandleRect: *mut crate::UnityEngine::RectTransform,
+    pub m_FillRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub m_HandleRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_Direction: crate::UnityEngine::UI::Slider_Direction,
     pub m_MinValue: f32,
     pub m_MaxValue: f32,
     pub m_WholeNumbers: bool,
     pub m_Value: f32,
-    pub m_OnValueChanged: *mut crate::UnityEngine::UI::Slider_SliderEvent,
-    pub m_FillImage: *mut crate::UnityEngine::UI::Image,
-    pub m_FillTransform: *mut crate::UnityEngine::Transform,
-    pub m_FillContainerRect: *mut crate::UnityEngine::RectTransform,
-    pub m_HandleTransform: *mut crate::UnityEngine::Transform,
-    pub m_HandleContainerRect: *mut crate::UnityEngine::RectTransform,
+    pub m_OnValueChanged: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Slider_SliderEvent,
+    >,
+    pub m_FillImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub m_FillTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub m_FillContainerRect: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
+    >,
+    pub m_HandleTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub m_HandleContainerRect: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
+    >,
     pub m_Offset: crate::UnityEngine::Vector2,
     pub m_Tracker: crate::UnityEngine::DrivenRectTransformTracker,
     pub m_DelayedUpdateVisuals: bool,

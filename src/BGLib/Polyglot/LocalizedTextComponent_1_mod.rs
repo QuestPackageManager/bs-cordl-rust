@@ -5,9 +5,11 @@ pub struct LocalizedTextComponent_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub localizedComponent: T,
     pub maintainTextAlignment: bool,
-    pub key: *mut quest_hook::libil2cpp::Il2CppString,
-    pub parameters: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub parameters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

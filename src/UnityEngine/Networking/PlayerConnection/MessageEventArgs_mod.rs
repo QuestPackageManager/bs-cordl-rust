@@ -4,7 +4,7 @@
 pub struct MessageEventArgs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub playerId: i32,
-    pub data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "UnityEngine+Networking+PlayerConnection+MessageEventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

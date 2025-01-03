@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct XmlIgnoreNamespaceReader {
     __cordl_parent: crate::System::Xml::XmlNodeReader,
-    pub _namespacesToIgnore: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _namespacesToIgnore: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "System+Data+XmlIgnoreNamespaceReader")]

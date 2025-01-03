@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct CrlOcspRef {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub crlids: *mut crate::Org::BouncyCastle::Asn1::Esf::CrlListID,
-    pub ocspids: *mut crate::Org::BouncyCastle::Asn1::Esf::OcspListID,
-    pub otherRev: *mut crate::Org::BouncyCastle::Asn1::Esf::OtherRevRefs,
+    pub crlids: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Esf::CrlListID,
+    >,
+    pub ocspids: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Esf::OcspListID,
+    >,
+    pub otherRev: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Esf::OtherRevRefs,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Esf+CrlOcspRef")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

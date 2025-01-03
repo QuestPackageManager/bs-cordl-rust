@@ -3,15 +3,19 @@
 #[derive(Debug)]
 pub struct HEU_LoadBufferVolumeLayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _layerName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _layerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _partID: i32,
     pub _heightMapWidth: i32,
     pub _heightMapHeight: i32,
     pub _strength: f32,
-    pub _diffuseTexturePath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _maskTexturePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _diffuseTexturePath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _maskTexturePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _metallic: f32,
-    pub _normalTexturePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _normalTexturePath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _normalScale: f32,
     pub _smoothness: f32,
     pub _specularColor: crate::UnityEngine::Color,
@@ -19,7 +23,9 @@ pub struct HEU_LoadBufferVolumeLayer {
     pub _tileOffset: crate::UnityEngine::Vector2,
     pub _uiExpanded: bool,
     pub _tile: i32,
-    pub _normalizedHeights: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub _normalizedHeights: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
     pub _minHeight: f32,
     pub _maxHeight: f32,
     pub _heightRange: f32,
@@ -29,7 +35,7 @@ pub struct HEU_LoadBufferVolumeLayer {
     pub _minBounds: crate::UnityEngine::Vector3,
     pub _maxBounds: crate::UnityEngine::Vector3,
     pub _center: crate::UnityEngine::Vector3,
-    pub _layerPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _layerPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _hasLayerAttributes: bool,
     pub _layerType: crate::HoudiniEngineUnity::HFLayerType,
 }

@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct X509Chain {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub roots: *mut crate::Mono::Security::X509::X509CertificateCollection,
-    pub certs: *mut crate::Mono::Security::X509::X509CertificateCollection,
-    pub _root: *mut crate::Mono::Security::X509::X509Certificate,
-    pub _chain: *mut crate::Mono::Security::X509::X509CertificateCollection,
+    pub roots: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::X509::X509CertificateCollection,
+    >,
+    pub certs: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::X509::X509CertificateCollection,
+    >,
+    pub _root: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Certificate>,
+    pub _chain: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::X509::X509CertificateCollection,
+    >,
     pub _status: crate::Mono::Security::X509::X509ChainStatusFlags,
 }
 #[cfg(feature = "Mono+Security+X509+X509Chain")]

@@ -7,7 +7,7 @@ pub struct UriParser {
     pub m_UpdatableFlags: crate::System::UriSyntaxFlags,
     pub m_UpdatableFlagsUsed: bool,
     pub m_Port: i32,
-    pub m_Scheme: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Scheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+UriParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -5,7 +5,7 @@
 #[derive(Debug)]
 pub struct NullableMethodCallInstruction_GetValueOrDefault {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction,
-    pub _defaultValueType: *mut crate::System::Type,
+    pub _defaultValueType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValueOrDefault"

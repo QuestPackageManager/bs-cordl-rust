@@ -5,13 +5,17 @@ pub struct SymmetricAlgorithm {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub BlockSizeValue: i32,
     pub FeedbackSizeValue: i32,
-    pub IVValue: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub KeyValue: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub LegalBlockSizesValue: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Security::Cryptography::KeySizes,
+    pub IVValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub KeyValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub LegalBlockSizesValue: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Security::Cryptography::KeySizes,
+        >,
     >,
-    pub LegalKeySizesValue: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Security::Cryptography::KeySizes,
+    pub LegalKeySizesValue: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Security::Cryptography::KeySizes,
+        >,
     >,
     pub KeySizeValue: i32,
     pub ModeValue: crate::System::Security::Cryptography::CipherMode,

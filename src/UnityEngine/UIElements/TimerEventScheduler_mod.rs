@@ -3,15 +3,21 @@
 #[derive(Debug)]
 pub struct TimerEventScheduler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_ScheduledItems: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::ScheduledItem,
+    pub m_ScheduledItems: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::ScheduledItem,
+        >,
     >,
     pub m_TransactionMode: bool,
-    pub m_ScheduleTransactions: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::ScheduledItem,
+    pub m_ScheduleTransactions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::ScheduledItem,
+        >,
     >,
-    pub m_UnscheduleTransactions: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::UnityEngine::UIElements::ScheduledItem,
+    pub m_UnscheduleTransactions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::UnityEngine::UIElements::ScheduledItem,
+        >,
     >,
     pub disableThrottling: bool,
     pub m_LastUpdatedIndex: i32,

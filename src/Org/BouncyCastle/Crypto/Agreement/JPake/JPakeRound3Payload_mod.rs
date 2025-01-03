@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct JPakeRound3Payload {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub participantId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub macTag: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub participantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub macTag: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakeRound3Payload")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

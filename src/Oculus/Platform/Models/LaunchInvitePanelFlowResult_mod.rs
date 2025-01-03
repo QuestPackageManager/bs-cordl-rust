@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct LaunchInvitePanelFlowResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub InvitedUsers: *mut crate::Oculus::Platform::Models::UserList,
+    pub InvitedUsers: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::UserList,
+    >,
 }
 #[cfg(feature = "Oculus+Platform+Models+LaunchInvitePanelFlowResult")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

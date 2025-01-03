@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Lock {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _lock: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _lock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Threading+Lock")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

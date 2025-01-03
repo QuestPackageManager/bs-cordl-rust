@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct UxmlAttributeOverridesTraits {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlTraits,
-    pub m_ElementName: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_ElementName: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlAttributeOverridesTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

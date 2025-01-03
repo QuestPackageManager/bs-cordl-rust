@@ -3,17 +3,21 @@
 #[derive(Debug)]
 pub struct EndPointListener {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub listener: *mut crate::System::Net::HttpListener,
-    pub endpoint: *mut crate::System::Net::IPEndPoint,
-    pub sock: *mut crate::System::Net::Sockets::Socket,
-    pub prefixes: *mut crate::System::Collections::Hashtable,
-    pub unhandled: *mut crate::System::Collections::ArrayList,
-    pub all: *mut crate::System::Collections::ArrayList,
-    pub cert: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+    pub listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
+    pub endpoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+    pub sock: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
+    pub prefixes: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub unhandled: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub all: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub cert: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+    >,
     pub secure: bool,
-    pub unregistered: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Net::HttpConnection,
-        *mut crate::System::Net::HttpConnection,
+    pub unregistered: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Net::HttpConnection,
+            *mut crate::System::Net::HttpConnection,
+        >,
     >,
 }
 #[cfg(feature = "System+Net+EndPointListener")]

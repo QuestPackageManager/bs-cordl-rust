@@ -4,8 +4,12 @@
 pub struct Evidence {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _locked: bool,
-    pub hostEvidenceList: *mut crate::System::Collections::ArrayList,
-    pub assemblyEvidenceList: *mut crate::System::Collections::ArrayList,
+    pub hostEvidenceList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ArrayList,
+    >,
+    pub assemblyEvidenceList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ArrayList,
+    >,
 }
 #[cfg(feature = "System+Security+Policy+Evidence")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -141,9 +145,9 @@ for crate::System::Security::Policy::Evidence {
 #[derive(Debug)]
 pub struct Evidence_EvidenceEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub currentEnum: *mut crate::System::Collections::IEnumerator,
-    pub hostEnum: *mut crate::System::Collections::IEnumerator,
-    pub assemblyEnum: *mut crate::System::Collections::IEnumerator,
+    pub currentEnum: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    pub hostEnum: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    pub assemblyEnum: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
 }
 #[cfg(feature = "System+Security+Policy+Evidence+EvidenceEnumerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

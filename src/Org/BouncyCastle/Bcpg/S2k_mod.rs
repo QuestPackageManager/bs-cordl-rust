@@ -5,7 +5,7 @@ pub struct S2k {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::BcpgObject,
     pub _cordl_type: i32,
     pub algorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-    pub iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub iv: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub itCount: i32,
     pub protectionMode: i32,
 }

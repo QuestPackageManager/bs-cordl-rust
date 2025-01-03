@@ -5,7 +5,9 @@
 #[derive(Debug)]
 pub struct ScriptableRuntimeReflectionSystemWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _implementation_k__BackingField: *mut crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
+    pub _implementation_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
+    >,
 }
 #[cfg(
     feature = "UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemWrapper"

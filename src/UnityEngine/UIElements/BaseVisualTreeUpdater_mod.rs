@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct BaseVisualTreeUpdater {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub panelChanged: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::BaseVisualElementPanel,
+    pub panelChanged: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::BaseVisualElementPanel,
+        >,
     >,
-    pub m_Panel: *mut crate::UnityEngine::UIElements::BaseVisualElementPanel,
+    pub m_Panel: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVisualElementPanel,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeUpdater")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct TcpClient {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_ClientSocket: *mut crate::System::Net::Sockets::Socket,
+    pub m_ClientSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     pub m_Active: bool,
-    pub m_DataStream: *mut crate::System::Net::Sockets::NetworkStream,
+    pub m_DataStream: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Sockets::NetworkStream,
+    >,
     pub m_Family: crate::System::Net::Sockets::AddressFamily,
     pub m_CleanedUp: bool,
 }

@@ -6,8 +6,12 @@ pub struct SerializableDictionary_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
-    pub keys: *mut crate::System::Collections::Generic::List_1<TKey>,
-    pub values: *mut crate::System::Collections::Generic::List_1<TValue>,
+    pub keys: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<TKey>,
+    >,
+    pub values: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<TValue>,
+    >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }

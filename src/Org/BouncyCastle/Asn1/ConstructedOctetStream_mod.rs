@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct ConstructedOctetStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
-    pub _parser: *mut crate::Org::BouncyCastle::Asn1::Asn1StreamParser,
+    pub _parser: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1StreamParser,
+    >,
     pub _first: bool,
-    pub _currentStream: *mut crate::System::IO::Stream,
+    pub _currentStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+ConstructedOctetStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

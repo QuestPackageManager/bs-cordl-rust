@@ -28,15 +28,21 @@ pub struct JsonPropertyAttribute {
     pub _itemTypeNameHandling: crate::System::Nullable_1<
         crate::Newtonsoft::Json::TypeNameHandling,
     >,
-    pub _ItemConverterType_k__BackingField: *mut crate::System::Type,
-    pub _ItemConverterParameters_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _ItemConverterType_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Type,
     >,
-    pub _NamingStrategyType_k__BackingField: *mut crate::System::Type,
-    pub _NamingStrategyParameters_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _ItemConverterParameters_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub _PropertyName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _NamingStrategyType_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Type,
+    >,
+    pub _NamingStrategyParameters_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+    >,
+    pub _PropertyName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+JsonPropertyAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

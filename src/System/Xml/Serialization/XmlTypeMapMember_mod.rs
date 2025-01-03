@@ -3,15 +3,21 @@
 #[derive(Debug)]
 pub struct XmlTypeMapMember {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _index: i32,
     pub _globalIndex: i32,
     pub _specifiedGlobalIndex: i32,
-    pub _typeData: *mut crate::System::Xml::Serialization::TypeData,
-    pub _member: *mut crate::System::Reflection::MemberInfo,
-    pub _specifiedMember: *mut crate::System::Reflection::MemberInfo,
-    pub _shouldSerialize: *mut crate::System::Reflection::MethodInfo,
-    pub _defaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _typeData: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::TypeData,
+    >,
+    pub _member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    pub _specifiedMember: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MemberInfo,
+    >,
+    pub _shouldSerialize: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MethodInfo,
+    >,
+    pub _defaultValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _flags: i32,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlTypeMapMember")]

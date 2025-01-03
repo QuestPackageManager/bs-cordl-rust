@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct PollRepContent {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub certReqId: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub checkAfter: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub reason: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiFreeText,
+    pub certReqId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub checkAfter: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerInteger,
+    >,
+    pub reason: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cmp::PkiFreeText,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PollRepContent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

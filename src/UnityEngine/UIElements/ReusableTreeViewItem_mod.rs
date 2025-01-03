@@ -3,27 +3,41 @@
 #[derive(Debug)]
 pub struct ReusableTreeViewItem {
     __cordl_parent: crate::UnityEngine::UIElements::ReusableCollectionItem,
-    pub m_Toggle: *mut crate::UnityEngine::UIElements::Toggle,
-    pub m_Container: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_IndentElement: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_BindableContainer: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_Checkmark: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub onPointerUp: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::PointerUpEvent,
+    pub m_Toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Toggle>,
+    pub m_Container: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
     >,
-    pub onToggleValueChanged: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
+    pub m_IndentElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_BindableContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_Checkmark: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub onPointerUp: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::UIElements::PointerUpEvent>,
+    >,
+    pub onToggleValueChanged: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::UIElements::ChangeEvent_1<bool>>,
     >,
     pub m_Depth: i32,
     pub m_IndentWidth: f32,
-    pub m_PointerUpCallback: *mut crate::UnityEngine::UIElements::EventCallback_1<
-        *mut crate::UnityEngine::UIElements::PointerUpEvent,
+    pub m_PointerUpCallback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventCallback_1<
+            *mut crate::UnityEngine::UIElements::PointerUpEvent,
+        >,
     >,
-    pub m_ToggleValueChangedCallback: *mut crate::UnityEngine::UIElements::EventCallback_1<
-        *mut crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
+    pub m_ToggleValueChangedCallback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventCallback_1<
+            *mut crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
+        >,
     >,
-    pub m_ToggleGeometryChangedCallback: *mut crate::UnityEngine::UIElements::EventCallback_1<
-        *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
+    pub m_ToggleGeometryChangedCallback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventCallback_1<
+            *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ReusableTreeViewItem")]

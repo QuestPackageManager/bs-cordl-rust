@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VRControllerState_t_Packed")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VRControllerState_t_Packed {
     pub unPacketNum: u32,
     pub ulButtonPressed: u64,

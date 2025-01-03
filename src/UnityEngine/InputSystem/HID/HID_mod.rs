@@ -270,7 +270,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDCollectionDescriptor")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HID_HIDCollectionDescriptor {
     pub _cordl_type: crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType,
     pub usage: i32,
@@ -318,7 +318,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptor")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HID_HIDDeviceDescriptor {
     pub vendorId: i32,
     pub productId: i32,
@@ -327,11 +327,15 @@ pub struct HID_HIDDeviceDescriptor {
     pub inputReportSize: i32,
     pub outputReportSize: i32,
     pub featureReportSize: i32,
-    pub elements: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor,
+    pub elements: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor,
+        >,
     >,
-    pub collections: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor,
+    pub collections: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptor")]
@@ -375,18 +379,22 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HID_HIDDeviceDescriptorBuilder {
     pub usagePage: crate::UnityEngine::InputSystem::HID::HID_UsagePage,
     pub usage: i32,
     pub m_CurrentReportId: i32,
     pub m_CurrentReportType: crate::UnityEngine::InputSystem::HID::HID_HIDReportType,
     pub m_CurrentReportOffsetInBits: i32,
-    pub m_Elements: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor,
+    pub m_Elements: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor,
+        >,
     >,
-    pub m_Collections: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor,
+    pub m_Collections: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor,
+        >,
     >,
     pub m_InputReportSize: i32,
     pub m_OutputReportSize: i32,
@@ -520,7 +528,7 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDElementDescriptor")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HID_HIDElementDescriptor {
     pub usage: i32,
     pub usagePage: crate::UnityEngine::InputSystem::HID::HID_UsagePage,
@@ -817,10 +825,10 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct HID_HIDLayoutBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub displayName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub hidDescriptor: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
-    pub parentLayout: *mut quest_hook::libil2cpp::Il2CppString,
-    pub deviceType: *mut crate::System::Type,
+    pub parentLayout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub deviceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDLayoutBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

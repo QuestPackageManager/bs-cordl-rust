@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct SubContainerCreatorByInstanceGetter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _subcontainerGetter: *mut crate::System::Func_2<
-        *mut crate::Zenject::InjectContext,
-        *mut crate::Zenject::DiContainer,
+    pub _subcontainerGetter: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            *mut crate::Zenject::InjectContext,
+            *mut crate::Zenject::DiContainer,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByInstanceGetter")]

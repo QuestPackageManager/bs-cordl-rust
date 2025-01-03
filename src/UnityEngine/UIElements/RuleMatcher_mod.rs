@@ -1,9 +1,11 @@
 #[cfg(feature = "UnityEngine+UIElements+RuleMatcher")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RuleMatcher {
-    pub sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
-    pub complexSelector: *mut crate::UnityEngine::UIElements::StyleComplexSelector,
+    pub sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+    pub complexSelector: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleComplexSelector,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+RuleMatcher")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

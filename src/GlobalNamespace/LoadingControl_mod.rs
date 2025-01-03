@@ -3,16 +3,18 @@
 #[derive(Debug)]
 pub struct LoadingControl {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _loadingContainer: *mut crate::UnityEngine::GameObject,
-    pub _loadingText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _refreshText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _refreshButton: *mut crate::UnityEngine::UI::Button,
-    pub _refreshContainer: *mut crate::UnityEngine::GameObject,
-    pub _downloadingContainer: *mut crate::UnityEngine::GameObject,
-    pub _downloadingText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _donwloadingProgressImage: *mut crate::UnityEngine::UI::Image,
-    pub didPressRefreshButtonEvent: *mut crate::System::Action,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _loadingContainer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _loadingText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _refreshText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _refreshButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _refreshContainer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _downloadingContainer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _downloadingText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _donwloadingProgressImage: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Image,
+    >,
+    pub didPressRefreshButtonEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
 }
 #[cfg(feature = "LoadingControl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

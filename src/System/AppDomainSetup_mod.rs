@@ -3,36 +3,56 @@
 #[derive(Debug)]
 pub struct AppDomainSetup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub application_base: *mut quest_hook::libil2cpp::Il2CppString,
-    pub application_name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub cache_path: *mut quest_hook::libil2cpp::Il2CppString,
-    pub configuration_file: *mut quest_hook::libil2cpp::Il2CppString,
-    pub dynamic_base: *mut quest_hook::libil2cpp::Il2CppString,
-    pub license_file: *mut quest_hook::libil2cpp::Il2CppString,
-    pub private_bin_path: *mut quest_hook::libil2cpp::Il2CppString,
-    pub private_bin_path_probe: *mut quest_hook::libil2cpp::Il2CppString,
-    pub shadow_copy_directories: *mut quest_hook::libil2cpp::Il2CppString,
-    pub shadow_copy_files: *mut quest_hook::libil2cpp::Il2CppString,
+    pub application_base: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub application_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub cache_path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub configuration_file: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub dynamic_base: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub license_file: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub private_bin_path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub private_bin_path_probe: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub shadow_copy_directories: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub shadow_copy_files: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub publisher_policy: bool,
     pub path_changed: bool,
     pub loader_optimization: i32,
     pub disallow_binding_redirects: bool,
     pub disallow_code_downloads: bool,
-    pub _activationArguments: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub domain_initializer: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub application_trust: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub domain_initializer_args: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _activationArguments: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub domain_initializer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub application_trust: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub domain_initializer_args: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub disallow_appbase_probe: bool,
-    pub configuration_bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub serialized_non_primitives: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub manager_assembly: *mut quest_hook::libil2cpp::Il2CppString,
-    pub manager_type: *mut quest_hook::libil2cpp::Il2CppString,
-    pub partial_visible_assemblies: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub configuration_bytes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
-    pub _TargetFrameworkName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub serialized_non_primitives: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub manager_assembly: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub manager_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub partial_visible_assemblies: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub _TargetFrameworkName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+AppDomainSetup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

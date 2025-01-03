@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ButtonAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
-    pub title: *mut quest_hook::libil2cpp::Il2CppString,
+    pub title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "BGLib+UnityExtension+ButtonAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

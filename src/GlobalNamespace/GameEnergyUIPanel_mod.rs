@@ -3,17 +3,25 @@
 #[derive(Debug)]
 pub struct GameEnergyUIPanel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _energyBar: *mut crate::UnityEngine::UI::Image,
-    pub _playableDirector: *mut crate::UnityEngine::Playables::PlayableDirector,
-    pub _batteryLifeSegmentPrefab: *mut crate::UnityEngine::UI::Image,
+    pub _energyBar: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _playableDirector: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableDirector,
+    >,
+    pub _batteryLifeSegmentPrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Image,
+    >,
     pub _batterySegmentSeparatorWidth: f32,
     pub _batterySegmentHorizontalPadding: f32,
-    pub _gameEnergyCounter: *mut crate::GlobalNamespace::IGameEnergyCounter,
-    pub _batteryLifeSegments: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UI::Image,
+    pub _gameEnergyCounter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IGameEnergyCounter,
+    >,
+    pub _batteryLifeSegments: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::UI::Image>,
     >,
     pub _activeBatteryLifeSegmentsCount: i32,
-    pub _energyBarRectTransform: *mut crate::UnityEngine::RectTransform,
+    pub _energyBarRectTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
+    >,
 }
 #[cfg(feature = "GameEnergyUIPanel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,11 +3,21 @@
 #[derive(Debug)]
 pub struct SslStream {
     __cordl_parent: crate::System::Net::Security::AuthenticatedStream,
-    pub provider: *mut crate::Mono::Net::Security::MobileTlsProvider,
-    pub settings: *mut crate::Mono::Security::Interface::MonoTlsSettings,
-    pub validationCallback: *mut crate::System::Net::Security::RemoteCertificateValidationCallback,
-    pub selectionCallback: *mut crate::System::Net::Security::LocalCertificateSelectionCallback,
-    pub _cordl_impl: *mut crate::Mono::Net::Security::MobileAuthenticatedStream,
+    pub provider: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::MobileTlsProvider,
+    >,
+    pub settings: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Interface::MonoTlsSettings,
+    >,
+    pub validationCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Security::RemoteCertificateValidationCallback,
+    >,
+    pub selectionCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Security::LocalCertificateSelectionCallback,
+    >,
+    pub _cordl_impl: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::MobileAuthenticatedStream,
+    >,
     pub explicitSettings: bool,
 }
 #[cfg(feature = "System+Net+Security+SslStream")]

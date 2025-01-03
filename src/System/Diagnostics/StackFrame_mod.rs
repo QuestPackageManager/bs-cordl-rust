@@ -7,11 +7,13 @@ pub struct StackFrame {
     pub nativeOffset: i32,
     pub methodAddress: i64,
     pub methodIndex: u32,
-    pub methodBase: *mut crate::System::Reflection::MethodBase,
-    pub fileName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub methodBase: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+    pub fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub lineNumber: i32,
     pub columnNumber: i32,
-    pub internalMethodName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub internalMethodName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Diagnostics+StackFrame")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -4,7 +4,7 @@
 pub struct SerpentEngineBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub encrypting: bool,
-    pub wKey: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub wKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub X0: i32,
     pub X1: i32,
     pub X2: i32,

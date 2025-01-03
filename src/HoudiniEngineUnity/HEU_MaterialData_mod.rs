@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HEU_MaterialData {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _material: *mut crate::UnityEngine::Material,
+    pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _materialSource: crate::HoudiniEngineUnity::HEU_MaterialData_Source,
     pub _materialKey: i32,
 }

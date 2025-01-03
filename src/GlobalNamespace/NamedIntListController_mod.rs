@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct NamedIntListController {
     __cordl_parent: crate::GlobalNamespace::ListSettingsController,
-    pub _textValuePairs: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::NamedIntListController_TextValuePair,
+    pub _textValuePairs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::NamedIntListController_TextValuePair,
+        >,
     >,
     pub _value: i32,
-    pub valueChangedEvent: *mut crate::System::Action_1<i32>,
+    pub valueChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
 }
 #[cfg(feature = "NamedIntListController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -163,7 +165,7 @@ for crate::GlobalNamespace::NamedIntListController {
 #[derive(Debug)]
 pub struct NamedIntListController_TextValuePair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub localizationKey: *mut quest_hook::libil2cpp::Il2CppString,
+    pub localizationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub value: i32,
 }
 #[cfg(feature = "NamedIntListController+TextValuePair")]

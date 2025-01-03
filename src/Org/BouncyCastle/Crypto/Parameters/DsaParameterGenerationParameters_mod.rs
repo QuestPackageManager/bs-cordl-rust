@@ -6,7 +6,9 @@ pub struct DsaParameterGenerationParameters {
     pub l: i32,
     pub n: i32,
     pub certainty: i32,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
     pub usageIndex: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DsaParameterGenerationParameters")]

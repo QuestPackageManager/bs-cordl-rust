@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Char")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Char {
     pub m_value: char,
 }

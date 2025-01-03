@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct LevelParamsPanel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _notesPerSecondText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _notesCountText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _obstaclesCountText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _bombsCountText: *mut crate::TMPro::TextMeshProUGUI,
+    pub _notesPerSecondText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _notesCountText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _obstaclesCountText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _bombsCountText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
 #[cfg(feature = "LevelParamsPanel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

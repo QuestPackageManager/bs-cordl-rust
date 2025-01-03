@@ -4,20 +4,28 @@
 pub struct Interpreter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _instructions: crate::System::Linq::Expressions::Interpreter::InstructionArray,
-    pub _objects: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _objects: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub _labels: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Linq::Expressions::Interpreter::RuntimeLabel,
+    pub _labels: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Linq::Expressions::Interpreter::RuntimeLabel,
+        >,
     >,
-    pub _debugInfos: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
+    pub _debugInfos: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
+        >,
     >,
-    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _LocalCount_k__BackingField: i32,
-    pub _ClosureVariables_k__BackingField: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Linq::Expressions::ParameterExpression,
-        *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
+    pub _ClosureVariables_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Linq::Expressions::ParameterExpression,
+            *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        >,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+Interpreter")]

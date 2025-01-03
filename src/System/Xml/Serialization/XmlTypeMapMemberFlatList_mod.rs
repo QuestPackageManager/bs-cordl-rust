@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlTypeMapMemberFlatList {
     __cordl_parent: crate::System::Xml::Serialization::XmlTypeMapMemberExpandable,
-    pub _listMap: *mut crate::System::Xml::Serialization::ListMap,
+    pub _listMap: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::ListMap>,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberFlatList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

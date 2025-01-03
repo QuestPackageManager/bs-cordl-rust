@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ConfiguredValueTaskAwaitable {
     pub _value: crate::System::Threading::Tasks::ValueTask,
 }
@@ -55,7 +55,7 @@ impl crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable {
     feature = "System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable+ConfiguredValueTaskAwaiter"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter {
     pub _value: crate::System::Threading::Tasks::ValueTask,
 }

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct MultiplayerDuelConnectedPlayerGameplayAnimator {
     __cordl_parent: crate::GlobalNamespace::MultiplayerGameplayAnimator,
-    pub _avatarScaleAnimator: *mut crate::GlobalNamespace::ScaleAnimator,
-    pub _failController: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerLevelFailController,
+    pub _avatarScaleAnimator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScaleAnimator,
+    >,
+    pub _failController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerLevelFailController,
+    >,
 }
 #[cfg(feature = "MultiplayerDuelConnectedPlayerGameplayAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

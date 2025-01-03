@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SignalTickPriorityCopyBinder {
     __cordl_parent: crate::Zenject::SignalCopyBinder,
-    pub _SignalBindInfo_k__BackingField: *mut crate::Zenject::SignalDeclarationBindInfo,
+    pub _SignalBindInfo_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Zenject::SignalDeclarationBindInfo,
+    >,
 }
 #[cfg(feature = "Zenject+SignalTickPriorityCopyBinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct OcspStatusRequest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mResponderIDList: *mut crate::System::Collections::IList,
-    pub mRequestExtensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    pub mResponderIDList: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub mRequestExtensions: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+OcspStatusRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

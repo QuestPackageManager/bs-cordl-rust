@@ -9,14 +9,26 @@ pub struct TextSegmentedControl {
     pub _fixedCellSizeAmount: f32,
     pub _padding: f32,
     pub _hideCellBackground: bool,
-    pub _firstCellPrefab: *mut crate::HMUI::TextSegmentedControlCell,
-    pub _lastCellPrefab: *mut crate::HMUI::TextSegmentedControlCell,
-    pub _singleCellPrefab: *mut crate::HMUI::TextSegmentedControlCell,
-    pub _middleCellPrefab: *mut crate::HMUI::TextSegmentedControlCell,
-    pub _texts: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _firstCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::HMUI::TextSegmentedControlCell,
     >,
-    pub _disabledIndexes: *mut crate::System::Collections::Generic::HashSet_1<i32>,
+    pub _lastCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::HMUI::TextSegmentedControlCell,
+    >,
+    pub _singleCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::HMUI::TextSegmentedControlCell,
+    >,
+    pub _middleCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::HMUI::TextSegmentedControlCell,
+    >,
+    pub _texts: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+    pub _disabledIndexes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
 }
 #[cfg(feature = "HMUI+TextSegmentedControl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

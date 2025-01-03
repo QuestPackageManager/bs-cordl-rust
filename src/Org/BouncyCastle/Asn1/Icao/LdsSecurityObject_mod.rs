@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct LdsSecurityObject {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub digestAlgorithmIdentifier: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub datagroupHash: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Asn1::Icao::DataGroupHash,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub digestAlgorithmIdentifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
     >,
-    pub versionInfo: *mut crate::Org::BouncyCastle::Asn1::Icao::LdsVersionInfo,
+    pub datagroupHash: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::Icao::DataGroupHash,
+        >,
+    >,
+    pub versionInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Icao::LdsVersionInfo,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Icao+LdsSecurityObject")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ToggleWithCallbacks {
     __cordl_parent: crate::UnityEngine::UI::Toggle,
-    pub stateDidChangeEvent: *mut crate::System::Action_1<
-        crate::HMUI::ToggleWithCallbacks_SelectionState,
+    pub stateDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::HMUI::ToggleWithCallbacks_SelectionState>,
     >,
 }
 #[cfg(feature = "HMUI+ToggleWithCallbacks")]

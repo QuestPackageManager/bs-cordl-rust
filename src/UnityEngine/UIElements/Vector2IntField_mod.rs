@@ -179,8 +179,12 @@ pub struct Vector2IntField_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         crate::UnityEngine::Vector2Int,
     >,
-    pub m_XValue: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_YValue: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    pub m_XValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub m_YValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Vector2IntField+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

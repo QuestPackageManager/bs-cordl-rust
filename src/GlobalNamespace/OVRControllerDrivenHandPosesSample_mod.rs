@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct OVRControllerDrivenHandPosesSample {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub buttonOff: *mut crate::UnityEngine::UI::Button,
-    pub buttonConforming: *mut crate::UnityEngine::UI::Button,
-    pub buttonNatural: *mut crate::UnityEngine::UI::Button,
-    pub leftLinePointer: *mut crate::UnityEngine::LineRenderer,
-    pub rightLinePointer: *mut crate::UnityEngine::LineRenderer,
-    pub cameraRig: *mut crate::GlobalNamespace::OVRCameraRig,
+    pub buttonOff: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub buttonConforming: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub buttonNatural: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub leftLinePointer: quest_hook::libil2cpp::Gc<crate::UnityEngine::LineRenderer>,
+    pub rightLinePointer: quest_hook::libil2cpp::Gc<crate::UnityEngine::LineRenderer>,
+    pub cameraRig: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCameraRig>,
 }
 #[cfg(feature = "OVRControllerDrivenHandPosesSample")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

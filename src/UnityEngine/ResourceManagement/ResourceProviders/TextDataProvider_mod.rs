@@ -111,9 +111,15 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider 
 #[derive(Debug)]
 pub struct TextDataProvider_InternalOp {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Provider: *mut crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider,
-    pub m_RequestOperation: *mut crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
-    pub m_RequestQueueOperation: *mut crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
+    pub m_Provider: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider,
+    >,
+    pub m_RequestOperation: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
+    >,
+    pub m_RequestQueueOperation: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
+    >,
     pub m_PI: crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
     pub m_IgnoreFailures: bool,
     pub m_Complete: bool,

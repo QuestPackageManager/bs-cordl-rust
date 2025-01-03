@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct NetPacketProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _netSerializer: *mut crate::LiteNetLib::Utils::NetSerializer,
-    pub _callbacks: *mut crate::System::Collections::Generic::Dictionary_2<
-        u64,
-        *mut crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate,
+    pub _netSerializer: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::Utils::NetSerializer,
     >,
-    pub _netDataWriter: *mut crate::LiteNetLib::Utils::NetDataWriter,
+    pub _callbacks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            u64,
+            *mut crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate,
+        >,
+    >,
+    pub _netDataWriter: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::Utils::NetDataWriter,
+    >,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

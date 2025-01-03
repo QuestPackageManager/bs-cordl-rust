@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+TMP_Vertex")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TMP_Vertex {
     pub position: crate::UnityEngine::Vector3,
     pub uv: crate::UnityEngine::Vector2,

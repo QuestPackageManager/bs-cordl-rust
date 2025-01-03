@@ -3,16 +3,22 @@
 #[derive(Debug)]
 pub struct MultiColumnTreeView {
     __cordl_parent: crate::UnityEngine::UIElements::BaseTreeView,
-    pub m_Columns: *mut crate::UnityEngine::UIElements::Columns,
+    pub m_Columns: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
     pub m_SortingEnabled: bool,
-    pub m_SortColumnDescriptions: *mut crate::UnityEngine::UIElements::SortColumnDescriptions,
-    pub m_SortedColumns: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::SortColumnDescription,
+    pub m_SortColumnDescriptions: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::SortColumnDescriptions,
     >,
-    pub columnSortingChanged: *mut crate::System::Action,
-    pub headerContextMenuPopulateEvent: *mut crate::System::Action_2<
-        *mut crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
-        *mut crate::UnityEngine::UIElements::Column,
+    pub m_SortedColumns: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::SortColumnDescription,
+        >,
+    >,
+    pub columnSortingChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub headerContextMenuPopulateEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+            *mut crate::UnityEngine::UIElements::Column,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnTreeView")]
@@ -293,12 +299,18 @@ for crate::UnityEngine::UIElements::MultiColumnTreeView_UxmlFactory {
 #[derive(Debug)]
 pub struct MultiColumnTreeView_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseTreeView_UxmlTraits,
-    pub m_SortingEnabled: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_Columns: *mut crate::UnityEngine::UIElements::UxmlObjectAttributeDescription_1<
-        *mut crate::UnityEngine::UIElements::Columns,
+    pub m_SortingEnabled: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
-    pub m_SortColumnDescriptions: *mut crate::UnityEngine::UIElements::UxmlObjectAttributeDescription_1<
-        *mut crate::UnityEngine::UIElements::SortColumnDescriptions,
+    pub m_Columns: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlObjectAttributeDescription_1<
+            *mut crate::UnityEngine::UIElements::Columns,
+        >,
+    >,
+    pub m_SortColumnDescriptions: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlObjectAttributeDescription_1<
+            *mut crate::UnityEngine::UIElements::SortColumnDescriptions,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnTreeView+UxmlTraits")]

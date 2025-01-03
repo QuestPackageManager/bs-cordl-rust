@@ -4,16 +4,20 @@
 pub struct HEU_InputPreset {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _inputObjectType: crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType,
-    pub _inputObjectPresets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_InputObjectPreset,
+    pub _inputObjectPresets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_InputObjectPreset,
+        >,
     >,
-    pub _inputAssetName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _inputAssetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _inputIndex: i32,
-    pub _inputName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _inputName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _keepWorldTransform: bool,
     pub _packGeometryBeforeMerging: bool,
-    pub _inputAssetPresets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_InputAssetPreset,
+    pub _inputAssetPresets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_InputAssetPreset,
+        >,
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputPreset")]

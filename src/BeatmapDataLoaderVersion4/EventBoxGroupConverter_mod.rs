@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct EventBoxGroupConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub lightshowSaveData: *mut crate::BeatmapSaveDataVersion4::LightshowSaveData,
-    pub _lightGroups: *mut crate::GlobalNamespace::IEnvironmentLightGroups,
+    pub lightshowSaveData: quest_hook::libil2cpp::Gc<
+        crate::BeatmapSaveDataVersion4::LightshowSaveData,
+    >,
+    pub _lightGroups: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IEnvironmentLightGroups,
+    >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+EventBoxGroupConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

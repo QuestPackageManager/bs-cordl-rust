@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ScreenshotRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _directory: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _camera: *mut crate::UnityEngine::Camera,
+    pub _directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub _frameRate: i32,
     pub _forceFixedFramerate: bool,
     pub _interval: i32,
@@ -17,10 +17,12 @@ pub struct ScreenshotRecorder {
     pub _originalTimeScale: f32,
     pub _paused: bool,
     pub _frameNum: i32,
-    pub _cubemapLeftEye: *mut crate::UnityEngine::RenderTexture,
-    pub _cubemapRighEye: *mut crate::UnityEngine::RenderTexture,
-    pub _equirectTexture: *mut crate::UnityEngine::RenderTexture,
-    pub _cameraRenderTexture: *mut crate::UnityEngine::RenderTexture,
+    pub _cubemapLeftEye: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    pub _cubemapRighEye: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    pub _equirectTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    pub _cameraRenderTexture: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RenderTexture,
+    >,
 }
 #[cfg(feature = "ScreenshotRecorder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

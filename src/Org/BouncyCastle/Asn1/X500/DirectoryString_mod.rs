@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DirectoryString {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub str: *mut crate::Org::BouncyCastle::Asn1::DerStringBase,
+    pub str: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerStringBase>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X500+DirectoryString")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

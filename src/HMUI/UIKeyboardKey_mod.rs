@@ -4,8 +4,8 @@
 pub struct UIKeyboardKey {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _keyCode: crate::UnityEngine::KeyCode,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
-    pub _overrideText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _overrideText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _canBeUppercase: bool,
     pub _dontSetText: bool,
 }

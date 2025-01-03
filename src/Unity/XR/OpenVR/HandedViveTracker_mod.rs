@@ -3,11 +3,21 @@
 #[derive(Debug)]
 pub struct HandedViveTracker {
     __cordl_parent: crate::Unity::XR::OpenVR::ViveTracker,
-    pub _grip_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    pub _gripPressed_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _primary_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _trackpadPressed_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _triggerPressed_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    pub _grip_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
+    pub _gripPressed_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _primary_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _trackpadPressed_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _triggerPressed_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
 }
 #[cfg(feature = "Unity+XR+OpenVR+HandedViveTracker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

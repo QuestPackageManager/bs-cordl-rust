@@ -3,24 +3,34 @@
 #[derive(Debug)]
 pub struct ResourceReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _store: *mut crate::System::IO::BinaryReader,
-    pub _resCache: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        crate::System::Resources::ResourceLocator,
+    pub _store: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
+    pub _resCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            crate::System::Resources::ResourceLocator,
+        >,
     >,
     pub _nameSectionOffset: i64,
     pub _dataSectionOffset: i64,
-    pub _nameHashes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _nameHashesPtr: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _namePositions: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _namePositionsPtr: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _typeTable: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::RuntimeType,
+    pub _nameHashes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub _nameHashesPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _namePositions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
     >,
-    pub _typeNamePositions: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _objFormatter: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter,
+    pub _namePositionsPtr: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub _typeTable: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::RuntimeType>,
+    >,
+    pub _typeNamePositions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub _objFormatter: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter,
+    >,
     pub _numResources: i32,
-    pub _ums: *mut crate::System::IO::UnmanagedMemoryStream,
+    pub _ums: quest_hook::libil2cpp::Gc<crate::System::IO::UnmanagedMemoryStream>,
     pub _version: i32,
 }
 #[cfg(feature = "System+Resources+ResourceReader")]
@@ -439,7 +449,7 @@ for crate::System::Resources::ResourceReader {
 #[derive(Debug)]
 pub struct ResourceReader_ResourceEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _reader: *mut crate::System::Resources::ResourceReader,
+    pub _reader: quest_hook::libil2cpp::Gc<crate::System::Resources::ResourceReader>,
     pub _currentIsValid: bool,
     pub _currentName: i32,
     pub _dataPosition: i32,

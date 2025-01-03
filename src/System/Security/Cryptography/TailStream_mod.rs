@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TailStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub _Buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _BufferSize: i32,
     pub _BufferIndex: i32,
     pub _BufferFull: bool,

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SurrogateForCyclicalReference {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub innerSurrogate: *mut crate::System::Runtime::Serialization::ISerializationSurrogate,
+    pub innerSurrogate: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializationSurrogate,
+    >,
 }
 #[cfg(feature = "System+Runtime+Serialization+SurrogateForCyclicalReference")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

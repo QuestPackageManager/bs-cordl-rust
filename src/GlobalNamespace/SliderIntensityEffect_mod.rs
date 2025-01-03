@@ -8,19 +8,29 @@ pub struct SliderIntensityEffect {
     pub _tailIntensity: f32,
     pub _fadeOutDuration: f32,
     pub _stayOffDuration: f32,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
-    pub _initData: *mut crate::GlobalNamespace::SliderIntensityEffect_InitData,
-    pub fadeInDidStartEvent: *mut crate::System::Action,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SliderIntensityEffect_InitData,
+    >,
+    pub fadeInDidStartEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _coreIntensity: f32,
     pub _effectIntensity: f32,
     pub _sliderDuration: f32,
     pub _headIntensity: f32,
-    pub _intensityCalculationDelegate: *mut crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate,
-    pub _dipEffectFadeElements: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
+    pub _intensityCalculationDelegate: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate,
     >,
-    pub _fadeInEffectFadeElements: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
+    pub _dipEffectFadeElements: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
+        >,
+    >,
+    pub _fadeInEffectFadeElements: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
+        >,
     >,
 }
 #[cfg(feature = "SliderIntensityEffect")]
@@ -215,7 +225,7 @@ pub struct SliderIntensityEffect_FadeElement {
     pub startIntensity: f32,
     pub endIntensity: f32,
     pub easeType: crate::GlobalNamespace::EaseType,
-    pub startCallback: *mut crate::System::Action,
+    pub startCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "SliderIntensityEffect+FadeElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

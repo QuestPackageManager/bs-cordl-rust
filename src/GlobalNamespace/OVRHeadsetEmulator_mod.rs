@@ -6,11 +6,13 @@ pub struct OVRHeadsetEmulator {
     pub opMode: crate::GlobalNamespace::OVRHeadsetEmulator_OpMode,
     pub resetHmdPoseOnRelease: bool,
     pub resetHmdPoseByMiddleMouseButton: bool,
-    pub activateKeys: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::KeyCode,
+    pub activateKeys: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::KeyCode>,
     >,
-    pub pitchKeys: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::KeyCode>,
-    pub manager: *mut crate::GlobalNamespace::OVRManager,
+    pub pitchKeys: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::KeyCode>,
+    >,
+    pub manager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRManager>,
     pub lastFrameEmulationActivated: bool,
     pub recordedHeadPoseRelativeOffsetTranslation: crate::UnityEngine::Vector3,
     pub recordedHeadPoseRelativeOffsetRotation: crate::UnityEngine::Vector3,

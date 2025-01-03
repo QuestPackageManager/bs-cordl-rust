@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct MQVuserKeyingMaterial {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub ephemeralPublicKey: *mut crate::Org::BouncyCastle::Asn1::Cms::OriginatorPublicKey,
-    pub addedukm: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    pub ephemeralPublicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::OriginatorPublicKey,
+    >,
+    pub addedukm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+Ecc+MQVuserKeyingMaterial")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

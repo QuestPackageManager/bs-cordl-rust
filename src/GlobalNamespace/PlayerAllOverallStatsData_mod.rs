@@ -3,21 +3,35 @@
 #[derive(Debug)]
 pub struct PlayerAllOverallStatsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _campaignOverallStatsData_k__BackingField: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-    pub _soloFreePlayOverallStatsData_k__BackingField: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-    pub _partyFreePlayOverallStatsData_k__BackingField: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-    pub _onlinePlayOverallStatsData_k__BackingField: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-    pub didUpdateSoloFreePlayOverallStatsDataEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::LevelCompletionResults,
-        crate::GlobalNamespace::BeatmapDifficulty,
+    pub _campaignOverallStatsData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
     >,
-    pub didUpdatePartyFreePlayOverallStatsDataEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::LevelCompletionResults,
-        crate::GlobalNamespace::BeatmapDifficulty,
+    pub _soloFreePlayOverallStatsData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
     >,
-    pub didUpdateCampaignOverallStatsDataEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::MissionCompletionResults,
-        *mut crate::GlobalNamespace::IMissionNode,
+    pub _partyFreePlayOverallStatsData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+    >,
+    pub _onlinePlayOverallStatsData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+    >,
+    pub didUpdateSoloFreePlayOverallStatsDataEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::LevelCompletionResults,
+            crate::GlobalNamespace::BeatmapDifficulty,
+        >,
+    >,
+    pub didUpdatePartyFreePlayOverallStatsDataEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::LevelCompletionResults,
+            crate::GlobalNamespace::BeatmapDifficulty,
+        >,
+    >,
+    pub didUpdateCampaignOverallStatsDataEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::MissionCompletionResults,
+            *mut crate::GlobalNamespace::IMissionNode,
+        >,
     >,
 }
 #[cfg(feature = "PlayerAllOverallStatsData")]

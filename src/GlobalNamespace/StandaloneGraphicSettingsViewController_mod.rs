@@ -3,14 +3,26 @@
 #[derive(Debug)]
 pub struct StandaloneGraphicSettingsViewController {
     __cordl_parent: crate::GlobalNamespace::GraphicSettingsViewController,
-    pub _antiAliasingLevel: *mut crate::GlobalNamespace::NamedIntListSettingsController,
-    pub _vrRenderingScale: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
-    pub _fullscreen: *mut crate::UnityEngine::UI::Toggle,
-    pub _shockwaveMaxParticles: *mut crate::GlobalNamespace::NamedIntListSettingsController,
-    pub _smoke: *mut crate::UnityEngine::UI::Toggle,
-    pub _screenDisplacementEffects: *mut crate::UnityEngine::UI::Toggle,
-    pub _mainEffect: *mut crate::GlobalNamespace::PresetsSettingsController,
-    pub _mirror: *mut crate::GlobalNamespace::PresetsSettingsController,
+    pub _antiAliasingLevel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NamedIntListSettingsController,
+    >,
+    pub _vrRenderingScale: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FormattedFloatListSettingsController,
+    >,
+    pub _fullscreen: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _shockwaveMaxParticles: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NamedIntListSettingsController,
+    >,
+    pub _smoke: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _screenDisplacementEffects: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
+    >,
+    pub _mainEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PresetsSettingsController,
+    >,
+    pub _mirror: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PresetsSettingsController,
+    >,
 }
 #[cfg(feature = "StandaloneGraphicSettingsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

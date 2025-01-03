@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct OneTimeLightColorEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _color: *mut crate::GlobalNamespace::ColorSO,
+    pub _color: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
     pub _alpha: f32,
     pub _lightsId: i32,
-    pub _lightWithIdManager: *mut crate::GlobalNamespace::LightWithIdManager,
+    pub _lightWithIdManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightWithIdManager,
+    >,
 }
 #[cfg(feature = "OneTimeLightColorEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

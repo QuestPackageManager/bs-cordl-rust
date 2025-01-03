@@ -3,20 +3,20 @@
 #[derive(Debug)]
 pub struct SimpleType {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _baseType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _baseSimpleType: *mut crate::System::Data::SimpleType,
-    pub _xmlBaseType: *mut crate::System::Xml::XmlQualifiedName,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _baseType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _baseSimpleType: quest_hook::libil2cpp::Gc<crate::System::Data::SimpleType>,
+    pub _xmlBaseType: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _length: i32,
     pub _minLength: i32,
     pub _maxLength: i32,
-    pub _pattern: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _ns: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _maxExclusive: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _maxInclusive: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _minExclusive: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _minInclusive: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _enumeration: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _maxExclusive: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _maxInclusive: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _minExclusive: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _minInclusive: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _enumeration: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Data+SimpleType")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

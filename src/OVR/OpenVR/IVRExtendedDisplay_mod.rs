@@ -1,10 +1,16 @@
 #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IVRExtendedDisplay {
-    pub GetWindowBounds: *mut crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds,
-    pub GetEyeOutputViewport: *mut crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport,
-    pub GetDXGIOutputInfo: *mut crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutputInfo,
+    pub GetWindowBounds: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds,
+    >,
+    pub GetEyeOutputViewport: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport,
+    >,
+    pub GetDXGIOutputInfo: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutputInfo,
+    >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct UnobservedTaskExceptionEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub m_exception: *mut crate::System::AggregateException,
+    pub m_exception: quest_hook::libil2cpp::Gc<crate::System::AggregateException>,
     pub m_observed: bool,
 }
 #[cfg(feature = "System+Threading+Tasks+UnobservedTaskExceptionEventArgs")]

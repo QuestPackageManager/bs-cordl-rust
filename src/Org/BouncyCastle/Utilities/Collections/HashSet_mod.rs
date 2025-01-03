@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HashSet {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cordl_impl: *mut crate::System::Collections::IDictionary,
+    pub _cordl_impl: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+HashSet")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

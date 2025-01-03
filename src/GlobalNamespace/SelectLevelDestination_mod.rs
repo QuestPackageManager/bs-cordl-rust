@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct SelectLevelDestination {
     __cordl_parent: crate::GlobalNamespace::MenuDestination,
-    pub beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
-    pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub beatmapLevelPack: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelPack,
+    >,
+    pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     pub beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    pub beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSO,
+    >,
 }
 #[cfg(feature = "SelectLevelDestination")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

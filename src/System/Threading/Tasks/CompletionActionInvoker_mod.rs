@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct CompletionActionInvoker {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_action: *mut crate::System::Threading::Tasks::ITaskCompletionAction,
-    pub m_completingTask: *mut crate::System::Threading::Tasks::Task,
+    pub m_action: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::ITaskCompletionAction,
+    >,
+    pub m_completingTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task,
+    >,
 }
 #[cfg(feature = "System+Threading+Tasks+CompletionActionInvoker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

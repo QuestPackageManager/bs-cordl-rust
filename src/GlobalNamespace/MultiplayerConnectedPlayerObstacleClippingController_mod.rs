@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerObstacleClippingController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _materialPropertyBlockControllers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _materialPropertyBlockControllers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerObstacleClippingController")]

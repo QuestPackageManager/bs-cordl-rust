@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct FieldInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
-    pub _field: *mut crate::System::Reflection::FieldInfo,
+    pub _field: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+FieldInstruction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

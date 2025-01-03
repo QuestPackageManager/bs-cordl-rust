@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DerBitString {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::DerStringBase,
-    pub mData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mPadBits: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerBitString")]

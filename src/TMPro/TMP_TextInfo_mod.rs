@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TMP_TextInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub textComponent: *mut crate::TMPro::TMP_Text,
+    pub textComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
     pub characterCount: i32,
     pub spriteCount: i32,
     pub spaceCount: i32,
@@ -12,16 +12,26 @@ pub struct TMP_TextInfo {
     pub lineCount: i32,
     pub pageCount: i32,
     pub materialCount: i32,
-    pub characterInfo: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::TMPro::TMP_CharacterInfo,
+    pub characterInfo: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_CharacterInfo>,
     >,
-    pub wordInfo: *mut quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_WordInfo>,
-    pub linkInfo: *mut quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_LinkInfo>,
-    pub lineInfo: *mut quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_LineInfo>,
-    pub pageInfo: *mut quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_PageInfo>,
-    pub meshInfo: *mut quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_MeshInfo>,
-    pub m_CachedMeshInfo: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::TMPro::TMP_MeshInfo,
+    pub wordInfo: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_WordInfo>,
+    >,
+    pub linkInfo: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_LinkInfo>,
+    >,
+    pub lineInfo: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_LineInfo>,
+    >,
+    pub pageInfo: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_PageInfo>,
+    >,
+    pub meshInfo: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_MeshInfo>,
+    >,
+    pub m_CachedMeshInfo: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_MeshInfo>,
     >,
 }
 #[cfg(feature = "TMPro+TMP_TextInfo")]

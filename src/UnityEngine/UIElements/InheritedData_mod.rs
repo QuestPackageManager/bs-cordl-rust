@@ -1,12 +1,12 @@
 #[cfg(feature = "UnityEngine+UIElements+InheritedData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InheritedData {
     pub color: crate::UnityEngine::Color,
     pub fontSize: crate::UnityEngine::UIElements::Length,
     pub letterSpacing: crate::UnityEngine::UIElements::Length,
     pub textShadow: crate::UnityEngine::UIElements::TextShadow,
-    pub unityFont: *mut crate::UnityEngine::Font,
+    pub unityFont: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     pub unityFontDefinition: crate::UnityEngine::UIElements::FontDefinition,
     pub unityFontStyleAndWeight: crate::UnityEngine::FontStyle,
     pub unityParagraphSpacing: crate::UnityEngine::UIElements::Length,

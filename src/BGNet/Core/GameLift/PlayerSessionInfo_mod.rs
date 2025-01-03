@@ -3,14 +3,16 @@
 #[derive(Debug)]
 pub struct PlayerSessionInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub playerSessionId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub gameSessionId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub dnsName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub playerSessionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub gameSessionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub dnsName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub port: i32,
     pub beatmapLevelSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     pub gameplayServerConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
-    pub privateGameSecret: *mut quest_hook::libil2cpp::Il2CppString,
-    pub privateGameCode: *mut quest_hook::libil2cpp::Il2CppString,
+    pub privateGameSecret: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub privateGameCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "BGNet+Core+GameLift+PlayerSessionInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

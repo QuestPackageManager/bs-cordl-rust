@@ -5,7 +5,9 @@ pub struct TwoPaneSplitViewResizer {
     __cordl_parent: crate::UnityEngine::UIElements::PointerManipulator,
     pub m_Start: crate::UnityEngine::Vector3,
     pub m_Active: bool,
-    pub m_SplitView: *mut crate::UnityEngine::UIElements::TwoPaneSplitView,
+    pub m_SplitView: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TwoPaneSplitView,
+    >,
     pub m_Direction: i32,
 }
 #[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitViewResizer")]

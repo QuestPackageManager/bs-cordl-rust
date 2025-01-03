@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_Scroll_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VREvent_Scroll_t {
     pub xdelta: f32,
     pub ydelta: f32,

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct PlayerSpecificSettingsNetSerializable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub userId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub userName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub leftHanded: bool,
     pub automaticPlayerHeight: bool,
     pub playerHeight: f32,

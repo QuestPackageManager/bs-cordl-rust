@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct OrderedDictionary {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _objectsArray: *mut crate::System::Collections::ArrayList,
-    pub _objectsTable: *mut crate::System::Collections::Hashtable,
+    pub _objectsArray: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _objectsTable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub _initialCapacity: i32,
-    pub _comparer: *mut crate::System::Collections::IEqualityComparer,
+    pub _comparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IEqualityComparer,
+    >,
     pub _readOnly: bool,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _siInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _siInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::SerializationInfo,
+    >,
 }
 #[cfg(feature = "System+Collections+Specialized+OrderedDictionary")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -477,7 +481,9 @@ for crate::System::Collections::Specialized::OrderedDictionary {
 pub struct OrderedDictionary_OrderedDictionaryEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _objectReturnType: i32,
-    pub _arrayEnumerator: *mut crate::System::Collections::IEnumerator,
+    pub _arrayEnumerator: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IEnumerator,
+    >,
 }
 #[cfg(
     feature = "System+Collections+Specialized+OrderedDictionary+OrderedDictionaryEnumerator"
@@ -654,7 +660,7 @@ for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionary
 #[derive(Debug)]
 pub struct OrderedDictionary_OrderedDictionaryKeyValueCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _objects: *mut crate::System::Collections::ArrayList,
+    pub _objects: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _isKeys: bool,
 }
 #[cfg(

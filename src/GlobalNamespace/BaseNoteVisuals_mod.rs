@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct BaseNoteVisuals {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _cutoutAnimateEffect: *mut crate::GlobalNamespace::CutoutAnimateEffect,
-    pub _noteController: *mut crate::GlobalNamespace::NoteControllerBase,
+    pub _cutoutAnimateEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CutoutAnimateEffect,
+    >,
+    pub _noteController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteControllerBase,
+    >,
 }
 #[cfg(feature = "BaseNoteVisuals")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

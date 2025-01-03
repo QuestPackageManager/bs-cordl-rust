@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct JPakeRound2Payload {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub participantId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub a: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub knowledgeProofForX2s: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub participantId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub a: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub knowledgeProofForX2s: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::BigInteger,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakeRound2Payload")]

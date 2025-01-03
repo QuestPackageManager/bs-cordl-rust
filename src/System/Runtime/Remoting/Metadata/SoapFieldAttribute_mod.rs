@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SoapFieldAttribute {
     __cordl_parent: crate::System::Runtime::Remoting::Metadata::SoapAttribute,
-    pub _elementName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _isElement: bool,
 }
 #[cfg(feature = "System+Runtime+Remoting+Metadata+SoapFieldAttribute")]

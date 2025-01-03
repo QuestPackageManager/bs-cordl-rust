@@ -3,17 +3,29 @@
 #[derive(Debug)]
 pub struct AnnotatedBeatmapLevelCollectionsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _annotatedBeatmapLevelCollectionsGridView: *mut crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView,
-    pub _loadingControl: *mut crate::GlobalNamespace::LoadingControl,
-    pub _additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
-    pub didOpenBeatmapLevelCollectionsEvent: *mut crate::System::Action,
-    pub didCloseBeatmapLevelCollectionsEvent: *mut crate::System::Action,
-    pub didSelectAnnotatedBeatmapLevelCollectionEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub _annotatedBeatmapLevelCollectionsGridView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView,
+    >,
+    pub _loadingControl: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LoadingControl,
+    >,
+    pub _additionalContentModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAdditionalContentModel,
+    >,
+    pub didOpenBeatmapLevelCollectionsEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub didCloseBeatmapLevelCollectionsEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub didSelectAnnotatedBeatmapLevelCollectionEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::BeatmapLevelPack>,
     >,
     pub _selectedItemIndex: i32,
-    pub _annotatedBeatmapLevelCollections: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub _annotatedBeatmapLevelCollections: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
+        >,
     >,
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsViewController")]

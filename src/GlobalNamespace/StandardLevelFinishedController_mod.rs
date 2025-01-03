@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct StandardLevelFinishedController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _standardLevelSceneSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-    pub _prepareLevelCompletionResults: *mut crate::GlobalNamespace::PrepareLevelCompletionResults,
-    pub _gameplayManager: *mut crate::GlobalNamespace::ILevelEndActions,
+    pub _standardLevelSceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+    >,
+    pub _prepareLevelCompletionResults: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PrepareLevelCompletionResults,
+    >,
+    pub _gameplayManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILevelEndActions,
+    >,
 }
 #[cfg(feature = "StandardLevelFinishedController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

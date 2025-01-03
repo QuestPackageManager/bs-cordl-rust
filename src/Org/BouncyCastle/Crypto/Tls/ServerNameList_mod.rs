@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ServerNameList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mServerNameList: *mut crate::System::Collections::IList,
+    pub mServerNameList: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+ServerNameList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

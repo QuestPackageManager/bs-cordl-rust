@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct RecipientEncryptedKey {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub identifier: *mut crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientIdentifier,
-    pub encryptedKey: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    pub identifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientIdentifier,
+    >,
+    pub encryptedKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+RecipientEncryptedKey")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

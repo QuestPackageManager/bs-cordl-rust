@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct CompositeExpression {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-    pub _Expressions_k__BackingField: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
+    pub _Expressions_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]

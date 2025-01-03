@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BindingRestrictions_InstanceRestriction {
     __cordl_parent: crate::System::Dynamic::BindingRestrictions,
-    pub _expression: *mut crate::System::Linq::Expressions::Expression,
-    pub _instance: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _expression: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
+    pub _instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions+InstanceRestriction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct SmimeCapability {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub capabilityID: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub parameters: *mut crate::Org::BouncyCastle::Asn1::Asn1Object,
+    pub capabilityID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub parameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Object,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Smime+SmimeCapability")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

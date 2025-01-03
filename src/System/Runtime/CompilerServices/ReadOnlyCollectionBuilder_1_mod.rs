@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ReadOnlyCollectionBuilder_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _items: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub _items: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _size: i32,
     pub _version: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -673,8 +673,8 @@ for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<T> {
 #[derive(Debug)]
 pub struct ReadOnlyCollectionBuilder_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _builder: *mut crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<
-        T,
+    pub _builder: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<T>,
     >,
     pub _version: i32,
     pub _index: i32,

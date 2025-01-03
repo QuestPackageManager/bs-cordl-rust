@@ -48,13 +48,15 @@ for crate::UnityEngine::TextCore::Text::TextResourceManager {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TextResourceManager_FontAssetRef {
     pub nameHashCode: i32,
     pub familyNameHashCode: i32,
     pub styleNameHashCode: i32,
     pub familyNameAndStyleHashCode: i64,
-    pub fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
+    pub fontAsset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::FontAsset,
+    >,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

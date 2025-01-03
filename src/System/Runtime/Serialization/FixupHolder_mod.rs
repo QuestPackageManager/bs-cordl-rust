@@ -4,7 +4,7 @@
 pub struct FixupHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_id: i64,
-    pub m_fixupInfo: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_fixupInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_fixupType: i32,
 }
 #[cfg(feature = "System+Runtime+Serialization+FixupHolder")]

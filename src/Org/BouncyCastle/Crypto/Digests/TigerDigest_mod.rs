@@ -7,9 +7,9 @@ pub struct TigerDigest {
     pub b: i64,
     pub c: i64,
     pub byteCount: i64,
-    pub Buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub bOff: i32,
-    pub x: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+    pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
     pub xOff: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+TigerDigest")]

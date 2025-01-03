@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct Authorization {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Message: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Complete: bool,
-    pub ModuleAuthenticationType: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ModuleAuthenticationType: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Net+Authorization")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

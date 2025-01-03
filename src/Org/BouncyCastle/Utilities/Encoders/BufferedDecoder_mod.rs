@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct BufferedDecoder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub bufOff: i32,
-    pub translator: *mut crate::Org::BouncyCastle::Utilities::Encoders::ITranslator,
+    pub translator: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Encoders::ITranslator,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+BufferedDecoder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

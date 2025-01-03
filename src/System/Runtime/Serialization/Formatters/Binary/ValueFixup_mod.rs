@@ -4,12 +4,14 @@
 pub struct ValueFixup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub valueFixupEnum: crate::System::Runtime::Serialization::Formatters::Binary::ValueFixupEnum,
-    pub arrayObj: *mut crate::System::Array,
-    pub indexMap: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub header: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub memberObject: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub objectInfo: *mut crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
-    pub memberName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub arrayObj: quest_hook::libil2cpp::Gc<crate::System::Array>,
+    pub indexMap: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub header: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub memberObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub objectInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
+    >,
+    pub memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ValueFixup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

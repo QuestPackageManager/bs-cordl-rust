@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AuthenticatedStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub _InnerStream: *mut crate::System::IO::Stream,
+    pub _InnerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _LeaveStreamOpen: bool,
 }
 #[cfg(feature = "System+Net+Security+AuthenticatedStream")]

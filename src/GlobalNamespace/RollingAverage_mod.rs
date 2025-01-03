@@ -5,7 +5,7 @@ pub struct RollingAverage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _currentTotal: i64,
     pub _currentAverage: f32,
-    pub _buffer: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+    pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
     pub _index: i32,
     pub _length: i32,
 }

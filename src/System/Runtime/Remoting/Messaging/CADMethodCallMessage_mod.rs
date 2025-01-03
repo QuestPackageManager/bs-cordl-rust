@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CADMethodCallMessage {
     __cordl_parent: crate::System::Runtime::Remoting::Messaging::CADMessageBase,
-    pub _uri: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+CADMethodCallMessage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

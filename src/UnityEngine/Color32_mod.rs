@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Color32")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Color32 {
     padding: [u8; 4usize],
 }

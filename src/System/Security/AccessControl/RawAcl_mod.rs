@@ -4,8 +4,10 @@
 pub struct RawAcl {
     __cordl_parent: crate::System::Security::AccessControl::GenericAcl,
     pub revision: u8,
-    pub list: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Security::AccessControl::GenericAce,
+    pub list: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Security::AccessControl::GenericAce,
+        >,
     >,
 }
 #[cfg(feature = "System+Security+AccessControl+RawAcl")]

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Hashtable_SyncHashtable {
     __cordl_parent: crate::System::Collections::Hashtable,
-    pub _table: *mut crate::System::Collections::Hashtable,
+    pub _table: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Collections+Hashtable+SyncHashtable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

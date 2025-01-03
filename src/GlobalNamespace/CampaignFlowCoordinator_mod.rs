@@ -3,22 +3,50 @@
 #[derive(Debug)]
 pub struct CampaignFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub _defaultLightsPreset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
-    pub _resultsClearedLightsPreset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
-    pub _resultsFailedLightsPreset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
-    pub _newObjectiveLightsPreset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
-    pub _menuTransitionsHelper: *mut crate::GlobalNamespace::MenuTransitionsHelper,
-    pub _menuLightsManager: *mut crate::GlobalNamespace::MenuLightsManager,
-    pub _missionSelectionNavigationController: *mut crate::GlobalNamespace::MissionSelectionNavigationController,
-    pub _missionResultsViewController: *mut crate::GlobalNamespace::MissionResultsViewController,
-    pub _gameplaySetupViewController: *mut crate::GlobalNamespace::GameplaySetupViewController,
-    pub _missionHelpViewController: *mut crate::GlobalNamespace::MissionHelpViewController,
-    pub _environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _campaignProgressModel: *mut crate::GlobalNamespace::CampaignProgressModel,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub didFinishEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::CampaignFlowCoordinator,
+    pub _defaultLightsPreset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsPresetSO,
+    >,
+    pub _resultsClearedLightsPreset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsPresetSO,
+    >,
+    pub _resultsFailedLightsPreset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsPresetSO,
+    >,
+    pub _newObjectiveLightsPreset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsPresetSO,
+    >,
+    pub _menuTransitionsHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuTransitionsHelper,
+    >,
+    pub _menuLightsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsManager,
+    >,
+    pub _missionSelectionNavigationController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionSelectionNavigationController,
+    >,
+    pub _missionResultsViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionResultsViewController,
+    >,
+    pub _gameplaySetupViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplaySetupViewController,
+    >,
+    pub _missionHelpViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionHelpViewController,
+    >,
+    pub _environmentsListModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentsListModel,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _campaignProgressModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CampaignProgressModel,
+    >,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::CampaignFlowCoordinator>,
     >,
     pub _showCredits: bool,
 }

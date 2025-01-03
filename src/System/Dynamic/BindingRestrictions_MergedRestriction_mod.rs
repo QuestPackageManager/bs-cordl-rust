@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct BindingRestrictions_MergedRestriction {
     __cordl_parent: crate::System::Dynamic::BindingRestrictions,
-    pub Left: *mut crate::System::Dynamic::BindingRestrictions,
-    pub Right: *mut crate::System::Dynamic::BindingRestrictions,
+    pub Left: quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
+    pub Right: quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions+MergedRestriction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

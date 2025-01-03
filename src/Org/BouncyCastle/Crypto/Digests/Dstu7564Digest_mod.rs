@@ -7,12 +7,12 @@ pub struct Dstu7564Digest {
     pub blockSize: i32,
     pub columns: i32,
     pub rounds: i32,
-    pub state: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    pub tempState1: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    pub tempState2: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+    pub state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
+    pub tempState1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
+    pub tempState2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     pub inputBlocks: u64,
     pub bufOff: i32,
-    pub buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Dstu7564Digest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

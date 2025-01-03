@@ -3,24 +3,46 @@
 #[derive(Debug)]
 pub struct AbstractTlsServer {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsPeer,
-    pub mCipherFactory: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
-    pub mContext: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsServerContext,
-    pub mClientVersion: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
-    pub mOfferedCipherSuites: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub mOfferedCompressionMethods: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mClientExtensions: *mut crate::System::Collections::IDictionary,
+    pub mCipherFactory: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCipherFactory,
+    >,
+    pub mContext: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsServerContext,
+    >,
+    pub mClientVersion: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
+    >,
+    pub mOfferedCipherSuites: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub mOfferedCompressionMethods: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub mClientExtensions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IDictionary,
+    >,
     pub mEncryptThenMacOffered: bool,
     pub mMaxFragmentLengthOffered: i16,
     pub mTruncatedHMacOffered: bool,
-    pub mSupportedSignatureAlgorithms: *mut crate::System::Collections::IList,
+    pub mSupportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IList,
+    >,
     pub mEccCipherSuitesOffered: bool,
-    pub mNamedCurves: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub mClientECPointFormats: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mServerECPointFormats: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mServerVersion: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
+    pub mNamedCurves: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub mClientECPointFormats: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub mServerECPointFormats: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub mServerVersion: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
+    >,
     pub mSelectedCipherSuite: i32,
     pub mSelectedCompressionMethod: u8,
-    pub mServerExtensions: *mut crate::System::Collections::IDictionary,
+    pub mServerExtensions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IDictionary,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsServer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

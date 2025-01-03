@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+Settings+Settings")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Settings {
     pub room: crate::BeatSaber::Settings::RoomSettings,
     pub controller: crate::BeatSaber::Settings::ControllerSettings,

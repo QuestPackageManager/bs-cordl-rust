@@ -1,6 +1,6 @@
 #[cfg(feature = "ENet+Packet")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Packet {
     pub nativePacket: crate::System::IntPtr,
 }

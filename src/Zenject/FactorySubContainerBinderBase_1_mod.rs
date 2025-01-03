@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct FactorySubContainerBinderBase_1<TContract: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _BindContainer_k__BackingField: *mut crate::Zenject::DiContainer,
-    pub _FactoryBindInfo_k__BackingField: *mut crate::Zenject::FactoryBindInfo,
-    pub _BindInfo_k__BackingField: *mut crate::Zenject::BindInfo,
-    pub _SubIdentifier_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _BindContainer_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Zenject::DiContainer,
+    >,
+    pub _FactoryBindInfo_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Zenject::FactoryBindInfo,
+    >,
+    pub _BindInfo_k__BackingField: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+    pub _SubIdentifier_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
 #[cfg(feature = "Zenject+FactorySubContainerBinderBase_1")]

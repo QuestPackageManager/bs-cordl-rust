@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct Ed25519PrivateKeyParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub cachedPublicKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::Ed25519PublicKeyParameters,
+    pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub cachedPublicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::Ed25519PublicKeyParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Ed25519PrivateKeyParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

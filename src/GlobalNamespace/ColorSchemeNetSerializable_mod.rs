@@ -1,6 +1,6 @@
 #[cfg(feature = "ColorSchemeNetSerializable")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ColorSchemeNetSerializable {
     pub saberAColor: crate::GlobalNamespace::ColorNoAlphaSerializable,
     pub saberBColor: crate::GlobalNamespace::ColorNoAlphaSerializable,

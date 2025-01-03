@@ -3,29 +3,63 @@
 #[derive(Debug)]
 pub struct __BinaryParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub objectReader: *mut crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
-    pub input: *mut crate::System::IO::Stream,
+    pub objectReader: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
+    >,
+    pub input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub topId: i64,
     pub headerId: i64,
-    pub objectMapIdTable: *mut crate::System::Runtime::Serialization::Formatters::Binary::SizedArray,
-    pub assemIdToAssemblyTable: *mut crate::System::Runtime::Serialization::Formatters::Binary::SizedArray,
-    pub stack: *mut crate::System::Runtime::Serialization::Formatters::Binary::SerStack,
+    pub objectMapIdTable: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::SizedArray,
+    >,
+    pub assemIdToAssemblyTable: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::SizedArray,
+    >,
+    pub stack: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::SerStack,
+    >,
     pub expectedType: crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
-    pub expectedTypeInformation: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub PRS: *mut crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord,
-    pub systemAssemblyInfo: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
-    pub dataReader: *mut crate::System::IO::BinaryReader,
-    pub opPool: *mut crate::System::Runtime::Serialization::Formatters::Binary::SerStack,
-    pub binaryObject: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryObject,
-    pub bowm: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithMap,
-    pub bowmt: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithMapTyped,
-    pub objectString: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectString,
-    pub crossAppDomainString: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryCrossAppDomainString,
-    pub memberPrimitiveTyped: *mut crate::System::Runtime::Serialization::Formatters::Binary::MemberPrimitiveTyped,
-    pub byteBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub memberPrimitiveUnTyped: *mut crate::System::Runtime::Serialization::Formatters::Binary::MemberPrimitiveUnTyped,
-    pub memberReference: *mut crate::System::Runtime::Serialization::Formatters::Binary::MemberReference,
-    pub objectNull: *mut crate::System::Runtime::Serialization::Formatters::Binary::ObjectNull,
+    pub expectedTypeInformation: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub PRS: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord,
+    >,
+    pub systemAssemblyInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
+    >,
+    pub dataReader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
+    pub opPool: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::SerStack,
+    >,
+    pub binaryObject: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::BinaryObject,
+    >,
+    pub bowm: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithMap,
+    >,
+    pub bowmt: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithMapTyped,
+    >,
+    pub objectString: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectString,
+    >,
+    pub crossAppDomainString: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::BinaryCrossAppDomainString,
+    >,
+    pub memberPrimitiveTyped: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::MemberPrimitiveTyped,
+    >,
+    pub byteBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub memberPrimitiveUnTyped: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::MemberPrimitiveUnTyped,
+    >,
+    pub memberReference: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::MemberReference,
+    >,
+    pub objectNull: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::ObjectNull,
+    >,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+__BinaryParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -5,7 +5,9 @@ pub struct MultiplayerConditionalActiveByLayout {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _condition: crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition,
     pub _layout: crate::GlobalNamespace::MultiplayerPlayerLayout,
-    pub _layoutProvider: *mut crate::GlobalNamespace::MultiplayerLayoutProvider,
+    pub _layoutProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLayoutProvider,
+    >,
 }
 #[cfg(feature = "MultiplayerConditionalActiveByLayout")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

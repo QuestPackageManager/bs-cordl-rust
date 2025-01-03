@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct RevocationDetails {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub revDetails: *mut crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
+    pub revDetails: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cmp+RevocationDetails")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct XmlSchemaExternal {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaObject,
-    pub location: *mut quest_hook::libil2cpp::Il2CppString,
-    pub baseUri: *mut crate::System::Uri,
-    pub schema: *mut crate::System::Xml::Schema::XmlSchema,
-    pub id: *mut quest_hook::libil2cpp::Il2CppString,
-    pub moreAttributes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::XmlAttribute,
+    pub location: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub baseUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    pub schema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+    pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub moreAttributes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlAttribute>,
     >,
     pub compositor: crate::System::Xml::Schema::Compositor,
 }

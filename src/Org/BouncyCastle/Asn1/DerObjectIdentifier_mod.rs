@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct DerObjectIdentifier {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Object,
-    pub identifier: *mut quest_hook::libil2cpp::Il2CppString,
-    pub body: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub body: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerObjectIdentifier")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

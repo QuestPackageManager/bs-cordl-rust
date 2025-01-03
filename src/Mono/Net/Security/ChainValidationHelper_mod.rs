@@ -3,15 +3,23 @@
 #[derive(Debug)]
 pub struct ChainValidationHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub owner: *mut crate::System::WeakReference_1<
-        *mut crate::System::Net::Security::SslStream,
+    pub owner: quest_hook::libil2cpp::Gc<
+        crate::System::WeakReference_1<*mut crate::System::Net::Security::SslStream>,
     >,
-    pub settings: *mut crate::Mono::Security::Interface::MonoTlsSettings,
-    pub provider: *mut crate::Mono::Net::Security::MobileTlsProvider,
-    pub certValidationCallback: *mut crate::System::Net::ServerCertValidationCallback,
-    pub certSelectionCallback: *mut crate::System::Net::Security::LocalCertSelectionCallback,
-    pub tlsStream: *mut crate::Mono::Net::Security::MonoTlsStream,
-    pub request: *mut crate::System::Net::HttpWebRequest,
+    pub settings: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Interface::MonoTlsSettings,
+    >,
+    pub provider: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::MobileTlsProvider,
+    >,
+    pub certValidationCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Net::ServerCertValidationCallback,
+    >,
+    pub certSelectionCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Security::LocalCertSelectionCallback,
+    >,
+    pub tlsStream: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MonoTlsStream>,
+    pub request: quest_hook::libil2cpp::Gc<crate::System::Net::HttpWebRequest>,
 }
 #[cfg(feature = "Mono+Net+Security+ChainValidationHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

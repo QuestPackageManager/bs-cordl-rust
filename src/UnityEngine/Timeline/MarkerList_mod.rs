@@ -1,12 +1,16 @@
 #[cfg(feature = "UnityEngine+Timeline+MarkerList")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MarkerList {
-    pub m_Objects: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::ScriptableObject,
+    pub m_Objects: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::ScriptableObject,
+        >,
     >,
-    pub m_Cache: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Timeline::IMarker,
+    pub m_Cache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Timeline::IMarker,
+        >,
     >,
     pub m_CacheDirty: bool,
     pub m_HasNotifications: bool,

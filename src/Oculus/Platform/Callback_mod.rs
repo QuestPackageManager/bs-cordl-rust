@@ -107,7 +107,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Callback {
 #[derive(Debug)]
 pub struct Callback_RequestCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub messageCallback: *mut crate::Oculus::Platform::Message_Callback,
+    pub messageCallback: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Message_Callback,
+    >,
 }
 #[cfg(feature = "Oculus+Platform+Callback+RequestCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -193,7 +195,9 @@ for crate::Oculus::Platform::Callback_RequestCallback {
 #[derive(Debug)]
 pub struct Callback_RequestCallback_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Oculus::Platform::Callback_RequestCallback,
-    pub callback: *mut crate::Oculus::Platform::Message_1_Callback<T>,
+    pub callback: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Message_1_Callback<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "Oculus+Platform+Callback+RequestCallback_1")]

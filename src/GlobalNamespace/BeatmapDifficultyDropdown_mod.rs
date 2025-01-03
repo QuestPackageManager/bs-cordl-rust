@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct BeatmapDifficultyDropdown {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _simpleTextDropdown: *mut crate::HMUI::SimpleTextDropdown,
-    pub didSelectCellWithIdxEvent: *mut crate::System::Action_1<i32>,
-    pub _beatmapDifficultyData: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::System::Tuple_2<
-            crate::GlobalNamespace::BeatmapDifficultyMask,
-            *mut quest_hook::libil2cpp::Il2CppString,
+    pub _simpleTextDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
+    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<i32>,
+    >,
+    pub _beatmapDifficultyData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::System::Tuple_2<
+                crate::GlobalNamespace::BeatmapDifficultyMask,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     >,
     pub _includeAllDifficulties_k__BackingField: bool,

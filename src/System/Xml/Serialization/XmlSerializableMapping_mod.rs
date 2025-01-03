@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct XmlSerializableMapping {
     __cordl_parent: crate::System::Xml::Serialization::XmlTypeMapping,
-    pub _schema: *mut crate::System::Xml::Schema::XmlSchema,
-    pub _schemaType: *mut crate::System::Xml::Schema::XmlSchemaComplexType,
-    pub _schemaTypeName: *mut crate::System::Xml::XmlQualifiedName,
+    pub _schema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+    pub _schemaType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaComplexType,
+    >,
+    pub _schemaTypeName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializableMapping")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

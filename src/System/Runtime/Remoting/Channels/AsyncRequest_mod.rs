@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct AsyncRequest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub ReplySink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    pub MsgRequest: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
+    pub ReplySink: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessageSink,
+    >,
+    pub MsgRequest: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessage,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+AsyncRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

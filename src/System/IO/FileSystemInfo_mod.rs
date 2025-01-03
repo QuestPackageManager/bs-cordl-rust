@@ -4,9 +4,9 @@
 pub struct FileSystemInfo {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub _fileStatus: crate::System::IO::FileStatus,
-    pub FullPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub OriginalPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub FullPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub OriginalPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+IO+FileSystemInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

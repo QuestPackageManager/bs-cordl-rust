@@ -3,11 +3,21 @@
 #[derive(Debug)]
 pub struct RecordingToolSettingsFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub _recordingToolConfigViewController: *mut crate::GlobalNamespace::RecordingToolConfigViewController,
-    pub _recordingToolSettingsViewController: *mut crate::GlobalNamespace::RecordingToolSettingsViewController,
-    pub _recordingToolLoggingViewController: *mut crate::GlobalNamespace::RecordingToolLoggingViewController,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
-    pub _initData: *mut crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData,
+    pub _recordingToolConfigViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecordingToolConfigViewController,
+    >,
+    pub _recordingToolSettingsViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecordingToolSettingsViewController,
+    >,
+    pub _recordingToolLoggingViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecordingToolLoggingViewController,
+    >,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData,
+    >,
 }
 #[cfg(feature = "RecordingToolSettingsFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -124,7 +134,9 @@ for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator {
 #[derive(Debug)]
 pub struct RecordingToolSettingsFlowCoordinator_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub nextScenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    pub nextScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    >,
 }
 #[cfg(feature = "RecordingToolSettingsFlowCoordinator+InitData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

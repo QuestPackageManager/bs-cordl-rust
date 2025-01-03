@@ -6,9 +6,15 @@ pub struct ContinuousFireEffect {
     pub _fadeInDuration: f32,
     pub _fadeOutDuration: f32,
     pub _sustainDuration: f32,
-    pub _flipbookSustainCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _bloomSustainCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _flipbookSustainCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
+    pub _bloomSustainCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
     pub _fadeInEndTime: f32,
     pub _fadeOutStartTime: f32,
     pub _effectStartTime: f32,

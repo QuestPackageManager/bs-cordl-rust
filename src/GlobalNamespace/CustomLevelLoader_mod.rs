@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct CustomLevelLoader {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _defaultEnvironmentInfo: *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-        *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub _defaultEnvironmentInfo: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+            *mut crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
     >,
-    pub _defaultAllDirectionsEnvironmentInfo: *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-        *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub _defaultAllDirectionsEnvironmentInfo: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+            *mut crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
     >,
 }
 #[cfg(feature = "CustomLevelLoader")]

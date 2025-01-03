@@ -3,22 +3,36 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerInGameMenuViewController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _disconnectButton: *mut crate::UnityEngine::UI::Button,
-    pub _disconnectButtonLocalizedText: *mut crate::BGLib::Polyglot::LocalizedTextMeshProUGUI,
-    pub _detailsToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _globalCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
-    pub _mainBar: *mut crate::UnityEngine::GameObject,
-    pub _disconnectPromptView: *mut crate::GlobalNamespace::DisconnectPromptView,
-    pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
-    pub _dontOwnSongGameObject: *mut crate::UnityEngine::GameObject,
-    pub _detailsGameObject: *mut crate::UnityEngine::GameObject,
-    pub _localPlayerInGameMenuInitData: *mut crate::GlobalNamespace::LocalPlayerInGameMenuInitData,
-    pub _disconnectHelper: *mut crate::GlobalNamespace::MultiplayerLocalPlayerDisconnectHelper,
-    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
-    pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
-    pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
-    pub _fadeOutTween: *mut crate::Tweening::Tween,
+    pub _disconnectButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _disconnectButtonLocalizedText: quest_hook::libil2cpp::Gc<
+        crate::BGLib::Polyglot::LocalizedTextMeshProUGUI,
+    >,
+    pub _detailsToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _globalCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+    pub _mainBar: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _disconnectPromptView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DisconnectPromptView,
+    >,
+    pub _levelBar: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelBar>,
+    pub _dontOwnSongGameObject: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _detailsGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _localPlayerInGameMenuInitData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LocalPlayerInGameMenuInitData,
+    >,
+    pub _disconnectHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLocalPlayerDisconnectHelper,
+    >,
+    pub _multiplayerController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerController,
+    >,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::TimeTweeningManager,
+    >,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
+    pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
+    pub _fadeOutTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween>,
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerInGameMenuViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

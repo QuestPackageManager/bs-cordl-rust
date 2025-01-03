@@ -3,16 +3,18 @@
 #[derive(Debug)]
 pub struct Scrollbar {
     __cordl_parent: crate::UnityEngine::UI::Selectable,
-    pub m_HandleRect: *mut crate::UnityEngine::RectTransform,
+    pub m_HandleRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_Direction: crate::UnityEngine::UI::Scrollbar_Direction,
     pub m_Value: f32,
     pub m_Size: f32,
     pub m_NumberOfSteps: i32,
-    pub m_OnValueChanged: *mut crate::UnityEngine::UI::Scrollbar_ScrollEvent,
-    pub m_ContainerRect: *mut crate::UnityEngine::RectTransform,
+    pub m_OnValueChanged: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Scrollbar_ScrollEvent,
+    >,
+    pub m_ContainerRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_Offset: crate::UnityEngine::Vector2,
     pub m_Tracker: crate::UnityEngine::DrivenRectTransformTracker,
-    pub m_PointerDownRepeat: *mut crate::UnityEngine::Coroutine,
+    pub m_PointerDownRepeat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
     pub isPointerDownAndNotDragging: bool,
     pub m_DelayedUpdateVisuals: bool,
 }

@@ -3,44 +3,64 @@
 #[derive(Debug)]
 pub struct FSharpUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _ofSeq: *mut crate::System::Reflection::MethodInfo,
-    pub _mapType: *mut crate::System::Type,
-    pub _FSharpCoreAssembly_k__BackingField: *mut crate::System::Reflection::Assembly,
-    pub _IsUnion_k__BackingField: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _ofSeq: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    pub _mapType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _FSharpCoreAssembly_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::Assembly,
     >,
-    pub _GetUnionCases_k__BackingField: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _IsUnion_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::MethodCall_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
-    pub _PreComputeUnionTagReader_k__BackingField: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _GetUnionCases_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::MethodCall_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
-    pub _PreComputeUnionReader_k__BackingField: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _PreComputeUnionTagReader_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::MethodCall_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
-    pub _PreComputeUnionConstructor_k__BackingField: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _PreComputeUnionReader_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::MethodCall_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
-    pub _GetUnionCaseInfoDeclaringType_k__BackingField: *mut crate::System::Func_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _PreComputeUnionConstructor_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::MethodCall_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
-    pub _GetUnionCaseInfoName_k__BackingField: *mut crate::System::Func_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _GetUnionCaseInfoDeclaringType_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
-    pub _GetUnionCaseInfoTag_k__BackingField: *mut crate::System::Func_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _GetUnionCaseInfoName_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
-    pub _GetUnionCaseInfoFields_k__BackingField: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _GetUnionCaseInfoTag_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    >,
+    pub _GetUnionCaseInfoFields_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::MethodCall_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+FSharpUtils")]

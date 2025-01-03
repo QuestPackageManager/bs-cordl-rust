@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ClientContextTerminatorSink {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _context: *mut crate::System::Runtime::Remoting::Contexts::Context,
+    pub _context: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Contexts::Context,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+ClientContextTerminatorSink")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

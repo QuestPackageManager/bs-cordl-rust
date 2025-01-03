@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct SynchronizedActionQueue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _synchronizedActionQueue: *mut crate::System::Collections::Generic::List_1<
-        crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction,
+    pub _synchronizedActionQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction,
+        >,
     >,
 }
 #[cfg(feature = "SynchronizedActionQueue")]
@@ -92,10 +94,10 @@ for crate::GlobalNamespace::SynchronizedActionQueue {
 }
 #[cfg(feature = "SynchronizedActionQueue+SynchronizedAction")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SynchronizedActionQueue_SynchronizedAction {
     pub _cordl_time: f32,
-    pub action: *mut crate::System::Action,
+    pub action: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "SynchronizedActionQueue+SynchronizedAction")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

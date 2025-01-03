@@ -4,10 +4,10 @@
 pub struct ParameterInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub AttrsImpl: crate::System::Reflection::ParameterAttributes,
-    pub ClassImpl: *mut crate::System::Type,
-    pub DefaultValueImpl: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub MemberImpl: *mut crate::System::Reflection::MemberInfo,
-    pub NameImpl: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ClassImpl: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub DefaultValueImpl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub MemberImpl: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    pub NameImpl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub PositionImpl: i32,
 }
 #[cfg(feature = "System+Reflection+ParameterInfo")]

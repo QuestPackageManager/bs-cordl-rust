@@ -3,11 +3,21 @@
 #[derive(Debug)]
 pub struct DTSweepDebugContext {
     __cordl_parent: crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext,
-    pub _primaryTriangle: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-    pub _secondaryTriangle: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-    pub _activePoint: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-    pub _activeNode: *mut crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-    pub _activeConstraint: *mut crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+    pub _primaryTriangle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+    >,
+    pub _secondaryTriangle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+    >,
+    pub _activePoint: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    >,
+    pub _activeNode: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+    >,
+    pub _activeConstraint: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+    >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepDebugContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

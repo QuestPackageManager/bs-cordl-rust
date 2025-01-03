@@ -7,7 +7,7 @@ pub struct Task_DelayPromise {
     >,
     pub Token: crate::System::Threading::CancellationToken,
     pub Registration: crate::System::Threading::CancellationTokenRegistration,
-    pub Timer: *mut crate::System::Threading::Timer,
+    pub Timer: quest_hook::libil2cpp::Gc<crate::System::Threading::Timer>,
 }
 #[cfg(feature = "System+Threading+Tasks+Task+DelayPromise")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

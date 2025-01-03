@@ -3,17 +3,23 @@
 #[derive(Debug)]
 pub struct EventSystem {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
-    pub m_SystemInputModules: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::EventSystems::BaseInputModule,
+    pub m_SystemInputModules: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::EventSystems::BaseInputModule,
+        >,
     >,
-    pub m_CurrentInputModule: *mut crate::UnityEngine::EventSystems::BaseInputModule,
-    pub m_FirstSelected: *mut crate::UnityEngine::GameObject,
+    pub m_CurrentInputModule: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::BaseInputModule,
+    >,
+    pub m_FirstSelected: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_sendNavigationEvents: bool,
     pub m_DragThreshold: i32,
-    pub m_CurrentSelected: *mut crate::UnityEngine::GameObject,
+    pub m_CurrentSelected: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_HasFocus: bool,
     pub m_SelectionGuard: bool,
-    pub m_DummyData: *mut crate::UnityEngine::EventSystems::BaseEventData,
+    pub m_DummyData: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::BaseEventData,
+    >,
     pub m_Started: bool,
     pub m_IsTrackingUIToolkitPanels: bool,
 }
@@ -447,9 +453,11 @@ for crate::UnityEngine::EventSystems::EventSystem {
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventSystem+UIToolkitOverrideConfig")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct EventSystem_UIToolkitOverrideConfig {
-    pub activeEventSystem: *mut crate::UnityEngine::EventSystems::EventSystem,
+    pub activeEventSystem: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::EventSystem,
+    >,
     pub sendEvents: bool,
     pub createPanelGameObjectsOnStart: bool,
 }

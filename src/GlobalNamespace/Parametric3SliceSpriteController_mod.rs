@@ -16,8 +16,8 @@ pub struct Parametric3SliceSpriteController {
     pub widthEnd: f32,
     pub _useCollision_k__BackingField: bool,
     pub _collisionLength_k__BackingField: f32,
-    pub _meshRenderer: *mut crate::UnityEngine::MeshRenderer,
-    pub _meshFilter: *mut crate::UnityEngine::MeshFilter,
+    pub _meshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+    pub _meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
     pub _isInitialized: bool,
 }
 #[cfg(feature = "Parametric3SliceSpriteController")]

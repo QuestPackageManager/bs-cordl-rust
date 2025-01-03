@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct GlvTypeBEndomorphism {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_parameters: *mut crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBParameters,
-    pub m_pointMap: *mut crate::Org::BouncyCastle::Math::EC::ECPointMap,
+    pub m_parameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Endo::GlvTypeBParameters,
+    >,
+    pub m_pointMap: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::ECPointMap,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+GlvTypeBEndomorphism")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

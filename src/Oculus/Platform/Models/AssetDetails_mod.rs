@@ -4,13 +4,17 @@
 pub struct AssetDetails {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub AssetId: u64,
-    pub AssetType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub DownloadStatus: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Filepath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub IapStatus: *mut quest_hook::libil2cpp::Il2CppString,
-    pub LanguageOptional: *mut crate::Oculus::Platform::Models::LanguagePackInfo,
-    pub Language: *mut crate::Oculus::Platform::Models::LanguagePackInfo,
-    pub Metadata: *mut quest_hook::libil2cpp::Il2CppString,
+    pub AssetType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub DownloadStatus: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Filepath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub IapStatus: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub LanguageOptional: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::LanguagePackInfo,
+    >,
+    pub Language: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::LanguagePackInfo,
+    >,
+    pub Metadata: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Oculus+Platform+Models+AssetDetails")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

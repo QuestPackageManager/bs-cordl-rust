@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct RoleSyntax {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub roleAuthority: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
-    pub roleName: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    pub roleAuthority: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+    >,
+    pub roleName: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+RoleSyntax")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

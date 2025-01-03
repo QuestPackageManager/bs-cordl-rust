@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PlayerMissionStatsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _missionId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _missionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cleared: bool,
 }
 #[cfg(feature = "PlayerMissionStatsData")]

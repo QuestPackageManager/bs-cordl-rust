@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct ChameleonKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub targetNS: *mut quest_hook::libil2cpp::Il2CppString,
-    pub chameleonLocation: *mut crate::System::Uri,
-    pub originalSchema: *mut crate::System::Xml::Schema::XmlSchema,
+    pub targetNS: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub chameleonLocation: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    pub originalSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     pub hashCode: i32,
 }
 #[cfg(feature = "System+Xml+Schema+ChameleonKey")]

@@ -3,14 +3,16 @@
 #[derive(Debug)]
 pub struct ExpandoClass {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _keys: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _keys: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _hashCode: i32,
-    pub _transitions: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::WeakReference,
+    pub _transitions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::System::WeakReference,
+            >,
         >,
     >,
 }

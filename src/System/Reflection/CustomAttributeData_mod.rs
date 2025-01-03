@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct CustomAttributeData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub ctorInfo: *mut crate::System::Reflection::ConstructorInfo,
-    pub ctorArgs: *mut crate::System::Collections::Generic::IList_1<
-        crate::System::Reflection::CustomAttributeTypedArgument,
+    pub ctorInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
+    pub ctorArgs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            crate::System::Reflection::CustomAttributeTypedArgument,
+        >,
     >,
-    pub namedArgs: *mut crate::System::Collections::Generic::IList_1<
-        crate::System::Reflection::CustomAttributeNamedArgument,
+    pub namedArgs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            crate::System::Reflection::CustomAttributeNamedArgument,
+        >,
     >,
-    pub lazyData: *mut crate::System::Reflection::CustomAttributeData_LazyCAttrData,
+    pub lazyData: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::CustomAttributeData_LazyCAttrData,
+    >,
 }
 #[cfg(feature = "System+Reflection+CustomAttributeData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -379,7 +385,7 @@ for crate::System::Reflection::CustomAttributeData {
 #[derive(Debug)]
 pub struct CustomAttributeData_LazyCAttrData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub assembly: *mut crate::System::Reflection::Assembly,
+    pub assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
     pub data: crate::System::IntPtr,
     pub data_length: u32,
 }

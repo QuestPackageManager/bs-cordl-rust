@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct HEU_InputHDAInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _pendingGO: *mut crate::UnityEngine::GameObject,
-    pub _connectedGO: *mut crate::UnityEngine::GameObject,
+    pub _pendingGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _connectedGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _connectedInputNodeID: i32,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputHDAInfo")]

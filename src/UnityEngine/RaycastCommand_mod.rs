@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+RaycastCommand")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RaycastCommand {
     pub _from_k__BackingField: crate::UnityEngine::Vector3,
     pub _direction_k__BackingField: crate::UnityEngine::Vector3,

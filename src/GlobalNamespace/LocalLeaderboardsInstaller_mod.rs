@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct LocalLeaderboardsInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _localLeaderboardsSettings: *mut crate::GlobalNamespace::LocalLeaderboardsSettingsSO,
+    pub _localLeaderboardsSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LocalLeaderboardsSettingsSO,
+    >,
 }
 #[cfg(feature = "LocalLeaderboardsInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

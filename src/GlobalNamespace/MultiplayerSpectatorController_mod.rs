@@ -3,15 +3,25 @@
 #[derive(Debug)]
 pub struct MultiplayerSpectatorController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _spotManager: *mut crate::GlobalNamespace::MultiplayerSpectatingSpotManager,
-    pub _songController: *mut crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController,
-    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
-    pub _fadeInOutController: *mut crate::GlobalNamespace::FadeInOutController,
-    pub spectatingSpotDidChangeEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+    pub _spotManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerSpectatingSpotManager,
     >,
-    pub _transform: *mut crate::UnityEngine::Transform,
-    pub _currentSpot: *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+    pub _songController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController,
+    >,
+    pub _multiplayerController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerController,
+    >,
+    pub _fadeInOutController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FadeInOutController,
+    >,
+    pub spectatingSpotDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
+    >,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _currentSpot: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+    >,
 }
 #[cfg(feature = "MultiplayerSpectatorController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

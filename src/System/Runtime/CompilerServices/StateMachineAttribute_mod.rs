@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct StateMachineAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _StateMachineType_k__BackingField: *mut crate::System::Type,
+    pub _StateMachineType_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Type,
+    >,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+StateMachineAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

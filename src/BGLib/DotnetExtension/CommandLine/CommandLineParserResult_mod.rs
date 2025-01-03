@@ -1,14 +1,18 @@
 #[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParserResult")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CommandLineParserResult {
-    pub applicationPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _parsed: *mut crate::System::Collections::Generic::IReadOnlyDictionary_2<
-        crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub applicationPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _parsed: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyDictionary_2<
+            crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub unexpectedArguments: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub unexpectedArguments: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParserResult")]

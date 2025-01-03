@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct NoteDebrisRigidbodyPhysics {
     __cordl_parent: crate::GlobalNamespace::NoteDebrisPhysics,
-    pub _rigidbody: *mut crate::UnityEngine::Rigidbody,
-    pub _simplePhysics: *mut crate::GlobalNamespace::NoteDebrisSimplePhysics,
+    pub _rigidbody: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rigidbody>,
+    pub _simplePhysics: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteDebrisSimplePhysics,
+    >,
     pub _firstUpdate: bool,
 }
 #[cfg(feature = "NoteDebrisRigidbodyPhysics")]

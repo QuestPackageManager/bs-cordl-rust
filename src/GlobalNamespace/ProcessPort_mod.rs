@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct ProcessPort {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _processName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _processName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _processId_k__BackingField: i32,
-    pub _portNumber_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _protocol_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _portNumber_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _protocol_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "ProcessPort")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

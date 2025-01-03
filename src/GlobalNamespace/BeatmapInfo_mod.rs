@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BeatmapInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _characteristic_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _characteristic_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _difficulties_k__BackingField: crate::GlobalNamespace::BeatmapDifficultyMask,
 }
 #[cfg(feature = "BeatmapInfo")]

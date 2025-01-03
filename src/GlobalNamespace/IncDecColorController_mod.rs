@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct IncDecColorController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _stepValuePicker: *mut crate::GlobalNamespace::ColorStepValuePicker,
+    pub _stepValuePicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorStepValuePicker,
+    >,
 }
 #[cfg(feature = "IncDecColorController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

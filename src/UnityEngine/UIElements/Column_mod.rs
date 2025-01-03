@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct Column {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Title: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Icon: crate::UnityEngine::UIElements::Background,
     pub m_Visible: bool,
     pub m_Width: crate::UnityEngine::UIElements::Length,
@@ -15,39 +15,41 @@ pub struct Column {
     pub m_Sortable: bool,
     pub m_Optional: bool,
     pub m_Resizable: bool,
-    pub m_MakeHeader: *mut crate::System::Func_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_MakeHeader: quest_hook::libil2cpp::Gc<
+        crate::System::Func_1<*mut crate::UnityEngine::UIElements::VisualElement>,
     >,
-    pub m_BindHeader: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_BindHeader: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::UIElements::VisualElement>,
     >,
-    pub m_UnbindHeader: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_UnbindHeader: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::UIElements::VisualElement>,
     >,
-    pub m_DestroyHeader: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_DestroyHeader: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::UIElements::VisualElement>,
     >,
-    pub m_MakeCell: *mut crate::System::Func_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_MakeCell: quest_hook::libil2cpp::Gc<
+        crate::System::Func_1<*mut crate::UnityEngine::UIElements::VisualElement>,
     >,
-    pub m_BindCell: *mut crate::System::Action_2<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-        i32,
+    pub m_BindCell: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::UnityEngine::UIElements::VisualElement, i32>,
     >,
-    pub m_UnbindCellItem: *mut crate::System::Action_2<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-        i32,
+    pub m_UnbindCellItem: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::UnityEngine::UIElements::VisualElement, i32>,
     >,
-    pub _destroyCell_k__BackingField: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub _destroyCell_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::UIElements::VisualElement>,
     >,
-    pub _collection_k__BackingField: *mut crate::UnityEngine::UIElements::Columns,
-    pub changed: *mut crate::System::Action_2<
-        *mut crate::UnityEngine::UIElements::Column,
-        crate::UnityEngine::UIElements::ColumnDataType,
+    pub _collection_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Columns,
     >,
-    pub resized: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::Column,
+    pub changed: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::UnityEngine::UIElements::Column,
+            crate::UnityEngine::UIElements::ColumnDataType,
+        >,
+    >,
+    pub resized: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::UIElements::Column>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Column")]
@@ -710,18 +712,42 @@ for crate::UnityEngine::UIElements::Column_UxmlObjectFactory_1<T> {
 #[derive(Debug)]
 pub struct Column_UxmlObjectTraits_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlObjectTraits_1<T>,
-    pub m_Name: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_Text: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_Visible: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_Width: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_MinWidth: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_MaxWidth: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_Stretch: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_Sortable: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_Optional: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_Resizable: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_HeaderTemplateId: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_CellTemplateId: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_Name: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_Text: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_Visible: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_Width: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_MinWidth: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_MaxWidth: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_Stretch: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_Sortable: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_Optional: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_Resizable: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_HeaderTemplateId: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_CellTemplateId: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+UIElements+Column+UxmlObjectTraits_1")]

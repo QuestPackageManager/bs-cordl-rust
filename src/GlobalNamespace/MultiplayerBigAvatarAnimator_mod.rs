@@ -4,11 +4,13 @@
 pub struct MultiplayerBigAvatarAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _displayedScale: f32,
-    pub _hologramRays: *mut crate::GlobalNamespace::HologramRays,
-    pub _avatarTransform: *mut crate::UnityEngine::Transform,
-    pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub _scaleUpTween: *mut crate::Tweening::Tween_1<f32>,
-    pub _scaleDownTween: *mut crate::Tweening::Tween_1<f32>,
+    pub _hologramRays: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HologramRays>,
+    pub _avatarTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::TimeTweeningManager,
+    >,
+    pub _scaleUpTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _scaleDownTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
     pub _initialized: bool,
 }
 #[cfg(feature = "MultiplayerBigAvatarAnimator")]

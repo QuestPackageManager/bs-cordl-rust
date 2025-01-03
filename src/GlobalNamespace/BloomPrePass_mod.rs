@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct BloomPrePass {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _bloomPrepassRenderer: *mut crate::GlobalNamespace::BloomPrePassRendererSO,
-    pub _bloomPrePassEffectContainer: *mut crate::GlobalNamespace::BloomPrePassEffectContainerSO,
-    pub _bloomPrePassRenderData: *mut crate::GlobalNamespace::BloomPrePassRenderDataSO,
+    pub _bloomPrepassRenderer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassRendererSO,
+    >,
+    pub _bloomPrePassEffectContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassEffectContainerSO,
+    >,
+    pub _bloomPrePassRenderData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassRenderDataSO,
+    >,
     pub _mode: crate::GlobalNamespace::BloomPrePass_Mode,
-    pub _renderData: *mut crate::GlobalNamespace::BloomPrePassRenderDataSO_Data,
+    pub _renderData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassRenderDataSO_Data,
+    >,
 }
 #[cfg(feature = "BloomPrePass")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

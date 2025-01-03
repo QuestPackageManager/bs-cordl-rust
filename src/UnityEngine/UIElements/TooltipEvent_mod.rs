@@ -5,7 +5,9 @@ pub struct TooltipEvent {
     __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<
         *mut crate::UnityEngine::UIElements::TooltipEvent,
     >,
-    pub _tooltip_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _tooltip_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _rect_k__BackingField: crate::UnityEngine::Rect,
 }
 #[cfg(feature = "UnityEngine+UIElements+TooltipEvent")]

@@ -3,30 +3,40 @@
 #[derive(Debug)]
 pub struct NetworkPlayerModel_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::BaseNetworkPlayerModel,
-    pub _platformUserModel: *mut crate::GlobalNamespace::IPlatformUserModel,
-    pub _authenticationTokenProviderTask: *mut crate::System::Threading::Tasks::Task_1<
-        *mut crate::GlobalNamespace::IAuthenticationTokenProvider,
+    pub _platformUserModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IPlatformUserModel,
     >,
-    pub _localPlayer: *mut crate::GlobalNamespace::NetworkPlayerModel_1_NetworkPlayer<T>,
+    pub _authenticationTokenProviderTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::IAuthenticationTokenProvider,
+        >,
+    >,
+    pub _localPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NetworkPlayerModel_1_NetworkPlayer<T>,
+    >,
     pub _networkingFailed: bool,
     pub _masterServerUnreachable: bool,
     pub _currentPlayerCount: i32,
-    pub partySizeChangedEvent: *mut crate::System::Action_1<i32>,
-    pub partyRefreshingEvent: *mut crate::System::Action,
-    pub partyChangedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::INetworkPlayerModel,
+    pub partySizeChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    pub partyRefreshingEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub partyChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayerModel>,
     >,
-    pub joinRequestedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::INetworkPlayer,
+    pub joinRequestedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
     >,
-    pub inviteRequestedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::INetworkPlayer,
+    pub inviteRequestedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
     >,
-    pub _partyPlayers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::NetworkPlayerModel_1_NetworkPlayer<T>,
+    pub _partyPlayers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::NetworkPlayerModel_1_NetworkPlayer<T>,
+        >,
     >,
-    pub _publicServers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::NetworkPlayerModel_1_NetworkServer<T>,
+    pub _publicServers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::NetworkPlayerModel_1_NetworkServer<T>,
+        >,
     >,
     pub _lastServerRefresh: f32,
     pub _isRefreshing: bool,
@@ -872,8 +882,8 @@ pub struct NetworkPlayerModel_1_JoinMatchmakingPartyConfig<
     T: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig,
-    pub secret: *mut quest_hook::libil2cpp::Il2CppString,
-    pub code: *mut quest_hook::libil2cpp::Il2CppString,
+    pub secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "NetworkPlayerModel_1+JoinMatchmakingPartyConfig")]
@@ -972,8 +982,12 @@ impl<
 #[derive(Debug)]
 pub struct NetworkPlayerModel_1_NetworkPlayer<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _playerModel: *mut crate::GlobalNamespace::NetworkPlayerModel_1<T>,
-    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _playerModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NetworkPlayerModel_1<T>,
+    >,
+    pub _connectedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "NetworkPlayerModel_1+NetworkPlayer")]
@@ -1416,8 +1430,10 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkPlayer<T> {
 #[derive(Debug)]
 pub struct NetworkPlayerModel_1_NetworkServer<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _playerModel: *mut crate::GlobalNamespace::NetworkPlayerModel_1<T>,
-    pub _code: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _playerModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NetworkPlayerModel_1<T>,
+    >,
+    pub _code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     pub _configuration: crate::GlobalNamespace::GameplayServerConfiguration,
     pub _currentPlayerCount: i32,

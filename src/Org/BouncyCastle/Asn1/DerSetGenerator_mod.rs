@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DerSetGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::DerGenerator,
-    pub _bOut: *mut crate::System::IO::MemoryStream,
+    pub _bOut: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerSetGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct Tree {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub dyn_tree: *mut quest_hook::libil2cpp::Il2CppArray<i16>,
+    pub dyn_tree: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
     pub max_code: i32,
-    pub stat_desc: *mut crate::Org::BouncyCastle::Utilities::Zlib::StaticTree,
+    pub stat_desc: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Zlib::StaticTree,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+Tree")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -5,17 +5,21 @@ pub struct CleanBundleCacheOperation {
     __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         bool,
     >,
-    pub m_Addressables: *mut crate::UnityEngine::AddressableAssets::AddressablesImpl,
+    pub m_Addressables: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AddressablesImpl,
+    >,
     pub m_DepOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         *mut crate::System::Collections::Generic::IList_1<
             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     >,
-    pub m_CacheDirsForRemoval: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_CacheDirsForRemoval: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub m_EnumerationThread: *mut crate::System::Threading::Thread,
-    pub m_BaseCachePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_EnumerationThread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
+    pub m_BaseCachePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_UseMultiThreading: bool,
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+CleanBundleCacheOperation")]

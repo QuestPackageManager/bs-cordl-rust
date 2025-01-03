@@ -3,24 +3,40 @@
 #[derive(Debug)]
 pub struct VRPointer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _leftVRController: *mut crate::GlobalNamespace::VRController,
-    pub _rightVRController: *mut crate::GlobalNamespace::VRController,
-    pub _laserPointerPrefab: *mut crate::VRUIControls::VRLaserPointer,
-    pub _cursorPrefab: *mut crate::UnityEngine::Transform,
+    pub _leftVRController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VRController,
+    >,
+    pub _rightVRController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VRController,
+    >,
+    pub _laserPointerPrefab: quest_hook::libil2cpp::Gc<
+        crate::VRUIControls::VRLaserPointer,
+    >,
+    pub _cursorPrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _defaultLaserPointerLength: f32,
     pub _laserPointerWidth: f32,
-    pub lastUsedControllerChangedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::VRController,
+    pub lastUsedControllerChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::VRController>,
     >,
-    pub _currentPointerData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-    pub _laserPointer: *mut crate::VRUIControls::VRLaserPointer,
-    pub _cursorTransform: *mut crate::UnityEngine::Transform,
-    pub _leftLaserPointer: *mut crate::VRUIControls::VRLaserPointer,
-    pub _rightLaserPointer: *mut crate::VRUIControls::VRLaserPointer,
-    pub _leftCursorTransform: *mut crate::UnityEngine::Transform,
-    pub _rightCursorTransform: *mut crate::UnityEngine::Transform,
-    pub _eventSystem: *mut crate::UnityEngine::EventSystems::EventSystem,
-    pub _lastSelectedVrController: *mut crate::GlobalNamespace::VRController,
+    pub _currentPointerData: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::PointerEventData,
+    >,
+    pub _laserPointer: quest_hook::libil2cpp::Gc<crate::VRUIControls::VRLaserPointer>,
+    pub _cursorTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _leftLaserPointer: quest_hook::libil2cpp::Gc<
+        crate::VRUIControls::VRLaserPointer,
+    >,
+    pub _rightLaserPointer: quest_hook::libil2cpp::Gc<
+        crate::VRUIControls::VRLaserPointer,
+    >,
+    pub _leftCursorTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _rightCursorTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _eventSystem: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::EventSystem,
+    >,
+    pub _lastSelectedVrController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VRController,
+    >,
     pub _lastSelectedControllerWasRight: bool,
     pub _rightControllerWasReleased: bool,
     pub _leftControllerWasReleased: bool,

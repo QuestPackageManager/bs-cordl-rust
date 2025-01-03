@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct HMac {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     pub digestSize: i32,
     pub blockLength: i32,
-    pub ipadState: *mut crate::Org::BouncyCastle::Utilities::IMemoable,
-    pub opadState: *mut crate::Org::BouncyCastle::Utilities::IMemoable,
-    pub inputPad: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub outputBuf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub ipadState: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IMemoable,
+    >,
+    pub opadState: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::IMemoable,
+    >,
+    pub inputPad: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub outputBuf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+HMac")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct Mirror {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _mirrorRenderer: *mut crate::GlobalNamespace::MirrorRendererSO,
-    pub _renderer: *mut crate::UnityEngine::MeshRenderer,
-    pub _mirrorMaterial: *mut crate::UnityEngine::Material,
-    pub _noMirrorMaterial: *mut crate::UnityEngine::Material,
+    pub _mirrorRenderer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MirrorRendererSO,
+    >,
+    pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+    pub _mirrorMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _noMirrorMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _isEnabled_k__BackingField: bool,
-    pub mirrorDidChangeEnabledStateEvent: *mut crate::System::Action_1<bool>,
+    pub mirrorDidChangeEnabledStateEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<bool>,
+    >,
 }
 #[cfg(feature = "Mirror")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

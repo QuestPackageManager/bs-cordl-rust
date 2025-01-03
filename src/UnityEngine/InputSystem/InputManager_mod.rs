@@ -10,20 +10,28 @@ pub struct InputManager {
     pub m_Interactions: crate::UnityEngine::InputSystem::Utilities::TypeTable,
     pub m_Composites: crate::UnityEngine::InputSystem::Utilities::TypeTable,
     pub m_DevicesCount: i32,
-    pub m_Devices: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
+    pub m_Devices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        >,
     >,
-    pub m_DevicesById: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::UnityEngine::InputSystem::InputDevice,
+    pub m_DevicesById: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        >,
     >,
     pub m_AvailableDeviceCount: i32,
-    pub m_AvailableDevices: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::InputManager_AvailableDevice,
+    pub m_AvailableDevices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::InputManager_AvailableDevice,
+        >,
     >,
     pub m_DisconnectedDevicesCount: i32,
-    pub m_DisconnectedDevices: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
+    pub m_DisconnectedDevices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        >,
     >,
     pub m_UpdateMask: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
     pub m_CurrentUpdate: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
@@ -71,14 +79,22 @@ pub struct InputManager {
     pub m_HaveDevicesWithStateCallbackReceivers: bool,
     pub m_HasFocus: bool,
     pub m_InputEventStream: crate::UnityEngine::InputSystem::LowLevel::InputEventStream,
-    pub m_DeviceFindExecuteCommandDelegate: *mut crate::UnityEngine::InputSystem::LowLevel::InputDeviceExecuteCommandDelegate,
+    pub m_DeviceFindExecuteCommandDelegate: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::InputDeviceExecuteCommandDelegate,
+    >,
     pub m_DeviceFindExecuteCommandDeviceId: i32,
-    pub m_Runtime: *mut crate::UnityEngine::InputSystem::LowLevel::IInputRuntime,
+    pub m_Runtime: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputRuntime,
+    >,
     pub m_Metrics: crate::UnityEngine::InputSystem::LowLevel::InputMetrics,
-    pub m_Settings: *mut crate::UnityEngine::InputSystem::InputSettings,
+    pub m_Settings: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputSettings,
+    >,
     pub m_ShouldMakeCurrentlyUpdatingDeviceCurrent: bool,
-    pub m_StateChangeMonitors: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorsForDevice,
+    pub m_StateChangeMonitors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorsForDevice,
+        >,
     >,
     pub m_StateChangeMonitorTimeouts: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
         crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout,
@@ -1787,7 +1803,7 @@ for crate::UnityEngine::InputSystem::InputManager {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputManager_AvailableDevice {
     pub description: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
     pub deviceId: i32,
@@ -1829,10 +1845,14 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorListener")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputManager_StateChangeMonitorListener {
-    pub control: *mut crate::UnityEngine::InputSystem::InputControl,
-    pub monitor: *mut crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
+    pub control: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputControl,
+    >,
+    pub monitor: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
+    >,
     pub monitorIndex: i64,
     pub groupIndex: u32,
 }
@@ -1857,11 +1877,15 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {
 impl crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {}
 #[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputManager_StateChangeMonitorTimeout {
-    pub control: *mut crate::UnityEngine::InputSystem::InputControl,
+    pub control: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputControl,
+    >,
     pub _cordl_time: f64,
-    pub monitor: *mut crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
+    pub monitor: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
+    >,
     pub monitorIndex: i64,
     pub timerIndex: i32,
 }
@@ -1886,13 +1910,17 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {
 impl crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {}
 #[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorsForDevice")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputManager_StateChangeMonitorsForDevice {
-    pub memoryRegions: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion,
+    pub memoryRegions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion,
+        >,
     >,
-    pub listeners: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener,
+    pub listeners: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener,
+        >,
     >,
     pub signalled: crate::UnityEngine::InputSystem::DynamicBitfield,
     pub needToUpdateOrderingOfMonitors: bool,

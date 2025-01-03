@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct FixedBufferAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _ElementType_k__BackingField: *mut crate::System::Type,
+    pub _ElementType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _Length_k__BackingField: i32,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+FixedBufferAttribute")]

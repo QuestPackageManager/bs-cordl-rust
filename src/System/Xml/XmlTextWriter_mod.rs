@@ -3,36 +3,40 @@
 #[derive(Debug)]
 pub struct XmlTextWriter {
     __cordl_parent: crate::System::Xml::XmlWriter,
-    pub textWriter: *mut crate::System::IO::TextWriter,
-    pub xmlEncoder: *mut crate::System::Xml::XmlTextEncoder,
-    pub encoding: *mut crate::System::Text::Encoding,
+    pub textWriter: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
+    pub xmlEncoder: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextEncoder>,
+    pub encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     pub formatting: crate::System::Xml::Formatting,
     pub indented: bool,
     pub indentation: i32,
     pub indentChar: char,
-    pub stack: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::XmlTextWriter_TagInfo,
+    pub stack: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Xml::XmlTextWriter_TagInfo>,
     >,
     pub top: i32,
-    pub stateTable: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::XmlTextWriter_State,
+    pub stateTable: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Xml::XmlTextWriter_State>,
     >,
     pub currentState: crate::System::Xml::XmlTextWriter_State,
     pub lastToken: crate::System::Xml::XmlTextWriter_Token,
-    pub base64Encoder: *mut crate::System::Xml::XmlTextWriterBase64Encoder,
+    pub base64Encoder: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlTextWriterBase64Encoder,
+    >,
     pub quoteChar: char,
     pub curQuoteChar: char,
     pub namespaces: bool,
     pub specialAttr: crate::System::Xml::XmlTextWriter_SpecialAttr,
-    pub prefixForXmlNs: *mut quest_hook::libil2cpp::Il2CppString,
+    pub prefixForXmlNs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub flush: bool,
-    pub nsStack: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::XmlTextWriter_Namespace,
+    pub nsStack: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Xml::XmlTextWriter_Namespace>,
     >,
     pub nsTop: i32,
-    pub nsHashtable: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        i32,
+    pub nsHashtable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            i32,
+        >,
     >,
     pub useNsHashtable: bool,
     pub xmlCharType: crate::System::Xml::XmlCharType,
@@ -743,10 +747,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlTextWriter {
 }
 #[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XmlTextWriter_Namespace {
-    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub ns: *mut quest_hook::libil2cpp::Il2CppString,
+    pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub declared: bool,
     pub prevNsIndex: i32,
 }
@@ -832,14 +836,14 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Xml+XmlTextWriter+TagInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XmlTextWriter_TagInfo {
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub defaultNs: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub defaultNs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub defaultNsState: crate::System::Xml::XmlTextWriter_NamespaceState,
     pub xmlSpace: crate::System::Xml::XmlSpace,
-    pub xmlLang: *mut quest_hook::libil2cpp::Il2CppString,
+    pub xmlLang: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub prevNsTop: i32,
     pub prefixCount: i32,
     pub mixed: bool,

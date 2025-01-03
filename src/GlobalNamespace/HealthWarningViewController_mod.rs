@@ -3,16 +3,26 @@
 #[derive(Debug)]
 pub struct HealthWarningViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _continueButton: *mut crate::UnityEngine::UI::Button,
-    pub _safeAreaRectChecker: *mut crate::GlobalNamespace::SafeAreaRectChecker,
+    pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _safeAreaRectChecker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SafeAreaRectChecker,
+    >,
     pub _duration: f32,
-    pub _healthAndSafetyTextMesh: *mut crate::TMPro::TextMeshProUGUI,
-    pub _healthAndSafetyLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _healthAndSafetyPSLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _coroutineStarter: *mut crate::GlobalNamespace::ICoroutineStarter,
-    pub didFinishEvent: *mut crate::System::Action,
+    pub _healthAndSafetyTextMesh: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TextMeshProUGUI,
+    >,
+    pub _healthAndSafetyLocalizationKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _healthAndSafetyPSLocalizationKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _coroutineStarter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ICoroutineStarter,
+    >,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _requiresInteraction: bool,
-    pub _dismissCoroutine: *mut crate::UnityEngine::Coroutine,
+    pub _dismissCoroutine: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
 }
 #[cfg(feature = "HealthWarningViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

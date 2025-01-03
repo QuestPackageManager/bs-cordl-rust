@@ -1,13 +1,13 @@
 #[cfg(feature = "HoudiniEngineUnity+TransformData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TransformData {
     pub position: crate::UnityEngine::Vector3,
     pub rotation: crate::UnityEngine::Quaternion,
     pub localPosition: crate::UnityEngine::Vector3,
     pub localScale: crate::UnityEngine::Vector3,
     pub localRotation: crate::UnityEngine::Quaternion,
-    pub parent: *mut crate::UnityEngine::Transform,
+    pub parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "HoudiniEngineUnity+TransformData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

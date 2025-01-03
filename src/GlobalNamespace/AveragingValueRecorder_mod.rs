@@ -6,10 +6,14 @@ pub struct AveragingValueRecorder {
     pub _averageWindowDuration: f32,
     pub _historyValuesPerSecond: f32,
     pub _historyValuesCount: i32,
-    pub _averageWindowValues: *mut crate::System::Collections::Generic::Queue_1<
-        crate::GlobalNamespace::AveragingValueRecorder_AverageValueData,
+    pub _averageWindowValues: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<
+            crate::GlobalNamespace::AveragingValueRecorder_AverageValueData,
+        >,
     >,
-    pub _historyValues: *mut crate::System::Collections::Generic::Queue_1<f32>,
+    pub _historyValues: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<f32>,
+    >,
     pub _time: f32,
     pub _historyTime: f32,
     pub _averageValue: f32,
@@ -120,7 +124,7 @@ for crate::GlobalNamespace::AveragingValueRecorder {
 }
 #[cfg(feature = "AveragingValueRecorder+AverageValueData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AveragingValueRecorder_AverageValueData {
     pub _value_k__BackingField: f32,
     pub _time_k__BackingField: f32,

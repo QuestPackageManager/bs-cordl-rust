@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct XmlSchemaRedefine {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaExternal,
-    pub items: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-    pub attributeGroups: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub types: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub groups: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
+    pub items: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+    >,
+    pub attributeGroups: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub types: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub groups: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaRedefine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

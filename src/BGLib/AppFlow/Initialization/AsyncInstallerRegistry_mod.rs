@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct AsyncInstallerRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub monoInstallers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::MonoInstaller,
+    pub monoInstallers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::Zenject::MonoInstaller>,
     >,
-    pub scriptableObjectInstallers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::ScriptableObjectInstaller,
+    pub scriptableObjectInstallers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::ScriptableObjectInstaller,
+        >,
     >,
 }
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstallerRegistry")]

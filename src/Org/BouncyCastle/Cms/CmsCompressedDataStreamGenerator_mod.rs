@@ -108,10 +108,18 @@ for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
 #[derive(Debug)]
 pub struct CmsCompressedDataStreamGenerator_CmsCompressedOutputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    pub _out: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream,
-    pub _sGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-    pub _cGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-    pub _eiGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    pub _out: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream,
+    >,
+    pub _sGen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    >,
+    pub _cGen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    >,
+    pub _eiGen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    >,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator+CmsCompressedOutputStream"

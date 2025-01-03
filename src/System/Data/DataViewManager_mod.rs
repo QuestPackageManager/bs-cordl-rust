@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DataViewManager {
     __cordl_parent: crate::System::ComponentModel::MarshalByValueComponent,
-    pub _dataViewSettingsCollection: *mut crate::System::Data::DataViewSettingCollection,
+    pub _dataViewSettingsCollection: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataViewSettingCollection,
+    >,
     pub _nViews: i32,
 }
 #[cfg(feature = "System+Data+DataViewManager")]

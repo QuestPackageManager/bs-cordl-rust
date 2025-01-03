@@ -3,29 +3,34 @@
 #[derive(Debug)]
 pub struct ObstacleController {
     __cordl_parent: crate::GlobalNamespace::ObstacleControllerBase,
-    pub _stretchableObstacle: *mut crate::GlobalNamespace::StretchableObstacle,
+    pub _stretchableObstacle: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StretchableObstacle,
+    >,
     pub _endDistanceOffset: f32,
-    pub _visualWrappers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::GameObject,
+    pub _visualWrappers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
     >,
-    pub _obstacleMaterialSetter: *mut crate::GlobalNamespace::ObstacleMaterialSetter,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
-    pub finishedMovementEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::ObstacleController,
+    pub _obstacleMaterialSetter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ObstacleMaterialSetter,
     >,
-    pub passedThreeQuartersOfJumpDurationEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::ObstacleController,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
     >,
-    pub passedAvoidedMarkEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::ObstacleController,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+    pub finishedMovementEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::ObstacleController>,
     >,
-    pub didDissolveEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::ObstacleController,
+    pub passedThreeQuartersOfJumpDurationEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::ObstacleController>,
     >,
-    pub didUpdateProgress: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::ObstacleController,
-        f32,
+    pub passedAvoidedMarkEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::ObstacleController>,
+    >,
+    pub didDissolveEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::ObstacleController>,
+    >,
+    pub didUpdateProgress: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::GlobalNamespace::ObstacleController, f32>,
     >,
     pub _width: f32,
     pub _height: f32,
@@ -35,7 +40,7 @@ pub struct ObstacleController {
     pub _passedAvoidedMarkReported: bool,
     pub _bounds: crate::UnityEngine::Bounds,
     pub _dissolving: bool,
-    pub _obstacleData: *mut crate::GlobalNamespace::ObstacleData,
+    pub _obstacleData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
     pub _obstacleSpawnData: crate::GlobalNamespace::ObstacleSpawnData,
     pub _color: crate::UnityEngine::Color,
     pub _startPos: crate::UnityEngine::Vector3,
@@ -426,7 +431,9 @@ pub struct ObstacleController_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         *mut crate::GlobalNamespace::ObstacleController,
     >,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
 }
 #[cfg(feature = "ObstacleController+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

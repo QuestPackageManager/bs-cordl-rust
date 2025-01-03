@@ -3,13 +3,23 @@
 #[derive(Debug)]
 pub struct V2TbsCertListGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub signature: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub issuer: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
-    pub thisUpdate: *mut crate::Org::BouncyCastle::Asn1::X509::Time,
-    pub nextUpdate: *mut crate::Org::BouncyCastle::Asn1::X509::Time,
-    pub extensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
-    pub crlEntries: *mut crate::System::Collections::IList,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub signature: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub issuer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Name,
+    >,
+    pub thisUpdate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::Time,
+    >,
+    pub nextUpdate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::Time,
+    >,
+    pub extensions: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
+    pub crlEntries: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+V2TbsCertListGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

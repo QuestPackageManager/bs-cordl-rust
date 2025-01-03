@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct IesParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub derivation: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub encoding: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub derivation: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub encoding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub macKeySize: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+IesParameters")]

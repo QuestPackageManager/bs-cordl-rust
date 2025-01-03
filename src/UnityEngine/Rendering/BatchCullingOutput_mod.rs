@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+BatchCullingOutput")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BatchCullingOutput {
     pub drawCommands: crate::Unity::Collections::NativeArray_1<
         crate::UnityEngine::Rendering::BatchCullingOutputDrawCommands,

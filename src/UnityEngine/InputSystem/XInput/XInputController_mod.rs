@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct XInputController {
     __cordl_parent: crate::UnityEngine::InputSystem::Gamepad,
-    pub _menu_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _view_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    pub _menu_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _view_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
     pub m_HaveParsedCapabilities: bool,
     pub m_SubType: crate::UnityEngine::InputSystem::XInput::XInputController_DeviceSubType,
     pub m_Flags: crate::UnityEngine::InputSystem::XInput::XInputController_DeviceFlags,
@@ -168,7 +172,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController {
 }
 #[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+Capabilities")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XInputController_Capabilities {
     pub _cordl_type: crate::UnityEngine::InputSystem::XInput::XInputController_DeviceType,
     pub subType: crate::UnityEngine::InputSystem::XInput::XInputController_DeviceSubType,

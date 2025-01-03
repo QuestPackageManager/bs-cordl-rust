@@ -1,9 +1,9 @@
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneInstance")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SceneInstance {
     pub m_Scene: crate::UnityEngine::SceneManagement::Scene,
-    pub m_Operation: *mut crate::UnityEngine::AsyncOperation,
+    pub m_Operation: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneInstance")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

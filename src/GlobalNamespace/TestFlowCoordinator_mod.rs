@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct TestFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub _viewController: *mut crate::HMUI::ViewController,
-    pub _leftViewController: *mut crate::HMUI::ViewController,
-    pub _rightViewController: *mut crate::HMUI::ViewController,
-    pub _bottomScreenViewController: *mut crate::HMUI::ViewController,
-    pub _topScreenViewController: *mut crate::HMUI::ViewController,
+    pub _viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    pub _leftViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    pub _rightViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    pub _bottomScreenViewController: quest_hook::libil2cpp::Gc<
+        crate::HMUI::ViewController,
+    >,
+    pub _topScreenViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
 }
 #[cfg(feature = "TestFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

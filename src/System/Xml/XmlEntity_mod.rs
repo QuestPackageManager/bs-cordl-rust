@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct XmlEntity {
     __cordl_parent: crate::System::Xml::XmlNode,
-    pub publicId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub systemId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub notationName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub unparsedReplacementStr: *mut quest_hook::libil2cpp::Il2CppString,
-    pub baseURI: *mut quest_hook::libil2cpp::Il2CppString,
-    pub lastChild: *mut crate::System::Xml::XmlLinkedNode,
+    pub publicId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub systemId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub notationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub unparsedReplacementStr: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub baseURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub lastChild: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlLinkedNode>,
     pub childrenFoliating: bool,
 }
 #[cfg(feature = "System+Xml+XmlEntity")]

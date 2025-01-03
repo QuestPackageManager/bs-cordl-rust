@@ -4,7 +4,7 @@
 pub struct LiteralDataPacket {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::InputStreamPacket,
     pub format: i32,
-    pub fileName: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub modDate: i64,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+LiteralDataPacket")]

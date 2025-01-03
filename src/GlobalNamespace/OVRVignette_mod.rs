@@ -3,35 +3,39 @@
 #[derive(Debug)]
 pub struct OVRVignette {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub VignetteShader: *mut crate::UnityEngine::Shader,
+    pub VignetteShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub MeshComplexity: crate::GlobalNamespace::OVRVignette_MeshComplexityLevel,
     pub Falloff: crate::GlobalNamespace::OVRVignette_FalloffType,
     pub VignetteFieldOfView: f32,
     pub VignetteAspectRatio: f32,
     pub VignetteFalloffDegrees: f32,
     pub VignetteColor: crate::UnityEngine::Color,
-    pub _Camera: *mut crate::UnityEngine::Camera,
-    pub _OpaqueMeshFilter: *mut crate::UnityEngine::MeshFilter,
-    pub _TransparentMeshFilter: *mut crate::UnityEngine::MeshFilter,
-    pub _OpaqueMeshRenderer: *mut crate::UnityEngine::MeshRenderer,
-    pub _TransparentMeshRenderer: *mut crate::UnityEngine::MeshRenderer,
-    pub _OpaqueMesh: *mut crate::UnityEngine::Mesh,
-    pub _TransparentMesh: *mut crate::UnityEngine::Mesh,
-    pub _OpaqueMaterial: *mut crate::UnityEngine::Material,
-    pub _TransparentMaterial: *mut crate::UnityEngine::Material,
+    pub _Camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    pub _OpaqueMeshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
+    pub _TransparentMeshFilter: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MeshFilter,
+    >,
+    pub _OpaqueMeshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+    pub _TransparentMeshRenderer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MeshRenderer,
+    >,
+    pub _OpaqueMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub _TransparentMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub _OpaqueMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _TransparentMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _ShaderScaleAndOffset0Property: i32,
     pub _ShaderScaleAndOffset1Property: i32,
-    pub _TransparentScaleAndOffset0: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector4,
+    pub _TransparentScaleAndOffset0: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
-    pub _TransparentScaleAndOffset1: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector4,
+    pub _TransparentScaleAndOffset1: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
-    pub _OpaqueScaleAndOffset0: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector4,
+    pub _OpaqueScaleAndOffset0: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
-    pub _OpaqueScaleAndOffset1: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector4,
+    pub _OpaqueScaleAndOffset1: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
     pub _OpaqueVignetteVisible: bool,
     pub _TransparentVignetteVisible: bool,

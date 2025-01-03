@@ -1,10 +1,12 @@
 #[cfg(feature = "LufsMetering+LoudnessData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LoudnessData {
     pub lufs: f32,
     pub blockDuration: f32,
-    pub momentaryValues: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub momentaryValues: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
 }
 #[cfg(feature = "LufsMetering+LoudnessData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

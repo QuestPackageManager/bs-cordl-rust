@@ -3,22 +3,28 @@
 #[derive(Debug)]
 pub struct AsyncResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub async_state: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub handle: *mut crate::System::Threading::WaitHandle,
-    pub async_delegate: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub async_state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub handle: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitHandle>,
+    pub async_delegate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub data: crate::System::IntPtr,
-    pub object_data: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub object_data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub sync_completed: bool,
     pub completed: bool,
     pub endinvoke_called: bool,
-    pub async_callback: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub current: *mut crate::System::Threading::ExecutionContext,
-    pub original: *mut crate::System::Threading::ExecutionContext,
+    pub async_callback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub current: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
+    pub original: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
     pub add_time: i64,
-    pub call_message: *mut crate::System::Runtime::Remoting::Messaging::MonoMethodMessage,
-    pub message_ctrl: *mut crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
-    pub reply_message: *mut crate::System::Runtime::Remoting::Messaging::IMessage,
-    pub orig_cb: *mut crate::System::Threading::WaitCallback,
+    pub call_message: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::MonoMethodMessage,
+    >,
+    pub message_ctrl: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
+    >,
+    pub reply_message: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessage,
+    >,
+    pub orig_cb: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitCallback>,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+AsyncResult")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Mathematics+half")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct half {
     pub value: u16,
 }

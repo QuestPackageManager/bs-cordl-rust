@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct NoteLODGroup {
     __cordl_parent: crate::GlobalNamespace::CustomLODGroup,
-    pub _postProcessEnabled: *mut crate::GlobalNamespace::BoolSO,
+    pub _postProcessEnabled: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BoolSO>,
 }
 #[cfg(feature = "NoteLODGroup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

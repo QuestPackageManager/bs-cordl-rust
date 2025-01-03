@@ -1,13 +1,13 @@
 #[cfg(feature = "OVRTextureData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRTextureData {
-    pub data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub width: i32,
     pub height: i32,
     pub format: crate::GlobalNamespace::OVRTextureFormat,
     pub transcodedFormat: crate::UnityEngine::TextureFormat,
-    pub uri: *mut quest_hook::libil2cpp::Il2CppString,
+    pub uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "OVRTextureData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -3,16 +3,26 @@
 #[derive(Debug)]
 pub struct PointerEventData {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseEventData,
-    pub _pointerEnter_k__BackingField: *mut crate::UnityEngine::GameObject,
-    pub m_PointerPress: *mut crate::UnityEngine::GameObject,
-    pub _lastPress_k__BackingField: *mut crate::UnityEngine::GameObject,
-    pub _rawPointerPress_k__BackingField: *mut crate::UnityEngine::GameObject,
-    pub _pointerDrag_k__BackingField: *mut crate::UnityEngine::GameObject,
-    pub _pointerClick_k__BackingField: *mut crate::UnityEngine::GameObject,
+    pub _pointerEnter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub m_PointerPress: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _lastPress_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _rawPointerPress_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _pointerDrag_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _pointerClick_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
     pub _pointerCurrentRaycast_k__BackingField: crate::UnityEngine::EventSystems::RaycastResult,
     pub _pointerPressRaycast_k__BackingField: crate::UnityEngine::EventSystems::RaycastResult,
-    pub hovered: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::GameObject,
+    pub hovered: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::GameObject>,
     >,
     pub _eligibleForClick_k__BackingField: bool,
     pub _displayIndex_k__BackingField: i32,

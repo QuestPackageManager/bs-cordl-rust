@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlSchemaComplexContent {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaContentModel,
-    pub content: *mut crate::System::Xml::Schema::XmlSchemaContent,
+    pub content: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaContent>,
     pub isMixed: bool,
     pub hasMixedAttribute: bool,
 }

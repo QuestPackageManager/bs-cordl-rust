@@ -4,7 +4,7 @@
 pub struct OVRComposition {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub cameraInTrackingSpace: bool,
-    pub cameraRig: *mut crate::GlobalNamespace::OVRCameraRig,
+    pub cameraRig: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCameraRig>,
     pub usingLastAttachedNodePose: bool,
     pub lastAttachedNodePose: crate::GlobalNamespace::OVRPose,
 }

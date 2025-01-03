@@ -1,8 +1,8 @@
 #[cfg(feature = "System+Net+HeaderVariantInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HeaderVariantInfo {
-    pub m_name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_variant: crate::System::Net::CookieVariant,
 }
 #[cfg(feature = "System+Net+HeaderVariantInfo")]

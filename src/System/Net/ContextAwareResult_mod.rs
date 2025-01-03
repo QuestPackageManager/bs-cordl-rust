@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ContextAwareResult {
     __cordl_parent: crate::System::Net::LazyAsyncResult,
-    pub _context: *mut crate::System::Threading::ExecutionContext,
-    pub _lock: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _context: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
+    pub _lock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _flags: crate::System::Net::ContextAwareResult_StateFlags,
 }
 #[cfg(feature = "System+Net+ContextAwareResult")]

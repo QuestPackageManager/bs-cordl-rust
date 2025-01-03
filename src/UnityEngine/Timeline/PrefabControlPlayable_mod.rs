@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PrefabControlPlayable {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
-    pub m_Instance: *mut crate::UnityEngine::GameObject,
+    pub m_Instance: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
 #[cfg(feature = "UnityEngine+Timeline+PrefabControlPlayable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

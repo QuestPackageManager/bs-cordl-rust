@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AnchorIntoParent {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _parentTransform: *mut crate::UnityEngine::Transform,
+    pub _parentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _positionOffset: crate::UnityEngine::Vector3,
 }
 #[cfg(feature = "AnchorIntoParent")]

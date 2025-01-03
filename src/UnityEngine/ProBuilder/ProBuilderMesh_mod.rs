@@ -4,62 +4,76 @@
 pub struct ProBuilderMesh {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_MeshFormatVersion: i32,
-    pub m_Faces: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::ProBuilder::Face,
+    pub m_Faces: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
     >,
-    pub m_SharedVertices: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::ProBuilder::SharedVertex,
+    pub m_SharedVertices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::ProBuilder::SharedVertex,
+        >,
     >,
     pub m_CacheValid: crate::UnityEngine::ProBuilder::ProBuilderMesh_CacheValidState,
-    pub m_SharedVertexLookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        i32,
+    pub m_SharedVertexLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
     >,
-    pub m_SharedTextures: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::ProBuilder::SharedVertex,
+    pub m_SharedTextures: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::ProBuilder::SharedVertex,
+        >,
     >,
-    pub m_SharedTextureLookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        i32,
+    pub m_SharedTextureLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
     >,
-    pub m_Positions: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub m_Positions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
-    pub m_Textures0: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector2,
+    pub m_Textures0: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
     >,
-    pub m_Textures2: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector4,
+    pub m_Textures2: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
     >,
-    pub m_Textures3: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector4,
+    pub m_Textures3: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
     >,
-    pub m_Tangents: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-    pub m_Normals: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-    pub m_Colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+    pub m_Tangents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+    >,
+    pub m_Normals: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
+    pub m_Colors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+    >,
     pub _userCollisions_k__BackingField: bool,
-    pub m_UnwrapParameters: *mut crate::UnityEngine::ProBuilder::UnwrapParameters,
+    pub m_UnwrapParameters: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::UnwrapParameters,
+    >,
     pub m_PreserveMeshAssetOnDestroy: bool,
-    pub assetGuid: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Mesh: *mut crate::UnityEngine::Mesh,
-    pub m_MeshRenderer: *mut crate::UnityEngine::MeshRenderer,
-    pub m_MeshFilter: *mut crate::UnityEngine::MeshFilter,
+    pub assetGuid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub m_MeshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+    pub m_MeshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
     pub m_VersionIndex: u16,
     pub m_InstanceVersionIndex: u16,
     pub m_IsSelectable: bool,
-    pub m_SelectedFaces: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub m_SelectedEdges: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::ProBuilder::Edge,
+    pub m_SelectedFaces: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
     >,
-    pub m_SelectedVertices: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub m_SelectedEdges: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ProBuilder::Edge>,
+    >,
+    pub m_SelectedVertices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     pub m_SelectedCacheDirty: bool,
     pub m_SelectedSharedVerticesCount: i32,
     pub m_SelectedCoincidentVertexCount: i32,
-    pub m_SelectedSharedVertices: *mut crate::System::Collections::Generic::HashSet_1<
-        i32,
+    pub m_SelectedSharedVertices: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
     >,
-    pub m_SelectedCoincidentVertices: *mut crate::System::Collections::Generic::List_1<
-        i32,
+    pub m_SelectedCoincidentVertices: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
     >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh")]
@@ -2118,9 +2132,11 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ProBuilderMesh_NonVersionedEditScope {
-    pub m_Mesh: *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+    pub m_Mesh: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+    >,
     pub m_VersionIndex: u16,
     pub m_InstanceVersionIndex: u16,
 }

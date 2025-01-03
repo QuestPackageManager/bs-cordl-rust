@@ -1,8 +1,10 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+FontAssetCreationEditorSettings")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FontAssetCreationEditorSettings {
-    pub sourceFontFileGUID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub sourceFontFileGUID: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub faceIndex: i32,
     pub pointSizeSamplingMode: i32,
     pub pointSize: i32,
@@ -12,9 +14,15 @@ pub struct FontAssetCreationEditorSettings {
     pub atlasWidth: i32,
     pub atlasHeight: i32,
     pub characterSetSelectionMode: i32,
-    pub characterSequence: *mut quest_hook::libil2cpp::Il2CppString,
-    pub referencedFontAssetGUID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub referencedTextAssetGUID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub characterSequence: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub referencedFontAssetGUID: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub referencedTextAssetGUID: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub fontStyle: i32,
     pub fontStyleModifier: f32,
     pub renderMode: i32,

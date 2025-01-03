@@ -4,16 +4,22 @@
 pub struct XmlTextReaderImpl {
     __cordl_parent: crate::System::Xml::XmlReader,
     pub useAsync: bool,
-    pub laterInitParam: *mut crate::System::Xml::XmlTextReaderImpl_LaterInitParam,
+    pub laterInitParam: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlTextReaderImpl_LaterInitParam,
+    >,
     pub xmlCharType: crate::System::Xml::XmlCharType,
     pub ps: crate::System::Xml::XmlTextReaderImpl_ParsingState,
     pub parsingFunction: crate::System::Xml::XmlTextReaderImpl_ParsingFunction,
     pub nextParsingFunction: crate::System::Xml::XmlTextReaderImpl_ParsingFunction,
     pub nextNextParsingFunction: crate::System::Xml::XmlTextReaderImpl_ParsingFunction,
-    pub nodes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::XmlTextReaderImpl_NodeData,
+    pub nodes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::XmlTextReaderImpl_NodeData,
+        >,
     >,
-    pub curNode: *mut crate::System::Xml::XmlTextReaderImpl_NodeData,
+    pub curNode: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlTextReaderImpl_NodeData,
+    >,
     pub index: i32,
     pub curAttrIndex: i32,
     pub attrCount: i32,
@@ -21,13 +27,15 @@ pub struct XmlTextReaderImpl {
     pub attrDuplWalkCount: i32,
     pub attrNeedNamespaceLookup: bool,
     pub fullAttrCleanup: bool,
-    pub attrDuplSortingArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::XmlTextReaderImpl_NodeData,
+    pub attrDuplSortingArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::XmlTextReaderImpl_NodeData,
+        >,
     >,
-    pub nameTable: *mut crate::System::Xml::XmlNameTable,
+    pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     pub nameTableFromSettings: bool,
-    pub xmlResolver: *mut crate::System::Xml::XmlResolver,
-    pub url: *mut quest_hook::libil2cpp::Il2CppString,
+    pub xmlResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
+    pub url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub normalize: bool,
     pub supportNamespaces: bool,
     pub whitespaceHandling: crate::System::Xml::WhitespaceHandling,
@@ -42,20 +50,30 @@ pub struct XmlTextReaderImpl {
     pub maxCharactersInDocument: i64,
     pub maxCharactersFromEntities: i64,
     pub v1Compat: bool,
-    pub namespaceManager: *mut crate::System::Xml::XmlNamespaceManager,
-    pub lastPrefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub xmlContext: *mut crate::System::Xml::XmlTextReaderImpl_XmlContext,
-    pub parsingStatesStack: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::XmlTextReaderImpl_ParsingState,
+    pub namespaceManager: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlNamespaceManager,
+    >,
+    pub lastPrefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub xmlContext: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlTextReaderImpl_XmlContext,
+    >,
+    pub parsingStatesStack: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Xml::XmlTextReaderImpl_ParsingState,
+        >,
     >,
     pub parsingStatesStackTop: i32,
-    pub reportedBaseUri: *mut quest_hook::libil2cpp::Il2CppString,
-    pub reportedEncoding: *mut crate::System::Text::Encoding,
-    pub dtdInfo: *mut crate::System::Xml::IDtdInfo,
+    pub reportedBaseUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub reportedEncoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    pub dtdInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdInfo>,
     pub fragmentType: crate::System::Xml::XmlNodeType,
-    pub fragmentParserContext: *mut crate::System::Xml::XmlParserContext,
+    pub fragmentParserContext: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlParserContext,
+    >,
     pub fragment: bool,
-    pub incReadDecoder: *mut crate::System::Xml::IncrementalReadDecoder,
+    pub incReadDecoder: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::IncrementalReadDecoder,
+    >,
     pub incReadState: crate::System::Xml::XmlTextReaderImpl_IncrementalReadState,
     pub incReadLineInfo: crate::System::Xml::LineInfo,
     pub incReadDepth: i32,
@@ -63,33 +81,41 @@ pub struct XmlTextReaderImpl {
     pub incReadLeftEndPos: i32,
     pub attributeValueBaseEntityId: i32,
     pub emptyEntityInAttributeResolved: bool,
-    pub validationEventHandling: *mut crate::System::Xml::IValidationEventHandling,
-    pub onDefaultAttributeUse: *mut crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate,
+    pub validationEventHandling: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::IValidationEventHandling,
+    >,
+    pub onDefaultAttributeUse: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate,
+    >,
     pub validatingReaderCompatFlag: bool,
     pub addDefaultAttributesAndNormalize: bool,
-    pub stringBuilder: *mut crate::System::Text::StringBuilder,
+    pub stringBuilder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub rootElementParsed: bool,
     pub standalone: bool,
     pub nextEntityId: i32,
     pub parsingMode: crate::System::Xml::XmlTextReaderImpl_ParsingMode,
     pub readState: crate::System::Xml::ReadState,
-    pub lastEntity: *mut crate::System::Xml::IDtdEntityInfo,
+    pub lastEntity: quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdEntityInfo>,
     pub afterResetState: bool,
     pub documentStartBytePos: i32,
     pub readValueOffset: i32,
     pub charactersInDocument: i64,
     pub charactersFromEntities: i64,
-    pub currentEntities: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Xml::IDtdEntityInfo,
-        *mut crate::System::Xml::IDtdEntityInfo,
+    pub currentEntities: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Xml::IDtdEntityInfo,
+            *mut crate::System::Xml::IDtdEntityInfo,
+        >,
     >,
     pub disableUndeclaredEntityCheck: bool,
-    pub outerReader: *mut crate::System::Xml::XmlReader,
+    pub outerReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     pub xmlResolverIsSet: bool,
-    pub Xml: *mut quest_hook::libil2cpp::Il2CppString,
-    pub XmlNs: *mut quest_hook::libil2cpp::Il2CppString,
-    pub parseText_dummyTask: *mut crate::System::Threading::Tasks::Task_1<
-        *mut crate::System::Tuple_4<i32, i32, i32, bool>,
+    pub Xml: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub XmlNs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub parseText_dummyTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<
+            *mut crate::System::Tuple_4<i32, i32, i32, bool>,
+        >,
     >,
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl")]
@@ -3554,7 +3580,7 @@ impl AsMut<
 #[derive(Debug)]
 pub struct XmlTextReaderImpl_DtdParserProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub reader: *mut crate::System::Xml::XmlTextReaderImpl,
+    pub reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextReaderImpl>,
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4088,14 +4114,14 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 pub struct XmlTextReaderImpl_LaterInitParam {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub useAsync: bool,
-    pub inputStream: *mut crate::System::IO::Stream,
-    pub inputBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub inputBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub inputByteCount: i32,
-    pub inputbaseUri: *mut crate::System::Uri,
-    pub inputUriStr: *mut quest_hook::libil2cpp::Il2CppString,
-    pub inputUriResolver: *mut crate::System::Xml::XmlResolver,
-    pub inputContext: *mut crate::System::Xml::XmlParserContext,
-    pub inputTextReader: *mut crate::System::IO::TextReader,
+    pub inputbaseUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    pub inputUriStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub inputUriResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
+    pub inputContext: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
+    pub inputTextReader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
     pub initType: crate::System::Xml::XmlTextReaderImpl_InitInputType,
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
@@ -4324,12 +4350,12 @@ for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
 pub struct XmlTextReaderImpl_NodeData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::System::Xml::XmlNodeType,
-    pub localName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub ns: *mut quest_hook::libil2cpp::Il2CppString,
-    pub nameWPrefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub value: *mut quest_hook::libil2cpp::Il2CppString,
-    pub chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub nameWPrefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub valueStartPos: i32,
     pub valueLength: i32,
     pub lineInfo: crate::System::Xml::LineInfo,
@@ -4339,9 +4365,11 @@ pub struct XmlTextReaderImpl_NodeData {
     pub isEmptyOrDefault: bool,
     pub entityId: i32,
     pub xmlContextPushed: bool,
-    pub nextAttrValueChunk: *mut crate::System::Xml::XmlTextReaderImpl_NodeData,
-    pub schemaType: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub typedValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub nextAttrValueChunk: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlTextReaderImpl_NodeData,
+    >,
+    pub schemaType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub typedValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4816,26 +4844,26 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XmlTextReaderImpl_ParsingState {
-    pub chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub charPos: i32,
     pub charsUsed: i32,
-    pub encoding: *mut crate::System::Text::Encoding,
+    pub encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     pub appendMode: bool,
-    pub stream: *mut crate::System::IO::Stream,
-    pub decoder: *mut crate::System::Text::Decoder,
-    pub bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub decoder: quest_hook::libil2cpp::Gc<crate::System::Text::Decoder>,
+    pub bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub bytePos: i32,
     pub bytesUsed: i32,
-    pub textReader: *mut crate::System::IO::TextReader,
+    pub textReader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
     pub lineNo: i32,
     pub lineStartPos: i32,
-    pub baseUriStr: *mut quest_hook::libil2cpp::Il2CppString,
-    pub baseUri: *mut crate::System::Uri,
+    pub baseUriStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub baseUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     pub isEof: bool,
     pub isStreamEof: bool,
-    pub entity: *mut crate::System::Xml::IDtdEntityInfo,
+    pub entity: quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdEntityInfo>,
     pub entityId: i32,
     pub eolNormalized: bool,
     pub entityResolvedManually: bool,
@@ -4902,9 +4930,11 @@ impl crate::System::Xml::XmlTextReaderImpl_ParsingState {
 pub struct XmlTextReaderImpl_XmlContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub xmlSpace: crate::System::Xml::XmlSpace,
-    pub xmlLang: *mut quest_hook::libil2cpp::Il2CppString,
-    pub defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
-    pub previousContext: *mut crate::System::Xml::XmlTextReaderImpl_XmlContext,
+    pub xmlLang: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub defaultNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub previousContext: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlTextReaderImpl_XmlContext,
+    >,
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

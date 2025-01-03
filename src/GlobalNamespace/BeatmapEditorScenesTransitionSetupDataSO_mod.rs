@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BeatmapEditorScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO,
-    pub didFinishEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
+        >,
     >,
     pub _goStraightToEditor_k__BackingField: bool,
 }

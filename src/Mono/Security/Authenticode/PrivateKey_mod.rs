@@ -4,7 +4,7 @@
 pub struct PrivateKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub encrypted: bool,
-    pub rsa: *mut crate::System::Security::Cryptography::RSA,
+    pub rsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     pub weak: bool,
     pub keyType: i32,
 }

@@ -17,36 +17,74 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct TutorialSongController {
     __cordl_parent: crate::GlobalNamespace::SongController,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
     pub _startWaitTimeInBeats: i32,
     pub _numberOfBeatsToSnap: i32,
     pub _obstacleDurationInBeats: i32,
-    pub _noteCuttingTutorialPartDidStartSignal: *mut crate::GlobalNamespace::Signal,
-    pub _noteCuttingInAnyDirectionDidStartSignal: *mut crate::GlobalNamespace::Signal,
-    pub _chainCuttingDidStartSignal: *mut crate::GlobalNamespace::Signal,
-    pub _chainLinkMissedSignal: *mut crate::GlobalNamespace::Signal,
-    pub _arcCuttingDidStartSignal: *mut crate::GlobalNamespace::Signal,
-    pub _arcHeadOrTailMissedSignal: *mut crate::GlobalNamespace::Signal,
-    pub _arcMiddleInfoSignal: *mut crate::GlobalNamespace::Signal,
-    pub _bombCuttingTutorialPartDidStartSignal: *mut crate::GlobalNamespace::Signal,
-    pub _leftObstacleTutorialPartDidStartSignal: *mut crate::GlobalNamespace::Signal,
-    pub _rightObstacleTutorialPartDidStartSignal: *mut crate::GlobalNamespace::Signal,
-    pub _topObstacleTutorialPartDidStartSignal: *mut crate::GlobalNamespace::Signal,
-    pub _noteWasCutOKSignal: *mut crate::GlobalNamespace::Signal,
-    pub _noteWasCutTooSoonSignal: *mut crate::GlobalNamespace::Signal,
-    pub _noteWasCutWithWrongColorSignal: *mut crate::GlobalNamespace::Signal,
-    pub _noteWasCutFromDifferentDirectionSignal: *mut crate::GlobalNamespace::Signal,
-    pub _noteWasCutWithSlowSpeedSignal: *mut crate::GlobalNamespace::Signal,
-    pub _bombWasCutSignal: *mut crate::GlobalNamespace::Signal,
-    pub _initData: *mut crate::GlobalNamespace::TutorialSongController_InitData,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
+    pub _noteCuttingTutorialPartDidStartSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _noteCuttingInAnyDirectionDidStartSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _chainCuttingDidStartSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _chainLinkMissedSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _arcCuttingDidStartSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _arcHeadOrTailMissedSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _arcMiddleInfoSignal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
+    pub _bombCuttingTutorialPartDidStartSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _leftObstacleTutorialPartDidStartSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _rightObstacleTutorialPartDidStartSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _topObstacleTutorialPartDidStartSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _noteWasCutOKSignal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
+    pub _noteWasCutTooSoonSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _noteWasCutWithWrongColorSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _noteWasCutFromDifferentDirectionSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _noteWasCutWithSlowSpeedSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _bombWasCutSignal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSongController_InitData,
+    >,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
     pub _tutorialBeatmapObjectIndex: i32,
     pub _prevSpawnedBeatmapObjectIndex: i32,
     pub _songBpm: f32,
-    pub _beatmapData: *mut crate::GlobalNamespace::BeatmapData,
-    pub _currentSequenceCutInfo: *mut crate::GlobalNamespace::TutorialSongController_SequenceCutInfo,
-    pub _normalModeTutorialObjectsSpawnData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
+    pub _beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+    pub _currentSequenceCutInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSongController_SequenceCutInfo,
+    >,
+    pub _normalModeTutorialObjectsSpawnData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
+        >,
     >,
 }
 #[cfg(feature = "TutorialSongController")]
@@ -387,7 +425,7 @@ for crate::GlobalNamespace::TutorialSongController {
 pub struct TutorialSongController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub songBpm: f32,
-    pub beatmapData: *mut crate::GlobalNamespace::BeatmapData,
+    pub beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
 }
 #[cfg(feature = "TutorialSongController+InitData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -560,8 +598,12 @@ for crate::GlobalNamespace::TutorialSongController_SequenceCutInfo {
 #[derive(Debug)]
 pub struct TutorialSongController_TutorialArcSpawnData {
     __cordl_parent: crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
-    pub headNote: *mut crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData,
-    pub tailNote: *mut crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData,
+    pub headNote: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData,
+    >,
+    pub tailNote: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData,
+    >,
 }
 #[cfg(feature = "TutorialSongController+TutorialArcSpawnData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1008,7 +1050,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData 
 #[derive(Debug)]
 pub struct TutorialSongController_TutorialObjectSpawnData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub signal: *mut crate::GlobalNamespace::Signal,
+    pub signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
     pub beatOffset: i32,
     pub firstTimeBeatOffset: i32,
     pub lineIndex: i32,

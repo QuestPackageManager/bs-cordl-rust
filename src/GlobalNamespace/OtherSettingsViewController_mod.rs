@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct OtherSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _hideExplicitWarning: *mut crate::UnityEngine::GameObject,
-    pub _hideExplicitToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _pausePressDuration: *mut crate::GlobalNamespace::NamedIntListSettingsController,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _hideExplicitWarning: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _hideExplicitToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _pausePressDuration: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NamedIntListSettingsController,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
     pub _explicitToggleAvailable: bool,
 }
 #[cfg(feature = "OtherSettingsViewController")]

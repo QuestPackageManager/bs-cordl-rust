@@ -9,8 +9,10 @@ pub struct LightRotationEventBox {
     pub r: i32,
     pub b: i32,
     pub i: crate::BeatmapSaveDataCommon::EaseType,
-    pub l: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BeatmapSaveDataVersion3::LightRotationBaseData,
+    pub l: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BeatmapSaveDataVersion3::LightRotationBaseData,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+LightRotationEventBox")]

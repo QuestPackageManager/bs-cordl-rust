@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct JoiningLobbyViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _cancelJoiningButton: *mut crate::UnityEngine::UI::Button,
-    pub _loadingControl: *mut crate::GlobalNamespace::LoadingControl,
-    pub _text: *mut quest_hook::libil2cpp::Il2CppString,
-    pub didCancelEvent: *mut crate::System::Action,
+    pub _cancelJoiningButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _loadingControl: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LoadingControl,
+    >,
+    pub _text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub didCancelEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "JoiningLobbyViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

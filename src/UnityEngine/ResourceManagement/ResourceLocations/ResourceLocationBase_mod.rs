@@ -3,17 +3,19 @@
 #[derive(Debug)]
 pub struct ResourceLocationBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Id: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_ProviderId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Data: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_ProviderId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_DependencyHashCode: i32,
     pub m_HashCode: i32,
-    pub m_Type: *mut crate::System::Type,
-    pub m_Dependencies: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    pub m_Type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub m_Dependencies: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
     >,
-    pub m_PrimaryKey: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_PrimaryKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceLocations+ResourceLocationBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

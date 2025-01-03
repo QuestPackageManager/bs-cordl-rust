@@ -6,7 +6,9 @@ pub struct HeaderInfo_HeaderTypeInfo_2<
     U: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::System::Net::Http::Headers::HeaderInfo,
-    pub parser: *mut crate::System::Net::Http::Headers::TryParseDelegate_1<T>,
+    pub parser: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::Headers::TryParseDelegate_1<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
     __cordl_phantom_U: std::marker::PhantomData<U>,
 }

@@ -5,9 +5,11 @@ pub struct GradientImageViewStateTransition {
     __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
         *mut crate::HMUI::ImageView,
     >,
-    pub _transition: *mut crate::GlobalNamespace::GradientTransitionSO,
-    pub _colorTweenA: *mut crate::Tweening::ColorTween,
-    pub _colorTweenB: *mut crate::Tweening::ColorTween,
+    pub _transition: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GradientTransitionSO,
+    >,
+    pub _colorTweenA: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
+    pub _colorTweenB: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
 }
 #[cfg(feature = "GradientImageViewStateTransition")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

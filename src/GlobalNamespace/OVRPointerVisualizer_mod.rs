@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct OVRPointerVisualizer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub rayTransform: *mut crate::UnityEngine::Transform,
-    pub linePointer: *mut crate::UnityEngine::LineRenderer,
+    pub rayTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub linePointer: quest_hook::libil2cpp::Gc<crate::UnityEngine::LineRenderer>,
     pub rayDrawDistance: f32,
 }
 #[cfg(feature = "OVRPointerVisualizer")]

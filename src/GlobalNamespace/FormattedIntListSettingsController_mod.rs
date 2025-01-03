@@ -5,10 +5,14 @@ pub struct FormattedIntListSettingsController {
     __cordl_parent: crate::GlobalNamespace::ListSettingsController,
     pub _minValue: i32,
     pub _maxValue: i32,
-    pub _formattingString: *mut quest_hook::libil2cpp::Il2CppString,
-    pub valueDidChangeEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::FormattedIntListSettingsController,
-        i32,
+    pub _formattingString: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub valueDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::FormattedIntListSettingsController,
+            i32,
+        >,
     >,
     pub _value: i32,
 }

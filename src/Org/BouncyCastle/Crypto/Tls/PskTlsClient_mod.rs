@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct PskTlsClient {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsClient,
-    pub mDHVerifier: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsDHVerifier,
-    pub mPskIdentity: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity,
+    pub mDHVerifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsDHVerifier,
+    >,
+    pub mPskIdentity: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+PskTlsClient")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

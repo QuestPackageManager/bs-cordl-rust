@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SendPacketsElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_FilePath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub m_FilePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub m_Offset: i32,
     pub m_Count: i32,
     pub m_endOfPacket: bool,

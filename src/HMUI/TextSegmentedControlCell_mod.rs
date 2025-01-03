@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct TextSegmentedControlCell {
     __cordl_parent: crate::HMUI::SegmentedControlCell,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
-    pub _backgroundGameObject: *mut crate::UnityEngine::GameObject,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _backgroundGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
 #[cfg(feature = "HMUI+TextSegmentedControlCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

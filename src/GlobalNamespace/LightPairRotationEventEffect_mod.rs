@@ -11,17 +11,27 @@ pub struct LightPairRotationEventEffect {
     pub _useZPositionForAngleOffset: bool,
     pub _zPositionAngleOffsetScale: f32,
     pub _startRotation: f32,
-    pub _transformL: *mut crate::UnityEngine::Transform,
-    pub _transformR: *mut crate::UnityEngine::Transform,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _random: *mut crate::System::Random,
-    pub _rotationDataL: *mut crate::GlobalNamespace::LightPairRotationEventEffect_RotationData,
-    pub _rotationDataR: *mut crate::GlobalNamespace::LightPairRotationEventEffect_RotationData,
+    pub _transformL: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _transformR: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
+    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+    pub _rotationDataL: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightPairRotationEventEffect_RotationData,
+    >,
+    pub _rotationDataR: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightPairRotationEventEffect_RotationData,
+    >,
     pub _randomGenerationFrameNum: i32,
     pub _randomStartRotation: f32,
     pub _randomDirection: f32,
-    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "LightPairRotationEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -144,7 +154,7 @@ pub struct LightPairRotationEventEffect_RotationData {
     pub enabled: bool,
     pub rotationSpeed: f32,
     pub startRotation: crate::UnityEngine::Quaternion,
-    pub transform: *mut crate::UnityEngine::Transform,
+    pub transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub startRotationAngle: f32,
     pub rotationAngle: f32,
 }

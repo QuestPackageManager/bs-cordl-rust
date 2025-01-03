@@ -3,22 +3,40 @@
 #[derive(Debug)]
 pub struct StandardLevelScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
-    pub _standardGameplaySceneInfo: *mut crate::GlobalNamespace::SceneInfo,
-    pub _gameCoreSceneInfo: *mut crate::GlobalNamespace::SceneInfo,
-    pub didFinishEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-        *mut crate::GlobalNamespace::LevelCompletionResults,
+    pub _standardGameplaySceneInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SceneInfo,
     >,
-    pub _gameMode_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::LevelCompletionResults,
+        >,
+    >,
+    pub _gameMode_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _beatmapKey_k__BackingField: crate::GlobalNamespace::BeatmapKey,
-    pub _beatmapLevel_k__BackingField: *mut crate::GlobalNamespace::BeatmapLevel,
-    pub _practiceSettings_k__BackingField: *mut crate::GlobalNamespace::PracticeSettings,
+    pub _beatmapLevel_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevel,
+    >,
+    pub _practiceSettings_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PracticeSettings,
+    >,
     pub _usingOverrideColorScheme_k__BackingField: bool,
-    pub _colorScheme_k__BackingField: *mut crate::GlobalNamespace::ColorScheme,
+    pub _colorScheme_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorScheme,
+    >,
     pub _usingOverrideEnvironment_k__BackingField: bool,
-    pub _targetEnvironmentInfo_k__BackingField: *mut crate::GlobalNamespace::EnvironmentInfoSO,
-    pub _originalEnvironmentInfo_k__BackingField: *mut crate::GlobalNamespace::EnvironmentInfoSO,
-    pub _gameplayModifiers_k__BackingField: *mut crate::GlobalNamespace::GameplayModifiers,
+    pub _targetEnvironmentInfo_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentInfoSO,
+    >,
+    pub _originalEnvironmentInfo_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentInfoSO,
+    >,
+    pub _gameplayModifiers_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
+    >,
 }
 #[cfg(feature = "StandardLevelScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

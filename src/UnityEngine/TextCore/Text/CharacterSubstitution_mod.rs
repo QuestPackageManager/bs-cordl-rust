@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+CharacterSubstitution")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CharacterSubstitution {
     pub index: i32,
     pub unicode: u32,

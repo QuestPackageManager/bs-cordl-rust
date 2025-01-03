@@ -5,7 +5,9 @@
 #[derive(Debug)]
 pub struct UnknownResourceProviderException {
     __cordl_parent: crate::UnityEngine::ResourceManagement::Exceptions::ResourceManagerException,
-    pub _Location_k__BackingField: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    pub _Location_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    >,
 }
 #[cfg(
     feature = "UnityEngine+ResourceManagement+Exceptions+UnknownResourceProviderException"

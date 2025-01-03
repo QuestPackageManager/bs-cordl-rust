@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LockQueue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub rwlock: *mut crate::System::Threading::ReaderWriterLock,
+    pub rwlock: quest_hook::libil2cpp::Gc<crate::System::Threading::ReaderWriterLock>,
     pub lockCount: i32,
 }
 #[cfg(feature = "System+Threading+LockQueue")]

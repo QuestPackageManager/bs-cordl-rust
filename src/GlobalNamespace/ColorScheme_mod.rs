@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct ColorScheme {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _colorSchemeId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _colorSchemeNameLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _colorSchemeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _colorSchemeNameLocalizationKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _useNonLocalizedName: bool,
-    pub _nonLocalizedName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _nonLocalizedName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _isEditable: bool,
     pub _overrideNotes: bool,
     pub _saberAColor: crate::UnityEngine::Color,

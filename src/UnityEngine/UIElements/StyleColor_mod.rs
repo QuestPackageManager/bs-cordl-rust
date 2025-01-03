@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleColor")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StyleColor {
     pub m_Value: crate::UnityEngine::Color,
     pub m_Keyword: crate::UnityEngine::UIElements::StyleKeyword,

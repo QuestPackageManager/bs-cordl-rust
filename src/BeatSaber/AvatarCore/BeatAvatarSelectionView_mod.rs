@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct BeatAvatarSelectionView {
     __cordl_parent: crate::BeatSaber::AvatarCore::AvatarSelectionView,
-    pub _avatarContainer: *mut crate::UnityEngine::GameObject,
-    pub _beatAvatarVisualController: *mut crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController,
-    pub _avatarTweenController: *mut crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController,
-    pub _avatarDataModel: *mut crate::BeatSaber::BeatAvatarSDK::AvatarDataModel,
+    pub _avatarContainer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _beatAvatarVisualController: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController,
+    >,
+    pub _avatarTweenController: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController,
+    >,
+    pub _avatarDataModel: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarDataModel,
+    >,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+BeatAvatarSelectionView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -172,10 +172,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ParameterizedStrings {
 }
 #[cfg(feature = "System+ParameterizedStrings+FormatParam")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ParameterizedStrings_FormatParam {
     pub _int32: i32,
-    pub _string: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _string: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+ParameterizedStrings+FormatParam")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -259,8 +259,10 @@ impl crate::System::ParameterizedStrings_FormatParam {
 #[derive(Debug)]
 pub struct ParameterizedStrings_LowLevelStack {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _arr: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::ParameterizedStrings_FormatParam,
+    pub _arr: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::ParameterizedStrings_FormatParam,
+        >,
     >,
     pub _count: i32,
 }

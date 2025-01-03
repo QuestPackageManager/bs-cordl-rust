@@ -4,9 +4,11 @@
 pub struct Toggle {
     __cordl_parent: crate::UnityEngine::UI::Selectable,
     pub toggleTransition: crate::UnityEngine::UI::Toggle_ToggleTransition,
-    pub graphic: *mut crate::UnityEngine::UI::Graphic,
-    pub m_Group: *mut crate::UnityEngine::UI::ToggleGroup,
-    pub onValueChanged: *mut crate::UnityEngine::UI::Toggle_ToggleEvent,
+    pub graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+    pub m_Group: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ToggleGroup>,
+    pub onValueChanged: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle_ToggleEvent,
+    >,
     pub m_IsOn: bool,
 }
 #[cfg(feature = "UnityEngine+UI+Toggle")]

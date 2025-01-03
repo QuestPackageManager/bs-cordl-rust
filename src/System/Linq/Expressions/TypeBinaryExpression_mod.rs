@@ -4,8 +4,10 @@
 pub struct TypeBinaryExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
     pub _NodeType_k__BackingField: crate::System::Linq::Expressions::ExpressionType,
-    pub _Expression_k__BackingField: *mut crate::System::Linq::Expressions::Expression,
-    pub _TypeOperand_k__BackingField: *mut crate::System::Type,
+    pub _Expression_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
+    pub _TypeOperand_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Linq+Expressions+TypeBinaryExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

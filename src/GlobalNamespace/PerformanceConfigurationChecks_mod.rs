@@ -10,9 +10,11 @@ pub struct PerformanceConfigurationChecks {
     pub settingsConfig: crate::BeatSaber::Settings::Settings,
     pub playerConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig,
     pub levelConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig,
-    pub invalid: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch,
+    pub invalid: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch,
+        >,
     >,
 }
 #[cfg(feature = "PerformanceConfigurationChecks")]
@@ -155,7 +157,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks {
 }
 #[cfg(feature = "PerformanceConfigurationChecks+AppConfig")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PerformanceConfigurationChecks_AppConfig {
     pub targetFrameRate: i32,
     pub systemLanguage: crate::UnityEngine::SystemLanguage,
@@ -183,7 +185,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {}
 #[cfg(feature = "PerformanceConfigurationChecks+LevelConfig")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PerformanceConfigurationChecks_LevelConfig {
     pub modifiers: crate::GlobalNamespace::GameplayModifierMask,
 }
@@ -208,9 +210,9 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {}
 #[cfg(feature = "PerformanceConfigurationChecks+Mismatch")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PerformanceConfigurationChecks_Mismatch {
-    pub message: *mut quest_hook::libil2cpp::Il2CppString,
+    pub message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub frames: i32,
 }
 #[cfg(feature = "PerformanceConfigurationChecks+Mismatch")]
@@ -234,7 +236,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {}
 #[cfg(feature = "PerformanceConfigurationChecks+OVRConfig")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PerformanceConfigurationChecks_OVRConfig {
     pub spaceWarpEnabled: bool,
     pub chromatic: bool,
@@ -286,7 +288,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig {
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig {}
 #[cfg(feature = "PerformanceConfigurationChecks+OculusXRConfig")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PerformanceConfigurationChecks_OculusXRConfig {
     pub boundaryDimension: crate::UnityEngine::Vector3,
 }
@@ -311,7 +313,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_OculusXRConfig {
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_OculusXRConfig {}
 #[cfg(feature = "PerformanceConfigurationChecks+PlayerConfig")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PerformanceConfigurationChecks_PlayerConfig {
     pub leftHanded: bool,
     pub automaticPlayerHeight: bool,
@@ -355,11 +357,11 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {}
 #[cfg(feature = "PerformanceConfigurationChecks+XRConfig")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PerformanceConfigurationChecks_XRConfig {
     pub enabled: bool,
     pub isDeviceActive: bool,
-    pub loadedDeviceName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub loadedDeviceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub stereoRenderingMode: crate::UnityEngine::XR::XRSettings_StereoRenderingMode,
     pub eyeTextureWidth: i32,
     pub eyeTextureHeight: i32,

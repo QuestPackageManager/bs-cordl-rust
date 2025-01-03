@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+HandleDragAndDropArgs")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HandleDragAndDropArgs {
     pub m_DragAndDropArgs: crate::UnityEngine::UIElements::DragAndDropArgs,
     pub _position_k__BackingField: crate::UnityEngine::Vector2,

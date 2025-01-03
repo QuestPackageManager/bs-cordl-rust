@@ -3,14 +3,22 @@
 #[derive(Debug)]
 pub struct JsonValidatingReader {
     __cordl_parent: crate::Newtonsoft::Json::JsonReader,
-    pub _reader: *mut crate::Newtonsoft::Json::JsonReader,
-    pub _stack: *mut crate::System::Collections::Generic::Stack_1<
-        *mut crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope,
+    pub _reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+    pub _stack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<
+            *mut crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope,
+        >,
     >,
-    pub _schema: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
-    pub _model: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-    pub _currentScope: *mut crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope,
-    pub ValidationEventHandler: *mut crate::Newtonsoft::Json::Schema::ValidationEventHandler,
+    pub _schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
+    pub _model: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+    >,
+    pub _currentScope: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope,
+    >,
+    pub ValidationEventHandler: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Schema::ValidationEventHandler,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -681,20 +689,30 @@ for crate::Newtonsoft::Json::JsonValidatingReader {
 pub struct JsonValidatingReader_SchemaScope {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tokenType: crate::Newtonsoft::Json::Linq::JTokenType,
-    pub _schemas: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+    pub _schemas: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+        >,
     >,
-    pub _requiredProperties: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        bool,
+    pub _requiredProperties: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            bool,
+        >,
     >,
-    pub _CurrentPropertyName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _CurrentPropertyName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _ArrayItemCount_k__BackingField: i32,
     pub _IsUniqueArray_k__BackingField: bool,
-    pub _UniqueArrayItems_k__BackingField: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::Newtonsoft::Json::Linq::JToken,
+    pub _UniqueArrayItems_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Linq::JToken,
+        >,
     >,
-    pub _CurrentItemWriter_k__BackingField: *mut crate::Newtonsoft::Json::Linq::JTokenWriter,
+    pub _CurrentItemWriter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Linq::JTokenWriter,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

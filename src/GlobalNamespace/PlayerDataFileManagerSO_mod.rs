@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct PlayerDataFileManagerSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _defaultLastSelectedBeatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-    pub _buildInSongPackSerializedName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _allSongPackSerializedName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _defaultLastSelectedBeatmapCharacteristic: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSO,
+    >,
+    pub _buildInSongPackSerializedName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _allSongPackSerializedName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "PlayerDataFileManagerSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

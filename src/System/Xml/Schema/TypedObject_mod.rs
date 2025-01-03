@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct TypedObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub dstruct: *mut crate::System::Xml::Schema::TypedObject_DecimalStruct,
-    pub ovalue: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub svalue: *mut quest_hook::libil2cpp::Il2CppString,
-    pub xsdtype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
+    pub dstruct: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::TypedObject_DecimalStruct,
+    >,
+    pub ovalue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub svalue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub xsdtype: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaDatatype,
+    >,
     pub dim: i32,
     pub isList: bool,
 }
@@ -177,7 +181,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::TypedObje
 pub struct TypedObject_DecimalStruct {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub isDecimal: bool,
-    pub dvalue: *mut quest_hook::libil2cpp::Il2CppArray<crate::System::Decimal>,
+    pub dvalue: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Decimal>,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+TypedObject+DecimalStruct")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

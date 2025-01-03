@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct MissionObjectiveTypeSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _objectiveName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _objectiveName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _noConditionValue: bool,
-    pub _objectiveValueFormater: *mut crate::GlobalNamespace::ObjectiveValueFormatterSO,
+    pub _objectiveValueFormater: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ObjectiveValueFormatterSO,
+    >,
 }
 #[cfg(feature = "MissionObjectiveTypeSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

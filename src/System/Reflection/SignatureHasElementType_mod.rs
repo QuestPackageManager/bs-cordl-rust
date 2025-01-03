@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SignatureHasElementType {
     __cordl_parent: crate::System::Reflection::SignatureType,
-    pub _elementType: *mut crate::System::Reflection::SignatureType,
+    pub _elementType: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::SignatureType,
+    >,
 }
 #[cfg(feature = "System+Reflection+SignatureHasElementType")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

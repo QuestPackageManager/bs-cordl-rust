@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct EventHandlerList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _head: *mut crate::System::ComponentModel::EventHandlerList_ListEntry,
-    pub _parent: *mut crate::System::ComponentModel::Component,
+    pub _head: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::EventHandlerList_ListEntry,
+    >,
+    pub _parent: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::Component>,
 }
 #[cfg(feature = "System+ComponentModel+EventHandlerList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -73,9 +75,11 @@ for crate::System::ComponentModel::EventHandlerList {
 #[derive(Debug)]
 pub struct EventHandlerList_ListEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _next: *mut crate::System::ComponentModel::EventHandlerList_ListEntry,
-    pub _key: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _handler: *mut crate::System::Delegate,
+    pub _next: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::EventHandlerList_ListEntry,
+    >,
+    pub _key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _handler: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
 }
 #[cfg(feature = "System+ComponentModel+EventHandlerList+ListEntry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

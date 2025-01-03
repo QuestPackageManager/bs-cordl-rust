@@ -11,7 +11,7 @@ pub struct OVRDebugHeadController {
     pub AllowMovement: bool,
     pub ForwardSpeed: f32,
     pub StrafeSpeed: f32,
-    pub CameraRig: *mut crate::GlobalNamespace::OVRCameraRig,
+    pub CameraRig: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCameraRig>,
 }
 #[cfg(feature = "OVRDebugHeadController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

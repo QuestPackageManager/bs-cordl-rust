@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Net+NetworkInformation+AixStructs+sockaddr_in6")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct sockaddr_in6 {
     pub sin6_len: u8,
     pub sin6_family: u8,

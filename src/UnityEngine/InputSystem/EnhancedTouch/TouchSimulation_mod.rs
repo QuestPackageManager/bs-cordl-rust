@@ -3,27 +3,37 @@
 #[derive(Debug)]
 pub struct TouchSimulation {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _simulatedTouchscreen_k__BackingField: *mut crate::UnityEngine::InputSystem::Touchscreen,
+    pub _simulatedTouchscreen_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Touchscreen,
+    >,
     pub m_NumPointers: i32,
-    pub m_Pointers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::Pointer,
+    pub m_Pointers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::InputSystem::Pointer>,
     >,
-    pub m_CurrentPositions: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector2,
+    pub m_CurrentPositions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
     >,
-    pub m_CurrentDisplayIndices: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub m_Touches: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    pub m_CurrentDisplayIndices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub m_Touches: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+        >,
     >,
     pub m_LastTouchId: i32,
     pub m_PrimaryTouchIndex: i32,
-    pub m_OnDeviceChange: *mut crate::System::Action_2<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
-        crate::UnityEngine::InputSystem::InputDeviceChange,
+    pub m_OnDeviceChange: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+            crate::UnityEngine::InputSystem::InputDeviceChange,
+        >,
     >,
-    pub m_OnEvent: *mut crate::System::Action_2<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        *mut crate::UnityEngine::InputSystem::InputDevice,
+    pub m_OnEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]

@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct LightRotationGroupEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightRotationGroups: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::LightRotationGroup,
+    pub _lightRotationGroups: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::LightRotationGroup,
+        >,
     >,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _lightRotationGroupEffects: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LightRotationGroupEffect,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _lightRotationGroupEffects: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LightRotationGroupEffect,
+        >,
     >,
 }
 #[cfg(feature = "LightRotationGroupEffectManager")]

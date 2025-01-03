@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct GotoExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
-    pub _Type_k__BackingField: *mut crate::System::Type,
-    pub _Value_k__BackingField: *mut crate::System::Linq::Expressions::Expression,
-    pub _Target_k__BackingField: *mut crate::System::Linq::Expressions::LabelTarget,
+    pub _Type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _Value_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
+    pub _Target_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::LabelTarget,
+    >,
     pub _Kind_k__BackingField: crate::System::Linq::Expressions::GotoExpressionKind,
 }
 #[cfg(feature = "System+Linq+Expressions+GotoExpression")]

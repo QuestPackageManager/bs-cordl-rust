@@ -5,8 +5,10 @@ pub struct PgpCompressedDataGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub algorithm: crate::Org::BouncyCastle::Bcpg::CompressionAlgorithmTag,
     pub compression: i32,
-    pub dOut: *mut crate::System::IO::Stream,
-    pub pkOut: *mut crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
+    pub dOut: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub pkOut: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpCompressedDataGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

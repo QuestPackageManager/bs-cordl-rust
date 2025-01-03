@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CreateDelegateInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
-    pub _creator: *mut crate::System::Linq::Expressions::Interpreter::LightDelegateCreator,
+    pub _creator: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::LightDelegateCreator,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+CreateDelegateInstruction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

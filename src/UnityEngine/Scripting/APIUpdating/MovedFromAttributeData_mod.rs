@@ -1,10 +1,10 @@
 #[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MovedFromAttributeData {
-    pub className: *mut quest_hook::libil2cpp::Il2CppString,
-    pub nameSpace: *mut quest_hook::libil2cpp::Il2CppString,
-    pub assembly: *mut quest_hook::libil2cpp::Il2CppString,
+    pub className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub nameSpace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub assembly: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub classHasChanged: bool,
     pub nameSpaceHasChanged: bool,
     pub assemblyHasChanged: bool,

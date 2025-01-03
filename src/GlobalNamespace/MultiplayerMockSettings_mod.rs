@@ -3,13 +3,23 @@
 #[derive(Debug)]
 pub struct MultiplayerMockSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _localPlayer: *mut crate::GlobalNamespace::MockPlayerSettings,
-    pub _otherPlayers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::MockPlayerSettings,
+    pub _localPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MockPlayerSettings,
     >,
-    pub _quickplayServer: *mut crate::GlobalNamespace::MockServerSettings,
-    pub _multiplayerStatusData: *mut crate::GlobalNamespace::MultiplayerStatusData,
-    pub _quickPlaySetupData: *mut crate::GlobalNamespace::QuickPlaySetupData,
+    pub _otherPlayers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::MockPlayerSettings,
+        >,
+    >,
+    pub _quickplayServer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MockServerSettings,
+    >,
+    pub _multiplayerStatusData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerStatusData,
+    >,
+    pub _quickPlaySetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::QuickPlaySetupData,
+    >,
 }
 #[cfg(feature = "MultiplayerMockSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

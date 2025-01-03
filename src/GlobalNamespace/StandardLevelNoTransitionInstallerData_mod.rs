@@ -3,25 +3,45 @@
 #[derive(Debug)]
 pub struct StandardLevelNoTransitionInstallerData {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _beatmapLevel: *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-        *mut crate::GlobalNamespace::BeatmapLevelSO,
+    pub _beatmapLevel: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+            *mut crate::GlobalNamespace::BeatmapLevelSO,
+        >,
     >,
-    pub _beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSO,
+    >,
     pub _beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    pub _colorScheme: *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-        *mut crate::GlobalNamespace::ColorSchemeSO,
+    pub _colorScheme: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+            *mut crate::GlobalNamespace::ColorSchemeSO,
+        >,
     >,
-    pub _environmentInfo: *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-        *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub _environmentInfo: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+            *mut crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
     >,
-    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-    pub _playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
-    pub _practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
-    pub _backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
+    >,
+    pub _playerSpecificSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSpecificSettings,
+    >,
+    pub _practiceSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PracticeSettings,
+    >,
+    pub _backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _useTestNoteCutSoundEffects: bool,
-    pub _selectedBeatmapLevel: *mut crate::GlobalNamespace::BeatmapLevelSO,
-    pub _selectedColorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
-    pub _selectedEnvironmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub _selectedBeatmapLevel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelSO,
+    >,
+    pub _selectedColorScheme: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemeSO,
+    >,
+    pub _selectedEnvironmentInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentInfoSO,
+    >,
 }
 #[cfg(feature = "StandardLevelNoTransitionInstallerData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

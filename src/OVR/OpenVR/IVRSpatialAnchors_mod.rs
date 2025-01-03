@@ -1,11 +1,19 @@
 #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IVRSpatialAnchors {
-    pub CreateSpatialAnchorFromDescriptor: *mut crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromDescriptor,
-    pub CreateSpatialAnchorFromPose: *mut crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromPose,
-    pub GetSpatialAnchorPose: *mut crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorPose,
-    pub GetSpatialAnchorDescriptor: *mut crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorDescriptor,
+    pub CreateSpatialAnchorFromDescriptor: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromDescriptor,
+    >,
+    pub CreateSpatialAnchorFromPose: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromPose,
+    >,
+    pub GetSpatialAnchorPose: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorPose,
+    >,
+    pub GetSpatialAnchorDescriptor: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorDescriptor,
+    >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

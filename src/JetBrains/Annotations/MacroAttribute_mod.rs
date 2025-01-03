@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct MacroAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Expression_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Expression_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _Editable_k__BackingField: i32,
-    pub _Target_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Target_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "JetBrains+Annotations+MacroAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct HEU_PluginStorage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dataMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::HoudiniEngineUnity::HEU_PluginStorage_StoreData,
+    pub _dataMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::HoudiniEngineUnity::HEU_PluginStorage_StoreData,
+        >,
     >,
-    pub _envPathMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _envPathMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub _requiresSave: bool,
 }
@@ -459,7 +463,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 pub struct HEU_PluginStorage_StoreData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _type: crate::HoudiniEngineUnity::HEU_PluginStorage_DataType,
-    pub _valueStr: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _valueStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -514,7 +518,7 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreData {
 #[derive(Debug)]
 pub struct HEU_PluginStorage_StoreDataArray_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _array: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub _array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreDataArray_1")]

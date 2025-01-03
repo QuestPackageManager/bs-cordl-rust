@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct FileSystemFileStorage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _persistentDataPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _commandQueueMap: *mut crate::System::Collections::Concurrent::ConcurrentDictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::BackgroundCommandQueue,
+    pub _persistentDataPath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _commandQueueMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Concurrent::ConcurrentDictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::BackgroundCommandQueue,
+        >,
     >,
 }
 #[cfg(feature = "FileSystemFileStorage")]
@@ -202,7 +206,7 @@ for crate::GlobalNamespace::FileSystemFileStorage {
 #[derive(Debug)]
 pub struct FileSystemFileStorage_DeleteFileCommand {
     __cordl_parent: crate::GlobalNamespace::SyncBackgroundCommand,
-    pub _filePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "FileSystemFileStorage+DeleteFileCommand")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -273,7 +277,7 @@ for crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
 #[derive(Debug)]
 pub struct FileSystemFileStorage_FileExistsCommand {
     __cordl_parent: crate::GlobalNamespace::SyncBackgroundCommand_1<bool>,
-    pub _filePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "FileSystemFileStorage+FileExistsCommand")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -343,7 +347,7 @@ pub struct FileSystemFileStorage_LoadFileCommand {
     __cordl_parent: crate::GlobalNamespace::SyncBackgroundCommand_1<
         *mut quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _filePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "FileSystemFileStorage+LoadFileCommand")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -418,8 +422,8 @@ for crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
 #[derive(Debug)]
 pub struct FileSystemFileStorage_SaveFileCommand {
     __cordl_parent: crate::GlobalNamespace::SyncBackgroundCommand,
-    pub _filePath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _value: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "FileSystemFileStorage+SaveFileCommand")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct SelectableCellStaticAnimations {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _selectableCell: *mut crate::HMUI::SelectableCell,
-    pub _normalAnimationClip: *mut crate::UnityEngine::AnimationClip,
-    pub _highlightedAnimationClip: *mut crate::UnityEngine::AnimationClip,
-    pub _selectedAnimationClip: *mut crate::UnityEngine::AnimationClip,
-    pub _selectedAndHighlightedAnimationClip: *mut crate::UnityEngine::AnimationClip,
+    pub _selectableCell: quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
+    pub _normalAnimationClip: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationClip,
+    >,
+    pub _highlightedAnimationClip: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationClip,
+    >,
+    pub _selectedAnimationClip: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationClip,
+    >,
+    pub _selectedAndHighlightedAnimationClip: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationClip,
+    >,
 }
 #[cfg(feature = "HMUI+SelectableCellStaticAnimations")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

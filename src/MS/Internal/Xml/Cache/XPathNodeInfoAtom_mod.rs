@@ -3,19 +3,21 @@
 #[derive(Debug)]
 pub struct XPathNodeInfoAtom {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _localName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _prefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _pageParent: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::MS::Internal::Xml::Cache::XPathNode,
+    pub _localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _namespaceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _pageParent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::MS::Internal::Xml::Cache::XPathNode>,
     >,
-    pub _pageSibling: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::MS::Internal::Xml::Cache::XPathNode,
+    pub _pageSibling: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::MS::Internal::Xml::Cache::XPathNode>,
     >,
-    pub _doc: *mut crate::System::Xml::XPath::XPathDocument,
+    pub _doc: quest_hook::libil2cpp::Gc<crate::System::Xml::XPath::XPathDocument>,
     pub _lineNumBase: i32,
     pub _linePosBase: i32,
-    pub _pageInfo: *mut crate::MS::Internal::Xml::Cache::XPathNodePageInfo,
+    pub _pageInfo: quest_hook::libil2cpp::Gc<
+        crate::MS::Internal::Xml::Cache::XPathNodePageInfo,
+    >,
 }
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathNodeInfoAtom")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

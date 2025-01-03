@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct LevelInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _levelID_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _beatmaps_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapInfo,
+    pub _levelID_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _beatmaps_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapInfo>,
     >,
 }
 #[cfg(feature = "LevelInfo")]

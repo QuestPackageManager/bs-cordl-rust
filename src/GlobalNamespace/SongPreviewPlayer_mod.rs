@@ -4,18 +4,26 @@
 pub struct SongPreviewPlayer {
     __cordl_parent: crate::GlobalNamespace::AudioPlayerBase,
     pub _channelsCount: i32,
-    pub _audioSourcePrefab: *mut crate::UnityEngine::AudioSource,
-    pub _defaultAudioClip: *mut crate::UnityEngine::AudioClip,
+    pub _audioSourcePrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    pub _defaultAudioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     pub _volume: f32,
     pub _crossFadeToAnotherSongSpeed: f32,
     pub _crossFadeToDefaultSpeed: f32,
     pub _fadeInSpeed: f32,
-    pub _defaultAudioSourceParams: *mut crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams,
-    pub _othersAudioSourceParams: *mut crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams,
-    pub _initData: *mut crate::GlobalNamespace::SongPreviewPlayer_InitData,
-    pub _audioManager: *mut crate::GlobalNamespace::AudioManagerSO,
-    pub _audioSourceControllers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController,
+    pub _defaultAudioSourceParams: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams,
+    >,
+    pub _othersAudioSourceParams: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPreviewPlayer_InitData,
+    >,
+    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
+    pub _audioSourceControllers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController,
+        >,
     >,
     pub _activeChannel: i32,
     pub _timeToDefaultAudioTransition: f32,
@@ -24,9 +32,11 @@ pub struct SongPreviewPlayer {
     pub _fadeSpeed: f32,
     pub _ambientVolumeScale: f32,
     pub _isActiveChannelPaused: bool,
-    pub _channelToFadeOutCallbackDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::System::Action,
+    pub _channelToFadeOutCallbackDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::System::Action,
+        >,
     >,
 }
 #[cfg(feature = "SongPreviewPlayer")]
@@ -372,7 +382,7 @@ for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
 #[derive(Debug)]
 pub struct SongPreviewPlayer_AudioSourceVolumeController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub audioSource: *mut crate::UnityEngine::AudioSource,
+    pub audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _maxVolume_k__BackingField: f32,
     pub _volume: f32,
 }

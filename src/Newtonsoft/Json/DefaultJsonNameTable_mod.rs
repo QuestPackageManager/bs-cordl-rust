@@ -4,8 +4,10 @@
 pub struct DefaultJsonNameTable {
     __cordl_parent: crate::Newtonsoft::Json::JsonNameTable,
     pub _count: i32,
-    pub _entries: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Newtonsoft::Json::DefaultJsonNameTable_Entry,
+    pub _entries: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Newtonsoft::Json::DefaultJsonNameTable_Entry,
+        >,
     >,
     pub _mask: i32,
 }
@@ -129,9 +131,11 @@ for crate::Newtonsoft::Json::DefaultJsonNameTable {
 #[derive(Debug)]
 pub struct DefaultJsonNameTable_Entry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Value: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub HashCode: i32,
-    pub Next: *mut crate::Newtonsoft::Json::DefaultJsonNameTable_Entry,
+    pub Next: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::DefaultJsonNameTable_Entry,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable+Entry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -4,10 +4,10 @@
 pub struct RuntimeModule {
     __cordl_parent: crate::System::Reflection::Module,
     pub _impl: crate::System::IntPtr,
-    pub assembly: *mut crate::System::Reflection::Assembly,
-    pub fqname: *mut quest_hook::libil2cpp::Il2CppString,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub scopename: *mut quest_hook::libil2cpp::Il2CppString,
+    pub assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+    pub fqname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub scopename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub is_resource: bool,
     pub token: i32,
 }

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct Localization {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub supportedLanguages: *mut crate::System::Collections::Generic::List_1<
-        crate::BGLib::Polyglot::Language,
+    pub supportedLanguages: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::BGLib::Polyglot::Language>,
     >,
     pub selectedLanguage: crate::BGLib::Polyglot::Language,
     pub fallbackLanguage: crate::BGLib::Polyglot::Language,

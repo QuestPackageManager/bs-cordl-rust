@@ -5,7 +5,7 @@ pub struct LivestreamingVideoStats {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub CommentCount: i32,
     pub ReactionCount: i32,
-    pub TotalViews: *mut quest_hook::libil2cpp::Il2CppString,
+    pub TotalViews: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Oculus+Platform+Models+LivestreamingVideoStats")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DsaSecretBcpgKey {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::BcpgObject,
-    pub x: *mut crate::Org::BouncyCastle::Bcpg::MPInteger,
+    pub x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::MPInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+DsaSecretBcpgKey")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

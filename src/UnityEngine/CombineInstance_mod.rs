@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+CombineInstance")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CombineInstance {
     pub m_MeshInstanceID: i32,
     pub m_SubMeshIndex: i32,

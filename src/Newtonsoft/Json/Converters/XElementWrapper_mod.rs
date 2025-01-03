@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct XElementWrapper {
     __cordl_parent: crate::Newtonsoft::Json::Converters::XContainerWrapper,
-    pub _attributes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Newtonsoft::Json::Converters::IXmlNode,
+    pub _attributes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Converters::IXmlNode,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XElementWrapper")]

@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct OVRRaycaster {
     __cordl_parent: crate::UnityEngine::UI::GraphicRaycaster,
-    pub pointer: *mut crate::UnityEngine::GameObject,
+    pub pointer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub sortOrder: i32,
-    pub m_Canvas: *mut crate::UnityEngine::Canvas,
-    pub m_RaycastResults: *mut crate::System::Collections::Generic::List_1<
-        crate::GlobalNamespace::OVRRaycaster_RaycastHit,
+    pub m_Canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+    pub m_RaycastResults: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::OVRRaycaster_RaycastHit,
+        >,
     >,
 }
 #[cfg(feature = "OVRRaycaster")]
@@ -241,9 +243,9 @@ for crate::GlobalNamespace::OVRRaycaster {
 }
 #[cfg(feature = "OVRRaycaster+RaycastHit")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRRaycaster_RaycastHit {
-    pub graphic: *mut crate::UnityEngine::UI::Graphic,
+    pub graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     pub worldPos: crate::UnityEngine::Vector3,
     pub fromMouse: bool,
 }

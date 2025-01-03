@@ -1,9 +1,13 @@
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+InternedString")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InternedString {
-    pub m_StringOriginalCase: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_StringLowerCase: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_StringOriginalCase: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_StringLowerCase: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+InternedString")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

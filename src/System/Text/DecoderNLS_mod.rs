@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DecoderNLS {
     __cordl_parent: crate::System::Text::Decoder,
-    pub _encoding: *mut crate::System::Text::Encoding,
+    pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     pub _mustFlush: bool,
     pub _throwOnOverflow: bool,
     pub _bytesUsed: i32,

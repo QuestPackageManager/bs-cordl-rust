@@ -5,9 +5,15 @@ pub struct GameLiftNetworkPlayerModel {
     __cordl_parent: crate::GlobalNamespace::NetworkPlayerModel_1<
         *mut crate::GlobalNamespace::GameLiftConnectionManager,
     >,
-    pub _gameLiftPlayerSessionProvider: *mut crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider,
-    pub _cachedConnectToServerParams: *mut crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams,
-    pub _cachedStartClientParams: *mut crate::GlobalNamespace::GameLiftConnectionManager_StartClientParams,
+    pub _gameLiftPlayerSessionProvider: quest_hook::libil2cpp::Gc<
+        crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider,
+    >,
+    pub _cachedConnectToServerParams: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams,
+    >,
+    pub _cachedStartClientParams: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameLiftConnectionManager_StartClientParams,
+    >,
 }
 #[cfg(feature = "GameLiftNetworkPlayerModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

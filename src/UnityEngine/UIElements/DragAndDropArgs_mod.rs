@@ -1,13 +1,17 @@
 #[cfg(feature = "UnityEngine+UIElements+DragAndDropArgs")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DragAndDropArgs {
-    pub _target_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _target_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub _insertAtIndex_k__BackingField: i32,
     pub _parentId_k__BackingField: i32,
     pub _childIndex_k__BackingField: i32,
     pub _dragAndDropPosition_k__BackingField: crate::UnityEngine::UIElements::DragAndDropPosition,
-    pub _dragAndDropData_k__BackingField: *mut crate::UnityEngine::UIElements::DragAndDropData,
+    pub _dragAndDropData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::DragAndDropData,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+DragAndDropArgs")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

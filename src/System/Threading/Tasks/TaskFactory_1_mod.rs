@@ -4,7 +4,9 @@
 pub struct TaskFactory_1<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_defaultCancellationToken: crate::System::Threading::CancellationToken,
-    pub m_defaultScheduler: *mut crate::System::Threading::Tasks::TaskScheduler,
+    pub m_defaultScheduler: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskScheduler,
+    >,
     pub m_defaultCreationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
     pub m_defaultContinuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
@@ -384,10 +386,8 @@ pub struct TaskFactory_1_FromAsyncTrimPromise_1<
 > {
     __cordl_parent: crate::System::Threading::Tasks::Task_1<TResult>,
     pub m_thisRef: TInstance,
-    pub m_endMethod: *mut crate::System::Func_3<
-        TInstance,
-        *mut crate::System::IAsyncResult,
-        TResult,
+    pub m_endMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<TInstance, *mut crate::System::IAsyncResult, TResult>,
     >,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
     __cordl_phantom_TInstance: std::marker::PhantomData<TInstance>,

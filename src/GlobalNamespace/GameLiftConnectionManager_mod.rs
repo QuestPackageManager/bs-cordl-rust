@@ -3,40 +3,56 @@
 #[derive(Debug)]
 pub struct GameLiftConnectionManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _timeProvider: *mut crate::BGNet::Core::ITimeProvider,
-    pub _taskUtility: *mut crate::BGNet::Core::ITaskUtility,
-    pub _connectionManager: *mut crate::GlobalNamespace::IConnectionManager,
-    pub _certificateValidator: *mut crate::GlobalNamespace::ICertificateValidator,
-    pub _code: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _secret: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
+    pub _taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
+    pub _connectionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectionManager,
+    >,
+    pub _certificateValidator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ICertificateValidator,
+    >,
+    pub _code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     pub _configuration: crate::GlobalNamespace::GameplayServerConfiguration,
     pub _connectionState: crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState,
-    pub _connectionCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _authenticationTokenProviderTask: *mut crate::System::Threading::Tasks::Task_1<
-        *mut crate::GlobalNamespace::IAuthenticationTokenProvider,
+    pub _connectionCancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
     >,
-    pub _gameLiftPlayerSessionProvider: *mut crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider,
-    pub _connectionRequestHandler: *mut crate::GlobalNamespace::GameLiftClientConnectionRequestHandler,
-    pub onInitializedEvent: *mut crate::System::Action,
-    pub onConnectedEvent: *mut crate::System::Action,
-    pub onDisconnectedEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::DisconnectedReason,
+    pub _authenticationTokenProviderTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::IAuthenticationTokenProvider,
+        >,
     >,
-    pub onConnectionFailedEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::ConnectionFailedReason,
+    pub _gameLiftPlayerSessionProvider: quest_hook::libil2cpp::Gc<
+        crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider,
     >,
-    pub onConnectionConnectedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::IConnection,
+    pub _connectionRequestHandler: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameLiftClientConnectionRequestHandler,
     >,
-    pub onConnectionDisconnectedEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::IConnection,
-        crate::GlobalNamespace::DisconnectedReason,
+    pub onInitializedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub onConnectedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub onDisconnectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
     >,
-    pub onReceivedDataEvent: *mut crate::System::Action_3<
-        *mut crate::GlobalNamespace::IConnection,
-        *mut crate::LiteNetLib::Utils::NetDataReader,
-        crate::BGNet::Core::DeliveryMethod,
+    pub onConnectionFailedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
+    >,
+    pub onConnectionConnectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::IConnection>,
+    >,
+    pub onConnectionDisconnectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::IConnection,
+            crate::GlobalNamespace::DisconnectedReason,
+        >,
+    >,
+    pub onReceivedDataEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_3<
+            *mut crate::GlobalNamespace::IConnection,
+            *mut crate::LiteNetLib::Utils::NetDataReader,
+            crate::BGNet::Core::DeliveryMethod,
+        >,
     >,
 }
 #[cfg(feature = "GameLiftConnectionManager")]
@@ -752,8 +768,8 @@ for crate::GlobalNamespace::GameLiftConnectionManager {
 #[derive(Debug)]
 pub struct GameLiftConnectionManager_ConnectToServerParams {
     __cordl_parent: crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase,
-    pub secret: *mut quest_hook::libil2cpp::Il2CppString,
-    pub code: *mut quest_hook::libil2cpp::Il2CppString,
+    pub secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -826,10 +842,14 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct GameLiftConnectionManager_GameLiftConnectionManagerParamsBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub authenticationTokenProviderTask: *mut crate::System::Threading::Tasks::Task_1<
-        *mut crate::GlobalNamespace::IAuthenticationTokenProvider,
+    pub authenticationTokenProviderTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::IAuthenticationTokenProvider,
+        >,
     >,
-    pub gameLiftPlayerSessionProvider: *mut crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider,
+    pub gameLiftPlayerSessionProvider: quest_hook::libil2cpp::Gc<
+        crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider,
+    >,
     pub selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     pub configuration: crate::GlobalNamespace::GameplayServerConfiguration,
 }

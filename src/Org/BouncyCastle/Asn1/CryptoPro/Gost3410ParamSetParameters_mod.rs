@@ -4,9 +4,9 @@
 pub struct Gost3410ParamSetParameters {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub keySize: i32,
-    pub p: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub q: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub a: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+    pub p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub a: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+CryptoPro+Gost3410ParamSetParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

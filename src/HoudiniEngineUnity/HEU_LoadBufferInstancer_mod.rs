@@ -3,18 +3,20 @@
 #[derive(Debug)]
 pub struct HEU_LoadBufferInstancer {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_LoadBufferBase,
-    pub _instanceTransforms: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::HoudiniEngineUnity::HAPI_Transform,
+    pub _instanceTransforms: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::HoudiniEngineUnity::HAPI_Transform>,
     >,
-    pub _instancePrefixes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _instancePrefixes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _instanceNodeIDs: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _assetPaths: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _instanceNodeIDs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
     >,
-    pub _collisionAssetPaths: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _assetPaths: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub _collisionAssetPaths: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_LoadBufferInstancer")]

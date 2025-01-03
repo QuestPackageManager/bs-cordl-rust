@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct EditableBeatmapSelectionView {
     __cordl_parent: crate::GlobalNamespace::BeatmapSelectionView,
-    pub _editButton: *mut crate::UnityEngine::UI::Button,
-    pub _clearButton: *mut crate::UnityEngine::UI::Button,
-    pub _levelBarCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
+    pub _editButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _clearButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _levelBarCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
     pub _interactable: bool,
     pub _showClearButton_k__BackingField: bool,
 }

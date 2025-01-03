@@ -6,7 +6,7 @@ pub struct SignatureSubpacket {
     pub _cordl_type: crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,
     pub critical: bool,
     pub isLongLength: bool,
-    pub data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+SignatureSubpacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

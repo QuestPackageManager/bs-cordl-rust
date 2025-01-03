@@ -3,12 +3,20 @@
 #[derive(Debug)]
 pub struct TrustAnchor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub pubKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub caName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub caPrincipal: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
-    pub trustedCert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-    pub ncBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub nc: *mut crate::Org::BouncyCastle::Asn1::X509::NameConstraints,
+    pub pubKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    >,
+    pub caName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub caPrincipal: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Name,
+    >,
+    pub trustedCert: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::X509Certificate,
+    >,
+    pub ncBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub nc: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::NameConstraints,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+TrustAnchor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

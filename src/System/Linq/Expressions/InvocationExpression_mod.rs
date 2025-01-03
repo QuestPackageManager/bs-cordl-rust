@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct InvocationExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
-    pub _Type_k__BackingField: *mut crate::System::Type,
-    pub _Expression_k__BackingField: *mut crate::System::Linq::Expressions::Expression,
+    pub _Type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _Expression_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+InvocationExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

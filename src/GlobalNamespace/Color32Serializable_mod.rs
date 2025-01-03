@@ -1,6 +1,6 @@
 #[cfg(feature = "Color32Serializable")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Color32Serializable {
     pub _color: crate::UnityEngine::Color32,
 }

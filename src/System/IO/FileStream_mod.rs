@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct FileStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub safeHandle: *mut crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
+    pub buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub safeHandle: quest_hook::libil2cpp::Gc<
+        crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
+    >,
     pub isExposed: bool,
     pub append_startpos: i64,
     pub access: crate::System::IO::FileAccess,

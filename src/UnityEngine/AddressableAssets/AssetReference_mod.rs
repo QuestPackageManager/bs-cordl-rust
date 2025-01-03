@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct AssetReference {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_AssetGUID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_SubObjectName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_SubObjectType: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_AssetGUID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_SubObjectName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_SubObjectType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Operation: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+AssetReference")]

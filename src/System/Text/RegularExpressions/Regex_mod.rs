@@ -4,20 +4,28 @@
 pub struct Regex {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub internalMatchTimeout: crate::System::TimeSpan,
-    pub pattern: *mut quest_hook::libil2cpp::Il2CppString,
+    pub pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub roptions: crate::System::Text::RegularExpressions::RegexOptions,
-    pub factory: *mut crate::System::Text::RegularExpressions::RegexRunnerFactory,
-    pub caps: *mut crate::System::Collections::Hashtable,
-    pub capnames: *mut crate::System::Collections::Hashtable,
-    pub capslist: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub factory: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::RegexRunnerFactory,
+    >,
+    pub caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub capnames: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub capslist: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub capsize: i32,
-    pub _runnerref: *mut crate::System::Text::RegularExpressions::ExclusiveReference,
-    pub _replref: *mut crate::System::WeakReference_1<
-        *mut crate::System::Text::RegularExpressions::RegexReplacement,
+    pub _runnerref: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::ExclusiveReference,
     >,
-    pub _code: *mut crate::System::Text::RegularExpressions::RegexCode,
+    pub _replref: quest_hook::libil2cpp::Gc<
+        crate::System::WeakReference_1<
+            *mut crate::System::Text::RegularExpressions::RegexReplacement,
+        >,
+    >,
+    pub _code: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::RegexCode,
+    >,
     pub _refsInitialized: bool,
 }
 #[cfg(feature = "System+Text+RegularExpressions+Regex")]
@@ -588,19 +596,29 @@ for crate::System::Text::RegularExpressions::Regex {
 #[derive(Debug)]
 pub struct Regex_CachedCodeEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Next: *mut crate::System::Text::RegularExpressions::Regex_CachedCodeEntry,
-    pub Previous: *mut crate::System::Text::RegularExpressions::Regex_CachedCodeEntry,
+    pub Next: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::Regex_CachedCodeEntry,
+    >,
+    pub Previous: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::Regex_CachedCodeEntry,
+    >,
     pub Key: crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey,
-    pub Code: *mut crate::System::Text::RegularExpressions::RegexCode,
-    pub Caps: *mut crate::System::Collections::Hashtable,
-    pub Capnames: *mut crate::System::Collections::Hashtable,
-    pub Capslist: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub Code: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::RegexCode,
+    >,
+    pub Caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub Capnames: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub Capslist: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub Capsize: i32,
-    pub Runnerref: *mut crate::System::Text::RegularExpressions::ExclusiveReference,
-    pub ReplRef: *mut crate::System::WeakReference_1<
-        *mut crate::System::Text::RegularExpressions::RegexReplacement,
+    pub Runnerref: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::ExclusiveReference,
+    >,
+    pub ReplRef: quest_hook::libil2cpp::Gc<
+        crate::System::WeakReference_1<
+            *mut crate::System::Text::RegularExpressions::RegexReplacement,
+        >,
     >,
 }
 #[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntry")]
@@ -698,11 +716,11 @@ for crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
 }
 #[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Regex_CachedCodeEntryKey {
     pub _options: crate::System::Text::RegularExpressions::RegexOptions,
-    pub _cultureKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _pattern: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _cultureKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

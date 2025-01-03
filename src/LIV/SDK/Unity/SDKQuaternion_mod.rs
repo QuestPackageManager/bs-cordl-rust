@@ -1,6 +1,6 @@
 #[cfg(feature = "LIV+SDK+Unity+SDKQuaternion")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SDKQuaternion {
     pub x: f32,
     pub y: f32,

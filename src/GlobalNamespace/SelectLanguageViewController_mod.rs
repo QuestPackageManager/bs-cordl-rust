@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct SelectLanguageViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _continueButton: *mut crate::UnityEngine::UI::Button,
-    pub _languageSettingsController: *mut crate::GlobalNamespace::LanguageSettingsController,
-    pub didChangeLanguageEvent: *mut crate::System::Action_1<
-        crate::BGLib::Polyglot::Language,
+    pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _languageSettingsController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LanguageSettingsController,
     >,
-    pub didPressContinueButtonEvent: *mut crate::System::Action,
+    pub didChangeLanguageEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::BGLib::Polyglot::Language>,
+    >,
+    pub didPressContinueButtonEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "SelectLanguageViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

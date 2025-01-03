@@ -3,54 +3,76 @@
 #[derive(Debug)]
 pub struct DataTable {
     __cordl_parent: crate::System::ComponentModel::MarshalByValueComponent,
-    pub _dataSet: *mut crate::System::Data::DataSet,
-    pub _defaultView: *mut crate::System::Data::DataView,
+    pub _dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+    pub _defaultView: quest_hook::libil2cpp::Gc<crate::System::Data::DataView>,
     pub _nextRowID: i64,
-    pub _rowCollection: *mut crate::System::Data::DataRowCollection,
-    pub _columnCollection: *mut crate::System::Data::DataColumnCollection,
-    pub _constraintCollection: *mut crate::System::Data::ConstraintCollection,
-    pub _elementColumnCount: i32,
-    pub _parentRelationsCollection: *mut crate::System::Data::DataRelationCollection,
-    pub _childRelationsCollection: *mut crate::System::Data::DataRelationCollection,
-    pub _recordManager: *mut crate::System::Data::RecordManager,
-    pub _indexes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Data::Index,
+    pub _rowCollection: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataRowCollection,
     >,
-    pub _shadowIndexes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Data::Index,
+    pub _columnCollection: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataColumnCollection,
+    >,
+    pub _constraintCollection: quest_hook::libil2cpp::Gc<
+        crate::System::Data::ConstraintCollection,
+    >,
+    pub _elementColumnCount: i32,
+    pub _parentRelationsCollection: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataRelationCollection,
+    >,
+    pub _childRelationsCollection: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataRelationCollection,
+    >,
+    pub _recordManager: quest_hook::libil2cpp::Gc<crate::System::Data::RecordManager>,
+    pub _indexes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::Data::Index>,
+    >,
+    pub _shadowIndexes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::Data::Index>,
     >,
     pub _shadowCount: i32,
-    pub _extendedProperties: *mut crate::System::Data::PropertyCollection,
-    pub _tableName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _tableNamespace: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _tablePrefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _displayExpression: *mut crate::System::Data::DataExpression,
+    pub _extendedProperties: quest_hook::libil2cpp::Gc<
+        crate::System::Data::PropertyCollection,
+    >,
+    pub _tableName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _tableNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _tablePrefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _displayExpression: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataExpression,
+    >,
     pub _fNestedInDataset: bool,
-    pub _culture: *mut crate::System::Globalization::CultureInfo,
+    pub _culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     pub _cultureUserSet: bool,
-    pub _compareInfo: *mut crate::System::Globalization::CompareInfo,
+    pub _compareInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::CompareInfo,
+    >,
     pub _compareFlags: crate::System::Globalization::CompareOptions,
-    pub _formatProvider: *mut crate::System::IFormatProvider,
-    pub _hashCodeProvider: *mut crate::System::StringComparer,
+    pub _formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    pub _hashCodeProvider: quest_hook::libil2cpp::Gc<crate::System::StringComparer>,
     pub _caseSensitive: bool,
     pub _caseSensitiveUserSet: bool,
-    pub _encodedTableName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _xmlText: *mut crate::System::Data::DataColumn,
-    pub _colUnique: *mut crate::System::Data::DataColumn,
+    pub _encodedTableName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _xmlText: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+    pub _colUnique: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     pub _minOccurs: crate::System::Decimal,
     pub _maxOccurs: crate::System::Decimal,
     pub _repeatableElement: bool,
-    pub _typeName: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _primaryKey: *mut crate::System::Data::UniqueConstraint,
-    pub _primaryIndex: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Data::IndexField,
+    pub _typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _primaryKey: quest_hook::libil2cpp::Gc<crate::System::Data::UniqueConstraint>,
+    pub _primaryIndex: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Data::IndexField>,
     >,
-    pub _delayedSetPrimaryKey: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Data::DataColumn,
+    pub _delayedSetPrimaryKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
     >,
-    pub _loadIndex: *mut crate::System::Data::Index,
-    pub _loadIndexwithOriginalAdded: *mut crate::System::Data::Index,
-    pub _loadIndexwithCurrentDeleted: *mut crate::System::Data::Index,
+    pub _loadIndex: quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
+    pub _loadIndexwithOriginalAdded: quest_hook::libil2cpp::Gc<
+        crate::System::Data::Index,
+    >,
+    pub _loadIndexwithCurrentDeleted: quest_hook::libil2cpp::Gc<
+        crate::System::Data::Index,
+    >,
     pub _suspendIndexEvents: i32,
     pub _inDataLoad: bool,
     pub _schemaLoading: bool,
@@ -60,36 +82,62 @@ pub struct DataTable {
     pub _inLoad: bool,
     pub _fInLoadDiffgram: bool,
     pub _isTypedDataTable: u8,
-    pub _emptyDataRowArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Data::DataRow,
+    pub _emptyDataRowArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRow>,
     >,
-    pub _propertyDescriptorCollectionCache: *mut crate::System::ComponentModel::PropertyDescriptorCollection,
-    pub _nestedParentRelations: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Data::DataRelation,
+    pub _propertyDescriptorCollectionCache: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::PropertyDescriptorCollection,
     >,
-    pub _dependentColumns: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Data::DataColumn,
+    pub _nestedParentRelations: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRelation>,
+    >,
+    pub _dependentColumns: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::Data::DataColumn>,
     >,
     pub _mergingData: bool,
-    pub _onRowChangedDelegate: *mut crate::System::Data::DataRowChangeEventHandler,
-    pub _onRowChangingDelegate: *mut crate::System::Data::DataRowChangeEventHandler,
-    pub _onRowDeletingDelegate: *mut crate::System::Data::DataRowChangeEventHandler,
-    pub _onRowDeletedDelegate: *mut crate::System::Data::DataRowChangeEventHandler,
-    pub _onColumnChangedDelegate: *mut crate::System::Data::DataColumnChangeEventHandler,
-    pub _onColumnChangingDelegate: *mut crate::System::Data::DataColumnChangeEventHandler,
-    pub _onTableClearingDelegate: *mut crate::System::Data::DataTableClearEventHandler,
-    pub _onTableClearedDelegate: *mut crate::System::Data::DataTableClearEventHandler,
-    pub _onTableNewRowDelegate: *mut crate::System::Data::DataTableNewRowEventHandler,
-    pub _onPropertyChangingDelegate: *mut crate::System::ComponentModel::PropertyChangedEventHandler,
-    pub _rowBuilder: *mut crate::System::Data::DataRowBuilder,
-    pub _delayedViews: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Data::DataView,
+    pub _onRowChangedDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataRowChangeEventHandler,
     >,
-    pub _dataViewListeners: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Data::DataViewListener,
+    pub _onRowChangingDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataRowChangeEventHandler,
     >,
-    pub _rowDiffId: *mut crate::System::Collections::Hashtable,
-    pub _indexesLock: *mut crate::System::Threading::ReaderWriterLockSlim,
+    pub _onRowDeletingDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataRowChangeEventHandler,
+    >,
+    pub _onRowDeletedDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataRowChangeEventHandler,
+    >,
+    pub _onColumnChangedDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataColumnChangeEventHandler,
+    >,
+    pub _onColumnChangingDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataColumnChangeEventHandler,
+    >,
+    pub _onTableClearingDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataTableClearEventHandler,
+    >,
+    pub _onTableClearedDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataTableClearEventHandler,
+    >,
+    pub _onTableNewRowDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataTableNewRowEventHandler,
+    >,
+    pub _onPropertyChangingDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::PropertyChangedEventHandler,
+    >,
+    pub _rowBuilder: quest_hook::libil2cpp::Gc<crate::System::Data::DataRowBuilder>,
+    pub _delayedViews: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::Data::DataView>,
+    >,
+    pub _dataViewListeners: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Data::DataViewListener,
+        >,
+    >,
+    pub _rowDiffId: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub _indexesLock: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ReaderWriterLockSlim,
+    >,
     pub _ukColumnPositionForInference: i32,
     pub _remotingFormat: crate::System::Data::SerializationFormat,
     pub _objectID: i32,
@@ -2756,9 +2804,9 @@ for crate::System::Data::DataTable {
 }
 #[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DataTable_DSRowDiffIdUsageSection {
-    pub _targetDS: *mut crate::System::Data::DataSet,
+    pub _targetDS: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
 }
 #[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -2792,9 +2840,9 @@ impl crate::System::Data::DataTable_DSRowDiffIdUsageSection {
 }
 #[cfg(feature = "System+Data+DataTable+RowDiffIdUsageSection")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DataTable_RowDiffIdUsageSection {
-    pub _targetTable: *mut crate::System::Data::DataTable,
+    pub _targetTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
 }
 #[cfg(feature = "System+Data+DataTable+RowDiffIdUsageSection")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

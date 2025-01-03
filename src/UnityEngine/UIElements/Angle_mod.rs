@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+Angle")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Angle {
     pub m_Value: f32,
     pub m_Unit: crate::UnityEngine::UIElements::Angle_Unit,

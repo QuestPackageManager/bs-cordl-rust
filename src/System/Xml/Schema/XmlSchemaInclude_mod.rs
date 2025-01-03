@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct XmlSchemaInclude {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaExternal,
-    pub annotation: *mut crate::System::Xml::Schema::XmlSchemaAnnotation,
+    pub annotation: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAnnotation,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaInclude")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -5,9 +5,11 @@ pub struct HEU_HandleParamBinding {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _paramType: crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType,
     pub _parmID: i32,
-    pub _paramName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _bDisabled: bool,
-    pub _boundChannels: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
+    pub _boundChannels: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<bool>,
+    >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

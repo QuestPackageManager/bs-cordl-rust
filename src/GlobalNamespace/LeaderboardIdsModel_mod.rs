@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct LeaderboardIdsModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _leaderboardIds: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _leaderboardIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "LeaderboardIdsModel")]

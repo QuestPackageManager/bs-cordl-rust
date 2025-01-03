@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct GuestNameButtonsListItem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _nameText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _button: *mut crate::UnityEngine::UI::Button,
-    pub _buttonPressed: *mut crate::System::Action,
+    pub _nameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _buttonPressed: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "GuestNameButtonsListItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "System+TypedReference")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TypedReference {
     pub _cordl_type: crate::System::RuntimeTypeHandle,
     pub Value: crate::System::IntPtr,

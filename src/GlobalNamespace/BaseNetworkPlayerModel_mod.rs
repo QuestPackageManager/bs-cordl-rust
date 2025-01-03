@@ -3,16 +3,20 @@
 #[derive(Debug)]
 pub struct BaseNetworkPlayerModel {
     __cordl_parent: crate::GlobalNamespace::StandaloneMonobehavior,
-    pub _connectedPlayerManager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
-    pub _partyManager: *mut crate::GlobalNamespace::INetworkPlayerModel,
+    pub _connectedPlayerManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ConnectedPlayerManager,
+    >,
+    pub _partyManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INetworkPlayerModel,
+    >,
     pub _configuration: crate::GlobalNamespace::GameplayServerConfiguration,
     pub _selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     pub _discoveryEnabled_k__BackingField: bool,
-    pub connectedPlayerManagerCreatedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::INetworkPlayerModel,
+    pub connectedPlayerManagerCreatedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayerModel>,
     >,
-    pub connectedPlayerManagerDestroyedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::INetworkPlayerModel,
+    pub connectedPlayerManagerDestroyedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayerModel>,
     >,
 }
 #[cfg(feature = "BaseNetworkPlayerModel")]
@@ -619,7 +623,9 @@ pub struct BaseNetworkPlayerModel_PartyConfig {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     pub configuration: crate::GlobalNamespace::GameplayServerConfiguration,
-    pub partyManager: *mut crate::GlobalNamespace::INetworkPlayerModel,
+    pub partyManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INetworkPlayerModel,
+    >,
 }
 #[cfg(feature = "BaseNetworkPlayerModel+PartyConfig")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

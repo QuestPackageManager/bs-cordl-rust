@@ -4,12 +4,16 @@
 pub struct VertexPath {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub vertexCount: i32,
-    pub _localVertices: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::VertexPath_Vertex,
+    pub _localVertices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::VertexPath_Vertex>,
     >,
     pub _length: f32,
-    pub _cumulativeLengthAtEachVertex: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _anchorVertexMap: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _cumulativeLengthAtEachVertex: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
+    pub _anchorVertexMap: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
 }
 #[cfg(feature = "VertexPath")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -166,7 +170,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::VertexPath {
 }
 #[cfg(feature = "VertexPath+Vertex")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VertexPath_Vertex {
     pub position: crate::UnityEngine::Vector3,
     pub tangent: crate::UnityEngine::Vector3,

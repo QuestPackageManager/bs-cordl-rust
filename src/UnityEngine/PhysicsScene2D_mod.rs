@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+PhysicsScene2D")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PhysicsScene2D {
     pub m_Handle: i32,
 }

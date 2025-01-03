@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct Observer_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_OnNext: *mut crate::System::Action_1<TValue>,
-    pub m_OnCompleted: *mut crate::System::Action,
+    pub m_OnNext: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
+    pub m_OnCompleted: quest_hook::libil2cpp::Gc<crate::System::Action>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Observer_1")]

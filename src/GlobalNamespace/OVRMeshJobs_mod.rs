@@ -60,7 +60,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRMeshJobs {
 }
 #[cfg(feature = "OVRMeshJobs+NativeArrayHelper_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRMeshJobs_NativeArrayHelper_1<T: quest_hook::libil2cpp::Type> {
     pub UnityNativeArray: crate::Unity::Collections::NativeArray_1<T>,
     pub _handle: crate::System::Runtime::InteropServices::GCHandle,
@@ -133,7 +133,7 @@ for crate::GlobalNamespace::OVRMeshJobs_NativeArrayHelper_1<T> {
 }
 #[cfg(feature = "OVRMeshJobs+TransformToUnitySpaceJob")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRMeshJobs_TransformToUnitySpaceJob {
     pub Vertices: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
     pub Normals: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
@@ -204,7 +204,7 @@ for crate::GlobalNamespace::OVRMeshJobs_TransformToUnitySpaceJob {
 }
 #[cfg(feature = "OVRMeshJobs+TransformTrianglesJob")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRMeshJobs_TransformTrianglesJob {
     pub Triangles: crate::Unity::Collections::NativeArray_1<u32>,
     pub MeshIndices: crate::Unity::Collections::NativeArray_1<i16>,

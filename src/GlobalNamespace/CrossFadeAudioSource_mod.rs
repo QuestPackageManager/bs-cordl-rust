@@ -4,17 +4,27 @@
 pub struct CrossFadeAudioSource {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _duration: f32,
-    pub _audioSource1: *mut crate::UnityEngine::AudioSource,
-    pub _audioSource2: *mut crate::UnityEngine::AudioSource,
-    pub _audioPitchGainEffect1: *mut crate::GlobalNamespace::AudioPitchGainEffect,
-    pub _audioPitchGainEffect2: *mut crate::GlobalNamespace::AudioPitchGainEffect,
-    pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub _activeAudioSource: *mut crate::UnityEngine::AudioSource,
-    pub _inactiveAudioSource: *mut crate::UnityEngine::AudioSource,
-    pub _volumeDownTween: *mut crate::Tweening::Tween_1<f32>,
-    pub _volumeUpTween: *mut crate::Tweening::Tween_1<f32>,
-    pub _activePitchGainEffect: *mut crate::GlobalNamespace::AudioPitchGainEffect,
-    pub _inactivePitchGainEffect: *mut crate::GlobalNamespace::AudioPitchGainEffect,
+    pub _audioSource1: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    pub _audioSource2: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    pub _audioPitchGainEffect1: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioPitchGainEffect,
+    >,
+    pub _audioPitchGainEffect2: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioPitchGainEffect,
+    >,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::TimeTweeningManager,
+    >,
+    pub _activeAudioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    pub _inactiveAudioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    pub _volumeDownTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _volumeUpTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _activePitchGainEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioPitchGainEffect,
+    >,
+    pub _inactivePitchGainEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioPitchGainEffect,
+    >,
 }
 #[cfg(feature = "CrossFadeAudioSource")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_HandleBindingInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HAPI_HandleBindingInfo {
     pub handleParmNameSH: i32,
     pub assetParmNameSH: i32,

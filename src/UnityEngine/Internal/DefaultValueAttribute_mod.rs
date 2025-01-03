@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DefaultValueAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub DefaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub DefaultValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+Internal+DefaultValueAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct FtpWebRequest {
     __cordl_parent: crate::System::Net::WebRequest,
-    pub _syncObject: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _authInfo: *mut crate::System::Net::ICredentials,
-    pub _uri: *mut crate::System::Uri,
-    pub _methodInfo: *mut crate::System::Net::FtpMethodInfo,
-    pub _renameTo: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _syncObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _authInfo: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+    pub _uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    pub _methodInfo: quest_hook::libil2cpp::Gc<crate::System::Net::FtpMethodInfo>,
+    pub _renameTo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _getRequestStreamStarted: bool,
     pub _getResponseStarted: bool,
     pub _startTime: crate::System::DateTime,
@@ -15,27 +15,39 @@ pub struct FtpWebRequest {
     pub _remainingTimeout: i32,
     pub _contentLength: i64,
     pub _contentOffset: i64,
-    pub _clientCertificates: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+    pub _clientCertificates: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+    >,
     pub _passive: bool,
     pub _binary: bool,
-    pub _connectionGroupName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _connectionGroupName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _async: bool,
     pub _aborted: bool,
     pub _timedOut: bool,
-    pub _exception: *mut crate::System::Exception,
-    pub _timerQueue: *mut crate::System::Net::TimerThread_Queue,
-    pub _timerCallback: *mut crate::System::Net::TimerThread_Callback,
+    pub _exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    pub _timerQueue: quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_Queue>,
+    pub _timerCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Net::TimerThread_Callback,
+    >,
     pub _enableSsl: bool,
-    pub _connection: *mut crate::System::Net::FtpControlStream,
-    pub _stream: *mut crate::System::IO::Stream,
+    pub _connection: quest_hook::libil2cpp::Gc<crate::System::Net::FtpControlStream>,
+    pub _stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub _requestStage: crate::System::Net::FtpWebRequest_RequestStage,
     pub _onceFailed: bool,
-    pub _ftpRequestHeaders: *mut crate::System::Net::WebHeaderCollection,
-    pub _ftpWebResponse: *mut crate::System::Net::FtpWebResponse,
+    pub _ftpRequestHeaders: quest_hook::libil2cpp::Gc<
+        crate::System::Net::WebHeaderCollection,
+    >,
+    pub _ftpWebResponse: quest_hook::libil2cpp::Gc<crate::System::Net::FtpWebResponse>,
     pub _readWriteTimeout: i32,
-    pub _writeAsyncResult: *mut crate::System::Net::ContextAwareResult,
-    pub _readAsyncResult: *mut crate::System::Net::LazyAsyncResult,
-    pub _requestCompleteAsyncResult: *mut crate::System::Net::LazyAsyncResult,
+    pub _writeAsyncResult: quest_hook::libil2cpp::Gc<
+        crate::System::Net::ContextAwareResult,
+    >,
+    pub _readAsyncResult: quest_hook::libil2cpp::Gc<crate::System::Net::LazyAsyncResult>,
+    pub _requestCompleteAsyncResult: quest_hook::libil2cpp::Gc<
+        crate::System::Net::LazyAsyncResult,
+    >,
 }
 #[cfg(feature = "System+Net+FtpWebRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

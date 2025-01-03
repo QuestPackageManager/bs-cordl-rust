@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct SliderShaderWarmup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _sliderMeshController: *mut crate::GlobalNamespace::SliderMeshController,
-    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _sliderMeshController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SliderMeshController,
+    >,
+    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
 }
 #[cfg(feature = "SliderShaderWarmup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

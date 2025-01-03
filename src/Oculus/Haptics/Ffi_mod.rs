@@ -446,7 +446,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Oculus+Haptics+Ffi+NullBackendStatistics")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Ffi_NullBackendStatistics {
     pub play_call_count: i64,
     pub stop_call_count: i64,
@@ -497,7 +497,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Oculus+Haptics+Ffi+SdkVersion")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Ffi_SdkVersion {
     pub major: u16,
     pub minor: u16,

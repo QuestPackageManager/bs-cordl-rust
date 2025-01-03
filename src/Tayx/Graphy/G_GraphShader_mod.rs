@@ -4,10 +4,12 @@
 pub struct G_GraphShader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ArrayMaxSize: i32,
-    pub ShaderArrayValues: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub Image: *mut crate::UnityEngine::UI::Image,
-    pub Name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Name_Length: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ShaderArrayValues: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
+    pub Image: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Name_Length: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Average: f32,
     pub m_averagePropertyId: i32,
     pub GoodThreshold: f32,

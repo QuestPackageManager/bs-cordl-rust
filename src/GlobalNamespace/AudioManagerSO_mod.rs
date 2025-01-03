@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AudioManagerSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _audioMixer: *mut crate::UnityEngine::Audio::AudioMixer,
+    pub _audioMixer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Audio::AudioMixer>,
     pub _spatializerPluginLatency: f32,
     pub _spatializerSfxVolumeOffset: f32,
     pub _musicVolumeOffset: f32,

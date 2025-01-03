@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct MethodMultipleProviderUntyped {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _method: *mut crate::System::Func_2<
-        *mut crate::Zenject::InjectContext,
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _method: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            *mut crate::Zenject::InjectContext,
+            *mut crate::System::Collections::Generic::IEnumerable_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     >,
 }

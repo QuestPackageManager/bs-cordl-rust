@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleCursor")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StyleCursor {
     pub m_Value: crate::UnityEngine::UIElements::Cursor,
     pub m_Keyword: crate::UnityEngine::UIElements::StyleKeyword,

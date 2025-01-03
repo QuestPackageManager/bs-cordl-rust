@@ -3,19 +3,31 @@
 #[derive(Debug)]
 pub struct TextureIntSwitchEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
-    pub _texturePropertyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
+    pub _texturePropertyName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _beatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _defaultIndex: i32,
-    pub _textureValueTuples: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple,
+    pub _textureValueTuples: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple,
+        >,
     >,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
     pub _texturePropertyId: i32,
-    pub _valueToTextureMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::UnityEngine::Texture,
+    pub _valueToTextureMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::UnityEngine::Texture,
+        >,
     >,
 }
 #[cfg(feature = "TextureIntSwitchEventEffect")]
@@ -115,10 +127,10 @@ for crate::GlobalNamespace::TextureIntSwitchEventEffect {
 }
 #[cfg(feature = "TextureIntSwitchEventEffect+TextureValueTuple")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TextureIntSwitchEventEffect_TextureValueTuple {
     pub value: i32,
-    pub texture: *mut crate::UnityEngine::Texture,
+    pub texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
 }
 #[cfg(feature = "TextureIntSwitchEventEffect+TextureValueTuple")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

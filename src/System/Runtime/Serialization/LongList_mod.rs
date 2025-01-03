@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LongList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_values: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+    pub m_values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
     pub m_count: i32,
     pub m_totalItems: i32,
     pub m_currentItem: i32,

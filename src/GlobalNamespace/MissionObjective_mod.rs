@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MissionObjective {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _type: *mut crate::GlobalNamespace::MissionObjectiveTypeSO,
+    pub _type: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveTypeSO>,
     pub _referenceValueComparisonType: crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType,
     pub _referenceValue: i32,
 }

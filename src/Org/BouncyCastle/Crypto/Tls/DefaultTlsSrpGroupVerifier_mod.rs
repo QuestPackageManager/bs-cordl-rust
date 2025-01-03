@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DefaultTlsSrpGroupVerifier {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mGroups: *mut crate::System::Collections::IList,
+    pub mGroups: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsSrpGroupVerifier")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

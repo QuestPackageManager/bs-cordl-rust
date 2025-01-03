@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct ParticleContentValidator {
     __cordl_parent: crate::System::Xml::Schema::ContentValidator,
-    pub symbols: *mut crate::System::Xml::Schema::SymbolsDictionary,
-    pub positions: *mut crate::System::Xml::Schema::Positions,
-    pub stack: *mut crate::System::Collections::Stack,
-    pub contentNode: *mut crate::System::Xml::Schema::SyntaxTreeNode,
+    pub symbols: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::SymbolsDictionary,
+    >,
+    pub positions: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::Positions>,
+    pub stack: quest_hook::libil2cpp::Gc<crate::System::Collections::Stack>,
+    pub contentNode: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::SyntaxTreeNode,
+    >,
     pub isPartial: bool,
     pub minMaxNodesCount: i32,
     pub enableUpaCheck: bool,

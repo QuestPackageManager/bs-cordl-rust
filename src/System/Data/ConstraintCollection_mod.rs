@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct ConstraintCollection {
     __cordl_parent: crate::System::Data::InternalDataCollectionBase,
-    pub _table: *mut crate::System::Data::DataTable,
-    pub _list: *mut crate::System::Collections::ArrayList,
+    pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _defaultNameIndex: i32,
-    pub _onCollectionChanged: *mut crate::System::ComponentModel::CollectionChangeEventHandler,
-    pub _delayLoadingConstraints: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Data::Constraint,
+    pub _onCollectionChanged: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::CollectionChangeEventHandler,
+    >,
+    pub _delayLoadingConstraints: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::Constraint>,
     >,
     pub _fLoadForeignKeyConstraintsOnly: bool,
 }

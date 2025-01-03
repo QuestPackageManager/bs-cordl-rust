@@ -3,17 +3,21 @@
 #[derive(Debug)]
 pub struct CountdownController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioSource: *mut crate::UnityEngine::AudioSource,
-    pub _countdownElementControllers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::CountdownElementController,
+    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    pub _countdownElementControllers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::CountdownElementController,
+        >,
     >,
-    pub _timeProvider: *mut crate::GlobalNamespace::ITimeProvider,
+    pub _timeProvider: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ITimeProvider>,
     pub _countdownEndTime: i64,
     pub _currentRemainingSecond: i32,
     pub _gongSounded: bool,
     pub _countdownRunning: bool,
-    pub _countdownElementControllerQueue: *mut crate::System::Collections::Generic::Queue_1<
-        *mut crate::GlobalNamespace::CountdownElementController,
+    pub _countdownElementControllerQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<
+            *mut crate::GlobalNamespace::CountdownElementController,
+        >,
     >,
 }
 #[cfg(feature = "CountdownController")]

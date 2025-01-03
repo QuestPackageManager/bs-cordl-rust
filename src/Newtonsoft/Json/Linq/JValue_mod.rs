@@ -4,7 +4,7 @@
 pub struct JValue {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JToken,
     pub _valueType: crate::Newtonsoft::Json::Linq::JTokenType,
-    pub _value: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

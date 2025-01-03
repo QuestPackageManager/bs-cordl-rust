@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct BinaryFormatter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_surrogates: *mut crate::System::Runtime::Serialization::ISurrogateSelector,
+    pub m_surrogates: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISurrogateSelector,
+    >,
     pub m_context: crate::System::Runtime::Serialization::StreamingContext,
-    pub m_binder: *mut crate::System::Runtime::Serialization::SerializationBinder,
+    pub m_binder: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::SerializationBinder,
+    >,
     pub m_typeFormat: crate::System::Runtime::Serialization::Formatters::FormatterTypeStyle,
     pub m_assemblyFormat: crate::System::Runtime::Serialization::Formatters::FormatterAssemblyStyle,
     pub m_securityLevel: crate::System::Runtime::Serialization::Formatters::TypeFilterLevel,
-    pub m_crossAppDomainArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_crossAppDomainArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryFormatter")]

@@ -4,8 +4,8 @@
 pub struct SoapAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _useAttribute: bool,
-    pub ProtXmlNamespace: *mut quest_hook::libil2cpp::Il2CppString,
-    pub ReflectInfo: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub ProtXmlNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ReflectInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Runtime+Remoting+Metadata+SoapAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

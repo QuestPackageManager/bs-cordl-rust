@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct SignalDeclarationAsyncInitializer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _tickManager: *mut crate::Zenject::LazyInject_1<
-        *mut crate::Zenject::TickableManager,
+    pub _tickManager: quest_hook::libil2cpp::Gc<
+        crate::Zenject::LazyInject_1<*mut crate::Zenject::TickableManager>,
     >,
-    pub _declarations: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::SignalDeclaration,
+    pub _declarations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::SignalDeclaration,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+SignalDeclarationAsyncInitializer")]

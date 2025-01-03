@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Data+SqlTypes+SqlDateTime")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SqlDateTime {
     pub m_fNotNull: bool,
     pub m_day: i32,

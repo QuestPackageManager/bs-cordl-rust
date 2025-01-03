@@ -1,10 +1,10 @@
 #[cfg(feature = "SFB+ExtensionFilter")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ExtensionFilter {
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _extensions: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _extensions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "SFB+ExtensionFilter")]

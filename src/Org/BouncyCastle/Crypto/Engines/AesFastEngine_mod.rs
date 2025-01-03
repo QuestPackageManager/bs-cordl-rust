@@ -4,8 +4,8 @@
 pub struct AesFastEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ROUNDS: i32,
-    pub WorkingKey: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub WorkingKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<u32>>,
     >,
     pub C0: u32,
     pub C1: u32,

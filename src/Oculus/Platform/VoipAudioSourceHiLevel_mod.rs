@@ -4,9 +4,9 @@
 pub struct VoipAudioSourceHiLevel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub initialPlaybackDelayMS: i32,
-    pub audioSource: *mut crate::UnityEngine::AudioSource,
+    pub audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub peakAmplitude: f32,
-    pub pcmSource: *mut crate::Oculus::Platform::IVoipPCMSource,
+    pub pcmSource: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::IVoipPCMSource>,
 }
 #[cfg(feature = "Oculus+Platform+VoipAudioSourceHiLevel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -140,8 +140,12 @@ for crate::Oculus::Platform::VoipAudioSourceHiLevel {
 #[derive(Debug)]
 pub struct VoipAudioSourceHiLevel_FilterReadDelegate {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub parent: *mut crate::Oculus::Platform::VoipAudioSourceHiLevel,
-    pub scratchBuffer: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub parent: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::VoipAudioSourceHiLevel,
+    >,
+    pub scratchBuffer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
 }
 #[cfg(feature = "Oculus+Platform+VoipAudioSourceHiLevel+FilterReadDelegate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

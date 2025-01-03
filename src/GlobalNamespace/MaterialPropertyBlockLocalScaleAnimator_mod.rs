@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MaterialPropertyBlockLocalScaleAnimator {
     __cordl_parent: crate::GlobalNamespace::MaterialPropertyBlockAnimator,
-    pub _targetTransform: *mut crate::UnityEngine::Transform,
+    pub _targetTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "MaterialPropertyBlockLocalScaleAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

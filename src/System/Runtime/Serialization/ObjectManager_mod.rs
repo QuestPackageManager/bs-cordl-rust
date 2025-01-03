@@ -3,15 +3,25 @@
 #[derive(Debug)]
 pub struct ObjectManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_onDeserializationHandler: *mut crate::System::Runtime::Serialization::DeserializationEventHandler,
-    pub m_onDeserializedHandler: *mut crate::System::Runtime::Serialization::SerializationEventHandler,
-    pub m_objects: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Runtime::Serialization::ObjectHolder,
+    pub m_onDeserializationHandler: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::DeserializationEventHandler,
     >,
-    pub m_topObject: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_specialFixupObjects: *mut crate::System::Runtime::Serialization::ObjectHolderList,
+    pub m_onDeserializedHandler: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::SerializationEventHandler,
+    >,
+    pub m_objects: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Runtime::Serialization::ObjectHolder,
+        >,
+    >,
+    pub m_topObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_specialFixupObjects: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ObjectHolderList,
+    >,
     pub m_fixupCount: i64,
-    pub m_selector: *mut crate::System::Runtime::Serialization::ISurrogateSelector,
+    pub m_selector: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISurrogateSelector,
+    >,
     pub m_context: crate::System::Runtime::Serialization::StreamingContext,
 }
 #[cfg(feature = "System+Runtime+Serialization+ObjectManager")]

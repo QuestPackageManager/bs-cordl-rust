@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct LeaderboardEntry {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _scoreText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _playerNameText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _rankText: *mut crate::TMPro::TextMeshProUGUI,
+    pub _scoreText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _playerNameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _rankText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _color: crate::UnityEngine::Color,
 }
 #[cfg(feature = "LeaderboardEntry")]

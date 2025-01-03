@@ -1,16 +1,28 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+MeshInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MeshInfo {
     pub vertexCount: i32,
-    pub vertices: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-    pub normals: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-    pub tangents: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-    pub uvs0: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-    pub uvs2: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-    pub colors32: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
-    pub triangles: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub material: *mut crate::UnityEngine::Material,
+    pub vertices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
+    pub normals: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
+    pub tangents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+    >,
+    pub uvs0: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+    >,
+    pub uvs2: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+    >,
+    pub colors32: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+    >,
+    pub triangles: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub glyphRenderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+MeshInfo")]

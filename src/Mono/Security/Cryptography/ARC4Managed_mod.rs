@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ARC4Managed {
     __cordl_parent: crate::Mono::Security::Cryptography::RC4,
-    pub key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub state: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub x: u8,
     pub y: u8,
     pub m_disposed: bool,

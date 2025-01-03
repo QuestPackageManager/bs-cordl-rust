@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct NtlmClient {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub authObject: *mut crate::System::Net::IAuthenticationModule,
+    pub authObject: quest_hook::libil2cpp::Gc<crate::System::Net::IAuthenticationModule>,
 }
 #[cfg(feature = "System+Net+NtlmClient")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

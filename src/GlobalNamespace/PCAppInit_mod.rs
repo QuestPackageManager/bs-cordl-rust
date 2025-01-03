@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct PCAppInit {
     __cordl_parent: crate::BeatSaber::Init::BSAppInit,
-    pub _mainSystemInit: *mut crate::GlobalNamespace::MainSystemInit,
-    pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
-    pub _defaultScenesTransitionsFromInit: *mut crate::GlobalNamespace::DefaultScenesTransitionsFromInit,
-    pub _playerDataModel: *mut crate::Zenject::LazyInject_1<
-        *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _mainSystemInit: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MainSystemInit,
+    >,
+    pub _settingsApplicator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsApplicatorSO,
+    >,
+    pub _defaultScenesTransitionsFromInit: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DefaultScenesTransitionsFromInit,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::Zenject::LazyInject_1<*mut crate::GlobalNamespace::PlayerDataModel>,
     >,
 }
 #[cfg(feature = "PCAppInit")]

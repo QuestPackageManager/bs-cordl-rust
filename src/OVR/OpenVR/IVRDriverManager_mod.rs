@@ -1,10 +1,16 @@
 #[cfg(feature = "OVR+OpenVR+IVRDriverManager")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IVRDriverManager {
-    pub GetDriverCount: *mut crate::OVR::OpenVR::IVRDriverManager__GetDriverCount,
-    pub GetDriverName: *mut crate::OVR::OpenVR::IVRDriverManager__GetDriverName,
-    pub GetDriverHandle: *mut crate::OVR::OpenVR::IVRDriverManager__GetDriverHandle,
+    pub GetDriverCount: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRDriverManager__GetDriverCount,
+    >,
+    pub GetDriverName: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRDriverManager__GetDriverName,
+    >,
+    pub GetDriverHandle: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRDriverManager__GetDriverHandle,
+    >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRDriverManager")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

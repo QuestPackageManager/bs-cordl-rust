@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct DataColumnChangeEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub _column: *mut crate::System::Data::DataColumn,
-    pub _Row_k__BackingField: *mut crate::System::Data::DataRow,
-    pub _ProposedValue_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+    pub _Row_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+    pub _ProposedValue_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
 }
 #[cfg(feature = "System+Data+DataColumnChangeEventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

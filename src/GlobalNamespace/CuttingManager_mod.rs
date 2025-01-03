@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct CuttingManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
-    pub _noteCutter: *mut crate::GlobalNamespace::NoteCutter,
+    pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
+    pub _noteCutter: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutter>,
 }
 #[cfg(feature = "CuttingManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

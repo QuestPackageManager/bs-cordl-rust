@@ -3,18 +3,26 @@
 #[derive(Debug)]
 pub struct InputControlLayoutAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _stateType_k__BackingField: *mut crate::System::Type,
-    pub _stateFormat_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _commonUsages_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _stateType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _stateFormat_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _variants_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _commonUsages_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub _variants_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _isNoisy_k__BackingField: bool,
     pub canRunInBackgroundInternal: crate::System::Nullable_1<bool>,
     pub updateBeforeRenderInternal: crate::System::Nullable_1<bool>,
     pub _isGenericTypeOfDevice_k__BackingField: bool,
-    pub _displayName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _description_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _displayName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _description_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _hideInUI_k__BackingField: bool,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayoutAttribute")]

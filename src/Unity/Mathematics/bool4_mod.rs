@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Mathematics+bool4")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct bool4 {
     pub x: bool,
     pub y: bool,

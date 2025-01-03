@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct UIKeyboardManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _uiKeyboard: *mut crate::HMUI::UIKeyboard,
-    pub _keyboardModalView: *mut crate::HMUI::ModalView,
-    pub _keyboardContainerTransform: *mut crate::UnityEngine::RectTransform,
-    pub _parentContainerTransform: *mut crate::UnityEngine::Transform,
-    pub _vrInputModule: *mut crate::GlobalNamespace::IVRInputModule,
-    pub _selectedInput: *mut crate::HMUI::InputFieldView,
+    pub _uiKeyboard: quest_hook::libil2cpp::Gc<crate::HMUI::UIKeyboard>,
+    pub _keyboardModalView: quest_hook::libil2cpp::Gc<crate::HMUI::ModalView>,
+    pub _keyboardContainerTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
+    >,
+    pub _parentContainerTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _vrInputModule: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRInputModule,
+    >,
+    pub _selectedInput: quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
 }
 #[cfg(feature = "UIKeyboardManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

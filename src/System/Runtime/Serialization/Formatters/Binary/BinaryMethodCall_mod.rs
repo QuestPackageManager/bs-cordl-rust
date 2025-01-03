@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct BinaryMethodCall {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub methodName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub typeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub args: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub args: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub callContext: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub argTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    pub callContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub argTypes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    >,
     pub bArgsPrimitive: bool,
     pub messageEnum: crate::System::Runtime::Serialization::Formatters::Binary::MessageEnum,
 }

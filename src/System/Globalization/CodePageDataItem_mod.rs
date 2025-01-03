@@ -5,7 +5,7 @@ pub struct CodePageDataItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_dataIndex: i32,
     pub m_uiFamilyCodePage: i32,
-    pub m_webName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_webName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_flags: u32,
 }
 #[cfg(feature = "System+Globalization+CodePageDataItem")]

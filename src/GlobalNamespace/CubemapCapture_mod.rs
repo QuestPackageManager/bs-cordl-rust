@@ -3,16 +3,20 @@
 #[derive(Debug)]
 pub struct CubemapCapture {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _camera: *mut crate::UnityEngine::Camera,
+    pub _camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub _triggerKey: crate::UnityEngine::InputSystem::Key,
     pub _cubemapSize: i32,
-    pub _saveDirectoryAbsolutePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _saveDirectoryAbsolutePath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _imageType: crate::GlobalNamespace::CubemapCapture_ImageType,
     pub _jpegCompression: i32,
     pub _exrFlags: crate::UnityEngine::Texture2D_EXRFlags,
-    pub _faces: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::CubemapFace>,
-    pub _faceAngles: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub _faces: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::CubemapFace>,
+    >,
+    pub _faceAngles: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
 }
 #[cfg(feature = "CubemapCapture")]

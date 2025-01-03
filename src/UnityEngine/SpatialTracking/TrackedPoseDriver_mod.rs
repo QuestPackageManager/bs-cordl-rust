@@ -5,7 +5,9 @@ pub struct TrackedPoseDriver {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_Device: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType,
     pub m_PoseSource: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
-    pub m_PoseProviderComponent: *mut crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider,
+    pub m_PoseProviderComponent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider,
+    >,
     pub m_TrackingType: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType,
     pub m_UpdateType: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType,
     pub m_UseRelativeTransform: bool,

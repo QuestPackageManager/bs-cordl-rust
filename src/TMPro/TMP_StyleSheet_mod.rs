@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct TMP_StyleSheet {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub m_StyleList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_Style,
+    pub m_StyleList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_Style>,
     >,
-    pub m_StyleLookupDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::TMPro::TMP_Style,
+    pub m_StyleLookupDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::TMPro::TMP_Style,
+        >,
     >,
 }
 #[cfg(feature = "TMPro+TMP_StyleSheet")]

@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct SaberModelContainer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _saber: *mut crate::GlobalNamespace::Saber,
-    pub _saberModelControllerPrefab: *mut crate::GlobalNamespace::SaberModelController,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _initData: *mut crate::GlobalNamespace::SaberModelContainer_InitData,
+    pub _saber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+    pub _saberModelControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SaberModelController,
+    >,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SaberModelContainer_InitData,
+    >,
 }
 #[cfg(feature = "SaberModelContainer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

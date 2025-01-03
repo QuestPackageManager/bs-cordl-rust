@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+LightBakingOutput")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LightBakingOutput {
     pub probeOcclusionLightIndex: i32,
     pub occlusionMaskChannel: i32,

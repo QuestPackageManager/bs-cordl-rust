@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct IncDecSettingsController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _stepValuePicker: *mut crate::GlobalNamespace::StepValuePicker,
+    pub _stepValuePicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StepValuePicker,
+    >,
 }
 #[cfg(feature = "IncDecSettingsController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

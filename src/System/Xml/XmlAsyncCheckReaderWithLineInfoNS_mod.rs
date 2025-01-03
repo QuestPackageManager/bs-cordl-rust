@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct XmlAsyncCheckReaderWithLineInfoNS {
     __cordl_parent: crate::System::Xml::XmlAsyncCheckReaderWithLineInfo,
-    pub readerAsIXmlNamespaceResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
+    pub readerAsIXmlNamespaceResolver: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::IXmlNamespaceResolver,
+    >,
 }
 #[cfg(feature = "System+Xml+XmlAsyncCheckReaderWithLineInfoNS")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

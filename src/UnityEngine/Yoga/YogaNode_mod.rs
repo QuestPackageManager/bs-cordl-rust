@@ -4,14 +4,20 @@
 pub struct YogaNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _ygNode: crate::System::IntPtr,
-    pub _config: *mut crate::UnityEngine::Yoga::YogaConfig,
-    pub _parent: *mut crate::System::WeakReference,
-    pub _children: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Yoga::YogaNode,
+    pub _config: quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaConfig>,
+    pub _parent: quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
+    pub _children: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Yoga::YogaNode,
+        >,
     >,
-    pub _measureFunction: *mut crate::UnityEngine::Yoga::MeasureFunction,
-    pub _baselineFunction: *mut crate::UnityEngine::Yoga::BaselineFunction,
-    pub _data: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _measureFunction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Yoga::MeasureFunction,
+    >,
+    pub _baselineFunction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Yoga::BaselineFunction,
+    >,
+    pub _data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+Yoga+YogaNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

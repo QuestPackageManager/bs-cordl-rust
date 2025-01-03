@@ -5,8 +5,8 @@ pub struct ActiveAxis {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _currentDepth: i32,
     pub _isActive: bool,
-    pub _axisTree: *mut crate::System::Xml::Schema::Asttree,
-    pub _axisStack: *mut crate::System::Collections::ArrayList,
+    pub _axisTree: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::Asttree>,
+    pub _axisStack: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
 #[cfg(feature = "System+Xml+Schema+ActiveAxis")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

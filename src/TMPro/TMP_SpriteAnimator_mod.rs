@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct TMP_SpriteAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_animations: *mut crate::System::Collections::Generic::Dictionary_2<i32, bool>,
-    pub m_TextComponent: *mut crate::TMPro::TMP_Text,
+    pub m_animations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, bool>,
+    >,
+    pub m_TextComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
 }
 #[cfg(feature = "TMPro+TMP_SpriteAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

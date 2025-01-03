@@ -4,31 +4,51 @@
 pub struct BTSCharacterSpawnEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _animationStartAheadTime: f32,
-    pub _btsCharacterDataModel: *mut crate::GlobalNamespace::BTSCharacterDataModel,
-    pub _characterWrapper: *mut crate::UnityEngine::Transform,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _beatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-    pub startCharacterAnimationEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::BTSCharacter,
+    pub _btsCharacterDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BTSCharacterDataModel,
     >,
-    pub _idsToCharacterPrefabsDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::GlobalNamespace::BTSCharacter,
+    pub _characterWrapper: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
     >,
-    pub _idsToCharactersDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::GlobalNamespace::BTSCharacter,
+    pub _beatmapData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IReadonlyBeatmapData,
     >,
-    pub _idsToAnimationClipsDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::UnityEngine::AnimationClip,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
+    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
+    >,
+    pub startCharacterAnimationEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::BTSCharacter>,
+    >,
+    pub _idsToCharacterPrefabsDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::GlobalNamespace::BTSCharacter,
+        >,
+    >,
+    pub _idsToCharactersDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::GlobalNamespace::BTSCharacter,
+        >,
+    >,
+    pub _idsToAnimationClipsDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::UnityEngine::AnimationClip,
+        >,
     >,
     pub _isInitialized: bool,
-    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    pub _asyncOperationHandles: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
+    pub _asyncOperationHandles: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        >,
     >,
 }
 #[cfg(feature = "BTSCharacterSpawnEventEffect")]

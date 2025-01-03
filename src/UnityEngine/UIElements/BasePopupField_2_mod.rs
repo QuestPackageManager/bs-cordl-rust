@@ -6,19 +6,23 @@ pub struct BasePopupField_2<
     TValueChoice: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<TValueType>,
-    pub m_Choices: *mut crate::System::Collections::Generic::List_1<TValueChoice>,
-    pub m_TextElement: *mut crate::UnityEngine::UIElements::TextElement,
-    pub m_ArrowElement: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_FormatSelectedValueCallback: *mut crate::System::Func_2<
-        TValueChoice,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Choices: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<TValueChoice>,
     >,
-    pub m_FormatListItemCallback: *mut crate::System::Func_2<
-        TValueChoice,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_TextElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextElement,
     >,
-    pub createMenuCallback: *mut crate::System::Func_1<
-        *mut crate::UnityEngine::UIElements::IGenericMenu,
+    pub m_ArrowElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_FormatSelectedValueCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<TValueChoice, *mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub m_FormatListItemCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<TValueChoice, *mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub createMenuCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Func_1<*mut crate::UnityEngine::UIElements::IGenericMenu>,
     >,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
     __cordl_phantom_TValueChoice: std::marker::PhantomData<TValueChoice>,

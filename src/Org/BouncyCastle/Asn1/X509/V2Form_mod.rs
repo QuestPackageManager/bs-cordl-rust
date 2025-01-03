@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct V2Form {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub issuerName: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
-    pub baseCertificateID: *mut crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
-    pub objectDigestInfo: *mut crate::Org::BouncyCastle::Asn1::X509::ObjectDigestInfo,
+    pub issuerName: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+    >,
+    pub baseCertificateID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
+    >,
+    pub objectDigestInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::ObjectDigestInfo,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+V2Form")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

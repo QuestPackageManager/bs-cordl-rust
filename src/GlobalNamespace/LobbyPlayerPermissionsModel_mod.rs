@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct LobbyPlayerPermissionsModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _menuRpcManager: *mut crate::GlobalNamespace::IMenuRpcManager,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _menuRpcManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMenuRpcManager,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
     pub _isPartyOwner_k__BackingField: bool,
     pub _hasRecommendBeatmapPermission_k__BackingField: bool,
     pub _hasRecommendModifiersPermission_k__BackingField: bool,
     pub _hasKickVotePermission_k__BackingField: bool,
     pub _hasInvitePermission_k__BackingField: bool,
-    pub permissionsChangedEvent: *mut crate::System::Action,
+    pub permissionsChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "LobbyPlayerPermissionsModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

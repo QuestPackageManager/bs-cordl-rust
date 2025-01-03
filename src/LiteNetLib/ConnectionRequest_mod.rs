@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct ConnectionRequest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _listener: *mut crate::LiteNetLib::NetManager,
+    pub _listener: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetManager>,
     pub _used: i32,
-    pub Data: *mut crate::LiteNetLib::Utils::NetDataReader,
+    pub Data: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     pub _Result_k__BackingField: crate::LiteNetLib::ConnectionRequestResult,
     pub ConnectionTime: i64,
     pub ConnectionNumber: u8,
-    pub RemoteEndPoint: *mut crate::System::Net::IPEndPoint,
+    pub RemoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
 }
 #[cfg(feature = "LiteNetLib+ConnectionRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

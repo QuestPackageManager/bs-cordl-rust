@@ -1,8 +1,10 @@
 #[cfg(feature = "System+Threading+CancellationTokenRegistration")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CancellationTokenRegistration {
-    pub m_callbackInfo: *mut crate::System::Threading::CancellationCallbackInfo,
+    pub m_callbackInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationCallbackInfo,
+    >,
     pub m_registrationInfo: crate::System::Threading::SparselyPopulatedArrayAddInfo_1<
         *mut crate::System::Threading::CancellationCallbackInfo,
     >,

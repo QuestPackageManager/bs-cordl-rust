@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct HWStack {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub stack: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub stack: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub growthRate: i32,
     pub used: i32,

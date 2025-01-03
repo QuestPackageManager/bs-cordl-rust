@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Pkcs5S1ParametersGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::PbeParametersGenerator,
-    pub digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Pkcs5S1ParametersGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

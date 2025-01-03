@@ -3,18 +3,22 @@
 #[derive(Debug)]
 pub struct VisualElementAsset {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlAsset,
-    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_RuleIndex: i32,
-    pub m_Text: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_PickingMode: crate::UnityEngine::UIElements::PickingMode,
-    pub m_Classes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Classes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub m_StylesheetPaths: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_StylesheetPaths: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub m_Stylesheets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::StyleSheet,
+    pub m_Stylesheets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::StyleSheet,
+        >,
     >,
     pub m_SkipClone: bool,
 }

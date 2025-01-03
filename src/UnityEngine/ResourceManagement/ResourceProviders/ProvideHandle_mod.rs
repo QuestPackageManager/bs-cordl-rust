@@ -1,10 +1,14 @@
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ProvideHandle")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ProvideHandle {
     pub m_Version: i32,
-    pub m_InternalOp: *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOperation,
-    pub m_ResourceManager: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
+    pub m_InternalOp: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOperation,
+    >,
+    pub m_ResourceManager: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceManager,
+    >,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ProvideHandle")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

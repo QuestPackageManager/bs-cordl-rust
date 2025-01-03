@@ -3,15 +3,21 @@
 #[derive(Debug)]
 pub struct XmlSchemaType {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaAnnotated,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cordl_final: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
     pub derivedBy: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
-    pub baseSchemaType: *mut crate::System::Xml::Schema::XmlSchemaType,
-    pub datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
+    pub baseSchemaType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaType,
+    >,
+    pub datatype: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaDatatype,
+    >,
     pub finalResolved: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
-    pub elementDecl: *mut crate::System::Xml::Schema::SchemaElementDecl,
-    pub qname: *mut crate::System::Xml::XmlQualifiedName,
-    pub redefined: *mut crate::System::Xml::Schema::XmlSchemaType,
+    pub elementDecl: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::SchemaElementDecl,
+    >,
+    pub qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub redefined: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
     pub contentType: crate::System::Xml::Schema::XmlSchemaContentType,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaType")]

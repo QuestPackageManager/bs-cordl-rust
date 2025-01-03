@@ -3,31 +3,33 @@
 #[derive(Debug)]
 pub struct VertexHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Positions: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector3,
+    pub m_Positions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
     >,
-    pub m_Colors: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Color32,
+    pub m_Colors: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
     >,
-    pub m_Uv0S: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector4,
+    pub m_Uv0S: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
     >,
-    pub m_Uv1S: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector4,
+    pub m_Uv1S: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
     >,
-    pub m_Uv2S: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector4,
+    pub m_Uv2S: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
     >,
-    pub m_Uv3S: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector4,
+    pub m_Uv3S: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
     >,
-    pub m_Normals: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector3,
+    pub m_Normals: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
     >,
-    pub m_Tangents: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector4,
+    pub m_Tangents: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
     >,
-    pub m_Indices: *mut crate::System::Collections::Generic::List_1<i32>,
+    pub m_Indices: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
     pub m_ListsInitalized: bool,
 }
 #[cfg(feature = "UnityEngine+UI+VertexHelper")]

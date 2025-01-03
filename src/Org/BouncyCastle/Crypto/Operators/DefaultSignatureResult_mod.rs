@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DefaultSignatureResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mSigner: *mut crate::Org::BouncyCastle::Crypto::ISigner,
+    pub mSigner: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+DefaultSignatureResult")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

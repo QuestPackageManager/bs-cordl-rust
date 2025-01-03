@@ -3,17 +3,25 @@
 #[derive(Debug)]
 pub struct SceneStartSyncController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
-    pub syncStartDidSuccessEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
     >,
-    pub syncStartDidReceiveTooLateEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _gameplayRpcManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IGameplayRpcManager,
     >,
-    pub syncStartDidFailEvent: *mut crate::System::Action,
-    pub _sceneStartHandler: *mut crate::GlobalNamespace::SceneStartHandler,
-    pub _playersAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
+    pub syncStartDidSuccessEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub syncStartDidReceiveTooLateEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub syncStartDidFailEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _sceneStartHandler: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SceneStartHandler,
+    >,
+    pub _playersAtGameStartModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
+    >,
     pub _waitStartTime: f32,
     pub _sceneSyncStarted: bool,
 }

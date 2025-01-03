@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct InvocationExpressionN {
     __cordl_parent: crate::System::Linq::Expressions::InvocationExpression,
-    pub _arguments: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::System::Linq::Expressions::Expression,
+    pub _arguments: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::System::Linq::Expressions::Expression,
+        >,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+InvocationExpressionN")]

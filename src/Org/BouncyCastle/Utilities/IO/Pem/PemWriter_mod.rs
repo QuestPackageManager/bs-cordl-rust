@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct PemWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub writer: *mut crate::System::IO::TextWriter,
+    pub writer: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
     pub nlLength: i32,
-    pub buf: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+Pem+PemWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

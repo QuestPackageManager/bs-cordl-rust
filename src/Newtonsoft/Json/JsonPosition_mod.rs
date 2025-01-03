@@ -1,10 +1,10 @@
 #[cfg(feature = "Newtonsoft+Json+JsonPosition")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct JsonPosition {
     pub Type: crate::Newtonsoft::Json::JsonContainerType,
     pub Position: i32,
-    pub PropertyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub PropertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub HasIndex: bool,
 }
 #[cfg(feature = "Newtonsoft+Json+JsonPosition")]

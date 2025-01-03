@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct EnvoyInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub envoySinks: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
+    pub envoySinks: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessageSink,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+EnvoyInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BaseMeshEffect {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
-    pub m_Graphic: *mut crate::UnityEngine::UI::Graphic,
+    pub m_Graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
 }
 #[cfg(feature = "UnityEngine+UI+BaseMeshEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

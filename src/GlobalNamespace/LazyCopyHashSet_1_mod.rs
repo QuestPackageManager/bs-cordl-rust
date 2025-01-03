@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct LazyCopyHashSet_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _itemsCopy: *mut crate::System::Collections::Generic::List_1<T>,
-    pub _items: *mut crate::System::Collections::Generic::HashSet_1<T>,
+    pub _itemsCopy: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<T>,
+    >,
+    pub _items: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<T>,
+    >,
     pub _dirty: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

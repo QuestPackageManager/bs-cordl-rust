@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AuthenticatorControl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub token: *mut crate::Org::BouncyCastle::Asn1::DerUtf8String,
+    pub token: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerUtf8String>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+AuthenticatorControl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

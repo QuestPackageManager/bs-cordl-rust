@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Threading+NativeOverlapped")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NativeOverlapped {
     pub InternalLow: crate::System::IntPtr,
     pub InternalHigh: crate::System::IntPtr,

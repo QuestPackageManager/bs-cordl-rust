@@ -3,21 +3,23 @@
 #[derive(Debug)]
 pub struct LightManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _directionalLightDirections: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector4,
+    pub _directionalLightDirections: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
-    pub _directionalLightColors: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector4,
+    pub _directionalLightColors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
-    pub _directionalLightPositions: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector4,
+    pub _directionalLightPositions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
-    pub _directionalLightRadii: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _pointLightPositions: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector4,
+    pub _directionalLightRadii: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
     >,
-    pub _pointLightColors: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector4,
+    pub _pointLightPositions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+    >,
+    pub _pointLightColors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
     pub lastRefreshFrameNum: i32,
 }

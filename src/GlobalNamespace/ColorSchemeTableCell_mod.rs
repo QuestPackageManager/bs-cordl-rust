@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct ColorSchemeTableCell {
     __cordl_parent: crate::HMUI::TableCell,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
-    pub _colorSchemeView: *mut crate::GlobalNamespace::ColorSchemeView,
-    pub _editIcon: *mut crate::UnityEngine::UI::Image,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _colorSchemeView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemeView,
+    >,
+    pub _editIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
 }
 #[cfg(feature = "ColorSchemeTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

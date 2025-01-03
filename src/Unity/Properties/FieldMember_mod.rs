@@ -1,9 +1,11 @@
 #[cfg(feature = "Unity+Properties+FieldMember")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FieldMember {
-    pub m_FieldInfo: *mut crate::System::Reflection::FieldInfo,
-    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_FieldInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+    pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "Unity+Properties+FieldMember")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

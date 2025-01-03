@@ -4,10 +4,10 @@
 pub struct SymbolsDictionary {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub last: i32,
-    pub names: *mut crate::System::Collections::Hashtable,
-    pub wildcards: *mut crate::System::Collections::Hashtable,
-    pub particles: *mut crate::System::Collections::ArrayList,
-    pub particleLast: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub names: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub wildcards: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub particles: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub particleLast: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub isUpaEnforced: bool,
 }
 #[cfg(feature = "System+Xml+Schema+SymbolsDictionary")]

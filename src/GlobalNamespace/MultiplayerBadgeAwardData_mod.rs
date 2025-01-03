@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct MultiplayerBadgeAwardData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _awardedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _awardedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
     pub _weight: f32,
-    pub _title: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _subtitle: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _icon: *mut crate::UnityEngine::Sprite,
-    pub _badgeData: *mut crate::GlobalNamespace::MultiplayerBadgeDataSO,
+    pub _title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _subtitle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _badgeData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerBadgeDataSO,
+    >,
 }
 #[cfg(feature = "MultiplayerBadgeAwardData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

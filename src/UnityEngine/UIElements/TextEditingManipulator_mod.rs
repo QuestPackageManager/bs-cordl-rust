@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct TextEditingManipulator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_TextElement: *mut crate::UnityEngine::UIElements::TextElement,
-    pub editingEventHandler: *mut crate::UnityEngine::UIElements::TextEditorEventHandler,
-    pub editingUtilities: *mut crate::UnityEngine::TextEditingUtilities,
+    pub m_TextElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextElement,
+    >,
+    pub editingEventHandler: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextEditorEventHandler,
+    >,
+    pub editingUtilities: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextEditingUtilities,
+    >,
     pub m_TouchScreenTextFieldInitialized: bool,
-    pub m_HardwareKeyboardPoller: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    pub m_HardwareKeyboardPoller: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TextEditingManipulator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

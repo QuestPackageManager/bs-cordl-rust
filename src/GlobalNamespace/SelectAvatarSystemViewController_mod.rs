@@ -3,27 +3,37 @@
 #[derive(Debug)]
 pub struct SelectAvatarSystemViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _tableView: *mut crate::HMUI::TableView,
-    pub _continueButton: *mut crate::UnityEngine::UI::Button,
-    pub _hoverHint: *mut crate::HMUI::HoverHint,
-    pub _cellPrefab: *mut crate::GlobalNamespace::SelectAvatarSystemCell,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _avatarSystemCollection: *mut crate::BeatSaber::AvatarCore::AvatarSystemCollection,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub didSetAvatarSystemPreferredEvent: *mut crate::System::Action_1<
-        *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+    pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+    pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _hoverHint: quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>,
+    pub _cellPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SelectAvatarSystemCell,
     >,
-    pub didRequestEditOfAvatarEvent: *mut crate::System::Action_1<
-        *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _avatarSystemCollection: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::AvatarSystemCollection,
     >,
-    pub didRequestCreationOfAvatarEvent: *mut crate::System::Action_1<
-        *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
     >,
-    pub didPressContinueButtonEvent: *mut crate::System::Action,
-    pub _avatarSystems: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+    pub didSetAvatarSystemPreferredEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata>,
     >,
-    pub _selectedAvatarSystem: *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+    pub didRequestEditOfAvatarEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata>,
+    >,
+    pub didRequestCreationOfAvatarEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata>,
+    >,
+    pub didPressContinueButtonEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _avatarSystems: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+        >,
+    >,
+    pub _selectedAvatarSystem: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+    >,
 }
 #[cfg(feature = "SelectAvatarSystemViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

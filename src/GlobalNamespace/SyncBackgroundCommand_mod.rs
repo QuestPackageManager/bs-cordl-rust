@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SyncBackgroundCommand {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _taskCompletionSource: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<
-        i32,
+    pub _taskCompletionSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskCompletionSource_1<i32>,
     >,
 }
 #[cfg(feature = "SyncBackgroundCommand")]

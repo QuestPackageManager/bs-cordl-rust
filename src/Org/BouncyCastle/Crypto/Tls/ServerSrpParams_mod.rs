@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct ServerSrpParams {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_N: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub m_g: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub m_B: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub m_s: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub m_N: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub m_g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub m_B: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub m_s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+ServerSrpParams")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

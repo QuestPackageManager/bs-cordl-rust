@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct TransparentProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _rp: *mut crate::System::Runtime::Remoting::Proxies::RealProxy,
+    pub _rp: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Proxies::RealProxy,
+    >,
     pub _class: crate::Mono::RuntimeRemoteClassHandle,
     pub _custom_type_info: bool,
 }

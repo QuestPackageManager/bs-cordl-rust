@@ -4,7 +4,7 @@
 pub struct RC532Engine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _noRounds: i32,
-    pub _S: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _S: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub forEncryption: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+RC532Engine")]

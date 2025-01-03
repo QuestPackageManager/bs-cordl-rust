@@ -206,7 +206,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Interop+ErrorInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Interop_ErrorInfo {
     pub _error: crate::GlobalNamespace::Interop_Error,
     pub _rawErrno: i32,
@@ -581,9 +581,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interop_Sys {
 }
 #[cfg(feature = "Interop+Sys+DirectoryEntry")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Sys_Interop_DirectoryEntry {
-    pub Name: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub NameLength: i32,
     pub InodeType: crate::GlobalNamespace::Sys_Interop_NodeType,
 }
@@ -619,7 +619,7 @@ impl crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
 }
 #[cfg(feature = "Interop+Sys+FileStatus")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Sys_Interop_FileStatus {
     pub Flags: crate::GlobalNamespace::Sys_Interop_FileStatusFlags,
     pub Mode: i32,

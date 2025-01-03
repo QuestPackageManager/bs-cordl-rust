@@ -3,18 +3,24 @@
 #[derive(Debug)]
 pub struct WebResponseStream {
     __cordl_parent: crate::System::Net::WebConnectionStream,
-    pub innerStream: *mut crate::System::Net::WebReadStream,
+    pub innerStream: quest_hook::libil2cpp::Gc<crate::System::Net::WebReadStream>,
     pub nextReadCalled: bool,
     pub bufferedEntireContent: bool,
-    pub pendingRead: *mut crate::System::Net::WebCompletionSource,
-    pub locker: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub pendingRead: quest_hook::libil2cpp::Gc<crate::System::Net::WebCompletionSource>,
+    pub locker: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub nestedRead: i32,
     pub read_eof: bool,
-    pub _RequestStream_k__BackingField: *mut crate::System::Net::WebRequestStream,
-    pub _Headers_k__BackingField: *mut crate::System::Net::WebHeaderCollection,
+    pub _RequestStream_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::WebRequestStream,
+    >,
+    pub _Headers_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::WebHeaderCollection,
+    >,
     pub _StatusCode_k__BackingField: crate::System::Net::HttpStatusCode,
-    pub _StatusDescription_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _Version_k__BackingField: *mut crate::System::Version,
+    pub _StatusDescription_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _Version_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Version>,
     pub _KeepAlive_k__BackingField: bool,
     pub _ChunkedRead_k__BackingField: bool,
 }

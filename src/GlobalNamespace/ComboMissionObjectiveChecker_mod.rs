@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ComboMissionObjectiveChecker {
     __cordl_parent: crate::GlobalNamespace::SimpleValueMissionObjectiveChecker,
-    pub _comboController: *mut crate::GlobalNamespace::ComboController,
+    pub _comboController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ComboController,
+    >,
 }
 #[cfg(feature = "ComboMissionObjectiveChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

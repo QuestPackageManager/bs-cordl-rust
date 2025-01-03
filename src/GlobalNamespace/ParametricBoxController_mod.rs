@@ -16,8 +16,8 @@ pub struct ParametricBoxController {
     pub widthEnd: f32,
     pub _useCollision_k__BackingField: bool,
     pub _collisionHeight_k__BackingField: f32,
-    pub _meshRenderer: *mut crate::UnityEngine::MeshRenderer,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _meshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _isInitialized: bool,
 }
 #[cfg(feature = "ParametricBoxController")]

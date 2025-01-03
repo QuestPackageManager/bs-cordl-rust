@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ECMqvWithKdfBasicAgreement {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Agreement::ECMqvBasicAgreement,
-    pub algorithm: *mut quest_hook::libil2cpp::Il2CppString,
-    pub kdf: *mut crate::Org::BouncyCastle::Crypto::IDerivationFunction,
+    pub algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub kdf: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IDerivationFunction,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+ECMqvWithKdfBasicAgreement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

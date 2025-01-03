@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct SaberMovementData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _data: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::BladeMovementDataElement,
+    pub _data: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::BladeMovementDataElement,
+        >,
     >,
-    pub _dataProcessors: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::ISaberMovementDataProcessor,
+    pub _dataProcessors: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::ISaberMovementDataProcessor,
+        >,
     >,
     pub _nextAddIndex: i32,
     pub _validCount: i32,

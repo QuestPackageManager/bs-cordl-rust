@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerObstacleController {
     __cordl_parent: crate::GlobalNamespace::ObstacleController,
-    pub _multiplayerConnectedPlayerObstacleClippingController: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleClippingController,
+    pub _multiplayerConnectedPlayerObstacleClippingController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleClippingController,
+    >,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerObstacleController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -79,7 +81,9 @@ pub struct MultiplayerConnectedPlayerObstacleController_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         *mut crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController,
     >,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerObstacleController+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

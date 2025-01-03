@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct XmlSchemaImport {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaExternal,
-    pub ns: *mut quest_hook::libil2cpp::Il2CppString,
-    pub annotation: *mut crate::System::Xml::Schema::XmlSchemaAnnotation,
+    pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub annotation: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAnnotation,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaImport")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

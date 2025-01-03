@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct LevelStatsView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _highScoreText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _maxComboText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _maxRankText: *mut crate::TMPro::TextMeshProUGUI,
+    pub _highScoreText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _maxComboText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _maxRankText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
 #[cfg(feature = "LevelStatsView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

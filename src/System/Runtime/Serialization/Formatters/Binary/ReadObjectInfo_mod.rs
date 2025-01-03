@@ -4,28 +4,38 @@
 pub struct ReadObjectInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub objectInfoId: i32,
-    pub objectType: *mut crate::System::Type,
-    pub objectManager: *mut crate::System::Runtime::Serialization::ObjectManager,
+    pub objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub objectManager: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ObjectManager,
+    >,
     pub count: i32,
     pub isSi: bool,
     pub isNamed: bool,
     pub isTyped: bool,
     pub bSimpleAssembly: bool,
-    pub cache: *mut crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCache,
-    pub wireMemberNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub cache: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCache,
     >,
-    pub wireMemberTypes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Type,
+    pub wireMemberNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub wireMemberTypes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     >,
     pub lastPosition: i32,
-    pub serializationSurrogate: *mut crate::System::Runtime::Serialization::ISerializationSurrogate,
-    pub context: crate::System::Runtime::Serialization::StreamingContext,
-    pub memberTypesList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Type,
+    pub serializationSurrogate: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializationSurrogate,
     >,
-    pub serObjectInfoInit: *mut crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit,
-    pub formatterConverter: *mut crate::System::Runtime::Serialization::IFormatterConverter,
+    pub context: crate::System::Runtime::Serialization::StreamingContext,
+    pub memberTypesList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
+    >,
+    pub serObjectInfoInit: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit,
+    >,
+    pub formatterConverter: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::IFormatterConverter,
+    >,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ReadObjectInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

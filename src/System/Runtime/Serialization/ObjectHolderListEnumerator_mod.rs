@@ -4,7 +4,9 @@
 pub struct ObjectHolderListEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_isFixupEnumerator: bool,
-    pub m_list: *mut crate::System::Runtime::Serialization::ObjectHolderList,
+    pub m_list: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ObjectHolderList,
+    >,
     pub m_startingVersion: i32,
     pub m_currPos: i32,
 }

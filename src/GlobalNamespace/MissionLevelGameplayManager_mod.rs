@@ -3,16 +3,28 @@
 #[derive(Debug)]
 pub struct MissionLevelGameplayManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionObjectiveCheckersManager: *mut crate::GlobalNamespace::MissionObjectiveCheckersManager,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
-    pub _gameSongController: *mut crate::GlobalNamespace::GameSongController,
-    pub _gameEnergyCounter: *mut crate::GlobalNamespace::GameEnergyCounter,
-    pub _pauseController: *mut crate::GlobalNamespace::PauseController,
-    pub _initData: *mut crate::GlobalNamespace::MissionLevelGameplayManager_InitData,
-    pub levelWillStartIntroEvent: *mut crate::System::Action,
-    pub levelDidStartEvent: *mut crate::System::Action,
-    pub levelFinishedEvent: *mut crate::System::Action,
-    pub levelFailedEvent: *mut crate::System::Action,
+    pub _missionObjectiveCheckersManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionObjectiveCheckersManager,
+    >,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
+    pub _gameSongController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameSongController,
+    >,
+    pub _gameEnergyCounter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameEnergyCounter,
+    >,
+    pub _pauseController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PauseController,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionLevelGameplayManager_InitData,
+    >,
+    pub levelWillStartIntroEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub levelDidStartEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub levelFinishedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub levelFailedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _gameState: crate::GlobalNamespace::MissionLevelGameplayManager_GameState,
     pub _prePauseGameState: crate::GlobalNamespace::MissionLevelGameplayManager_GameState,
     pub _levelEndStateType: crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType,

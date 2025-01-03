@@ -3,17 +3,25 @@
 #[derive(Debug)]
 pub struct SerializationEvents {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _onSerializingMethods: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Reflection::MethodInfo,
+    pub _onSerializingMethods: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Reflection::MethodInfo,
+        >,
     >,
-    pub _onSerializedMethods: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Reflection::MethodInfo,
+    pub _onSerializedMethods: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Reflection::MethodInfo,
+        >,
     >,
-    pub _onDeserializingMethods: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Reflection::MethodInfo,
+    pub _onDeserializingMethods: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Reflection::MethodInfo,
+        >,
     >,
-    pub _onDeserializedMethods: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Reflection::MethodInfo,
+    pub _onDeserializedMethods: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Reflection::MethodInfo,
+        >,
     >,
 }
 #[cfg(feature = "System+Runtime+Serialization+SerializationEvents")]

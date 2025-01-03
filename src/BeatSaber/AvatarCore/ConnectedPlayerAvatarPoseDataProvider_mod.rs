@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct ConnectedPlayerAvatarPoseDataProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub poseDidChangeEvent: *mut crate::System::Action_1<
-        crate::BeatSaber::AvatarCore::AvatarPoseData,
+    pub poseDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
     >,
-    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
-    pub _nodePoseSyncStateManager: *mut crate::GlobalNamespace::INodePoseSyncStateManager,
-    pub _avatarPoseRestriction: *mut crate::BeatSaber::AvatarCore::IAvatarPoseRestriction,
+    pub _connectedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
+    pub _nodePoseSyncStateManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INodePoseSyncStateManager,
+    >,
+    pub _avatarPoseRestriction: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::IAvatarPoseRestriction,
+    >,
     pub _currentPose: crate::BeatSaber::AvatarCore::AvatarPoseData,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerAvatarPoseDataProvider")]

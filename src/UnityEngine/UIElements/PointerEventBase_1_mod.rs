@@ -10,7 +10,9 @@ pub struct PointerEventBase_1<T: quest_hook::libil2cpp::Type> {
     pub m_TiltNeeded: bool,
     pub m_Tilt: crate::UnityEngine::Vector2,
     pub _pointerId_k__BackingField: i32,
-    pub _pointerType_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _pointerType_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _isPrimary_k__BackingField: bool,
     pub _button_k__BackingField: i32,
     pub _pressedButtons_k__BackingField: i32,

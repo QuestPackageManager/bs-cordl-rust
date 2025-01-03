@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct GOfbBlockCipher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub IV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub ofbV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub ofbOutV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub IV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub ofbV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub ofbOutV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub blockSize: i32,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    >,
     pub firstStep: bool,
     pub N3: i32,
     pub N4: i32,

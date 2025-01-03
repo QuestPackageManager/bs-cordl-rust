@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct StaticPreviewMediaData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _coverSprite: *mut crate::UnityEngine::Sprite,
-    pub _previewAudioClip: *mut crate::UnityEngine::AudioClip,
+    pub _coverSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _previewAudioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
 }
 #[cfg(feature = "StaticPreviewMediaData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

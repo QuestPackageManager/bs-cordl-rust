@@ -451,7 +451,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::DefaultBinder {
 #[derive(Debug)]
 pub struct DefaultBinder_BinderState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_argsMap: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub m_argsMap: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub m_originalSize: i32,
     pub m_isParamArray: bool,
 }

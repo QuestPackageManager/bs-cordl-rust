@@ -3,18 +3,20 @@
 #[derive(Debug)]
 pub struct DtdParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub readerAdapter: *mut crate::System::Xml::IDtdParserAdapter,
-    pub readerAdapterWithValidation: *mut crate::System::Xml::IDtdParserAdapterWithValidation,
-    pub nameTable: *mut crate::System::Xml::XmlNameTable,
-    pub schemaInfo: *mut crate::System::Xml::Schema::SchemaInfo,
+    pub readerAdapter: quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter>,
+    pub readerAdapterWithValidation: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::IDtdParserAdapterWithValidation,
+    >,
+    pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+    pub schemaInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaInfo>,
     pub xmlCharType: crate::System::Xml::XmlCharType,
-    pub systemId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub publicId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub systemId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub publicId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub normalize: bool,
     pub validate: bool,
     pub supportNamespaces: bool,
     pub v1Compat: bool,
-    pub chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub charsUsed: i32,
     pub curPos: i32,
     pub scanningFunction: crate::System::Xml::DtdParser_ScanningFunction,
@@ -23,22 +25,30 @@ pub struct DtdParser {
     pub whitespaceSeen: bool,
     pub tokenStartPos: i32,
     pub colonPos: i32,
-    pub internalSubsetValueSb: *mut crate::System::Text::StringBuilder,
+    pub internalSubsetValueSb: quest_hook::libil2cpp::Gc<
+        crate::System::Text::StringBuilder,
+    >,
     pub externalEntitiesDepth: i32,
     pub currentEntityId: i32,
     pub freeFloatingDtd: bool,
     pub hasFreeFloatingInternalSubset: bool,
-    pub stringBuilder: *mut crate::System::Text::StringBuilder,
+    pub stringBuilder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub condSectionDepth: i32,
     pub literalLineInfo: crate::System::Xml::LineInfo,
     pub literalQuoteChar: char,
-    pub documentBaseUri: *mut quest_hook::libil2cpp::Il2CppString,
-    pub externalDtdBaseUri: *mut quest_hook::libil2cpp::Il2CppString,
-    pub undeclaredNotations: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::System::Xml::DtdParser_UndeclaredNotation,
+    pub documentBaseUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub externalDtdBaseUri: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub condSectionEntityIds: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub undeclaredNotations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::System::Xml::DtdParser_UndeclaredNotation,
+        >,
+    >,
+    pub condSectionEntityIds: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
 }
 #[cfg(feature = "System+Xml+DtdParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1428,10 +1438,12 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct DtdParser_UndeclaredNotation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub lineNo: i32,
     pub linePos: i32,
-    pub next: *mut crate::System::Xml::DtdParser_UndeclaredNotation,
+    pub next: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::DtdParser_UndeclaredNotation,
+    >,
 }
 #[cfg(feature = "System+Xml+DtdParser+UndeclaredNotation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

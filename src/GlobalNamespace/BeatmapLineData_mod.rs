@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BeatmapLineData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _beatmapObjectsData: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::BeatmapObjectData,
+    pub _beatmapObjectsData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::BeatmapObjectData,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapLineData")]

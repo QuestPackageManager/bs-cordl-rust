@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DebugInfoExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
-    pub _Document_k__BackingField: *mut crate::System::Linq::Expressions::SymbolDocumentInfo,
+    pub _Document_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::SymbolDocumentInfo,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+DebugInfoExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

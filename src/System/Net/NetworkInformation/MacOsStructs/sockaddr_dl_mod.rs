@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Net+NetworkInformation+MacOsStructs+sockaddr_dl")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct sockaddr_dl {
     pub sdl_len: u8,
     pub sdl_family: u8,
@@ -9,7 +9,7 @@ pub struct sockaddr_dl {
     pub sdl_nlen: u8,
     pub sdl_alen: u8,
     pub sdl_slen: u8,
-    pub sdl_data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub sdl_data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "System+Net+NetworkInformation+MacOsStructs+sockaddr_dl")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

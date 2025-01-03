@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LinuxUnicastIPAddressInformation {
     __cordl_parent: crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
-    pub address: *mut crate::System::Net::IPAddress,
+    pub address: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
 }
 #[cfg(feature = "System+Net+NetworkInformation+LinuxUnicastIPAddressInformation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

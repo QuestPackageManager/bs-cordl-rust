@@ -64,7 +64,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSystemPerf
 #[derive(Debug)]
 pub struct OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub tcpServer: *mut crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer,
+    pub tcpServer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer,
+    >,
     pub listeningPort: i32,
 }
 #[cfg(feature = "OVRSystemPerfMetrics+OVRSystemPerfMetricsTcpServer")]
@@ -197,10 +199,12 @@ pub struct OVRSystemPerfMetrics_PerfMetrics {
     pub deviceCpuClockLevel: i32,
     pub deviceGpuClockLevel_IsValid: bool,
     pub deviceGpuClockLevel: i32,
-    pub deviceCpuCoreUtilPercentage_IsValid: *mut quest_hook::libil2cpp::Il2CppArray<
-        bool,
+    pub deviceCpuCoreUtilPercentage_IsValid: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<bool>,
     >,
-    pub deviceCpuCoreUtilPercentage: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub deviceCpuCoreUtilPercentage: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
 }
 #[cfg(feature = "OVRSystemPerfMetrics+PerfMetrics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

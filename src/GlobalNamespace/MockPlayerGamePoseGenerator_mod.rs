@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct MockPlayerGamePoseGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
+    pub multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub gameplayRpcManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IGameplayRpcManager,
+    >,
     pub leftHanded: bool,
-    pub mockNodePoseSyncStateSender: *mut crate::GlobalNamespace::MockNodePoseSyncStateSender,
-    pub mockScoreSyncStateSender: *mut crate::GlobalNamespace::MockScoreSyncStateSender,
+    pub mockNodePoseSyncStateSender: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MockNodePoseSyncStateSender,
+    >,
+    pub mockScoreSyncStateSender: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MockScoreSyncStateSender,
+    >,
 }
 #[cfg(feature = "MockPlayerGamePoseGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

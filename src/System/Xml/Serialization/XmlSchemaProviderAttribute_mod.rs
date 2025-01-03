@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlSchemaProviderAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _methodName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _isAny: bool,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSchemaProviderAttribute")]

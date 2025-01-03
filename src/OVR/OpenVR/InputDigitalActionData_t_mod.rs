@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+InputDigitalActionData_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputDigitalActionData_t {
     pub bActive: bool,
     pub activeOrigin: u64,

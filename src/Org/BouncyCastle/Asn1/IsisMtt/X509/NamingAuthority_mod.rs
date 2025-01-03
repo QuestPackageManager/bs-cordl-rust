@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct NamingAuthority {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub namingAuthorityID: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub namingAuthorityUrl: *mut quest_hook::libil2cpp::Il2CppString,
-    pub namingAuthorityText: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+    pub namingAuthorityID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub namingAuthorityUrl: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub namingAuthorityText: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+NamingAuthority")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

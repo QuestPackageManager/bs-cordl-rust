@@ -5,20 +5,26 @@
 #[derive(Debug)]
 pub struct ResourceManagerRuntimeData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_buildTarget: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_SettingsHash: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_CatalogLocations: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData,
+    pub m_buildTarget: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_SettingsHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_CatalogLocations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData,
+        >,
     >,
     pub m_ProfileEvents: bool,
     pub m_LogResourceManagerExceptions: bool,
-    pub m_ExtraInitializationData: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
+    pub m_ExtraInitializationData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
+        >,
     >,
     pub m_DisableCatalogUpdateOnStart: bool,
     pub m_IsLocalCatalogInBundle: bool,
     pub m_CertificateHandlerType: crate::UnityEngine::ResourceManagement::Util::SerializedType,
-    pub m_AddressablesVersion: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_AddressablesVersion: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub m_maxConcurrentWebRequests: i32,
     pub m_CatalogRequestsTimeout: i32,
 }

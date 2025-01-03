@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct SetPSSaberGlowColor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _saber: *mut crate::GlobalNamespace::SaberTypeObject,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
-    pub _particleSystem: *mut crate::UnityEngine::ParticleSystem,
+    pub _saber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberTypeObject>,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+    pub _particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
 }
 #[cfg(feature = "SetPSSaberGlowColor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

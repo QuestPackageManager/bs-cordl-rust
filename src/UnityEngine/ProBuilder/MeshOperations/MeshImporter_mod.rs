@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct MeshImporter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_SourceMesh: *mut crate::UnityEngine::Mesh,
-    pub m_SourceMaterials: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Material,
+    pub m_SourceMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub m_SourceMaterials: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
     >,
-    pub m_Destination: *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
-    pub m_Vertices: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::ProBuilder::Vertex,
+    pub m_Destination: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+    >,
+    pub m_Vertices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Vertex>,
     >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshImporter")]

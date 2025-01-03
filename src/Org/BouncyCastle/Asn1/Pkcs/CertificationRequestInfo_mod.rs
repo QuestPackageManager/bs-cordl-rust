@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct CertificationRequestInfo {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub subject: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
-    pub subjectPKInfo: *mut crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
-    pub attributes: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub subject: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Name,
+    >,
+    pub subjectPKInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+    >,
+    pub attributes: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+CertificationRequestInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

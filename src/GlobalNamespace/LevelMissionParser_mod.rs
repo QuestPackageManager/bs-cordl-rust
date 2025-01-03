@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct LevelMissionParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _functions: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::LevelMissionParser_ParserFunction,
+    pub _functions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::LevelMissionParser_ParserFunction,
+        >,
     >,
 }
 #[cfg(feature = "LevelMissionParser")]

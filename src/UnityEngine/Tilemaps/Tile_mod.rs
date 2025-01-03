@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct Tile {
     __cordl_parent: crate::UnityEngine::Tilemaps::TileBase,
-    pub m_Sprite: *mut crate::UnityEngine::Sprite,
+    pub m_Sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub m_Color: crate::UnityEngine::Color,
     pub m_Transform: crate::UnityEngine::Matrix4x4,
-    pub m_InstancedGameObject: *mut crate::UnityEngine::GameObject,
+    pub m_InstancedGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_Flags: crate::UnityEngine::Tilemaps::TileFlags,
     pub m_ColliderType: crate::UnityEngine::Tilemaps::Tile_ColliderType,
 }

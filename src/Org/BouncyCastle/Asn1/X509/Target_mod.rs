@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct Target {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub targetName: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    pub targetGroup: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    pub targetName: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    >,
+    pub targetGroup: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

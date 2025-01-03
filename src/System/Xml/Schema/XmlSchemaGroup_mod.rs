@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct XmlSchemaGroup {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaAnnotated,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub particle: *mut crate::System::Xml::Schema::XmlSchemaGroupBase,
-    pub canonicalParticle: *mut crate::System::Xml::Schema::XmlSchemaParticle,
-    pub qname: *mut crate::System::Xml::XmlQualifiedName,
-    pub redefined: *mut crate::System::Xml::Schema::XmlSchemaGroup,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub particle: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaGroupBase,
+    >,
+    pub canonicalParticle: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaParticle,
+    >,
+    pub qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub redefined: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroup>,
     pub selfReferenceCount: i32,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaGroup")]

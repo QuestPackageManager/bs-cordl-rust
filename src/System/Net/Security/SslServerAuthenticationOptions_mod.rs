@@ -8,7 +8,9 @@ pub struct SslServerAuthenticationOptions {
     pub _encryptionPolicy: crate::System::Net::Security::EncryptionPolicy,
     pub _allowRenegotiation: bool,
     pub _ClientCertificateRequired_k__BackingField: bool,
-    pub _ServerCertificate_k__BackingField: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+    pub _ServerCertificate_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+    >,
 }
 #[cfg(feature = "System+Net+Security+SslServerAuthenticationOptions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

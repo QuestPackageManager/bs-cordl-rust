@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct ServerCodeView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _serverCodeText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _button: *mut crate::UnityEngine::UI::Button,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
-    pub _serverCode: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _serverCodeText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
+    pub _serverCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _codeIsShown: bool,
 }
 #[cfg(feature = "ServerCodeView")]

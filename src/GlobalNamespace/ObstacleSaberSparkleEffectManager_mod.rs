@@ -3,23 +3,33 @@
 #[derive(Debug)]
 pub struct ObstacleSaberSparkleEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _obstacleSaberSparkleEffectPrefab: *mut crate::GlobalNamespace::ObstacleSaberSparkleEffect,
-    pub _rumblePreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
-    pub _hapticFeedbackManager: *mut crate::GlobalNamespace::HapticFeedbackManager,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
-    pub _sabers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::Saber,
+    pub _obstacleSaberSparkleEffectPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ObstacleSaberSparkleEffect,
     >,
-    pub _effects: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::ObstacleSaberSparkleEffect,
+    pub _rumblePreset: quest_hook::libil2cpp::Gc<
+        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
     >,
-    pub sparkleEffectDidStartEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::SaberType,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
     >,
-    pub sparkleEffectDidEndEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::SaberType,
+    pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
+    pub _hapticFeedbackManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HapticFeedbackManager,
+    >,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+    pub _sabers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::Saber>,
+    >,
+    pub _effects: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::ObstacleSaberSparkleEffect,
+        >,
+    >,
+    pub sparkleEffectDidStartEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::SaberType>,
+    >,
+    pub sparkleEffectDidEndEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::SaberType>,
     >,
 }
 #[cfg(feature = "ObstacleSaberSparkleEffectManager")]

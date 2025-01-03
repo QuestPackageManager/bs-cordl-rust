@@ -5,18 +5,38 @@ pub struct PerformanceRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub minFpsWindow: f32,
     pub _StartEnabled_k__BackingField: bool,
-    pub _GamePause_k__BackingField: *mut crate::GlobalNamespace::IGamePause,
-    pub _SceneSetupData_k__BackingField: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
-    pub _SettingsManager_k__BackingField: *mut crate::GlobalNamespace::SettingsManager,
-    pub _PlayerSpecificSettings_k__BackingField: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+    pub _GamePause_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IGamePause,
+    >,
+    pub _SceneSetupData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    >,
+    pub _SettingsManager_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _PlayerSpecificSettings_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSpecificSettings,
+    >,
     pub _GameplayModifiers_k__BackingField: crate::GlobalNamespace::GameplayModifierMask,
-    pub _RrecPlayState_k__BackingField: *mut crate::GlobalNamespace::RecPlayBehaviour_State,
-    pub _frameTimes: *mut crate::System::Collections::Generic::List_1<f32>,
-    pub _configChecks: *mut crate::GlobalNamespace::PerformanceConfigurationChecks,
-    pub _configStats: *mut crate::GlobalNamespace::PerformanceConfigurationStats,
-    pub _profilerMetrics: *mut crate::GlobalNamespace::ProfilerMetrics,
-    pub _oculusMetrics: *mut crate::GlobalNamespace::OculusMetrics,
-    pub _ovrToolMetrics: *mut crate::GlobalNamespace::OvrToolMetrics,
+    pub _RrecPlayState_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecPlayBehaviour_State,
+    >,
+    pub _frameTimes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
+    pub _configChecks: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PerformanceConfigurationChecks,
+    >,
+    pub _configStats: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PerformanceConfigurationStats,
+    >,
+    pub _profilerMetrics: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ProfilerMetrics,
+    >,
+    pub _oculusMetrics: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OculusMetrics>,
+    pub _ovrToolMetrics: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OvrToolMetrics,
+    >,
 }
 #[cfg(feature = "PerformanceRecorder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

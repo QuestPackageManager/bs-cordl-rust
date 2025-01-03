@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct GUIWordWrapSizer {
     __cordl_parent: crate::UnityEngine::GUILayoutEntry,
-    pub m_Content: *mut crate::UnityEngine::GUIContent,
+    pub m_Content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
     pub m_ForcedMinHeight: f32,
     pub m_ForcedMaxHeight: f32,
 }

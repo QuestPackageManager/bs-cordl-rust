@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct GameObjectKeywordSwitchEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _defaultGameObject: *mut crate::UnityEngine::GameObject,
-    pub _gameObjectKeywordItems: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::GameObjectKeywordSwitchEffect_GameObjectKeywordItem,
+    pub _defaultGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _gameObjectKeywordItems: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::GameObjectKeywordSwitchEffect_GameObjectKeywordItem,
+        >,
     >,
 }
 #[cfg(feature = "GameObjectKeywordSwitchEffect")]
@@ -76,8 +78,8 @@ for crate::GlobalNamespace::GameObjectKeywordSwitchEffect {
 #[derive(Debug)]
 pub struct GameObjectKeywordSwitchEffect_GameObjectKeywordItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub gameObject: *mut crate::UnityEngine::GameObject,
-    pub keyword: *mut quest_hook::libil2cpp::Il2CppString,
+    pub gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "GameObjectKeywordSwitchEffect+GameObjectKeywordItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

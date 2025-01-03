@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct EnvironmentShaderWarmup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _materials: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Material,
+    pub _materials: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
     >,
-    pub _mainCamera: *mut crate::GlobalNamespace::MainCamera,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
-    pub _parentingTransform: *mut crate::UnityEngine::Transform,
+    pub _mainCamera: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainCamera>,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
+    pub _parentingTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "EnvironmentShaderWarmup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct BaseViewControllersInstaller {
     __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
-    pub _simpleDialogPromptViewControllerPrefab: *mut crate::GlobalNamespace::SimpleDialogPromptViewController,
-    pub _safeAreaFocusedSimpleDialogPromptViewControllerPrefab: *mut crate::GlobalNamespace::SafeAreaFocusedSimpleDialogPromptViewController,
+    pub _simpleDialogPromptViewControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SimpleDialogPromptViewController,
+    >,
+    pub _safeAreaFocusedSimpleDialogPromptViewControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SafeAreaFocusedSimpleDialogPromptViewController,
+    >,
 }
 #[cfg(feature = "BaseViewControllersInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

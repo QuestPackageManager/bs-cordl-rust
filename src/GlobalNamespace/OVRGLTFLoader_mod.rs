@@ -3,34 +3,42 @@
 #[derive(Debug)]
 pub struct OVRGLTFLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_jsonData: *mut crate::OVRSimpleJSON::JSONNode,
-    pub m_glbStream: *mut crate::System::IO::Stream,
+    pub m_jsonData: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+    pub m_glbStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub m_binaryChunk: crate::GlobalNamespace::OVRBinaryChunk,
-    pub m_Nodes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::GameObject,
+    pub m_Nodes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::GameObject>,
     >,
-    pub m_InputAnimationNodes: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::GlobalNamespace::OVRGLTFInputNode,
-        *mut crate::GlobalNamespace::OVRGLTFAnimatinonNode,
-    >,
-    pub m_AnimationLookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut quest_hook::libil2cpp::Il2CppArray<
+    pub m_InputAnimationNodes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::OVRGLTFInputNode,
             *mut crate::GlobalNamespace::OVRGLTFAnimatinonNode,
         >,
     >,
-    pub m_morphTargetHandlers: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
+    pub m_AnimationLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::OVRGLTFAnimatinonNode,
+            >,
+        >,
     >,
-    pub m_Shader: *mut crate::UnityEngine::Shader,
-    pub m_AlphaBlendShader: *mut crate::UnityEngine::Shader,
+    pub m_morphTargetHandlers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
+        >,
+    >,
+    pub m_Shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub m_AlphaBlendShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub m_TextureQuality: crate::GlobalNamespace::OVRTextureQualityFiltering,
     pub m_TextureMipmapBias: f32,
-    pub textureUriHandler: *mut crate::System::Func_3<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::UnityEngine::Material,
-        *mut crate::UnityEngine::Texture2D,
+    pub textureUriHandler: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::UnityEngine::Material,
+            *mut crate::UnityEngine::Texture2D,
+        >,
     >,
 }
 #[cfg(feature = "OVRGLTFLoader")]

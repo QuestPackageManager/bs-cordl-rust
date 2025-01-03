@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct CompareInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _sortName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_SortVersion: *mut crate::System::Globalization::SortVersion,
+    pub m_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _sortName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_SortVersion: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::SortVersion,
+    >,
     pub culture: i32,
-    pub collator: *mut crate::System::Globalization::ISimpleCollator,
+    pub collator: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::ISimpleCollator,
+    >,
 }
 #[cfg(feature = "System+Globalization+CompareInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

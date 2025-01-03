@@ -4,7 +4,7 @@
 pub struct GUILayoutOption {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::UnityEngine::GUILayoutOption_Type,
-    pub value: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+GUILayoutOption")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

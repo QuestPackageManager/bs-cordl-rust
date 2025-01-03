@@ -3,23 +3,41 @@
 #[derive(Debug)]
 pub struct LevelPackDetailViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _detailWrapper: *mut crate::UnityEngine::GameObject,
-    pub _packImage: *mut crate::HMUI::ImageView,
-    pub _buyButton: *mut crate::UnityEngine::UI::Button,
-    pub _buyContainer: *mut crate::UnityEngine::GameObject,
-    pub _loadingControl: *mut crate::GlobalNamespace::LoadingControl,
-    pub _requireInternetContainer: *mut crate::UnityEngine::GameObject,
-    pub _steamMessageGameObject: *mut crate::UnityEngine::GameObject,
-    pub _kawaseBlurRenderer: *mut crate::GlobalNamespace::KawaseBlurRendererSO,
-    pub _defaultCoverSprite: *mut crate::UnityEngine::Sprite,
-    pub _additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
-    pub _entitlementModel: *mut crate::GlobalNamespace::IEntitlementModel,
-    pub _dlcPromoPanelModel: *mut crate::GlobalNamespace::DlcPromoPanelModel,
-    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
-    pub _eventBinder: *mut crate::GlobalNamespace::EventBinder,
-    pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
-    pub _blurredPackArtwork: *mut crate::UnityEngine::Sprite,
+    pub _detailWrapper: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _packImage: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
+    pub _buyButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _buyContainer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _loadingControl: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LoadingControl,
+    >,
+    pub _requireInternetContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _steamMessageGameObject: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _kawaseBlurRenderer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::KawaseBlurRendererSO,
+    >,
+    pub _defaultCoverSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _additionalContentModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAdditionalContentModel,
+    >,
+    pub _entitlementModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IEntitlementModel,
+    >,
+    pub _dlcPromoPanelModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DlcPromoPanelModel,
+    >,
+    pub _analyticsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAnalyticsModel,
+    >,
+    pub _eventBinder: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EventBinder>,
+    pub _cancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub _pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+    pub _blurredPackArtwork: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
 }
 #[cfg(feature = "LevelPackDetailViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

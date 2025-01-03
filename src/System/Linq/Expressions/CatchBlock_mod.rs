@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct CatchBlock {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Variable_k__BackingField: *mut crate::System::Linq::Expressions::ParameterExpression,
-    pub _Test_k__BackingField: *mut crate::System::Type,
-    pub _Body_k__BackingField: *mut crate::System::Linq::Expressions::Expression,
-    pub _Filter_k__BackingField: *mut crate::System::Linq::Expressions::Expression,
+    pub _Variable_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::ParameterExpression,
+    >,
+    pub _Test_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _Body_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
+    pub _Filter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+CatchBlock")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

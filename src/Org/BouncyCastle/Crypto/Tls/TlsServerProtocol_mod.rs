@@ -3,13 +3,25 @@
 #[derive(Debug)]
 pub struct TlsServerProtocol {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol,
-    pub mTlsServer: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsServer,
-    pub mTlsServerContext: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsServerContextImpl,
-    pub mKeyExchange: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsKeyExchange,
-    pub mServerCredentials: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
-    pub mCertificateRequest: *mut crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest,
+    pub mTlsServer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsServer,
+    >,
+    pub mTlsServerContext: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsServerContextImpl,
+    >,
+    pub mKeyExchange: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsKeyExchange,
+    >,
+    pub mServerCredentials: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
+    >,
+    pub mCertificateRequest: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest,
+    >,
     pub mClientCertificateType: i16,
-    pub mPrepareFinishHash: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
+    pub mPrepareFinishHash: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsServerProtocol")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

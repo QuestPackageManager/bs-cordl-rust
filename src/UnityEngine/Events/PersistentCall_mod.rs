@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct PersistentCall {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Target: *mut crate::UnityEngine::Object,
-    pub m_TargetAssemblyTypeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_MethodName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    pub m_TargetAssemblyTypeName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_MethodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Mode: crate::UnityEngine::Events::PersistentListenerMode,
-    pub m_Arguments: *mut crate::UnityEngine::Events::ArgumentCache,
+    pub m_Arguments: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::ArgumentCache,
+    >,
     pub m_CallState: crate::UnityEngine::Events::UnityEventCallState,
 }
 #[cfg(feature = "UnityEngine+Events+PersistentCall")]

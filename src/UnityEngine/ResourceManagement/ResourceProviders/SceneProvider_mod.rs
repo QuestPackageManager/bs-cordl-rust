@@ -219,7 +219,9 @@ pub struct SceneProvider_SceneOp {
     >,
     pub m_ActivateOnLoad: bool,
     pub m_Inst: crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
-    pub m_Location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    pub m_Location: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    >,
     pub m_LoadSceneParameters: crate::UnityEngine::SceneManagement::LoadSceneParameters,
     pub m_Priority: i32,
     pub m_DepOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
@@ -227,7 +229,9 @@ pub struct SceneProvider_SceneOp {
             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     >,
-    pub m_ResourceManager: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
+    pub m_ResourceManager: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceManager,
+    >,
 }
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"

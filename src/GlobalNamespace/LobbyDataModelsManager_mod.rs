@@ -3,11 +3,21 @@
 #[derive(Debug)]
 pub struct LobbyDataModelsManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _lobbyStateDataModel: *mut crate::GlobalNamespace::ILobbyStateDataModel,
-    pub _lobbyPlayersDataModel: *mut crate::GlobalNamespace::ILobbyPlayersDataModel,
-    pub _nodePoseSyncStateManager: *mut crate::GlobalNamespace::INodePoseSyncStateManager,
-    pub _lobbyPlayerPermissionsModel: *mut crate::GlobalNamespace::LobbyPlayerPermissionsModel,
-    pub _lobbyGameStateController: *mut crate::GlobalNamespace::ILobbyGameStateControllerBase,
+    pub _lobbyStateDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyStateDataModel,
+    >,
+    pub _lobbyPlayersDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyPlayersDataModel,
+    >,
+    pub _nodePoseSyncStateManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INodePoseSyncStateManager,
+    >,
+    pub _lobbyPlayerPermissionsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LobbyPlayerPermissionsModel,
+    >,
+    pub _lobbyGameStateController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyGameStateControllerBase,
+    >,
 }
 #[cfg(feature = "LobbyDataModelsManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

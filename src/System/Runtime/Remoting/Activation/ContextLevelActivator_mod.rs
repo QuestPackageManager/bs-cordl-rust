@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ContextLevelActivator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_NextActivator: *mut crate::System::Runtime::Remoting::Activation::IActivator,
+    pub m_NextActivator: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Activation::IActivator,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Activation+ContextLevelActivator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

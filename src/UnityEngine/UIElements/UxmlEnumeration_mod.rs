@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct UxmlEnumeration {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlTypeRestriction,
-    pub m_Values: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Values: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlEnumeration")]

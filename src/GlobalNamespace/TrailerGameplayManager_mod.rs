@@ -4,9 +4,13 @@
 pub struct TrailerGameplayManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _disableMainCamera: bool,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
-    pub _gameSongController: *mut crate::GlobalNamespace::GameSongController,
-    pub _mainCamera: *mut crate::GlobalNamespace::MainCamera,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
+    pub _gameSongController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameSongController,
+    >,
+    pub _mainCamera: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainCamera>,
 }
 #[cfg(feature = "TrailerGameplayManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

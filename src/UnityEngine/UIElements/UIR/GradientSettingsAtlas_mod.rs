@@ -5,8 +5,10 @@ pub struct GradientSettingsAtlas {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Length: i32,
     pub m_ElemWidth: i32,
-    pub m_Allocator: *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator,
-    pub m_Atlas: *mut crate::UnityEngine::Texture2D,
+    pub m_Allocator: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::BestFitAllocator,
+    >,
+    pub m_Atlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     pub m_RawAtlas: crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas_RawTexture,
     pub _disposed_k__BackingField: bool,
     pub _MustCommit_k__BackingField: bool,
@@ -217,9 +219,11 @@ for crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+GradientSettingsAtlas+RawTexture")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GradientSettingsAtlas_RawTexture {
-    pub rgba: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+    pub rgba: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+    >,
     pub width: i32,
     pub height: i32,
 }

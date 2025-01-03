@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct LevelPackHeaderTableCell {
     __cordl_parent: crate::HMUI::TableCell,
-    pub _nameText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _backgroundImage: *mut crate::UnityEngine::UI::Image,
+    pub _nameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _backgroundImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     pub _highlightBackgroundColor: crate::UnityEngine::Color,
     pub _selectedBackgroundColor: crate::UnityEngine::Color,
     pub _selectedAndHighlightedBackgroundColor: crate::UnityEngine::Color,

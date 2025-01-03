@@ -1,10 +1,12 @@
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+TypeTable")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TypeTable {
-    pub table: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
-        *mut crate::System::Type,
+    pub table: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+            *mut crate::System::Type,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+TypeTable")]

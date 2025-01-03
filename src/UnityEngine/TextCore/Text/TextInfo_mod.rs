@@ -11,23 +11,25 @@ pub struct TextInfo {
     pub lineCount: i32,
     pub pageCount: i32,
     pub materialCount: i32,
-    pub textElementInfo: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::TextCore::Text::TextElementInfo,
+    pub textElementInfo: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::TextCore::Text::TextElementInfo,
+        >,
     >,
-    pub wordInfo: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::TextCore::Text::WordInfo,
+    pub wordInfo: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::TextCore::Text::WordInfo>,
     >,
-    pub linkInfo: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::TextCore::Text::LinkInfo,
+    pub linkInfo: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::TextCore::Text::LinkInfo>,
     >,
-    pub lineInfo: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::TextCore::Text::LineInfo,
+    pub lineInfo: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::TextCore::Text::LineInfo>,
     >,
-    pub pageInfo: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::TextCore::Text::PageInfo,
+    pub pageInfo: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::TextCore::Text::PageInfo>,
     >,
-    pub meshInfo: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::TextCore::Text::MeshInfo,
+    pub meshInfo: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::TextCore::Text::MeshInfo>,
     >,
     pub isDirty: bool,
     pub hasMultipleColors: bool,

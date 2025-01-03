@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SeedEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub wKey: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub wKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub forEncryption: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+SeedEngine")]

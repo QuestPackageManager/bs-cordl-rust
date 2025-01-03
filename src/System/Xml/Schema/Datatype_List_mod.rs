@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct Datatype_List {
     __cordl_parent: crate::System::Xml::Schema::Datatype_anySimpleType,
-    pub itemType: *mut crate::System::Xml::Schema::DatatypeImplementation,
+    pub itemType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::DatatypeImplementation,
+    >,
     pub minListSize: i32,
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_List")]

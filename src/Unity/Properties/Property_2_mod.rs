@@ -6,8 +6,8 @@ pub struct Property_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Attributes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Attribute,
+    pub m_Attributes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::Attribute>,
     >,
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,

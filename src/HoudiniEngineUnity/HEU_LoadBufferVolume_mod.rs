@@ -4,28 +4,42 @@
 pub struct HEU_LoadBufferVolume {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_LoadBufferBase,
     pub _tileIndex: i32,
-    pub _splatLayers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_LoadBufferVolumeLayer,
+    pub _splatLayers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_LoadBufferVolumeLayer,
+        >,
     >,
     pub _heightMapWidth: i32,
     pub _heightMapHeight: i32,
-    pub _heightMap: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _splatMaps: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _heightMap: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _splatMaps: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _terrainSizeX: f32,
     pub _terrainSizeY: f32,
     pub _heightRange: f32,
     pub _position: crate::UnityEngine::Vector3,
-    pub _terrainDataPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _terrainDataExportPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _scatterTrees: *mut crate::HoudiniEngineUnity::HEU_VolumeScatterTrees,
-    pub _detailPrototypes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_DetailPrototype,
+    pub _terrainDataPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _terrainDataExportPath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _detailMaps: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _scatterTrees: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_VolumeScatterTrees,
     >,
-    pub _detailProperties: *mut crate::HoudiniEngineUnity::HEU_DetailProperties,
-    pub _specifiedTerrainMaterialName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _detailPrototypes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_DetailPrototype,
+        >,
+    >,
+    pub _detailMaps: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    >,
+    pub _detailProperties: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_DetailProperties,
+    >,
+    pub _specifiedTerrainMaterialName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_LoadBufferVolume")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

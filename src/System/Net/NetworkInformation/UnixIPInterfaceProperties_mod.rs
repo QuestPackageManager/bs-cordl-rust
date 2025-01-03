@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct UnixIPInterfaceProperties {
     __cordl_parent: crate::System::Net::NetworkInformation::IPInterfaceProperties,
-    pub iface: *mut crate::System::Net::NetworkInformation::UnixNetworkInterface,
-    pub addresses: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Net::IPAddress,
+    pub iface: quest_hook::libil2cpp::Gc<
+        crate::System::Net::NetworkInformation::UnixNetworkInterface,
+    >,
+    pub addresses: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::Net::IPAddress>,
     >,
 }
 #[cfg(feature = "System+Net+NetworkInformation+UnixIPInterfaceProperties")]

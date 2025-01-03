@@ -3,14 +3,22 @@
 #[derive(Debug)]
 pub struct DirectionalLightWithIdsGroupEntry {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _directionalLightWithIds: *mut crate::GlobalNamespace::DirectionalLightWithIds,
-    pub _groupLightData: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData,
+    pub _directionalLightWithIds: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DirectionalLightWithIds,
     >,
-    pub _individualLightData: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId,
+    pub _groupLightData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData,
+        >,
     >,
-    pub _excludedLightIds: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _individualLightData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId,
+        >,
+    >,
+    pub _excludedLightIds: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     pub _groupLightsWeighting: crate::GlobalNamespace::ColorMixAndWeightingApproach,
 }
 #[cfg(feature = "DirectionalLightWithIdsGroupEntry")]
@@ -121,7 +129,7 @@ for crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
 #[derive(Debug)]
 pub struct DirectionalLightWithIdsGroupEntry_GroupLightData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _lightGroup: *mut crate::GlobalNamespace::LightGroupSO,
+    pub _lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
     pub _groupIntensity: f32,
 }
 #[cfg(feature = "DirectionalLightWithIdsGroupEntry+GroupLightData")]

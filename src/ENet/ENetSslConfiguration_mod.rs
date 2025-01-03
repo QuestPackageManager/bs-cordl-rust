@@ -1,16 +1,18 @@
 #[cfg(feature = "ENet+ENetSslConfiguration")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ENetSslConfiguration {
     pub mode: crate::ENet::SslMode,
-    pub certificatePath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub certificate: *mut quest_hook::libil2cpp::Il2CppString,
-    pub privateKeyPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub privateKey: *mut quest_hook::libil2cpp::Il2CppString,
+    pub certificatePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub certificate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub privateKeyPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub privateKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub validateCertificate: i32,
-    pub rootCertificatePath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub rootCertificate: *mut quest_hook::libil2cpp::Il2CppString,
-    pub hostName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub rootCertificatePath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub rootCertificate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub hostName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "ENet+ENetSslConfiguration")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct MonoKernel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _tickableManager: *mut crate::Zenject::TickableManager,
-    pub _initializableManager: *mut crate::Zenject::InitializableManager,
-    pub _disposablesManager: *mut crate::Zenject::DisposableManager,
+    pub _tickableManager: quest_hook::libil2cpp::Gc<crate::Zenject::TickableManager>,
+    pub _initializableManager: quest_hook::libil2cpp::Gc<
+        crate::Zenject::InitializableManager,
+    >,
+    pub _disposablesManager: quest_hook::libil2cpp::Gc<
+        crate::Zenject::DisposableManager,
+    >,
     pub _hasInitialized: bool,
     pub _isDestroyed: bool,
 }

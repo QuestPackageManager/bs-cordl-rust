@@ -5,7 +5,9 @@ pub struct BasicNode_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         *mut crate::UnityEngine::UIElements::UIR::BasicNode_1<T>,
     >,
-    pub next: *mut crate::UnityEngine::UIElements::UIR::BasicNode_1<T>,
+    pub next: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::BasicNode_1<T>,
+    >,
     pub data: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

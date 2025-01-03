@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct Poly1305 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
-    pub singleByte: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    >,
+    pub singleByte: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub r0: u32,
     pub r1: u32,
     pub r2: u32,
@@ -18,7 +20,7 @@ pub struct Poly1305 {
     pub k1: u32,
     pub k2: u32,
     pub k3: u32,
-    pub currentBlock: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub currentBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub currentBlockOffset: i32,
     pub h0: u32,
     pub h1: u32,

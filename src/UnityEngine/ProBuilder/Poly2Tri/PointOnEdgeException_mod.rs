@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct PointOnEdgeException {
     __cordl_parent: crate::System::NotImplementedException,
-    pub A: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-    pub B: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-    pub C: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    pub A: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    >,
+    pub B: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    >,
+    pub C: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointOnEdgeException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

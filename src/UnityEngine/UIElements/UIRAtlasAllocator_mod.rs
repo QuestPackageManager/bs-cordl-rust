@@ -10,9 +10,13 @@ pub struct UIRAtlasAllocator {
     pub _virtualHeight_k__BackingField: i32,
     pub _physicalWidth_k__BackingField: i32,
     pub _physicalHeight_k__BackingField: i32,
-    pub m_FirstUnpartitionedArea: *mut crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode,
-    pub m_OpenRows: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UIElements::UIRAtlasAllocator_Row,
+    pub m_FirstUnpartitionedArea: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode,
+    >,
+    pub m_OpenRows: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::UIRAtlasAllocator_Row,
+        >,
     >,
     pub m_1SidePadding: i32,
     pub m_2SidePadding: i32,
@@ -273,8 +277,12 @@ for crate::UnityEngine::UIElements::UIRAtlasAllocator {
 pub struct UIRAtlasAllocator_AreaNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rect: crate::UnityEngine::RectInt,
-    pub previous: *mut crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode,
-    pub next: *mut crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode,
+    pub previous: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode,
+    >,
+    pub next: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

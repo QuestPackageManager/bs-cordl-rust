@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct HEU_CookLogs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cookLogs: *mut crate::System::Text::StringBuilder,
+    pub _cookLogs: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub _currentCookLogCount: i32,
-    pub _lastLogStr: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _lastLogStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _uniqueStrOnly: bool,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_CookLogs")]

@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct Asttree {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _fAxisArray: *mut crate::System::Collections::ArrayList,
-    pub _xpathexpr: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _fAxisArray: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _xpathexpr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _isField: bool,
-    pub _nsmgr: *mut crate::System::Xml::XmlNamespaceManager,
+    pub _nsmgr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
 }
 #[cfg(feature = "System+Xml+Schema+Asttree")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct Pkcs12StoreBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub keyAlgorithm: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub certAlgorithm: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub keyPrfAlgorithm: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub certPrfAlgorithm: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    pub keyAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub certAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub keyPrfAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub certPrfAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
     pub useDerEncoding: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12StoreBuilder")]

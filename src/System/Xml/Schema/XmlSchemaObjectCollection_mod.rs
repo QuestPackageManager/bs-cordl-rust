@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlSchemaObjectCollection {
     __cordl_parent: crate::System::Collections::CollectionBase,
-    pub parent: *mut crate::System::Xml::Schema::XmlSchemaObject,
+    pub parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,19 +3,29 @@
 #[derive(Debug)]
 pub struct BaseSlider_1<TValueType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<TValueType>,
-    pub _dragContainer_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub _dragElement_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub _trackElement_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub _dragBorderElement_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub _inputTextField_k__BackingField: *mut crate::UnityEngine::UIElements::TextField,
+    pub _dragContainer_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub _dragElement_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub _trackElement_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub _dragBorderElement_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub _inputTextField_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextField,
+    >,
     pub m_IsEditingTextField: bool,
     pub m_LowValue: TValueType,
     pub m_HighValue: TValueType,
     pub m_PageSize: f32,
     pub m_ShowInputField: bool,
     pub _clamped_k__BackingField: bool,
-    pub _clampedDragger_k__BackingField: *mut crate::UnityEngine::UIElements::ClampedDragger_1<
-        TValueType,
+    pub _clampedDragger_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ClampedDragger_1<TValueType>,
     >,
     pub m_DragElementStartPos: crate::UnityEngine::Rect,
     pub m_Direction: crate::UnityEngine::UIElements::SliderDirection,

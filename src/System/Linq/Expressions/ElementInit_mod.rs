@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct ElementInit {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _AddMethod_k__BackingField: *mut crate::System::Reflection::MethodInfo,
-    pub _Arguments_k__BackingField: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-        *mut crate::System::Linq::Expressions::Expression,
+    pub _AddMethod_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MethodInfo,
+    >,
+    pub _Arguments_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            *mut crate::System::Linq::Expressions::Expression,
+        >,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+ElementInit")]

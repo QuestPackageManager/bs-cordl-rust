@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct LabelExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
-    pub _Target_k__BackingField: *mut crate::System::Linq::Expressions::LabelTarget,
-    pub _DefaultValue_k__BackingField: *mut crate::System::Linq::Expressions::Expression,
+    pub _Target_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::LabelTarget,
+    >,
+    pub _DefaultValue_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+LabelExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

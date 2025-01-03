@@ -4,13 +4,15 @@
 pub struct ControllersTransformSettings {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _isLeft: bool,
-    pub _posXSlider: *mut crate::HMUI::RangeValuesTextSlider,
-    pub _posYSlider: *mut crate::HMUI::RangeValuesTextSlider,
-    pub _posZSlider: *mut crate::HMUI::RangeValuesTextSlider,
-    pub _rotXSlider: *mut crate::HMUI::RangeValuesTextSlider,
-    pub _rotYSlider: *mut crate::HMUI::RangeValuesTextSlider,
-    pub _rotZSlider: *mut crate::HMUI::RangeValuesTextSlider,
-    pub _selectedControllerProfile: *mut crate::BeatSaber::GameSettings::ControllerProfile,
+    pub _posXSlider: quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
+    pub _posYSlider: quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
+    pub _posZSlider: quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
+    pub _rotXSlider: quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
+    pub _rotYSlider: quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
+    pub _rotZSlider: quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
+    pub _selectedControllerProfile: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::GameSettings::ControllerProfile,
+    >,
 }
 #[cfg(feature = "BeatSaber+GameSettings+ControllersTransformSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ContentHints {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub contentDescription: *mut crate::Org::BouncyCastle::Asn1::DerUtf8String,
-    pub contentType: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    pub contentDescription: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerUtf8String,
+    >,
+    pub contentType: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ess+ContentHints")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

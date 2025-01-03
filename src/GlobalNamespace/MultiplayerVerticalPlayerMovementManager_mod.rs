@@ -9,16 +9,28 @@ pub struct MultiplayerVerticalPlayerMovementManager {
     pub _accelerationMetersPerSecondSquared: f32,
     pub _decelerationMetersPerSecondSquared: f32,
     pub _minScoreDifference: f32,
-    pub _multiplayerPlayersManager: *mut crate::GlobalNamespace::MultiplayerPlayersManager,
-    pub _scoreProvider: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
-    pub _layoutProvider: *mut crate::GlobalNamespace::MultiplayerLayoutProvider,
-    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
-    pub _reusablePlayersList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+    pub _multiplayerPlayersManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerPlayersManager,
     >,
-    pub _currentSpeedsDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
-        f32,
+    pub _scoreProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreProvider,
+    >,
+    pub _layoutProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLayoutProvider,
+    >,
+    pub _multiplayerController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerController,
+    >,
+    pub _reusablePlayersList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+        >,
+    >,
+    pub _currentSpeedsDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
+            f32,
+        >,
     >,
     pub _lastFrameBaseScore: f32,
 }

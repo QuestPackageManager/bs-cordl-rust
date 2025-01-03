@@ -1,9 +1,13 @@
 #[cfg(feature = "Unity+Properties+PropertyMember")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PropertyMember {
-    pub m_PropertyInfo: *mut crate::System::Reflection::PropertyInfo,
-    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_PropertyInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::PropertyInfo,
+    >,
+    pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "Unity+Properties+PropertyMember")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

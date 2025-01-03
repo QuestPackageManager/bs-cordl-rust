@@ -6,7 +6,7 @@ pub struct LightIdColorPair {
     pub lightId: i32,
     pub _useScriptableObjectColor: bool,
     pub color: crate::UnityEngine::Color,
-    pub baseColor: *mut crate::GlobalNamespace::ColorSO,
+    pub baseColor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
     pub intensity: f32,
 }
 #[cfg(feature = "LightIdColorPair")]

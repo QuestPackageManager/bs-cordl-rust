@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct CertificateRequestMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub certReqMsg: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg,
-    pub controls: *mut crate::Org::BouncyCastle::Asn1::Crmf::Controls,
+    pub certReqMsg: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Crmf::CertReqMsg,
+    >,
+    pub controls: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Crmf::Controls,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+CertificateRequestMessage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SqlCharsStorage {
     __cordl_parent: crate::System::Data::Common::DataStorage,
-    pub _values: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Data::SqlTypes::SqlChars,
+    pub _values: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::SqlTypes::SqlChars>,
     >,
 }
 #[cfg(feature = "System+Data+Common+SqlCharsStorage")]

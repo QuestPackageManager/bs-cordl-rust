@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ExceptionDispatchInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Exception: *mut crate::System::Exception,
-    pub m_stackTrace: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_Exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    pub m_stackTrace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Runtime+ExceptionServices+ExceptionDispatchInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

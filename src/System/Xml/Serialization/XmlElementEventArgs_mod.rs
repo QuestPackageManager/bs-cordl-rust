@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct XmlElementEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub o: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub elem: *mut crate::System::Xml::XmlElement,
-    pub qnames: *mut quest_hook::libil2cpp::Il2CppString,
+    pub o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub elem: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
+    pub qnames: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub lineNumber: i32,
     pub linePosition: i32,
 }

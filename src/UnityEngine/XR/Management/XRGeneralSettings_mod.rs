@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct XRGeneralSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub m_LoaderManagerInstance: *mut crate::UnityEngine::XR::Management::XRManagerSettings,
+    pub m_LoaderManagerInstance: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::XR::Management::XRManagerSettings,
+    >,
     pub m_InitManagerOnStart: bool,
-    pub m_XRManager: *mut crate::UnityEngine::XR::Management::XRManagerSettings,
+    pub m_XRManager: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::XR::Management::XRManagerSettings,
+    >,
     pub m_ProviderIntialized: bool,
     pub m_ProviderStarted: bool,
 }

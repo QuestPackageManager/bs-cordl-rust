@@ -6,11 +6,11 @@ pub struct HEU_ThreadedTask {
     pub _isComplete: bool,
     pub _isActive: bool,
     pub _stopRequested: bool,
-    pub _lockHandle: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _thread: *mut crate::System::Threading::Thread,
+    pub _lockHandle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _thread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
     pub _priority: crate::System::Threading::ThreadPriority,
     pub _isBackground: bool,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTask")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

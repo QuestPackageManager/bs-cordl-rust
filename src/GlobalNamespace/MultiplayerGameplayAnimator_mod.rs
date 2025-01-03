@@ -3,20 +3,26 @@
 #[derive(Debug)]
 pub struct MultiplayerGameplayAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _activeLightsColor: *mut crate::GlobalNamespace::ColorSO,
-    pub _leadingLightsColor: *mut crate::GlobalNamespace::ColorSO,
-    pub _failedLightsColor: *mut crate::GlobalNamespace::ColorSO,
+    pub _activeLightsColor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _leadingLightsColor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _failedLightsColor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
     pub _leadingSwitchCrossFadeDuration: f32,
-    pub _gameplayLightsAnimators: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::LightsAnimator,
+    pub _gameplayLightsAnimators: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::LightsAnimator>,
     >,
-    pub _allLightsAnimators: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::LightsAnimator,
+    pub _allLightsAnimators: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::LightsAnimator>,
     >,
-    pub _leadPlayerProvider: *mut crate::GlobalNamespace::MultiplayerLeadPlayerProvider,
-    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
-    pub tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _leadPlayerProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLeadPlayerProvider,
+    >,
+    pub _multiplayerController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerController,
+    >,
+    pub tweeningManager: quest_hook::libil2cpp::Gc<crate::Tweening::TimeTweeningManager>,
+    pub connectedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
 }
 #[cfg(feature = "MultiplayerGameplayAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

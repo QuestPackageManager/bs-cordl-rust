@@ -1,11 +1,11 @@
 #[cfg(feature = "UnityEngine+UIElements+ComputedTransitionProperty")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ComputedTransitionProperty {
     pub id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     pub durationMs: i32,
     pub delayMs: i32,
-    pub easingCurve: *mut crate::System::Func_2<f32, f32>,
+    pub easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
 }
 #[cfg(feature = "UnityEngine+UIElements+ComputedTransitionProperty")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

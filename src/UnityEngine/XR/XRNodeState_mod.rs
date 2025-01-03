@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+XR+XRNodeState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XRNodeState {
     pub m_Type: crate::UnityEngine::XR::XRNode,
     pub m_AvailableFields: crate::UnityEngine::XR::AvailableTrackingData,

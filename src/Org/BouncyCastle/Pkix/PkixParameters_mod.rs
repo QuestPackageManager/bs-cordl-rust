@@ -3,24 +3,42 @@
 #[derive(Debug)]
 pub struct PkixParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub trustAnchors: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub date: *mut crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
-    pub certPathCheckers: *mut crate::System::Collections::IList,
+    pub trustAnchors: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub date: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
+    >,
+    pub certPathCheckers: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub revocationEnabled: bool,
-    pub initialPolicies: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    pub initialPolicies: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
     pub explicitPolicyRequired: bool,
     pub anyPolicyInhibited: bool,
     pub policyMappingInhibited: bool,
     pub policyQualifiersRejected: bool,
-    pub certSelector: *mut crate::Org::BouncyCastle::X509::Store::IX509Selector,
-    pub stores: *mut crate::System::Collections::IList,
-    pub selector: *mut crate::Org::BouncyCastle::X509::Store::IX509Selector,
+    pub certSelector: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::Store::IX509Selector,
+    >,
+    pub stores: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub selector: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::Store::IX509Selector,
+    >,
     pub additionalLocationsEnabled: bool,
-    pub additionalStores: *mut crate::System::Collections::IList,
-    pub trustedACIssuers: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub necessaryACAttributes: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub prohibitedACAttributes: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub attrCertCheckers: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    pub additionalStores: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub trustedACIssuers: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub necessaryACAttributes: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub prohibitedACAttributes: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub attrCertCheckers: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
     pub validityModel: i32,
     pub useDeltas: bool,
 }

@@ -3,16 +3,24 @@
 #[derive(Debug)]
 pub struct AvatarEditorFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub didFinishEvent: *mut crate::System::Action_3<
-        *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-        *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-        crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_3<
+            *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+            *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
+        >,
     >,
-    pub didSetupEvent: *mut crate::System::Action_1<
-        crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
+    pub didSetupEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
+        >,
     >,
-    pub randomizeAllButtonWasPressedEvent: *mut crate::System::Action,
-    pub _selectedAvatarSystem: *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+    pub randomizeAllButtonWasPressedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub _selectedAvatarSystem: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+    >,
     pub _initialized: bool,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarEditorFlowCoordinator")]

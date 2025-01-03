@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct Restriction {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub restriction: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+    pub restriction: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+Restriction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

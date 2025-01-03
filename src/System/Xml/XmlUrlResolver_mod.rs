@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct XmlUrlResolver {
     __cordl_parent: crate::System::Xml::XmlResolver,
-    pub _credentials: *mut crate::System::Net::ICredentials,
-    pub _proxy: *mut crate::System::Net::IWebProxy,
-    pub _cachePolicy: *mut crate::System::Net::Cache::RequestCachePolicy,
+    pub _credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+    pub _proxy: quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
+    pub _cachePolicy: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Cache::RequestCachePolicy,
+    >,
 }
 #[cfg(feature = "System+Xml+XmlUrlResolver")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

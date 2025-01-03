@@ -3,22 +3,32 @@
 #[derive(Debug)]
 pub struct PauseMenuManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _pauseAnimationController: *mut crate::GlobalNamespace::PauseAnimationController,
-    pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
-    pub _continueButton: *mut crate::UnityEngine::UI::Button,
-    pub _restartButton: *mut crate::UnityEngine::UI::Button,
-    pub _backButton: *mut crate::UnityEngine::UI::Button,
-    pub _backButtonText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _pauseContainerTransform: *mut crate::UnityEngine::Transform,
-    pub _initData: *mut crate::GlobalNamespace::PauseMenuManager_InitData,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _environmentSpawnRotation: *mut crate::GlobalNamespace::EnvironmentSpawnRotation,
-    pub didPressContinueButtonEvent: *mut crate::System::Action,
-    pub didPressMenuButtonEvent: *mut crate::System::Action,
-    pub didPressRestartButtonEvent: *mut crate::System::Action,
-    pub didStartResumeAnimationEvent: *mut crate::System::Action,
-    pub didFinishResumeAnimationEvent: *mut crate::System::Action,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _pauseAnimationController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PauseAnimationController,
+    >,
+    pub _levelBar: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelBar>,
+    pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _restartButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _backButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _backButtonText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _pauseContainerTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PauseMenuManager_InitData,
+    >,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
+    pub _environmentSpawnRotation: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentSpawnRotation,
+    >,
+    pub didPressContinueButtonEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub didPressMenuButtonEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub didPressRestartButtonEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub didStartResumeAnimationEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub didFinishResumeAnimationEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _disabledInteractionRemainingTime: f32,
 }
 #[cfg(feature = "PauseMenuManager")]
@@ -286,9 +296,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PauseMenuMana
 #[derive(Debug)]
 pub struct PauseMenuManager_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub beatmapKey: crate::GlobalNamespace::BeatmapKey,
-    pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     pub showRestartButton: bool,
     pub showLevelBar: bool,
 }

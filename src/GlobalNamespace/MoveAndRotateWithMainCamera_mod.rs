@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct MoveAndRotateWithMainCamera {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _mainCamera: *mut crate::GlobalNamespace::MainCamera,
+    pub _mainCamera: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainCamera>,
     pub _rotationOffset: crate::UnityEngine::Quaternion,
     pub _positionOffset: crate::UnityEngine::Vector3,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "MoveAndRotateWithMainCamera")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

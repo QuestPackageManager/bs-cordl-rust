@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct JsonSerializerProxy {
     __cordl_parent: crate::Newtonsoft::Json::JsonSerializer,
-    pub _serializerReader: *mut crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader,
-    pub _serializerWriter: *mut crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter,
-    pub _serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
+    pub _serializerReader: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader,
+    >,
+    pub _serializerWriter: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter,
+    >,
+    pub _serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

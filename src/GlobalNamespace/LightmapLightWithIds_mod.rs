@@ -6,12 +6,16 @@ pub struct LightmapLightWithIds {
     pub _bakeId: crate::GlobalNamespace::LightConstants_BakeId,
     pub _intensity: f32,
     pub _probeIntensity: f32,
-    pub _lightIntensityData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::LightmapLightWithIds_LightIntensitiesWithId,
+    pub _lightIntensityData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::LightmapLightWithIds_LightIntensitiesWithId,
+        >,
     >,
     pub _mixType: crate::GlobalNamespace::ColorMixAndWeightingApproach,
     pub _normalizerWeight: f32,
-    pub _bakedLightsNormalizer: *mut crate::GlobalNamespace::BakedLightsNormalizer,
+    pub _bakedLightsNormalizer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BakedLightsNormalizer,
+    >,
     pub _lightmapLightIdColorPropertyId: i32,
     pub _lightProbeLightIdColorPropertyId: i32,
     pub _initializedPropertyIds: bool,

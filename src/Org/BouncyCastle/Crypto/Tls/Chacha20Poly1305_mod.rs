@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct Chacha20Poly1305 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub context: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
-    pub encryptCipher: *mut crate::Org::BouncyCastle::Crypto::Engines::ChaCha7539Engine,
-    pub decryptCipher: *mut crate::Org::BouncyCastle::Crypto::Engines::ChaCha7539Engine,
-    pub encryptIV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub decryptIV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub context: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+    >,
+    pub encryptCipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Engines::ChaCha7539Engine,
+    >,
+    pub decryptCipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Engines::ChaCha7539Engine,
+    >,
+    pub encryptIV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub decryptIV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+Chacha20Poly1305")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

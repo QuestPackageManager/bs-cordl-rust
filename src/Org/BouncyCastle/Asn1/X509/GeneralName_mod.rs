@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct GeneralName {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub obj: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    pub obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     pub tag: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+GeneralName")]

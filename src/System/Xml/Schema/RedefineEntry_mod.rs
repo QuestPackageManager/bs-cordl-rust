@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct RedefineEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub redefine: *mut crate::System::Xml::Schema::XmlSchemaRedefine,
-    pub schemaToUpdate: *mut crate::System::Xml::Schema::XmlSchema,
+    pub redefine: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaRedefine,
+    >,
+    pub schemaToUpdate: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
 }
 #[cfg(feature = "System+Xml+Schema+RedefineEntry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

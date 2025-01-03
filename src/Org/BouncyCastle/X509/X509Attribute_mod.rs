@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct X509Attribute {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub attr: *mut crate::Org::BouncyCastle::Asn1::X509::AttributeX509,
+    pub attr: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AttributeX509,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509Attribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

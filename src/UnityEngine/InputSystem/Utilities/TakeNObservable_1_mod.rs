@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TakeNObservable_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Source: *mut crate::System::IObservable_1<TValue>,
+    pub m_Source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
     pub m_Count: i32,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -113,7 +113,7 @@ for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<TValue> {
 #[derive(Debug)]
 pub struct TakeNObservable_1_Take<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Observer: *mut crate::System::IObserver_1<TValue>,
+    pub m_Observer: quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TValue>>,
     pub m_Remaining: i32,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }

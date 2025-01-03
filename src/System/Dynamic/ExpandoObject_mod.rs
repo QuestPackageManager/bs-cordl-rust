@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct ExpandoObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub LockObject: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _data: *mut crate::System::Dynamic::ExpandoObject_ExpandoData,
+    pub LockObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _data: quest_hook::libil2cpp::Gc<
+        crate::System::Dynamic::ExpandoObject_ExpandoData,
+    >,
     pub _count: i32,
-    pub _propertyChanged: *mut crate::System::ComponentModel::PropertyChangedEventHandler,
+    pub _propertyChanged: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::PropertyChangedEventHandler,
+    >,
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -699,9 +703,9 @@ for crate::System::Dynamic::ExpandoObject {
 #[derive(Debug)]
 pub struct ExpandoObject_ExpandoData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Class: *mut crate::System::Dynamic::ExpandoClass,
-    pub _dataArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub Class: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoClass>,
+    pub _dataArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _version: i32,
 }
@@ -845,10 +849,12 @@ for crate::System::Dynamic::ExpandoObject_ExpandoData {
 #[derive(Debug)]
 pub struct ExpandoObject_KeyCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _expando: *mut crate::System::Dynamic::ExpandoObject,
+    pub _expando: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
     pub _expandoVersion: i32,
     pub _expandoCount: i32,
-    pub _expandoData: *mut crate::System::Dynamic::ExpandoObject_ExpandoData,
+    pub _expandoData: quest_hook::libil2cpp::Gc<
+        crate::System::Dynamic::ExpandoObject_ExpandoData,
+    >,
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1378,10 +1384,12 @@ for crate::System::Dynamic::ExpandoObject_MetaExpando {
 #[derive(Debug)]
 pub struct ExpandoObject_ValueCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _expando: *mut crate::System::Dynamic::ExpandoObject,
+    pub _expando: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
     pub _expandoVersion: i32,
     pub _expandoCount: i32,
-    pub _expandoData: *mut crate::System::Dynamic::ExpandoObject_ExpandoData,
+    pub _expandoData: quest_hook::libil2cpp::Gc<
+        crate::System::Dynamic::ExpandoObject_ExpandoData,
+    >,
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

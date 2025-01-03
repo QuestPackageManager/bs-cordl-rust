@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CaseInsensitiveHashCodeProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _compareInfo: *mut crate::System::Globalization::CompareInfo,
+    pub _compareInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::CompareInfo,
+    >,
 }
 #[cfg(feature = "System+Collections+CaseInsensitiveHashCodeProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

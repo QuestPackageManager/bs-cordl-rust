@@ -4,7 +4,7 @@
 pub struct LikeNode {
     __cordl_parent: crate::System::Data::BinaryNode,
     pub _kind: i32,
-    pub _pattern: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Data+LikeNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

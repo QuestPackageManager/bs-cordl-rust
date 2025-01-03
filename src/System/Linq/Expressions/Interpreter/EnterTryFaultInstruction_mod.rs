@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct EnterTryFaultInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction,
-    pub _tryHandler: *mut crate::System::Linq::Expressions::Interpreter::TryFaultHandler,
+    pub _tryHandler: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::TryFaultHandler,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+EnterTryFaultInstruction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

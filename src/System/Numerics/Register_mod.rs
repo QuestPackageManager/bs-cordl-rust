@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Numerics+Register")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Register {
     padding: [u8; 16usize],
 }

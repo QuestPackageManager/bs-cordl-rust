@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct SignalDeclarationBindInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Identifier_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _SignalType_k__BackingField: *mut crate::System::Type,
+    pub _Identifier_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub _SignalType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _RunAsync_k__BackingField: bool,
     pub _TickPriority_k__BackingField: i32,
     pub _MissingHandlerResponse_k__BackingField: crate::Zenject::SignalMissingHandlerResponses,

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct Datatype_union {
     __cordl_parent: crate::System::Xml::Schema::Datatype_anySimpleType,
-    pub types: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+    pub types: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+        >,
     >,
 }
 #[cfg(feature = "System+Xml+Schema+Datatype_union")]

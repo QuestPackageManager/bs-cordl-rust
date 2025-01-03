@@ -3,22 +3,32 @@
 #[derive(Debug)]
 pub struct EulaViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _agreeButton: *mut crate::UnityEngine::UI::Button,
-    pub _doNotAgreeButton: *mut crate::UnityEngine::UI::Button,
-    pub _continueButton: *mut crate::UnityEngine::UI::Button,
+    pub _agreeButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _doNotAgreeButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _disabledButtonDelay: f32,
-    pub _disableButtonsProgress: *mut crate::UnityEngine::UI::Image,
-    pub _textPageScrollView: *mut crate::HMUI::TextPageScrollView,
-    pub _eulaLocalizedTextAsset: *mut crate::GlobalNamespace::LocalizedTextAsset,
-    pub _updateNoticeLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _initData: *mut crate::GlobalNamespace::EulaViewController_InitData,
-    pub _coroutineStarter: *mut crate::GlobalNamespace::ICoroutineStarter,
-    pub didFinishEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::EulaViewController_ButtonType,
+    pub _disableButtonsProgress: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Image,
+    >,
+    pub _textPageScrollView: quest_hook::libil2cpp::Gc<crate::HMUI::TextPageScrollView>,
+    pub _eulaLocalizedTextAsset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LocalizedTextAsset,
+    >,
+    pub _updateNoticeLocalizationKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EulaViewController_InitData,
+    >,
+    pub _coroutineStarter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ICoroutineStarter,
+    >,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::EulaViewController_ButtonType>,
     >,
     pub _showUpdate: bool,
     pub _showOnlyContinueButton: bool,
-    pub _buttonsCoroutine: *mut crate::UnityEngine::Coroutine,
+    pub _buttonsCoroutine: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
 }
 #[cfg(feature = "EulaViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

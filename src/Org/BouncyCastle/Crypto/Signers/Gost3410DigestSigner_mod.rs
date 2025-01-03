@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct Gost3410DigestSigner {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub dsaSigner: *mut crate::Org::BouncyCastle::Crypto::IDsa,
+    pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub dsaSigner: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsa>,
     pub _cordl_size: i32,
     pub halfSize: i32,
     pub forSigning: bool,

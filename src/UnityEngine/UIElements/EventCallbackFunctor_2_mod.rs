@@ -6,9 +6,8 @@ pub struct EventCallbackFunctor_2<
     TCallbackArgs: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::UnityEngine::UIElements::EventCallbackFunctorBase,
-    pub m_Callback: *mut crate::UnityEngine::UIElements::EventCallback_2<
-        TEventType,
-        TCallbackArgs,
+    pub m_Callback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventCallback_2<TEventType, TCallbackArgs>,
     >,
     pub m_EventTypeId: i64,
     pub _userArgs_k__BackingField: TCallbackArgs,

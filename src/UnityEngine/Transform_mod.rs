@@ -1792,7 +1792,7 @@ impl AsMut<crate::System::Collections::IEnumerable> for crate::UnityEngine::Tran
 #[derive(Debug)]
 pub struct Transform_Enumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub outer: *mut crate::UnityEngine::Transform,
+    pub outer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub currentIndex: i32,
 }
 #[cfg(feature = "UnityEngine+Transform+Enumerator")]

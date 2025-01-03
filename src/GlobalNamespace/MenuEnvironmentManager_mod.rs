@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct MenuEnvironmentManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _data: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects,
+    pub _data: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects,
+        >,
     >,
     pub _prevMenuEnvironmentType: crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType,
 }
@@ -87,7 +89,7 @@ for crate::GlobalNamespace::MenuEnvironmentManager {
 pub struct MenuEnvironmentManager_MenuEnvironmentObjects {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _menuEnvironmentType: crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType,
-    pub _wrapper: *mut crate::UnityEngine::GameObject,
+    pub _wrapper: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
 #[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentObjects")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

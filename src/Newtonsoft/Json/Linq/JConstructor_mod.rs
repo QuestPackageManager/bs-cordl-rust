@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct JConstructor {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JContainer,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _values: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Newtonsoft::Json::Linq::JToken,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _values: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Linq::JToken,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JConstructor")]

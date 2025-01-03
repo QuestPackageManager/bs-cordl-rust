@@ -3,26 +3,34 @@
 #[derive(Debug)]
 pub struct HEU_PDGAssetLink {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _assetPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _assetGO: *mut crate::UnityEngine::GameObject,
-    pub _assetName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _assetPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _assetGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _assetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _assetID: i32,
-    pub _heu: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
-    pub _topNetworks: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_TOPNetworkData,
+    pub _heu: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
+    pub _topNetworks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_TOPNetworkData,
+        >,
     >,
-    pub _topNetworkNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _topNetworkNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _selectedTOPNetwork: i32,
     pub _linkState: crate::HoudiniEngineUnity::HEU_PDGAssetLink_LinkState,
     pub _autoCook: bool,
     pub _useHEngineData: bool,
-    pub _repaintUIDelegate: *mut crate::HoudiniEngineUnity::HEU_PDGAssetLink_UpdateUIDelegate,
+    pub _repaintUIDelegate: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_PDGAssetLink_UpdateUIDelegate,
+    >,
     pub _numWorkItems: i32,
-    pub _workItemTally: *mut crate::HoudiniEngineUnity::HEU_WorkItemTally,
-    pub _loadRootGameObject: *mut crate::UnityEngine::GameObject,
-    pub _outputCachePathRoot: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _workItemTally: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_WorkItemTally,
+    >,
+    pub _loadRootGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _outputCachePathRoot: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

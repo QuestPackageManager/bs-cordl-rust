@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct BinaryReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_stream: *mut crate::System::IO::Stream,
-    pub m_buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub m_decoder: *mut crate::System::Text::Decoder,
-    pub m_charBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub m_singleChar: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    pub m_charBuffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub m_stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub m_buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub m_decoder: quest_hook::libil2cpp::Gc<crate::System::Text::Decoder>,
+    pub m_charBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub m_singleChar: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<char>,
+    >,
+    pub m_charBuffer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<char>,
+    >,
     pub m_maxCharsSize: i32,
     pub m_2BytesPerChar: bool,
     pub m_isMemoryStream: bool,

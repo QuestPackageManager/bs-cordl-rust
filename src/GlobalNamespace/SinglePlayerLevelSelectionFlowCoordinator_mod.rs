@@ -3,17 +3,37 @@
 #[derive(Debug)]
 pub struct SinglePlayerLevelSelectionFlowCoordinator {
     __cordl_parent: crate::GlobalNamespace::LevelSelectionFlowCoordinator,
-    pub _degree360BeatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-    pub _practiceViewController: *mut crate::GlobalNamespace::PracticeViewController,
-    pub _gameplaySetupViewController: *mut crate::GlobalNamespace::GameplaySetupViewController,
-    pub _menuTransitionsHelper: *mut crate::GlobalNamespace::MenuTransitionsHelper,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _appStaticSettings: *mut crate::GlobalNamespace::AppStaticSettingsSO,
-    pub _customLevelsSettings: *mut crate::GlobalNamespace::CustomLevelsSettings,
-    pub _safeAreaFocusedSimpleDialogPromptViewController: *mut crate::GlobalNamespace::SafeAreaFocusedSimpleDialogPromptViewController,
-    pub _environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
-    pub didFinishEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+    pub _degree360BeatmapCharacteristic: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSO,
+    >,
+    pub _practiceViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PracticeViewController,
+    >,
+    pub _gameplaySetupViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplaySetupViewController,
+    >,
+    pub _menuTransitionsHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuTransitionsHelper,
+    >,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
+    pub _appStaticSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AppStaticSettingsSO,
+    >,
+    pub _customLevelsSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CustomLevelsSettings,
+    >,
+    pub _safeAreaFocusedSimpleDialogPromptViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SafeAreaFocusedSimpleDialogPromptViewController,
+    >,
+    pub _environmentsListModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentsListModel,
+    >,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+        >,
     >,
 }
 #[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator")]

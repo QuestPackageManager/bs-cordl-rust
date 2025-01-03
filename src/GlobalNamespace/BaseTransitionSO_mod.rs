@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BaseTransitionSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _transitionTiming: *mut crate::GlobalNamespace::TransitionTimingSO,
+    pub _transitionTiming: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TransitionTimingSO,
+    >,
 }
 #[cfg(feature = "BaseTransitionSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

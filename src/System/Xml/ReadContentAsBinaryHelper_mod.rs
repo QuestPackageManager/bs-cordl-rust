@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ReadContentAsBinaryHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub reader: *mut crate::System::Xml::XmlReader,
+    pub reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     pub state: crate::System::Xml::ReadContentAsBinaryHelper_State,
     pub valueOffset: i32,
     pub isEnd: bool,

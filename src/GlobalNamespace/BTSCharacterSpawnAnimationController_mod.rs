@@ -3,17 +3,29 @@
 #[derive(Debug)]
 pub struct BTSCharacterSpawnAnimationController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _spawnCharacterPlayableDirector: *mut crate::UnityEngine::Playables::PlayableDirector,
-    pub _jumpReceiver: *mut crate::GlobalNamespace::JumpReceiver,
+    pub _spawnCharacterPlayableDirector: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableDirector,
+    >,
+    pub _jumpReceiver: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::JumpReceiver>,
     pub _appearAnimationEndTime: f32,
     pub _disappearAnimationStartTime: f32,
-    pub _rimLightColorSetter: *mut crate::GlobalNamespace::MaterialPropertyBlockColorSetter,
-    pub _rimLightIntensityAnimator: *mut crate::GlobalNamespace::MaterialPropertyBlockFloatAnimator,
-    pub _rimLightEdgeStartAnimator: *mut crate::GlobalNamespace::MaterialPropertyBlockFloatAnimator,
-    pub _songSpeedData: *mut crate::GlobalNamespace::SongSpeedData,
-    pub animationFinishedEvent: *mut crate::System::Action,
-    pub _characterActivationTrack: *mut crate::UnityEngine::Timeline::ActivationTrack,
-    pub _currentBtsCharacter: *mut crate::GlobalNamespace::BTSCharacter,
+    pub _rimLightColorSetter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockColorSetter,
+    >,
+    pub _rimLightIntensityAnimator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockFloatAnimator,
+    >,
+    pub _rimLightEdgeStartAnimator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockFloatAnimator,
+    >,
+    pub _songSpeedData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongSpeedData>,
+    pub animationFinishedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _characterActivationTrack: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::ActivationTrack,
+    >,
+    pub _currentBtsCharacter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BTSCharacter,
+    >,
     pub _defaultSpawnCharacterDuration: f32,
     pub _playableDirectorTimeBeforePause: f64,
     pub _animatorNormalizedTimeBeforePause: f32,

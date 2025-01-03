@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct QueueUserWorkItemCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub callback: *mut crate::System::Threading::WaitCallback,
-    pub context: *mut crate::System::Threading::ExecutionContext,
-    pub state: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub callback: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitCallback>,
+    pub context: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
+    pub state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Threading+QueueUserWorkItemCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

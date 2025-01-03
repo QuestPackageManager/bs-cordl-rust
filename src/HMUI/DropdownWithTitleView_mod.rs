@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct DropdownWithTitleView {
     __cordl_parent: crate::HMUI::SimpleTextDropdown,
-    pub _rectTransform: *mut crate::UnityEngine::RectTransform,
-    pub _titleRectTransform: *mut crate::UnityEngine::RectTransform,
+    pub _rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub _titleRectTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
+    >,
 }
 #[cfg(feature = "HMUI+DropdownWithTitleView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -6,16 +6,14 @@ pub struct DictionaryWrapper_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dictionary: *mut crate::System::Collections::IDictionary,
-    pub _genericDictionary: *mut crate::System::Collections::Generic::IDictionary_2<
-        TKey,
-        TValue,
+    pub _dictionary: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    pub _genericDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IDictionary_2<TKey, TValue>,
     >,
-    pub _readOnlyDictionary: *mut crate::System::Collections::Generic::IReadOnlyDictionary_2<
-        TKey,
-        TValue,
+    pub _readOnlyDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyDictionary_2<TKey, TValue>,
     >,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -900,17 +898,19 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2<TKey, TValue> {
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DictionaryWrapper_2_DictionaryEnumerator_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
     TEnumeratorKey: quest_hook::libil2cpp::Type,
     TEnumeratorValue: quest_hook::libil2cpp::Type,
 > {
-    pub _e: *mut crate::System::Collections::Generic::IEnumerator_1<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            TEnumeratorKey,
-            TEnumeratorValue,
+    pub _e: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerator_1<
+            crate::System::Collections::Generic::KeyValuePair_2<
+                TEnumeratorKey,
+                TEnumeratorValue,
+            >,
         >,
     >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,

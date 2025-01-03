@@ -1,10 +1,10 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+Alloc")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Alloc {
     pub start: u32,
     pub _cordl_size: u32,
-    pub handle: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub handle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub shortLived: bool,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Alloc")]

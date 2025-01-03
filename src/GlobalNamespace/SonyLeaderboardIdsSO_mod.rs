@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct SonyLeaderboardIdsSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _leaderboardIds: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData,
+    pub _leaderboardIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData,
+        >,
     >,
 }
 #[cfg(feature = "SonyLeaderboardIdsSO")]
@@ -128,7 +130,9 @@ for crate::GlobalNamespace::SonyLeaderboardIdsSO {
 #[derive(Debug)]
 pub struct SonyLeaderboardIdsSO_LeaderboardIdData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _difficultyBeatmapId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _difficultyBeatmapId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _sonyLeaderboardId: u32,
 }
 #[cfg(feature = "SonyLeaderboardIdsSO+LeaderboardIdData")]

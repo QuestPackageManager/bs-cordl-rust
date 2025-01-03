@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct ChaCha20Poly1305 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mChacha20: *mut crate::Org::BouncyCastle::Crypto::Engines::ChaCha7539Engine,
-    pub mPoly1305: *mut crate::Org::BouncyCastle::Crypto::IMac,
-    pub mKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mNonce: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mBuf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mMac: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mInitialAad: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mChacha20: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Engines::ChaCha7539Engine,
+    >,
+    pub mPoly1305: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
+    pub mKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mNonce: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mBuf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mMac: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mInitialAad: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mAadCount: u64,
     pub mDataCount: u64,
     pub mState: crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305_State,

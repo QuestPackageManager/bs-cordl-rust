@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct DataRowCollection {
     __cordl_parent: crate::System::Data::InternalDataCollectionBase,
-    pub _table: *mut crate::System::Data::DataTable,
-    pub _list: *mut crate::System::Data::DataRowCollection_DataRowTree,
+    pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    pub _list: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataRowCollection_DataRowTree,
+    >,
     pub _nullInList: i32,
 }
 #[cfg(feature = "System+Data+DataRowCollection")]

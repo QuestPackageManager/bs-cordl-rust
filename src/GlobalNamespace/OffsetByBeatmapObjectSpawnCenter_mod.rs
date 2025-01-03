@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct OffsetByBeatmapObjectSpawnCenter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _spawnCenter: *mut crate::GlobalNamespace::BeatmapObjectSpawnCenter,
+    pub _spawnCenter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectSpawnCenter,
+    >,
 }
 #[cfg(feature = "OffsetByBeatmapObjectSpawnCenter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

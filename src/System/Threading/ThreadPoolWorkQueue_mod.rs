@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ThreadPoolWorkQueue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub queueHead: *mut crate::System::Threading::ThreadPoolWorkQueue_QueueSegment,
-    pub queueTail: *mut crate::System::Threading::ThreadPoolWorkQueue_QueueSegment,
+    pub queueHead: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ThreadPoolWorkQueue_QueueSegment,
+    >,
+    pub queueTail: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ThreadPoolWorkQueue_QueueSegment,
+    >,
     pub numOutstandingThreadRequests: i32,
 }
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue")]
@@ -151,11 +155,15 @@ for crate::System::Threading::ThreadPoolWorkQueue {
 #[derive(Debug)]
 pub struct ThreadPoolWorkQueue_QueueSegment {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub nodes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Threading::IThreadPoolWorkItem,
+    pub nodes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Threading::IThreadPoolWorkItem,
+        >,
     >,
     pub indexes: i32,
-    pub Next: *mut crate::System::Threading::ThreadPoolWorkQueue_QueueSegment,
+    pub Next: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ThreadPoolWorkQueue_QueueSegment,
+    >,
 }
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+QueueSegment")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -269,7 +277,7 @@ for crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
 #[derive(Debug)]
 pub struct ThreadPoolWorkQueue_SparseArray_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_array: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub m_array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+SparseArray_1")]
@@ -384,8 +392,10 @@ for crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<T> {
 #[derive(Debug)]
 pub struct ThreadPoolWorkQueue_WorkStealingQueue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_array: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Threading::IThreadPoolWorkItem,
+    pub m_array: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Threading::IThreadPoolWorkItem,
+        >,
     >,
     pub m_mask: i32,
     pub m_headIndex: i32,

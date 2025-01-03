@@ -3,15 +3,16 @@
 #[derive(Debug)]
 pub struct ServerCodeEntryViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _uiKeyboard: *mut crate::HMUI::UIKeyboard,
-    pub _codeInputField: *mut crate::HMUI::InputFieldView,
-    pub _joinButton: *mut crate::UnityEngine::UI::Button,
-    pub _cancelButton: *mut crate::UnityEngine::UI::Button,
-    pub didFinishEvent: *mut crate::System::Action_2<
-        bool,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _uiKeyboard: quest_hook::libil2cpp::Gc<crate::HMUI::UIKeyboard>,
+    pub _codeInputField: quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
+    pub _joinButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _cancelButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<bool, *mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _inputFieldViewChangeBinder: *mut crate::HMUI::InputFieldViewChangeBinder,
+    pub _inputFieldViewChangeBinder: quest_hook::libil2cpp::Gc<
+        crate::HMUI::InputFieldViewChangeBinder,
+    >,
 }
 #[cfg(feature = "ServerCodeEntryViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

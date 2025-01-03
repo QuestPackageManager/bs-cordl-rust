@@ -1,12 +1,16 @@
 #[cfg(feature = "System+Reflection+CustomAttributeNamedArgument")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CustomAttributeNamedArgument {
     pub _TypedValue_k__BackingField: crate::System::Reflection::CustomAttributeTypedArgument,
     pub _IsField_k__BackingField: bool,
-    pub _MemberName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _attributeType: *mut crate::System::Type,
-    pub _lazyMemberInfo: *mut crate::System::Reflection::MemberInfo,
+    pub _MemberName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _lazyMemberInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MemberInfo,
+    >,
 }
 #[cfg(feature = "System+Reflection+CustomAttributeNamedArgument")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

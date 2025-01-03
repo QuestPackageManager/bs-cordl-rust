@@ -3,20 +3,24 @@
 #[derive(Debug)]
 pub struct AnnotatedBeatmapLevelCollectionCell {
     __cordl_parent: crate::HMUI::SelectableCell,
-    pub _infoText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _coverImage: *mut crate::HMUI::ImageView,
-    pub _selectionImage: *mut crate::HMUI::ImageView,
-    pub _downloadIconObject: *mut crate::UnityEngine::GameObject,
-    pub _newBadgeObject: *mut crate::UnityEngine::GameObject,
-    pub _updatedBadgeObject: *mut crate::UnityEngine::GameObject,
+    pub _infoText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _coverImage: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
+    pub _selectionImage: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
+    pub _downloadIconObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _newBadgeObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _updatedBadgeObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _selectedColor0: crate::UnityEngine::Color,
     pub _selectedColor1: crate::UnityEngine::Color,
     pub _highlightedColor0: crate::UnityEngine::Color,
     pub _highlightedColor1: crate::UnityEngine::Color,
-    pub _defaultCoverSprite: *mut crate::UnityEngine::Sprite,
+    pub _defaultCoverSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub _cellIndex_k__BackingField: i32,
-    pub _beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
-    pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
+    pub _beatmapLevelPack: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelPack,
+    >,
+    pub _cancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

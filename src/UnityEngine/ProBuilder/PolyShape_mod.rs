@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct PolyShape {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_Mesh: *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
-    pub m_Points: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector3,
+    pub m_Mesh: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+    >,
+    pub m_Points: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
     >,
     pub m_Extrude: f32,
     pub m_EditMode: crate::UnityEngine::ProBuilder::PolyShape_PolyEditMode,

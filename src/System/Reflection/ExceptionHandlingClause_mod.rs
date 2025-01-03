@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ExceptionHandlingClause {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub catch_type: *mut crate::System::Type,
+    pub catch_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub filter_offset: i32,
     pub flags: crate::System::Reflection::ExceptionHandlingClauseOptions,
     pub try_offset: i32,

@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct TrackLaneRingsManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _trackLaneRingPrefab: *mut crate::GlobalNamespace::TrackLaneRing,
+    pub _trackLaneRingPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TrackLaneRing,
+    >,
     pub _ringCount: i32,
     pub _ringPositionStep: f32,
     pub _spawnAsChildren: bool,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _rings: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::TrackLaneRing,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _rings: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::TrackLaneRing>,
     >,
 }
 #[cfg(feature = "TrackLaneRingsManager")]

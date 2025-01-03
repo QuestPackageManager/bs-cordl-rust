@@ -3,49 +3,109 @@
 #[derive(Debug)]
 pub struct OVRCameraRig {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _trackingSpace_k__BackingField: *mut crate::UnityEngine::Transform,
-    pub _leftEyeAnchor_k__BackingField: *mut crate::UnityEngine::Transform,
-    pub _centerEyeAnchor_k__BackingField: *mut crate::UnityEngine::Transform,
-    pub _rightEyeAnchor_k__BackingField: *mut crate::UnityEngine::Transform,
-    pub _leftHandAnchor_k__BackingField: *mut crate::UnityEngine::Transform,
-    pub _rightHandAnchor_k__BackingField: *mut crate::UnityEngine::Transform,
-    pub _leftHandAnchorDetached_k__BackingField: *mut crate::UnityEngine::Transform,
-    pub _rightHandAnchorDetached_k__BackingField: *mut crate::UnityEngine::Transform,
-    pub _leftControllerInHandAnchor_k__BackingField: *mut crate::UnityEngine::Transform,
-    pub _leftHandOnControllerAnchor_k__BackingField: *mut crate::UnityEngine::Transform,
-    pub _rightControllerInHandAnchor_k__BackingField: *mut crate::UnityEngine::Transform,
-    pub _rightHandOnControllerAnchor_k__BackingField: *mut crate::UnityEngine::Transform,
-    pub _leftControllerAnchor_k__BackingField: *mut crate::UnityEngine::Transform,
-    pub _rightControllerAnchor_k__BackingField: *mut crate::UnityEngine::Transform,
-    pub _trackerAnchor_k__BackingField: *mut crate::UnityEngine::Transform,
-    pub UpdatedAnchors: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::OVRCameraRig,
+    pub _trackingSpace_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
     >,
-    pub TrackingSpaceChanged: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::Transform,
+    pub _leftEyeAnchor_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _centerEyeAnchor_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _rightEyeAnchor_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _leftHandAnchor_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _rightHandAnchor_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _leftHandAnchorDetached_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _rightHandAnchorDetached_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _leftControllerInHandAnchor_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _leftHandOnControllerAnchor_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _rightControllerInHandAnchor_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _rightHandOnControllerAnchor_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _leftControllerAnchor_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _rightControllerAnchor_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _trackerAnchor_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub UpdatedAnchors: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::OVRCameraRig>,
+    >,
+    pub TrackingSpaceChanged: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::Transform>,
     >,
     pub usePerEyeCameras: bool,
     pub useFixedUpdateForTracking: bool,
     pub disableEyeAnchorCameras: bool,
     pub _skipUpdate: bool,
-    pub trackingSpaceName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub trackerAnchorName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub leftEyeAnchorName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub centerEyeAnchorName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub rightEyeAnchorName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub leftHandAnchorName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub rightHandAnchorName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub leftControllerAnchorName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub rightControllerAnchorName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub leftHandAnchorDetachedName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub rightHandAnchorDetachedName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub leftControllerInHandAnchorName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub leftHandOnControllerAnchorName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub rightControllerInHandAnchorName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub rightHandOnControllerAnchorName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _centerEyeCamera: *mut crate::UnityEngine::Camera,
-    pub _leftEyeCamera: *mut crate::UnityEngine::Camera,
-    pub _rightEyeCamera: *mut crate::UnityEngine::Camera,
+    pub trackingSpaceName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub trackerAnchorName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub leftEyeAnchorName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub centerEyeAnchorName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub rightEyeAnchorName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub leftHandAnchorName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub rightHandAnchorName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub leftControllerAnchorName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub rightControllerAnchorName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub leftHandAnchorDetachedName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub rightHandAnchorDetachedName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub leftControllerInHandAnchorName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub leftHandOnControllerAnchorName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub rightControllerInHandAnchorName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub rightHandOnControllerAnchorName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _centerEyeCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    pub _leftEyeCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    pub _rightEyeCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub _previousTrackingSpaceTransform: crate::UnityEngine::Matrix4x4,
 }
 #[cfg(feature = "OVRCameraRig")]

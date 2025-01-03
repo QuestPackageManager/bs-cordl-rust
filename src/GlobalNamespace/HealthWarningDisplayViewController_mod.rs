@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct HealthWarningDisplayViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _healthAndSafetyTextMesh: *mut crate::TMPro::TextMeshProUGUI,
-    pub _healthAndSafetyFullLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _healthAndSafetyPSLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _healthAndSafetyTextMesh: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TextMeshProUGUI,
+    >,
+    pub _healthAndSafetyFullLocalizationKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _healthAndSafetyPSLocalizationKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _showShortHealthAndSafety: bool,
 }
 #[cfg(feature = "HealthWarningDisplayViewController")]

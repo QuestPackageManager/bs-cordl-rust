@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ECNamedDomainParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
-    pub name: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    pub name: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ECNamedDomainParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

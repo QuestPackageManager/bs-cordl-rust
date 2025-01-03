@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct Joystick {
     __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
-    pub _trigger_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _stick_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::StickControl,
-    pub _twist_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    pub _hatswitch_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    pub _trigger_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _stick_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::StickControl,
+    >,
+    pub _twist_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
+    pub _hatswitch_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Joystick")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

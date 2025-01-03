@@ -4,16 +4,18 @@
 pub struct TubeLightBehaviour {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub _noPredefinedStartValue: bool,
-    pub startColor: *mut crate::GlobalNamespace::ColorSO,
-    pub endColor: *mut crate::GlobalNamespace::ColorSO,
+    pub startColor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub endColor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
     pub blend: f32,
     pub _initialized: bool,
     pub _originalColor: crate::UnityEngine::Color,
-    pub _tubeLights: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+    pub _tubeLights: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+        >,
     >,
-    pub _directionalLights: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::DirectionalLight,
+    pub _directionalLights: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::DirectionalLight>,
     >,
     pub started: bool,
     pub _firstFrameColor: crate::UnityEngine::Color,

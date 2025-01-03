@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SharedVertex {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Vertices: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub m_Vertices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SharedVertex")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

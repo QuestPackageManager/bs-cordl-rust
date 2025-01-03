@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct MemorySnapshotMetadata {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Description_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _Data_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _Description_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _Data_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
 }
 #[cfg(feature = "Unity+Profiling+Memory+MemorySnapshotMetadata")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

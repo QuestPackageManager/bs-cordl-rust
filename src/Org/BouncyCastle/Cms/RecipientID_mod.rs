@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct RecipientID {
     __cordl_parent: crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
-    pub keyIdentifier: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub keyIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+RecipientID")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

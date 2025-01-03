@@ -3,17 +3,21 @@
 #[derive(Debug)]
 pub struct SchemaCollectionPreprocessor {
     __cordl_parent: crate::System::Xml::Schema::BaseProcessor,
-    pub schema: *mut crate::System::Xml::Schema::XmlSchema,
-    pub targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
+    pub schema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+    pub targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub buildinIncluded: bool,
     pub elementFormDefault: crate::System::Xml::Schema::XmlSchemaForm,
     pub attributeFormDefault: crate::System::Xml::Schema::XmlSchemaForm,
     pub blockDefault: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
     pub finalDefault: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
-    pub schemaLocations: *mut crate::System::Collections::Hashtable,
-    pub referenceNamespaces: *mut crate::System::Collections::Hashtable,
-    pub Xmlns: *mut quest_hook::libil2cpp::Il2CppString,
-    pub xmlResolver: *mut crate::System::Xml::XmlResolver,
+    pub schemaLocations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
+    pub referenceNamespaces: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
+    pub Xmlns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub xmlResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
 }
 #[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

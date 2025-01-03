@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct ChallengeEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub DisplayScore: *mut quest_hook::libil2cpp::Il2CppString,
-    pub ExtraData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub DisplayScore: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ExtraData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _cordl_ID: u64,
     pub Rank: i32,
     pub Score: i64,
     pub Timestamp: crate::System::DateTime,
-    pub User: *mut crate::Oculus::Platform::Models::User,
+    pub User: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
 }
 #[cfg(feature = "Oculus+Platform+Models+ChallengeEntry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

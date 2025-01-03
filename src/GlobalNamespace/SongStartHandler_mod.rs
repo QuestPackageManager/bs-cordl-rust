@@ -3,15 +3,25 @@
 #[derive(Debug)]
 pub struct SongStartHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
-    pub _playersAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
-    pub _readyPlayers: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub _gameplayRpcManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IGameplayRpcManager,
+    >,
+    pub _playersAtGameStartModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
+    >,
+    pub _readyPlayers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub _started: bool,
     pub _startTime: i64,
-    pub setSongStartSyncTimeEvent: *mut crate::System::Action_1<i64>,
+    pub setSongStartSyncTimeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<i64>,
+    >,
 }
 #[cfg(feature = "SongStartHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

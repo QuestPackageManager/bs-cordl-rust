@@ -5,35 +5,47 @@ pub struct SocketAsyncEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub disposed: bool,
     pub in_progress: i32,
-    pub remote_ep: *mut crate::System::Net::EndPoint,
-    pub current_socket: *mut crate::System::Net::Sockets::Socket,
-    pub socket_async_result: *mut crate::System::Net::Sockets::SocketAsyncResult,
-    pub _ConnectByNameError_k__BackingField: *mut crate::System::Exception,
-    pub _AcceptSocket_k__BackingField: *mut crate::System::Net::Sockets::Socket,
+    pub remote_ep: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
+    pub current_socket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
+    pub socket_async_result: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Sockets::SocketAsyncResult,
+    >,
+    pub _ConnectByNameError_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Exception,
+    >,
+    pub _AcceptSocket_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Sockets::Socket,
+    >,
     pub _BytesTransferred_k__BackingField: i32,
     pub _DisconnectReuseSocket_k__BackingField: bool,
     pub _LastOperation_k__BackingField: crate::System::Net::Sockets::SocketAsyncOperation,
     pub _ReceiveMessageFromPacketInfo_k__BackingField: crate::System::Net::Sockets::IPPacketInformation,
-    pub _SendPacketsElements_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Net::Sockets::SendPacketsElement,
+    pub _SendPacketsElements_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Net::Sockets::SendPacketsElement,
+        >,
     >,
     pub _SendPacketsFlags_k__BackingField: crate::System::Net::Sockets::TransmitFileOptions,
     pub _SendPacketsSendSize_k__BackingField: i32,
     pub _SocketError_k__BackingField: crate::System::Net::Sockets::SocketError,
     pub _SocketFlags_k__BackingField: crate::System::Net::Sockets::SocketFlags,
-    pub _UserToken_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub Completed: *mut crate::System::EventHandler_1<
-        *mut crate::System::Net::Sockets::SocketAsyncEventArgs,
+    pub _UserToken_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub Completed: quest_hook::libil2cpp::Gc<
+        crate::System::EventHandler_1<
+            *mut crate::System::Net::Sockets::SocketAsyncEventArgs,
+        >,
     >,
     pub _buffer: crate::System::Memory_1<u8>,
     pub _offset: i32,
     pub _count: i32,
     pub _bufferIsExplicitArray: bool,
-    pub _bufferList: *mut crate::System::Collections::Generic::IList_1<
-        crate::System::ArraySegment_1<u8>,
+    pub _bufferList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<crate::System::ArraySegment_1<u8>>,
     >,
-    pub _bufferListInternal: *mut crate::System::Collections::Generic::List_1<
-        crate::System::ArraySegment_1<u8>,
+    pub _bufferListInternal: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::System::ArraySegment_1<u8>>,
     >,
 }
 #[cfg(feature = "System+Net+Sockets+SocketAsyncEventArgs")]

@@ -3,17 +3,37 @@
 #[derive(Debug)]
 pub struct BeatmapObjectsInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _normalBasicNotePrefab: *mut crate::GlobalNamespace::GameNoteController,
-    pub _proModeNotePrefab: *mut crate::GlobalNamespace::GameNoteController,
-    pub _burstSliderHeadNotePrefab: *mut crate::GlobalNamespace::GameNoteController,
-    pub _burstSliderNotePrefab: *mut crate::GlobalNamespace::BurstSliderGameNoteController,
-    pub _bombNotePrefab: *mut crate::GlobalNamespace::BombNoteController,
-    pub _obstaclePrefab: *mut crate::GlobalNamespace::ObstacleController,
-    pub _sliderShortPrefab: *mut crate::GlobalNamespace::SliderController,
-    pub _sliderMediumPrefab: *mut crate::GlobalNamespace::SliderController,
-    pub _sliderLongPrefab: *mut crate::GlobalNamespace::SliderController,
-    pub _beatLinePrefab: *mut crate::GlobalNamespace::BeatLine,
-    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    pub _normalBasicNotePrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameNoteController,
+    >,
+    pub _proModeNotePrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameNoteController,
+    >,
+    pub _burstSliderHeadNotePrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameNoteController,
+    >,
+    pub _burstSliderNotePrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BurstSliderGameNoteController,
+    >,
+    pub _bombNotePrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BombNoteController,
+    >,
+    pub _obstaclePrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ObstacleController,
+    >,
+    pub _sliderShortPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SliderController,
+    >,
+    pub _sliderMediumPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SliderController,
+    >,
+    pub _sliderLongPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SliderController,
+    >,
+    pub _beatLinePrefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatLine>,
+    pub _sceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    >,
 }
 #[cfg(feature = "BeatmapObjectsInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,8 +1,8 @@
 #[cfg(feature = "Mono+RuntimeGPtrArrayHandle")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RuntimeGPtrArrayHandle {
-    pub value: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Mono+RuntimeGPtrArrayHandle")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

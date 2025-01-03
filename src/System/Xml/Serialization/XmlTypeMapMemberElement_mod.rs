@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct XmlTypeMapMemberElement {
     __cordl_parent: crate::System::Xml::Serialization::XmlTypeMapMember,
-    pub _elementInfo: *mut crate::System::Xml::Serialization::XmlTypeMapElementInfoList,
-    pub _choiceMember: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _elementInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTypeMapElementInfoList,
+    >,
+    pub _choiceMember: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _isTextCollector: bool,
-    pub _choiceTypeData: *mut crate::System::Xml::Serialization::TypeData,
+    pub _choiceTypeData: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::TypeData,
+    >,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct RuntimeThread {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub thread: *mut crate::System::Threading::Thread,
+    pub thread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
 }
 #[cfg(feature = "Internal+Runtime+Augments+RuntimeThread")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

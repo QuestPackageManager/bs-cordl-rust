@@ -1,10 +1,12 @@
 #[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationHandle")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AsyncOperationHandle {
-    pub m_InternalOp: *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
+    pub m_InternalOp: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
+    >,
     pub m_Version: i32,
-    pub m_LocationName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_LocationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationHandle")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

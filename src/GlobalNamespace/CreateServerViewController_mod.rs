@@ -3,14 +3,19 @@
 #[derive(Debug)]
 pub struct CreateServerViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _createServerButton: *mut crate::UnityEngine::UI::Button,
-    pub _cancelCreateServerButton: *mut crate::UnityEngine::UI::Button,
-    pub _createServerFormController: *mut crate::GlobalNamespace::CreateServerFormController,
-    pub didFinishEvent: *mut crate::System::Action_2<
-        bool,
-        crate::GlobalNamespace::CreateServerFormData,
+    pub _createServerButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _cancelCreateServerButton: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Button,
     >,
-    pub _multiplayerModeSettings: *mut crate::GlobalNamespace::MultiplayerModeSettings,
+    pub _createServerFormController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CreateServerFormController,
+    >,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<bool, crate::GlobalNamespace::CreateServerFormData>,
+    >,
+    pub _multiplayerModeSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerModeSettings,
+    >,
 }
 #[cfg(feature = "CreateServerViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

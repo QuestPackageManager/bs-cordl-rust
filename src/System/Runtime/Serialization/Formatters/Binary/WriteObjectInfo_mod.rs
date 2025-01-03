@@ -4,24 +4,34 @@
 pub struct WriteObjectInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub objectInfoId: i32,
-    pub obj: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub objectType: *mut crate::System::Type,
+    pub obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub isSi: bool,
     pub isNamed: bool,
     pub isTyped: bool,
     pub isArray: bool,
-    pub si: *mut crate::System::Runtime::Serialization::SerializationInfo,
-    pub cache: *mut crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCache,
-    pub memberData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub si: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::SerializationInfo,
     >,
-    pub serializationSurrogate: *mut crate::System::Runtime::Serialization::ISerializationSurrogate,
+    pub cache: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCache,
+    >,
+    pub memberData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+    >,
+    pub serializationSurrogate: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializationSurrogate,
+    >,
     pub context: crate::System::Runtime::Serialization::StreamingContext,
-    pub serObjectInfoInit: *mut crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit,
+    pub serObjectInfoInit: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit,
+    >,
     pub objectId: i64,
     pub assemId: i64,
-    pub binderTypeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub binderAssemblyString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub binderTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub binderAssemblyString: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+WriteObjectInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

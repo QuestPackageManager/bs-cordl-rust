@@ -6,13 +6,14 @@ pub struct BindSignalFromBinder_2<
     TSignal: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _bindStatement: *mut crate::Zenject::BindStatement,
-    pub _methodGetter: *mut crate::System::Func_2<
-        TObject,
-        *mut crate::System::Action_1<TSignal>,
+    pub _bindStatement: quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
+    pub _methodGetter: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<TObject, *mut crate::System::Action_1<TSignal>>,
     >,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _signalBindInfo: *mut crate::Zenject::SignalBindingBindInfo,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _signalBindInfo: quest_hook::libil2cpp::Gc<
+        crate::Zenject::SignalBindingBindInfo,
+    >,
     __cordl_phantom_TObject: std::marker::PhantomData<TObject>,
     __cordl_phantom_TSignal: std::marker::PhantomData<TSignal>,
 }

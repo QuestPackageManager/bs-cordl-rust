@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct EventInterestAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub eventTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    pub eventTypes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    >,
     pub categoryFlags: crate::UnityEngine::UIElements::EventCategoryFlags,
 }
 #[cfg(feature = "UnityEngine+UIElements+EventInterestAttribute")]

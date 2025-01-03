@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ParametersWithRandom {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub parameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    >,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ParametersWithRandom")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

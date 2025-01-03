@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct CertOrEncCert {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub certificate: *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
-    pub encryptedCert: *mut crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
+    pub certificate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+    >,
+    pub encryptedCert: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+CertOrEncCert")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

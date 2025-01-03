@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct AnimationTriggers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_NormalTrigger: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_HighlightedTrigger: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_PressedTrigger: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_SelectedTrigger: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_DisabledTrigger: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_NormalTrigger: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_HighlightedTrigger: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_PressedTrigger: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_SelectedTrigger: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_DisabledTrigger: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "UnityEngine+UI+AnimationTriggers")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

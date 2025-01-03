@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct DHValidationParms {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub seed: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
-    pub pgenCounter: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+    pub seed: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerBitString>,
+    pub pgenCounter: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerInteger,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+DHValidationParms")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -8,11 +8,17 @@ pub struct NetworkConfigSO {
     pub _partyPort: i32,
     pub _multiplayerPort: i32,
     pub _masterServerPort: i32,
-    pub _masterServerHostName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _multiplayerStatusUrl: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _quickPlaySetupUrl: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _graphUrl: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _graphAppId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _masterServerHostName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _multiplayerStatusUrl: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _quickPlaySetupUrl: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _graphUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _graphAppId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _forceGameLift: bool,
     pub _serviceEnvironment: crate::GlobalNamespace::ServiceEnvironment,
 }

@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct ProofOfPossessionSigningKeyBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _certRequest: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertRequest,
-    pub _pubKeyInfo: *mut crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
-    pub _name: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    pub _publicKeyMAC: *mut crate::Org::BouncyCastle::Asn1::Crmf::PKMacValue,
+    pub _certRequest: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Crmf::CertRequest,
+    >,
+    pub _pubKeyInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+    >,
+    pub _name: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    >,
+    pub _publicKeyMAC: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Crmf::PKMacValue,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+ProofOfPossessionSigningKeyBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

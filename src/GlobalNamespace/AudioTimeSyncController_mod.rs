@@ -7,12 +7,18 @@ pub struct AudioTimeSyncController {
     pub _forcedSyncDeltaTime: f32,
     pub _startSyncDeltaTime: f32,
     pub _stopSyncDeltaTime: f32,
-    pub _audioSource: *mut crate::UnityEngine::AudioSource,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub _initData: *mut crate::GlobalNamespace::AudioTimeSyncController_InitData,
-    pub _dspTimeProvider: *mut crate::GlobalNamespace::IDspTimeProvider,
+    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController_InitData,
+    >,
+    pub _dspTimeProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IDspTimeProvider,
+    >,
     pub forcedNoAudioSync: bool,
-    pub stateChangedEvent: *mut crate::System::Action,
+    pub stateChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _audioLatency: f32,
     pub _fixingAudioSyncError: bool,
     pub _audioStartTimeOffsetSinceStart: f32,
@@ -367,7 +373,7 @@ for crate::GlobalNamespace::AudioTimeSyncController {
 #[derive(Debug)]
 pub struct AudioTimeSyncController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub audioClip: *mut crate::UnityEngine::AudioClip,
+    pub audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     pub startSongTime: f32,
     pub songTimeOffset: f32,
     pub timeScale: f32,

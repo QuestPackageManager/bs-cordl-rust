@@ -4,33 +4,39 @@
 pub struct HEU_ParameterData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _unityIndex: i32,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _labelName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _help: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _childParameterIDs: *mut crate::System::Collections::Generic::List_1<i32>,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _labelName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _help: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _childParameterIDs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
     pub _choiceValue: i32,
-    pub _intValues: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _floatValues: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _stringValues: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _intValues: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub _floatValues: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub _stringValues: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _toggle: bool,
     pub _color: crate::UnityEngine::Color,
-    pub _gradient: *mut crate::UnityEngine::Gradient,
-    pub _animCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _choiceLabels: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::GUIContent,
+    pub _gradient: quest_hook::libil2cpp::Gc<crate::UnityEngine::Gradient>,
+    pub _animCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    pub _choiceLabels: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUIContent>,
     >,
-    pub _choiceStringValues: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _choiceStringValues: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _choiceIntValues: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _choiceIntValues: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     pub _parmInfo: crate::HoudiniEngineUnity::HAPI_ParmInfo,
     pub _showChildren: bool,
-    pub _fileTypeInfo: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _fileTypeInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _folderListChildrenProcessed: i32,
     pub _tabSelectedIndex: i32,
-    pub _paramInputNode: *mut crate::HoudiniEngineUnity::HEU_InputNode,
+    pub _paramInputNode: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_InputNode,
+    >,
     pub _hasAssetPathTag: bool,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ParameterData")]

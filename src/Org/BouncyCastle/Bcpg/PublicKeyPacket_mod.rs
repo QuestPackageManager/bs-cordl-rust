@@ -7,7 +7,7 @@ pub struct PublicKeyPacket {
     pub _cordl_time: i64,
     pub validDays: i32,
     pub algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
-    pub key: *mut crate::Org::BouncyCastle::Bcpg::IBcpgKey,
+    pub key: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::IBcpgKey>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+PublicKeyPacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

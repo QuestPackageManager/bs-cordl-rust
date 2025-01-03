@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct ScreenCaptureAfterDelay {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _mainEffectController: *mut crate::GlobalNamespace::MainEffectController,
-    pub _screenCaptureCache: *mut crate::GlobalNamespace::ScreenCaptureCache,
-    pub _initData: *mut crate::GlobalNamespace::ScreenCaptureAfterDelay_InitData,
-    pub _captureTexture: *mut crate::UnityEngine::Texture2D,
-    pub _captureRenderTexture: *mut crate::UnityEngine::RenderTexture,
+    pub _mainEffectController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MainEffectController,
+    >,
+    pub _screenCaptureCache: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScreenCaptureCache,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScreenCaptureAfterDelay_InitData,
+    >,
+    pub _captureTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    pub _captureRenderTexture: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RenderTexture,
+    >,
 }
 #[cfg(feature = "ScreenCaptureAfterDelay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

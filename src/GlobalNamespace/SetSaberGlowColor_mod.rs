@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct SetSaberGlowColor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _saberTypeObject: *mut crate::GlobalNamespace::SaberTypeObject,
-    pub _meshRenderer: *mut crate::UnityEngine::MeshRenderer,
-    pub _propertyTintColorPairs: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair,
+    pub _saberTypeObject: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SaberTypeObject,
     >,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
-    pub _materialPropertyBlock: *mut crate::UnityEngine::MaterialPropertyBlock,
+    pub _meshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+    pub _propertyTintColorPairs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair,
+        >,
+    >,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+    pub _materialPropertyBlock: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MaterialPropertyBlock,
+    >,
     pub _saberType: crate::GlobalNamespace::SaberType,
 }
 #[cfg(feature = "SetSaberGlowColor")]
@@ -98,7 +104,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SetSaberGlowC
 pub struct SetSaberGlowColor_PropertyTintColorPair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub tintColor: crate::UnityEngine::Color,
-    pub property: *mut quest_hook::libil2cpp::Il2CppString,
+    pub property: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "SetSaberGlowColor+PropertyTintColorPair")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

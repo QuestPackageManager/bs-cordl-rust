@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct RsassaPssParameters {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub hashAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub maskGenAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub saltLength: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub trailerField: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+    pub hashAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub maskGenAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub saltLength: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerInteger,
+    >,
+    pub trailerField: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerInteger,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+RsassaPssParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

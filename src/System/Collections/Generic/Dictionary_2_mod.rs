@@ -6,24 +6,26 @@ pub struct Dictionary_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _buckets: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _entries: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Collections::Generic::Dictionary_2_Entry<TKey, TValue>,
+    pub _buckets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub _entries: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Collections::Generic::Dictionary_2_Entry<TKey, TValue>,
+        >,
     >,
     pub _count: i32,
     pub _freeList: i32,
     pub _freeCount: i32,
     pub _version: i32,
-    pub _comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
-    pub _keys: *mut crate::System::Collections::Generic::Dictionary_2_KeyCollection<
-        TKey,
-        TValue,
+    pub _comparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
     >,
-    pub _values: *mut crate::System::Collections::Generic::Dictionary_2_ValueCollection<
-        TKey,
-        TValue,
+    pub _keys: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue>,
     >,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _values: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue>,
+    >,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -1468,7 +1470,7 @@ for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
 }
 #[cfg(feature = "System+Collections+Generic+Dictionary_2+Entry")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Dictionary_2_Entry<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1507,14 +1509,13 @@ impl<
 > crate::System::Collections::Generic::Dictionary_2_Entry<TKey, TValue> {}
 #[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Dictionary_2_Enumerator<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    pub _dictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        TKey,
-        TValue,
+    pub _dictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
     >,
     pub _version: i32,
     pub _index: i32,
@@ -1810,9 +1811,8 @@ pub struct Dictionary_2_KeyCollection<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        TKey,
-        TValue,
+    pub _dictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
     >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -2251,9 +2251,8 @@ pub struct Dictionary_2_ValueCollection<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        TKey,
-        TValue,
+    pub _dictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
     >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -2691,14 +2690,13 @@ for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TVal
 }
 #[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct KeyCollection_Dictionary_2_Enumerator<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    pub _dictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        TKey,
-        TValue,
+    pub _dictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
     >,
     pub _index: i32,
     pub _version: i32,
@@ -2920,14 +2918,13 @@ for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
 }
 #[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ValueCollection_Dictionary_2_Enumerator<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    pub _dictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        TKey,
-        TValue,
+    pub _dictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
     >,
     pub _index: i32,
     pub _version: i32,

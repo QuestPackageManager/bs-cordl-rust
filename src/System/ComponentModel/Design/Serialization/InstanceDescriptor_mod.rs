@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct InstanceDescriptor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Arguments_k__BackingField: *mut crate::System::Collections::ICollection,
+    pub _Arguments_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ICollection,
+    >,
     pub _IsComplete_k__BackingField: bool,
-    pub _MemberInfo_k__BackingField: *mut crate::System::Reflection::MemberInfo,
+    pub _MemberInfo_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MemberInfo,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+Design+Serialization+InstanceDescriptor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

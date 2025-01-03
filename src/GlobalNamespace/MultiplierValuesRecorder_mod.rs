@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct MultiplierValuesRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
-    pub _multiplierValues: *mut crate::System::Collections::Generic::List_1<
-        crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue,
+    pub _scoreController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IScoreController,
+    >,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
+    pub _multiplierValues: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue,
+        >,
     >,
 }
 #[cfg(feature = "MultiplierValuesRecorder")]
@@ -115,7 +121,7 @@ for crate::GlobalNamespace::MultiplierValuesRecorder {
 }
 #[cfg(feature = "MultiplierValuesRecorder+MultiplierValue")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MultiplierValuesRecorder_MultiplierValue {
     pub multiplier: i32,
     pub _cordl_time: f32,

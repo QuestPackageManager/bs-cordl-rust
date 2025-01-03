@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct TextFadeTransitions {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _textLabel: *mut crate::TMPro::TextMeshProUGUI,
-    pub _canvasGroup: *mut crate::UnityEngine::CanvasGroup,
+    pub _textLabel: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _canvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
     pub _fadeDuration: f32,
     pub _state: crate::GlobalNamespace::TextFadeTransitions_State,
-    pub _nextText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _nextText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _fade: f32,
     pub _delay: f32,
 }

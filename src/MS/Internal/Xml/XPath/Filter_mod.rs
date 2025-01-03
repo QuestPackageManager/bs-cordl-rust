@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct Filter {
     __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
-    pub _input: *mut crate::MS::Internal::Xml::XPath::AstNode,
-    pub _condition: *mut crate::MS::Internal::Xml::XPath::AstNode,
+    pub _input: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+    pub _condition: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Filter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

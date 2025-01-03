@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct BeatmapLevelsEntitlementModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _additionalContentEntitlementModel: *mut crate::GlobalNamespace::IAdditionalContentEntitlementModel,
-    pub _alwaysOwnedBeatmapLevelIds: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _additionalContentEntitlementModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAdditionalContentEntitlementModel,
     >,
-    pub _alwaysOwnedPacksIds: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _alwaysOwnedBeatmapLevelIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+    pub _alwaysOwnedPacksIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapLevelsEntitlementModel")]

@@ -1,8 +1,8 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+TextBackingContainer")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TextBackingContainer {
-    pub m_Array: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub m_Array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub m_Count: i32,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextBackingContainer")]

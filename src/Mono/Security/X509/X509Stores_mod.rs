@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct X509Stores {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _storePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _storePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _newFormat: bool,
-    pub _trusted: *mut crate::Mono::Security::X509::X509Store,
+    pub _trusted: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Store>,
 }
 #[cfg(feature = "Mono+Security+X509+X509Stores")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

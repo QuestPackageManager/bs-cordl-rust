@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct PyramidBloomMainEffectSO {
     __cordl_parent: crate::GlobalNamespace::MainEffectSO,
-    pub _bloomRenderer: *mut crate::GlobalNamespace::PyramidBloomRendererSO,
-    pub _bloomFog: *mut crate::GlobalNamespace::BloomFogSO,
-    pub _fadeShader: *mut crate::UnityEngine::Shader,
-    pub _mainEffectShader: *mut crate::UnityEngine::Shader,
+    pub _bloomRenderer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PyramidBloomRendererSO,
+    >,
+    pub _bloomFog: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomFogSO>,
+    pub _fadeShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub _mainEffectShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub _bloomBlendFactor: f32,
     pub _bloomRadius: f32,
     pub _bloomIntensity: f32,
@@ -20,8 +22,8 @@ pub struct PyramidBloomMainEffectSO {
     pub _bloomTextureWidth: i32,
     pub _baseColorBoost: f32,
     pub _baseColorBoostThreshold: f32,
-    pub _fadeMaterial: *mut crate::UnityEngine::Material,
-    pub _mainEffectMaterial: *mut crate::UnityEngine::Material,
+    pub _fadeMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _mainEffectMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
 #[cfg(feature = "PyramidBloomMainEffectSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

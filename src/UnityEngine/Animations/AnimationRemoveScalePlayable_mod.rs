@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Animations+AnimationRemoveScalePlayable")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AnimationRemoveScalePlayable {
     pub m_Handle: crate::UnityEngine::Playables::PlayableHandle,
 }

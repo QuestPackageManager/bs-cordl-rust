@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct MultiplayerSpectatingSpotPickerViewController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _stepValuePicker: *mut crate::GlobalNamespace::StepValuePicker,
-    pub _spectatorController: *mut crate::GlobalNamespace::MultiplayerSpectatorController,
+    pub _stepValuePicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StepValuePicker,
+    >,
+    pub _spectatorController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerSpectatorController,
+    >,
 }
 #[cfg(feature = "MultiplayerSpectatingSpotPickerViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

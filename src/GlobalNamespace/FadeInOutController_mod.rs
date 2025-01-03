@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct FadeInOutController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _easeValue: *mut crate::GlobalNamespace::FloatSO,
-    pub _fadeInCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _fadeOutCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub _easeValue: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatSO>,
+    pub _fadeInCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    pub _fadeOutCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub _fadeInStartDelay: f32,
     pub _defaultFadeOutDuration: f32,
     pub _defaultFadeInDuration: f32,

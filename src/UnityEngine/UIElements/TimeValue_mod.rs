@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+TimeValue")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TimeValue {
     pub m_Value: f32,
     pub m_Unit: crate::UnityEngine::UIElements::TimeUnit,

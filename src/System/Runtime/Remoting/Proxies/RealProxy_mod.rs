@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct RealProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub class_to_proxy: *mut crate::System::Type,
-    pub _targetContext: *mut crate::System::Runtime::Remoting::Contexts::Context,
-    pub _server: *mut crate::System::MarshalByRefObject,
+    pub class_to_proxy: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _targetContext: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Contexts::Context,
+    >,
+    pub _server: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
     pub _targetDomainId: i32,
-    pub _targetUri: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _objectIdentity: *mut crate::System::Runtime::Remoting::Identity,
-    pub _objTP: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _stubData: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _targetUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _objectIdentity: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Identity,
+    >,
+    pub _objTP: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _stubData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Runtime+Remoting+Proxies+RealProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct BeatmapSelectionView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
-    pub _noLevelText: *mut crate::TMPro::TextMeshProUGUI,
+    pub _levelBar: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelBar>,
+    pub _noLevelText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
 #[cfg(feature = "BeatmapSelectionView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct SubContainerCreatorByNewPrefab {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
-    pub _prefabProvider: *mut crate::Zenject::IPrefabProvider,
-    pub _container: *mut crate::Zenject::DiContainer,
+    pub _gameObjectBindInfo: quest_hook::libil2cpp::Gc<
+        crate::Zenject::GameObjectCreationParameters,
+    >,
+    pub _prefabProvider: quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabProvider>,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByNewPrefab")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

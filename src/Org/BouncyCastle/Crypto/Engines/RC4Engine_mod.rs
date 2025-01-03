@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct RC4Engine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub engineState: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub engineState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub x: i32,
     pub y: i32,
-    pub workingKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub workingKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+RC4Engine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

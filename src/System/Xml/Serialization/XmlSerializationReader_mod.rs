@@ -3,31 +3,37 @@
 #[derive(Debug)]
 pub struct XmlSerializationReader {
     __cordl_parent: crate::System::Xml::Serialization::XmlSerializationGeneratedCode,
-    pub document: *mut crate::System::Xml::XmlDocument,
-    pub reader: *mut crate::System::Xml::XmlReader,
-    pub fixups: *mut crate::System::Collections::ArrayList,
-    pub collFixups: *mut crate::System::Collections::Hashtable,
-    pub collItemFixups: *mut crate::System::Collections::ArrayList,
-    pub typesCallbacks: *mut crate::System::Collections::Hashtable,
-    pub noIDTargets: *mut crate::System::Collections::ArrayList,
-    pub targets: *mut crate::System::Collections::Hashtable,
-    pub delayedListFixups: *mut crate::System::Collections::Hashtable,
-    pub eventSource: *mut crate::System::Xml::Serialization::XmlSerializer,
+    pub document: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
+    pub reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    pub fixups: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub collFixups: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub collItemFixups: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub typesCallbacks: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub noIDTargets: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub targets: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub delayedListFixups: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
+    pub eventSource: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlSerializer,
+    >,
     pub delayedFixupId: i32,
-    pub referencedObjects: *mut crate::System::Collections::Hashtable,
+    pub referencedObjects: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
     pub readCount: i32,
     pub whileIterationCount: i32,
-    pub w3SchemaNS: *mut quest_hook::libil2cpp::Il2CppString,
-    pub w3InstanceNS: *mut quest_hook::libil2cpp::Il2CppString,
-    pub w3InstanceNS2000: *mut quest_hook::libil2cpp::Il2CppString,
-    pub w3InstanceNS1999: *mut quest_hook::libil2cpp::Il2CppString,
-    pub soapNS: *mut quest_hook::libil2cpp::Il2CppString,
-    pub wsdlNS: *mut quest_hook::libil2cpp::Il2CppString,
-    pub nullX: *mut quest_hook::libil2cpp::Il2CppString,
-    pub nil: *mut quest_hook::libil2cpp::Il2CppString,
-    pub typeX: *mut quest_hook::libil2cpp::Il2CppString,
-    pub arrayType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub arrayQName: *mut crate::System::Xml::XmlQualifiedName,
+    pub w3SchemaNS: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub w3InstanceNS: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub w3InstanceNS2000: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub w3InstanceNS1999: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub soapNS: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub wsdlNS: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub nullX: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub nil: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub typeX: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub arrayType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub arrayQName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -741,10 +747,12 @@ for crate::System::Xml::Serialization::XmlSerializationReader {
 #[derive(Debug)]
 pub struct XmlSerializationReader_CollectionFixup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub callback: *mut crate::System::Xml::Serialization::XmlSerializationCollectionFixupCallback,
-    pub collection: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub collectionItems: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub id: *mut quest_hook::libil2cpp::Il2CppString,
+    pub callback: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlSerializationCollectionFixupCallback,
+    >,
+    pub collection: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub collectionItems: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+CollectionFixup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -878,9 +886,9 @@ for crate::System::Xml::Serialization::XmlSerializationReader_CollectionFixup {
 #[derive(Debug)]
 pub struct XmlSerializationReader_CollectionItemFixup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub list: *mut crate::System::Array,
+    pub list: quest_hook::libil2cpp::Gc<crate::System::Array>,
     pub index: i32,
-    pub id: *mut quest_hook::libil2cpp::Il2CppString,
+    pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+CollectionItemFixup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -975,11 +983,13 @@ for crate::System::Xml::Serialization::XmlSerializationReader_CollectionItemFixu
 #[derive(Debug)]
 pub struct XmlSerializationReader_Fixup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub source: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub ids: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub ids: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub callback: *mut crate::System::Xml::Serialization::XmlSerializationFixupCallback,
+    pub callback: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlSerializationFixupCallback,
+    >,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+Fixup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1091,10 +1101,12 @@ for crate::System::Xml::Serialization::XmlSerializationReader_Fixup {
 #[derive(Debug)]
 pub struct XmlSerializationReader_WriteCallbackInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Type: *mut crate::System::Type,
-    pub TypeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub TypeNs: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Callback: *mut crate::System::Xml::Serialization::XmlSerializationReadCallback,
+    pub Type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub TypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub TypeNs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Callback: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlSerializationReadCallback,
+    >,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+WriteCallbackInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

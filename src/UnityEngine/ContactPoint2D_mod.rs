@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ContactPoint2D")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ContactPoint2D {
     pub m_Point: crate::UnityEngine::Vector2,
     pub m_Normal: crate::UnityEngine::Vector2,

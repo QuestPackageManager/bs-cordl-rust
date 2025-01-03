@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundColorsGradient {
     __cordl_parent: crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient,
-    pub _elements: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element,
+    pub _elements: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element,
+        >,
     >,
 }
 #[cfg(feature = "BloomPrePassBackgroundColorsGradient")]

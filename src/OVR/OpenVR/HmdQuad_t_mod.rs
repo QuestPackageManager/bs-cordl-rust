@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+HmdQuad_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HmdQuad_t {
     pub vCorners0: crate::OVR::OpenVR::HmdVector3_t,
     pub vCorners1: crate::OVR::OpenVR::HmdVector3_t,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Yoga+YogaSize")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct YogaSize {
     pub width: f32,
     pub height: f32,

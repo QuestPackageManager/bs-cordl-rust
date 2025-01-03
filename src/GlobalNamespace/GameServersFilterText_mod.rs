@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct GameServersFilterText {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _text: *mut crate::HMUI::CurvedTextMeshPro,
-    pub _songPackMasksModel: *mut crate::GlobalNamespace::SongPackMasksModel,
-    pub _stringBuilder: *mut crate::System::Text::StringBuilder,
+    pub _text: quest_hook::libil2cpp::Gc<crate::HMUI::CurvedTextMeshPro>,
+    pub _songPackMasksModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPackMasksModel,
+    >,
+    pub _stringBuilder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
 }
 #[cfg(feature = "GameServersFilterText")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

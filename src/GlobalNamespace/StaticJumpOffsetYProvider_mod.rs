@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct StaticJumpOffsetYProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _initData: *mut crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData,
+    >,
 }
 #[cfg(feature = "StaticJumpOffsetYProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

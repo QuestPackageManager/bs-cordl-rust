@@ -5,8 +5,8 @@ pub struct MidiFile {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub format: i32,
     pub ticksPerQuarterNote: i32,
-    pub tracks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::MidiParser::MidiTrack,
+    pub tracks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::MidiParser::MidiTrack>,
     >,
     pub tracksCount: i32,
 }

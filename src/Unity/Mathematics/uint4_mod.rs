@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Mathematics+uint4")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct uint4 {
     pub x: u32,
     pub y: u32,

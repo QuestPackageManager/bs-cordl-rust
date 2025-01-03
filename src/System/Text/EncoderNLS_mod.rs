@@ -4,7 +4,7 @@
 pub struct EncoderNLS {
     __cordl_parent: crate::System::Text::Encoder,
     pub _charLeftOver: char,
-    pub _encoding: *mut crate::System::Text::Encoding,
+    pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     pub _mustFlush: bool,
     pub _throwOnOverflow: bool,
     pub _charsUsed: i32,

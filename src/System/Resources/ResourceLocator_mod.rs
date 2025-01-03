@@ -1,8 +1,8 @@
 #[cfg(feature = "System+Resources+ResourceLocator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ResourceLocator {
-    pub _value: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _dataPos: i32,
 }
 #[cfg(feature = "System+Resources+ResourceLocator")]

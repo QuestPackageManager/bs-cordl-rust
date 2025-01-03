@@ -3,32 +3,46 @@
 #[derive(Debug)]
 pub struct ResultsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _restartButton: *mut crate::UnityEngine::UI::Button,
-    pub _continueButton: *mut crate::UnityEngine::UI::Button,
-    pub _clearedPanel: *mut crate::UnityEngine::GameObject,
-    pub _scoreText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _newHighScoreText: *mut crate::UnityEngine::GameObject,
-    pub _rankText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _goodCutsPercentageText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _comboText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _clearedBannerGo: *mut crate::UnityEngine::GameObject,
-    pub _failedBannerGo: *mut crate::UnityEngine::GameObject,
-    pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
-    pub _levelClearedAudioClip: *mut crate::UnityEngine::AudioClip,
-    pub _fireworksController: *mut crate::GlobalNamespace::FireworksController,
-    pub _songPreviewPlayer: *mut crate::GlobalNamespace::SongPreviewPlayer,
-    pub _menuDestinationRequest: *mut crate::GlobalNamespace::MenuDestination,
-    pub continueButtonPressedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::ResultsViewController,
+    pub _restartButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _clearedPanel: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _scoreText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _newHighScoreText: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _rankText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _goodCutsPercentageText: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TextMeshProUGUI,
     >,
-    pub restartButtonPressedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::ResultsViewController,
+    pub _comboText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _clearedBannerGo: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _failedBannerGo: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _levelBar: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelBar>,
+    pub _levelClearedAudioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    pub _fireworksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FireworksController,
     >,
-    pub _levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
-    pub _transformedBeatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
+    pub _songPreviewPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPreviewPlayer,
+    >,
+    pub _menuDestinationRequest: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuDestination,
+    >,
+    pub continueButtonPressedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::ResultsViewController>,
+    >,
+    pub restartButtonPressedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::ResultsViewController>,
+    >,
+    pub _levelCompletionResults: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelCompletionResults,
+    >,
+    pub _transformedBeatmapData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IReadonlyBeatmapData,
+    >,
     pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
-    pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-    pub _startFireworksAfterDelayCoroutine: *mut crate::UnityEngine::Coroutine,
+    pub _beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+    pub _startFireworksAfterDelayCoroutine: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Coroutine,
+    >,
     pub _newHighScore: bool,
     pub _practice: bool,
 }

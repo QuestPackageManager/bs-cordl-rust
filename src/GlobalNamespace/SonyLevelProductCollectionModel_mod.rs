@@ -3,17 +3,23 @@
 #[derive(Debug)]
 pub struct SonyLevelProductCollectionModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _levelIdToProductData: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+    pub _levelIdToProductData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+        >,
     >,
-    pub _levelPackIdToProductData: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
+    pub _levelPackIdToProductData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
+        >,
     >,
-    pub _levelPackRedirectionData: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+    pub _levelPackRedirectionData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+        >,
     >,
 }
 #[cfg(feature = "SonyLevelProductCollectionModel")]
@@ -141,7 +147,9 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel {
 pub struct SonyLevelProductCollectionModel_AdditionalPackProductData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub checkAdditionalPackProductData: bool,
-    pub noEnvironmentKeywordsProductLabel: *mut quest_hook::libil2cpp::Il2CppString,
+    pub noEnvironmentKeywordsProductLabel: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+AdditionalPackProductData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -200,7 +208,9 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalPackProduc
 pub struct SonyLevelProductCollectionModel_AdditionalProductData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub checkAdditionalProductData: bool,
-    pub noEnvironmentKeywordsProductData: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_ProductData,
+    pub noEnvironmentKeywordsProductData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyLevelProductCollectionModel_ProductData,
+    >,
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+AdditionalProductData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -258,14 +268,18 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalProductDat
 #[derive(Debug)]
 pub struct SonyLevelProductCollectionModel_LevelPackProductData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _packId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _productLabel: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _packId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _productLabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _packLevelPriceDiscountMul: f32,
-    pub _levelProductsData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+    pub _levelProductsData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+        >,
     >,
     pub _packIndex: i32,
-    pub _additionalPackProductData: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalPackProductData,
+    pub _additionalPackProductData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalPackProductData,
+    >,
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+LevelPackProductData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -505,10 +519,16 @@ impl AsMut<
 #[derive(Debug)]
 pub struct SonyLevelProductCollectionModel_LevelPackRedirectionData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _targetLevelPackId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _shouldOwnLevelPackId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _redirectedProductLabel: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _validUntilDate: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _targetLevelPackId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _shouldOwnLevelPackId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _redirectedProductLabel: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _validUntilDate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+LevelPackRedirectionData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -655,12 +675,16 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirection
 #[derive(Debug)]
 pub struct SonyLevelProductCollectionModel_LevelProductData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _levelId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _entitlementLabel: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _productLabel: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _sieeDcCode: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _sieaAcCode: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _additionalProductData: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalProductData,
+    pub _levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _entitlementLabel: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _productLabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _sieeDcCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _sieaAcCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _additionalProductData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalProductData,
+    >,
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+LevelProductData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -829,10 +853,10 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
 #[derive(Debug)]
 pub struct SonyLevelProductCollectionModel_ProductData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub entitlementLabel: *mut quest_hook::libil2cpp::Il2CppString,
-    pub productLabel: *mut quest_hook::libil2cpp::Il2CppString,
-    pub sieeDcCode: *mut quest_hook::libil2cpp::Il2CppString,
-    pub sieaAcCode: *mut quest_hook::libil2cpp::Il2CppString,
+    pub entitlementLabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub productLabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub sieeDcCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub sieaAcCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+ProductData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

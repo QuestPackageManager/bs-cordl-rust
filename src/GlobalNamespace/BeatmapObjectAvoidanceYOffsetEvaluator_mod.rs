@@ -5,11 +5,17 @@ pub struct BeatmapObjectAvoidanceYOffsetEvaluator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _currentYJumpOffsetBufferEndIndex: i32,
     pub _jumpDurationToDesiredZPosition: f32,
-    pub _yJumpOffsetBuffer: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData,
+    pub _yJumpOffsetBuffer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData,
+        >,
     >,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _jumpOffsetYProvider: *mut crate::GlobalNamespace::IJumpOffsetYProvider,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
+    pub _jumpOffsetYProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IJumpOffsetYProvider,
+    >,
 }
 #[cfg(feature = "BeatmapObjectAvoidanceYOffsetEvaluator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -125,7 +131,7 @@ for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
 }
 #[cfg(feature = "BeatmapObjectAvoidanceYOffsetEvaluator+BufferData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
     pub songTime: f32,
     pub yOffset: f32,

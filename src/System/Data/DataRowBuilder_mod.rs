@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DataRowBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _table: *mut crate::System::Data::DataTable,
+    pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     pub _record: i32,
 }
 #[cfg(feature = "System+Data+DataRowBuilder")]

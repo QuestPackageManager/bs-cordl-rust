@@ -3,45 +3,81 @@
 #[derive(Debug)]
 pub struct MenuTransitionsHelper {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _appInitScenesTransitionSetupDataContainer: *mut crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO,
-    pub _standardLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-    pub _multiplayerLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-    pub _missionLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-    pub _tutorialScenesTransitionSetupData: *mut crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
-    pub _creditsScenesTransitionSetupData: *mut crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
-    pub _beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
-    pub _beatmapLevelsEntitlementModel: *mut crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
-    pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub _standardLevelFinishedCallback: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-        *mut crate::GlobalNamespace::LevelCompletionResults,
+    pub _appInitScenesTransitionSetupDataContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO,
     >,
-    pub _standardLevelRestartedCallback: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-        *mut crate::GlobalNamespace::LevelCompletionResults,
+    pub _standardLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
     >,
-    pub _multiplayerLevelFinishedCallback: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-        *mut crate::GlobalNamespace::MultiplayerResultsData,
+    pub _multiplayerLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
     >,
-    pub _multiplayerDidDisconnectCallback: *mut crate::System::Action_1<
-        crate::GlobalNamespace::DisconnectedReason,
+    pub _missionLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
     >,
-    pub _missionLevelFinishedCallback: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-        *mut crate::GlobalNamespace::MissionCompletionResults,
+    pub _tutorialScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
     >,
-    pub _missionLevelRestartedCallback: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-        *mut crate::GlobalNamespace::MissionCompletionResults,
+    pub _creditsScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
     >,
-    pub _beatmapEditorFinishedCallback: *mut crate::System::Action,
-    pub _beatmapEditorGameplayLevelFinishedCallback: *mut crate::System::Action_2<
-        *mut crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
-        *mut crate::GlobalNamespace::LevelCompletionResults,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
+    pub _beatmapDataLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataLoader,
+    >,
+    pub _beatmapLevelsEntitlementModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
+    >,
+    pub _audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioClipAsyncLoader,
+    >,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub _standardLevelFinishedCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::LevelCompletionResults,
+        >,
+    >,
+    pub _standardLevelRestartedCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::LevelCompletionResults,
+        >,
+    >,
+    pub _multiplayerLevelFinishedCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::MultiplayerResultsData,
+        >,
+    >,
+    pub _multiplayerDidDisconnectCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
+    >,
+    pub _missionLevelFinishedCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::MissionCompletionResults,
+        >,
+    >,
+    pub _missionLevelRestartedCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::MissionCompletionResults,
+        >,
+    >,
+    pub _beatmapEditorFinishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _beatmapEditorGameplayLevelFinishedCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::LevelCompletionResults,
+        >,
     >,
 }
 #[cfg(feature = "MenuTransitionsHelper")]

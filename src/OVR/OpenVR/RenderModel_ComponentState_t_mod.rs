@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+RenderModel_ComponentState_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RenderModel_ComponentState_t {
     pub mTrackingToComponentRenderModel: crate::OVR::OpenVR::HmdMatrix34_t,
     pub mTrackingToComponentLocal: crate::OVR::OpenVR::HmdMatrix34_t,

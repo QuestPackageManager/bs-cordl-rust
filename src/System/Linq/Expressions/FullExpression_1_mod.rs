@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct FullExpression_1<TDelegate: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Linq::Expressions::ExpressionN_1<TDelegate>,
-    pub _NameCore_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _NameCore_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _TailCallCore_k__BackingField: bool,
     __cordl_phantom_TDelegate: std::marker::PhantomData<TDelegate>,
 }

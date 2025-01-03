@@ -3,20 +3,38 @@
 #[derive(Debug)]
 pub struct PauseController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _pauseMenuManager: *mut crate::GlobalNamespace::PauseMenuManager,
-    pub _gamePause: *mut crate::GlobalNamespace::IGamePause,
-    pub _menuButtonTrigger: *mut crate::GlobalNamespace::IMenuButtonTrigger,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _levelRestartController: *mut crate::GlobalNamespace::ILevelRestartController,
-    pub _returnToMenuController: *mut crate::GlobalNamespace::IReturnToMenuController,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _levelStartController: *mut crate::GlobalNamespace::ILevelStartController,
-    pub _initData: *mut crate::GlobalNamespace::PauseController_InitData,
-    pub didPauseEvent: *mut crate::System::Action,
-    pub didStartToResumeEvent: *mut crate::System::Action,
-    pub didResumeEvent: *mut crate::System::Action,
-    pub canPauseEvent: *mut crate::System::Action_1<*mut crate::System::Action_1<bool>>,
-    pub didReturnToMenuEvent: *mut crate::System::Action,
+    pub _pauseMenuManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PauseMenuManager,
+    >,
+    pub _gamePause: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>,
+    pub _menuButtonTrigger: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMenuButtonTrigger,
+    >,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub _levelRestartController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILevelRestartController,
+    >,
+    pub _returnToMenuController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IReturnToMenuController,
+    >,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
+    pub _levelStartController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILevelStartController,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PauseController_InitData,
+    >,
+    pub didPauseEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub didStartToResumeEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub didResumeEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub canPauseEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::System::Action_1<bool>>,
+    >,
+    pub didReturnToMenuEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _pauseChangedStateTime: f32,
     pub _wantsToPause: bool,
     pub _paused: crate::GlobalNamespace::PauseController_PauseState,

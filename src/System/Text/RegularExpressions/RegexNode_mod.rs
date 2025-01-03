@@ -4,15 +4,19 @@
 pub struct RegexNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub NType: i32,
-    pub Children: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Text::RegularExpressions::RegexNode,
+    pub Children: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Text::RegularExpressions::RegexNode,
+        >,
     >,
-    pub Str: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Ch: char,
     pub M: i32,
     pub N: i32,
     pub Options: crate::System::Text::RegularExpressions::RegexOptions,
-    pub Next: *mut crate::System::Text::RegularExpressions::RegexNode,
+    pub Next: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::RegexNode,
+    >,
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -16,18 +16,22 @@ pub struct LocalStateBuffer_3<
     pub _deltaUpdateFrequency: i64,
     pub _sentStateIndex: i32,
     pub _sentDeltaIndex: i32,
-    pub _sentStates: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
-            TStateTable,
-            TType,
-            TState,
+    pub _sentStates: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
+                TStateTable,
+                TType,
+                TState,
+            >,
         >,
     >,
-    pub _sentDeltas: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
-            TStateTable,
-            TType,
-            TState,
+    pub _sentDeltas: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
+                TStateTable,
+                TType,
+                TState,
+            >,
         >,
     >,
     pub _lastSentSyncStateId: crate::GlobalNamespace::SyncStateId,

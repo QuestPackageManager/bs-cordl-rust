@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct DataGroupHash {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub dataGroupNumber: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub dataGroupHashValue: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    pub dataGroupNumber: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerInteger,
+    >,
+    pub dataGroupHashValue: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Icao+DataGroupHash")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

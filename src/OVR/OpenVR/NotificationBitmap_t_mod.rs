@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+NotificationBitmap_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NotificationBitmap_t {
     pub m_pImageData: crate::System::IntPtr,
     pub m_nWidth: i32,

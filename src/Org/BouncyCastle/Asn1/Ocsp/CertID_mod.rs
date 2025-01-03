@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct CertID {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub hashAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub issuerNameHash: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub issuerKeyHash: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub serialNumber: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+    pub hashAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub issuerNameHash: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub issuerKeyHash: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub serialNumber: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerInteger,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+CertID")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

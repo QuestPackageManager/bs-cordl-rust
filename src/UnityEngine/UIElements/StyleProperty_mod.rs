@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct StyleProperty {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Line: i32,
-    pub m_Values: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::UIElements::StyleValueHandle,
+    pub m_Values: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::UIElements::StyleValueHandle,
+        >,
     >,
     pub isCustomProperty: bool,
     pub requireVariableResolve: bool,

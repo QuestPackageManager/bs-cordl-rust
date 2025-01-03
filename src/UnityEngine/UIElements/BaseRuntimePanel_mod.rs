@@ -3,19 +3,22 @@
 #[derive(Debug)]
 pub struct BaseRuntimePanel {
     __cordl_parent: crate::UnityEngine::UIElements::Panel,
-    pub m_SelectableGameObject: *mut crate::UnityEngine::GameObject,
+    pub m_SelectableGameObject: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
     pub m_RuntimePanelCreationIndex: i32,
     pub m_SortingPriority: f32,
     pub resolvedSortingIndex: i32,
-    pub destroyed: *mut crate::System::Action,
-    pub m_StandardWorldSpaceShader: *mut crate::UnityEngine::Shader,
+    pub destroyed: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub m_StandardWorldSpaceShader: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Shader,
+    >,
     pub m_DrawToCameras: bool,
-    pub targetTexture: *mut crate::UnityEngine::RenderTexture,
+    pub targetTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     pub panelToWorld: crate::UnityEngine::Matrix4x4,
     pub _targetDisplay_k__BackingField: i32,
-    pub m_ScreenToPanelSpace: *mut crate::System::Func_2<
-        crate::UnityEngine::Vector2,
-        crate::UnityEngine::Vector2,
+    pub m_ScreenToPanelSpace: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<crate::UnityEngine::Vector2, crate::UnityEngine::Vector2>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseRuntimePanel")]

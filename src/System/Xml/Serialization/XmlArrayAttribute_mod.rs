@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct XmlArrayAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub elementName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub form: crate::System::Xml::Schema::XmlSchemaForm,
     pub isNullable: bool,
-    pub ns: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub order: i32,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlArrayAttribute")]

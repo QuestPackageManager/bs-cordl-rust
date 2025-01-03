@@ -1,6 +1,6 @@
 #[cfg(feature = "LufsMetering+CalculateRmsBlockJob")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CalculateRmsBlockJob {
     pub inputData: crate::Unity::Collections::NativeArray_1<f32>,
     pub outputData: f32,

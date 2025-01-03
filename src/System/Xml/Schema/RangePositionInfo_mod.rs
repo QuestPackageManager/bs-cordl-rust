@@ -1,9 +1,11 @@
 #[cfg(feature = "System+Xml+Schema+RangePositionInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RangePositionInfo {
-    pub curpos: *mut crate::System::Xml::Schema::BitSet,
-    pub rangeCounters: *mut quest_hook::libil2cpp::Il2CppArray<crate::System::Decimal>,
+    pub curpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
+    pub rangeCounters: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Decimal>,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+RangePositionInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

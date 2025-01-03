@@ -3,24 +3,34 @@
 #[derive(Debug)]
 pub struct BeatmapObjectsInTimeRowProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _currentTimeSliceColorNotes: *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-        *mut crate::GlobalNamespace::NoteData,
-    >,
-    pub _currentTimeSliceAllNotesAndSliders: *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-        *mut crate::GlobalNamespace::BeatmapDataItem,
-    >,
-    pub _currentTimeSliceNotesByColorType: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::GlobalNamespace::ColorType,
-        *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
+    pub _currentTimeSliceColorNotes: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
             *mut crate::GlobalNamespace::NoteData,
         >,
     >,
-    pub _unprocessedSliderTails: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::SliderData,
+    pub _currentTimeSliceAllNotesAndSliders: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
+            *mut crate::GlobalNamespace::BeatmapDataItem,
+        >,
     >,
-    pub _notesInColumnsReusableProcessingListOfLists: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::NoteData,
+    pub _currentTimeSliceNotesByColorType: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::ColorType,
+            *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
+                *mut crate::GlobalNamespace::NoteData,
+            >,
+        >,
+    >,
+    pub _unprocessedSliderTails: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::SliderData,
+        >,
+    >,
+    pub _notesInColumnsReusableProcessingListOfLists: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::NoteData,
+            >,
         >,
     >,
     pub _numberOfLines: i32,
@@ -240,7 +250,7 @@ for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
 #[derive(Debug)]
 pub struct BeatmapObjectsInTimeRowProcessor_SliderTailData {
     __cordl_parent: crate::GlobalNamespace::BeatmapDataItem,
-    pub slider: *mut crate::GlobalNamespace::SliderData,
+    pub slider: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
 }
 #[cfg(feature = "BeatmapObjectsInTimeRowProcessor+SliderTailData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -318,24 +328,32 @@ pub struct BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _time_k__BackingField: f32,
     pub _previousTimeSliceTime_k__BackingField: f32,
-    pub didFinishTimeSliceEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-            T,
-        >,
-        f32,
-    >,
-    pub didStartNewTimeSliceEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-            T,
+    pub didFinishTimeSliceEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
+                T,
+            >,
+            f32,
         >,
     >,
-    pub didAddItemEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
+    pub didStartNewTimeSliceEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
+                T,
+            >,
+        >,
+    >,
+    pub didAddItemEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
+                T,
+            >,
             T,
         >,
-        T,
     >,
-    pub _items: *mut crate::System::Collections::Generic::List_1<T>,
+    pub _items: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "BeatmapObjectsInTimeRowProcessor+TimeSliceContainer_1")]

@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct LocalVariables {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _variables: *mut crate::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<
-        *mut crate::System::Linq::Expressions::ParameterExpression,
-        *mut crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope,
+    pub _variables: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<
+            *mut crate::System::Linq::Expressions::ParameterExpression,
+            *mut crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope,
+        >,
     >,
-    pub _closureVariables: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Linq::Expressions::ParameterExpression,
-        *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
+    pub _closureVariables: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Linq::Expressions::ParameterExpression,
+            *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        >,
     >,
     pub _localCount: i32,
     pub _maxLocalCount: i32,
@@ -179,10 +183,16 @@ pub struct LocalVariables_VariableScope {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Start: i32,
     pub Stop: i32,
-    pub Variable: *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
-    pub Parent: *mut crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope,
-    pub ChildScopes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope,
+    pub Variable: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::LocalVariable,
+    >,
+    pub Parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope,
+    >,
+    pub ChildScopes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope,
+        >,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LocalVariables+VariableScope")]

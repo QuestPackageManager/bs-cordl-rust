@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct ScreenCaptureCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cache: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType,
-        *mut crate::UnityEngine::Texture2D,
+    pub _cache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType,
+            *mut crate::UnityEngine::Texture2D,
+        >,
     >,
 }
 #[cfg(feature = "ScreenCaptureCache")]

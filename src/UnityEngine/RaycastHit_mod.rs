@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+RaycastHit")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RaycastHit {
     pub m_Point: crate::UnityEngine::Vector3,
     pub m_Normal: crate::UnityEngine::Vector3,

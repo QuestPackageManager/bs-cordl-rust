@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct OnScreenControl {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_Control: *mut crate::UnityEngine::InputSystem::InputControl,
-    pub m_NextControlOnDevice: *mut crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
+    pub m_Control: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputControl,
+    >,
+    pub m_NextControlOnDevice: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
+    >,
     pub m_InputEventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenControl")]
@@ -178,12 +182,14 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OnScreenControl_OnScreenDeviceInfo {
     pub eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     pub buffer: crate::Unity::Collections::NativeArray_1<u8>,
-    pub device: *mut crate::UnityEngine::InputSystem::InputDevice,
-    pub firstControl: *mut crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
+    pub device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+    pub firstControl: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

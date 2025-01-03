@@ -3,38 +3,51 @@
 #[derive(Debug)]
 pub struct TextElement {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
-    pub _uitkTextHandle_k__BackingField: *mut crate::UnityEngine::UIElements::UITKTextHandle,
-    pub m_Text: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _uitkTextHandle_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UITKTextHandle,
+    >,
+    pub m_Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_EnableRichText: bool,
     pub m_ParseEscapeSequences: bool,
     pub m_DisplayTooltipWhenElided: bool,
     pub _isElided_k__BackingField: bool,
-    pub elidedText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub elidedText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_WasElided: bool,
-    pub editingManipulator: *mut crate::UnityEngine::UIElements::TextEditingManipulator,
+    pub editingManipulator: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextEditingManipulator,
+    >,
     pub m_Multiline: bool,
-    pub m_TouchScreenKeyboard: *mut crate::UnityEngine::TouchScreenKeyboard,
+    pub m_TouchScreenKeyboard: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TouchScreenKeyboard,
+    >,
     pub m_KeyboardType: crate::UnityEngine::TouchScreenKeyboardType,
     pub m_HideMobileInput: bool,
     pub m_IsReadOnly: bool,
     pub m_MaxLength: i32,
     pub _UnityEngine_UIElements_ITextEdition_isDelayed_k__BackingField: bool,
-    pub _UnityEngine_UIElements_ITextEdition_AcceptCharacter_k__BackingField: *mut crate::System::Func_2<
-        char,
-        bool,
+    pub _UnityEngine_UIElements_ITextEdition_AcceptCharacter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<char, bool>,
     >,
-    pub _UnityEngine_UIElements_ITextEdition_UpdateScrollOffset_k__BackingField: *mut crate::System::Action_1<
-        bool,
+    pub _UnityEngine_UIElements_ITextEdition_UpdateScrollOffset_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<bool>,
     >,
-    pub _UnityEngine_UIElements_ITextEdition_UpdateValueFromText_k__BackingField: *mut crate::System::Action,
-    pub _UnityEngine_UIElements_ITextEdition_UpdateTextFromValue_k__BackingField: *mut crate::System::Action,
-    pub _UnityEngine_UIElements_ITextEdition_MoveFocusToCompositeRoot_k__BackingField: *mut crate::System::Action,
-    pub m_RenderedText: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_OriginalText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _UnityEngine_UIElements_ITextEdition_UpdateValueFromText_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub _UnityEngine_UIElements_ITextEdition_UpdateTextFromValue_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub _UnityEngine_UIElements_ITextEdition_MoveFocusToCompositeRoot_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub m_RenderedText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_OriginalText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_MaskChar: char,
     pub m_IsPassword: bool,
     pub m_AutoCorrection: bool,
-    pub m_SelectingManipulator: *mut crate::UnityEngine::UIElements::TextSelectingManipulator,
+    pub m_SelectingManipulator: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextSelectingManipulator,
+    >,
     pub m_IsSelectable: bool,
     pub _UnityEngine_UIElements_ITextSelection_doubleClickSelectsWord_k__BackingField: bool,
     pub _UnityEngine_UIElements_ITextSelection_tripleClickSelectsLine_k__BackingField: bool,
@@ -1336,10 +1349,18 @@ for crate::UnityEngine::UIElements::TextElement_UxmlFactory {
 #[derive(Debug)]
 pub struct TextElement_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
-    pub m_Text: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_EnableRichText: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_ParseEscapeSequences: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_DisplayTooltipWhenElided: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    pub m_Text: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_EnableRichText: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_ParseEscapeSequences: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_DisplayTooltipWhenElided: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TextElement+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

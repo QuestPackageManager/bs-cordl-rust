@@ -3,16 +3,36 @@
 #[derive(Debug)]
 pub struct ReflectedPropertyBagProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_CreatePropertyMethod: *mut crate::System::Reflection::MethodInfo,
-    pub m_CreatePropertyBagMethod: *mut crate::System::Reflection::MethodInfo,
-    pub m_CreateIndexedCollectionPropertyBagMethod: *mut crate::System::Reflection::MethodInfo,
-    pub m_CreateSetPropertyBagMethod: *mut crate::System::Reflection::MethodInfo,
-    pub m_CreateKeyValueCollectionPropertyBagMethod: *mut crate::System::Reflection::MethodInfo,
-    pub m_CreateKeyValuePairPropertyBagMethod: *mut crate::System::Reflection::MethodInfo,
-    pub m_CreateArrayPropertyBagMethod: *mut crate::System::Reflection::MethodInfo,
-    pub m_CreateListPropertyBagMethod: *mut crate::System::Reflection::MethodInfo,
-    pub m_CreateHashSetPropertyBagMethod: *mut crate::System::Reflection::MethodInfo,
-    pub m_CreateDictionaryPropertyBagMethod: *mut crate::System::Reflection::MethodInfo,
+    pub m_CreatePropertyMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MethodInfo,
+    >,
+    pub m_CreatePropertyBagMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MethodInfo,
+    >,
+    pub m_CreateIndexedCollectionPropertyBagMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MethodInfo,
+    >,
+    pub m_CreateSetPropertyBagMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MethodInfo,
+    >,
+    pub m_CreateKeyValueCollectionPropertyBagMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MethodInfo,
+    >,
+    pub m_CreateKeyValuePairPropertyBagMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MethodInfo,
+    >,
+    pub m_CreateArrayPropertyBagMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MethodInfo,
+    >,
+    pub m_CreateListPropertyBagMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MethodInfo,
+    >,
+    pub m_CreateHashSetPropertyBagMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MethodInfo,
+    >,
+    pub m_CreateDictionaryPropertyBagMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MethodInfo,
+    >,
 }
 #[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct CmsPbeKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    pub salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    pub salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub iterationCount: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsPbeKey")]

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ObservableVariableSO_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub didChangeEvent: *mut crate::System::Action,
+    pub didChangeEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _value: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

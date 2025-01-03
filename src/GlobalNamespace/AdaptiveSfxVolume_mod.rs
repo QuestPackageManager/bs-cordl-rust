@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct AdaptiveSfxVolume {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioManager: *mut crate::GlobalNamespace::AudioManagerSO,
-    pub _initData: *mut crate::GlobalNamespace::AdaptiveSfxVolume_InitData,
+    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AdaptiveSfxVolume_InitData,
+    >,
     pub _minThreshold: f32,
-    pub _buffer: *mut crate::GlobalNamespace::MomentaryLoudnessBuffer,
-    pub _lufsMeter: *mut crate::LufsMetering::LufsMeter,
-    pub _loudnessHistory: *mut crate::GlobalNamespace::MomentaryLoudnessHistory,
+    pub _buffer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MomentaryLoudnessBuffer,
+    >,
+    pub _lufsMeter: quest_hook::libil2cpp::Gc<crate::LufsMetering::LufsMeter>,
+    pub _loudnessHistory: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MomentaryLoudnessHistory,
+    >,
 }
 #[cfg(feature = "AdaptiveSfxVolume")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

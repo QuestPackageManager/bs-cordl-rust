@@ -1,6 +1,6 @@
 #[cfg(feature = "System+RuntimeFieldHandle")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RuntimeFieldHandle {
     pub value: crate::System::IntPtr,
 }

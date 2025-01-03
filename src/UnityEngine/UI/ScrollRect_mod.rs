@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ScrollRect {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
-    pub m_Content: *mut crate::UnityEngine::RectTransform,
+    pub m_Content: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_Horizontal: bool,
     pub m_Vertical: bool,
     pub m_MovementType: crate::UnityEngine::UI::ScrollRect_MovementType,
@@ -11,17 +11,23 @@ pub struct ScrollRect {
     pub m_Inertia: bool,
     pub m_DecelerationRate: f32,
     pub m_ScrollSensitivity: f32,
-    pub m_Viewport: *mut crate::UnityEngine::RectTransform,
-    pub m_HorizontalScrollbar: *mut crate::UnityEngine::UI::Scrollbar,
-    pub m_VerticalScrollbar: *mut crate::UnityEngine::UI::Scrollbar,
+    pub m_Viewport: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub m_HorizontalScrollbar: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Scrollbar,
+    >,
+    pub m_VerticalScrollbar: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Scrollbar,
+    >,
     pub m_HorizontalScrollbarVisibility: crate::UnityEngine::UI::ScrollRect_ScrollbarVisibility,
     pub m_VerticalScrollbarVisibility: crate::UnityEngine::UI::ScrollRect_ScrollbarVisibility,
     pub m_HorizontalScrollbarSpacing: f32,
     pub m_VerticalScrollbarSpacing: f32,
-    pub m_OnValueChanged: *mut crate::UnityEngine::UI::ScrollRect_ScrollRectEvent,
+    pub m_OnValueChanged: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::ScrollRect_ScrollRectEvent,
+    >,
     pub m_PointerStartLocalCursor: crate::UnityEngine::Vector2,
     pub m_ContentStartPosition: crate::UnityEngine::Vector2,
-    pub m_ViewRect: *mut crate::UnityEngine::RectTransform,
+    pub m_ViewRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_ContentBounds: crate::UnityEngine::Bounds,
     pub m_ViewBounds: crate::UnityEngine::Bounds,
     pub m_Velocity: crate::UnityEngine::Vector2,
@@ -35,11 +41,17 @@ pub struct ScrollRect {
     pub m_VSliderExpand: bool,
     pub m_HSliderHeight: f32,
     pub m_VSliderWidth: f32,
-    pub m_Rect: *mut crate::UnityEngine::RectTransform,
-    pub m_HorizontalScrollbarRect: *mut crate::UnityEngine::RectTransform,
-    pub m_VerticalScrollbarRect: *mut crate::UnityEngine::RectTransform,
+    pub m_Rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub m_HorizontalScrollbarRect: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
+    >,
+    pub m_VerticalScrollbarRect: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
+    >,
     pub m_Tracker: crate::UnityEngine::DrivenRectTransformTracker,
-    pub m_Corners: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    pub m_Corners: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
 }
 #[cfg(feature = "UnityEngine+UI+ScrollRect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

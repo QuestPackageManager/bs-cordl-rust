@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct StringEnumConverter {
     __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
-    pub _NamingStrategy_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::NamingStrategy,
+    pub _NamingStrategy_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::NamingStrategy,
+    >,
     pub _AllowIntegerValues_k__BackingField: bool,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+StringEnumConverter")]

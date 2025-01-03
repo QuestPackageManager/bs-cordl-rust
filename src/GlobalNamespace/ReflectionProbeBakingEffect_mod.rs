@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ReflectionProbeBakingEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _material: *mut crate::UnityEngine::Material,
+    pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
 #[cfg(feature = "ReflectionProbeBakingEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

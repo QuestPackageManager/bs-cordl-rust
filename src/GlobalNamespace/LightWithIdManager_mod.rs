@@ -3,17 +3,25 @@
 #[derive(Debug)]
 pub struct LightWithIdManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub didChangeSomeColorsThisFrameEvent: *mut crate::System::Action,
-    pub _lights: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::GlobalNamespace::ILightWithId,
+    pub didChangeSomeColorsThisFrameEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub _lights: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::ILightWithId,
+            >,
         >,
     >,
-    pub _colors: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Nullable_1<crate::UnityEngine::Color>,
+    pub _colors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Nullable_1<crate::UnityEngine::Color>,
+        >,
     >,
-    pub _lightsToUnregister: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::ILightWithId,
+    pub _lightsToUnregister: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::ILightWithId,
+        >,
     >,
     pub _didChangeSomeColorsThisFrame: bool,
 }

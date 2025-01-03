@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct XDeclaration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _version: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _encoding: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _standalone: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _encoding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _standalone: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Linq+XDeclaration")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

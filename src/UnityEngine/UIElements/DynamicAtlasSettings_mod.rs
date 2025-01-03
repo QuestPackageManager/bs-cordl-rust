@@ -7,7 +7,9 @@ pub struct DynamicAtlasSettings {
     pub m_MaxAtlasSize: i32,
     pub m_MaxSubTextureSize: i32,
     pub m_ActiveFilters: crate::UnityEngine::UIElements::DynamicAtlasFilters,
-    pub m_CustomFilter: *mut crate::UnityEngine::UIElements::DynamicAtlasCustomFilter,
+    pub m_CustomFilter: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::DynamicAtlasCustomFilter,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+DynamicAtlasSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

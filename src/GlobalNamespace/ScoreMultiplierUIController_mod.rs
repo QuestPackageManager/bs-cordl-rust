@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct ScoreMultiplierUIController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _multiplierTexts: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::TMPro::TextMeshProUGUI,
+    pub _multiplierTexts: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TextMeshProUGUI>,
     >,
-    pub _multiplierProgressImage: *mut crate::UnityEngine::UI::Image,
-    pub _multiplierAnimator: *mut crate::UnityEngine::Animator,
-    pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
+    pub _multiplierProgressImage: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Image,
+    >,
+    pub _multiplierAnimator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
+    pub _scoreController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IScoreController,
+    >,
     pub _prevMultiplier: i32,
     pub _multiplierIncreasedTriggerId: i32,
     pub _progressTarget: f32,

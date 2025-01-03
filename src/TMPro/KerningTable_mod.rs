@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct KerningTable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub kerningPairs: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::KerningPair,
+    pub kerningPairs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::TMPro::KerningPair>,
     >,
 }
 #[cfg(feature = "TMPro+KerningTable")]

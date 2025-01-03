@@ -5,8 +5,10 @@ pub struct CanvasGroupStateTransition {
     __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
         *mut crate::UnityEngine::CanvasGroup,
     >,
-    pub _transition: *mut crate::GlobalNamespace::CanvasGroupTransitionSO,
-    pub _floatTween: *mut crate::Tweening::FloatTween,
+    pub _transition: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CanvasGroupTransitionSO,
+    >,
+    pub _floatTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
 }
 #[cfg(feature = "CanvasGroupStateTransition")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

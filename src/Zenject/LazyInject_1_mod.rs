@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct LazyInject_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _context: *mut crate::Zenject::InjectContext,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
     pub _hasValue: bool,
     pub _value: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,

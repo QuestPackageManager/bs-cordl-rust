@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct GravitySensor {
     __cordl_parent: crate::UnityEngine::InputSystem::Sensor,
-    pub _gravity_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    pub _gravity_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+GravitySensor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

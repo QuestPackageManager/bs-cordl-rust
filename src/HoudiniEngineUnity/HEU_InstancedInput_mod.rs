@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HEU_InstancedInput {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _instancedGameObject: *mut crate::UnityEngine::GameObject,
+    pub _instancedGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _rotationOffset: crate::UnityEngine::Vector3,
     pub _scaleOffset: crate::UnityEngine::Vector3,
 }

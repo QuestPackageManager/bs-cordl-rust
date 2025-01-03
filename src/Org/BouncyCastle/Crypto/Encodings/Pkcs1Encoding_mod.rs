@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct Pkcs1Encoding {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    pub engine: *mut crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
+    pub engine: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
+    >,
     pub forEncryption: bool,
     pub forPrivateKey: bool,
     pub useStrictLength: bool,
     pub pLen: i32,
-    pub fallback: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub blockBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub fallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub blockBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Encodings+Pkcs1Encoding")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

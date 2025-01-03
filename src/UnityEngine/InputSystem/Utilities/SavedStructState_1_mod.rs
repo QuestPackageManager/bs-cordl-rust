@@ -4,10 +4,10 @@
 pub struct SavedStructState_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_State: T,
-    pub m_RestoreAction: *mut crate::UnityEngine::InputSystem::Utilities::SavedStructState_1_TypedRestore<
-        T,
+    pub m_RestoreAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Utilities::SavedStructState_1_TypedRestore<T>,
     >,
-    pub m_StaticDisposeCurrentState: *mut crate::System::Action,
+    pub m_StaticDisposeCurrentState: quest_hook::libil2cpp::Gc<crate::System::Action>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+SavedStructState_1")]

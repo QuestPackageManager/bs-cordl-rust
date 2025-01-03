@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct X509Name {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub ordering: *mut crate::System::Collections::IList,
-    pub converter: *mut crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter,
-    pub values: *mut crate::System::Collections::IList,
-    pub added: *mut crate::System::Collections::IList,
-    pub seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    pub ordering: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub converter: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter,
+    >,
+    pub values: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub added: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+X509Name")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

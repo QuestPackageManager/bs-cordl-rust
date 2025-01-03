@@ -3,33 +3,41 @@
 #[derive(Debug)]
 pub struct FireworkItemController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _particleSystems: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem,
+    pub _particleSystems: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem,
+        >,
     >,
-    pub _lights: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+    pub _lights: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+        >,
     >,
-    pub _audioSource: *mut crate::UnityEngine::AudioSource,
+    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _lightFlashDuration: f32,
-    pub _lightIntensityCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub _lightIntensityCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
     pub _lightIntensityMultiplier: f32,
     pub _randomizeColor: bool,
     pub _lightsColor: crate::UnityEngine::Color,
-    pub _lightsColorGradient: *mut crate::UnityEngine::Gradient,
+    pub _lightsColorGradient: quest_hook::libil2cpp::Gc<crate::UnityEngine::Gradient>,
     pub _randomizeSpeed: bool,
     pub _minSpeedMultiplier: f32,
     pub _maxSpeedMultiplier: f32,
-    pub _explosionClips: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::AudioClip,
+    pub _explosionClips: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
     >,
-    pub _randomAudioPicker: *mut crate::GlobalNamespace::RandomObjectPicker_1<
-        *mut crate::UnityEngine::AudioClip,
+    pub _randomAudioPicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RandomObjectPicker_1<*mut crate::UnityEngine::AudioClip>,
     >,
-    pub _directionalLight: *mut crate::GlobalNamespace::DirectionalLight,
+    pub _directionalLight: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DirectionalLight,
+    >,
     pub _directionalLightIntensity: f32,
     pub _initialized: bool,
-    pub didFinishEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::FireworkItemController,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::FireworkItemController>,
     >,
 }
 #[cfg(feature = "FireworkItemController")]
@@ -211,11 +219,11 @@ for crate::GlobalNamespace::FireworkItemController {
 #[derive(Debug)]
 pub struct FireworkItemController_FireworkItemParticleSystem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _particleSystem: *mut crate::UnityEngine::ParticleSystem,
+    pub _particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
     pub _isSubemitter: bool,
     pub _useMainColor: bool,
     pub _useOwnGradient: bool,
-    pub _particleColorGradient: *mut crate::UnityEngine::Gradient,
+    pub _particleColorGradient: quest_hook::libil2cpp::Gc<crate::UnityEngine::Gradient>,
     pub _randomizeSpeed: bool,
 }
 #[cfg(feature = "FireworkItemController+FireworkItemParticleSystem")]

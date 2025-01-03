@@ -1,8 +1,8 @@
 #[cfg(feature = "NoteCutInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NoteCutInfo {
-    pub noteData: *mut crate::GlobalNamespace::NoteData,
+    pub noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
     pub speedOK: bool,
     pub directionOK: bool,
     pub saberTypeOK: bool,
@@ -20,7 +20,9 @@ pub struct NoteCutInfo {
     pub inverseWorldRotation: crate::UnityEngine::Quaternion,
     pub noteRotation: crate::UnityEngine::Quaternion,
     pub notePosition: crate::UnityEngine::Vector3,
-    pub saberMovementData: *mut crate::GlobalNamespace::ISaberMovementData,
+    pub saberMovementData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ISaberMovementData,
+    >,
 }
 #[cfg(feature = "NoteCutInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

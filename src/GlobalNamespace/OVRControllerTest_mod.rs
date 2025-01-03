@@ -96,11 +96,13 @@ for crate::GlobalNamespace::BoolMonitor_OVRControllerTest_BoolGenerator {
 #[derive(Debug)]
 pub struct OVRControllerTest {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub uiText: *mut crate::UnityEngine::UI::Text,
-    pub monitors: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::OVRControllerTest_BoolMonitor,
+    pub uiText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub monitors: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::OVRControllerTest_BoolMonitor,
+        >,
     >,
-    pub data: *mut crate::System::Text::StringBuilder,
+    pub data: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
 }
 #[cfg(feature = "OVRControllerTest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -176,8 +178,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRController
 #[derive(Debug)]
 pub struct OVRControllerTest_BoolMonitor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_generator: *mut crate::GlobalNamespace::BoolMonitor_OVRControllerTest_BoolGenerator,
+    pub m_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_generator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BoolMonitor_OVRControllerTest_BoolGenerator,
+    >,
     pub m_prevValue: bool,
     pub m_currentValue: bool,
     pub m_currentValueRecentlyChanged: bool,

@@ -3,21 +3,25 @@
 #[derive(Debug)]
 pub struct HEU_PDGSession {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _pdgAssets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_PDGAssetLink,
+    pub _pdgAssets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_PDGAssetLink,
+        >,
     >,
     pub _pdgMaxProcessEvents: i32,
-    pub _pdgQueryEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::HoudiniEngineUnity::HAPI_PDG_EventInfo,
+    pub _pdgQueryEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::HoudiniEngineUnity::HAPI_PDG_EventInfo>,
     >,
     pub _pdgContextSize: i32,
-    pub _pdgContextIDs: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _pdgContextIDs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     pub _errored: bool,
-    pub _errorMsg: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _errorMsg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _pdgState: crate::HoudiniEngineUnity::HAPI_PDG_State,
-    pub _pdgEventMessages: *mut crate::System::Text::StringBuilder,
-    pub _eventMessageColorCode: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _pdgEventMessages: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    pub _eventMessageColorCode: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession")]

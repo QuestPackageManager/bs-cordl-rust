@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct G_AudioText {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_DBText: *mut crate::UnityEngine::UI::Text,
-    pub m_graphyManager: *mut crate::Tayx::Graphy::GraphyManager,
-    pub m_audioMonitor: *mut crate::Tayx::Graphy::Audio::G_AudioMonitor,
+    pub m_DBText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub m_graphyManager: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
+    pub m_audioMonitor: quest_hook::libil2cpp::Gc<
+        crate::Tayx::Graphy::Audio::G_AudioMonitor,
+    >,
     pub m_updateRate: i32,
     pub m_deltaTimeOffset: f32,
 }

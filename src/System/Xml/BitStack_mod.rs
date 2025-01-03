@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BitStack {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub bitStack: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub bitStack: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub stackPos: i32,
     pub curr: u32,
 }

@@ -3,16 +3,24 @@
 #[derive(Debug)]
 pub struct EditColorSchemeController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _colorSchemeColorsToggleGroup: *mut crate::GlobalNamespace::ColorSchemeColorsToggleGroup,
-    pub _rgbPanelController: *mut crate::GlobalNamespace::RGBPanelController,
-    pub _hsvPanelController: *mut crate::GlobalNamespace::HSVPanelController,
-    pub _previousColorPanelController: *mut crate::GlobalNamespace::PreviousColorPanelController,
-    pub _closeButton: *mut crate::UnityEngine::UI::Button,
-    pub didFinishEvent: *mut crate::System::Action,
-    pub didChangeColorSchemeEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::ColorScheme,
+    pub _colorSchemeColorsToggleGroup: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemeColorsToggleGroup,
     >,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _rgbPanelController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RGBPanelController,
+    >,
+    pub _hsvPanelController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HSVPanelController,
+    >,
+    pub _previousColorPanelController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PreviousColorPanelController,
+    >,
+    pub _closeButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub didChangeColorSchemeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::ColorScheme>,
+    >,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
 }
 #[cfg(feature = "EditColorSchemeController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

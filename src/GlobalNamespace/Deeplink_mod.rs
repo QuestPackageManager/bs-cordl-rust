@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct Deeplink {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Destination: *mut quest_hook::libil2cpp::Il2CppString,
-    pub LevelID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub PackID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Difficulty: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Characteristic: *mut quest_hook::libil2cpp::Il2CppString,
-    pub MultiplayerLobbyCode: *mut quest_hook::libil2cpp::Il2CppString,
-    pub MultiplayerSecret: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Destination: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub LevelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub PackID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Difficulty: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Characteristic: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub MultiplayerLobbyCode: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub MultiplayerSecret: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "Deeplink")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

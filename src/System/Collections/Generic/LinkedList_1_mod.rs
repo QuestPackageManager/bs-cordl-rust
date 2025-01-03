@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct LinkedList_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub head: *mut crate::System::Collections::Generic::LinkedListNode_1<T>,
+    pub head: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedListNode_1<T>,
+    >,
     pub count: i32,
     pub version: i32,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _siInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _siInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::SerializationInfo,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Collections+Generic+LinkedList_1")]
@@ -787,10 +791,14 @@ for crate::System::Collections::Generic::LinkedList_1<T> {
 }
 #[cfg(feature = "System+Collections+Generic+LinkedList_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LinkedList_1_Enumerator<T: quest_hook::libil2cpp::Type> {
-    pub _list: *mut crate::System::Collections::Generic::LinkedList_1<T>,
-    pub _node: *mut crate::System::Collections::Generic::LinkedListNode_1<T>,
+    pub _list: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedList_1<T>,
+    >,
+    pub _node: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedListNode_1<T>,
+    >,
     pub _version: i32,
     pub _current: T,
     pub _index: i32,

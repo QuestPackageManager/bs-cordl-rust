@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BloomPrePassGraphicsSettingsPresetsSO {
     __cordl_parent: crate::GlobalNamespace::NamedPresetsSO,
-    pub _presets: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset,
+    pub _presets: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO_Preset,
+        >,
     >,
 }
 #[cfg(feature = "BloomPrePassGraphicsSettingsPresetsSO")]
@@ -98,7 +100,9 @@ for crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO {
 #[derive(Debug)]
 pub struct BloomPrePassGraphicsSettingsPresetsSO_Preset {
     __cordl_parent: crate::GlobalNamespace::NamedPreset,
-    pub bloomPrePassEffect: *mut crate::GlobalNamespace::BloomPrePassEffectSO,
+    pub bloomPrePassEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassEffectSO,
+    >,
 }
 #[cfg(feature = "BloomPrePassGraphicsSettingsPresetsSO+Preset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

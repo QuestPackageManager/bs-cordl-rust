@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PropertyExpression {
     __cordl_parent: crate::System::Linq::Expressions::MemberExpression,
-    pub _property: *mut crate::System::Reflection::PropertyInfo,
+    pub _property: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
 }
 #[cfg(feature = "System+Linq+Expressions+PropertyExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

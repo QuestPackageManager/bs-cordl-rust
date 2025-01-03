@@ -1,9 +1,9 @@
 #[cfg(feature = "UnityEngine+SkeletonBone")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SkeletonBone {
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub parentName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub parentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub position: crate::UnityEngine::Vector3,
     pub rotation: crate::UnityEngine::Quaternion,
     pub scale: crate::UnityEngine::Vector3,

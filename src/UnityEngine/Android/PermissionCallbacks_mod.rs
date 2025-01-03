@@ -3,14 +3,14 @@
 #[derive(Debug)]
 pub struct PermissionCallbacks {
     __cordl_parent: crate::UnityEngine::AndroidJavaProxy,
-    pub PermissionGranted: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub PermissionGranted: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub PermissionDenied: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub PermissionDenied: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub PermissionDeniedAndDontAskAgain: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub PermissionDeniedAndDontAskAgain: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "UnityEngine+Android+PermissionCallbacks")]

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct BcpgOutputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    pub outStr: *mut crate::System::IO::Stream,
-    pub partialBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub partialBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub partialBufferLength: i32,
     pub partialPower: i32,
     pub partialOffset: i32,

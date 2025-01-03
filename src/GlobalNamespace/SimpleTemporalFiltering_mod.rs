@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct SimpleTemporalFiltering {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _temporalFilteringTextures: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::RenderTexture,
+    pub _temporalFilteringTextures: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::RenderTexture>,
     >,
     pub _prevTemporalFilteringTextureIdx: i32,
-    pub _temporalFilteringMaterial: *mut crate::UnityEngine::Material,
+    pub _temporalFilteringMaterial: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Material,
+    >,
     pub _bufferTexID: i32,
 }
 #[cfg(feature = "SimpleTemporalFiltering")]

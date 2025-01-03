@@ -3,15 +3,27 @@
 #[derive(Debug)]
 pub struct PlatformLeaderboardsModel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _gameplayModifiersModel: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
-    pub _leaderboardScoreUploader: *mut crate::GlobalNamespace::LeaderboardScoreUploader,
-    pub _platformUserModel: *mut crate::GlobalNamespace::IPlatformUserModel,
-    pub _platformLeaderboardsHandler: *mut crate::GlobalNamespace::PlatformLeaderboardsHandler,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub allScoresDidUploadEvent: *mut crate::System::Action,
-    pub _currentGetScoreRequest: *mut crate::GlobalNamespace::HMAsyncRequest,
+    pub _gameplayModifiersModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiersModelSO,
+    >,
+    pub _leaderboardScoreUploader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LeaderboardScoreUploader,
+    >,
+    pub _platformUserModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IPlatformUserModel,
+    >,
+    pub _platformLeaderboardsHandler: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlatformLeaderboardsHandler,
+    >,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub allScoresDidUploadEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _currentGetScoreRequest: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HMAsyncRequest,
+    >,
     pub _state: crate::GlobalNamespace::PlatformLeaderboardsModel_State,
-    pub _playerId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "PlatformLeaderboardsModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -447,8 +459,8 @@ pub struct PlatformLeaderboardsModel_LeaderboardScore {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub score: i32,
     pub rank: i32,
-    pub playerName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub playerId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

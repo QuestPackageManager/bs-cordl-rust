@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ByteStack {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub stack: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub stack: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub growthRate: i32,
     pub top: i32,
     pub _cordl_size: i32,

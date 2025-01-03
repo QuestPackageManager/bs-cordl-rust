@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct XmlSchemaIdentityConstraint {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaAnnotated,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub selector: *mut crate::System::Xml::Schema::XmlSchemaXPath,
-    pub fields: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-    pub qualifiedName: *mut crate::System::Xml::XmlQualifiedName,
-    pub compiledConstraint: *mut crate::System::Xml::Schema::CompiledIdentityConstraint,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub selector: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaXPath>,
+    pub fields: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+    >,
+    pub qualifiedName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub compiledConstraint: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::CompiledIdentityConstraint,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaIdentityConstraint")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

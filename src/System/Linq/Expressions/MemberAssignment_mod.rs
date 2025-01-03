@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MemberAssignment {
     __cordl_parent: crate::System::Linq::Expressions::MemberBinding,
-    pub _expression: *mut crate::System::Linq::Expressions::Expression,
+    pub _expression: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+MemberAssignment")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

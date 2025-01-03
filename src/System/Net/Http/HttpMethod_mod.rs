@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HttpMethod {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub method: *mut quest_hook::libil2cpp::Il2CppString,
+    pub method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Net+Http+HttpMethod")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

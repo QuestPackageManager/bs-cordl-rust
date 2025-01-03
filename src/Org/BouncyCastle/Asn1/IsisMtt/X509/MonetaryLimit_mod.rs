@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct MonetaryLimit {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub currency: *mut crate::Org::BouncyCastle::Asn1::DerPrintableString,
-    pub amount: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub exponent: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+    pub currency: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerPrintableString,
+    >,
+    pub amount: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub exponent: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+MonetaryLimit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "ENet+ENetAddress")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ENetAddress {
     padding: [u8; 18usize],
 }

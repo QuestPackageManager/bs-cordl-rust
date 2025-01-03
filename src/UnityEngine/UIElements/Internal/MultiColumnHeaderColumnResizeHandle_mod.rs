@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MultiColumnHeaderColumnResizeHandle {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
-    pub _dragArea_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub _dragArea_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnResizeHandle")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct AsyncInstantiateOperation {
     __cordl_parent: crate::UnityEngine::AsyncOperation,
-    pub m_Result: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Object,
+    pub m_Result: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
     >,
 }
 #[cfg(feature = "UnityEngine+AsyncInstantiateOperation")]

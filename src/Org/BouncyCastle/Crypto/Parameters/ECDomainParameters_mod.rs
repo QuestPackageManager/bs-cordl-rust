@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct ECDomainParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-    pub seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub g: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    pub n: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub h: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub hInv: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
+    pub seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+    pub n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub h: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub hInv: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ECDomainParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

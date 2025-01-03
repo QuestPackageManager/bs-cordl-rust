@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct MergeFailedEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub _Table_k__BackingField: *mut crate::System::Data::DataTable,
-    pub _Conflict_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Table_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataTable,
+    >,
+    pub _Conflict_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Data+MergeFailedEventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

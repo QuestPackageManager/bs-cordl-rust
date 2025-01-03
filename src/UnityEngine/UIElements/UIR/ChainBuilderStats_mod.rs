@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+ChainBuilderStats")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ChainBuilderStats {
     pub elementsAdded: u32,
     pub elementsRemoved: u32,

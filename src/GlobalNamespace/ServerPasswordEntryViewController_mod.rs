@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct ServerPasswordEntryViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _passwordInput: *mut crate::HMUI::InputFieldView,
-    pub _uiKeyboard: *mut crate::HMUI::UIKeyboard,
-    pub didFinishEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::INetworkPlayer,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _passwordInput: quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
+    pub _uiKeyboard: quest_hook::libil2cpp::Gc<crate::HMUI::UIKeyboard>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::INetworkPlayer,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _selectedNetworkPlayer: *mut crate::GlobalNamespace::INetworkPlayer,
+    pub _selectedNetworkPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INetworkPlayer,
+    >,
 }
 #[cfg(feature = "ServerPasswordEntryViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

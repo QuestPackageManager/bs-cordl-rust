@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct WellKnownClientTypeEntry {
     __cordl_parent: crate::System::Runtime::Remoting::TypeEntry,
-    pub obj_type: *mut crate::System::Type,
-    pub obj_url: *mut quest_hook::libil2cpp::Il2CppString,
-    pub app_url: *mut quest_hook::libil2cpp::Il2CppString,
+    pub obj_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub obj_url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub app_url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Runtime+Remoting+WellKnownClientTypeEntry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

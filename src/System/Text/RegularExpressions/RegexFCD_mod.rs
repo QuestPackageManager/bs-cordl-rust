@@ -1,9 +1,11 @@
 #[cfg(feature = "System+Text+RegularExpressions+RegexFCD")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RegexFCD {
-    pub _fcStack: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Text::RegularExpressions::RegexFC,
+    pub _fcStack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Text::RegularExpressions::RegexFC,
+        >,
     >,
     pub _intStack: crate::System::Collections::Generic::ValueListBuilder_1<i32>,
     pub _skipAllChildren: bool,

@@ -3,16 +3,22 @@
 #[derive(Debug)]
 pub struct MulticolorAvatarPartPropertyBlockSetter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _colorDataList: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_ColorData,
+    pub _colorDataList: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_ColorData,
+        >,
     >,
-    pub _renderer: *mut crate::UnityEngine::Renderer,
+    pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
     pub _editInPlayMode: bool,
-    pub _colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-    pub _rimLightColors: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector4,
+    pub _colors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
-    pub _boostColors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+    pub _rimLightColors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+    >,
+    pub _boostColors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+    >,
     pub _highlighted: bool,
     pub _uvSegment: i32,
 }

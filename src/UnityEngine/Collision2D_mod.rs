@@ -10,11 +10,11 @@ pub struct Collision2D {
     pub m_RelativeVelocity: crate::UnityEngine::Vector2,
     pub m_Enabled: i32,
     pub m_ContactCount: i32,
-    pub m_ReusedContacts: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::ContactPoint2D,
+    pub m_ReusedContacts: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ContactPoint2D>,
     >,
-    pub m_LegacyContacts: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::ContactPoint2D,
+    pub m_LegacyContacts: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ContactPoint2D>,
     >,
 }
 #[cfg(feature = "UnityEngine+Collision2D")]

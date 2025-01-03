@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct MemberInfoSerializationHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_memberName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_reflectedType: *mut crate::System::RuntimeType,
-    pub m_signature: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_signature2: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_reflectedType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+    pub m_signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_signature2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_memberType: crate::System::Reflection::MemberTypes,
-    pub m_info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+    pub m_info: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::SerializationInfo,
+    >,
 }
 #[cfg(feature = "System+Reflection+MemberInfoSerializationHolder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

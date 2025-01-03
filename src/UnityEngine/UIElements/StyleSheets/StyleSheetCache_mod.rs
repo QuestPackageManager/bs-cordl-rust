@@ -90,7 +90,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StyleSheetCache_SheetHandleKey {
     pub sheetInstanceID: i32,
     pub index: i32,

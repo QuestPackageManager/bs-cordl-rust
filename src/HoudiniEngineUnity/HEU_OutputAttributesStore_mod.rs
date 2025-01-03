@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct HEU_OutputAttributesStore {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _attributes: *mut crate::HoudiniEngineUnity::HEU_OutputAttributeDictionary,
+    pub _attributes: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_OutputAttributeDictionary,
+    >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_OutputAttributesStore")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

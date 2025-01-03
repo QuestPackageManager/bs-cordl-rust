@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct Cast5Engine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Kr: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _Km: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub _Kr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub _Km: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub _encrypting: bool,
-    pub _workingKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _workingKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _rounds: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+Cast5Engine")]

@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct CrlEntry {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    pub userCertificate: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub revocationDate: *mut crate::Org::BouncyCastle::Asn1::X509::Time,
-    pub crlEntryExtensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    pub seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    pub userCertificate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerInteger,
+    >,
+    pub revocationDate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::Time,
+    >,
+    pub crlEntryExtensions: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+CrlEntry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

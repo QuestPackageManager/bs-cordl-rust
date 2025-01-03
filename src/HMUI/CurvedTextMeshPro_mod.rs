@@ -4,11 +4,13 @@
 pub struct CurvedTextMeshPro {
     __cordl_parent: crate::TMPro::TextMeshProUGUI,
     pub _useScriptableObjectColors: bool,
-    pub _colorSo: *mut crate::GlobalNamespace::ColorSO,
-    pub _curvedMeshInfos: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo,
+    pub _colorSo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _curvedMeshInfos: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo>,
     >,
-    pub _curvedCanvasSettingsHelper: *mut crate::HMUI::CurvedCanvasSettingsHelper,
+    pub _curvedCanvasSettingsHelper: quest_hook::libil2cpp::Gc<
+        crate::HMUI::CurvedCanvasSettingsHelper,
+    >,
 }
 #[cfg(feature = "HMUI+CurvedTextMeshPro")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -196,9 +198,11 @@ for crate::HMUI::CurvedTextMeshPro {
 }
 #[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CurvedTextMeshPro_CurvedMeshInfo {
-    pub uvs3: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+    pub uvs3: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+    >,
 }
 #[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

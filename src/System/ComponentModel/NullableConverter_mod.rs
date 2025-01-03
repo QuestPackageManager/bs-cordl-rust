@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct NullableConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
-    pub _NullableType_k__BackingField: *mut crate::System::Type,
-    pub _UnderlyingType_k__BackingField: *mut crate::System::Type,
-    pub _UnderlyingTypeConverter_k__BackingField: *mut crate::System::ComponentModel::TypeConverter,
+    pub _NullableType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _UnderlyingType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _UnderlyingTypeConverter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeConverter,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+NullableConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

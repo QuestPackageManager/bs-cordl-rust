@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct MultiplayerMenuClient {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _menuPlayerController: *mut crate::GlobalNamespace::MenuPlayerController,
-    pub _nodePoseSyncStateManager: *mut crate::GlobalNamespace::INodePoseSyncStateManager,
+    pub _menuPlayerController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuPlayerController,
+    >,
+    pub _nodePoseSyncStateManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INodePoseSyncStateManager,
+    >,
 }
 #[cfg(feature = "MultiplayerMenuClient")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CommandEventBase_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<T>,
-    pub m_CommandName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_CommandName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+UIElements+CommandEventBase_1")]

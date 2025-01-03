@@ -3,19 +3,23 @@
 #[derive(Debug)]
 pub struct KCcmBlockCipher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub engine: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    pub engine: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    >,
     pub macSize: i32,
     pub forEncryption: bool,
-    pub initialAssociatedText: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mac: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub macBlock: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub nonce: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub G1: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub s: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub counter: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub associatedText: *mut crate::System::IO::MemoryStream,
-    pub data: *mut crate::System::IO::MemoryStream,
+    pub initialAssociatedText: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub mac: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub macBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub nonce: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub G1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub counter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub associatedText: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
+    pub data: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
     pub Nb_: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+KCcmBlockCipher")]

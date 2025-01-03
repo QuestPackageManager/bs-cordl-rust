@@ -5,7 +5,7 @@ pub struct AssetFileDownloadCancelResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub AssetFileId: u64,
     pub AssetId: u64,
-    pub Filepath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Filepath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Success: bool,
 }
 #[cfg(feature = "Oculus+Platform+Models+AssetFileDownloadCancelResult")]

@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+GameSettings+Controller")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Controller {
     pub position: crate::UnityEngine::Vector3,
     pub rotation: crate::UnityEngine::Vector3,

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ParametersWithID {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    pub id: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub parameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    >,
+    pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ParametersWithID")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

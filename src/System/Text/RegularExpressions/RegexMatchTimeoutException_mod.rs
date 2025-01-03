@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct RegexMatchTimeoutException {
     __cordl_parent: crate::System::TimeoutException,
-    pub _Input_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _Pattern_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Input_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _Pattern_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _MatchTimeout_k__BackingField: crate::System::TimeSpan,
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexMatchTimeoutException")]

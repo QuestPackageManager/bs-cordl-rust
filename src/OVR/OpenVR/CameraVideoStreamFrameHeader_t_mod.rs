@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+CameraVideoStreamFrameHeader_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CameraVideoStreamFrameHeader_t {
     pub eFrameType: crate::OVR::OpenVR::EVRTrackedCameraFrameType,
     pub nWidth: u32,

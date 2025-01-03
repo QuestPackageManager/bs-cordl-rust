@@ -4,9 +4,15 @@
 pub struct VariableMovementDataProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _wasUpdatedThisFrame_k__BackingField: bool,
-    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _njsDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _playerTransforms: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerTransforms,
+    >,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _njsDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
     pub _targetNoteJumpMovementSpeed: f32,
     pub _noteJumpMovementSpeed: f32,
     pub _prevNoteJumpMovementSpeed: f32,
@@ -334,7 +340,7 @@ for crate::GlobalNamespace::VariableMovementDataProvider {
 }
 #[cfg(feature = "VariableMovementDataProvider+InterpolationData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VariableMovementDataProvider_InterpolationData {
     pub _fromValue: f32,
     pub _toValue: f32,

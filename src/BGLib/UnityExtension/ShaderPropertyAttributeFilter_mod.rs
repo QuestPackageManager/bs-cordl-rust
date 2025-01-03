@@ -4,7 +4,7 @@
 pub struct ShaderPropertyAttributeFilter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub propType: crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType,
-    pub nameFilter: *mut quest_hook::libil2cpp::Il2CppString,
+    pub nameFilter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

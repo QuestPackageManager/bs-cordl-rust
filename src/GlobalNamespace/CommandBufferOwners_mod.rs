@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct CommandBufferOwners {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _owners: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::UnityEngine::Object,
+    pub _owners: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<*mut crate::UnityEngine::Object>,
     >,
-    pub commandBuffer: *mut crate::UnityEngine::Rendering::CommandBuffer,
+    pub commandBuffer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Rendering::CommandBuffer,
+    >,
 }
 #[cfg(feature = "CommandBufferOwners")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

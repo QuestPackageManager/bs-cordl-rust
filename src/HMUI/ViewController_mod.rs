@@ -3,17 +3,23 @@
 #[derive(Debug)]
 pub struct ViewController {
     __cordl_parent: crate::HMUI::ViewControllerBase,
-    pub _buttonBinder_k__BackingField: *mut crate::HMUI::ButtonBinder,
-    pub _containerViewController: *mut crate::HMUI::ContainerViewController,
-    pub _parentViewController: *mut crate::HMUI::ViewController,
-    pub _childViewController: *mut crate::HMUI::ViewController,
-    pub _screen: *mut crate::HMUI::Screen,
-    pub _rectTransform: *mut crate::UnityEngine::RectTransform,
-    pub _canvasGroup: *mut crate::UnityEngine::CanvasGroup,
+    pub _buttonBinder_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::HMUI::ButtonBinder,
+    >,
+    pub _containerViewController: quest_hook::libil2cpp::Gc<
+        crate::HMUI::ContainerViewController,
+    >,
+    pub _parentViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    pub _childViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    pub _screen: quest_hook::libil2cpp::Gc<crate::HMUI::Screen>,
+    pub _rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub _canvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
     pub _wasActivatedBefore: bool,
     pub _isActivated: bool,
     pub _isInTransition: bool,
-    pub _graphicRaycaster: *mut crate::UnityEngine::EventSystems::BaseRaycaster,
+    pub _graphicRaycaster: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::BaseRaycaster,
+    >,
 }
 #[cfg(feature = "HMUI+ViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -4,8 +4,8 @@
 pub struct XmlReaderSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub useAsync: bool,
-    pub nameTable: *mut crate::System::Xml::XmlNameTable,
-    pub xmlResolver: *mut crate::System::Xml::XmlResolver,
+    pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+    pub xmlResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
     pub lineNumberOffset: i32,
     pub linePositionOffset: i32,
     pub conformanceLevel: crate::System::Xml::ConformanceLevel,
@@ -18,8 +18,10 @@ pub struct XmlReaderSettings {
     pub dtdProcessing: crate::System::Xml::DtdProcessing,
     pub validationType: crate::System::Xml::ValidationType,
     pub validationFlags: crate::System::Xml::Schema::XmlSchemaValidationFlags,
-    pub schemas: *mut crate::System::Xml::Schema::XmlSchemaSet,
-    pub valEventHandler: *mut crate::System::Xml::Schema::ValidationEventHandler,
+    pub schemas: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+    pub valEventHandler: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::ValidationEventHandler,
+    >,
     pub closeInput: bool,
     pub isReadOnly: bool,
     pub _IsXmlResolverSet_k__BackingField: bool,

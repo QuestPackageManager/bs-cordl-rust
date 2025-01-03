@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CultureAwareComparer {
     __cordl_parent: crate::System::StringComparer,
-    pub _compareInfo: *mut crate::System::Globalization::CompareInfo,
+    pub _compareInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::CompareInfo,
+    >,
     pub _options: crate::System::Globalization::CompareOptions,
 }
 #[cfg(feature = "System+CultureAwareComparer")]

@@ -9,38 +9,39 @@ pub struct NetPeer {
     pub _resendDelay: f64,
     pub _pingSendTimer: i32,
     pub _rttResetTimer: i32,
-    pub _pingTimer: *mut crate::System::Diagnostics::Stopwatch,
+    pub _pingTimer: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::Stopwatch>,
     pub _timeSinceLastPacket: i32,
     pub _remoteDelta: i64,
-    pub _packetPool: *mut crate::LiteNetLib::NetPacketPool,
-    pub _flushLock: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _sendLock: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _shutdownLock: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub NextPeer: *mut crate::LiteNetLib::NetPeer,
-    pub PrevPeer: *mut crate::LiteNetLib::NetPeer,
-    pub _unreliableChannel: *mut crate::System::Collections::Generic::Queue_1<
-        *mut crate::LiteNetLib::NetPacket,
+    pub _packetPool: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacketPool>,
+    pub _flushLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _sendLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _shutdownLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub NextPeer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
+    pub PrevPeer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
+    pub _unreliableChannel: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<*mut crate::LiteNetLib::NetPacket>,
     >,
-    pub _channels: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::LiteNetLib::BaseChannel,
+    pub _channels: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::LiteNetLib::BaseChannel>,
     >,
-    pub _headChannel: *mut crate::LiteNetLib::BaseChannel,
+    pub _headChannel: quest_hook::libil2cpp::Gc<crate::LiteNetLib::BaseChannel>,
     pub _mtu: i32,
     pub _mtuIdx: i32,
     pub _finishMtu: bool,
     pub _mtuCheckTimer: i32,
     pub _mtuCheckAttempts: i32,
-    pub _mtuMutex: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _mtuMutex: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _fragmentId: u16,
-    pub _holdedFragments: *mut crate::System::Collections::Generic::Dictionary_2<
-        u16,
-        *mut crate::LiteNetLib::NetPeer_IncomingFragments,
+    pub _holdedFragments: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            u16,
+            *mut crate::LiteNetLib::NetPeer_IncomingFragments,
+        >,
     >,
-    pub _deliveredFramgnets: *mut crate::System::Collections::Generic::Dictionary_2<
-        u16,
-        u16,
+    pub _deliveredFramgnets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<u16, u16>,
     >,
-    pub _mergeData: *mut crate::LiteNetLib::NetPacket,
+    pub _mergeData: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     pub _mergePos: i32,
     pub _mergeCount: i32,
     pub _connectAttempts: i32,
@@ -48,17 +49,17 @@ pub struct NetPeer {
     pub _connectTime: i64,
     pub _connectNum: u8,
     pub _connectionState: crate::LiteNetLib::ConnectionState,
-    pub _shutdownPacket: *mut crate::LiteNetLib::NetPacket,
+    pub _shutdownPacket: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     pub _shutdownTimer: i32,
-    pub _pingPacket: *mut crate::LiteNetLib::NetPacket,
-    pub _pongPacket: *mut crate::LiteNetLib::NetPacket,
-    pub _connectRequestPacket: *mut crate::LiteNetLib::NetPacket,
-    pub _connectAcceptPacket: *mut crate::LiteNetLib::NetPacket,
-    pub EndPoint: *mut crate::System::Net::IPEndPoint,
-    pub NetManager: *mut crate::LiteNetLib::NetManager,
+    pub _pingPacket: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+    pub _pongPacket: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+    pub _connectRequestPacket: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+    pub _connectAcceptPacket: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+    pub EndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+    pub NetManager: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetManager>,
     pub Id: i32,
-    pub Tag: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub Statistics: *mut crate::LiteNetLib::NetStatistics,
+    pub Tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub Statistics: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetStatistics>,
 }
 #[cfg(feature = "LiteNetLib+NetPeer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -680,8 +681,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NetPeer {
 #[derive(Debug)]
 pub struct NetPeer_IncomingFragments {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Fragments: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::LiteNetLib::NetPacket,
+    pub Fragments: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::LiteNetLib::NetPacket>,
     >,
     pub ReceivedCount: i32,
     pub TotalSize: i32,

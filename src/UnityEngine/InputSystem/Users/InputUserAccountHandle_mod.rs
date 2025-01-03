@@ -1,8 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUserAccountHandle")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputUserAccountHandle {
-    pub m_ApiName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ApiName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Handle: u64,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUserAccountHandle")]

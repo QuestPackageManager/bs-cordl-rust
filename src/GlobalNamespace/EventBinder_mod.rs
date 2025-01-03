@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct EventBinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _unsubscribes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Action,
+    pub _unsubscribes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::Action>,
     >,
 }
 #[cfg(feature = "EventBinder")]

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Positions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub positions: *mut crate::System::Collections::ArrayList,
+    pub positions: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
 #[cfg(feature = "System+Xml+Schema+Positions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

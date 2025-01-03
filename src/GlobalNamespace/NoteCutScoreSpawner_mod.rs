@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct NoteCutScoreSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _flyingScoreSpawner: *mut crate::GlobalNamespace::FlyingScoreSpawner,
-    pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
+    pub _flyingScoreSpawner: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FlyingScoreSpawner,
+    >,
+    pub _scoreController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IScoreController,
+    >,
 }
 #[cfg(feature = "NoteCutScoreSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct RequireComponent {
     __cordl_parent: crate::System::Attribute,
-    pub m_Type0: *mut crate::System::Type,
-    pub m_Type1: *mut crate::System::Type,
-    pub m_Type2: *mut crate::System::Type,
+    pub m_Type0: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub m_Type1: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub m_Type2: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "UnityEngine+RequireComponent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

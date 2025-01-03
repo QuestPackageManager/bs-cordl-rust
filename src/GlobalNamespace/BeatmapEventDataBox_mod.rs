@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BeatmapEventDataBox {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _indexFilter_k__BackingField: *mut crate::GlobalNamespace::IndexFilter,
+    pub _indexFilter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IndexFilter,
+    >,
     pub _beatDistributionParam: f32,
     pub _beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
     pub _eventDistributionCount: i32,

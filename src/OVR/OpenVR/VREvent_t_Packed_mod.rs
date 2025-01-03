@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_t_Packed")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VREvent_t_Packed {
     pub eventType: u32,
     pub trackedDeviceIndex: u32,

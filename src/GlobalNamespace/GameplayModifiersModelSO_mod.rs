@@ -3,25 +3,59 @@
 #[derive(Debug)]
 pub struct GameplayModifiersModelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _batteryEnergy: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-    pub _instaFail: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-    pub _noObstacles: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-    pub _noBombs: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-    pub _fastNotes: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-    pub _strictAngles: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-    pub _disappearingArrows: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-    pub _fasterSong: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-    pub _slowerSong: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-    pub _noArrows: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-    pub _ghostNotes: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-    pub _noFailOn0Energy: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-    pub _superFastSong: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-    pub _proMode: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-    pub _zenMode: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-    pub _smallCubes: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-    pub _gameplayModifierGetters: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-        *mut crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
+    pub _batteryEnergy: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierParamsSO,
+    >,
+    pub _instaFail: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierParamsSO,
+    >,
+    pub _noObstacles: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierParamsSO,
+    >,
+    pub _noBombs: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierParamsSO,
+    >,
+    pub _fastNotes: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierParamsSO,
+    >,
+    pub _strictAngles: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierParamsSO,
+    >,
+    pub _disappearingArrows: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierParamsSO,
+    >,
+    pub _fasterSong: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierParamsSO,
+    >,
+    pub _slowerSong: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierParamsSO,
+    >,
+    pub _noArrows: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierParamsSO,
+    >,
+    pub _ghostNotes: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierParamsSO,
+    >,
+    pub _noFailOn0Energy: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierParamsSO,
+    >,
+    pub _superFastSong: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierParamsSO,
+    >,
+    pub _proMode: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierParamsSO,
+    >,
+    pub _zenMode: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierParamsSO,
+    >,
+    pub _smallCubes: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierParamsSO,
+    >,
+    pub _gameplayModifierGetters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+            *mut crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
+        >,
     >,
 }
 #[cfg(feature = "GameplayModifiersModelSO")]

@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct TransferCodingHeaderValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub value: *mut quest_hook::libil2cpp::Il2CppString,
-    pub parameters: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+    pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub parameters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+        >,
     >,
 }
 #[cfg(feature = "System+Net+Http+Headers+TransferCodingHeaderValue")]

@@ -3,13 +3,27 @@
 #[derive(Debug)]
 pub struct TlsClientProtocol {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol,
-    pub mTlsClient: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsClient,
-    pub mTlsClientContext: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl,
-    pub mSelectedSessionID: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mKeyExchange: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsKeyExchange,
-    pub mAuthentication: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsAuthentication,
-    pub mCertificateStatus: *mut crate::Org::BouncyCastle::Crypto::Tls::CertificateStatus,
-    pub mCertificateRequest: *mut crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest,
+    pub mTlsClient: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsClient,
+    >,
+    pub mTlsClientContext: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsClientContextImpl,
+    >,
+    pub mSelectedSessionID: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub mKeyExchange: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsKeyExchange,
+    >,
+    pub mAuthentication: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsAuthentication,
+    >,
+    pub mCertificateStatus: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::CertificateStatus,
+    >,
+    pub mCertificateRequest: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsClientProtocol")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

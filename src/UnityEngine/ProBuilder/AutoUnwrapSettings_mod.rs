@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AutoUnwrapSettings {
     pub m_UseWorldSpace: bool,
     pub m_FlipU: bool,

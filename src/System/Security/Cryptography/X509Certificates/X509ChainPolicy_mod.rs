@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct X509ChainPolicy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub apps: *mut crate::System::Security::Cryptography::OidCollection,
-    pub cert: *mut crate::System::Security::Cryptography::OidCollection,
-    pub store: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
-    pub store2: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
+    pub apps: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::OidCollection,
+    >,
+    pub cert: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::OidCollection,
+    >,
+    pub store: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+    >,
+    pub store2: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
+    >,
     pub rflag: crate::System::Security::Cryptography::X509Certificates::X509RevocationFlag,
     pub mode: crate::System::Security::Cryptography::X509Certificates::X509RevocationMode,
     pub timeout: crate::System::TimeSpan,

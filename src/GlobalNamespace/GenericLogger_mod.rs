@@ -81,8 +81,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GenericLogger
 #[derive(Debug)]
 pub struct GenericLogger_ScopedStopwatch {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _processName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _stopwatch: *mut crate::System::Diagnostics::Stopwatch,
+    pub _processName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _stopwatch: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::Stopwatch>,
 }
 #[cfg(feature = "GenericLogger+ScopedStopwatch")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

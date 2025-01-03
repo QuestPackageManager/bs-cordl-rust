@@ -6,11 +6,13 @@ pub struct PriorityQueue_2<
     TPriority: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub priorityMath: *mut crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<
-        TPriority,
+    pub priorityMath: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<TPriority>,
     >,
-    pub queue: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::ProBuilder::KdTree::ItemPriority_2<TItem, TPriority>,
+    pub queue: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::ProBuilder::KdTree::ItemPriority_2<TItem, TPriority>,
+        >,
     >,
     pub capacity: i32,
     pub count: i32,

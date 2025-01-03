@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct DebugSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _fpsCounter: *mut crate::UnityEngine::UI::Toggle,
-    pub _fpsRecorder: *mut crate::UnityEngine::UI::Toggle,
-    pub _memoryTracker: *mut crate::UnityEngine::UI::Toggle,
-    pub _showBeatmapLevelVersions: *mut crate::UnityEngine::UI::Toggle,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _fpsCounter: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _fpsRecorder: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _memoryTracker: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _showBeatmapLevelVersions: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
+    >,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
 }
 #[cfg(feature = "DebugSettingsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

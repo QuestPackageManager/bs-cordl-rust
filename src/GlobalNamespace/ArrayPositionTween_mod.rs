@@ -7,7 +7,9 @@ pub struct ArrayPositionTween {
         *mut crate::GlobalNamespace::TimelineArrayReference,
     >,
     pub elementDelay: f32,
-    pub _cordl_template: *mut crate::GlobalNamespace::CustomTweenBehaviour,
+    pub _cordl_template: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CustomTweenBehaviour,
+    >,
 }
 #[cfg(feature = "ArrayPositionTween")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

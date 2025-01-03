@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlAttributeOverrides {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub overrides: *mut crate::System::Collections::Hashtable,
+    pub overrides: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlAttributeOverrides")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

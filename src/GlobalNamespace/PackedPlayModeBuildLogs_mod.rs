@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PackedPlayModeBuildLogs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_RuntimeBuildLogs: *mut crate::System::Collections::Generic::List_1<
-        crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
+    pub m_RuntimeBuildLogs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
+        >,
     >,
 }
 #[cfg(feature = "PackedPlayModeBuildLogs")]
@@ -93,10 +95,10 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs {
 }
 #[cfg(feature = "PackedPlayModeBuildLogs+RuntimeBuildLog")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PackedPlayModeBuildLogs_RuntimeBuildLog {
     pub Type: crate::UnityEngine::LogType,
-    pub Message: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "PackedPlayModeBuildLogs+RuntimeBuildLog")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -1,27 +1,67 @@
 #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IVRChaperoneSetup {
-    pub CommitWorkingCopy: *mut crate::OVR::OpenVR::IVRChaperoneSetup__CommitWorkingCopy,
-    pub RevertWorkingCopy: *mut crate::OVR::OpenVR::IVRChaperoneSetup__RevertWorkingCopy,
-    pub GetWorkingPlayAreaSize: *mut crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaSize,
-    pub GetWorkingPlayAreaRect: *mut crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaRect,
-    pub GetWorkingCollisionBoundsInfo: *mut crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingCollisionBoundsInfo,
-    pub GetLiveCollisionBoundsInfo: *mut crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsInfo,
-    pub GetWorkingSeatedZeroPoseToRawTrackingPose: *mut crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingSeatedZeroPoseToRawTrackingPose,
-    pub GetWorkingStandingZeroPoseToRawTrackingPose: *mut crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTrackingPose,
-    pub SetWorkingPlayAreaSize: *mut crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPlayAreaSize,
-    pub SetWorkingCollisionBoundsInfo: *mut crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsInfo,
-    pub SetWorkingSeatedZeroPoseToRawTrackingPose: *mut crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingSeatedZeroPoseToRawTrackingPose,
-    pub SetWorkingStandingZeroPoseToRawTrackingPose: *mut crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingStandingZeroPoseToRawTrackingPose,
-    pub ReloadFromDisk: *mut crate::OVR::OpenVR::IVRChaperoneSetup__ReloadFromDisk,
-    pub GetLiveSeatedZeroPoseToRawTrackingPose: *mut crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPose,
-    pub SetWorkingCollisionBoundsTagsInfo: *mut crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo,
-    pub GetLiveCollisionBoundsTagsInfo: *mut crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo,
-    pub SetWorkingPhysicalBoundsInfo: *mut crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo,
-    pub GetLivePhysicalBoundsInfo: *mut crate::OVR::OpenVR::IVRChaperoneSetup__GetLivePhysicalBoundsInfo,
-    pub ExportLiveToBuffer: *mut crate::OVR::OpenVR::IVRChaperoneSetup__ExportLiveToBuffer,
-    pub ImportFromBufferToWorking: *mut crate::OVR::OpenVR::IVRChaperoneSetup__ImportFromBufferToWorking,
+    pub CommitWorkingCopy: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__CommitWorkingCopy,
+    >,
+    pub RevertWorkingCopy: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__RevertWorkingCopy,
+    >,
+    pub GetWorkingPlayAreaSize: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaSize,
+    >,
+    pub GetWorkingPlayAreaRect: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaRect,
+    >,
+    pub GetWorkingCollisionBoundsInfo: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingCollisionBoundsInfo,
+    >,
+    pub GetLiveCollisionBoundsInfo: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsInfo,
+    >,
+    pub GetWorkingSeatedZeroPoseToRawTrackingPose: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingSeatedZeroPoseToRawTrackingPose,
+    >,
+    pub GetWorkingStandingZeroPoseToRawTrackingPose: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTrackingPose,
+    >,
+    pub SetWorkingPlayAreaSize: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPlayAreaSize,
+    >,
+    pub SetWorkingCollisionBoundsInfo: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsInfo,
+    >,
+    pub SetWorkingSeatedZeroPoseToRawTrackingPose: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingSeatedZeroPoseToRawTrackingPose,
+    >,
+    pub SetWorkingStandingZeroPoseToRawTrackingPose: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingStandingZeroPoseToRawTrackingPose,
+    >,
+    pub ReloadFromDisk: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__ReloadFromDisk,
+    >,
+    pub GetLiveSeatedZeroPoseToRawTrackingPose: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPose,
+    >,
+    pub SetWorkingCollisionBoundsTagsInfo: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo,
+    >,
+    pub GetLiveCollisionBoundsTagsInfo: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo,
+    >,
+    pub SetWorkingPhysicalBoundsInfo: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo,
+    >,
+    pub GetLivePhysicalBoundsInfo: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__GetLivePhysicalBoundsInfo,
+    >,
+    pub ExportLiveToBuffer: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__ExportLiveToBuffer,
+    >,
+    pub ImportFromBufferToWorking: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperoneSetup__ImportFromBufferToWorking,
+    >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

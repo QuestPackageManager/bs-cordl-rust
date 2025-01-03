@@ -5,8 +5,10 @@ pub struct NoteTrailEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _particlesPerFrame: i32,
     pub _maxSpawnDistance: f32,
-    pub _noteMovement: *mut crate::GlobalNamespace::NoteMovement,
-    pub _noteTrailParticleSystem: *mut crate::GlobalNamespace::NoteTrailParticleSystem,
+    pub _noteMovement: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMovement>,
+    pub _noteTrailParticleSystem: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteTrailParticleSystem,
+    >,
 }
 #[cfg(feature = "NoteTrailEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

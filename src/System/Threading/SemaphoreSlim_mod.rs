@@ -6,10 +6,16 @@ pub struct SemaphoreSlim {
     pub m_currentCount: i32,
     pub m_maxCount: i32,
     pub m_waitCount: i32,
-    pub m_lockObj: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_waitHandle: *mut crate::System::Threading::ManualResetEvent,
-    pub m_asyncHead: *mut crate::System::Threading::SemaphoreSlim_TaskNode,
-    pub m_asyncTail: *mut crate::System::Threading::SemaphoreSlim_TaskNode,
+    pub m_lockObj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_waitHandle: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ManualResetEvent,
+    >,
+    pub m_asyncHead: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SemaphoreSlim_TaskNode,
+    >,
+    pub m_asyncTail: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SemaphoreSlim_TaskNode,
+    >,
 }
 #[cfg(feature = "System+Threading+SemaphoreSlim")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -321,8 +327,12 @@ impl AsMut<crate::System::IDisposable> for crate::System::Threading::SemaphoreSl
 #[derive(Debug)]
 pub struct SemaphoreSlim_TaskNode {
     __cordl_parent: crate::System::Threading::Tasks::Task_1<bool>,
-    pub Prev: *mut crate::System::Threading::SemaphoreSlim_TaskNode,
-    pub Next: *mut crate::System::Threading::SemaphoreSlim_TaskNode,
+    pub Prev: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SemaphoreSlim_TaskNode,
+    >,
+    pub Next: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SemaphoreSlim_TaskNode,
+    >,
 }
 #[cfg(feature = "System+Threading+SemaphoreSlim+TaskNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

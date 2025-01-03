@@ -30,7 +30,9 @@ pub struct OVRMixedRealityCaptureSettings {
     pub virtualGreenScreenApplyDepthCulling: bool,
     pub virtualGreenScreenDepthTolerance: f32,
     pub mrcActivationMode: crate::GlobalNamespace::OVRManager_MrcActivationMode,
-    pub _OVRMixedRealityCaptureConfiguration_instantiateMixedRealityCameraGameObject_k__BackingField: *mut crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
+    pub _OVRMixedRealityCaptureConfiguration_instantiateMixedRealityCameraGameObject_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
+    >,
 }
 #[cfg(feature = "OVRMixedRealityCaptureSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

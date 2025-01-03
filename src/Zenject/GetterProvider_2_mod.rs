@@ -6,9 +6,9 @@ pub struct GetterProvider_2<
     TResult: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _identifier: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _method: *mut crate::System::Func_2<TObj, TResult>,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TResult>>,
     pub _matchAll: bool,
     pub _sourceType: crate::Zenject::InjectSources,
     __cordl_phantom_TObj: std::marker::PhantomData<TObj>,

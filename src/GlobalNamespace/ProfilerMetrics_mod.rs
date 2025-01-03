@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct ProfilerMetrics {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _metrics: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric,
+    pub _metrics: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric,
+        >,
     >,
-    pub _profilerRecorders: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::Unity::Profiling::ProfilerRecorder,
+    pub _profilerRecorders: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::Unity::Profiling::ProfilerRecorder>,
     >,
-    pub _samples: *mut crate::System::Collections::Generic::List_1<i64>,
+    pub _samples: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i64>,
+    >,
 }
 #[cfg(feature = "ProfilerMetrics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -225,10 +229,10 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::ProfilerMetri
 }
 #[cfg(feature = "ProfilerMetrics+ProfilerMetric")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ProfilerMetrics_ProfilerMetric {
     pub category: crate::Unity::Profiling::ProfilerCategory,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "ProfilerMetrics+ProfilerMetric")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

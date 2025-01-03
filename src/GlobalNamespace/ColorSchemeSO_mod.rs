@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ColorSchemeSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _colorScheme: *mut crate::GlobalNamespace::ColorScheme,
+    pub _colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
     pub _order: i32,
 }
 #[cfg(feature = "ColorSchemeSO")]

@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct SingletonMarkRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _boundSingletons: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::Type,
+    pub _boundSingletons: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<*mut crate::System::Type>,
     >,
-    pub _boundNonSingletons: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::Type,
+    pub _boundNonSingletons: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<*mut crate::System::Type>,
     >,
 }
 #[cfg(feature = "Zenject+Internal+SingletonMarkRegistry")]

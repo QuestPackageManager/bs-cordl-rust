@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct JProperty {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JContainer,
-    pub _content: *mut crate::Newtonsoft::Json::Linq::JProperty_JPropertyList,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _content: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Linq::JProperty_JPropertyList,
+    >,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JProperty")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -504,7 +506,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Linq::JPrope
 #[derive(Debug)]
 pub struct JProperty_JPropertyList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _token: *mut crate::Newtonsoft::Json::Linq::JToken,
+    pub _token: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JProperty+JPropertyList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

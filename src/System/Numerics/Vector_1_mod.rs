@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Numerics+Vector_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Vector_1<T: quest_hook::libil2cpp::Type> {
     pub _cordl_register: crate::System::Numerics::Register,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -318,7 +318,7 @@ for crate::System::Numerics::Vector_1<T> {
 }
 #[cfg(feature = "System+Numerics+Vector_1+VectorSizeHelper")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Vector_1_VectorSizeHelper<T: quest_hook::libil2cpp::Type> {
     pub _placeholder: crate::System::Numerics::Vector_1<T>,
     pub _byte: u8,

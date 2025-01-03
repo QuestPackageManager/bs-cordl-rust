@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct XPathParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _scanner: *mut crate::MS::Internal::Xml::XPath::XPathScanner,
+    pub _scanner: quest_hook::libil2cpp::Gc<
+        crate::MS::Internal::Xml::XPath::XPathScanner,
+    >,
     pub _parseDepth: i32,
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+XPathParser")]
@@ -449,8 +451,8 @@ pub struct XPathParser_ParamInfo {
     pub _ftype: crate::MS::Internal::Xml::XPath::Function_FunctionType,
     pub _minargs: i32,
     pub _maxargs: i32,
-    pub _argTypes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::XPath::XPathResultType,
+    pub _argTypes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Xml::XPath::XPathResultType>,
     >,
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+XPathParser+ParamInfo")]

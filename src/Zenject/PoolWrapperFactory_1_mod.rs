@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PoolWrapperFactory_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _pool: *mut crate::Zenject::IMemoryPool_1<T>,
+    pub _pool: quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "Zenject+PoolWrapperFactory_1")]

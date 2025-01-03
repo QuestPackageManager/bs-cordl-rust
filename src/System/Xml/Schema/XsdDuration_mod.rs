@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Xml+Schema+XsdDuration")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XsdDuration {
     pub years: i32,
     pub months: i32,

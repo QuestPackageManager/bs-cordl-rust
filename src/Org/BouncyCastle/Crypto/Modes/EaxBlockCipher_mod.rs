@@ -3,18 +3,24 @@
 #[derive(Debug)]
 pub struct EaxBlockCipher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::Modes::SicBlockCipher,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Modes::SicBlockCipher,
+    >,
     pub forEncryption: bool,
     pub blockSize: i32,
-    pub mac: *mut crate::Org::BouncyCastle::Crypto::IMac,
-    pub nonceMac: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub associatedTextMac: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub macBlock: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
+    pub nonceMac: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub associatedTextMac: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub macBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub macSize: i32,
-    pub bufBlock: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub bufBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub bufOff: i32,
     pub cipherInitialized: bool,
-    pub initialAssociatedText: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub initialAssociatedText: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+EaxBlockCipher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

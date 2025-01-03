@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ContextMenu {
     __cordl_parent: crate::System::Attribute,
-    pub menuItem: *mut quest_hook::libil2cpp::Il2CppString,
+    pub menuItem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub validate: bool,
     pub priority: i32,
 }

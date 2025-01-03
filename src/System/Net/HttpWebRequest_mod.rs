@@ -3,60 +3,72 @@
 #[derive(Debug)]
 pub struct HttpWebRequest {
     __cordl_parent: crate::System::Net::WebRequest,
-    pub requestUri: *mut crate::System::Uri,
-    pub actualUri: *mut crate::System::Uri,
+    pub requestUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    pub actualUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     pub hostChanged: bool,
     pub allowAutoRedirect: bool,
     pub allowBuffering: bool,
-    pub certificates: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
-    pub connectionGroup: *mut quest_hook::libil2cpp::Il2CppString,
+    pub certificates: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+    >,
+    pub connectionGroup: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub haveContentLength: bool,
     pub contentLength: i64,
-    pub continueDelegate: *mut crate::System::Net::HttpContinueDelegate,
-    pub cookieContainer: *mut crate::System::Net::CookieContainer,
-    pub credentials: *mut crate::System::Net::ICredentials,
+    pub continueDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Net::HttpContinueDelegate,
+    >,
+    pub cookieContainer: quest_hook::libil2cpp::Gc<crate::System::Net::CookieContainer>,
+    pub credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
     pub haveResponse: bool,
     pub requestSent: bool,
-    pub webHeaders: *mut crate::System::Net::WebHeaderCollection,
+    pub webHeaders: quest_hook::libil2cpp::Gc<crate::System::Net::WebHeaderCollection>,
     pub keepAlive: bool,
     pub maxAutoRedirect: i32,
-    pub mediaType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub method: *mut quest_hook::libil2cpp::Il2CppString,
-    pub initialMethod: *mut quest_hook::libil2cpp::Il2CppString,
+    pub mediaType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub initialMethod: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub pipelined: bool,
     pub preAuthenticate: bool,
     pub usedPreAuth: bool,
-    pub version: *mut crate::System::Version,
+    pub version: quest_hook::libil2cpp::Gc<crate::System::Version>,
     pub force_version: bool,
-    pub actualVersion: *mut crate::System::Version,
-    pub proxy: *mut crate::System::Net::IWebProxy,
+    pub actualVersion: quest_hook::libil2cpp::Gc<crate::System::Version>,
+    pub proxy: quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
     pub sendChunked: bool,
-    pub servicePoint: *mut crate::System::Net::ServicePoint,
+    pub servicePoint: quest_hook::libil2cpp::Gc<crate::System::Net::ServicePoint>,
     pub timeout: i32,
     pub continueTimeout: i32,
-    pub writeStream: *mut crate::System::Net::WebRequestStream,
-    pub webResponse: *mut crate::System::Net::HttpWebResponse,
-    pub responseTask: *mut crate::System::Net::WebCompletionSource,
-    pub currentOperation: *mut crate::System::Net::WebOperation,
+    pub writeStream: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+    pub webResponse: quest_hook::libil2cpp::Gc<crate::System::Net::HttpWebResponse>,
+    pub responseTask: quest_hook::libil2cpp::Gc<crate::System::Net::WebCompletionSource>,
+    pub currentOperation: quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
     pub aborted: i32,
     pub gotRequestStream: bool,
     pub redirects: i32,
     pub expectContinue: bool,
     pub getResponseCalled: bool,
-    pub locker: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub locker: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub finished_reading: bool,
     pub auto_decomp: crate::System::Net::DecompressionMethods,
     pub readWriteTimeout: i32,
-    pub tlsProvider: *mut crate::Mono::Net::Security::MobileTlsProvider,
-    pub tlsSettings: *mut crate::Mono::Security::Interface::MonoTlsSettings,
-    pub certValidationCallback: *mut crate::System::Net::ServerCertValidationCallback,
+    pub tlsProvider: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::MobileTlsProvider,
+    >,
+    pub tlsSettings: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Interface::MonoTlsSettings,
+    >,
+    pub certValidationCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Net::ServerCertValidationCallback,
+    >,
     pub hostHasPort: bool,
-    pub hostUri: *mut crate::System::Uri,
+    pub hostUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     pub auth_state: crate::System::Net::HttpWebRequest_AuthorizationState,
     pub proxy_auth_state: crate::System::Net::HttpWebRequest_AuthorizationState,
-    pub ResendContentFactory: *mut crate::System::Func_2<
-        *mut crate::System::IO::Stream,
-        *mut crate::System::Threading::Tasks::Task,
+    pub ResendContentFactory: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            *mut crate::System::IO::Stream,
+            *mut crate::System::Threading::Tasks::Task,
+        >,
     >,
     pub _ThrowOnError_k__BackingField: bool,
     pub unsafe_auth_blah: bool,
@@ -1322,9 +1334,9 @@ for crate::System::Net::HttpWebRequest {
 }
 #[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HttpWebRequest_AuthorizationState {
-    pub request: *mut crate::System::Net::HttpWebRequest,
+    pub request: quest_hook::libil2cpp::Gc<crate::System::Net::HttpWebRequest>,
     pub isProxy: bool,
     pub isCompleted: bool,
     pub ntlm_auth_state: crate::System::Net::HttpWebRequest_NtlmAuthState,
@@ -1435,14 +1447,14 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HttpWebRequest___GetRewriteHandler_b__271_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<
         *mut crate::System::Net::BufferOffsetSize,
     >,
-    pub __4__this: *mut crate::System::Net::HttpWebRequest,
-    pub _ms_5__2: *mut crate::System::IO::MemoryStream,
+    pub __4__this: quest_hook::libil2cpp::Gc<crate::System::Net::HttpWebRequest>,
+    pub _ms_5__2: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
     pub __u__1: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter,
 }
 #[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]

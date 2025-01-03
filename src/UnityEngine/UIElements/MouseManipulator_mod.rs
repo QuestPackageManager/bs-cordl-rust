@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct MouseManipulator {
     __cordl_parent: crate::UnityEngine::UIElements::Manipulator,
-    pub _activators_k__BackingField: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::ManipulatorActivationFilter,
+    pub _activators_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::ManipulatorActivationFilter,
+        >,
     >,
     pub m_currentActivator: crate::UnityEngine::UIElements::ManipulatorActivationFilter,
 }

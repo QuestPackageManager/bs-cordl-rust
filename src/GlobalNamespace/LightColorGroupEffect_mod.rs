@@ -3,14 +3,24 @@
 #[derive(Debug)]
 pub struct LightColorGroupEffect {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub _lightId: i32,
-    pub _lightManager: *mut crate::GlobalNamespace::LightWithIdManager,
-    pub _tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _bpmController: *mut crate::GlobalNamespace::IBpmController,
-    pub _floatTween: *mut crate::Tweening::FloatTween,
-    pub _lightColorBeatmapEventCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _lightManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightWithIdManager,
+    >,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::SongTimeTweeningManager,
+    >,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _bpmController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IBpmController,
+    >,
+    pub _floatTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
+    pub _lightColorBeatmapEventCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
     pub _fromColor: crate::UnityEngine::Color,
     pub _toColor: crate::UnityEngine::Color,
     pub _alternativeFromColor: crate::UnityEngine::Color,

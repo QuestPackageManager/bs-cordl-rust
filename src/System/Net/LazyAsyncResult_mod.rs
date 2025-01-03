@@ -3,14 +3,14 @@
 #[derive(Debug)]
 pub struct LazyAsyncResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_AsyncObject: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_AsyncState: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_AsyncCallback: *mut crate::System::AsyncCallback,
-    pub m_Result: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_AsyncObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_AsyncState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_AsyncCallback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+    pub m_Result: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_IntCompleted: i32,
     pub m_EndCalled: bool,
     pub m_UserEvent: bool,
-    pub m_Event: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_Event: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Net+LazyAsyncResult")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

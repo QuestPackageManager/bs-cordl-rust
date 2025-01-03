@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Haptics+DualMotorRumble")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DualMotorRumble {
     pub _lowFrequencyMotorSpeed_k__BackingField: f32,
     pub _highFrequencyMotorSpeed_k__BackingField: f32,

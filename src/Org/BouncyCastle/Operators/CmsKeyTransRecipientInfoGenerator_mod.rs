@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CmsKeyTransRecipientInfoGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Cms::KeyTransRecipientInfoGenerator,
-    pub keyWrapper: *mut crate::Org::BouncyCastle::Crypto::IKeyWrapper,
+    pub keyWrapper: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IKeyWrapper,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Operators+CmsKeyTransRecipientInfoGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct HEU_Shelf {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _shelfName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _shelfPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _shelfName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _shelfPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _defaultShelf: bool,
-    pub _tools: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_ShelfToolData,
+    pub _tools: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_ShelfToolData,
+        >,
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_Shelf")]

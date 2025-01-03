@@ -4,7 +4,9 @@
 pub struct EnterTryCatchFinallyInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction,
     pub _hasFinally: bool,
-    pub _tryHandler: *mut crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler,
+    pub _tryHandler: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+EnterTryCatchFinallyInstruction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

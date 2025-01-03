@@ -3,13 +3,21 @@
 #[derive(Debug)]
 pub struct CmsAuthEnvelopedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub recipientInfoStore: *mut crate::Org::BouncyCastle::Cms::RecipientInformationStore,
-    pub contentInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
-    pub originator: *mut crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo,
-    pub authEncAlg: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub authAttrs: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-    pub mac: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub unauthAttrs: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
+    pub recipientInfoStore: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::RecipientInformationStore,
+    >,
+    pub contentInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+    >,
+    pub originator: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo,
+    >,
+    pub authEncAlg: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub authAttrs: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
+    pub mac: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub unauthAttrs: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthEnvelopedData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -115,7 +123,9 @@ for crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData {
 #[derive(Debug)]
 pub struct CmsAuthEnvelopedData_AuthEnvelopedSecureReadable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub parent: *mut crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData,
+    pub parent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthEnvelopedData+AuthEnvelopedSecureReadable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

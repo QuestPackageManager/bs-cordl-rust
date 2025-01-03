@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct ZInflaterInputStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub z: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+    pub z: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Zlib::ZStream>,
     pub flushLevel: i32,
-    pub buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub buf1: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub inp: *mut crate::System::IO::Stream,
+    pub buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub buf1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub inp: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub nomoreinput: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+ZInflaterInputStream")]

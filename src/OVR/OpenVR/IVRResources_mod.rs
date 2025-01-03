@@ -1,9 +1,13 @@
 #[cfg(feature = "OVR+OpenVR+IVRResources")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IVRResources {
-    pub LoadSharedResource: *mut crate::OVR::OpenVR::IVRResources__LoadSharedResource,
-    pub GetResourceFullPath: *mut crate::OVR::OpenVR::IVRResources__GetResourceFullPath,
+    pub LoadSharedResource: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRResources__LoadSharedResource,
+    >,
+    pub GetResourceFullPath: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRResources__GetResourceFullPath,
+    >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRResources")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

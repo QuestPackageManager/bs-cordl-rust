@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SqlBinaryStorage {
     __cordl_parent: crate::System::Data::Common::DataStorage,
-    pub _values: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Data::SqlTypes::SqlBinary,
+    pub _values: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Data::SqlTypes::SqlBinary>,
     >,
 }
 #[cfg(feature = "System+Data+Common+SqlBinaryStorage")]

@@ -4,7 +4,7 @@
 pub struct ProtocolVersion {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub version: i32,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+ProtocolVersion")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

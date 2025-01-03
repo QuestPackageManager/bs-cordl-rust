@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+SpatialAnchorPose_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SpatialAnchorPose_t {
     pub mAnchorToAbsoluteTracking: crate::OVR::OpenVR::HmdMatrix34_t,
 }

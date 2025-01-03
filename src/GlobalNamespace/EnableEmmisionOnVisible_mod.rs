@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct EnableEmmisionOnVisible {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _particleSystems: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::ParticleSystem,
+    pub _particleSystems: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ParticleSystem>,
     >,
-    pub _emmisionModules: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::ParticleSystem_EmissionModule,
+    pub _emmisionModules: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::ParticleSystem_EmissionModule,
+        >,
     >,
 }
 #[cfg(feature = "EnableEmmisionOnVisible")]

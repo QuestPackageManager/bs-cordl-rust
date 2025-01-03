@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CmsSignedDataGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Cms::CmsSignedGenerator,
-    pub signerInfs: *mut crate::System::Collections::IList,
+    pub signerInfs: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -482,14 +482,26 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator {
 #[derive(Debug)]
 pub struct CmsSignedDataGenerator_SignerInf {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub outer: *mut crate::Org::BouncyCastle::Cms::CmsSignedGenerator,
-    pub sigCalc: *mut crate::Org::BouncyCastle::Crypto::ISignatureFactory,
-    pub signerIdentifier: *mut crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
-    pub digestOID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub encOID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub sAttr: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
-    pub unsAttr: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
-    pub baseSignedTable: *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+    pub outer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsSignedGenerator,
+    >,
+    pub sigCalc: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ISignatureFactory,
+    >,
+    pub signerIdentifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
+    >,
+    pub digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub encOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub sAttr: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+    >,
+    pub unsAttr: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+    >,
+    pub baseSignedTable: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataGenerator+SignerInf")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,8 +1,10 @@
 #[cfg(feature = "LevelSelectionOptions")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LevelSelectionOptions {
-    pub preferredCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub preferredCharacteristic: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSO,
+    >,
     pub preferredDifficulty: crate::System::Nullable_1<
         crate::GlobalNamespace::BeatmapDifficulty,
     >,

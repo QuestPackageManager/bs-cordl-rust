@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct GenericPrincipal {
     __cordl_parent: crate::System::Security::Claims::ClaimsPrincipal,
-    pub m_identity: *mut crate::System::Security::Principal::IIdentity,
-    pub m_roles: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_identity: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Principal::IIdentity,
+    >,
+    pub m_roles: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "System+Security+Principal+GenericPrincipal")]

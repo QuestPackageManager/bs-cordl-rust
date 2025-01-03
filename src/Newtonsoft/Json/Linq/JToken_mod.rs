@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct JToken {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _parent: *mut crate::Newtonsoft::Json::Linq::JContainer,
-    pub _previous: *mut crate::Newtonsoft::Json::Linq::JToken,
-    pub _next: *mut crate::Newtonsoft::Json::Linq::JToken,
-    pub _annotations: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JContainer>,
+    pub _previous: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+    pub _next: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+    pub _annotations: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JToken")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

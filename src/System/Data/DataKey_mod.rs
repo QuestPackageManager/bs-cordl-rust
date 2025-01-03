@@ -1,9 +1,9 @@
 #[cfg(feature = "System+Data+DataKey")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DataKey {
-    pub _columns: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Data::DataColumn,
+    pub _columns: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
     >,
 }
 #[cfg(feature = "System+Data+DataKey")]

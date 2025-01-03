@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct AvatarDataModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub didChangeAvatarDataEvent: *mut crate::System::Action_1<
-        *mut crate::BeatSaber::BeatAvatarSDK::AvatarData,
+    pub didChangeAvatarDataEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::BeatSaber::BeatAvatarSDK::AvatarData>,
     >,
-    pub _avatarPartsModel: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
-    pub _fileStorage: *mut crate::GlobalNamespace::IFileStorage,
-    pub _avatarData: *mut crate::BeatSaber::BeatAvatarSDK::AvatarData,
-    pub _avatarCreatedTask: *mut crate::System::Threading::Tasks::Task_1<bool>,
+    pub _avatarPartsModel: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
+    >,
+    pub _fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+    pub _avatarData: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarData,
+    >,
+    pub _avatarCreatedTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<bool>,
+    >,
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarDataModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct GeneratedCodeAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub tool: *mut quest_hook::libil2cpp::Il2CppString,
-    pub version: *mut quest_hook::libil2cpp::Il2CppString,
+    pub tool: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+CodeDom+Compiler+GeneratedCodeAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

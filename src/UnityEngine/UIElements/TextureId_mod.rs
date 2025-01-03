@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+TextureId")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TextureId {
     pub m_Index: i32,
 }

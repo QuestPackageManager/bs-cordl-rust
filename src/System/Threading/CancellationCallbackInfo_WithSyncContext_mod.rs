@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CancellationCallbackInfo_WithSyncContext {
     __cordl_parent: crate::System::Threading::CancellationCallbackInfo,
-    pub TargetSyncContext: *mut crate::System::Threading::SynchronizationContext,
+    pub TargetSyncContext: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SynchronizationContext,
+    >,
 }
 #[cfg(feature = "System+Threading+CancellationCallbackInfo+WithSyncContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

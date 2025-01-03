@@ -1,9 +1,9 @@
 #[cfg(feature = "UnityEngine+Pool+PooledObject_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PooledObject_1<T: quest_hook::libil2cpp::Type> {
     pub m_ToReturn: T,
-    pub m_Pool: *mut crate::UnityEngine::Pool::IObjectPool_1<T>,
+    pub m_Pool: quest_hook::libil2cpp::Gc<crate::UnityEngine::Pool::IObjectPool_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+Pool+PooledObject_1")]

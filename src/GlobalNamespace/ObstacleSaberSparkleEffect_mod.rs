@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ObstacleSaberSparkleEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _sparkleParticleSystem: *mut crate::UnityEngine::ParticleSystem,
-    pub _burnParticleSystem: *mut crate::UnityEngine::ParticleSystem,
+    pub _sparkleParticleSystem: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ParticleSystem,
+    >,
+    pub _burnParticleSystem: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ParticleSystem,
+    >,
     pub _sparkleParticleSystemEmissionModule: crate::UnityEngine::ParticleSystem_EmissionModule,
     pub _burnParticleSystemEmissionModule: crate::UnityEngine::ParticleSystem_EmissionModule,
 }

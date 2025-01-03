@@ -1,6 +1,6 @@
 #[cfg(feature = "LIV+SDK+Unity+SDKPlane")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SDKPlane {
     pub distance: f32,
     pub normal: crate::LIV::SDK::Unity::SDKVector3,

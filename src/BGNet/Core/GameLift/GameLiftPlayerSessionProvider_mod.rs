@@ -3,12 +3,20 @@
 #[derive(Debug)]
 pub struct GameLiftPlayerSessionProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
-    pub _graphAPIClient: *mut crate::GlobalNamespace::GraphAPIClient,
-    pub _xPlatformAuthFeatureFlag: *mut crate::GlobalNamespace::XPlatformAuthFeatureFlag,
-    pub _pingAverages: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::RollingAverage,
+    pub _networkConfig: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INetworkConfig,
+    >,
+    pub _graphAPIClient: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GraphAPIClient,
+    >,
+    pub _xPlatformAuthFeatureFlag: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::XPlatformAuthFeatureFlag,
+    >,
+    pub _pingAverages: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::RollingAverage,
+        >,
     >,
     pub _pingCount: i32,
     pub _lastPingTime: i64,

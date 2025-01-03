@@ -4,8 +4,8 @@
 pub struct BitHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _length: i32,
-    pub _arrayPtr: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _array: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _arrayPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub _useStackAlloc: bool,
 }
 #[cfg(feature = "System+Collections+Generic+BitHelper")]

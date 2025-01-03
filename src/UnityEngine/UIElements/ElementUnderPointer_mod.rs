@@ -3,22 +3,32 @@
 #[derive(Debug)]
 pub struct ElementUnderPointer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_PendingTopElementUnderPointer: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_PendingTopElementUnderPointer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
     >,
-    pub m_TopElementUnderPointer: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_TopElementUnderPointer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
     >,
-    pub m_TriggerPointerEvent: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UIElements::IPointerEvent,
+    pub m_TriggerPointerEvent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::IPointerEvent,
+        >,
     >,
-    pub m_TriggerMouseEvent: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UIElements::IMouseEvent,
+    pub m_TriggerMouseEvent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::IMouseEvent,
+        >,
     >,
-    pub m_PickingPointerPositions: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector2,
+    pub m_PickingPointerPositions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
     >,
-    pub m_IsPickingPointerTemporaries: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
+    pub m_IsPickingPointerTemporaries: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<bool>,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ElementUnderPointer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

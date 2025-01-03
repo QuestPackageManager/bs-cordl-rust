@@ -3,15 +3,21 @@
 #[derive(Debug)]
 pub struct EnvironmentLightGroups {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _lightGroupSOList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LightGroupSO,
+    pub _lightGroupSOList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LightGroupSO,
+        >,
     >,
-    pub _lightGroupSODict: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::GlobalNamespace::LightGroupSO,
+    pub _lightGroupSODict: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::GlobalNamespace::LightGroupSO,
+        >,
     >,
-    pub _lightGroupSOListForLightGroupDataDict: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LightGroupSO,
+    pub _lightGroupSOListForLightGroupDataDict: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::LightGroupSO,
+        >,
     >,
 }
 #[cfg(feature = "EnvironmentLightGroups")]

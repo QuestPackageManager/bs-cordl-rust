@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XObjectWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _xmlObject: *mut crate::System::Xml::Linq::XObject,
+    pub _xmlObject: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XObject>,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XObjectWrapper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

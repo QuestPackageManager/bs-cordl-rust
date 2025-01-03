@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CreateServerFormController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _maxPlayersList: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
+    pub _maxPlayersList: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FormattedFloatListSettingsController,
+    >,
     pub _netDiscoverable: bool,
 }
 #[cfg(feature = "CreateServerFormController")]

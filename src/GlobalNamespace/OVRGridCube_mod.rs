@@ -4,7 +4,7 @@
 pub struct OVRGridCube {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub GridKey: crate::UnityEngine::KeyCode,
-    pub CubeGrid: *mut crate::UnityEngine::GameObject,
+    pub CubeGrid: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub CubeGridOn: bool,
     pub CubeSwitchColorOld: bool,
     pub CubeSwitchColor: bool,
@@ -13,7 +13,9 @@ pub struct OVRGridCube {
     pub gridSizeZ: i32,
     pub gridScale: f32,
     pub cubeScale: f32,
-    pub CameraController: *mut crate::GlobalNamespace::OVRCameraRig,
+    pub CameraController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRCameraRig,
+    >,
 }
 #[cfg(feature = "OVRGridCube")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct OVRVirtualKeyboardSampleInputHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub OVRVirtualKeyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
-    pub raycaster: *mut crate::GlobalNamespace::OVRRaycaster,
-    pub inputModule: *mut crate::UnityEngine::EventSystems::OVRInputModule,
-    pub leftLinePointer: *mut crate::UnityEngine::LineRenderer,
-    pub rightLinePointer: *mut crate::UnityEngine::LineRenderer,
+    pub OVRVirtualKeyboard: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRVirtualKeyboard,
+    >,
+    pub raycaster: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRRaycaster>,
+    pub inputModule: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::OVRInputModule,
+    >,
+    pub leftLinePointer: quest_hook::libil2cpp::Gc<crate::UnityEngine::LineRenderer>,
+    pub rightLinePointer: quest_hook::libil2cpp::Gc<crate::UnityEngine::LineRenderer>,
     pub interactionDevice_: crate::System::Nullable_1<
         crate::GlobalNamespace::OVRInput_Controller,
     >,

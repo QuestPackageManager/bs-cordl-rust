@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LessThanOrEqualInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
-    pub _nullValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _nullValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LessThanOrEqualInstruction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

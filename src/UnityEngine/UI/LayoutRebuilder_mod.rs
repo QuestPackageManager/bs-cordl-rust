@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LayoutRebuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_ToRebuild: *mut crate::UnityEngine::RectTransform,
+    pub m_ToRebuild: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_CachedHashFromTransform: i32,
 }
 #[cfg(feature = "UnityEngine+UI+LayoutRebuilder")]

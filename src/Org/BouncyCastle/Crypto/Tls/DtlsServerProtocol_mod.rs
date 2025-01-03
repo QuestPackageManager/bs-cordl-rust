@@ -334,24 +334,50 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsServerProtocol {
 #[derive(Debug)]
 pub struct DtlsServerProtocol_ServerHandshakeState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub server: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsServer,
-    pub serverContext: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsServerContextImpl,
-    pub tlsSession: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSession,
-    pub sessionParameters: *mut crate::Org::BouncyCastle::Crypto::Tls::SessionParameters,
-    pub sessionParametersBuilder: *mut crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder,
-    pub offeredCipherSuites: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub offeredCompressionMethods: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub clientExtensions: *mut crate::System::Collections::IDictionary,
-    pub serverExtensions: *mut crate::System::Collections::IDictionary,
+    pub server: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsServer,
+    >,
+    pub serverContext: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsServerContextImpl,
+    >,
+    pub tlsSession: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsSession,
+    >,
+    pub sessionParameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::SessionParameters,
+    >,
+    pub sessionParametersBuilder: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder,
+    >,
+    pub offeredCipherSuites: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub offeredCompressionMethods: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub clientExtensions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IDictionary,
+    >,
+    pub serverExtensions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IDictionary,
+    >,
     pub resumedSession: bool,
     pub secure_renegotiation: bool,
     pub allowCertificateStatus: bool,
     pub expectSessionTicket: bool,
-    pub keyExchange: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsKeyExchange,
-    pub serverCredentials: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
-    pub certificateRequest: *mut crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest,
+    pub keyExchange: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsKeyExchange,
+    >,
+    pub serverCredentials: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
+    >,
+    pub certificateRequest: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest,
+    >,
     pub clientCertificateType: i16,
-    pub clientCertificate: *mut crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+    pub clientCertificate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsServerProtocol+ServerHandshakeState")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

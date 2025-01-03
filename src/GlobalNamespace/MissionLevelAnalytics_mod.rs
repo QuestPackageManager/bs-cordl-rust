@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct MissionLevelAnalytics {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
+    pub _missionLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+    >,
+    pub _analyticsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAnalyticsModel,
+    >,
 }
 #[cfg(feature = "MissionLevelAnalytics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

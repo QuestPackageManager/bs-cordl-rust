@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+FontStyleStack")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FontStyleStack {
     pub bold: u8,
     pub italic: u8,

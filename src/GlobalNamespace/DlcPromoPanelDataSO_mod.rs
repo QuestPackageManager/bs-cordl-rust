@@ -5,9 +5,13 @@ pub struct DlcPromoPanelDataSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _cutOffTest: i32,
     pub _minNumberOfNotOwnedPacks: i32,
-    pub _defaultPromoInfoId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _defaultPromoInfoId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _dlcPromoPanelType: crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType,
-    pub _customDlcPromoBanner: *mut crate::GlobalNamespace::PromoBannerInfoSO,
+    pub _customDlcPromoBanner: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PromoBannerInfoSO,
+    >,
 }
 #[cfg(feature = "DlcPromoPanelDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

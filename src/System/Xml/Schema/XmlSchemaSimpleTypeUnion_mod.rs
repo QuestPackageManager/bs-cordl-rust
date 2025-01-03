@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct XmlSchemaSimpleTypeUnion {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaSimpleTypeContent,
-    pub baseTypes: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-    pub memberTypes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::XmlQualifiedName,
+    pub baseTypes: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectCollection,
     >,
-    pub baseMemberTypes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+    pub memberTypes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlQualifiedName>,
+    >,
+    pub baseMemberTypes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+        >,
     >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleTypeUnion")]

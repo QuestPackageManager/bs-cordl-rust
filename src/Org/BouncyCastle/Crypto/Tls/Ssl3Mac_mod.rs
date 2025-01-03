@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct Ssl3Mac {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     pub padLength: i32,
-    pub secret: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+Ssl3Mac")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

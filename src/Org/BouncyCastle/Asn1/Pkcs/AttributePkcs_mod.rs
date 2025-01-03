@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct AttributePkcs {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub attrType: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub attrValues: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
+    pub attrType: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub attrValues: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+AttributePkcs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

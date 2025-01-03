@@ -7,8 +7,12 @@ pub struct KdTree_2<
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub dimensions: i32,
-    pub typeMath: *mut crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<TKey>,
-    pub root: *mut crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+    pub typeMath: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<TKey>,
+    >,
+    pub root: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
+    >,
     pub _AddDuplicateBehavior_k__BackingField: crate::UnityEngine::ProBuilder::KdTree::AddDuplicateBehavior,
     pub _Count_k__BackingField: i32,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,

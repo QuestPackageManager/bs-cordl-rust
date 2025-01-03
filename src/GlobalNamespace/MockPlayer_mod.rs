@@ -21,12 +21,18 @@ pub struct MockPlayer {
     pub _canBlock_k__BackingField: bool,
     pub _canUnblock_k__BackingField: bool,
     pub _isReady: bool,
-    pub _playerState: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _playerState: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _settings: *mut crate::GlobalNamespace::MockPlayerSettings,
-    pub _fsm: *mut crate::GlobalNamespace::MockPlayerFiniteStateMachine,
-    pub _gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
+    pub _settings: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlayerSettings>,
+    pub _fsm: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MockPlayerFiniteStateMachine,
+    >,
+    pub _gameplayRpcManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IGameplayRpcManager,
+    >,
 }
 #[cfg(feature = "MockPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

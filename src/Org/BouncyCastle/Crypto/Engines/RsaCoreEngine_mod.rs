@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct RsaCoreEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub key: *mut crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
+    pub key: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
+    >,
     pub forEncryption: bool,
     pub bitSize: i32,
 }

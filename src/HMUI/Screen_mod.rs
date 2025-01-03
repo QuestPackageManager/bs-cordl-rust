@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Screen {
     __cordl_parent: crate::HMUI::ScreenBase,
-    pub _rootViewController: *mut crate::HMUI::ViewController,
+    pub _rootViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     pub _isBeingDestroyed: bool,
 }
 #[cfg(feature = "HMUI+Screen")]

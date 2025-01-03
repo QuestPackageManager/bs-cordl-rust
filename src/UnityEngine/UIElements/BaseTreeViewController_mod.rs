@@ -3,19 +3,27 @@
 #[derive(Debug)]
 pub struct BaseTreeViewController {
     __cordl_parent: crate::UnityEngine::UIElements::CollectionViewController,
-    pub m_TreeItems: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        crate::UnityEngine::UIElements::TreeItem,
+    pub m_TreeItems: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            crate::UnityEngine::UIElements::TreeItem,
+        >,
     >,
-    pub m_RootIndices: *mut crate::System::Collections::Generic::List_1<i32>,
-    pub m_ItemWrappers: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::TreeViewItemWrapper,
+    pub m_RootIndices: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
     >,
-    pub m_TreeItemIdsWithItemWrappers: *mut crate::System::Collections::Generic::HashSet_1<
-        i32,
+    pub m_ItemWrappers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::TreeViewItemWrapper,
+        >,
     >,
-    pub m_WrapperInsertionList: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::TreeViewItemWrapper,
+    pub m_TreeItemIdsWithItemWrappers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
+    pub m_WrapperInsertionList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::TreeViewItemWrapper,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseTreeViewController")]

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct HealthWarningNoTransitionInstaller {
     __cordl_parent: crate::Zenject::NoTransitionInstaller,
-    pub _healthWarningSceneSetupData: *mut crate::GlobalNamespace::HealthWarningSceneSetupData,
-    pub _scenesTransitionSetupData: *mut crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO,
+    pub _healthWarningSceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HealthWarningSceneSetupData,
+    >,
+    pub _scenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO,
+    >,
 }
 #[cfg(feature = "HealthWarningNoTransitionInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

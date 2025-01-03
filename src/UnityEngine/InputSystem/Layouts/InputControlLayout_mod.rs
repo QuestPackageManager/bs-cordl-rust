@@ -2,9 +2,11 @@
     feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Builder+ControlBuilder"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Builder_InputControlLayout_ControlBuilder {
-    pub builder: *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
+    pub builder: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
+    >,
     pub index: i32,
 }
 #[cfg(
@@ -295,7 +297,7 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
     feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+LayoutMatcher"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Collection_InputControlLayout_LayoutMatcher {
     pub layoutName: crate::UnityEngine::InputSystem::Utilities::InternedString,
     pub deviceMatcher: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
@@ -329,12 +331,12 @@ impl crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_Lay
     feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+PrecompiledLayout"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Collection_InputControlLayout_PrecompiledLayout {
-    pub factoryMethod: *mut crate::System::Func_1<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
+    pub factoryMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Func_1<*mut crate::UnityEngine::InputSystem::InputDevice>,
     >,
-    pub metadata: *mut quest_hook::libil2cpp::Il2CppString,
+    pub metadata: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(
     feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+PrecompiledLayout"
@@ -384,7 +386,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 pub struct InputControlLayout {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Name: crate::UnityEngine::InputSystem::Utilities::InternedString,
-    pub m_Type: *mut crate::System::Type,
+    pub m_Type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub m_Variants: crate::UnityEngine::InputSystem::Utilities::InternedString,
     pub m_StateFormat: crate::UnityEngine::InputSystem::Utilities::FourCC,
     pub m_StateSizeInBytes: i32,
@@ -395,14 +397,18 @@ pub struct InputControlLayout {
     pub m_AppliedOverrides: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     >,
-    pub m_CommonUsages: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    pub m_CommonUsages: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+        >,
     >,
-    pub m_Controls: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+    pub m_Controls: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+        >,
     >,
-    pub m_DisplayName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Description: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_DisplayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Flags: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Flags,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout")]
@@ -1052,16 +1058,22 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
 #[derive(Debug)]
 pub struct InputControlLayout_Builder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _displayName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _type_k__BackingField: *mut crate::System::Type,
+    pub _name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _displayName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _stateFormat_k__BackingField: crate::UnityEngine::InputSystem::Utilities::FourCC,
     pub _stateSizeInBytes_k__BackingField: i32,
-    pub m_ExtendsLayout: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ExtendsLayout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _updateBeforeRender_k__BackingField: crate::System::Nullable_1<bool>,
     pub m_ControlCount: i32,
-    pub m_Controls: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+    pub m_Controls: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Builder")]
@@ -1434,11 +1446,13 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Cache")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputControlLayout_Cache {
-    pub table: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
-        *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+    pub table: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+            *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Cache")]
@@ -1491,7 +1505,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+CacheRefInstance")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputControlLayout_CacheRefInstance {
     pub valid: bool,
 }
@@ -1541,41 +1555,57 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstanc
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputControlLayout_Collection {
-    pub layoutTypes: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
-        *mut crate::System::Type,
-    >,
-    pub layoutStrings: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
-        *mut quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub layoutBuilders: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
-        *mut crate::System::Func_1<
-            *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+    pub layoutTypes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+            *mut crate::System::Type,
         >,
     >,
-    pub baseLayoutTable: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    pub layoutStrings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub layoutOverrides: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
-        *mut quest_hook::libil2cpp::Il2CppArray<
+    pub layoutBuilders: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+            *mut crate::System::Func_1<
+                *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+            >,
+        >,
+    >,
+    pub baseLayoutTable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
             crate::UnityEngine::InputSystem::Utilities::InternedString,
         >,
     >,
-    pub layoutOverrideNames: *mut crate::System::Collections::Generic::HashSet_1<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    pub layoutOverrides: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::InputSystem::Utilities::InternedString,
+            >,
+        >,
     >,
-    pub precompiledLayouts: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::InputSystem::Utilities::InternedString,
-        crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_PrecompiledLayout,
+    pub layoutOverrideNames: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+        >,
     >,
-    pub layoutMatchers: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_LayoutMatcher,
+    pub precompiledLayouts: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::InputSystem::Utilities::InternedString,
+            crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_PrecompiledLayout,
+        >,
+    >,
+    pub layoutMatchers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_LayoutMatcher,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection")]
@@ -1831,14 +1861,20 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputControlLayout_ControlItem {
     pub _name_k__BackingField: crate::UnityEngine::InputSystem::Utilities::InternedString,
     pub _layout_k__BackingField: crate::UnityEngine::InputSystem::Utilities::InternedString,
     pub _variants_k__BackingField: crate::UnityEngine::InputSystem::Utilities::InternedString,
-    pub _useStateFrom_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _displayName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _shortDisplayName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _useStateFrom_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _displayName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _shortDisplayName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _usages_k__BackingField: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     >,
@@ -2437,33 +2473,33 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
 #[derive(Debug)]
 pub struct InputControlLayout_ControlItemJson {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub layout: *mut quest_hook::libil2cpp::Il2CppString,
-    pub variants: *mut quest_hook::libil2cpp::Il2CppString,
-    pub usage: *mut quest_hook::libil2cpp::Il2CppString,
-    pub alias: *mut quest_hook::libil2cpp::Il2CppString,
-    pub useStateFrom: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub layout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub variants: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub usage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub alias: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub useStateFrom: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub offset: u32,
     pub bit: u32,
     pub sizeInBits: u32,
-    pub format: *mut quest_hook::libil2cpp::Il2CppString,
+    pub format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub arraySize: i32,
-    pub usages: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub usages: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub aliases: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub aliases: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub parameters: *mut quest_hook::libil2cpp::Il2CppString,
-    pub processors: *mut quest_hook::libil2cpp::Il2CppString,
-    pub displayName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub shortDisplayName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub parameters: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub processors: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub shortDisplayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub noisy: bool,
     pub dontReset: bool,
     pub synthetic: bool,
-    pub defaultState: *mut quest_hook::libil2cpp::Il2CppString,
-    pub minValue: *mut quest_hook::libil2cpp::Il2CppString,
-    pub maxValue: *mut quest_hook::libil2cpp::Il2CppString,
+    pub defaultState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub minValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub maxValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItemJson")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2568,27 +2604,29 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJson")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputControlLayout_LayoutJson {
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub extend: *mut quest_hook::libil2cpp::Il2CppString,
-    pub extendMultiple: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub extend: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub extendMultiple: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub format: *mut quest_hook::libil2cpp::Il2CppString,
-    pub beforeRender: *mut quest_hook::libil2cpp::Il2CppString,
-    pub runInBackground: *mut quest_hook::libil2cpp::Il2CppString,
-    pub commonUsages: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub beforeRender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub runInBackground: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub commonUsages: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub displayName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub description: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
-    pub variant: *mut quest_hook::libil2cpp::Il2CppString,
+    pub displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub variant: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub isGenericTypeOfDevice: bool,
     pub hideInUI: bool,
-    pub controls: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson,
+    pub controls: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJson")]
@@ -2638,12 +2676,12 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson {
     feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJsonNameAndDescriptorOnly"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputControlLayout_LayoutJsonNameAndDescriptorOnly {
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub extend: *mut quest_hook::libil2cpp::Il2CppString,
-    pub extendMultiple: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub extend: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub extendMultiple: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub device: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson,
 }
@@ -2680,7 +2718,9 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJsonName
 #[derive(Debug)]
 pub struct InputControlLayout_LayoutNotFoundException {
     __cordl_parent: crate::System::Exception,
-    pub _layout_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _layout_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(
     feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutNotFoundException"

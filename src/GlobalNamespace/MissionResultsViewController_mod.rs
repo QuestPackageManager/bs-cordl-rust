@@ -3,32 +3,48 @@
 #[derive(Debug)]
 pub struct MissionResultsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _failedBannerGo: *mut crate::UnityEngine::GameObject,
-    pub _clearedBannerGo: *mut crate::UnityEngine::GameObject,
-    pub _missionNameText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _songNameText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _successIcon: *mut crate::UnityEngine::Sprite,
-    pub _successIconGlow: *mut crate::UnityEngine::Sprite,
+    pub _failedBannerGo: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _clearedBannerGo: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _missionNameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _songNameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _successIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _successIconGlow: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub _successColor: crate::UnityEngine::Color,
-    pub _failIcon: *mut crate::UnityEngine::Sprite,
-    pub _failIconGlow: *mut crate::UnityEngine::Sprite,
+    pub _failIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _failIconGlow: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub _failColor: crate::UnityEngine::Color,
-    pub _resultObjectiveListItemList: *mut crate::GlobalNamespace::ResultObjectiveListItemsList,
-    pub _continueButton: *mut crate::UnityEngine::UI::Button,
-    pub _retryButton: *mut crate::UnityEngine::UI::Button,
-    pub _levelClearedAudioClip: *mut crate::UnityEngine::AudioClip,
-    pub _levelClearedLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _fireworksController: *mut crate::GlobalNamespace::FireworksController,
-    pub _songPreviewPlayer: *mut crate::GlobalNamespace::SongPreviewPlayer,
-    pub continueButtonPressedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MissionResultsViewController,
+    pub _resultObjectiveListItemList: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ResultObjectiveListItemsList,
     >,
-    pub retryButtonPressedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MissionResultsViewController,
+    pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _retryButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _levelClearedAudioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    pub _levelClearedLocalizationKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _missionNode: *mut crate::GlobalNamespace::MissionNode,
-    pub _missionCompletionResults: *mut crate::GlobalNamespace::MissionCompletionResults,
-    pub _startFireworksAfterDelayCoroutine: *mut crate::UnityEngine::Coroutine,
+    pub _fireworksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FireworksController,
+    >,
+    pub _songPreviewPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPreviewPlayer,
+    >,
+    pub continueButtonPressedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::MissionResultsViewController,
+        >,
+    >,
+    pub retryButtonPressedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::MissionResultsViewController,
+        >,
+    >,
+    pub _missionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+    pub _missionCompletionResults: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionCompletionResults,
+    >,
+    pub _startFireworksAfterDelayCoroutine: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Coroutine,
+    >,
 }
 #[cfg(feature = "MissionResultsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

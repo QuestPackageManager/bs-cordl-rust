@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PlayersMissingEntitlementsNetSerializable {
     __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
-    pub _playersWithoutEntitlements: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _playersWithoutEntitlements: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "PlayersMissingEntitlementsNetSerializable")]

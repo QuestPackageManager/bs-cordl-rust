@@ -3,18 +3,34 @@
 #[derive(Debug)]
 pub struct CmsSignedDataParser {
     __cordl_parent: crate::Org::BouncyCastle::Cms::CmsContentInfoParser,
-    pub _signedData: *mut crate::Org::BouncyCastle::Asn1::Cms::SignedDataParser,
-    pub _signedContentType: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub _signedContent: *mut crate::Org::BouncyCastle::Cms::CmsTypedStream,
-    pub _digests: *mut crate::System::Collections::IDictionary,
-    pub _digestOids: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub _signerInfoStore: *mut crate::Org::BouncyCastle::Cms::SignerInformationStore,
-    pub _certSet: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-    pub _crlSet: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
+    pub _signedData: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::SignedDataParser,
+    >,
+    pub _signedContentType: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub _signedContent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsTypedStream,
+    >,
+    pub _digests: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    pub _digestOids: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub _signerInfoStore: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::SignerInformationStore,
+    >,
+    pub _certSet: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
+    pub _crlSet: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
     pub _isCertCrlParsed: bool,
-    pub _attributeStore: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
-    pub _certificateStore: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
-    pub _crlStore: *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
+    pub _attributeStore: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::Store::IX509Store,
+    >,
+    pub _certificateStore: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::Store::IX509Store,
+    >,
+    pub _crlStore: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::Store::IX509Store,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

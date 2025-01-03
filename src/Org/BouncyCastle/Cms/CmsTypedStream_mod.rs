@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct CmsTypedStream {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _oid: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _in: *mut crate::System::IO::Stream,
+    pub _oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _in: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsTypedStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

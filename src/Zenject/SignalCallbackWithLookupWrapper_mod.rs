@@ -3,16 +3,18 @@
 #[derive(Debug)]
 pub struct SignalCallbackWithLookupWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _signalBus: *mut crate::Zenject::SignalBus,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _signalBus: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
     pub _lookupId: crate::System::Guid,
-    pub _methodGetter: *mut crate::System::Func_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+    pub _methodGetter: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
-    pub _objectType: *mut crate::System::Type,
-    pub _signalType: *mut crate::System::Type,
-    pub _identifier: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _signalType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Zenject+SignalCallbackWithLookupWrapper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

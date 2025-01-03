@@ -1,19 +1,25 @@
 #[cfg(feature = "OVR+OpenVR+IVRSettings")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IVRSettings {
-    pub GetSettingsErrorNameFromEnum: *mut crate::OVR::OpenVR::IVRSettings__GetSettingsErrorNameFromEnum,
-    pub Sync: *mut crate::OVR::OpenVR::IVRSettings__Sync,
-    pub SetBool: *mut crate::OVR::OpenVR::IVRSettings__SetBool,
-    pub SetInt32: *mut crate::OVR::OpenVR::IVRSettings__SetInt32,
-    pub SetFloat: *mut crate::OVR::OpenVR::IVRSettings__SetFloat,
-    pub SetString: *mut crate::OVR::OpenVR::IVRSettings__SetString,
-    pub GetBool: *mut crate::OVR::OpenVR::IVRSettings__GetBool,
-    pub GetInt32: *mut crate::OVR::OpenVR::IVRSettings__GetInt32,
-    pub GetFloat: *mut crate::OVR::OpenVR::IVRSettings__GetFloat,
-    pub GetString: *mut crate::OVR::OpenVR::IVRSettings__GetString,
-    pub RemoveSection: *mut crate::OVR::OpenVR::IVRSettings__RemoveSection,
-    pub RemoveKeyInSection: *mut crate::OVR::OpenVR::IVRSettings__RemoveKeyInSection,
+    pub GetSettingsErrorNameFromEnum: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSettings__GetSettingsErrorNameFromEnum,
+    >,
+    pub Sync: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVRSettings__Sync>,
+    pub SetBool: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVRSettings__SetBool>,
+    pub SetInt32: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVRSettings__SetInt32>,
+    pub SetFloat: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVRSettings__SetFloat>,
+    pub SetString: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVRSettings__SetString>,
+    pub GetBool: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVRSettings__GetBool>,
+    pub GetInt32: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVRSettings__GetInt32>,
+    pub GetFloat: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVRSettings__GetFloat>,
+    pub GetString: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVRSettings__GetString>,
+    pub RemoveSection: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSettings__RemoveSection,
+    >,
+    pub RemoveKeyInSection: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRSettings__RemoveKeyInSection,
+    >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

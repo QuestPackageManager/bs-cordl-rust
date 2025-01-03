@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct GraphAPIClient {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
-    pub _client: *mut crate::System::Net::Http::HttpClient,
+    pub _networkConfig: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INetworkConfig,
+    >,
+    pub _client: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpClient>,
 }
 #[cfg(feature = "GraphAPIClient")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -145,7 +147,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GraphAPIClien
 }
 #[cfg(feature = "GraphAPIClient+PostOptions")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GraphAPIClient_PostOptions {
     pub MaxRetries: i32,
     pub MinWaitTimeForRetryMs: i32,

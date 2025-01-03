@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BaseTypeRequiredAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _BaseType_k__BackingField: *mut crate::System::Type,
+    pub _BaseType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "JetBrains+Annotations+BaseTypeRequiredAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

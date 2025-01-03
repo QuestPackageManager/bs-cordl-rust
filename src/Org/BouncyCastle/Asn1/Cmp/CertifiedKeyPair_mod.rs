@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct CertifiedKeyPair {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub certOrEncCert: *mut crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert,
-    pub privateKey: *mut crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
-    pub publicationInfo: *mut crate::Org::BouncyCastle::Asn1::Crmf::PkiPublicationInfo,
+    pub certOrEncCert: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cmp::CertOrEncCert,
+    >,
+    pub privateKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
+    >,
+    pub publicationInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Crmf::PkiPublicationInfo,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+CertifiedKeyPair")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

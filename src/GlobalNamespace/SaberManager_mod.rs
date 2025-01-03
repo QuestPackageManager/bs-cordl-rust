@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct SaberManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _leftSaber: *mut crate::GlobalNamespace::Saber,
-    pub _rightSaber: *mut crate::GlobalNamespace::Saber,
-    pub _initData: *mut crate::GlobalNamespace::SaberManager_InitData,
+    pub _leftSaber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+    pub _rightSaber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SaberManager_InitData,
+    >,
     pub _started: bool,
-    pub didUpdateSaberPositionsEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::Saber,
-        *mut crate::GlobalNamespace::Saber,
+    pub didUpdateSaberPositionsEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::Saber,
+            *mut crate::GlobalNamespace::Saber,
+        >,
     >,
 }
 #[cfg(feature = "SaberManager")]

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ArticulationDrive")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ArticulationDrive {
     pub lowerLimit: f32,
     pub upperLimit: f32,

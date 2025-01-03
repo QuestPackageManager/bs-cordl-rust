@@ -4,14 +4,18 @@
 pub struct BombCutSoundEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _volume: f32,
-    pub _bombExplosionAudioClips: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::AudioClip,
+    pub _bombExplosionAudioClips: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
     >,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub saberManager: *mut crate::GlobalNamespace::SaberManager,
-    pub _bombCutSoundEffectPool: *mut crate::GlobalNamespace::BombCutSoundEffect_Pool,
-    pub _randomSoundPicker: *mut crate::GlobalNamespace::RandomObjectPicker_1<
-        *mut crate::UnityEngine::AudioClip,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
+    pub _bombCutSoundEffectPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BombCutSoundEffect_Pool,
+    >,
+    pub _randomSoundPicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RandomObjectPicker_1<*mut crate::UnityEngine::AudioClip>,
     >,
 }
 #[cfg(feature = "BombCutSoundEffectManager")]

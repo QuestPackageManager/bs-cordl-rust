@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct XmlElementAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub dataType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub elementName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub dataType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub form: crate::System::Xml::Schema::XmlSchemaForm,
-    pub ns: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub isNullable: bool,
-    pub _cordl_type: *mut crate::System::Type,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub order: i32,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlElementAttribute")]

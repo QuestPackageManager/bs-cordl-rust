@@ -5,8 +5,8 @@ pub struct SaberClashChecker {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _sabersAreClashing: bool,
     pub _clashingPoint: crate::UnityEngine::Vector3,
-    pub _leftSaber: *mut crate::GlobalNamespace::Saber,
-    pub _rightSaber: *mut crate::GlobalNamespace::Saber,
+    pub _leftSaber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+    pub _rightSaber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
     pub _prevGetFrameNum: i32,
 }
 #[cfg(feature = "SaberClashChecker")]

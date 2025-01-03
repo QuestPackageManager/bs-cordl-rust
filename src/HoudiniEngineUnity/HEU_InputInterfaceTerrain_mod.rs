@@ -259,11 +259,11 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
 #[derive(Debug)]
 pub struct HEU_InputInterfaceTerrain_HEU_InputDataTerrain {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_InputData,
-    pub _heightFieldName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _heightFieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _parentNodeID: i32,
     pub _voxelSize: f32,
-    pub _terrain: *mut crate::UnityEngine::Terrain,
-    pub _terrainData: *mut crate::UnityEngine::TerrainData,
+    pub _terrain: quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
+    pub _terrainData: quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainData>,
     pub _numPointsX: i32,
     pub _numPointsY: i32,
     pub _transform: crate::HoudiniEngineUnity::HAPI_Transform,

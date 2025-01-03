@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct TutorialNoTransitionInstaller {
     __cordl_parent: crate::Zenject::NoTransitionInstaller,
-    pub _scenesTransitionSetupData: *mut crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
-    pub _playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+    pub _scenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
+    >,
+    pub _playerSpecificSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSpecificSettings,
+    >,
 }
 #[cfg(feature = "TutorialNoTransitionInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

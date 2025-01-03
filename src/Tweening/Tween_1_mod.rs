@@ -5,7 +5,7 @@ pub struct Tween_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Tweening::Tween,
     pub fromValue: T,
     pub toValue: T,
-    pub onUpdate: *mut crate::System::Action_1<T>,
+    pub onUpdate: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "Tweening+Tween_1")]

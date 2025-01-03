@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct NameInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub NIFullName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NIFullName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub NIobjectId: i64,
     pub NIassemId: i64,
     pub NIprimitiveTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
-    pub NItype: *mut crate::System::Type,
+    pub NItype: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub NIisSealed: bool,
     pub NIisArray: bool,
     pub NIisArrayItem: bool,

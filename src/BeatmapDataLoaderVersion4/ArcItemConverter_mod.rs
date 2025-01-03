@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct ArcItemConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
-    pub _colorNotes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::ColorNote,
+    pub _colorNotes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::ColorNote>,
     >,
-    pub _arcs: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::Arc,
+    pub _arcs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::Arc>,
     >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+ArcItemConverter")]

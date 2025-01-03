@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct BeatmapCharacteristicSegmentedControlController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _segmentedControl: *mut crate::HMUI::IconSegmentedControl,
-    pub didSelectBeatmapCharacteristicEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
-        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _segmentedControl: quest_hook::libil2cpp::Gc<crate::HMUI::IconSegmentedControl>,
+    pub didSelectBeatmapCharacteristicEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
     >,
-    pub _selectedBeatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-    pub _currentlyAvailableBeatmapCharacteristics: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _selectedBeatmapCharacteristic: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSO,
+    >,
+    pub _currentlyAvailableBeatmapCharacteristics: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapCharacteristicSegmentedControlController")]

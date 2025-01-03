@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct CodePointIndexer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub ranges: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::Mono::Globalization::Unicode::CodePointIndexer_TableRange,
+    pub ranges: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::Mono::Globalization::Unicode::CodePointIndexer_TableRange,
+        >,
     >,
     pub TotalCount: i32,
     pub defaultIndex: i32,
@@ -78,7 +80,7 @@ for crate::Mono::Globalization::Unicode::CodePointIndexer {
 }
 #[cfg(feature = "Mono+Globalization+Unicode+CodePointIndexer+TableRange")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CodePointIndexer_TableRange {
     pub Start: i32,
     pub End: i32,

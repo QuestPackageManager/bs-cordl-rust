@@ -3,18 +3,34 @@
 #[derive(Debug)]
 pub struct GameServersFilterViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _filterByDifficultyToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _filterByDifficultyButton: *mut crate::UnityEngine::UI::Button,
-    pub _beatmapDifficultyDropdown: *mut crate::GlobalNamespace::BeatmapDifficultyDropdown,
-    pub _filterByModifiersToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _filterByModifiersButton: *mut crate::UnityEngine::UI::Button,
-    pub _gameplayModifiersDropdown: *mut crate::GlobalNamespace::GameplayModifiersDropdown,
-    pub _filterBySongsToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _filterBySongsButton: *mut crate::UnityEngine::UI::Button,
-    pub _songPacksDropdown: *mut crate::GlobalNamespace::SongPacksDropdown,
-    pub _showFullToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _showPasswordProtectedToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
+    pub _filterByDifficultyToggle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
+    >,
+    pub _filterByDifficultyButton: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Button,
+    >,
+    pub _beatmapDifficultyDropdown: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDifficultyDropdown,
+    >,
+    pub _filterByModifiersToggle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
+    >,
+    pub _filterByModifiersButton: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Button,
+    >,
+    pub _gameplayModifiersDropdown: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiersDropdown,
+    >,
+    pub _filterBySongsToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _filterBySongsButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _songPacksDropdown: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPacksDropdown,
+    >,
+    pub _showFullToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _showPasswordProtectedToggle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
+    >,
+    pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
     pub _showInternetGames: bool,
 }
 #[cfg(feature = "GameServersFilterViewController")]

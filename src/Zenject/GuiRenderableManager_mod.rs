@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct GuiRenderableManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _renderables: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::GuiRenderableManager_RenderableInfo,
+    pub _renderables: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::GuiRenderableManager_RenderableInfo,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+GuiRenderableManager")]
@@ -111,7 +113,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::GuiRenderableManager 
 #[derive(Debug)]
 pub struct GuiRenderableManager_RenderableInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Renderable: *mut crate::Zenject::IGuiRenderable,
+    pub Renderable: quest_hook::libil2cpp::Gc<crate::Zenject::IGuiRenderable>,
     pub Priority: i32,
 }
 #[cfg(feature = "Zenject+GuiRenderableManager+RenderableInfo")]

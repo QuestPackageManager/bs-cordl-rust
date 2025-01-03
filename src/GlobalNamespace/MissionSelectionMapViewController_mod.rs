@@ -3,18 +3,34 @@
 #[derive(Debug)]
 pub struct MissionSelectionMapViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _mapScrollView: *mut crate::HMUI::ScrollView,
-    pub _missionNodeSelectionManager: *mut crate::GlobalNamespace::MissionNodeSelectionManager,
-    pub _missionMapAnimationController: *mut crate::GlobalNamespace::MissionMapAnimationController,
-    pub _songPreviewPlayer: *mut crate::GlobalNamespace::SongPreviewPlayer,
-    pub _perceivedLoudnessPerLevelModel: *mut crate::GlobalNamespace::PerceivedLoudnessPerLevelModel,
-    pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub didSelectMissionLevelEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::MissionSelectionMapViewController,
-        *mut crate::GlobalNamespace::MissionNode,
+    pub _mapScrollView: quest_hook::libil2cpp::Gc<crate::HMUI::ScrollView>,
+    pub _missionNodeSelectionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionNodeSelectionManager,
     >,
-    pub _selectedMissionNode: *mut crate::GlobalNamespace::MissionNode,
+    pub _missionMapAnimationController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionMapAnimationController,
+    >,
+    pub _songPreviewPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPreviewPlayer,
+    >,
+    pub _perceivedLoudnessPerLevelModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PerceivedLoudnessPerLevelModel,
+    >,
+    pub _audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioClipAsyncLoader,
+    >,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub didSelectMissionLevelEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::MissionSelectionMapViewController,
+            *mut crate::GlobalNamespace::MissionNode,
+        >,
+    >,
+    pub _selectedMissionNode: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionNode,
+    >,
 }
 #[cfg(feature = "MissionSelectionMapViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

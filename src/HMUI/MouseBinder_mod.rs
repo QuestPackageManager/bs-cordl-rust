@@ -4,14 +4,18 @@
 pub struct MouseBinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _enabled_k__BackingField: bool,
-    pub _scrollBindings: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Events::UnityAction_1<f32>,
+    pub _scrollBindings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Events::UnityAction_1<f32>,
+        >,
     >,
-    pub _buttonBindings: *mut crate::System::Collections::Generic::List_1<
-        crate::System::ValueTuple_3<
-            crate::HMUI::MouseBinder_ButtonType,
-            crate::HMUI::MouseBinder_MouseEventType,
-            *mut crate::UnityEngine::Events::UnityAction,
+    pub _buttonBindings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::System::ValueTuple_3<
+                crate::HMUI::MouseBinder_ButtonType,
+                crate::HMUI::MouseBinder_MouseEventType,
+                *mut crate::UnityEngine::Events::UnityAction,
+            >,
         >,
     >,
 }

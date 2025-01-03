@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct FinishTutorialAchievementHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _achievementsModel: *mut crate::GlobalNamespace::AchievementsModelSO,
-    pub _tutorialFinishedSignal: *mut crate::GlobalNamespace::Signal,
-    pub _finishTutorialAchievement: *mut crate::GlobalNamespace::AchievementSO,
+    pub _achievementsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementsModelSO,
+    >,
+    pub _tutorialFinishedSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _finishTutorialAchievement: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementSO,
+    >,
 }
 #[cfg(feature = "FinishTutorialAchievementHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct Mask {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
-    pub m_RectTransform: *mut crate::UnityEngine::RectTransform,
+    pub m_RectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_ShowMaskGraphic: bool,
-    pub m_Graphic: *mut crate::UnityEngine::UI::Graphic,
-    pub m_MaskMaterial: *mut crate::UnityEngine::Material,
-    pub m_UnmaskMaterial: *mut crate::UnityEngine::Material,
+    pub m_Graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+    pub m_MaskMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub m_UnmaskMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
 #[cfg(feature = "UnityEngine+UI+Mask")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

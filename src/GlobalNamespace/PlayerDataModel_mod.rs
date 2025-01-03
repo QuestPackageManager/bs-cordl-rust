@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PlayerDataModel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _playerData: *mut crate::GlobalNamespace::PlayerData,
-    pub _playerDataFileModel: *mut crate::GlobalNamespace::PlayerDataFileModel,
+    pub _playerData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
+    pub _playerDataFileModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataFileModel,
+    >,
 }
 #[cfg(feature = "PlayerDataModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

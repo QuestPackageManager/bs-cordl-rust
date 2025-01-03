@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct StickControl {
     __cordl_parent: crate::UnityEngine::InputSystem::Controls::Vector2Control,
-    pub _up_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _down_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _left_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _right_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    pub _up_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _down_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _left_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _right_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+StickControl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Drawing+PointF")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PointF {
     pub x: f32,
     pub y: f32,

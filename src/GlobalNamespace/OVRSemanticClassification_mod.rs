@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct OVRSemanticClassification {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _labels: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _labels: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "OVRSemanticClassification")]

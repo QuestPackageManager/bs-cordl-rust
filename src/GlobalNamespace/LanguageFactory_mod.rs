@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct LanguageFactory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub _platformUserModel: *mut crate::GlobalNamespace::IPlatformUserModel,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _platformUserModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IPlatformUserModel,
+    >,
 }
 #[cfg(feature = "LanguageFactory")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

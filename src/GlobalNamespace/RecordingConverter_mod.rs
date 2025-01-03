@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct RecordingConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _logger: *mut crate::GlobalNamespace::IBeatSaberLogger,
+    pub _logger: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberLogger>,
 }
 #[cfg(feature = "RecordingConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -5,11 +5,15 @@ pub struct SessionParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mCipherSuite: i32,
     pub mCompressionAlgorithm: u8,
-    pub mMasterSecret: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mPeerCertificate: *mut crate::Org::BouncyCastle::Crypto::Tls::Certificate,
-    pub mPskIdentity: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mSrpIdentity: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mEncodedServerExtensions: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mMasterSecret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mPeerCertificate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+    >,
+    pub mPskIdentity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mSrpIdentity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mEncodedServerExtensions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub mExtendedMasterSecret: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SessionParameters")]
@@ -230,11 +234,15 @@ pub struct SessionParameters_Builder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mCipherSuite: i32,
     pub mCompressionAlgorithm: i16,
-    pub mMasterSecret: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mPeerCertificate: *mut crate::Org::BouncyCastle::Crypto::Tls::Certificate,
-    pub mPskIdentity: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mSrpIdentity: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mEncodedServerExtensions: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mMasterSecret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mPeerCertificate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+    >,
+    pub mPskIdentity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mSrpIdentity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mEncodedServerExtensions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub mExtendedMasterSecret: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SessionParameters+Builder")]

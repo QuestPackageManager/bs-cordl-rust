@@ -3,11 +3,21 @@
 #[derive(Debug)]
 pub struct DefaultTlsSignerCredentials {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsSignerCredentials,
-    pub mContext: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
-    pub mCertificate: *mut crate::Org::BouncyCastle::Crypto::Tls::Certificate,
-    pub mPrivateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub mSignatureAndHashAlgorithm: *mut crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
-    pub mSigner: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSigner,
+    pub mContext: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+    >,
+    pub mCertificate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+    >,
+    pub mPrivateKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    >,
+    pub mSignatureAndHashAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
+    >,
+    pub mSigner: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsSigner,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsSignerCredentials")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

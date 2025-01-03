@@ -3,39 +3,45 @@
 #[derive(Debug)]
 pub struct SaberBurnMarkArea {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _saberBurnMarkLinePrefab: *mut crate::UnityEngine::LineRenderer,
+    pub _saberBurnMarkLinePrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::LineRenderer,
+    >,
     pub _blackMarkLineRandomOffset: f32,
     pub _textureWidth: i32,
     pub _textureHeight: i32,
     pub _burnMarksFadeOutStrength: f32,
-    pub _fadeOutShader: *mut crate::UnityEngine::Shader,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
-    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _fadeOutShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+    pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
     pub _disableBlitTimer: f32,
-    pub _renderer: *mut crate::UnityEngine::Renderer,
+    pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
     pub _fadeOutStrengthShaderPropertyID: i32,
-    pub _sabers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::Saber,
+    pub _sabers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::Saber>,
     >,
     pub _plane: crate::UnityEngine::Plane,
-    pub _prevBurnMarkPos: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub _prevBurnMarkPos: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
-    pub _prevBurnMarkPosValid: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
-    pub _lineRenderers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::LineRenderer,
+    pub _prevBurnMarkPosValid: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<bool>,
     >,
-    pub _camera: *mut crate::UnityEngine::Camera,
-    pub _linePoints: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub _lineRenderers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::LineRenderer>,
     >,
-    pub _renderTextures: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::RenderTexture,
+    pub _camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    pub _linePoints: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
+    pub _renderTextures: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::RenderTexture>,
     >,
     pub _emitParams: crate::UnityEngine::ParticleSystem_EmitParams,
-    pub _fadeOutMaterial: *mut crate::UnityEngine::Material,
-    pub _random: *mut crate::System::Random,
+    pub _fadeOutMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
 }
 #[cfg(feature = "SaberBurnMarkArea")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

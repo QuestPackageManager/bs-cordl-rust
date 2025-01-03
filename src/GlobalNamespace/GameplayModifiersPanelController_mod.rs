@@ -3,21 +3,33 @@
 #[derive(Debug)]
 pub struct GameplayModifiersPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _gameplayModifiersModel: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
-    pub _totalMultiplierValueText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _maxRankValueText: *mut crate::TMPro::TextMeshProUGUI,
+    pub _gameplayModifiersModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiersModelSO,
+    >,
+    pub _totalMultiplierValueText: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TextMeshProUGUI,
+    >,
+    pub _maxRankValueText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _positiveColor: crate::UnityEngine::Color,
     pub _negativeColor: crate::UnityEngine::Color,
-    pub didChangeGameplayModifiersEvent: *mut crate::System::Action,
-    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-    pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
-    pub _gameplayModifierToggles: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::GameplayModifierToggle,
+    pub didChangeGameplayModifiersEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
+    >,
+    pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
+    pub _gameplayModifierToggles: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::GameplayModifierToggle,
+        >,
     >,
     pub _changingGameplayModifierToggles: bool,
-    pub _toggleForGameplayModifierParam: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::GlobalNamespace::GameplayModifierParamsSO,
-        *mut crate::UnityEngine::UI::Toggle,
+    pub _toggleForGameplayModifierParam: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+            *mut crate::UnityEngine::UI::Toggle,
+        >,
     >,
 }
 #[cfg(feature = "GameplayModifiersPanelController")]

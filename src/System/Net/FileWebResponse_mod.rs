@@ -6,9 +6,9 @@ pub struct FileWebResponse {
     pub m_closed: bool,
     pub m_contentLength: i64,
     pub m_fileAccess: crate::System::IO::FileAccess,
-    pub m_headers: *mut crate::System::Net::WebHeaderCollection,
-    pub m_stream: *mut crate::System::IO::Stream,
-    pub m_uri: *mut crate::System::Uri,
+    pub m_headers: quest_hook::libil2cpp::Gc<crate::System::Net::WebHeaderCollection>,
+    pub m_stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub m_uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
 }
 #[cfg(feature = "System+Net+FileWebResponse")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

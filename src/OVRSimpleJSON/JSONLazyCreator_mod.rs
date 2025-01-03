@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct JSONLazyCreator {
     __cordl_parent: crate::OVRSimpleJSON::JSONNode,
-    pub m_Node: *mut crate::OVRSimpleJSON::JSONNode,
-    pub m_Key: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Node: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+    pub m_Key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "OVRSimpleJSON+JSONLazyCreator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

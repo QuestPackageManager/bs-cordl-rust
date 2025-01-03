@@ -4,8 +4,8 @@
 pub struct JsonTextReader {
     __cordl_parent: crate::Newtonsoft::Json::JsonReader,
     pub _safeAsync: bool,
-    pub _reader: *mut crate::System::IO::TextReader,
-    pub _chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub _reader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
+    pub _chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub _charsUsed: i32,
     pub _charPos: i32,
     pub _lineStartPos: i32,
@@ -13,8 +13,12 @@ pub struct JsonTextReader {
     pub _isEndOfFile: bool,
     pub _stringBuffer: crate::Newtonsoft::Json::Utilities::StringBuffer,
     pub _stringReference: crate::Newtonsoft::Json::Utilities::StringReference,
-    pub _arrayPool: *mut crate::Newtonsoft::Json::IArrayPool_1<char>,
-    pub _PropertyNameTable_k__BackingField: *mut crate::Newtonsoft::Json::JsonNameTable,
+    pub _arrayPool: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::IArrayPool_1<char>,
+    >,
+    pub _PropertyNameTable_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::JsonNameTable,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+JsonTextReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

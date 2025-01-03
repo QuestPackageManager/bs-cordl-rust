@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+CVRSettingHelper")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CVRSettingHelper {
     pub m_pSettings: crate::System::IntPtr,
 }

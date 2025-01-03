@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct CreditsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub creditsItems: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::CreditsData_RootCreditsItem,
+    pub creditsItems: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::CreditsData_RootCreditsItem,
+        >,
     >,
 }
 #[cfg(feature = "CreditsData")]
@@ -77,8 +79,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CreditsData {
 #[derive(Debug)]
 pub struct CreditsData_ChildCreditsItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub title: *mut crate::GlobalNamespace::CreditsData_Text,
-    pub text: *mut crate::GlobalNamespace::CreditsData_Text,
+    pub title: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CreditsData_Text>,
+    pub text: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CreditsData_Text>,
 }
 #[cfg(feature = "CreditsData+ChildCreditsItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -147,11 +149,13 @@ for crate::GlobalNamespace::CreditsData_ChildCreditsItem {
 #[derive(Debug)]
 pub struct CreditsData_RootCreditsItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub title: *mut crate::GlobalNamespace::CreditsData_Text,
-    pub text: *mut crate::GlobalNamespace::CreditsData_Text,
+    pub title: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CreditsData_Text>,
+    pub text: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CreditsData_Text>,
     pub rowCountOverride: i32,
-    pub creditsItems: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::CreditsData_ChildCreditsItem,
+    pub creditsItems: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::CreditsData_ChildCreditsItem,
+        >,
     >,
 }
 #[cfg(feature = "CreditsData+RootCreditsItem")]
@@ -228,7 +232,7 @@ for crate::GlobalNamespace::CreditsData_RootCreditsItem {
 #[derive(Debug)]
 pub struct CreditsData_Text {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub text: *mut quest_hook::libil2cpp::Il2CppString,
+    pub text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub localized: bool,
     pub style: crate::GlobalNamespace::CreditsData_TextStyle,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "System+SByte")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SByte {
     pub m_value: i8,
 }

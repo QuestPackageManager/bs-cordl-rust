@@ -3,56 +3,68 @@
 #[derive(Debug)]
 pub struct BeatmapObjectManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub noteWasAddedEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::NoteData,
-        crate::GlobalNamespace::NoteSpawnData,
+    pub noteWasAddedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::NoteData,
+            crate::GlobalNamespace::NoteSpawnData,
+        >,
     >,
-    pub noteWasSpawnedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::NoteController,
+    pub noteWasSpawnedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::NoteController>,
     >,
-    pub noteWasDespawnedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::NoteController,
+    pub noteWasDespawnedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::NoteController>,
     >,
-    pub noteWasMissedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::NoteController,
+    pub noteWasMissedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::NoteController>,
     >,
-    pub noteWasCutEvent: *mut crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate,
-    pub noteDidStartJumpEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::NoteController,
+    pub noteWasCutEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate,
     >,
-    pub noteDidStartDissolvingEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::NoteControllerBase,
+    pub noteDidStartJumpEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::NoteController>,
     >,
-    pub obstacleWasAddedEvent: *mut crate::System::Action_3<
-        *mut crate::GlobalNamespace::ObstacleData,
-        crate::GlobalNamespace::ObstacleSpawnData,
-        f32,
+    pub noteDidStartDissolvingEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::NoteControllerBase>,
     >,
-    pub obstacleWasSpawnedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::ObstacleController,
+    pub obstacleWasAddedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_3<
+            *mut crate::GlobalNamespace::ObstacleData,
+            crate::GlobalNamespace::ObstacleSpawnData,
+            f32,
+        >,
     >,
-    pub obstacleWasDespawnedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::ObstacleController,
+    pub obstacleWasSpawnedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::ObstacleController>,
     >,
-    pub obstacleDidPassThreeQuartersOfMove2Event: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::ObstacleController,
+    pub obstacleWasDespawnedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::ObstacleController>,
     >,
-    pub obstacleDidPassAvoidedMarkEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::ObstacleController,
+    pub obstacleDidPassThreeQuartersOfMove2Event: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::ObstacleController>,
     >,
-    pub sliderWasAddedEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::SliderData,
-        crate::GlobalNamespace::SliderSpawnData,
+    pub obstacleDidPassAvoidedMarkEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::ObstacleController>,
     >,
-    pub sliderWasSpawnedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::SliderController,
+    pub sliderWasAddedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::SliderData,
+            crate::GlobalNamespace::SliderSpawnData,
+        >,
     >,
-    pub sliderWasDespawnedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::SliderController,
+    pub sliderWasSpawnedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::SliderController>,
     >,
-    pub didHideAllBeatmapObjectsEvent: *mut crate::System::Action_1<bool>,
-    pub _allBeatmapObjects: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::IBeatmapObjectController,
+    pub sliderWasDespawnedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::SliderController>,
+    >,
+    pub didHideAllBeatmapObjectsEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<bool>,
+    >,
+    pub _allBeatmapObjects: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::IBeatmapObjectController,
+        >,
     >,
     pub _spawnHidden_k__BackingField: bool,
 }

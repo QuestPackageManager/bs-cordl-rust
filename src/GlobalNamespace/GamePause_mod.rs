@@ -3,16 +3,28 @@
 #[derive(Debug)]
 pub struct GamePause {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub didPauseEvent: *mut crate::System::Action,
-    pub willResumeEvent: *mut crate::System::Action,
-    pub didResumeEvent: *mut crate::System::Action,
-    pub _gameEnergyCounter: *mut crate::GlobalNamespace::GameEnergyCounter,
-    pub _playerHeadAndObstacleInteraction: *mut crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
-    pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
-    pub _beatmapObjectExecutionRatingsRecorder: *mut crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder,
-    pub _songController: *mut crate::GlobalNamespace::SongController,
-    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
-    pub _audioListenerController: *mut crate::GlobalNamespace::AudioListenerController,
+    pub didPauseEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub willResumeEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub didResumeEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _gameEnergyCounter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameEnergyCounter,
+    >,
+    pub _playerHeadAndObstacleInteraction: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
+    >,
+    pub _scoreController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IScoreController,
+    >,
+    pub _beatmapObjectExecutionRatingsRecorder: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder,
+    >,
+    pub _songController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongController,
+    >,
+    pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
+    pub _audioListenerController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioListenerController,
+    >,
     pub _pause: bool,
 }
 #[cfg(feature = "GamePause")]

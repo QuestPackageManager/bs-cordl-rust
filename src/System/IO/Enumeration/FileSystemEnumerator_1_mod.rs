@@ -3,20 +3,24 @@
 #[derive(Debug)]
 pub struct FileSystemEnumerator_1<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject,
-    pub _originalRootDirectory: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _rootDirectory: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _options: *mut crate::System::IO::EnumerationOptions,
-    pub _lock: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _currentPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _originalRootDirectory: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _rootDirectory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
+    pub _lock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _currentPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _directoryHandle: crate::System::IntPtr,
     pub _lastEntryFound: bool,
-    pub _pending: *mut crate::System::Collections::Generic::Queue_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _pending: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub _entry: crate::GlobalNamespace::Sys_Interop_DirectoryEntry,
     pub _current: TResult,
-    pub _pathBuffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    pub _entryBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _pathBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    pub _entryBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerator_1")]

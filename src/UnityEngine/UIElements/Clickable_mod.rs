@@ -3,17 +3,19 @@
 #[derive(Debug)]
 pub struct Clickable {
     __cordl_parent: crate::UnityEngine::UIElements::PointerManipulator,
-    pub clickedWithEventInfo: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::EventBase,
+    pub clickedWithEventInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::UIElements::EventBase>,
     >,
-    pub clicked: *mut crate::System::Action,
+    pub clicked: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub m_Delay: i64,
     pub m_Interval: i64,
     pub _active_k__BackingField: bool,
     pub _lastMousePosition_k__BackingField: crate::UnityEngine::Vector2,
     pub m_ActivePointerId: i32,
     pub m_AcceptClicksIfDisabled: bool,
-    pub m_Repeater: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    pub m_Repeater: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Clickable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

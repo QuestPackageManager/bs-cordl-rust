@@ -3,21 +3,33 @@
 #[derive(Debug)]
 pub struct StylePropertyReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Values: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+    pub m_Values: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        >,
     >,
-    pub m_ValueCount: *mut crate::System::Collections::Generic::List_1<i32>,
-    pub m_Resolver: *mut crate::UnityEngine::UIElements::StyleVariableResolver,
-    pub m_Sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
-    pub m_Properties: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UIElements::StyleProperty,
+    pub m_ValueCount: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
     >,
-    pub m_PropertyIds: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+    pub m_Resolver: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleVariableResolver,
+    >,
+    pub m_Sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+    pub m_Properties: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::StyleProperty,
+        >,
+    >,
+    pub m_PropertyIds: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+        >,
     >,
     pub m_CurrentValueIndex: i32,
     pub m_CurrentPropertyIndex: i32,
-    pub _property_k__BackingField: *mut crate::UnityEngine::UIElements::StyleProperty,
+    pub _property_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleProperty,
+    >,
     pub _propertyId_k__BackingField: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     pub _valueCount_k__BackingField: i32,
     pub _dpiScaling_k__BackingField: f32,

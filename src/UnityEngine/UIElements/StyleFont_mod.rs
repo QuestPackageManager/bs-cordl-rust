@@ -1,8 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleFont")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StyleFont {
-    pub m_Value: *mut crate::UnityEngine::Font,
+    pub m_Value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     pub m_Keyword: crate::UnityEngine::UIElements::StyleKeyword,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleFont")]

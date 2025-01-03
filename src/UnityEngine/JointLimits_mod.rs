@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+JointLimits")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct JointLimits {
     pub m_Min: f32,
     pub m_Max: f32,

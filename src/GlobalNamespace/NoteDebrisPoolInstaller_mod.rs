@@ -3,13 +3,27 @@
 #[derive(Debug)]
 pub struct NoteDebrisPoolInstaller {
     __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
-    pub _normalNoteDebrisHDPrefab: *mut crate::GlobalNamespace::NoteDebris,
-    pub _normalNoteDebrisLWPrefab: *mut crate::GlobalNamespace::NoteDebris,
-    pub _burstSliderHeadNoteDebrisHDPrefab: *mut crate::GlobalNamespace::NoteDebris,
-    pub _burstSliderHeadNoteDebrisLWPrefab: *mut crate::GlobalNamespace::NoteDebris,
-    pub _burstSliderElementNoteHDPrefab: *mut crate::GlobalNamespace::NoteDebris,
-    pub _burstSliderElementNoteLWPrefab: *mut crate::GlobalNamespace::NoteDebris,
-    pub _noteDebrisHDConditionVariable: *mut crate::GlobalNamespace::BoolSO,
+    pub _normalNoteDebrisHDPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteDebris,
+    >,
+    pub _normalNoteDebrisLWPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteDebris,
+    >,
+    pub _burstSliderHeadNoteDebrisHDPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteDebris,
+    >,
+    pub _burstSliderHeadNoteDebrisLWPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteDebris,
+    >,
+    pub _burstSliderElementNoteHDPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteDebris,
+    >,
+    pub _burstSliderElementNoteLWPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteDebris,
+    >,
+    pub _noteDebrisHDConditionVariable: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BoolSO,
+    >,
 }
 #[cfg(feature = "NoteDebrisPoolInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

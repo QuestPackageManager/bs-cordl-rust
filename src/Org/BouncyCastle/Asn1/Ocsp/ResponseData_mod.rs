@@ -4,11 +4,19 @@
 pub struct ResponseData {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub versionPresent: bool,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub responderID: *mut crate::Org::BouncyCastle::Asn1::Ocsp::ResponderID,
-    pub producedAt: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
-    pub responses: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    pub responseExtensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub responderID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Ocsp::ResponderID,
+    >,
+    pub producedAt: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+    >,
+    pub responses: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    >,
+    pub responseExtensions: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+ResponseData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

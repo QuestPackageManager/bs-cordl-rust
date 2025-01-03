@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct UxmlAsset {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_FullTypeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_FullTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Id: i32,
     pub m_OrderInDocument: i32,
     pub m_ParentId: i32,
-    pub m_Properties: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Properties: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlAsset")]

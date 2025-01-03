@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct GameplayLevelSceneTransitionEvents {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _standardLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-    pub _missionLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-    pub _multiplayerLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-    pub anyGameplayLevelDidFinishEvent: *mut crate::System::Action,
+    pub _standardLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+    >,
+    pub _missionLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+    >,
+    pub _multiplayerLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+    >,
+    pub anyGameplayLevelDidFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "GameplayLevelSceneTransitionEvents")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct Gost28147Parameters {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub iv: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub paramSet: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    pub iv: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
+    pub paramSet: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+CryptoPro+Gost28147Parameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,17 +3,23 @@
 #[derive(Debug)]
 pub struct WebConnection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub ntlm_credentials: *mut crate::System::Net::NetworkCredential,
+    pub ntlm_credentials: quest_hook::libil2cpp::Gc<
+        crate::System::Net::NetworkCredential,
+    >,
     pub ntlm_authenticated: bool,
     pub unsafe_sharing: bool,
-    pub networkStream: *mut crate::System::IO::Stream,
-    pub socket: *mut crate::System::Net::Sockets::Socket,
-    pub monoTlsStream: *mut crate::Mono::Net::Security::MonoTlsStream,
-    pub tunnel: *mut crate::System::Net::WebConnectionTunnel,
+    pub networkStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub socket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
+    pub monoTlsStream: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::MonoTlsStream,
+    >,
+    pub tunnel: quest_hook::libil2cpp::Gc<crate::System::Net::WebConnectionTunnel>,
     pub disposed: i32,
-    pub _ServicePoint_k__BackingField: *mut crate::System::Net::ServicePoint,
+    pub _ServicePoint_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::ServicePoint,
+    >,
     pub idleSince: crate::System::DateTime,
-    pub currentOperation: *mut crate::System::Net::WebOperation,
+    pub currentOperation: quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
 }
 #[cfg(feature = "System+Net+WebConnection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -5,7 +5,9 @@ pub struct MultiplayerLevelCompletionResults {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _playerLevelEndState: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState,
     pub _playerLevelEndReason: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason,
-    pub _levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
+    pub _levelCompletionResults: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelCompletionResults,
+    >,
 }
 #[cfg(feature = "MultiplayerLevelCompletionResults")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

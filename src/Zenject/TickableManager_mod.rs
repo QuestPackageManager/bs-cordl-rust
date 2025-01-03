@@ -3,27 +3,37 @@
 #[derive(Debug)]
 pub struct TickableManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _tickables: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::ITickable,
+    pub _tickables: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::Zenject::ITickable>,
     >,
-    pub _fixedTickables: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::IFixedTickable,
+    pub _fixedTickables: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::Zenject::IFixedTickable>,
     >,
-    pub _lateTickables: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::ILateTickable,
+    pub _lateTickables: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::Zenject::ILateTickable>,
     >,
-    pub _priorities: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
+    pub _priorities: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
+        >,
     >,
-    pub _fixedPriorities: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
+    pub _fixedPriorities: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
+        >,
     >,
-    pub _latePriorities: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
+    pub _latePriorities: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::ModestTree::Util::ValuePair_2<*mut crate::System::Type, i32>,
+        >,
     >,
-    pub _updater: *mut crate::Zenject::TickablesTaskUpdater,
-    pub _fixedUpdater: *mut crate::Zenject::FixedTickablesTaskUpdater,
-    pub _lateUpdater: *mut crate::Zenject::LateTickablesTaskUpdater,
+    pub _updater: quest_hook::libil2cpp::Gc<crate::Zenject::TickablesTaskUpdater>,
+    pub _fixedUpdater: quest_hook::libil2cpp::Gc<
+        crate::Zenject::FixedTickablesTaskUpdater,
+    >,
+    pub _lateUpdater: quest_hook::libil2cpp::Gc<
+        crate::Zenject::LateTickablesTaskUpdater,
+    >,
     pub _isPaused: bool,
 }
 #[cfg(feature = "Zenject+TickableManager")]

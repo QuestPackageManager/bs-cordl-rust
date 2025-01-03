@@ -3,18 +3,22 @@
 #[derive(Debug)]
 pub struct SceneSelection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub gameObject: *mut crate::UnityEngine::GameObject,
-    pub mesh: *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
-    pub m_Vertices: *mut crate::System::Collections::Generic::List_1<i32>,
-    pub m_Edges: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::ProBuilder::Edge,
+    pub gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    pub m_Vertices: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
     >,
-    pub m_Faces: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::ProBuilder::Face,
+    pub m_Edges: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::ProBuilder::Edge>,
+    >,
+    pub m_Faces: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::ProBuilder::Face,
+        >,
     >,
     pub vertex: i32,
     pub edge: crate::UnityEngine::ProBuilder::Edge,
-    pub face: *mut crate::UnityEngine::ProBuilder::Face,
+    pub face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SceneSelection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

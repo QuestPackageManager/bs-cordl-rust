@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MultiplayerEventSystem {
     __cordl_parent: crate::UnityEngine::EventSystems::EventSystem,
-    pub m_PlayerRoot: *mut crate::UnityEngine::GameObject,
+    pub m_PlayerRoot: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+UI+MultiplayerEventSystem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

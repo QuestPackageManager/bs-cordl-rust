@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SongController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub songDidStartEvent: *mut crate::System::Action,
-    pub songDidFinishEvent: *mut crate::System::Action,
+    pub songDidStartEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub songDidFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "SongController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

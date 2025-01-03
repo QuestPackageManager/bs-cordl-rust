@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct PopupWindow {
     __cordl_parent: crate::UnityEngine::UIElements::TextElement,
-    pub m_ContentContainer: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_ContentContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+PopupWindow")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,12 +3,22 @@
 #[derive(Debug)]
 pub struct SongRunningHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _beatmapCharacteristics: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
-    pub _menuTransitionsHelper: *mut crate::GlobalNamespace::MenuTransitionsHelper,
-    pub _beatmapLevels: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub _environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
-    pub _playQueue: *mut crate::System::Collections::Generic::Queue_1<
-        crate::GlobalNamespace::SongRunningHelper_QueuedSongParams,
+    pub _beatmapCharacteristics: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicCollection,
+    >,
+    pub _menuTransitionsHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuTransitionsHelper,
+    >,
+    pub _beatmapLevels: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub _environmentsListModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentsListModel,
+    >,
+    pub _playQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<
+            crate::GlobalNamespace::SongRunningHelper_QueuedSongParams,
+        >,
     >,
     pub _current: crate::System::Nullable_1<
         crate::GlobalNamespace::SongRunningHelper_QueuedSongParams,
@@ -142,17 +152,19 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongRunningHe
 }
 #[cfg(feature = "SongRunningHelper+QueuedSongParams")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SongRunningHelper_QueuedSongParams {
-    pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     pub difficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    pub characteristic: *mut quest_hook::libil2cpp::Il2CppString,
+    pub characteristic: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub advancedHud: bool,
     pub songSpeed: crate::GlobalNamespace::GameplayModifiers_SongSpeed,
     pub recordingToolData: crate::GlobalNamespace::RecordingToolManager_SetupData,
-    pub songFinishedCallback: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-        *mut crate::GlobalNamespace::LevelCompletionResults,
+    pub songFinishedCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::LevelCompletionResults,
+        >,
     >,
     pub zenMode: bool,
 }

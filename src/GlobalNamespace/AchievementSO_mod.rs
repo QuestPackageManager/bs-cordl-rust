@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AchievementSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _achievementId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _achievementId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "AchievementSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

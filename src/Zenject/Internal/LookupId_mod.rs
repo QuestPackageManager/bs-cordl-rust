@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LookupId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Provider: *mut crate::Zenject::IProvider,
+    pub Provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
     pub BindingId: crate::Zenject::BindingId,
 }
 #[cfg(feature = "Zenject+Internal+LookupId")]

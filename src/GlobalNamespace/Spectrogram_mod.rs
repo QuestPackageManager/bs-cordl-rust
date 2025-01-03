@@ -4,11 +4,15 @@
 pub struct Spectrogram {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _setAsGlobal: bool,
-    pub _meshRenderers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::MeshRenderer,
+    pub _meshRenderers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::MeshRenderer>,
     >,
-    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
-    pub _spectrogramData: *mut crate::GlobalNamespace::BasicSpectrogramData,
+    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
+    pub _spectrogramData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BasicSpectrogramData,
+    >,
 }
 #[cfg(feature = "Spectrogram")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

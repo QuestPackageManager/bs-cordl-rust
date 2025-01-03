@@ -4,21 +4,25 @@
 pub struct OVRGLTFAnimatinonNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_intputNodeType: crate::GlobalNamespace::OVRGLTFInputNode,
-    pub m_jsonData: *mut crate::OVRSimpleJSON::JSONNode,
+    pub m_jsonData: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     pub m_binaryChunk: crate::GlobalNamespace::OVRBinaryChunk,
-    pub m_gameObj: *mut crate::UnityEngine::GameObject,
+    pub m_gameObj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_inputNodeState: crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState,
-    pub m_morphTargetHandler: *mut crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
-    pub m_translations: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector3,
+    pub m_morphTargetHandler: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
     >,
-    pub m_rotations: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Quaternion,
+    pub m_translations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
     >,
-    pub m_scales: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector3,
+    pub m_rotations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Quaternion>,
     >,
-    pub m_weights: *mut crate::System::Collections::Generic::List_1<f32>,
+    pub m_scales: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+    >,
+    pub m_weights: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
     pub m_additiveWeightIndex: i32,
 }
 #[cfg(feature = "OVRGLTFAnimatinonNode")]
@@ -268,7 +272,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode {
 }
 #[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRGLTFAnimatinonNode_InputNodeState {
     pub down: bool,
     pub t: f32,

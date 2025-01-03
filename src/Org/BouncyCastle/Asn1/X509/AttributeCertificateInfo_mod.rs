@@ -3,15 +3,29 @@
 #[derive(Debug)]
 pub struct AttributeCertificateInfo {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub holder: *mut crate::Org::BouncyCastle::Asn1::X509::Holder,
-    pub issuer: *mut crate::Org::BouncyCastle::Asn1::X509::AttCertIssuer,
-    pub signature: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub serialNumber: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub attrCertValidityPeriod: *mut crate::Org::BouncyCastle::Asn1::X509::AttCertValidityPeriod,
-    pub attributes: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    pub issuerUniqueID: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
-    pub extensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub holder: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Holder>,
+    pub issuer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AttCertIssuer,
+    >,
+    pub signature: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub serialNumber: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerInteger,
+    >,
+    pub attrCertValidityPeriod: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AttCertValidityPeriod,
+    >,
+    pub attributes: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    >,
+    pub issuerUniqueID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerBitString,
+    >,
+    pub extensions: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+AttributeCertificateInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

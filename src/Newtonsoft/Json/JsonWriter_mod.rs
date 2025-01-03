@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct JsonWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _stack: *mut crate::System::Collections::Generic::List_1<
-        crate::Newtonsoft::Json::JsonPosition,
+    pub _stack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::Newtonsoft::Json::JsonPosition,
+        >,
     >,
     pub _currentPosition: crate::Newtonsoft::Json::JsonPosition,
     pub _currentState: crate::Newtonsoft::Json::JsonWriter_State,
@@ -15,8 +17,10 @@ pub struct JsonWriter {
     pub _dateTimeZoneHandling: crate::Newtonsoft::Json::DateTimeZoneHandling,
     pub _stringEscapeHandling: crate::Newtonsoft::Json::StringEscapeHandling,
     pub _floatFormatHandling: crate::Newtonsoft::Json::FloatFormatHandling,
-    pub _dateFormatString: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _culture: *mut crate::System::Globalization::CultureInfo,
+    pub _dateFormatString: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
 }
 #[cfg(feature = "Newtonsoft+Json+JsonWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2614,12 +2618,12 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
-    pub task: *mut crate::System::Threading::Tasks::Task,
-    pub __4__this: *mut crate::Newtonsoft::Json::JsonWriter,
+    pub task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    pub __4__this: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
     pub LevelsToComplete: i32,
     pub CancellationToken: crate::System::Threading::CancellationToken,
     pub __u__1: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter,
@@ -2687,12 +2691,12 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2
     feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct JsonWriter___InternalWriteEndAsync_g__AwaitIndent_11_1_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
-    pub task: *mut crate::System::Threading::Tasks::Task,
-    pub __4__this: *mut crate::Newtonsoft::Json::JsonWriter,
+    pub task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    pub __4__this: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
     pub token: crate::Newtonsoft::Json::JsonToken,
     pub CancellationToken: crate::System::Threading::CancellationToken,
     pub LevelsToComplete: i32,
@@ -2771,12 +2775,12 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_1
     feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct JsonWriter___InternalWriteEndAsync_g__AwaitProperty_11_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
-    pub task: *mut crate::System::Threading::Tasks::Task,
-    pub __4__this: *mut crate::Newtonsoft::Json::JsonWriter,
+    pub task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    pub __4__this: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
     pub CancellationToken: crate::System::Threading::CancellationToken,
     pub token: crate::Newtonsoft::Json::JsonToken,
     pub LevelsToComplete: i32,
@@ -2855,11 +2859,11 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty
     feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct JsonWriter___InternalWriteEndAsync_g__AwaitRemaining_11_3_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
-    pub __4__this: *mut crate::Newtonsoft::Json::JsonWriter,
+    pub __4__this: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
     pub CancellationToken: crate::System::Threading::CancellationToken,
     pub LevelsToComplete: i32,
     pub _token_5__2: crate::Newtonsoft::Json::JsonToken,

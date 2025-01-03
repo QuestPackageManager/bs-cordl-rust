@@ -3,17 +3,25 @@
 #[derive(Debug)]
 pub struct SmallBufferPool {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cacheSmall: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _cacheSmall: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
     >,
-    pub _cacheMedium: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _cacheMedium: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
     >,
-    pub _cacheLarge: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _cacheLarge: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
     >,
-    pub _cacheMax: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _cacheMax: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
     >,
 }
 #[cfg(feature = "SmallBufferPool")]

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct GZipStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub _deflateStream: *mut crate::System::IO::Compression::DeflateStream,
+    pub _deflateStream: quest_hook::libil2cpp::Gc<
+        crate::System::IO::Compression::DeflateStream,
+    >,
 }
 #[cfg(feature = "System+IO+Compression+GZipStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct AsymmetricCipherKeyPair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub publicParameter: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub privateParameter: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    pub publicParameter: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    >,
+    pub privateParameter: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+AsymmetricCipherKeyPair")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

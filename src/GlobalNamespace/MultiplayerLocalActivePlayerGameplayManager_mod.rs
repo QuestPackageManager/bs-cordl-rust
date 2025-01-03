@@ -3,16 +3,34 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalActivePlayerGameplayManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _gameSongController: *mut crate::GlobalNamespace::GameSongController,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _multiplayerLevelEndActions: *mut crate::GlobalNamespace::IMultiplayerLevelEndActionsListener,
-    pub _prepareLevelCompletionResults: *mut crate::GlobalNamespace::PrepareLevelCompletionResults,
-    pub _gameEnergyCounter: *mut crate::GlobalNamespace::GameEnergyCounter,
-    pub _inGameMenuController: *mut crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController,
-    pub _platformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _disconnectHelper: *mut crate::GlobalNamespace::MultiplayerLocalPlayerDisconnectHelper,
-    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
-    pub _initData: *mut crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData,
+    pub _gameSongController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameSongController,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub _multiplayerLevelEndActions: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerLevelEndActionsListener,
+    >,
+    pub _prepareLevelCompletionResults: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PrepareLevelCompletionResults,
+    >,
+    pub _gameEnergyCounter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameEnergyCounter,
+    >,
+    pub _inGameMenuController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController,
+    >,
+    pub _platformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
+    pub _disconnectHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLocalPlayerDisconnectHelper,
+    >,
+    pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData,
+    >,
     pub _levelFinishedOrQuit: bool,
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager")]

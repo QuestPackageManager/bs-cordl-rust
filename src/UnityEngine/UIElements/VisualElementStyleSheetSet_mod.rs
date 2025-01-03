@@ -1,8 +1,10 @@
 #[cfg(feature = "UnityEngine+UIElements+VisualElementStyleSheetSet")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VisualElementStyleSheetSet {
-    pub m_Element: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_Element: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementStyleSheetSet")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

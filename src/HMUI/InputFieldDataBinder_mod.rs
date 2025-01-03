@@ -3,14 +3,16 @@
 #[derive(Debug)]
 pub struct InputFieldDataBinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _bindings: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Tuple_4<
-            *mut crate::UnityEngine::UI::InputField,
-            *mut crate::GlobalNamespace::IObservableChange,
-            *mut crate::UnityEngine::Events::UnityAction_1<
-                *mut quest_hook::libil2cpp::Il2CppString,
+    pub _bindings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Tuple_4<
+                *mut crate::UnityEngine::UI::InputField,
+                *mut crate::GlobalNamespace::IObservableChange,
+                *mut crate::UnityEngine::Events::UnityAction_1<
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                >,
+                *mut crate::System::Action,
             >,
-            *mut crate::System::Action,
         >,
     >,
 }

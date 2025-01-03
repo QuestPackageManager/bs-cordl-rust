@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct NetworkStreamWrapper {
     __cordl_parent: crate::System::IO::Stream,
-    pub _client: *mut crate::System::Net::Sockets::TcpClient,
-    pub _networkStream: *mut crate::System::Net::Sockets::NetworkStream,
+    pub _client: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::TcpClient>,
+    pub _networkStream: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Sockets::NetworkStream,
+    >,
 }
 #[cfg(feature = "System+Net+NetworkStreamWrapper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

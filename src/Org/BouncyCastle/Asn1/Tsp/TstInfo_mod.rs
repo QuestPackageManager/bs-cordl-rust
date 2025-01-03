@@ -3,16 +3,30 @@
 #[derive(Debug)]
 pub struct TstInfo {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub tsaPolicyId: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub messageImprint: *mut crate::Org::BouncyCastle::Asn1::Tsp::MessageImprint,
-    pub serialNumber: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub genTime: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
-    pub accuracy: *mut crate::Org::BouncyCastle::Asn1::Tsp::Accuracy,
-    pub ordering: *mut crate::Org::BouncyCastle::Asn1::DerBoolean,
-    pub nonce: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub tsa: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    pub extensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub tsaPolicyId: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub messageImprint: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Tsp::MessageImprint,
+    >,
+    pub serialNumber: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerInteger,
+    >,
+    pub genTime: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+    >,
+    pub accuracy: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Tsp::Accuracy,
+    >,
+    pub ordering: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerBoolean>,
+    pub nonce: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub tsa: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    >,
+    pub extensions: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Tsp+TstInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

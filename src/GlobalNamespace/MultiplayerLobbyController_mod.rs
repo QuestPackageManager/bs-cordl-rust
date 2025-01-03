@@ -5,12 +5,24 @@ pub struct MultiplayerLobbyController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _innerCircleRadius: f32,
     pub _minOuterCircleRadius: f32,
-    pub _multiplayerLobbyAvatarManager: *mut crate::GlobalNamespace::MultiplayerLobbyAvatarManager,
-    pub _multiplayerLobbyCenterStageManager: *mut crate::GlobalNamespace::MultiplayerLobbyCenterStageManager,
-    pub _multiplayerLobbyAvatarPlaceManager: *mut crate::GlobalNamespace::MultiplayerLobbyAvatarPlaceManager,
-    pub _menuEnvironmentManager: *mut crate::GlobalNamespace::MenuEnvironmentManager,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _optionalAvatarDataSender: *mut crate::BeatSaber::AvatarCore::OptionalAvatarDataSender,
+    pub _multiplayerLobbyAvatarManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLobbyAvatarManager,
+    >,
+    pub _multiplayerLobbyCenterStageManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLobbyCenterStageManager,
+    >,
+    pub _multiplayerLobbyAvatarPlaceManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLobbyAvatarPlaceManager,
+    >,
+    pub _menuEnvironmentManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuEnvironmentManager,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _optionalAvatarDataSender: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::OptionalAvatarDataSender,
+    >,
     pub _lobbyActivated_k__BackingField: bool,
 }
 #[cfg(feature = "MultiplayerLobbyController")]

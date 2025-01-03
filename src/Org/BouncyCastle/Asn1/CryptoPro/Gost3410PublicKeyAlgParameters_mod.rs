@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct Gost3410PublicKeyAlgParameters {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub publicKeyParamSet: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub digestParamSet: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub encryptionParamSet: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    pub publicKeyParamSet: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub digestParamSet: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub encryptionParamSet: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+CryptoPro+Gost3410PublicKeyAlgParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

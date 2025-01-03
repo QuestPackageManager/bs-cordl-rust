@@ -5,8 +5,8 @@ pub struct TMP_TextElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ElementType: crate::TMPro::TextElementType,
     pub m_Unicode: u32,
-    pub m_TextAsset: *mut crate::TMPro::TMP_Asset,
-    pub m_Glyph: *mut crate::UnityEngine::TextCore::Glyph,
+    pub m_TextAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Asset>,
+    pub m_Glyph: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
     pub m_GlyphIndex: u32,
     pub m_Scale: f32,
 }

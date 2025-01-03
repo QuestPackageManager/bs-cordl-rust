@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ArrayList_ReadOnlyArrayList {
     __cordl_parent: crate::System::Collections::ArrayList,
-    pub _list: *mut crate::System::Collections::ArrayList,
+    pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
 #[cfg(feature = "System+Collections+ArrayList+ReadOnlyArrayList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

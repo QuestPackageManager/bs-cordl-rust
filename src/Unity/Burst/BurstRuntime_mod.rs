@@ -154,7 +154,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstRuntime {
 }
 #[cfg(feature = "Unity+Burst+BurstRuntime+HashCode32_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BurstRuntime_HashCode32_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -178,7 +178,7 @@ for crate::Unity::Burst::BurstRuntime_HashCode32_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::BurstRuntime_HashCode32_1<T> {}
 #[cfg(feature = "Unity+Burst+BurstRuntime+HashCode64_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BurstRuntime_HashCode64_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

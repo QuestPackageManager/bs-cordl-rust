@@ -3,21 +3,43 @@
 #[derive(Debug)]
 pub struct MobileAuthenticatedStream {
     __cordl_parent: crate::System::Net::Security::AuthenticatedStream,
-    pub xobileTlsContext: *mut crate::Mono::Net::Security::MobileTlsContext,
-    pub lastException: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
-    pub asyncHandshakeRequest: *mut crate::Mono::Net::Security::AsyncProtocolRequest,
-    pub asyncReadRequest: *mut crate::Mono::Net::Security::AsyncProtocolRequest,
-    pub asyncWriteRequest: *mut crate::Mono::Net::Security::AsyncProtocolRequest,
-    pub readBuffer: *mut crate::Mono::Net::Security::BufferOffsetSize2,
-    pub writeBuffer: *mut crate::Mono::Net::Security::BufferOffsetSize2,
-    pub ioLock: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub xobileTlsContext: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::MobileTlsContext,
+    >,
+    pub lastException: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+    >,
+    pub asyncHandshakeRequest: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::AsyncProtocolRequest,
+    >,
+    pub asyncReadRequest: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::AsyncProtocolRequest,
+    >,
+    pub asyncWriteRequest: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::AsyncProtocolRequest,
+    >,
+    pub readBuffer: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::BufferOffsetSize2,
+    >,
+    pub writeBuffer: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::BufferOffsetSize2,
+    >,
+    pub ioLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub closeRequested: i32,
     pub shutdown: bool,
     pub operation: crate::Mono::Net::Security::MobileAuthenticatedStream_Operation,
-    pub _SslStream_k__BackingField: *mut crate::System::Net::Security::SslStream,
-    pub _Settings_k__BackingField: *mut crate::Mono::Security::Interface::MonoTlsSettings,
-    pub _Provider_k__BackingField: *mut crate::Mono::Net::Security::MobileTlsProvider,
-    pub _TargetHost_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _SslStream_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Security::SslStream,
+    >,
+    pub _Settings_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Interface::MonoTlsSettings,
+    >,
+    pub _Provider_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::MobileTlsProvider,
+    >,
+    pub _TargetHost_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _cordl_ID: i32,
 }
 #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream")]

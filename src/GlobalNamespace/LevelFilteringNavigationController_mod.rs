@@ -3,50 +3,84 @@
 #[derive(Debug)]
 pub struct LevelFilteringNavigationController {
     __cordl_parent: crate::HMUI::NavigationController,
-    pub _emptyFavoritesListInfoPrefab: *mut crate::UnityEngine::GameObject,
-    pub _emptyCustomSongListInfoPrefab: *mut crate::UnityEngine::GameObject,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _selectLevelCategoryViewController: *mut crate::GlobalNamespace::SelectLevelCategoryViewController,
-    pub _annotatedBeatmapLevelCollectionsViewController: *mut crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController,
-    pub _levelSearchViewController: *mut crate::GlobalNamespace::LevelSearchViewController,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub didSelectBeatmapLevelPackEvent: *mut crate::System::Action_4<
-        *mut crate::GlobalNamespace::LevelFilteringNavigationController,
-        *mut crate::GlobalNamespace::BeatmapLevelPack,
-        *mut crate::UnityEngine::GameObject,
-        crate::GlobalNamespace::LevelSelectionOptions,
+    pub _emptyFavoritesListInfoPrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
     >,
-    pub didStartLoadingEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::LevelFilteringNavigationController,
+    pub _emptyCustomSongListInfoPrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
     >,
-    pub didPressAllSongsEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::LevelFilteringNavigationController,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
     >,
-    pub didOpenBeatmapLevelCollectionsEvent: *mut crate::System::Action,
-    pub didCloseBeatmapLevelCollectionsEvent: *mut crate::System::Action,
-    pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _currentNoDataInfoPrefab: *mut crate::UnityEngine::GameObject,
-    pub _levelPackIdToBeSelectedAfterPresent: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _selectLevelCategoryViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SelectLevelCategoryViewController,
+    >,
+    pub _annotatedBeatmapLevelCollectionsViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController,
+    >,
+    pub _levelSearchViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelSearchViewController,
+    >,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub didSelectBeatmapLevelPackEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_4<
+            *mut crate::GlobalNamespace::LevelFilteringNavigationController,
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
+            *mut crate::UnityEngine::GameObject,
+            crate::GlobalNamespace::LevelSelectionOptions,
+        >,
+    >,
+    pub didStartLoadingEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::LevelFilteringNavigationController,
+        >,
+    >,
+    pub didPressAllSongsEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::LevelFilteringNavigationController,
+        >,
+    >,
+    pub didOpenBeatmapLevelCollectionsEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub didCloseBeatmapLevelCollectionsEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub _cancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub _currentNoDataInfoPrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _levelPackIdToBeSelectedAfterPresent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _hidePacksIfOneOrNone: bool,
     pub _enableCustomLevels: bool,
     pub _songPackMask: crate::GlobalNamespace::SongPackMask,
-    pub _enabledLevelCategories: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
+    pub _enabledLevelCategories: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
+        >,
     >,
-    pub _ostBeatmapLevelPacks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub _ostBeatmapLevelPacks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevelPack>,
     >,
-    pub _musicPacksBeatmapLevelPacks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub _musicPacksBeatmapLevelPacks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevelPack>,
     >,
-    pub _customLevelPacks: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub _customLevelPacks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
+        >,
     >,
-    pub _allOfficialBeatmapLevelPacks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub _allOfficialBeatmapLevelPacks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevelPack>,
     >,
-    pub _allBeatmapLevelPacks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub _allBeatmapLevelPacks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevelPack>,
     >,
 }
 #[cfg(feature = "LevelFilteringNavigationController")]

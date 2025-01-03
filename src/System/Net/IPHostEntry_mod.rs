@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct IPHostEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub hostName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub aliases: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub hostName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub aliases: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub addressList: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Net::IPAddress,
+    pub addressList: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Net::IPAddress>,
     >,
     pub isTrustedHost: bool,
 }

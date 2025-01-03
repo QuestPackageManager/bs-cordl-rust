@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ReflectTypeDescriptionProvider {
     __cordl_parent: crate::System::ComponentModel::TypeDescriptionProvider,
-    pub _typeData: *mut crate::System::Collections::Hashtable,
+    pub _typeData: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+ComponentModel+ReflectTypeDescriptionProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -648,15 +648,25 @@ for crate::System::ComponentModel::ReflectTypeDescriptionProvider {
 #[derive(Debug)]
 pub struct ReflectTypeDescriptionProvider_ReflectedTypeData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _type: *mut crate::System::Type,
-    pub _attributes: *mut crate::System::ComponentModel::AttributeCollection,
-    pub _events: *mut crate::System::ComponentModel::EventDescriptorCollection,
-    pub _properties: *mut crate::System::ComponentModel::PropertyDescriptorCollection,
-    pub _converter: *mut crate::System::ComponentModel::TypeConverter,
-    pub _editors: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _attributes: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::AttributeCollection,
     >,
-    pub _editorTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    pub _events: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::EventDescriptorCollection,
+    >,
+    pub _properties: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::PropertyDescriptorCollection,
+    >,
+    pub _converter: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeConverter,
+    >,
+    pub _editors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+    >,
+    pub _editorTypes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    >,
     pub _editorCount: i32,
 }
 #[cfg(

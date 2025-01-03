@@ -1,9 +1,9 @@
 #[cfg(feature = "System+Data+SqlTypes+SqlString")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SqlString {
-    pub m_value: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_cmpInfo: *mut crate::System::Globalization::CompareInfo,
+    pub m_value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_cmpInfo: quest_hook::libil2cpp::Gc<crate::System::Globalization::CompareInfo>,
     pub m_lcid: i32,
     pub m_flag: crate::System::Data::SqlTypes::SqlCompareOptions,
     pub m_fNotNull: bool,

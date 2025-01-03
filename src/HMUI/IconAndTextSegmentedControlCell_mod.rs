@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct IconAndTextSegmentedControlCell {
     __cordl_parent: crate::HMUI::SegmentedControlCell,
-    pub _icon: *mut crate::UnityEngine::UI::Image,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
+    pub _icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
 #[cfg(feature = "HMUI+IconAndTextSegmentedControlCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

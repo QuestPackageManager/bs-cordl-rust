@@ -12,7 +12,9 @@ pub struct MouseEventBase_1<T: quest_hook::libil2cpp::Type> {
     pub _pressedButtons_k__BackingField: i32,
     pub _UnityEngine_UIElements_IMouseEventInternal_triggeredByOS_k__BackingField: bool,
     pub _UnityEngine_UIElements_IMouseEventInternal_recomputeTopElementUnderMouse_k__BackingField: bool,
-    pub _UnityEngine_UIElements_IMouseEventInternal_sourcePointerEvent_k__BackingField: *mut crate::UnityEngine::UIElements::IPointerEvent,
+    pub _UnityEngine_UIElements_IMouseEventInternal_sourcePointerEvent_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IPointerEvent,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+UIElements+MouseEventBase_1")]

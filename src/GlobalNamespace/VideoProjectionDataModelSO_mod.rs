@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct VideoProjectionDataModelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _videoClipsWithId: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId,
+    pub _videoClipsWithId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId,
+        >,
     >,
 }
 #[cfg(feature = "VideoProjectionDataModelSO")]
@@ -82,7 +84,9 @@ for crate::GlobalNamespace::VideoProjectionDataModelSO {
 pub struct VideoProjectionDataModelSO_VideoClipWithId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _id: i32,
-    pub _videoAssetReference: *mut crate::UnityEngine::AddressableAssets::AssetReference,
+    pub _videoAssetReference: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReference,
+    >,
 }
 #[cfg(feature = "VideoProjectionDataModelSO+VideoClipWithId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

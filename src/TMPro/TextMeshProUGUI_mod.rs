@@ -4,25 +4,31 @@
 pub struct TextMeshProUGUI {
     __cordl_parent: crate::TMPro::TMP_Text,
     pub m_isRebuildingLayout: bool,
-    pub m_DelayedGraphicRebuild: *mut crate::UnityEngine::Coroutine,
-    pub m_DelayedMaterialRebuild: *mut crate::UnityEngine::Coroutine,
+    pub m_DelayedGraphicRebuild: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Coroutine,
+    >,
+    pub m_DelayedMaterialRebuild: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Coroutine,
+    >,
     pub m_ClipRect: crate::UnityEngine::Rect,
     pub m_ValidRect: bool,
-    pub OnPreRenderText: *mut crate::System::Action_1<*mut crate::TMPro::TMP_TextInfo>,
+    pub OnPreRenderText: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::TMPro::TMP_TextInfo>,
+    >,
     pub m_hasFontAssetChanged: bool,
-    pub m_subTextObjects: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::TMPro::TMP_SubMeshUI,
+    pub m_subTextObjects: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TMP_SubMeshUI>,
     >,
     pub m_previousLossyScaleY: f32,
-    pub m_RectTransformCorners: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub m_RectTransformCorners: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
-    pub m_canvasRenderer: *mut crate::UnityEngine::CanvasRenderer,
-    pub m_canvas: *mut crate::UnityEngine::Canvas,
+    pub m_canvasRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasRenderer>,
+    pub m_canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     pub m_CanvasScaleFactor: f32,
     pub m_isFirstAllocation: bool,
     pub m_max_characters: i32,
-    pub m_baseMaterial: *mut crate::UnityEngine::Material,
+    pub m_baseMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub m_isScrollRegionSet: bool,
     pub m_maskOffset: crate::UnityEngine::Vector4,
     pub m_EnvMapMatrix: crate::UnityEngine::Matrix4x4,

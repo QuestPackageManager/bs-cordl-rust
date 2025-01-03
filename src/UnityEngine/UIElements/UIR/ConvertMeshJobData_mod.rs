@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+ConvertMeshJobData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ConvertMeshJobData {
     pub vertSrc: crate::System::IntPtr,
     pub vertDst: crate::System::IntPtr,

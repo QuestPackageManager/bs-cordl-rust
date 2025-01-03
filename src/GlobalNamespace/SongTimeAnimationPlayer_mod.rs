@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct SongTimeAnimationPlayer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _animationClip: *mut crate::UnityEngine::AnimationClip,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
+    pub _animationClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
 }
 #[cfg(feature = "SongTimeAnimationPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+CallbackArray_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CallbackArray_1<TDelegate: quest_hook::libil2cpp::Type> {
     pub m_CannotMutateCallbacksArray: bool,
     pub m_Callbacks: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<

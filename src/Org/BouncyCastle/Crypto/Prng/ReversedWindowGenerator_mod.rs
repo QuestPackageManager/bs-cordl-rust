@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ReversedWindowGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub generator: *mut crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
-    pub window: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub generator: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
+    >,
+    pub window: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub windowCount: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+ReversedWindowGenerator")]

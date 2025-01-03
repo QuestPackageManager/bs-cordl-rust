@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct BaseMultiplayerStartGameCountdownViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _beatmapSelectionView: *mut crate::GlobalNamespace::BeatmapSelectionView,
-    pub _modifiersSelectionView: *mut crate::GlobalNamespace::ModifiersSelectionView,
-    pub _spectateToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub playerActiveStateChangedEvent: *mut crate::System::Action_1<bool>,
-    pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
+    pub _beatmapSelectionView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapSelectionView,
+    >,
+    pub _modifiersSelectionView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ModifiersSelectionView,
+    >,
+    pub _spectateToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub playerActiveStateChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<bool>,
+    >,
+    pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
 }
 #[cfg(feature = "BaseMultiplayerStartGameCountdownViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

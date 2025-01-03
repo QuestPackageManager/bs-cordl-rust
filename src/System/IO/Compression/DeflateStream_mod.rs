@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct DeflateStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub base_stream: *mut crate::System::IO::Stream,
+    pub base_stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub mode: crate::System::IO::Compression::CompressionMode,
     pub leaveOpen: bool,
     pub disposed: bool,
-    pub native: *mut crate::System::IO::Compression::DeflateStreamNative,
+    pub native: quest_hook::libil2cpp::Gc<
+        crate::System::IO::Compression::DeflateStreamNative,
+    >,
 }
 #[cfg(feature = "System+IO+Compression+DeflateStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct AbstractProgressBar {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
-    pub m_Background: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_Progress: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_Title: *mut crate::UnityEngine::UIElements::Label,
+    pub m_Background: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_Progress: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_Title: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Label>,
     pub m_LowValue: f32,
     pub m_HighValue: f32,
     pub m_Value: f32,
@@ -191,10 +195,18 @@ for crate::UnityEngine::UIElements::AbstractProgressBar {
 #[derive(Debug)]
 pub struct AbstractProgressBar_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
-    pub m_LowValue: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_HighValue: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_Value: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_Title: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_LowValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_HighValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_Value: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_Title: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

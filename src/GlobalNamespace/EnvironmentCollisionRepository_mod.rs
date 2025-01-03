@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct EnvironmentCollisionRepository {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _colliders: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::UnityEngine::Collider,
-        *mut crate::GlobalNamespace::ColliderEventEffect,
+    pub _colliders: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::UnityEngine::Collider,
+            *mut crate::GlobalNamespace::ColliderEventEffect,
+        >,
     >,
 }
 #[cfg(feature = "EnvironmentCollisionRepository")]

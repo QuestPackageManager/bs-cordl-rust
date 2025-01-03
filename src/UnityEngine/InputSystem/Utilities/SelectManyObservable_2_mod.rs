@@ -6,10 +6,12 @@ pub struct SelectManyObservable_2<
     TResult: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Source: *mut crate::System::IObservable_1<TSource>,
-    pub m_Filter: *mut crate::System::Func_2<
-        TSource,
-        *mut crate::System::Collections::Generic::IEnumerable_1<TResult>,
+    pub m_Source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TSource>>,
+    pub m_Filter: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            TSource,
+            *mut crate::System::Collections::Generic::IEnumerable_1<TResult>,
+        >,
     >,
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
@@ -171,11 +173,13 @@ pub struct SelectManyObservable_2_Select<
     TResult: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Observable: *mut crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
-        TSource,
-        TResult,
+    pub m_Observable: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
+            TSource,
+            TResult,
+        >,
     >,
-    pub m_Observer: *mut crate::System::IObserver_1<TResult>,
+    pub m_Observer: quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TResult>>,
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }

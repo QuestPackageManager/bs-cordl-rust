@@ -7,10 +7,12 @@ pub struct KeyValueCollectionPropertyBag_3<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::Unity::Properties::PropertyBag_1<TDictionary>,
-    pub m_KeyValuePairProperty: *mut crate::Unity::Properties::KeyValueCollectionPropertyBag_3_KeyValuePairProperty<
-        TDictionary,
-        TKey,
-        TValue,
+    pub m_KeyValuePairProperty: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::KeyValueCollectionPropertyBag_3_KeyValuePairProperty<
+            TDictionary,
+            TKey,
+            TValue,
+        >,
     >,
     __cordl_phantom_TDictionary: std::marker::PhantomData<TDictionary>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,

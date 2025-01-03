@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MissionGameplayInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _sceneSetupData: *mut crate::GlobalNamespace::MissionGameplaySceneSetupData,
+    pub _sceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionGameplaySceneSetupData,
+    >,
 }
 #[cfg(feature = "MissionGameplayInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

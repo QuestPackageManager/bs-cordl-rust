@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+EventInterests")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct EventInterests {
     pub _wantsMouseMove_k__BackingField: bool,
     pub _wantsMouseEnterLeaveWindow_k__BackingField: bool,

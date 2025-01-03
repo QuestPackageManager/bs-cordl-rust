@@ -1325,10 +1325,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRInput_Hapt
 }
 #[cfg(feature = "OVRInput+HapticsAmplitudeEnvelopeVibration")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRInput_HapticsAmplitudeEnvelopeVibration {
     pub SamplesCount: i32,
-    pub Samples: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub Samples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub Duration: f32,
 }
 #[cfg(feature = "OVRInput+HapticsAmplitudeEnvelopeVibration")]
@@ -1366,10 +1366,10 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRInput+HapticsPcmVibration")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRInput_HapticsPcmVibration {
     pub SamplesCount: i32,
-    pub Samples: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub Samples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub SampleRateHz: f32,
     pub Append: bool,
 }
@@ -1442,15 +1442,27 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 pub struct OVRInput_OVRControllerBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub controllerType: crate::GlobalNamespace::OVRInput_Controller,
-    pub buttonMap: *mut crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap,
-    pub touchMap: *mut crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap,
-    pub nearTouchMap: *mut crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap,
-    pub axis1DMap: *mut crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap,
-    pub axis2DMap: *mut crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap,
+    pub buttonMap: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap,
+    >,
+    pub touchMap: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap,
+    >,
+    pub nearTouchMap: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap,
+    >,
+    pub axis1DMap: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap,
+    >,
+    pub axis2DMap: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap,
+    >,
     pub previousState: crate::GlobalNamespace::OVRPlugin_ControllerState6,
     pub currentState: crate::GlobalNamespace::OVRPlugin_ControllerState6,
     pub shouldApplyDeadzone: bool,
-    pub HapticsPcmSamplesConsumedCache: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub HapticsPcmSamplesConsumedCache: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u32>,
+    >,
 }
 #[cfg(feature = "OVRInput+OVRControllerBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2712,7 +2724,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRInput+OpenVRControllerDetails")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRInput_OpenVRControllerDetails {
     pub state: crate::OVR::OpenVR::VRControllerState_t,
     pub controllerType: crate::GlobalNamespace::OVRInput_OpenVRController,

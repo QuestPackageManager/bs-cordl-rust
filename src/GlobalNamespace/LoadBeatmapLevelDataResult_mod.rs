@@ -1,9 +1,11 @@
 #[cfg(feature = "LoadBeatmapLevelDataResult")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LoadBeatmapLevelDataResult {
     pub isError: bool,
-    pub beatmapLevelData: *mut crate::GlobalNamespace::IBeatmapLevelData,
+    pub beatmapLevelData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IBeatmapLevelData,
+    >,
 }
 #[cfg(feature = "LoadBeatmapLevelDataResult")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

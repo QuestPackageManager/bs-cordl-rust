@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct Avatar {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub visualDataProvider: *mut crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider,
-    pub poseDataProvider: *mut crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider,
-    pub optionalDataProvider: *mut crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider,
+    pub visualDataProvider: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider,
+    >,
+    pub poseDataProvider: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider,
+    >,
+    pub optionalDataProvider: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider,
+    >,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+Avatar")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

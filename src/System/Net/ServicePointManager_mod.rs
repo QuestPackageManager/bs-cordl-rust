@@ -113,8 +113,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ServicePointManag
 #[derive(Debug)]
 pub struct ServicePointManager_SPKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub uri: *mut crate::System::Uri,
-    pub proxy: *mut crate::System::Uri,
+    pub uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    pub proxy: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     pub use_connect: bool,
 }
 #[cfg(feature = "System+Net+ServicePointManager+SPKey")]

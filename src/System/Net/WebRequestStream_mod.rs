@@ -3,17 +3,19 @@
 #[derive(Debug)]
 pub struct WebRequestStream {
     __cordl_parent: crate::System::Net::WebConnectionStream,
-    pub writeBuffer: *mut crate::System::IO::MemoryStream,
+    pub writeBuffer: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
     pub requestWritten: bool,
     pub allowBuffering: bool,
     pub sendChunked: bool,
-    pub pendingWrite: *mut crate::System::Net::WebCompletionSource,
+    pub pendingWrite: quest_hook::libil2cpp::Gc<crate::System::Net::WebCompletionSource>,
     pub totalWritten: i64,
-    pub headers: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub headers: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub headersSent: bool,
     pub completeRequestWritten: i32,
     pub chunkTrailerWritten: i32,
-    pub _InnerStream_k__BackingField: *mut crate::System::IO::Stream,
+    pub _InnerStream_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::IO::Stream,
+    >,
     pub _KeepAlive_k__BackingField: bool,
 }
 #[cfg(feature = "System+Net+WebRequestStream")]

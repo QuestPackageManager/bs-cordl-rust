@@ -6,15 +6,19 @@ pub struct LowLevelDictionary_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _buckets: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Collections::Generic::LowLevelDictionary_2_Entry<
-            TKey,
-            TValue,
+    pub _buckets: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Collections::Generic::LowLevelDictionary_2_Entry<
+                TKey,
+                TValue,
+            >,
         >,
     >,
     pub _numEntries: i32,
     pub _version: i32,
-    pub _comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+    pub _comparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+    >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -451,9 +455,8 @@ pub struct LowLevelDictionary_2_Entry<
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _key: TKey,
     pub _value: TValue,
-    pub _next: *mut crate::System::Collections::Generic::LowLevelDictionary_2_Entry<
-        TKey,
-        TValue,
+    pub _next: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LowLevelDictionary_2_Entry<TKey, TValue>,
     >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,

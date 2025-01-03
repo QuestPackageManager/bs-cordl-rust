@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct NoteTrailParticleSystem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _particleSystem: *mut crate::UnityEngine::ParticleSystem,
+    pub _particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
     pub _emitParams: crate::UnityEngine::ParticleSystem_EmitParams,
 }
 #[cfg(feature = "NoteTrailParticleSystem")]

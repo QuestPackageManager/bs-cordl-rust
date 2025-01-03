@@ -4,7 +4,7 @@
 pub struct Operand {
     __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
     pub _type: crate::System::Xml::XPath::XPathResultType,
-    pub _val: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Operand")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

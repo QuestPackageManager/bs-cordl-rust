@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DataColumnPropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
-    pub _Column_k__BackingField: *mut crate::System::Data::DataColumn,
+    pub _Column_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataColumn,
+    >,
 }
 #[cfg(feature = "System+Data+DataColumnPropertyDescriptor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

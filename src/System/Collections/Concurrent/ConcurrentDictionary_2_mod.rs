@@ -6,15 +6,21 @@ pub struct ConcurrentDictionary_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _tables: *mut crate::System::Collections::Concurrent::ConcurrentDictionary_2_Tables<
-        TKey,
-        TValue,
+    pub _tables: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Concurrent::ConcurrentDictionary_2_Tables<
+            TKey,
+            TValue,
+        >,
     >,
-    pub _comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+    pub _comparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+    >,
     pub _growLockArray: bool,
     pub _budget: i32,
-    pub _serializationArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    pub _serializationArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+        >,
     >,
     pub _serializationConcurrencyLevel: i32,
     pub _serializationCapacity: i32,
@@ -1524,8 +1530,10 @@ pub struct ConcurrentDictionary_2_DictionaryEnumerator<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _enumerator: *mut crate::System::Collections::Generic::IEnumerator_1<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    pub _enumerator: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerator_1<
+            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+        >,
     >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -1805,9 +1813,8 @@ pub struct ConcurrentDictionary_2_Node<
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _key: TKey,
     pub _value: TValue,
-    pub _next: *mut crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<
-        TKey,
-        TValue,
+    pub _next: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<TKey, TValue>,
     >,
     pub _hashcode: i32,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
@@ -1915,16 +1922,20 @@ pub struct ConcurrentDictionary_2_Tables<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _buckets: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<
-            TKey,
-            TValue,
+    pub _buckets: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<
+                TKey,
+                TValue,
+            >,
         >,
     >,
-    pub _locks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _locks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub _countPerLock: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _countPerLock: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }

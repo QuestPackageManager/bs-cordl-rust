@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ExtendedKeyUsage {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub usageTable: *mut crate::System::Collections::IDictionary,
-    pub seq: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    pub usageTable: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    pub seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+ExtendedKeyUsage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,18 +3,28 @@
 #[derive(Debug)]
 pub struct MultiplayerScoreProvider {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _scoreSyncStateManager: *mut crate::GlobalNamespace::IScoreSyncStateManager,
-    pub _firstPlayer_k__BackingField: *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
-    pub firstPlayerDidChangeEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+    pub _scoreSyncStateManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IScoreSyncStateManager,
+    >,
+    pub _firstPlayer_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+    >,
+    pub firstPlayerDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+        >,
     >,
     pub _sharedOffsetSyncTime: i64,
-    pub _rankedPlayers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+    pub _rankedPlayers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+        >,
     >,
-    pub _players: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+    pub _players: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerScoreProvider")]
@@ -189,12 +199,16 @@ for crate::GlobalNamespace::MultiplayerScoreProvider {
 #[derive(Debug)]
 pub struct MultiplayerScoreProvider_RankedPlayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _multiplayerSyncState: *mut crate::GlobalNamespace::MultiplayerSyncState_3<
-        crate::GlobalNamespace::StandardScoreSyncState,
-        crate::GlobalNamespace::StandardScoreSyncState_Score,
-        i32,
+    pub _multiplayerSyncState: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerSyncState_3<
+            crate::GlobalNamespace::StandardScoreSyncState,
+            crate::GlobalNamespace::StandardScoreSyncState_Score,
+            i32,
+        >,
     >,
-    pub _scoreSyncManager: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
+    pub _scoreSyncManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreProvider,
+    >,
 }
 #[cfg(feature = "MultiplayerScoreProvider+RankedPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

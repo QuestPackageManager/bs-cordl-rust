@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ManualResetEventSlim {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_lock: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_eventObj: *mut crate::System::Threading::ManualResetEvent,
+    pub m_lock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_eventObj: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ManualResetEvent,
+    >,
     pub m_combinedState: i32,
 }
 #[cfg(feature = "System+Threading+ManualResetEventSlim")]

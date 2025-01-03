@@ -4,8 +4,8 @@
 pub struct MidiTrack {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Index: i32,
-    pub MidiEvents: *mut crate::System::Collections::Generic::List_1<
-        crate::MidiParser::MidiEvent,
+    pub MidiEvents: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::MidiParser::MidiEvent>,
     >,
 }
 #[cfg(feature = "MidiParser+MidiTrack")]

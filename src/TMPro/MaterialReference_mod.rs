@@ -1,14 +1,14 @@
 #[cfg(feature = "TMPro+MaterialReference")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MaterialReference {
     pub index: i32,
-    pub fontAsset: *mut crate::TMPro::TMP_FontAsset,
-    pub spriteAsset: *mut crate::TMPro::TMP_SpriteAsset,
-    pub material: *mut crate::UnityEngine::Material,
+    pub fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    pub spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+    pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub isDefaultMaterial: bool,
     pub isFallbackMaterial: bool,
-    pub fallbackMaterial: *mut crate::UnityEngine::Material,
+    pub fallbackMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub padding: f32,
     pub referenceCount: i32,
 }

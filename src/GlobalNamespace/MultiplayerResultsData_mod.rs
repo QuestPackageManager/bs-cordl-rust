@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct MultiplayerResultsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _gameId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _localPlayerResultData: *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
-    pub _otherPlayersData: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
+    pub _gameId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _localPlayerResultData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerPlayerResultsData,
     >,
-    pub _allPlayersSortedData: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
+    pub _otherPlayersData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
+        >,
+    >,
+    pub _allPlayersSortedData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerResultsData")]

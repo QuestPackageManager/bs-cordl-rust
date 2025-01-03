@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct CacheControlHeaderValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub extensions: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+    pub extensions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+        >,
     >,
-    pub no_cache_headers: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub no_cache_headers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub private_headers: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub private_headers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub _MaxAge_k__BackingField: crate::System::Nullable_1<crate::System::TimeSpan>,
     pub _MaxStale_k__BackingField: bool,

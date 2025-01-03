@@ -3,13 +3,21 @@
 #[derive(Debug)]
 pub struct MultiplayerAvatarPoseController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _leftSaberTransform: *mut crate::UnityEngine::Transform,
-    pub _rightSaberTransform: *mut crate::UnityEngine::Transform,
-    pub _headTransform: *mut crate::UnityEngine::Transform,
-    pub _nodePoseSyncStateManager: *mut crate::GlobalNamespace::INodePoseSyncStateManager,
-    pub _avatarPoseRestriction: *mut crate::BeatSaber::AvatarCore::IAvatarPoseRestriction,
-    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
-    pub didUpdatePoseEvent: *mut crate::System::Action_1<crate::UnityEngine::Vector3>,
+    pub _leftSaberTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _rightSaberTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _headTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _nodePoseSyncStateManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INodePoseSyncStateManager,
+    >,
+    pub _avatarPoseRestriction: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::IAvatarPoseRestriction,
+    >,
+    pub _connectedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
+    pub didUpdatePoseEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::UnityEngine::Vector3>,
+    >,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+MultiplayerAvatarPoseController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -4,22 +4,30 @@
 pub struct TimelineAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
     pub m_Version: i32,
-    pub m_Tracks: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::ScriptableObject,
+    pub m_Tracks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::ScriptableObject,
+        >,
     >,
     pub m_FixedDuration: f64,
-    pub m_CacheOutputTracks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Timeline::TrackAsset,
+    pub m_CacheOutputTracks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Timeline::TrackAsset>,
     >,
-    pub m_CacheRootTracks: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Timeline::TrackAsset,
+    pub m_CacheRootTracks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Timeline::TrackAsset,
+        >,
     >,
-    pub m_CacheFlattenedTracks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Timeline::TrackAsset,
+    pub m_CacheFlattenedTracks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Timeline::TrackAsset>,
     >,
-    pub m_EditorSettings: *mut crate::UnityEngine::Timeline::TimelineAsset_EditorSettings,
+    pub m_EditorSettings: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::TimelineAsset_EditorSettings,
+    >,
     pub m_DurationMode: crate::UnityEngine::Timeline::TimelineAsset_DurationMode,
-    pub m_MarkerTrack: *mut crate::UnityEngine::Timeline::MarkerTrack,
+    pub m_MarkerTrack: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::MarkerTrack,
+    >,
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

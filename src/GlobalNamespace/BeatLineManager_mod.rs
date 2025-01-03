@@ -4,15 +4,21 @@
 pub struct BeatLineManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _linesYPosition: f32,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _beatLinePool: *mut crate::GlobalNamespace::BeatLine_Pool,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
-    pub _activeBeatLines: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::Vector4,
-        *mut crate::GlobalNamespace::BeatLine,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
     >,
-    pub _removeBeatLineKeyList: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector4,
+    pub _beatLinePool: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatLine_Pool>,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
+    pub _activeBeatLines: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::Vector4,
+            *mut crate::GlobalNamespace::BeatLine,
+        >,
+    >,
+    pub _removeBeatLineKeyList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
     >,
     pub _isMidRotationValid: bool,
     pub _midRotation: f32,

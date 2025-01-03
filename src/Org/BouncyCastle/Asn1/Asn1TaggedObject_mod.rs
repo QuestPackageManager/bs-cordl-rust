@@ -5,7 +5,7 @@ pub struct Asn1TaggedObject {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Object,
     pub tagNo: i32,
     pub explicitly: bool,
-    pub obj: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    pub obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1TaggedObject")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct CommitmentTypeQualifier {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub commitmentTypeIdentifier: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub qualifier: *mut crate::Org::BouncyCastle::Asn1::Asn1Object,
+    pub commitmentTypeIdentifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub qualifier: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Esf+CommitmentTypeQualifier")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

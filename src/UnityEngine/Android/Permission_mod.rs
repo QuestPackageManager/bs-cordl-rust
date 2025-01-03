@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Android+Permission")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Permission {}
 #[cfg(feature = "UnityEngine+Android+Permission")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

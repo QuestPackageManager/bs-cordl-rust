@@ -1,14 +1,14 @@
 #[cfg(feature = "System+Security+Cryptography+DSAParameters")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DSAParameters {
-    pub P: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub Q: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub G: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub Y: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub J: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub X: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub Seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub P: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub Q: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub G: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub Y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub J: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub X: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub Seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub Counter: i32,
 }
 #[cfg(feature = "System+Security+Cryptography+DSAParameters")]

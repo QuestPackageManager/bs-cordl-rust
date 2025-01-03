@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct PlatformUserAuthTokenData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _token_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _token_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _validPlatformEnvironment_k__BackingField: crate::GlobalNamespace::PlatformEnvironment,
 }
 #[cfg(feature = "PlatformUserAuthTokenData")]

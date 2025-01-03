@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DateTimeStorage {
     __cordl_parent: crate::System::Data::Common::DataStorage,
-    pub _values: *mut quest_hook::libil2cpp::Il2CppArray<crate::System::DateTime>,
+    pub _values: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::DateTime>,
+    >,
 }
 #[cfg(feature = "System+Data+Common+DateTimeStorage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

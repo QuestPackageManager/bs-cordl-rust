@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct TextEditorEventHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub textElement: *mut crate::UnityEngine::UIElements::TextElement,
-    pub editingUtilities: *mut crate::UnityEngine::TextEditingUtilities,
+    pub textElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextElement,
+    >,
+    pub editingUtilities: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextEditingUtilities,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TextEditorEventHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

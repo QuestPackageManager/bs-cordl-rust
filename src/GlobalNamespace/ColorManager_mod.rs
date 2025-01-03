@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ColorManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _colorScheme: *mut crate::GlobalNamespace::ColorScheme,
+    pub _colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
 }
 #[cfg(feature = "ColorManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

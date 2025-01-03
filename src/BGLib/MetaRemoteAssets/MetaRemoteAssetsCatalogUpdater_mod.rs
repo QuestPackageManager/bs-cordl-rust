@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct MetaRemoteAssetsCatalogUpdater {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _remoteAssetsManager: *mut crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager,
-    pub _scenesManager: *mut crate::GlobalNamespace::GameScenesManager,
-    pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _checkForCatalogUpdateOngoingTask: *mut crate::System::Threading::Tasks::Task,
+    pub _remoteAssetsManager: quest_hook::libil2cpp::Gc<
+        crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager,
+    >,
+    pub _scenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
+    pub _cancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub _checkForCatalogUpdateOngoingTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task,
+    >,
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

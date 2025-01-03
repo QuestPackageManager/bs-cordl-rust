@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct MultiplayerStatusModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
-    pub _client: *mut crate::System::Net::Http::HttpClient,
-    pub _request: *mut crate::System::Threading::Tasks::Task_1<
-        *mut crate::GlobalNamespace::MultiplayerStatusData,
+    pub _networkConfig: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INetworkConfig,
+    >,
+    pub _client: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpClient>,
+    pub _request: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::MultiplayerStatusData,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerStatusModel")]
@@ -145,8 +149,10 @@ for crate::GlobalNamespace::MultiplayerStatusModel {
 #[derive(Debug)]
 pub struct MultiplayerStatusModel_MultiplayerStatusDataFB {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub data: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MultiplayerStatusData,
+    pub data: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MultiplayerStatusData,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerStatusModel+MultiplayerStatusDataFB")]

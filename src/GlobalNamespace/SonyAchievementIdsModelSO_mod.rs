@@ -3,16 +3,22 @@
 #[derive(Debug)]
 pub struct SonyAchievementIdsModelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _achievementsIds: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
+    pub _achievementsIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
+        >,
     >,
-    pub _achievementIdToTrophyId: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        i32,
+    pub _achievementIdToTrophyId: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            i32,
+        >,
     >,
-    pub _trophyIdToAchievementId: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _trophyIdToAchievementId: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "SonyAchievementIdsModelSO")]
@@ -139,7 +145,7 @@ for crate::GlobalNamespace::SonyAchievementIdsModelSO {
 pub struct SonyAchievementIdsModelSO_AchievementIdData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _trophyId: i32,
-    pub _achievement: *mut crate::GlobalNamespace::AchievementSO,
+    pub _achievement: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
 }
 #[cfg(feature = "SonyAchievementIdsModelSO+AchievementIdData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

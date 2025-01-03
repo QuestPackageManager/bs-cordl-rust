@@ -4,7 +4,9 @@
 pub struct MouseButtonEventData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub buttonState: crate::UnityEngine::EventSystems::PointerEventData_FramePressState,
-    pub buttonData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    pub buttonData: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::PointerEventData,
+    >,
 }
 #[cfg(feature = "VRUIControls+MouseButtonEventData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

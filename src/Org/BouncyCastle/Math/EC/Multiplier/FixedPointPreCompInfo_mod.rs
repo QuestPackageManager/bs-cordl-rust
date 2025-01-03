@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct FixedPointPreCompInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_offset: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    pub m_lookupTable: *mut crate::Org::BouncyCastle::Math::EC::ECLookupTable,
+    pub m_offset: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+    pub m_lookupTable: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::ECLookupTable,
+    >,
     pub m_width: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointPreCompInfo")]

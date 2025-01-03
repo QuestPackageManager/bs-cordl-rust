@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct MockBeatmapLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub _beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
-    pub _environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
-    pub _beatmapCharacteristicCollection: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub _beatmapDataLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataLoader,
+    >,
+    pub _environmentsListModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentsListModel,
+    >,
+    pub _beatmapCharacteristicCollection: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicCollection,
+    >,
 }
 #[cfg(feature = "MockBeatmapLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

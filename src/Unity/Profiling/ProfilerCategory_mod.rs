@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Profiling+ProfilerCategory")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ProfilerCategory {
     padding: [u8; 2usize],
 }

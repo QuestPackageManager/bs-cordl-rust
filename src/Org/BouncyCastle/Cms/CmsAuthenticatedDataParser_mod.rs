@@ -3,12 +3,22 @@
 #[derive(Debug)]
 pub struct CmsAuthenticatedDataParser {
     __cordl_parent: crate::Org::BouncyCastle::Cms::CmsContentInfoParser,
-    pub _recipientInfoStore: *mut crate::Org::BouncyCastle::Cms::RecipientInformationStore,
-    pub authData: *mut crate::Org::BouncyCastle::Asn1::Cms::AuthenticatedDataParser,
-    pub macAlg: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub mac: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub authAttrs: *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
-    pub unauthAttrs: *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+    pub _recipientInfoStore: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::RecipientInformationStore,
+    >,
+    pub authData: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::AuthenticatedDataParser,
+    >,
+    pub macAlg: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub mac: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub authAttrs: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+    >,
+    pub unauthAttrs: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+    >,
     pub authAttrNotRead: bool,
     pub unauthAttrNotRead: bool,
 }

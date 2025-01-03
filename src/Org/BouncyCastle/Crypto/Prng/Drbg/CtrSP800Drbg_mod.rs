@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct CtrSP800Drbg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mEntropySource: *mut crate::Org::BouncyCastle::Crypto::IEntropySource,
-    pub mEngine: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    pub mEntropySource: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IEntropySource,
+    >,
+    pub mEngine: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    >,
     pub mKeySizeInBits: i32,
     pub mSeedLength: i32,
     pub mSecurityStrength: i32,
-    pub mKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mReseedCounter: i64,
     pub mIsTdea: bool,
 }

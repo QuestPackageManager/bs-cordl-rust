@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct MockPlayerAuthenticationTokenProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _userId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _password: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _hashedUserId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _userName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _hashedUserId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _userName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _platform_k__BackingField: crate::GlobalNamespace::AuthenticationToken_Platform,
     pub _mockTokenData: crate::GlobalNamespace::XPlatformAccessTokenData,
 }

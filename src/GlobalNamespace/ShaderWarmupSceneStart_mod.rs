@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ShaderWarmupSceneStart {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _sceneSetupData: *mut crate::GlobalNamespace::ShaderWarmupSceneSetupData,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
+    pub _sceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ShaderWarmupSceneSetupData,
+    >,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
 }
 #[cfg(feature = "ShaderWarmupSceneStart")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

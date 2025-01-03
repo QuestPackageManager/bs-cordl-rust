@@ -4,8 +4,8 @@
 pub struct NotifyCollectionChangedEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub _action: crate::System::Collections::Specialized::NotifyCollectionChangedAction,
-    pub _newItems: *mut crate::System::Collections::IList,
-    pub _oldItems: *mut crate::System::Collections::IList,
+    pub _newItems: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub _oldItems: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub _newStartingIndex: i32,
     pub _oldStartingIndex: i32,
 }

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct RsaOaepWrapperProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub digestOid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    pub digestOid: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+RsaOaepWrapperProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

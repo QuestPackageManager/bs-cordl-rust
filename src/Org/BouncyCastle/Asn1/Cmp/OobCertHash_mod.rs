@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct OobCertHash {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub hashAlg: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub certId: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertId,
-    pub hashVal: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
+    pub hashAlg: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub certId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Crmf::CertId>,
+    pub hashVal: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerBitString>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+OobCertHash")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -13,13 +13,25 @@ pub struct JsonSerializer {
     pub _defaultValueHandling: crate::Newtonsoft::Json::DefaultValueHandling,
     pub _constructorHandling: crate::Newtonsoft::Json::ConstructorHandling,
     pub _metadataPropertyHandling: crate::Newtonsoft::Json::MetadataPropertyHandling,
-    pub _converters: *mut crate::Newtonsoft::Json::JsonConverterCollection,
-    pub _contractResolver: *mut crate::Newtonsoft::Json::Serialization::IContractResolver,
-    pub _traceWriter: *mut crate::Newtonsoft::Json::Serialization::ITraceWriter,
-    pub _equalityComparer: *mut crate::System::Collections::IEqualityComparer,
-    pub _serializationBinder: *mut crate::Newtonsoft::Json::Serialization::ISerializationBinder,
+    pub _converters: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::JsonConverterCollection,
+    >,
+    pub _contractResolver: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::IContractResolver,
+    >,
+    pub _traceWriter: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::ITraceWriter,
+    >,
+    pub _equalityComparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IEqualityComparer,
+    >,
+    pub _serializationBinder: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::ISerializationBinder,
+    >,
     pub _context: crate::System::Runtime::Serialization::StreamingContext,
-    pub _referenceResolver: *mut crate::Newtonsoft::Json::Serialization::IReferenceResolver,
+    pub _referenceResolver: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::IReferenceResolver,
+    >,
     pub _formatting: crate::System::Nullable_1<crate::Newtonsoft::Json::Formatting>,
     pub _dateFormatHandling: crate::System::Nullable_1<
         crate::Newtonsoft::Json::DateFormatHandling,
@@ -39,14 +51,18 @@ pub struct JsonSerializer {
     pub _stringEscapeHandling: crate::System::Nullable_1<
         crate::Newtonsoft::Json::StringEscapeHandling,
     >,
-    pub _culture: *mut crate::System::Globalization::CultureInfo,
+    pub _culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     pub _maxDepth: crate::System::Nullable_1<i32>,
     pub _maxDepthSet: bool,
     pub _checkAdditionalContent: crate::System::Nullable_1<bool>,
-    pub _dateFormatString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _dateFormatString: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _dateFormatStringSet: bool,
-    pub Error: *mut crate::System::EventHandler_1<
-        *mut crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+    pub Error: quest_hook::libil2cpp::Gc<
+        crate::System::EventHandler_1<
+            *mut crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+JsonSerializer")]

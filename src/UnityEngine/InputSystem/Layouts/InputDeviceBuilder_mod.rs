@@ -1,15 +1,21 @@
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputDeviceBuilder {
-    pub m_Device: *mut crate::UnityEngine::InputSystem::InputDevice,
-    pub m_LayoutCacheRef: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstance,
-    pub m_ChildControlOverrides: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+    pub m_Device: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputDevice,
     >,
-    pub m_StateOffsetToControlMap: *mut crate::System::Collections::Generic::List_1<u32>,
-    pub m_StringBuilder: *mut crate::System::Text::StringBuilder,
+    pub m_LayoutCacheRef: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstance,
+    pub m_ChildControlOverrides: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+        >,
+    >,
+    pub m_StateOffsetToControlMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<u32>,
+    >,
+    pub m_StringBuilder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -493,7 +499,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder+RefInstance")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputDeviceBuilder_RefInstance {}
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder+RefInstance")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

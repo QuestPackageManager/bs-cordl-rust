@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct X509V2AttributeCertificate {
     __cordl_parent: crate::Org::BouncyCastle::X509::X509ExtensionBase,
-    pub cert: *mut crate::Org::BouncyCastle::Asn1::X509::AttributeCertificate,
+    pub cert: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AttributeCertificate,
+    >,
     pub notBefore: crate::System::DateTime,
     pub notAfter: crate::System::DateTime,
 }

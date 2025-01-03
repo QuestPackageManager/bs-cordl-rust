@@ -3,19 +3,23 @@
 #[derive(Debug)]
 pub struct XmlNamespaceManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub nsdecls: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::XmlNamespaceManager_NamespaceDeclaration,
+    pub nsdecls: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Xml::XmlNamespaceManager_NamespaceDeclaration,
+        >,
     >,
     pub lastDecl: i32,
-    pub nameTable: *mut crate::System::Xml::XmlNameTable,
+    pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     pub scopeId: i32,
-    pub hashTable: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        i32,
+    pub hashTable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            i32,
+        >,
     >,
     pub useHashtable: bool,
-    pub xml: *mut quest_hook::libil2cpp::Il2CppString,
-    pub xmlNs: *mut quest_hook::libil2cpp::Il2CppString,
+    pub xml: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub xmlNs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+XmlNamespaceManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -255,10 +259,10 @@ for crate::System::Xml::XmlNamespaceManager {
 }
 #[cfg(feature = "System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XmlNamespaceManager_NamespaceDeclaration {
-    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub uri: *mut quest_hook::libil2cpp::Il2CppString,
+    pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub scopeId: i32,
     pub previousNsIndex: i32,
 }

@@ -1,11 +1,11 @@
 #[cfg(feature = "System+Globalization+InternalCodePageDataItem")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InternalCodePageDataItem {
     pub codePage: u16,
     pub uiFamilyCodePage: u16,
     pub flags: u32,
-    pub Names: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Names: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Globalization+InternalCodePageDataItem")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

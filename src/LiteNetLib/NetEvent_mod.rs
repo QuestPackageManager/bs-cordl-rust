@@ -4,15 +4,17 @@
 pub struct NetEvent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Type: crate::LiteNetLib::NetEvent_EType,
-    pub Peer: *mut crate::LiteNetLib::NetPeer,
-    pub RemoteEndPoint: *mut crate::System::Net::IPEndPoint,
-    pub UserData: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub Peer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
+    pub RemoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+    pub UserData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub Latency: i32,
     pub ErrorCode: crate::System::Net::Sockets::SocketError,
     pub DisconnectReason: crate::LiteNetLib::DisconnectReason,
-    pub ConnectionRequest: *mut crate::LiteNetLib::ConnectionRequest,
+    pub ConnectionRequest: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::ConnectionRequest,
+    >,
     pub DeliveryMethod: crate::LiteNetLib::DeliveryMethod,
-    pub DataReader: *mut crate::LiteNetLib::NetPacketReader,
+    pub DataReader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacketReader>,
 }
 #[cfg(feature = "LiteNetLib+NetEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

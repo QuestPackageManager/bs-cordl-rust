@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct UnityEvent_1<T0: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::Events::UnityEventBase,
-    pub m_InvokeArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_InvokeArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     __cordl_phantom_T0: std::marker::PhantomData<T0>,
 }

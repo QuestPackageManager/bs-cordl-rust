@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct DataViewSettingCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dataViewManager: *mut crate::System::Data::DataViewManager,
-    pub _list: *mut crate::System::Collections::Hashtable,
+    pub _dataViewManager: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataViewManager,
+    >,
+    pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Data+DataViewSettingCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

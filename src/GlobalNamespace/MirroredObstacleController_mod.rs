@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct MirroredObstacleController {
     __cordl_parent: crate::GlobalNamespace::ObstacleControllerBase,
-    pub _stretchableObstacle: *mut crate::GlobalNamespace::StretchableObstacle,
-    pub _followedObstacle: *mut crate::GlobalNamespace::ObstacleController,
-    pub _transform: *mut crate::UnityEngine::Transform,
-    pub _followedTransform: *mut crate::UnityEngine::Transform,
+    pub _stretchableObstacle: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StretchableObstacle,
+    >,
+    pub _followedObstacle: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ObstacleController,
+    >,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _followedTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "MirroredObstacleController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

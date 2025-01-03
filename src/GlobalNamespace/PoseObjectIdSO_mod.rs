@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PoseObjectIdSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _serializedId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _serializedId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "PoseObjectIdSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

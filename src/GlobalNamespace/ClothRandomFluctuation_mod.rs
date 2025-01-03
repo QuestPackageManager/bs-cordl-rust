@@ -3,14 +3,16 @@
 #[derive(Debug)]
 pub struct ClothRandomFluctuation {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _cloth: *mut crate::UnityEngine::Cloth,
+    pub _cloth: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cloth>,
     pub _useLocalExternalFluctuations: bool,
     pub _externalFluctuations: crate::UnityEngine::Vector3,
     pub _useLocalRandomFluctuations: bool,
     pub _minFluctuations: crate::UnityEngine::Vector3,
     pub _maxFluctuations: crate::UnityEngine::Vector3,
-    pub _compoundSins: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::ClothRandomFluctuation_SineLayer,
+    pub _compoundSins: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::ClothRandomFluctuation_SineLayer,
+        >,
     >,
     pub _speed: f32,
 }

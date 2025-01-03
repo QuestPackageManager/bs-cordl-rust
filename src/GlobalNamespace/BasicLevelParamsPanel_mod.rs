@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct BasicLevelParamsPanel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _durationText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _bpmText: *mut crate::TMPro::TextMeshProUGUI,
+    pub _durationText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _bpmText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
 #[cfg(feature = "BasicLevelParamsPanel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Collections+NativeArrayDisposeJob")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NativeArrayDisposeJob {
     pub Data: crate::Unity::Collections::NativeArrayDispose,
 }

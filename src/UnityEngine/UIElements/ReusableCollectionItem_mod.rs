@@ -3,21 +3,31 @@
 #[derive(Debug)]
 pub struct ReusableCollectionItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _bindableElement_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub _animator_k__BackingField: *mut crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<
-        crate::UnityEngine::UIElements::Experimental::StyleValues,
+    pub _bindableElement_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub _animator_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<
+            crate::UnityEngine::UIElements::Experimental::StyleValues,
+        >,
     >,
     pub _index_k__BackingField: i32,
     pub _id_k__BackingField: i32,
     pub _isDragGhost_k__BackingField: bool,
-    pub onGeometryChanged: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+    pub onGeometryChanged: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+        >,
     >,
-    pub m_GeometryChangedEventCallback: *mut crate::UnityEngine::UIElements::EventCallback_1<
-        *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
+    pub m_GeometryChangedEventCallback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventCallback_1<
+            *mut crate::UnityEngine::UIElements::GeometryChangedEvent,
+        >,
     >,
-    pub onDestroy: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+    pub onDestroy: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ReusableCollectionItem")]

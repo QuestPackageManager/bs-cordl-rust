@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct BlocksBlade {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _elementMesh: *mut crate::UnityEngine::Mesh,
-    pub _material: *mut crate::UnityEngine::Material,
+    pub _elementMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _numberOfElements: i32,
     pub _radius: f32,
     pub _length: f32,
@@ -14,16 +14,26 @@ pub struct BlocksBlade {
     pub _minElementLength: f32,
     pub _maxElementLength: f32,
     pub _color_k__BackingField: crate::UnityEngine::Color,
-    pub _elements: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::BlocksBlade_Element,
+    pub _elements: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::BlocksBlade_Element,
+        >,
     >,
-    pub _positions: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-    pub _sizes: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-    pub _colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-    pub _matrices: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Matrix4x4,
+    pub _positions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
-    pub _materialPropertyBlock: *mut crate::UnityEngine::MaterialPropertyBlock,
+    pub _sizes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+    >,
+    pub _colors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+    >,
+    pub _matrices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+    >,
+    pub _materialPropertyBlock: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MaterialPropertyBlock,
+    >,
     pub _layer: i32,
 }
 #[cfg(feature = "BlocksBlade")]

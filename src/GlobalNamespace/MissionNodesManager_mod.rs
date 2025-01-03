@@ -3,17 +3,29 @@
 #[derive(Debug)]
 pub struct MissionNodesManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _rootMissionNode: *mut crate::GlobalNamespace::MissionNode,
-    pub _finalMissionNode: *mut crate::GlobalNamespace::MissionNode,
-    pub _missionStagesManager: *mut crate::GlobalNamespace::MissionStagesManager,
-    pub _connectionsParentObject: *mut crate::UnityEngine::GameObject,
-    pub _missionNodesParentObject: *mut crate::UnityEngine::GameObject,
-    pub _missionProgressModel: *mut crate::GlobalNamespace::CampaignProgressModel,
-    pub _allMissionNodeConnections: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MissionNodeConnection,
+    pub _rootMissionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+    pub _finalMissionNode: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionNode,
     >,
-    pub _allMissionNodes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MissionNode,
+    pub _missionStagesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionStagesManager,
+    >,
+    pub _connectionsParentObject: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _missionNodesParentObject: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _missionProgressModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CampaignProgressModel,
+    >,
+    pub _allMissionNodeConnections: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MissionNodeConnection,
+        >,
+    >,
+    pub _allMissionNodes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionNode>,
     >,
     pub _isInitialized: bool,
 }

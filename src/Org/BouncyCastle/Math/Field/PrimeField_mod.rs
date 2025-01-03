@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct PrimeField {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub characteristic: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub characteristic: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Field+PrimeField")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

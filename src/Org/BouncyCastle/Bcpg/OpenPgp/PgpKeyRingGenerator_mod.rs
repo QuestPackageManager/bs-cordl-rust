@@ -3,17 +3,25 @@
 #[derive(Debug)]
 pub struct PgpKeyRingGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub keys: *mut crate::System::Collections::IList,
-    pub id: *mut quest_hook::libil2cpp::Il2CppString,
+    pub keys: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
     pub hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
     pub certificationLevel: i32,
-    pub rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub rawPassPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub useSha1: bool,
-    pub masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-    pub hashedPacketVector: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-    pub unhashedPacketVector: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
-    pub _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub masterKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+    >,
+    pub hashedPacketVector: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+    >,
+    pub unhashedPacketVector: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+    >,
+    pub _cordl_rand: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpKeyRingGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

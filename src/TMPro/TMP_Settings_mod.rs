@@ -12,8 +12,10 @@ pub struct TMP_Settings {
     pub m_GetFontFeaturesAtRuntime: bool,
     pub m_missingGlyphCharacter: i32,
     pub m_warningsDisabled: bool,
-    pub m_defaultFontAsset: *mut crate::TMPro::TMP_FontAsset,
-    pub m_defaultFontAssetPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_defaultFontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    pub m_defaultFontAssetPath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub m_defaultFontSize: f32,
     pub m_defaultAutoSizeMinRatio: f32,
     pub m_defaultAutoSizeMaxRatio: f32,
@@ -21,20 +23,28 @@ pub struct TMP_Settings {
     pub m_defaultTextMeshProUITextContainerSize: crate::UnityEngine::Vector2,
     pub m_autoSizeTextContainer: bool,
     pub m_IsTextObjectScaleStatic: bool,
-    pub m_fallbackFontAssets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_FontAsset,
+    pub m_fallbackFontAssets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_FontAsset>,
     >,
     pub m_matchMaterialPreset: bool,
-    pub m_defaultSpriteAsset: *mut crate::TMPro::TMP_SpriteAsset,
-    pub m_defaultSpriteAssetPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_defaultSpriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+    pub m_defaultSpriteAssetPath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub m_enableEmojiSupport: bool,
     pub m_MissingCharacterSpriteUnicode: u32,
-    pub m_defaultColorGradientPresetsPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_defaultStyleSheet: *mut crate::TMPro::TMP_StyleSheet,
-    pub m_StyleSheetsResourcePath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_leadingCharacters: *mut crate::UnityEngine::TextAsset,
-    pub m_followingCharacters: *mut crate::UnityEngine::TextAsset,
-    pub m_linebreakingRules: *mut crate::TMPro::TMP_Settings_LineBreakingTable,
+    pub m_defaultColorGradientPresetsPath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_defaultStyleSheet: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_StyleSheet>,
+    pub m_StyleSheetsResourcePath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_leadingCharacters: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+    pub m_followingCharacters: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+    pub m_linebreakingRules: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TMP_Settings_LineBreakingTable,
+    >,
     pub m_UseModernHangulLineBreakingRules: bool,
 }
 #[cfg(feature = "TMPro+TMP_Settings")]
@@ -392,13 +402,11 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Settings {
 #[derive(Debug)]
 pub struct TMP_Settings_LineBreakingTable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub leadingCharacters: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        char,
+    pub leadingCharacters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, char>,
     >,
-    pub followingCharacters: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        char,
+    pub followingCharacters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, char>,
     >,
 }
 #[cfg(feature = "TMPro+TMP_Settings+LineBreakingTable")]

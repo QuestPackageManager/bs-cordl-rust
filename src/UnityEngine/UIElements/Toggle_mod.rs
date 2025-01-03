@@ -163,7 +163,9 @@ pub struct Toggle_UxmlTraits {
         bool,
         *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
-    pub m_Text: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_Text: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

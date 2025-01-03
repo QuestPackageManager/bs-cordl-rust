@@ -3,11 +3,21 @@
 #[derive(Debug)]
 pub struct TlsStreamCipher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub context: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
-    pub encryptCipher: *mut crate::Org::BouncyCastle::Crypto::IStreamCipher,
-    pub decryptCipher: *mut crate::Org::BouncyCastle::Crypto::IStreamCipher,
-    pub writeMac: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsMac,
-    pub readMac: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsMac,
+    pub context: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+    >,
+    pub encryptCipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IStreamCipher,
+    >,
+    pub decryptCipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IStreamCipher,
+    >,
+    pub writeMac: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsMac,
+    >,
+    pub readMac: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsMac,
+    >,
     pub usesNonce: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsStreamCipher")]

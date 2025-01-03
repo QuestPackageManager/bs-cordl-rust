@@ -6,7 +6,9 @@ pub struct HEU_Task {
     pub _status: crate::HoudiniEngineUnity::HEU_Task_TaskStatus,
     pub _result: crate::HoudiniEngineUnity::HEU_Task_TaskResult,
     pub _guid: crate::System::Guid,
-    pub _taskCompletedDelegate: *mut crate::HoudiniEngineUnity::HEU_Task_TaskCallback,
+    pub _taskCompletedDelegate: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_Task_TaskCallback,
+    >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_Task")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -4,9 +4,11 @@
 pub struct NoteJumpStartScaleUp {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _fullScaleJumpPart: f32,
-    pub _targetTransform: *mut crate::UnityEngine::Transform,
-    pub _noteController: *mut crate::GlobalNamespace::NoteController,
-    pub _noteJump: *mut crate::GlobalNamespace::NoteJump,
+    pub _targetTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _noteController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteController,
+    >,
+    pub _noteJump: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
 }
 #[cfg(feature = "NoteJumpStartScaleUp")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

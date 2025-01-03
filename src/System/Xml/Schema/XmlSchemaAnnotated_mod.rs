@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct XmlSchemaAnnotated {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaObject,
-    pub id: *mut quest_hook::libil2cpp::Il2CppString,
-    pub annotation: *mut crate::System::Xml::Schema::XmlSchemaAnnotation,
-    pub moreAttributes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::XmlAttribute,
+    pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub annotation: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAnnotation,
+    >,
+    pub moreAttributes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlAttribute>,
     >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaAnnotated")]

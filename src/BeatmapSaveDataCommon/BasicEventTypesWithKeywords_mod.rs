@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BasicEventTypesWithKeywords {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub d: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword,
+    pub d: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapSaveDataCommon+BasicEventTypesWithKeywords")]
@@ -97,9 +99,11 @@ for crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords {
 #[derive(Debug)]
 pub struct BasicEventTypesWithKeywords_BasicEventTypesForKeyword {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub k: *mut quest_hook::libil2cpp::Il2CppString,
-    pub e: *mut crate::System::Collections::Generic::List_1<
-        crate::BeatmapSaveDataCommon::BeatmapEventType,
+    pub k: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub e: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::BeatmapSaveDataCommon::BeatmapEventType,
+        >,
     >,
 }
 #[cfg(

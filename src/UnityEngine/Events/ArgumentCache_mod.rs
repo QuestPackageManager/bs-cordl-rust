@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct ArgumentCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_ObjectArgument: *mut crate::UnityEngine::Object,
-    pub m_ObjectArgumentAssemblyTypeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ObjectArgument: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    pub m_ObjectArgumentAssemblyTypeName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub m_IntArgument: i32,
     pub m_FloatArgument: f32,
-    pub m_StringArgument: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_StringArgument: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_BoolArgument: bool,
 }
 #[cfg(feature = "UnityEngine+Events+ArgumentCache")]

@@ -3,15 +3,23 @@
 #[derive(Debug)]
 pub struct TriangulationContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _DebugContext_k__BackingField: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext,
-    pub Triangles: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+    pub _DebugContext_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext,
     >,
-    pub Points: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    pub Triangles: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        >,
+    >,
+    pub Points: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     >,
     pub _TriangulationMode_k__BackingField: crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationMode,
-    pub _Triangulatable_k__BackingField: *mut crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable,
+    pub _Triangulatable_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable,
+    >,
     pub _StepCount_k__BackingField: i32,
     pub _IsDebugEnabled_k__BackingField: bool,
 }

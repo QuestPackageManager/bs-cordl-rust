@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct EditableModifiersSelectionView {
     __cordl_parent: crate::GlobalNamespace::ModifiersSelectionView,
-    pub _editButton: *mut crate::UnityEngine::UI::Button,
-    pub _clearButton: *mut crate::UnityEngine::UI::Button,
-    pub _modifiersListCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
+    pub _editButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _clearButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _modifiersListCanvasGroup: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::CanvasGroup,
+    >,
     pub _interactable: bool,
     pub _showClearButton_k__BackingField: bool,
 }

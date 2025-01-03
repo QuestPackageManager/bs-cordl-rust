@@ -7,7 +7,7 @@ pub struct MD4Digest {
     pub H2: i32,
     pub H3: i32,
     pub H4: i32,
-    pub X: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub X: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub xOff: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+MD4Digest")]

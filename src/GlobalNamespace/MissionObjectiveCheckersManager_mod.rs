@@ -3,16 +3,24 @@
 #[derive(Debug)]
 pub struct MissionObjectiveCheckersManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionObjectiveCheckers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MissionObjectiveChecker,
+    pub _missionObjectiveCheckers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MissionObjectiveChecker,
+        >,
     >,
-    pub _initData: *mut crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData,
-    pub _gameplayManager: *mut crate::GlobalNamespace::ILevelEndActions,
-    pub objectiveDidFailEvent: *mut crate::System::Action,
-    pub objectiveWasClearedEvent: *mut crate::System::Action,
-    pub objectivesListDidChangeEvent: *mut crate::System::Action,
-    pub _activeMissionObjectiveCheckers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MissionObjectiveChecker,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData,
+    >,
+    pub _gameplayManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILevelEndActions,
+    >,
+    pub objectiveDidFailEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub objectiveWasClearedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub objectivesListDidChangeEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _activeMissionObjectiveCheckers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MissionObjectiveChecker,
+        >,
     >,
 }
 #[cfg(feature = "MissionObjectiveCheckersManager")]
@@ -256,8 +264,8 @@ for crate::GlobalNamespace::MissionObjectiveCheckersManager {
 #[derive(Debug)]
 pub struct MissionObjectiveCheckersManager_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MissionObjective,
+    pub missionObjectives: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionObjective>,
     >,
 }
 #[cfg(feature = "MissionObjectiveCheckersManager+InitData")]

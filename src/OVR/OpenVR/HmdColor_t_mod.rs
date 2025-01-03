@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+HmdColor_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HmdColor_t {
     pub r: f32,
     pub g: f32,

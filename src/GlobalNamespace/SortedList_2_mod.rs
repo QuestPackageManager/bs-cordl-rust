@@ -6,11 +6,15 @@ pub struct SortedList_2<
     TBase: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _items: *mut crate::System::Collections::Generic::LinkedList_1<TBase>,
-    pub _sortedListDataProcessor: *mut crate::GlobalNamespace::ISortedListItemProcessor_1<
-        TBase,
+    pub _items: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedList_1<TBase>,
     >,
-    pub _lastUsedNode: *mut crate::System::Collections::Generic::LinkedListNode_1<TBase>,
+    pub _sortedListDataProcessor: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ISortedListItemProcessor_1<TBase>,
+    >,
+    pub _lastUsedNode: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedListNode_1<TBase>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
     __cordl_phantom_TBase: std::marker::PhantomData<TBase>,
 }

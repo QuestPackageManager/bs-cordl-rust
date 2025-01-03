@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CallContextSecurityData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _principal: *mut crate::System::Security::Principal::IPrincipal,
+    pub _principal: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Principal::IPrincipal,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+CallContextSecurityData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

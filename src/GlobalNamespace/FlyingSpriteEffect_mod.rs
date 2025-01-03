@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct FlyingSpriteEffect {
     __cordl_parent: crate::GlobalNamespace::FlyingObjectEffect,
-    pub _spriteRenderer: *mut crate::UnityEngine::SpriteRenderer,
-    pub _fadeAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub _spriteRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
+    pub _fadeAnimationCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
     pub _color: crate::UnityEngine::Color,
 }
 #[cfg(feature = "FlyingSpriteEffect")]

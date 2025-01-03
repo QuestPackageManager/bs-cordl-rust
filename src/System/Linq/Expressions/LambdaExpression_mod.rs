@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LambdaExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
-    pub _body: *mut crate::System::Linq::Expressions::Expression,
+    pub _body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
 }
 #[cfg(feature = "System+Linq+Expressions+LambdaExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

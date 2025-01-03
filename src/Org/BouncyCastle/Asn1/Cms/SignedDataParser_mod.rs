@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct SignedDataParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _seq: *mut crate::Org::BouncyCastle::Asn1::Asn1SequenceParser,
-    pub _version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub _nextObject: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _seq: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1SequenceParser,
+    >,
+    pub _version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub _nextObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _certsCalled: bool,
     pub _crlsCalled: bool,
 }

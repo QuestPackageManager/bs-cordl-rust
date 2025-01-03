@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct SparselyPopulatedArray_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _head: *mut crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
-    pub _tail: *mut crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+    pub _head: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+    >,
+    pub _tail: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Threading+SparselyPopulatedArray_1")]

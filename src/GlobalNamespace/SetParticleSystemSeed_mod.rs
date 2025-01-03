@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SetParticleSystemSeed {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _particleSystem: *mut crate::UnityEngine::ParticleSystem,
+    pub _particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
     pub _useRandom: bool,
     pub _seed: u32,
 }

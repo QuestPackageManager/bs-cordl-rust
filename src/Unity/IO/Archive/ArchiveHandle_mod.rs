@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+IO+Archive+ArchiveHandle")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ArchiveHandle {
     pub Handle: u64,
 }

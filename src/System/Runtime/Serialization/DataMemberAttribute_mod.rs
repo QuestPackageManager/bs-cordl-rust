@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DataMemberAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub order: i32,
     pub isRequired: bool,
     pub emitDefaultValue: bool,

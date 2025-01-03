@@ -3,15 +3,19 @@
 #[derive(Debug)]
 pub struct NoteCutSoundEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioSource: *mut crate::UnityEngine::AudioSource,
-    pub _speedToVolumeCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _badCutSoundEffectAudioClips: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::AudioClip,
+    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    pub _speedToVolumeCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
+    pub _badCutSoundEffectAudioClips: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AudioClip>,
     >,
     pub _badCutVolume: f32,
     pub _goodCutVolume: f32,
-    pub _saber: *mut crate::GlobalNamespace::Saber,
-    pub _noteController: *mut crate::GlobalNamespace::NoteController,
+    pub _saber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+    pub _noteController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteController,
+    >,
     pub _isPlaying: bool,
     pub _volumeMultiplier: f32,
     pub _noteWasCut: bool,
@@ -26,14 +30,16 @@ pub struct NoteCutSoundEffect {
     pub _beforeCutVolume: f32,
     pub _goodCut: bool,
     pub _pitch: f32,
-    pub _badCutRandomSoundPicker: *mut crate::GlobalNamespace::RandomObjectPicker_1<
-        *mut crate::UnityEngine::AudioClip,
+    pub _badCutRandomSoundPicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RandomObjectPicker_1<*mut crate::UnityEngine::AudioClip>,
     >,
     pub _handleWrongSaberTypeAsGood: bool,
     pub _ignoreSaberSpeed: bool,
     pub _ignoreBadCuts: bool,
-    pub _didFinishEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent,
+    pub _didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent,
+        >,
     >,
 }
 #[cfg(feature = "NoteCutSoundEffect")]

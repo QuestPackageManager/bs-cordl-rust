@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct PlayerVRControllersManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _leftHandVRController: *mut crate::GlobalNamespace::VRController,
-    pub _rightHandVRController: *mut crate::GlobalNamespace::VRController,
+    pub _leftHandVRController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VRController,
+    >,
+    pub _rightHandVRController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VRController,
+    >,
 }
 #[cfg(feature = "PlayerVRControllersManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

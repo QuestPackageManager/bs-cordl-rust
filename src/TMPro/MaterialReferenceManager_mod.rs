@@ -3,21 +3,29 @@
 #[derive(Debug)]
 pub struct MaterialReferenceManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_FontMaterialReferenceLookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::UnityEngine::Material,
+    pub m_FontMaterialReferenceLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::UnityEngine::Material,
+        >,
     >,
-    pub m_FontAssetReferenceLookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::TMPro::TMP_FontAsset,
+    pub m_FontAssetReferenceLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::TMPro::TMP_FontAsset,
+        >,
     >,
-    pub m_SpriteAssetReferenceLookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::TMPro::TMP_SpriteAsset,
+    pub m_SpriteAssetReferenceLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::TMPro::TMP_SpriteAsset,
+        >,
     >,
-    pub m_ColorGradientReferenceLookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::TMPro::TMP_ColorGradient,
+    pub m_ColorGradientReferenceLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::TMPro::TMP_ColorGradient,
+        >,
     >,
 }
 #[cfg(feature = "TMPro+MaterialReferenceManager")]

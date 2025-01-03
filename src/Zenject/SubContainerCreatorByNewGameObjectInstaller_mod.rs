@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct SubContainerCreatorByNewGameObjectInstaller {
     __cordl_parent: crate::Zenject::SubContainerCreatorByNewGameObjectDynamicContext,
-    pub _installerType: *mut crate::System::Type,
-    pub _extraArgs: *mut crate::System::Collections::Generic::List_1<
-        crate::Zenject::TypeValuePair,
+    pub _installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _extraArgs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
     >,
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectInstaller")]

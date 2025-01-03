@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct XmlSchemaNotation {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaAnnotated,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub publicId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub systemId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub qname: *mut crate::System::Xml::XmlQualifiedName,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub publicId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub systemId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaNotation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

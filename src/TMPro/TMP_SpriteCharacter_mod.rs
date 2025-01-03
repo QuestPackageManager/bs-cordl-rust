@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TMP_SpriteCharacter {
     __cordl_parent: crate::TMPro::TMP_TextElement,
-    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_HashCode: i32,
 }
 #[cfg(feature = "TMPro+TMP_SpriteCharacter")]

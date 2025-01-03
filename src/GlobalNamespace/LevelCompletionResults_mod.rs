@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct LevelCompletionResults {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+    pub gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
+    >,
     pub modifiedScore: i32,
     pub multipliedScore: i32,
     pub rank: crate::GlobalNamespace::RankModel_Rank,

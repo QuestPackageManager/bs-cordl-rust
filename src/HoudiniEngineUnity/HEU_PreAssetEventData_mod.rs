@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HEU_PreAssetEventData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Asset: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+    pub Asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
     pub AssetType: crate::HoudiniEngineUnity::HEU_AssetEventType,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PreAssetEventData")]

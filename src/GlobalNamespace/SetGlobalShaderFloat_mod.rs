@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SetGlobalShaderFloat {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _value: f32,
     pub _propertyId: i32,
 }

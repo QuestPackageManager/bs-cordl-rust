@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct PlatformAuthenticationTokenProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _platformUserModel: *mut crate::GlobalNamespace::IPlatformUserModel,
-    pub _userId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _userName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _hashedUserId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _platformUserModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IPlatformUserModel,
+    >,
+    pub _userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _hashedUserId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _platform: crate::GlobalNamespace::AuthenticationToken_Platform,
     pub _cachedXPlatformAccessToken: crate::GlobalNamespace::XPlatformAccessTokenData,
-    pub _xPlatformAccessTokenTask: *mut crate::System::Threading::Tasks::Task_1<
-        crate::GlobalNamespace::XPlatformAccessTokenData,
+    pub _xPlatformAccessTokenTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::XPlatformAccessTokenData,
+        >,
     >,
     pub _xPlatformTokenRetryDelayExpiration: f32,
 }

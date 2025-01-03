@@ -12,10 +12,14 @@ pub struct ReaderWriterLockSlim {
     pub fNoWaiters: bool,
     pub upgradeLockOwnerId: i32,
     pub writeLockOwnerId: i32,
-    pub writeEvent: *mut crate::System::Threading::EventWaitHandle,
-    pub readEvent: *mut crate::System::Threading::EventWaitHandle,
-    pub upgradeEvent: *mut crate::System::Threading::EventWaitHandle,
-    pub waitUpgradeEvent: *mut crate::System::Threading::EventWaitHandle,
+    pub writeEvent: quest_hook::libil2cpp::Gc<crate::System::Threading::EventWaitHandle>,
+    pub readEvent: quest_hook::libil2cpp::Gc<crate::System::Threading::EventWaitHandle>,
+    pub upgradeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::EventWaitHandle,
+    >,
+    pub waitUpgradeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::EventWaitHandle,
+    >,
     pub lockID: i64,
     pub fUpgradeThreadHoldingRead: bool,
     pub owners: u32,
@@ -561,7 +565,7 @@ for crate::System::Threading::ReaderWriterLockSlim {
 }
 #[cfg(feature = "System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ReaderWriterLockSlim_TimeoutTracker {
     pub m_total: i32,
     pub m_start: i32,

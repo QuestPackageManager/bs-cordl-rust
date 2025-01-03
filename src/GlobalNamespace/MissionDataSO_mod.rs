@@ -3,15 +3,19 @@
 #[derive(Debug)]
 pub struct MissionDataSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _levelId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _songName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-    pub _beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    pub _missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MissionObjective,
+    pub _levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _songName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
-    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-    pub _missionHelp: *mut crate::GlobalNamespace::MissionHelpSO,
+    pub _beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
+    pub _missionObjectives: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionObjective>,
+    >,
+    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
+    >,
+    pub _missionHelp: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionHelpSO>,
 }
 #[cfg(feature = "MissionDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

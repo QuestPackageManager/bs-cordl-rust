@@ -3,12 +3,24 @@
 #[derive(Debug)]
 pub struct MultiplayerOtherPlayersScoreDiffTextManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
-    pub _playersManager: *mut crate::GlobalNamespace::MultiplayerPlayersManager,
-    pub _scoreProvider: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _layoutProvider: *mut crate::GlobalNamespace::MultiplayerLayoutProvider,
-    pub _initData: *mut crate::GlobalNamespace::CoreGameHUDController_InitData,
+    pub _multiplayerController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerController,
+    >,
+    pub _playersManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerPlayersManager,
+    >,
+    pub _scoreProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreProvider,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub _layoutProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLayoutProvider,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CoreGameHUDController_InitData,
+    >,
     pub _timeToNextUpdate: f32,
 }
 #[cfg(feature = "MultiplayerOtherPlayersScoreDiffTextManager")]

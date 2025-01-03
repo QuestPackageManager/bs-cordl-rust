@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct Expression2_1<TDelegate: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Linq::Expressions::Expression_1<TDelegate>,
-    pub _par0: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _par1: *mut crate::System::Linq::Expressions::ParameterExpression,
+    pub _par0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _par1: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::ParameterExpression,
+    >,
     __cordl_phantom_TDelegate: std::marker::PhantomData<TDelegate>,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression2_1")]

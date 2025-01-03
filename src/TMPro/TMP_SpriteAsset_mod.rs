@@ -3,33 +3,40 @@
 #[derive(Debug)]
 pub struct TMP_SpriteAsset {
     __cordl_parent: crate::TMPro::TMP_Asset,
-    pub m_NameLookup: *mut crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-    pub m_GlyphIndexLookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        u32,
-        i32,
+    pub m_NameLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
     >,
-    pub m_Version: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_GlyphIndexLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<u32, i32>,
+    >,
+    pub m_Version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_FaceInfo: crate::UnityEngine::TextCore::FaceInfo,
-    pub spriteSheet: *mut crate::UnityEngine::Texture,
-    pub m_SpriteCharacterTable: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_SpriteCharacter,
+    pub spriteSheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    pub m_SpriteCharacterTable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::TMPro::TMP_SpriteCharacter,
+        >,
     >,
-    pub m_SpriteCharacterLookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        u32,
-        *mut crate::TMPro::TMP_SpriteCharacter,
+    pub m_SpriteCharacterLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            u32,
+            *mut crate::TMPro::TMP_SpriteCharacter,
+        >,
     >,
-    pub m_SpriteGlyphTable: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_SpriteGlyph,
+    pub m_SpriteGlyphTable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_SpriteGlyph>,
     >,
-    pub m_SpriteGlyphLookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        u32,
-        *mut crate::TMPro::TMP_SpriteGlyph,
+    pub m_SpriteGlyphLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            u32,
+            *mut crate::TMPro::TMP_SpriteGlyph,
+        >,
     >,
-    pub spriteInfoList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_Sprite,
+    pub spriteInfoList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_Sprite>,
     >,
-    pub fallbackSpriteAssets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_SpriteAsset,
+    pub fallbackSpriteAssets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_SpriteAsset>,
     >,
     pub m_IsSpriteAssetLookupTablesDirty: bool,
 }

@@ -1,14 +1,14 @@
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputDeviceDescription {
-    pub m_InterfaceName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_DeviceClass: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Manufacturer: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Product: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Serial: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Version: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Capabilities: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_InterfaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_DeviceClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Manufacturer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Product: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Serial: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Capabilities: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -308,15 +308,15 @@ impl AsMut<
     feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription+DeviceDescriptionJson"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputDeviceDescription_DeviceDescriptionJson {
-    pub interface: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
-    pub product: *mut quest_hook::libil2cpp::Il2CppString,
-    pub serial: *mut quest_hook::libil2cpp::Il2CppString,
-    pub version: *mut quest_hook::libil2cpp::Il2CppString,
-    pub manufacturer: *mut quest_hook::libil2cpp::Il2CppString,
-    pub capabilities: *mut quest_hook::libil2cpp::Il2CppString,
+    pub interface: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub product: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub serial: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub manufacturer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub capabilities: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(
     feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription+DeviceDescriptionJson"

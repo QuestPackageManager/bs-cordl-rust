@@ -4,7 +4,7 @@
 pub struct FastPriorityQueue_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _numNodes: i32,
-    pub _nodes: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub _nodes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "Priority_Queue+FastPriorityQueue_1")]

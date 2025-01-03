@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+Compositor_OverlaySettings")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Compositor_OverlaySettings {
     pub _cordl_size: u32,
     pub curved: bool,

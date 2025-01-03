@@ -3,18 +3,40 @@
 #[derive(Debug)]
 pub struct GameplayCoreInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _beatLineManagerPrefab: *mut crate::GlobalNamespace::BeatLineManager,
-    pub _songTimeTweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-    pub _audioManager: *mut crate::GlobalNamespace::AudioManagerSO,
-    pub _playerHeightDetectorPrefab: *mut crate::GlobalNamespace::PlayerHeightDetector,
-    pub _noteCutScoreSpawnerPrefab: *mut crate::GlobalNamespace::NoteCutScoreSpawner,
-    pub _badNoteCutEffectSpawnerPrefab: *mut crate::GlobalNamespace::BadNoteCutEffectSpawner,
-    pub _missedNoteEffectSpawnerPrefab: *mut crate::GlobalNamespace::MissedNoteEffectSpawner,
-    pub _effectPoolsManualInstaller: *mut crate::GlobalNamespace::EffectPoolsManualInstaller,
-    pub _arcAndObstacleHapticManagerEffectPrefab: *mut crate::GlobalNamespace::ArcAndObstacleHapticEffectManager,
-    pub _songProfilingControllerPrefab: *mut crate::GlobalNamespace::SongProfilingController,
-    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
-    pub _perceivedLoudnessPerLevelModel: *mut crate::GlobalNamespace::PerceivedLoudnessPerLevelModel,
+    pub _beatLineManagerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatLineManager,
+    >,
+    pub _songTimeTweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::SongTimeTweeningManager,
+    >,
+    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
+    pub _playerHeightDetectorPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerHeightDetector,
+    >,
+    pub _noteCutScoreSpawnerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteCutScoreSpawner,
+    >,
+    pub _badNoteCutEffectSpawnerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BadNoteCutEffectSpawner,
+    >,
+    pub _missedNoteEffectSpawnerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissedNoteEffectSpawner,
+    >,
+    pub _effectPoolsManualInstaller: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EffectPoolsManualInstaller,
+    >,
+    pub _arcAndObstacleHapticManagerEffectPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ArcAndObstacleHapticEffectManager,
+    >,
+    pub _songProfilingControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongProfilingController,
+    >,
+    pub _sceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    >,
+    pub _perceivedLoudnessPerLevelModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PerceivedLoudnessPerLevelModel,
+    >,
     pub _commandLineArguments: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
     pub _performanceToolConfig: crate::System::Nullable_1<
         crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig,

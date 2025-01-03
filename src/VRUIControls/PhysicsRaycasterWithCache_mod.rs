@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PhysicsRaycasterWithCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cachedRaycasts: *mut crate::System::Collections::Generic::List_1<
-        crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast,
+    pub _cachedRaycasts: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast,
+        >,
     >,
     pub _lastFrameCount: i32,
 }
@@ -74,7 +76,7 @@ for crate::VRUIControls::PhysicsRaycasterWithCache {
 }
 #[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PhysicsRaycasterWithCache_CachedRaycast {
     pub wasHit: bool,
     pub ray: crate::UnityEngine::Ray,

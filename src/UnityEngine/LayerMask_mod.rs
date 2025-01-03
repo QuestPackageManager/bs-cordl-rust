@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+LayerMask")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LayerMask {
     pub m_Mask: i32,
 }

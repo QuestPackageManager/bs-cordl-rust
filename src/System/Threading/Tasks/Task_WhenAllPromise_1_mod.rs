@@ -5,8 +5,10 @@ pub struct Task_WhenAllPromise_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Threading::Tasks::Task_1<
         *mut quest_hook::libil2cpp::Il2CppArray<T>,
     >,
-    pub m_tasks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Threading::Tasks::Task_1<T>,
+    pub m_tasks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Threading::Tasks::Task_1<T>,
+        >,
     >,
     pub m_count: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,

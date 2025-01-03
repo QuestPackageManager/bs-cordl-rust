@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct TypeListConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
-    pub _types: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
-    pub _values: *mut crate::System::ComponentModel::TypeConverter_StandardValuesCollection,
+    pub _types: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    >,
+    pub _values: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeConverter_StandardValuesCollection,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+TypeListConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CommandBufferBlurryScreenGrab {
     __cordl_parent: crate::GlobalNamespace::CommandBufferGOCore,
-    pub _kawaseBlurRenderer: *mut crate::GlobalNamespace::KawaseBlurRendererSO,
+    pub _kawaseBlurRenderer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::KawaseBlurRendererSO,
+    >,
     pub _kernelSize: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
     pub _cameraEvent: crate::UnityEngine::Rendering::CameraEvent,
     pub _downsample: i32,

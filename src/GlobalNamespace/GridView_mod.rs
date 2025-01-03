@@ -3,24 +3,32 @@
 #[derive(Debug)]
 pub struct GridView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _contentTransform: *mut crate::UnityEngine::RectTransform,
+    pub _contentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _columnCount: i32,
     pub _visibleColumnCount: i32,
-    pub _dataSource: *mut crate::GlobalNamespace::GridView_IDataSource,
+    pub _dataSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GridView_IDataSource,
+    >,
     pub _rowCount: i32,
-    pub _availableCellsPerPrefabDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::UnityEngine::MonoBehaviour,
-        *mut crate::System::Collections::Generic::Queue_1<
+    pub _availableCellsPerPrefabDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
             *mut crate::UnityEngine::MonoBehaviour,
+            *mut crate::System::Collections::Generic::Queue_1<
+                *mut crate::UnityEngine::MonoBehaviour,
+            >,
         >,
     >,
-    pub _spawnedCellsPerPrefabDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::UnityEngine::MonoBehaviour,
-        *mut crate::System::Collections::Generic::List_1<
+    pub _spawnedCellsPerPrefabDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
             *mut crate::UnityEngine::MonoBehaviour,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::MonoBehaviour,
+            >,
         >,
     >,
-    pub _cellsEnumerator_k__BackingField: *mut crate::GlobalNamespace::GridView_GridViewCellsEnumerator,
+    pub _cellsEnumerator_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GridView_GridViewCellsEnumerator,
+    >,
 }
 #[cfg(feature = "GridView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -229,7 +237,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GridView {
 #[derive(Debug)]
 pub struct GridView_GridViewCellsEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _gridView: *mut crate::GlobalNamespace::GridView,
+    pub _gridView: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GridView>,
 }
 #[cfg(feature = "GridView+GridViewCellsEnumerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

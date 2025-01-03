@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+VertexAttributeDescriptor")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VertexAttributeDescriptor {
     pub _attribute_k__BackingField: crate::UnityEngine::Rendering::VertexAttribute,
     pub _format_k__BackingField: crate::UnityEngine::Rendering::VertexAttributeFormat,

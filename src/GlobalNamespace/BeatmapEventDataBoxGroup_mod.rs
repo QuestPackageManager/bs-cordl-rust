@@ -4,15 +4,21 @@
 pub struct BeatmapEventDataBoxGroup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _beat: f32,
-    pub _elementDataDict: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::System::ValueTuple_3<i32, *mut crate::System::Type, i32>,
-        *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+    pub _elementDataDict: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::System::ValueTuple_3<i32, *mut crate::System::Type, i32>,
+            *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+        >,
     >,
-    pub _unpackedBeatmapEventData: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::BeatmapEventData,
+    pub _unpackedBeatmapEventData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::BeatmapEventData,
+        >,
     >,
-    pub _beatmapEventDataBoxList: *mut crate::System::Collections::Generic::IReadOnlyCollection_1<
-        *mut crate::GlobalNamespace::BeatmapEventDataBox,
+    pub _beatmapEventDataBoxList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyCollection_1<
+            *mut crate::GlobalNamespace::BeatmapEventDataBox,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapEventDataBoxGroup")]
@@ -207,12 +213,18 @@ pub struct BeatmapEventDataBoxGroup_ElementData {
     pub elementId: i32,
     pub durationOrderIndex: i32,
     pub distributionOrderIndex: i32,
-    pub eventBoxType: *mut crate::System::Type,
+    pub eventBoxType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub eventBoxSubtypeIdentifier: i32,
-    pub eventBox: *mut crate::GlobalNamespace::BeatmapEventDataBox,
-    pub boxGroup: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
-    pub _next: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
-    pub _previous: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+    pub eventBox: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBox>,
+    pub boxGroup: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+    >,
+    pub _next: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+    >,
+    pub _previous: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
+    >,
 }
 #[cfg(feature = "BeatmapEventDataBoxGroup+ElementData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

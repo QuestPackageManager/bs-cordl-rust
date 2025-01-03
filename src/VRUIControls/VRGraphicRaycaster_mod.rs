@@ -4,12 +4,18 @@
 pub struct VRGraphicRaycaster {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseRaycaster,
     pub _blockingMask: crate::UnityEngine::LayerMask,
-    pub _physicsRaycaster: *mut crate::VRUIControls::PhysicsRaycasterWithCache,
-    pub _canvas: *mut crate::UnityEngine::Canvas,
-    pub _raycastResults: *mut crate::System::Collections::Generic::List_1<
-        crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult,
+    pub _physicsRaycaster: quest_hook::libil2cpp::Gc<
+        crate::VRUIControls::PhysicsRaycasterWithCache,
     >,
-    pub _curvedCanvasSettingsHelper: *mut crate::HMUI::CurvedCanvasSettingsHelper,
+    pub _canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+    pub _raycastResults: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult,
+        >,
+    >,
+    pub _curvedCanvasSettingsHelper: quest_hook::libil2cpp::Gc<
+        crate::HMUI::CurvedCanvasSettingsHelper,
+    >,
 }
 #[cfg(feature = "VRUIControls+VRGraphicRaycaster")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -121,9 +127,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::VRUIControls::VRGraphicRaycast
 }
 #[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VRGraphicRaycaster_VRGraphicRaycastResult {
-    pub graphic: *mut crate::UnityEngine::UI::Graphic,
+    pub graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     pub distance: f32,
     pub position: crate::UnityEngine::Vector3,
     pub insideRootCanvasPosition: crate::UnityEngine::Vector2,

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ShaderPropertyIDAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
-    pub filter: *mut crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter,
+    pub filter: quest_hook::libil2cpp::Gc<
+        crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter,
+    >,
 }
 #[cfg(feature = "BGLib+UnityExtension+ShaderPropertyIDAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

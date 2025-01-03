@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DynamicPropertyCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _properties: *mut crate::System::Collections::ArrayList,
+    pub _properties: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
 #[cfg(feature = "System+Runtime+Remoting+Contexts+DynamicPropertyCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -124,8 +124,12 @@ for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
 #[derive(Debug)]
 pub struct DynamicPropertyCollection_DynamicPropertyReg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Property: *mut crate::System::Runtime::Remoting::Contexts::IDynamicProperty,
-    pub Sink: *mut crate::System::Runtime::Remoting::Contexts::IDynamicMessageSink,
+    pub Property: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Contexts::IDynamicProperty,
+    >,
+    pub Sink: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Contexts::IDynamicMessageSink,
+    >,
 }
 #[cfg(
     feature = "System+Runtime+Remoting+Contexts+DynamicPropertyCollection+DynamicPropertyReg"

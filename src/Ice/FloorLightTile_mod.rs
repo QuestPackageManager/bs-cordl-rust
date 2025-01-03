@@ -3,12 +3,20 @@
 #[derive(Debug)]
 pub struct FloorLightTile {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _colorSetter: *mut crate::GlobalNamespace::MaterialPropertyBlockColorSetter,
-    pub _tubeBloomPrePassLight: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
-    pub _songTimeTweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-    pub didFinish: *mut crate::System::Action_1<*mut crate::Ice::FloorLightTile>,
-    pub _fadeInTween: *mut crate::Tweening::ColorTween,
-    pub _fadeOutTween: *mut crate::Tweening::ColorTween,
+    pub _colorSetter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockColorSetter,
+    >,
+    pub _tubeBloomPrePassLight: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TubeBloomPrePassLight,
+    >,
+    pub _songTimeTweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::SongTimeTweeningManager,
+    >,
+    pub didFinish: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::Ice::FloorLightTile>,
+    >,
+    pub _fadeInTween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
+    pub _fadeOutTween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
 }
 #[cfg(feature = "Ice+FloorLightTile")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

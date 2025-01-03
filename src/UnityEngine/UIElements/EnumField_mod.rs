@@ -5,13 +5,17 @@ pub struct EnumField {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<
         *mut crate::System::Enum,
     >,
-    pub m_EnumType: *mut crate::System::Type,
+    pub m_EnumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub m_IncludeObsoleteValues: bool,
-    pub m_TextElement: *mut crate::UnityEngine::UIElements::TextElement,
-    pub m_ArrowElement: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_TextElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextElement,
+    >,
+    pub m_ArrowElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub m_EnumData: crate::UnityEngine::EnumData,
-    pub createMenuCallback: *mut crate::System::Func_1<
-        *mut crate::UnityEngine::UIElements::IGenericMenu,
+    pub createMenuCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Func_1<*mut crate::UnityEngine::UIElements::IGenericMenu>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+EnumField")]
@@ -332,11 +336,17 @@ pub struct EnumField_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         *mut crate::System::Enum,
     >,
-    pub m_Type: *mut crate::UnityEngine::UIElements::UxmlTypeAttributeDescription_1<
-        *mut crate::System::Enum,
+    pub m_Type: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlTypeAttributeDescription_1<
+            *mut crate::System::Enum,
+        >,
     >,
-    pub m_Value: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_IncludeObsoleteValues: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    pub m_Value: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_IncludeObsoleteValues: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

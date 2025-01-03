@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct List_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _items: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub _items: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _size: i32,
     pub _version: i32,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Collections+Generic+List_1")]
@@ -1165,9 +1165,9 @@ for crate::System::Collections::Generic::List_1<T> {
 }
 #[cfg(feature = "System+Collections+Generic+List_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct List_1_Enumerator<T: quest_hook::libil2cpp::Type> {
-    pub _list: *mut crate::System::Collections::Generic::List_1<T>,
+    pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     pub _index: i32,
     pub _version: i32,
     pub _current: T,

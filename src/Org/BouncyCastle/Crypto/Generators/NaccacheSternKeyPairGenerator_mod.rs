@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct NaccacheSternKeyPairGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub param: *mut crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationParameters,
+    pub param: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+NaccacheSternKeyPairGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+MeshWriteDataInterface")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MeshWriteDataInterface {
     pub vertices: crate::System::IntPtr,
     pub indices: crate::System::IntPtr,

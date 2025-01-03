@@ -1,10 +1,14 @@
 #[cfg(feature = "UnityEngine+InputSystem+InputActionProperty")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputActionProperty {
     pub m_UseReference: bool,
-    pub m_Action: *mut crate::UnityEngine::InputSystem::InputAction,
-    pub m_Reference: *mut crate::UnityEngine::InputSystem::InputActionReference,
+    pub m_Action: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub m_Reference: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionProperty")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

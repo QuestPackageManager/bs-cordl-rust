@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct OculusAdvancedHapticFeedbackPlayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _oculusVRHelper: *mut crate::GlobalNamespace::OculusVRHelper,
-    pub _hapticPlayerStatesDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::System::ValueTuple_2<
-            *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-            crate::UnityEngine::XR::XRNode,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
+    pub _oculusVRHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OculusVRHelper,
+    >,
+    pub _hapticPlayerStatesDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::System::ValueTuple_2<
+                *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+                crate::UnityEngine::XR::XRNode,
+            >,
+            *mut crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState,
         >,
-        *mut crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState,
     >,
     pub _hasAtLeastOneLoopingClipPlaying: bool,
     pub _isLeftHandSupported: crate::System::Nullable_1<bool>,
@@ -212,7 +218,7 @@ for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
 #[derive(Debug)]
 pub struct OculusAdvancedHapticFeedbackPlayer_HapticPlayerState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub player: *mut crate::Oculus::Haptics::HapticClipPlayer,
+    pub player: quest_hook::libil2cpp::Gc<crate::Oculus::Haptics::HapticClipPlayer>,
     pub lastFrameTriggered: i32,
     pub isPlayingLoopingClip: bool,
 }

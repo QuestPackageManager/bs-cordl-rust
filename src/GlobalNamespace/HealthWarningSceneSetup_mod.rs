@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct HealthWarningSceneSetup {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _sceneSetupData: *mut crate::GlobalNamespace::HealthWarningSceneSetupData,
+    pub _sceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HealthWarningSceneSetupData,
+    >,
 }
 #[cfg(feature = "HealthWarningSceneSetup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

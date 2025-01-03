@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct Uri {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_String: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_originalUnicodeString: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Syntax: *mut crate::System::UriParser,
-    pub m_DnsSafeHost: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_String: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_originalUnicodeString: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_Syntax: quest_hook::libil2cpp::Gc<crate::System::UriParser>,
+    pub m_DnsSafeHost: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Flags: crate::System::Uri_Flags,
-    pub m_Info: *mut crate::System::Uri_UriInfo,
+    pub m_Info: quest_hook::libil2cpp::Gc<crate::System::Uri_UriInfo>,
     pub m_iriParsing: bool,
 }
 #[cfg(feature = "System+Uri")]
@@ -1605,12 +1607,12 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct Uri_MoreInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Path: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Query: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Fragment: *mut quest_hook::libil2cpp::Il2CppString,
-    pub AbsoluteUri: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Query: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Fragment: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub AbsoluteUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Hash: i32,
-    pub RemoteUrl: *mut quest_hook::libil2cpp::Il2CppString,
+    pub RemoteUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Uri+MoreInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1660,7 +1662,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Uri_MoreInfo {
 }
 #[cfg(feature = "System+Uri+Offset")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Uri_Offset {
     pub Scheme: u16,
     pub User: u16,
@@ -1692,12 +1694,12 @@ impl crate::System::Uri_Offset {}
 #[derive(Debug)]
 pub struct Uri_UriInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Host: *mut quest_hook::libil2cpp::Il2CppString,
-    pub ScopeId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub String: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ScopeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub String: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Offset: crate::System::Uri_Offset,
-    pub DnsSafeHost: *mut quest_hook::libil2cpp::Il2CppString,
-    pub MoreInfo: *mut crate::System::Uri_MoreInfo,
+    pub DnsSafeHost: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub MoreInfo: quest_hook::libil2cpp::Gc<crate::System::Uri_MoreInfo>,
 }
 #[cfg(feature = "System+Uri+UriInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

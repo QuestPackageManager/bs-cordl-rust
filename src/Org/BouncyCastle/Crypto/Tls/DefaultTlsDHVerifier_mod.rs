@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DefaultTlsDHVerifier {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mGroups: *mut crate::System::Collections::IList,
+    pub mGroups: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub mMinimumPrimeBits: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsDHVerifier")]

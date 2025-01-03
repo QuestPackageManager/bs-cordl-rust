@@ -3,17 +3,27 @@
 #[derive(Debug)]
 pub struct EventDispatcher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_ClickDetector: *mut crate::UnityEngine::UIElements::ClickDetector,
-    pub m_DispatchingStrategies: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::IEventDispatchingStrategy,
+    pub m_ClickDetector: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ClickDetector,
     >,
-    pub m_Queue: *mut crate::System::Collections::Generic::Queue_1<
-        crate::UnityEngine::UIElements::EventDispatcher_EventRecord,
+    pub m_DispatchingStrategies: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::IEventDispatchingStrategy,
+        >,
     >,
-    pub _pointerState_k__BackingField: *mut crate::UnityEngine::UIElements::PointerDispatchState,
+    pub m_Queue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<
+            crate::UnityEngine::UIElements::EventDispatcher_EventRecord,
+        >,
+    >,
+    pub _pointerState_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::PointerDispatchState,
+    >,
     pub m_GateCount: u32,
-    pub m_DispatchContexts: *mut crate::System::Collections::Generic::Stack_1<
-        crate::UnityEngine::UIElements::EventDispatcher_DispatchContext,
+    pub m_DispatchContexts: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<
+            crate::UnityEngine::UIElements::EventDispatcher_DispatchContext,
+        >,
     >,
     pub m_Immediate: bool,
     pub _processingEvents_k__BackingField: bool,
@@ -200,11 +210,13 @@ for crate::UnityEngine::UIElements::EventDispatcher {
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcher+DispatchContext")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct EventDispatcher_DispatchContext {
     pub m_GateCount: u32,
-    pub m_Queue: *mut crate::System::Collections::Generic::Queue_1<
-        crate::UnityEngine::UIElements::EventDispatcher_EventRecord,
+    pub m_Queue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<
+            crate::UnityEngine::UIElements::EventDispatcher_EventRecord,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcher+DispatchContext")]
@@ -228,10 +240,10 @@ for crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {
 impl crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {}
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcher+EventRecord")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct EventDispatcher_EventRecord {
-    pub m_Event: *mut crate::UnityEngine::UIElements::EventBase,
-    pub m_Panel: *mut crate::UnityEngine::UIElements::IPanel,
+    pub m_Event: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    pub m_Panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcher+EventRecord")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -4,10 +4,12 @@
 pub struct ObjectPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_IsDisposed: bool,
-    pub m_Pool: *mut crate::System::Collections::Generic::Queue_1<T>,
+    pub m_Pool: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<T>,
+    >,
     pub desiredSize: i32,
-    pub constructor: *mut crate::System::Func_1<T>,
-    pub destructor: *mut crate::System::Action_1<T>,
+    pub constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+    pub destructor: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ObjectPool_1")]

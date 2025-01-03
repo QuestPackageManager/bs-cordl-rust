@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct X509Certificate {
     __cordl_parent: crate::Org::BouncyCastle::X509::X509ExtensionBase,
-    pub c: *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
-    pub sigAlgName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub sigAlgParams: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub basicConstraints: *mut crate::Org::BouncyCastle::Asn1::X509::BasicConstraints,
-    pub keyUsage: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
-    pub cacheLock: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub publicKeyValue: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    pub c: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
+    >,
+    pub sigAlgName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub sigAlgParams: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub basicConstraints: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::BasicConstraints,
+    >,
+    pub keyUsage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
+    pub cacheLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub publicKeyValue: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    >,
     pub hashValueSet: bool,
     pub hashValue: i32,
 }

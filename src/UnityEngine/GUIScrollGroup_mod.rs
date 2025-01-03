@@ -13,8 +13,8 @@ pub struct GUIScrollGroup {
     pub allowVerticalScroll: bool,
     pub needsHorizontalScrollbar: bool,
     pub needsVerticalScrollbar: bool,
-    pub horizontalScrollbar: *mut crate::UnityEngine::GUIStyle,
-    pub verticalScrollbar: *mut crate::UnityEngine::GUIStyle,
+    pub horizontalScrollbar: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    pub verticalScrollbar: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
 }
 #[cfg(feature = "UnityEngine+GUIScrollGroup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

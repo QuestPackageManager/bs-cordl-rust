@@ -3,14 +3,22 @@
 #[derive(Debug)]
 pub struct TMP_UpdateRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_LayoutRebuildQueue: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UI::ICanvasElement,
+    pub m_LayoutRebuildQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UI::ICanvasElement,
+        >,
     >,
-    pub m_LayoutQueueLookup: *mut crate::System::Collections::Generic::HashSet_1<i32>,
-    pub m_GraphicRebuildQueue: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UI::ICanvasElement,
+    pub m_LayoutQueueLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
     >,
-    pub m_GraphicQueueLookup: *mut crate::System::Collections::Generic::HashSet_1<i32>,
+    pub m_GraphicRebuildQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UI::ICanvasElement,
+        >,
+    >,
+    pub m_GraphicQueueLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
 }
 #[cfg(feature = "TMPro+TMP_UpdateRegistry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

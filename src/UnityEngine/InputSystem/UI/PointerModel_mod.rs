@@ -1,12 +1,14 @@
 #[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PointerModel {
     pub changedThisFrame: bool,
     pub leftButton: crate::UnityEngine::InputSystem::UI::PointerModel_ButtonState,
     pub rightButton: crate::UnityEngine::InputSystem::UI::PointerModel_ButtonState,
     pub middleButton: crate::UnityEngine::InputSystem::UI::PointerModel_ButtonState,
-    pub eventData: *mut crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData,
+    pub eventData: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData,
+    >,
     pub m_ScreenPosition: crate::UnityEngine::Vector2,
     pub m_ScrollDelta: crate::UnityEngine::Vector2,
     pub m_WorldPosition: crate::UnityEngine::Vector3,
@@ -269,16 +271,16 @@ impl crate::UnityEngine::InputSystem::UI::PointerModel {
 }
 #[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel+ButtonState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PointerModel_ButtonState {
     pub m_IsPressed: bool,
     pub m_FramePressState: crate::UnityEngine::EventSystems::PointerEventData_FramePressState,
     pub m_PressTime: f32,
     pub m_PressRaycast: crate::UnityEngine::EventSystems::RaycastResult,
-    pub m_PressObject: *mut crate::UnityEngine::GameObject,
-    pub m_RawPressObject: *mut crate::UnityEngine::GameObject,
-    pub m_LastPressObject: *mut crate::UnityEngine::GameObject,
-    pub m_DragObject: *mut crate::UnityEngine::GameObject,
+    pub m_PressObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub m_RawPressObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub m_LastPressObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub m_DragObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_PressPosition: crate::UnityEngine::Vector2,
     pub m_ClickTime: f32,
     pub m_ClickCount: i32,

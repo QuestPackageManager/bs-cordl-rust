@@ -5,10 +5,14 @@
 #[derive(Debug)]
 pub struct RootDesignerSerializerAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _typeId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _typeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _Reloadable_k__BackingField: bool,
-    pub _SerializerTypeName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _SerializerBaseTypeName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _SerializerTypeName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _SerializerBaseTypeName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(
     feature = "System+ComponentModel+Design+Serialization+RootDesignerSerializerAttribute"

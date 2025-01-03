@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct HttpHeaders {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub headers: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::System::Net::Http::Headers::HttpHeaders_HeaderBucket,
+    pub headers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::System::Net::Http::Headers::HttpHeaders_HeaderBucket,
+        >,
     >,
     pub HeaderKind: crate::System::Net::Http::Headers::HttpHeaderKind,
     pub connectionclose: crate::System::Nullable_1<bool>,
@@ -405,13 +407,17 @@ for crate::System::Net::Http::Headers::HttpHeaders {
 #[derive(Debug)]
 pub struct HttpHeaders_HeaderBucket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Parsed: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub values: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub Parsed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub values: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub CustomToString: *mut crate::System::Func_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub CustomToString: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "System+Net+Http+Headers+HttpHeaders+HeaderBucket")]

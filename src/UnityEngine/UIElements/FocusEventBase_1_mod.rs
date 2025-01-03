@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct FocusEventBase_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<T>,
-    pub _relatedTarget_k__BackingField: *mut crate::UnityEngine::UIElements::Focusable,
-    pub _direction_k__BackingField: *mut crate::UnityEngine::UIElements::FocusChangeDirection,
-    pub _focusController_k__BackingField: *mut crate::UnityEngine::UIElements::FocusController,
+    pub _relatedTarget_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Focusable,
+    >,
+    pub _direction_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::FocusChangeDirection,
+    >,
+    pub _focusController_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::FocusController,
+    >,
     pub _IsFocusDelegated_k__BackingField: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

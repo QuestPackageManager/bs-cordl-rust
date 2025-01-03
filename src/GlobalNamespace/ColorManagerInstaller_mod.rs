@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ColorManagerInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _menuColorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
+    pub _menuColorScheme: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemeSO,
+    >,
 }
 #[cfg(feature = "ColorManagerInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

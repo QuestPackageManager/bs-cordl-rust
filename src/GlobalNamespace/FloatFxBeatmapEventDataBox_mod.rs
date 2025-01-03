@@ -6,8 +6,10 @@ pub struct FloatFxBeatmapEventDataBox {
         *mut crate::GlobalNamespace::FloatFxBaseData,
         *mut crate::GlobalNamespace::FloatFxBeatmapEventData,
     >,
-    pub _vfxBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::GlobalNamespace::FloatFxBaseData,
+    pub _vfxBaseDataList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::FloatFxBaseData,
+        >,
     >,
     pub _beatStep: f32,
 }

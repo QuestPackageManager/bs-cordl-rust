@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ObjectiveListItem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _titleText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _conditionText: *mut crate::TMPro::TextMeshProUGUI,
+    pub _titleText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _conditionText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
 #[cfg(feature = "ObjectiveListItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

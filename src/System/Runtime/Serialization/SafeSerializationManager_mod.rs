@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct SafeSerializationManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_serializedStates: *mut crate::System::Collections::Generic::IList_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_serializedStates: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
-    pub m_savedSerializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
-    pub m_realObject: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_realType: *mut crate::System::RuntimeType,
-    pub SerializeObjectState: *mut crate::System::EventHandler_1<
-        *mut crate::System::Runtime::Serialization::SafeSerializationEventArgs,
+    pub m_savedSerializationInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::SerializationInfo,
+    >,
+    pub m_realObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_realType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+    pub SerializeObjectState: quest_hook::libil2cpp::Gc<
+        crate::System::EventHandler_1<
+            *mut crate::System::Runtime::Serialization::SafeSerializationEventArgs,
+        >,
     >,
 }
 #[cfg(feature = "System+Runtime+Serialization+SafeSerializationManager")]

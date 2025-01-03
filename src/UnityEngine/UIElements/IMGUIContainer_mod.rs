@@ -3,20 +3,24 @@
 #[derive(Debug)]
 pub struct IMGUIContainer {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
-    pub m_OnGUIHandler: *mut crate::System::Action,
-    pub m_ObjectGUIState: *mut crate::UnityEngine::ObjectGUIState,
+    pub m_OnGUIHandler: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub m_ObjectGUIState: quest_hook::libil2cpp::Gc<crate::UnityEngine::ObjectGUIState>,
     pub useOwnerObjectGUIState: bool,
     pub _lastWorldClip_k__BackingField: crate::UnityEngine::Rect,
     pub m_CullingEnabled: bool,
     pub m_IsFocusDelegated: bool,
     pub m_RefreshCachedLayout: bool,
-    pub m_Cache: *mut crate::UnityEngine::GUILayoutUtility_LayoutCache,
+    pub m_Cache: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GUILayoutUtility_LayoutCache,
+    >,
     pub m_CachedClippingRect: crate::UnityEngine::Rect,
     pub m_CachedTransform: crate::UnityEngine::Matrix4x4,
     pub _contextType_k__BackingField: crate::UnityEngine::UIElements::ContextType,
     pub lostFocus: bool,
     pub receivedFocus: bool,
-    pub focusChangeDirection: *mut crate::UnityEngine::UIElements::FocusChangeDirection,
+    pub focusChangeDirection: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::FocusChangeDirection,
+    >,
     pub hasFocusableControls: bool,
     pub newKeyboardFocusControlID: i32,
     pub _focusOnlyIfHasFocusableControls_k__BackingField: bool,
@@ -540,7 +544,7 @@ for crate::UnityEngine::UIElements::IMGUIContainer {
 }
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IMGUIContainer_GUIGlobals {
     pub matrix: crate::UnityEngine::Matrix4x4,
     pub color: crate::UnityEngine::Color,

@@ -4,11 +4,13 @@
 pub struct WindowsIdentity {
     __cordl_parent: crate::System::Security::Claims::ClaimsIdentity,
     pub _token: crate::System::IntPtr,
-    pub _type: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _account: crate::System::Security::Principal::WindowsAccountType,
     pub _authenticated: bool,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _info: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::SerializationInfo,
+    >,
 }
 #[cfg(feature = "System+Security+Principal+WindowsIdentity")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

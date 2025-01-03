@@ -95,7 +95,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Volatile {
 }
 #[cfg(feature = "System+Threading+Volatile+VolatileBoolean")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Volatile_VolatileBoolean {
     pub Value: bool,
 }
@@ -119,7 +119,7 @@ for crate::System::Threading::Volatile_VolatileBoolean {
 impl crate::System::Threading::Volatile_VolatileBoolean {}
 #[cfg(feature = "System+Threading+Volatile+VolatileInt32")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Volatile_VolatileInt32 {
     pub Value: i32,
 }
@@ -143,9 +143,9 @@ for crate::System::Threading::Volatile_VolatileInt32 {
 impl crate::System::Threading::Volatile_VolatileInt32 {}
 #[cfg(feature = "System+Threading+Volatile+VolatileObject")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Volatile_VolatileObject {
-    pub Value: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub Value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Threading+Volatile+VolatileObject")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

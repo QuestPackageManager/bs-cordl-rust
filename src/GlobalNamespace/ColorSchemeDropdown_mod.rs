@@ -3,13 +3,21 @@
 #[derive(Debug)]
 pub struct ColorSchemeDropdown {
     __cordl_parent: crate::HMUI::DropdownWithTableView,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
-    pub _colorSchemeView: *mut crate::GlobalNamespace::ColorSchemeView,
-    pub _cellPrefab: *mut crate::GlobalNamespace::ColorSchemeTableCell,
-    pub _cellReuseIdentifier: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _colorSchemeView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemeView,
+    >,
+    pub _cellPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemeTableCell,
+    >,
+    pub _cellReuseIdentifier: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _cellSize: f32,
-    pub _colorSchemes: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::GlobalNamespace::ColorScheme,
+    pub _colorSchemes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::ColorScheme,
+        >,
     >,
     pub _initialized: bool,
 }

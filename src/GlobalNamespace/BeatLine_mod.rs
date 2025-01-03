@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct BeatLine {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    pub _tubeBloomPrePassLight: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
-    pub _arriveFadeCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _jumpFadeCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub _tubeBloomPrePassLight: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TubeBloomPrePassLight,
+    >,
+    pub _arriveFadeCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    pub _jumpFadeCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub _alphaMul: f32,
     pub _maxAlpha: f32,
-    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::VariableMovementDataProvider,
-    pub _highlightTimes: *mut crate::System::Collections::Generic::List_1<f32>,
+    pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VariableMovementDataProvider,
+    >,
+    pub _highlightTimes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
     pub _color: crate::UnityEngine::Color,
     pub _rotation: f32,
 }

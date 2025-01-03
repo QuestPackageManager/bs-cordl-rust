@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+IntersectionMaskCircle_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IntersectionMaskCircle_t {
     pub m_flCenterX: f32,
     pub m_flCenterY: f32,

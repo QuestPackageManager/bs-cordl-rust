@@ -4,14 +4,14 @@
 pub struct TwofishEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub encrypting: bool,
-    pub gMDS0: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub gMDS1: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub gMDS2: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub gMDS3: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub gSubKeys: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub gSBox: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub gMDS0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub gMDS1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub gMDS2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub gMDS3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub gSubKeys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub gSBox: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub k64Cnt: i32,
-    pub workingKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub workingKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+TwofishEngine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

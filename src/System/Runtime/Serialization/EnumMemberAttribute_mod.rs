@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct EnumMemberAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub value: *mut quest_hook::libil2cpp::Il2CppString,
+    pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Runtime+Serialization+EnumMemberAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -7,8 +7,8 @@ pub struct OVRSpatialAnchor {
     pub _requestId: u64,
     pub _defaultSaveOptions: crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions,
     pub _defaultEraseOptions: crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions,
-    pub OnLocalize: *mut crate::System::Action_1<
-        crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+    pub OnLocalize: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::OVRSpatialAnchor_OperationResult>,
     >,
     pub _Space_k__BackingField: crate::GlobalNamespace::OVRSpace,
     pub _Uuid_k__BackingField: crate::System::Guid,
@@ -928,7 +928,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_Development {
 }
 #[cfg(feature = "OVRSpatialAnchor+EraseOptions")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRSpatialAnchor_EraseOptions {
     pub Storage: crate::GlobalNamespace::OVRSpace_StorageLocation,
 }
@@ -952,13 +952,13 @@ for crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {
 impl crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {}
 #[cfg(feature = "OVRSpatialAnchor+InvertedCapture_2")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRSpatialAnchor_InvertedCapture_2<
     TResult: quest_hook::libil2cpp::Type,
     TCapture: quest_hook::libil2cpp::Type,
 > {
     pub _capture: TCapture,
-    pub _callback: *mut crate::System::Action_2<TCapture, TResult>,
+    pub _callback: quest_hook::libil2cpp::Gc<crate::System::Action_2<TCapture, TResult>>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
     __cordl_phantom_TCapture: std::marker::PhantomData<TCapture>,
 }
@@ -1042,13 +1042,13 @@ impl<
 }
 #[cfg(feature = "OVRSpatialAnchor+LoadOptions")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRSpatialAnchor_LoadOptions {
     pub _StorageLocation_k__BackingField: crate::GlobalNamespace::OVRSpace_StorageLocation,
     pub _MaxAnchorCount_k__BackingField: i32,
     pub _Timeout_k__BackingField: f64,
-    pub _uuids: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        crate::System::Guid,
+    pub _uuids: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<crate::System::Guid>,
     >,
 }
 #[cfg(feature = "OVRSpatialAnchor+LoadOptions")]
@@ -1182,16 +1182,20 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRSpatialAnchor+MultiAnchorDelegatePair")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRSpatialAnchor_MultiAnchorDelegatePair {
-    pub Anchors: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::OVRSpatialAnchor,
-    >,
-    pub Delegate: *mut crate::System::Action_2<
-        *mut crate::System::Collections::Generic::ICollection_1<
+    pub Anchors: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
             *mut crate::GlobalNamespace::OVRSpatialAnchor,
         >,
-        crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+    >,
+    pub Delegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::System::Collections::Generic::ICollection_1<
+                *mut crate::GlobalNamespace::OVRSpatialAnchor,
+            >,
+            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+        >,
     >,
 }
 #[cfg(feature = "OVRSpatialAnchor+MultiAnchorDelegatePair")]
@@ -1233,7 +1237,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRSpatialAnchor+SaveOptions")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRSpatialAnchor_SaveOptions {
     pub Storage: crate::GlobalNamespace::OVRSpace_StorageLocation,
 }
@@ -1257,7 +1261,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {
 impl crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {}
 #[cfg(feature = "OVRSpatialAnchor+UnboundAnchor")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRSpatialAnchor_UnboundAnchor {
     pub _space: crate::GlobalNamespace::OVRSpace,
     pub _Uuid_k__BackingField: crate::System::Guid,

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DisableWhenMirrorIsEnabled {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _mirror: *mut crate::GlobalNamespace::Mirror,
+    pub _mirror: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Mirror>,
 }
 #[cfg(feature = "DisableWhenMirrorIsEnabled")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

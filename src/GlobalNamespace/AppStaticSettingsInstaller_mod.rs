@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AppStaticSettingsInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _appStaticSettings: *mut crate::GlobalNamespace::AppStaticSettingsSO,
+    pub _appStaticSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AppStaticSettingsSO,
+    >,
 }
 #[cfg(feature = "AppStaticSettingsInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

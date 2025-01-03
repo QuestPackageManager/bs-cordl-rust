@@ -3,13 +3,21 @@
 #[derive(Debug)]
 pub struct ChannelData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Ref: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Type: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Id: *mut quest_hook::libil2cpp::Il2CppString,
-    pub DelayLoadAsClientChannel: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _serverProviders: *mut crate::System::Collections::ArrayList,
-    pub _clientProviders: *mut crate::System::Collections::ArrayList,
-    pub _customProperties: *mut crate::System::Collections::Hashtable,
+    pub Ref: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub DelayLoadAsClientChannel: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _serverProviders: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ArrayList,
+    >,
+    pub _clientProviders: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ArrayList,
+    >,
+    pub _customProperties: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+ChannelData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

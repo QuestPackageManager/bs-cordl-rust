@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct GenericIdentity {
     __cordl_parent: crate::System::Security::Claims::ClaimsIdentity,
-    pub m_name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_type: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Security+Principal+GenericIdentity")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

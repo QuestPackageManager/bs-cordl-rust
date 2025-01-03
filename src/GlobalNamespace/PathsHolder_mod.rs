@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct PathsHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _bezierPath: *mut crate::GlobalNamespace::BezierPath,
-    pub _vertexPath: *mut crate::GlobalNamespace::VertexPath,
+    pub _bezierPath: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BezierPath>,
+    pub _vertexPath: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VertexPath>,
 }
 #[cfg(feature = "PathsHolder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

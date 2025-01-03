@@ -3,14 +3,14 @@
 #[derive(Debug)]
 pub struct IsaacEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub engineState: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub results: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub engineState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub results: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub a: u32,
     pub b: u32,
     pub c: u32,
     pub index: i32,
-    pub keyStream: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub workingKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub keyStream: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub workingKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub initialised: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+IsaacEngine")]

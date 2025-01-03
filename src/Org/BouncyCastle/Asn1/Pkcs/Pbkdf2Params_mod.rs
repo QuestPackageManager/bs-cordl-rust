@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct Pbkdf2Params {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub octStr: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub iterationCount: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub keyLength: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub prf: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    pub octStr: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub iterationCount: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerInteger,
+    >,
+    pub keyLength: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub prf: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+Pbkdf2Params")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

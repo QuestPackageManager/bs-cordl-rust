@@ -4,14 +4,16 @@
 pub struct Type3Message {
     __cordl_parent: crate::Mono::Security::Protocol::Ntlm::MessageBase,
     pub _level: crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel,
-    pub _challenge: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _host: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _domain: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _username: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _password: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _type2: *mut crate::Mono::Security::Protocol::Ntlm::Type2Message,
-    pub _lm: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _nt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _challenge: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _domain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _username: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _type2: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Protocol::Ntlm::Type2Message,
+    >,
+    pub _lm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _nt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Security+Protocol+Ntlm+Type3Message")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MockPlayerLobbyPoseGeneratorAI {
     __cordl_parent: crate::GlobalNamespace::MockPlayerLobbyPoseGenerator,
-    pub _random: *mut crate::System::Random,
+    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
     pub _headPose: crate::UnityEngine::Pose,
     pub _leftHandPose: crate::UnityEngine::Pose,
     pub _rightHandPose: crate::UnityEngine::Pose,

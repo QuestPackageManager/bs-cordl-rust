@@ -6,7 +6,9 @@ pub struct ScrollView {
     pub m_FirstLayoutPass: i32,
     pub m_HorizontalScrollerVisibility: crate::UnityEngine::UIElements::ScrollerVisibility,
     pub m_VerticalScrollerVisibility: crate::UnityEngine::UIElements::ScrollerVisibility,
-    pub m_AttachedRootVisualContainer: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_AttachedRootVisualContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub m_SingleLineHeight: f32,
     pub m_MouseWheelScrollSizeIsInline: bool,
     pub m_HorizontalPageSize: f32,
@@ -19,17 +21,29 @@ pub struct ScrollView {
     pub m_TouchScrollBehavior: crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior,
     pub m_NestedInteractionKind: crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind,
     pub m_ElasticAnimationIntervalMs: i64,
-    pub _contentViewport_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub _horizontalScroller_k__BackingField: *mut crate::UnityEngine::UIElements::Scroller,
-    pub _verticalScroller_k__BackingField: *mut crate::UnityEngine::UIElements::Scroller,
-    pub m_ContentContainer: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_ContentAndVerticalScrollContainer: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub _contentViewport_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub _horizontalScroller_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Scroller,
+    >,
+    pub _verticalScroller_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Scroller,
+    >,
+    pub m_ContentContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_ContentAndVerticalScrollContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub previousVerticalTouchScrollTimeStamp: f32,
     pub previousHorizontalTouchScrollTimeStamp: f32,
     pub elapsedTimeSinceLastVerticalTouchScroll: f32,
     pub elapsedTimeSinceLastHorizontalTouchScroll: f32,
     pub m_Mode: crate::UnityEngine::UIElements::ScrollViewMode,
-    pub m_ScheduledLayoutPassResetItem: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    pub m_ScheduledLayoutPassResetItem: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    >,
     pub m_StartPosition: crate::UnityEngine::Vector2,
     pub m_PointerStartPosition: crate::UnityEngine::Vector2,
     pub m_Velocity: crate::UnityEngine::Vector2,
@@ -40,14 +54,22 @@ pub struct ScrollView {
     pub m_StartedMoving: bool,
     pub m_TouchPointerMoveAllowed: bool,
     pub m_TouchStoppedVelocity: bool,
-    pub m_CapturedTarget: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_CapturedTargetPointerMoveCallback: *mut crate::UnityEngine::UIElements::EventCallback_1<
-        *mut crate::UnityEngine::UIElements::PointerMoveEvent,
+    pub m_CapturedTarget: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
     >,
-    pub m_CapturedTargetPointerUpCallback: *mut crate::UnityEngine::UIElements::EventCallback_1<
-        *mut crate::UnityEngine::UIElements::PointerUpEvent,
+    pub m_CapturedTargetPointerMoveCallback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventCallback_1<
+            *mut crate::UnityEngine::UIElements::PointerMoveEvent,
+        >,
     >,
-    pub m_PostPointerUpAnimation: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    pub m_CapturedTargetPointerUpCallback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventCallback_1<
+            *mut crate::UnityEngine::UIElements::PointerUpEvent,
+        >,
+    >,
+    pub m_PostPointerUpAnimation: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ScrollView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1060,29 +1082,55 @@ for crate::UnityEngine::UIElements::ScrollView_UxmlFactory {
 #[derive(Debug)]
 pub struct ScrollView_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
-    pub m_ScrollViewMode: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::ScrollViewMode,
+    pub m_ScrollViewMode: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::ScrollViewMode,
+        >,
     >,
-    pub m_NestedInteractionKind: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind,
+    pub m_NestedInteractionKind: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind,
+        >,
     >,
-    pub m_ShowHorizontal: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_ShowVertical: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_HorizontalScrollerVisibility: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::ScrollerVisibility,
+    pub m_ShowHorizontal: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
-    pub m_VerticalScrollerVisibility: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::ScrollerVisibility,
+    pub m_ShowVertical: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
-    pub m_HorizontalPageSize: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_VerticalPageSize: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_MouseWheelScrollSize: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_TouchScrollBehavior: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior,
+    pub m_HorizontalScrollerVisibility: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::ScrollerVisibility,
+        >,
     >,
-    pub m_ScrollDecelerationRate: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_Elasticity: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_ElasticAnimationIntervalMs: *mut crate::UnityEngine::UIElements::UxmlLongAttributeDescription,
+    pub m_VerticalScrollerVisibility: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::ScrollerVisibility,
+        >,
+    >,
+    pub m_HorizontalPageSize: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_VerticalPageSize: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_MouseWheelScrollSize: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_TouchScrollBehavior: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior,
+        >,
+    >,
+    pub m_ScrollDecelerationRate: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_Elasticity: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_ElasticAnimationIntervalMs: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlLongAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

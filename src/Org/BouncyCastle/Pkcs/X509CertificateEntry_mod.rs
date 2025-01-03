@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct X509CertificateEntry {
     __cordl_parent: crate::Org::BouncyCastle::Pkcs::Pkcs12Entry,
-    pub cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
+    pub cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+X509CertificateEntry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

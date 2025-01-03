@@ -1,6 +1,6 @@
 #[cfg(feature = "System+ConsoleKeyInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ConsoleKeyInfo {
     pub _keyChar: char,
     pub _key: crate::System::ConsoleKey,

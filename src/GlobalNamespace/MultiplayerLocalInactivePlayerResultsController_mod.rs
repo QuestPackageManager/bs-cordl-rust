@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerResultsController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
+    pub _multiplayerController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerController,
+    >,
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerResultsController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

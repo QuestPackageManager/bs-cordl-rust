@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct SemanticsInformation {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub semanticsIdentifier: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub nameRegistrationAuthorities: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    pub semanticsIdentifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub nameRegistrationAuthorities: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+Qualified+SemanticsInformation")]

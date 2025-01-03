@@ -5,7 +5,9 @@ pub struct EnvironmentLightSimpleController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _color: crate::UnityEngine::Color,
     pub _colorId: i32,
-    pub _lightManager: *mut crate::GlobalNamespace::LightWithIdManager,
+    pub _lightManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightWithIdManager,
+    >,
 }
 #[cfg(feature = "EnvironmentLightSimpleController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

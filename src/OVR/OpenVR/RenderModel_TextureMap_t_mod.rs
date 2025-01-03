@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+RenderModel_TextureMap_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RenderModel_TextureMap_t {
     pub unWidth: u16,
     pub unHeight: u16,

@@ -3,18 +3,24 @@
 #[derive(Debug)]
 pub struct G_AudioManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_audioGraphGameObject: *mut crate::UnityEngine::GameObject,
-    pub m_audioDbText: *mut crate::UnityEngine::UI::Text,
-    pub m_backgroundImages: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UI::Image,
+    pub m_audioGraphGameObject: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
     >,
-    pub m_graphyManager: *mut crate::Tayx::Graphy::GraphyManager,
-    pub m_audioGraph: *mut crate::Tayx::Graphy::Audio::G_AudioGraph,
-    pub m_audioMonitor: *mut crate::Tayx::Graphy::Audio::G_AudioMonitor,
-    pub m_audioText: *mut crate::Tayx::Graphy::Audio::G_AudioText,
-    pub m_rectTransform: *mut crate::UnityEngine::RectTransform,
-    pub m_childrenGameObjects: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::GameObject,
+    pub m_audioDbText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub m_backgroundImages: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::UI::Image>,
+    >,
+    pub m_graphyManager: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
+    pub m_audioGraph: quest_hook::libil2cpp::Gc<
+        crate::Tayx::Graphy::Audio::G_AudioGraph,
+    >,
+    pub m_audioMonitor: quest_hook::libil2cpp::Gc<
+        crate::Tayx::Graphy::Audio::G_AudioMonitor,
+    >,
+    pub m_audioText: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Audio::G_AudioText>,
+    pub m_rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub m_childrenGameObjects: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::GameObject>,
     >,
     pub m_previousModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,
     pub m_currentModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SignalOnUIButtonClick {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _buttonClickedSignal: *mut crate::GlobalNamespace::Signal,
-    pub _button: *mut crate::UnityEngine::UI::Button,
+    pub _buttonClickedSignal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
+    pub _button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
 }
 #[cfg(feature = "SignalOnUIButtonClick")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

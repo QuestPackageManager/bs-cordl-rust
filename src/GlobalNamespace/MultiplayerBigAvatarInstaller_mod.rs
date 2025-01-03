@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct MultiplayerBigAvatarInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
-    pub _saberManagerInitData: *mut crate::GlobalNamespace::SaberManager_InitData,
-    pub _playerSpecificSettings: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
+    pub _connectedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
+    pub _saberManagerInitData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SaberManager_InitData,
+    >,
+    pub _playerSpecificSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
+    >,
 }
 #[cfg(feature = "MultiplayerBigAvatarInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct MediaTypeHeaderValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub parameters: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+    pub parameters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+        >,
     >,
-    pub media_type: *mut quest_hook::libil2cpp::Il2CppString,
+    pub media_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Net+Http+Headers+MediaTypeHeaderValue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

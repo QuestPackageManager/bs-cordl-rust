@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct MirroredSliderController {
     __cordl_parent: crate::GlobalNamespace::SliderControllerBase,
-    pub _meshFilter: *mut crate::UnityEngine::MeshFilter,
-    pub _jumpOffsetYProvider: *mut crate::GlobalNamespace::IJumpOffsetYProvider,
-    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
-    pub _followedSlider: *mut crate::GlobalNamespace::SliderController,
-    pub _transform: *mut crate::UnityEngine::Transform,
-    pub _followedTransform: *mut crate::UnityEngine::Transform,
+    pub _meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
+    pub _jumpOffsetYProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IJumpOffsetYProvider,
+    >,
+    pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVariableMovementDataProvider,
+    >,
+    pub _followedSlider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SliderController,
+    >,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _followedTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "MirroredSliderController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

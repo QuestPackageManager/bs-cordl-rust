@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct RegexFC {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cc: *mut crate::System::Text::RegularExpressions::RegexCharClass,
+    pub _cc: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::RegexCharClass,
+    >,
     pub _nullable: bool,
     pub _CaseInsensitive_k__BackingField: bool,
 }

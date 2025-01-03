@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct TrustPacket {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::ContainedPacket,
-    pub levelAndTrustAmount: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub levelAndTrustAmount: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+TrustPacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

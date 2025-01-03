@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct FillIndicator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _bgImage: *mut crate::UnityEngine::UI::Image,
-    pub _image: *mut crate::UnityEngine::UI::Image,
+    pub _bgImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _image: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
 }
 #[cfg(feature = "FillIndicator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

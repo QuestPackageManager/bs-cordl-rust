@@ -605,9 +605,11 @@ for crate::UnityEngine::InputSystem::InputControlExtensions {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+ControlBuilder")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputControlExtensions_ControlBuilder {
-    pub _control_k__BackingField: *mut crate::UnityEngine::InputSystem::InputControl,
+    pub _control_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputControl,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+ControlBuilder")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -894,9 +896,11 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputControlExtensions_DeviceBuilder {
-    pub _device_k__BackingField: *mut crate::UnityEngine::InputSystem::InputDevice,
+    pub _device_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputDevice,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1121,9 +1125,11 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputControlExtensions_InputEventControlCollection {
-    pub m_Device: *mut crate::UnityEngine::InputSystem::InputDevice,
+    pub m_Device: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputDevice,
+    >,
     pub m_EventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     pub m_Flags: crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate,
     pub m_MagnitudeThreshold: f32,
@@ -1268,23 +1274,31 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCol
     feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputControlExtensions_InputEventControlEnumerator {
     pub m_Flags: crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate,
-    pub m_Device: *mut crate::UnityEngine::InputSystem::InputDevice,
-    pub m_StateOffsetToControlIndex: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub m_StateOffsetToControlIndexLength: i32,
-    pub m_AllControls: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputControl,
+    pub m_Device: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputDevice,
     >,
-    pub m_DefaultState: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_CurrentState: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_NoiseMask: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_StateOffsetToControlIndex: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u32>,
+    >,
+    pub m_StateOffsetToControlIndexLength: i32,
+    pub m_AllControls: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputControl,
+        >,
+    >,
+    pub m_DefaultState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_CurrentState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_NoiseMask: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_EventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-    pub m_CurrentControl: *mut crate::UnityEngine::InputSystem::InputControl,
+    pub m_CurrentControl: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputControl,
+    >,
     pub m_CurrentIndexInStateOffsetToControlIndexMap: i32,
     pub m_CurrentControlStateBitOffset: u32,
-    pub m_EventState: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_EventState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_CurrentBitOffset: u32,
     pub m_EndBitOffset: u32,
     pub m_MagnitudeThreshold: f32,

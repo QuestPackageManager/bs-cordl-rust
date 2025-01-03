@@ -3,26 +3,54 @@
 #[derive(Debug)]
 pub struct XmlSchemaSet {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub nameTable: *mut crate::System::Xml::XmlNameTable,
-    pub schemaNames: *mut crate::System::Xml::Schema::SchemaNames,
-    pub schemas: *mut crate::System::Collections::SortedList,
-    pub internalEventHandler: *mut crate::System::Xml::Schema::ValidationEventHandler,
-    pub eventHandler: *mut crate::System::Xml::Schema::ValidationEventHandler,
+    pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+    pub schemaNames: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNames>,
+    pub schemas: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
+    pub internalEventHandler: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::ValidationEventHandler,
+    >,
+    pub eventHandler: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::ValidationEventHandler,
+    >,
     pub isCompiled: bool,
-    pub schemaLocations: *mut crate::System::Collections::Hashtable,
-    pub chameleonSchemas: *mut crate::System::Collections::Hashtable,
-    pub targetNamespaces: *mut crate::System::Collections::Hashtable,
+    pub schemaLocations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
+    pub chameleonSchemas: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
+    pub targetNamespaces: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
     pub compileAll: bool,
-    pub cachedCompiledInfo: *mut crate::System::Xml::Schema::SchemaInfo,
-    pub readerSettings: *mut crate::System::Xml::XmlReaderSettings,
-    pub schemaForSchema: *mut crate::System::Xml::Schema::XmlSchema,
-    pub compilationSettings: *mut crate::System::Xml::Schema::XmlSchemaCompilationSettings,
-    pub elements: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub attributes: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub schemaTypes: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub substitutionGroups: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub typeExtensions: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub internalSyncObject: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub cachedCompiledInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::SchemaInfo,
+    >,
+    pub readerSettings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
+    pub schemaForSchema: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchema,
+    >,
+    pub compilationSettings: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaCompilationSettings,
+    >,
+    pub elements: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub attributes: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub schemaTypes: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub substitutionGroups: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub typeExtensions: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub internalSyncObject: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSet")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

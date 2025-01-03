@@ -6,7 +6,7 @@ pub struct FieldByRefUpdater {
     pub _object: crate::System::Nullable_1<
         crate::System::Linq::Expressions::Interpreter::LocalDefinition,
     >,
-    pub _field: *mut crate::System::Reflection::FieldInfo,
+    pub _field: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+FieldByRefUpdater")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

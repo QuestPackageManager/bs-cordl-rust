@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct AudioClipQueue {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioSource: *mut crate::UnityEngine::AudioSource,
-    pub _queue: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::AudioClipQueue_AudioClipWithDelay,
+    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    pub _queue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::AudioClipQueue_AudioClipWithDelay,
+        >,
     >,
 }
 #[cfg(feature = "AudioClipQueue")]
@@ -94,7 +96,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AudioClipQueu
 #[derive(Debug)]
 pub struct AudioClipQueue_AudioClipWithDelay {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub audioClip: *mut crate::UnityEngine::AudioClip,
+    pub audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     pub delay: f32,
 }
 #[cfg(feature = "AudioClipQueue+AudioClipWithDelay")]

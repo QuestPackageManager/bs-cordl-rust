@@ -3,21 +3,29 @@
 #[derive(Debug)]
 pub struct TMP_UpdateManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_LayoutQueueLookup: *mut crate::System::Collections::Generic::HashSet_1<i32>,
-    pub m_LayoutRebuildQueue: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_Text,
+    pub m_LayoutQueueLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
     >,
-    pub m_GraphicQueueLookup: *mut crate::System::Collections::Generic::HashSet_1<i32>,
-    pub m_GraphicRebuildQueue: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_Text,
+    pub m_LayoutRebuildQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_Text>,
     >,
-    pub m_InternalUpdateLookup: *mut crate::System::Collections::Generic::HashSet_1<i32>,
-    pub m_InternalUpdateQueue: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_Text,
+    pub m_GraphicQueueLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
     >,
-    pub m_CullingUpdateLookup: *mut crate::System::Collections::Generic::HashSet_1<i32>,
-    pub m_CullingUpdateQueue: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_Text,
+    pub m_GraphicRebuildQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_Text>,
+    >,
+    pub m_InternalUpdateLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
+    pub m_InternalUpdateQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_Text>,
+    >,
+    pub m_CullingUpdateLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
+    pub m_CullingUpdateQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_Text>,
     >,
 }
 #[cfg(feature = "TMPro+TMP_UpdateManager")]

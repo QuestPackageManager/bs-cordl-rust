@@ -3,19 +3,35 @@
 #[derive(Debug)]
 pub struct TwoPaneSplitView {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
-    pub m_LeftPane: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_RightPane: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_FixedPane: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_FlexedPane: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_LeftPane: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_RightPane: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_FixedPane: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_FlexedPane: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub m_FixedPaneDimension: f32,
-    pub m_DragLine: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_DragLineAnchor: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_DragLine: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_DragLineAnchor: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub m_CollapseMode: bool,
-    pub m_Content: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_Content: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub m_Orientation: crate::UnityEngine::UIElements::TwoPaneSplitViewOrientation,
     pub m_FixedPaneIndex: i32,
     pub m_FixedPaneInitialDimension: f32,
-    pub m_Resizer: *mut crate::UnityEngine::UIElements::TwoPaneSplitViewResizer,
+    pub m_Resizer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TwoPaneSplitViewResizer,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -305,10 +321,16 @@ for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlFactory {
 #[derive(Debug)]
 pub struct TwoPaneSplitView_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
-    pub m_FixedPaneIndex: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_FixedPaneInitialDimension: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_Orientation: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::TwoPaneSplitViewOrientation,
+    pub m_FixedPaneIndex: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub m_FixedPaneInitialDimension: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub m_Orientation: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::TwoPaneSplitViewOrientation,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView+UxmlTraits")]

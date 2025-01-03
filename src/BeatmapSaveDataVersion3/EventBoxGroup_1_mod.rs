@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct EventBoxGroup_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::BeatmapSaveDataVersion3::EventBoxGroup,
-    pub e: *mut crate::System::Collections::Generic::List_1<T>,
+    pub e: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+EventBoxGroup_1")]

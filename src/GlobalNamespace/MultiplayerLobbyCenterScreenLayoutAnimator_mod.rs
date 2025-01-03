@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct MultiplayerLobbyCenterScreenLayoutAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _nextLevelTransform: *mut crate::UnityEngine::RectTransform,
-    pub _nextLevelBasePosition: *mut crate::UnityEngine::RectTransform,
-    pub _nextLevelCountdownPosition: *mut crate::UnityEngine::RectTransform,
+    pub _nextLevelTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
+    >,
+    pub _nextLevelBasePosition: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
+    >,
+    pub _nextLevelCountdownPosition: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
+    >,
     pub _transitionDuration: f32,
-    pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::TimeTweeningManager,
+    >,
 }
 #[cfg(feature = "MultiplayerLobbyCenterScreenLayoutAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

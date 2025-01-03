@@ -282,9 +282,11 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUILayoutUtility 
 pub struct GUILayoutUtility_LayoutCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _id_k__BackingField: i32,
-    pub topLevel: *mut crate::UnityEngine::GUILayoutGroup,
-    pub layoutGroups: *mut crate::UnityEngineInternal::GenericStack,
-    pub windows: *mut crate::UnityEngine::GUILayoutGroup,
+    pub topLevel: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutGroup>,
+    pub layoutGroups: quest_hook::libil2cpp::Gc<
+        crate::UnityEngineInternal::GenericStack,
+    >,
+    pub windows: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutGroup>,
 }
 #[cfg(feature = "UnityEngine+GUILayoutUtility+LayoutCache")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

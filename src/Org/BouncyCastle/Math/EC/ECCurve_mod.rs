@@ -3,14 +3,26 @@
 #[derive(Debug)]
 pub struct ECCurve {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_field: *mut crate::Org::BouncyCastle::Math::Field::IFiniteField,
-    pub m_a: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    pub m_b: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-    pub m_order: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub m_cofactor: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub m_field: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::Field::IFiniteField,
+    >,
+    pub m_a: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    >,
+    pub m_b: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    >,
+    pub m_order: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub m_cofactor: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
     pub m_coord: i32,
-    pub m_endomorphism: *mut crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
-    pub m_multiplier: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier,
+    pub m_endomorphism: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
+    >,
+    pub m_multiplier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -622,10 +634,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::EC::E
 #[derive(Debug)]
 pub struct ECCurve_Config {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub outer: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
+    pub outer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
     pub coord: i32,
-    pub endomorphism: *mut crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
-    pub multiplier: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier,
+    pub endomorphism: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
+    >,
+    pub multiplier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+Config")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -756,8 +772,8 @@ for crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
 #[derive(Debug)]
 pub struct ECCurve_DefaultLookupTable {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
-    pub m_outer: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-    pub m_table: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub m_outer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
+    pub m_table: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub m_size: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]

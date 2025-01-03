@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct RevDetails {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub certDetails: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplate,
-    pub crlEntryDetails: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    pub certDetails: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Crmf::CertTemplate,
+    >,
+    pub crlEntryDetails: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+RevDetails")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

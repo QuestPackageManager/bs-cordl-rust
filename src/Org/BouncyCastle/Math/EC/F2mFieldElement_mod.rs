@@ -5,8 +5,8 @@ pub struct F2mFieldElement {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractF2mFieldElement,
     pub representation: i32,
     pub m: i32,
-    pub ks: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub x: *mut crate::Org::BouncyCastle::Math::EC::LongArray,
+    pub ks: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::LongArray>,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+F2mFieldElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

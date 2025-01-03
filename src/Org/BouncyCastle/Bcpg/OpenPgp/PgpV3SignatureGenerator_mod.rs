@@ -5,9 +5,11 @@ pub struct PgpV3SignatureGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub keyAlgorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
     pub hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
-    pub privKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
-    pub sig: *mut crate::Org::BouncyCastle::Crypto::ISigner,
-    pub dig: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    pub privKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
+    >,
+    pub sig: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
+    pub dig: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     pub signatureType: i32,
     pub lastb: u8,
 }

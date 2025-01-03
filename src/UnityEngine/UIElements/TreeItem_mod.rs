@@ -1,11 +1,11 @@
 #[cfg(feature = "UnityEngine+UIElements+TreeItem")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TreeItem {
     pub _id_k__BackingField: i32,
     pub _parentId_k__BackingField: i32,
-    pub _childrenIds_k__BackingField: *mut crate::System::Collections::Generic::IEnumerable_1<
-        i32,
+    pub _childrenIds_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<i32>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TreeItem")]

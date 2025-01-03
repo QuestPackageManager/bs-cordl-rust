@@ -3,12 +3,24 @@
 #[derive(Debug)]
 pub struct PlayerHeightDetector {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _initData: *mut crate::GlobalNamespace::PlayerHeightDetector_InitData,
-    pub playerHeightDidChangeEvent: *mut crate::System::Action_1<f32>,
-    pub _beatmapObjectCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _playerTransforms: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerTransforms,
+    >,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerHeightDetector_InitData,
+    >,
+    pub playerHeightDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<f32>,
+    >,
+    pub _beatmapObjectCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
     pub _noTopObstaclesStartTime: f32,
     pub _computedPlayerHeight: f32,
     pub _changeWeight: f32,

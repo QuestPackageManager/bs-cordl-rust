@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct LightDelegateCreator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _lambda: *mut crate::System::Linq::Expressions::LambdaExpression,
-    pub _Interpreter_k__BackingField: *mut crate::System::Linq::Expressions::Interpreter::Interpreter,
+    pub _lambda: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::LambdaExpression,
+    >,
+    pub _Interpreter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::Interpreter,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightDelegateCreator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

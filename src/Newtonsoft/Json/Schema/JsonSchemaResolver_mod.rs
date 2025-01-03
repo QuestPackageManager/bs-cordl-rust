@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct JsonSchemaResolver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _LoadedSchemas_k__BackingField: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+    pub _LoadedSchemas_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaResolver")]

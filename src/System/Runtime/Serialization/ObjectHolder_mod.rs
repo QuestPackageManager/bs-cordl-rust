@@ -3,19 +3,33 @@
 #[derive(Debug)]
 pub struct ObjectHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_object: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_id: i64,
     pub m_missingElementsRemaining: i32,
     pub m_missingDecendents: i32,
-    pub m_serInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
-    pub m_surrogate: *mut crate::System::Runtime::Serialization::ISerializationSurrogate,
-    pub m_missingElements: *mut crate::System::Runtime::Serialization::FixupHolderList,
-    pub m_dependentObjects: *mut crate::System::Runtime::Serialization::LongList,
-    pub m_next: *mut crate::System::Runtime::Serialization::ObjectHolder,
+    pub m_serInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::SerializationInfo,
+    >,
+    pub m_surrogate: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISerializationSurrogate,
+    >,
+    pub m_missingElements: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::FixupHolderList,
+    >,
+    pub m_dependentObjects: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::LongList,
+    >,
+    pub m_next: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ObjectHolder,
+    >,
     pub m_flags: i32,
     pub m_markForFixupWhenAvailable: bool,
-    pub m_valueFixup: *mut crate::System::Runtime::Serialization::ValueTypeFixupInfo,
-    pub m_typeLoad: *mut crate::System::Runtime::Serialization::TypeLoadExceptionHolder,
+    pub m_valueFixup: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ValueTypeFixupInfo,
+    >,
+    pub m_typeLoad: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::TypeLoadExceptionHolder,
+    >,
     pub m_reachable: bool,
 }
 #[cfg(feature = "System+Runtime+Serialization+ObjectHolder")]

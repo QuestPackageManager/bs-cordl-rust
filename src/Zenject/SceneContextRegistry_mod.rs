@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct SceneContextRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _map: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::SceneManagement::Scene,
-        *mut crate::Zenject::SceneContext,
+    pub _map: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::SceneManagement::Scene,
+            *mut crate::Zenject::SceneContext,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+SceneContextRegistry")]

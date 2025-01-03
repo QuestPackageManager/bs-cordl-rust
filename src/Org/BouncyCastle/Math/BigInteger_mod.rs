@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BigInteger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub magnitude: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub magnitude: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub sign: i32,
     pub nBits: i32,
     pub nBitLength: i32,

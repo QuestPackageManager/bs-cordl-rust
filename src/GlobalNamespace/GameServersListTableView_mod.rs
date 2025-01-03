@@ -3,18 +3,26 @@
 #[derive(Debug)]
 pub struct GameServersListTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _tableView: *mut crate::GlobalNamespace::TableViewWithDetailCell,
-    pub _gameServerListCellPrefab: *mut crate::GlobalNamespace::GameServerListTableCell,
-    pub _gameServerDetailCellPrefab: *mut crate::GlobalNamespace::GameServerListDetailTableCell,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub joinButtonPressedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::INetworkPlayer,
+    pub _tableView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TableViewWithDetailCell,
+    >,
+    pub _gameServerListCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameServerListTableCell,
+    >,
+    pub _gameServerDetailCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameServerListDetailTableCell,
+    >,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub joinButtonPressedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
     >,
     pub _isInitialized: bool,
-    pub _gamesList: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::INetworkPlayer,
+    pub _gamesList: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::INetworkPlayer>,
     >,
-    pub _selectedServer: *mut crate::GlobalNamespace::INetworkPlayer,
+    pub _selectedServer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INetworkPlayer,
+    >,
 }
 #[cfg(feature = "GameServersListTableView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

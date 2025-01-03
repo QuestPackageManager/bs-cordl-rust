@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct ResponseStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub response: *mut crate::System::Net::HttpListenerResponse,
+    pub response: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListenerResponse>,
     pub ignore_errors: bool,
     pub disposed: bool,
     pub trailer_sent: bool,
-    pub stream: *mut crate::System::IO::Stream,
+    pub stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
 }
 #[cfg(feature = "System+Net+ResponseStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

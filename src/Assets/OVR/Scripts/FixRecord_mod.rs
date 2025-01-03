@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct FixRecord {
     __cordl_parent: crate::Assets::OVR::Scripts::Record,
-    pub fixMethod: *mut crate::Assets::OVR::Scripts::FixMethodDelegate,
-    pub targetObject: *mut crate::UnityEngine::Object,
-    pub buttonNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub fixMethod: quest_hook::libil2cpp::Gc<
+        crate::Assets::OVR::Scripts::FixMethodDelegate,
+    >,
+    pub targetObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    pub buttonNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub editModeRequired: bool,
     pub complete: bool,

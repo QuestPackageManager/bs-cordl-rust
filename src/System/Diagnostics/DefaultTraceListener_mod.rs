@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DefaultTraceListener {
     __cordl_parent: crate::System::Diagnostics::TraceListener,
-    pub logFileName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub logFileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Diagnostics+DefaultTraceListener")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

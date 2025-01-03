@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct HtmlEncodedRawTextWriter {
     __cordl_parent: crate::System::Xml::XmlEncodedRawTextWriter,
-    pub elementScope: *mut crate::System::Xml::ByteStack,
+    pub elementScope: quest_hook::libil2cpp::Gc<crate::System::Xml::ByteStack>,
     pub currentElementProperties: crate::System::Xml::ElementProperties,
     pub currentAttributeProperties: crate::System::Xml::AttributeProperties,
     pub endsWithAmpersand: bool,
-    pub uriEscapingBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mediaType: *mut quest_hook::libil2cpp::Il2CppString,
+    pub uriEscapingBuffer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub mediaType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub doNotEscapeUriAttributes: bool,
 }
 #[cfg(feature = "System+Xml+HtmlEncodedRawTextWriter")]

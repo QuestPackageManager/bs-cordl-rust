@@ -4,17 +4,17 @@
 pub struct PrimitiveArray {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub code: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
-    pub booleanA: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
-    pub charA: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    pub doubleA: *mut quest_hook::libil2cpp::Il2CppArray<f64>,
-    pub int16A: *mut quest_hook::libil2cpp::Il2CppArray<i16>,
-    pub int32A: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub int64A: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
-    pub sbyteA: *mut quest_hook::libil2cpp::Il2CppArray<i8>,
-    pub singleA: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub uint16A: *mut quest_hook::libil2cpp::Il2CppArray<u16>,
-    pub uint32A: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub uint64A: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+    pub booleanA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
+    pub charA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    pub doubleA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f64>>,
+    pub int16A: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
+    pub int32A: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub int64A: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
+    pub sbyteA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i8>>,
+    pub singleA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub uint16A: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+    pub uint32A: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub uint64A: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+PrimitiveArray")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

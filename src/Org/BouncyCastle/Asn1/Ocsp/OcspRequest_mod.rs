@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct OcspRequest {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub tbsRequest: *mut crate::Org::BouncyCastle::Asn1::Ocsp::TbsRequest,
-    pub optionalSignature: *mut crate::Org::BouncyCastle::Asn1::Ocsp::Signature,
+    pub tbsRequest: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Ocsp::TbsRequest,
+    >,
+    pub optionalSignature: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Ocsp::Signature,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+OcspRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

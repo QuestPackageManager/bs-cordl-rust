@@ -6,8 +6,10 @@ pub struct MemoryPoolContainer_2<
     T1: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _activeItems: *mut crate::GlobalNamespace::LazyCopyHashSet_1<T1>,
-    pub _memoryPool: *mut crate::Zenject::IMemoryPool_1<T0>,
+    pub _activeItems: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<T1>,
+    >,
+    pub _memoryPool: quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_1<T0>>,
     __cordl_phantom_T0: std::marker::PhantomData<T0>,
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
 }

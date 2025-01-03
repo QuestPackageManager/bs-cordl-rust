@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct ListInitExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
-    pub _NewExpression_k__BackingField: *mut crate::System::Linq::Expressions::NewExpression,
-    pub _Initializers_k__BackingField: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-        *mut crate::System::Linq::Expressions::ElementInit,
+    pub _NewExpression_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::NewExpression,
+    >,
+    pub _Initializers_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            *mut crate::System::Linq::Expressions::ElementInit,
+        >,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+ListInitExpression")]

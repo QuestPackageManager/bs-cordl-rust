@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct ExplicitContentWarningViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _toggleExplicit: *mut crate::UnityEngine::UI::Toggle,
-    pub _continueButton: *mut crate::UnityEngine::UI::Button,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub didFinishEvent: *mut crate::System::Action,
+    pub _toggleExplicit: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "ExplicitContentWarningViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

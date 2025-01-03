@@ -5,14 +5,18 @@ pub struct CanvasUpdateRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_PerformingLayoutUpdate: bool,
     pub m_PerformingGraphicUpdate: bool,
-    pub m_CanvasUpdateProfilerStrings: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_CanvasUpdateProfilerStrings: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub m_LayoutRebuildQueue: *mut crate::UnityEngine::UI::Collections::IndexedSet_1<
-        *mut crate::UnityEngine::UI::ICanvasElement,
+    pub m_LayoutRebuildQueue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Collections::IndexedSet_1<
+            *mut crate::UnityEngine::UI::ICanvasElement,
+        >,
     >,
-    pub m_GraphicRebuildQueue: *mut crate::UnityEngine::UI::Collections::IndexedSet_1<
-        *mut crate::UnityEngine::UI::ICanvasElement,
+    pub m_GraphicRebuildQueue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Collections::IndexedSet_1<
+            *mut crate::UnityEngine::UI::ICanvasElement,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UI+CanvasUpdateRegistry")]

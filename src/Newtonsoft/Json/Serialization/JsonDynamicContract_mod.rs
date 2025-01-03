@@ -3,29 +3,37 @@
 #[derive(Debug)]
 pub struct JsonDynamicContract {
     __cordl_parent: crate::Newtonsoft::Json::Serialization::JsonContainerContract,
-    pub _Properties_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::JsonPropertyCollection,
-    pub _PropertyNameResolver_k__BackingField: *mut crate::System::Func_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Properties_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonPropertyCollection,
     >,
-    pub _callSiteGetters: *mut crate::Newtonsoft::Json::Utilities::ThreadSafeStore_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::System::Runtime::CompilerServices::CallSite_1<
-            *mut crate::System::Func_3<
-                *mut crate::System::Runtime::CompilerServices::CallSite,
-                *mut quest_hook::libil2cpp::Il2CppObject,
-                *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _PropertyNameResolver_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+    pub _callSiteGetters: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::ThreadSafeStore_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::System::Runtime::CompilerServices::CallSite_1<
+                *mut crate::System::Func_3<
+                    *mut crate::System::Runtime::CompilerServices::CallSite,
+                    *mut quest_hook::libil2cpp::Il2CppObject,
+                    *mut quest_hook::libil2cpp::Il2CppObject,
+                >,
             >,
         >,
     >,
-    pub _callSiteSetters: *mut crate::Newtonsoft::Json::Utilities::ThreadSafeStore_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::System::Runtime::CompilerServices::CallSite_1<
-            *mut crate::System::Func_4<
-                *mut crate::System::Runtime::CompilerServices::CallSite,
-                *mut quest_hook::libil2cpp::Il2CppObject,
-                *mut quest_hook::libil2cpp::Il2CppObject,
-                *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _callSiteSetters: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::ThreadSafeStore_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::System::Runtime::CompilerServices::CallSite_1<
+                *mut crate::System::Func_4<
+                    *mut crate::System::Runtime::CompilerServices::CallSite,
+                    *mut quest_hook::libil2cpp::Il2CppObject,
+                    *mut quest_hook::libil2cpp::Il2CppObject,
+                    *mut quest_hook::libil2cpp::Il2CppObject,
+                >,
             >,
         >,
     >,

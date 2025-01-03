@@ -4,8 +4,8 @@
 pub struct HEU_AssetTask {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_Task,
     pub _buildType: crate::HoudiniEngineUnity::HEU_AssetTask_BuildType,
-    pub _asset: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
-    pub _assetPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
+    pub _assetPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _position: crate::UnityEngine::Vector3,
     pub _buildResult: bool,
     pub _forceSessionID: i64,

@@ -3,22 +3,32 @@
 #[derive(Debug)]
 pub struct TimelinePlayable {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
-    pub m_IntervalTree: *mut crate::UnityEngine::Timeline::IntervalTree_1<
-        *mut crate::UnityEngine::Timeline::RuntimeElement,
+    pub m_IntervalTree: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::IntervalTree_1<
+            *mut crate::UnityEngine::Timeline::RuntimeElement,
+        >,
     >,
-    pub m_ActiveClips: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Timeline::RuntimeElement,
+    pub m_ActiveClips: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Timeline::RuntimeElement,
+        >,
     >,
-    pub m_CurrentListOfActiveClips: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Timeline::RuntimeElement,
+    pub m_CurrentListOfActiveClips: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Timeline::RuntimeElement,
+        >,
     >,
     pub m_ActiveBit: i32,
-    pub m_EvaluateCallbacks: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Timeline::ITimelineEvaluateCallback,
+    pub m_EvaluateCallbacks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::Timeline::ITimelineEvaluateCallback,
+        >,
     >,
-    pub m_PlayableCache: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::UnityEngine::Timeline::TrackAsset,
-        crate::UnityEngine::Playables::Playable,
+    pub m_PlayableCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::UnityEngine::Timeline::TrackAsset,
+            crate::UnityEngine::Playables::Playable,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelinePlayable")]

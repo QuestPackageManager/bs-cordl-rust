@@ -1,6 +1,6 @@
 #[cfg(feature = "System+DateTimeResult")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DateTimeResult {
     pub Year: i32,
     pub Month: i32,
@@ -12,12 +12,16 @@ pub struct DateTimeResult {
     pub era: i32,
     pub flags: crate::System::ParseFlags,
     pub timeZoneOffset: crate::System::TimeSpan,
-    pub calendar: *mut crate::System::Globalization::Calendar,
+    pub calendar: quest_hook::libil2cpp::Gc<crate::System::Globalization::Calendar>,
     pub parsedDate: crate::System::DateTime,
     pub failure: crate::System::ParseFailureKind,
-    pub failureMessageID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub failureMessageFormatArgument: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub failureArgumentName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub failureMessageID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub failureMessageFormatArgument: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub failureArgumentName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub originalDateTimeString: crate::System::ReadOnlySpan_1<char>,
     pub failedFormatSpecifier: crate::System::ReadOnlySpan_1<char>,
 }

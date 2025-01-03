@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct PkixCertPathBuilderResult {
     __cordl_parent: crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorResult,
-    pub certPath: *mut crate::Org::BouncyCastle::Pkix::PkixCertPath,
+    pub certPath: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Pkix::PkixCertPath,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPathBuilderResult")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

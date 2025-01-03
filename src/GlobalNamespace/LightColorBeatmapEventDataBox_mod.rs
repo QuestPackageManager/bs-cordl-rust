@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct LightColorBeatmapEventDataBox {
     __cordl_parent: crate::GlobalNamespace::BeatmapEventDataBox,
-    pub _lightColorBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::GlobalNamespace::LightColorBaseData,
+    pub _lightColorBaseDataList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::LightColorBaseData,
+        >,
     >,
     pub _brightnessStep: f32,
     pub _beatStep: f32,

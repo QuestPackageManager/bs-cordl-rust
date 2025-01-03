@@ -3,19 +3,25 @@
 #[derive(Debug)]
 pub struct SceneDecoratorContext {
     __cordl_parent: crate::Zenject::Context,
-    pub _lateInstallers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::MonoInstaller,
+    pub _lateInstallers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::Zenject::MonoInstaller>,
     >,
-    pub _lateInstallerPrefabs: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::MonoInstaller,
+    pub _lateInstallerPrefabs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::Zenject::MonoInstaller>,
     >,
-    pub _lateScriptableObjectInstallers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::ScriptableObjectInstaller,
+    pub _lateScriptableObjectInstallers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::ScriptableObjectInstaller,
+        >,
     >,
-    pub _decoratedContractName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _injectableMonoBehaviours: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::MonoBehaviour,
+    pub _decoratedContractName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _injectableMonoBehaviours: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::MonoBehaviour,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+SceneDecoratorContext")]

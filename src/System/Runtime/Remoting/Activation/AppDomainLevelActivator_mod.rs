@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct AppDomainLevelActivator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _activationUrl: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _next: *mut crate::System::Runtime::Remoting::Activation::IActivator,
+    pub _activationUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _next: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Activation::IActivator,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Activation+AppDomainLevelActivator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

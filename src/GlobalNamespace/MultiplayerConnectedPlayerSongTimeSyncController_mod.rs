@@ -7,9 +7,15 @@ pub struct MultiplayerConnectedPlayerSongTimeSyncController {
     pub _forcedSyncDeltaTime: f32,
     pub _startSyncDeltaTime: f32,
     pub _stopSyncDeltaTime: f32,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub _initData: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController_InitData,
-    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController_InitData,
+    >,
+    pub _connectedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
     pub _songTime_k__BackingField: f32,
     pub _lastFrameDeltaSongTime_k__BackingField: f32,
     pub _timeScale: f32,

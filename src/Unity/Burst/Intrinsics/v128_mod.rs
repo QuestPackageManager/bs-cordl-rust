@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Burst+Intrinsics+v128")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct v128 {
     padding: [u8; 16usize],
 }

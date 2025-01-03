@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ProjectKernel {
     __cordl_parent: crate::Zenject::MonoKernel,
-    pub _settings: *mut crate::Zenject::ZenjectSettings,
-    pub _contextRegistry: *mut crate::Zenject::SceneContextRegistry,
+    pub _settings: quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectSettings>,
+    pub _contextRegistry: quest_hook::libil2cpp::Gc<
+        crate::Zenject::SceneContextRegistry,
+    >,
 }
 #[cfg(feature = "Zenject+ProjectKernel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

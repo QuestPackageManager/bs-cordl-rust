@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct SimpleMemoryPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _activeElements: *mut crate::GlobalNamespace::LazyCopyHashSet_1<T>,
-    pub _inactiveElements: *mut crate::System::Collections::Generic::List_1<T>,
-    pub _createNewItemFunc: *mut crate::System::Func_1<T>,
+    pub _activeElements: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<T>,
+    >,
+    pub _inactiveElements: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<T>,
+    >,
+    pub _createNewItemFunc: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "SimpleMemoryPool_1")]

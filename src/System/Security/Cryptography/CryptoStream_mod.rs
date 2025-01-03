@@ -3,19 +3,23 @@
 #[derive(Debug)]
 pub struct CryptoStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub _stream: *mut crate::System::IO::Stream,
-    pub _transform: *mut crate::System::Security::Cryptography::ICryptoTransform,
+    pub _stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub _transform: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::ICryptoTransform,
+    >,
     pub _transformMode: crate::System::Security::Cryptography::CryptoStreamMode,
-    pub _inputBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _inputBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _inputBufferIndex: i32,
     pub _inputBlockSize: i32,
-    pub _outputBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _outputBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _outputBufferIndex: i32,
     pub _outputBlockSize: i32,
     pub _canRead: bool,
     pub _canWrite: bool,
     pub _finalBlockTransformed: bool,
-    pub _lazyAsyncActiveSemaphore: *mut crate::System::Threading::SemaphoreSlim,
+    pub _lazyAsyncActiveSemaphore: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SemaphoreSlim,
+    >,
     pub _leaveOpen: bool,
 }
 #[cfg(feature = "System+Security+Cryptography+CryptoStream")]

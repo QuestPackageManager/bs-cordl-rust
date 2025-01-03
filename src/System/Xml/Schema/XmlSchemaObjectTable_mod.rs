@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct XmlSchemaObjectTable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub table: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Xml::XmlQualifiedName,
-        *mut crate::System::Xml::Schema::XmlSchemaObject,
+    pub table: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Xml::XmlQualifiedName,
+            *mut crate::System::Xml::Schema::XmlSchemaObject,
+        >,
     >,
-    pub entries: *mut crate::System::Collections::Generic::List_1<
-        crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
+    pub entries: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
+        >,
     >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable")]
@@ -212,8 +216,10 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct XmlSchemaObjectTable_ValuesCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub entries: *mut crate::System::Collections::Generic::List_1<
-        crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
+    pub entries: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
+        >,
     >,
     pub _cordl_size: i32,
 }
@@ -502,14 +508,18 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
 #[derive(Debug)]
 pub struct XmlSchemaObjectTable_XSOEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub entries: *mut crate::System::Collections::Generic::List_1<
-        crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
+    pub entries: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
+        >,
     >,
     pub enumType: crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType,
     pub currentIndex: i32,
     pub _cordl_size: i32,
-    pub currentKey: *mut crate::System::Xml::XmlQualifiedName,
-    pub currentValue: *mut crate::System::Xml::Schema::XmlSchemaObject,
+    pub currentKey: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub currentValue: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObject,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSOEnumerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -622,10 +632,10 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XmlSchemaObjectTable_XmlSchemaObjectEntry {
-    pub qname: *mut crate::System::Xml::XmlQualifiedName,
-    pub xso: *mut crate::System::Xml::Schema::XmlSchemaObject,
+    pub qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub xso: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

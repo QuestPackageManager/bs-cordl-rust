@@ -3,27 +3,51 @@
 #[derive(Debug)]
 pub struct LevelCollectionViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _levelCollectionTableView: *mut crate::GlobalNamespace::LevelCollectionTableView,
-    pub _noDataInfoContainer: *mut crate::UnityEngine::RectTransform,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
-    pub _songPreviewPlayer: *mut crate::GlobalNamespace::SongPreviewPlayer,
-    pub _perceivedLoudnessPerLevelModel: *mut crate::GlobalNamespace::PerceivedLoudnessPerLevelModel,
-    pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
-    pub didSelectLevelEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::LevelCollectionViewController,
-        *mut crate::GlobalNamespace::BeatmapLevel,
+    pub _levelCollectionTableView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelCollectionTableView,
     >,
-    pub didSelectHeaderEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::LevelCollectionViewController,
+    pub _noDataInfoContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _additionalContentModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAdditionalContentModel,
+    >,
+    pub _songPreviewPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPreviewPlayer,
+    >,
+    pub _perceivedLoudnessPerLevelModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PerceivedLoudnessPerLevelModel,
+    >,
+    pub _audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioClipAsyncLoader,
+    >,
+    pub didSelectLevelEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::LevelCollectionViewController,
+            *mut crate::GlobalNamespace::BeatmapLevel,
+        >,
+    >,
+    pub didSelectHeaderEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::LevelCollectionViewController,
+        >,
     >,
     pub _showHeader: bool,
-    pub _noDataInfoGO: *mut crate::UnityEngine::GameObject,
-    pub _beatmapLevelToBeSelected: *mut crate::GlobalNamespace::BeatmapLevel,
-    pub _crossfadeCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _unloadLevelDebouncer: *mut crate::BGLib::UnityExtension::Debouncer_1<
-        *mut crate::GlobalNamespace::BeatmapLevel,
+    pub _noDataInfoGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _beatmapLevelToBeSelected: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevel,
+    >,
+    pub _crossfadeCancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub _unloadLevelDebouncer: quest_hook::libil2cpp::Gc<
+        crate::BGLib::UnityExtension::Debouncer_1<
+            *mut crate::GlobalNamespace::BeatmapLevel,
+        >,
     >,
 }
 #[cfg(feature = "LevelCollectionViewController")]

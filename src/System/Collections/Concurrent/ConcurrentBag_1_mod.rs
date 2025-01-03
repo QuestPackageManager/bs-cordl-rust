@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct ConcurrentBag_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _locals: *mut crate::System::Threading::ThreadLocal_1<
-        *mut crate::System::Collections::Concurrent::ConcurrentBag_1_WorkStealingQueue<T>,
+    pub _locals: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ThreadLocal_1<
+            *mut crate::System::Collections::Concurrent::ConcurrentBag_1_WorkStealingQueue<
+                T,
+            >,
+        >,
     >,
-    pub _workStealingQueues: *mut crate::System::Collections::Concurrent::ConcurrentBag_1_WorkStealingQueue<
-        T,
+    pub _workStealingQueues: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Concurrent::ConcurrentBag_1_WorkStealingQueue<T>,
     >,
     pub _emptyToNonEmptyListTransitionCount: i64,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -524,7 +528,7 @@ for crate::System::Collections::Concurrent::ConcurrentBag_1<T> {
 #[derive(Debug)]
 pub struct ConcurrentBag_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _array: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub _array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _current: T,
     pub _index: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -711,14 +715,14 @@ pub struct ConcurrentBag_1_WorkStealingQueue<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _headIndex: i32,
     pub _tailIndex: i32,
-    pub _array: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub _array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _mask: i32,
     pub _addTakeCount: i32,
     pub _stealCount: i32,
     pub _currentOp: i32,
     pub _frozen: bool,
-    pub _nextQueue: *mut crate::System::Collections::Concurrent::ConcurrentBag_1_WorkStealingQueue<
-        T,
+    pub _nextQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Concurrent::ConcurrentBag_1_WorkStealingQueue<T>,
     >,
     pub _ownerThreadId: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,

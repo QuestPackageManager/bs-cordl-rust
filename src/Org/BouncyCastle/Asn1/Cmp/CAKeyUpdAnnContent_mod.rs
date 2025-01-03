@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct CAKeyUpdAnnContent {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub oldWithNew: *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
-    pub newWithOld: *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
-    pub newWithNew: *mut crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+    pub oldWithNew: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+    >,
+    pub newWithOld: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+    >,
+    pub newWithNew: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cmp::CmpCertificate,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+CAKeyUpdAnnContent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -5,9 +5,15 @@ pub struct WebRequest {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub m_AuthenticationLevel: crate::System::Net::Security::AuthenticationLevel,
     pub m_ImpersonationLevel: crate::System::Security::Principal::TokenImpersonationLevel,
-    pub m_CachePolicy: *mut crate::System::Net::Cache::RequestCachePolicy,
-    pub m_CacheProtocol: *mut crate::System::Net::Cache::RequestCacheProtocol,
-    pub m_CacheBinding: *mut crate::System::Net::Cache::RequestCacheBinding,
+    pub m_CachePolicy: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Cache::RequestCachePolicy,
+    >,
+    pub m_CacheProtocol: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Cache::RequestCacheProtocol,
+    >,
+    pub m_CacheBinding: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Cache::RequestCacheBinding,
+    >,
 }
 #[cfg(feature = "System+Net+WebRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

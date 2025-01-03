@@ -3,15 +3,25 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalActivePlayerInGameMenuController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _inGameMenuViewController: *mut crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuViewController,
-    pub _menuButtonTrigger: *mut crate::GlobalNamespace::IMenuButtonTrigger,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _gamePause: *mut crate::GlobalNamespace::IGamePause,
-    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
-    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub didGiveUpEvent: *mut crate::System::Action,
-    pub requestsDisconnectEvent: *mut crate::System::Action,
+    pub _inGameMenuViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuViewController,
+    >,
+    pub _menuButtonTrigger: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMenuButtonTrigger,
+    >,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
+    pub _gamePause: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>,
+    pub _multiplayerController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerController,
+    >,
+    pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub didGiveUpEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub requestsDisconnectEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _gameMenuIsShown: bool,
     pub _menuChangedStateTime: f32,
 }

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AndroidJavaProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub javaInterface: *mut crate::UnityEngine::AndroidJavaClass,
+    pub javaInterface: quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaClass>,
     pub proxyObject: crate::System::IntPtr,
 }
 #[cfg(feature = "UnityEngine+AndroidJavaProxy")]

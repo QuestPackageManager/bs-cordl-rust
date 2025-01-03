@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Keyframe")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Keyframe {
     pub m_Time: f32,
     pub m_Value: f32,

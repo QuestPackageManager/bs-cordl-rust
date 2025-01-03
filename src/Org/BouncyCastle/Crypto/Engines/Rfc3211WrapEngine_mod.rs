@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct Rfc3211WrapEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub engine: *mut crate::Org::BouncyCastle::Crypto::Modes::CbcBlockCipher,
-    pub param: *mut crate::Org::BouncyCastle::Crypto::Parameters::ParametersWithIV,
+    pub engine: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Modes::CbcBlockCipher,
+    >,
+    pub param: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ParametersWithIV,
+    >,
     pub forWrapping: bool,
-    pub _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub _cordl_rand: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+Rfc3211WrapEngine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

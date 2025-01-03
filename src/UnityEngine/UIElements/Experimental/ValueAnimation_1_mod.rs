@@ -5,21 +5,27 @@ pub struct ValueAnimation_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_StartTimeMs: i64,
     pub m_DurationMs: i32,
-    pub _easingCurve_k__BackingField: *mut crate::System::Func_2<f32, f32>,
+    pub _easingCurve_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<f32, f32>,
+    >,
     pub _isRunning_k__BackingField: bool,
-    pub _onAnimationCompleted_k__BackingField: *mut crate::System::Action,
+    pub _onAnimationCompleted_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
     pub _autoRecycle_k__BackingField: bool,
     pub _recycled_k__BackingField: bool,
-    pub _owner_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub _valueUpdated_k__BackingField: *mut crate::System::Action_2<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-        T,
+    pub _owner_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
     >,
-    pub _initialValue_k__BackingField: *mut crate::System::Func_2<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-        T,
+    pub _valueUpdated_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::UnityEngine::UIElements::VisualElement, T>,
     >,
-    pub _interpolator_k__BackingField: *mut crate::System::Func_4<T, T, f32, T>,
+    pub _initialValue_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<*mut crate::UnityEngine::UIElements::VisualElement, T>,
+    >,
+    pub _interpolator_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_4<T, T, f32, T>,
+    >,
     pub _from: T,
     pub fromValueSet: bool,
     pub _to_k__BackingField: T,

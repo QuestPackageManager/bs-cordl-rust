@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct DSACryptoServiceProvider {
     __cordl_parent: crate::System::Security::Cryptography::DSA,
-    pub store: *mut crate::Mono::Security::Cryptography::KeyPairPersistence,
+    pub store: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Cryptography::KeyPairPersistence,
+    >,
     pub persistKey: bool,
     pub persisted: bool,
     pub privateKeyExportable: bool,
     pub m_disposed: bool,
-    pub dsa: *mut crate::Mono::Security::Cryptography::DSAManaged,
+    pub dsa: quest_hook::libil2cpp::Gc<crate::Mono::Security::Cryptography::DSAManaged>,
 }
 #[cfg(feature = "System+Security+Cryptography+DSACryptoServiceProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

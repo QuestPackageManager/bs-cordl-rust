@@ -3,18 +3,22 @@
 #[derive(Debug)]
 pub struct DropdownDialogPromptViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _titleText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _messageText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _dropdownLabel: *mut crate::TMPro::TextMeshProUGUI,
-    pub _dropdown: *mut crate::HMUI::SimpleTextDropdown,
-    pub _buttons: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::DropdownDialogPromptViewController_ButtonAndLabel,
+    pub _titleText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _messageText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _dropdownLabel: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _dropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
+    pub _buttons: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::DropdownDialogPromptViewController_ButtonAndLabel,
+        >,
     >,
-    pub _didFinishAction: *mut crate::System::Action_1<
-        crate::System::ValueTuple_2<i32, i32>,
+    pub _didFinishAction: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::System::ValueTuple_2<i32, i32>>,
     >,
-    pub _dropdownValues: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::ValueTuple_2<*mut quest_hook::libil2cpp::Il2CppString, i32>,
+    pub _dropdownValues: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::ValueTuple_2<*mut quest_hook::libil2cpp::Il2CppString, i32>,
+        >,
     >,
 }
 #[cfg(feature = "DropdownDialogPromptViewController")]
@@ -182,8 +186,8 @@ for crate::GlobalNamespace::DropdownDialogPromptViewController {
 #[derive(Debug)]
 pub struct DropdownDialogPromptViewController_ButtonAndLabel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _component: *mut crate::UnityEngine::UI::Button,
-    pub _label: *mut crate::TMPro::TextMeshProUGUI,
+    pub _component: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _label: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
 #[cfg(feature = "DropdownDialogPromptViewController+ButtonAndLabel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

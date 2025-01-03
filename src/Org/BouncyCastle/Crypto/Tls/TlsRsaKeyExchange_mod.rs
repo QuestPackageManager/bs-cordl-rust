@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct TlsRsaKeyExchange {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsKeyExchange,
-    pub mServerPublicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub mRsaServerPublicKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
-    pub mServerCredentials: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsEncryptionCredentials,
-    pub mPremasterSecret: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mServerPublicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    >,
+    pub mRsaServerPublicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
+    >,
+    pub mServerCredentials: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsEncryptionCredentials,
+    >,
+    pub mPremasterSecret: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsRsaKeyExchange")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

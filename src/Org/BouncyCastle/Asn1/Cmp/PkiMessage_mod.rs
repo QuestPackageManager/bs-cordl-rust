@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct PkiMessage {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub header: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader,
-    pub body: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiBody,
-    pub protection: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
-    pub extraCerts: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    pub header: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader,
+    >,
+    pub body: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiBody>,
+    pub protection: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerBitString,
+    >,
+    pub extraCerts: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PkiMessage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

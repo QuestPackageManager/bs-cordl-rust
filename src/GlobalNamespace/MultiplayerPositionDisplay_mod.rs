@@ -3,15 +3,19 @@
 #[derive(Debug)]
 pub struct MultiplayerPositionDisplay {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _text: *mut crate::TMPro::TextMeshPro,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
     pub _normalColor: crate::UnityEngine::Color,
     pub _leadingColor: crate::UnityEngine::Color,
     pub _failedColor: crate::UnityEngine::Color,
     pub _fadeInDuration: f32,
     pub _crossFadeDuration: f32,
     pub _fadeOutDuration: f32,
-    pub _scoreProvider: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
-    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _scoreProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerScoreProvider,
+    >,
+    pub _connectedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
     pub _wasFirst: bool,
     pub _isFailed: bool,
     pub _updatingColor: bool,

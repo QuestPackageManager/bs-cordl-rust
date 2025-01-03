@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ForwardAxis {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _topNode: *mut crate::System::Xml::Schema::DoubleLinkAxis,
-    pub _rootNode: *mut crate::System::Xml::Schema::DoubleLinkAxis,
+    pub _topNode: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DoubleLinkAxis>,
+    pub _rootNode: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DoubleLinkAxis>,
     pub _isAttribute: bool,
     pub _isDss: bool,
     pub _isSelfAxis: bool,

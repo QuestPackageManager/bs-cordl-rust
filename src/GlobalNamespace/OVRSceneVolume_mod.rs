@@ -9,7 +9,7 @@ pub struct OVRSceneVolume {
     pub _Offset_k__BackingField: crate::UnityEngine::Vector3,
     pub _scaleChildren: bool,
     pub _offsetChildren: bool,
-    pub _sceneAnchor: *mut crate::GlobalNamespace::OVRSceneAnchor,
+    pub _sceneAnchor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
 }
 #[cfg(feature = "OVRSceneVolume")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

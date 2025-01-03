@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Mathematics+Geometry+MinMaxAABB")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MinMaxAABB {
     pub Min: crate::Unity::Mathematics::float3,
     pub Max: crate::Unity::Mathematics::float3,

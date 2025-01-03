@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct WaypointItemConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
-    pub _waypoints: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::Waypoint,
+    pub _waypoints: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::Waypoint>,
     >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+WaypointItemConverter")]

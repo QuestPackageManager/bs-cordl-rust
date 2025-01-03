@@ -3,24 +3,30 @@
 #[derive(Debug)]
 pub struct FtpControlStream {
     __cordl_parent: crate::System::Net::CommandStream,
-    pub _dataSocket: *mut crate::System::Net::Sockets::Socket,
-    pub _passiveEndPoint: *mut crate::System::Net::IPEndPoint,
-    pub _tlsStream: *mut crate::System::Net::TlsStream,
-    pub _bannerMessage: *mut crate::System::Text::StringBuilder,
-    pub _welcomeMessage: *mut crate::System::Text::StringBuilder,
-    pub _exitMessage: *mut crate::System::Text::StringBuilder,
-    pub _credentials: *mut crate::System::WeakReference,
-    pub _currentTypeSetting: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _dataSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
+    pub _passiveEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+    pub _tlsStream: quest_hook::libil2cpp::Gc<crate::System::Net::TlsStream>,
+    pub _bannerMessage: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    pub _welcomeMessage: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    pub _exitMessage: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    pub _credentials: quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
+    pub _currentTypeSetting: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _contentLength: i64,
     pub _lastModified: crate::System::DateTime,
     pub _dataHandshakeStarted: bool,
-    pub _loginDirectory: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _establishedServerDirectory: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _requestedServerDirectory: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _responseUri: *mut crate::System::Uri,
+    pub _loginDirectory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _establishedServerDirectory: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _requestedServerDirectory: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _responseUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     pub _loginState: crate::System::Net::FtpLoginState,
     pub StatusCode: crate::System::Net::FtpStatusCode,
-    pub StatusLine: *mut quest_hook::libil2cpp::Il2CppString,
+    pub StatusLine: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Net+FtpControlStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

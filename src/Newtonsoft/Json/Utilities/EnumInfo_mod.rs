@@ -4,12 +4,12 @@
 pub struct EnumInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub IsFlags: bool,
-    pub Values: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    pub Names: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub Values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
+    pub Names: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub ResolvedNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub ResolvedNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+EnumInfo")]

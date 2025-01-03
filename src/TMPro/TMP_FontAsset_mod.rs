@@ -3,61 +3,75 @@
 #[derive(Debug)]
 pub struct TMP_FontAsset {
     __cordl_parent: crate::TMPro::TMP_Asset,
-    pub m_Version: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_SourceFontFileGUID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_SourceFontFile: *mut crate::UnityEngine::Font,
+    pub m_Version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_SourceFontFileGUID: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_SourceFontFile: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     pub m_AtlasPopulationMode: crate::TMPro::AtlasPopulationMode,
     pub m_FaceInfo: crate::UnityEngine::TextCore::FaceInfo,
-    pub m_GlyphTable: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::TextCore::Glyph,
+    pub m_GlyphTable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::TextCore::Glyph,
+        >,
     >,
-    pub m_GlyphLookupDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        u32,
-        *mut crate::UnityEngine::TextCore::Glyph,
+    pub m_GlyphLookupDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            u32,
+            *mut crate::UnityEngine::TextCore::Glyph,
+        >,
     >,
-    pub m_CharacterTable: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_Character,
+    pub m_CharacterTable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_Character>,
     >,
-    pub m_CharacterLookupDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        u32,
-        *mut crate::TMPro::TMP_Character,
+    pub m_CharacterLookupDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            u32,
+            *mut crate::TMPro::TMP_Character,
+        >,
     >,
-    pub m_AtlasTexture: *mut crate::UnityEngine::Texture2D,
-    pub m_AtlasTextures: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Texture2D,
+    pub m_AtlasTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    pub m_AtlasTextures: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Texture2D>,
     >,
     pub m_AtlasTextureIndex: i32,
     pub m_IsMultiAtlasTexturesEnabled: bool,
     pub m_ClearDynamicDataOnBuild: bool,
-    pub m_UsedGlyphRects: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::TextCore::GlyphRect,
+    pub m_UsedGlyphRects: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::TextCore::GlyphRect,
+        >,
     >,
-    pub m_FreeGlyphRects: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::TextCore::GlyphRect,
+    pub m_FreeGlyphRects: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::TextCore::GlyphRect,
+        >,
     >,
-    pub m_fontInfo: *mut crate::TMPro::FaceInfo_Legacy,
-    pub atlas: *mut crate::UnityEngine::Texture2D,
+    pub m_fontInfo: quest_hook::libil2cpp::Gc<crate::TMPro::FaceInfo_Legacy>,
+    pub atlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     pub m_AtlasWidth: i32,
     pub m_AtlasHeight: i32,
     pub m_AtlasPadding: i32,
     pub m_AtlasRenderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
-    pub m_glyphInfoList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_Glyph,
+    pub m_glyphInfoList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_Glyph>,
     >,
-    pub m_KerningTable: *mut crate::TMPro::KerningTable,
-    pub m_FontFeatureTable: *mut crate::TMPro::TMP_FontFeatureTable,
-    pub fallbackFontAssets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_FontAsset,
+    pub m_KerningTable: quest_hook::libil2cpp::Gc<crate::TMPro::KerningTable>,
+    pub m_FontFeatureTable: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TMP_FontFeatureTable,
     >,
-    pub m_FallbackFontAssetTable: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_FontAsset,
+    pub fallbackFontAssets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_FontAsset>,
+    >,
+    pub m_FallbackFontAssetTable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_FontAsset>,
     >,
     pub m_CreationSettings: crate::TMPro::FontAssetCreationSettings,
-    pub m_FontWeightTable: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::TMPro::TMP_FontWeightPair,
+    pub m_FontWeightTable: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_FontWeightPair>,
     >,
-    pub fontWeights: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::TMPro::TMP_FontWeightPair,
+    pub fontWeights: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_FontWeightPair>,
     >,
     pub normalStyle: f32,
     pub normalSpacingOffset: f32,
@@ -66,30 +80,42 @@ pub struct TMP_FontAsset {
     pub italicStyle: u8,
     pub tabSize: u8,
     pub IsFontAssetLookupTablesDirty: bool,
-    pub FallbackSearchQueryLookup: *mut crate::System::Collections::Generic::HashSet_1<
-        i32,
+    pub FallbackSearchQueryLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
     >,
-    pub m_GlyphsToRender: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::TextCore::Glyph,
+    pub m_GlyphsToRender: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::TextCore::Glyph,
+        >,
     >,
-    pub m_GlyphsRendered: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::TextCore::Glyph,
+    pub m_GlyphsRendered: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::TextCore::Glyph,
+        >,
     >,
-    pub m_GlyphIndexList: *mut crate::System::Collections::Generic::List_1<u32>,
-    pub m_GlyphIndexListNewlyAdded: *mut crate::System::Collections::Generic::List_1<
-        u32,
+    pub m_GlyphIndexList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<u32>,
     >,
-    pub m_GlyphsToAdd: *mut crate::System::Collections::Generic::List_1<u32>,
-    pub m_GlyphsToAddLookup: *mut crate::System::Collections::Generic::HashSet_1<u32>,
-    pub m_CharactersToAdd: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_Character,
+    pub m_GlyphIndexListNewlyAdded: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<u32>,
     >,
-    pub m_CharactersToAddLookup: *mut crate::System::Collections::Generic::HashSet_1<
-        u32,
+    pub m_GlyphsToAdd: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<u32>,
     >,
-    pub s_MissingCharacterList: *mut crate::System::Collections::Generic::List_1<u32>,
-    pub m_MissingUnicodesFromFontFile: *mut crate::System::Collections::Generic::HashSet_1<
-        u32,
+    pub m_GlyphsToAddLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<u32>,
+    >,
+    pub m_CharactersToAdd: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_Character>,
+    >,
+    pub m_CharactersToAddLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<u32>,
+    >,
+    pub s_MissingCharacterList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<u32>,
+    >,
+    pub m_MissingUnicodesFromFontFile: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<u32>,
     >,
 }
 #[cfg(feature = "TMPro+TMP_FontAsset")]

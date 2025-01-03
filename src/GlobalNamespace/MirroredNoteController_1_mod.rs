@@ -3,17 +3,23 @@
 #[derive(Debug)]
 pub struct MirroredNoteController_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::NoteControllerBase,
-    pub _noteTransform: *mut crate::UnityEngine::Transform,
+    pub _noteTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub followedNote: T,
-    pub _followedNoteTransform: *mut crate::UnityEngine::Transform,
-    pub _didInitEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::INoteControllerDidInitEvent,
+    pub _followedNoteTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _didInitEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerDidInitEvent,
+        >,
     >,
-    pub _noteDidPassJumpThreeQuartersEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+    pub _noteDidPassJumpThreeQuartersEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+        >,
     >,
-    pub _noteDidStartDissolvingEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+    pub _noteDidStartDissolvingEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+        >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

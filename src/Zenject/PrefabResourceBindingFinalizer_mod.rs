@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct PrefabResourceBindingFinalizer {
     __cordl_parent: crate::Zenject::ProviderBindingFinalizer,
-    pub _gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
-    pub _resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _providerFactory: *mut crate::System::Func_3<
-        *mut crate::System::Type,
-        *mut crate::Zenject::IPrefabInstantiator,
-        *mut crate::Zenject::IProvider,
+    pub _gameObjectBindInfo: quest_hook::libil2cpp::Gc<
+        crate::Zenject::GameObjectCreationParameters,
+    >,
+    pub _resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _providerFactory: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<
+            *mut crate::System::Type,
+            *mut crate::Zenject::IPrefabInstantiator,
+            *mut crate::Zenject::IProvider,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+PrefabResourceBindingFinalizer")]

@@ -1,11 +1,13 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+ImageSource")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ImageSource {
-    pub texture: *mut crate::UnityEngine::Texture2D,
-    pub sprite: *mut crate::UnityEngine::Sprite,
-    pub vectorImage: *mut crate::UnityEngine::UIElements::VectorImage,
-    pub renderTexture: *mut crate::UnityEngine::RenderTexture,
+    pub texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    pub sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub vectorImage: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VectorImage,
+    >,
+    pub renderTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+ImageSource")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

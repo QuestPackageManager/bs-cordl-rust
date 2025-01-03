@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Test_LODGroup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cordl_self: *mut crate::UnityEngine::LODGroup,
+    pub _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::LODGroup>,
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_LODGroup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

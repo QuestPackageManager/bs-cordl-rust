@@ -110,9 +110,15 @@ for crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils {
 #[derive(Debug)]
 pub struct ImmutableCollectionsUtils_ImmutableCollectionTypeInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _ContractTypeName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _CreatedTypeName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _BuilderTypeName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _ContractTypeName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _CreatedTypeName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _BuilderTypeName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(
     feature = "Newtonsoft+Json+Utilities+ImmutableCollectionsUtils+ImmutableCollectionTypeInfo"

@@ -3,16 +3,20 @@
 #[derive(Debug)]
 pub struct Match {
     __cordl_parent: crate::System::Text::RegularExpressions::Group,
-    pub _groupcoll: *mut crate::System::Text::RegularExpressions::GroupCollection,
-    pub _regex: *mut crate::System::Text::RegularExpressions::Regex,
+    pub _groupcoll: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::GroupCollection,
+    >,
+    pub _regex: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::Regex,
+    >,
     pub _textbeg: i32,
     pub _textpos: i32,
     pub _textend: i32,
     pub _textstart: i32,
-    pub _matches: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _matches: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<i32>>,
     >,
-    pub _matchcount: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _matchcount: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub _balancing: bool,
 }
 #[cfg(feature = "System+Text+RegularExpressions+Match")]

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlSchemaKeyref {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
-    pub refer: *mut crate::System::Xml::XmlQualifiedName,
+    pub refer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaKeyref")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

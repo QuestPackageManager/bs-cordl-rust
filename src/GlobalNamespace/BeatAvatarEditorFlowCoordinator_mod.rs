@@ -3,15 +3,29 @@
 #[derive(Debug)]
 pub struct BeatAvatarEditorFlowCoordinator {
     __cordl_parent: crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-    pub _avatarTweenController: *mut crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController,
-    pub _avatarContainerGameObject: *mut crate::UnityEngine::GameObject,
-    pub _avatarVisualController: *mut crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController,
-    pub _beatAvatarEditorViewController: *mut crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewController,
-    pub _editAvatarColorViewController: *mut crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewController,
-    pub _avatarDataModel: *mut crate::BeatSaber::BeatAvatarSDK::AvatarDataModel,
-    pub _parameterChangedAnimationCallbacks: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::BeatSaber::BeatAvatarSDK::AvatarPart,
-        *mut crate::System::Action,
+    pub _avatarTweenController: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController,
+    >,
+    pub _avatarContainerGameObject: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _avatarVisualController: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController,
+    >,
+    pub _beatAvatarEditorViewController: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewController,
+    >,
+    pub _editAvatarColorViewController: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewController,
+    >,
+    pub _avatarDataModel: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarDataModel,
+    >,
+    pub _parameterChangedAnimationCallbacks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+            *mut crate::System::Action,
+        >,
     >,
     pub _coloredAvatarPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
     pub _originalColorOfColoredPart: crate::UnityEngine::Color,

@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct InputActionReference {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub m_Asset: *mut crate::UnityEngine::InputSystem::InputActionAsset,
-    pub m_ActionId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Action: *mut crate::UnityEngine::InputSystem::InputAction,
+    pub m_Asset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionAsset,
+    >,
+    pub m_ActionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Action: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionReference")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

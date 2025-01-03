@@ -67,9 +67,9 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray {
 }
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Frame")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TexturePacker_JsonArray_Frame {
-    pub filename: *mut quest_hook::libil2cpp::Il2CppString,
+    pub filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub frame: crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame,
     pub rotated: bool,
     pub trimmed: bool,
@@ -98,15 +98,15 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
 impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {}
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Meta")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TexturePacker_JsonArray_Meta {
-    pub app: *mut quest_hook::libil2cpp::Il2CppString,
-    pub version: *mut quest_hook::libil2cpp::Il2CppString,
-    pub image: *mut quest_hook::libil2cpp::Il2CppString,
-    pub format: *mut quest_hook::libil2cpp::Il2CppString,
+    pub app: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub image: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cordl_size: crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize,
     pub scale: f32,
-    pub smartupdate: *mut quest_hook::libil2cpp::Il2CppString,
+    pub smartupdate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Meta")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -132,8 +132,10 @@ impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {}
 #[derive(Debug)]
 pub struct TexturePacker_JsonArray_SpriteDataObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub frames: *mut crate::System::Collections::Generic::List_1<
-        crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame,
+    pub frames: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame,
+        >,
     >,
     pub meta: crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta,
 }
@@ -190,7 +192,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject
 }
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TexturePacker_JsonArray_SpriteFrame {
     pub x: f32,
     pub y: f32,
@@ -229,7 +231,7 @@ impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
 }
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TexturePacker_JsonArray_SpriteSize {
     pub w: f32,
     pub h: f32,

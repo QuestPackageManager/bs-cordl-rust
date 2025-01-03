@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundGradient {
     __cordl_parent: crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient,
-    pub _gradient: *mut crate::UnityEngine::Gradient,
+    pub _gradient: quest_hook::libil2cpp::Gc<crate::UnityEngine::Gradient>,
 }
 #[cfg(feature = "BloomPrePassBackgroundGradient")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

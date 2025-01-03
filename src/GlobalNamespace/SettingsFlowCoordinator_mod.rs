@@ -3,19 +3,37 @@
 #[derive(Debug)]
 pub struct SettingsFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub didFinishEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::SettingsFlowCoordinator,
-        crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::SettingsFlowCoordinator,
+            crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction,
+        >,
     >,
-    pub _mainSettingsMenuViewController: *mut crate::GlobalNamespace::MainSettingsMenuViewController,
-    pub _settingsNavigationController: *mut crate::GlobalNamespace::SettingsNavigationController,
-    pub fileStorage: *mut crate::GlobalNamespace::IFileStorage,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
-    pub _controllerProfilesModel: *mut crate::BeatSaber::GameSettings::ControllerProfilesModel,
-    pub _dropdownDialogPromptViewController: *mut crate::GlobalNamespace::DropdownDialogPromptViewController,
-    pub _controllerProfilesViewController: *mut crate::BeatSaber::GameSettings::ControllerProfilesSettingsViewController,
+    pub _mainSettingsMenuViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MainSettingsMenuViewController,
+    >,
+    pub _settingsNavigationController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsNavigationController,
+    >,
+    pub fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _settingsApplicator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsApplicatorSO,
+    >,
+    pub _controllerProfilesModel: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::GameSettings::ControllerProfilesModel,
+    >,
+    pub _dropdownDialogPromptViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DropdownDialogPromptViewController,
+    >,
+    pub _controllerProfilesViewController: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::GameSettings::ControllerProfilesSettingsViewController,
+    >,
     pub _undoSettings: crate::BeatSaber::Settings::Settings,
 }
 #[cfg(feature = "SettingsFlowCoordinator")]

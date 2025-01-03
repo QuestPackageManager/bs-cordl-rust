@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct DrawIfAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
-    pub propertyName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub value: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub orValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub orValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub disablingType: crate::GlobalNamespace::DrawIfAttribute_DisablingType,
 }
 #[cfg(feature = "DrawIfAttribute")]

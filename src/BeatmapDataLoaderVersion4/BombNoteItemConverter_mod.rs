@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct BombNoteItemConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
-    pub _bombNotes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::BombNote,
+    pub _bombNotes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::BombNote>,
     >,
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+BombNoteItemConverter")]

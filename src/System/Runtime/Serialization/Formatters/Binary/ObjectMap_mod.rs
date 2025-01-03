@@ -3,23 +3,33 @@
 #[derive(Debug)]
 pub struct ObjectMap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub objectName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub objectType: *mut crate::System::Type,
-    pub binaryTypeEnumA: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
+    pub objectName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub binaryTypeEnumA: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
+        >,
     >,
-    pub typeInformationA: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub typeInformationA: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub memberTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
-    pub memberNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub memberTypes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     >,
-    pub objectInfo: *mut crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
+    pub memberNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub objectInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
+    >,
     pub isInitObjectInfo: bool,
-    pub objectReader: *mut crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
+    pub objectReader: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
+    >,
     pub objectId: i32,
-    pub assemblyInfo: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
+    pub assemblyInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
+    >,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectMap")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

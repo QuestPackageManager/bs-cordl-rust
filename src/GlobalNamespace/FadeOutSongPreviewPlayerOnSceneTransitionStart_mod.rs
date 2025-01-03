@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct FadeOutSongPreviewPlayerOnSceneTransitionStart {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _songPreviewPlayer: *mut crate::GlobalNamespace::AudioPlayerBase,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
+    pub _songPreviewPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioPlayerBase,
+    >,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
 }
 #[cfg(feature = "FadeOutSongPreviewPlayerOnSceneTransitionStart")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

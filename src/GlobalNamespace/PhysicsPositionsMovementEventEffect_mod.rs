@@ -11,9 +11,13 @@ pub struct PhysicsPositionsMovementEventEffect {
     pub _minMaxSpeed: f32,
     pub _maxMaxSpeed: f32,
     pub _maxAcceleration: f32,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _songTimeFixedUpdateController: *mut crate::GlobalNamespace::SongTimeFixedUpdateController,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _songTimeFixedUpdateController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongTimeFixedUpdateController,
+    >,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _startPos: crate::UnityEngine::Vector3,
     pub _velocity: crate::UnityEngine::Vector3,
     pub _prevPosition: crate::UnityEngine::Vector3,
@@ -21,7 +25,9 @@ pub struct PhysicsPositionsMovementEventEffect {
     pub _targetPosition: crate::UnityEngine::Vector3,
     pub _maxSpeed: f32,
     pub _sqrMaxSpeed: f32,
-    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "PhysicsPositionsMovementEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

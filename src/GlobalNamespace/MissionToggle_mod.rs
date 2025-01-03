@@ -3,19 +3,21 @@
 #[derive(Debug)]
 pub struct MissionToggle {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
-    pub _missionToggleWasPressedSignal: *mut crate::GlobalNamespace::Signal,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
-    pub _lockedImage: *mut crate::UnityEngine::UI::Image,
-    pub _clearedImage: *mut crate::UnityEngine::UI::Image,
-    pub _bgImage: *mut crate::UnityEngine::UI::Image,
-    pub _strokeImage: *mut crate::UnityEngine::UI::Image,
-    pub _vrInteractable: *mut crate::HMUI::Interactable,
+    pub _missionToggleWasPressedSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Signal,
+    >,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _lockedImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _clearedImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _bgImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _strokeImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _vrInteractable: quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>,
     pub _disabledColor: crate::UnityEngine::Color,
     pub _normalColor: crate::UnityEngine::Color,
     pub _invertColor: crate::UnityEngine::Color,
     pub _highlightColor: crate::UnityEngine::Color,
-    pub selectionDidChangeEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MissionToggle,
+    pub selectionDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::MissionToggle>,
     >,
     pub _selected: bool,
     pub _highlighted: bool,

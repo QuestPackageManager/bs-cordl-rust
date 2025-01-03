@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct RequestCacheBinding {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_RequestCache: *mut crate::System::Net::Cache::RequestCache,
-    pub m_CacheValidator: *mut crate::System::Net::Cache::RequestCacheValidator,
-    pub m_Policy: *mut crate::System::Net::Cache::RequestCachePolicy,
+    pub m_RequestCache: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Cache::RequestCache,
+    >,
+    pub m_CacheValidator: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Cache::RequestCacheValidator,
+    >,
+    pub m_Policy: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Cache::RequestCachePolicy,
+    >,
 }
 #[cfg(feature = "System+Net+Cache+RequestCacheBinding")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

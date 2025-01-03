@@ -5,10 +5,16 @@ pub struct XmlSchemaInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub isDefault: bool,
     pub isNil: bool,
-    pub schemaElement: *mut crate::System::Xml::Schema::XmlSchemaElement,
-    pub schemaAttribute: *mut crate::System::Xml::Schema::XmlSchemaAttribute,
-    pub schemaType: *mut crate::System::Xml::Schema::XmlSchemaType,
-    pub memberType: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+    pub schemaElement: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaElement,
+    >,
+    pub schemaAttribute: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAttribute,
+    >,
+    pub schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
+    pub memberType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaSimpleType,
+    >,
     pub validity: crate::System::Xml::Schema::XmlSchemaValidity,
     pub contentType: crate::System::Xml::Schema::XmlSchemaContentType,
 }

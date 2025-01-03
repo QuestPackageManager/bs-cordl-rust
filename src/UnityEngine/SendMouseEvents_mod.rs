@@ -65,10 +65,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::SendMouseEvents {
 }
 #[cfg(feature = "UnityEngine+SendMouseEvents+HitInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SendMouseEvents_HitInfo {
-    pub target: *mut crate::UnityEngine::GameObject,
-    pub camera: *mut crate::UnityEngine::Camera,
+    pub target: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
 }
 #[cfg(feature = "UnityEngine+SendMouseEvents+HitInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

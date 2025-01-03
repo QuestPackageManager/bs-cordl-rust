@@ -3,19 +3,29 @@
 #[derive(Debug)]
 pub struct MultiplayerLevelSelectionFlowCoordinator {
     __cordl_parent: crate::GlobalNamespace::LevelSelectionFlowCoordinator,
-    pub _notAllowedCharacteristics: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _notAllowedCharacteristics: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
     >,
-    pub _lobbyGameStateController: *mut crate::GlobalNamespace::ILobbyGameStateController,
-    pub didSelectLevelEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
+    pub _lobbyGameStateController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyGameStateController,
     >,
-    pub didFinishedEvent: *mut crate::System::Action,
-    pub _actionButtonText: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _titleText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub didSelectLevelEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
+        >,
+    >,
+    pub didFinishedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _actionButtonText: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _titleText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _songPackMask: crate::GlobalNamespace::SongPackMask,
     pub _allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
-    pub _state: *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
+    pub _state: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
+    >,
     pub _isBeingFinished: bool,
 }
 #[cfg(feature = "MultiplayerLevelSelectionFlowCoordinator")]

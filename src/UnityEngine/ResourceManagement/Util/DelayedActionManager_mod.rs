@@ -5,17 +5,23 @@ pub struct DelayedActionManager {
     __cordl_parent: crate::UnityEngine::ResourceManagement::Util::ComponentSingleton_1<
         *mut crate::UnityEngine::ResourceManagement::Util::DelayedActionManager,
     >,
-    pub m_Actions: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Collections::Generic::List_1<
+    pub m_Actions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo,
+            >,
+        >,
+    >,
+    pub m_DelayedActions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedList_1<
             crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo,
         >,
     >,
-    pub m_DelayedActions: *mut crate::System::Collections::Generic::LinkedList_1<
-        crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo,
-    >,
-    pub m_NodeCache: *mut crate::System::Collections::Generic::Stack_1<
-        *mut crate::System::Collections::Generic::LinkedListNode_1<
-            crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo,
+    pub m_NodeCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<
+            *mut crate::System::Collections::Generic::LinkedListNode_1<
+                crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo,
+            >,
         >,
     >,
     pub m_CollectionIndex: i32,
@@ -187,12 +193,12 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DelayedActionManager_DelegateInfo {
     pub m_Id: i32,
-    pub m_Delegate: *mut crate::System::Delegate,
-    pub m_Target: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_Delegate: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    pub m_Target: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _InvocationTime_k__BackingField: f32,
 }

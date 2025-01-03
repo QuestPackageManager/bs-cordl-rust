@@ -12,7 +12,7 @@ pub struct TrackLaneRing {
     pub _destPosZ: f32,
     pub _moveSpeed: f32,
     pub _positionOffset: crate::UnityEngine::Vector3,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "TrackLaneRing")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

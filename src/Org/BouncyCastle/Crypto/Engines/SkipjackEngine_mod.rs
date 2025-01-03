@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct SkipjackEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub key0: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub key1: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub key2: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub key3: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub key0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub key1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub key2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub key3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub encrypting: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+SkipjackEngine")]

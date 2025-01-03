@@ -7,10 +7,18 @@ pub struct CustomNetworkConfig {
     pub _discoveryPort_k__BackingField: i32,
     pub _partyPort_k__BackingField: i32,
     pub _multiplayerPort_k__BackingField: i32,
-    pub _masterServerEndPoint_k__BackingField: *mut crate::GlobalNamespace::DnsEndPoint,
-    pub _multiplayerStatusUrl_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _graphUrl_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _graphAccessToken_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _masterServerEndPoint_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DnsEndPoint,
+    >,
+    pub _multiplayerStatusUrl_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _graphUrl_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _graphAccessToken_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _forceGameLift_k__BackingField: bool,
     pub _serviceEnvironment_k__BackingField: crate::GlobalNamespace::ServiceEnvironment,
 }

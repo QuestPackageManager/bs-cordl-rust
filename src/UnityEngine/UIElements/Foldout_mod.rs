@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct Foldout {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
-    pub m_Toggle: *mut crate::UnityEngine::UIElements::Toggle,
-    pub m_Container: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_Toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Toggle>,
+    pub m_Container: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub m_Value: bool,
-    pub m_NavigationManipulator: *mut crate::UnityEngine::UIElements::KeyboardNavigationManipulator,
+    pub m_NavigationManipulator: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::KeyboardNavigationManipulator,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Foldout")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -251,8 +255,12 @@ for crate::UnityEngine::UIElements::Foldout_UxmlFactory {
 #[derive(Debug)]
 pub struct Foldout_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
-    pub m_Text: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_Value: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    pub m_Text: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_Value: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

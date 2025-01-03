@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ArrayList_IListWrapper {
     __cordl_parent: crate::System::Collections::ArrayList,
-    pub _list: *mut crate::System::Collections::IList,
+    pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "System+Collections+ArrayList+IListWrapper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

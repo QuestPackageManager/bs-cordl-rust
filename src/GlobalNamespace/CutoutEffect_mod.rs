@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct CutoutEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
-    pub _useRandomCutoutOffset: *mut crate::GlobalNamespace::BoolSO,
+    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
+    pub _useRandomCutoutOffset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BoolSO,
+    >,
     pub _cutoutOffset: crate::UnityEngine::Vector3,
     pub _randomNoiseTexOffset: crate::UnityEngine::Vector3,
     pub _cutout: f32,

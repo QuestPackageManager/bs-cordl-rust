@@ -6,15 +6,19 @@ pub struct LRUCacheAllocationStrategy {
     pub m_poolMaxSize: i32,
     pub m_poolInitialCapacity: i32,
     pub m_poolCacheMaxSize: i32,
-    pub m_poolCache: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_poolCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     >,
-    pub m_cache: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_cache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     >,
 }

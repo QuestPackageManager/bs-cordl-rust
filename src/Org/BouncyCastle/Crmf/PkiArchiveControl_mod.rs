@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct PkiArchiveControl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub pkiArchiveOptions: *mut crate::Org::BouncyCastle::Asn1::Crmf::PkiArchiveOptions,
+    pub pkiArchiveOptions: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Crmf::PkiArchiveOptions,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+PkiArchiveControl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

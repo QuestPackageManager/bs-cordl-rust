@@ -10,7 +10,9 @@ pub struct BloomPrePassDoubleKawaseBlurTextureEffectSO {
     pub _bloom2Alpha: f32,
     pub _downsample: i32,
     pub _gammaCorrection: bool,
-    pub _kawaseBlurRenderer: *mut crate::GlobalNamespace::KawaseBlurRendererSO,
+    pub _kawaseBlurRenderer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::KawaseBlurRendererSO,
+    >,
 }
 #[cfg(feature = "BloomPrePassDoubleKawaseBlurTextureEffectSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

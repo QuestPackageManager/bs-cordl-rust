@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+RenderTextureDescriptor")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RenderTextureDescriptor {
     pub _width_k__BackingField: i32,
     pub _height_k__BackingField: i32,

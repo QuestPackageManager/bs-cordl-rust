@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct HMacSP800Drbg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mK: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mEntropySource: *mut crate::Org::BouncyCastle::Crypto::IEntropySource,
-    pub mHMac: *mut crate::Org::BouncyCastle::Crypto::IMac,
+    pub mK: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mEntropySource: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IEntropySource,
+    >,
+    pub mHMac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
     pub mSecurityStrength: i32,
     pub mReseedCounter: i64,
 }

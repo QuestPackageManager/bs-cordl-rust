@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct UnhandledExceptionEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub _exception: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _exception: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _isTerminating: bool,
 }
 #[cfg(feature = "System+UnhandledExceptionEventArgs")]

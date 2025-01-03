@@ -5,7 +5,9 @@ pub struct BerTaggedObjectParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _constructed: bool,
     pub _tagNumber: i32,
-    pub _parser: *mut crate::Org::BouncyCastle::Asn1::Asn1StreamParser,
+    pub _parser: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1StreamParser,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerTaggedObjectParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

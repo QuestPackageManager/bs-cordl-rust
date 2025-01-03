@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct PrefabInstantiatorCached {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _subInstantiator: *mut crate::Zenject::IPrefabInstantiator,
-    pub _gameObject: *mut crate::UnityEngine::GameObject,
+    pub _subInstantiator: quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator>,
+    pub _gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
 #[cfg(feature = "Zenject+PrefabInstantiatorCached")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

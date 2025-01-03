@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct X509Extensions {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub extensions: *mut crate::System::Collections::IDictionary,
-    pub ordering: *mut crate::System::Collections::IList,
+    pub extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    pub ordering: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+X509Extensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

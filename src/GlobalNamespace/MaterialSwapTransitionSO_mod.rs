@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct MaterialSwapTransitionSO {
     __cordl_parent: crate::GlobalNamespace::BaseTransitionSO,
-    pub _normalMaterial: *mut crate::UnityEngine::Material,
-    pub _highlightedMaterial: *mut crate::UnityEngine::Material,
-    pub _pressedMaterial: *mut crate::UnityEngine::Material,
-    pub _disabledMaterial: *mut crate::UnityEngine::Material,
-    pub _selectedMaterial: *mut crate::UnityEngine::Material,
-    pub _selectedAndHighlightedMaterial: *mut crate::UnityEngine::Material,
+    pub _normalMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _highlightedMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _pressedMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _disabledMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _selectedMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _selectedAndHighlightedMaterial: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Material,
+    >,
 }
 #[cfg(feature = "MaterialSwapTransitionSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

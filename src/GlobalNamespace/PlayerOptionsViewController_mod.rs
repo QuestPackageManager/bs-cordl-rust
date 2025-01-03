@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct PlayerOptionsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _playerSettingsPanelController: *mut crate::GlobalNamespace::PlayerSettingsPanelController,
-    pub _okButton: *mut crate::UnityEngine::UI::Button,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub didFinishEvent: *mut crate::System::Action_1<*mut crate::HMUI::ViewController>,
+    pub _playerSettingsPanelController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSettingsPanelController,
+    >,
+    pub _okButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::HMUI::ViewController>,
+    >,
 }
 #[cfg(feature = "PlayerOptionsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct AchievementsModelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _platformAchievementsHandler: *mut crate::GlobalNamespace::IPlatformAchievementsHandler,
-    pub _unlockedAchievementIds: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _platformAchievementsHandler: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IPlatformAchievementsHandler,
+    >,
+    pub _unlockedAchievementIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub _initialized: bool,
 }

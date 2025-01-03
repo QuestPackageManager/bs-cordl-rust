@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TitleViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
 #[cfg(feature = "HMUI+TitleViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

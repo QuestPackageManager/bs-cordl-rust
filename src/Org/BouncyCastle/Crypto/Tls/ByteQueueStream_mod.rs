@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ByteQueueStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub buffer: *mut crate::Org::BouncyCastle::Crypto::Tls::ByteQueue,
+    pub buffer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::ByteQueue,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+ByteQueueStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

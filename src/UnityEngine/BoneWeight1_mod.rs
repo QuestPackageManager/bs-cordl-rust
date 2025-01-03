@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+BoneWeight1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BoneWeight1 {
     pub m_Weight: f32,
     pub m_BoneIndex: i32,

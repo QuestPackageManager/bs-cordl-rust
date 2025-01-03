@@ -3,14 +3,16 @@
 #[derive(Debug)]
 pub struct SetApplicationVersionText {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _versionText: *mut crate::TMPro::TextMeshPro,
-    pub _labelText: *mut crate::TMPro::TextMeshPro,
-    pub _buildIdText: *mut crate::TMPro::TextMeshPro,
-    pub _platformIdText: *mut crate::TMPro::TextMeshPro,
-    pub _footSprite: *mut crate::UnityEngine::SpriteRenderer,
+    pub _versionText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
+    pub _labelText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
+    pub _buildIdText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
+    pub _platformIdText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
+    pub _footSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
     pub _rcBuildColor: crate::UnityEngine::Color,
     pub _nonRCBuildColor: crate::UnityEngine::Color,
-    pub _gameVersionProvider: *mut crate::BeatSaber::Init::GameVersionProvider,
+    pub _gameVersionProvider: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::Init::GameVersionProvider,
+    >,
 }
 #[cfg(feature = "SetApplicationVersionText")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

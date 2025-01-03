@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct InputActions {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _keyboardManager: *mut crate::GlobalNamespace::UIKeyboardManager,
+    pub _keyboardManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::UIKeyboardManager,
+    >,
 }
 #[cfg(feature = "InputActions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

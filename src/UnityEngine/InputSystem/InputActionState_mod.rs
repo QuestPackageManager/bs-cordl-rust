@@ -20,18 +20,28 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct InputActionState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub maps: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputActionMap,
+    pub maps: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputActionMap,
+        >,
     >,
-    pub controls: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputControl,
+    pub controls: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputControl,
+        >,
     >,
-    pub interactions: *mut quest_hook::libil2cpp::Il2CppArray<Blacklisted>,
-    pub processors: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputProcessor,
+    pub interactions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<Blacklisted>,
     >,
-    pub composites: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputBindingComposite,
+    pub processors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputProcessor,
+        >,
+    >,
+    pub composites: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputBindingComposite,
+        >,
     >,
     pub totalProcessorCount: i32,
     pub memory: crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory,
@@ -39,8 +49,8 @@ pub struct InputActionState {
     pub m_OnAfterUpdateHooked: bool,
     pub m_InProcessControlStateChange: bool,
     pub m_CurrentlyProcessingThisEvent: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-    pub m_OnBeforeUpdateDelegate: *mut crate::System::Action,
-    pub m_OnAfterUpdateDelegate: *mut crate::System::Action,
+    pub m_OnBeforeUpdateDelegate: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub m_OnAfterUpdateDelegate: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1560,7 +1570,7 @@ for crate::UnityEngine::InputSystem::InputActionState {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputActionState_ActionMapIndices {
     pub actionStartIndex: i32,
     pub actionCount: i32,
@@ -1596,7 +1606,7 @@ for crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {
 impl crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {}
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputActionState_BindingState {
     padding: [u8; 32usize],
 }
@@ -2003,7 +2013,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputActionState_GlobalState {
     pub globalList: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
         crate::System::Runtime::InteropServices::GCHandle,
@@ -2039,7 +2049,7 @@ for crate::UnityEngine::InputSystem::InputActionState_GlobalState {
 impl crate::UnityEngine::InputSystem::InputActionState_GlobalState {}
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputActionState_InteractionState {
     padding: [u8; 48usize],
 }
@@ -2265,7 +2275,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputActionState_TriggerState {
     padding: [u8; 48usize],
 }
@@ -2717,27 +2727,41 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputActionState_UnmanagedMemory {
-    pub basePtr: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub basePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub mapCount: i32,
     pub actionCount: i32,
     pub interactionCount: i32,
     pub bindingCount: i32,
     pub controlCount: i32,
     pub compositeCount: i32,
-    pub actionStates: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub bindingStates: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub interactionStates: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub controlMagnitudes: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub compositeMagnitudes: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub enabledControls: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub actionBindingIndicesAndCounts: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub actionBindingIndices: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub controlIndexToBindingIndex: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub controlGroupingAndComplexity: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub actionStates: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub bindingStates: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub interactionStates: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub controlMagnitudes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub compositeMagnitudes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub enabledControls: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub actionBindingIndicesAndCounts: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub actionBindingIndices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub controlIndexToBindingIndex: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub controlGroupingAndComplexity: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub controlGroupingInitialized: bool,
-    pub mapIndices: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub mapIndices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

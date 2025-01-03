@@ -1,8 +1,8 @@
 #[cfg(feature = "System+Threading+LockHolder")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LockHolder {
-    pub _lock: *mut crate::System::Threading::Lock,
+    pub _lock: quest_hook::libil2cpp::Gc<crate::System::Threading::Lock>,
 }
 #[cfg(feature = "System+Threading+LockHolder")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

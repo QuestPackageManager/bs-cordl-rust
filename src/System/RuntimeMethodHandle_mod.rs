@@ -1,6 +1,6 @@
 #[cfg(feature = "System+RuntimeMethodHandle")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RuntimeMethodHandle {
     pub value: crate::System::IntPtr,
 }

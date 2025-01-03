@@ -3,14 +3,22 @@
 #[derive(Debug)]
 pub struct AvatarController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _parentingTransform: *mut crate::UnityEngine::Transform,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _avatarSystemCollection: *mut crate::BeatSaber::AvatarCore::AvatarSystemCollection,
+    pub _parentingTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _avatarSystemCollection: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::AvatarSystemCollection,
+    >,
     pub _avatarDisplayContext: crate::BeatSaber::AvatarCore::AvatarDisplayContext,
-    pub _visualDataProvider: *mut crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider,
-    pub _poseDataProvider: *mut crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider,
-    pub _optionalDataProvider: *mut crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider,
-    pub _avatar: *mut crate::BeatSaber::AvatarCore::Avatar,
+    pub _visualDataProvider: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider,
+    >,
+    pub _poseDataProvider: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider,
+    >,
+    pub _optionalDataProvider: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider,
+    >,
+    pub _avatar: quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::Avatar>,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct NameValueWithParametersHeaderValue {
     __cordl_parent: crate::System::Net::Http::Headers::NameValueHeaderValue,
-    pub parameters: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+    pub parameters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+        >,
     >,
 }
 #[cfg(feature = "System+Net+Http+Headers+NameValueWithParametersHeaderValue")]

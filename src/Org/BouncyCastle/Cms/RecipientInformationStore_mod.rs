@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct RecipientInformationStore {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub all: *mut crate::System::Collections::IList,
-    pub table: *mut crate::System::Collections::IDictionary,
+    pub all: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub table: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+RecipientInformationStore")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -9,8 +9,12 @@ pub struct TextValueFieldTraits_2<
         TValueType,
         TValueUxmlAttributeType,
     >,
-    pub m_IsReadOnly: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_IsDelayed: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    pub m_IsReadOnly: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_IsDelayed: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
     __cordl_phantom_TValueUxmlAttributeType: std::marker::PhantomData<
         TValueUxmlAttributeType,

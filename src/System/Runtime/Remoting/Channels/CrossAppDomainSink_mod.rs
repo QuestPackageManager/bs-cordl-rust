@@ -171,10 +171,12 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CrossAppDomainSink_ProcessMessageRes {
-    pub arrResponse: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub cadMrm: *mut crate::System::Runtime::Remoting::Messaging::CADMethodReturnMessage,
+    pub arrResponse: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub cadMrm: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::CADMethodReturnMessage,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

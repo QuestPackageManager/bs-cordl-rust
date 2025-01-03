@@ -622,8 +622,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::TypeCo
 #[derive(Debug)]
 pub struct TypeConverter_SimplePropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
-    pub componentType: *mut crate::System::Type,
-    pub propertyType: *mut crate::System::Type,
+    pub componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub propertyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+ComponentModel+TypeConverter+SimplePropertyDescriptor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -777,8 +777,8 @@ for crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
 #[derive(Debug)]
 pub struct TypeConverter_StandardValuesCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub values: *mut crate::System::Collections::ICollection,
-    pub valueArray: *mut crate::System::Array,
+    pub values: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    pub valueArray: quest_hook::libil2cpp::Gc<crate::System::Array>,
 }
 #[cfg(feature = "System+ComponentModel+TypeConverter+StandardValuesCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

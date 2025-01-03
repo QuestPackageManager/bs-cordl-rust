@@ -5,7 +5,9 @@ pub struct BurstSliderNoteDisappearingArrowController {
     __cordl_parent: crate::GlobalNamespace::DisappearingArrowControllerBase_1<
         *mut crate::GlobalNamespace::BurstSliderGameNoteController,
     >,
-    pub _burstSliderNoteController: *mut crate::GlobalNamespace::BurstSliderGameNoteController,
+    pub _burstSliderNoteController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BurstSliderGameNoteController,
+    >,
 }
 #[cfg(feature = "BurstSliderNoteDisappearingArrowController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

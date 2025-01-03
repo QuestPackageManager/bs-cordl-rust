@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TimelinePauseReceiver {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub timelinePauseEvent: *mut crate::System::Action,
+    pub timelinePauseEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "TimelinePauseReceiver")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

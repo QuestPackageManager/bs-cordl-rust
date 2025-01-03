@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct TweenRunner_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_CoroutineContainer: *mut crate::UnityEngine::MonoBehaviour,
-    pub m_Tween: *mut crate::System::Collections::IEnumerator,
+    pub m_CoroutineContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MonoBehaviour,
+    >,
+    pub m_Tween: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+UI+CoroutineTween+TweenRunner_1")]

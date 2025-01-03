@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct ShowTextOnGameEventController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _textFadeTransitions: *mut crate::GlobalNamespace::TextFadeTransitions,
-    pub _eventTextBindings: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::ShowTextOnGameEventController_EventTextBinding,
+    pub _textFadeTransitions: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TextFadeTransitions,
+    >,
+    pub _eventTextBindings: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::ShowTextOnGameEventController_EventTextBinding,
+        >,
     >,
 }
 #[cfg(feature = "ShowTextOnGameEventController")]
@@ -83,10 +87,12 @@ for crate::GlobalNamespace::ShowTextOnGameEventController {
 #[derive(Debug)]
 pub struct ShowTextOnGameEventController_EventTextBinding {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _signal: *mut crate::GlobalNamespace::Signal,
+    pub _signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
     pub _delay: f32,
-    pub _text: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _textFadeTransitions: *mut crate::GlobalNamespace::TextFadeTransitions,
+    pub _text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _textFadeTransitions: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TextFadeTransitions,
+    >,
 }
 #[cfg(feature = "ShowTextOnGameEventController+EventTextBinding")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

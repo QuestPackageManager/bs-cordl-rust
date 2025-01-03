@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TypeAsInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
-    pub _type: *mut crate::System::Type,
+    pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+TypeAsInstruction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

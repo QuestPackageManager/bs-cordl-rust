@@ -126,9 +126,13 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
 #[derive(Debug)]
 pub struct DiscriminatedUnionConverter_Union {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub TagReader: *mut crate::Newtonsoft::Json::Utilities::FSharpFunction,
-    pub Cases: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
+    pub TagReader: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::FSharpFunction,
+    >,
+    pub Cases: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
@@ -205,12 +209,16 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
 pub struct DiscriminatedUnionConverter_UnionCase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Tag: i32,
-    pub Name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Fields: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Reflection::PropertyInfo,
+    pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Fields: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::PropertyInfo>,
     >,
-    pub FieldReader: *mut crate::Newtonsoft::Json::Utilities::FSharpFunction,
-    pub Constructor: *mut crate::Newtonsoft::Json::Utilities::FSharpFunction,
+    pub FieldReader: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::FSharpFunction,
+    >,
+    pub Constructor: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::FSharpFunction,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

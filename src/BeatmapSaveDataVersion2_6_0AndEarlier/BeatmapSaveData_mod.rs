@@ -3,23 +3,35 @@
 #[derive(Debug)]
 pub struct BeatmapSaveData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _version: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _events: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+    pub _version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _events: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+        >,
     >,
-    pub _notes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+    pub _notes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+        >,
     >,
-    pub _sliders: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+    pub _sliders: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+        >,
     >,
-    pub _waypoints: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+    pub _waypoints: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+        >,
     >,
-    pub _obstacles: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+    pub _obstacles: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+        >,
     >,
-    pub _specialEventsKeywordFilters: *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData,
+    pub _specialEventsKeywordFilters: quest_hook::libil2cpp::Gc<
+        crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData,
+    >,
 }
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+BeatmapSaveData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

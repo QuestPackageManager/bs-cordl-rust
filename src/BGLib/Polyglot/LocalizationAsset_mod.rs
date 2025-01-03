@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LocalizationAsset {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub textAsset: *mut crate::UnityEngine::TextAsset,
+    pub textAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
     pub format: crate::BGLib::Polyglot::GoogleDriveDownloadFormat,
 }
 #[cfg(feature = "BGLib+Polyglot+LocalizationAsset")]

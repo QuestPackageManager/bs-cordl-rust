@@ -2910,7 +2910,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin {
 }
 #[cfg(feature = "OVRPlugin+AppPerfFrameStats")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_AppPerfFrameStats {
     pub HmdVsyncIndex: i32,
     pub AppFrameIndex: i32,
@@ -2947,10 +2947,12 @@ for crate::GlobalNamespace::OVRPlugin_AppPerfFrameStats {
 impl crate::GlobalNamespace::OVRPlugin_AppPerfFrameStats {}
 #[cfg(feature = "OVRPlugin+AppPerfStats")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_AppPerfStats {
-    pub FrameStats: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_AppPerfFrameStats,
+    pub FrameStats: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::OVRPlugin_AppPerfFrameStats,
+        >,
     >,
     pub FrameStatsCount: i32,
     pub AnyFrameStatsDropped: crate::GlobalNamespace::OVRPlugin_Bool,
@@ -3007,7 +3009,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+BodyJointLocation")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_BodyJointLocation {
     pub LocationFlags: crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags,
     pub Pose: crate::GlobalNamespace::OVRPlugin_Posef,
@@ -3065,10 +3067,12 @@ impl crate::GlobalNamespace::OVRPlugin_BodyJointLocation {
 }
 #[cfg(feature = "OVRPlugin+BodyState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_BodyState {
-    pub JointLocations: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocations: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+        >,
     >,
     pub Confidence: f32,
     pub SkeletonChangedCount: u32,
@@ -3094,7 +3098,7 @@ for crate::GlobalNamespace::OVRPlugin_BodyState {
 impl crate::GlobalNamespace::OVRPlugin_BodyState {}
 #[cfg(feature = "OVRPlugin+BodyStateInternal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_BodyStateInternal {
     pub IsActive: crate::GlobalNamespace::OVRPlugin_Bool,
     pub Confidence: f32,
@@ -3191,7 +3195,7 @@ for crate::GlobalNamespace::OVRPlugin_BodyStateInternal {
 impl crate::GlobalNamespace::OVRPlugin_BodyStateInternal {}
 #[cfg(feature = "OVRPlugin+Bone")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Bone {
     pub Id: crate::GlobalNamespace::OVRPlugin_BoneId,
     pub ParentBoneIndex: i16,
@@ -3217,7 +3221,7 @@ for crate::GlobalNamespace::OVRPlugin_Bone {
 impl crate::GlobalNamespace::OVRPlugin_Bone {}
 #[cfg(feature = "OVRPlugin+BoneCapsule")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_BoneCapsule {
     pub BoneIndex: i16,
     pub StartPoint: crate::GlobalNamespace::OVRPlugin_Vector3f,
@@ -3338,11 +3342,11 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+BoundaryGeometry")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_BoundaryGeometry {
     pub BoundaryType: crate::GlobalNamespace::OVRPlugin_BoundaryType,
-    pub Points: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_Vector3f,
+    pub Points: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Vector3f>,
     >,
     pub PointsCount: i32,
 }
@@ -3366,7 +3370,7 @@ for crate::GlobalNamespace::OVRPlugin_BoundaryGeometry {
 impl crate::GlobalNamespace::OVRPlugin_BoundaryGeometry {}
 #[cfg(feature = "OVRPlugin+BoundaryTestResult")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_BoundaryTestResult {
     pub IsTriggering: crate::GlobalNamespace::OVRPlugin_Bool,
     pub ClosestDistance: f32,
@@ -3405,7 +3409,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+Boundsf")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Boundsf {
     pub Pos: crate::GlobalNamespace::OVRPlugin_Vector3f,
     pub Size: crate::GlobalNamespace::OVRPlugin_Size3f,
@@ -3485,7 +3489,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+CameraDeviceIntrinsicsParameters")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_CameraDeviceIntrinsicsParameters {
     pub fx: f32,
     pub fy: f32,
@@ -3523,7 +3527,7 @@ for crate::GlobalNamespace::OVRPlugin_CameraDeviceIntrinsicsParameters {
 impl crate::GlobalNamespace::OVRPlugin_CameraDeviceIntrinsicsParameters {}
 #[cfg(feature = "OVRPlugin+CameraExtrinsics")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_CameraExtrinsics {
     pub IsValid: crate::GlobalNamespace::OVRPlugin_Bool,
     pub LastChangedTimeSeconds: f64,
@@ -3551,7 +3555,7 @@ for crate::GlobalNamespace::OVRPlugin_CameraExtrinsics {
 impl crate::GlobalNamespace::OVRPlugin_CameraExtrinsics {}
 #[cfg(feature = "OVRPlugin+CameraIntrinsics")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_CameraIntrinsics {
     pub IsValid: crate::GlobalNamespace::OVRPlugin_Bool,
     pub LastChangedTimeSeconds: f64,
@@ -3616,7 +3620,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+Colorf")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Colorf {
     pub r: f32,
     pub g: f32,
@@ -3675,7 +3679,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+ControllerState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_ControllerState {
     pub ConnectedControllers: u32,
     pub Buttons: u32,
@@ -3708,7 +3712,7 @@ for crate::GlobalNamespace::OVRPlugin_ControllerState {
 impl crate::GlobalNamespace::OVRPlugin_ControllerState {}
 #[cfg(feature = "OVRPlugin+ControllerState2")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_ControllerState2 {
     pub ConnectedControllers: u32,
     pub Buttons: u32,
@@ -3755,7 +3759,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState2 {
 }
 #[cfg(feature = "OVRPlugin+ControllerState4")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_ControllerState4 {
     pub ConnectedControllers: u32,
     pub Buttons: u32,
@@ -3834,7 +3838,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState4 {
 }
 #[cfg(feature = "OVRPlugin+ControllerState5")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_ControllerState5 {
     pub ConnectedControllers: u32,
     pub Buttons: u32,
@@ -3893,7 +3897,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState5 {
 }
 #[cfg(feature = "OVRPlugin+ControllerState6")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_ControllerState6 {
     pub ConnectedControllers: u32,
     pub Buttons: u32,
@@ -3954,10 +3958,10 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState6 {
 }
 #[cfg(feature = "OVRPlugin+EventDataBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_EventDataBuffer {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
-    pub EventData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub EventData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "OVRPlugin+EventDataBuffer")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -4019,7 +4023,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+EyeGazeState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_EyeGazeState {
     pub Pose: crate::GlobalNamespace::OVRPlugin_Posef,
     pub Confidence: f32,
@@ -4054,10 +4058,12 @@ impl crate::GlobalNamespace::OVRPlugin_EyeGazeState {
 }
 #[cfg(feature = "OVRPlugin+EyeGazesState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_EyeGazesState {
-    pub EyeGazes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_EyeGazeState,
+    pub EyeGazes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::OVRPlugin_EyeGazeState,
+        >,
     >,
     pub Time: f64,
 }
@@ -4081,7 +4087,7 @@ for crate::GlobalNamespace::OVRPlugin_EyeGazesState {
 impl crate::GlobalNamespace::OVRPlugin_EyeGazesState {}
 #[cfg(feature = "OVRPlugin+EyeGazesStateInternal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_EyeGazesStateInternal {
     pub EyeGazes_0: crate::GlobalNamespace::OVRPlugin_EyeGazeState,
     pub EyeGazes_1: crate::GlobalNamespace::OVRPlugin_EyeGazeState,
@@ -4212,7 +4218,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+FaceExpressionStatus")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_FaceExpressionStatus {
     pub IsValid: bool,
     pub IsEyeFollowingBlendshapesValid: bool,
@@ -4237,7 +4243,7 @@ for crate::GlobalNamespace::OVRPlugin_FaceExpressionStatus {
 impl crate::GlobalNamespace::OVRPlugin_FaceExpressionStatus {}
 #[cfg(feature = "OVRPlugin+FaceExpressionStatusInternal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_FaceExpressionStatusInternal {
     pub IsValid: crate::GlobalNamespace::OVRPlugin_Bool,
     pub IsEyeFollowingBlendshapesValid: crate::GlobalNamespace::OVRPlugin_Bool,
@@ -4289,10 +4295,14 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+FaceState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_FaceState {
-    pub ExpressionWeights: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub ExpressionWeightConfidences: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub ExpressionWeights: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
+    pub ExpressionWeightConfidences: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
     pub Status: crate::GlobalNamespace::OVRPlugin_FaceExpressionStatus,
     pub Time: f64,
 }
@@ -4316,7 +4326,7 @@ for crate::GlobalNamespace::OVRPlugin_FaceState {
 impl crate::GlobalNamespace::OVRPlugin_FaceState {}
 #[cfg(feature = "OVRPlugin+FaceState2Internal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_FaceState2Internal {
     pub ExpressionWeights_0: f32,
     pub ExpressionWeights_1: f32,
@@ -4406,7 +4416,7 @@ for crate::GlobalNamespace::OVRPlugin_FaceState2Internal {
 impl crate::GlobalNamespace::OVRPlugin_FaceState2Internal {}
 #[cfg(feature = "OVRPlugin+FaceStateInternal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_FaceStateInternal {
     pub ExpressionWeights_0: f32,
     pub ExpressionWeights_1: f32,
@@ -4549,7 +4559,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+Fovf")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Fovf {
     pub UpTan: f32,
     pub DownTan: f32,
@@ -4576,7 +4586,7 @@ for crate::GlobalNamespace::OVRPlugin_Fovf {
 impl crate::GlobalNamespace::OVRPlugin_Fovf {}
 #[cfg(feature = "OVRPlugin+Frustumf")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Frustumf {
     pub zNear: f32,
     pub zFar: f32,
@@ -4603,7 +4613,7 @@ for crate::GlobalNamespace::OVRPlugin_Frustumf {
 impl crate::GlobalNamespace::OVRPlugin_Frustumf {}
 #[cfg(feature = "OVRPlugin+Frustumf2")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Frustumf2 {
     pub zNear: f32,
     pub zFar: f32,
@@ -4737,20 +4747,24 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+HandState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_HandState {
     pub Status: crate::GlobalNamespace::OVRPlugin_HandStatus,
     pub RootPose: crate::GlobalNamespace::OVRPlugin_Posef,
-    pub BoneRotations: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_Quatf,
+    pub BoneRotations: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Quatf>,
     >,
     pub Pinches: crate::GlobalNamespace::OVRPlugin_HandFingerPinch,
-    pub PinchStrength: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub PinchStrength: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
     pub PointerPose: crate::GlobalNamespace::OVRPlugin_Posef,
     pub HandScale: f32,
     pub HandConfidence: crate::GlobalNamespace::OVRPlugin_TrackingConfidence,
-    pub FingerConfidences: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_TrackingConfidence,
+    pub FingerConfidences: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::OVRPlugin_TrackingConfidence,
+        >,
     >,
     pub RequestedTimeStamp: f64,
     pub SampleTimeStamp: f64,
@@ -4775,7 +4789,7 @@ for crate::GlobalNamespace::OVRPlugin_HandState {
 impl crate::GlobalNamespace::OVRPlugin_HandState {}
 #[cfg(feature = "OVRPlugin+HandStateInternal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_HandStateInternal {
     pub Status: crate::GlobalNamespace::OVRPlugin_HandStatus,
     pub RootPose: crate::GlobalNamespace::OVRPlugin_Posef,
@@ -4868,7 +4882,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+HapticsAmplitudeEnvelopeVibration")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_HapticsAmplitudeEnvelopeVibration {
     pub Duration: f32,
     pub AmplitudeCount: u32,
@@ -4895,7 +4909,7 @@ for crate::GlobalNamespace::OVRPlugin_HapticsAmplitudeEnvelopeVibration {
 impl crate::GlobalNamespace::OVRPlugin_HapticsAmplitudeEnvelopeVibration {}
 #[cfg(feature = "OVRPlugin+HapticsBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_HapticsBuffer {
     pub Samples: crate::System::IntPtr,
     pub SamplesCount: i32,
@@ -4931,7 +4945,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+HapticsDesc")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_HapticsDesc {
     pub SampleRateHz: i32,
     pub SampleSizeInBytes: i32,
@@ -4974,7 +4988,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+HapticsPcmVibration")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_HapticsPcmVibration {
     pub BufferSize: u32,
     pub Buffer: crate::System::IntPtr,
@@ -5002,7 +5016,7 @@ for crate::GlobalNamespace::OVRPlugin_HapticsPcmVibration {
 impl crate::GlobalNamespace::OVRPlugin_HapticsPcmVibration {}
 #[cfg(feature = "OVRPlugin+HapticsState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_HapticsState {
     pub SamplesAvailable: i32,
     pub SamplesQueued: i32,
@@ -5044,7 +5058,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+InsightPassthroughKeyboardHandsIntensity")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_InsightPassthroughKeyboardHandsIntensity {
     pub LeftHandIntensity: f32,
     pub RightHandIntensity: f32,
@@ -5070,7 +5084,7 @@ for crate::GlobalNamespace::OVRPlugin_InsightPassthroughKeyboardHandsIntensity {
 impl crate::GlobalNamespace::OVRPlugin_InsightPassthroughKeyboardHandsIntensity {}
 #[cfg(feature = "OVRPlugin+InsightPassthroughStyle")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_InsightPassthroughStyle {
     pub Flags: crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyleFlags,
     pub TextureOpacityFactor: f32,
@@ -5100,7 +5114,7 @@ for crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle {
 impl crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle {}
 #[cfg(feature = "OVRPlugin+InsightPassthroughStyle2")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_InsightPassthroughStyle2 {
     pub Flags: crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyleFlags,
     pub TextureOpacityFactor: f32,
@@ -5175,9 +5189,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+KeyboardDescription")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_KeyboardDescription {
-    pub Name: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub TrackedKeyboardId: u64,
     pub Dimensions: crate::GlobalNamespace::OVRPlugin_Vector3f,
     pub KeyboardFlags: crate::GlobalNamespace::OVRPlugin_TrackedKeyboardFlags,
@@ -5215,7 +5229,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+KeyboardState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_KeyboardState {
     pub IsActive: crate::GlobalNamespace::OVRPlugin_Bool,
     pub OrientationValid: crate::GlobalNamespace::OVRPlugin_Bool,
@@ -5351,7 +5365,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_Ktx
 }
 #[cfg(feature = "OVRPlugin+LayerDesc")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_LayerDesc {
     pub Shape: crate::GlobalNamespace::OVRPlugin_OverlayShape,
     pub Layout: crate::GlobalNamespace::OVRPlugin_LayerLayout,
@@ -5360,11 +5374,11 @@ pub struct OVRPlugin_LayerDesc {
     pub SampleCount: i32,
     pub Format: crate::GlobalNamespace::OVRPlugin_EyeTextureFormat,
     pub LayerFlags: i32,
-    pub Fov: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_Fovf,
+    pub Fov: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Fovf>,
     >,
-    pub VisibleRect: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_Rectf,
+    pub VisibleRect: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Rectf>,
     >,
     pub MaxViewportSize: crate::GlobalNamespace::OVRPlugin_Sizei,
     pub DepthFormat: crate::GlobalNamespace::OVRPlugin_EyeTextureFormat,
@@ -5403,7 +5417,7 @@ impl crate::GlobalNamespace::OVRPlugin_LayerDesc {
 }
 #[cfg(feature = "OVRPlugin+LayerDescInternal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_LayerDescInternal {
     pub Shape: crate::GlobalNamespace::OVRPlugin_OverlayShape,
     pub Layout: crate::GlobalNamespace::OVRPlugin_LayerLayout,
@@ -5511,12 +5525,12 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+LayerSubmit")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_LayerSubmit {
     pub LayerId: i32,
     pub TextureStage: i32,
-    pub ViewportRect: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_Recti,
+    pub ViewportRect: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Recti>,
     >,
     pub Pose: crate::GlobalNamespace::OVRPlugin_Posef,
     pub LayerSubmitFlags: i32,
@@ -5935,21 +5949,21 @@ pub struct OVRPlugin_Mesh {
     pub Type: crate::GlobalNamespace::OVRPlugin_MeshType,
     pub NumVertices: u32,
     pub NumIndices: u32,
-    pub VertexPositions: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_Vector3f,
+    pub VertexPositions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Vector3f>,
     >,
-    pub Indices: *mut quest_hook::libil2cpp::Il2CppArray<i16>,
-    pub VertexNormals: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_Vector3f,
+    pub Indices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
+    pub VertexNormals: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Vector3f>,
     >,
-    pub VertexUV0: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_Vector2f,
+    pub VertexUV0: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Vector2f>,
     >,
-    pub BlendIndices: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_Vector4s,
+    pub BlendIndices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Vector4s>,
     >,
-    pub BlendWeights: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_Vector4f,
+    pub BlendWeights: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Vector4f>,
     >,
 }
 #[cfg(feature = "OVRPlugin+Mesh")]
@@ -12287,7 +12301,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+PassthroughCapabilities")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_PassthroughCapabilities {
     pub Fields: crate::GlobalNamespace::OVRPlugin_PassthroughCapabilityFields,
     pub Flags: crate::GlobalNamespace::OVRPlugin_PassthroughCapabilityFlags,
@@ -12354,7 +12368,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+PassthroughColorLutData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_PassthroughColorLutData {
     pub BufferSize: u32,
     pub Buffer: crate::System::IntPtr,
@@ -12404,7 +12418,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+PassthroughPreferences")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_PassthroughPreferences {
     pub Fields: crate::GlobalNamespace::OVRPlugin_PassthroughPreferenceFields,
     pub Flags: crate::GlobalNamespace::OVRPlugin_PassthroughPreferenceFlags,
@@ -12463,7 +12477,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+PinnedArray_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_PinnedArray_1<T: quest_hook::libil2cpp::Type> {
     pub _handle: crate::System::Runtime::InteropServices::GCHandle,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -12556,7 +12570,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+PolygonalBoundary2DInternal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_PolygonalBoundary2DInternal {
     pub vertexCapacityInput: i32,
     pub vertexCountOutput: i32,
@@ -12583,7 +12597,7 @@ for crate::GlobalNamespace::OVRPlugin_PolygonalBoundary2DInternal {
 impl crate::GlobalNamespace::OVRPlugin_PolygonalBoundary2DInternal {}
 #[cfg(feature = "OVRPlugin+PoseStatef")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_PoseStatef {
     pub Pose: crate::GlobalNamespace::OVRPlugin_Posef,
     pub Velocity: crate::GlobalNamespace::OVRPlugin_Vector3f,
@@ -12612,7 +12626,7 @@ for crate::GlobalNamespace::OVRPlugin_PoseStatef {
 impl crate::GlobalNamespace::OVRPlugin_PoseStatef {}
 #[cfg(feature = "OVRPlugin+Posef")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Posef {
     pub Orientation: crate::GlobalNamespace::OVRPlugin_Quatf,
     pub Position: crate::GlobalNamespace::OVRPlugin_Vector3f,
@@ -12763,7 +12777,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_Qpl
 }
 #[cfg(feature = "OVRPlugin+Quatf")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Quatf {
     pub x: f32,
     pub y: f32,
@@ -12814,7 +12828,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+Rectf")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Rectf {
     pub Pos: crate::GlobalNamespace::OVRPlugin_Vector2f,
     pub Size: crate::GlobalNamespace::OVRPlugin_Sizef,
@@ -12839,7 +12853,7 @@ for crate::GlobalNamespace::OVRPlugin_Rectf {
 impl crate::GlobalNamespace::OVRPlugin_Rectf {}
 #[cfg(feature = "OVRPlugin+Recti")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Recti {
     pub Pos: crate::GlobalNamespace::OVRPlugin_Vector2i,
     pub Size: crate::GlobalNamespace::OVRPlugin_Sizei,
@@ -12876,9 +12890,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+RenderModelProperties")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_RenderModelProperties {
-    pub ModelName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ModelName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub ModelKey: u64,
     pub VendorId: u32,
     pub ModelVersion: u32,
@@ -12903,9 +12917,9 @@ for crate::GlobalNamespace::OVRPlugin_RenderModelProperties {
 impl crate::GlobalNamespace::OVRPlugin_RenderModelProperties {}
 #[cfg(feature = "OVRPlugin+RenderModelPropertiesInternal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_RenderModelPropertiesInternal {
-    pub ModelName: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub ModelName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub ModelKey: u64,
     pub VendorId: u32,
     pub ModelVersion: u32,
@@ -12961,11 +12975,13 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+RoomLayout")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_RoomLayout {
     pub floorUuid: crate::System::Guid,
     pub ceilingUuid: crate::System::Guid,
-    pub wallUuids: *mut quest_hook::libil2cpp::Il2CppArray<crate::System::Guid>,
+    pub wallUuids: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Guid>,
+    >,
 }
 #[cfg(feature = "OVRPlugin+RoomLayout")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -12987,7 +13003,7 @@ for crate::GlobalNamespace::OVRPlugin_RoomLayout {
 impl crate::GlobalNamespace::OVRPlugin_RoomLayout {}
 #[cfg(feature = "OVRPlugin+RoomLayoutInternal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_RoomLayoutInternal {
     pub floorUuid: crate::System::Guid,
     pub ceilingUuid: crate::System::Guid,
@@ -13015,10 +13031,10 @@ for crate::GlobalNamespace::OVRPlugin_RoomLayoutInternal {
 impl crate::GlobalNamespace::OVRPlugin_RoomLayoutInternal {}
 #[cfg(feature = "OVRPlugin+SceneCaptureRequestInternal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_SceneCaptureRequestInternal {
     pub requestByteCount: i32,
-    pub request: *mut quest_hook::libil2cpp::Il2CppString,
+    pub request: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "OVRPlugin+SceneCaptureRequestInternal")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -13041,7 +13057,7 @@ for crate::GlobalNamespace::OVRPlugin_SceneCaptureRequestInternal {
 impl crate::GlobalNamespace::OVRPlugin_SceneCaptureRequestInternal {}
 #[cfg(feature = "OVRPlugin+Size3f")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Size3f {
     pub w: f32,
     pub h: f32,
@@ -13067,7 +13083,7 @@ for crate::GlobalNamespace::OVRPlugin_Size3f {
 impl crate::GlobalNamespace::OVRPlugin_Size3f {}
 #[cfg(feature = "OVRPlugin+Sizef")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Sizef {
     pub w: f32,
     pub h: f32,
@@ -13092,7 +13108,7 @@ for crate::GlobalNamespace::OVRPlugin_Sizef {
 impl crate::GlobalNamespace::OVRPlugin_Sizef {}
 #[cfg(feature = "OVRPlugin+Sizei")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Sizei {
     pub w: i32,
     pub h: i32,
@@ -13166,16 +13182,16 @@ for crate::GlobalNamespace::OVRPlugin_Sizei {
 }
 #[cfg(feature = "OVRPlugin+Skeleton")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Skeleton {
     pub Type: crate::GlobalNamespace::OVRPlugin_SkeletonType,
     pub NumBones: u32,
     pub NumBoneCapsules: u32,
-    pub Bones: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Bone>,
     >,
-    pub BoneCapsules: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_BoneCapsule>,
     >,
 }
 #[cfg(feature = "OVRPlugin+Skeleton")]
@@ -13198,16 +13214,16 @@ for crate::GlobalNamespace::OVRPlugin_Skeleton {
 impl crate::GlobalNamespace::OVRPlugin_Skeleton {}
 #[cfg(feature = "OVRPlugin+Skeleton2")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Skeleton2 {
     pub Type: crate::GlobalNamespace::OVRPlugin_SkeletonType,
     pub NumBones: u32,
     pub NumBoneCapsules: u32,
-    pub Bones: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Bone>,
     >,
-    pub BoneCapsules: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_BoneCapsule>,
     >,
 }
 #[cfg(feature = "OVRPlugin+Skeleton2")]
@@ -13230,7 +13246,7 @@ for crate::GlobalNamespace::OVRPlugin_Skeleton2 {
 impl crate::GlobalNamespace::OVRPlugin_Skeleton2 {}
 #[cfg(feature = "OVRPlugin+Skeleton2Internal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Skeleton2Internal {
     pub Type: crate::GlobalNamespace::OVRPlugin_SkeletonType,
     pub NumBones: u32,
@@ -13392,7 +13408,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+SpaceContainerInternal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_SpaceContainerInternal {
     pub uuidCapacityInput: i32,
     pub uuidCountOutput: i32,
@@ -13419,10 +13435,12 @@ for crate::GlobalNamespace::OVRPlugin_SpaceContainerInternal {
 impl crate::GlobalNamespace::OVRPlugin_SpaceContainerInternal {}
 #[cfg(feature = "OVRPlugin+SpaceFilterInfoComponents")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_SpaceFilterInfoComponents {
-    pub Components: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+    pub Components: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+        >,
     >,
     pub NumComponents: i32,
 }
@@ -13447,9 +13465,11 @@ for crate::GlobalNamespace::OVRPlugin_SpaceFilterInfoComponents {
 impl crate::GlobalNamespace::OVRPlugin_SpaceFilterInfoComponents {}
 #[cfg(feature = "OVRPlugin+SpaceFilterInfoIds")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_SpaceFilterInfoIds {
-    pub Ids: *mut quest_hook::libil2cpp::Il2CppArray<crate::System::Guid>,
+    pub Ids: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Guid>,
+    >,
     pub NumIds: i32,
 }
 #[cfg(feature = "OVRPlugin+SpaceFilterInfoIds")]
@@ -13486,7 +13506,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+SpaceLocationf")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_SpaceLocationf {
     pub locationFlags: crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags,
     pub pose: crate::GlobalNamespace::OVRPlugin_Posef,
@@ -13535,7 +13555,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+SpaceQueryInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_SpaceQueryInfo {
     pub QueryType: crate::GlobalNamespace::OVRPlugin_SpaceQueryType,
     pub MaxQuerySpaces: i32,
@@ -13566,7 +13586,7 @@ for crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo {
 impl crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo {}
 #[cfg(feature = "OVRPlugin+SpaceQueryResult")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_SpaceQueryResult {
     pub space: u64,
     pub uuid: crate::System::Guid,
@@ -13602,7 +13622,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+SpaceSemanticLabelInternal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_SpaceSemanticLabelInternal {
     pub byteCapacityInput: i32,
     pub byteCountOutput: i32,
@@ -13655,7 +13675,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+SpatialAnchorCreateInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_SpatialAnchorCreateInfo {
     pub BaseTracking: crate::GlobalNamespace::OVRPlugin_TrackingOrigin,
     pub PoseInSpace: crate::GlobalNamespace::OVRPlugin_Posef,
@@ -13737,7 +13757,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+TextureRectMatrixf")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_TextureRectMatrixf {
     pub leftRect: crate::UnityEngine::Rect,
     pub rightRect: crate::UnityEngine::Rect,
@@ -13875,7 +13895,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+TriangleMeshInternal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_TriangleMeshInternal {
     pub vertexCapacityInput: i32,
     pub vertexCountOutput: i32,
@@ -14034,7 +14054,7 @@ for crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
 }
 #[cfg(feature = "OVRPlugin+Vector2f")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Vector2f {
     pub x: f32,
     pub y: f32,
@@ -14059,7 +14079,7 @@ for crate::GlobalNamespace::OVRPlugin_Vector2f {
 impl crate::GlobalNamespace::OVRPlugin_Vector2f {}
 #[cfg(feature = "OVRPlugin+Vector2i")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Vector2i {
     pub x: i32,
     pub y: i32,
@@ -14084,7 +14104,7 @@ for crate::GlobalNamespace::OVRPlugin_Vector2i {
 impl crate::GlobalNamespace::OVRPlugin_Vector2i {}
 #[cfg(feature = "OVRPlugin+Vector3f")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Vector3f {
     pub x: f32,
     pub y: f32,
@@ -14121,7 +14141,7 @@ impl crate::GlobalNamespace::OVRPlugin_Vector3f {
 }
 #[cfg(feature = "OVRPlugin+Vector4f")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Vector4f {
     pub x: f32,
     pub y: f32,
@@ -14159,7 +14179,7 @@ impl crate::GlobalNamespace::OVRPlugin_Vector4f {
 }
 #[cfg(feature = "OVRPlugin+Vector4s")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_Vector4s {
     pub x: i16,
     pub y: i16,
@@ -14197,7 +14217,7 @@ impl crate::GlobalNamespace::OVRPlugin_Vector4s {
 }
 #[cfg(feature = "OVRPlugin+VirtualKeyboardCreateInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_VirtualKeyboardCreateInfo {}
 #[cfg(feature = "OVRPlugin+VirtualKeyboardCreateInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -14220,7 +14240,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardCreateInfo {
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardCreateInfo {}
 #[cfg(feature = "OVRPlugin+VirtualKeyboardInputInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_VirtualKeyboardInputInfo {
     pub inputSource: crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputSource,
     pub inputPose: crate::GlobalNamespace::OVRPlugin_Posef,
@@ -14280,7 +14300,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+VirtualKeyboardLocationInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_VirtualKeyboardLocationInfo {
     pub locationType: crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationType,
     pub pose: crate::GlobalNamespace::OVRPlugin_Posef,
@@ -14321,7 +14341,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_VirtualKeyboardModelAnimationState {
     pub AnimationIndex: i32,
     pub Fraction: f32,
@@ -14347,10 +14367,12 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationState {
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationState {}
 #[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStates")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_VirtualKeyboardModelAnimationStates {
-    pub States: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationState,
+    pub States: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationState,
+        >,
     >,
 }
 #[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStates")]
@@ -14374,7 +14396,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStates {
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStates {}
 #[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStatesInternal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_VirtualKeyboardModelAnimationStatesInternal {
     pub StateCapacityInput: u32,
     pub StateCountOutput: u32,
@@ -14401,7 +14423,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStatesInterna
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStatesInternal {}
 #[cfg(feature = "OVRPlugin+VirtualKeyboardModelVisibility")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_VirtualKeyboardModelVisibility {
     pub _visible: crate::GlobalNamespace::OVRPlugin_Bool,
 }
@@ -14446,7 +14468,7 @@ impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelVisibility {
 }
 #[cfg(feature = "OVRPlugin+VirtualKeyboardSpaceCreateInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_VirtualKeyboardSpaceCreateInfo {
     pub locationType: crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationType,
     pub pose: crate::GlobalNamespace::OVRPlugin_Posef,
@@ -14472,7 +14494,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardSpaceCreateInfo {
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardSpaceCreateInfo {}
 #[cfg(feature = "OVRPlugin+VirtualKeyboardTextureData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_VirtualKeyboardTextureData {
     pub TextureWidth: u32,
     pub TextureHeight: u32,
@@ -14501,9 +14523,9 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureData {
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureData {}
 #[cfg(feature = "OVRPlugin+VirtualKeyboardTextureIds")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_VirtualKeyboardTextureIds {
-    pub TextureIds: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+    pub TextureIds: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
 }
 #[cfg(feature = "OVRPlugin+VirtualKeyboardTextureIds")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -14526,7 +14548,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureIds {
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureIds {}
 #[cfg(feature = "OVRPlugin+VirtualKeyboardTextureIdsInternal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRPlugin_VirtualKeyboardTextureIdsInternal {
     pub TextureIdCapacityInput: u32,
     pub TextureIdCountOutput: u32,

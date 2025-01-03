@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct SliderHapticFeedbackInteractionEffect {
     __cordl_parent: crate::GlobalNamespace::SliderInteractionEffect,
-    pub _hapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _hapticFeedbackManager: *mut crate::GlobalNamespace::HapticFeedbackManager,
-    pub _gamePause: *mut crate::GlobalNamespace::IGamePause,
+    pub _hapticPreset: quest_hook::libil2cpp::Gc<
+        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+    >,
+    pub _hapticFeedbackManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HapticFeedbackManager,
+    >,
+    pub _gamePause: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>,
     pub _saberType: crate::GlobalNamespace::SaberType,
 }
 #[cfg(feature = "SliderHapticFeedbackInteractionEffect")]

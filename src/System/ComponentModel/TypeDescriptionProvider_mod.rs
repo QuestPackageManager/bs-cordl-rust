@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct TypeDescriptionProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _parent: *mut crate::System::ComponentModel::TypeDescriptionProvider,
-    pub _emptyDescriptor: *mut crate::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescriptor,
+    pub _parent: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeDescriptionProvider,
+    >,
+    pub _emptyDescriptor: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeDescriptionProvider_EmptyCustomTypeDescriptor,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptionProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

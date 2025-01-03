@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SphereCuttableBySaber {
     __cordl_parent: crate::GlobalNamespace::CuttableBySaber,
-    pub _collider: *mut crate::UnityEngine::SphereCollider,
+    pub _collider: quest_hook::libil2cpp::Gc<crate::UnityEngine::SphereCollider>,
     pub _canBeCut: bool,
 }
 #[cfg(feature = "SphereCuttableBySaber")]

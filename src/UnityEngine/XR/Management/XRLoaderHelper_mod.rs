@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct XRLoaderHelper {
     __cordl_parent: crate::UnityEngine::XR::Management::XRLoader,
-    pub m_SubsystemInstanceMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Type,
-        *mut crate::UnityEngine::ISubsystem,
+    pub m_SubsystemInstanceMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Type,
+            *mut crate::UnityEngine::ISubsystem,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+XR+Management+XRLoaderHelper")]

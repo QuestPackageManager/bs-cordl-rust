@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct EventCallbackListPool {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Stack: *mut crate::System::Collections::Generic::Stack_1<
-        *mut crate::UnityEngine::UIElements::EventCallbackList,
+    pub m_Stack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<
+            *mut crate::UnityEngine::UIElements::EventCallbackList,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+EventCallbackListPool")]

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct BadImageFormatException {
     __cordl_parent: crate::System::SystemException,
-    pub _fileName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _fusionLog: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _fusionLog: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+BadImageFormatException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

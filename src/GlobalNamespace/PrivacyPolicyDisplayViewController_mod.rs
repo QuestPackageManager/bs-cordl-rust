@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PrivacyPolicyDisplayViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _textPageScrollView: *mut crate::HMUI::TextPageScrollView,
-    pub _localizedTextAsset: *mut crate::GlobalNamespace::LocalizedTextAsset,
+    pub _textPageScrollView: quest_hook::libil2cpp::Gc<crate::HMUI::TextPageScrollView>,
+    pub _localizedTextAsset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LocalizedTextAsset,
+    >,
 }
 #[cfg(feature = "PrivacyPolicyDisplayViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

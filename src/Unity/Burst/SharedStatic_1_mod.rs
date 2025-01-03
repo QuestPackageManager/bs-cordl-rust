@@ -1,8 +1,8 @@
 #[cfg(feature = "Unity+Burst+SharedStatic_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SharedStatic_1<T: quest_hook::libil2cpp::Type> {
-    pub _buffer: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "Unity+Burst+SharedStatic_1")]

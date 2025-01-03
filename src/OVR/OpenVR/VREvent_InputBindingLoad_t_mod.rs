@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_InputBindingLoad_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VREvent_InputBindingLoad_t {
     pub ulAppContainer: u64,
     pub pathMessage: u64,

@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct XmlSchemaGroupRef {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaParticle,
-    pub refName: *mut crate::System::Xml::XmlQualifiedName,
-    pub particle: *mut crate::System::Xml::Schema::XmlSchemaGroupBase,
-    pub refined: *mut crate::System::Xml::Schema::XmlSchemaGroup,
+    pub refName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub particle: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaGroupBase,
+    >,
+    pub refined: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroup>,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaGroupRef")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

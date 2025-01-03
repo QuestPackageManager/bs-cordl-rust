@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct GhostDuplicationEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _canvases: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::CanvasGroup,
+    pub _canvases: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::CanvasGroup>,
     >,
     pub isInitialized: bool,
-    pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::TimeTweeningManager,
+    >,
 }
 #[cfg(feature = "GhostDuplicationEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -175,7 +177,7 @@ for crate::GlobalNamespace::GhostDuplicationEffect {
 }
 #[cfg(feature = "GhostDuplicationEffect+GhostEffectParams")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GhostDuplicationEffect_GhostEffectParams {
     pub startAlpha: f32,
     pub startPosition: crate::UnityEngine::Vector3,
@@ -186,7 +188,7 @@ pub struct GhostDuplicationEffect_GhostEffectParams {
     pub duration: f32,
     pub delay: f32,
     pub easeType: crate::GlobalNamespace::EaseType,
-    pub distanceCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub distanceCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub peakDistance: f32,
     pub lastPhase: bool,
 }

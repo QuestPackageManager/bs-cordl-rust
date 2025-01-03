@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct PyramidBloomRendererSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _shader: *mut crate::UnityEngine::Shader,
-    pub _material: *mut crate::UnityEngine::Material,
-    pub _pyramid: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::PyramidBloomRendererSO_Level,
+    pub _shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _pyramid: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::PyramidBloomRendererSO_Level,
+        >,
     >,
-    pub kIsScreenspaceEffectKeyword: *mut quest_hook::libil2cpp::Il2CppString,
-    pub kLegacyAutoExposureKeyword: *mut quest_hook::libil2cpp::Il2CppString,
+    pub kIsScreenspaceEffectKeyword: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub kLegacyAutoExposureKeyword: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _initialized: bool,
 }
 #[cfg(feature = "PyramidBloomRendererSO")]
@@ -165,10 +171,10 @@ for crate::GlobalNamespace::PyramidBloomRendererSO {
 }
 #[cfg(feature = "PyramidBloomRendererSO+Level")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PyramidBloomRendererSO_Level {
-    pub down: *mut crate::UnityEngine::RenderTexture,
-    pub up: *mut crate::UnityEngine::RenderTexture,
+    pub down: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    pub up: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
 }
 #[cfg(feature = "PyramidBloomRendererSO+Level")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

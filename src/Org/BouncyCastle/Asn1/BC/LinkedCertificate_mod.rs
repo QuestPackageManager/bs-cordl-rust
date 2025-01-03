@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct LinkedCertificate {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub mDigest: *mut crate::Org::BouncyCastle::Asn1::X509::DigestInfo,
-    pub mCertLocation: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    pub mCertIssuer: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
-    pub mCACerts: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+    pub mDigest: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::DigestInfo,
+    >,
+    pub mCertLocation: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    >,
+    pub mCertIssuer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Name,
+    >,
+    pub mCACerts: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BC+LinkedCertificate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,27 +3,47 @@
 #[derive(Debug)]
 pub struct AnnotatedBeatmapLevelCollectionsGridView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _gridView: *mut crate::GlobalNamespace::GridView,
-    pub _pageControl: *mut crate::GlobalNamespace::PageControl,
-    pub _animator: *mut crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator,
-    pub _cellPrefab: *mut crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell,
+    pub _gridView: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GridView>,
+    pub _pageControl: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PageControl>,
+    pub _animator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator,
+    >,
+    pub _cellPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell,
+    >,
     pub _cellWidth: f32,
     pub _cellHeight: f32,
-    pub _contentWarningLabel: *mut crate::UnityEngine::GameObject,
-    pub _additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
-    pub _entitlementModel: *mut crate::GlobalNamespace::IEntitlementModel,
-    pub _beatmapLevelsPromoModel: *mut crate::GlobalNamespace::BeatmapLevelsPromoModel,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub didOpenAnnotatedBeatmapLevelCollectionEvent: *mut crate::System::Action,
-    pub didCloseAnnotatedBeatmapLevelCollectionEvent: *mut crate::System::Action,
-    pub didSelectAnnotatedBeatmapLevelCollectionEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub _contentWarningLabel: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _additionalContentModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAdditionalContentModel,
+    >,
+    pub _entitlementModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IEntitlementModel,
+    >,
+    pub _beatmapLevelsPromoModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsPromoModel,
+    >,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub didOpenAnnotatedBeatmapLevelCollectionEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub didCloseAnnotatedBeatmapLevelCollectionEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub didSelectAnnotatedBeatmapLevelCollectionEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::BeatmapLevelPack>,
     >,
     pub _isInitialized: bool,
     pub _isHovering: bool,
-    pub _annotatedBeatmapLevelCollections: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub _annotatedBeatmapLevelCollections: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
+        >,
     >,
     pub _selectedCellIndex: i32,
 }

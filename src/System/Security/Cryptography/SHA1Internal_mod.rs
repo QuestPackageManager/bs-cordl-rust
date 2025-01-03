@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct SHA1Internal {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _H: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub _H: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub count: u64,
-    pub _ProcessingBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _ProcessingBuffer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub _ProcessingBufferCount: i32,
-    pub buff: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub buff: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
 #[cfg(feature = "System+Security+Cryptography+SHA1Internal")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

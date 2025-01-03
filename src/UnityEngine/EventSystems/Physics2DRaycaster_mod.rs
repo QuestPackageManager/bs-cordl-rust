@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct Physics2DRaycaster {
     __cordl_parent: crate::UnityEngine::EventSystems::PhysicsRaycaster,
-    pub m_Hits: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::RaycastHit2D,
+    pub m_Hits: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
     >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+Physics2DRaycaster")]

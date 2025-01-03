@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct DisableIfNotPlatform {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _whitelistPlatforms: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::RuntimePlatform,
+    pub _whitelistPlatforms: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RuntimePlatform>,
     >,
 }
 #[cfg(feature = "DisableIfNotPlatform")]

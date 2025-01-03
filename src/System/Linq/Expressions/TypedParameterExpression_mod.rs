@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TypedParameterExpression {
     __cordl_parent: crate::System::Linq::Expressions::ParameterExpression,
-    pub _Type_k__BackingField: *mut crate::System::Type,
+    pub _Type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Linq+Expressions+TypedParameterExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

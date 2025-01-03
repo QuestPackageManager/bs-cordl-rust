@@ -3,15 +3,17 @@
 #[derive(Debug)]
 pub struct TrackedDeviceRaycaster {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseRaycaster,
-    pub m_RaycastResultsCache: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData,
+    pub m_RaycastResultsCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData,
+        >,
     >,
     pub m_IgnoreReversedGraphics: bool,
     pub m_CheckFor2DOcclusion: bool,
     pub m_CheckFor3DOcclusion: bool,
     pub m_MaxDistance: f32,
     pub m_BlockingMask: crate::UnityEngine::LayerMask,
-    pub m_Canvas: *mut crate::UnityEngine::Canvas,
+    pub m_Canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -269,9 +271,11 @@ for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
 }
 #[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TrackedDeviceRaycaster_RaycastHitData {
-    pub _graphic_k__BackingField: *mut crate::UnityEngine::UI::Graphic,
+    pub _graphic_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Graphic,
+    >,
     pub _worldHitPosition_k__BackingField: crate::UnityEngine::Vector3,
     pub _screenPosition_k__BackingField: crate::UnityEngine::Vector2,
     pub _distance_k__BackingField: f32,

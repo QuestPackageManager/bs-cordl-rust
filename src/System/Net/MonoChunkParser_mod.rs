@@ -3,16 +3,16 @@
 #[derive(Debug)]
 pub struct MonoChunkParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub headers: *mut crate::System::Net::WebHeaderCollection,
+    pub headers: quest_hook::libil2cpp::Gc<crate::System::Net::WebHeaderCollection>,
     pub chunkSize: i32,
     pub chunkRead: i32,
     pub totalWritten: i32,
     pub state: crate::System::Net::MonoChunkParser_State,
-    pub saved: *mut crate::System::Text::StringBuilder,
+    pub saved: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub sawCR: bool,
     pub gotit: bool,
     pub trailerState: i32,
-    pub chunks: *mut crate::System::Collections::ArrayList,
+    pub chunks: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
 #[cfg(feature = "System+Net+MonoChunkParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -216,7 +216,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::MonoChunkParser {
 #[derive(Debug)]
 pub struct MonoChunkParser_Chunk {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub Bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub Offset: i32,
 }
 #[cfg(feature = "System+Net+MonoChunkParser+Chunk")]

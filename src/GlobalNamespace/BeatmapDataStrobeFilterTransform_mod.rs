@@ -83,7 +83,9 @@ pub struct BeatmapDataStrobeFilterTransform_StrobeStreakData {
     pub lastSwitchTime: f32,
     pub lastColorType: crate::GlobalNamespace::EnvironmentColorType,
     pub lastIsOn: bool,
-    pub originalBasicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
+    pub originalBasicBeatmapEventData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BasicBeatmapEventData,
+    >,
     pub _foundFirstColoredEventData: bool,
 }
 #[cfg(feature = "BeatmapDataStrobeFilterTransform+StrobeStreakData")]

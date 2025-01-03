@@ -3,14 +3,16 @@
 #[derive(Debug)]
 pub struct XdrValidator {
     __cordl_parent: crate::System::Xml::Schema::BaseValidator,
-    pub validationStack: *mut crate::System::Xml::HWStack,
-    pub attPresence: *mut crate::System::Collections::Hashtable,
-    pub name: *mut crate::System::Xml::XmlQualifiedName,
-    pub nsManager: *mut crate::System::Xml::XmlNamespaceManager,
+    pub validationStack: quest_hook::libil2cpp::Gc<crate::System::Xml::HWStack>,
+    pub attPresence: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub nsManager: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
     pub isProcessContents: bool,
-    pub IDs: *mut crate::System::Collections::Hashtable,
-    pub idRefListHead: *mut crate::System::Xml::Schema::IdRefNode,
-    pub inlineSchemaParser: *mut crate::System::Xml::Schema::Parser,
+    pub IDs: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub idRefListHead: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IdRefNode>,
+    pub inlineSchemaParser: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::Parser,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+XdrValidator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

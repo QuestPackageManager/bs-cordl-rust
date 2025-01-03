@@ -4,11 +4,11 @@
 pub struct UniqueConstraint {
     __cordl_parent: crate::System::Data::Constraint,
     pub _key: crate::System::Data::DataKey,
-    pub _constraintIndex: *mut crate::System::Data::Index,
+    pub _constraintIndex: quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
     pub _bPrimaryKey: bool,
-    pub _constraintName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _columnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _constraintName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _columnNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "System+Data+UniqueConstraint")]

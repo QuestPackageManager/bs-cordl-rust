@@ -4,7 +4,7 @@
 pub struct CertStatus {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub tagNo: i32,
-    pub value: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    pub value: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+CertStatus")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

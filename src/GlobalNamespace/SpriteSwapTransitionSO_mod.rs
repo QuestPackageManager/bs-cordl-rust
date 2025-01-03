@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct SpriteSwapTransitionSO {
     __cordl_parent: crate::GlobalNamespace::BaseTransitionSO,
-    pub _normalSprite: *mut crate::UnityEngine::Sprite,
-    pub _highlightedSprite: *mut crate::UnityEngine::Sprite,
-    pub _pressedSprite: *mut crate::UnityEngine::Sprite,
-    pub _disabledSprite: *mut crate::UnityEngine::Sprite,
-    pub _selectedSprite: *mut crate::UnityEngine::Sprite,
-    pub _selectedAndHighlightedSprite: *mut crate::UnityEngine::Sprite,
+    pub _normalSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _highlightedSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _pressedSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _disabledSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _selectedSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _selectedAndHighlightedSprite: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Sprite,
+    >,
 }
 #[cfg(feature = "SpriteSwapTransitionSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

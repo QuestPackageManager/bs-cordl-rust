@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MoveInDirectionEffect {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _moveOrigin: crate::UnityEngine::Vector3,
     pub _moveScale: f32,
     pub _startPosition: crate::UnityEngine::Vector3,

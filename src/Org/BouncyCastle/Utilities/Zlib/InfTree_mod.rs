@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct InfTree {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub hn: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub v: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub c: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub r: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub u: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub x: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub hn: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub c: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub r: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub u: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+InfTree")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

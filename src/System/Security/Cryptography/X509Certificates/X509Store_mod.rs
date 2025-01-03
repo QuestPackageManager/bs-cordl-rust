@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct X509Store {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _location: crate::System::Security::Cryptography::X509Certificates::StoreLocation,
-    pub list: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
+    pub list: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
+    >,
     pub _flags: crate::System::Security::Cryptography::X509Certificates::OpenFlags,
-    pub store: *mut crate::Mono::Security::X509::X509Store,
+    pub store: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Store>,
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Store")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

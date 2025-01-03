@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct GlvMultiplier {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::Multiplier::AbstractECMultiplier,
-    pub curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-    pub glvEndomorphism: *mut crate::Org::BouncyCastle::Math::EC::Endo::GlvEndomorphism,
+    pub curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
+    pub glvEndomorphism: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Endo::GlvEndomorphism,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+GlvMultiplier")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -4,11 +4,11 @@
 pub struct XmlNodeChangedEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub action: crate::System::Xml::XmlNodeChangedAction,
-    pub node: *mut crate::System::Xml::XmlNode,
-    pub oldParent: *mut crate::System::Xml::XmlNode,
-    pub newParent: *mut crate::System::Xml::XmlNode,
-    pub oldValue: *mut quest_hook::libil2cpp::Il2CppString,
-    pub newValue: *mut quest_hook::libil2cpp::Il2CppString,
+    pub node: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+    pub oldParent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+    pub newParent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+    pub oldValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub newValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+XmlNodeChangedEventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

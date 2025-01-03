@@ -3,14 +3,16 @@
 #[derive(Debug)]
 pub struct SchemaAttDef {
     __cordl_parent: crate::System::Xml::Schema::SchemaDeclBase,
-    pub defExpanded: *mut quest_hook::libil2cpp::Il2CppString,
+    pub defExpanded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub lineNum: i32,
     pub linePos: i32,
     pub valueLineNum: i32,
     pub valueLinePos: i32,
     pub reserved: crate::System::Xml::Schema::SchemaAttDef_Reserve,
     pub defaultValueChecked: bool,
-    pub schemaAttribute: *mut crate::System::Xml::Schema::XmlSchemaAttribute,
+    pub schemaAttribute: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAttribute,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+SchemaAttDef")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

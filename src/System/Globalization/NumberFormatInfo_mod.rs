@@ -3,26 +3,50 @@
 #[derive(Debug)]
 pub struct NumberFormatInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub numberGroupSizes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub currencyGroupSizes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub percentGroupSizes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub positiveSign: *mut quest_hook::libil2cpp::Il2CppString,
-    pub negativeSign: *mut quest_hook::libil2cpp::Il2CppString,
-    pub numberDecimalSeparator: *mut quest_hook::libil2cpp::Il2CppString,
-    pub numberGroupSeparator: *mut quest_hook::libil2cpp::Il2CppString,
-    pub currencyGroupSeparator: *mut quest_hook::libil2cpp::Il2CppString,
-    pub currencyDecimalSeparator: *mut quest_hook::libil2cpp::Il2CppString,
-    pub currencySymbol: *mut quest_hook::libil2cpp::Il2CppString,
-    pub ansiCurrencySymbol: *mut quest_hook::libil2cpp::Il2CppString,
-    pub nanSymbol: *mut quest_hook::libil2cpp::Il2CppString,
-    pub positiveInfinitySymbol: *mut quest_hook::libil2cpp::Il2CppString,
-    pub negativeInfinitySymbol: *mut quest_hook::libil2cpp::Il2CppString,
-    pub percentDecimalSeparator: *mut quest_hook::libil2cpp::Il2CppString,
-    pub percentGroupSeparator: *mut quest_hook::libil2cpp::Il2CppString,
-    pub percentSymbol: *mut quest_hook::libil2cpp::Il2CppString,
-    pub perMilleSymbol: *mut quest_hook::libil2cpp::Il2CppString,
-    pub nativeDigits: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub numberGroupSizes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub currencyGroupSizes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub percentGroupSizes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub positiveSign: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub negativeSign: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub numberDecimalSeparator: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub numberGroupSeparator: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub currencyGroupSeparator: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub currencyDecimalSeparator: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub currencySymbol: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ansiCurrencySymbol: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub nanSymbol: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub positiveInfinitySymbol: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub negativeInfinitySymbol: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub percentDecimalSeparator: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub percentGroupSeparator: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub percentSymbol: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub perMilleSymbol: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub nativeDigits: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub m_dataItem: i32,
     pub numberDecimalDigits: i32,

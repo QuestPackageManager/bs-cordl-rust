@@ -4,7 +4,7 @@
 pub struct BloomPrePassLightTypeSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _renderingPriority: i32,
-    pub _material: *mut crate::UnityEngine::Material,
+    pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
 #[cfg(feature = "BloomPrePassLightTypeSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

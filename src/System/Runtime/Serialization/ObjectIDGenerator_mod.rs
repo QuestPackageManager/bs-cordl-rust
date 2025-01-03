@@ -5,9 +5,9 @@ pub struct ObjectIDGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_currentCount: i32,
     pub m_currentSize: i32,
-    pub m_ids: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
-    pub m_objs: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_ids: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
+    pub m_objs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
 }
 #[cfg(feature = "System+Runtime+Serialization+ObjectIDGenerator")]

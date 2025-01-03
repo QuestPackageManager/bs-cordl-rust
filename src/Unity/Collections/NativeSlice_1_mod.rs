@@ -1,8 +1,8 @@
 #[cfg(feature = "Unity+Collections+NativeSlice_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NativeSlice_1<T: quest_hook::libil2cpp::Type> {
-    pub m_Buffer: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Stride: i32,
     pub m_Length: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -320,7 +320,7 @@ for crate::Unity::Collections::NativeSlice_1<T> {
 }
 #[cfg(feature = "Unity+Collections+NativeSlice_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NativeSlice_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub m_Array: crate::Unity::Collections::NativeSlice_1<T>,
     pub m_Index: i32,

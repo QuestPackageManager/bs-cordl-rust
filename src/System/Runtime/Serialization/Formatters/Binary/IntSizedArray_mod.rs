@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct IntSizedArray {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub objects: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub negObjects: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub objects: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub negObjects: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+IntSizedArray")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

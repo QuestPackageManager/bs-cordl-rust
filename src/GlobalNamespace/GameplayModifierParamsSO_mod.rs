@@ -3,17 +3,27 @@
 #[derive(Debug)]
 pub struct GameplayModifierParamsSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _modifierNameLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _descriptionLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _icon: *mut crate::UnityEngine::Sprite,
-    pub _mutuallyExclusives: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _modifierNameLocalizationKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _requires: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _descriptionLocalizationKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _requiredBy: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _mutuallyExclusives: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+        >,
+    >,
+    pub _requires: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+        >,
+    >,
+    pub _requiredBy: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+        >,
     >,
     pub _multiplier: f32,
     pub _multiplierConditionallyValid: bool,

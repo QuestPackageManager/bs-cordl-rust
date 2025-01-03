@@ -3,26 +3,56 @@
 #[derive(Debug)]
 pub struct TlsProtocol {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mApplicationDataQueue: *mut crate::Org::BouncyCastle::Crypto::Tls::ByteQueue,
-    pub mAlertQueue: *mut crate::Org::BouncyCastle::Crypto::Tls::ByteQueue,
-    pub mHandshakeQueue: *mut crate::Org::BouncyCastle::Crypto::Tls::ByteQueue,
-    pub mRecordStream: *mut crate::Org::BouncyCastle::Crypto::Tls::RecordStream,
-    pub mSecureRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    pub mTlsStream: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsStream,
+    pub mApplicationDataQueue: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::ByteQueue,
+    >,
+    pub mAlertQueue: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::ByteQueue,
+    >,
+    pub mHandshakeQueue: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::ByteQueue,
+    >,
+    pub mRecordStream: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::RecordStream,
+    >,
+    pub mSecureRandom: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
+    pub mTlsStream: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsStream,
+    >,
     pub mClosed: bool,
     pub mFailedWithError: bool,
     pub mAppDataReady: bool,
     pub mAppDataSplitEnabled: bool,
     pub mAppDataSplitMode: i32,
-    pub mExpectedVerifyData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mTlsSession: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSession,
-    pub mSessionParameters: *mut crate::Org::BouncyCastle::Crypto::Tls::SessionParameters,
-    pub mSecurityParameters: *mut crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
-    pub mPeerCertificate: *mut crate::Org::BouncyCastle::Crypto::Tls::Certificate,
-    pub mOfferedCipherSuites: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub mOfferedCompressionMethods: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mClientExtensions: *mut crate::System::Collections::IDictionary,
-    pub mServerExtensions: *mut crate::System::Collections::IDictionary,
+    pub mExpectedVerifyData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub mTlsSession: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsSession,
+    >,
+    pub mSessionParameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::SessionParameters,
+    >,
+    pub mSecurityParameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
+    >,
+    pub mPeerCertificate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+    >,
+    pub mOfferedCipherSuites: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
+    pub mOfferedCompressionMethods: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub mClientExtensions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IDictionary,
+    >,
+    pub mServerExtensions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IDictionary,
+    >,
     pub mConnectionState: i16,
     pub mResumedSession: bool,
     pub mReceivedChangeCipherSpec: bool,
@@ -30,8 +60,12 @@ pub struct TlsProtocol {
     pub mAllowCertificateStatus: bool,
     pub mExpectSessionTicket: bool,
     pub mBlocking: bool,
-    pub mInputBuffers: *mut crate::Org::BouncyCastle::Crypto::Tls::ByteQueueStream,
-    pub mOutputBuffer: *mut crate::Org::BouncyCastle::Crypto::Tls::ByteQueueStream,
+    pub mInputBuffers: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::ByteQueueStream,
+    >,
+    pub mOutputBuffer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::ByteQueueStream,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

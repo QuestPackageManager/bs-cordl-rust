@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct HEU_ScriptParameterExample {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _evergreenGameObject: *mut crate::UnityEngine::GameObject,
-    pub _evergreenAsset: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+    pub _evergreenGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _evergreenAsset: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+    >,
     pub _updateRate: f32,
     pub _scale: f32,
 }

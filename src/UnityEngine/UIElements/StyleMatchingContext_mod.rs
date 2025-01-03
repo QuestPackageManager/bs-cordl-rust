@@ -3,16 +3,26 @@
 #[derive(Debug)]
 pub struct StyleMatchingContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_StyleSheetStack: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::StyleSheet,
+    pub m_StyleSheetStack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::StyleSheet,
+        >,
     >,
-    pub variableContext: *mut crate::UnityEngine::UIElements::StyleVariableContext,
-    pub currentElement: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub processResult: *mut crate::System::Action_2<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-        crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
+    pub variableContext: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleVariableContext,
     >,
-    pub ancestorFilter: *mut crate::UnityEngine::UIElements::AncestorFilter,
+    pub currentElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub processResult: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+            crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
+        >,
+    >,
+    pub ancestorFilter: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::AncestorFilter,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleMatchingContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

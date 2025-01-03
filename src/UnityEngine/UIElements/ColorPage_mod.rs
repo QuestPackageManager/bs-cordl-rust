@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+ColorPage")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ColorPage {
     pub isValid: bool,
     pub pageAndID: crate::UnityEngine::Color32,

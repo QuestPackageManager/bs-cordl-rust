@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct InstanceMethodCallExpression {
     __cordl_parent: crate::System::Linq::Expressions::MethodCallExpression,
-    pub _instance: *mut crate::System::Linq::Expressions::Expression,
+    pub _instance: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+InstanceMethodCallExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

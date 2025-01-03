@@ -4,9 +4,9 @@
 pub struct ChallengeResponse {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _disposed: bool,
-    pub _challenge: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _lmpwd: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _ntpwd: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _challenge: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _lmpwd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _ntpwd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Security+Protocol+Ntlm+ChallengeResponse")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

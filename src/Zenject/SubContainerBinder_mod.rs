@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct SubContainerBinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _bindInfo: *mut crate::Zenject::BindInfo,
-    pub _bindStatement: *mut crate::Zenject::BindStatement,
-    pub _subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+    pub _bindStatement: quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
+    pub _subIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _resolveAll: bool,
 }
 #[cfg(feature = "Zenject+SubContainerBinder")]

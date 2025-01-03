@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct EssCertIDv2 {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub hashAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub certHash: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub issuerSerial: *mut crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
+    pub hashAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub certHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub issuerSerial: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ess+EssCertIDv2")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

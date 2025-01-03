@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MockQuickPlaySetupModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _quickPlaySetupData: *mut crate::GlobalNamespace::QuickPlaySetupData,
+    pub _quickPlaySetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::QuickPlaySetupData,
+    >,
 }
 #[cfg(feature = "MockQuickPlaySetupModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

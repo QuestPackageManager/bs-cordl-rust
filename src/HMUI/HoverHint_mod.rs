@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct HoverHint {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _text: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _hoverHintController: *mut crate::HMUI::HoverHintController,
-    pub _worldCornersTemp: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub _text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _hoverHintController: quest_hook::libil2cpp::Gc<
+        crate::HMUI::HoverHintController,
+    >,
+    pub _worldCornersTemp: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
 }
 #[cfg(feature = "HMUI+HoverHint")]

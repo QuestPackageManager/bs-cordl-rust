@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct StaticAccessorAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _Type_k__BackingField: crate::UnityEngine::Bindings::StaticAccessorType,
 }
 #[cfg(feature = "UnityEngine+Bindings+StaticAccessorAttribute")]

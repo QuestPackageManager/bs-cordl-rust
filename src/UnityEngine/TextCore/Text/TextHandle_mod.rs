@@ -4,9 +4,13 @@
 pub struct TextHandle {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_PreferredSize: crate::UnityEngine::Vector2,
-    pub m_TextInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+    pub m_TextInfo: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextInfo,
+    >,
     pub m_PreviousGenerationSettingsHash: i32,
-    pub textGenerationSettings: *mut crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+    pub textGenerationSettings: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+    >,
     pub isDirty: bool,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextHandle")]

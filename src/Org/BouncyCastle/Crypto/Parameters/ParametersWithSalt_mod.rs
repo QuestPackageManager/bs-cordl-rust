@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ParametersWithSalt {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    pub salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub parameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ParametersWithSalt")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

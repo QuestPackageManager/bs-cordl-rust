@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct Signature {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub signatureAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub signatureValue: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
-    pub certs: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    pub signatureAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub signatureValue: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerBitString,
+    >,
+    pub certs: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+Signature")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

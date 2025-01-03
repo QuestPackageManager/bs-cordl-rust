@@ -5,13 +5,13 @@
 #[derive(Debug)]
 pub struct AssetBundleRequestOptions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Hash: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Hash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Crc: u32,
     pub m_Timeout: i32,
     pub m_ChunkedTransfer: bool,
     pub m_RedirectLimit: i32,
     pub m_RetryCount: i32,
-    pub m_BundleName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_BundleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_AssetLoadMode: crate::UnityEngine::ResourceManagement::ResourceProviders::AssetLoadMode,
     pub m_BundleSize: i64,
     pub m_UseCrcForCachedBundles: bool,

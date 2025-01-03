@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct GameSongController {
     __cordl_parent: crate::GlobalNamespace::SongController,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
-    pub _failAudioPitchGainEffect: *mut crate::GlobalNamespace::AudioPitchGainEffect,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _beatmapCallbacksUpdater: *mut crate::GlobalNamespace::BeatmapCallbacksUpdater,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
+    pub _failAudioPitchGainEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioPitchGainEffect,
+    >,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _beatmapCallbacksUpdater: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksUpdater,
+    >,
     pub _songDidFinish: bool,
 }
 #[cfg(feature = "GameSongController")]

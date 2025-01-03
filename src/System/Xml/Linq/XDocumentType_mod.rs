@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct XDocumentType {
     __cordl_parent: crate::System::Xml::Linq::XNode,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _publicId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _systemId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _internalSubset: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _publicId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _systemId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _internalSubset: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Linq+XDocumentType")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

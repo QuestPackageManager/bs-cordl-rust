@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ScoreMissionObjectiveChecker {
     __cordl_parent: crate::GlobalNamespace::SimpleValueMissionObjectiveChecker,
-    pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
+    pub _scoreController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IScoreController,
+    >,
 }
 #[cfg(feature = "ScoreMissionObjectiveChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

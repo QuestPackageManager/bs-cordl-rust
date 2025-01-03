@@ -6,9 +6,13 @@ pub struct OrderedEnumerable_2<
     TKey: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::System::Linq::OrderedEnumerable_1<TElement>,
-    pub parent: *mut crate::System::Linq::OrderedEnumerable_1<TElement>,
-    pub keySelector: *mut crate::System::Func_2<TElement, TKey>,
-    pub comparer: *mut crate::System::Collections::Generic::IComparer_1<TKey>,
+    pub parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::OrderedEnumerable_1<TElement>,
+    >,
+    pub keySelector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TElement, TKey>>,
+    pub comparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IComparer_1<TKey>,
+    >,
     pub descending: bool,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,

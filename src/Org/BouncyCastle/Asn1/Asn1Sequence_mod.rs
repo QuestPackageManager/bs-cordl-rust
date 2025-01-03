@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct Asn1Sequence {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Object,
-    pub elements: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    pub elements: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Sequence")]
@@ -265,7 +267,7 @@ for crate::Org::BouncyCastle::Asn1::Asn1Sequence {
 #[derive(Debug)]
 pub struct Asn1Sequence_Asn1SequenceParserImpl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub outer: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    pub outer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     pub max: i32,
     pub index: i32,
 }

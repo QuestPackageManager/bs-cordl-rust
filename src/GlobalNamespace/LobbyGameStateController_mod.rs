@@ -3,44 +3,68 @@
 #[derive(Debug)]
 pub struct LobbyGameStateController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _lobbyPlayersDataModel: *mut crate::GlobalNamespace::ILobbyPlayersDataModel,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _menuRpcManager: *mut crate::GlobalNamespace::IMenuRpcManager,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _multiplayerLevelLoader: *mut crate::GlobalNamespace::MultiplayerLevelLoader,
-    pub _menuTransitionsHelper: *mut crate::GlobalNamespace::MenuTransitionsHelper,
-    pub _lobbyGameStateModel: *mut crate::GlobalNamespace::LobbyGameStateModel,
-    pub _lobbyPlayerPermissionsModel: *mut crate::GlobalNamespace::LobbyPlayerPermissionsModel,
-    pub _beatmapCharacteristicCollection: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub selectedLevelGameplaySetupDataChangedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::ILevelGameplaySetupData,
+    pub _lobbyPlayersDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyPlayersDataModel,
     >,
-    pub gameStartedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::ILevelGameplaySetupData,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
     >,
-    pub gameStartCancelledEvent: *mut crate::System::Action,
-    pub countdownStartedEvent: *mut crate::System::Action,
-    pub countdownCancelledEvent: *mut crate::System::Action,
-    pub songStillDownloadingEvent: *mut crate::System::Action,
-    pub startTimeChangedEvent: *mut crate::System::Action,
-    pub levelFinishedEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-        *mut crate::GlobalNamespace::MultiplayerResultsData,
+    pub _menuRpcManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMenuRpcManager,
     >,
-    pub levelDidGetDisconnectedEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::DisconnectedReason,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
     >,
-    pub lobbyDisconnectedEvent: *mut crate::System::Action,
-    pub beforeSceneSwitchCallbackEvent: *mut crate::System::Action,
-    pub lobbyStateChangedEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::MultiplayerLobbyState,
+    pub _multiplayerLevelLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLevelLoader,
     >,
-    pub startButtonEnabledEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::CannotStartGameReason,
+    pub _menuTransitionsHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuTransitionsHelper,
     >,
-    pub playerMissingEntitlementsChangedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+    pub _lobbyGameStateModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LobbyGameStateModel,
+    >,
+    pub _lobbyPlayerPermissionsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LobbyPlayerPermissionsModel,
+    >,
+    pub _beatmapCharacteristicCollection: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicCollection,
+    >,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub selectedLevelGameplaySetupDataChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::ILevelGameplaySetupData>,
+    >,
+    pub gameStartedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::ILevelGameplaySetupData>,
+    >,
+    pub gameStartCancelledEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub countdownStartedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub countdownCancelledEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub songStillDownloadingEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub startTimeChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub levelFinishedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::MultiplayerResultsData,
+        >,
+    >,
+    pub levelDidGetDisconnectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
+    >,
+    pub lobbyDisconnectedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub beforeSceneSwitchCallbackEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub lobbyStateChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::MultiplayerLobbyState>,
+    >,
+    pub startButtonEnabledEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::CannotStartGameReason>,
+    >,
+    pub playerMissingEntitlementsChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+        >,
     >,
     pub _levelStartInitiated_k__BackingField: bool,
     pub _countdownStarted_k__BackingField: bool,
@@ -52,7 +76,9 @@ pub struct LobbyGameStateController {
     pub _levelStartedOnTime: bool,
     pub _state: crate::GlobalNamespace::MultiplayerLobbyState,
     pub _cannotStartGameReason: crate::GlobalNamespace::CannotStartGameReason,
-    pub _selectedLevelGameplaySetupData: *mut crate::GlobalNamespace::LevelGameplaySetupData,
+    pub _selectedLevelGameplaySetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelGameplaySetupData,
+    >,
 }
 #[cfg(feature = "LobbyGameStateController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

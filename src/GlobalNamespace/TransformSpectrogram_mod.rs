@@ -3,18 +3,20 @@
 #[derive(Debug)]
 pub struct TransformSpectrogram {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _transforms: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Transform,
+    pub _transforms: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
     >,
     pub _axis: crate::GlobalNamespace::LightAxis,
     pub _minPosition: f32,
     pub _maxPosition: f32,
     pub _scaleSamples: bool,
     pub _scale: f32,
-    pub _spectrogramData: *mut crate::GlobalNamespace::BasicSpectrogramData,
+    pub _spectrogramData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BasicSpectrogramData,
+    >,
     pub _direction: crate::UnityEngine::Vector3,
-    pub _defaultPositions: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub _defaultPositions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
 }
 #[cfg(feature = "TransformSpectrogram")]

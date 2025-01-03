@@ -3,15 +3,19 @@
 #[derive(Debug)]
 pub struct XmlTypeMapElementInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _elementName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _namespace: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _namespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _form: crate::System::Xml::Schema::XmlSchemaForm,
-    pub _member: *mut crate::System::Xml::Serialization::XmlTypeMapMember,
-    pub _choiceValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _member: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTypeMapMember,
+    >,
+    pub _choiceValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _isNullable: bool,
     pub _nestingLevel: i32,
-    pub _mappedType: *mut crate::System::Xml::Serialization::XmlTypeMapping,
-    pub _type: *mut crate::System::Xml::Serialization::TypeData,
+    pub _mappedType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTypeMapping,
+    >,
+    pub _type: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeData>,
     pub _wrappedElement: bool,
     pub _explicitOrder: i32,
 }

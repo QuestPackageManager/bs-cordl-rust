@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct ButtonStaticAnimations {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _button: *mut crate::HMUI::NoTransitionsButton,
-    pub _normalClip: *mut crate::UnityEngine::AnimationClip,
-    pub _highlightedClip: *mut crate::UnityEngine::AnimationClip,
-    pub _pressedClip: *mut crate::UnityEngine::AnimationClip,
-    pub _disabledClip: *mut crate::UnityEngine::AnimationClip,
+    pub _button: quest_hook::libil2cpp::Gc<crate::HMUI::NoTransitionsButton>,
+    pub _normalClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+    pub _highlightedClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+    pub _pressedClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+    pub _disabledClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
     pub _didStart: bool,
 }
 #[cfg(feature = "HMUI+ButtonStaticAnimations")]

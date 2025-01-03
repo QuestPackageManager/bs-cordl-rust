@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct SubContainerDependencyProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _subContainerCreator: *mut crate::Zenject::ISubContainerCreator,
-    pub _dependencyType: *mut crate::System::Type,
-    pub _identifier: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _subContainerCreator: quest_hook::libil2cpp::Gc<
+        crate::Zenject::ISubContainerCreator,
+    >,
+    pub _dependencyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _resolveAll: bool,
 }
 #[cfg(feature = "Zenject+SubContainerDependencyProvider")]

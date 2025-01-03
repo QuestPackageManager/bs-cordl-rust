@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct XmlProcessingInstruction {
     __cordl_parent: crate::System::Xml::XmlLinkedNode,
-    pub target: *mut quest_hook::libil2cpp::Il2CppString,
-    pub data: *mut quest_hook::libil2cpp::Il2CppString,
+    pub target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+XmlProcessingInstruction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,21 +3,31 @@
 #[derive(Debug)]
 pub struct DynamicAtlas {
     __cordl_parent: crate::UnityEngine::UIElements::AtlasBase,
-    pub m_Database: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::UnityEngine::Texture,
-        *mut crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo,
+    pub m_Database: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::UnityEngine::Texture,
+            *mut crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo,
+        >,
     >,
-    pub m_PointPage: *mut crate::UnityEngine::UIElements::DynamicAtlasPage,
-    pub m_BilinearPage: *mut crate::UnityEngine::UIElements::DynamicAtlasPage,
+    pub m_PointPage: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::DynamicAtlasPage,
+    >,
+    pub m_BilinearPage: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::DynamicAtlasPage,
+    >,
     pub m_ColorSpace: crate::UnityEngine::ColorSpace,
-    pub m_Panels: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::IPanel,
+    pub m_Panels: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::IPanel,
+        >,
     >,
     pub m_MinAtlasSize: i32,
     pub m_MaxAtlasSize: i32,
     pub m_MaxSubTextureSize: i32,
     pub m_ActiveFilters: crate::UnityEngine::UIElements::DynamicAtlasFilters,
-    pub m_CustomFilter: *mut crate::UnityEngine::UIElements::DynamicAtlasCustomFilter,
+    pub m_CustomFilter: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::DynamicAtlasCustomFilter,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+DynamicAtlas")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -264,7 +274,9 @@ pub struct DynamicAtlas_TextureInfo {
     __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         *mut crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo,
     >,
-    pub page: *mut crate::UnityEngine::UIElements::DynamicAtlasPage,
+    pub page: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::DynamicAtlasPage,
+    >,
     pub counter: i32,
     pub alloc: crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D,
     pub rect: crate::UnityEngine::RectInt,

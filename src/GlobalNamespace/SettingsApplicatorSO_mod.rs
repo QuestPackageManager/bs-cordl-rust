@@ -3,16 +3,34 @@
 #[derive(Debug)]
 pub struct SettingsApplicatorSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _mirrorRendererGraphicsSettingsPresets: *mut crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets,
-    pub _mainEffectGraphicsSettingsPresets: *mut crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO,
-    pub _bloomPrePassGraphicsSettingsPresets: *mut crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO,
-    pub _mirrorRenderer: *mut crate::GlobalNamespace::MirrorRendererSO,
-    pub _mainEffectContainer: *mut crate::GlobalNamespace::MainEffectContainerSO,
-    pub _bloomPrePassEffectContainer: *mut crate::GlobalNamespace::BloomPrePassEffectContainerSO,
-    pub _hapticFeedbackManager: *mut crate::GlobalNamespace::HapticFeedbackManager,
-    pub _audioManager: *mut crate::GlobalNamespace::AudioManagerSO,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub roomTransformOffsetDidUpdateEvent: *mut crate::System::Action,
+    pub _mirrorRendererGraphicsSettingsPresets: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets,
+    >,
+    pub _mainEffectGraphicsSettingsPresets: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO,
+    >,
+    pub _bloomPrePassGraphicsSettingsPresets: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO,
+    >,
+    pub _mirrorRenderer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MirrorRendererSO,
+    >,
+    pub _mainEffectContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MainEffectContainerSO,
+    >,
+    pub _bloomPrePassEffectContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassEffectContainerSO,
+    >,
+    pub _hapticFeedbackManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HapticFeedbackManager,
+    >,
+    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
+    pub roomTransformOffsetDidUpdateEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
 }
 #[cfg(feature = "SettingsApplicatorSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

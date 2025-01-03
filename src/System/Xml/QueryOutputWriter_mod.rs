@@ -3,20 +3,22 @@
 #[derive(Debug)]
 pub struct QueryOutputWriter {
     __cordl_parent: crate::System::Xml::XmlRawWriter,
-    pub wrapped: *mut crate::System::Xml::XmlRawWriter,
+    pub wrapped: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlRawWriter>,
     pub inCDataSection: bool,
-    pub lookupCDataElems: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Xml::XmlQualifiedName,
-        i32,
+    pub lookupCDataElems: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Xml::XmlQualifiedName,
+            i32,
+        >,
     >,
-    pub bitsCData: *mut crate::System::Xml::BitStack,
-    pub qnameCData: *mut crate::System::Xml::XmlQualifiedName,
+    pub bitsCData: quest_hook::libil2cpp::Gc<crate::System::Xml::BitStack>,
+    pub qnameCData: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub outputDocType: bool,
     pub checkWellFormedDoc: bool,
     pub hasDocElem: bool,
     pub inAttr: bool,
-    pub systemId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub publicId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub systemId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub publicId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub depth: i32,
 }
 #[cfg(feature = "System+Xml+QueryOutputWriter")]

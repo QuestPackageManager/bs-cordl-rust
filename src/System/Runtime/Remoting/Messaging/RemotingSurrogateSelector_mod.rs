@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct RemotingSurrogateSelector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _next: *mut crate::System::Runtime::Serialization::ISurrogateSelector,
+    pub _next: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ISurrogateSelector,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+RemotingSurrogateSelector")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

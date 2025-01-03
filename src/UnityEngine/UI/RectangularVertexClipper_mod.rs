@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct RectangularVertexClipper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_WorldCorners: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub m_WorldCorners: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
-    pub m_CanvasCorners: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub m_CanvasCorners: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
 }
 #[cfg(feature = "UnityEngine+UI+RectangularVertexClipper")]

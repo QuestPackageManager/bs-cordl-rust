@@ -3,14 +3,14 @@
 #[derive(Debug)]
 pub struct XmlArrayItemAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub dataType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub elementName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub dataType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub form: crate::System::Xml::Schema::XmlSchemaForm,
-    pub ns: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub isNullable: bool,
     pub isNullableSpecified: bool,
     pub nestingLevel: i32,
-    pub _cordl_type: *mut crate::System::Type,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlArrayItemAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

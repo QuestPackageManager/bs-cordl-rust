@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct XElement {
     __cordl_parent: crate::System::Xml::Linq::XContainer,
-    pub name: *mut crate::System::Xml::Linq::XName,
-    pub lastAttr: *mut crate::System::Xml::Linq::XAttribute,
+    pub name: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
+    pub lastAttr: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XAttribute>,
 }
 #[cfg(feature = "System+Xml+Linq+XElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

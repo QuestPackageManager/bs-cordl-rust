@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+TMP_GlyphAdjustmentRecord")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TMP_GlyphAdjustmentRecord {
     pub m_GlyphIndex: u32,
     pub m_GlyphValueRecord: crate::TMPro::TMP_GlyphValueRecord,

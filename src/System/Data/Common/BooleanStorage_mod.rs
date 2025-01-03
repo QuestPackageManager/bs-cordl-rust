@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BooleanStorage {
     __cordl_parent: crate::System::Data::Common::DataStorage,
-    pub _values: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
+    pub _values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
 }
 #[cfg(feature = "System+Data+Common+BooleanStorage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

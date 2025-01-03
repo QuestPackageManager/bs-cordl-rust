@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct MusicPackPromoBanner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _promoBannerGo: *mut crate::UnityEngine::GameObject,
-    pub _loadingIndicator: *mut crate::UnityEngine::GameObject,
-    pub _promoBannerTransform: *mut crate::UnityEngine::RectTransform,
-    pub _promoText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _backgroundImage: *mut crate::UnityEngine::UI::Image,
-    pub _goButton: *mut crate::UnityEngine::UI::Button,
-    pub _promoInfo_k__BackingField: *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-    pub _text: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _promoBannerGo: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _loadingIndicator: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _promoBannerTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
+    >,
+    pub _promoText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _backgroundImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _goButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _promoInfo_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+    >,
+    pub _text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "MusicPackPromoBanner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

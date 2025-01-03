@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct BlowfishEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub S0: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub S1: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub S2: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub S3: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub P: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub S0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub S1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub S2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub S3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub P: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub encrypting: bool,
-    pub workingKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub workingKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+BlowfishEngine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Pkcs12Entry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub attributes: *mut crate::System::Collections::IDictionary,
+    pub attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Entry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

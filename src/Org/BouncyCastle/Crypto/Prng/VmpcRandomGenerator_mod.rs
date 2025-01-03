@@ -4,7 +4,7 @@
 pub struct VmpcRandomGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub n: u8,
-    pub P: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub P: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub s: u8,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+VmpcRandomGenerator")]

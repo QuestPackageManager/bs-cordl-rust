@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct BasicOcspResp {
     __cordl_parent: crate::Org::BouncyCastle::X509::X509ExtensionBase,
-    pub resp: *mut crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse,
-    pub data: *mut crate::Org::BouncyCastle::Asn1::Ocsp::ResponseData,
+    pub resp: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse,
+    >,
+    pub data: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Ocsp::ResponseData,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+BasicOcspResp")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

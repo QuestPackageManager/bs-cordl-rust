@@ -5,7 +5,7 @@
 #[derive(Debug)]
 pub struct X509Certificate2Enumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub enumerator: *mut crate::System::Collections::IEnumerator,
+    pub enumerator: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
 }
 #[cfg(
     feature = "System+Security+Cryptography+X509Certificates+X509Certificate2Enumerator"

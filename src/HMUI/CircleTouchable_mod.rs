@@ -5,7 +5,7 @@ pub struct CircleTouchable {
     __cordl_parent: crate::HMUI::Touchable,
     pub _minRadius: f32,
     pub _maxRadius: f32,
-    pub _containerRect: *mut crate::UnityEngine::RectTransform,
+    pub _containerRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
 }
 #[cfg(feature = "HMUI+CircleTouchable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "LIV+SDK+Unity+SDKTransform")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SDKTransform {
     pub localPosition: crate::LIV::SDK::Unity::SDKVector3,
     pub localRotation: crate::LIV::SDK::Unity::SDKQuaternion,

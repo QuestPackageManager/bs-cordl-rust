@@ -7,15 +7,21 @@ pub struct DiagnosticEventCollectorSingleton {
     __cordl_parent: crate::UnityEngine::ResourceManagement::Util::ComponentSingleton_1<
         *mut crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton,
     >,
-    pub m_CreatedEvents: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+    pub m_CreatedEvents: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+        >,
     >,
-    pub m_UnhandledEvents: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+    pub m_UnhandledEvents: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+        >,
     >,
-    pub s_EventHandlers: *mut crate::GlobalNamespace::DelegateList_1<
-        crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+    pub s_EventHandlers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DelegateList_1<
+            crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+        >,
     >,
     pub m_lastTickSent: f32,
     pub m_lastFrame: i32,

@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct LocalDataStore {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_DataTable: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::LocalDataStoreElement,
+    pub m_DataTable: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::LocalDataStoreElement>,
     >,
-    pub m_Manager: *mut crate::System::LocalDataStoreMgr,
+    pub m_Manager: quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreMgr>,
 }
 #[cfg(feature = "System+LocalDataStore")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

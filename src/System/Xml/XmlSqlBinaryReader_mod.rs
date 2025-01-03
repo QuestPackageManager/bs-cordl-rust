@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct XmlSqlBinaryReader {
     __cordl_parent: crate::System::Xml::XmlReader,
-    pub inStrm: *mut crate::System::IO::Stream,
-    pub data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub inStrm: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub pos: i32,
     pub mark: i32,
     pub end: i32,
@@ -14,12 +14,12 @@ pub struct XmlSqlBinaryReader {
     pub isEmpty: bool,
     pub docState: i32,
     pub symbolTables: crate::System::Xml::XmlSqlBinaryReader_SymbolTables,
-    pub xnt: *mut crate::System::Xml::XmlNameTable,
+    pub xnt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     pub xntFromSettings: bool,
-    pub xml: *mut quest_hook::libil2cpp::Il2CppString,
-    pub xmlns: *mut quest_hook::libil2cpp::Il2CppString,
-    pub nsxmlns: *mut quest_hook::libil2cpp::Il2CppString,
-    pub baseUri: *mut quest_hook::libil2cpp::Il2CppString,
+    pub xml: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub xmlns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub nsxmlns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub baseUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub state: crate::System::Xml::XmlSqlBinaryReader_ScanState,
     pub nodetype: crate::System::Xml::XmlNodeType,
     pub token: crate::System::Xml::BinXmlToken,
@@ -27,37 +27,45 @@ pub struct XmlSqlBinaryReader {
     pub qnameOther: crate::System::Xml::XmlSqlBinaryReader_QName,
     pub qnameElement: crate::System::Xml::XmlSqlBinaryReader_QName,
     pub parentNodeType: crate::System::Xml::XmlNodeType,
-    pub elementStack: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::XmlSqlBinaryReader_ElemInfo,
+    pub elementStack: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Xml::XmlSqlBinaryReader_ElemInfo,
+        >,
     >,
     pub elemDepth: i32,
-    pub attributes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::XmlSqlBinaryReader_AttrInfo,
+    pub attributes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Xml::XmlSqlBinaryReader_AttrInfo,
+        >,
     >,
-    pub attrHashTbl: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub attrHashTbl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub attrCount: i32,
     pub posAfterAttrs: i32,
     pub xmlspacePreserve: bool,
     pub tokLen: i32,
     pub tokDataPos: i32,
     pub hasTypedValue: bool,
-    pub valueType: *mut crate::System::Type,
-    pub stringValue: *mut quest_hook::libil2cpp::Il2CppString,
-    pub namespaces: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
+    pub valueType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub stringValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub namespaces: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
+        >,
     >,
-    pub prevNameInfo: *mut crate::System::Xml::XmlSqlBinaryReader_NestedBinXml,
-    pub textXmlReader: *mut crate::System::Xml::XmlReader,
+    pub prevNameInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlSqlBinaryReader_NestedBinXml,
+    >,
+    pub textXmlReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     pub closeInput: bool,
     pub checkCharacters: bool,
     pub ignoreWhitespace: bool,
     pub ignorePIs: bool,
     pub ignoreComments: bool,
     pub dtdProcessing: crate::System::Xml::DtdProcessing,
-    pub hasher: *mut crate::System::Xml::SecureStringHasher,
+    pub hasher: quest_hook::libil2cpp::Gc<crate::System::Xml::SecureStringHasher>,
     pub xmlCharType: crate::System::Xml::XmlCharType,
-    pub unicode: *mut crate::System::Text::Encoding,
+    pub unicode: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     pub version: u8,
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader")]
@@ -1382,10 +1390,10 @@ for crate::System::Xml::XmlSqlBinaryReader {
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+AttrInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XmlSqlBinaryReader_AttrInfo {
     pub name: crate::System::Xml::XmlSqlBinaryReader_QName,
-    pub val: *mut quest_hook::libil2cpp::Il2CppString,
+    pub val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub contentPos: i32,
     pub hashCode: i32,
     pub prevHash: i32,
@@ -1504,13 +1512,15 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+ElemInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XmlSqlBinaryReader_ElemInfo {
     pub name: crate::System::Xml::XmlSqlBinaryReader_QName,
-    pub xmlLang: *mut quest_hook::libil2cpp::Il2CppString,
+    pub xmlLang: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub xmlSpace: crate::System::Xml::XmlSpace,
     pub xmlspacePreserve: bool,
-    pub nsdecls: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
+    pub nsdecls: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
+    >,
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+ElemInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1558,10 +1568,14 @@ impl crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
 #[derive(Debug)]
 pub struct XmlSqlBinaryReader_NamespaceDecl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub uri: *mut quest_hook::libil2cpp::Il2CppString,
-    pub scopeLink: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
-    pub prevLink: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
+    pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub scopeLink: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
+    >,
+    pub prevLink: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
+    >,
     pub scope: i32,
     pub implied: bool,
 }
@@ -1644,7 +1658,9 @@ pub struct XmlSqlBinaryReader_NestedBinXml {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub symbolTables: crate::System::Xml::XmlSqlBinaryReader_SymbolTables,
     pub docState: i32,
-    pub next: *mut crate::System::Xml::XmlSqlBinaryReader_NestedBinXml,
+    pub next: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlSqlBinaryReader_NestedBinXml,
+    >,
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1707,11 +1723,11 @@ for crate::System::Xml::XmlSqlBinaryReader_NestedBinXml {
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+QName")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XmlSqlBinaryReader_QName {
-    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub localname: *mut quest_hook::libil2cpp::Il2CppString,
-    pub namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
+    pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub localname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub namespaceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+QName")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1873,14 +1889,14 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+SymbolTables")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XmlSqlBinaryReader_SymbolTables {
-    pub symtable: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub symtable: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub symCount: i32,
-    pub qnametable: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::XmlSqlBinaryReader_QName,
+    pub qnametable: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Xml::XmlSqlBinaryReader_QName>,
     >,
     pub qnameCount: i32,
 }

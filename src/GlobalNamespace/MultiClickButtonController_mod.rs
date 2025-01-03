@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct MultiClickButtonController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _button: *mut crate::UnityEngine::UI::Button,
+    pub _button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _numberOfClicksRequired: i32,
-    pub wasTriggeredEvent: *mut crate::System::Action,
+    pub wasTriggeredEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _currentNumberOfClicks: i32,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
 }
 #[cfg(feature = "MultiClickButtonController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

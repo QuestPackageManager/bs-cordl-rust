@@ -9,12 +9,12 @@ pub struct OVREyeGaze {
     pub ApplyPosition: bool,
     pub ApplyRotation: bool,
     pub _currentEyeGazesState: crate::GlobalNamespace::OVRPlugin_EyeGazesState,
-    pub ReferenceFrame: *mut crate::UnityEngine::Transform,
+    pub ReferenceFrame: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub TrackingMode: crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode,
     pub _initialRotationOffset: crate::UnityEngine::Quaternion,
-    pub _viewTransform: *mut crate::UnityEngine::Transform,
-    pub _onPermissionGranted: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _viewTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _onPermissionGranted: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "OVREyeGaze")]

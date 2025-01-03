@@ -3,12 +3,24 @@
 #[derive(Debug)]
 pub struct PS4AppInit {
     __cordl_parent: crate::BeatSaber::Init::BSAppInit,
-    pub _mainSystemInit: *mut crate::GlobalNamespace::MainSystemInit,
-    pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
-    pub _defaultScenesTransitionsFromInit: *mut crate::GlobalNamespace::DefaultScenesTransitionsFromInit,
-    pub _appInitScenesTransitionSetupDataContainer: *mut crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO,
-    pub _activePublisherSKUSettingsSO: *mut crate::GlobalNamespace::PS4ActivePublisherSKUSettingsSO,
-    pub _sonyOnGoingToBackgroundSaveHandler: *mut crate::GlobalNamespace::SonyOnGoingToBackgroundSaveHandler,
+    pub _mainSystemInit: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MainSystemInit,
+    >,
+    pub _settingsApplicator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsApplicatorSO,
+    >,
+    pub _defaultScenesTransitionsFromInit: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DefaultScenesTransitionsFromInit,
+    >,
+    pub _appInitScenesTransitionSetupDataContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO,
+    >,
+    pub _activePublisherSKUSettingsSO: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PS4ActivePublisherSKUSettingsSO,
+    >,
+    pub _sonyOnGoingToBackgroundSaveHandler: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyOnGoingToBackgroundSaveHandler,
+    >,
 }
 #[cfg(feature = "PS4AppInit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

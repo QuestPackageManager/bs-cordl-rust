@@ -3,11 +3,21 @@
 #[derive(Debug)]
 pub struct BeatAvatarAdapterInstallerSO {
     __cordl_parent: crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO,
-    pub _avatarPartsModel: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO,
-    pub _skinColorSet: *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSetSO,
-    pub _settings: *mut crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings,
-    pub _beatAvatarEditorViewController: *mut crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewController,
-    pub _editAvatarColorView: *mut crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewController,
+    pub _avatarPartsModel: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO,
+    >,
+    pub _skinColorSet: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::SkinColorSetSO,
+    >,
+    pub _settings: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings,
+    >,
+    pub _beatAvatarEditorViewController: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewController,
+    >,
+    pub _editAvatarColorView: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewController,
+    >,
 }
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarAdapterInstallerSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

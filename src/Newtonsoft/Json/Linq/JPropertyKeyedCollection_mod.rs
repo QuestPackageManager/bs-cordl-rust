@@ -5,9 +5,11 @@ pub struct JPropertyKeyedCollection {
     __cordl_parent: crate::System::Collections::ObjectModel::Collection_1<
         *mut crate::Newtonsoft::Json::Linq::JToken,
     >,
-    pub _dictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::Newtonsoft::Json::Linq::JToken,
+    pub _dictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::Newtonsoft::Json::Linq::JToken,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JPropertyKeyedCollection")]

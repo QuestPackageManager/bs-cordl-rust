@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct GeneralDigest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub xBuf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub xBuf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub xBufOff: i32,
     pub byteCount: i64,
 }

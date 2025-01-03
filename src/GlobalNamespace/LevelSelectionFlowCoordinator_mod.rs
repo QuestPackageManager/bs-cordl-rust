@@ -3,11 +3,21 @@
 #[derive(Debug)]
 pub struct LevelSelectionFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub levelSelectionNavigationController: *mut crate::GlobalNamespace::LevelSelectionNavigationController,
-    pub _searchFilterParamsViewController: *mut crate::GlobalNamespace::SearchFilterParamsViewController,
-    pub _levelSearchViewController: *mut crate::GlobalNamespace::LevelSearchViewController,
-    pub _startState: *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
+    pub playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub levelSelectionNavigationController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelSelectionNavigationController,
+    >,
+    pub _searchFilterParamsViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SearchFilterParamsViewController,
+    >,
+    pub _levelSearchViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelSearchViewController,
+    >,
+    pub _startState: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
+    >,
 }
 #[cfg(feature = "LevelSelectionFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -538,9 +548,11 @@ pub struct LevelSelectionFlowCoordinator_State {
     pub levelCategory: crate::System::Nullable_1<
         crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
     >,
-    pub beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub beatmapLevelPack: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelPack,
+    >,
     pub beatmapKey: crate::GlobalNamespace::BeatmapKey,
-    pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
 }
 #[cfg(feature = "LevelSelectionFlowCoordinator+State")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

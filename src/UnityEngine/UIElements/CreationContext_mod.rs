@@ -1,15 +1,23 @@
 #[cfg(feature = "UnityEngine+UIElements+CreationContext")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CreationContext {
-    pub _target_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub _visualTreeAsset_k__BackingField: *mut crate::UnityEngine::UIElements::VisualTreeAsset,
-    pub _slotInsertionPoints_k__BackingField: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub _target_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
     >,
-    pub _attributeOverrides_k__BackingField: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+    pub _visualTreeAsset_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualTreeAsset,
+    >,
+    pub _slotInsertionPoints_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
+    >,
+    pub _attributeOverrides_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+CreationContext")]

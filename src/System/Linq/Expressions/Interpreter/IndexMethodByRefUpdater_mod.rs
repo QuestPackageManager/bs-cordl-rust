@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct IndexMethodByRefUpdater {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
-    pub _indexer: *mut crate::System::Reflection::MethodInfo,
+    pub _indexer: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     pub _obj: crate::System::Nullable_1<
         crate::System::Linq::Expressions::Interpreter::LocalDefinition,
     >,
-    pub _args: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Linq::Expressions::Interpreter::LocalDefinition,
+    pub _args: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Linq::Expressions::Interpreter::LocalDefinition,
+        >,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+IndexMethodByRefUpdater")]

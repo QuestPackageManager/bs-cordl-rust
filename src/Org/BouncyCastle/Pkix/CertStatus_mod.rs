@@ -4,7 +4,9 @@
 pub struct CertStatus {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub status: i32,
-    pub revocationDate: *mut crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
+    pub revocationDate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+CertStatus")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

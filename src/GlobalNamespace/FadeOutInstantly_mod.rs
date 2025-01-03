@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct FadeOutInstantly {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _fadeInOut: *mut crate::GlobalNamespace::FadeInOutController,
+    pub _fadeInOut: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FadeInOutController,
+    >,
 }
 #[cfg(feature = "FadeOutInstantly")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

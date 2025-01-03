@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct PolygonPoint {
     __cordl_parent: crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-    pub _Next_k__BackingField: *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
-    pub _Previous_k__BackingField: *mut crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+    pub _Next_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+    >,
+    pub _Previous_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint,
+    >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PolygonPoint")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

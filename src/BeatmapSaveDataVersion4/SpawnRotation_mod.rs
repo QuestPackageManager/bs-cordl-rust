@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatmapSaveDataVersion4+SpawnRotation")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SpawnRotation {
     pub t: crate::BeatmapSaveDataCommon::ExecutionTime,
     pub r: f32,

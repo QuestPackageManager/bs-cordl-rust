@@ -3,14 +3,14 @@
 #[derive(Debug)]
 pub struct Gost3411_2012Digest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub IV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub N: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub Sigma: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub Ki: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub m: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub h: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub tmp: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub block: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub IV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub N: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub Sigma: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub Ki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub m: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub h: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub tmp: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub block: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub bOff: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Gost3411_2012Digest")]

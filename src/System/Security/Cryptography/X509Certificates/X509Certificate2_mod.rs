@@ -3,14 +3,26 @@
 #[derive(Debug)]
 pub struct X509Certificate2 {
     __cordl_parent: crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-    pub lazyRawData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub lazySignatureAlgorithm: *mut crate::System::Security::Cryptography::Oid,
+    pub lazyRawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub lazySignatureAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::Oid,
+    >,
     pub lazyVersion: i32,
-    pub lazySubjectName: *mut crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName,
-    pub lazyIssuerName: *mut crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName,
-    pub lazyPublicKey: *mut crate::System::Security::Cryptography::X509Certificates::PublicKey,
-    pub lazyPrivateKey: *mut crate::System::Security::Cryptography::AsymmetricAlgorithm,
-    pub lazyExtensions: *mut crate::System::Security::Cryptography::X509Certificates::X509ExtensionCollection,
+    pub lazySubjectName: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName,
+    >,
+    pub lazyIssuerName: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName,
+    >,
+    pub lazyPublicKey: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::PublicKey,
+    >,
+    pub lazyPrivateKey: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::AsymmetricAlgorithm,
+    >,
+    pub lazyExtensions: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509ExtensionCollection,
+    >,
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate2")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

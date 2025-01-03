@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct HttpContent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub buffer: *mut crate::System::Net::Http::HttpContent_FixedMemoryStream,
+    pub buffer: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::HttpContent_FixedMemoryStream,
+    >,
     pub disposed: bool,
-    pub headers: *mut crate::System::Net::Http::Headers::HttpContentHeaders,
+    pub headers: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::Headers::HttpContentHeaders,
+    >,
 }
 #[cfg(feature = "System+Net+Http+HttpContent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

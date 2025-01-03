@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CustomTypeDescriptor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _parent: *mut crate::System::ComponentModel::ICustomTypeDescriptor,
+    pub _parent: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::ICustomTypeDescriptor,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+CustomTypeDescriptor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

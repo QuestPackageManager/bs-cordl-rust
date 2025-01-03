@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct LinuxNetworkInterface {
     __cordl_parent: crate::System::Net::NetworkInformation::UnixNetworkInterface,
-    pub iface_path: *mut quest_hook::libil2cpp::Il2CppString,
-    pub iface_operstate_path: *mut quest_hook::libil2cpp::Il2CppString,
-    pub iface_flags_path: *mut quest_hook::libil2cpp::Il2CppString,
+    pub iface_path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub iface_operstate_path: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub iface_flags_path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Net+NetworkInformation+LinuxNetworkInterface")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

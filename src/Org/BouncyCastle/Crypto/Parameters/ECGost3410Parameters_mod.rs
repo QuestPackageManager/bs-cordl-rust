@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct ECGost3410Parameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::ECNamedDomainParameters,
-    pub _publicKeyParamSet: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub _digestParamSet: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub _encryptionParamSet: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    pub _publicKeyParamSet: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub _digestParamSet: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub _encryptionParamSet: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ECGost3410Parameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

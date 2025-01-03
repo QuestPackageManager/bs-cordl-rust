@@ -3,15 +3,21 @@
 #[derive(Debug)]
 pub struct ConstructionCall {
     __cordl_parent: crate::System::Runtime::Remoting::Messaging::MethodCall,
-    pub _activator: *mut crate::System::Runtime::Remoting::Activation::IActivator,
-    pub _activationAttributes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _activator: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Activation::IActivator,
     >,
-    pub _contextProperties: *mut crate::System::Collections::IList,
-    pub _activationType: *mut crate::System::Type,
-    pub _activationTypeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _activationAttributes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+    >,
+    pub _contextProperties: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub _activationType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _activationTypeName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _isContextOk: bool,
-    pub _sourceProxy: *mut crate::System::Runtime::Remoting::Proxies::RemotingProxy,
+    pub _sourceProxy: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Proxies::RemotingProxy,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+ConstructionCall")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

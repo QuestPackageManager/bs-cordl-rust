@@ -175,9 +175,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Numerics::BigNumber {
 }
 #[cfg(feature = "System+Numerics+BigNumber+BigNumberBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BigNumber_BigNumberBuffer {
-    pub digits: *mut crate::System::Text::StringBuilder,
+    pub digits: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub precision: i32,
     pub scale: i32,
     pub sign: bool,

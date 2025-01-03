@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct SM2Engine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    pub mDigest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     pub mForEncryption: bool,
-    pub mECKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECKeyParameters,
-    pub mECParams: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
+    pub mECKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ECKeyParameters,
+    >,
+    pub mECParams: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
+    >,
     pub mCurveLength: i32,
-    pub mRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub mRandom: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+SM2Engine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

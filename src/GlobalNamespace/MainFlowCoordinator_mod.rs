@@ -3,28 +3,72 @@
 #[derive(Debug)]
 pub struct MainFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub _defaultLightsPreset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
-    pub _soloFreePlayFlowCoordinator: *mut crate::GlobalNamespace::SoloFreePlayFlowCoordinator,
-    pub _partyFreePlayFlowCoordinator: *mut crate::GlobalNamespace::PartyFreePlayFlowCoordinator,
-    pub _campaignFlowCoordinator: *mut crate::GlobalNamespace::CampaignFlowCoordinator,
-    pub _settingsFlowCoordinator: *mut crate::GlobalNamespace::SettingsFlowCoordinator,
-    pub _multiplayerModeSelectionFlowCoordinator: *mut crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
-    pub _helpFlowCoordinator: *mut crate::GlobalNamespace::HelpFlowCoordinator,
-    pub _editAvatarFlowCoordinatorHelper: *mut crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper,
-    pub _simpleDialogPromptViewController: *mut crate::GlobalNamespace::SimpleDialogPromptViewController,
-    pub _mainMenuViewController: *mut crate::GlobalNamespace::MainMenuViewController,
-    pub _playerOptionsViewController: *mut crate::GlobalNamespace::PlayerOptionsViewController,
-    pub _optionsViewController: *mut crate::GlobalNamespace::OptionsViewController,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _menuLightsManager: *mut crate::GlobalNamespace::MenuLightsManager,
-    pub _fadeInOut: *mut crate::GlobalNamespace::FadeInOutController,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub _menuTransitionsHelper: *mut crate::GlobalNamespace::MenuTransitionsHelper,
-    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
-    pub _avatarSystemCollection: *mut crate::BeatSaber::AvatarCore::AvatarSystemCollection,
-    pub _additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
-    pub _menuDestinationRequest: *mut crate::GlobalNamespace::MenuDestination,
-    pub _afterDialogPromptFlowCoordinator: *mut crate::HMUI::FlowCoordinator,
+    pub _defaultLightsPreset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsPresetSO,
+    >,
+    pub _soloFreePlayFlowCoordinator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SoloFreePlayFlowCoordinator,
+    >,
+    pub _partyFreePlayFlowCoordinator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PartyFreePlayFlowCoordinator,
+    >,
+    pub _campaignFlowCoordinator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CampaignFlowCoordinator,
+    >,
+    pub _settingsFlowCoordinator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsFlowCoordinator,
+    >,
+    pub _multiplayerModeSelectionFlowCoordinator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
+    >,
+    pub _helpFlowCoordinator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HelpFlowCoordinator,
+    >,
+    pub _editAvatarFlowCoordinatorHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper,
+    >,
+    pub _simpleDialogPromptViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SimpleDialogPromptViewController,
+    >,
+    pub _mainMenuViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MainMenuViewController,
+    >,
+    pub _playerOptionsViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerOptionsViewController,
+    >,
+    pub _optionsViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OptionsViewController,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _menuLightsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuLightsManager,
+    >,
+    pub _fadeInOut: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FadeInOutController,
+    >,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub _menuTransitionsHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuTransitionsHelper,
+    >,
+    pub _analyticsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAnalyticsModel,
+    >,
+    pub _avatarSystemCollection: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::AvatarSystemCollection,
+    >,
+    pub _additionalContentModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAdditionalContentModel,
+    >,
+    pub _menuDestinationRequest: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuDestination,
+    >,
+    pub _afterDialogPromptFlowCoordinator: quest_hook::libil2cpp::Gc<
+        crate::HMUI::FlowCoordinator,
+    >,
     pub _goToMultiplayerAfterAvatarCreation: bool,
 }
 #[cfg(feature = "MainFlowCoordinator")]

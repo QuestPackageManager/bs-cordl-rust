@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct TokenizerShortBlock {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_block: *mut quest_hook::libil2cpp::Il2CppArray<i16>,
-    pub m_next: *mut crate::System::Security::Util::TokenizerShortBlock,
+    pub m_block: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
+    pub m_next: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Util::TokenizerShortBlock,
+    >,
 }
 #[cfg(feature = "System+Security+Util+TokenizerShortBlock")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

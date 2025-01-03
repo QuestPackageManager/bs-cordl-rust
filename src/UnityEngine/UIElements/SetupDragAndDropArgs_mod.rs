@@ -1,9 +1,13 @@
 #[cfg(feature = "UnityEngine+UIElements+SetupDragAndDropArgs")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SetupDragAndDropArgs {
-    pub draggedElement: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub selectedIds: *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    pub draggedElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub selectedIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<i32>,
+    >,
     pub startDragArgs: crate::UnityEngine::UIElements::StartDragArgs,
 }
 #[cfg(feature = "UnityEngine+UIElements+SetupDragAndDropArgs")]

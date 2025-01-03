@@ -1,17 +1,23 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+TextElementInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TextElementInfo {
     pub character: char,
     pub index: i32,
     pub elementType: crate::UnityEngine::TextCore::Text::TextElementType,
     pub stringLength: i32,
-    pub textElement: *mut crate::UnityEngine::TextCore::Text::TextElement,
-    pub alternativeGlyph: *mut crate::UnityEngine::TextCore::Glyph,
-    pub fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
-    pub spriteAsset: *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
+    pub textElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextElement,
+    >,
+    pub alternativeGlyph: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+    pub fontAsset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::FontAsset,
+    >,
+    pub spriteAsset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::SpriteAsset,
+    >,
     pub spriteIndex: i32,
-    pub material: *mut crate::UnityEngine::Material,
+    pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub materialReferenceIndex: i32,
     pub isUsingAlternateTypeface: bool,
     pub pointSize: f32,

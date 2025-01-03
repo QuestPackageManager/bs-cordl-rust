@@ -1,9 +1,13 @@
 #[cfg(feature = "TMPro+FontAssetCreationSettings")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FontAssetCreationSettings {
-    pub sourceFontFileName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub sourceFontFileGUID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub sourceFontFileName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub sourceFontFileGUID: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub pointSizeSamplingMode: i32,
     pub pointSize: i32,
     pub padding: i32,
@@ -11,9 +15,15 @@ pub struct FontAssetCreationSettings {
     pub atlasWidth: i32,
     pub atlasHeight: i32,
     pub characterSetSelectionMode: i32,
-    pub characterSequence: *mut quest_hook::libil2cpp::Il2CppString,
-    pub referencedFontAssetGUID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub referencedTextAssetGUID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub characterSequence: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub referencedFontAssetGUID: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub referencedTextAssetGUID: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub fontStyle: i32,
     pub fontStyleModifier: f32,
     pub renderMode: i32,

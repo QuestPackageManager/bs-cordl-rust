@@ -5,16 +5,18 @@ pub struct Delegate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub method_ptr: crate::System::IntPtr,
     pub invoke_impl: crate::System::IntPtr,
-    pub m_target: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub method: crate::System::IntPtr,
     pub delegate_trampoline: crate::System::IntPtr,
     pub extra_arg: crate::System::IntPtr,
     pub method_code: crate::System::IntPtr,
     pub interp_method: crate::System::IntPtr,
     pub interp_invoke_impl: crate::System::IntPtr,
-    pub method_info: *mut crate::System::Reflection::MethodInfo,
-    pub original_method_info: *mut crate::System::Reflection::MethodInfo,
-    pub data: *mut crate::System::DelegateData,
+    pub method_info: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    pub original_method_info: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MethodInfo,
+    >,
+    pub data: quest_hook::libil2cpp::Gc<crate::System::DelegateData>,
     pub method_is_virtual: bool,
 }
 #[cfg(feature = "System+Delegate")]

@@ -6,8 +6,12 @@ pub struct KeyedCollection_2<
     TItem: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::System::Collections::ObjectModel::Collection_1<TItem>,
-    pub comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
-    pub dict: *mut crate::System::Collections::Generic::Dictionary_2<TKey, TItem>,
+    pub comparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+    >,
+    pub dict: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<TKey, TItem>,
+    >,
     pub keyCount: i32,
     pub threshold: i32,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,

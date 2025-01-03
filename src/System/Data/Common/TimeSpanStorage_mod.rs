@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct TimeSpanStorage {
     __cordl_parent: crate::System::Data::Common::DataStorage,
-    pub _values: *mut quest_hook::libil2cpp::Il2CppArray<crate::System::TimeSpan>,
+    pub _values: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::TimeSpan>,
+    >,
 }
 #[cfg(feature = "System+Data+Common+TimeSpanStorage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

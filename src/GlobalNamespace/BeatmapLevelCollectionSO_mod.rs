@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BeatmapLevelCollectionSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _beatmapLevels: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::BeatmapLevelSO,
+    pub _beatmapLevels: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::BeatmapLevelSO,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapLevelCollectionSO")]

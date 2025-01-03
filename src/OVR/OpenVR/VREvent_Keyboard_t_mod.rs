@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_Keyboard_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VREvent_Keyboard_t {
     pub cNewInput0: u8,
     pub cNewInput1: u8,

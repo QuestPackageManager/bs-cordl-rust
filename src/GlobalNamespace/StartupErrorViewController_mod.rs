@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct StartupErrorViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _text: *mut crate::TMPro::TMP_Text,
-    pub _quitButton: *mut crate::UnityEngine::UI::Button,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+    pub _quitButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
 }
 #[cfg(feature = "StartupErrorViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

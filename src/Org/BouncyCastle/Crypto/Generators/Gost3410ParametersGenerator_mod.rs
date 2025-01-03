@@ -5,7 +5,9 @@ pub struct Gost3410ParametersGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_size: i32,
     pub typeproc: i32,
-    pub init_random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub init_random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Gost3410ParametersGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

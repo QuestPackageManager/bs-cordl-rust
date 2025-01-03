@@ -3,33 +3,57 @@
 #[derive(Debug)]
 pub struct PlayerInput {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_Actions: *mut crate::UnityEngine::InputSystem::InputActionAsset,
+    pub m_Actions: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionAsset,
+    >,
     pub m_NotificationBehavior: crate::UnityEngine::InputSystem::PlayerNotifications,
-    pub m_UIInputModule: *mut crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule,
-    pub m_DeviceLostEvent: *mut crate::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent,
-    pub m_DeviceRegainedEvent: *mut crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent,
-    pub m_ControlsChangedEvent: *mut crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent,
-    pub m_ActionEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::PlayerInput_ActionEvent,
+    pub m_UIInputModule: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule,
+    >,
+    pub m_DeviceLostEvent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent,
+    >,
+    pub m_DeviceRegainedEvent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent,
+    >,
+    pub m_ControlsChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent,
+    >,
+    pub m_ActionEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::PlayerInput_ActionEvent,
+        >,
     >,
     pub m_NeverAutoSwitchControlSchemes: bool,
-    pub m_DefaultControlScheme: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_DefaultActionMap: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_DefaultControlScheme: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_DefaultActionMap: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub m_SplitScreenIndex: i32,
-    pub m_Camera: *mut crate::UnityEngine::Camera,
-    pub m_InputValueObject: *mut crate::UnityEngine::InputSystem::InputValue,
-    pub m_CurrentActionMap: *mut crate::UnityEngine::InputSystem::InputActionMap,
+    pub m_Camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    pub m_InputValueObject: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputValue,
+    >,
+    pub m_CurrentActionMap: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionMap,
+    >,
     pub m_PlayerIndex: i32,
     pub m_InputActive: bool,
     pub m_Enabled: bool,
     pub m_ActionsInitialized: bool,
-    pub m_ActionMessageNames: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ActionMessageNames: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub m_InputUser: crate::UnityEngine::InputSystem::Users::InputUser,
-    pub m_ActionTriggeredDelegate: *mut crate::System::Action_1<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    pub m_ActionTriggeredDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
     pub m_DeviceLostCallbacks: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         *mut crate::System::Action_1<*mut crate::UnityEngine::InputSystem::PlayerInput>,
@@ -45,19 +69,25 @@ pub struct PlayerInput {
             crate::UnityEngine::InputSystem::InputAction_CallbackContext,
         >,
     >,
-    pub m_UnpairedDeviceUsedDelegate: *mut crate::System::Action_2<
-        *mut crate::UnityEngine::InputSystem::InputControl,
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    pub m_UnpairedDeviceUsedDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::UnityEngine::InputSystem::InputControl,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        >,
     >,
-    pub m_PreFilterUnpairedDeviceUsedDelegate: *mut crate::System::Func_3<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        bool,
+    pub m_PreFilterUnpairedDeviceUsedDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            bool,
+        >,
     >,
     pub m_OnUnpairedDeviceUsedHooked: bool,
-    pub m_DeviceChangeDelegate: *mut crate::System::Action_2<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
-        crate::UnityEngine::InputSystem::InputDeviceChange,
+    pub m_DeviceChangeDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+            crate::UnityEngine::InputSystem::InputDeviceChange,
+        >,
     >,
     pub m_OnDeviceChangeHooked: bool,
 }
@@ -1035,8 +1065,8 @@ pub struct PlayerInput_ActionEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     >,
-    pub m_ActionId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_ActionName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ActionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_ActionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

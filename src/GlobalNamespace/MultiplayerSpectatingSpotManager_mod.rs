@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct MultiplayerSpectatingSpotManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _spectatingSpots: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+    pub _spectatingSpots: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+        >,
     >,
-    pub _spotIndexBySpot: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
-        i32,
+    pub _spotIndexBySpot: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+            i32,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerSpectatingSpotManager")]

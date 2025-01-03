@@ -1,8 +1,10 @@
 #[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct JEnumerable_1<T: quest_hook::libil2cpp::Type> {
-    pub _enumerable: *mut crate::System::Collections::Generic::IEnumerable_1<T>,
+    pub _enumerable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]

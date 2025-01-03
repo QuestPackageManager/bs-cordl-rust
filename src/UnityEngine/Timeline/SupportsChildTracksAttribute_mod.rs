@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SupportsChildTracksAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub childType: *mut crate::System::Type,
+    pub childType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub levels: i32,
 }
 #[cfg(feature = "UnityEngine+Timeline+SupportsChildTracksAttribute")]

@@ -3,13 +3,21 @@
 #[derive(Debug)]
 pub struct QuickPlaySongPacksDropdown {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _simpleTextDropdown: *mut crate::HMUI::SimpleTextDropdown,
-    pub _songPackMasksModel: *mut crate::GlobalNamespace::SongPackMasksModel,
-    pub didSelectCellWithIdxEvent: *mut crate::System::Action_1<i32>,
+    pub _simpleTextDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
+    pub _songPackMasksModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPackMasksModel,
+    >,
+    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<i32>,
+    >,
     pub _initialized: bool,
-    pub _quickPlaySongPacksOverride: *mut crate::GlobalNamespace::QuickPlaySetupData_QuickPlaySongPacksOverride,
-    pub _data: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem,
+    pub _quickPlaySongPacksOverride: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::QuickPlaySetupData_QuickPlaySongPacksOverride,
+    >,
+    pub _data: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem,
+        >,
     >,
 }
 #[cfg(feature = "QuickPlaySongPacksDropdown")]
@@ -207,8 +215,8 @@ for crate::GlobalNamespace::QuickPlaySongPacksDropdown {
 #[derive(Debug)]
 pub struct QuickPlaySongPacksDropdown_SongPackMaskItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub serializedName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub localizedName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub serializedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub localizedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub order: i32,
     pub songPackMask: crate::GlobalNamespace::SongPackMask,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+HmdQuaternion_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HmdQuaternion_t {
     pub w: f64,
     pub x: f64,

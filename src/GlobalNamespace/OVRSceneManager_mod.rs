@@ -3,28 +3,38 @@
 #[derive(Debug)]
 pub struct OVRSceneManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub PlanePrefab: *mut crate::GlobalNamespace::OVRSceneAnchor,
-    pub VolumePrefab: *mut crate::GlobalNamespace::OVRSceneAnchor,
-    pub PrefabOverrides: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::OVRScenePrefabOverride,
+    pub PlanePrefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
+    pub VolumePrefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
+    pub PrefabOverrides: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::OVRScenePrefabOverride,
+        >,
     >,
     pub VerboseLogging: bool,
     pub MaxSceneAnchorUpdatesPerFrame: i32,
-    pub _initialAnchorParent: *mut crate::UnityEngine::Transform,
-    pub SceneModelLoadedSuccessfully: *mut crate::System::Action,
-    pub NoSceneModelToLoad: *mut crate::System::Action,
-    pub SceneCaptureReturnedWithoutError: *mut crate::System::Action,
-    pub UnexpectedErrorWithSceneCapture: *mut crate::System::Action,
-    pub NewSceneModelAvailable: *mut crate::System::Action,
-    pub RoomLayout: *mut crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation,
+    pub _initialAnchorParent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub SceneModelLoadedSuccessfully: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub NoSceneModelToLoad: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub SceneCaptureReturnedWithoutError: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub UnexpectedErrorWithSceneCapture: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub NewSceneModelAvailable: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub RoomLayout: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation,
+    >,
     pub _sceneCaptureRequestId: u64,
-    pub _cameraRig: *mut crate::GlobalNamespace::OVRCameraRig,
+    pub _cameraRig: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCameraRig>,
     pub _sceneAnchorUpdateIndex: i32,
     pub _roomCounter: i32,
-    pub _onAnchorsFetchCompleted: *mut crate::System::Action_2<
-        bool,
-        *mut crate::System::Collections::Generic::List_1<
-            crate::GlobalNamespace::OVRAnchor,
+    pub _onAnchorsFetchCompleted: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            bool,
+            *mut crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::OVRAnchor,
+            >,
         >,
     >,
     pub _hasLoadedScene: bool,
@@ -566,7 +576,7 @@ for crate::GlobalNamespace::OVRSceneManager_Development {
 }
 #[cfg(feature = "OVRSceneManager+LogForwarder")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRSceneManager_LogForwarder {}
 #[cfg(feature = "OVRSceneManager+LogForwarder")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -631,10 +641,12 @@ impl crate::GlobalNamespace::OVRSceneManager_LogForwarder {
 #[derive(Debug)]
 pub struct OVRSceneManager_RoomLayoutInformation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Floor: *mut crate::GlobalNamespace::OVRScenePlane,
-    pub Ceiling: *mut crate::GlobalNamespace::OVRScenePlane,
-    pub Walls: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::OVRScenePlane,
+    pub Floor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
+    pub Ceiling: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
+    pub Walls: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::OVRScenePlane,
+        >,
     >,
 }
 #[cfg(feature = "OVRSceneManager+RoomLayoutInformation")]

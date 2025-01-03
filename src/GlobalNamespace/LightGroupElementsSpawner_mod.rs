@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct LightGroupElementsSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightPrefab: *mut crate::UnityEngine::GameObject,
+    pub _lightPrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _useAlternatePrefab: bool,
-    pub _alternateLightPrefab: *mut crate::UnityEngine::GameObject,
+    pub _alternateLightPrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
 #[cfg(feature = "LightGroupElementsSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

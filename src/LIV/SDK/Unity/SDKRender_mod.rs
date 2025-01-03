@@ -3,31 +3,61 @@
 #[derive(Debug)]
 pub struct SDKRender {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _clipPlaneCommandBuffer: *mut crate::UnityEngine::Rendering::CommandBuffer,
-    pub _combineAlphaCommandBuffer: *mut crate::UnityEngine::Rendering::CommandBuffer,
-    pub _captureTextureCommandBuffer: *mut crate::UnityEngine::Rendering::CommandBuffer,
-    pub _applyTextureCommandBuffer: *mut crate::UnityEngine::Rendering::CommandBuffer,
-    pub _optimizedRenderingCommandBuffer: *mut crate::UnityEngine::Rendering::CommandBuffer,
+    pub _clipPlaneCommandBuffer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Rendering::CommandBuffer,
+    >,
+    pub _combineAlphaCommandBuffer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Rendering::CommandBuffer,
+    >,
+    pub _captureTextureCommandBuffer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Rendering::CommandBuffer,
+    >,
+    pub _applyTextureCommandBuffer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Rendering::CommandBuffer,
+    >,
+    pub _optimizedRenderingCommandBuffer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Rendering::CommandBuffer,
+    >,
     pub _clipPlaneCameraEvent: crate::UnityEngine::Rendering::CameraEvent,
     pub _optimizedRenderingCameraEvent: crate::UnityEngine::Rendering::CameraEvent,
-    pub _clipPlaneMesh: *mut crate::UnityEngine::Mesh,
-    pub _clipPlaneSimpleMaterial: *mut crate::UnityEngine::Material,
-    pub _clipPlaneSimpleDebugMaterial: *mut crate::UnityEngine::Material,
-    pub _clipPlaneComplexMaterial: *mut crate::UnityEngine::Material,
-    pub _clipPlaneComplexDebugMaterial: *mut crate::UnityEngine::Material,
-    pub _writeOpaqueToAlphaMaterial: *mut crate::UnityEngine::Material,
-    pub _combineAlphaMaterial: *mut crate::UnityEngine::Material,
-    pub _writeMaterial: *mut crate::UnityEngine::Material,
-    pub _forceForwardRenderingMaterial: *mut crate::UnityEngine::Material,
-    pub _backgroundRenderTexture: *mut crate::UnityEngine::RenderTexture,
-    pub _foregroundRenderTexture: *mut crate::UnityEngine::RenderTexture,
-    pub _optimizedRenderTexture: *mut crate::UnityEngine::RenderTexture,
-    pub _complexClipPlaneRenderTexture: *mut crate::UnityEngine::RenderTexture,
-    pub _liv: *mut crate::LIV::SDK::Unity::LIV,
+    pub _clipPlaneMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub _clipPlaneSimpleMaterial: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Material,
+    >,
+    pub _clipPlaneSimpleDebugMaterial: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Material,
+    >,
+    pub _clipPlaneComplexMaterial: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Material,
+    >,
+    pub _clipPlaneComplexDebugMaterial: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Material,
+    >,
+    pub _writeOpaqueToAlphaMaterial: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Material,
+    >,
+    pub _combineAlphaMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _writeMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _forceForwardRenderingMaterial: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Material,
+    >,
+    pub _backgroundRenderTexture: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RenderTexture,
+    >,
+    pub _foregroundRenderTexture: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RenderTexture,
+    >,
+    pub _optimizedRenderTexture: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RenderTexture,
+    >,
+    pub _complexClipPlaneRenderTexture: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RenderTexture,
+    >,
+    pub _liv: quest_hook::libil2cpp::Gc<crate::LIV::SDK::Unity::LIV>,
     pub _outputFrame: crate::LIV::SDK::Unity::SDKOutputFrame,
     pub _inputFrame: crate::LIV::SDK::Unity::SDKInputFrame,
     pub _resolution: crate::LIV::SDK::Unity::SDKResolution,
-    pub _cameraInstance: *mut crate::UnityEngine::Camera,
+    pub _cameraInstance: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub _requestedPose: crate::LIV::SDK::Unity::SDKPose,
     pub _requestedPoseFrameIndex: i32,
 }

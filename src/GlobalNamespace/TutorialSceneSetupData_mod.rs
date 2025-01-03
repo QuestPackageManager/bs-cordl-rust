@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct TutorialSceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
-    pub colorScheme: *mut crate::GlobalNamespace::ColorScheme,
-    pub playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+    pub colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+    pub playerSpecificSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSpecificSettings,
+    >,
 }
 #[cfg(feature = "TutorialSceneSetupData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

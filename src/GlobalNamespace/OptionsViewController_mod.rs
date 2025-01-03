@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct OptionsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _editAvatarButton: *mut crate::UnityEngine::UI::Button,
-    pub _playerOptionsButton: *mut crate::UnityEngine::UI::Button,
-    pub _settingsButton: *mut crate::UnityEngine::UI::Button,
-    pub didFinishEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::OptionsViewController_OptionsButton,
+    pub _editAvatarButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _playerOptionsButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _settingsButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::GlobalNamespace::OptionsViewController_OptionsButton,
+        >,
     >,
 }
 #[cfg(feature = "OptionsViewController")]

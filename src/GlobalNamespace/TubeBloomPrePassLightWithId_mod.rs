@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct TubeBloomPrePassLightWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    pub _tubeBloomPrePassLight: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+    pub _tubeBloomPrePassLight: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TubeBloomPrePassLight,
+    >,
     pub _setOnlyOnce: bool,
     pub _setColorOnly: bool,
 }

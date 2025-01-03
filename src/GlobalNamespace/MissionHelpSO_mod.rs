@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MissionHelpSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _missionHelpId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _missionHelpId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "MissionHelpSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

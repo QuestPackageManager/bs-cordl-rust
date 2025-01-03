@@ -1,15 +1,31 @@
 #[cfg(feature = "OVR+OpenVR+IVRChaperone")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IVRChaperone {
-    pub GetCalibrationState: *mut crate::OVR::OpenVR::IVRChaperone__GetCalibrationState,
-    pub GetPlayAreaSize: *mut crate::OVR::OpenVR::IVRChaperone__GetPlayAreaSize,
-    pub GetPlayAreaRect: *mut crate::OVR::OpenVR::IVRChaperone__GetPlayAreaRect,
-    pub ReloadInfo: *mut crate::OVR::OpenVR::IVRChaperone__ReloadInfo,
-    pub SetSceneColor: *mut crate::OVR::OpenVR::IVRChaperone__SetSceneColor,
-    pub GetBoundsColor: *mut crate::OVR::OpenVR::IVRChaperone__GetBoundsColor,
-    pub AreBoundsVisible: *mut crate::OVR::OpenVR::IVRChaperone__AreBoundsVisible,
-    pub ForceBoundsVisible: *mut crate::OVR::OpenVR::IVRChaperone__ForceBoundsVisible,
+    pub GetCalibrationState: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperone__GetCalibrationState,
+    >,
+    pub GetPlayAreaSize: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperone__GetPlayAreaSize,
+    >,
+    pub GetPlayAreaRect: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperone__GetPlayAreaRect,
+    >,
+    pub ReloadInfo: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperone__ReloadInfo,
+    >,
+    pub SetSceneColor: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperone__SetSceneColor,
+    >,
+    pub GetBoundsColor: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperone__GetBoundsColor,
+    >,
+    pub AreBoundsVisible: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperone__AreBoundsVisible,
+    >,
+    pub ForceBoundsVisible: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRChaperone__ForceBoundsVisible,
+    >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

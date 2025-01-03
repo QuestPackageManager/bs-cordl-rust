@@ -5,7 +5,9 @@ pub struct Compute_DT_EventArgs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub EventType: crate::TMPro::Compute_DistanceTransform_EventTypes,
     pub ProgressPercentage: f32,
-    pub Colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+    pub Colors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+    >,
 }
 #[cfg(feature = "TMPro+Compute_DT_EventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

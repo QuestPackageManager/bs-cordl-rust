@@ -6,7 +6,9 @@ pub struct InternalDecoderBestFitFallbackBuffer {
     pub _cBestFit: char,
     pub _iCount: i32,
     pub _iSize: i32,
-    pub _oFallback: *mut crate::System::Text::InternalDecoderBestFitFallback,
+    pub _oFallback: quest_hook::libil2cpp::Gc<
+        crate::System::Text::InternalDecoderBestFitFallback,
+    >,
 }
 #[cfg(feature = "System+Text+InternalDecoderBestFitFallbackBuffer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

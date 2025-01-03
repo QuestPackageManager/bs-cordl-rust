@@ -3,28 +3,42 @@
 #[derive(Debug)]
 pub struct LightSwitchEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightColor0: *mut crate::GlobalNamespace::ColorSO,
-    pub _lightColor1: *mut crate::GlobalNamespace::ColorSO,
-    pub _highlightColor0: *mut crate::GlobalNamespace::ColorSO,
-    pub _highlightColor1: *mut crate::GlobalNamespace::ColorSO,
-    pub _lightColor0Boost: *mut crate::GlobalNamespace::ColorSO,
-    pub _lightColor1Boost: *mut crate::GlobalNamespace::ColorSO,
-    pub _highlightColor0Boost: *mut crate::GlobalNamespace::ColorSO,
-    pub _highlightColor1Boost: *mut crate::GlobalNamespace::ColorSO,
+    pub _lightColor0: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _lightColor1: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _highlightColor0: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _highlightColor1: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _lightColor0Boost: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _lightColor1Boost: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _highlightColor0Boost: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSO,
+    >,
+    pub _highlightColor1Boost: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSO,
+    >,
     pub _offColorIntensity: f32,
     pub _lightOnStart: bool,
     pub _lightsID: i32,
     pub _event: crate::GlobalNamespace::BasicBeatmapEventType,
-    pub _lightManager: *mut crate::GlobalNamespace::LightWithIdManager,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
-    pub _colorTween: *mut crate::Tweening::ColorTween,
+    pub _lightManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightWithIdManager,
+    >,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::SongTimeTweeningManager,
+    >,
+    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+    pub _colorTween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
     pub _alternativeFromColor: crate::UnityEngine::Color,
     pub _alternativeToColor: crate::UnityEngine::Color,
     pub _usingBoostColors: bool,
-    pub _colorChangeBeatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    pub _colorBoostBeatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _colorChangeBeatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
+    pub _colorBoostBeatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "LightSwitchEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

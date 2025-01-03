@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+DeltaStateEvent")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DeltaStateEvent {
     padding: [u8; 29usize],
 }
@@ -125,7 +125,7 @@ for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent {
     feature = "UnityEngine+InputSystem+LowLevel+DeltaStateEvent+_stateData_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DeltaStateEvent__stateData_e__FixedBuffer {
     pub FixedElementField: u8,
 }

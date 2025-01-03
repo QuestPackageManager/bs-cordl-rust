@@ -4,12 +4,12 @@
 pub struct HEU_AttributeData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _attributeInfo: crate::HoudiniEngineUnity::HAPI_AttributeInfo,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _attributeType: crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType,
-    pub _intValues: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _floatValues: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _stringValues: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _intValues: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub _floatValues: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub _stringValues: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _attributeState: crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState,
 }

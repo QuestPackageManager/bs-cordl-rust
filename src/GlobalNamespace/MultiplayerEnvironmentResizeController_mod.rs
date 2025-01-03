@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct MultiplayerEnvironmentResizeController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _platformEnd: *mut crate::UnityEngine::Transform,
-    pub _resizeData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData,
+    pub _platformEnd: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _resizeData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData,
+        >,
     >,
-    pub _centerResizeController: *mut crate::GlobalNamespace::MultiplayerCenterResizeController,
-    pub _beatmapObjectSpawnCenter: *mut crate::GlobalNamespace::BeatmapObjectSpawnCenter,
-    pub resizingDidFinishEvent: *mut crate::System::Action,
+    pub _centerResizeController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerCenterResizeController,
+    >,
+    pub _beatmapObjectSpawnCenter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectSpawnCenter,
+    >,
+    pub resizingDidFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _isResizingFinished: bool,
     pub _edgeDistanceFromCenterFound: bool,
     pub _spawnCenterDistanceFound: bool,
@@ -169,11 +175,13 @@ pub struct MultiplayerEnvironmentResizeController_ResizeData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _resizeType: crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType,
     pub _offset: f32,
-    pub _lights: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+    pub _lights: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+        >,
     >,
-    pub _otherTransforms: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Transform,
+    pub _otherTransforms: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
     >,
 }
 #[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeData")]

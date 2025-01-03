@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct HoverHintController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _hoverHintPanelPrefab: *mut crate::HMUI::HoverHintPanel,
+    pub _hoverHintPanelPrefab: quest_hook::libil2cpp::Gc<crate::HMUI::HoverHintPanel>,
     pub _isHiding: bool,
-    pub _hoverHintPanel: *mut crate::HMUI::HoverHintPanel,
+    pub _hoverHintPanel: quest_hook::libil2cpp::Gc<crate::HMUI::HoverHintPanel>,
 }
 #[cfg(feature = "HMUI+HoverHintController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

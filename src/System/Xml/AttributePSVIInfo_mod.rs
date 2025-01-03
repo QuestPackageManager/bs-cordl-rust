@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct AttributePSVIInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub localName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
-    pub typedAttributeValue: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub attributeSchemaInfo: *mut crate::System::Xml::Schema::XmlSchemaInfo,
+    pub localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub namespaceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub typedAttributeValue: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub attributeSchemaInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaInfo,
+    >,
 }
 #[cfg(feature = "System+Xml+AttributePSVIInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

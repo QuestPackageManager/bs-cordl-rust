@@ -3,17 +3,25 @@
 #[derive(Debug)]
 pub struct PacketEncryptionLayer {
     __cordl_parent: crate::LiteNetLib::Layers::PacketLayerBase,
-    pub statistics: *mut crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics,
-    pub _taskUtility: *mut crate::BGNet::Core::ITaskUtility,
-    pub _encryptionStates: *mut crate::GlobalNamespace::ExpiringDictionary_2<
-        *mut crate::System::Net::IPEndPoint,
-        *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+    pub statistics: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics,
     >,
-    pub _pendingEncryptionStates: *mut crate::GlobalNamespace::ExpiringDictionary_2<
-        *mut crate::System::Net::IPAddress,
-        *mut crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList,
+    pub _taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
+    pub _encryptionStates: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ExpiringDictionary_2<
+            *mut crate::System::Net::IPEndPoint,
+            *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+        >,
     >,
-    pub _unencryptedTrafficFilter: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _pendingEncryptionStates: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ExpiringDictionary_2<
+            *mut crate::System::Net::IPAddress,
+            *mut crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList,
+        >,
+    >,
+    pub _unencryptedTrafficFilter: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub _filterUnencryptedTraffic_k__BackingField: bool,
     pub _enableStatistics_k__BackingField: bool,
 }
@@ -617,9 +625,11 @@ for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
 #[derive(Debug)]
 pub struct PacketEncryptionLayer_PendingEncryptionStateList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _pendingStatesByPort: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+    pub _pendingStatesByPort: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+        >,
     >,
 }
 #[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]

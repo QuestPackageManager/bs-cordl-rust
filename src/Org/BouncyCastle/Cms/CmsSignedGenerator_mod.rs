@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct CmsSignedGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _certs: *mut crate::System::Collections::IList,
-    pub _crls: *mut crate::System::Collections::IList,
-    pub _signers: *mut crate::System::Collections::IList,
-    pub _digests: *mut crate::System::Collections::IDictionary,
+    pub _certs: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub _crls: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub _signers: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub _digests: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     pub _useDerForCerts: bool,
     pub _useDerForCrls: bool,
-    pub _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub _cordl_rand: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -4,8 +4,8 @@
 pub struct Operator {
     __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
     pub _opType: crate::MS::Internal::Xml::XPath::Operator_Op,
-    pub _opnd1: *mut crate::MS::Internal::Xml::XPath::AstNode,
-    pub _opnd2: *mut crate::MS::Internal::Xml::XPath::AstNode,
+    pub _opnd1: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+    pub _opnd2: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Operator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

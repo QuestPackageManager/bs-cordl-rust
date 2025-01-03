@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatmapEditorStartTestLevelData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BeatmapEditorStartTestLevelData {
     pub fpfc: crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData,
     pub overdrawData: crate::GlobalNamespace::BeatmapEditorStartTestLevelData_OverdrawData,
@@ -30,7 +30,7 @@ impl crate::GlobalNamespace::BeatmapEditorStartTestLevelData {
 }
 #[cfg(feature = "BeatmapEditorStartTestLevelData+FpfcData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BeatmapEditorStartTestLevelData_FpfcData {
     pub enabled: bool,
 }
@@ -55,10 +55,10 @@ for crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData {
 impl crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData {}
 #[cfg(feature = "BeatmapEditorStartTestLevelData+OverdrawData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BeatmapEditorStartTestLevelData_OverdrawData {
     pub enabled: bool,
-    pub computeBuffer: *mut crate::UnityEngine::ComputeBuffer,
+    pub computeBuffer: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
     pub audioClipFrequency: i32,
     pub samplesPerOverdrawBucket: f32,
 }

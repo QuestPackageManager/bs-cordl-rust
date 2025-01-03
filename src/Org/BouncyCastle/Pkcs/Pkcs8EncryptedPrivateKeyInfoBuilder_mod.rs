@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct Pkcs8EncryptedPrivateKeyInfoBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub privateKeyInfo: *mut crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
+    pub privateKeyInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs8EncryptedPrivateKeyInfoBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

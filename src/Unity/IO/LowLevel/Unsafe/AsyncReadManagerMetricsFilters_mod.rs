@@ -3,18 +3,24 @@
 #[derive(Debug)]
 pub struct AsyncReadManagerMetricsFilters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub TypeIDs: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    pub States: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::Unity::IO::LowLevel::Unsafe::ProcessingState,
+    pub TypeIDs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
+    pub States: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::Unity::IO::LowLevel::Unsafe::ProcessingState,
+        >,
     >,
-    pub ReadTypes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::Unity::IO::LowLevel::Unsafe::FileReadType,
+    pub ReadTypes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::Unity::IO::LowLevel::Unsafe::FileReadType,
+        >,
     >,
-    pub PriorityLevels: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::Unity::IO::LowLevel::Unsafe::Priority,
+    pub PriorityLevels: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::Unity::IO::LowLevel::Unsafe::Priority>,
     >,
-    pub Subsystems: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem,
+    pub Subsystems: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem,
+        >,
     >,
 }
 #[cfg(feature = "Unity+IO+LowLevel+Unsafe+AsyncReadManagerMetricsFilters")]

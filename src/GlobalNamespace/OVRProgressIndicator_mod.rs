@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct OVRProgressIndicator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub progressImage: *mut crate::UnityEngine::MeshRenderer,
+    pub progressImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
     pub currentProgress: f32,
 }
 #[cfg(feature = "OVRProgressIndicator")]

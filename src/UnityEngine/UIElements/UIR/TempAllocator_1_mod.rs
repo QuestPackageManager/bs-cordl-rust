@@ -6,8 +6,10 @@ pub struct TempAllocator_1<T: quest_hook::libil2cpp::Type> {
     pub m_ExcessMinCapacity: i32,
     pub m_ExcessMaxCapacity: i32,
     pub m_Pool: crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T>,
-    pub m_Excess: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T>,
+    pub m_Excess: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T>,
+        >,
     >,
     pub m_NextExcessSize: i32,
     pub _disposed_k__BackingField: bool,
@@ -194,7 +196,7 @@ for crate::UnityEngine::UIElements::UIR::TempAllocator_1<T> {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1+Page")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TempAllocator_1_Page<T: quest_hook::libil2cpp::Type> {
     pub array: crate::Unity::Collections::NativeArray_1<T>,
     pub used: i32,

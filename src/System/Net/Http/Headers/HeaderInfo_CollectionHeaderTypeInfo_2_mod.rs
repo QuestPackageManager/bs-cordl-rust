@@ -7,8 +7,10 @@ pub struct HeaderInfo_CollectionHeaderTypeInfo_2<
 > {
     __cordl_parent: crate::GlobalNamespace::HeaderInfo_HeaderTypeInfo_2<T, U>,
     pub minimalCount: i32,
-    pub separator: *mut quest_hook::libil2cpp::Il2CppString,
-    pub parser: *mut crate::System::Net::Http::Headers::TryParseListDelegate_1<T>,
+    pub separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub parser: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::Headers::TryParseListDelegate_1<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
     __cordl_phantom_U: std::marker::PhantomData<U>,
 }

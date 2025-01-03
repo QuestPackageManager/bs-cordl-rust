@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct EndoPreCompInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_endomorphism: *mut crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
-    pub m_mappedPoint: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    pub m_endomorphism: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
+    >,
+    pub m_mappedPoint: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::ECPoint,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoPreCompInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

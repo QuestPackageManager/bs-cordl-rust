@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct BlueNoiseDitheringUpdater {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _blueNoiseDithering: *mut crate::GlobalNamespace::BlueNoiseDithering,
-    pub _randomValueToShader: *mut crate::GlobalNamespace::RandomValueToShader,
+    pub _blueNoiseDithering: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BlueNoiseDithering,
+    >,
+    pub _randomValueToShader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RandomValueToShader,
+    >,
 }
 #[cfg(feature = "BlueNoiseDitheringUpdater")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

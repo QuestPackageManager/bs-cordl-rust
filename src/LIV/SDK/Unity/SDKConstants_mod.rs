@@ -1,6 +1,6 @@
 #[cfg(feature = "LIV+SDK+Unity+SDKConstants")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SDKConstants {}
 #[cfg(feature = "LIV+SDK+Unity+SDKConstants")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

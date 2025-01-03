@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct SmoothCameraController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _smoothCamera: *mut crate::GlobalNamespace::SmoothCamera,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _smoothCamera: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SmoothCamera>,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
 }
 #[cfg(feature = "SmoothCameraController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+CopyClosingMeshJobData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CopyClosingMeshJobData {
     pub vertSrc: crate::System::IntPtr,
     pub vertDst: crate::System::IntPtr,

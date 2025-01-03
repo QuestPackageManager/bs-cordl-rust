@@ -113,16 +113,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TimeSpa
 }
 #[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TimeSpanFormat_FormatLiterals {
-    pub AppCompatLiteral: *mut quest_hook::libil2cpp::Il2CppString,
+    pub AppCompatLiteral: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub dd: i32,
     pub hh: i32,
     pub mm: i32,
     pub ss: i32,
     pub ff: i32,
-    pub _literals: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _literals: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]

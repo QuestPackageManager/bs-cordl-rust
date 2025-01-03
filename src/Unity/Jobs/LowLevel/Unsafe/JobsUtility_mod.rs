@@ -165,7 +165,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
 }
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct JobsUtility_JobScheduleParameters {
     pub Dependency: crate::Unity::Jobs::JobHandle,
     pub ScheduleMode: i32,

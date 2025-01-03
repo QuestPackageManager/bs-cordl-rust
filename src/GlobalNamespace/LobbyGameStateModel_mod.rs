@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct LobbyGameStateModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub gameStateDidChangeEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::MultiplayerGameState,
+    pub gameStateDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::MultiplayerGameState>,
     >,
-    pub gameStateDidChangeAlwaysSentEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::MultiplayerGameState,
+    pub gameStateDidChangeAlwaysSentEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::MultiplayerGameState>,
     >,
     pub _gameState: crate::GlobalNamespace::MultiplayerGameState,
 }

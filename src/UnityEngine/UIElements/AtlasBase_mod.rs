@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AtlasBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub textureRegistry: *mut crate::UnityEngine::UIElements::TextureRegistry,
+    pub textureRegistry: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::TextureRegistry,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+AtlasBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

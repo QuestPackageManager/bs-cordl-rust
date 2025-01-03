@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ExclusiveReference {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _ref: *mut crate::System::Text::RegularExpressions::RegexRunner,
-    pub _obj: *mut crate::System::Text::RegularExpressions::RegexRunner,
+    pub _ref: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::RegexRunner,
+    >,
+    pub _obj: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::RegexRunner,
+    >,
     pub _locked: i32,
 }
 #[cfg(feature = "System+Text+RegularExpressions+ExclusiveReference")]

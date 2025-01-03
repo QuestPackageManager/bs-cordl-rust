@@ -1,9 +1,13 @@
 #[cfg(feature = "OVR+OpenVR+IVRNotifications")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IVRNotifications {
-    pub CreateNotification: *mut crate::OVR::OpenVR::IVRNotifications__CreateNotification,
-    pub RemoveNotification: *mut crate::OVR::OpenVR::IVRNotifications__RemoveNotification,
+    pub CreateNotification: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRNotifications__CreateNotification,
+    >,
+    pub RemoveNotification: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRNotifications__RemoveNotification,
+    >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRNotifications")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

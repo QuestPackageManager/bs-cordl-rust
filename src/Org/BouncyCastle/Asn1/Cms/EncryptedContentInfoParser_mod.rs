@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct EncryptedContentInfoParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _contentType: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub _contentEncryptionAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub _encryptedContent: *mut crate::Org::BouncyCastle::Asn1::Asn1TaggedObjectParser,
+    pub _contentType: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub _contentEncryptionAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub _encryptedContent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1TaggedObjectParser,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+EncryptedContentInfoParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

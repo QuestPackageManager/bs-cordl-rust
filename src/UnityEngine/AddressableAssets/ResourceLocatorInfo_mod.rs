@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct ResourceLocatorInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Locator_k__BackingField: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
-    pub _LocalHash_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _CatalogLocation_k__BackingField: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    pub _Locator_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+    >,
+    pub _LocalHash_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _CatalogLocation_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    >,
     pub _ContentUpdateAvailable_k__BackingField: bool,
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocatorInfo")]

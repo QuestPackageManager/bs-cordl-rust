@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct OtherHash {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub sha1Hash: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub otherHash: *mut crate::Org::BouncyCastle::Asn1::Esf::OtherHashAlgAndValue,
+    pub sha1Hash: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub otherHash: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Esf::OtherHashAlgAndValue,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Esf+OtherHash")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

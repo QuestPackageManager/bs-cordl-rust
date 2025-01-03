@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct ResourceSet {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Reader: *mut crate::System::Resources::IResourceReader,
-    pub Table: *mut crate::System::Collections::Hashtable,
-    pub _caseInsensitiveTable: *mut crate::System::Collections::Hashtable,
+    pub Reader: quest_hook::libil2cpp::Gc<crate::System::Resources::IResourceReader>,
+    pub Table: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub _caseInsensitiveTable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
 }
 #[cfg(feature = "System+Resources+ResourceSet")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

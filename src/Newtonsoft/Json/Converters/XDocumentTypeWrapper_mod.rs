@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct XDocumentTypeWrapper {
     __cordl_parent: crate::Newtonsoft::Json::Converters::XObjectWrapper,
-    pub _documentType: *mut crate::System::Xml::Linq::XDocumentType,
+    pub _documentType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Linq::XDocumentType,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XDocumentTypeWrapper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

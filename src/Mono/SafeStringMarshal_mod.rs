@@ -1,8 +1,8 @@
 #[cfg(feature = "Mono+SafeStringMarshal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SafeStringMarshal {
-    pub str: *mut quest_hook::libil2cpp::Il2CppString,
+    pub str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub marshaled_string: crate::System::IntPtr,
 }
 #[cfg(feature = "Mono+SafeStringMarshal")]

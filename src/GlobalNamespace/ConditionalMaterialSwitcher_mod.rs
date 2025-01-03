@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct ConditionalMaterialSwitcher {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _material0: *mut crate::UnityEngine::Material,
-    pub _material1: *mut crate::UnityEngine::Material,
-    pub _value: *mut crate::GlobalNamespace::BoolSO,
-    pub _renderer: *mut crate::UnityEngine::Renderer,
+    pub _material0: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _material1: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BoolSO>,
+    pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
 }
 #[cfg(feature = "ConditionalMaterialSwitcher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

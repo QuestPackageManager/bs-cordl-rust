@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct NamedPermissionSet {
     __cordl_parent: crate::System::Security::PermissionSet,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub description: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Security+NamedPermissionSet")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

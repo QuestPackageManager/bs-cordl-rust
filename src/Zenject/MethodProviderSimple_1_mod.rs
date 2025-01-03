@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MethodProviderSimple_1<TReturn: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _method: *mut crate::System::Func_1<TReturn>,
+    pub _method: quest_hook::libil2cpp::Gc<crate::System::Func_1<TReturn>>,
     __cordl_phantom_TReturn: std::marker::PhantomData<TReturn>,
 }
 #[cfg(feature = "Zenject+MethodProviderSimple_1")]

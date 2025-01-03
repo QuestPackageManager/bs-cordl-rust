@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct X509Extension {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub extnOid: *mut quest_hook::libil2cpp::Il2CppString,
+    pub extnOid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub extnCritical: bool,
-    pub extnValue: *mut crate::Mono::Security::ASN1,
+    pub extnValue: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
 }
 #[cfg(feature = "Mono+Security+X509+X509Extension")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct AuthEnvelopedData {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub originatorInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo,
-    pub recipientInfos: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-    pub authEncryptedContentInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
-    pub authAttrs: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-    pub mac: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub unauthAttrs: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub originatorInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo,
+    >,
+    pub recipientInfos: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Set,
+    >,
+    pub authEncryptedContentInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
+    >,
+    pub authAttrs: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
+    pub mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
+    pub unauthAttrs: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+AuthEnvelopedData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

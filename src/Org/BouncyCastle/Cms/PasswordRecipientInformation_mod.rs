@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct PasswordRecipientInformation {
     __cordl_parent: crate::Org::BouncyCastle::Cms::RecipientInformation,
-    pub info: *mut crate::Org::BouncyCastle::Asn1::Cms::PasswordRecipientInfo,
+    pub info: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::PasswordRecipientInfo,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+PasswordRecipientInformation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

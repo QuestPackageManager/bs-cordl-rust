@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PrefabGameObjectProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _prefabCreator: *mut crate::Zenject::IPrefabInstantiator,
+    pub _prefabCreator: quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator>,
 }
 #[cfg(feature = "Zenject+PrefabGameObjectProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

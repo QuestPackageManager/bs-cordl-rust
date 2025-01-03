@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Request {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub callback_: *mut crate::Oculus::Platform::Message_Callback,
+    pub callback_: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message_Callback>,
     pub _RequestID_k__BackingField: u64,
 }
 #[cfg(feature = "Oculus+Platform+Request")]

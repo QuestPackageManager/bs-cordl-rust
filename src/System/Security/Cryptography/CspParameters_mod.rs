@@ -4,8 +4,8 @@
 pub struct CspParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ProviderType: i32,
-    pub ProviderName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub KeyContainerName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ProviderName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub KeyContainerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub KeyNumber: i32,
     pub m_flags: i32,
 }

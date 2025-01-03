@@ -1,15 +1,15 @@
 #[cfg(feature = "System+Security+Cryptography+RSAParameters")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RSAParameters {
-    pub Exponent: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub Modulus: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub P: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub Q: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub DP: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub DQ: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub InverseQ: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub D: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub Exponent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub Modulus: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub P: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub Q: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub DP: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub DQ: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub InverseQ: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub D: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "System+Security+Cryptography+RSAParameters")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

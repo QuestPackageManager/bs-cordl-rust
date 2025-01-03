@@ -8,7 +8,7 @@ pub struct MonoPoolableMemoryPool_4<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::Zenject::MemoryPool_4<TParam1, TParam2, TParam3, TValue>,
-    pub _originalParent: *mut crate::UnityEngine::Transform,
+    pub _originalParent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,
     __cordl_phantom_TParam3: std::marker::PhantomData<TParam3>,

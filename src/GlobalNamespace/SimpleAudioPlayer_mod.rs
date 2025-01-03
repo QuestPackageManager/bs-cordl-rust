@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SimpleAudioPlayer {
     __cordl_parent: crate::GlobalNamespace::AudioPlayerBase,
-    pub _audioClip: *mut crate::UnityEngine::AudioClip,
-    pub _audioSource: *mut crate::UnityEngine::AudioSource,
+    pub _audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _targetVolume: f32,
     pub _loop: bool,
     pub _fadeSpeed: f32,

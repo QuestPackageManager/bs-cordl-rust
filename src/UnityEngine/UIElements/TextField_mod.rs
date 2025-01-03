@@ -391,7 +391,9 @@ pub struct TextField_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1_UxmlTraits<
         *mut quest_hook::libil2cpp::Il2CppString,
     >,
-    pub m_Multiline: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    pub m_Multiline: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TextField+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -5,7 +5,9 @@ pub struct MaterialSwapGraphicViewStateTransition {
     __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
         *mut crate::UnityEngine::UI::Graphic,
     >,
-    pub _transition: *mut crate::GlobalNamespace::MaterialSwapTransitionSO,
+    pub _transition: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialSwapTransitionSO,
+    >,
 }
 #[cfg(feature = "MaterialSwapGraphicViewStateTransition")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

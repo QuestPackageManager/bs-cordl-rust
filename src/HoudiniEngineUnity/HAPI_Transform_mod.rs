@@ -1,11 +1,13 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_Transform")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HAPI_Transform {
-    pub position: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub rotationQuaternion: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub scale: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub shear: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub position: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub rotationQuaternion: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
+    pub scale: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub shear: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub rstOrder: crate::HoudiniEngineUnity::HAPI_RSTOrder,
 }
 #[cfg(feature = "HoudiniEngineUnity+HAPI_Transform")]

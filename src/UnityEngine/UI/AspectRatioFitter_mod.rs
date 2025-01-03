@@ -5,7 +5,7 @@ pub struct AspectRatioFitter {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_AspectMode: crate::UnityEngine::UI::AspectRatioFitter_AspectMode,
     pub m_AspectRatio: f32,
-    pub m_Rect: *mut crate::UnityEngine::RectTransform,
+    pub m_Rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_DelayedSetDirty: bool,
     pub m_DoesParentExist: bool,
     pub m_Tracker: crate::UnityEngine::DrivenRectTransformTracker,

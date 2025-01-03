@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct AudioPitchGainEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioSource: *mut crate::UnityEngine::AudioSource,
+    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _duration: f32,
-    pub _pitchCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _gainCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _currentCoroutine: *mut crate::UnityEngine::Coroutine,
+    pub _pitchCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    pub _gainCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    pub _currentCoroutine: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
     pub _startPitch: f32,
     pub _startVolume: f32,
 }

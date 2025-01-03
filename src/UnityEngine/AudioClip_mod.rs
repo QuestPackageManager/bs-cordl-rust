@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct AudioClip {
     __cordl_parent: crate::UnityEngine::Object,
-    pub m_PCMReaderCallback: *mut crate::UnityEngine::AudioClip_PCMReaderCallback,
-    pub m_PCMSetPositionCallback: *mut crate::UnityEngine::AudioClip_PCMSetPositionCallback,
+    pub m_PCMReaderCallback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AudioClip_PCMReaderCallback,
+    >,
+    pub m_PCMSetPositionCallback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AudioClip_PCMSetPositionCallback,
+    >,
 }
 #[cfg(feature = "UnityEngine+AudioClip")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

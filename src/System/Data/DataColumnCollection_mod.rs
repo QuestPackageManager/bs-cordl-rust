@@ -3,25 +3,33 @@
 #[derive(Debug)]
 pub struct DataColumnCollection {
     __cordl_parent: crate::System::Data::InternalDataCollectionBase,
-    pub _table: *mut crate::System::Data::DataTable,
-    pub _list: *mut crate::System::Collections::ArrayList,
+    pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _defaultNameIndex: i32,
-    pub _delayedAddRangeColumns: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Data::DataColumn,
+    pub _delayedAddRangeColumns: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
     >,
-    pub _columnFromName: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::System::Data::DataColumn,
+    pub _columnFromName: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::System::Data::DataColumn,
+        >,
     >,
     pub _fInClear: bool,
-    pub _columnsImplementingIChangeTracking: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Data::DataColumn,
+    pub _columnsImplementingIChangeTracking: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
     >,
     pub _nColumnsImplementingIChangeTracking: i32,
     pub _nColumnsImplementingIRevertibleChangeTracking: i32,
-    pub CollectionChanged: *mut crate::System::ComponentModel::CollectionChangeEventHandler,
-    pub CollectionChanging: *mut crate::System::ComponentModel::CollectionChangeEventHandler,
-    pub ColumnPropertyChanged: *mut crate::System::ComponentModel::CollectionChangeEventHandler,
+    pub CollectionChanged: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::CollectionChangeEventHandler,
+    >,
+    pub CollectionChanging: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::CollectionChangeEventHandler,
+    >,
+    pub ColumnPropertyChanged: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::CollectionChangeEventHandler,
+    >,
 }
 #[cfg(feature = "System+Data+DataColumnCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

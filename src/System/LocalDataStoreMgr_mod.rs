@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct LocalDataStoreMgr {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_SlotInfoTable: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
-    pub m_FirstAvailableSlot: i32,
-    pub m_ManagedLocalDataStores: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::LocalDataStore,
+    pub m_SlotInfoTable: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<bool>,
     >,
-    pub m_KeyToSlotMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::System::LocalDataStoreSlot,
+    pub m_FirstAvailableSlot: i32,
+    pub m_ManagedLocalDataStores: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::LocalDataStore>,
+    >,
+    pub m_KeyToSlotMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::System::LocalDataStoreSlot,
+        >,
     >,
     pub m_CookieGenerator: i64,
 }

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BTSCharacterMaterialSwitcher {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _rendererMaterialsPairs: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs,
+    pub _rendererMaterialsPairs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs,
+        >,
     >,
 }
 #[cfg(feature = "BTSCharacterMaterialSwitcher")]
@@ -76,8 +78,8 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
 pub struct BTSCharacterMaterialSwitcher_MaterialPairs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub materialIndex: i32,
-    pub defaultMaterial: *mut crate::UnityEngine::Material,
-    pub alternativeMaterial: *mut crate::UnityEngine::Material,
+    pub defaultMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub alternativeMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
 #[cfg(feature = "BTSCharacterMaterialSwitcher+MaterialPairs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -135,9 +137,11 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
 #[derive(Debug)]
 pub struct BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _renderer: *mut crate::UnityEngine::Renderer,
-    pub _materialPairs: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
+    pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+    pub _materialPairs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
+        >,
     >,
 }
 #[cfg(feature = "BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]

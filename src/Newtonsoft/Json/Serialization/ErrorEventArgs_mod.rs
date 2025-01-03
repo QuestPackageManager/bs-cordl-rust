@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ErrorEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub _CurrentObject_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _ErrorContext_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::ErrorContext,
+    pub _CurrentObject_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub _ErrorContext_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::ErrorContext,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+ErrorEventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

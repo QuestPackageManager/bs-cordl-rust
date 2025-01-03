@@ -3,27 +3,36 @@
 #[derive(Debug)]
 pub struct OculusBeatmapDataAssetFileModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub levelDataAssetDownloadUpdateEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
+    pub levelDataAssetDownloadUpdateEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::LevelDataAssetDownloadUpdate>,
     >,
-    pub _downloadedAssetBundleFiles: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _downloadedAssetBundleFiles: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _downloadingAssetBundlesQueue: *mut crate::Priority_Queue::SimplePriorityQueue_2<
-        u64,
-        f32,
+    pub _downloadingAssetBundlesQueue: quest_hook::libil2cpp::Gc<
+        crate::Priority_Queue::SimplePriorityQueue_2<u64, f32>,
     >,
-    pub _assetIdToDownloadingData: *mut crate::System::Collections::Generic::Dictionary_2<
-        u64,
-        crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData,
+    pub _assetIdToDownloadingData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            u64,
+            crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData,
+        >,
     >,
-    pub _reloadAssetDetailsSemaphoreSlim: *mut crate::System::Threading::SemaphoreSlim,
-    pub _assetFileToAssetDetails: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::Oculus::Platform::Models::AssetDetails,
+    pub _reloadAssetDetailsSemaphoreSlim: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SemaphoreSlim,
     >,
-    pub _oculusPlatformAdditionalContentModel: *mut crate::GlobalNamespace::OculusPlatformAdditionalContentModel,
+    pub _assetFileToAssetDetails: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::Oculus::Platform::Models::AssetDetails,
+        >,
+    >,
+    pub _oculusPlatformAdditionalContentModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OculusPlatformAdditionalContentModel,
+    >,
 }
 #[cfg(feature = "OculusBeatmapDataAssetFileModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -299,12 +308,14 @@ for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
 }
 #[cfg(feature = "OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData {
-    pub levelId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub assetBundlePath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub downloadAssetBundleFileTCS: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<
-        crate::GlobalNamespace::GetAssetBundleFileResult,
+    pub levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub assetBundlePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub downloadAssetBundleFileTCS: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskCompletionSource_1<
+            crate::GlobalNamespace::GetAssetBundleFileResult,
+        >,
     >,
 }
 #[cfg(feature = "OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData")]

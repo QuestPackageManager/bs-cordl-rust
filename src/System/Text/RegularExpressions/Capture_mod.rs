@@ -5,7 +5,9 @@ pub struct Capture {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Index_k__BackingField: i32,
     pub _Length_k__BackingField: i32,
-    pub _Text_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Text_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Text+RegularExpressions+Capture")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CopyPosition {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub source: *mut crate::UnityEngine::Transform,
+    pub source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "CopyPosition")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -79,8 +79,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CopyPosition 
 #[derive(Debug)]
 pub struct CopyPosition_CopyPositionUpdater {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _copyPositions: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::CopyPosition,
+    pub _copyPositions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::CopyPosition,
+        >,
     >,
 }
 #[cfg(feature = "CopyPosition+CopyPositionUpdater")]

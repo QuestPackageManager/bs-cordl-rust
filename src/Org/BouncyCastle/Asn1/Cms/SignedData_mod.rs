@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct SignedData {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub digestAlgorithms: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-    pub contentInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
-    pub certificates: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-    pub crls: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-    pub signerInfos: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub digestAlgorithms: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Set,
+    >,
+    pub contentInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+    >,
+    pub certificates: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
+    pub crls: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
+    pub signerInfos: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
     pub certsBer: bool,
     pub crlsBer: bool,
 }

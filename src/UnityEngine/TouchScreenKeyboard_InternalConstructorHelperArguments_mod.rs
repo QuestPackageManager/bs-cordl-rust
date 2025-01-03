@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TouchScreenKeyboard_InternalConstructorHelperArguments")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TouchScreenKeyboard_InternalConstructorHelperArguments {
     pub keyboardType: u32,
     pub autocorrection: u32,

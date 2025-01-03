@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct RefreshEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub _TypeChanged_k__BackingField: *mut crate::System::Type,
+    pub _TypeChanged_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+ComponentModel+RefreshEventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

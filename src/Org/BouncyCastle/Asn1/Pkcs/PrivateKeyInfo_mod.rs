@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct PrivateKeyInfo {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub privateKeyAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub privateKey: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub attributes: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-    pub publicKey: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub privateKeyAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub privateKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub attributes: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
+    pub publicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerBitString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+PrivateKeyInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

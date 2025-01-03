@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct ForDeviceEventObservable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Source: *mut crate::System::IObservable_1<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    pub m_Source: quest_hook::libil2cpp::Gc<
+        crate::System::IObservable_1<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        >,
     >,
-    pub m_Device: *mut crate::UnityEngine::InputSystem::InputDevice,
-    pub m_DeviceType: *mut crate::System::Type,
+    pub m_Device: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputDevice,
+    >,
+    pub m_DeviceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -129,11 +133,15 @@ impl AsMut<
 #[derive(Debug)]
 pub struct ForDeviceEventObservable_ForDevice {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Observer: *mut crate::System::IObserver_1<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    pub m_Observer: quest_hook::libil2cpp::Gc<
+        crate::System::IObserver_1<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        >,
     >,
-    pub m_Device: *mut crate::UnityEngine::InputSystem::InputDevice,
-    pub m_DeviceType: *mut crate::System::Type,
+    pub m_Device: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputDevice,
+    >,
+    pub m_DeviceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

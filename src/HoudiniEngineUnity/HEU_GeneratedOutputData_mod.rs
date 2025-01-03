@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct HEU_GeneratedOutputData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _gameObject: *mut crate::UnityEngine::GameObject,
-    pub _renderMaterials: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Material,
+    pub _gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _renderMaterials: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
     >,
-    pub _colliders: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::Collider,
+    pub _colliders: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Collider>,
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneratedOutputData")]

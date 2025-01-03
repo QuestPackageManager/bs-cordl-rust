@@ -5,7 +5,7 @@ pub struct DerApplicationSpecific {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Object,
     pub isConstructed: bool,
     pub tag: i32,
-    pub octets: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub octets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerApplicationSpecific")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

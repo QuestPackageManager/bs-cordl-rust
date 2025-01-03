@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct GatewayIPAddressInformationCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub addresses: *mut crate::System::Collections::ObjectModel::Collection_1<
-        *mut crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+    pub addresses: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ObjectModel::Collection_1<
+            *mut crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+        >,
     >,
 }
 #[cfg(feature = "System+Net+NetworkInformation+GatewayIPAddressInformationCollection")]

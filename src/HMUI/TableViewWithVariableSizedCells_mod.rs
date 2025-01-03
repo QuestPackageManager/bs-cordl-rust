@@ -4,8 +4,12 @@
 pub struct TableViewWithVariableSizedCells {
     __cordl_parent: crate::HMUI::TableView,
     pub _totalHeight: f32,
-    pub _cachedCellSizes: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _cachedCumulativeCellSizes: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub _cachedCellSizes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
+    pub _cachedCumulativeCellSizes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<f32>,
+    >,
 }
 #[cfg(feature = "HMUI+TableViewWithVariableSizedCells")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

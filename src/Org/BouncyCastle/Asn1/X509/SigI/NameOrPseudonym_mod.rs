@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct NameOrPseudonym {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub pseudonym: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
-    pub surname: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
-    pub givenName: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    pub pseudonym: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+    >,
+    pub surname: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
+    >,
+    pub givenName: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+SigI+NameOrPseudonym")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

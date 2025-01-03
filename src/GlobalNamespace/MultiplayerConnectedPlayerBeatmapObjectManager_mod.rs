@@ -4,25 +4,41 @@
 pub struct MultiplayerConnectedPlayerBeatmapObjectManager {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectManager,
     pub _firstBasicNoteTime: crate::System::Nullable_1<f32>,
-    pub _gameNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+    pub _gameNotePoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+        >,
     >,
-    pub _burstSliderHeadGameNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+    pub _burstSliderHeadGameNotePoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+        >,
     >,
-    pub _burstSliderGameNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+    pub _burstSliderGameNotePoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+        >,
     >,
-    pub _bombNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController,
+    pub _bombNotePoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController,
+        >,
     >,
-    pub _obstaclePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_2<
-        *mut crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController,
-        *mut crate::GlobalNamespace::ObstacleController,
+    pub _obstaclePoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_2<
+            *mut crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController,
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     >,
-    pub _beatmapObjectEventManager: *mut crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager,
-    pub _initData: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager_InitData,
-    pub _defaultBeatmapObjectSpawnMovementData: *mut crate::GlobalNamespace::BeatmapObjectSpawnMovementData,
+    pub _beatmapObjectEventManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager_InitData,
+    >,
+    pub _defaultBeatmapObjectSpawnMovementData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectSpawnMovementData,
+    >,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

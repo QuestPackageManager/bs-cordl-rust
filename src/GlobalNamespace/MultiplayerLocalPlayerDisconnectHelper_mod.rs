@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalPlayerDisconnectHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
-    pub _multiplayerLevelEndActions: *mut crate::GlobalNamespace::IMultiplayerLevelEndActionsListener,
-    pub _lobbyPlayerPermissionsModel: *mut crate::GlobalNamespace::LobbyPlayerPermissionsModel,
+    pub _gameplayRpcManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IGameplayRpcManager,
+    >,
+    pub _multiplayerLevelEndActions: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerLevelEndActionsListener,
+    >,
+    pub _lobbyPlayerPermissionsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LobbyPlayerPermissionsModel,
+    >,
 }
 #[cfg(feature = "MultiplayerLocalPlayerDisconnectHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

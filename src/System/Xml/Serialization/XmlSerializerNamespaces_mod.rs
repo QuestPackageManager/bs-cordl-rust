@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlSerializerNamespaces {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub namespaces: *mut crate::System::Collections::Hashtable,
+    pub namespaces: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializerNamespaces")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

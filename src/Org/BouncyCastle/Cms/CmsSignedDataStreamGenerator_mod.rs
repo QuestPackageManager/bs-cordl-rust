@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct CmsSignedDataStreamGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Cms::CmsSignedGenerator,
-    pub _signerInfs: *mut crate::System::Collections::IList,
-    pub _messageDigestOids: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub _messageDigests: *mut crate::System::Collections::IDictionary,
-    pub _messageHashes: *mut crate::System::Collections::IDictionary,
+    pub _signerInfs: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub _messageDigestOids: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub _messageDigests: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IDictionary,
+    >,
+    pub _messageHashes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IDictionary,
+    >,
     pub _messageDigestsLocked: bool,
     pub _bufferSize: i32,
 }
@@ -611,12 +617,22 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator {
 #[derive(Debug)]
 pub struct CmsSignedDataStreamGenerator_CmsSignedDataOutputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    pub outer: *mut crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator,
-    pub _out: *mut crate::System::IO::Stream,
-    pub _contentOID: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub _sGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-    pub _sigGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-    pub _eiGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    pub outer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator,
+    >,
+    pub _out: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub _contentOID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub _sGen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    >,
+    pub _sigGen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    >,
+    pub _eiGen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    >,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+CmsSignedDataOutputStream"
@@ -767,8 +783,10 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_CmsSignedDataOut
 #[derive(Debug)]
 pub struct CmsSignedDataStreamGenerator_DigestAndSignerInfoGeneratorHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub signerInf: *mut crate::Org::BouncyCastle::Cms::ISignerInfoGenerator,
-    pub digestOID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub signerInf: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::ISignerInfoGenerator,
+    >,
+    pub digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+DigestAndSignerInfoGeneratorHolder"
@@ -863,14 +881,22 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_DigestAndSignerI
 #[derive(Debug)]
 pub struct CmsSignedDataStreamGenerator_SignerInfoGeneratorImpl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub outer: *mut crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator,
-    pub _signerIdentifier: *mut crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
-    pub _digestOID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _encOID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _sAttr: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
-    pub _unsAttr: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
-    pub _encName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _sig: *mut crate::Org::BouncyCastle::Crypto::ISigner,
+    pub outer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator,
+    >,
+    pub _signerIdentifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
+    >,
+    pub _digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _encOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _sAttr: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+    >,
+    pub _unsAttr: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+    >,
+    pub _encName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _sig: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+SignerInfoGeneratorImpl"

@@ -10,8 +10,8 @@ pub struct BurstCompileAttribute {
     pub _disableSafetyChecks: crate::System::Nullable_1<bool>,
     pub _disableDirectCall: crate::System::Nullable_1<bool>,
     pub _OptimizeFor_k__BackingField: crate::Unity::Burst::OptimizeFor,
-    pub _Options_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Options_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "Unity+Burst+BurstCompileAttribute")]

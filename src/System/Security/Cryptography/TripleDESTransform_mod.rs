@@ -3,12 +3,24 @@
 #[derive(Debug)]
 pub struct TripleDESTransform {
     __cordl_parent: crate::Mono::Security::Cryptography::SymmetricTransform,
-    pub E1: *mut crate::System::Security::Cryptography::DESTransform,
-    pub D2: *mut crate::System::Security::Cryptography::DESTransform,
-    pub E3: *mut crate::System::Security::Cryptography::DESTransform,
-    pub D1: *mut crate::System::Security::Cryptography::DESTransform,
-    pub E2: *mut crate::System::Security::Cryptography::DESTransform,
-    pub D3: *mut crate::System::Security::Cryptography::DESTransform,
+    pub E1: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::DESTransform,
+    >,
+    pub D2: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::DESTransform,
+    >,
+    pub E3: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::DESTransform,
+    >,
+    pub D1: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::DESTransform,
+    >,
+    pub E2: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::DESTransform,
+    >,
+    pub D3: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::DESTransform,
+    >,
 }
 #[cfg(feature = "System+Security+Cryptography+TripleDESTransform")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

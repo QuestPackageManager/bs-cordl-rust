@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct FontData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Font: *mut crate::UnityEngine::Font,
+    pub m_Font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     pub m_FontSize: i32,
     pub m_FontStyle: crate::UnityEngine::FontStyle,
     pub m_BestFit: bool,

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputUser {
     pub m_Id: u32,
 }
@@ -745,7 +745,7 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputUser_CompareDevicesByUserAccount {
     pub platformUserAccountHandle: crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
 }
@@ -824,7 +824,7 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputUser_ControlSchemeChangeSyntax {
     pub m_UserIndex: i32,
 }
@@ -862,24 +862,32 @@ impl crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+GlobalState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputUser_GlobalState {
     pub pairingStateVersion: i32,
     pub lastUserId: u32,
     pub allUserCount: i32,
     pub allPairedDeviceCount: i32,
     pub allLostDeviceCount: i32,
-    pub allUsers: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::Users::InputUser,
+    pub allUsers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::Users::InputUser,
+        >,
     >,
-    pub allUserData: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::Users::InputUser_UserData,
+    pub allUserData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::Users::InputUser_UserData,
+        >,
     >,
-    pub allPairedDevices: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
+    pub allPairedDevices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        >,
     >,
-    pub allLostDevices: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
+    pub allLostDevices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        >,
     >,
     pub ongoingAccountSelections: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
         crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection,
@@ -904,17 +912,23 @@ pub struct InputUser_GlobalState {
             bool,
         >,
     >,
-    pub actionChangeDelegate: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        crate::UnityEngine::InputSystem::InputActionChange,
+    pub actionChangeDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            crate::UnityEngine::InputSystem::InputActionChange,
+        >,
     >,
-    pub onDeviceChangeDelegate: *mut crate::System::Action_2<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
-        crate::UnityEngine::InputSystem::InputDeviceChange,
+    pub onDeviceChangeDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+            crate::UnityEngine::InputSystem::InputDeviceChange,
+        >,
     >,
-    pub onEventDelegate: *mut crate::System::Action_2<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        *mut crate::UnityEngine::InputSystem::InputDevice,
+    pub onEventDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        >,
     >,
     pub onActionChangeHooked: bool,
     pub onDeviceChangeHooked: bool,
@@ -942,9 +956,9 @@ for crate::UnityEngine::InputSystem::Users::InputUser_GlobalState {
 impl crate::UnityEngine::InputSystem::Users::InputUser_GlobalState {}
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+OngoingAccountSelection")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputUser_OngoingAccountSelection {
-    pub device: *mut crate::UnityEngine::InputSystem::InputDevice,
+    pub device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     pub userId: u32,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+OngoingAccountSelection")]
@@ -968,16 +982,22 @@ for crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection {
 impl crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection {}
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputUser_UserData {
     pub platformUserAccountHandle: crate::System::Nullable_1<
         crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
     >,
-    pub platformUserAccountName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub platformUserAccountId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub platformUserAccountName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub platformUserAccountId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub deviceCount: i32,
     pub deviceStartIndex: i32,
-    pub actions: *mut crate::UnityEngine::InputSystem::IInputActionCollection,
+    pub actions: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::IInputActionCollection,
+    >,
     pub controlScheme: crate::System::Nullable_1<
         crate::UnityEngine::InputSystem::InputControlScheme,
     >,

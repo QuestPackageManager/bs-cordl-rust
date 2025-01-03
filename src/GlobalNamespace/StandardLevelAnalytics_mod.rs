@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct StandardLevelAnalytics {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _standardLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
+    pub _standardLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+    >,
+    pub _analyticsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAnalyticsModel,
+    >,
 }
 #[cfg(feature = "StandardLevelAnalytics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

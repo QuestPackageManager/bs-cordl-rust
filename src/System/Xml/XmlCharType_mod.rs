@@ -1,8 +1,10 @@
 #[cfg(feature = "System+Xml+XmlCharType")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XmlCharType {
-    pub charProperties: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub charProperties: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
 }
 #[cfg(feature = "System+Xml+XmlCharType")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

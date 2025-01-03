@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BcpgInputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
-    pub m_in: *mut crate::System::IO::Stream,
+    pub m_in: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub next: bool,
     pub nextB: i32,
 }
@@ -164,7 +164,7 @@ for crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
 #[derive(Debug)]
 pub struct BcpgInputStream_PartialInputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
-    pub m_in: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
+    pub m_in: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::BcpgInputStream>,
     pub partial: bool,
     pub dataLength: i32,
 }

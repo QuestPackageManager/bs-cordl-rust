@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Net+Http+Headers+Token")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Token {
     pub _cordl_type: crate::System::Net::Http::Headers::Token_Type,
     pub _StartPosition_k__BackingField: i32,

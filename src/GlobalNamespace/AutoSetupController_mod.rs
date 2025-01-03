@@ -3,17 +3,25 @@
 #[derive(Debug)]
 pub struct AutoSetupController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _closeButton: *mut crate::UnityEngine::UI::Button,
-    pub _selectBasedOnSuggestionsToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _autoStartWhenAllReadyToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _forceAutoStartAfterSongSelectionToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _randomSongIfNoneSuggestedToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub didFinishEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::AutoSetupData,
+    pub _closeButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _selectBasedOnSuggestionsToggle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
     >,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
-    pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
-    pub _autoSetupData: *mut crate::GlobalNamespace::AutoSetupData,
+    pub _autoStartWhenAllReadyToggle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
+    >,
+    pub _forceAutoStartAfterSongSelectionToggle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
+    >,
+    pub _randomSongIfNoneSuggestedToggle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
+    >,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::AutoSetupData>,
+    >,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
+    pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
+    pub _autoSetupData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AutoSetupData>,
 }
 #[cfg(feature = "AutoSetupController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

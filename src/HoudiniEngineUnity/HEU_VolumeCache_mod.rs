@@ -3,21 +3,29 @@
 #[derive(Debug)]
 pub struct HEU_VolumeCache {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _ownerNode: *mut crate::HoudiniEngineUnity::HEU_GeoNode,
-    pub _layers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_VolumeLayer,
+    pub _ownerNode: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoNode>,
+    pub _layers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_VolumeLayer,
+        >,
     >,
-    pub _updatedLayers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_VolumeLayer,
+    pub _updatedLayers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_VolumeLayer,
+        >,
     >,
     pub _tileIndex: i32,
     pub _isDirty: bool,
-    pub _geoName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _objName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _geoName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _objName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _uiExpanded: bool,
-    pub _terrainData: *mut crate::UnityEngine::TerrainData,
-    pub _scatterTrees: *mut crate::HoudiniEngineUnity::HEU_VolumeScatterTrees,
-    pub _detailProperties: *mut crate::HoudiniEngineUnity::HEU_DetailProperties,
+    pub _terrainData: quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainData>,
+    pub _scatterTrees: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_VolumeScatterTrees,
+    >,
+    pub _detailProperties: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_DetailProperties,
+    >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_VolumeCache")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

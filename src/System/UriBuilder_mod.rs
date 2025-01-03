@@ -4,16 +4,16 @@
 pub struct UriBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _changed: bool,
-    pub _fragment: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _host: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _password: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _path: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _fragment: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _port: i32,
-    pub _query: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _scheme: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _schemeDelimiter: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _uri: *mut crate::System::Uri,
-    pub _username: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _query: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _scheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _schemeDelimiter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    pub _username: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+UriBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

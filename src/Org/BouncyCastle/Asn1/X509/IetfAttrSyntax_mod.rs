@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct IetfAttrSyntax {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub policyAuthority: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
-    pub values: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+    pub policyAuthority: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+    >,
+    pub values: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+    >,
     pub valueChoice: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+IetfAttrSyntax")]

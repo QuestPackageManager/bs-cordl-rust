@@ -50,8 +50,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TypeIdentifiers {
 #[derive(Debug)]
 pub struct TypeIdentifiers_Display {
     __cordl_parent: crate::System::TypeNames_ATypeName,
-    pub displayName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub internal_name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub internal_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+TypeIdentifiers+Display")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

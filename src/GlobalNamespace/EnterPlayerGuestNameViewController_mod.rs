@@ -3,12 +3,20 @@
 #[derive(Debug)]
 pub struct EnterPlayerGuestNameViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _playerNameWasEnteredSignal: *mut crate::GlobalNamespace::StringSignal,
-    pub _uiKeyboard: *mut crate::HMUI::UIKeyboard,
-    pub _nameInputFieldView: *mut crate::HMUI::InputFieldView,
-    pub _guestNameButtonsListItemsList: *mut crate::GlobalNamespace::GuestNameButtonsListItemsList,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _didFinishCallback: *mut crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate,
+    pub _playerNameWasEnteredSignal: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StringSignal,
+    >,
+    pub _uiKeyboard: quest_hook::libil2cpp::Gc<crate::HMUI::UIKeyboard>,
+    pub _nameInputFieldView: quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
+    pub _guestNameButtonsListItemsList: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GuestNameButtonsListItemsList,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _didFinishCallback: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate,
+    >,
 }
 #[cfg(feature = "EnterPlayerGuestNameViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

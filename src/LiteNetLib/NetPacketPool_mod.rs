@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct NetPacketPool {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _pool: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::LiteNetLib::NetPacket,
+    pub _pool: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::LiteNetLib::NetPacket>,
     >,
-    pub _lock: *mut crate::System::Threading::ReaderWriterLockSlim,
+    pub _lock: quest_hook::libil2cpp::Gc<crate::System::Threading::ReaderWriterLockSlim>,
     pub _count: i32,
 }
 #[cfg(feature = "LiteNetLib+NetPacketPool")]

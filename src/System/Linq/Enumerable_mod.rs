@@ -1848,8 +1848,8 @@ for crate::System::Linq::Enumerable_Iterator_1<TSource> {
 #[derive(Debug)]
 pub struct Enumerable_WhereArrayIterator_1<TSource: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Linq::Enumerable_Iterator_1<TSource>,
-    pub source: *mut quest_hook::libil2cpp::Il2CppArray<TSource>,
-    pub predicate: *mut crate::System::Func_2<TSource, bool>,
+    pub source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TSource>>,
+    pub predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
     pub index: i32,
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
 }
@@ -1993,9 +1993,13 @@ for crate::System::Linq::Enumerable_WhereArrayIterator_1<TSource> {
 #[derive(Debug)]
 pub struct Enumerable_WhereEnumerableIterator_1<TSource: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Linq::Enumerable_Iterator_1<TSource>,
-    pub source: *mut crate::System::Collections::Generic::IEnumerable_1<TSource>,
-    pub predicate: *mut crate::System::Func_2<TSource, bool>,
-    pub enumerator: *mut crate::System::Collections::Generic::IEnumerator_1<TSource>,
+    pub source: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<TSource>,
+    >,
+    pub predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
+    pub enumerator: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerator_1<TSource>,
+    >,
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
 }
 #[cfg(feature = "System+Linq+Enumerable+WhereEnumerableIterator_1")]
@@ -2157,8 +2161,10 @@ for crate::System::Linq::Enumerable_WhereEnumerableIterator_1<TSource> {
 #[derive(Debug)]
 pub struct Enumerable_WhereListIterator_1<TSource: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Linq::Enumerable_Iterator_1<TSource>,
-    pub source: *mut crate::System::Collections::Generic::List_1<TSource>,
-    pub predicate: *mut crate::System::Func_2<TSource, bool>,
+    pub source: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<TSource>,
+    >,
+    pub predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
     pub enumerator: crate::System::Collections::Generic::List_1_Enumerator<TSource>,
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
 }
@@ -2309,9 +2315,9 @@ pub struct Enumerable_WhereSelectArrayIterator_2<
     TResult: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::System::Linq::Enumerable_Iterator_1<TResult>,
-    pub source: *mut quest_hook::libil2cpp::Il2CppArray<TSource>,
-    pub predicate: *mut crate::System::Func_2<TSource, bool>,
-    pub selector: *mut crate::System::Func_2<TSource, TResult>,
+    pub source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TSource>>,
+    pub predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
+    pub selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>,
     pub index: i32,
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
@@ -2484,10 +2490,14 @@ pub struct Enumerable_WhereSelectEnumerableIterator_2<
     TResult: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::System::Linq::Enumerable_Iterator_1<TResult>,
-    pub source: *mut crate::System::Collections::Generic::IEnumerable_1<TSource>,
-    pub predicate: *mut crate::System::Func_2<TSource, bool>,
-    pub selector: *mut crate::System::Func_2<TSource, TResult>,
-    pub enumerator: *mut crate::System::Collections::Generic::IEnumerator_1<TSource>,
+    pub source: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<TSource>,
+    >,
+    pub predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
+    pub selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>,
+    pub enumerator: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerator_1<TSource>,
+    >,
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
@@ -2679,9 +2689,11 @@ pub struct Enumerable_WhereSelectListIterator_2<
     TResult: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::System::Linq::Enumerable_Iterator_1<TResult>,
-    pub source: *mut crate::System::Collections::Generic::List_1<TSource>,
-    pub predicate: *mut crate::System::Func_2<TSource, bool>,
-    pub selector: *mut crate::System::Func_2<TSource, TResult>,
+    pub source: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<TSource>,
+    >,
+    pub predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
+    pub selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>,
     pub enumerator: crate::System::Collections::Generic::List_1_Enumerator<TSource>,
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,

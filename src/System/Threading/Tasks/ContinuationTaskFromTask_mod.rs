@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ContinuationTaskFromTask {
     __cordl_parent: crate::System::Threading::Tasks::Task,
-    pub m_antecedent: *mut crate::System::Threading::Tasks::Task,
+    pub m_antecedent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
 }
 #[cfg(feature = "System+Threading+Tasks+ContinuationTaskFromTask")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

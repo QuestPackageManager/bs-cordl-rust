@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct ArgumentBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub description: *mut quest_hook::libil2cpp::Il2CppString,
-    pub valueType: *mut crate::System::Type,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub valueType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "ArgumentBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

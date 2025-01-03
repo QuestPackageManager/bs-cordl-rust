@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct DataRelationCollection {
     __cordl_parent: crate::System::Data::InternalDataCollectionBase,
-    pub _inTransition: *mut crate::System::Data::DataRelation,
+    pub _inTransition: quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
     pub _defaultNameIndex: i32,
-    pub _onCollectionChangedDelegate: *mut crate::System::ComponentModel::CollectionChangeEventHandler,
-    pub _onCollectionChangingDelegate: *mut crate::System::ComponentModel::CollectionChangeEventHandler,
+    pub _onCollectionChangedDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::CollectionChangeEventHandler,
+    >,
+    pub _onCollectionChangingDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::CollectionChangeEventHandler,
+    >,
     pub _objectID: i32,
 }
 #[cfg(feature = "System+Data+DataRelationCollection")]

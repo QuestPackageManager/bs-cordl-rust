@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct SigningCertificateV2 {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub certs: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    pub policies: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    pub certs: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    pub policies: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ess+SigningCertificateV2")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

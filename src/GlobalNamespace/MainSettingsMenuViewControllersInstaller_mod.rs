@@ -3,12 +3,24 @@
 #[derive(Debug)]
 pub struct MainSettingsMenuViewControllersInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _defaultSettingsMenuViewController: *mut crate::GlobalNamespace::MainSettingsMenuViewController,
-    pub _oculusPCSettingsMenuViewController: *mut crate::GlobalNamespace::MainSettingsMenuViewController,
-    pub _questSettingsMenuViewController: *mut crate::GlobalNamespace::MainSettingsMenuViewController,
-    pub _psvrSettingsMenuViewController: *mut crate::GlobalNamespace::MainSettingsMenuViewController,
-    pub _psvr2SettingsMenuViewController: *mut crate::GlobalNamespace::MainSettingsMenuViewController,
-    pub _tabBarViewControllerPrefab: *mut crate::GlobalNamespace::TabBarViewController,
+    pub _defaultSettingsMenuViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MainSettingsMenuViewController,
+    >,
+    pub _oculusPCSettingsMenuViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MainSettingsMenuViewController,
+    >,
+    pub _questSettingsMenuViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MainSettingsMenuViewController,
+    >,
+    pub _psvrSettingsMenuViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MainSettingsMenuViewController,
+    >,
+    pub _psvr2SettingsMenuViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MainSettingsMenuViewController,
+    >,
+    pub _tabBarViewControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TabBarViewController,
+    >,
 }
 #[cfg(feature = "MainSettingsMenuViewControllersInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

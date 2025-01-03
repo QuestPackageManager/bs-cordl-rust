@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct CurvedCanvasSettingsHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cachedCanvas: *mut crate::UnityEngine::Canvas,
+    pub _cachedCanvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     pub _cachedCanvasIsRootCanvas: bool,
-    pub _curvedCanvasSettings: *mut crate::HMUI::CurvedCanvasSettings,
+    pub _curvedCanvasSettings: quest_hook::libil2cpp::Gc<
+        crate::HMUI::CurvedCanvasSettings,
+    >,
     pub _hasCachedData: bool,
 }
 #[cfg(feature = "HMUI+CurvedCanvasSettingsHelper")]

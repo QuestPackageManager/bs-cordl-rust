@@ -737,11 +737,11 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct Ed25519_PointAccum {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub x: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub y: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub z: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub u: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub v: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub u: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed25519+PointAccum")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -799,10 +799,10 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointAccum {
 #[derive(Debug)]
 pub struct Ed25519_PointExt {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub x: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub y: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub z: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub t: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub t: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed25519+PointExt")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -859,9 +859,9 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointExt {
 #[derive(Debug)]
 pub struct Ed25519_PointPrecomp {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub ypx_h: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub ymx_h: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub xyd: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub ypx_h: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub ymx_h: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub xyd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed25519+PointPrecomp")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,11 +1,11 @@
 #[cfg(feature = "System+__DTString")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct __DTString {
     pub Value: crate::System::ReadOnlySpan_1<char>,
     pub Index: i32,
     pub m_current: char,
-    pub m_info: *mut crate::System::Globalization::CompareInfo,
+    pub m_info: quest_hook::libil2cpp::Gc<crate::System::Globalization::CompareInfo>,
     pub m_checkDigitToken: bool,
 }
 #[cfg(feature = "System+__DTString")]

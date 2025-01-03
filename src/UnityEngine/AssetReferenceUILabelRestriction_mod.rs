@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct AssetReferenceUILabelRestriction {
     __cordl_parent: crate::UnityEngine::AssetReferenceUIRestriction,
-    pub m_AllowedLabels: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_AllowedLabels: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub m_CachedToString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_CachedToString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+AssetReferenceUILabelRestriction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

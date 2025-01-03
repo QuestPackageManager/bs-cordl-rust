@@ -3,15 +3,17 @@
 #[derive(Debug)]
 pub struct XPathDocument {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub pageXmlNmsp: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::MS::Internal::Xml::Cache::XPathNode,
+    pub pageXmlNmsp: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::MS::Internal::Xml::Cache::XPathNode>,
     >,
     pub idxXmlNmsp: i32,
-    pub nameTable: *mut crate::System::Xml::XmlNameTable,
+    pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     pub hasLineInfo: bool,
-    pub mapNmsp: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::MS::Internal::Xml::Cache::XPathNodeRef,
-        crate::MS::Internal::Xml::Cache::XPathNodeRef,
+    pub mapNmsp: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::MS::Internal::Xml::Cache::XPathNodeRef,
+            crate::MS::Internal::Xml::Cache::XPathNodeRef,
+        >,
     >,
 }
 #[cfg(feature = "System+Xml+XPath+XPathDocument")]

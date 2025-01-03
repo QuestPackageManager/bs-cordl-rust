@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct Component {
     __cordl_parent: crate::System::MarshalByRefObject,
-    pub site: *mut crate::System::ComponentModel::ISite,
-    pub events: *mut crate::System::ComponentModel::EventHandlerList,
+    pub site: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ISite>,
+    pub events: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::EventHandlerList,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+Component")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

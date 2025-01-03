@@ -3,18 +3,20 @@
 #[derive(Debug)]
 pub struct Index {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _table: *mut crate::System::Data::DataTable,
-    pub _indexFields: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Data::IndexField,
+    pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    pub _indexFields: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Data::IndexField>,
     >,
-    pub _comparison: *mut crate::System::Comparison_1<*mut crate::System::Data::DataRow>,
+    pub _comparison: quest_hook::libil2cpp::Gc<
+        crate::System::Comparison_1<*mut crate::System::Data::DataRow>,
+    >,
     pub _recordStates: crate::System::Data::DataViewRowState,
-    pub _rowFilter: *mut crate::System::WeakReference,
-    pub _records: *mut crate::System::Data::Index_IndexTree,
+    pub _rowFilter: quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
+    pub _records: quest_hook::libil2cpp::Gc<crate::System::Data::Index_IndexTree>,
     pub _recordCount: i32,
     pub _refCount: i32,
-    pub _listeners: *mut crate::System::Data::Listeners_1<
-        *mut crate::System::Data::DataViewListener,
+    pub _listeners: quest_hook::libil2cpp::Gc<
+        crate::System::Data::Listeners_1<*mut crate::System::Data::DataViewListener>,
     >,
     pub _suspendEvents: bool,
     pub _isSharable: bool,
@@ -837,7 +839,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::Index {
 #[derive(Debug)]
 pub struct Index_IndexTree {
     __cordl_parent: crate::System::Data::RBTree_1<i32>,
-    pub _index: *mut crate::System::Data::Index,
+    pub _index: quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
 }
 #[cfg(feature = "System+Data+Index+IndexTree")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

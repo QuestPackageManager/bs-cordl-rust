@@ -5,15 +5,25 @@ pub struct InputControl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_StateBlock: crate::UnityEngine::InputSystem::LowLevel::InputStateBlock,
     pub m_Name: crate::UnityEngine::InputSystem::Utilities::InternedString,
-    pub m_Path: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_DisplayName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_DisplayNameFromLayout: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_ShortDisplayName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_ShortDisplayNameFromLayout: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_DisplayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_DisplayNameFromLayout: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_ShortDisplayName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_ShortDisplayNameFromLayout: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub m_Layout: crate::UnityEngine::InputSystem::Utilities::InternedString,
     pub m_Variants: crate::UnityEngine::InputSystem::Utilities::InternedString,
-    pub m_Device: *mut crate::UnityEngine::InputSystem::InputDevice,
-    pub m_Parent: *mut crate::UnityEngine::InputSystem::InputControl,
+    pub m_Device: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputDevice,
+    >,
+    pub m_Parent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputControl,
+    >,
     pub m_UsageCount: i32,
     pub m_UsageStartIndex: i32,
     pub m_AliasCount: i32,

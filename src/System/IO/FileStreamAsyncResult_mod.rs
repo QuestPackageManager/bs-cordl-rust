@@ -3,15 +3,15 @@
 #[derive(Debug)]
 pub struct FileStreamAsyncResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub state: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub completed: bool,
-    pub wh: *mut crate::System::Threading::ManualResetEvent,
-    pub cb: *mut crate::System::AsyncCallback,
+    pub wh: quest_hook::libil2cpp::Gc<crate::System::Threading::ManualResetEvent>,
+    pub cb: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
     pub completedSynch: bool,
     pub Count: i32,
     pub OriginalCount: i32,
     pub BytesRead: i32,
-    pub realcb: *mut crate::System::AsyncCallback,
+    pub realcb: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
 }
 #[cfg(feature = "System+IO+FileStreamAsyncResult")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

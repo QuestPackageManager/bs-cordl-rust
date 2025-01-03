@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct XmlElement {
     __cordl_parent: crate::System::Xml::XmlLinkedNode,
-    pub name: *mut crate::System::Xml::XmlName,
-    pub attributes: *mut crate::System::Xml::XmlAttributeCollection,
-    pub lastChild: *mut crate::System::Xml::XmlLinkedNode,
+    pub name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlName>,
+    pub attributes: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlAttributeCollection,
+    >,
+    pub lastChild: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlLinkedNode>,
 }
 #[cfg(feature = "System+Xml+XmlElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

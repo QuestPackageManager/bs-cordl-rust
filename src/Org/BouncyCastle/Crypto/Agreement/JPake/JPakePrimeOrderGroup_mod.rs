@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct JPakePrimeOrderGroup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub p: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub q: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub g: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakePrimeOrderGroup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

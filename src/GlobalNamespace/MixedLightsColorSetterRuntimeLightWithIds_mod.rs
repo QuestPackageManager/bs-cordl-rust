@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MixedLightsColorSetterRuntimeLightWithIds {
     __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
-    pub _materialPropertyBlockColorSetter: *mut crate::GlobalNamespace::MaterialPropertyBlockColorSetter,
+    pub _materialPropertyBlockColorSetter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockColorSetter,
+    >,
     pub _lightMultiplier: f32,
 }
 #[cfg(feature = "MixedLightsColorSetterRuntimeLightWithIds")]

@@ -4,12 +4,18 @@
 pub struct Party {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_ID: u64,
-    pub InvitedUsersOptional: *mut crate::Oculus::Platform::Models::UserList,
-    pub InvitedUsers: *mut crate::Oculus::Platform::Models::UserList,
-    pub LeaderOptional: *mut crate::Oculus::Platform::Models::User,
-    pub Leader: *mut crate::Oculus::Platform::Models::User,
-    pub UsersOptional: *mut crate::Oculus::Platform::Models::UserList,
-    pub Users: *mut crate::Oculus::Platform::Models::UserList,
+    pub InvitedUsersOptional: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::UserList,
+    >,
+    pub InvitedUsers: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::UserList,
+    >,
+    pub LeaderOptional: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
+    pub Leader: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
+    pub UsersOptional: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::UserList,
+    >,
+    pub Users: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
 }
 #[cfg(feature = "Oculus+Platform+Models+Party")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

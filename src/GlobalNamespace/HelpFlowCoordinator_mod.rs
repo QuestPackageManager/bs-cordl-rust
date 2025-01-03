@@ -3,14 +3,26 @@
 #[derive(Debug)]
 pub struct HelpFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub _helpMenuViewController: *mut crate::GlobalNamespace::HelpMenuViewController,
-    pub _menuTransitionsHelper: *mut crate::GlobalNamespace::MenuTransitionsHelper,
-    pub _howToPlayViewController: *mut crate::GlobalNamespace::HowToPlayViewController,
-    pub _helpNavigationController: *mut crate::GlobalNamespace::HelpNavigationController,
-    pub _playerStatisticsViewController: *mut crate::GlobalNamespace::PlayerStatisticsViewController,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub didFinishEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::HelpFlowCoordinator,
+    pub _helpMenuViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HelpMenuViewController,
+    >,
+    pub _menuTransitionsHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuTransitionsHelper,
+    >,
+    pub _howToPlayViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HowToPlayViewController,
+    >,
+    pub _helpNavigationController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HelpNavigationController,
+    >,
+    pub _playerStatisticsViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerStatisticsViewController,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::HelpFlowCoordinator>,
     >,
 }
 #[cfg(feature = "HelpFlowCoordinator")]

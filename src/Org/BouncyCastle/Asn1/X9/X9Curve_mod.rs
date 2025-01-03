@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct X9Curve {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-    pub seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub fieldIdentifier: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    pub curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
+    pub seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub fieldIdentifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X9Curve")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

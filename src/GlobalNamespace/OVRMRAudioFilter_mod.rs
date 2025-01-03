@@ -4,7 +4,9 @@
 pub struct OVRMRAudioFilter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub running: bool,
-    pub composition: *mut crate::GlobalNamespace::OVRExternalComposition,
+    pub composition: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRExternalComposition,
+    >,
 }
 #[cfg(feature = "OVRMRAudioFilter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

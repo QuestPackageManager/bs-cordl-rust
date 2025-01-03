@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct HashSP800Drbg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub mEntropySource: *mut crate::Org::BouncyCastle::Crypto::IEntropySource,
+    pub mDigest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub mEntropySource: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IEntropySource,
+    >,
     pub mSecurityStrength: i32,
     pub mSeedLength: i32,
-    pub mV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mC: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mC: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mReseedCounter: i64,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+Drbg+HashSP800Drbg")]

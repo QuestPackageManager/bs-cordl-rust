@@ -3,29 +3,45 @@
 #[derive(Debug)]
 pub struct XSDSchema {
     __cordl_parent: crate::System::Data::XMLSchema,
-    pub _schemaSet: *mut crate::System::Xml::Schema::XmlSchemaSet,
-    pub _dsElement: *mut crate::System::Xml::Schema::XmlSchemaElement,
-    pub _ds: *mut crate::System::Data::DataSet,
-    pub _schemaName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _columnExpressions: *mut crate::System::Collections::ArrayList,
-    pub _constraintNodes: *mut crate::System::Collections::Hashtable,
-    pub _refTables: *mut crate::System::Collections::ArrayList,
-    pub _complexTypes: *mut crate::System::Collections::ArrayList,
-    pub _annotations: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-    pub _elements: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-    pub _attributes: *mut crate::System::Collections::Hashtable,
-    pub _elementsTable: *mut crate::System::Collections::Hashtable,
-    pub _attributeGroups: *mut crate::System::Collections::Hashtable,
-    pub _schemaTypes: *mut crate::System::Collections::Hashtable,
-    pub _expressions: *mut crate::System::Collections::Hashtable,
-    pub _tableDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Data::DataTable,
-        *mut crate::System::Collections::Generic::List_1<
+    pub _schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+    pub _dsElement: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaElement,
+    >,
+    pub _ds: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+    pub _schemaName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _columnExpressions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ArrayList,
+    >,
+    pub _constraintNodes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
+    pub _refTables: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _complexTypes: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _annotations: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+    >,
+    pub _elements: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+    >,
+    pub _attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub _elementsTable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub _attributeGroups: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
+    pub _schemaTypes: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub _expressions: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub _tableDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
             *mut crate::System::Data::DataTable,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::System::Data::DataTable,
+            >,
         >,
     >,
-    pub _udSimpleTypes: *mut crate::System::Collections::Hashtable,
-    pub _existingSimpleTypeMap: *mut crate::System::Collections::Hashtable,
+    pub _udSimpleTypes: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub _existingSimpleTypeMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
     pub _fromInference: bool,
 }
 #[cfg(feature = "System+Data+XSDSchema")]
@@ -764,8 +780,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::XSDSchema {
 #[derive(Debug)]
 pub struct XSDSchema_NameType {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _cordl_type: *mut crate::System::Type,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Data+XSDSchema+NameType")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

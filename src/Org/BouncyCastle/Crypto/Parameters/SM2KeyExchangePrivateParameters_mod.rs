@@ -4,10 +4,18 @@
 pub struct SM2KeyExchangePrivateParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mInitiator: bool,
-    pub mStaticPrivateKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
-    pub mStaticPublicPoint: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    pub mEphemeralPrivateKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
-    pub mEphemeralPublicPoint: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    pub mStaticPrivateKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
+    >,
+    pub mStaticPublicPoint: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::ECPoint,
+    >,
+    pub mEphemeralPrivateKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
+    >,
+    pub mEphemeralPublicPoint: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::ECPoint,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SM2KeyExchangePrivateParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

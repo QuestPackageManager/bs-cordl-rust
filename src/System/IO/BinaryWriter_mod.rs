@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct BinaryWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub OutStream: *mut crate::System::IO::Stream,
-    pub _buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _encoding: *mut crate::System::Text::Encoding,
-    pub _encoder: *mut crate::System::Text::Encoder,
+    pub OutStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    pub _encoder: quest_hook::libil2cpp::Gc<crate::System::Text::Encoder>,
     pub _leaveOpen: bool,
-    pub _largeByteBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _largeByteBuffer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub _maxChars: i32,
 }
 #[cfg(feature = "System+IO+BinaryWriter")]

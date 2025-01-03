@@ -11,15 +11,19 @@ pub struct ChainOperationTypelessDepedency_1<TObject: quest_hook::libil2cpp::Typ
     >,
     pub m_depStatus: crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
     pub m_wrapStatus: crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
-    pub m_Callback: *mut crate::System::Func_2<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            TObject,
+    pub m_Callback: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                TObject,
+            >,
         >,
     >,
-    pub m_CachedOnWrappedCompleted: *mut crate::System::Action_1<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            TObject,
+    pub m_CachedOnWrappedCompleted: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                TObject,
+            >,
         >,
     >,
     pub m_ReleaseDependenciesOnFailure: bool,

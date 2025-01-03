@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct Painter2D {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Ctx: *mut crate::UnityEngine::UIElements::MeshGenerationContext,
-    pub m_DetachedAllocator: *mut crate::UnityEngine::UIElements::UIR::DetachedAllocator,
+    pub m_Ctx: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::MeshGenerationContext,
+    >,
+    pub m_DetachedAllocator: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::DetachedAllocator,
+    >,
     pub m_Handle: crate::UnityEngine::UIElements::SafeHandleAccess,
     pub m_Disposed: bool,
 }

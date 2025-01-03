@@ -3,15 +3,33 @@
 #[derive(Debug)]
 pub struct Pen {
     __cordl_parent: crate::UnityEngine::InputSystem::Pointer,
-    pub _tip_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _eraser_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _firstBarrelButton_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _secondBarrelButton_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _thirdBarrelButton_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _fourthBarrelButton_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _inRange_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _tilt_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
-    pub _twist_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
+    pub _tip_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _eraser_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _firstBarrelButton_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _secondBarrelButton_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _thirdBarrelButton_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _fourthBarrelButton_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _inRange_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _tilt_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    >,
+    pub _twist_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Pen")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

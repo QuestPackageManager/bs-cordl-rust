@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct TaskSchedulerAwaitTaskContinuation {
     __cordl_parent: crate::System::Threading::Tasks::AwaitTaskContinuation,
-    pub m_scheduler: *mut crate::System::Threading::Tasks::TaskScheduler,
+    pub m_scheduler: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskScheduler,
+    >,
 }
 #[cfg(feature = "System+Threading+Tasks+TaskSchedulerAwaitTaskContinuation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

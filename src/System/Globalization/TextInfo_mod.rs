@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct TextInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_listSeparator: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_listSeparator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_isReadOnly: bool,
-    pub m_cultureName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_cultureData: *mut crate::System::Globalization::CultureData,
-    pub m_textInfoName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_cultureName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_cultureData: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::CultureData,
+    >,
+    pub m_textInfoName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_IsAsciiCasingSameAsInvariant: crate::System::Nullable_1<bool>,
-    pub customCultureName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub customCultureName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub m_nDataItem: i32,
     pub m_useUserOverride: bool,
     pub m_win32LangID: i32,

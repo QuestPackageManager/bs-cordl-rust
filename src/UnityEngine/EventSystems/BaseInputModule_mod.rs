@@ -3,15 +3,27 @@
 #[derive(Debug)]
 pub struct BaseInputModule {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
-    pub m_RaycastResultCache: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::EventSystems::RaycastResult,
+    pub m_RaycastResultCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::EventSystems::RaycastResult,
+        >,
     >,
     pub m_SendPointerHoverToParent: bool,
-    pub m_AxisEventData: *mut crate::UnityEngine::EventSystems::AxisEventData,
-    pub m_EventSystem: *mut crate::UnityEngine::EventSystems::EventSystem,
-    pub m_BaseEventData: *mut crate::UnityEngine::EventSystems::BaseEventData,
-    pub m_InputOverride: *mut crate::UnityEngine::EventSystems::BaseInput,
-    pub m_DefaultInput: *mut crate::UnityEngine::EventSystems::BaseInput,
+    pub m_AxisEventData: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::AxisEventData,
+    >,
+    pub m_EventSystem: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::EventSystem,
+    >,
+    pub m_BaseEventData: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::BaseEventData,
+    >,
+    pub m_InputOverride: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::BaseInput,
+    >,
+    pub m_DefaultInput: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::BaseInput,
+    >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+BaseInputModule")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

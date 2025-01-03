@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct DsaSigner {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub kCalculator: *mut crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator,
-    pub key: *mut crate::Org::BouncyCastle::Crypto::Parameters::DsaKeyParameters,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub kCalculator: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator,
+    >,
+    pub key: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::DsaKeyParameters,
+    >,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+DsaSigner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,16 +3,26 @@
 #[derive(Debug)]
 pub struct EnvironmentOverrideSettingsPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _overrideEnvironmentsToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _elementsGO: *mut crate::UnityEngine::GameObject,
-    pub _elements: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements,
+    pub _overrideEnvironmentsToggle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
     >,
-    pub _presentPanelAnimation: *mut crate::HMUI::PanelAnimationSO,
-    pub _dismissPanelAnimation: *mut crate::HMUI::PanelAnimationSO,
-    pub _environmentListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
-    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
-    pub _overrideEnvironmentSettings: *mut crate::GlobalNamespace::OverrideEnvironmentSettings,
+    pub _elementsGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _elements: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements,
+        >,
+    >,
+    pub _presentPanelAnimation: quest_hook::libil2cpp::Gc<crate::HMUI::PanelAnimationSO>,
+    pub _dismissPanelAnimation: quest_hook::libil2cpp::Gc<crate::HMUI::PanelAnimationSO>,
+    pub _environmentListModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentsListModel,
+    >,
+    pub _analyticsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAnalyticsModel,
+    >,
+    pub _overrideEnvironmentSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OverrideEnvironmentSettings,
+    >,
     pub _initialized: bool,
 }
 #[cfg(feature = "EnvironmentOverrideSettingsPanelController")]
@@ -155,12 +165,14 @@ for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
 #[derive(Debug)]
 pub struct EnvironmentOverrideSettingsPanelController_Elements {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub label: *mut crate::TMPro::TextMeshProUGUI,
-    pub simpleTextDropdown: *mut crate::HMUI::SimpleTextDropdown,
+    pub label: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub simpleTextDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
     pub environmentType: crate::GlobalNamespace::EnvironmentType,
-    pub localizationKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _environmentInfos_k__BackingField: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub localizationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _environmentInfos_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
     >,
 }
 #[cfg(feature = "EnvironmentOverrideSettingsPanelController+Elements")]

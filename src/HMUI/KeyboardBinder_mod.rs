@@ -5,18 +5,22 @@ pub struct KeyboardBinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _enabled_k__BackingField: bool,
     pub _shouldClearBindings: bool,
-    pub _newBindings: *mut crate::System::Collections::Generic::List_1<
-        crate::System::ValueTuple_3<
-            crate::UnityEngine::KeyCode,
-            crate::HMUI::KeyboardBinder_KeyBindingType,
-            *mut crate::UnityEngine::Events::UnityAction_1<bool>,
+    pub _newBindings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::System::ValueTuple_3<
+                crate::UnityEngine::KeyCode,
+                crate::HMUI::KeyboardBinder_KeyBindingType,
+                *mut crate::UnityEngine::Events::UnityAction_1<bool>,
+            >,
         >,
     >,
-    pub _bindings: *mut crate::System::Collections::Generic::List_1<
-        crate::System::ValueTuple_3<
-            crate::UnityEngine::KeyCode,
-            crate::HMUI::KeyboardBinder_KeyBindingType,
-            *mut crate::UnityEngine::Events::UnityAction_1<bool>,
+    pub _bindings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::System::ValueTuple_3<
+                crate::UnityEngine::KeyCode,
+                crate::HMUI::KeyboardBinder_KeyBindingType,
+                *mut crate::UnityEngine::Events::UnityAction_1<bool>,
+            >,
         >,
     >,
 }

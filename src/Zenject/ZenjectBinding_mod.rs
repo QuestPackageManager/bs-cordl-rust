@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct ZenjectBinding {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _components: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Component,
+    pub _components: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Component>,
     >,
-    pub _identifier: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _useSceneContext: bool,
     pub _ifNotBound: bool,
-    pub _context: *mut crate::Zenject::Context,
+    pub _context: quest_hook::libil2cpp::Gc<crate::Zenject::Context>,
     pub _bindType: crate::Zenject::ZenjectBinding_BindTypes,
 }
 #[cfg(feature = "Zenject+ZenjectBinding")]

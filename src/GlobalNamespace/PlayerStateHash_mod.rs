@@ -1,6 +1,6 @@
 #[cfg(feature = "PlayerStateHash")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PlayerStateHash {
     pub _bloomFilter: crate::GlobalNamespace::BitMask128,
 }

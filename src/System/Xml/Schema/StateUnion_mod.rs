@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Xml+Schema+StateUnion")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StateUnion {
     padding: [u8; 4usize],
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Profiling+ProfilerRecorder")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ProfilerRecorder {
     pub handle: u64,
 }

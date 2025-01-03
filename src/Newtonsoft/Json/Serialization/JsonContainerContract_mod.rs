@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct JsonContainerContract {
     __cordl_parent: crate::Newtonsoft::Json::Serialization::JsonContract,
-    pub _itemContract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-    pub _finalItemContract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-    pub _ItemConverter_k__BackingField: *mut crate::Newtonsoft::Json::JsonConverter,
+    pub _itemContract: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonContract,
+    >,
+    pub _finalItemContract: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::JsonContract,
+    >,
+    pub _ItemConverter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::JsonConverter,
+    >,
     pub _ItemIsReference_k__BackingField: crate::System::Nullable_1<bool>,
     pub _ItemReferenceLoopHandling_k__BackingField: crate::System::Nullable_1<
         crate::Newtonsoft::Json::ReferenceLoopHandling,

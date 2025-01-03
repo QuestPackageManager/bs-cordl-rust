@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct MissionMapAnimationController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionNodesManager: *mut crate::GlobalNamespace::MissionNodesManager,
-    pub _mapScrollView: *mut crate::HMUI::ScrollView,
+    pub _missionNodesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionNodesManager,
+    >,
+    pub _mapScrollView: quest_hook::libil2cpp::Gc<crate::HMUI::ScrollView>,
     pub _startDelay: f32,
     pub _stageAnimationStartDelay: f32,
     pub _missionConnectionAnimationStartDelay: f32,
     pub _missionConnectionAnimationSeparationTime: f32,
     pub _stageAnimationDuration: f32,
-    pub _shockwaveEffect: *mut crate::GlobalNamespace::MenuShockwave,
+    pub _shockwaveEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuShockwave,
+    >,
 }
 #[cfg(feature = "MissionMapAnimationController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

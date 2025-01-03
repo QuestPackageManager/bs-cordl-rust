@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct MarshalByValueComponent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _site: *mut crate::System::ComponentModel::ISite,
-    pub _events: *mut crate::System::ComponentModel::EventHandlerList,
+    pub _site: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ISite>,
+    pub _events: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::EventHandlerList,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+MarshalByValueComponent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

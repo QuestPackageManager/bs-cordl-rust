@@ -5,7 +5,9 @@ pub struct RectangleFakeGlowLightWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _minAlpha: f32,
     pub _alphaMul: f32,
-    pub _rectangleFakeGlow: *mut crate::GlobalNamespace::RectangleFakeGlow,
+    pub _rectangleFakeGlow: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RectangleFakeGlow,
+    >,
 }
 #[cfg(feature = "RectangleFakeGlowLightWithId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

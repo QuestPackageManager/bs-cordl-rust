@@ -6,13 +6,13 @@ pub struct CookieTokenizer {
     pub m_eofCookie: bool,
     pub m_index: i32,
     pub m_length: i32,
-    pub m_name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_quoted: bool,
     pub m_start: i32,
     pub m_token: crate::System::Net::CookieToken,
     pub m_tokenLength: i32,
-    pub m_tokenStream: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_value: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_tokenStream: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Net+CookieTokenizer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -238,9 +238,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::CookieTokenizer {
 }
 #[cfg(feature = "System+Net+CookieTokenizer+RecognizedAttribute")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CookieTokenizer_RecognizedAttribute {
-    pub m_name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_token: crate::System::Net::CookieToken,
 }
 #[cfg(feature = "System+Net+CookieTokenizer+RecognizedAttribute")]

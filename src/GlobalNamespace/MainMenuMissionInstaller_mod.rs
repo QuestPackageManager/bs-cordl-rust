@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MainMenuMissionInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _missionNodesManager: *mut crate::GlobalNamespace::MissionNodesManager,
+    pub _missionNodesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionNodesManager,
+    >,
 }
 #[cfg(feature = "MainMenuMissionInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

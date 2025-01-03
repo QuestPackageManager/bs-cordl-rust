@@ -4,15 +4,15 @@
 pub struct AesEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ROUNDS: i32,
-    pub WorkingKey: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub WorkingKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<u32>>,
     >,
     pub C0: u32,
     pub C1: u32,
     pub C2: u32,
     pub C3: u32,
     pub forEncryption: bool,
-    pub s: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+AesEngine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,89 +1,253 @@
 #[cfg(feature = "OVR+OpenVR+IVROverlay")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IVROverlay {
-    pub FindOverlay: *mut crate::OVR::OpenVR::IVROverlay__FindOverlay,
-    pub CreateOverlay: *mut crate::OVR::OpenVR::IVROverlay__CreateOverlay,
-    pub DestroyOverlay: *mut crate::OVR::OpenVR::IVROverlay__DestroyOverlay,
-    pub SetHighQualityOverlay: *mut crate::OVR::OpenVR::IVROverlay__SetHighQualityOverlay,
-    pub GetHighQualityOverlay: *mut crate::OVR::OpenVR::IVROverlay__GetHighQualityOverlay,
-    pub GetOverlayKey: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayKey,
-    pub GetOverlayName: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayName,
-    pub SetOverlayName: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayName,
-    pub GetOverlayImageData: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayImageData,
-    pub GetOverlayErrorNameFromEnum: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayErrorNameFromEnum,
-    pub SetOverlayRenderingPid: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayRenderingPid,
-    pub GetOverlayRenderingPid: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayRenderingPid,
-    pub SetOverlayFlag: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayFlag,
-    pub GetOverlayFlag: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayFlag,
-    pub SetOverlayColor: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayColor,
-    pub GetOverlayColor: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayColor,
-    pub SetOverlayAlpha: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayAlpha,
-    pub GetOverlayAlpha: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayAlpha,
-    pub SetOverlayTexelAspect: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayTexelAspect,
-    pub GetOverlayTexelAspect: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayTexelAspect,
-    pub SetOverlaySortOrder: *mut crate::OVR::OpenVR::IVROverlay__SetOverlaySortOrder,
-    pub GetOverlaySortOrder: *mut crate::OVR::OpenVR::IVROverlay__GetOverlaySortOrder,
-    pub SetOverlayWidthInMeters: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayWidthInMeters,
-    pub GetOverlayWidthInMeters: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayWidthInMeters,
-    pub SetOverlayAutoCurveDistanceRangeInMeters: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayAutoCurveDistanceRangeInMeters,
-    pub GetOverlayAutoCurveDistanceRangeInMeters: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayAutoCurveDistanceRangeInMeters,
-    pub SetOverlayTextureColorSpace: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayTextureColorSpace,
-    pub GetOverlayTextureColorSpace: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayTextureColorSpace,
-    pub SetOverlayTextureBounds: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayTextureBounds,
-    pub GetOverlayTextureBounds: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayTextureBounds,
-    pub GetOverlayRenderModel: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayRenderModel,
-    pub SetOverlayRenderModel: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayRenderModel,
-    pub GetOverlayTransformType: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayTransformType,
-    pub SetOverlayTransformAbsolute: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayTransformAbsolute,
-    pub GetOverlayTransformAbsolute: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayTransformAbsolute,
-    pub SetOverlayTransformTrackedDeviceRelative: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceRelative,
-    pub GetOverlayTransformTrackedDeviceRelative: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceRelative,
-    pub SetOverlayTransformTrackedDeviceComponent: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceComponent,
-    pub GetOverlayTransformTrackedDeviceComponent: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceComponent,
-    pub GetOverlayTransformOverlayRelative: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayTransformOverlayRelative,
-    pub SetOverlayTransformOverlayRelative: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayTransformOverlayRelative,
-    pub ShowOverlay: *mut crate::OVR::OpenVR::IVROverlay__ShowOverlay,
-    pub HideOverlay: *mut crate::OVR::OpenVR::IVROverlay__HideOverlay,
-    pub IsOverlayVisible: *mut crate::OVR::OpenVR::IVROverlay__IsOverlayVisible,
-    pub GetTransformForOverlayCoordinates: *mut crate::OVR::OpenVR::IVROverlay__GetTransformForOverlayCoordinates,
-    pub PollNextOverlayEvent: *mut crate::OVR::OpenVR::IVROverlay__PollNextOverlayEvent,
-    pub GetOverlayInputMethod: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayInputMethod,
-    pub SetOverlayInputMethod: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayInputMethod,
-    pub GetOverlayMouseScale: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayMouseScale,
-    pub SetOverlayMouseScale: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayMouseScale,
-    pub ComputeOverlayIntersection: *mut crate::OVR::OpenVR::IVROverlay__ComputeOverlayIntersection,
-    pub IsHoverTargetOverlay: *mut crate::OVR::OpenVR::IVROverlay__IsHoverTargetOverlay,
-    pub GetGamepadFocusOverlay: *mut crate::OVR::OpenVR::IVROverlay__GetGamepadFocusOverlay,
-    pub SetGamepadFocusOverlay: *mut crate::OVR::OpenVR::IVROverlay__SetGamepadFocusOverlay,
-    pub SetOverlayNeighbor: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayNeighbor,
-    pub MoveGamepadFocusToNeighbor: *mut crate::OVR::OpenVR::IVROverlay__MoveGamepadFocusToNeighbor,
-    pub SetOverlayDualAnalogTransform: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayDualAnalogTransform,
-    pub GetOverlayDualAnalogTransform: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayDualAnalogTransform,
-    pub SetOverlayTexture: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayTexture,
-    pub ClearOverlayTexture: *mut crate::OVR::OpenVR::IVROverlay__ClearOverlayTexture,
-    pub SetOverlayRaw: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayRaw,
-    pub SetOverlayFromFile: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayFromFile,
-    pub GetOverlayTexture: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayTexture,
-    pub ReleaseNativeOverlayHandle: *mut crate::OVR::OpenVR::IVROverlay__ReleaseNativeOverlayHandle,
-    pub GetOverlayTextureSize: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayTextureSize,
-    pub CreateDashboardOverlay: *mut crate::OVR::OpenVR::IVROverlay__CreateDashboardOverlay,
-    pub IsDashboardVisible: *mut crate::OVR::OpenVR::IVROverlay__IsDashboardVisible,
-    pub IsActiveDashboardOverlay: *mut crate::OVR::OpenVR::IVROverlay__IsActiveDashboardOverlay,
-    pub SetDashboardOverlaySceneProcess: *mut crate::OVR::OpenVR::IVROverlay__SetDashboardOverlaySceneProcess,
-    pub GetDashboardOverlaySceneProcess: *mut crate::OVR::OpenVR::IVROverlay__GetDashboardOverlaySceneProcess,
-    pub ShowDashboard: *mut crate::OVR::OpenVR::IVROverlay__ShowDashboard,
-    pub GetPrimaryDashboardDevice: *mut crate::OVR::OpenVR::IVROverlay__GetPrimaryDashboardDevice,
-    pub ShowKeyboard: *mut crate::OVR::OpenVR::IVROverlay__ShowKeyboard,
-    pub ShowKeyboardForOverlay: *mut crate::OVR::OpenVR::IVROverlay__ShowKeyboardForOverlay,
-    pub GetKeyboardText: *mut crate::OVR::OpenVR::IVROverlay__GetKeyboardText,
-    pub HideKeyboard: *mut crate::OVR::OpenVR::IVROverlay__HideKeyboard,
-    pub SetKeyboardTransformAbsolute: *mut crate::OVR::OpenVR::IVROverlay__SetKeyboardTransformAbsolute,
-    pub SetKeyboardPositionForOverlay: *mut crate::OVR::OpenVR::IVROverlay__SetKeyboardPositionForOverlay,
-    pub SetOverlayIntersectionMask: *mut crate::OVR::OpenVR::IVROverlay__SetOverlayIntersectionMask,
-    pub GetOverlayFlags: *mut crate::OVR::OpenVR::IVROverlay__GetOverlayFlags,
-    pub ShowMessageOverlay: *mut crate::OVR::OpenVR::IVROverlay__ShowMessageOverlay,
-    pub CloseMessageOverlay: *mut crate::OVR::OpenVR::IVROverlay__CloseMessageOverlay,
+    pub FindOverlay: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__FindOverlay,
+    >,
+    pub CreateOverlay: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__CreateOverlay,
+    >,
+    pub DestroyOverlay: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__DestroyOverlay,
+    >,
+    pub SetHighQualityOverlay: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetHighQualityOverlay,
+    >,
+    pub GetHighQualityOverlay: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetHighQualityOverlay,
+    >,
+    pub GetOverlayKey: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayKey,
+    >,
+    pub GetOverlayName: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayName,
+    >,
+    pub SetOverlayName: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayName,
+    >,
+    pub GetOverlayImageData: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayImageData,
+    >,
+    pub GetOverlayErrorNameFromEnum: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayErrorNameFromEnum,
+    >,
+    pub SetOverlayRenderingPid: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayRenderingPid,
+    >,
+    pub GetOverlayRenderingPid: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayRenderingPid,
+    >,
+    pub SetOverlayFlag: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayFlag,
+    >,
+    pub GetOverlayFlag: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayFlag,
+    >,
+    pub SetOverlayColor: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayColor,
+    >,
+    pub GetOverlayColor: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayColor,
+    >,
+    pub SetOverlayAlpha: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayAlpha,
+    >,
+    pub GetOverlayAlpha: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayAlpha,
+    >,
+    pub SetOverlayTexelAspect: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayTexelAspect,
+    >,
+    pub GetOverlayTexelAspect: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayTexelAspect,
+    >,
+    pub SetOverlaySortOrder: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlaySortOrder,
+    >,
+    pub GetOverlaySortOrder: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlaySortOrder,
+    >,
+    pub SetOverlayWidthInMeters: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayWidthInMeters,
+    >,
+    pub GetOverlayWidthInMeters: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayWidthInMeters,
+    >,
+    pub SetOverlayAutoCurveDistanceRangeInMeters: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayAutoCurveDistanceRangeInMeters,
+    >,
+    pub GetOverlayAutoCurveDistanceRangeInMeters: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayAutoCurveDistanceRangeInMeters,
+    >,
+    pub SetOverlayTextureColorSpace: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayTextureColorSpace,
+    >,
+    pub GetOverlayTextureColorSpace: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayTextureColorSpace,
+    >,
+    pub SetOverlayTextureBounds: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayTextureBounds,
+    >,
+    pub GetOverlayTextureBounds: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayTextureBounds,
+    >,
+    pub GetOverlayRenderModel: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayRenderModel,
+    >,
+    pub SetOverlayRenderModel: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayRenderModel,
+    >,
+    pub GetOverlayTransformType: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayTransformType,
+    >,
+    pub SetOverlayTransformAbsolute: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayTransformAbsolute,
+    >,
+    pub GetOverlayTransformAbsolute: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayTransformAbsolute,
+    >,
+    pub SetOverlayTransformTrackedDeviceRelative: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceRelative,
+    >,
+    pub GetOverlayTransformTrackedDeviceRelative: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceRelative,
+    >,
+    pub SetOverlayTransformTrackedDeviceComponent: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceComponent,
+    >,
+    pub GetOverlayTransformTrackedDeviceComponent: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceComponent,
+    >,
+    pub GetOverlayTransformOverlayRelative: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayTransformOverlayRelative,
+    >,
+    pub SetOverlayTransformOverlayRelative: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayTransformOverlayRelative,
+    >,
+    pub ShowOverlay: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__ShowOverlay,
+    >,
+    pub HideOverlay: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__HideOverlay,
+    >,
+    pub IsOverlayVisible: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__IsOverlayVisible,
+    >,
+    pub GetTransformForOverlayCoordinates: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetTransformForOverlayCoordinates,
+    >,
+    pub PollNextOverlayEvent: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__PollNextOverlayEvent,
+    >,
+    pub GetOverlayInputMethod: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayInputMethod,
+    >,
+    pub SetOverlayInputMethod: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayInputMethod,
+    >,
+    pub GetOverlayMouseScale: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayMouseScale,
+    >,
+    pub SetOverlayMouseScale: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayMouseScale,
+    >,
+    pub ComputeOverlayIntersection: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__ComputeOverlayIntersection,
+    >,
+    pub IsHoverTargetOverlay: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__IsHoverTargetOverlay,
+    >,
+    pub GetGamepadFocusOverlay: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetGamepadFocusOverlay,
+    >,
+    pub SetGamepadFocusOverlay: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetGamepadFocusOverlay,
+    >,
+    pub SetOverlayNeighbor: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayNeighbor,
+    >,
+    pub MoveGamepadFocusToNeighbor: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__MoveGamepadFocusToNeighbor,
+    >,
+    pub SetOverlayDualAnalogTransform: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayDualAnalogTransform,
+    >,
+    pub GetOverlayDualAnalogTransform: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayDualAnalogTransform,
+    >,
+    pub SetOverlayTexture: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayTexture,
+    >,
+    pub ClearOverlayTexture: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__ClearOverlayTexture,
+    >,
+    pub SetOverlayRaw: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayRaw,
+    >,
+    pub SetOverlayFromFile: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayFromFile,
+    >,
+    pub GetOverlayTexture: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayTexture,
+    >,
+    pub ReleaseNativeOverlayHandle: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__ReleaseNativeOverlayHandle,
+    >,
+    pub GetOverlayTextureSize: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayTextureSize,
+    >,
+    pub CreateDashboardOverlay: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__CreateDashboardOverlay,
+    >,
+    pub IsDashboardVisible: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__IsDashboardVisible,
+    >,
+    pub IsActiveDashboardOverlay: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__IsActiveDashboardOverlay,
+    >,
+    pub SetDashboardOverlaySceneProcess: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetDashboardOverlaySceneProcess,
+    >,
+    pub GetDashboardOverlaySceneProcess: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetDashboardOverlaySceneProcess,
+    >,
+    pub ShowDashboard: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__ShowDashboard,
+    >,
+    pub GetPrimaryDashboardDevice: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetPrimaryDashboardDevice,
+    >,
+    pub ShowKeyboard: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__ShowKeyboard,
+    >,
+    pub ShowKeyboardForOverlay: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__ShowKeyboardForOverlay,
+    >,
+    pub GetKeyboardText: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetKeyboardText,
+    >,
+    pub HideKeyboard: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__HideKeyboard,
+    >,
+    pub SetKeyboardTransformAbsolute: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetKeyboardTransformAbsolute,
+    >,
+    pub SetKeyboardPositionForOverlay: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetKeyboardPositionForOverlay,
+    >,
+    pub SetOverlayIntersectionMask: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__SetOverlayIntersectionMask,
+    >,
+    pub GetOverlayFlags: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__GetOverlayFlags,
+    >,
+    pub ShowMessageOverlay: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__ShowMessageOverlay,
+    >,
+    pub CloseMessageOverlay: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVROverlay__CloseMessageOverlay,
+    >,
 }
 #[cfg(feature = "OVR+OpenVR+IVROverlay")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

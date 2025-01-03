@@ -3,22 +3,26 @@
 #[derive(Debug)]
 pub struct StandardLevelInfoSaveData_V100 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _version: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _songName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _songSubName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _songAuthorName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _levelAuthorName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _songName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _songSubName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _songAuthorName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _levelAuthorName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _beatsPerMinute: f32,
     pub _songTimeOffset: f32,
     pub _shuffle: f32,
     pub _shufflePeriod: f32,
     pub _previewStartTime: f32,
     pub _previewDuration: f32,
-    pub _songFilename: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _coverImageFilename: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _environmentName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _difficultyBeatmaps: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap,
+    pub _songFilename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _coverImageFilename: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _environmentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _difficultyBeatmaps: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap,
+        >,
     >,
 }
 #[cfg(feature = "StandardLevelInfoSaveData_V100")]
@@ -242,9 +246,9 @@ for crate::GlobalNamespace::StandardLevelInfoSaveData_V100 {
 #[derive(Debug)]
 pub struct StandardLevelInfoSaveData_V100_DifficultyBeatmap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _difficulty: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _difficulty: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _difficultyRank: i32,
-    pub _beatmapFilename: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _beatmapFilename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _noteJumpMovementSpeed: f32,
     pub _noteJumpStartBeatOffset: i32,
 }

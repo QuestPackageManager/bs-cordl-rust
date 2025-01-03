@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct MissionNodeSelectionManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionNodesManager: *mut crate::GlobalNamespace::MissionNodesManager,
-    pub didSelectMissionNodeEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MissionNodeVisualController,
+    pub _missionNodesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionNodesManager,
     >,
-    pub _missionNodes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MissionNode,
+    pub didSelectMissionNodeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::MissionNodeVisualController>,
     >,
-    pub _selectedNode: *mut crate::GlobalNamespace::MissionNodeVisualController,
+    pub _missionNodes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionNode>,
+    >,
+    pub _selectedNode: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionNodeVisualController,
+    >,
 }
 #[cfg(feature = "MissionNodeSelectionManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

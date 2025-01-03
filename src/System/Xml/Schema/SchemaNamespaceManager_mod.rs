@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SchemaNamespaceManager {
     __cordl_parent: crate::System::Xml::XmlNamespaceManager,
-    pub node: *mut crate::System::Xml::Schema::XmlSchemaObject,
+    pub node: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
 }
 #[cfg(feature = "System+Xml+Schema+SchemaNamespaceManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

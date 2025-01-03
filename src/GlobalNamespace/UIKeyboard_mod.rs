@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct UIKeyboard {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _keyButtonPrefab: *mut crate::GlobalNamespace::TextMeshProButton,
-    pub textKeyWasPressedEvent: *mut crate::System::Action_1<char>,
-    pub deleteButtonWasPressedEvent: *mut crate::System::Action,
-    pub okButtonWasPressedEvent: *mut crate::System::Action,
-    pub cancelButtonWasPressedEvent: *mut crate::System::Action,
-    pub _okButton: *mut crate::UnityEngine::UI::Button,
-    pub _cancelButton: *mut crate::UnityEngine::UI::Button,
+    pub _keyButtonPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TextMeshProButton,
+    >,
+    pub textKeyWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>,
+    pub deleteButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub okButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub cancelButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _okButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _cancelButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _okButtonInteractivity: bool,
     pub _hideCancelButton: bool,
 }

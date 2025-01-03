@@ -4,13 +4,19 @@
 pub struct NameObjectCollectionBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _readOnly: bool,
-    pub _entriesArray: *mut crate::System::Collections::ArrayList,
-    pub _keyComparer: *mut crate::System::Collections::IEqualityComparer,
-    pub _entriesTable: *mut crate::System::Collections::Hashtable,
-    pub _nullKeyEntry: *mut crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectEntry,
-    pub _serializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
+    pub _entriesArray: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _keyComparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IEqualityComparer,
+    >,
+    pub _entriesTable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub _nullKeyEntry: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectEntry,
+    >,
+    pub _serializationInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::SerializationInfo,
+    >,
     pub _version: i32,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+Specialized+NameObjectCollectionBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -455,8 +461,8 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase {
 #[derive(Debug)]
 pub struct NameObjectCollectionBase_NameObjectEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Key: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Value: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub Key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(
     feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
@@ -532,7 +538,9 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObject
 pub struct NameObjectCollectionBase_NameObjectKeysEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pos: i32,
-    pub _coll: *mut crate::System::Collections::Specialized::NameObjectCollectionBase,
+    pub _coll: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Specialized::NameObjectCollectionBase,
+    >,
     pub _version: i32,
 }
 #[cfg(

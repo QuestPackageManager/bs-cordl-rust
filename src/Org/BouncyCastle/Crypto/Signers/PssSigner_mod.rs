@@ -3,19 +3,27 @@
 #[derive(Debug)]
 pub struct PssSigner {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub contentDigest1: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub contentDigest2: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub mgfDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub contentDigest1: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IDigest,
+    >,
+    pub contentDigest2: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IDigest,
+    >,
+    pub mgfDigest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
+    >,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
     pub hLen: i32,
     pub mgfhLen: i32,
     pub sLen: i32,
     pub sSet: bool,
     pub emBits: i32,
-    pub salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mDash: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub block: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mDash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub block: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub trailer: u8,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+PssSigner")]

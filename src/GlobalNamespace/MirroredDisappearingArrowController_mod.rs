@@ -5,7 +5,9 @@ pub struct MirroredDisappearingArrowController {
     __cordl_parent: crate::GlobalNamespace::DisappearingArrowControllerBase_1<
         *mut crate::GlobalNamespace::MirroredGameNoteController,
     >,
-    pub _mirroredGameNoteController: *mut crate::GlobalNamespace::MirroredGameNoteController,
+    pub _mirroredGameNoteController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MirroredGameNoteController,
+    >,
 }
 #[cfg(feature = "MirroredDisappearingArrowController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

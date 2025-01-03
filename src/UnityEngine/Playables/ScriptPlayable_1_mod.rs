@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Playables+ScriptPlayable_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ScriptPlayable_1<T: quest_hook::libil2cpp::Type> {
     pub m_Handle: crate::UnityEngine::Playables::PlayableHandle,
     __cordl_phantom_T: std::marker::PhantomData<T>,

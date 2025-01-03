@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct FSharpFunction {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _instance: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _invoker: *mut crate::Newtonsoft::Json::Utilities::MethodCall_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _invoker: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::MethodCall_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+FSharpFunction")]

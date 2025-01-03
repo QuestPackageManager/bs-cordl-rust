@@ -5,10 +5,10 @@ pub struct CamelliaLightEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub initialised: bool,
     pub _keyis128: bool,
-    pub subkey: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub kw: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub ke: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub state: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub subkey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub kw: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub ke: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+CamelliaLightEngine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

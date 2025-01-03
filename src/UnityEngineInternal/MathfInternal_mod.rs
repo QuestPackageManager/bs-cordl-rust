@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngineInternal+MathfInternal")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MathfInternal {}
 #[cfg(feature = "UnityEngineInternal+MathfInternal")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

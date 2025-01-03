@@ -44,12 +44,16 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct PlayerSaveDataV1_0_1 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub version: *mut quest_hook::libil2cpp::Il2CppString,
-    pub localPlayers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_LocalPlayer,
+    pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub localPlayers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_LocalPlayer,
+        >,
     >,
-    pub guestPlayers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_GuestPlayer,
+    pub guestPlayers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_GuestPlayer,
+        >,
     >,
     pub lastSelectedBeatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
 }
@@ -124,11 +128,11 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSaveDat
 #[derive(Debug)]
 pub struct PlayerSaveDataV1_0_1_AchievementsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub unlockedAchievements: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub unlockedAchievements: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub unlockedAchievementsToUpload: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub unlockedAchievementsToUpload: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1+AchievementsData")]
@@ -258,8 +262,10 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_GameplayModifiers {
 #[derive(Debug)]
 pub struct PlayerSaveDataV1_0_1_GuestPlayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub playerName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerSpecificSettings,
+    pub playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub playerSpecificSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerSpecificSettings,
+    >,
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1+GuestPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -315,22 +321,36 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_GuestPlayer {
 #[derive(Debug)]
 pub struct PlayerSaveDataV1_0_1_LocalPlayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub playerId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub playerName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub shouldShowTutorialPrompt: bool,
-    pub gameplayModifiers: *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_GameplayModifiers,
-    pub playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerSpecificSettings,
-    pub playerAllOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerAllOverallStatsData,
-    pub levelsStatsData: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerLevelStatsData,
+    pub gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveDataV1_0_1_GameplayModifiers,
     >,
-    pub missionsStatsData: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerMissionStatsData,
+    pub playerSpecificSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerSpecificSettings,
     >,
-    pub showedMissionHelpIds: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub playerAllOverallStatsData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerAllOverallStatsData,
     >,
-    pub achievementsData: *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_AchievementsData,
+    pub levelsStatsData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerLevelStatsData,
+        >,
+    >,
+    pub missionsStatsData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerMissionStatsData,
+        >,
+    >,
+    pub showedMissionHelpIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+    pub achievementsData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveDataV1_0_1_AchievementsData,
+    >,
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1+LocalPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -386,9 +406,15 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_LocalPlayer {
 #[derive(Debug)]
 pub struct PlayerSaveDataV1_0_1_PlayerAllOverallStatsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub campaignOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerOverallStatsData,
-    pub soloFreePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerOverallStatsData,
-    pub partyFreePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerOverallStatsData,
+    pub campaignOverallStatsData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerOverallStatsData,
+    >,
+    pub soloFreePlayOverallStatsData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerOverallStatsData,
+    >,
+    pub partyFreePlayOverallStatsData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerOverallStatsData,
+    >,
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerAllOverallStatsData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -496,7 +522,7 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerAllOverallStatsData {
 #[derive(Debug)]
 pub struct PlayerSaveDataV1_0_1_PlayerLevelStatsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub levelId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     pub highScore: i32,
     pub maxCombo: i32,
@@ -561,7 +587,7 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerLevelStatsData {
 #[derive(Debug)]
 pub struct PlayerSaveDataV1_0_1_PlayerMissionStatsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub missionId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub missionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub cleared: bool,
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerMissionStatsData")]

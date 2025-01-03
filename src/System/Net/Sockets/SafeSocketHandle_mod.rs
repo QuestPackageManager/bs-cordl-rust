@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct SafeSocketHandle {
     __cordl_parent: crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid,
-    pub blocking_threads: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Threading::Thread,
+    pub blocking_threads: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Threading::Thread,
+        >,
     >,
-    pub threads_stacktraces: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Threading::Thread,
-        *mut crate::System::Diagnostics::StackTrace,
+    pub threads_stacktraces: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Threading::Thread,
+            *mut crate::System::Diagnostics::StackTrace,
+        >,
     >,
     pub in_cleanup: bool,
 }

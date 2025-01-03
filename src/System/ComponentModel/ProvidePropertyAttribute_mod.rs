@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ProvidePropertyAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _PropertyName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _ReceiverTypeName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _PropertyName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _ReceiverTypeName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+ProvidePropertyAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

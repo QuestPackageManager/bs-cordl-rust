@@ -1,10 +1,10 @@
 #[cfg(feature = "UnityEngine+TextCore+FaceInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FaceInfo {
     pub m_FaceIndex: i32,
-    pub m_FamilyName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_StyleName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_FamilyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_StyleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_PointSize: i32,
     pub m_Scale: f32,
     pub m_UnitsPerEM: i32,

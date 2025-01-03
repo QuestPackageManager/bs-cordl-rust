@@ -5,9 +5,13 @@ pub struct LocalizationAsyncInstaller {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         *mut crate::UnityEngine::TextAsset,
     >,
-    pub _mainPolyglotAsset: *mut crate::BGLib::Polyglot::Localization,
-    pub _inputFiles: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BGLib::Polyglot::LocalizationAsset,
+    pub _mainPolyglotAsset: quest_hook::libil2cpp::Gc<
+        crate::BGLib::Polyglot::Localization,
+    >,
+    pub _inputFiles: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BGLib::Polyglot::LocalizationAsset,
+        >,
     >,
 }
 #[cfg(feature = "BGLib+Polyglot+LocalizationAsyncInstaller")]

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TypeInferenceRuleAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _rule: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _rule: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngineInternal+TypeInferenceRuleAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

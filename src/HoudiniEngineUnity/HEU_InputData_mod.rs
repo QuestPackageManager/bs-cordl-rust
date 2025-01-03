@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HEU_InputData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _inputObject: *mut crate::UnityEngine::GameObject,
+    pub _inputObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

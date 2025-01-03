@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct StepCounter {
     __cordl_parent: crate::UnityEngine::InputSystem::Sensor,
-    pub _stepCounter_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::IntegerControl,
+    pub _stepCounter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::IntegerControl,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+StepCounter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

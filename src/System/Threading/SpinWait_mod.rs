@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Threading+SpinWait")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SpinWait {
     pub _count: i32,
 }

@@ -10,7 +10,9 @@ pub struct BurstCompilerOptions {
     pub _enableBurstDebug: bool,
     pub _forceEnableBurstSafetyChecks: bool,
     pub _IsGlobal_k__BackingField: bool,
-    pub _OptionsChanged_k__BackingField: *mut crate::System::Action,
+    pub _OptionsChanged_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
 }
 #[cfg(feature = "Unity+Burst+BurstCompilerOptions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

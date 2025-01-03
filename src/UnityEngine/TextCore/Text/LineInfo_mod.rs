@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+LineInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LineInfo {
     pub controlCharacterCount: i32,
     pub characterCount: i32,

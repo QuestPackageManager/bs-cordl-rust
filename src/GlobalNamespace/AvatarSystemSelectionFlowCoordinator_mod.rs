@@ -3,17 +3,27 @@
 #[derive(Debug)]
 pub struct AvatarSystemSelectionFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub _selectAvatarSystemViewController: *mut crate::GlobalNamespace::SelectAvatarSystemViewController,
-    pub _avatarSystemCollection: *mut crate::BeatSaber::AvatarCore::AvatarSystemCollection,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub didFinishEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
-        crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
+    pub _selectAvatarSystemViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SelectAvatarSystemViewController,
     >,
-    pub _avatarFlowCoordinators: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::BeatSaber::AvatarCore::AvatarSystemIdentifier,
-        *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+    pub _avatarSystemCollection: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::AvatarSystemCollection,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
+            crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
+        >,
+    >,
+    pub _avatarFlowCoordinators: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::BeatSaber::AvatarCore::AvatarSystemIdentifier,
+            *mut crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+        >,
     >,
     pub _continueButtonVisible: bool,
 }

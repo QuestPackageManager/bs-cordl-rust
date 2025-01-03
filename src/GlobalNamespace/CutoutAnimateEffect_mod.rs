@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct CutoutAnimateEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _cuttoutEffects: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::CutoutEffect,
+    pub _cuttoutEffects: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::CutoutEffect>,
     >,
-    pub _transitionCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub _transitionCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub _animating_k__BackingField: bool,
 }
 #[cfg(feature = "CutoutAnimateEffect")]

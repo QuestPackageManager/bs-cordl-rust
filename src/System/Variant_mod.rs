@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Variant")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Variant {
     padding: [u8; 24usize],
 }

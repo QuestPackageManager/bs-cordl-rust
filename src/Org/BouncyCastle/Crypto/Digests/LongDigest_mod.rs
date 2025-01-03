@@ -4,7 +4,7 @@
 pub struct LongDigest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub MyByteLength: i32,
-    pub xBuf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub xBuf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub xBufOff: i32,
     pub byteCount1: i64,
     pub byteCount2: i64,
@@ -16,7 +16,7 @@ pub struct LongDigest {
     pub H6: u64,
     pub H7: u64,
     pub H8: u64,
-    pub W: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+    pub W: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     pub wOff: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+LongDigest")]

@@ -199,7 +199,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::UvUnw
 }
 #[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UvUnwrapping_UVTransform {
     pub translation: crate::UnityEngine::Vector2,
     pub rotation: f32,

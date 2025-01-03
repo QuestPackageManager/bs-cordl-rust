@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BufferedAeadBlockCipher {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::BufferedCipherBase,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+BufferedAeadBlockCipher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

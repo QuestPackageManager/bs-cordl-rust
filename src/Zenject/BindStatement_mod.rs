@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct BindStatement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _disposables: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::IDisposable,
+    pub _disposables: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::IDisposable>,
     >,
-    pub _bindingFinalizer: *mut crate::Zenject::IBindingFinalizer,
+    pub _bindingFinalizer: quest_hook::libil2cpp::Gc<crate::Zenject::IBindingFinalizer>,
 }
 #[cfg(feature = "Zenject+BindStatement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

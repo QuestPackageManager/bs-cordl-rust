@@ -3,14 +3,22 @@
 #[derive(Debug)]
 pub struct UxmlAttributeDescription {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_ObsoleteNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _type_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _typeNamespace_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ObsoleteNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub _type_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _typeNamespace_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _use_k__BackingField: crate::UnityEngine::UIElements::UxmlAttributeDescription_Use,
-    pub _restriction_k__BackingField: *mut crate::UnityEngine::UIElements::UxmlTypeRestriction,
+    pub _restriction_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlTypeRestriction,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlAttributeDescription")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -5,9 +5,11 @@ pub struct MultipleSortedBeatmapObjectsListsEnumerator_1<
     T: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _priorityQueue: *mut crate::Priority_Queue::StablePriorityQueue_1<
-        *mut crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1_BeatmapObjectListNode<
-            T,
+    pub _priorityQueue: quest_hook::libil2cpp::Gc<
+        crate::Priority_Queue::StablePriorityQueue_1<
+            *mut crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1_BeatmapObjectListNode<
+                T,
+            >,
         >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -157,7 +159,9 @@ pub struct MultipleSortedBeatmapObjectsListsEnumerator_1_BeatmapObjectListNode<
     T: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::Priority_Queue::StablePriorityQueueNode,
-    pub _dataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<T>,
+    pub _dataList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<T>,
+    >,
     pub _typeId: i32,
     pub _idx: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,

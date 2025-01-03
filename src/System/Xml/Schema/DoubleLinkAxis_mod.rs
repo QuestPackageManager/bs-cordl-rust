@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DoubleLinkAxis {
     __cordl_parent: crate::MS::Internal::Xml::XPath::Axis,
-    pub next: *mut crate::MS::Internal::Xml::XPath::Axis,
+    pub next: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
 }
 #[cfg(feature = "System+Xml+Schema+DoubleLinkAxis")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

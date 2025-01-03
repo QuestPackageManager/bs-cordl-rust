@@ -4,15 +4,17 @@
 pub struct InjectContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bindingId: crate::Zenject::BindingId,
-    pub _objectType: *mut crate::System::Type,
-    pub _parentContext: *mut crate::Zenject::InjectContext,
-    pub _objectInstance: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _memberName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _parentContext: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+    pub _objectInstance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _optional: bool,
     pub _sourceType: crate::Zenject::InjectSources,
-    pub _fallBackValue: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _concreteIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _container: *mut crate::Zenject::DiContainer,
+    pub _fallBackValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _concreteIdentifier: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
 }
 #[cfg(feature = "Zenject+InjectContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

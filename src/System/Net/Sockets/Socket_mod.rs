@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct Socket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cachedTaskEventArgs: *mut crate::System::Net::Sockets::Socket_CachedEventArgs,
+    pub _cachedTaskEventArgs: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Sockets::Socket_CachedEventArgs,
+    >,
     pub is_closed: bool,
     pub is_listening: bool,
     pub useOverlappedIO: bool,
@@ -11,10 +13,12 @@ pub struct Socket {
     pub addressFamily: crate::System::Net::Sockets::AddressFamily,
     pub socketType: crate::System::Net::Sockets::SocketType,
     pub protocolType: crate::System::Net::Sockets::ProtocolType,
-    pub m_Handle: *mut crate::System::Net::Sockets::SafeSocketHandle,
-    pub seed_endpoint: *mut crate::System::Net::EndPoint,
-    pub ReadSem: *mut crate::System::Threading::SemaphoreSlim,
-    pub WriteSem: *mut crate::System::Threading::SemaphoreSlim,
+    pub m_Handle: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Sockets::SafeSocketHandle,
+    >,
+    pub seed_endpoint: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
+    pub ReadSem: quest_hook::libil2cpp::Gc<crate::System::Threading::SemaphoreSlim>,
+    pub WriteSem: quest_hook::libil2cpp::Gc<crate::System::Threading::SemaphoreSlim>,
     pub is_blocking: bool,
     pub is_bound: bool,
     pub is_connected: bool,
@@ -2068,11 +2072,13 @@ impl AsMut<crate::System::IDisposable> for crate::System::Net::Sockets::Socket {
 #[derive(Debug)]
 pub struct Socket_AwaitableSocketAsyncEventArgs {
     __cordl_parent: crate::System::Net::Sockets::SocketAsyncEventArgs,
-    pub _continuation: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _continuation: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub _executionContext: *mut crate::System::Threading::ExecutionContext,
-    pub _scheduler: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _executionContext: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ExecutionContext,
+    >,
+    pub _scheduler: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _token: i16,
     pub _WrapExceptionsInIOExceptions_k__BackingField: bool,
 }
@@ -2350,13 +2356,23 @@ for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
 #[derive(Debug)]
 pub struct Socket_CachedEventArgs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub TaskAccept: *mut crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<
-        *mut crate::System::Net::Sockets::Socket,
+    pub TaskAccept: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<
+            *mut crate::System::Net::Sockets::Socket,
+        >,
     >,
-    pub TaskReceive: *mut crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs,
-    pub TaskSend: *mut crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs,
-    pub ValueTaskReceive: *mut crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs,
-    pub ValueTaskSend: *mut crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs,
+    pub TaskReceive: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs,
+    >,
+    pub TaskSend: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs,
+    >,
+    pub ValueTaskReceive: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs,
+    >,
+    pub ValueTaskSend: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs,
+    >,
 }
 #[cfg(feature = "System+Net+Sockets+Socket+CachedEventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2555,7 +2571,7 @@ for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
 }
 #[cfg(feature = "System+Net+Sockets+Socket+WSABUF")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Socket_WSABUF {
     pub len: i32,
     pub buf: crate::System::IntPtr,

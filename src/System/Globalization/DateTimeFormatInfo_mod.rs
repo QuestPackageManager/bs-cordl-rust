@@ -3,85 +3,105 @@
 #[derive(Debug)]
 pub struct DateTimeFormatInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cultureData: *mut crate::System::Globalization::CultureData,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _langName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _compareInfo: *mut crate::System::Globalization::CompareInfo,
-    pub _cultureInfo: *mut crate::System::Globalization::CultureInfo,
-    pub amDesignator: *mut quest_hook::libil2cpp::Il2CppString,
-    pub pmDesignator: *mut quest_hook::libil2cpp::Il2CppString,
-    pub dateSeparator: *mut quest_hook::libil2cpp::Il2CppString,
-    pub generalShortTimePattern: *mut quest_hook::libil2cpp::Il2CppString,
-    pub generalLongTimePattern: *mut quest_hook::libil2cpp::Il2CppString,
-    pub timeSeparator: *mut quest_hook::libil2cpp::Il2CppString,
-    pub monthDayPattern: *mut quest_hook::libil2cpp::Il2CppString,
-    pub dateTimeOffsetPattern: *mut quest_hook::libil2cpp::Il2CppString,
-    pub calendar: *mut crate::System::Globalization::Calendar,
+    pub _cultureData: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::CultureData,
+    >,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _langName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _compareInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::CompareInfo,
+    >,
+    pub _cultureInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::CultureInfo,
+    >,
+    pub amDesignator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub pmDesignator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub dateSeparator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub generalShortTimePattern: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub generalLongTimePattern: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub timeSeparator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub monthDayPattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub dateTimeOffsetPattern: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub calendar: quest_hook::libil2cpp::Gc<crate::System::Globalization::Calendar>,
     pub firstDayOfWeek: i32,
     pub calendarWeekRule: i32,
-    pub fullDateTimePattern: *mut quest_hook::libil2cpp::Il2CppString,
-    pub abbreviatedDayNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub fullDateTimePattern: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub m_superShortDayNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub abbreviatedDayNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub dayNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_superShortDayNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub abbreviatedMonthNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub dayNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub monthNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub abbreviatedMonthNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub genitiveMonthNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub monthNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub m_genitiveAbbreviatedMonthNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub genitiveMonthNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub leapYearMonthNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_genitiveAbbreviatedMonthNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub longDatePattern: *mut quest_hook::libil2cpp::Il2CppString,
-    pub shortDatePattern: *mut quest_hook::libil2cpp::Il2CppString,
-    pub yearMonthPattern: *mut quest_hook::libil2cpp::Il2CppString,
-    pub longTimePattern: *mut quest_hook::libil2cpp::Il2CppString,
-    pub shortTimePattern: *mut quest_hook::libil2cpp::Il2CppString,
-    pub allYearMonthPatterns: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub leapYearMonthNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub allShortDatePatterns: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub longDatePattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub shortDatePattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub yearMonthPattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub longTimePattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub shortTimePattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub allYearMonthPatterns: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub allLongDatePatterns: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub allShortDatePatterns: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub allShortTimePatterns: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub allLongDatePatterns: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub allLongTimePatterns: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub allShortTimePatterns: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub m_eraNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub allLongTimePatterns: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub m_abbrevEraNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_eraNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub m_abbrevEnglishEraNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_abbrevEraNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub optionalCalendars: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Globalization::CalendarId,
+    pub m_abbrevEnglishEraNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub optionalCalendars: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Globalization::CalendarId>,
     >,
     pub _isReadOnly: bool,
     pub formatFlags: crate::System::Globalization::DateTimeFormatFlags,
-    pub _fullTimeSpanPositivePattern: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _fullTimeSpanNegativePattern: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _dtfiTokenHash: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Globalization::DateTimeFormatInfo_TokenHashValue,
+    pub _fullTimeSpanPositivePattern: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _fullTimeSpanNegativePattern: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _dtfiTokenHash: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Globalization::DateTimeFormatInfo_TokenHashValue,
+        >,
     >,
 }
 #[cfg(feature = "System+Globalization+DateTimeFormatInfo")]
@@ -1480,7 +1500,7 @@ for crate::System::Globalization::DateTimeFormatInfo {
 #[derive(Debug)]
 pub struct DateTimeFormatInfo_TokenHashValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub tokenString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub tokenString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub tokenType: crate::System::TokenType,
     pub tokenValue: i32,
 }

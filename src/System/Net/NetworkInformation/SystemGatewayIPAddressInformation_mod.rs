@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SystemGatewayIPAddressInformation {
     __cordl_parent: crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
-    pub address: *mut crate::System::Net::IPAddress,
+    pub address: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
 }
 #[cfg(feature = "System+Net+NetworkInformation+SystemGatewayIPAddressInformation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

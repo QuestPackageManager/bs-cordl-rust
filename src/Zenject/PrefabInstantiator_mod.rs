@@ -3,19 +3,23 @@
 #[derive(Debug)]
 pub struct PrefabInstantiator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _prefabProvider: *mut crate::Zenject::IPrefabProvider,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _extraArguments: *mut crate::System::Collections::Generic::List_1<
-        crate::Zenject::TypeValuePair,
+    pub _prefabProvider: quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabProvider>,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _extraArguments: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
     >,
-    pub _gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
-    pub _argumentTarget: *mut crate::System::Type,
-    pub _instantiateCallbackTypes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Type,
+    pub _gameObjectBindInfo: quest_hook::libil2cpp::Gc<
+        crate::Zenject::GameObjectCreationParameters,
     >,
-    pub _instantiateCallback: *mut crate::System::Action_2<
-        *mut crate::Zenject::InjectContext,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _argumentTarget: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _instantiateCallbackTypes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
+    >,
+    pub _instantiateCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::Zenject::InjectContext,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+PrefabInstantiator")]

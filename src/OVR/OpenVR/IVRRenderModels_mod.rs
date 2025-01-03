@@ -1,26 +1,64 @@
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IVRRenderModels {
-    pub LoadRenderModel_Async: *mut crate::OVR::OpenVR::IVRRenderModels__LoadRenderModel_Async,
-    pub FreeRenderModel: *mut crate::OVR::OpenVR::IVRRenderModels__FreeRenderModel,
-    pub LoadTexture_Async: *mut crate::OVR::OpenVR::IVRRenderModels__LoadTexture_Async,
-    pub FreeTexture: *mut crate::OVR::OpenVR::IVRRenderModels__FreeTexture,
-    pub LoadTextureD3D11_Async: *mut crate::OVR::OpenVR::IVRRenderModels__LoadTextureD3D11_Async,
-    pub LoadIntoTextureD3D11_Async: *mut crate::OVR::OpenVR::IVRRenderModels__LoadIntoTextureD3D11_Async,
-    pub FreeTextureD3D11: *mut crate::OVR::OpenVR::IVRRenderModels__FreeTextureD3D11,
-    pub GetRenderModelName: *mut crate::OVR::OpenVR::IVRRenderModels__GetRenderModelName,
-    pub GetRenderModelCount: *mut crate::OVR::OpenVR::IVRRenderModels__GetRenderModelCount,
-    pub GetComponentCount: *mut crate::OVR::OpenVR::IVRRenderModels__GetComponentCount,
-    pub GetComponentName: *mut crate::OVR::OpenVR::IVRRenderModels__GetComponentName,
-    pub GetComponentButtonMask: *mut crate::OVR::OpenVR::IVRRenderModels__GetComponentButtonMask,
-    pub GetComponentRenderModelName: *mut crate::OVR::OpenVR::IVRRenderModels__GetComponentRenderModelName,
-    pub GetComponentStateForDevicePath: *mut crate::OVR::OpenVR::IVRRenderModels__GetComponentStateForDevicePath,
-    pub GetComponentState: *mut crate::OVR::OpenVR::IVRRenderModels__GetComponentState,
-    pub RenderModelHasComponent: *mut crate::OVR::OpenVR::IVRRenderModels__RenderModelHasComponent,
-    pub GetRenderModelThumbnailURL: *mut crate::OVR::OpenVR::IVRRenderModels__GetRenderModelThumbnailURL,
-    pub GetRenderModelOriginalPath: *mut crate::OVR::OpenVR::IVRRenderModels__GetRenderModelOriginalPath,
-    pub GetRenderModelErrorNameFromEnum: *mut crate::OVR::OpenVR::IVRRenderModels__GetRenderModelErrorNameFromEnum,
+    pub LoadRenderModel_Async: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__LoadRenderModel_Async,
+    >,
+    pub FreeRenderModel: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__FreeRenderModel,
+    >,
+    pub LoadTexture_Async: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__LoadTexture_Async,
+    >,
+    pub FreeTexture: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__FreeTexture,
+    >,
+    pub LoadTextureD3D11_Async: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__LoadTextureD3D11_Async,
+    >,
+    pub LoadIntoTextureD3D11_Async: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__LoadIntoTextureD3D11_Async,
+    >,
+    pub FreeTextureD3D11: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__FreeTextureD3D11,
+    >,
+    pub GetRenderModelName: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__GetRenderModelName,
+    >,
+    pub GetRenderModelCount: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__GetRenderModelCount,
+    >,
+    pub GetComponentCount: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__GetComponentCount,
+    >,
+    pub GetComponentName: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__GetComponentName,
+    >,
+    pub GetComponentButtonMask: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__GetComponentButtonMask,
+    >,
+    pub GetComponentRenderModelName: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__GetComponentRenderModelName,
+    >,
+    pub GetComponentStateForDevicePath: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__GetComponentStateForDevicePath,
+    >,
+    pub GetComponentState: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__GetComponentState,
+    >,
+    pub RenderModelHasComponent: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__RenderModelHasComponent,
+    >,
+    pub GetRenderModelThumbnailURL: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__GetRenderModelThumbnailURL,
+    >,
+    pub GetRenderModelOriginalPath: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__GetRenderModelOriginalPath,
+    >,
+    pub GetRenderModelErrorNameFromEnum: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRRenderModels__GetRenderModelErrorNameFromEnum,
+    >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

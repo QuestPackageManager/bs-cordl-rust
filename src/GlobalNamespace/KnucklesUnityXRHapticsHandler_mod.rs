@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct KnucklesUnityXRHapticsHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _coroutineRunner: *mut crate::UnityEngine::MonoBehaviour,
-    pub _hapticsCoroutine: *mut crate::UnityEngine::Coroutine,
+    pub _coroutineRunner: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    pub _hapticsCoroutine: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
     pub _node: crate::UnityEngine::XR::XRNode,
     pub _remainingTime: f32,
     pub _amplitude: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Int16")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Int16 {
     pub m_value: i16,
 }

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct NativeObjectSecurity {
     __cordl_parent: crate::System::Security::AccessControl::CommonObjectSecurity,
-    pub exception_from_error_code: *mut crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode,
+    pub exception_from_error_code: quest_hook::libil2cpp::Gc<
+        crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode,
+    >,
 }
 #[cfg(feature = "System+Security+AccessControl+NativeObjectSecurity")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

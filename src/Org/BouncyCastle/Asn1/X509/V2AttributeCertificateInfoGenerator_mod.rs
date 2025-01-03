@@ -3,16 +3,32 @@
 #[derive(Debug)]
 pub struct V2AttributeCertificateInfoGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub holder: *mut crate::Org::BouncyCastle::Asn1::X509::Holder,
-    pub issuer: *mut crate::Org::BouncyCastle::Asn1::X509::AttCertIssuer,
-    pub signature: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub serialNumber: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub attributes: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
-    pub issuerUniqueID: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
-    pub extensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
-    pub startDate: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
-    pub endDate: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub holder: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::Holder>,
+    pub issuer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AttCertIssuer,
+    >,
+    pub signature: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub serialNumber: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerInteger,
+    >,
+    pub attributes: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+    >,
+    pub issuerUniqueID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerBitString,
+    >,
+    pub extensions: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
+    pub startDate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+    >,
+    pub endDate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+V2AttributeCertificateInfoGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

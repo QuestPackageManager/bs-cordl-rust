@@ -6,11 +6,10 @@ pub struct ThreadSafeStore_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _concurrentStore: *mut crate::System::Collections::Concurrent::ConcurrentDictionary_2<
-        TKey,
-        TValue,
+    pub _concurrentStore: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Concurrent::ConcurrentDictionary_2<TKey, TValue>,
     >,
-    pub _creator: *mut crate::System::Func_2<TKey, TValue>,
+    pub _creator: quest_hook::libil2cpp::Gc<crate::System::Func_2<TKey, TValue>>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }

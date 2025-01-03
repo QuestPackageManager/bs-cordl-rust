@@ -3,17 +3,19 @@
 #[derive(Debug)]
 pub struct ResourceLocationData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Keys: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Keys: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub m_InternalId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Provider: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Dependencies: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_InternalId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Provider: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Dependencies: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub m_ResourceType: crate::UnityEngine::ResourceManagement::Util::SerializedType,
-    pub SerializedData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _Data: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub SerializedData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub _Data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+ResourceLocationData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

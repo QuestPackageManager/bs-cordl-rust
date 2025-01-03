@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct IntervalTree_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Entries: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Timeline::IntervalTree_1_Entry<T>,
+    pub m_Entries: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::Timeline::IntervalTree_1_Entry<T>,
+        >,
     >,
-    pub m_Nodes: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Timeline::IntervalTreeNode,
+    pub m_Nodes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::Timeline::IntervalTreeNode,
+        >,
     >,
     pub _dirty_k__BackingField: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -247,7 +251,7 @@ for crate::UnityEngine::Timeline::IntervalTree_1<T> {
 }
 #[cfg(feature = "UnityEngine+Timeline+IntervalTree_1+Entry")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IntervalTree_1_Entry<T: quest_hook::libil2cpp::Type> {
     pub intervalStart: i64,
     pub intervalEnd: i64,

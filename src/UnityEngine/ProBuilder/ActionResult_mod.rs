@@ -4,7 +4,9 @@
 pub struct ActionResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _status_k__BackingField: crate::UnityEngine::ProBuilder::ActionResult_Status,
-    pub _notification_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _notification_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ActionResult")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

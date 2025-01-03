@@ -71,7 +71,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::SignerInputBuffer {
 #[derive(Debug)]
 pub struct SignerInputBuffer_SigStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    pub s: *mut crate::Org::BouncyCastle::Crypto::ISigner,
+    pub s: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SignerInputBuffer+SigStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

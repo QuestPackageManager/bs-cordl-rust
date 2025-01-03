@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct SonyOnGoingToBackgroundSaveHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _sonyBackgroundExecutionHelper: *mut crate::GlobalNamespace::SonyBackgroundExecutionHelper,
-    pub _localLeaderboardModel: *mut crate::GlobalNamespace::LocalLeaderboardsModel,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _sonyBackgroundExecutionHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyBackgroundExecutionHelper,
+    >,
+    pub _localLeaderboardModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LocalLeaderboardsModel,
+    >,
 }
 #[cfg(feature = "SonyOnGoingToBackgroundSaveHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

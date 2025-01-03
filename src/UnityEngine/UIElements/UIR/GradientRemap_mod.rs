@@ -8,7 +8,9 @@ pub struct GradientRemap {
     pub origIndex: i32,
     pub destIndex: i32,
     pub location: crate::UnityEngine::RectInt,
-    pub next: *mut crate::UnityEngine::UIElements::UIR::GradientRemap,
+    pub next: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::GradientRemap,
+    >,
     pub atlas: crate::UnityEngine::UIElements::TextureId,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+GradientRemap")]

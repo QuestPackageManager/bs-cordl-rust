@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct OculusRestarter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub onAfterRestart: *mut crate::System::Action,
-    pub onAfterShutdown: *mut crate::System::Action,
-    pub onQuit: *mut crate::System::Action,
-    pub onAfterCoroutine: *mut crate::System::Action,
-    pub m_Coroutine: *mut crate::UnityEngine::Coroutine,
-    pub m_pauseAndRestartCoroutine: *mut crate::UnityEngine::Coroutine,
+    pub onAfterRestart: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub onAfterShutdown: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub onQuit: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub onAfterCoroutine: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub m_Coroutine: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
+    pub m_pauseAndRestartCoroutine: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Coroutine,
+    >,
 }
 #[cfg(feature = "Unity+XR+Oculus+OculusRestarter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

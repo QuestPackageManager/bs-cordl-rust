@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SerializationBinderAdapter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub SerializationBinder: *mut crate::System::Runtime::Serialization::SerializationBinder,
+    pub SerializationBinder: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::SerializationBinder,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+SerializationBinderAdapter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct LightRotationGroupEffect {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _axis: crate::GlobalNamespace::LightAxis,
     pub _mirrored: bool,
-    pub _tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _rotationTween: *mut crate::Tweening::FloatTween,
-    pub _lightRotationBeatmapEventCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::SongTimeTweeningManager,
+    >,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _rotationTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
+    pub _lightRotationBeatmapEventCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "LightRotationGroupEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -139,7 +145,7 @@ pub struct LightRotationGroupEffect_InitData {
     pub elementId: i32,
     pub axis: crate::GlobalNamespace::LightAxis,
     pub mirrored: bool,
-    pub transform: *mut crate::UnityEngine::Transform,
+    pub transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "LightRotationGroupEffect+InitData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

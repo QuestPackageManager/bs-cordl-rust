@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+RaycastHit2D")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RaycastHit2D {
     pub m_Centroid: crate::UnityEngine::Vector2,
     pub m_Point: crate::UnityEngine::Vector2,

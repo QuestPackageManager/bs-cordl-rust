@@ -1,8 +1,8 @@
 #[cfg(feature = "System+Globalization+InternalEncodingDataItem")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InternalEncodingDataItem {
-    pub webName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub webName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub codePage: u16,
 }
 #[cfg(feature = "System+Globalization+InternalEncodingDataItem")]

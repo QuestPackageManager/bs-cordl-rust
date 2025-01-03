@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ScreenModeSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _data: *mut crate::HMUI::ScreenModeData,
+    pub _data: quest_hook::libil2cpp::Gc<crate::HMUI::ScreenModeData>,
 }
 #[cfg(feature = "HMUI+ScreenModeSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

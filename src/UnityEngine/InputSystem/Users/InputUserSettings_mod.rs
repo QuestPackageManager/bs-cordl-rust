@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct InputUserSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _customBindings_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _customBindings_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _invertMouseX_k__BackingField: bool,
     pub _invertMouseY_k__BackingField: bool,
     pub _mouseSmoothing_k__BackingField: crate::System::Nullable_1<f32>,
@@ -15,7 +17,7 @@ pub struct InputUserSettings {
     pub _swapTriggers_k__BackingField: bool,
     pub _swapDpadAndLeftStick_k__BackingField: bool,
     pub _vibrationStrength_k__BackingField: f32,
-    pub m_CustomBindings: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_CustomBindings: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUserSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

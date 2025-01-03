@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct CrlValidatedID {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub crlHash: *mut crate::Org::BouncyCastle::Asn1::Esf::OtherHash,
-    pub crlIdentifier: *mut crate::Org::BouncyCastle::Asn1::Esf::CrlIdentifier,
+    pub crlHash: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Esf::OtherHash,
+    >,
+    pub crlIdentifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Esf::CrlIdentifier,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Esf+CrlValidatedID")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct TimeStampResponse {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub resp: *mut crate::Org::BouncyCastle::Asn1::Tsp::TimeStampResp,
-    pub timeStampToken: *mut crate::Org::BouncyCastle::Tsp::TimeStampToken,
+    pub resp: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Tsp::TimeStampResp,
+    >,
+    pub timeStampToken: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Tsp::TimeStampToken,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponse")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

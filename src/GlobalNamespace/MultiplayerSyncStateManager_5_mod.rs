@@ -9,24 +9,28 @@ pub struct MultiplayerSyncStateManager_5<
     TDeltaSerializable: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _localState: *mut crate::GlobalNamespace::LocalMultiplayerSyncState_3<
-        TStateTable,
-        TType,
-        TState,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
     >,
-    pub _connectedPlayerStates: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::RemoteMultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
+    pub _localState: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LocalMultiplayerSyncState_3<TStateTable, TType, TState>,
+    >,
+    pub _connectedPlayerStates: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::RemoteMultiplayerSyncState_3<
+                TStateTable,
+                TType,
+                TState,
+            >,
         >,
     >,
-    pub _disconnectedPlayerStates: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::RemoteMultiplayerSyncState_3<
-            TStateTable,
-            TType,
-            TState,
+    pub _disconnectedPlayerStates: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::RemoteMultiplayerSyncState_3<
+                TStateTable,
+                TType,
+                TState,
+            >,
         >,
     >,
     __cordl_phantom_TStateTable: std::marker::PhantomData<TStateTable>,

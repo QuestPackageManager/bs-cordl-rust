@@ -5,9 +5,15 @@ pub struct BoneControl {
     __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<
         crate::UnityEngine::InputSystem::XR::Bone,
     >,
-    pub _parentBoneIndex_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::IntegerControl,
-    pub _position_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector3Control,
-    pub _rotation_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+    pub _parentBoneIndex_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::IntegerControl,
+    >,
+    pub _position_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector3Control,
+    >,
+    pub _rotation_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::QuaternionControl,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+BoneControl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

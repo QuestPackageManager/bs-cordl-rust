@@ -1,19 +1,43 @@
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IVRTrackedCamera {
-    pub GetCameraErrorNameFromEnum: *mut crate::OVR::OpenVR::IVRTrackedCamera__GetCameraErrorNameFromEnum,
-    pub HasCamera: *mut crate::OVR::OpenVR::IVRTrackedCamera__HasCamera,
-    pub GetCameraFrameSize: *mut crate::OVR::OpenVR::IVRTrackedCamera__GetCameraFrameSize,
-    pub GetCameraIntrinsics: *mut crate::OVR::OpenVR::IVRTrackedCamera__GetCameraIntrinsics,
-    pub GetCameraProjection: *mut crate::OVR::OpenVR::IVRTrackedCamera__GetCameraProjection,
-    pub AcquireVideoStreamingService: *mut crate::OVR::OpenVR::IVRTrackedCamera__AcquireVideoStreamingService,
-    pub ReleaseVideoStreamingService: *mut crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamingService,
-    pub GetVideoStreamFrameBuffer: *mut crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamFrameBuffer,
-    pub GetVideoStreamTextureSize: *mut crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureSize,
-    pub GetVideoStreamTextureD3D11: *mut crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureD3D11,
-    pub GetVideoStreamTextureGL: *mut crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureGL,
-    pub ReleaseVideoStreamTextureGL: *mut crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamTextureGL,
+    pub GetCameraErrorNameFromEnum: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRTrackedCamera__GetCameraErrorNameFromEnum,
+    >,
+    pub HasCamera: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRTrackedCamera__HasCamera,
+    >,
+    pub GetCameraFrameSize: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRTrackedCamera__GetCameraFrameSize,
+    >,
+    pub GetCameraIntrinsics: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRTrackedCamera__GetCameraIntrinsics,
+    >,
+    pub GetCameraProjection: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRTrackedCamera__GetCameraProjection,
+    >,
+    pub AcquireVideoStreamingService: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRTrackedCamera__AcquireVideoStreamingService,
+    >,
+    pub ReleaseVideoStreamingService: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamingService,
+    >,
+    pub GetVideoStreamFrameBuffer: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamFrameBuffer,
+    >,
+    pub GetVideoStreamTextureSize: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureSize,
+    >,
+    pub GetVideoStreamTextureD3D11: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureD3D11,
+    >,
+    pub GetVideoStreamTextureGL: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureGL,
+    >,
+    pub ReleaseVideoStreamTextureGL: quest_hook::libil2cpp::Gc<
+        crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamTextureGL,
+    >,
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

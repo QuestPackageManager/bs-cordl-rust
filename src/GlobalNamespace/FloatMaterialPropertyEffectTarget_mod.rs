@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct FloatMaterialPropertyEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
-    pub _propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
+    pub _propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _valueBounds: crate::UnityEngine::Vector2,
     pub _propertyId: i32,
 }

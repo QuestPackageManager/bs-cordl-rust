@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct GameCoreSceneSetup {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _screenCaptureAfterDelayPrefab: *mut crate::GlobalNamespace::ScreenCaptureAfterDelay,
-    pub _bloomFog: *mut crate::GlobalNamespace::BloomFogSO,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _screenCaptureAfterDelayPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScreenCaptureAfterDelay,
+    >,
+    pub _bloomFog: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomFogSO>,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
 }
 #[cfg(feature = "GameCoreSceneSetup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

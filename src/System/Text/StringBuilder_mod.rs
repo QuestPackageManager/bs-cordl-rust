@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct StringBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_ChunkChars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    pub m_ChunkPrevious: *mut crate::System::Text::StringBuilder,
+    pub m_ChunkChars: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<char>,
+    >,
+    pub m_ChunkPrevious: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub m_ChunkLength: i32,
     pub m_ChunkOffset: i32,
     pub m_MaxCapacity: i32,

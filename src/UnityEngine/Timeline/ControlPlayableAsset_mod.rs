@@ -6,7 +6,7 @@ pub struct ControlPlayableAsset {
     pub sourceGameObject: crate::UnityEngine::ExposedReference_1<
         *mut crate::UnityEngine::GameObject,
     >,
-    pub prefabGameObject: *mut crate::UnityEngine::GameObject,
+    pub prefabGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub updateParticle: bool,
     pub particleRandomSeed: u32,
     pub updateDirector: bool,
@@ -14,7 +14,9 @@ pub struct ControlPlayableAsset {
     pub searchHierarchy: bool,
     pub active: bool,
     pub postPlayback: crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState,
-    pub m_ControlDirectorAsset: *mut crate::UnityEngine::Playables::PlayableAsset,
+    pub m_ControlDirectorAsset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableAsset,
+    >,
     pub m_Duration: f64,
     pub m_SupportLoop: bool,
     pub _controllingDirectors_k__BackingField: bool,

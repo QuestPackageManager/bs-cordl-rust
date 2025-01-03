@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct Oid {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _value: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _friendlyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _friendlyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _group: crate::System::Security::Cryptography::OidGroup,
 }
 #[cfg(feature = "System+Security+Cryptography+Oid")]

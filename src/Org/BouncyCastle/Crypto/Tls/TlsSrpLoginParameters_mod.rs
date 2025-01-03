@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct TlsSrpLoginParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mGroup: *mut crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
-    pub mVerifier: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub mSalt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mGroup: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
+    >,
+    pub mVerifier: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub mSalt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsSrpLoginParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

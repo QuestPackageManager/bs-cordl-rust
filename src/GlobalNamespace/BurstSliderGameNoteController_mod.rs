@@ -3,21 +3,33 @@
 #[derive(Debug)]
 pub struct BurstSliderGameNoteController {
     __cordl_parent: crate::GlobalNamespace::NoteController,
-    pub _bigCuttableBySaberList: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BoxCuttableBySaber,
+    pub _bigCuttableBySaberList: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BoxCuttableBySaber,
+        >,
     >,
-    pub _smallCuttableBySaberList: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BoxCuttableBySaber,
+    pub _smallCuttableBySaberList: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BoxCuttableBySaber,
+        >,
     >,
-    pub _wrapperGO: *mut crate::UnityEngine::GameObject,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
-    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
-    pub cubeNoteControllerDidInitEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::BurstSliderGameNoteController,
+    pub _wrapperGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
+    pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVariableMovementDataProvider,
+    >,
+    pub cubeNoteControllerDidInitEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::BurstSliderGameNoteController,
+        >,
     >,
     pub _noteVisualModifierType: crate::GlobalNamespace::NoteVisualModifierType,
     pub _gameplayType: crate::GlobalNamespace::NoteData_GameplayType,
-    pub _bigCuttableBySaber: *mut crate::GlobalNamespace::BoxCuttableBySaber,
+    pub _bigCuttableBySaber: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BoxCuttableBySaber,
+    >,
     pub _originalColliderSize: crate::UnityEngine::Vector3,
     pub _originalColliderCenter: crate::UnityEngine::Vector3,
     pub _moveEndOffsetZ: f32,

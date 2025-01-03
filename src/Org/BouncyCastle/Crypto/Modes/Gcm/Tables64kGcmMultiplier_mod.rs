@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct Tables64kGcmMultiplier {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub H: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub M: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub H: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub M: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+            >,
         >,
     >,
 }

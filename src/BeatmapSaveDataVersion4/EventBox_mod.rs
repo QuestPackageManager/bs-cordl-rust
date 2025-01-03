@@ -1,11 +1,13 @@
 #[cfg(feature = "BeatmapSaveDataVersion4+EventBox")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct EventBox {
     pub f: i32,
     pub e: i32,
-    pub l: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatmapSaveDataVersion4::BeatIndex,
+    pub l: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatmapSaveDataVersion4::BeatIndex,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapSaveDataVersion4+EventBox")]

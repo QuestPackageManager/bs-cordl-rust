@@ -1,12 +1,12 @@
 #[cfg(feature = "OVRMeshData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRMeshData {
-    pub mesh: *mut crate::UnityEngine::Mesh,
-    pub material: *mut crate::UnityEngine::Material,
+    pub mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub baseAttributes: crate::GlobalNamespace::OVRMeshAttributes,
-    pub morphTargets: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVRMeshAttributes,
+    pub morphTargets: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRMeshAttributes>,
     >,
 }
 #[cfg(feature = "OVRMeshData")]

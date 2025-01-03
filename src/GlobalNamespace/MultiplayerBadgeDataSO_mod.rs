@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct MultiplayerBadgeDataSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _titleLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _subtitleLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _icon: *mut crate::UnityEngine::Sprite,
+    pub _titleLocalizationKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _subtitleLocalizationKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
 }
 #[cfg(feature = "MultiplayerBadgeDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

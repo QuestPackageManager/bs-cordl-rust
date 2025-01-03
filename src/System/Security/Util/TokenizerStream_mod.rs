@@ -4,12 +4,22 @@
 pub struct TokenizerStream {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_countTokens: i32,
-    pub m_headTokens: *mut crate::System::Security::Util::TokenizerShortBlock,
-    pub m_lastTokens: *mut crate::System::Security::Util::TokenizerShortBlock,
-    pub m_currentTokens: *mut crate::System::Security::Util::TokenizerShortBlock,
+    pub m_headTokens: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Util::TokenizerShortBlock,
+    >,
+    pub m_lastTokens: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Util::TokenizerShortBlock,
+    >,
+    pub m_currentTokens: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Util::TokenizerShortBlock,
+    >,
     pub m_indexTokens: i32,
-    pub m_headStrings: *mut crate::System::Security::Util::TokenizerStringBlock,
-    pub m_currentStrings: *mut crate::System::Security::Util::TokenizerStringBlock,
+    pub m_headStrings: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Util::TokenizerStringBlock,
+    >,
+    pub m_currentStrings: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Util::TokenizerStringBlock,
+    >,
     pub m_indexStrings: i32,
 }
 #[cfg(feature = "System+Security+Util+TokenizerStream")]

@@ -1,14 +1,24 @@
 #[cfg(feature = "OVRMeshAttributes")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRMeshAttributes {
-    pub vertices: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-    pub normals: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-    pub tangents: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-    pub texcoords: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-    pub colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
-    pub boneWeights: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::BoneWeight,
+    pub vertices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
+    pub normals: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
+    pub tangents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+    >,
+    pub texcoords: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+    >,
+    pub colors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+    >,
+    pub boneWeights: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::BoneWeight>,
     >,
 }
 #[cfg(feature = "OVRMeshAttributes")]

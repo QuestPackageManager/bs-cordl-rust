@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct MockPlayerSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _userName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _userId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _sortIndex: i32,
     pub _latency: i64,
     pub _autoConnect: bool,
@@ -12,14 +12,14 @@ pub struct MockPlayerSettings {
     pub _movementType: crate::GlobalNamespace::MockPlayerMovementType,
     pub _avatarType: crate::GlobalNamespace::MockPlayerAvatarType,
     pub _platformUserId: u64,
-    pub _recodingFile: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _recodingFile: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _aiCubeHitChance: f32,
     pub _leftHanded: bool,
     pub _saberAColor: crate::UnityEngine::Color,
     pub _saberBColor: crate::UnityEngine::Color,
     pub _obstaclesColor: crate::UnityEngine::Color,
     pub _beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    pub _beatmapLevelId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _beatmapLevelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "MockPlayerSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

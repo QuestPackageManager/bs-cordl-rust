@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct CADMethodReturnMessage {
     __cordl_parent: crate::System::Runtime::Remoting::Messaging::CADMessageBase,
-    pub _returnValue: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _exception: *mut crate::System::Runtime::Remoting::Messaging::CADArgHolder,
-    pub _sig: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    pub _returnValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _exception: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::CADArgHolder,
+    >,
+    pub _sig: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+CADMethodReturnMessage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

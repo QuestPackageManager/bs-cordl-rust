@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct StandaloneMonobehavior {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _readyTcs: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<bool>,
+    pub _readyTcs: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskCompletionSource_1<bool>,
+    >,
     pub _isRunning: bool,
     pub _startTime: f32,
-    pub _lastFrameTimings: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::FrameTiming,
+    pub _lastFrameTimings: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::FrameTiming>,
     >,
     pub _lastFrameTimeCount: i32,
 }

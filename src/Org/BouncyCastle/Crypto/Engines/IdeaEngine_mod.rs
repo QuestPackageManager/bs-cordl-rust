@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct IdeaEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub workingKey: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub workingKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+IdeaEngine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

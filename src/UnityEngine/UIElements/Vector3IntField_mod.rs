@@ -179,9 +179,15 @@ pub struct Vector3IntField_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         crate::UnityEngine::Vector3Int,
     >,
-    pub m_XValue: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_YValue: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_ZValue: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    pub m_XValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub m_YValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub m_ZValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Vector3IntField+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

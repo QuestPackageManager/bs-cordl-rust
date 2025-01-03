@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct PlatformInstallerSO {
     __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
-    pub _setupData: *mut crate::GlobalNamespace::AppInitSetupData,
-    pub _ps4AchievementIdsModel: *mut crate::GlobalNamespace::SonyAchievementIdsModelSO,
-    pub _ps5AchievementIdsModel: *mut crate::GlobalNamespace::SonyAchievementIdsModelSO,
-    pub _achievementIdsModel: *mut crate::GlobalNamespace::AchievementIdsModelSO,
-    pub _mockPlatformAdditionalContentModelInitialData: *mut crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
+    pub _setupData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AppInitSetupData>,
+    pub _ps4AchievementIdsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyAchievementIdsModelSO,
+    >,
+    pub _ps5AchievementIdsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyAchievementIdsModelSO,
+    >,
+    pub _achievementIdsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementIdsModelSO,
+    >,
+    pub _mockPlatformAdditionalContentModelInitialData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
+    >,
 }
 #[cfg(feature = "PlatformInstallerSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

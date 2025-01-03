@@ -4,7 +4,7 @@
 pub struct OVRGLTFAnimationNodeMorphTargetHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _MeshData_k__BackingField: crate::GlobalNamespace::OVRMeshData,
-    pub Weights: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub Weights: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub modified: bool,
 }
 #[cfg(feature = "OVRGLTFAnimationNodeMorphTargetHandler")]

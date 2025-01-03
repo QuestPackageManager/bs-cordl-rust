@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct SpecialEventKeywordFiltersData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _keywords: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+    pub _keywords: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventKeywordFiltersData")]

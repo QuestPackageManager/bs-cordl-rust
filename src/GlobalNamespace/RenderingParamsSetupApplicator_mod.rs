@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct RenderingParamsSetupApplicator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _settingsApplicator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsApplicatorSO,
+    >,
 }
 #[cfg(feature = "RenderingParamsSetupApplicator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

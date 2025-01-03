@@ -4,7 +4,9 @@
 pub struct CullingGroup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
-    pub m_OnStateChanged: *mut crate::UnityEngine::CullingGroup_StateChanged,
+    pub m_OnStateChanged: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::CullingGroup_StateChanged,
+    >,
 }
 #[cfg(feature = "UnityEngine+CullingGroup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

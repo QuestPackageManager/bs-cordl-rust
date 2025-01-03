@@ -6,10 +6,14 @@ pub struct HybridReferenceDictionary_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _keysAndValues: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    pub _keysAndValues: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+        >,
     >,
-    pub _dict: *mut crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+    pub _dict: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+    >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }

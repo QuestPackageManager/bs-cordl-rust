@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct NetworkPlayerEntitlementChecker {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _rpcManager: *mut crate::GlobalNamespace::IMenuRpcManager,
-    pub _additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
-    pub _entitlementModel: *mut crate::GlobalNamespace::IEntitlementModel,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
+    pub _rpcManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMenuRpcManager>,
+    pub _additionalContentModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAdditionalContentModel,
+    >,
+    pub _entitlementModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IEntitlementModel,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
 }
 #[cfg(feature = "NetworkPlayerEntitlementChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

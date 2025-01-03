@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct RsaDigestSigner {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub rsaEngine: *mut crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
-    pub algId: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    pub rsaEngine: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
+    >,
+    pub algId: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     pub forSigning: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+RsaDigestSigner")]

@@ -4,10 +4,12 @@
 pub struct HEU_AssetSerializedMetaData {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _softDeleted: bool,
-    pub _savedCurveNodeData: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::HoudiniEngineUnity::CurveNodeData,
+    pub _savedCurveNodeData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::CurveNodeData,
+            >,
         >,
     >,
 }

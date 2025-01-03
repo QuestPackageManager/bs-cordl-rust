@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlSchemaSubstitutionGroupV1Compat {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaSubstitutionGroup,
-    pub choice: *mut crate::System::Xml::Schema::XmlSchemaChoice,
+    pub choice: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaChoice>,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSubstitutionGroupV1Compat")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

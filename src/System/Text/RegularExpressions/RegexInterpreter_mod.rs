@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct RegexInterpreter {
     __cordl_parent: crate::System::Text::RegularExpressions::RegexRunner,
-    pub _code: *mut crate::System::Text::RegularExpressions::RegexCode,
-    pub _culture: *mut crate::System::Globalization::CultureInfo,
+    pub _code: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::RegexCode,
+    >,
+    pub _culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     pub _operator: i32,
     pub _codepos: i32,
     pub _rightToLeft: bool,

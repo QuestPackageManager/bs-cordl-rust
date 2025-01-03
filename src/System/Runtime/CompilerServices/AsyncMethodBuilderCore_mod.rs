@@ -1,9 +1,11 @@
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AsyncMethodBuilderCore {
-    pub m_stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
-    pub m_defaultContextAction: *mut crate::System::Action,
+    pub m_stateMachine: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+    >,
+    pub m_defaultContextAction: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -135,9 +137,9 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
 #[derive(Debug)]
 pub struct AsyncMethodBuilderCore_ContinuationWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_continuation: *mut crate::System::Action,
-    pub m_invokeAction: *mut crate::System::Action,
-    pub m_innerTask: *mut crate::System::Threading::Tasks::Task,
+    pub m_continuation: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub m_invokeAction: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub m_innerTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
 }
 #[cfg(
     feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+ContinuationWrapper"
@@ -222,8 +224,10 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_Continuatio
 #[derive(Debug)]
 pub struct AsyncMethodBuilderCore_MoveNextRunner {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_context: *mut crate::System::Threading::ExecutionContext,
-    pub m_stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+    pub m_context: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
+    pub m_stateMachine: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+    >,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+MoveNextRunner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

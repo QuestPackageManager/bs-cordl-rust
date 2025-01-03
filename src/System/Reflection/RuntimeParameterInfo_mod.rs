@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct RuntimeParameterInfo {
     __cordl_parent: crate::System::Reflection::ParameterInfo,
-    pub marshalAs: *mut crate::System::Runtime::InteropServices::MarshalAsAttribute,
+    pub marshalAs: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::InteropServices::MarshalAsAttribute,
+    >,
 }
 #[cfg(feature = "System+Reflection+RuntimeParameterInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

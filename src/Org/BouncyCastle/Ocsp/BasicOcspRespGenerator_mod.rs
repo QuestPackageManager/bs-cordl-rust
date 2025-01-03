@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct BasicOcspRespGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub list: *mut crate::System::Collections::IList,
-    pub responseExtensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
-    pub responderID: *mut crate::Org::BouncyCastle::Ocsp::RespID,
+    pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub responseExtensions: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
+    pub responderID: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::RespID>,
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+BasicOcspRespGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -286,11 +288,19 @@ for crate::Org::BouncyCastle::Ocsp::BasicOcspRespGenerator {
 #[derive(Debug)]
 pub struct BasicOcspRespGenerator_ResponseObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub certId: *mut crate::Org::BouncyCastle::Ocsp::CertificateID,
-    pub certStatus: *mut crate::Org::BouncyCastle::Asn1::Ocsp::CertStatus,
-    pub thisUpdate: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
-    pub nextUpdate: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
-    pub extensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    pub certId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,
+    pub certStatus: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Ocsp::CertStatus,
+    >,
+    pub thisUpdate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+    >,
+    pub nextUpdate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+    >,
+    pub extensions: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+BasicOcspRespGenerator+ResponseObject")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

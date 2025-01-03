@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct HEU_NodeSync {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_BaseSync,
-    pub _nodeSaveFilePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _nodeSaveFilePath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_NodeSync")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

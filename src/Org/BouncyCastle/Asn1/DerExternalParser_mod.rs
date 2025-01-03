@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DerExternalParser {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub _parser: *mut crate::Org::BouncyCastle::Asn1::Asn1StreamParser,
+    pub _parser: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1StreamParser,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerExternalParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

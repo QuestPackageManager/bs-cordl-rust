@@ -3,18 +3,22 @@
 #[derive(Debug)]
 pub struct DecoratorProvider_1<TContract: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cachedInstances: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::Zenject::IProvider,
-        *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _cachedInstances: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::Zenject::IProvider,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     >,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _factoryBindIds: *mut crate::System::Collections::Generic::List_1<
-        crate::System::Guid,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _factoryBindIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::System::Guid>,
     >,
-    pub _decoratorFactories: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::IFactory_2<TContract, TContract>,
+    pub _decoratorFactories: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::IFactory_2<TContract, TContract>,
+        >,
     >,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }

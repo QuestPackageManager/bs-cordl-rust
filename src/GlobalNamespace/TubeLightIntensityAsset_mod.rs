@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct TubeLightIntensityAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
-    pub _template: *mut crate::GlobalNamespace::TubeLightIntensityBehaviour,
+    pub _template: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TubeLightIntensityBehaviour,
+    >,
 }
 #[cfg(feature = "TubeLightIntensityAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

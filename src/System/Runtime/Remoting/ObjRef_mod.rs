@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct ObjRef {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub channel_info: *mut crate::System::Runtime::Remoting::IChannelInfo,
-    pub uri: *mut quest_hook::libil2cpp::Il2CppString,
-    pub typeInfo: *mut crate::System::Runtime::Remoting::IRemotingTypeInfo,
-    pub envoyInfo: *mut crate::System::Runtime::Remoting::IEnvoyInfo,
+    pub channel_info: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::IChannelInfo,
+    >,
+    pub uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub typeInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::IRemotingTypeInfo,
+    >,
+    pub envoyInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::IEnvoyInfo,
+    >,
     pub flags: i32,
-    pub _serverType: *mut crate::System::Type,
+    pub _serverType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Runtime+Remoting+ObjRef")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

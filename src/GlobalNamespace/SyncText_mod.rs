@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SyncText {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _otherTextComponent: *mut crate::TMPro::TMP_Text,
-    pub _textComponent: *mut crate::TMPro::TMP_Text,
+    pub _otherTextComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+    pub _textComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
 }
 #[cfg(feature = "SyncText")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

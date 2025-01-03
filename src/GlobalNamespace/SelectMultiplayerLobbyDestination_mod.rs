@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SelectMultiplayerLobbyDestination {
     __cordl_parent: crate::GlobalNamespace::MenuDestination,
-    pub lobbySecret: *mut quest_hook::libil2cpp::Il2CppString,
-    pub lobbyCode: *mut quest_hook::libil2cpp::Il2CppString,
+    pub lobbySecret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub lobbyCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "SelectMultiplayerLobbyDestination")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

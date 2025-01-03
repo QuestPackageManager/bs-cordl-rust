@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct FileBrowserTableCell {
     __cordl_parent: crate::HMUI::TableCell,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
-    pub _bgImage: *mut crate::UnityEngine::UI::Image,
-    pub _highlightImage: *mut crate::UnityEngine::UI::Image,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _bgImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _highlightImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
 }
 #[cfg(feature = "FileBrowserTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

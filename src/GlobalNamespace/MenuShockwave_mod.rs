@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct MenuShockwave {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _shockwavePS: *mut crate::UnityEngine::ParticleSystem,
-    pub _vrPointer: *mut crate::VRUIControls::VRPointer,
-    pub _buttonClickEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::Signal,
+    pub _shockwavePS: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+    pub _vrPointer: quest_hook::libil2cpp::Gc<crate::VRUIControls::VRPointer>,
+    pub _buttonClickEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::Signal>,
     >,
     pub _shockwavePSEmitParams: crate::UnityEngine::ParticleSystem_EmitParams,
 }

@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct SecurityParser {
     __cordl_parent: crate::Mono::Xml::SmallXmlParser,
-    pub root: *mut crate::System::Security::SecurityElement,
-    pub current: *mut crate::System::Security::SecurityElement,
-    pub stack: *mut crate::System::Collections::Stack,
+    pub root: quest_hook::libil2cpp::Gc<crate::System::Security::SecurityElement>,
+    pub current: quest_hook::libil2cpp::Gc<crate::System::Security::SecurityElement>,
+    pub stack: quest_hook::libil2cpp::Gc<crate::System::Collections::Stack>,
 }
 #[cfg(feature = "Mono+Xml+SecurityParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

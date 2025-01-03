@@ -3,16 +3,26 @@
 #[derive(Debug)]
 pub struct BeatmapLevelLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub levelDownloadingUpdateEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate,
+    pub levelDownloadingUpdateEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate,
+        >,
     >,
-    pub _loadedBeatmapLevelDataCache: *mut crate::BGLib::DotnetExtension::Collections::LRUCache_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::IBeatmapLevelData,
+    pub _loadedBeatmapLevelDataCache: quest_hook::libil2cpp::Gc<
+        crate::BGLib::DotnetExtension::Collections::LRUCache_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::IBeatmapLevelData,
+        >,
     >,
-    pub _beatmapLevelDataLoader: *mut crate::GlobalNamespace::BeatmapLevelDataLoader,
-    pub _beatmapDataAssetFileModel: *mut crate::GlobalNamespace::IBeatmapDataAssetFileModel,
-    pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
+    pub _beatmapLevelDataLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelDataLoader,
+    >,
+    pub _beatmapDataAssetFileModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IBeatmapDataAssetFileModel,
+    >,
+    pub _audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioClipAsyncLoader,
+    >,
 }
 #[cfg(feature = "BeatmapLevelLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -418,9 +428,9 @@ for crate::GlobalNamespace::BeatmapLevelLoader_InitData {
 }
 #[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BeatmapLevelLoader_LevelDownloadingUpdate {
-    pub levelID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub progress: f32,
     pub downloadingState: crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState,
 }

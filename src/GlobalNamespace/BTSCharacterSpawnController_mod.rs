@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct BTSCharacterSpawnController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _characterSpawnAnimationController: *mut crate::GlobalNamespace::BTSCharacterSpawnAnimationController,
-    pub _btsCharacterSpawnEventEffect: *mut crate::GlobalNamespace::BTSCharacterSpawnEventEffect,
-    pub _gamePause: *mut crate::GlobalNamespace::IGamePause,
-    pub _levelEndActions: *mut crate::GlobalNamespace::ILevelEndActions,
+    pub _characterSpawnAnimationController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BTSCharacterSpawnAnimationController,
+    >,
+    pub _btsCharacterSpawnEventEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BTSCharacterSpawnEventEffect,
+    >,
+    pub _gamePause: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>,
+    pub _levelEndActions: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILevelEndActions,
+    >,
     pub _characterSpawned: bool,
     pub _playableDirectorTimeBeforePause: f64,
     pub _animatorNormalizedTimeBeforePause: f32,

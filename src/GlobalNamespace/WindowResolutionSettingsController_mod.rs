@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct WindowResolutionSettingsController {
     __cordl_parent: crate::GlobalNamespace::ListSettingsController,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub _windowResolutions: *mut crate::System::Collections::Generic::List_1<
-        crate::Unity::Mathematics::int2,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _windowResolutions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::Unity::Mathematics::int2>,
     >,
 }
 #[cfg(feature = "WindowResolutionSettingsController")]

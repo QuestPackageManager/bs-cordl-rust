@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SimpleAttributeTableGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub attributes: *mut crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+    pub attributes: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+SimpleAttributeTableGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

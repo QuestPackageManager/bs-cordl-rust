@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct PosesRecordingInfoSaveData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _version: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _objectIds: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _objectIds: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _externalCameraCalibration: *mut crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData,
-    pub _dataFileName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _externalCameraCalibration: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData,
+    >,
+    pub _dataFileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "PosesRecordingInfoSaveData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

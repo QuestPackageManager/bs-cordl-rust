@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct AsnEncodedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _oid: *mut crate::System::Security::Cryptography::Oid,
-    pub _raw: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _oid: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid>,
+    pub _raw: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "System+Security+Cryptography+AsnEncodedData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

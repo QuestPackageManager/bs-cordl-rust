@@ -6,9 +6,11 @@ pub struct IndexedCollectionPropertyBag_2<
     TElement: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::Unity::Properties::PropertyBag_1<TList>,
-    pub m_Property: *mut crate::Unity::Properties::IndexedCollectionPropertyBag_2_ListElementProperty<
-        TList,
-        TElement,
+    pub m_Property: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::IndexedCollectionPropertyBag_2_ListElementProperty<
+            TList,
+            TElement,
+        >,
     >,
     __cordl_phantom_TList: std::marker::PhantomData<TList>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,

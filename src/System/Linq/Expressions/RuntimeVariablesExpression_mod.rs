@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct RuntimeVariablesExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
-    pub _Variables_k__BackingField: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-        *mut crate::System::Linq::Expressions::ParameterExpression,
+    pub _Variables_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            *mut crate::System::Linq::Expressions::ParameterExpression,
+        >,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+RuntimeVariablesExpression")]

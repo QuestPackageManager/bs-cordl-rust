@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct XmlLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub doc: *mut crate::System::Xml::XmlDocument,
-    pub reader: *mut crate::System::Xml::XmlReader,
+    pub doc: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
+    pub reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     pub preserveWhitespace: bool,
 }
 #[cfg(feature = "System+Xml+XmlLoader")]

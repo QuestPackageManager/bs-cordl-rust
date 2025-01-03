@@ -3,42 +3,57 @@
 #[derive(Debug)]
 pub struct EnvironmentTrackDefinitionModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _trackDefinition: *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
-    pub _beatmapTypeToTrackInfoMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::GlobalNamespace::BasicBeatmapEventType,
-        *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo,
+    pub _trackDefinition: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
     >,
-    pub _trackDefinitionToTrackInfoListMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO,
-        *mut quest_hook::libil2cpp::Il2CppArray<
+    pub _beatmapTypeToTrackInfoMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::BasicBeatmapEventType,
             *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo,
         >,
     >,
-    pub _trackPageToTrackInfoListMap: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Collections::Generic::List_1<
+    pub _trackDefinitionToTrackInfoListMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO,
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo,
+            >,
+        >,
+    >,
+    pub _trackPageToTrackInfoListMap: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo,
+            >,
+        >,
+    >,
+    pub _trackPageToTrackToolbarTypeMap: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Collections::Generic::List_1<
+                crate::BeatSaber::TrackDefinitions::DataModels::TrackToolbarType,
+            >,
+        >,
+    >,
+    pub _visibleTrackInfos: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
             *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo,
         >,
     >,
-    pub _trackPageToTrackToolbarTypeMap: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Collections::Generic::List_1<
-            crate::BeatSaber::TrackDefinitions::DataModels::TrackToolbarType,
+    pub _groupIdToPageMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+    >,
+    pub _groupIdToTrackMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo,
         >,
     >,
-    pub _visibleTrackInfos: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo,
-    >,
-    pub _groupIdToPageMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        i32,
-    >,
-    pub _groupIdToTrackMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo,
-    >,
-    pub _spawnableEventBoxGroupTracksByPageMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTrack,
+    pub _spawnableEventBoxGroupTracksByPageMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTrack,
+            >,
         >,
     >,
 }
@@ -355,11 +370,13 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
 #[derive(Debug)]
 pub struct EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTrack {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub lightGroup: *mut crate::GlobalNamespace::LightGroupSO,
-    pub groupName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
+    pub groupName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub tracksCount: i32,
-    pub eventBoxGroupTracks: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTypeTrack,
+    pub eventBoxGroupTracks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTypeTrack,
+        >,
     >,
 }
 #[cfg(
@@ -451,8 +468,8 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
 #[derive(Debug)]
 pub struct EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTypeTrack {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub lightGroup: *mut crate::GlobalNamespace::LightGroupSO,
-    pub groupName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
+    pub groupName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub trackType: crate::BeatSaber::TrackDefinitions::DataModels::EventBoxGroupType,
 }
 #[cfg(

@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct PointSet {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Points_k__BackingField: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+    pub _Points_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
     >,
-    pub _Triangles_k__BackingField: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+    pub _Triangles_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointSet")]

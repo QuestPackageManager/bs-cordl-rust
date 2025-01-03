@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct PoolableManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _poolables: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::IPoolable,
+    pub _poolables: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::Zenject::IPoolable>,
     >,
     pub _isSpawned: bool,
 }
@@ -131,9 +131,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::PoolableManager {
 }
 #[cfg(feature = "Zenject+PoolableManager+PoolableInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PoolableManager_PoolableInfo {
-    pub Poolable: *mut crate::Zenject::IPoolable,
+    pub Poolable: quest_hook::libil2cpp::Gc<crate::Zenject::IPoolable>,
     pub Priority: i32,
 }
 #[cfg(feature = "Zenject+PoolableManager+PoolableInfo")]

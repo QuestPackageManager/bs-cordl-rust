@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct XNamespace {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _namespaceName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _namespaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _hashCode: i32,
-    pub _names: *mut crate::System::Xml::Linq::XHashtable_1<
-        *mut crate::System::Xml::Linq::XName,
+    pub _names: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Linq::XHashtable_1<*mut crate::System::Xml::Linq::XName>,
     >,
 }
 #[cfg(feature = "System+Xml+Linq+XNamespace")]

@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct PropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::MemberDescriptor,
-    pub _converter: *mut crate::System::ComponentModel::TypeConverter,
-    pub _valueChangedHandlers: *mut crate::System::Collections::Hashtable,
-    pub _editors: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _converter: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::TypeConverter,
     >,
-    pub _editorTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    pub _valueChangedHandlers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
+    pub _editors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+    >,
+    pub _editorTypes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+    >,
     pub _editorCount: i32,
 }
 #[cfg(feature = "System+ComponentModel+PropertyDescriptor")]

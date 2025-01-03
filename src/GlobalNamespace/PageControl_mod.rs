@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct PageControl {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _content: *mut crate::UnityEngine::RectTransform,
+    pub _content: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _spacing: f32,
-    pub _elementPrefab: *mut crate::GlobalNamespace::PageControlElement,
-    pub _activeElements: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::PageControlElement,
+    pub _elementPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PageControlElement,
     >,
-    pub _inactiveElements: *mut crate::System::Collections::Generic::Queue_1<
-        *mut crate::GlobalNamespace::PageControlElement,
+    pub _activeElements: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::PageControlElement,
+        >,
+    >,
+    pub _inactiveElements: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<
+            *mut crate::GlobalNamespace::PageControlElement,
+        >,
     >,
     pub _selectedPage: i32,
     pub _pagesCount: i32,

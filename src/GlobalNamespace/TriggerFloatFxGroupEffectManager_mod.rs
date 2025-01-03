@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct TriggerFloatFxGroupEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _floatFxGroups: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::FloatFxGroup,
+    pub _floatFxGroups: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::FloatFxGroup>,
     >,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _floatFxGroupEffects: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::TriggerFloatFxGroupEffect,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _floatFxGroupEffects: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::TriggerFloatFxGroupEffect,
+        >,
     >,
 }
 #[cfg(feature = "TriggerFloatFxGroupEffectManager")]

@@ -3,19 +3,27 @@
 #[derive(Debug)]
 pub struct CutScoreBuffer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _saberSwingRatingCounter: *mut crate::GlobalNamespace::SaberSwingRatingCounter,
+    pub _saberSwingRatingCounter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SaberSwingRatingCounter,
+    >,
     pub _noteCutInfo: crate::GlobalNamespace::NoteCutInfo,
-    pub _noteScoreDefinition: *mut crate::GlobalNamespace::ScoreModel_NoteScoreDefinition,
+    pub _noteScoreDefinition: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScoreModel_NoteScoreDefinition,
+    >,
     pub _afterCutScore: i32,
     pub _beforeCutScore: i32,
     pub _centerDistanceCutScore: i32,
     pub _initialized: bool,
     pub _isFinished: bool,
-    pub _didFinishEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver,
+    pub _didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver,
+        >,
     >,
-    pub _didChangeEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
-        *mut crate::GlobalNamespace::ICutScoreBufferDidChangeReceiver,
+    pub _didChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::ICutScoreBufferDidChangeReceiver,
+        >,
     >,
 }
 #[cfg(feature = "CutScoreBuffer")]

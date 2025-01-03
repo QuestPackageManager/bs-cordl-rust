@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct MultiplayerBadgesProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
     pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
-    pub _multiplayerBadgesModel: *mut crate::GlobalNamespace::MultiplayerBadgesModelSO,
+    pub _multiplayerBadgesModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerBadgesModelSO,
+    >,
 }
 #[cfg(feature = "MultiplayerBadgesProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

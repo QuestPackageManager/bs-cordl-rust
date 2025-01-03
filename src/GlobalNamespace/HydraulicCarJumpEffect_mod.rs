@@ -4,16 +4,22 @@
 pub struct HydraulicCarJumpEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _event: crate::GlobalNamespace::BasicBeatmapEventType,
-    pub _eventValues: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _eventValues: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub _impulse: crate::UnityEngine::Vector3,
     pub _randomness: f32,
     pub _position: crate::UnityEngine::Vector3,
     pub _minDelayBetweenEvents: f32,
-    pub _rigidbody: *mut crate::UnityEngine::Rigidbody,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _rigidbody: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rigidbody>,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
     pub _lastEventTime: f32,
-    pub _eventValuesHashSet: *mut crate::System::Collections::Generic::HashSet_1<i32>,
-    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _eventValuesHashSet: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
+    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "HydraulicCarJumpEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct RsaBlindingEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub core: *mut crate::Org::BouncyCastle::Crypto::IRsa,
-    pub key: *mut crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
-    pub blindingFactor: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub core: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IRsa>,
+    pub key: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
+    >,
+    pub blindingFactor: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
     pub forEncryption: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+RsaBlindingEngine")]

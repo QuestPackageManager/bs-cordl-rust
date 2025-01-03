@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct MaterialPropertyBlockController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _renderers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Renderer,
+    pub _renderers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Renderer>,
     >,
-    pub _materialPropertyBlock: *mut crate::UnityEngine::MaterialPropertyBlock,
+    pub _materialPropertyBlock: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MaterialPropertyBlock,
+    >,
 }
 #[cfg(feature = "MaterialPropertyBlockController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,56 +3,80 @@
 #[derive(Debug)]
 pub struct LightshowSaveData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub version: *mut quest_hook::libil2cpp::Il2CppString,
-    pub waypoints: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatmapSaveDataVersion4::BeatmapBeatIndex,
+    pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub waypoints: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatmapSaveDataVersion4::BeatmapBeatIndex,
+        >,
     >,
-    pub waypointsData: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::Waypoint,
+    pub waypointsData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::Waypoint>,
     >,
-    pub basicEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatmapSaveDataVersion4::BeatIndex,
+    pub basicEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatmapSaveDataVersion4::BeatIndex,
+        >,
     >,
-    pub basicEventsData: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::BasicEvent,
+    pub basicEventsData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::BasicEvent>,
     >,
-    pub colorBoostEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatmapSaveDataVersion4::BeatIndex,
+    pub colorBoostEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatmapSaveDataVersion4::BeatIndex,
+        >,
     >,
-    pub colorBoostEventsData: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::ColorBoostEvent,
+    pub colorBoostEventsData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::BeatmapSaveDataVersion4::ColorBoostEvent,
+        >,
     >,
-    pub eventBoxGroups: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatmapSaveDataVersion4::EventBoxGroup,
+    pub eventBoxGroups: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatmapSaveDataVersion4::EventBoxGroup,
+        >,
     >,
-    pub indexFilters: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::IndexFilter,
+    pub indexFilters: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::IndexFilter>,
     >,
-    pub lightColorEventBoxes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::LightColorEventBox,
+    pub lightColorEventBoxes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::BeatmapSaveDataVersion4::LightColorEventBox,
+        >,
     >,
-    pub lightColorEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::LightColorEvent,
+    pub lightColorEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::BeatmapSaveDataVersion4::LightColorEvent,
+        >,
     >,
-    pub lightRotationEventBoxes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::LightRotationEventBox,
+    pub lightRotationEventBoxes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::BeatmapSaveDataVersion4::LightRotationEventBox,
+        >,
     >,
-    pub lightRotationEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::LightRotationEvent,
+    pub lightRotationEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::BeatmapSaveDataVersion4::LightRotationEvent,
+        >,
     >,
-    pub lightTranslationEventBoxes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::LightTranslationEventBox,
+    pub lightTranslationEventBoxes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::BeatmapSaveDataVersion4::LightTranslationEventBox,
+        >,
     >,
-    pub lightTranslationEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::LightTranslationEvent,
+    pub lightTranslationEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::BeatmapSaveDataVersion4::LightTranslationEvent,
+        >,
     >,
-    pub fxEventBoxes: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::FxEventBox,
+    pub fxEventBoxes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::FxEventBox>,
     >,
-    pub floatFxEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::FloatFxEvent,
+    pub floatFxEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::FloatFxEvent>,
     >,
-    pub basicEventTypesWithKeywords: *mut crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords,
+    pub basicEventTypesWithKeywords: quest_hook::libil2cpp::Gc<
+        crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords,
+    >,
     pub useNormalEventsAsCompatibleEvents: bool,
 }
 #[cfg(feature = "BeatmapSaveDataVersion4+LightshowSaveData")]

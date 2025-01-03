@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncTaskMethodBuilder")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AsyncTaskMethodBuilder {
     pub m_builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<
         crate::System::Threading::Tasks::VoidTaskResult,

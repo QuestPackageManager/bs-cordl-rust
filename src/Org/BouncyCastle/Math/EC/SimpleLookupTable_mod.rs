@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct SimpleLookupTable {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
-    pub points: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    pub points: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+SimpleLookupTable")]

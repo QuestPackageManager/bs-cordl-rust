@@ -1,11 +1,13 @@
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputDeviceMatcher {
-    pub m_Patterns: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            crate::UnityEngine::InputSystem::Utilities::InternedString,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_Patterns: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Collections::Generic::KeyValuePair_2<
+                crate::UnityEngine::InputSystem::Utilities::InternedString,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     >,
 }
@@ -285,30 +287,32 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputDeviceMatcher_MatcherJson {
-    pub interface: *mut quest_hook::libil2cpp::Il2CppString,
-    pub interfaces: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub interface: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub interfaces: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub deviceClass: *mut quest_hook::libil2cpp::Il2CppString,
-    pub deviceClasses: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub deviceClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub deviceClasses: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub manufacturer: *mut quest_hook::libil2cpp::Il2CppString,
-    pub manufacturers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub manufacturer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub manufacturers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub product: *mut quest_hook::libil2cpp::Il2CppString,
-    pub products: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub product: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub products: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub version: *mut quest_hook::libil2cpp::Il2CppString,
-    pub versions: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub versions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub capabilities: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Capability,
+    pub capabilities: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Capability,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson")]
@@ -360,10 +364,10 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
     feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MatcherJson_InputDeviceMatcher_Capability {
-    pub path: *mut quest_hook::libil2cpp::Il2CppString,
-    pub value: *mut quest_hook::libil2cpp::Il2CppString,
+    pub path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(
     feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"

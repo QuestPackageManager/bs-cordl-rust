@@ -3,15 +3,19 @@
 #[derive(Debug)]
 pub struct UnitySerializationHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_instantiation: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Type,
+    pub m_instantiation: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     >,
-    pub m_elementTypes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub m_elementTypes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     pub m_genericParameterPosition: i32,
-    pub m_declaringType: *mut crate::System::Type,
-    pub m_declaringMethod: *mut crate::System::Reflection::MethodBase,
-    pub m_data: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_assemblyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_declaringType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub m_declaringMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::MethodBase,
+    >,
+    pub m_data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_unityType: i32,
 }
 #[cfg(feature = "System+UnitySerializationHolder")]

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Gost3410PrivateKeyParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters,
-    pub x: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Gost3410PrivateKeyParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

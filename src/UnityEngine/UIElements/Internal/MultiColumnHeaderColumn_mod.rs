@@ -3,13 +3,27 @@
 #[derive(Debug)]
 pub struct MultiColumnHeaderColumn {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
-    pub m_ContentContainer: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_Content: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_SortIndicatorContainer: *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnSortIndicator,
-    pub m_ScheduledHeaderTemplateUpdate: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
-    pub _clickable_k__BackingField: *mut crate::UnityEngine::UIElements::Clickable,
-    pub _mover_k__BackingField: *mut crate::UnityEngine::UIElements::Internal::ColumnMover,
-    pub _column_k__BackingField: *mut crate::UnityEngine::UIElements::Column,
+    pub m_ContentContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_Content: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_SortIndicatorContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnSortIndicator,
+    >,
+    pub m_ScheduledHeaderTemplateUpdate: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    >,
+    pub _clickable_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Clickable,
+    >,
+    pub _mover_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Internal::ColumnMover,
+    >,
+    pub _column_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Column,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

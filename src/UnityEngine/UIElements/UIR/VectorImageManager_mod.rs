@@ -3,14 +3,22 @@
 #[derive(Debug)]
 pub struct VectorImageManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Atlas: *mut crate::UnityEngine::UIElements::AtlasBase,
-    pub m_Registered: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::UnityEngine::UIElements::VectorImage,
-        *mut crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo,
+    pub m_Atlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::AtlasBase>,
+    pub m_Registered: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::UnityEngine::UIElements::VectorImage,
+            *mut crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo,
+        >,
     >,
-    pub m_RenderInfoPool: *mut crate::UnityEngine::UIElements::UIR::VectorImageRenderInfoPool,
-    pub m_GradientRemapPool: *mut crate::UnityEngine::UIElements::UIR::GradientRemapPool,
-    pub m_GradientSettingsAtlas: *mut crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas,
+    pub m_RenderInfoPool: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::VectorImageRenderInfoPool,
+    >,
+    pub m_GradientRemapPool: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::GradientRemapPool,
+    >,
+    pub m_GradientSettingsAtlas: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas,
+    >,
     pub m_LoggedExhaustedSettingsAtlas: bool,
     pub _disposed_k__BackingField: bool,
 }

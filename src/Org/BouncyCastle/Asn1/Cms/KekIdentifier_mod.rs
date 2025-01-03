@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct KekIdentifier {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub keyIdentifier: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub date: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
-    pub other: *mut crate::Org::BouncyCastle::Asn1::Cms::OtherKeyAttribute,
+    pub keyIdentifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub date: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+    >,
+    pub other: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::OtherKeyAttribute,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+KekIdentifier")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

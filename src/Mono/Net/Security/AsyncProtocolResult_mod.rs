@@ -4,7 +4,9 @@
 pub struct AsyncProtocolResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _UserResult_k__BackingField: i32,
-    pub _Error_k__BackingField: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+    pub _Error_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+    >,
 }
 #[cfg(feature = "Mono+Net+Security+AsyncProtocolResult")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

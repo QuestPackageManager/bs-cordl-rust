@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct ConventionBindInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _typeFilters: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Func_2<*mut crate::System::Type, bool>,
+    pub _typeFilters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Func_2<*mut crate::System::Type, bool>,
+        >,
     >,
-    pub _assemblyFilters: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Func_2<*mut crate::System::Reflection::Assembly, bool>,
+    pub _assemblyFilters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Func_2<*mut crate::System::Reflection::Assembly, bool>,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+ConventionBindInfo")]

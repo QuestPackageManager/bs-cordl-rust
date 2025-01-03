@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct TimeStampedData {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub dataUri: *mut crate::Org::BouncyCastle::Asn1::DerIA5String,
-    pub metaData: *mut crate::Org::BouncyCastle::Asn1::Cms::MetaData,
-    pub content: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub temporalEvidence: *mut crate::Org::BouncyCastle::Asn1::Cms::Evidence,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub dataUri: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerIA5String>,
+    pub metaData: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::MetaData,
+    >,
+    pub content: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub temporalEvidence: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::Evidence,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+TimeStampedData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

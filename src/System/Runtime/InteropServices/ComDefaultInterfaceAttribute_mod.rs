@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ComDefaultInterfaceAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _val: *mut crate::System::Type,
+    pub _val: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Runtime+InteropServices+ComDefaultInterfaceAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

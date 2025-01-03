@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct SonyLeaderboardIdsModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _leaderboardIds: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        u32,
+    pub _leaderboardIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            u32,
+        >,
     >,
 }
 #[cfg(feature = "SonyLeaderboardIdsModel")]

@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct EventsTestScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
-    pub _environmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
-    pub _eventsTestSceneInfo: *mut crate::GlobalNamespace::SceneInfo,
-    pub _gameCoreSceneInfo: *mut crate::GlobalNamespace::SceneInfo,
+    pub _environmentInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentInfoSO,
+    >,
+    pub _eventsTestSceneInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SceneInfo,
+    >,
+    pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
 }
 #[cfg(feature = "EventsTestScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct CharEntityEncoderFallbackBuffer {
     __cordl_parent: crate::System::Text::EncoderFallbackBuffer,
-    pub parent: *mut crate::System::Xml::CharEntityEncoderFallback,
-    pub charEntity: *mut quest_hook::libil2cpp::Il2CppString,
+    pub parent: quest_hook::libil2cpp::Gc<crate::System::Xml::CharEntityEncoderFallback>,
+    pub charEntity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub charEntityIndex: i32,
 }
 #[cfg(feature = "System+Xml+CharEntityEncoderFallbackBuffer")]

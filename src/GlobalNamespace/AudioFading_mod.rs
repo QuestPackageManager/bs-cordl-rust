@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AudioFading {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioSource: *mut crate::UnityEngine::AudioSource,
+    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _smooth: f32,
     pub _fadeInOnStart: bool,
     pub _targetVolume: f32,

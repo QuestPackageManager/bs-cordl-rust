@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct Debouncer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _callback: *mut crate::System::Action_1<T>,
+    pub _callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     pub _debounceDelaySeconds: f32,
-    pub _debounceQueue: *mut crate::System::Collections::Generic::Queue_1<T>,
+    pub _debounceQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<T>,
+    >,
     pub _nextCallbackTime: f32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

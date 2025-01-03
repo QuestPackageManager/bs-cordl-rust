@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct DataRowView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dataView: *mut crate::System::Data::DataView,
-    pub _row: *mut crate::System::Data::DataRow,
+    pub _dataView: quest_hook::libil2cpp::Gc<crate::System::Data::DataView>,
+    pub _row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
     pub _delayBeginEdit: bool,
-    pub PropertyChanged: *mut crate::System::ComponentModel::PropertyChangedEventHandler,
+    pub PropertyChanged: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::PropertyChangedEventHandler,
+    >,
 }
 #[cfg(feature = "System+Data+DataRowView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

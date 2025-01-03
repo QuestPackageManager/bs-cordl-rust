@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct VRCenterAdjust {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _settingsApplicator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsApplicatorSO,
+    >,
 }
 #[cfg(feature = "VRCenterAdjust")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

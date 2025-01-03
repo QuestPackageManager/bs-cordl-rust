@@ -3,45 +3,59 @@
 #[derive(Debug)]
 pub struct DiContainer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _decorators: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Type,
-        *mut crate::Zenject::Internal::IDecoratorProvider,
-    >,
-    pub _providers: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::Zenject::BindingId,
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::Zenject::DiContainer_ProviderInfo,
+    pub _decorators: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Type,
+            *mut crate::Zenject::Internal::IDecoratorProvider,
         >,
     >,
-    pub _containerLookups: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::Zenject::DiContainer>,
+    pub _providers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::Zenject::BindingId,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::Zenject::DiContainer_ProviderInfo,
+            >,
+        >,
     >,
-    pub _resolvesInProgress: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::Zenject::Internal::LookupId,
+    pub _containerLookups: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::Zenject::DiContainer>,
+        >,
     >,
-    pub _resolvesTwiceInProgress: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::Zenject::Internal::LookupId,
+    pub _resolvesInProgress: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::Zenject::Internal::LookupId,
+        >,
     >,
-    pub _lazyInjector: *mut crate::Zenject::LazyInstanceInjector,
-    pub _singletonMarkRegistry: *mut crate::Zenject::Internal::SingletonMarkRegistry,
-    pub _currentBindings: *mut crate::System::Collections::Generic::Queue_1<
-        *mut crate::Zenject::BindStatement,
+    pub _resolvesTwiceInProgress: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::Zenject::Internal::LookupId,
+        >,
     >,
-    pub _childBindings: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::BindStatement,
+    pub _lazyInjector: quest_hook::libil2cpp::Gc<crate::Zenject::LazyInstanceInjector>,
+    pub _singletonMarkRegistry: quest_hook::libil2cpp::Gc<
+        crate::Zenject::Internal::SingletonMarkRegistry,
     >,
-    pub _validatedTypes: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::Type,
+    pub _currentBindings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<*mut crate::Zenject::BindStatement>,
     >,
-    pub _validationQueue: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::IValidatable,
+    pub _childBindings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::Zenject::BindStatement>,
     >,
-    pub _contextTransform: *mut crate::UnityEngine::Transform,
+    pub _validatedTypes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<*mut crate::System::Type>,
+    >,
+    pub _validationQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::Zenject::IValidatable>,
+    >,
+    pub _contextTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _hasLookedUpContextTransform: bool,
-    pub _inheritedDefaultParent: *mut crate::UnityEngine::Transform,
-    pub _explicitDefaultParent: *mut crate::UnityEngine::Transform,
+    pub _inheritedDefaultParent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _explicitDefaultParent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _hasExplicitDefaultParent: bool,
-    pub _settings: *mut crate::Zenject::ZenjectSettings,
+    pub _settings: quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectSettings>,
     pub _hasResolvedRoots: bool,
     pub _isFinalizingBinding: bool,
     pub _isValidating: bool,
@@ -4779,10 +4793,10 @@ impl AsMut<crate::Zenject::IInstantiator> for crate::Zenject::DiContainer {
 #[derive(Debug)]
 pub struct DiContainer_ProviderInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Container: *mut crate::Zenject::DiContainer,
+    pub Container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub NonLazy: bool,
-    pub Provider: *mut crate::Zenject::IProvider,
-    pub Condition: *mut crate::Zenject::BindingCondition,
+    pub Provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+    pub Condition: quest_hook::libil2cpp::Gc<crate::Zenject::BindingCondition>,
 }
 #[cfg(feature = "Zenject+DiContainer+ProviderInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct Parametric3SliceSpriteWidthEndFloatFxEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    pub _parametric3SliceSpriteController: *mut crate::GlobalNamespace::Parametric3SliceSpriteController,
+    pub _parametric3SliceSpriteController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Parametric3SliceSpriteController,
+    >,
     pub _valueBounds: crate::UnityEngine::Vector2,
     pub _valueMultiplier: f32,
 }

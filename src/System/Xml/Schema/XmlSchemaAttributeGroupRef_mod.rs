@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlSchemaAttributeGroupRef {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaAnnotated,
-    pub refName: *mut crate::System::Xml::XmlQualifiedName,
+    pub refName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaAttributeGroupRef")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

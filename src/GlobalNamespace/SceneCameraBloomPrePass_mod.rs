@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct SceneCameraBloomPrePass {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _bloomPrepassRenderer: *mut crate::GlobalNamespace::BloomPrePassRendererSO,
-    pub _bloomPrePassEffectContainer: *mut crate::GlobalNamespace::BloomPrePassEffectContainerSO,
-    pub _bloomPrepassRenderTexture: *mut crate::UnityEngine::RenderTexture,
+    pub _bloomPrepassRenderer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassRendererSO,
+    >,
+    pub _bloomPrePassEffectContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassEffectContainerSO,
+    >,
+    pub _bloomPrepassRenderTexture: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RenderTexture,
+    >,
 }
 #[cfg(feature = "SceneCameraBloomPrePass")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct LightGroupSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _groupName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _groupDescription: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _groupName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _groupDescription: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _groupId: i32,
     pub _startLightId: i32,
     pub _numberOfElements: i32,

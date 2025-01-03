@@ -6,11 +6,15 @@ pub struct EnumerableSorter_2<
     TKey: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::System::Linq::EnumerableSorter_1<TElement>,
-    pub keySelector: *mut crate::System::Func_2<TElement, TKey>,
-    pub comparer: *mut crate::System::Collections::Generic::IComparer_1<TKey>,
+    pub keySelector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TElement, TKey>>,
+    pub comparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IComparer_1<TKey>,
+    >,
     pub descending: bool,
-    pub next: *mut crate::System::Linq::EnumerableSorter_1<TElement>,
-    pub keys: *mut quest_hook::libil2cpp::Il2CppArray<TKey>,
+    pub next: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::EnumerableSorter_1<TElement>,
+    >,
+    pub keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
 }

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PinnedBufferMemoryStream {
     __cordl_parent: crate::System::IO::UnmanagedMemoryStream,
-    pub _array: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _pinningHandle: crate::System::Runtime::InteropServices::GCHandle,
 }
 #[cfg(feature = "System+IO+PinnedBufferMemoryStream")]

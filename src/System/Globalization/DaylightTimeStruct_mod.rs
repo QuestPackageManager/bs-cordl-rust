@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Globalization+DaylightTimeStruct")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DaylightTimeStruct {
     pub Start: crate::System::DateTime,
     pub End: crate::System::DateTime,

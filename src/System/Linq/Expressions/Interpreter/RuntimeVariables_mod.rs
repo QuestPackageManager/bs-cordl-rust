@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct RuntimeVariables {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _boxes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Runtime::CompilerServices::IStrongBox,
+    pub _boxes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Runtime::CompilerServices::IStrongBox,
+        >,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeVariables")]

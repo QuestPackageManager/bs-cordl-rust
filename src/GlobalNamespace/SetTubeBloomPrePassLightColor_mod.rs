@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct SetTubeBloomPrePassLightColor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _color: *mut crate::GlobalNamespace::ColorSO,
-    pub _tubeLights: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+    pub _color: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _tubeLights: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+        >,
     >,
 }
 #[cfg(feature = "SetTubeBloomPrePassLightColor")]

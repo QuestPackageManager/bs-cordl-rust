@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct ECKeyParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub algorithm: *mut quest_hook::libil2cpp::Il2CppString,
-    pub parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
-    pub publicKeyParamSet: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    pub algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub parameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
+    >,
+    pub publicKeyParamSet: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ECKeyParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

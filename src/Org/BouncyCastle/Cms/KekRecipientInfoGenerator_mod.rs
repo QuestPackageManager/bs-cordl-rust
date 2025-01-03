@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct KekRecipientInfoGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub keyEncryptionKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-    pub keyEncryptionKeyOID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub kekIdentifier: *mut crate::Org::BouncyCastle::Asn1::Cms::KekIdentifier,
-    pub keyEncryptionAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    pub keyEncryptionKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    >,
+    pub keyEncryptionKeyOID: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub kekIdentifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::KekIdentifier,
+    >,
+    pub keyEncryptionAlgorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+KekRecipientInfoGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct XDeclarationWrapper {
     __cordl_parent: crate::Newtonsoft::Json::Converters::XObjectWrapper,
-    pub _Declaration_k__BackingField: *mut crate::System::Xml::Linq::XDeclaration,
+    pub _Declaration_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Linq::XDeclaration,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XDeclarationWrapper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

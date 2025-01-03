@@ -3,28 +3,40 @@
 #[derive(Debug)]
 pub struct DataRelation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dataSet: *mut crate::System::Data::DataSet,
-    pub _extendedProperties: *mut crate::System::Data::PropertyCollection,
-    pub _relationName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+    pub _extendedProperties: quest_hook::libil2cpp::Gc<
+        crate::System::Data::PropertyCollection,
+    >,
+    pub _relationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _childKey: crate::System::Data::DataKey,
     pub _parentKey: crate::System::Data::DataKey,
-    pub _parentKeyConstraint: *mut crate::System::Data::UniqueConstraint,
-    pub _childKeyConstraint: *mut crate::System::Data::ForeignKeyConstraint,
-    pub _parentColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _parentKeyConstraint: quest_hook::libil2cpp::Gc<
+        crate::System::Data::UniqueConstraint,
     >,
-    pub _childColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _childKeyConstraint: quest_hook::libil2cpp::Gc<
+        crate::System::Data::ForeignKeyConstraint,
     >,
-    pub _parentTableName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _childTableName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _parentTableNamespace: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _childTableNamespace: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _parentColumnNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub _childColumnNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub _parentTableName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _childTableName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _parentTableNamespace: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _childTableNamespace: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _nested: bool,
     pub _createConstraints: bool,
     pub _checkMultipleNested: bool,
     pub _objectID: i32,
-    pub PropertyChanging: *mut crate::System::ComponentModel::PropertyChangedEventHandler,
+    pub PropertyChanging: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::PropertyChangedEventHandler,
+    >,
 }
 #[cfg(feature = "System+Data+DataRelation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

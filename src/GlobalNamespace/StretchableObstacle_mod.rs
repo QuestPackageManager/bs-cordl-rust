@@ -8,12 +8,18 @@ pub struct StretchableObstacle {
     pub _addColorMultiplier: f32,
     pub _obstacleCoreLerpToWhiteFactor: f32,
     pub _fakeGlowOffset: crate::UnityEngine::Vector3,
-    pub _obstacleCore: *mut crate::UnityEngine::Transform,
-    pub _materialPropertyBlockControllers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _obstacleCore: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _materialPropertyBlockControllers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+        >,
     >,
-    pub _obstacleFrame: *mut crate::GlobalNamespace::ParametricBoxFrameController,
-    pub _obstacleFakeGlow: *mut crate::GlobalNamespace::ParametricBoxFakeGlowController,
+    pub _obstacleFrame: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ParametricBoxFrameController,
+    >,
+    pub _obstacleFakeGlow: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ParametricBoxFakeGlowController,
+    >,
     pub _manualUVOffsetMultiplier: f32,
     pub _bounds: crate::UnityEngine::Bounds,
 }

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ProtectedPkiMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub pkiMessage: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage,
+    pub pkiMessage: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cmp+ProtectedPkiMessage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

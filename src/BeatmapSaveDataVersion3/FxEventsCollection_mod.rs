@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct FxEventsCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _il: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BeatmapSaveDataVersion3::IntFxEventBaseData,
+    pub _il: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BeatmapSaveDataVersion3::IntFxEventBaseData,
+        >,
     >,
-    pub _fl: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BeatmapSaveDataVersion3::FloatFxEventBaseData,
+    pub _fl: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BeatmapSaveDataVersion3::FloatFxEventBaseData,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+FxEventsCollection")]

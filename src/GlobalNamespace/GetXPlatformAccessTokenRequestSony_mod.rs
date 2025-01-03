@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct GetXPlatformAccessTokenRequestSony {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub platformToken: *mut quest_hook::libil2cpp::Il2CppString,
+    pub platformToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub platformEnvironment: crate::GlobalNamespace::PlatformEnvironment,
 }
 #[cfg(feature = "GetXPlatformAccessTokenRequestSony")]

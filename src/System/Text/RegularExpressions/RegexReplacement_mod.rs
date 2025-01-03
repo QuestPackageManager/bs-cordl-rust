@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct RegexReplacement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _strings: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _strings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _rules: *mut crate::System::Collections::Generic::List_1<i32>,
-    pub _Pattern_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _rules: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
+    pub _Pattern_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexReplacement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

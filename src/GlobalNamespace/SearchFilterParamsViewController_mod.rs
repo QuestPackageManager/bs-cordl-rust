@@ -3,27 +3,55 @@
 #[derive(Debug)]
 pub struct SearchFilterParamsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _filterByOwnedToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _filterByNotOwnedToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _filterByCharacteristicToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _beatmapCharacteristicsDropdown: *mut crate::GlobalNamespace::BeatmapCharacteristicsDropdown,
-    pub _filterByDifficultyToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _beatmapDifficultyDropdown: *mut crate::GlobalNamespace::BeatmapDifficultyDropdown,
-    pub _filterBySongPacksToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _songPacksDropdown: *mut crate::GlobalNamespace::SongPacksDropdown,
-    pub _filterByNotPlayedYetToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _filterByMinBpmToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _minBpmController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
-    pub _filterByMaxBpmToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _maxBpmController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
-    pub _filterBySensitivity: *mut crate::GlobalNamespace::PlayerSensitivityDropdown,
-    pub _forcedSensitivityOptionNotice: *mut crate::UnityEngine::GameObject,
-    pub _okButton: *mut crate::UnityEngine::UI::Button,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _filterByOwnedToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _filterByNotOwnedToggle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
+    >,
+    pub _filterByCharacteristicToggle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
+    >,
+    pub _beatmapCharacteristicsDropdown: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicsDropdown,
+    >,
+    pub _filterByDifficultyToggle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
+    >,
+    pub _beatmapDifficultyDropdown: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDifficultyDropdown,
+    >,
+    pub _filterBySongPacksToggle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
+    >,
+    pub _songPacksDropdown: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPacksDropdown,
+    >,
+    pub _filterByNotPlayedYetToggle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
+    >,
+    pub _filterByMinBpmToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _minBpmController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FormattedFloatListSettingsController,
+    >,
+    pub _filterByMaxBpmToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _maxBpmController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FormattedFloatListSettingsController,
+    >,
+    pub _filterBySensitivity: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSensitivityDropdown,
+    >,
+    pub _forcedSensitivityOptionNotice: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _okButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
     pub _currentSearchFilter: crate::GlobalNamespace::LevelFilter,
-    pub didFinishEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::SearchFilterParamsViewController,
-        crate::GlobalNamespace::LevelFilter,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::SearchFilterParamsViewController,
+            crate::GlobalNamespace::LevelFilter,
+        >,
     >,
 }
 #[cfg(feature = "SearchFilterParamsViewController")]

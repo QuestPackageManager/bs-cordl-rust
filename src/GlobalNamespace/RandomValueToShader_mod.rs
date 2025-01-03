@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct RandomValueToShader {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _random: *mut crate::System::Random,
+    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
     pub _lastFrameNum: i32,
 }
 #[cfg(feature = "RandomValueToShader")]

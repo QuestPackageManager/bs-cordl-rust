@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct NetDataWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _position: i32,
     pub _autoResize: bool,
 }

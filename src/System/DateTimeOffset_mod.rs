@@ -1,6 +1,6 @@
 #[cfg(feature = "System+DateTimeOffset")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DateTimeOffset {
     pub _dateTime: crate::System::DateTime,
     pub _offsetMinutes: i16,

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct InspectorLabelAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
-    pub CustomLabel: *mut quest_hook::libil2cpp::Il2CppString,
+    pub CustomLabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "BeatSaber+InspectorName+InspectorLabelAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

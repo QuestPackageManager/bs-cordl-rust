@@ -1,9 +1,11 @@
 #[cfg(feature = "System+Text+RegularExpressions+RegexPrefix")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RegexPrefix {
     pub _CaseInsensitive_k__BackingField: bool,
-    pub _Prefix_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Prefix_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexPrefix")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

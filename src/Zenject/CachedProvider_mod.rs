@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct CachedProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _creator: *mut crate::Zenject::IProvider,
-    pub _instances: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _creator: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+    pub _instances: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
     pub _isCreatingInstance: bool,
 }

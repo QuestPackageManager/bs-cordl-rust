@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct UIRRepaintUpdater {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
-    pub attachedPanel: *mut crate::UnityEngine::UIElements::BaseVisualElementPanel,
-    pub renderChain: *mut crate::UnityEngine::UIElements::UIR::RenderChain,
+    pub attachedPanel: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVisualElementPanel,
+    >,
+    pub renderChain: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::RenderChain,
+    >,
     pub _drawStats_k__BackingField: bool,
     pub _breakBatches_k__BackingField: bool,
     pub _disposed_k__BackingField: bool,

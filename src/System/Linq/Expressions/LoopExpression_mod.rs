@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct LoopExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
-    pub _Body_k__BackingField: *mut crate::System::Linq::Expressions::Expression,
-    pub _BreakLabel_k__BackingField: *mut crate::System::Linq::Expressions::LabelTarget,
-    pub _ContinueLabel_k__BackingField: *mut crate::System::Linq::Expressions::LabelTarget,
+    pub _Body_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Expression,
+    >,
+    pub _BreakLabel_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::LabelTarget,
+    >,
+    pub _ContinueLabel_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::LabelTarget,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+LoopExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -5,8 +5,10 @@ pub struct AnimationOutputWeightProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Output: crate::UnityEngine::Animations::AnimationPlayableOutput,
     pub m_MotionXPlayable: crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable,
-    pub m_Mixers: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo,
+    pub m_Mixers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationOutputWeightProcessor")]
@@ -115,7 +117,7 @@ for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor {
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AnimationOutputWeightProcessor_WeightInfo {
     pub mixer: crate::UnityEngine::Playables::Playable,
     pub parentMixer: crate::UnityEngine::Playables::Playable,

@@ -3,19 +3,33 @@
 #[derive(Debug)]
 pub struct HelpMenuViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _helpMenuSegmentedControl: *mut crate::HMUI::TextSegmentedControl,
-    pub _howToPlayViewController: *mut crate::GlobalNamespace::HowToPlayViewController,
-    pub _healthWarningDisplayViewController: *mut crate::GlobalNamespace::HealthWarningDisplayViewController,
-    pub _privacyPolicyDisplayViewController: *mut crate::GlobalNamespace::PrivacyPolicyDisplayViewController,
-    pub _eulaDisplayViewController: *mut crate::GlobalNamespace::EulaDisplayViewController,
-    pub _licensesDisplayViewController: *mut crate::GlobalNamespace::LicensesDisplayViewController,
-    pub didSelectHelpSubMenuEvent: *mut crate::System::Action_1<
-        *mut crate::HMUI::ViewController,
+    pub _helpMenuSegmentedControl: quest_hook::libil2cpp::Gc<
+        crate::HMUI::TextSegmentedControl,
     >,
-    pub _viewControllers: *mut crate::System::Collections::Generic::List_1<
-        crate::System::ValueTuple_2<
-            *mut crate::HMUI::ViewController,
-            *mut quest_hook::libil2cpp::Il2CppString,
+    pub _howToPlayViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HowToPlayViewController,
+    >,
+    pub _healthWarningDisplayViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HealthWarningDisplayViewController,
+    >,
+    pub _privacyPolicyDisplayViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PrivacyPolicyDisplayViewController,
+    >,
+    pub _eulaDisplayViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EulaDisplayViewController,
+    >,
+    pub _licensesDisplayViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LicensesDisplayViewController,
+    >,
+    pub didSelectHelpSubMenuEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::HMUI::ViewController>,
+    >,
+    pub _viewControllers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::System::ValueTuple_2<
+                *mut crate::HMUI::ViewController,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     >,
 }

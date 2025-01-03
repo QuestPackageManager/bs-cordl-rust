@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct AndroidJavaObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_jobject: *mut crate::UnityEngine::GlobalJavaObjectRef,
-    pub m_jclass: *mut crate::UnityEngine::GlobalJavaObjectRef,
+    pub m_jobject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GlobalJavaObjectRef>,
+    pub m_jclass: quest_hook::libil2cpp::Gc<crate::UnityEngine::GlobalJavaObjectRef>,
 }
 #[cfg(feature = "UnityEngine+AndroidJavaObject")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

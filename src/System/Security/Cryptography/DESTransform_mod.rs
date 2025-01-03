@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct DESTransform {
     __cordl_parent: crate::Mono::Security::Cryptography::SymmetricTransform,
-    pub keySchedule: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub byteBuff: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub dwordBuff: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub keySchedule: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub byteBuff: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub dwordBuff: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
 #[cfg(feature = "System+Security+Cryptography+DESTransform")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

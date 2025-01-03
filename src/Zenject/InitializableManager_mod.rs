@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct InitializableManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _initializables: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Zenject::InitializableManager_InitializableInfo,
+    pub _initializables: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Zenject::InitializableManager_InitializableInfo,
+        >,
     >,
     pub _hasInitialized: bool,
 }
@@ -135,7 +137,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::InitializableManager 
 #[derive(Debug)]
 pub struct InitializableManager_InitializableInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Initializable: *mut crate::Zenject::IInitializable,
+    pub Initializable: quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>,
     pub Priority: i32,
 }
 #[cfg(feature = "Zenject+InitializableManager+InitializableInfo")]

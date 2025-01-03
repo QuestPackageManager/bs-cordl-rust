@@ -3,19 +3,27 @@
 #[derive(Debug)]
 pub struct DefaultEventSystem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Input: *mut crate::UnityEngine::UIElements::DefaultEventSystem_IInput,
-    pub m_HorizontalAxis: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_VerticalAxis: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_SubmitButton: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_CancelButton: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Input: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::DefaultEventSystem_IInput,
+    >,
+    pub m_HorizontalAxis: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_VerticalAxis: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_SubmitButton: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_CancelButton: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_InputActionsPerSecond: f32,
     pub m_RepeatDelay: f32,
     pub m_SendingTouchEvents: bool,
     pub m_SendingPenEvent: bool,
-    pub m_Event: *mut crate::UnityEngine::Event,
-    pub m_FocusedPanel: *mut crate::UnityEngine::UIElements::BaseRuntimePanel,
-    pub m_PreviousFocusedPanel: *mut crate::UnityEngine::UIElements::BaseRuntimePanel,
-    pub m_PreviousFocusedElement: *mut crate::UnityEngine::UIElements::Focusable,
+    pub m_Event: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+    pub m_FocusedPanel: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseRuntimePanel,
+    >,
+    pub m_PreviousFocusedPanel: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseRuntimePanel,
+    >,
+    pub m_PreviousFocusedElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Focusable,
+    >,
     pub m_CurrentModifiers: crate::UnityEngine::EventModifiers,
     pub m_LastMousePressButton: i32,
     pub m_NextMousePressTime: f32,
@@ -366,9 +374,11 @@ for crate::UnityEngine::UIElements::DefaultEventSystem {
     feature = "UnityEngine+UIElements+DefaultEventSystem+FocusBasedEventSequenceContext"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DefaultEventSystem_FocusBasedEventSequenceContext {
-    pub es: *mut crate::UnityEngine::UIElements::DefaultEventSystem,
+    pub es: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::DefaultEventSystem,
+    >,
 }
 #[cfg(
     feature = "UnityEngine+UIElements+DefaultEventSystem+FocusBasedEventSequenceContext"

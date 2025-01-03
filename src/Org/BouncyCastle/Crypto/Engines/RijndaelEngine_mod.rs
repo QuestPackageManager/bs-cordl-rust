@@ -7,16 +7,16 @@ pub struct RijndaelEngine {
     pub BC_MASK: i64,
     pub ROUNDS: i32,
     pub blockBits: i32,
-    pub workingKey: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+    pub workingKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppArray<i64>>,
     >,
     pub A0: i64,
     pub A1: i64,
     pub A2: i64,
     pub A3: i64,
     pub forEncryption: bool,
-    pub shifts0SC: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub shifts1SC: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub shifts0SC: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub shifts1SC: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+RijndaelEngine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

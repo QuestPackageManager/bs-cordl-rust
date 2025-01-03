@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AuthorityKeyIdentifierExtension {
     __cordl_parent: crate::Mono::Security::X509::X509Extension,
-    pub aki: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub aki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Security+X509+Extensions+AuthorityKeyIdentifierExtension")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

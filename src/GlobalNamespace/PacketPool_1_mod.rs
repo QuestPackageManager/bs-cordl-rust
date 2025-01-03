@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct PacketPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _bag: *mut crate::System::Collections::Concurrent::ConcurrentBag_1<T>,
+    pub _bag: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Concurrent::ConcurrentBag_1<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "PacketPool_1")]

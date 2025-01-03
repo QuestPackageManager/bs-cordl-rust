@@ -3,18 +3,24 @@
 #[derive(Debug)]
 pub struct MultiplayerResultsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _levelClearedGO: *mut crate::UnityEngine::GameObject,
-    pub _levelFailedGO: *mut crate::UnityEngine::GameObject,
-    pub _levelResultsGO: *mut crate::UnityEngine::GameObject,
-    pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
-    pub _resultsTableView: *mut crate::GlobalNamespace::ResultsTableView,
-    pub _backToLobbyButton: *mut crate::UnityEngine::UI::Button,
-    pub _backToMenuButton: *mut crate::UnityEngine::UI::Button,
-    pub backToLobbyPressedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MultiplayerResultsViewController,
+    pub _levelClearedGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _levelFailedGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _levelResultsGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _levelBar: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelBar>,
+    pub _resultsTableView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ResultsTableView,
     >,
-    pub backToMenuPressedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MultiplayerResultsViewController,
+    pub _backToLobbyButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _backToMenuButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub backToLobbyPressedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::MultiplayerResultsViewController,
+        >,
+    >,
+    pub backToMenuPressedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::MultiplayerResultsViewController,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerResultsViewController")]

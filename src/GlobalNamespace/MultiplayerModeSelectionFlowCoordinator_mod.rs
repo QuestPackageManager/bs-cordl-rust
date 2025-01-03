@@ -3,42 +3,96 @@
 #[derive(Debug)]
 pub struct MultiplayerModeSelectionFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub _ambienceAudioClip: *mut crate::UnityEngine::AudioClip,
-    pub _songPackMasksModel: *mut crate::GlobalNamespace::SongPackMasksModel,
-    pub _gameServerBrowserFlowCoordinator: *mut crate::GlobalNamespace::GameServerBrowserFlowCoordinator,
-    pub _gameServerLobbyFlowCoordinator: *mut crate::GlobalNamespace::GameServerLobbyFlowCoordinator,
-    pub _multiplayerModeSelectionViewController: *mut crate::GlobalNamespace::MultiplayerModeSelectionViewController,
-    pub _createServerViewController: *mut crate::GlobalNamespace::CreateServerViewController,
-    pub _joinQuickPlayViewController: *mut crate::GlobalNamespace::JoinQuickPlayViewController,
-    pub _serverCodeEntryViewController: *mut crate::GlobalNamespace::ServerCodeEntryViewController,
-    pub _simpleDialogPromptViewController: *mut crate::GlobalNamespace::SimpleDialogPromptViewController,
-    pub _joiningLobbyViewController: *mut crate::GlobalNamespace::JoiningLobbyViewController,
-    pub _unifiedNetworkPlayerModel: *mut crate::GlobalNamespace::IUnifiedNetworkPlayerModel,
-    pub _avatarSystemCollection: *mut crate::BeatSaber::AvatarCore::AvatarSystemCollection,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _fadeInOutController: *mut crate::GlobalNamespace::FadeInOutController,
-    pub _lobbyDataModelsManager: *mut crate::GlobalNamespace::LobbyDataModelsManager,
-    pub _multiplayerLobbyConnectionController: *mut crate::GlobalNamespace::MultiplayerLobbyConnectionController,
-    pub _multiplayerStatusModel: *mut crate::GlobalNamespace::IMultiplayerStatusModel,
-    pub _quickPlaySetupModel: *mut crate::GlobalNamespace::IQuickPlaySetupModel,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _songPreviewPlayer: *mut crate::GlobalNamespace::SongPreviewPlayer,
-    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
-    pub _lobbyGameStateController: *mut crate::GlobalNamespace::ILobbyGameStateController,
-    pub _xPlatformAuthFeatureFlag: *mut crate::GlobalNamespace::XPlatformAuthFeatureFlag,
-    pub didFinishEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
+    pub _ambienceAudioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    pub _songPackMasksModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPackMasksModel,
     >,
-    pub _joiningLobbyCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _modeSelectionCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _transitionFinishedTaskSource: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<
-        bool,
+    pub _gameServerBrowserFlowCoordinator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameServerBrowserFlowCoordinator,
     >,
-    pub _checkingAvailabilityTaskSource: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<
-        bool,
+    pub _gameServerLobbyFlowCoordinator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameServerLobbyFlowCoordinator,
     >,
-    pub _quickPlaySetupData: *mut crate::GlobalNamespace::QuickPlaySetupData,
-    pub _lobbyDestination: *mut crate::GlobalNamespace::SelectMultiplayerLobbyDestination,
+    pub _multiplayerModeSelectionViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerModeSelectionViewController,
+    >,
+    pub _createServerViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CreateServerViewController,
+    >,
+    pub _joinQuickPlayViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::JoinQuickPlayViewController,
+    >,
+    pub _serverCodeEntryViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ServerCodeEntryViewController,
+    >,
+    pub _simpleDialogPromptViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SimpleDialogPromptViewController,
+    >,
+    pub _joiningLobbyViewController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::JoiningLobbyViewController,
+    >,
+    pub _unifiedNetworkPlayerModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IUnifiedNetworkPlayerModel,
+    >,
+    pub _avatarSystemCollection: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::AvatarSystemCollection,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub _fadeInOutController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FadeInOutController,
+    >,
+    pub _lobbyDataModelsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LobbyDataModelsManager,
+    >,
+    pub _multiplayerLobbyConnectionController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLobbyConnectionController,
+    >,
+    pub _multiplayerStatusModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerStatusModel,
+    >,
+    pub _quickPlaySetupModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IQuickPlaySetupModel,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _songPreviewPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPreviewPlayer,
+    >,
+    pub _analyticsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAnalyticsModel,
+    >,
+    pub _lobbyGameStateController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyGameStateController,
+    >,
+    pub _xPlatformAuthFeatureFlag: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::XPlatformAuthFeatureFlag,
+    >,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
+        >,
+    >,
+    pub _joiningLobbyCancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub _modeSelectionCancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub _transitionFinishedTaskSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskCompletionSource_1<bool>,
+    >,
+    pub _checkingAvailabilityTaskSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskCompletionSource_1<bool>,
+    >,
+    pub _quickPlaySetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::QuickPlaySetupData,
+    >,
+    pub _lobbyDestination: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SelectMultiplayerLobbyDestination,
+    >,
 }
 #[cfg(feature = "MultiplayerModeSelectionFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

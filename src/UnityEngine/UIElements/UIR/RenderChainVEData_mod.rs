@@ -1,21 +1,37 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChainVEData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RenderChainVEData {
-    pub prev: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub next: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub groupTransformAncestor: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub boneTransformAncestor: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub prevDirty: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub nextDirty: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub prev: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    pub next: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    pub groupTransformAncestor: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub boneTransformAncestor: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub prevDirty: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub nextDirty: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub flags: crate::UnityEngine::UIElements::UIR::RenderDataFlags,
     pub hierarchyDepth: i32,
     pub dirtiedValues: crate::UnityEngine::UIElements::UIR::RenderDataDirtyTypes,
     pub dirtyID: u32,
-    pub firstCommand: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
-    pub lastCommand: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
-    pub firstClosingCommand: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
-    pub lastClosingCommand: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+    pub firstCommand: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+    >,
+    pub lastCommand: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+    >,
+    pub firstClosingCommand: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+    >,
+    pub lastClosingCommand: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+    >,
     pub isInChain: bool,
     pub isHierarchyHidden: bool,
     pub localFlipsWinding: bool,
@@ -26,8 +42,10 @@ pub struct RenderChainVEData {
     pub childrenStencilRef: i32,
     pub childrenMaskDepth: i32,
     pub disableNudging: bool,
-    pub data: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
-    pub closingData: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+    pub data: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
+    pub closingData: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::MeshHandle,
+    >,
     pub verticesSpace: crate::UnityEngine::Matrix4x4,
     pub displacementUVStart: i32,
     pub displacementUVEnd: i32,
@@ -44,8 +62,10 @@ pub struct RenderChainVEData {
     pub tintColorID: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     pub compositeOpacity: f32,
     pub backgroundColor: crate::UnityEngine::Color,
-    pub textures: *mut crate::UnityEngine::UIElements::UIR::BasicNode_1<
-        crate::UnityEngine::UIElements::UIR::TextureEntry,
+    pub textures: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::BasicNode_1<
+            crate::UnityEngine::UIElements::UIR::TextureEntry,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChainVEData")]

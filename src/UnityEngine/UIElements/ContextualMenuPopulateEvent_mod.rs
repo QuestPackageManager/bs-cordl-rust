@@ -5,9 +5,15 @@ pub struct ContextualMenuPopulateEvent {
     __cordl_parent: crate::UnityEngine::UIElements::MouseEventBase_1<
         *mut crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
     >,
-    pub _menu_k__BackingField: *mut crate::UnityEngine::UIElements::DropdownMenu,
-    pub _triggerEvent_k__BackingField: *mut crate::UnityEngine::UIElements::EventBase,
-    pub m_ContextualMenuManager: *mut crate::UnityEngine::UIElements::ContextualMenuManager,
+    pub _menu_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::DropdownMenu,
+    >,
+    pub _triggerEvent_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventBase,
+    >,
+    pub m_ContextualMenuManager: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ContextualMenuManager,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ContextualMenuPopulateEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

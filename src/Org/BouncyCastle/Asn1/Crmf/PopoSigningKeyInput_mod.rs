@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct PopoSigningKeyInput {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub sender: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    pub publicKeyMac: *mut crate::Org::BouncyCastle::Asn1::Crmf::PKMacValue,
-    pub publicKey: *mut crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+    pub sender: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    >,
+    pub publicKeyMac: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Crmf::PKMacValue,
+    >,
+    pub publicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+PopoSigningKeyInput")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

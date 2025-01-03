@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct CrashInfoViewController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _crashManager: *mut crate::GlobalNamespace::CrashManagerSO,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
+    pub _crashManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CrashManagerSO>,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
 #[cfg(feature = "CrashInfoViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,12 +1,14 @@
 #[cfg(feature = "UnityEngine+InputSystem+UI+NavigationModel")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NavigationModel {
     pub _cordl_move: crate::UnityEngine::Vector2,
     pub consecutiveMoveCount: i32,
     pub lastMoveDirection: crate::UnityEngine::EventSystems::MoveDirection,
     pub lastMoveTime: f32,
-    pub eventData: *mut crate::UnityEngine::EventSystems::AxisEventData,
+    pub eventData: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::AxisEventData,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+UI+NavigationModel")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

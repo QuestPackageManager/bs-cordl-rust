@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct GlobalShaderColorLightWithIds {
     __cordl_parent: crate::GlobalNamespace::LightWithIds,
-    pub _lightIntensityData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::GlobalShaderColorLightWithIds_LightIntensitiesWithId,
+    pub _lightIntensityData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::GlobalShaderColorLightWithIds_LightIntensitiesWithId,
+        >,
     >,
     pub _overrideSaturation: bool,
     pub _saturation: f32,

@@ -3,16 +3,16 @@
 #[derive(Debug)]
 pub struct XmlParserContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _nt: *mut crate::System::Xml::XmlNameTable,
-    pub _nsMgr: *mut crate::System::Xml::XmlNamespaceManager,
-    pub _docTypeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _pubId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _sysId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _internalSubset: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _xmlLang: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _nt: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+    pub _nsMgr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
+    pub _docTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _pubId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _sysId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _internalSubset: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _xmlLang: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _xmlSpace: crate::System::Xml::XmlSpace,
-    pub _baseURI: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _encoding: *mut crate::System::Text::Encoding,
+    pub _baseURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
 }
 #[cfg(feature = "System+Xml+XmlParserContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

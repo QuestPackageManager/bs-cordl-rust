@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct FpFieldElement {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractFpFieldElement,
-    pub q: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub r: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub x: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub r: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+FpFieldElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "LIV+SDK+Unity+SDKPose")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SDKPose {
     pub projectionMatrix: crate::LIV::SDK::Unity::SDKMatrix4x4,
     pub localPosition: crate::LIV::SDK::Unity::SDKVector3,

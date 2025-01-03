@@ -1,9 +1,9 @@
 #[cfg(feature = "GetAssetBundleFileResult")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GetAssetBundleFileResult {
     pub isError: bool,
-    pub assetBundlePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub assetBundlePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "GetAssetBundleFileResult")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -1,8 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+GlobalKeyword")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GlobalKeyword {
-    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Index: u32,
 }
 #[cfg(feature = "UnityEngine+Rendering+GlobalKeyword")]

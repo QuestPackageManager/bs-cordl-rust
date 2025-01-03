@@ -182,11 +182,17 @@ for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
 #[derive(Debug)]
 pub struct CmsAuthenticatedDataStreamGenerator_CmsAuthenticatedDataOutputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    pub macStream: *mut crate::System::IO::Stream,
-    pub mac: *mut crate::Org::BouncyCastle::Crypto::IMac,
-    pub cGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-    pub authGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-    pub eiGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    pub macStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
+    pub cGen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    >,
+    pub authGen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    >,
+    pub eiGen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    >,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator+CmsAuthenticatedDataOutputStream"

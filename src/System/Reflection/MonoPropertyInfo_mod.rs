@@ -1,12 +1,12 @@
 #[cfg(feature = "System+Reflection+MonoPropertyInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MonoPropertyInfo {
-    pub parent: *mut crate::System::Type,
-    pub declaring_type: *mut crate::System::Type,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub get_method: *mut crate::System::Reflection::MethodInfo,
-    pub set_method: *mut crate::System::Reflection::MethodInfo,
+    pub parent: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub declaring_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub get_method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    pub set_method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     pub attrs: crate::System::Reflection::PropertyAttributes,
 }
 #[cfg(feature = "System+Reflection+MonoPropertyInfo")]

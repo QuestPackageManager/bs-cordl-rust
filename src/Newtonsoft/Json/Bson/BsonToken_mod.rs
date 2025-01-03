@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BsonToken {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Parent_k__BackingField: *mut crate::Newtonsoft::Json::Bson::BsonToken,
+    pub _Parent_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Bson::BsonToken,
+    >,
     pub _CalculatedSize_k__BackingField: i32,
 }
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonToken")]

@@ -4,8 +4,10 @@
 pub struct SafeSerializationEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub m_streamingContext: crate::System::Runtime::Serialization::StreamingContext,
-    pub m_serializedStates: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_serializedStates: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
 }
 #[cfg(feature = "System+Runtime+Serialization+SafeSerializationEventArgs")]

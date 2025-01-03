@@ -5,10 +5,18 @@ pub struct WellKnownAccount {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _WellKnownValue_k__BackingField: crate::System::Security::Principal::WellKnownSidType,
     pub _IsAbsolute_k__BackingField: bool,
-    pub _Sid_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _Rid_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _SddlForm_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Sid_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _Rid_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _SddlForm_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Security+Principal+WellKnownAccount")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

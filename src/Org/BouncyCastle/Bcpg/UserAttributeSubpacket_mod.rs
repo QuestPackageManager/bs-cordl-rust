@@ -5,7 +5,7 @@ pub struct UserAttributeSubpacket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacketTag,
     pub longLength: bool,
-    pub data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+UserAttributeSubpacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

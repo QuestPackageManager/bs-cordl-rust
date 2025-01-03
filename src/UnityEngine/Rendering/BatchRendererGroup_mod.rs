@@ -4,7 +4,9 @@
 pub struct BatchRendererGroup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_GroupHandle: crate::System::IntPtr,
-    pub m_PerformCulling: *mut crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling,
+    pub m_PerformCulling: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling,
+    >,
 }
 #[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

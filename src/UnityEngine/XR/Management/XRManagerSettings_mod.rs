@@ -7,13 +7,19 @@ pub struct XRManagerSettings {
     pub m_RequiresSettingsUpdate: bool,
     pub m_AutomaticLoading: bool,
     pub m_AutomaticRunning: bool,
-    pub m_Loaders: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::XR::Management::XRLoader,
+    pub m_Loaders: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::XR::Management::XRLoader,
+        >,
     >,
-    pub m_RegisteredLoaders: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::UnityEngine::XR::Management::XRLoader,
+    pub m_RegisteredLoaders: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::UnityEngine::XR::Management::XRLoader,
+        >,
     >,
-    pub _activeLoader_k__BackingField: *mut crate::UnityEngine::XR::Management::XRLoader,
+    pub _activeLoader_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::XR::Management::XRLoader,
+    >,
 }
 #[cfg(feature = "UnityEngine+XR+Management+XRManagerSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

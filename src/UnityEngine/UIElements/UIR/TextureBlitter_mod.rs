@@ -3,15 +3,21 @@
 #[derive(Debug)]
 pub struct TextureBlitter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_SingleBlit: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo,
+    pub m_SingleBlit: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo,
+        >,
     >,
-    pub m_BlitMaterial: *mut crate::UnityEngine::Material,
-    pub m_Properties: *mut crate::UnityEngine::MaterialPropertyBlock,
+    pub m_BlitMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub m_Properties: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MaterialPropertyBlock,
+    >,
     pub m_Viewport: crate::UnityEngine::RectInt,
-    pub m_PrevRT: *mut crate::UnityEngine::RenderTexture,
-    pub m_PendingBlits: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo,
+    pub m_PrevRT: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    pub m_PendingBlits: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo,
+        >,
     >,
     pub _disposed_k__BackingField: bool,
 }
@@ -202,9 +208,9 @@ for crate::UnityEngine::UIElements::UIR::TextureBlitter {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TextureBlitter_BlitInfo {
-    pub src: *mut crate::UnityEngine::Texture,
+    pub src: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub srcRect: crate::UnityEngine::RectInt,
     pub dstPos: crate::UnityEngine::Vector2Int,
     pub border: i32,

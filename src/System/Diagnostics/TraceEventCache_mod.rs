@@ -5,7 +5,7 @@ pub struct TraceEventCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub timeStamp: i64,
     pub dateTime: crate::System::DateTime,
-    pub stackTrace: *mut quest_hook::libil2cpp::Il2CppString,
+    pub stackTrace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Diagnostics+TraceEventCache")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

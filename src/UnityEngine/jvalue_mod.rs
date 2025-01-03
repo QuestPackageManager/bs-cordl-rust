@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+jvalue")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct jvalue {
     padding: [u8; 8usize],
 }

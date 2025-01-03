@@ -6,7 +6,9 @@ pub struct ParticleControlPlayable {
     pub m_LastPlayableTime: f32,
     pub m_LastParticleTime: f32,
     pub m_RandomSeed: u32,
-    pub _particleSystem_k__BackingField: *mut crate::UnityEngine::ParticleSystem,
+    pub _particleSystem_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ParticleSystem,
+    >,
 }
 #[cfg(feature = "UnityEngine+Timeline+ParticleControlPlayable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

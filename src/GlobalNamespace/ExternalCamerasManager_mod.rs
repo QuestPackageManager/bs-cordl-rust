@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct ExternalCamerasManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _oculusMRCManager: *mut crate::GlobalNamespace::OculusMRCManager,
-    pub _mrcBackgroundCameraPrefab: *mut crate::UnityEngine::Camera,
-    pub _mrcForegroundCameraPrefab: *mut crate::UnityEngine::Camera,
+    pub _oculusMRCManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OculusMRCManager,
+    >,
+    pub _mrcBackgroundCameraPrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Camera,
+    >,
+    pub _mrcForegroundCameraPrefab: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Camera,
+    >,
 }
 #[cfg(feature = "ExternalCamerasManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

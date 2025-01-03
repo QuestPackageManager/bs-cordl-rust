@@ -339,19 +339,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::FacetsChe
 }
 #[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FacetsChecker_FacetsCompiler {
-    pub datatype: *mut crate::System::Xml::Schema::DatatypeImplementation,
-    pub derivedRestriction: *mut crate::System::Xml::Schema::RestrictionFacets,
+    pub datatype: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::DatatypeImplementation,
+    >,
+    pub derivedRestriction: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::RestrictionFacets,
+    >,
     pub baseFlags: crate::System::Xml::Schema::RestrictionFlags,
     pub baseFixedFlags: crate::System::Xml::Schema::RestrictionFlags,
     pub validRestrictionFlags: crate::System::Xml::Schema::RestrictionFlags,
-    pub nonNegativeInt: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
-    pub builtInType: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
+    pub nonNegativeInt: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaDatatype,
+    >,
+    pub builtInType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaDatatype,
+    >,
     pub builtInEnum: crate::System::Xml::Schema::XmlTypeCode,
     pub firstPattern: bool,
-    pub regStr: *mut crate::System::Text::StringBuilder,
-    pub pattern_facet: *mut crate::System::Xml::Schema::XmlSchemaPatternFacet,
+    pub regStr: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    pub pattern_facet: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaPatternFacet,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -652,10 +662,10 @@ impl crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
 }
 #[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FacetsCompiler_FacetsChecker_Map {
     pub _cordl_match: char,
-    pub replacement: *mut quest_hook::libil2cpp::Il2CppString,
+    pub replacement: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_SpatialAnchor_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VREvent_SpatialAnchor_t {
     pub unHandle: u32,
 }

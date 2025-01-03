@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ScaleXNegateYPointMap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub scale: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    pub scale: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ScaleXNegateYPointMap")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

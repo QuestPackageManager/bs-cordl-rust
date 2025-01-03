@@ -3,29 +3,47 @@
 #[derive(Debug)]
 pub struct BasicBeatmapObjectManager {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectManager,
-    pub _sliderControllerPool: *mut crate::GlobalNamespace::SliderController_Pool,
-    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::VariableMovementDataProvider,
-    pub _initData: *mut crate::GlobalNamespace::BasicBeatmapObjectManager_InitData,
-    pub _random: *mut crate::System::Random,
-    pub _basicGameNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::GameNoteController,
+    pub _sliderControllerPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SliderController_Pool,
     >,
-    pub _burstSliderHeadGameNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::GameNoteController,
+    pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VariableMovementDataProvider,
     >,
-    pub _burstSliderGameNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::BurstSliderGameNoteController,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BasicBeatmapObjectManager_InitData,
     >,
-    pub _bombNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::BombNoteController,
+    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+    pub _basicGameNotePoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::GameNoteController,
+        >,
     >,
-    pub _obstaclePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::ObstacleController,
+    pub _burstSliderHeadGameNotePoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::GameNoteController,
+        >,
     >,
-    pub _sliderNotePoolContainersDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::GlobalNamespace::SliderController_LengthType,
-        *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-            *mut crate::GlobalNamespace::SliderController,
+    pub _burstSliderGameNotePoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::BurstSliderGameNoteController,
+        >,
+    >,
+    pub _bombNotePoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::BombNoteController,
+        >,
+    >,
+    pub _obstaclePoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
+    >,
+    pub _sliderNotePoolContainersDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::SliderController_LengthType,
+            *mut crate::GlobalNamespace::MemoryPoolContainer_1<
+                *mut crate::GlobalNamespace::SliderController,
+            >,
         >,
     >,
     pub _firstBasicNoteTime: crate::System::Nullable_1<f32>,

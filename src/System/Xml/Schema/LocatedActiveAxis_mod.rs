@@ -5,7 +5,7 @@ pub struct LocatedActiveAxis {
     __cordl_parent: crate::System::Xml::Schema::ActiveAxis,
     pub column: i32,
     pub isMatched: bool,
-    pub Ks: *mut crate::System::Xml::Schema::KeySequence,
+    pub Ks: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::KeySequence>,
 }
 #[cfg(feature = "System+Xml+Schema+LocatedActiveAxis")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

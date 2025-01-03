@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SelectorActiveAxis {
     __cordl_parent: crate::System::Xml::Schema::ActiveAxis,
-    pub cs: *mut crate::System::Xml::Schema::ConstraintStruct,
-    pub KSs: *mut crate::System::Collections::ArrayList,
+    pub cs: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ConstraintStruct>,
+    pub KSs: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub KSpointer: i32,
 }
 #[cfg(feature = "System+Xml+Schema+SelectorActiveAxis")]

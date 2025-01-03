@@ -9,8 +9,10 @@ pub struct ParametricBoxFakeGlowController {
     pub edgeSize: f32,
     pub edgeSizeMultiplier: f32,
     pub color: crate::UnityEngine::Color,
-    pub _meshRenderer: *mut crate::UnityEngine::MeshRenderer,
-    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _meshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
 }
 #[cfg(feature = "ParametricBoxFakeGlowController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

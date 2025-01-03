@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BeatToTimeConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _bpmTimeProcessor: *mut crate::GlobalNamespace::IBeatToTimeConverter,
+    pub _bpmTimeProcessor: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IBeatToTimeConverter,
+    >,
 }
 #[cfg(feature = "BeatToTimeConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

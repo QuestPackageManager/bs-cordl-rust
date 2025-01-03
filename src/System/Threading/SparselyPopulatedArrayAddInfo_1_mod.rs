@@ -1,8 +1,10 @@
 #[cfg(feature = "System+Threading+SparselyPopulatedArrayAddInfo_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SparselyPopulatedArrayAddInfo_1<T: quest_hook::libil2cpp::Type> {
-    pub _source: *mut crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+    pub _source: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+    >,
     pub _index: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

@@ -116,10 +116,10 @@ pub struct WebUtility_UrlDecoder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bufferSize: i32,
     pub _numChars: i32,
-    pub _charBuffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub _charBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub _numBytes: i32,
-    pub _byteBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _encoding: *mut crate::System::Text::Encoding,
+    pub _byteBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
 }
 #[cfg(feature = "System+Net+WebUtility+UrlDecoder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

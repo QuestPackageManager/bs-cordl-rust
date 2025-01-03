@@ -3,33 +3,51 @@
 #[derive(Debug)]
 pub struct AvatarPartsModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _headTopCollection_k__BackingField: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-        *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+    pub _headTopCollection_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+        >,
     >,
-    pub _eyesCollection_k__BackingField: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-        *mut crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+    pub _eyesCollection_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+            *mut crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+        >,
     >,
-    pub _mouthCollection_k__BackingField: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-        *mut crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+    pub _mouthCollection_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+            *mut crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+        >,
     >,
-    pub _glassesCollection_k__BackingField: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-        *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+    pub _glassesCollection_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+        >,
     >,
-    pub _facialHairCollection_k__BackingField: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-        *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+    pub _facialHairCollection_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+        >,
     >,
-    pub _handsCollection_k__BackingField: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-        *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+    pub _handsCollection_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+        >,
     >,
-    pub _clothesCollection_k__BackingField: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
-        *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+    pub _clothesCollection_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+            *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+        >,
     >,
-    pub _skinColors_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO,
+    pub _skinColors_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatSaber::BeatAvatarSDK::SkinColorSO,
+        >,
     >,
-    pub _indexById: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        i32,
+    pub _indexById: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            i32,
+        >,
     >,
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPartsModel")]

@@ -3,21 +3,35 @@
 #[derive(Debug)]
 pub struct VisualTreeStyleUpdaterTraversal {
     __cordl_parent: crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal,
-    pub m_ProcessVarContext: *mut crate::UnityEngine::UIElements::StyleVariableContext,
-    pub m_UpdateList: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_ProcessVarContext: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleVariableContext,
     >,
-    pub m_ParentList: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_UpdateList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
     >,
-    pub m_TempMatchResults: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
+    pub m_ParentList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
+    >,
+    pub m_TempMatchResults: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
+        >,
     >,
     pub _currentPixelsPerPoint_k__BackingField: f32,
-    pub m_StyleMatchingContext: *mut crate::UnityEngine::UIElements::StyleMatchingContext,
-    pub m_StylePropertyReader: *mut crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
-    pub m_AnimatedProperties: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+    pub m_StyleMatchingContext: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleMatchingContext,
+    >,
+    pub m_StylePropertyReader: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
+    >,
+    pub m_AnimatedProperties: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeStyleUpdaterTraversal")]

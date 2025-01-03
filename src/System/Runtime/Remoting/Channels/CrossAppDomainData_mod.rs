@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct CrossAppDomainData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _ContextID: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _ContextID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _DomainID: i32,
-    pub _processGuid: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _processGuid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

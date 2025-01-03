@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct DecoratorToChoiceFromBinder_1<TContract: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _bindContainer: *mut crate::Zenject::DiContainer,
-    pub _bindInfo: *mut crate::Zenject::BindInfo,
-    pub _factoryBindInfo: *mut crate::Zenject::FactoryBindInfo,
+    pub _bindContainer: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+    pub _factoryBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
 #[cfg(feature = "Zenject+DecoratorToChoiceFromBinder_1")]

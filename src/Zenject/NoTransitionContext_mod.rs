@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct NoTransitionContext {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _noScenesTransitionInstaller: *mut crate::Zenject::NoTransitionInstaller,
+    pub _noScenesTransitionInstaller: quest_hook::libil2cpp::Gc<
+        crate::Zenject::NoTransitionInstaller,
+    >,
 }
 #[cfg(feature = "Zenject+NoTransitionContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,12 +3,22 @@
 #[derive(Debug)]
 pub struct IconAndTextSegmentedControl {
     __cordl_parent: crate::HMUI::SegmentedControl,
-    pub _firstCellPrefab: *mut crate::HMUI::IconAndTextSegmentedControlCell,
-    pub _lastCellPrefab: *mut crate::HMUI::IconAndTextSegmentedControlCell,
-    pub _singleCellPrefab: *mut crate::HMUI::IconAndTextSegmentedControlCell,
-    pub _middleCellPrefab: *mut crate::HMUI::IconAndTextSegmentedControlCell,
-    pub _dataItems: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::HMUI::IconAndTextSegmentedControl_DataItem,
+    pub _firstCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::HMUI::IconAndTextSegmentedControlCell,
+    >,
+    pub _lastCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::HMUI::IconAndTextSegmentedControlCell,
+    >,
+    pub _singleCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::HMUI::IconAndTextSegmentedControlCell,
+    >,
+    pub _middleCellPrefab: quest_hook::libil2cpp::Gc<
+        crate::HMUI::IconAndTextSegmentedControlCell,
+    >,
+    pub _dataItems: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::HMUI::IconAndTextSegmentedControl_DataItem,
+        >,
     >,
     pub _isInitialized: bool,
 }
@@ -136,8 +146,10 @@ for crate::HMUI::IconAndTextSegmentedControl {
 #[derive(Debug)]
 pub struct IconAndTextSegmentedControl_DataItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _icon_k__BackingField: *mut crate::UnityEngine::Sprite,
-    pub _text_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _icon_k__BackingField: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _text_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _interactable_k__BackingField: bool,
 }
 #[cfg(feature = "HMUI+IconAndTextSegmentedControl+DataItem")]

@@ -3,9 +3,8 @@
 #[derive(Debug)]
 pub struct SubContainerCreatorByMethod_1<TParam1: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::SubContainerCreatorByMethodBase,
-    pub _installMethod: *mut crate::System::Action_2<
-        *mut crate::Zenject::DiContainer,
-        TParam1,
+    pub _installMethod: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::Zenject::DiContainer, TParam1>,
     >,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
 }

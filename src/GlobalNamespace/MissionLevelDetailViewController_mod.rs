@@ -3,16 +3,24 @@
 #[derive(Debug)]
 pub struct MissionLevelDetailViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _gameplayModifiersModel: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
-    pub _playButton: *mut crate::UnityEngine::UI::Button,
-    pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
-    pub _objectiveListItems: *mut crate::GlobalNamespace::ObjectiveListItemsList,
-    pub _gameplayModifierInfoListItemsList: *mut crate::GlobalNamespace::GameplayModifierInfoListItemsList,
-    pub _modifiersPanelGO: *mut crate::UnityEngine::GameObject,
-    pub didPressPlayButtonEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MissionLevelDetailViewController,
+    pub _gameplayModifiersModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiersModelSO,
     >,
-    pub _missionNode: *mut crate::GlobalNamespace::MissionNode,
+    pub _playButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _levelBar: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelBar>,
+    pub _objectiveListItems: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ObjectiveListItemsList,
+    >,
+    pub _gameplayModifierInfoListItemsList: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierInfoListItemsList,
+    >,
+    pub _modifiersPanelGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub didPressPlayButtonEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::MissionLevelDetailViewController,
+        >,
+    >,
+    pub _missionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
 }
 #[cfg(feature = "MissionLevelDetailViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

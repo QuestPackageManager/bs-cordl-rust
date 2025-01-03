@@ -3,14 +3,14 @@
 #[derive(Debug)]
 pub struct XmlDocumentType {
     __cordl_parent: crate::System::Xml::XmlLinkedNode,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub publicId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub systemId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub internalSubset: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub publicId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub systemId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub internalSubset: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub namespaces: bool,
-    pub entities: *mut crate::System::Xml::XmlNamedNodeMap,
-    pub notations: *mut crate::System::Xml::XmlNamedNodeMap,
-    pub schemaInfo: *mut crate::System::Xml::Schema::SchemaInfo,
+    pub entities: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamedNodeMap>,
+    pub notations: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamedNodeMap>,
+    pub schemaInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaInfo>,
 }
 #[cfg(feature = "System+Xml+XmlDocumentType")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

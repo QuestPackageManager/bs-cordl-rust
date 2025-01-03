@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct ThreadLocal_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_valueFactory: *mut crate::System::Func_1<T>,
+    pub m_valueFactory: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
     pub m_idComplement: i32,
     pub m_initialized: bool,
-    pub m_linkedSlot: *mut crate::System::Threading::ThreadLocal_1_LinkedSlot<T>,
+    pub m_linkedSlot: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ThreadLocal_1_LinkedSlot<T>,
+    >,
     pub m_trackAllValues: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -291,8 +293,10 @@ for crate::System::Threading::ThreadLocal_1<T> {
 #[derive(Debug)]
 pub struct ThreadLocal_1_FinalizationHelper<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub SlotArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T>,
+    pub SlotArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T>,
+        >,
     >,
     pub m_trackAllValues: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -391,7 +395,9 @@ for crate::System::Threading::ThreadLocal_1_FinalizationHelper<T> {
 pub struct ThreadLocal_1_IdManager<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_nextIdToTry: i32,
-    pub m_freeIds: *mut crate::System::Collections::Generic::List_1<bool>,
+    pub m_freeIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<bool>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Threading+ThreadLocal_1+IdManager")]
@@ -483,10 +489,16 @@ for crate::System::Threading::ThreadLocal_1_IdManager<T> {
 #[derive(Debug)]
 pub struct ThreadLocal_1_LinkedSlot<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Next: *mut crate::System::Threading::ThreadLocal_1_LinkedSlot<T>,
-    pub Previous: *mut crate::System::Threading::ThreadLocal_1_LinkedSlot<T>,
-    pub SlotArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T>,
+    pub Next: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ThreadLocal_1_LinkedSlot<T>,
+    >,
+    pub Previous: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ThreadLocal_1_LinkedSlot<T>,
+    >,
+    pub SlotArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T>,
+        >,
     >,
     pub Value: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -564,9 +576,11 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlot<T> {
 }
 #[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ThreadLocal_1_LinkedSlotVolatile<T: quest_hook::libil2cpp::Type> {
-    pub Value: *mut crate::System::Threading::ThreadLocal_1_LinkedSlot<T>,
+    pub Value: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ThreadLocal_1_LinkedSlot<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlotVolatile")]

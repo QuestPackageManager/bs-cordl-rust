@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct XRDeviceDescriptor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub deviceName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub manufacturer: *mut quest_hook::libil2cpp::Il2CppString,
-    pub serialNumber: *mut quest_hook::libil2cpp::Il2CppString,
+    pub deviceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub manufacturer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub serialNumber: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub characteristics: crate::UnityEngine::XR::InputDeviceCharacteristics,
     pub deviceId: i32,
-    pub inputFeatures: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor,
+    pub inputFeatures: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+XRDeviceDescriptor")]

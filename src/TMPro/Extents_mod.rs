@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+Extents")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Extents {
     pub min: crate::UnityEngine::Vector2,
     pub max: crate::UnityEngine::Vector2,

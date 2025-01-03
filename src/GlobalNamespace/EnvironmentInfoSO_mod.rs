@@ -3,19 +3,27 @@
 #[derive(Debug)]
 pub struct EnvironmentInfoSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _environmentName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _colorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
-    pub _sceneInfo: *mut crate::GlobalNamespace::SceneInfo,
-    pub _serializedName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _environmentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
+    pub _sceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
+    pub _serializedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _tags: crate::GlobalNamespace::EnvironmentInfoSO_Tags,
     pub _environmentType: crate::GlobalNamespace::EnvironmentType,
-    pub _environmentSizeData: *mut crate::GlobalNamespace::EnvironmentSizeData,
-    pub _environmentIntensityReductionOptions: *mut crate::GlobalNamespace::EnvironmentIntensityReductionOptions,
-    pub _environmentKeywords: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _environmentSizeData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentSizeData,
     >,
-    pub _lightGroups: *mut crate::GlobalNamespace::EnvironmentLightGroups,
-    pub _defaultLightshowAsset: *mut crate::UnityEngine::TextAsset,
+    pub _environmentIntensityReductionOptions: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentIntensityReductionOptions,
+    >,
+    pub _environmentKeywords: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+    pub _lightGroups: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentLightGroups,
+    >,
+    pub _defaultLightshowAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
     pub _order: i32,
 }
 #[cfg(feature = "EnvironmentInfoSO")]

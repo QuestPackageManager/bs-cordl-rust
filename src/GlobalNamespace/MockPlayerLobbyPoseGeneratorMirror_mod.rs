@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct MockPlayerLobbyPoseGeneratorMirror {
     __cordl_parent: crate::GlobalNamespace::MockPlayerLobbyPoseGenerator,
-    pub _nodePoseSyncStateManager: *mut crate::GlobalNamespace::NodePoseSyncStateManager,
-    pub _mirroredPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _nodePoseSyncStateManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NodePoseSyncStateManager,
+    >,
+    pub _mirroredPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
 }
 #[cfg(feature = "MockPlayerLobbyPoseGeneratorMirror")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

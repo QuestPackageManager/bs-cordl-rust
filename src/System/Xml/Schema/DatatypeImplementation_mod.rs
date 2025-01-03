@@ -4,10 +4,18 @@
 pub struct DatatypeImplementation {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaDatatype,
     pub variety: crate::System::Xml::Schema::XmlSchemaDatatypeVariety,
-    pub restriction: *mut crate::System::Xml::Schema::RestrictionFacets,
-    pub baseType: *mut crate::System::Xml::Schema::DatatypeImplementation,
-    pub valueConverter: *mut crate::System::Xml::Schema::XmlValueConverter,
-    pub parentSchemaType: *mut crate::System::Xml::Schema::XmlSchemaType,
+    pub restriction: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::RestrictionFacets,
+    >,
+    pub baseType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::DatatypeImplementation,
+    >,
+    pub valueConverter: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlValueConverter,
+    >,
+    pub parentSchemaType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaType,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+DatatypeImplementation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -562,8 +570,10 @@ for crate::System::Xml::Schema::DatatypeImplementation {
 #[derive(Debug)]
 pub struct DatatypeImplementation_SchemaDatatypeMap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _cordl_type: *mut crate::System::Xml::Schema::DatatypeImplementation,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::DatatypeImplementation,
+    >,
     pub parentIndex: i32,
 }
 #[cfg(feature = "System+Xml+Schema+DatatypeImplementation+SchemaDatatypeMap")]

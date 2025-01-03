@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct HttpResponseMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub headers: *mut crate::System::Net::Http::Headers::HttpResponseHeaders,
-    pub reasonPhrase: *mut quest_hook::libil2cpp::Il2CppString,
+    pub headers: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::Headers::HttpResponseHeaders,
+    >,
+    pub reasonPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub statusCode: crate::System::Net::HttpStatusCode,
-    pub version: *mut crate::System::Version,
+    pub version: quest_hook::libil2cpp::Gc<crate::System::Version>,
     pub disposed: bool,
-    pub _Content_k__BackingField: *mut crate::System::Net::Http::HttpContent,
-    pub _RequestMessage_k__BackingField: *mut crate::System::Net::Http::HttpRequestMessage,
+    pub _Content_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::HttpContent,
+    >,
+    pub _RequestMessage_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::HttpRequestMessage,
+    >,
 }
 #[cfg(feature = "System+Net+Http+HttpResponseMessage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

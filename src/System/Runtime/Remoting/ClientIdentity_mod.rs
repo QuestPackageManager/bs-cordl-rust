@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ClientIdentity {
     __cordl_parent: crate::System::Runtime::Remoting::Identity,
-    pub _proxyReference: *mut crate::System::WeakReference,
+    pub _proxyReference: quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
 }
 #[cfg(feature = "System+Runtime+Remoting+ClientIdentity")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

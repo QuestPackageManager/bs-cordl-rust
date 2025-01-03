@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct TcpListener {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_ServerSocketEP: *mut crate::System::Net::IPEndPoint,
-    pub m_ServerSocket: *mut crate::System::Net::Sockets::Socket,
+    pub m_ServerSocketEP: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+    pub m_ServerSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     pub m_Active: bool,
     pub m_ExclusiveAddressUse: bool,
 }

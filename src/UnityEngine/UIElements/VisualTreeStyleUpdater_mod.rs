@@ -3,16 +3,22 @@
 #[derive(Debug)]
 pub struct VisualTreeStyleUpdater {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
-    pub m_ApplyStyleUpdateList: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_ApplyStyleUpdateList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
     >,
-    pub m_TransitionPropertyUpdateList: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_TransitionPropertyUpdateList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
     >,
     pub m_IsApplyingStyles: bool,
     pub m_Version: u32,
     pub m_LastVersion: u32,
-    pub m_StyleContextHierarchyTraversal: *mut crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal,
+    pub m_StyleContextHierarchyTraversal: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal,
+    >,
     pub _disposed_k__BackingField: bool,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeStyleUpdater")]

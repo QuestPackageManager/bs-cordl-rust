@@ -7,18 +7,22 @@ pub struct BinaryObjectWithMapTyped {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub binaryHeaderEnum: crate::System::Runtime::Serialization::Formatters::Binary::BinaryHeaderEnum,
     pub objectId: i32,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub numMembers: i32,
-    pub memberNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub memberNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub binaryTypeEnumA: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
+    pub binaryTypeEnumA: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
+        >,
     >,
-    pub typeInformationA: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub typeInformationA: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub memberAssemIds: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub memberAssemIds: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     pub assemId: i32,
 }
 #[cfg(

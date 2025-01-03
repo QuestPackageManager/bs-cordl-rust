@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct DataViewSetting {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dataViewManager: *mut crate::System::Data::DataViewManager,
-    pub _table: *mut crate::System::Data::DataTable,
-    pub _sort: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _rowFilter: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _dataViewManager: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataViewManager,
+    >,
+    pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    pub _sort: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _rowFilter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _rowStateFilter: crate::System::Data::DataViewRowState,
     pub _applyDefaultSort: bool,
 }

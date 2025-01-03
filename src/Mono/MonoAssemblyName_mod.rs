@@ -1,6 +1,6 @@
 #[cfg(feature = "Mono+MonoAssemblyName")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MonoAssemblyName {
     pub name: crate::System::IntPtr,
     pub culture: crate::System::IntPtr,
@@ -38,7 +38,7 @@ impl crate::Mono::MonoAssemblyName {
 }
 #[cfg(feature = "Mono+MonoAssemblyName+_public_key_token_e__FixedBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct MonoAssemblyName__public_key_token_e__FixedBuffer {
     pub FixedElementField: u8,
 }

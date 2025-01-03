@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ReflectionHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _clrTypes: *mut crate::System::Collections::Hashtable,
-    pub _schemaTypes: *mut crate::System::Collections::Hashtable,
+    pub _clrTypes: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub _schemaTypes: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Xml+Serialization+ReflectionHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct UInt16Storage {
     __cordl_parent: crate::System::Data::Common::DataStorage,
-    pub _values: *mut quest_hook::libil2cpp::Il2CppArray<u16>,
+    pub _values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
 }
 #[cfg(feature = "System+Data+Common+UInt16Storage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

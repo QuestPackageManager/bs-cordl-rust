@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct BeatmapCharacteristicTableCell {
     __cordl_parent: crate::HMUI::TableCell,
-    pub _nameText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _iconImage: *mut crate::UnityEngine::UI::Image,
-    pub _bgImage: *mut crate::UnityEngine::UI::Image,
-    pub _selectionImage: *mut crate::UnityEngine::UI::Image,
+    pub _nameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _iconImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _bgImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _selectionImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     pub _bgNormalColor: crate::UnityEngine::Color,
     pub _bgHighlightColor: crate::UnityEngine::Color,
 }

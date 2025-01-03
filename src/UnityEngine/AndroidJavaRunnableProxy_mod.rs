@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AndroidJavaRunnableProxy {
     __cordl_parent: crate::UnityEngine::AndroidJavaProxy,
-    pub mRunnable: *mut crate::UnityEngine::AndroidJavaRunnable,
+    pub mRunnable: quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaRunnable>,
 }
 #[cfg(feature = "UnityEngine+AndroidJavaRunnableProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

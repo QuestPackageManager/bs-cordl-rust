@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CmsCompressedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub contentInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+    pub contentInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsCompressedData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

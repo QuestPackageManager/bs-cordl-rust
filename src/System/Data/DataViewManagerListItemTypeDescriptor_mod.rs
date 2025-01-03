@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DataViewManagerListItemTypeDescriptor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dataViewManager: *mut crate::System::Data::DataViewManager,
+    pub _dataViewManager: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataViewManager,
+    >,
 }
 #[cfg(feature = "System+Data+DataViewManagerListItemTypeDescriptor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

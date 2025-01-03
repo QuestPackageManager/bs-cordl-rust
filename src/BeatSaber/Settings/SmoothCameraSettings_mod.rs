@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatSaber+Settings+SmoothCameraSettings")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SmoothCameraSettings {
     pub enabled: bool,
     pub fov: f32,

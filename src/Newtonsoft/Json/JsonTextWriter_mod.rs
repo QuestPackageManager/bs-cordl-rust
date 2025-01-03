@@ -4,16 +4,26 @@
 pub struct JsonTextWriter {
     __cordl_parent: crate::Newtonsoft::Json::JsonWriter,
     pub _safeAsync: bool,
-    pub _writer: *mut crate::System::IO::TextWriter,
-    pub _base64Encoder: *mut crate::Newtonsoft::Json::Utilities::Base64Encoder,
+    pub _writer: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
+    pub _base64Encoder: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::Base64Encoder,
+    >,
     pub _indentChar: char,
     pub _indentation: i32,
     pub _quoteChar: char,
     pub _quoteName: bool,
-    pub _charEscapeFlags: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
-    pub _writeBuffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    pub _arrayPool: *mut crate::Newtonsoft::Json::IArrayPool_1<char>,
-    pub _indentChars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub _charEscapeFlags: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<bool>,
+    >,
+    pub _writeBuffer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<char>,
+    >,
+    pub _arrayPool: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::IArrayPool_1<char>,
+    >,
+    pub _indentChars: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<char>,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+JsonTextWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

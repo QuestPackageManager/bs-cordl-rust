@@ -5,8 +5,10 @@ pub struct PositionRectTransformViewStateTransition {
     __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
         *mut crate::UnityEngine::RectTransform,
     >,
-    pub _transition: *mut crate::GlobalNamespace::Vector3TransitionSO,
-    pub _vectorTween: *mut crate::Tweening::Vector3Tween,
+    pub _transition: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::Vector3TransitionSO,
+    >,
+    pub _vectorTween: quest_hook::libil2cpp::Gc<crate::Tweening::Vector3Tween>,
 }
 #[cfg(feature = "PositionRectTransformViewStateTransition")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

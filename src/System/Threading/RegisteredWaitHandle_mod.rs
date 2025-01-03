@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct RegisteredWaitHandle {
     __cordl_parent: crate::System::MarshalByRefObject,
-    pub _waitObject: *mut crate::System::Threading::WaitHandle,
-    pub _callback: *mut crate::System::Threading::WaitOrTimerCallback,
-    pub _state: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _finalEvent: *mut crate::System::Threading::WaitHandle,
-    pub _cancelEvent: *mut crate::System::Threading::ManualResetEvent,
+    pub _waitObject: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitHandle>,
+    pub _callback: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::WaitOrTimerCallback,
+    >,
+    pub _state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _finalEvent: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitHandle>,
+    pub _cancelEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::ManualResetEvent,
+    >,
     pub _timeout: crate::System::TimeSpan,
     pub _callsInProcess: i32,
     pub _executeOnlyOnce: bool,

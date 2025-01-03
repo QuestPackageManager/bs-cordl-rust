@@ -9,16 +9,18 @@ pub struct SliderMeshController {
     pub _middleControlPointZDistanceModifier: f32,
     pub _middleControlPointYDistanceModifier: f32,
     pub _middleControlPointXDistanceModifier: f32,
-    pub _sliderMeshConstructor: *mut crate::GlobalNamespace::SliderMeshConstructor,
-    pub _pathsHolder: *mut crate::GlobalNamespace::PathsHolder,
-    pub _reusableAnchorsList: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector3,
+    pub _sliderMeshConstructor: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SliderMeshConstructor,
     >,
-    pub _reusableControlPointsArray4: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub _pathsHolder: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PathsHolder>,
+    pub _reusableAnchorsList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
     >,
-    pub _reusableControlPointsArray2: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
+    pub _reusableControlPointsArray4: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
+    pub _reusableControlPointsArray2: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
 }
 #[cfg(feature = "SliderMeshController")]

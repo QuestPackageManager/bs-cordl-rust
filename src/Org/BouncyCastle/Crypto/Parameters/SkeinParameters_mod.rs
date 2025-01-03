@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SkeinParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub parameters: *mut crate::System::Collections::IDictionary,
+    pub parameters: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -182,7 +182,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
 #[derive(Debug)]
 pub struct SkeinParameters_Builder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub parameters: *mut crate::System::Collections::IDictionary,
+    pub parameters: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters+Builder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

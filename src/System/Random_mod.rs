@@ -5,7 +5,7 @@ pub struct Random {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _inext: i32,
     pub _inextp: i32,
-    pub _seedArray: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _seedArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
 }
 #[cfg(feature = "System+Random")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

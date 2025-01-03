@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct Font {
     __cordl_parent: crate::UnityEngine::Object,
-    pub m_FontTextureRebuildCallback: *mut crate::UnityEngine::Font_FontTextureRebuildCallback,
+    pub m_FontTextureRebuildCallback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Font_FontTextureRebuildCallback,
+    >,
 }
 #[cfg(feature = "UnityEngine+Font")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

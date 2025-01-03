@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BufferedAsymmetricBlockCipher {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::BufferedCipherBase,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
-    pub buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
+    >,
+    pub buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub bufOff: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+BufferedAsymmetricBlockCipher")]

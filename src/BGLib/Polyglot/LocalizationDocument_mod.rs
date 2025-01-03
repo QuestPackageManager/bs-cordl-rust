@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct LocalizationDocument {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub docsId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub sheetId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub docsId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub sheetId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub format: crate::BGLib::Polyglot::GoogleDriveDownloadFormat,
-    pub textAsset: *mut crate::UnityEngine::TextAsset,
+    pub textAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
 }
 #[cfg(feature = "BGLib+Polyglot+LocalizationDocument")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

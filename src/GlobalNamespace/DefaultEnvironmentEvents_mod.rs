@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct DefaultEnvironmentEvents {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _basicBeatmapEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
+    pub _basicBeatmapEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent,
+        >,
     >,
-    pub _lightGroupEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
+    pub _lightGroupEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent,
+        >,
     >,
 }
 #[cfg(feature = "DefaultEnvironmentEvents")]
@@ -286,28 +290,52 @@ for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution {
 #[derive(Debug)]
 pub struct DefaultEnvironmentEvents_LightGroupEvent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _lightGroup: *mut crate::GlobalNamespace::LightGroupSO,
+    pub _lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
     pub _environmentColorType: crate::GlobalNamespace::EnvironmentColorType,
     pub _brightness: f32,
-    pub _brightnessDistribution: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
-    pub _brightnessFiltering: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+    pub _brightnessDistribution: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+    >,
+    pub _brightnessFiltering: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+    >,
     pub _rotationX: f32,
     pub _rotationY: f32,
     pub _rotationZ: f32,
-    pub _rotationXDistribution: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
-    pub _rotationYDistribution: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
-    pub _rotationZDistribution: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
-    pub _rotationFiltering: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+    pub _rotationXDistribution: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+    >,
+    pub _rotationYDistribution: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+    >,
+    pub _rotationZDistribution: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+    >,
+    pub _rotationFiltering: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+    >,
     pub _translationX: f32,
     pub _translationY: f32,
     pub _translationZ: f32,
-    pub _translationXDistribution: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
-    pub _translationYDistribution: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
-    pub _translationZDistribution: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
-    pub _translationFiltering: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+    pub _translationXDistribution: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+    >,
+    pub _translationYDistribution: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+    >,
+    pub _translationZDistribution: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+    >,
+    pub _translationFiltering: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+    >,
     pub _floatFxValue: f32,
-    pub _floatFxDistribution: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
-    pub _floatFxFiltering: *mut crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+    pub _floatFxDistribution: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution,
+    >,
+    pub _floatFxFiltering: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering,
+    >,
 }
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

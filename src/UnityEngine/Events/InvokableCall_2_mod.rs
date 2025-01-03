@@ -6,7 +6,9 @@ pub struct InvokableCall_2<
     T2: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::UnityEngine::Events::BaseInvokableCall,
-    pub Delegate: *mut crate::UnityEngine::Events::UnityAction_2<T1, T2>,
+    pub Delegate: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::UnityAction_2<T1, T2>,
+    >,
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
     __cordl_phantom_T2: std::marker::PhantomData<T2>,
 }

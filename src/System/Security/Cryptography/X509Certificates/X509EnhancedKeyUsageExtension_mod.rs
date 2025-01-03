@@ -5,7 +5,9 @@
 #[derive(Debug)]
 pub struct X509EnhancedKeyUsageExtension {
     __cordl_parent: crate::System::Security::Cryptography::X509Certificates::X509Extension,
-    pub _enhKeyUsage: *mut crate::System::Security::Cryptography::OidCollection,
+    pub _enhKeyUsage: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::OidCollection,
+    >,
     pub _status: crate::System::Security::Cryptography::AsnDecodeStatus,
 }
 #[cfg(

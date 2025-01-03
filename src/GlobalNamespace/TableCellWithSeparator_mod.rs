@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TableCellWithSeparator {
     __cordl_parent: crate::HMUI::TableCell,
-    pub _separator: *mut crate::UnityEngine::GameObject,
+    pub _separator: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
 #[cfg(feature = "TableCellWithSeparator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

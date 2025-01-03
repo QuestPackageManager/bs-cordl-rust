@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ServerObjectReplySink {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _replySink: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    pub _identity: *mut crate::System::Runtime::Remoting::ServerIdentity,
+    pub _replySink: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessageSink,
+    >,
+    pub _identity: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::ServerIdentity,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+ServerObjectReplySink")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

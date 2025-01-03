@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ResourceProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _resourceType: *mut crate::System::Type,
-    pub _resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _resourceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _matchSingle: bool,
 }
 #[cfg(feature = "Zenject+ResourceProvider")]

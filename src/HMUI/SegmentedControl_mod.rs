@@ -3,38 +3,46 @@
 #[derive(Debug)]
 pub struct SegmentedControl {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _separatorPrefab: *mut crate::UnityEngine::Transform,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub didSelectCellEvent: *mut crate::System::Action_2<
-        *mut crate::HMUI::SegmentedControl,
-        i32,
+    pub _separatorPrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub didSelectCellEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::HMUI::SegmentedControl, i32>,
     >,
-    pub didPressNonInteractableCellEvent: *mut crate::System::Action_2<
-        *mut crate::HMUI::SegmentedControl,
-        i32,
+    pub didPressNonInteractableCellEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut crate::HMUI::SegmentedControl, i32>,
     >,
     pub _numberOfCells: i32,
-    pub _cells: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HMUI::SegmentedControlCell,
-    >,
-    pub _separators: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::GameObject,
-    >,
-    pub _dataSource: *mut crate::HMUI::SegmentedControl_IDataSource,
-    pub _selectedCellNumber: i32,
-    pub _callbacks: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::System::Action_1<i32>,
-    >,
-    pub _reusableCellPools: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::UnityEngine::Object,
-        *mut crate::System::Collections::Generic::Queue_1<
+    pub _cells: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
             *mut crate::HMUI::SegmentedControlCell,
         >,
     >,
-    pub _cellToPrefabMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::HMUI::SegmentedControlCell,
-        *mut crate::UnityEngine::Object,
+    pub _separators: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::GameObject>,
+    >,
+    pub _dataSource: quest_hook::libil2cpp::Gc<
+        crate::HMUI::SegmentedControl_IDataSource,
+    >,
+    pub _selectedCellNumber: i32,
+    pub _callbacks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::System::Action_1<i32>,
+        >,
+    >,
+    pub _reusableCellPools: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::UnityEngine::Object,
+            *mut crate::System::Collections::Generic::Queue_1<
+                *mut crate::HMUI::SegmentedControlCell,
+            >,
+        >,
+    >,
+    pub _cellToPrefabMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::HMUI::SegmentedControlCell,
+            *mut crate::UnityEngine::Object,
+        >,
     >,
 }
 #[cfg(feature = "HMUI+SegmentedControl")]

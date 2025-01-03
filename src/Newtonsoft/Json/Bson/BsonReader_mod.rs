@@ -3,15 +3,19 @@
 #[derive(Debug)]
 pub struct BsonReader {
     __cordl_parent: crate::Newtonsoft::Json::JsonReader,
-    pub _reader: *mut crate::System::IO::BinaryReader,
-    pub _stack: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext,
+    pub _reader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
+    pub _stack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext,
+        >,
     >,
-    pub _byteBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _charBuffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub _byteBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _charBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub _currentElementType: crate::Newtonsoft::Json::Bson::BsonType,
     pub _bsonReaderState: crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState,
-    pub _currentContext: *mut crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext,
+    pub _currentContext: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext,
+    >,
     pub _readRootValueAsArray: bool,
     pub _jsonNet35BinaryCompatibility: bool,
     pub _dateTimeKindHandling: crate::System::DateTimeKind,

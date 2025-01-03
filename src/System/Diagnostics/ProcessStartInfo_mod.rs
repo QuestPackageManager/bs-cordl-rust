@@ -3,35 +3,45 @@
 #[derive(Debug)]
 pub struct ProcessStartInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub fileName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub arguments: *mut quest_hook::libil2cpp::Il2CppString,
-    pub directory: *mut quest_hook::libil2cpp::Il2CppString,
-    pub verb: *mut quest_hook::libil2cpp::Il2CppString,
+    pub fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub arguments: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub verb: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub windowStyle: crate::System::Diagnostics::ProcessWindowStyle,
     pub errorDialog: bool,
     pub errorDialogParentHandle: crate::System::IntPtr,
     pub useShellExecute: bool,
-    pub userName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub domain: *mut quest_hook::libil2cpp::Il2CppString,
-    pub password: *mut crate::System::Security::SecureString,
-    pub passwordInClearText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub domain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub password: quest_hook::libil2cpp::Gc<crate::System::Security::SecureString>,
+    pub passwordInClearText: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub loadUserProfile: bool,
     pub redirectStandardInput: bool,
     pub redirectStandardOutput: bool,
     pub redirectStandardError: bool,
-    pub standardOutputEncoding: *mut crate::System::Text::Encoding,
-    pub standardErrorEncoding: *mut crate::System::Text::Encoding,
+    pub standardOutputEncoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    pub standardErrorEncoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     pub createNoWindow: bool,
-    pub weakParentProcess: *mut crate::System::WeakReference,
-    pub environmentVariables: *mut crate::System::Collections::Specialized::StringDictionary,
-    pub _argumentList: *mut crate::System::Collections::ObjectModel::Collection_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub weakParentProcess: quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
+    pub environmentVariables: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Specialized::StringDictionary,
     >,
-    pub environment: *mut crate::System::Collections::Generic::IDictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _argumentList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ObjectModel::Collection_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _StandardInputEncoding_k__BackingField: *mut crate::System::Text::Encoding,
+    pub environment: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IDictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+    pub _StandardInputEncoding_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Text::Encoding,
+    >,
 }
 #[cfg(feature = "System+Diagnostics+ProcessStartInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

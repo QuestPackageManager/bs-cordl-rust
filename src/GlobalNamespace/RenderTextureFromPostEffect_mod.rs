@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct RenderTextureFromPostEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _targetTexture: *mut crate::UnityEngine::RenderTexture,
-    pub _camera: *mut crate::UnityEngine::Camera,
+    pub _targetTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    pub _camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
 }
 #[cfg(feature = "RenderTextureFromPostEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

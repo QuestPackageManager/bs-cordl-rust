@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct NoteCutParticlesEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _sparklesPS: *mut crate::UnityEngine::ParticleSystem,
-    pub _explosionPS: *mut crate::UnityEngine::ParticleSystem,
-    pub _explosionCorePS: *mut crate::UnityEngine::ParticleSystem,
-    pub _explosionPrePassBloomPS: *mut crate::UnityEngine::ParticleSystem,
+    pub _sparklesPS: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+    pub _explosionPS: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+    pub _explosionCorePS: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+    pub _explosionPrePassBloomPS: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ParticleSystem,
+    >,
     pub _sparklesPSEmitParams: crate::UnityEngine::ParticleSystem_EmitParams,
     pub _sparklesPSMainModule: crate::UnityEngine::ParticleSystem_MainModule,
     pub _sparklesPSShapeModule: crate::UnityEngine::ParticleSystem_ShapeModule,

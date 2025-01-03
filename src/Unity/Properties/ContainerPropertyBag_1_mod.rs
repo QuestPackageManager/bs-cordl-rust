@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct ContainerPropertyBag_1<TContainer: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Unity::Properties::PropertyBag_1<TContainer>,
-    pub m_PropertiesList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Unity::Properties::IProperty_1<TContainer>,
+    pub m_PropertiesList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Unity::Properties::IProperty_1<TContainer>,
+        >,
     >,
-    pub m_PropertiesHash: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::Unity::Properties::IProperty_1<TContainer>,
+    pub m_PropertiesHash: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::Unity::Properties::IProperty_1<TContainer>,
+        >,
     >,
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
 }

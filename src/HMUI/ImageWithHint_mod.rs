@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ImageWithHint {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _image: *mut crate::UnityEngine::UI::Image,
-    pub _hoverHint: *mut crate::HMUI::HoverHint,
+    pub _image: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _hoverHint: quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>,
 }
 #[cfg(feature = "HMUI+ImageWithHint")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,18 +3,28 @@
 #[derive(Debug)]
 pub struct SelectLevelCategoryViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _allLevelCategoryInfos: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo,
+    pub _allLevelCategoryInfos: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo,
+        >,
     >,
-    pub _levelFilterCategoryIconSegmentedControl: *mut crate::HMUI::IconSegmentedControl,
-    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
-    pub didSelectLevelCategoryEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::SelectLevelCategoryViewController,
-        crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
+    pub _levelFilterCategoryIconSegmentedControl: quest_hook::libil2cpp::Gc<
+        crate::HMUI::IconSegmentedControl,
+    >,
+    pub _analyticsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAnalyticsModel,
+    >,
+    pub didSelectLevelCategoryEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::SelectLevelCategoryViewController,
+            crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
+        >,
     >,
     pub _prevSelectedLevelCategory: crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
-    pub _levelCategoryInfos: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo,
+    pub _levelCategoryInfos: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo,
+        >,
     >,
 }
 #[cfg(feature = "SelectLevelCategoryViewController")]
@@ -195,8 +205,8 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 pub struct SelectLevelCategoryViewController_LevelCategoryInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub levelCategory: crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
-    pub localizedKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub categoryIcon: *mut crate::UnityEngine::Sprite,
+    pub localizedKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub categoryIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
 }
 #[cfg(feature = "SelectLevelCategoryViewController+LevelCategoryInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

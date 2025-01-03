@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct TimeStampRequestGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub reqPolicy: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub certReq: *mut crate::Org::BouncyCastle::Asn1::DerBoolean,
-    pub extensions: *mut crate::System::Collections::IDictionary,
-    pub extOrdering: *mut crate::System::Collections::IList,
+    pub reqPolicy: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub certReq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerBoolean>,
+    pub extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    pub extOrdering: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampRequestGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

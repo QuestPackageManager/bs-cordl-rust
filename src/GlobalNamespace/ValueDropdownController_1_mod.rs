@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct ValueDropdownController_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _simpleTextDropdown: *mut crate::HMUI::SimpleTextDropdown,
-    pub didSelectCellWithIdxEvent: *mut crate::System::Action_2<i32, T>,
-    pub _namedValues: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::System::Tuple_2<T, *mut quest_hook::libil2cpp::Il2CppString>,
+    pub _simpleTextDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
+    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<i32, T>,
+    >,
+    pub _namedValues: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::System::Tuple_2<T, *mut quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct FpCurve {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractFpCurve,
-    pub m_q: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub m_r: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub m_infinity: *mut crate::Org::BouncyCastle::Math::EC::FpPoint,
+    pub m_q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub m_r: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub m_infinity: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::FpPoint,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+FpCurve")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

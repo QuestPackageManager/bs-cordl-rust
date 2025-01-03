@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct UserProof {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Value: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Oculus+Platform+Models+UserProof")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

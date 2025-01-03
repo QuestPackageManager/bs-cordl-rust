@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct MultiplayerAvatarAudioController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioSource: *mut crate::UnityEngine::AudioSource,
-    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    pub _connectedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+MultiplayerAvatarAudioController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct SpawnLaserAnimation {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _centerThresholdTransform: *mut crate::UnityEngine::Transform,
-    pub _horizontalLasersTransform: *mut crate::UnityEngine::Transform,
-    pub _leftHorizontalLaser: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
-    pub _rightHorizontalLaser: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+    pub _centerThresholdTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _horizontalLasersTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub _leftHorizontalLaser: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TubeBloomPrePassLight,
+    >,
+    pub _rightHorizontalLaser: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TubeBloomPrePassLight,
+    >,
     pub _normalizedDistance: f32,
     pub _alphaMultiplier: f32,
     pub _laserLength: f32,

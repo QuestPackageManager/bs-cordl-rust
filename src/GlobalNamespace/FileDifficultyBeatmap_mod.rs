@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct FileDifficultyBeatmap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _beatmapPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _lightshowPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _beatmapPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _lightshowPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "FileDifficultyBeatmap")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

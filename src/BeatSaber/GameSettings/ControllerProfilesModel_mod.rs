@@ -3,12 +3,20 @@
 #[derive(Debug)]
 pub struct ControllerProfilesModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _fileModel: *mut crate::BeatSaber::GameSettings::ControllerProfileFileModel,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _fileModel: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::GameSettings::ControllerProfileFileModel,
+    >,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
     pub _selectedProfileIndex_k__BackingField: i32,
-    pub _profiles: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BeatSaber::GameSettings::ControllerProfile,
+    pub _profiles: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BeatSaber::GameSettings::ControllerProfile,
+        >,
     >,
 }
 #[cfg(feature = "BeatSaber+GameSettings+ControllerProfilesModel")]

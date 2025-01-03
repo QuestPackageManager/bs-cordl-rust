@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AesTransform {
     __cordl_parent: crate::Mono::Security::Cryptography::SymmetricTransform,
-    pub expandedKey: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub expandedKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub Nk: i32,
     pub Nr: i32,
 }

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlSchemaXPath {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaAnnotated,
-    pub xpath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub xpath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaXPath")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

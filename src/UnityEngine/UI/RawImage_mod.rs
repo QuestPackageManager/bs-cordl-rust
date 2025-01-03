@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct RawImage {
     __cordl_parent: crate::UnityEngine::UI::MaskableGraphic,
-    pub m_Texture: *mut crate::UnityEngine::Texture,
+    pub m_Texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub m_UVRect: crate::UnityEngine::Rect,
 }
 #[cfg(feature = "UnityEngine+UI+RawImage")]

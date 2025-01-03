@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DirectionalLightWithIds {
     __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
-    pub _directionalLight: *mut crate::GlobalNamespace::DirectionalLight,
+    pub _directionalLight: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DirectionalLight,
+    >,
     pub _setIntensityOnly: bool,
     pub _defaultColor: crate::UnityEngine::Color,
 }

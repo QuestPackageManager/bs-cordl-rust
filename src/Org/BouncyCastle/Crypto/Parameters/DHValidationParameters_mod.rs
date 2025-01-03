@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DHValidationParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub counter: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHValidationParameters")]

@@ -7,10 +7,12 @@ pub struct Expression {
     pub multiplier: crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier,
     pub dataType: crate::UnityEngine::UIElements::StyleSheets::Syntax::DataType,
     pub combinator: crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionCombinator,
-    pub subExpressions: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+    pub subExpressions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        >,
     >,
-    pub keyword: *mut quest_hook::libil2cpp::Il2CppString,
+    pub keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+Expression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,24 +3,32 @@
 #[derive(Debug)]
 pub struct MultiplayerResultsPyramidView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _multiplayerOffsetByLocalPlayerPosition: *mut crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition,
-    pub _spawnPoints: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Transform,
+    pub _multiplayerOffsetByLocalPlayerPosition: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition,
     >,
-    pub _spawnPointsParent: *mut crate::UnityEngine::Transform,
+    pub _spawnPoints: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Transform>,
+    >,
+    pub _spawnPointsParent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _evenCountOffset: f32,
-    pub _avatarsFactory: *mut crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar_Factory,
-    pub _avatarsDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar,
+    pub _avatarsFactory: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar_Factory,
     >,
-    pub _resultAvatarDirectors: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::GameObject,
+    pub _avatarsDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar,
+        >,
     >,
-    pub _badgeTimelines: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::GameObject,
+    pub _resultAvatarDirectors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
     >,
-    pub _anyResultsAvatar: *mut crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar,
+    pub _badgeTimelines: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+    >,
+    pub _anyResultsAvatar: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar,
+    >,
 }
 #[cfg(feature = "MultiplayerResultsPyramidView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

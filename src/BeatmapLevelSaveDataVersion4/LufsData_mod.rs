@@ -1,6 +1,6 @@
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+LufsData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LufsData {
     pub si: i32,
     pub ei: i32,

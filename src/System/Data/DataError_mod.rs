@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct DataError {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _rowError: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _rowError: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _count: i32,
-    pub _errorList: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Data::DataError_ColumnError,
+    pub _errorList: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Data::DataError_ColumnError>,
     >,
 }
 #[cfg(feature = "System+Data+DataError")]
@@ -194,10 +194,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataError {
 }
 #[cfg(feature = "System+Data+DataError+ColumnError")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DataError_ColumnError {
-    pub _column: *mut crate::System::Data::DataColumn,
-    pub _error: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+    pub _error: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Data+DataError+ColumnError")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

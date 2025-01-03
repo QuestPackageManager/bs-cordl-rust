@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BeatToTimeAndRotationConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
-    pub _rotationTimeProcessor: *mut crate::GlobalNamespace::RotationTimeProcessor,
+    pub _rotationTimeProcessor: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RotationTimeProcessor,
+    >,
 }
 #[cfg(feature = "BeatToTimeAndRotationConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

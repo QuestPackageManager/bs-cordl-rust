@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct DisposeBlock {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _disposables: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::IDisposable,
+    pub _disposables: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::System::IDisposable>,
     >,
-    pub _objectPoolPairs: *mut crate::System::Collections::Generic::List_1<
-        crate::Zenject::DisposeBlock_SpawnedObjectPoolPair,
+    pub _objectPoolPairs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::Zenject::DisposeBlock_SpawnedObjectPoolPair,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+DisposeBlock")]
@@ -477,10 +479,10 @@ impl AsMut<crate::System::IDisposable> for crate::Zenject::DisposeBlock {
 }
 #[cfg(feature = "Zenject+DisposeBlock+SpawnedObjectPoolPair")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DisposeBlock_SpawnedObjectPoolPair {
-    pub Pool: *mut crate::Zenject::IMemoryPool,
-    pub Object: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub Pool: quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>,
+    pub Object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Zenject+DisposeBlock+SpawnedObjectPoolPair")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

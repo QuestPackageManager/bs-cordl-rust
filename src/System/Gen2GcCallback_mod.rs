@@ -3,9 +3,8 @@
 #[derive(Debug)]
 pub struct Gen2GcCallback {
     __cordl_parent: crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject,
-    pub _callback: *mut crate::System::Func_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        bool,
+    pub _callback: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<*mut quest_hook::libil2cpp::Il2CppObject, bool>,
     >,
     pub _weakTargetObj: crate::System::Runtime::InteropServices::GCHandle,
 }

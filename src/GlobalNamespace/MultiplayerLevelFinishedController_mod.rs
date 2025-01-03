@@ -3,22 +3,36 @@
 #[derive(Debug)]
 pub struct MultiplayerLevelFinishedController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _levelEndActionsPublisher: *mut crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
-    pub _rpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _beatmapBasicData: *mut crate::GlobalNamespace::BeatmapBasicData,
-    pub allResultsCollectedEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-        *mut crate::System::Collections::Generic::Dictionary_2<
+    pub _levelEndActionsPublisher: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
+    >,
+    pub _rpcManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IGameplayRpcManager,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub _beatmapBasicData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapBasicData,
+    >,
+    pub allResultsCollectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            *mut crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+            >,
+        >,
+    >,
+    pub _otherPlayersCompletionResults: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
             *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
     >,
-    pub _otherPlayersCompletionResults: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+    pub _localPlayerResults: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLevelCompletionResults,
     >,
-    pub _localPlayerResults: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
     pub _gameFinishReported: bool,
     pub _sceneLoadTime: f32,
 }

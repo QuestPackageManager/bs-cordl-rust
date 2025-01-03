@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct DistributionPoint {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub distributionPoint: *mut crate::Org::BouncyCastle::Asn1::X509::DistributionPointName,
-    pub reasons: *mut crate::Org::BouncyCastle::Asn1::X509::ReasonFlags,
-    pub cRLIssuer: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+    pub distributionPoint: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::DistributionPointName,
+    >,
+    pub reasons: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::ReasonFlags,
+    >,
+    pub cRLIssuer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+DistributionPoint")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

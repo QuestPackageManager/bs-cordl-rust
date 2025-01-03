@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct DataRelationCollection_DataTableRelationCollection {
     __cordl_parent: crate::System::Data::DataRelationCollection,
-    pub _table: *mut crate::System::Data::DataTable,
-    pub _relations: *mut crate::System::Collections::ArrayList,
+    pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    pub _relations: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _fParentCollection: bool,
-    pub RelationPropertyChanged: *mut crate::System::ComponentModel::CollectionChangeEventHandler,
+    pub RelationPropertyChanged: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::CollectionChangeEventHandler,
+    >,
 }
 #[cfg(feature = "System+Data+DataRelationCollection+DataTableRelationCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

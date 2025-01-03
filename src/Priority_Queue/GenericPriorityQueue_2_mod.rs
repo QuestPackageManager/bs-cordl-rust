@@ -7,9 +7,9 @@ pub struct GenericPriorityQueue_2<
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _numNodes: i32,
-    pub _nodes: *mut quest_hook::libil2cpp::Il2CppArray<TItem>,
+    pub _nodes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TItem>>,
     pub _numNodesEverEnqueued: i64,
-    pub _comparer: *mut crate::System::Comparison_1<TPriority>,
+    pub _comparer: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<TPriority>>,
     __cordl_phantom_TItem: std::marker::PhantomData<TItem>,
     __cordl_phantom_TPriority: std::marker::PhantomData<TPriority>,
 }

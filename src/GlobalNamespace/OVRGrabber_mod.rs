@@ -7,25 +7,27 @@ pub struct OVRGrabber {
     pub grabEnd: f32,
     pub m_parentHeldObject: bool,
     pub m_moveHandPosition: bool,
-    pub m_gripTransform: *mut crate::UnityEngine::Transform,
-    pub m_grabVolumes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Collider,
+    pub m_gripTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub m_grabVolumes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Collider>,
     >,
     pub m_controller: crate::GlobalNamespace::OVRInput_Controller,
-    pub m_parentTransform: *mut crate::UnityEngine::Transform,
-    pub m_player: *mut crate::UnityEngine::GameObject,
+    pub m_parentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub m_player: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_grabVolumeEnabled: bool,
     pub m_lastPos: crate::UnityEngine::Vector3,
     pub m_lastRot: crate::UnityEngine::Quaternion,
     pub m_anchorOffsetRotation: crate::UnityEngine::Quaternion,
     pub m_anchorOffsetPosition: crate::UnityEngine::Vector3,
     pub m_prevFlex: f32,
-    pub m_grabbedObj: *mut crate::GlobalNamespace::OVRGrabbable,
+    pub m_grabbedObj: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGrabbable>,
     pub m_grabbedObjectPosOff: crate::UnityEngine::Vector3,
     pub m_grabbedObjectRotOff: crate::UnityEngine::Quaternion,
-    pub m_grabCandidates: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::GlobalNamespace::OVRGrabbable,
-        i32,
+    pub m_grabCandidates: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::GlobalNamespace::OVRGrabbable,
+            i32,
+        >,
     >,
     pub m_operatingWithoutOVRCameraRig: bool,
 }

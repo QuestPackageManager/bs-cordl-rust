@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct ReusableListViewItem {
     __cordl_parent: crate::UnityEngine::UIElements::ReusableCollectionItem,
-    pub m_Container: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_DragHandle: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_ItemContainer: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_Container: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_DragHandle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_ItemContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ReusableListViewItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

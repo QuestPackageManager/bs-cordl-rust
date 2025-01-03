@@ -3,24 +3,34 @@
 #[derive(Debug)]
 pub struct MainMenuViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _soloButton: *mut crate::UnityEngine::UI::Button,
-    pub _partyButton: *mut crate::UnityEngine::UI::Button,
-    pub _campaignButton: *mut crate::UnityEngine::UI::Button,
-    pub _quitButton: *mut crate::UnityEngine::UI::Button,
-    pub _howToPlayButton: *mut crate::UnityEngine::UI::Button,
-    pub _beatmapEditorButton: *mut crate::UnityEngine::UI::Button,
-    pub _multiplayerButton: *mut crate::UnityEngine::UI::Button,
-    pub _optionsButton: *mut crate::UnityEngine::UI::Button,
-    pub _musicPackPromoButton: *mut crate::UnityEngine::UI::Button,
-    pub _musicPackPromoBanner: *mut crate::GlobalNamespace::MusicPackPromoBanner,
-    pub _dlcPromoPanelModel: *mut crate::GlobalNamespace::DlcPromoPanelModel,
-    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
-    pub didFinishEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::MainMenuViewController,
-        crate::GlobalNamespace::MainMenuViewController_MenuButton,
+    pub _soloButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _partyButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _campaignButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _quitButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _howToPlayButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _beatmapEditorButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _multiplayerButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _optionsButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _musicPackPromoButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _musicPackPromoBanner: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MusicPackPromoBanner,
     >,
-    pub promoButtonWasPressedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+    pub _dlcPromoPanelModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DlcPromoPanelModel,
+    >,
+    pub _analyticsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAnalyticsModel,
+    >,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::MainMenuViewController,
+            crate::GlobalNamespace::MainMenuViewController_MenuButton,
+        >,
+    >,
+    pub promoButtonWasPressedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+        >,
     >,
     pub _isLoadingPackPromoData: bool,
 }

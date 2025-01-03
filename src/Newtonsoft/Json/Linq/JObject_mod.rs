@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct JObject {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JContainer,
-    pub _properties: *mut crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection,
-    pub PropertyChanged: *mut crate::System::ComponentModel::PropertyChangedEventHandler,
-    pub PropertyChanging: *mut crate::System::ComponentModel::PropertyChangingEventHandler,
+    pub _properties: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection,
+    >,
+    pub PropertyChanged: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::PropertyChangedEventHandler,
+    >,
+    pub PropertyChanging: quest_hook::libil2cpp::Gc<
+        crate::System::ComponentModel::PropertyChangingEventHandler,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1408,17 +1414,17 @@ for crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicProxy {
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct JObject___WriteToAsync_g__AwaitProperties_0_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
-    pub task: *mut crate::System::Threading::Tasks::Task,
-    pub __4__this: *mut crate::Newtonsoft::Json::Linq::JObject,
+    pub task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    pub __4__this: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JObject>,
     pub i: i32,
-    pub Writer: *mut crate::Newtonsoft::Json::JsonWriter,
+    pub Writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
     pub CancellationToken: crate::System::Threading::CancellationToken,
-    pub Converters: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Newtonsoft::Json::JsonConverter,
+    pub Converters: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::Newtonsoft::Json::JsonConverter>,
     >,
     pub __u__1: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter,
 }

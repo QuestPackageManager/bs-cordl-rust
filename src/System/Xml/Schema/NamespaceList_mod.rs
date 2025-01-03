@@ -4,8 +4,8 @@
 pub struct NamespaceList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::System::Xml::Schema::NamespaceList_ListType,
-    pub set: *mut crate::System::Collections::Hashtable,
-    pub targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
+    pub set: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Schema+NamespaceList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

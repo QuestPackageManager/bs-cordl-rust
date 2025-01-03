@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct XmlNodeWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _node: *mut crate::System::Xml::XmlNode,
-    pub _childNodes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Newtonsoft::Json::Converters::IXmlNode,
+    pub _node: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+    pub _childNodes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Converters::IXmlNode,
+        >,
     >,
-    pub _attributes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Newtonsoft::Json::Converters::IXmlNode,
+    pub _attributes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Converters::IXmlNode,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+XmlNodeWrapper")]

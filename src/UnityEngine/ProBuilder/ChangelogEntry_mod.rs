@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ChangelogEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_VersionInfo: *mut crate::UnityEngine::ProBuilder::SemVer,
-    pub m_ReleaseNotes: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_VersionInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+    pub m_ReleaseNotes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ChangelogEntry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

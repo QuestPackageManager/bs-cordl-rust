@@ -3,15 +3,21 @@
 #[derive(Debug)]
 pub struct TableViewWithDetailCell {
     __cordl_parent: crate::HMUI::TableView,
-    pub didSelectContentCellEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::TableViewWithDetailCell,
-        i32,
+    pub didSelectContentCellEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::TableViewWithDetailCell,
+            i32,
+        >,
     >,
-    pub didDeselectContentCellEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::TableViewWithDetailCell,
-        i32,
+    pub didDeselectContentCellEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::TableViewWithDetailCell,
+            i32,
+        >,
     >,
-    pub _dataSource: *mut crate::GlobalNamespace::TableViewWithDetailCell_IDataSource,
+    pub _dataSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TableViewWithDetailCell_IDataSource,
+    >,
     pub _selectedId: i32,
 }
 #[cfg(feature = "TableViewWithDetailCell")]

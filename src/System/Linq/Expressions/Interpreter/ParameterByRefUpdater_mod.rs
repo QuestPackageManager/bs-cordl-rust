@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ParameterByRefUpdater {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
-    pub _parameter: *mut crate::System::Linq::Expressions::Interpreter::LocalVariable,
+    pub _parameter: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::LocalVariable,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ParameterByRefUpdater")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

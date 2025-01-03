@@ -5,9 +5,11 @@ pub struct DigestSession {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lastUse: crate::System::DateTime,
     pub _nc: i32,
-    pub hash: *mut crate::System::Security::Cryptography::HashAlgorithm,
-    pub parser: *mut crate::System::Net::DigestHeaderParser,
-    pub _cnonce: *mut quest_hook::libil2cpp::Il2CppString,
+    pub hash: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::HashAlgorithm,
+    >,
+    pub parser: quest_hook::libil2cpp::Gc<crate::System::Net::DigestHeaderParser>,
+    pub _cnonce: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Net+DigestSession")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,15 +3,15 @@
 #[derive(Debug)]
 pub struct G_FpsGraph {
     __cordl_parent: crate::Tayx::Graphy::Graph::G_Graph,
-    pub m_imageGraph: *mut crate::UnityEngine::UI::Image,
-    pub ShaderFull: *mut crate::UnityEngine::Shader,
-    pub ShaderLight: *mut crate::UnityEngine::Shader,
+    pub m_imageGraph: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub ShaderFull: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub ShaderLight: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub m_isInitialized: bool,
-    pub m_graphyManager: *mut crate::Tayx::Graphy::GraphyManager,
-    pub m_fpsMonitor: *mut crate::Tayx::Graphy::Fps::G_FpsMonitor,
+    pub m_graphyManager: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
+    pub m_fpsMonitor: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Fps::G_FpsMonitor>,
     pub m_resolution: i32,
-    pub m_shaderGraph: *mut crate::Tayx::Graphy::G_GraphShader,
-    pub m_fpsArray: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub m_shaderGraph: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::G_GraphShader>,
+    pub m_fpsArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub m_highestFps: i32,
 }
 #[cfg(feature = "Tayx+Graphy+Fps+G_FpsGraph")]

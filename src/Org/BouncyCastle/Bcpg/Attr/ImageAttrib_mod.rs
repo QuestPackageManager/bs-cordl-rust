@@ -6,7 +6,7 @@ pub struct ImageAttrib {
     pub hdrLength: i32,
     pub _version: i32,
     pub _encoding: i32,
-    pub imageData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub imageData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Attr+ImageAttrib")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

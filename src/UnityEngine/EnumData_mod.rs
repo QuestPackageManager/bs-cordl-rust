@@ -1,20 +1,22 @@
 #[cfg(feature = "UnityEngine+EnumData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct EnumData {
-    pub values: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Enum>,
-    pub flagValues: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub displayNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub values: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Enum>,
     >,
-    pub names: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub flagValues: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub displayNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub tooltip: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub names: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub tooltip: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
     pub flags: bool,
-    pub underlyingType: *mut crate::System::Type,
+    pub underlyingType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _cordl_unsigned: bool,
     pub serializable: bool,
 }

@@ -3,23 +3,53 @@
 #[derive(Debug)]
 pub struct RichPresenceManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _standardLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-    pub _tutorialScenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
-    pub _missionLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-    pub _multiplayerLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-    pub _menuScenesTransitionSetupData: *mut crate::GlobalNamespace::MenuScenesTransitionSetupDataSO,
-    pub _richPresencePlatformHandler: *mut crate::GlobalNamespace::IRichPresencePlatformHandler,
-    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
-    pub _lobbyGameStateModel: *mut crate::GlobalNamespace::LobbyGameStateModel,
-    pub _unifiedNetworkPlayerModel: *mut crate::GlobalNamespace::IUnifiedNetworkPlayerModel,
-    pub _lobbyPlayerPermissionsModel: *mut crate::GlobalNamespace::LobbyPlayerPermissionsModel,
+    pub _standardLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+    >,
+    pub _tutorialScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    >,
+    pub _missionLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+    >,
+    pub _multiplayerLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+    >,
+    pub _menuScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuScenesTransitionSetupDataSO,
+    >,
+    pub _richPresencePlatformHandler: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IRichPresencePlatformHandler,
+    >,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
+    pub _lobbyGameStateModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LobbyGameStateModel,
+    >,
+    pub _unifiedNetworkPlayerModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IUnifiedNetworkPlayerModel,
+    >,
+    pub _lobbyPlayerPermissionsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LobbyPlayerPermissionsModel,
+    >,
     pub _menuWasLoaded: bool,
     pub _isInMultiplayerLobby: bool,
-    pub _browsingMenusRichPresenceData: *mut crate::GlobalNamespace::BrowsingMenusRichPresenceData,
-    pub _inMultiplayerRichPresenceData: *mut crate::GlobalNamespace::InMultiplayerRichPresenceData,
-    pub _playingCampaignRichPresenceData: *mut crate::GlobalNamespace::PlayingCampaignRichPresenceData,
-    pub _playingTutorialPresenceData: *mut crate::GlobalNamespace::PlayingTutorialPresenceData,
-    pub _currentPresenceData: *mut crate::GlobalNamespace::IRichPresenceData,
+    pub _browsingMenusRichPresenceData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BrowsingMenusRichPresenceData,
+    >,
+    pub _inMultiplayerRichPresenceData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::InMultiplayerRichPresenceData,
+    >,
+    pub _playingCampaignRichPresenceData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayingCampaignRichPresenceData,
+    >,
+    pub _playingTutorialPresenceData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayingTutorialPresenceData,
+    >,
+    pub _currentPresenceData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IRichPresenceData,
+    >,
 }
 #[cfg(feature = "RichPresenceManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

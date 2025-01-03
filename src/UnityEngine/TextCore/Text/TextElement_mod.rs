@@ -5,8 +5,10 @@ pub struct TextElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ElementType: crate::UnityEngine::TextCore::Text::TextElementType,
     pub m_Unicode: u32,
-    pub m_TextAsset: *mut crate::UnityEngine::TextCore::Text::TextAsset,
-    pub m_Glyph: *mut crate::UnityEngine::TextCore::Glyph,
+    pub m_TextAsset: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::TextAsset,
+    >,
+    pub m_Glyph: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
     pub m_GlyphIndex: u32,
     pub m_Scale: f32,
 }

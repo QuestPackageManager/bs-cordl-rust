@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+GfxUpdateBufferRange")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GfxUpdateBufferRange {
     pub offsetFromWriteStart: u32,
     pub _cordl_size: u32,

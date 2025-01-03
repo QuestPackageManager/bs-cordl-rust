@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct ConfigHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub typeEntries: *mut crate::System::Collections::ArrayList,
-    pub channelInstances: *mut crate::System::Collections::ArrayList,
-    pub currentChannel: *mut crate::System::Runtime::Remoting::ChannelData,
-    pub currentProviderData: *mut crate::System::Collections::Stack,
-    pub currentClientUrl: *mut quest_hook::libil2cpp::Il2CppString,
-    pub appName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub currentXmlPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub typeEntries: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub channelInstances: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ArrayList,
+    >,
+    pub currentChannel: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::ChannelData,
+    >,
+    pub currentProviderData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Stack,
+    >,
+    pub currentClientUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub appName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub currentXmlPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub onlyDelayedChannels: bool,
 }
 #[cfg(feature = "System+Runtime+Remoting+ConfigHandler")]

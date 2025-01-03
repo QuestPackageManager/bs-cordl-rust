@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct AxisStack {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _stack: *mut crate::System::Collections::ArrayList,
-    pub _subtree: *mut crate::System::Xml::Schema::ForwardAxis,
-    pub _parent: *mut crate::System::Xml::Schema::ActiveAxis,
+    pub _stack: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _subtree: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ForwardAxis>,
+    pub _parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ActiveAxis>,
 }
 #[cfg(feature = "System+Xml+Schema+AxisStack")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

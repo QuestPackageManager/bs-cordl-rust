@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct StartMiddleEndButtonBackgroundController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _startSprite: *mut crate::UnityEngine::Sprite,
-    pub _middleSprite: *mut crate::UnityEngine::Sprite,
-    pub _endSprite: *mut crate::UnityEngine::Sprite,
-    pub _image: *mut crate::HMUI::ImageView,
+    pub _startSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _middleSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _endSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _image: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
 }
 #[cfg(feature = "StartMiddleEndButtonBackgroundController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

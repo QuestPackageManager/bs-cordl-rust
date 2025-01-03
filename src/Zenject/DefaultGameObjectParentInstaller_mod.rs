@@ -6,7 +6,7 @@ pub struct DefaultGameObjectParentInstaller {
         *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::Zenject::DefaultGameObjectParentInstaller,
     >,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Zenject+DefaultGameObjectParentInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -100,7 +100,7 @@ for crate::Zenject::DefaultGameObjectParentInstaller {
 #[derive(Debug)]
 pub struct DefaultGameObjectParentInstaller_DefaultParentObjectDestroyer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _gameObject: *mut crate::UnityEngine::GameObject,
+    pub _gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
 #[cfg(feature = "Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

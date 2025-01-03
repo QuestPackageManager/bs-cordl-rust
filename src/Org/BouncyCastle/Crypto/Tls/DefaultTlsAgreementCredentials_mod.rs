@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct DefaultTlsAgreementCredentials {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsAgreementCredentials,
-    pub mCertificate: *mut crate::Org::BouncyCastle::Crypto::Tls::Certificate,
-    pub mPrivateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub mBasicAgreement: *mut crate::Org::BouncyCastle::Crypto::IBasicAgreement,
+    pub mCertificate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+    >,
+    pub mPrivateKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    >,
+    pub mBasicAgreement: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBasicAgreement,
+    >,
     pub mTruncateAgreement: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsAgreementCredentials")]

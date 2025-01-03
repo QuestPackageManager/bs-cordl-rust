@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct CaptureCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _group: *mut crate::System::Text::RegularExpressions::Group,
+    pub _group: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::Group,
+    >,
     pub _capcount: i32,
-    pub _captures: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Text::RegularExpressions::Capture,
+    pub _captures: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Text::RegularExpressions::Capture,
+        >,
     >,
 }
 #[cfg(feature = "System+Text+RegularExpressions+CaptureCollection")]

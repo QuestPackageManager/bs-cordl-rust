@@ -226,17 +226,21 @@ for crate::UnityEngine::InputSystem::LowLevel::InputState {
 #[derive(Debug)]
 pub struct InputState_StateChangeMonitorDelegate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub valueChangeCallback: *mut crate::System::Action_4<
-        *mut crate::UnityEngine::InputSystem::InputControl,
-        f64,
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        i64,
+    pub valueChangeCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_4<
+            *mut crate::UnityEngine::InputSystem::InputControl,
+            f64,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            i64,
+        >,
     >,
-    pub timerExpiredCallback: *mut crate::System::Action_4<
-        *mut crate::UnityEngine::InputSystem::InputControl,
-        f64,
-        i64,
-        i32,
+    pub timerExpiredCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_4<
+            *mut crate::UnityEngine::InputSystem::InputControl,
+            f64,
+            i64,
+            i32,
+        >,
     >,
 }
 #[cfg(

@@ -4,9 +4,9 @@
 pub struct BaseKdfBytesGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub counterStart: i32,
-    pub digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub shared: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub shared: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub iv: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+BaseKdfBytesGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

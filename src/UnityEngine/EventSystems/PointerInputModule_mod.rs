@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct PointerInputModule {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseInputModule,
-    pub m_PointerData: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::UnityEngine::EventSystems::PointerEventData,
+    pub m_PointerData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::UnityEngine::EventSystems::PointerEventData,
+        >,
     >,
-    pub m_MouseState: *mut crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
+    pub m_MouseState: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
+    >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -277,7 +281,9 @@ for crate::UnityEngine::EventSystems::PointerInputModule {
 pub struct PointerInputModule_ButtonState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Button: crate::UnityEngine::EventSystems::PointerEventData_InputButton,
-    pub m_EventData: *mut crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData,
+    pub m_EventData: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData,
+    >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+ButtonState")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -387,7 +393,9 @@ for crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
 pub struct PointerInputModule_MouseButtonEventData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub buttonState: crate::UnityEngine::EventSystems::PointerEventData_FramePressState,
-    pub buttonData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    pub buttonData: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::PointerEventData,
+    >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -459,8 +467,10 @@ for crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData {
 #[derive(Debug)]
 pub struct PointerInputModule_MouseState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_TrackedButtons: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::EventSystems::PointerInputModule_ButtonState,
+    pub m_TrackedButtons: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::EventSystems::PointerInputModule_ButtonState,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseState")]

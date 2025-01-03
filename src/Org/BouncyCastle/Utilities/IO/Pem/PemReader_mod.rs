@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PemReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub reader: *mut crate::System::IO::TextReader,
+    pub reader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+Pem+PemReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

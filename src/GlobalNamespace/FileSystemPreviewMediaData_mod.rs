@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct FileSystemPreviewMediaData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _spriteAsyncLoader: *mut crate::GlobalNamespace::SpriteAsyncLoader,
-    pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
-    pub _coverSpritePath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _previewAudioClipPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _spriteAsyncLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SpriteAsyncLoader,
+    >,
+    pub _audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioClipAsyncLoader,
+    >,
+    pub _coverSpritePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _previewAudioClipPath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "FileSystemPreviewMediaData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

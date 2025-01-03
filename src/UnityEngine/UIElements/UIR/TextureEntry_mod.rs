@@ -1,8 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+TextureEntry")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TextureEntry {
-    pub source: *mut crate::UnityEngine::Texture,
+    pub source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub actual: crate::UnityEngine::UIElements::TextureId,
     pub replaced: bool,
 }

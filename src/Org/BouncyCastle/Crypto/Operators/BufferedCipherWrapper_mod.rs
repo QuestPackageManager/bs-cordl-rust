@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct BufferedCipherWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub bufferedCipher: *mut crate::Org::BouncyCastle::Crypto::IBufferedCipher,
-    pub stream: *mut crate::Org::BouncyCastle::Crypto::IO::CipherStream,
+    pub bufferedCipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBufferedCipher,
+    >,
+    pub stream: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IO::CipherStream,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+BufferedCipherWrapper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

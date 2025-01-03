@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct Image {
     __cordl_parent: crate::UnityEngine::UI::MaskableGraphic,
-    pub m_Sprite: *mut crate::UnityEngine::Sprite,
-    pub m_OverrideSprite: *mut crate::UnityEngine::Sprite,
+    pub m_Sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub m_OverrideSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub m_Type: crate::UnityEngine::UI::Image_Type,
     pub m_PreserveAspect: bool,
     pub m_FillCenter: bool,

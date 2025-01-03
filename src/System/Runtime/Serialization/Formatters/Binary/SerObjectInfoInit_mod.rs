@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct SerObjectInfoInit {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub seenBeforeTable: *mut crate::System::Collections::Hashtable,
+    pub seenBeforeTable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
     pub objectInfoIdCount: i32,
-    pub oiPool: *mut crate::System::Runtime::Serialization::Formatters::Binary::SerStack,
+    pub oiPool: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::Formatters::Binary::SerStack,
+    >,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+SerObjectInfoInit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

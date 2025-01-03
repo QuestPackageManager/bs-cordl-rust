@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct ColorTransitionSO {
     __cordl_parent: crate::GlobalNamespace::BaseTransitionSO,
-    pub _normalColor: *mut crate::GlobalNamespace::ColorSO,
-    pub _highlightedColor: *mut crate::GlobalNamespace::ColorSO,
-    pub _pressedColor: *mut crate::GlobalNamespace::ColorSO,
-    pub _disabledColor: *mut crate::GlobalNamespace::ColorSO,
-    pub _selectedColor: *mut crate::GlobalNamespace::ColorSO,
-    pub _selectedAndHighlightedColor: *mut crate::GlobalNamespace::ColorSO,
+    pub _normalColor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _highlightedColor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _pressedColor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _disabledColor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _selectedColor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    pub _selectedAndHighlightedColor: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSO,
+    >,
 }
 #[cfg(feature = "ColorTransitionSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

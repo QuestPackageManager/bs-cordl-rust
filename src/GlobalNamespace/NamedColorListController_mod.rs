@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct NamedColorListController {
     __cordl_parent: crate::GlobalNamespace::ListColorController,
-    pub _textValuePairs: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::NamedColorListController_ColorValuePair,
+    pub _textValuePairs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::NamedColorListController_ColorValuePair,
+        >,
     >,
     pub _value: i32,
-    pub valueChangedEvent: *mut crate::System::Action_1<i32>,
+    pub valueChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
 }
 #[cfg(feature = "NamedColorListController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

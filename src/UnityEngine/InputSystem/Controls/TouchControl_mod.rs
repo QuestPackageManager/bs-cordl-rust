@@ -5,19 +5,45 @@ pub struct TouchControl {
     __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<
         crate::UnityEngine::InputSystem::LowLevel::TouchState,
     >,
-    pub _press_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::TouchPressControl,
-    pub _displayIndex_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::IntegerControl,
-    pub _touchId_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::IntegerControl,
-    pub _position_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
-    pub _delta_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::DeltaControl,
-    pub _pressure_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::AxisControl,
-    pub _radius_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
-    pub _phase_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::TouchPhaseControl,
-    pub _indirectTouch_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _tap_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::ButtonControl,
-    pub _tapCount_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::IntegerControl,
-    pub _startTime_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::DoubleControl,
-    pub _startPosition_k__BackingField: *mut crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    pub _press_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::TouchPressControl,
+    >,
+    pub _displayIndex_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::IntegerControl,
+    >,
+    pub _touchId_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::IntegerControl,
+    >,
+    pub _position_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    >,
+    pub _delta_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::DeltaControl,
+    >,
+    pub _pressure_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::AxisControl,
+    >,
+    pub _radius_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    >,
+    pub _phase_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::TouchPhaseControl,
+    >,
+    pub _indirectTouch_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _tap_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::ButtonControl,
+    >,
+    pub _tapCount_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::IntegerControl,
+    >,
+    pub _startTime_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::DoubleControl,
+    >,
+    pub _startPosition_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Controls::Vector2Control,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+TouchControl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

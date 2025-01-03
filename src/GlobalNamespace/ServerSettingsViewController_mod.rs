@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct ServerSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _enabled: *mut crate::UnityEngine::UI::Toggle,
-    pub _hostName: *mut crate::HMUI::InputFieldView,
-    pub _forceGameLift: *mut crate::UnityEngine::UI::Toggle,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _enabled: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _hostName: quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
+    pub _forceGameLift: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
 }
 #[cfg(feature = "ServerSettingsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

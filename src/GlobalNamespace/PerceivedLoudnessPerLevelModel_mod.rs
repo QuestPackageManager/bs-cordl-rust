@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct PerceivedLoudnessPerLevelModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _loudnessLevelPerLevelId: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        f32,
+    pub _loudnessLevelPerLevelId: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            f32,
+        >,
     >,
 }
 #[cfg(feature = "PerceivedLoudnessPerLevelModel")]

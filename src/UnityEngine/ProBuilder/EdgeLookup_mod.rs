@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ProBuilder+EdgeLookup")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct EdgeLookup {
     pub m_Local: crate::UnityEngine::ProBuilder::Edge,
     pub m_Common: crate::UnityEngine::ProBuilder::Edge,

@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct TubeBloomPrePassLightReflectionEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _mainTubeBloomPrePassLight: *mut crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint,
-    pub _tubeBloomPrePassLightBounces: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint,
+    pub _mainTubeBloomPrePassLight: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint,
+    >,
+    pub _tubeBloomPrePassLightBounces: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint,
+        >,
     >,
     pub _environmentLayerMask: crate::UnityEngine::LayerMask,
-    pub _environmentCollisionRepository: *mut crate::GlobalNamespace::EnvironmentCollisionRepository,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _environmentCollisionRepository: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentCollisionRepository,
+    >,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "TubeBloomPrePassLightReflectionEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -122,12 +128,16 @@ for crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
 #[derive(Debug)]
 pub struct TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub light: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+    pub light: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TubeBloomPrePassLight>,
     pub showHitPoint: bool,
-    pub hitPointGameObject: *mut crate::UnityEngine::GameObject,
-    pub hitPointTransform: *mut crate::UnityEngine::Transform,
-    pub hitPointLightWithId: *mut crate::GlobalNamespace::InstancedMaterialLightWithId,
-    pub hitPointDistanceToAlphaCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub hitPointGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub hitPointTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub hitPointLightWithId: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::InstancedMaterialLightWithId,
+    >,
+    pub hitPointDistanceToAlphaCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
     pub _hitPointState: bool,
 }
 #[cfg(

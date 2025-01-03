@@ -4,11 +4,15 @@
 pub struct ParticleSystemEmitEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _beatmapEvent: crate::GlobalNamespace::BasicBeatmapEventType,
-    pub _particleSystemParentTransform: *mut crate::UnityEngine::Transform,
+    pub _particleSystemParentTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
     pub _particleSystemMaxSpawnedSystems: i32,
     pub _environmentContext: crate::GlobalNamespace::EnvironmentContext,
-    pub _diContainer: *mut crate::Zenject::DiContainer,
-    pub _particleSystemEmitBehavior: *mut crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBehavior,
+    pub _diContainer: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _particleSystemEmitBehavior: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBehavior,
+    >,
 }
 #[cfg(feature = "ParticleSystemEmitEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -91,7 +95,7 @@ for crate::GlobalNamespace::ParticleSystemEmitEventEffect {
 #[derive(Debug)]
 pub struct ParticleSystemEmitEventEffect_BeatmapEditorParticleSystemEmitBehavior {
     __cordl_parent: crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBehavior,
-    pub _tickableManager: *mut crate::Zenject::TickableManager,
+    pub _tickableManager: quest_hook::libil2cpp::Gc<crate::Zenject::TickableManager>,
 }
 #[cfg(feature = "ParticleSystemEmitEventEffect+BeatmapEditorParticleSystemEmitBehavior")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -236,8 +240,10 @@ for crate::GlobalNamespace::ParticleSystemEmitEventEffect_BeatmapEditorParticleS
 #[derive(Debug)]
 pub struct ParticleSystemEmitEventEffect_GameplayParticleSystemEmitBehavior {
     __cordl_parent: crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBehavior,
-    pub _pauseController: *mut crate::GlobalNamespace::PauseController,
-    pub _songSpeedData: *mut crate::GlobalNamespace::SongSpeedData,
+    pub _pauseController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PauseController,
+    >,
+    pub _songSpeedData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongSpeedData>,
 }
 #[cfg(feature = "ParticleSystemEmitEventEffect+GameplayParticleSystemEmitBehavior")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -400,14 +406,24 @@ for crate::GlobalNamespace::ParticleSystemEmitEventEffect_GameplayParticleSystem
 #[derive(Debug)]
 pub struct ParticleSystemEmitEventEffect_ParticleSystemEmitBehavior {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _particleSystemEventControllerPoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
-        *mut crate::GlobalNamespace::ParticleSystemEventController,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
     >,
-    pub _particleSystemParentTransform: *mut crate::UnityEngine::Transform,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _particleSystemEventControllerPoolContainer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            *mut crate::GlobalNamespace::ParticleSystemEventController,
+        >,
+    >,
+    pub _particleSystemParentTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
     pub _particleSystemMaxSpawnedSystems: i32,
-    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "ParticleSystemEmitEventEffect+ParticleSystemEmitBehavior")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

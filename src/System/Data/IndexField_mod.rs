@@ -1,8 +1,8 @@
 #[cfg(feature = "System+Data+IndexField")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IndexField {
-    pub Column: *mut crate::System::Data::DataColumn,
+    pub Column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     pub IsDescending: bool,
 }
 #[cfg(feature = "System+Data+IndexField")]

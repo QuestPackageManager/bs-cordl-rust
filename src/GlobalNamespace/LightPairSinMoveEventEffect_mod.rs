@@ -10,15 +10,25 @@ pub struct LightPairSinMoveEventEffect {
     pub _startValueOffset: f32,
     pub _startPositionOffset: crate::UnityEngine::Vector3,
     pub _endPositionOffset: crate::UnityEngine::Vector3,
-    pub _transformL: *mut crate::UnityEngine::Transform,
-    pub _transformR: *mut crate::UnityEngine::Transform,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _movementDataL: *mut crate::GlobalNamespace::LightPairSinMoveEventEffect_MovementData,
-    pub _movementDataR: *mut crate::GlobalNamespace::LightPairSinMoveEventEffect_MovementData,
+    pub _transformL: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _transformR: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
+    pub _movementDataL: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightPairSinMoveEventEffect_MovementData,
+    >,
+    pub _movementDataR: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightPairSinMoveEventEffect_MovementData,
+    >,
     pub _randomGenerationFrameNum: i32,
     pub _randomStartOffset: f32,
-    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "LightPairSinMoveEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -140,7 +150,7 @@ pub struct LightPairSinMoveEventEffect_MovementData {
     pub enabled: bool,
     pub speed: f32,
     pub startPosition: crate::UnityEngine::Vector3,
-    pub transform: *mut crate::UnityEngine::Transform,
+    pub transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub startMovementValue: f32,
     pub movementValue: f32,
     pub side: f32,

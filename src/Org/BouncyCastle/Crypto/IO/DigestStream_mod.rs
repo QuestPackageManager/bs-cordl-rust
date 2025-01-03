@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct DigestStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub stream: *mut crate::System::IO::Stream,
-    pub inDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub outDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    pub stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub inDigest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub outDigest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+IO+DigestStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

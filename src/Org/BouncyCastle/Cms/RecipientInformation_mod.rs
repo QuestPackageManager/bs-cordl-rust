@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct RecipientInformation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub rid: *mut crate::Org::BouncyCastle::Cms::RecipientID,
-    pub keyEncAlg: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub secureReadable: *mut crate::Org::BouncyCastle::Cms::CmsSecureReadable,
-    pub resultMac: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub rid: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::RecipientID>,
+    pub keyEncAlg: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub secureReadable: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsSecureReadable,
+    >,
+    pub resultMac: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+RecipientInformation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

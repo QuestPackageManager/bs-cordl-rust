@@ -3,25 +3,41 @@
 #[derive(Debug)]
 pub struct LobbySetupViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _startGameReadyButton: *mut crate::UnityEngine::UI::Button,
-    pub _cancelGameUnreadyButton: *mut crate::UnityEngine::UI::Button,
-    pub _startReadyText: *mut crate::BGLib::Polyglot::LocalizedTextMeshProUGUI,
-    pub _cancelUnreadyText: *mut crate::BGLib::Polyglot::LocalizedTextMeshProUGUI,
-    pub _serverSettings: *mut crate::GlobalNamespace::GameServersFilterText,
-    pub _suggestionHeader: *mut crate::UnityEngine::GameObject,
-    pub _beatmapSelectionView: *mut crate::GlobalNamespace::EditableBeatmapSelectionView,
-    pub _modifiersSelectionView: *mut crate::GlobalNamespace::EditableModifiersSelectionView,
-    pub _cantStartGameHoverHint: *mut crate::HMUI::HoverHint,
-    pub _playerMissingLevelHoverHintWrapper: *mut crate::UnityEngine::GameObject,
-    pub _playersMissingLevelHoverHint: *mut crate::HMUI::HoverHint,
-    pub _spectatorWarningTextWrapper: *mut crate::UnityEngine::GameObject,
-    pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
-    pub selectBeatmapEvent: *mut crate::System::Action,
-    pub selectModifiersEvent: *mut crate::System::Action,
-    pub startGameOrReadyEvent: *mut crate::System::Action,
-    pub cancelGameOrUnreadyEvent: *mut crate::System::Action,
-    pub clearSuggestedBeatmapEvent: *mut crate::System::Action,
-    pub clearSuggestedModifiersEvent: *mut crate::System::Action,
+    pub _startGameReadyButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _cancelGameUnreadyButton: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Button,
+    >,
+    pub _startReadyText: quest_hook::libil2cpp::Gc<
+        crate::BGLib::Polyglot::LocalizedTextMeshProUGUI,
+    >,
+    pub _cancelUnreadyText: quest_hook::libil2cpp::Gc<
+        crate::BGLib::Polyglot::LocalizedTextMeshProUGUI,
+    >,
+    pub _serverSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameServersFilterText,
+    >,
+    pub _suggestionHeader: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _beatmapSelectionView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EditableBeatmapSelectionView,
+    >,
+    pub _modifiersSelectionView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EditableModifiersSelectionView,
+    >,
+    pub _cantStartGameHoverHint: quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>,
+    pub _playerMissingLevelHoverHintWrapper: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _playersMissingLevelHoverHint: quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>,
+    pub _spectatorWarningTextWrapper: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
+    pub selectBeatmapEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub selectModifiersEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub startGameOrReadyEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub cancelGameOrUnreadyEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub clearSuggestedBeatmapEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub clearSuggestedModifiersEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _isPartyOwner: bool,
     pub _isQuickStart: bool,
 }

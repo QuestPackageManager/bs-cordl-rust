@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalPlayerInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _levelSceneSetupData: *mut crate::GlobalNamespace::MultiplayerLevelSceneSetupData,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _levelSceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLevelSceneSetupData,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
     pub _startState: crate::GlobalNamespace::MultiplayerPlayerStartState,
 }
 #[cfg(feature = "MultiplayerLocalPlayerInstaller")]

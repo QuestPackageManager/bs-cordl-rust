@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct DHDomainParameters {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub p: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub g: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub q: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub j: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub validationParms: *mut crate::Org::BouncyCastle::Asn1::X9::DHValidationParms,
+    pub p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub j: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub validationParms: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X9::DHValidationParms,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+DHDomainParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

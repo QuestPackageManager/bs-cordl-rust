@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct InstalledApplication {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub ApplicationId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub PackageName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Status: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ApplicationId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub PackageName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Status: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub VersionCode: i32,
-    pub VersionName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub VersionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Oculus+Platform+Models+InstalledApplication")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

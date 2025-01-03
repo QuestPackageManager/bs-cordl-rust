@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MethodInfoCallInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::CallInstruction,
-    pub _target: *mut crate::System::Reflection::MethodInfo,
+    pub _target: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     pub _argumentCount: i32,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+MethodInfoCallInstruction")]

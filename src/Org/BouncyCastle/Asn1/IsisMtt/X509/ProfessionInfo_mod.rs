@@ -3,11 +3,21 @@
 #[derive(Debug)]
 pub struct ProfessionInfo {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub namingAuthority: *mut crate::Org::BouncyCastle::Asn1::IsisMtt::X509::NamingAuthority,
-    pub professionItems: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    pub professionOids: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    pub registrationNumber: *mut quest_hook::libil2cpp::Il2CppString,
-    pub addProfessionInfo: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    pub namingAuthority: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::IsisMtt::X509::NamingAuthority,
+    >,
+    pub professionItems: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    >,
+    pub professionOids: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    >,
+    pub registrationNumber: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub addProfessionInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+ProfessionInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

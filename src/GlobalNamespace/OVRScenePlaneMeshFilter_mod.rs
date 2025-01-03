@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct OVRScenePlaneMeshFilter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _meshFilter: *mut crate::UnityEngine::MeshFilter,
-    pub _mesh: *mut crate::UnityEngine::Mesh,
+    pub _meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
+    pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub _jobHandle: crate::System::Nullable_1<crate::Unity::Jobs::JobHandle>,
     pub _meshRequested: bool,
     pub _boundary: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector2>,
@@ -112,7 +112,7 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter {
 }
 #[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
     pub Boundary: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector2>,
     pub Triangles: crate::Unity::Collections::NativeArray_1<i32>,
@@ -183,7 +183,7 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
 }
 #[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
     pub _Count_k__BackingField: i32,
     pub _data: crate::Unity::Collections::NativeArray_1<i32>,

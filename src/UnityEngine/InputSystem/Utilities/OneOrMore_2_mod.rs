@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OneOrMore_2<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,

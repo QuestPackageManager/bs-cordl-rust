@@ -1,8 +1,8 @@
 #[cfg(feature = "UnityEngine+CachedAssetBundle")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CachedAssetBundle {
-    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Hash: crate::UnityEngine::Hash128,
 }
 #[cfg(feature = "UnityEngine+CachedAssetBundle")]

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ReflectionProbeDataSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _reflectionProbeCubemap1: *mut crate::UnityEngine::Cubemap,
-    pub _reflectionProbeCubemap2: *mut crate::UnityEngine::Cubemap,
+    pub _reflectionProbeCubemap1: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
+    pub _reflectionProbeCubemap2: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
 }
 #[cfg(feature = "ReflectionProbeDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

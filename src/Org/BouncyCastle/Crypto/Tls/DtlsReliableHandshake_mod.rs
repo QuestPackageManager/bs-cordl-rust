@@ -3,14 +3,26 @@
 #[derive(Debug)]
 pub struct DtlsReliableHandshake {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mRecordLayer: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer,
-    pub mHandshakeTimeout: *mut crate::Org::BouncyCastle::Crypto::Tls::Timeout,
-    pub mHandshakeHash: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
-    pub mCurrentInboundFlight: *mut crate::System::Collections::IDictionary,
-    pub mPreviousInboundFlight: *mut crate::System::Collections::IDictionary,
-    pub mOutboundFlight: *mut crate::System::Collections::IList,
+    pub mRecordLayer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer,
+    >,
+    pub mHandshakeTimeout: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::Timeout,
+    >,
+    pub mHandshakeHash: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsHandshakeHash,
+    >,
+    pub mCurrentInboundFlight: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IDictionary,
+    >,
+    pub mPreviousInboundFlight: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IDictionary,
+    >,
+    pub mOutboundFlight: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub mResendMillis: i32,
-    pub mResendTimeout: *mut crate::Org::BouncyCastle::Crypto::Tls::Timeout,
+    pub mResendTimeout: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::Timeout,
+    >,
     pub mMessageSeq: i32,
     pub mNextReceiveSeq: i32,
 }
@@ -330,7 +342,7 @@ pub struct DtlsReliableHandshake_Message {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mMessageSeq: i32,
     pub mMsgType: u8,
-    pub mBody: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mBody: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake+Message")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -495,7 +507,9 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_RecordLayerBuff
 #[derive(Debug)]
 pub struct DtlsReliableHandshake_Retransmit {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mOuter: *mut crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake,
+    pub mOuter: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake+Retransmit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

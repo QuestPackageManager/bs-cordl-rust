@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct X9ECPoint {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub encoding: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub c: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
-    pub p: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    pub encoding: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
+    pub p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X9ECPoint")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

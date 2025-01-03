@@ -6,8 +6,8 @@ pub struct Collision {
     pub m_Header: crate::UnityEngine::ContactPairHeader,
     pub m_Pair: crate::UnityEngine::ContactPair,
     pub m_Flipped: bool,
-    pub m_LegacyContacts: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::ContactPoint,
+    pub m_LegacyContacts: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ContactPoint>,
     >,
 }
 #[cfg(feature = "UnityEngine+Collision")]

@@ -1,6 +1,6 @@
 #[cfg(feature = "OVRSpaceUser")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRSpaceUser {
     pub _handle: u64,
 }

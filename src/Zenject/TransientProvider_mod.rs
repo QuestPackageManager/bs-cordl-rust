@@ -3,15 +3,19 @@
 #[derive(Debug)]
 pub struct TransientProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _container: *mut crate::Zenject::DiContainer,
-    pub _concreteType: *mut crate::System::Type,
-    pub _extraArguments: *mut crate::System::Collections::Generic::List_1<
-        crate::Zenject::TypeValuePair,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _concreteType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub _extraArguments: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
     >,
-    pub _concreteIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _instantiateCallback: *mut crate::System::Action_2<
-        *mut crate::Zenject::InjectContext,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _concreteIdentifier: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub _instantiateCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::Zenject::InjectContext,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+TransientProvider")]

@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct CmsEnvelopedGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub recipientInfoGenerators: *mut crate::System::Collections::IList,
-    pub _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    pub unprotectedAttributeGenerator: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+    pub recipientInfoGenerators: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IList,
+    >,
+    pub _cordl_rand: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
+    pub unprotectedAttributeGenerator: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

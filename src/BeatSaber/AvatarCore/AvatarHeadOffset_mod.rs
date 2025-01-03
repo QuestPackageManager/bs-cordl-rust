@@ -4,7 +4,9 @@
 pub struct AvatarHeadOffset {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _positionOffset: crate::UnityEngine::Vector3,
-    pub _avatarPoseController: *mut crate::BeatSaber::AvatarCore::MultiplayerAvatarPoseController,
+    pub _avatarPoseController: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::AvatarCore::MultiplayerAvatarPoseController,
+    >,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarHeadOffset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

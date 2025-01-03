@@ -3,23 +3,37 @@
 #[derive(Debug)]
 pub struct HttpListener {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub tlsProvider: *mut crate::Mono::Security::Interface::MonoTlsProvider,
-    pub tlsSettings: *mut crate::Mono::Security::Interface::MonoTlsSettings,
-    pub certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+    pub tlsProvider: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Interface::MonoTlsProvider,
+    >,
+    pub tlsSettings: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Interface::MonoTlsSettings,
+    >,
+    pub certificate: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+    >,
     pub auth_schemes: crate::System::Net::AuthenticationSchemes,
-    pub prefixes: *mut crate::System::Net::HttpListenerPrefixCollection,
-    pub auth_selector: *mut crate::System::Net::AuthenticationSchemeSelector,
-    pub realm: *mut quest_hook::libil2cpp::Il2CppString,
+    pub prefixes: quest_hook::libil2cpp::Gc<
+        crate::System::Net::HttpListenerPrefixCollection,
+    >,
+    pub auth_selector: quest_hook::libil2cpp::Gc<
+        crate::System::Net::AuthenticationSchemeSelector,
+    >,
+    pub realm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub ignore_write_exceptions: bool,
     pub listening: bool,
     pub disposed: bool,
-    pub _internalLock: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub registry: *mut crate::System::Collections::Hashtable,
-    pub ctx_queue: *mut crate::System::Collections::ArrayList,
-    pub wait_queue: *mut crate::System::Collections::ArrayList,
-    pub connections: *mut crate::System::Collections::Hashtable,
-    pub defaultServiceNames: *mut crate::System::Net::ServiceNameStore,
-    pub extendedProtectionPolicy: *mut crate::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy,
+    pub _internalLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub registry: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub ctx_queue: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub wait_queue: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub connections: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub defaultServiceNames: quest_hook::libil2cpp::Gc<
+        crate::System::Net::ServiceNameStore,
+    >,
+    pub extendedProtectionPolicy: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy,
+    >,
 }
 #[cfg(feature = "System+Net+HttpListener")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

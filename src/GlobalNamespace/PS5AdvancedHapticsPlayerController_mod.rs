@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct PS5AdvancedHapticsPlayerController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _hapticsPlayerPool: *mut crate::GlobalNamespace::HapticsAudioClipPlayer_Pool,
-    pub _coroutineStarter: *mut crate::GlobalNamespace::ICoroutineStarter,
-    pub _activePlayers: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::System::ValueTuple_2<
-            crate::UnityEngine::XR::XRNode,
-            *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+    pub _hapticsPlayerPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HapticsAudioClipPlayer_Pool,
+    >,
+    pub _coroutineStarter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ICoroutineStarter,
+    >,
+    pub _activePlayers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::System::ValueTuple_2<
+                crate::UnityEngine::XR::XRNode,
+                *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+            >,
+            *mut crate::GlobalNamespace::HapticsAudioClipPlayer,
         >,
-        *mut crate::GlobalNamespace::HapticsAudioClipPlayer,
     >,
 }
 #[cfg(feature = "PS5AdvancedHapticsPlayerController")]

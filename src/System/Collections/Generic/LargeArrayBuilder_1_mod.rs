@@ -1,13 +1,13 @@
 #[cfg(feature = "System+Collections+Generic+LargeArrayBuilder_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LargeArrayBuilder_1<T: quest_hook::libil2cpp::Type> {
     pub _maxCapacity: i32,
-    pub _first: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub _first: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _buffers: crate::System::Collections::Generic::ArrayBuilder_1<
         *mut quest_hook::libil2cpp::Il2CppArray<T>,
     >,
-    pub _current: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub _current: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _index: i32,
     pub _count: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,

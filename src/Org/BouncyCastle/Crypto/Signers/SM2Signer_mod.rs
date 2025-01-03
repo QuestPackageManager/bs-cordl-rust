@@ -3,13 +3,21 @@
 #[derive(Debug)]
 pub struct SM2Signer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub kCalculator: *mut crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator,
-    pub digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub encoding: *mut crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding,
-    pub ecParams: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
-    pub pubPoint: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    pub ecKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECKeyParameters,
-    pub z: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub kCalculator: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator,
+    >,
+    pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub encoding: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding,
+    >,
+    pub ecParams: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
+    >,
+    pub pubPoint: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+    pub ecKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ECKeyParameters,
+    >,
+    pub z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+SM2Signer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

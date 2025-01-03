@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TextPageScrollView {
     __cordl_parent: crate::HMUI::ScrollView,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
 }
 #[cfg(feature = "HMUI+TextPageScrollView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

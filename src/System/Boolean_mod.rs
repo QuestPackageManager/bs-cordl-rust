@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Boolean")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Boolean {
     pub m_value: bool,
 }

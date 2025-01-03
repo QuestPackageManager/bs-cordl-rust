@@ -3,16 +3,30 @@
 #[derive(Debug)]
 pub struct MobileTlsContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub certificateValidator: *mut crate::Mono::Net::Security::ChainValidationHelper,
-    pub _Options_k__BackingField: *mut crate::Mono::Net::Security::MonoSslAuthenticationOptions,
-    pub _Parent_k__BackingField: *mut crate::Mono::Net::Security::MobileAuthenticatedStream,
+    pub certificateValidator: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::ChainValidationHelper,
+    >,
+    pub _Options_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::MonoSslAuthenticationOptions,
+    >,
+    pub _Parent_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Mono::Net::Security::MobileAuthenticatedStream,
+    >,
     pub _IsServer_k__BackingField: bool,
-    pub _TargetHost_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _ServerName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _TargetHost_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _ServerName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _AskForClientCertificate_k__BackingField: bool,
     pub _EnabledProtocols_k__BackingField: crate::System::Security::Authentication::SslProtocols,
-    pub _ClientCertificates_k__BackingField: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
-    pub _LocalServerCertificate_k__BackingField: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+    pub _ClientCertificates_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+    >,
+    pub _LocalServerCertificate_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+    >,
 }
 #[cfg(feature = "Mono+Net+Security+MobileTlsContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

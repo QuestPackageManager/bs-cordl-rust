@@ -5,7 +5,7 @@ pub struct MonotonicTimeProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _timeSpanTicksPerStopwatchTick: f64,
     pub _startTicks: i64,
-    pub _stopwatch: *mut crate::System::Diagnostics::Stopwatch,
+    pub _stopwatch: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::Stopwatch>,
 }
 #[cfg(feature = "MonotonicTimeProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

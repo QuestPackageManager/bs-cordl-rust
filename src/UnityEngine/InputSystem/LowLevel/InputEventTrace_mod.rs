@@ -5,10 +5,12 @@ pub struct InputEventTrace {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ChangeCounter: i32,
     pub m_Enabled: bool,
-    pub m_OnFilterEvent: *mut crate::System::Func_3<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        *mut crate::UnityEngine::InputSystem::InputDevice,
-        bool,
+    pub m_OnFilterEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+            bool,
+        >,
     >,
     pub m_DeviceId: i32,
     pub m_EventListeners: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
@@ -26,8 +28,10 @@ pub struct InputEventTrace {
     pub m_EventBufferTailStorage: u64,
     pub m_HasWrapped: bool,
     pub m_RecordFrameMarkers: bool,
-    pub m_DeviceInfos: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo,
+    pub m_DeviceInfos: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace")]
@@ -681,13 +685,13 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputEventTrace_DeviceInfo {
     pub m_DeviceId: i32,
-    pub m_Layout: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Layout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_StateFormat: crate::UnityEngine::InputSystem::Utilities::FourCC,
     pub m_StateSizeInBytes: i32,
-    pub m_FullLayoutJson: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_FullLayoutJson: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -796,7 +800,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
 #[derive(Debug)]
 pub struct InputEventTrace_Enumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Trace: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+    pub m_Trace: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+    >,
     pub m_ChangeCounter: i32,
     pub m_Current: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
 }
@@ -986,8 +992,12 @@ pub struct InputEventTrace_ReplayController {
     pub _finished_k__BackingField: bool,
     pub _paused_k__BackingField: bool,
     pub _position_k__BackingField: i32,
-    pub m_EventTrace: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
-    pub m_Enumerator: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator,
+    pub m_EventTrace: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+    >,
+    pub m_Enumerator: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator,
+    >,
     pub m_DeviceIDMappings: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
         crate::System::Collections::Generic::KeyValuePair_2<i32, i32>,
     >,
@@ -995,15 +1005,17 @@ pub struct InputEventTrace_ReplayController {
     pub m_CreatedDevices: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
         *mut crate::UnityEngine::InputSystem::InputDevice,
     >,
-    pub m_OnFinished: *mut crate::System::Action,
-    pub m_OnEvent: *mut crate::System::Action_1<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    pub m_OnFinished: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub m_OnEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
     >,
     pub m_StartTimeAsPerFirstEvent: f64,
     pub m_StartTimeAsPerRuntime: f64,
     pub m_AllEventsByTimeIndex: i32,
-    pub m_AllEventsByTime: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    pub m_AllEventsByTime: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController")]

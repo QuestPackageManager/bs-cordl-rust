@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_Property_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VREvent_Property_t {
     pub container: u64,
     pub prop: crate::OVR::OpenVR::ETrackedDeviceProperty,

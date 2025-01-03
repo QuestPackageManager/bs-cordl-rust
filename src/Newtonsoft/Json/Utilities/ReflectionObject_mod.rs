@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct ReflectionObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Creator_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _Creator_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
-    pub _Members_k__BackingField: *mut crate::System::Collections::Generic::IDictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::Newtonsoft::Json::Utilities::ReflectionMember,
+    pub _Members_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IDictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::Newtonsoft::Json::Utilities::ReflectionMember,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionObject")]

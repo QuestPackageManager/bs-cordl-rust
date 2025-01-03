@@ -3,16 +3,16 @@
 #[derive(Debug)]
 pub struct XmlDataTreeWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _xmlw: *mut crate::System::Xml::XmlWriter,
-    pub _ds: *mut crate::System::Data::DataSet,
-    pub _dt: *mut crate::System::Data::DataTable,
-    pub _dTables: *mut crate::System::Collections::ArrayList,
-    pub _topLevelTables: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Data::DataTable,
+    pub _xmlw: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
+    pub _ds: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+    pub _dt: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    pub _dTables: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _topLevelTables: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataTable>,
     >,
     pub _fFromTable: bool,
     pub _isDiffgram: bool,
-    pub _rowsOrder: *mut crate::System::Collections::Hashtable,
+    pub _rowsOrder: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub _writeHierarchy: bool,
 }
 #[cfg(feature = "System+Data+XmlDataTreeWriter")]

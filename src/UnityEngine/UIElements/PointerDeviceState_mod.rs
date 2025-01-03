@@ -163,10 +163,12 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PointerDeviceState_PointerLocation {
     pub _Position_k__BackingField: crate::UnityEngine::Vector2,
-    pub _Panel_k__BackingField: *mut crate::UnityEngine::UIElements::IPanel,
+    pub _Panel_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IPanel,
+    >,
     pub _Flags_k__BackingField: crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag,
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]

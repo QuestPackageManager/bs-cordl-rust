@@ -6,12 +6,11 @@ pub struct NearestNeighbourList_2<
     TDistance: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub queue: *mut crate::UnityEngine::ProBuilder::KdTree::PriorityQueue_2<
-        TItem,
-        TDistance,
+    pub queue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::KdTree::PriorityQueue_2<TItem, TDistance>,
     >,
-    pub distanceMath: *mut crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<
-        TDistance,
+    pub distanceMath: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<TDistance>,
     >,
     pub maxCapacity: i32,
     __cordl_phantom_TItem: std::marker::PhantomData<TItem>,

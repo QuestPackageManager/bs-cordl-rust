@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ContentDecodeStream {
     __cordl_parent: crate::System::Net::WebReadStream,
-    pub _OriginalInnerStream_k__BackingField: *mut crate::System::IO::Stream,
+    pub _OriginalInnerStream_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::IO::Stream,
+    >,
 }
 #[cfg(feature = "System+Net+ContentDecodeStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

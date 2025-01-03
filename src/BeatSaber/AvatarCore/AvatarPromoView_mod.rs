@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AvatarPromoView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _rectTransform: *mut crate::UnityEngine::RectTransform,
+    pub _rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarPromoView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

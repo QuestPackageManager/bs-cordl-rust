@@ -4,8 +4,12 @@
 pub struct PgpPrivateKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub keyID: i64,
-    pub publicKeyPacket: *mut crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
-    pub privateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    pub publicKeyPacket: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
+    >,
+    pub privateKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpPrivateKey")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

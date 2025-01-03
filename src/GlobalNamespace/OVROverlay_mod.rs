@@ -28,8 +28,8 @@ pub struct OVROverlay {
     pub layerTextureFormat: crate::GlobalNamespace::OVRPlugin_EyeTextureFormat,
     pub currentOverlayShape: crate::GlobalNamespace::OVROverlay_OverlayShape,
     pub prevOverlayShape: crate::GlobalNamespace::OVROverlay_OverlayShape,
-    pub textures: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Texture,
+    pub textures: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Texture>,
     >,
     pub isAlphaPremultiplied: bool,
     pub useBicubicFiltering: bool,
@@ -38,13 +38,19 @@ pub struct OVROverlay {
     pub useEfficientSharpen: bool,
     pub useAutomaticFiltering: bool,
     pub _previewInEditor: bool,
-    pub texturePtrs: *mut quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
+    pub texturePtrs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
+    >,
     pub externalSurfaceObject: crate::System::IntPtr,
-    pub externalSurfaceObjectCreated: *mut crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated,
+    pub externalSurfaceObjectCreated: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated,
+    >,
     pub isOverridePending: bool,
     pub _layerId_k__BackingField: i32,
-    pub layerTextures: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::OVROverlay_LayerTexture,
+    pub layerTextures: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::OVROverlay_LayerTexture,
+        >,
     >,
     pub layerDesc: crate::GlobalNamespace::OVRPlugin_LayerDesc,
     pub stageCount: i32,
@@ -53,7 +59,7 @@ pub struct OVROverlay {
     pub layerIdPtr: crate::System::IntPtr,
     pub frameIndex: i32,
     pub prevFrameIndex: i32,
-    pub rend: *mut crate::UnityEngine::Renderer,
+    pub rend: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
     pub OpenVROverlayHandle: u64,
     pub OpenVRUVOffsetAndScale: crate::UnityEngine::Vector4,
     pub OpenVRMouseScale: crate::UnityEngine::Vector2,
@@ -580,14 +586,16 @@ for crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
 }
 #[cfg(feature = "OVROverlay+LayerTexture")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVROverlay_LayerTexture {
-    pub appTexture: *mut crate::UnityEngine::Texture,
+    pub appTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub appTexturePtr: crate::System::IntPtr,
-    pub swapChain: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Texture,
+    pub swapChain: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Texture>,
     >,
-    pub swapChainPtr: *mut quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
+    pub swapChainPtr: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
+    >,
 }
 #[cfg(feature = "OVROverlay+LayerTexture")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

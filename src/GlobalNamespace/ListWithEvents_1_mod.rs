@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct ListWithEvents_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_List: *mut crate::System::Collections::Generic::List_1<T>,
-    pub OnElementAdded: *mut crate::System::Action_1<T>,
-    pub OnElementRemoved: *mut crate::System::Action_1<T>,
+    pub m_List: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<T>,
+    >,
+    pub OnElementAdded: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+    pub OnElementRemoved: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "ListWithEvents_1")]

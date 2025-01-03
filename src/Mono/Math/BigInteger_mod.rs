@@ -4,7 +4,7 @@
 pub struct BigInteger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub length: u32,
-    pub data: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
 #[cfg(feature = "Mono+Math+BigInteger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -755,8 +755,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Math::BigInteger_Kernel 
 #[derive(Debug)]
 pub struct BigInteger_ModulusRing {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cordl_mod: *mut crate::Mono::Math::BigInteger,
-    pub constant: *mut crate::Mono::Math::BigInteger,
+    pub _cordl_mod: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    pub constant: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
 }
 #[cfg(feature = "Mono+Math+BigInteger+ModulusRing")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

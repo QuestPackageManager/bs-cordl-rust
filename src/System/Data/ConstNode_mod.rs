@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ConstNode {
     __cordl_parent: crate::System::Data::ExpressionNode,
-    pub _val: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Data+ConstNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AudioTrack {
     __cordl_parent: crate::UnityEngine::Timeline::TrackAsset,
-    pub m_TrackProperties: *mut crate::UnityEngine::Timeline::AudioMixerProperties,
+    pub m_TrackProperties: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::AudioMixerProperties,
+    >,
 }
 #[cfg(feature = "UnityEngine+Timeline+AudioTrack")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

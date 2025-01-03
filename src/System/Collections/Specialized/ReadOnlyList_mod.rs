@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ReadOnlyList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _list: *mut crate::System::Collections::IList,
+    pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "System+Collections+Specialized+ReadOnlyList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

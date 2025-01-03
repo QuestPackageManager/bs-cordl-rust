@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct Srp6GroupParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub n: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub g: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Srp6GroupParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

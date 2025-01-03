@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct BakedLightDataLoader {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightmapData: *mut crate::GlobalNamespace::LightmapDataSO,
-    pub _blackTexture: *mut crate::UnityEngine::Texture2D,
+    pub _lightmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightmapDataSO>,
+    pub _blackTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
 }
 #[cfg(feature = "BakedLightDataLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

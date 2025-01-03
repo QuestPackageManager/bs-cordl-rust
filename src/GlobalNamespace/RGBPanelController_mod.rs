@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct RGBPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _redSlider: *mut crate::HMUI::ColorGradientSlider,
-    pub _greenSlider: *mut crate::HMUI::ColorGradientSlider,
-    pub _blueSlider: *mut crate::HMUI::ColorGradientSlider,
-    pub colorDidChangeEvent: *mut crate::System::Action_2<
-        crate::UnityEngine::Color,
-        crate::GlobalNamespace::ColorChangeUIEventType,
+    pub _redSlider: quest_hook::libil2cpp::Gc<crate::HMUI::ColorGradientSlider>,
+    pub _greenSlider: quest_hook::libil2cpp::Gc<crate::HMUI::ColorGradientSlider>,
+    pub _blueSlider: quest_hook::libil2cpp::Gc<crate::HMUI::ColorGradientSlider>,
+    pub colorDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            crate::UnityEngine::Color,
+            crate::GlobalNamespace::ColorChangeUIEventType,
+        >,
     >,
     pub _color: crate::UnityEngine::Color,
 }

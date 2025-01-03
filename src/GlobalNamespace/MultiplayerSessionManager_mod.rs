@@ -3,44 +3,56 @@
 #[derive(Debug)]
 pub struct MultiplayerSessionManager {
     __cordl_parent: crate::GlobalNamespace::StandaloneMonobehavior,
-    pub _packetSerializer: *mut crate::GlobalNamespace::NetworkPacketSerializer_2<
-        crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _packetSerializer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NetworkPacketSerializer_2<
+            crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     >,
-    pub _connectedPlayers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _connectedPlayers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     >,
-    pub _localPlayerState: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _localPlayerState: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub _maxPlayerCount: i32,
     pub _connectionState: crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState,
-    pub _freeSortIndices: *mut crate::System::Collections::Generic::Queue_1<i32>,
-    pub connectedEvent: *mut crate::System::Action,
-    pub connectionFailedEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::ConnectionFailedReason,
+    pub _freeSortIndices: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<i32>,
     >,
-    pub playerConnectedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub connectedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub connectionFailedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
     >,
-    pub playerDisconnectedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub playerConnectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::IConnectedPlayer>,
     >,
-    pub playerAvatarChangedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub playerDisconnectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::IConnectedPlayer>,
     >,
-    pub playerStateChangedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub playerAvatarChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::IConnectedPlayer>,
     >,
-    pub connectionOwnerStateChangedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub playerStateChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::IConnectedPlayer>,
     >,
-    pub disconnectedEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::DisconnectedReason,
+    pub connectionOwnerStateChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::IConnectedPlayer>,
     >,
-    pub pollUpdateEvent: *mut crate::System::Action,
-    pub _connectionOwner_k__BackingField: *mut crate::GlobalNamespace::IConnectedPlayer,
-    pub _connectedPlayerManager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
+    pub disconnectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
+    >,
+    pub pollUpdateEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _connectionOwner_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
+    pub _connectedPlayerManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ConnectedPlayerManager,
+    >,
 }
 #[cfg(feature = "MultiplayerSessionManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

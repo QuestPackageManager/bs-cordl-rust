@@ -4,9 +4,13 @@
 pub struct ObstacleScaleUp {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _fullScalePart: f32,
-    pub _targetTransform: *mut crate::UnityEngine::Transform,
-    pub _obstacleController: *mut crate::GlobalNamespace::ObstacleController,
-    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
+    pub _targetTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _obstacleController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ObstacleController,
+    >,
+    pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVariableMovementDataProvider,
+    >,
 }
 #[cfg(feature = "ObstacleScaleUp")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

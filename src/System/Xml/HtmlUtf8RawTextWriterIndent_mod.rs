@@ -5,7 +5,7 @@ pub struct HtmlUtf8RawTextWriterIndent {
     __cordl_parent: crate::System::Xml::HtmlUtf8RawTextWriter,
     pub indentLevel: i32,
     pub endBlockPos: i32,
-    pub indentChars: *mut quest_hook::libil2cpp::Il2CppString,
+    pub indentChars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub newLineOnAttributes: bool,
 }
 #[cfg(feature = "System+Xml+HtmlUtf8RawTextWriterIndent")]

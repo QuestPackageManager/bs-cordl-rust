@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct Curve25519 {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractFpCurve,
-    pub m_infinity: *mut crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519Point,
+    pub m_infinity: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519Point,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -221,8 +223,10 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519 {
 #[derive(Debug)]
 pub struct Curve25519_Curve25519LookupTable {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
-    pub m_outer: *mut crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519,
-    pub m_table: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub m_outer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519,
+    >,
+    pub m_table: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub m_size: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519+Curve25519LookupTable")]

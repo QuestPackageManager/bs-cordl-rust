@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct DeserializableList_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Data: *mut crate::System::Collections::Generic::List_1<T>,
-    pub _NextUrl: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _PreviousUrl: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Data: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    pub _NextUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _PreviousUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "Oculus+Platform+Models+DeserializableList_1")]

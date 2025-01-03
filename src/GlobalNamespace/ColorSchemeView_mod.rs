@@ -3,13 +3,21 @@
 #[derive(Debug)]
 pub struct ColorSchemeView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _saberAColorImage: *mut crate::UnityEngine::UI::Image,
-    pub _saberBColorImage: *mut crate::UnityEngine::UI::Image,
-    pub _environment0ColorImage: *mut crate::UnityEngine::UI::Image,
-    pub _environment1ColorImage: *mut crate::UnityEngine::UI::Image,
-    pub _environmentColor0BoostImage: *mut crate::UnityEngine::UI::Image,
-    pub _environmentColor1BoostImage: *mut crate::UnityEngine::UI::Image,
-    pub _obstacleColorImage: *mut crate::UnityEngine::UI::Image,
+    pub _saberAColorImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _saberBColorImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    pub _environment0ColorImage: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Image,
+    >,
+    pub _environment1ColorImage: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Image,
+    >,
+    pub _environmentColor0BoostImage: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Image,
+    >,
+    pub _environmentColor1BoostImage: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Image,
+    >,
+    pub _obstacleColorImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
 }
 #[cfg(feature = "ColorSchemeView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

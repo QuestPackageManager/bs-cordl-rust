@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AlwaysVisibleQuad {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _mesh: *mut crate::UnityEngine::Mesh,
+    pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
 }
 #[cfg(feature = "AlwaysVisibleQuad")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

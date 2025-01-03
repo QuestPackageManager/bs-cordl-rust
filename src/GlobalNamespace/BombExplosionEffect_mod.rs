@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct BombExplosionEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _debrisPS: *mut crate::UnityEngine::ParticleSystem,
-    pub _explosionPS: *mut crate::UnityEngine::ParticleSystem,
+    pub _debrisPS: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+    pub _explosionPS: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
     pub _debrisCount: i32,
     pub _explosionParticlesCount: i32,
     pub _emitParams: crate::UnityEngine::ParticleSystem_EmitParams,

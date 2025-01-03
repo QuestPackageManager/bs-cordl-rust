@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct MainThreadDispatcher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dispatchQueue: *mut crate::System::Collections::Concurrent::ConcurrentQueue_1<
-        *mut crate::System::Action,
+    pub _dispatchQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Concurrent::ConcurrentQueue_1<
+            *mut crate::System::Action,
+        >,
     >,
 }
 #[cfg(feature = "MainThreadDispatcher")]

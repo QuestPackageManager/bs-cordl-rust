@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct RegexCharClass {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _rangelist: *mut crate::System::Collections::Generic::List_1<
-        crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
+    pub _rangelist: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
+        >,
     >,
-    pub _categories: *mut crate::System::Text::StringBuilder,
+    pub _categories: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub _canonical: bool,
     pub _negate: bool,
-    pub _subtractor: *mut crate::System::Text::RegularExpressions::RegexCharClass,
+    pub _subtractor: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::RegexCharClass,
+    >,
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -476,7 +480,7 @@ for crate::System::Text::RegularExpressions::RegexCharClass {
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RegexCharClass_LowerCaseMapping {
     pub ChMin: char,
     pub ChMax: char,
@@ -519,7 +523,7 @@ impl crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRange")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RegexCharClass_SingleRange {
     pub First: char,
     pub Last: char,

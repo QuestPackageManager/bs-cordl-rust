@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct Challenge {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub owf: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub witness: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub challenge: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    pub owf: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub witness: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub challenge: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+Challenge")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

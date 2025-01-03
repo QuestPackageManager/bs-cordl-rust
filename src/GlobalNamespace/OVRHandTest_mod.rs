@@ -95,17 +95,19 @@ for crate::GlobalNamespace::BoolMonitor_OVRHandTest_BoolGenerator {
 #[derive(Debug)]
 pub struct OVRHandTest {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub uiText: *mut crate::UnityEngine::UI::Text,
-    pub monitors: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::OVRHandTest_BoolMonitor,
+    pub uiText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    pub monitors: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::OVRHandTest_BoolMonitor,
+        >,
     >,
-    pub data: *mut crate::System::Text::StringBuilder,
+    pub data: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub hs_LH: crate::GlobalNamespace::OVRPlugin_HandState,
     pub hs_RH: crate::GlobalNamespace::OVRPlugin_HandState,
     pub skel_LH: crate::GlobalNamespace::OVRPlugin_Skeleton,
     pub skel_RH: crate::GlobalNamespace::OVRPlugin_Skeleton,
-    pub mesh_LH: *mut crate::GlobalNamespace::OVRPlugin_Mesh,
-    pub mesh_RH: *mut crate::GlobalNamespace::OVRPlugin_Mesh,
+    pub mesh_LH: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRPlugin_Mesh>,
+    pub mesh_RH: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRPlugin_Mesh>,
     pub result_skel_LH: bool,
     pub result_skel_RH: bool,
     pub result_mesh_LH: bool,
@@ -184,8 +186,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHandTest {
 #[derive(Debug)]
 pub struct OVRHandTest_BoolMonitor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_generator: *mut crate::GlobalNamespace::BoolMonitor_OVRHandTest_BoolGenerator,
+    pub m_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_generator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BoolMonitor_OVRHandTest_BoolGenerator,
+    >,
     pub m_prevValue: bool,
     pub m_currentValue: bool,
     pub m_currentValueRecentlyChanged: bool,

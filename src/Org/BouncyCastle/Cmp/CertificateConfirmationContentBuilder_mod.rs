@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct CertificateConfirmationContentBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub digestAlgFinder: *mut crate::Org::BouncyCastle::Cms::DefaultDigestAlgorithmIdentifierFinder,
-    pub acceptedCerts: *mut crate::System::Collections::IList,
-    pub acceptedReqIds: *mut crate::System::Collections::IList,
+    pub digestAlgFinder: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::DefaultDigestAlgorithmIdentifierFinder,
+    >,
+    pub acceptedCerts: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub acceptedReqIds: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Cmp+CertificateConfirmationContentBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct AddToExistingGameObjectComponentProviderGetter {
     __cordl_parent: crate::Zenject::AddToGameObjectComponentProviderBase,
-    pub _gameObjectGetter: *mut crate::System::Func_2<
-        *mut crate::Zenject::InjectContext,
-        *mut crate::UnityEngine::GameObject,
+    pub _gameObjectGetter: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            *mut crate::Zenject::InjectContext,
+            *mut crate::UnityEngine::GameObject,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+AddToExistingGameObjectComponentProviderGetter")]

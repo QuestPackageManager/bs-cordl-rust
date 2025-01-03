@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct GameVersionProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _versionTask: *mut crate::System::Threading::Tasks::Task_1<
-        *mut crate::BeatSaber::Init::GameVersion,
+    pub _versionTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<*mut crate::BeatSaber::Init::GameVersion>,
     >,
-    pub _platformInit: *mut crate::BeatSaber::Init::IPlatformInit,
+    pub _platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
 }
 #[cfg(feature = "BeatSaber+Init+GameVersionProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

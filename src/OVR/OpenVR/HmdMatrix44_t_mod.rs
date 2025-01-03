@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+HmdMatrix44_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HmdMatrix44_t {
     pub m0: f32,
     pub m1: f32,

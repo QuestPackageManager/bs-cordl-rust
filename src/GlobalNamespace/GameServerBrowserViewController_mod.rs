@@ -3,12 +3,20 @@
 #[derive(Debug)]
 pub struct GameServerBrowserViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _filterServersButton: *mut crate::UnityEngine::UI::Button,
-    pub _filterText: *mut crate::GlobalNamespace::GameServersFilterText,
-    pub _createServerButton: *mut crate::UnityEngine::UI::Button,
-    pub _gameServersListTableView: *mut crate::GlobalNamespace::GameServersListTableView,
-    pub _mainLoadingControl: *mut crate::GlobalNamespace::LoadingControl,
-    pub _smallLoadingControl: *mut crate::GlobalNamespace::LoadingControl,
+    pub _filterServersButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _filterText: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameServersFilterText,
+    >,
+    pub _createServerButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _gameServersListTableView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameServersListTableView,
+    >,
+    pub _mainLoadingControl: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LoadingControl,
+    >,
+    pub _smallLoadingControl: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LoadingControl,
+    >,
 }
 #[cfg(feature = "GameServerBrowserViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

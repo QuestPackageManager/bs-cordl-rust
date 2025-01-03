@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct ECDHKekGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub kdf: *mut crate::Org::BouncyCastle::Crypto::IDerivationFunction,
-    pub algorithm: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    pub kdf: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IDerivationFunction,
+    >,
+    pub algorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
     pub keySize: i32,
-    pub z: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+Kdf+ECDHKekGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

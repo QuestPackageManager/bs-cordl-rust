@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DataRelationPropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
-    pub _Relation_k__BackingField: *mut crate::System::Data::DataRelation,
+    pub _Relation_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Data::DataRelation,
+    >,
 }
 #[cfg(feature = "System+Data+DataRelationPropertyDescriptor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

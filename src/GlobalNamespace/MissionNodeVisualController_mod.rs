@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct MissionNodeVisualController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionToggle: *mut crate::GlobalNamespace::MissionToggle,
-    pub _missionNode: *mut crate::GlobalNamespace::MissionNode,
-    pub nodeWasSelectEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MissionNodeVisualController,
+    pub _missionToggle: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionToggle>,
+    pub _missionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+    pub nodeWasSelectEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::MissionNodeVisualController>,
     >,
-    pub nodeWasDisplayedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MissionNodeVisualController,
+    pub nodeWasDisplayedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::MissionNodeVisualController>,
     >,
     pub _selected: bool,
     pub _isInitialized: bool,

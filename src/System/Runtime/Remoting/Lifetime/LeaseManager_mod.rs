@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct LeaseManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _objects: *mut crate::System::Collections::ArrayList,
-    pub _timer: *mut crate::System::Threading::Timer,
+    pub _objects: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _timer: quest_hook::libil2cpp::Gc<crate::System::Threading::Timer>,
 }
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+LeaseManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

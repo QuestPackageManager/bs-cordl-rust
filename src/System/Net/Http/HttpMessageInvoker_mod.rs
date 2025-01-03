@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HttpMessageInvoker {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub handler: *mut crate::System::Net::Http::HttpMessageHandler,
+    pub handler: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMessageHandler>,
     pub disposeHandler: bool,
 }
 #[cfg(feature = "System+Net+Http+HttpMessageInvoker")]

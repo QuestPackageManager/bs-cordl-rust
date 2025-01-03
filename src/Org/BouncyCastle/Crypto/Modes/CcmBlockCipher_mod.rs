@@ -3,15 +3,21 @@
 #[derive(Debug)]
 pub struct CcmBlockCipher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
-    pub macBlock: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    >,
+    pub macBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub forEncryption: bool,
-    pub nonce: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub initialAssociatedText: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub nonce: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub initialAssociatedText: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub macSize: i32,
-    pub keyParam: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
-    pub associatedText: *mut crate::System::IO::MemoryStream,
-    pub data: *mut crate::System::IO::MemoryStream,
+    pub keyParam: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    >,
+    pub associatedText: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
+    pub data: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+CcmBlockCipher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

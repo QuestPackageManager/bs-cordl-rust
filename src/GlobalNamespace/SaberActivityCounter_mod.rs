@@ -8,9 +8,11 @@ pub struct SaberActivityCounter {
     pub _increaseSpeed: f32,
     pub _decreaseSpeed: f32,
     pub _movementSensitivityThreshold: f32,
-    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
-    pub _gamePause: *mut crate::GlobalNamespace::IGamePause,
-    pub totalDistanceDidChangeEvent: *mut crate::System::Action_1<f32>,
+    pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
+    pub _gamePause: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>,
+    pub totalDistanceDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<f32>,
+    >,
     pub _prevLeftSaberTipPos: crate::UnityEngine::Vector3,
     pub _prevRightSaberTipPos: crate::UnityEngine::Vector3,
     pub _prevLeftHandPos: crate::UnityEngine::Vector3,
@@ -20,8 +22,12 @@ pub struct SaberActivityCounter {
     pub _rightSaberMovementDistance: f32,
     pub _leftHandMovementDistance: f32,
     pub _rightHandMovementDistance: f32,
-    pub _saberMovementHistoryRecorder: *mut crate::GlobalNamespace::MovementHistoryRecorder,
-    pub _handMovementHistoryRecorder: *mut crate::GlobalNamespace::MovementHistoryRecorder,
+    pub _saberMovementHistoryRecorder: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MovementHistoryRecorder,
+    >,
+    pub _handMovementHistoryRecorder: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MovementHistoryRecorder,
+    >,
 }
 #[cfg(feature = "SaberActivityCounter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct SingleProviderBindingFinalizer {
     __cordl_parent: crate::Zenject::ProviderBindingFinalizer,
-    pub _providerFactory: *mut crate::System::Func_3<
-        *mut crate::Zenject::DiContainer,
-        *mut crate::System::Type,
-        *mut crate::Zenject::IProvider,
+    pub _providerFactory: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<
+            *mut crate::Zenject::DiContainer,
+            *mut crate::System::Type,
+            *mut crate::Zenject::IProvider,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+SingleProviderBindingFinalizer")]

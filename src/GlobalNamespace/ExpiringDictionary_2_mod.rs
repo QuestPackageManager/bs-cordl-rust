@@ -6,17 +6,23 @@ pub struct ExpiringDictionary_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _timeProvider: *mut crate::BGNet::Core::ITimeProvider,
+    pub _timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
     pub _expirationLengthMs: i64,
-    pub _expirationQueue: *mut crate::GlobalNamespace::OrderedSet_1<
-        *mut crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
+    pub _expirationQueue: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OrderedSet_1<
+            *mut crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
+        >,
     >,
-    pub _entryLookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        TKey,
-        *mut crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
+    pub _entryLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            TKey,
+            *mut crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
+        >,
     >,
-    pub _reusableEntries: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
+    pub _reusableEntries: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
+        >,
     >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,

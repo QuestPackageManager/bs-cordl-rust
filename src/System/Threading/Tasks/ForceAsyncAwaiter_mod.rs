@@ -1,8 +1,8 @@
 #[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ForceAsyncAwaiter {
-    pub _task: *mut crate::System::Threading::Tasks::Task,
+    pub _task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
 }
 #[cfg(feature = "System+Threading+Tasks+ForceAsyncAwaiter")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

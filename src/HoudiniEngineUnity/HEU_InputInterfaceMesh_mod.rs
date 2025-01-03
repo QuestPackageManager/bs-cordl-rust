@@ -154,18 +154,18 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh {
 #[derive(Debug)]
 pub struct HEU_InputInterfaceMesh_HEU_InputDataMesh {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _mesh: *mut crate::UnityEngine::Mesh,
-    pub _materials: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Material,
+    pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub _materials: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
     >,
-    pub _meshPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _meshName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _meshPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _meshName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _numVertices: i32,
     pub _numSubMeshes: i32,
-    pub _indexStart: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub _indexCount: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub _indexStart: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub _indexCount: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub _LODScreenTransition: f32,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh+HEU_InputDataMesh")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -223,8 +223,10 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh {
 #[derive(Debug)]
 pub struct HEU_InputInterfaceMesh_HEU_InputDataMeshes {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_InputData,
-    pub _inputMeshes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh,
+    pub _inputMeshes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh,
+        >,
     >,
     pub _hasLOD: bool,
 }

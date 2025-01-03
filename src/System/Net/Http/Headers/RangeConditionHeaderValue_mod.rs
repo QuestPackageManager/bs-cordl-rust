@@ -4,7 +4,9 @@
 pub struct RangeConditionHeaderValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Date_k__BackingField: crate::System::Nullable_1<crate::System::DateTimeOffset>,
-    pub _EntityTag_k__BackingField: *mut crate::System::Net::Http::Headers::EntityTagHeaderValue,
+    pub _EntityTag_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::Headers::EntityTagHeaderValue,
+    >,
 }
 #[cfg(feature = "System+Net+Http+Headers+RangeConditionHeaderValue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

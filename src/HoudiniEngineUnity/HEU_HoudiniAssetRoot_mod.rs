@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct HEU_HoudiniAssetRoot {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _houdiniAsset: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
-    pub _bakeTargets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::GameObject,
+    pub _houdiniAsset: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+    >,
+    pub _bakeTargets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::GameObject>,
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAssetRoot")]

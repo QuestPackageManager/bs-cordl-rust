@@ -3,15 +3,33 @@
 #[derive(Debug)]
 pub struct MissionLevelFailedController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _levelFailedTextEffect: *mut crate::GlobalNamespace::LevelFailedTextEffect,
-    pub _missionLevelSceneSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-    pub _prepareLevelCompletionResults: *mut crate::GlobalNamespace::PrepareLevelCompletionResults,
-    pub _missionObjectiveCheckersManager: *mut crate::GlobalNamespace::MissionObjectiveCheckersManager,
-    pub _initData: *mut crate::GlobalNamespace::MissionLevelFailedController_InitData,
-    pub _beatmapObjectSpawnController: *mut crate::GlobalNamespace::BeatmapObjectSpawnController,
-    pub _gameSongController: *mut crate::GlobalNamespace::GameSongController,
-    pub _gameplayManager: *mut crate::GlobalNamespace::ILevelEndActions,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
+    pub _levelFailedTextEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelFailedTextEffect,
+    >,
+    pub _missionLevelSceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+    >,
+    pub _prepareLevelCompletionResults: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PrepareLevelCompletionResults,
+    >,
+    pub _missionObjectiveCheckersManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionObjectiveCheckersManager,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionLevelFailedController_InitData,
+    >,
+    pub _beatmapObjectSpawnController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectSpawnController,
+    >,
+    pub _gameSongController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameSongController,
+    >,
+    pub _gameplayManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILevelEndActions,
+    >,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
 }
 #[cfg(feature = "MissionLevelFailedController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

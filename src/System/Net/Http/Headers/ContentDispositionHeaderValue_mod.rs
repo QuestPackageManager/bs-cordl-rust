@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct ContentDispositionHeaderValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub dispositionType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub parameters: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+    pub dispositionType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub parameters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Net::Http::Headers::NameValueHeaderValue,
+        >,
     >,
 }
 #[cfg(feature = "System+Net+Http+Headers+ContentDispositionHeaderValue")]

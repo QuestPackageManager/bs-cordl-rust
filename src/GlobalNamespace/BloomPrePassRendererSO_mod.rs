@@ -3,18 +3,26 @@
 #[derive(Debug)]
 pub struct BloomPrePassRendererSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _bloomFog: *mut crate::GlobalNamespace::BloomFogSO,
-    pub _preallocationData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData,
+    pub _bloomFog: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomFogSO>,
+    pub _preallocationData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData,
+        >,
     >,
-    pub _lightsRenderingData: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::GlobalNamespace::BloomPrePassLightTypeSO,
-        *mut crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData,
+    pub _lightsRenderingData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::GlobalNamespace::BloomPrePassLightTypeSO,
+            *mut crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData,
+        >,
     >,
-    pub _commandBuffer: *mut crate::UnityEngine::Rendering::CommandBuffer,
+    pub _commandBuffer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Rendering::CommandBuffer,
+    >,
     pub _initialized: bool,
-    pub _blackTexture: *mut crate::UnityEngine::Texture2D,
-    pub _lowestResBloomTexture: *mut crate::UnityEngine::RenderTexture,
+    pub _blackTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    pub _lowestResBloomTexture: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RenderTexture,
+    >,
 }
 #[cfg(feature = "BloomPrePassRendererSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -285,9 +293,11 @@ for crate::GlobalNamespace::BloomPrePassRendererSO {
 #[derive(Debug)]
 pub struct BloomPrePassRendererSO_LightsRenderingData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mesh: *mut crate::UnityEngine::Mesh,
-    pub lightQuads: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::BloomPrePassLight_QuadData,
+    pub mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub lightQuads: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::BloomPrePassLight_QuadData,
+        >,
     >,
     pub subMeshDescriptor: crate::UnityEngine::Rendering::SubMeshDescriptor,
 }
@@ -347,7 +357,9 @@ for crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
 #[derive(Debug)]
 pub struct BloomPrePassRendererSO_PreallocationData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub lightType: *mut crate::GlobalNamespace::BloomPrePassLightTypeSO,
+    pub lightType: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassLightTypeSO,
+    >,
     pub preallocateCount: i32,
 }
 #[cfg(feature = "BloomPrePassRendererSO+PreallocationData")]

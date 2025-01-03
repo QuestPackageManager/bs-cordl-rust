@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct DomNameTable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub entries: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::XmlName,
+    pub entries: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlName>,
     >,
     pub count: i32,
     pub mask: i32,
-    pub ownerDocument: *mut crate::System::Xml::XmlDocument,
-    pub nameTable: *mut crate::System::Xml::XmlNameTable,
+    pub ownerDocument: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
+    pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
 }
 #[cfg(feature = "System+Xml+DomNameTable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

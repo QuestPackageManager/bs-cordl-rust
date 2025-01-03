@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct LevelPackInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _packID_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _levels_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::LevelInfo,
+    pub _packID_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _levels_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::LevelInfo>,
     >,
     pub _minimumProtocolVersion_k__BackingField: u32,
 }

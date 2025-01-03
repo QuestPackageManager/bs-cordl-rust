@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct GuiRenderer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _renderableManager: *mut crate::Zenject::GuiRenderableManager,
+    pub _renderableManager: quest_hook::libil2cpp::Gc<
+        crate::Zenject::GuiRenderableManager,
+    >,
 }
 #[cfg(feature = "Zenject+GuiRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

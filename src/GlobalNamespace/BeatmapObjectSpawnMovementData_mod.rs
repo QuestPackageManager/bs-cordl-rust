@@ -12,7 +12,9 @@ pub struct BeatmapObjectSpawnMovementData {
     pub _verticalObstaclePosY: f32,
     pub _obstacleTopPosY: f32,
     pub _noteLinesCount: i32,
-    pub _jumpOffsetYProvider: *mut crate::GlobalNamespace::IJumpOffsetYProvider,
+    pub _jumpOffsetYProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IJumpOffsetYProvider,
+    >,
     pub _rightVec: crate::UnityEngine::Vector3,
 }
 #[cfg(feature = "BeatmapObjectSpawnMovementData")]

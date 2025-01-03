@@ -3,18 +3,26 @@
 #[derive(Debug)]
 pub struct XmlValidatingReaderImpl {
     __cordl_parent: crate::System::Xml::XmlReader,
-    pub coreReader: *mut crate::System::Xml::XmlReader,
-    pub coreReaderImpl: *mut crate::System::Xml::XmlTextReaderImpl,
-    pub coreReaderNSResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
+    pub coreReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    pub coreReaderImpl: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextReaderImpl>,
+    pub coreReaderNSResolver: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::IXmlNamespaceResolver,
+    >,
     pub validationType: crate::System::Xml::ValidationType,
-    pub validator: *mut crate::System::Xml::Schema::BaseValidator,
-    pub schemaCollection: *mut crate::System::Xml::Schema::XmlSchemaCollection,
+    pub validator: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BaseValidator>,
+    pub schemaCollection: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaCollection,
+    >,
     pub processIdentityConstraints: bool,
     pub parsingFunction: crate::System::Xml::XmlValidatingReaderImpl_ParsingFunction,
-    pub eventHandling: *mut crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling,
-    pub parserContext: *mut crate::System::Xml::XmlParserContext,
-    pub readBinaryHelper: *mut crate::System::Xml::ReadContentAsBinaryHelper,
-    pub outerReader: *mut crate::System::Xml::XmlReader,
+    pub eventHandling: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling,
+    >,
+    pub parserContext: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
+    pub readBinaryHelper: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::ReadContentAsBinaryHelper,
+    >,
+    pub outerReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
 }
 #[cfg(feature = "System+Xml+XmlValidatingReaderImpl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -805,8 +813,10 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct XmlValidatingReaderImpl_ValidationEventHandling {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub reader: *mut crate::System::Xml::XmlValidatingReaderImpl,
-    pub eventHandler: *mut crate::System::Xml::Schema::ValidationEventHandler,
+    pub reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlValidatingReaderImpl>,
+    pub eventHandler: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::ValidationEventHandler,
+    >,
 }
 #[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

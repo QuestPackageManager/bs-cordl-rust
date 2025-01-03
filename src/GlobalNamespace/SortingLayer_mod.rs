@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SortingLayer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _renderer: *mut crate::UnityEngine::Renderer,
+    pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
 }
 #[cfg(feature = "SortingLayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

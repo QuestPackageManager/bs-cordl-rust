@@ -7,11 +7,15 @@ pub struct ContentCatalogProvider {
     __cordl_parent: crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase,
     pub DisableCatalogUpdateOnStart: bool,
     pub IsLocalCatalogInBundle: bool,
-    pub m_LocationToCatalogLoadOpMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-        *mut crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp,
+    pub m_LocationToCatalogLoadOpMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            *mut crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp,
+        >,
     >,
-    pub m_RM: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
+    pub m_RM: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceManager,
+    >,
 }
 #[cfg(
     feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
@@ -140,15 +144,21 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct ContentCatalogProvider_InternalOp {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_LocalDataPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_RemoteHashValue: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_LocalHashValue: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_LocalDataPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_RemoteHashValue: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_LocalHashValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_ProviderInterface: crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
-    pub m_ContentCatalogData: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+    pub m_ContentCatalogData: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+    >,
     pub m_ContentCatalogDataLoadOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
     >,
-    pub m_BundledCatalog: *mut crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_ContentCatalogProvider_BundledCatalog,
+    pub m_BundledCatalog: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_ContentCatalogProvider_BundledCatalog,
+    >,
     pub m_Retried: bool,
     pub m_DisableCatalogUpdateOnStart: bool,
     pub m_IsLocalCatalogInBundle: bool,
@@ -367,17 +377,29 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
 #[derive(Debug)]
 pub struct InternalOp_ContentCatalogProvider_BundledCatalog {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_BundlePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_BundlePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_OpInProgress: bool,
-    pub m_LoadBundleRequest: *mut crate::UnityEngine::AssetBundleCreateRequest,
-    pub m_CatalogAssetBundle: *mut crate::UnityEngine::AssetBundle,
-    pub m_LoadTextAssetRequest: *mut crate::UnityEngine::AssetBundleRequest,
-    pub m_CatalogData: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
-    pub m_WebRequestQueueOperation: *mut crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
-    pub m_RequestOperation: *mut crate::UnityEngine::AsyncOperation,
+    pub m_LoadBundleRequest: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AssetBundleCreateRequest,
+    >,
+    pub m_CatalogAssetBundle: quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
+    pub m_LoadTextAssetRequest: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AssetBundleRequest,
+    >,
+    pub m_CatalogData: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+    >,
+    pub m_WebRequestQueueOperation: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
+    >,
+    pub m_RequestOperation: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AsyncOperation,
+    >,
     pub m_WebRequestTimeout: i32,
-    pub OnLoaded: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+    pub OnLoaded: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+        >,
     >,
 }
 #[cfg(

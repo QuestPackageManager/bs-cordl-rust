@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct CachedOpenTypeProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _creator: *mut crate::Zenject::IProvider,
-    pub _providerMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Type,
-        *mut crate::Zenject::CachedProvider,
+    pub _creator: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+    pub _providerMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Type,
+            *mut crate::Zenject::CachedProvider,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+CachedOpenTypeProvider")]

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct IndexedSet_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_List: *mut crate::System::Collections::Generic::List_1<T>,
-    pub m_Dictionary: *mut crate::System::Collections::Generic::Dictionary_2<T, i32>,
+    pub m_List: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<T>,
+    >,
+    pub m_Dictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<T, i32>,
+    >,
     pub m_EnabledObjectCount: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

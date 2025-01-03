@@ -178,10 +178,18 @@ pub struct Vector4Field_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         crate::UnityEngine::Vector4,
     >,
-    pub m_XValue: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_YValue: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_ZValue: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_WValue: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    pub m_XValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_YValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_ZValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_WValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Vector4Field+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

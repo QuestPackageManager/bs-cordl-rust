@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AsyncComputeOperation_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::AsyncComputeOperation,
-    pub _tcs: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<T>,
+    pub _tcs: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskCompletionSource_1<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "AsyncComputeOperation_1")]

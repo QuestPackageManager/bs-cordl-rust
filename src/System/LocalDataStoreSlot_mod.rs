@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LocalDataStoreSlot {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_mgr: *mut crate::System::LocalDataStoreMgr,
+    pub m_mgr: quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreMgr>,
     pub m_slot: i32,
     pub m_cookie: i64,
 }

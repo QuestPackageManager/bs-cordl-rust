@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct TimeControlPlayable {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
-    pub m_timeControl: *mut crate::UnityEngine::Timeline::ITimeControl,
+    pub m_timeControl: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Timeline::ITimeControl,
+    >,
     pub m_started: bool,
 }
 #[cfg(feature = "UnityEngine+Timeline+TimeControlPlayable")]

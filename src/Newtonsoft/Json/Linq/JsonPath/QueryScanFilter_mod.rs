@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct QueryScanFilter {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
-    pub Expression: *mut crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
+    pub Expression: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+QueryScanFilter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

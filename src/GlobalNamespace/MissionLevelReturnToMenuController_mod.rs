@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct MissionLevelReturnToMenuController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionLevelSceneSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-    pub _prepareLevelCompletionResults: *mut crate::GlobalNamespace::PrepareLevelCompletionResults,
-    pub _missionObjectiveCheckersManager: *mut crate::GlobalNamespace::MissionObjectiveCheckersManager,
+    pub _missionLevelSceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+    >,
+    pub _prepareLevelCompletionResults: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PrepareLevelCompletionResults,
+    >,
+    pub _missionObjectiveCheckersManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionObjectiveCheckersManager,
+    >,
 }
 #[cfg(feature = "MissionLevelReturnToMenuController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct MainEffectContainerSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _mainEffect: *mut crate::GlobalNamespace::MainEffectSO,
-    pub _postProcessEnabled: *mut crate::GlobalNamespace::BoolSO,
+    pub _mainEffect: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainEffectSO>,
+    pub _postProcessEnabled: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BoolSO>,
 }
 #[cfg(feature = "MainEffectContainerSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SpectrogramMultiplierFloatFxEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    pub _spectrogram: *mut crate::GlobalNamespace::SpectrogramRowPropertyAnimator,
+    pub _spectrogram: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SpectrogramRowPropertyAnimator,
+    >,
 }
 #[cfg(feature = "SpectrogramMultiplierFloatFxEffectTarget")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

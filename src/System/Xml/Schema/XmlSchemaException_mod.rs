@@ -3,15 +3,17 @@
 #[derive(Debug)]
 pub struct XmlSchemaException {
     __cordl_parent: crate::System::SystemException,
-    pub res: *mut quest_hook::libil2cpp::Il2CppString,
-    pub args: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub args: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub sourceUri: *mut quest_hook::libil2cpp::Il2CppString,
+    pub sourceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub lineNumber: i32,
     pub linePosition: i32,
-    pub sourceSchemaObject: *mut crate::System::Xml::Schema::XmlSchemaObject,
-    pub message: *mut quest_hook::libil2cpp::Il2CppString,
+    pub sourceSchemaObject: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObject,
+    >,
+    pub message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "LIV+SDK+Unity+SDKControllerState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SDKControllerState {
     pub hmdposition: crate::LIV::SDK::Unity::SDKVector3,
     pub hmdrotation: crate::LIV::SDK::Unity::SDKQuaternion,

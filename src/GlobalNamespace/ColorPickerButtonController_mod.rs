@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct ColorPickerButtonController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _button: *mut crate::UnityEngine::UI::Button,
-    pub _colorImage: *mut crate::UnityEngine::UI::Image,
+    pub _button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _colorImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
 }
 #[cfg(feature = "ColorPickerButtonController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

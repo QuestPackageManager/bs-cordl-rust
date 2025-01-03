@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct GetFromPrefabComponentProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _prefabInstantiator: *mut crate::Zenject::IPrefabInstantiator,
-    pub _componentType: *mut crate::System::Type,
+    pub _prefabInstantiator: quest_hook::libil2cpp::Gc<
+        crate::Zenject::IPrefabInstantiator,
+    >,
+    pub _componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _matchSingle: bool,
 }
 #[cfg(feature = "Zenject+GetFromPrefabComponentProvider")]

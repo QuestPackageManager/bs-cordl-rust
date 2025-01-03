@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct NameValueHeaderValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub value: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Net+Http+Headers+NameValueHeaderValue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

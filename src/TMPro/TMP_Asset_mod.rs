@@ -5,7 +5,7 @@ pub struct TMP_Asset {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_InstanceID: i32,
     pub hashCode: i32,
-    pub material: *mut crate::UnityEngine::Material,
+    pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub materialHashCode: i32,
 }
 #[cfg(feature = "TMPro+TMP_Asset")]

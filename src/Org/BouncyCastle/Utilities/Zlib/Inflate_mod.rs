@@ -5,12 +5,14 @@ pub struct Inflate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mode: i32,
     pub method: i32,
-    pub was: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+    pub was: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
     pub need: i64,
     pub marker: i32,
     pub nowrap: i32,
     pub wbits: i32,
-    pub blocks: *mut crate::Org::BouncyCastle::Utilities::Zlib::InfBlocks,
+    pub blocks: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Zlib::InfBlocks,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+Inflate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

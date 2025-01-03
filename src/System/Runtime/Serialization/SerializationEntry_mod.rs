@@ -1,10 +1,10 @@
 #[cfg(feature = "System+Runtime+Serialization+SerializationEntry")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SerializationEntry {
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _value: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _type: *mut crate::System::Type,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Runtime+Serialization+SerializationEntry")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

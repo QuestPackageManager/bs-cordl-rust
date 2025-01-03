@@ -7,7 +7,9 @@ pub struct UnityWebRequestOperation {
     __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         *mut crate::UnityEngine::Networking::UnityWebRequest,
     >,
-    pub m_UWR: *mut crate::UnityEngine::Networking::UnityWebRequest,
+    pub m_UWR: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Networking::UnityWebRequest,
+    >,
 }
 #[cfg(
     feature = "UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"

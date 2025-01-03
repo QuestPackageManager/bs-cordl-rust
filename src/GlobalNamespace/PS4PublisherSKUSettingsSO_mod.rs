@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct PS4PublisherSKUSettingsSO {
     __cordl_parent: crate::GlobalNamespace::SonyPublisherSKUSettingsSO,
-    pub _buildVersion: *mut crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion,
-    pub _latestBuildVersion: *mut crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion,
+    pub _buildVersion: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion,
+    >,
+    pub _latestBuildVersion: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion,
+    >,
     pub _parentalLockLevel: i32,
-    pub _npTitleFilenamePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _npTitleFilenamePath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _defaultAgeRestriction: i32,
     pub _applicationCategory: crate::GlobalNamespace::PS4ApplicationCategory,
 }
@@ -132,8 +138,10 @@ for crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
 #[derive(Debug)]
 pub struct PS4PublisherSKUSettingsSO_PS4BuildVersion {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _masterVersion: *mut crate::GlobalNamespace::SonyVersion,
-    pub _applicationVersion: *mut crate::GlobalNamespace::SonyVersion,
+    pub _masterVersion: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyVersion>,
+    pub _applicationVersion: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyVersion,
+    >,
 }
 #[cfg(feature = "PS4PublisherSKUSettingsSO+PS4BuildVersion")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

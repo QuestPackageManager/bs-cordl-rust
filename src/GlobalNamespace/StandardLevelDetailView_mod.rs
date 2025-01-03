@@ -3,39 +3,71 @@
 #[derive(Debug)]
 pub struct StandardLevelDetailView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _actionButton: *mut crate::UnityEngine::UI::Button,
-    pub _actionButtonText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _practiceButton: *mut crate::UnityEngine::UI::Button,
-    pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
-    pub _levelParamsPanel: *mut crate::GlobalNamespace::LevelParamsPanel,
-    pub _levelParamsPanelCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
-    pub _beatmapDifficultySegmentedControlController: *mut crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
-    pub _beatmapCharacteristicSegmentedControlController: *mut crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
-    pub _favoriteToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _buttonsWrapper: *mut crate::UnityEngine::GameObject,
-    pub _loadingControl: *mut crate::GlobalNamespace::LoadingControl,
-    pub _beatmapLevelVersionsWrapper: *mut crate::UnityEngine::GameObject,
-    pub _beatmapLevelVersionText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _beatmapLevelDataVersionText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub _beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
-    pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
-    pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub _beatmapLevelsEntitlementModel: *mut crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
-    pub didChangeDifficultyBeatmapEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::StandardLevelDetailView,
+    pub _actionButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _actionButtonText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _practiceButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _levelBar: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelBar>,
+    pub _levelParamsPanel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelParamsPanel,
     >,
-    pub didFavoriteToggleChangeEvent: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UI::Toggle,
+    pub _levelParamsPanelCanvasGroup: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::CanvasGroup,
+    >,
+    pub _beatmapDifficultySegmentedControlController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
+    >,
+    pub _beatmapCharacteristicSegmentedControlController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
+    >,
+    pub _favoriteToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _buttonsWrapper: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _loadingControl: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LoadingControl,
+    >,
+    pub _beatmapLevelVersionsWrapper: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _beatmapLevelVersionText: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TextMeshProUGUI,
+    >,
+    pub _beatmapLevelDataVersionText: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TextMeshProUGUI,
+    >,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub _beatmapDataLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataLoader,
+    >,
+    pub _audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioClipAsyncLoader,
+    >,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::TimeTweeningManager,
+    >,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _beatmapLevelsEntitlementModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
+    >,
+    pub didChangeDifficultyBeatmapEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::StandardLevelDetailView>,
+    >,
+    pub didFavoriteToggleChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::UI::Toggle>,
     >,
     pub _beatmapKey_k__BackingField: crate::GlobalNamespace::BeatmapKey,
-    pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub _beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     pub _allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
-    pub _playerData: *mut crate::GlobalNamespace::PlayerData,
-    pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
-    pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _levelParamsPanelCanvasGroupTween: *mut crate::Tweening::Tween,
+    pub _playerData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
+    pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
+    pub _cancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub _levelParamsPanelCanvasGroupTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween,
+    >,
 }
 #[cfg(feature = "StandardLevelDetailView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

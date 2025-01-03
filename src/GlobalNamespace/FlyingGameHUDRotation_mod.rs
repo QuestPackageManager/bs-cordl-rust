@@ -4,8 +4,12 @@
 pub struct FlyingGameHUDRotation {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _smooth: f32,
-    pub _beatLineManager: *mut crate::GlobalNamespace::BeatLineManager,
-    pub _environmentSpawnRotation: *mut crate::GlobalNamespace::EnvironmentSpawnRotation,
+    pub _beatLineManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatLineManager,
+    >,
+    pub _environmentSpawnRotation: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentSpawnRotation,
+    >,
     pub _prevYAngle: f32,
     pub _yAngle: f32,
 }

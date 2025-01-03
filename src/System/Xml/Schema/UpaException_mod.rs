@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct UpaException {
     __cordl_parent: crate::System::Exception,
-    pub particle1: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub particle2: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub particle1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub particle2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Xml+Schema+UpaException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

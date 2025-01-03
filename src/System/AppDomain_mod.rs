@@ -4,25 +4,35 @@
 pub struct AppDomain {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub _mono_app_domain: crate::System::IntPtr,
-    pub _evidence: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _granted: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _evidence: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _granted: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _principalPolicy: i32,
-    pub AssemblyLoad: *mut crate::System::AssemblyLoadEventHandler,
-    pub AssemblyResolve: *mut crate::System::ResolveEventHandler,
-    pub DomainUnload: *mut crate::System::EventHandler,
-    pub ProcessExit: *mut crate::System::EventHandler,
-    pub ResourceResolve: *mut crate::System::ResolveEventHandler,
-    pub TypeResolve: *mut crate::System::ResolveEventHandler,
-    pub UnhandledException: *mut crate::System::UnhandledExceptionEventHandler,
-    pub FirstChanceException: *mut crate::System::EventHandler_1<
-        *mut crate::System::Runtime::ExceptionServices::FirstChanceExceptionEventArgs,
+    pub AssemblyLoad: quest_hook::libil2cpp::Gc<crate::System::AssemblyLoadEventHandler>,
+    pub AssemblyResolve: quest_hook::libil2cpp::Gc<crate::System::ResolveEventHandler>,
+    pub DomainUnload: quest_hook::libil2cpp::Gc<crate::System::EventHandler>,
+    pub ProcessExit: quest_hook::libil2cpp::Gc<crate::System::EventHandler>,
+    pub ResourceResolve: quest_hook::libil2cpp::Gc<crate::System::ResolveEventHandler>,
+    pub TypeResolve: quest_hook::libil2cpp::Gc<crate::System::ResolveEventHandler>,
+    pub UnhandledException: quest_hook::libil2cpp::Gc<
+        crate::System::UnhandledExceptionEventHandler,
     >,
-    pub _domain_manager: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub ReflectionOnlyAssemblyResolve: *mut crate::System::ResolveEventHandler,
-    pub _activation: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _applicationIdentity: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub compatibility_switch: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub FirstChanceException: quest_hook::libil2cpp::Gc<
+        crate::System::EventHandler_1<
+            *mut crate::System::Runtime::ExceptionServices::FirstChanceExceptionEventArgs,
+        >,
+    >,
+    pub _domain_manager: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub ReflectionOnlyAssemblyResolve: quest_hook::libil2cpp::Gc<
+        crate::System::ResolveEventHandler,
+    >,
+    pub _activation: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _applicationIdentity: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub compatibility_switch: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "System+AppDomain")]

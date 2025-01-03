@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct TypeLimiter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_instanceScope: *mut crate::System::Data::TypeLimiter_Scope,
+    pub m_instanceScope: quest_hook::libil2cpp::Gc<
+        crate::System::Data::TypeLimiter_Scope,
+    >,
 }
 #[cfg(feature = "System+Data+TypeLimiter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -126,10 +128,12 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::TypeLimiter {
 #[derive(Debug)]
 pub struct TypeLimiter_Scope {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_allowedTypes: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::Type,
+    pub m_allowedTypes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<*mut crate::System::Type>,
     >,
-    pub m_previousScope: *mut crate::System::Data::TypeLimiter_Scope,
+    pub m_previousScope: quest_hook::libil2cpp::Gc<
+        crate::System::Data::TypeLimiter_Scope,
+    >,
 }
 #[cfg(feature = "System+Data+TypeLimiter+Scope")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

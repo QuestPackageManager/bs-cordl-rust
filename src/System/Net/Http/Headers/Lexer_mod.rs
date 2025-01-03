@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Lexer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub s: *mut quest_hook::libil2cpp::Il2CppString,
+    pub s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub pos: i32,
 }
 #[cfg(feature = "System+Net+Http+Headers+Lexer")]

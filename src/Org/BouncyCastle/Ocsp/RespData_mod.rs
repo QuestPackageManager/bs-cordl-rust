@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct RespData {
     __cordl_parent: crate::Org::BouncyCastle::X509::X509ExtensionBase,
-    pub data: *mut crate::Org::BouncyCastle::Asn1::Ocsp::ResponseData,
+    pub data: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Ocsp::ResponseData,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+RespData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

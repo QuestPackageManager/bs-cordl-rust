@@ -4,7 +4,9 @@
 pub struct SubsystemWithProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _running_k__BackingField: bool,
-    pub _providerBase_k__BackingField: *mut crate::UnityEngine::SubsystemsImplementation::SubsystemProvider,
+    pub _providerBase_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::SubsystemsImplementation::SubsystemProvider,
+    >,
 }
 #[cfg(feature = "UnityEngine+SubsystemsImplementation+SubsystemWithProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

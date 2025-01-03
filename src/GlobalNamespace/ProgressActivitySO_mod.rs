@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ProgressActivitySO {
     __cordl_parent: crate::GlobalNamespace::PS5ActivityDataSO,
-    pub subtasks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::ProgressActivitySubtaskSO,
+    pub subtasks: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::ProgressActivitySubtaskSO,
+        >,
     >,
 }
 #[cfg(feature = "ProgressActivitySO")]

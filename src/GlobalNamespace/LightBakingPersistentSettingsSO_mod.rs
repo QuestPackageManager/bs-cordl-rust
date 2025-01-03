@@ -3,18 +3,32 @@
 #[derive(Debug)]
 pub struct LightBakingPersistentSettingsSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
+    pub _settingsApplicator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsApplicatorSO,
+    >,
     pub _reflectionsCount: i32,
     pub _colorFromSchemeAlpha: f32,
-    pub _bakedLightEditorColors: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Color,
+    pub _bakedLightEditorColors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
     >,
-    pub _bakedLightDataLoaderPrefab: *mut crate::GlobalNamespace::BakedLightDataLoader,
-    pub _bakedReflectionProbePrefab: *mut crate::GlobalNamespace::BakedReflectionProbe,
-    pub _lightmapLightsWithIds: *mut crate::GlobalNamespace::LightmapLightsWithIds,
-    pub _fakeMirrorObjectsInstallerPrefab: *mut crate::GlobalNamespace::FakeMirrorObjectsInstaller,
-    pub _fakeMirrorSettingsPrefab: *mut crate::GlobalNamespace::FakeMirrorSettings,
-    pub _defaultDepthOnlyWriteMaterialForFakeMirror: *mut crate::UnityEngine::Material,
+    pub _bakedLightDataLoaderPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BakedLightDataLoader,
+    >,
+    pub _bakedReflectionProbePrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BakedReflectionProbe,
+    >,
+    pub _lightmapLightsWithIds: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LightmapLightsWithIds,
+    >,
+    pub _fakeMirrorObjectsInstallerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FakeMirrorObjectsInstaller,
+    >,
+    pub _fakeMirrorSettingsPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FakeMirrorSettings,
+    >,
+    pub _defaultDepthOnlyWriteMaterialForFakeMirror: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Material,
+    >,
 }
 #[cfg(feature = "LightBakingPersistentSettingsSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

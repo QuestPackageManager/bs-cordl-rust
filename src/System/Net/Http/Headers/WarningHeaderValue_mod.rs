@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct WarningHeaderValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Agent_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Agent_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _Code_k__BackingField: i32,
     pub _Date_k__BackingField: crate::System::Nullable_1<crate::System::DateTimeOffset>,
-    pub _Text_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Text_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Net+Http+Headers+WarningHeaderValue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SHA1CryptoServiceProvider {
     __cordl_parent: crate::System::Security::Cryptography::SHA1,
-    pub sha: *mut crate::System::Security::Cryptography::SHA1Internal,
+    pub sha: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::SHA1Internal,
+    >,
 }
 #[cfg(feature = "System+Security+Cryptography+SHA1CryptoServiceProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

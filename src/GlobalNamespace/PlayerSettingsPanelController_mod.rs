@@ -3,39 +3,77 @@
 #[derive(Debug)]
 pub struct PlayerSettingsPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _leftHandedToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _reduceDebrisToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _noTextsAndHudsToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _advanceHudToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _playerHeightSettingsController: *mut crate::GlobalNamespace::PlayerHeightSettingsController,
-    pub _playerHeightSettingsCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
-    pub _automaticPlayerHeightToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _sfxVolumeSettingsController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
-    pub _saberTrailIntensitySettingsController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
-    pub _noteJumpDurationTypeSettingsDropdown: *mut crate::GlobalNamespace::NoteJumpDurationTypeSettingsDropdown,
-    pub _noteJumpFixedDurationSettingsController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
-    pub _noteJumpFixedDurationSettingsCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
-    pub _noteJumpStartBeatOffsetDropdown: *mut crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown,
-    pub _noteJumpStartBeatOffsetCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
-    pub _environmentEffectsFilterDefaultPresetDropdown: *mut crate::GlobalNamespace::EnvironmentEffectsFilterPresetDropdown,
-    pub _environmentEffectsFilterExpertPlusPresetDropdown: *mut crate::GlobalNamespace::EnvironmentEffectsFilterPresetDropdown,
-    pub _hideNoteSpawnEffectToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _adaptiveSfxToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _autoRestartToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _headsetHapticIntensityController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
-    pub _arcsVisibilityTypeSettingsDropdown: *mut crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown,
-    pub _arcHapticFeedbackCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
-    pub _arcsHapticFeedbackToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _singleplayerOnlyCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
-    pub _arcVisibilityWarning: *mut crate::UnityEngine::GameObject,
-    pub didChangePlayerSettingsEvent: *mut crate::System::Action,
+    pub _leftHandedToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _reduceDebrisToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _noTextsAndHudsToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _advanceHudToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _playerHeightSettingsController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerHeightSettingsController,
+    >,
+    pub _playerHeightSettingsCanvasGroup: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::CanvasGroup,
+    >,
+    pub _automaticPlayerHeightToggle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
+    >,
+    pub _sfxVolumeSettingsController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FormattedFloatListSettingsController,
+    >,
+    pub _saberTrailIntensitySettingsController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FormattedFloatListSettingsController,
+    >,
+    pub _noteJumpDurationTypeSettingsDropdown: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteJumpDurationTypeSettingsDropdown,
+    >,
+    pub _noteJumpFixedDurationSettingsController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FormattedFloatListSettingsController,
+    >,
+    pub _noteJumpFixedDurationSettingsCanvasGroup: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::CanvasGroup,
+    >,
+    pub _noteJumpStartBeatOffsetDropdown: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown,
+    >,
+    pub _noteJumpStartBeatOffsetCanvasGroup: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::CanvasGroup,
+    >,
+    pub _environmentEffectsFilterDefaultPresetDropdown: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentEffectsFilterPresetDropdown,
+    >,
+    pub _environmentEffectsFilterExpertPlusPresetDropdown: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentEffectsFilterPresetDropdown,
+    >,
+    pub _hideNoteSpawnEffectToggle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
+    >,
+    pub _adaptiveSfxToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _autoRestartToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+    pub _headsetHapticIntensityController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FormattedFloatListSettingsController,
+    >,
+    pub _arcsVisibilityTypeSettingsDropdown: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown,
+    >,
+    pub _arcHapticFeedbackCanvasGroup: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::CanvasGroup,
+    >,
+    pub _arcsHapticFeedbackToggle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
+    >,
+    pub _singleplayerOnlyCanvasGroup: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::CanvasGroup,
+    >,
+    pub _arcVisibilityWarning: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub didChangePlayerSettingsEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _currentArcType: crate::GlobalNamespace::ArcVisibilityType,
-    pub _playerData: *mut crate::GlobalNamespace::PlayerData,
-    pub _playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
-    pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
+    pub _playerData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
+    pub _playerSpecificSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSpecificSettings,
+    >,
+    pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
     pub _dirty: bool,
     pub _refreshed: bool,
-    pub _eventBinder: *mut crate::GlobalNamespace::EventBinder,
+    pub _eventBinder: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EventBinder>,
 }
 #[cfg(feature = "PlayerSettingsPanelController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

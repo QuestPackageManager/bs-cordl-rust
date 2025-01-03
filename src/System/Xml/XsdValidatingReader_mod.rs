@@ -3,45 +3,73 @@
 #[derive(Debug)]
 pub struct XsdValidatingReader {
     __cordl_parent: crate::System::Xml::XmlReader,
-    pub coreReader: *mut crate::System::Xml::XmlReader,
-    pub coreReaderNSResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
-    pub thisNSResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
-    pub validator: *mut crate::System::Xml::Schema::XmlSchemaValidator,
-    pub xmlResolver: *mut crate::System::Xml::XmlResolver,
-    pub validationEvent: *mut crate::System::Xml::Schema::ValidationEventHandler,
+    pub coreReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    pub coreReaderNSResolver: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::IXmlNamespaceResolver,
+    >,
+    pub thisNSResolver: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::IXmlNamespaceResolver,
+    >,
+    pub validator: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaValidator,
+    >,
+    pub xmlResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
+    pub validationEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::ValidationEventHandler,
+    >,
     pub validationState: crate::System::Xml::XsdValidatingReader_ValidatingReaderState,
-    pub valueGetter: *mut crate::System::Xml::Schema::XmlValueGetter,
-    pub nsManager: *mut crate::System::Xml::XmlNamespaceManager,
+    pub valueGetter: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlValueGetter,
+    >,
+    pub nsManager: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
     pub manageNamespaces: bool,
     pub processInlineSchema: bool,
     pub replayCache: bool,
-    pub cachedNode: *mut crate::System::Xml::ValidatingReaderNodeData,
-    pub attributePSVI: *mut crate::System::Xml::AttributePSVIInfo,
+    pub cachedNode: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::ValidatingReaderNodeData,
+    >,
+    pub attributePSVI: quest_hook::libil2cpp::Gc<crate::System::Xml::AttributePSVIInfo>,
     pub attributeCount: i32,
     pub coreReaderAttributeCount: i32,
     pub currentAttrIndex: i32,
-    pub attributePSVINodes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::AttributePSVIInfo,
+    pub attributePSVINodes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::AttributePSVIInfo>,
     >,
-    pub defaultAttributes: *mut crate::System::Collections::ArrayList,
-    pub inlineSchemaParser: *mut crate::System::Xml::Schema::Parser,
-    pub atomicValue: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub xmlSchemaInfo: *mut crate::System::Xml::Schema::XmlSchemaInfo,
-    pub originalAtomicValueString: *mut quest_hook::libil2cpp::Il2CppString,
-    pub coreReaderNameTable: *mut crate::System::Xml::XmlNameTable,
-    pub cachingReader: *mut crate::System::Xml::XsdCachingReader,
-    pub textNode: *mut crate::System::Xml::ValidatingReaderNodeData,
-    pub NsXmlNs: *mut quest_hook::libil2cpp::Il2CppString,
-    pub NsXs: *mut quest_hook::libil2cpp::Il2CppString,
-    pub NsXsi: *mut quest_hook::libil2cpp::Il2CppString,
-    pub XsiType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub XsiNil: *mut quest_hook::libil2cpp::Il2CppString,
-    pub XsdSchema: *mut quest_hook::libil2cpp::Il2CppString,
-    pub XsiSchemaLocation: *mut quest_hook::libil2cpp::Il2CppString,
-    pub XsiNoNamespaceSchemaLocation: *mut quest_hook::libil2cpp::Il2CppString,
+    pub defaultAttributes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ArrayList,
+    >,
+    pub inlineSchemaParser: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::Parser,
+    >,
+    pub atomicValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub xmlSchemaInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaInfo,
+    >,
+    pub originalAtomicValueString: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub coreReaderNameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+    pub cachingReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XsdCachingReader>,
+    pub textNode: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::ValidatingReaderNodeData,
+    >,
+    pub NsXmlNs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub NsXs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub NsXsi: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub XsiType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub XsiNil: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub XsdSchema: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub XsiSchemaLocation: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub XsiNoNamespaceSchemaLocation: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub xmlCharType: crate::System::Xml::XmlCharType,
-    pub lineInfo: *mut crate::System::Xml::IXmlLineInfo,
-    pub readBinaryHelper: *mut crate::System::Xml::ReadContentAsBinaryHelper,
+    pub lineInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>,
+    pub readBinaryHelper: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::ReadContentAsBinaryHelper,
+    >,
     pub savedState: crate::System::Xml::XsdValidatingReader_ValidatingReaderState,
 }
 #[cfg(feature = "System+Xml+XsdValidatingReader")]

@@ -71,7 +71,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::DigestInputBuffer {
 #[derive(Debug)]
 pub struct DigestInputBuffer_DigStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    pub d: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    pub d: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DigestInputBuffer+DigStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

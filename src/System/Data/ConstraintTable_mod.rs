@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ConstraintTable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub table: *mut crate::System::Data::DataTable,
-    pub constraint: *mut crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
+    pub table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    pub constraint: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
+    >,
 }
 #[cfg(feature = "System+Data+ConstraintTable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

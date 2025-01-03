@@ -4,12 +4,24 @@
 pub struct XmlSerializer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub customSerializer: bool,
-    pub typeMapping: *mut crate::System::Xml::Serialization::XmlMapping,
-    pub serializerData: *mut crate::System::Xml::Serialization::XmlSerializer_SerializerData,
-    pub onUnreferencedObject: *mut crate::System::Xml::Serialization::UnreferencedObjectEventHandler,
-    pub onUnknownAttribute: *mut crate::System::Xml::Serialization::XmlAttributeEventHandler,
-    pub onUnknownElement: *mut crate::System::Xml::Serialization::XmlElementEventHandler,
-    pub onUnknownNode: *mut crate::System::Xml::Serialization::XmlNodeEventHandler,
+    pub typeMapping: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlMapping,
+    >,
+    pub serializerData: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlSerializer_SerializerData,
+    >,
+    pub onUnreferencedObject: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::UnreferencedObjectEventHandler,
+    >,
+    pub onUnknownAttribute: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlAttributeEventHandler,
+    >,
+    pub onUnknownElement: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlElementEventHandler,
+    >,
+    pub onUnknownNode: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlNodeEventHandler,
+    >,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -321,10 +333,12 @@ for crate::System::Xml::Serialization::XmlSerializer {
 #[derive(Debug)]
 pub struct XmlSerializer_SerializerData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub ReaderMethod: *mut crate::System::Reflection::MethodInfo,
-    pub WriterType: *mut crate::System::Type,
-    pub WriterMethod: *mut crate::System::Reflection::MethodInfo,
-    pub Implementation: *mut crate::System::Xml::Serialization::XmlSerializerImplementation,
+    pub ReaderMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    pub WriterType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub WriterMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    pub Implementation: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlSerializerImplementation,
+    >,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializer+SerializerData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

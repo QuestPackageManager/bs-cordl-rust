@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct InvariantComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_compareInfo: *mut crate::System::Globalization::CompareInfo,
+    pub m_compareInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::CompareInfo,
+    >,
 }
 #[cfg(feature = "System+InvariantComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

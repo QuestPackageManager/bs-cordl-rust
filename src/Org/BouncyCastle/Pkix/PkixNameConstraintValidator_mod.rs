@@ -3,18 +3,42 @@
 #[derive(Debug)]
 pub struct PkixNameConstraintValidator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub excludedSubtreesDN: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub excludedSubtreesDNS: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub excludedSubtreesEmail: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub excludedSubtreesURI: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub excludedSubtreesIP: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub excludedSubtreesOtherName: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub permittedSubtreesDN: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub permittedSubtreesDNS: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub permittedSubtreesEmail: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub permittedSubtreesURI: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub permittedSubtreesIP: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub permittedSubtreesOtherName: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    pub excludedSubtreesDN: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub excludedSubtreesDNS: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub excludedSubtreesEmail: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub excludedSubtreesURI: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub excludedSubtreesIP: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub excludedSubtreesOtherName: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub permittedSubtreesDN: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub permittedSubtreesDNS: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub permittedSubtreesEmail: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub permittedSubtreesURI: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub permittedSubtreesIP: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub permittedSubtreesOtherName: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixNameConstraintValidator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

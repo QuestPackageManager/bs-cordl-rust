@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct PbeParametersGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mPassword: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mSalt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mPassword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mSalt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mIterationCount: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+PbeParametersGenerator")]

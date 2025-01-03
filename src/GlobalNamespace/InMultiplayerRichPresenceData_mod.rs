@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct InMultiplayerRichPresenceData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _apiName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _localizedDescription_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _multiplayerSecret_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _apiName_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _localizedDescription_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _multiplayerSecret_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _atMaxPartySize_k__BackingField: bool,
     pub _canInvite_k__BackingField: bool,
 }

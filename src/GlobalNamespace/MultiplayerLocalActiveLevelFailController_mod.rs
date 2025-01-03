@@ -3,12 +3,24 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalActiveLevelFailController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _levelFailedTextEffect: *mut crate::GlobalNamespace::LevelFailedTextEffect,
-    pub _levelEndActionsPublisher: *mut crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
-    pub _beatmapObjectSpawnController: *mut crate::GlobalNamespace::BeatmapObjectSpawnController,
-    pub _gameSongController: *mut crate::GlobalNamespace::GameSongController,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _multiplayerPlayersManager: *mut crate::GlobalNamespace::MultiplayerPlayersManager,
+    pub _levelFailedTextEffect: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LevelFailedTextEffect,
+    >,
+    pub _levelEndActionsPublisher: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
+    >,
+    pub _beatmapObjectSpawnController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectSpawnController,
+    >,
+    pub _gameSongController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameSongController,
+    >,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub _multiplayerPlayersManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerPlayersManager,
+    >,
 }
 #[cfg(feature = "MultiplayerLocalActiveLevelFailController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

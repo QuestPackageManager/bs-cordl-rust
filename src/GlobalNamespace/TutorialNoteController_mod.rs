@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct TutorialNoteController {
     __cordl_parent: crate::GlobalNamespace::NoteController,
-    pub _cuttableBySaberCore: *mut crate::GlobalNamespace::BoxCuttableBySaber,
-    pub _cuttableBySaberBeforeNote: *mut crate::GlobalNamespace::BoxCuttableBySaber,
-    pub _wrapperGO: *mut crate::UnityEngine::GameObject,
+    pub _cuttableBySaberCore: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BoxCuttableBySaber,
+    >,
+    pub _cuttableBySaberBeforeNote: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BoxCuttableBySaber,
+    >,
+    pub _wrapperGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _beforeNoteCutWasOk: bool,
     pub _cutAngleTolerance: f32,
 }

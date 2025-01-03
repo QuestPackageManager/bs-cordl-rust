@@ -4,11 +4,11 @@
 pub struct InjectableInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Optional: bool,
-    pub Identifier: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub Identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub SourceType: crate::Zenject::InjectSources,
-    pub MemberName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub MemberType: *mut crate::System::Type,
-    pub DefaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub MemberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub MemberType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub DefaultValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Zenject+InjectableInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

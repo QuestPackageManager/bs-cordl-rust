@@ -5,7 +5,7 @@ pub struct ContentSizeFitter {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_HorizontalFit: crate::UnityEngine::UI::ContentSizeFitter_FitMode,
     pub m_VerticalFit: crate::UnityEngine::UI::ContentSizeFitter_FitMode,
-    pub m_Rect: *mut crate::UnityEngine::RectTransform,
+    pub m_Rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_Tracker: crate::UnityEngine::DrivenRectTransformTracker,
 }
 #[cfg(feature = "UnityEngine+UI+ContentSizeFitter")]

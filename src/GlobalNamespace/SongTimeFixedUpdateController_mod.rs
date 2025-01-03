@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct SongTimeFixedUpdateController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub songControllerFixedTimeDidUpdateEvent: *mut crate::System::Action_1<f32>,
-    pub songControllerTimeDidUpdateEvent: *mut crate::System::Action,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
+    pub songControllerFixedTimeDidUpdateEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<f32>,
+    >,
+    pub songControllerTimeDidUpdateEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
     pub _accumulator: f32,
     pub _interpolationFactor: f32,
 }

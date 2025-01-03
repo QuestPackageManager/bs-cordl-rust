@@ -3,22 +3,32 @@
 #[derive(Debug)]
 pub struct TweeningManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _activeTweens: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Tweening::Tween,
+    pub _activeTweens: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::Tweening::Tween>,
     >,
-    pub _activeTweensSet: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::Tweening::Tween,
+    pub _activeTweensSet: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<*mut crate::Tweening::Tween>,
     >,
-    pub _tweensByOwner: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        *mut crate::System::Collections::Generic::HashSet_1<*mut crate::Tweening::Tween>,
+    pub _tweensByOwner: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut crate::System::Collections::Generic::HashSet_1<
+                *mut crate::Tweening::Tween,
+            >,
+        >,
     >,
-    pub _ownerByTween: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::Tweening::Tween,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _ownerByTween: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::Tweening::Tween,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
-    pub _reusableTweenHashSets: *mut crate::System::Collections::Generic::Queue_1<
-        *mut crate::System::Collections::Generic::HashSet_1<*mut crate::Tweening::Tween>,
+    pub _reusableTweenHashSets: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<
+            *mut crate::System::Collections::Generic::HashSet_1<
+                *mut crate::Tweening::Tween,
+            >,
+        >,
     >,
     pub _parityOfNextNewTween: crate::Tweening::FrameParity,
 }

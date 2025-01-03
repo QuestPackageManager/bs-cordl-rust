@@ -5,10 +5,12 @@ pub struct ColorHueSlider {
     __cordl_parent: crate::HMUI::CircleSlider,
     pub _darkColor: crate::UnityEngine::Color,
     pub _lightColor: crate::UnityEngine::Color,
-    pub colorHueDidChangeEvent: *mut crate::System::Action_3<
-        *mut crate::GlobalNamespace::ColorHueSlider,
-        f32,
-        crate::GlobalNamespace::ColorChangeUIEventType,
+    pub colorHueDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_3<
+            *mut crate::GlobalNamespace::ColorHueSlider,
+            f32,
+            crate::GlobalNamespace::ColorChangeUIEventType,
+        >,
     >,
 }
 #[cfg(feature = "ColorHueSlider")]

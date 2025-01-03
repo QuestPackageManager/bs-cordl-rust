@@ -4,9 +4,11 @@
 pub struct BakedLightsNormalizer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _maxTotalIntensity: f32,
-    pub _lightmapLightDict: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::GlobalNamespace::LightConstants_BakeId,
-        *mut crate::GlobalNamespace::LightmapLightWithIds,
+    pub _lightmapLightDict: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::LightConstants_BakeId,
+            *mut crate::GlobalNamespace::LightmapLightWithIds,
+        >,
     >,
     pub _lightmapDictInitialized: bool,
     pub _grayscaleTotal: f32,

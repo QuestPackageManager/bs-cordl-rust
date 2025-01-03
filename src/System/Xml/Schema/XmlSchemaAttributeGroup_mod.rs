@@ -3,13 +3,23 @@
 #[derive(Debug)]
 pub struct XmlSchemaAttributeGroup {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaAnnotated,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub attributes: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-    pub anyAttribute: *mut crate::System::Xml::Schema::XmlSchemaAnyAttribute,
-    pub qname: *mut crate::System::Xml::XmlQualifiedName,
-    pub redefined: *mut crate::System::Xml::Schema::XmlSchemaAttributeGroup,
-    pub attributeUses: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub attributeWildcard: *mut crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub attributes: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+    >,
+    pub anyAttribute: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+    >,
+    pub qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub redefined: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAttributeGroup,
+    >,
+    pub attributeUses: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub attributeWildcard: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+    >,
     pub selfReferenceCount: i32,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaAttributeGroup")]

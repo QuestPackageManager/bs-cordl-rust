@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SubjectDirectoryAttributes {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub attributes: *mut crate::System::Collections::IList,
+    pub attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+SubjectDirectoryAttributes")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

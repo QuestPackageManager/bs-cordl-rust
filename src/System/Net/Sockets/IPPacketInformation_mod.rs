@@ -1,8 +1,8 @@
 #[cfg(feature = "System+Net+Sockets+IPPacketInformation")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IPPacketInformation {
-    pub address: *mut crate::System::Net::IPAddress,
+    pub address: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
     pub networkInterface: i32,
 }
 #[cfg(feature = "System+Net+Sockets+IPPacketInformation")]

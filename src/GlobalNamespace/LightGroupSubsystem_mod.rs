@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LightGroupSubsystem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightGroup: *mut crate::GlobalNamespace::LightGroup,
+    pub _lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroup>,
 }
 #[cfg(feature = "LightGroupSubsystem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

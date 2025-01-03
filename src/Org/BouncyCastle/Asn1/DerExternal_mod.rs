@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct DerExternal {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Object,
-    pub directReference: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub indirectReference: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub dataValueDescriptor: *mut crate::Org::BouncyCastle::Asn1::Asn1Object,
+    pub directReference: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
+    pub indirectReference: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerInteger,
+    >,
+    pub dataValueDescriptor: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Object,
+    >,
     pub encoding: i32,
-    pub externalContent: *mut crate::Org::BouncyCastle::Asn1::Asn1Object,
+    pub externalContent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Object,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerExternal")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

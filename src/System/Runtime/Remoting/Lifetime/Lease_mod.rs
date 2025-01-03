@@ -8,9 +8,11 @@ pub struct Lease {
     pub _initialLeaseTime: crate::System::TimeSpan,
     pub _renewOnCallTime: crate::System::TimeSpan,
     pub _sponsorshipTimeout: crate::System::TimeSpan,
-    pub _sponsors: *mut crate::System::Collections::ArrayList,
-    pub _renewingSponsors: *mut crate::System::Collections::Queue,
-    pub _renewalDelegate: *mut crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate,
+    pub _sponsors: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _renewingSponsors: quest_hook::libil2cpp::Gc<crate::System::Collections::Queue>,
+    pub _renewalDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate,
+    >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

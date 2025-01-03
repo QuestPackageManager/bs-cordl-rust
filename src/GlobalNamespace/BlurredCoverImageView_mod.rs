@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct BlurredCoverImageView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _coverImage: *mut crate::HMUI::ImageView,
-    pub _kawaseBlurRenderer: *mut crate::GlobalNamespace::KawaseBlurRendererSO,
-    pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-    pub _settingTextureForLevelId: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _blurredCoverTexture: *mut crate::UnityEngine::Texture2D,
+    pub _coverImage: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
+    pub _kawaseBlurRenderer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::KawaseBlurRendererSO,
+    >,
+    pub _beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+    pub _settingTextureForLevelId: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _cancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub _blurredCoverTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
 }
 #[cfg(feature = "BlurredCoverImageView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

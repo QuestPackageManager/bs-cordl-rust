@@ -3,26 +3,52 @@
 #[derive(Debug)]
 pub struct ScoreController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _gameplayModifiersModel: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
-    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-    pub _gameEnergyCounter: *mut crate::GlobalNamespace::IGameEnergyCounter,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
-    pub _recPlayState: *mut crate::GlobalNamespace::RecPlayBehaviour_State,
-    pub _goodCutScoringElementPool: *mut crate::GlobalNamespace::GoodCutScoringElement_Pool,
-    pub _badCutScoringElementPool: *mut crate::GlobalNamespace::BadCutScoringElement_Pool,
-    pub _missScoringElementPool: *mut crate::GlobalNamespace::MissScoringElement_Pool,
-    pub _playerHeadAndObstacleInteraction: *mut crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
-    pub scoreDidChangeEvent: *mut crate::System::Action_2<i32, i32>,
-    pub multiplierDidChangeEvent: *mut crate::System::Action_2<i32, f32>,
-    pub scoringForNoteStartedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::ScoringElement,
+    pub _gameplayModifiersModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiersModelSO,
     >,
-    pub scoringForNoteFinishedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::ScoringElement,
+    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
     >,
-    pub _gameplayModifierParams: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _gameEnergyCounter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IGameEnergyCounter,
+    >,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
+    pub _recPlayState: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecPlayBehaviour_State,
+    >,
+    pub _goodCutScoringElementPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GoodCutScoringElement_Pool,
+    >,
+    pub _badCutScoringElementPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BadCutScoringElement_Pool,
+    >,
+    pub _missScoringElementPool: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissScoringElement_Pool,
+    >,
+    pub _playerHeadAndObstacleInteraction: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
+    >,
+    pub scoreDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<i32, i32>,
+    >,
+    pub multiplierDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<i32, f32>,
+    >,
+    pub scoringForNoteStartedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::ScoringElement>,
+    >,
+    pub scoringForNoteFinishedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::ScoringElement>,
+    >,
+    pub _gameplayModifierParams: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+        >,
     >,
     pub _modifiedScore: i32,
     pub _immediateMaxPossibleModifiedScore: i32,
@@ -30,19 +56,29 @@ pub struct ScoreController {
     pub _multipliedScore: i32,
     pub _immediateMaxPossibleMultipliedScore: i32,
     pub _invalidated: bool,
-    pub _maxScoreMultiplierCounter: *mut crate::GlobalNamespace::ScoreMultiplierCounter,
-    pub _scoreMultiplierCounter: *mut crate::GlobalNamespace::ScoreMultiplierCounter,
-    pub _sortedNoteTimesWithoutScoringElements: *mut crate::System::Collections::Generic::List_1<
-        f32,
+    pub _maxScoreMultiplierCounter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScoreMultiplierCounter,
     >,
-    pub _sortedScoringElementsWithoutMultiplier: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::ScoringElement,
+    pub _scoreMultiplierCounter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ScoreMultiplierCounter,
     >,
-    pub _scoringElementsWithMultiplier: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::ScoringElement,
+    pub _sortedNoteTimesWithoutScoringElements: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
     >,
-    pub _scoringElementsToRemove: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::ScoringElement,
+    pub _sortedScoringElementsWithoutMultiplier: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::ScoringElement,
+        >,
+    >,
+    pub _scoringElementsWithMultiplier: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::ScoringElement,
+        >,
+    >,
+    pub _scoringElementsToRemove: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::ScoringElement,
+        >,
     >,
 }
 #[cfg(feature = "ScoreController")]

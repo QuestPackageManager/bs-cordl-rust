@@ -3,28 +3,38 @@
 #[derive(Debug)]
 pub struct X509Certificate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub decoder: *mut crate::Mono::Security::ASN1,
-    pub m_encodedcert: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub decoder: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+    pub m_encodedcert: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub m_from: crate::System::DateTime,
     pub m_until: crate::System::DateTime,
-    pub issuer: *mut crate::Mono::Security::ASN1,
-    pub m_issuername: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_keyalgo: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_keyalgoparams: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub subject: *mut crate::Mono::Security::ASN1,
-    pub m_subject: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_publickey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub signature: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub m_signaturealgo: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_signaturealgoparams: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub certhash: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _rsa: *mut crate::System::Security::Cryptography::RSA,
-    pub _dsa: *mut crate::System::Security::Cryptography::DSA,
+    pub issuer: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+    pub m_issuername: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_keyalgo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_keyalgoparams: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub subject: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+    pub m_subject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_publickey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub m_signaturealgo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_signaturealgoparams: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub certhash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub _rsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
+    pub _dsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::DSA>,
     pub version: i32,
-    pub serialnumber: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub issuerUniqueID: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub subjectUniqueID: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub extensions: *mut crate::Mono::Security::X509::X509ExtensionCollection,
+    pub serialnumber: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub issuerUniqueID: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub subjectUniqueID: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub extensions: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::X509::X509ExtensionCollection,
+    >,
 }
 #[cfg(feature = "Mono+Security+X509+X509Certificate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

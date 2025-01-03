@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct GameplayModifierInfoListItem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _hoverHint: *mut crate::HMUI::HoverHint,
-    pub _iconImage: *mut crate::UnityEngine::UI::Image,
+    pub _hoverHint: quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>,
+    pub _iconImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
 }
 #[cfg(feature = "GameplayModifierInfoListItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

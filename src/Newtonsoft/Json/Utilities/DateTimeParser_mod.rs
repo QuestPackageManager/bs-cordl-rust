@@ -1,6 +1,6 @@
 #[cfg(feature = "Newtonsoft+Json+Utilities+DateTimeParser")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DateTimeParser {
     pub Year: i32,
     pub Month: i32,
@@ -12,7 +12,7 @@ pub struct DateTimeParser {
     pub ZoneHour: i32,
     pub ZoneMinute: i32,
     pub Zone: crate::Newtonsoft::Json::Utilities::ParserTimeZone,
-    pub _text: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub _text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub _end: i32,
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+DateTimeParser")]

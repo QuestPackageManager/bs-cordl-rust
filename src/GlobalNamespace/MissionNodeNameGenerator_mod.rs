@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MissionNodeNameGenerator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionNodesManager: *mut crate::GlobalNamespace::MissionNodesManager,
+    pub _missionNodesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionNodesManager,
+    >,
 }
 #[cfg(feature = "MissionNodeNameGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

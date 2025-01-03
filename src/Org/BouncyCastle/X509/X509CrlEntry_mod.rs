@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct X509CrlEntry {
     __cordl_parent: crate::Org::BouncyCastle::X509::X509ExtensionBase,
-    pub c: *mut crate::Org::BouncyCastle::Asn1::X509::CrlEntry,
+    pub c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::CrlEntry>,
     pub isIndirect: bool,
-    pub previousCertificateIssuer: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
-    pub certificateIssuer: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
+    pub previousCertificateIssuer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Name,
+    >,
+    pub certificateIssuer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Name,
+    >,
     pub hashValueSet: bool,
     pub hashValue: i32,
 }

@@ -3,20 +3,32 @@
 #[derive(Debug)]
 pub struct LightTranslationGroupEffect {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _transformMask: *mut crate::System::Collections::Generic::List_1<
-        crate::System::ValueTuple_2<
-            *mut crate::UnityEngine::Transform,
-            crate::UnityEngine::Vector3,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::SongTimeTweeningManager,
+    >,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _transformMask: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::System::ValueTuple_2<
+                *mut crate::UnityEngine::Transform,
+                crate::UnityEngine::Vector3,
+            >,
         >,
     >,
-    pub _xTranslationTween: *mut crate::Tweening::FloatTween,
-    pub _yTranslationTween: *mut crate::Tweening::FloatTween,
-    pub _zTranslationTween: *mut crate::Tweening::FloatTween,
-    pub _lightTranslationXBeatmapEventCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    pub _lightTranslationYBeatmapEventCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
-    pub _lightTranslationZBeatmapEventCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _xTranslationTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
+    pub _yTranslationTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
+    pub _zTranslationTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
+    pub _lightTranslationXBeatmapEventCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
+    pub _lightTranslationYBeatmapEventCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
+    pub _lightTranslationZBeatmapEventCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "LightTranslationGroupEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -180,9 +192,9 @@ pub struct LightTranslationGroupEffect_InitData {
     pub xMirrored: bool,
     pub yMirrored: bool,
     pub zMirrored: bool,
-    pub xTransform: *mut crate::UnityEngine::Transform,
-    pub yTransform: *mut crate::UnityEngine::Transform,
-    pub zTransform: *mut crate::UnityEngine::Transform,
+    pub xTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub yTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub zTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub xTranslationLimits: crate::UnityEngine::Vector2,
     pub xDistributionLimits: crate::UnityEngine::Vector2,
     pub yTranslationLimits: crate::UnityEngine::Vector2,

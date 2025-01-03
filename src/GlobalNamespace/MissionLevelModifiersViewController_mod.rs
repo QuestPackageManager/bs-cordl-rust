@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct MissionLevelModifiersViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _gameplayModifiersModel: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
-    pub _gameplayModifierInfoListItemsList: *mut crate::GlobalNamespace::GameplayModifierInfoListItemsList,
-    pub _modifiersPanel: *mut crate::UnityEngine::GameObject,
-    pub _titleText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+    pub _gameplayModifiersModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiersModelSO,
+    >,
+    pub _gameplayModifierInfoListItemsList: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifierInfoListItemsList,
+    >,
+    pub _modifiersPanel: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _titleText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiers,
+    >,
 }
 #[cfg(feature = "MissionLevelModifiersViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

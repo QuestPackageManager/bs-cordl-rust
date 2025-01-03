@@ -5,8 +5,10 @@ pub struct EnvironmentTracksDefinitionsAsyncInstaller {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
     >,
-    pub _environmentTracksDefinitions: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+    pub _environmentTracksDefinitions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+        >,
     >,
 }
 #[cfg(feature = "Environments+Definitions+EnvironmentTracksDefinitionsAsyncInstaller")]

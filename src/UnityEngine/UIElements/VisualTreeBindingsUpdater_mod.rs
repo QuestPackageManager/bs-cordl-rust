@@ -3,25 +3,37 @@
 #[derive(Debug)]
 pub struct VisualTreeBindingsUpdater {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater,
-    pub m_ElementsWithBindings: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_ElementsWithBindings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
     >,
-    pub m_ElementsToAdd: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_ElementsToAdd: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
     >,
-    pub m_ElementsToRemove: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_ElementsToRemove: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
     >,
     pub m_LastUpdateTime: i64,
-    pub m_ElementsToBind: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_ElementsToBind: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
     >,
-    pub _temporaryObjectCache_k__BackingField: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _temporaryObjectCache_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
-    pub updatedBindings: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::IBinding,
+    pub updatedBindings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::IBinding,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeBindingsUpdater")]

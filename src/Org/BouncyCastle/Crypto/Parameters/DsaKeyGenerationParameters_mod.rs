@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DsaKeyGenerationParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::KeyGenerationParameters,
-    pub parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DsaParameters,
+    pub parameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::DsaParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DsaKeyGenerationParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

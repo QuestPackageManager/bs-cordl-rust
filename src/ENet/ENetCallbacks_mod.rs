@@ -1,10 +1,10 @@
 #[cfg(feature = "ENet+ENetCallbacks")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ENetCallbacks {
-    pub malloc: *mut crate::ENet::AllocCallback,
-    pub free: *mut crate::ENet::FreeCallback,
-    pub noMemory: *mut crate::ENet::NoMemoryCallback,
+    pub malloc: quest_hook::libil2cpp::Gc<crate::ENet::AllocCallback>,
+    pub free: quest_hook::libil2cpp::Gc<crate::ENet::FreeCallback>,
+    pub noMemory: quest_hook::libil2cpp::Gc<crate::ENet::NoMemoryCallback>,
 }
 #[cfg(feature = "ENet+ENetCallbacks")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

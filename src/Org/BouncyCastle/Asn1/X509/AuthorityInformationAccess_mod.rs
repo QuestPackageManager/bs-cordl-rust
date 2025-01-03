@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct AuthorityInformationAccess {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub descriptions: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+    pub descriptions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+        >,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+AuthorityInformationAccess")]

@@ -7,17 +7,33 @@ pub struct BaseField_1<TValueType: quest_hook::libil2cpp::Type> {
     pub m_LabelExtraPadding: f32,
     pub m_LabelBaseMinWidth: f32,
     pub m_LabelExtraContextWidth: f32,
-    pub m_VisualInput: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_VisualInput: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub m_Value: TValueType,
-    pub onValidateValue: *mut crate::System::Func_2<TValueType, TValueType>,
-    pub _labelElement_k__BackingField: *mut crate::UnityEngine::UIElements::Label,
+    pub onValidateValue: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<TValueType, TValueType>,
+    >,
+    pub _labelElement_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Label,
+    >,
     pub m_ShowMixedValue: bool,
-    pub m_MixedValueLabel: *mut crate::UnityEngine::UIElements::Label,
+    pub m_MixedValueLabel: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Label,
+    >,
     pub m_SkipValidation: bool,
-    pub m_CachedContextWidthElement: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_CachedInspectorElement: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub _UnityEngine_UIElements_IEditableElement_editingStarted_k__BackingField: *mut crate::System::Action,
-    pub _UnityEngine_UIElements_IEditableElement_editingEnded_k__BackingField: *mut crate::System::Action,
+    pub m_CachedContextWidthElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_CachedInspectorElement: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub _UnityEngine_UIElements_IEditableElement_editingStarted_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub _UnityEngine_UIElements_IEditableElement_editingEnded_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseField_1")]
@@ -638,7 +654,9 @@ for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
 #[derive(Debug)]
 pub struct BaseField_1_UxmlTraits<TValueType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
-    pub m_Label: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_Label: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseField_1+UxmlTraits")]

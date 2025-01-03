@@ -4,15 +4,23 @@
 pub struct BeatmapEventDataBoxGroupList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub updateBeatmapDataOnInsert: bool,
-    pub _beatmapEventDataBoxGroupProcessor: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor,
-    pub _sortedList: *mut crate::GlobalNamespace::SortedList_2<
-        *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
-        *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+    pub _beatmapEventDataBoxGroupProcessor: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor,
+    >,
+    pub _sortedList: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SortedList_2<
+            *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+            *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+        >,
     >,
     pub _groupId: i32,
-    pub _beatmapData: *mut crate::GlobalNamespace::BeatmapData,
-    pub _beatToTimeConverter: *mut crate::GlobalNamespace::IBeatToTimeConverter,
-    pub _lightEventConverter: *mut crate::GlobalNamespace::IBeatmapLightEventConverter,
+    pub _beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+    pub _beatToTimeConverter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IBeatToTimeConverter,
+    >,
+    pub _lightEventConverter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IBeatmapLightEventConverter,
+    >,
     pub _nonSyncedInsertsExist: bool,
 }
 #[cfg(feature = "BeatmapEventDataBoxGroupList")]

@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct XmlAtomicValue {
     __cordl_parent: crate::System::Xml::XPath::XPathItem,
-    pub xmlType: *mut crate::System::Xml::Schema::XmlSchemaType,
-    pub objVal: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub xmlType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
+    pub objVal: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub clrType: crate::System::TypeCode,
     pub unionVal: crate::System::Xml::Schema::XmlAtomicValue_Union,
-    pub nsPrefix: *mut crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName,
+    pub nsPrefix: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlAtomicValue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -404,8 +406,8 @@ impl AsMut<crate::System::ICloneable> for crate::System::Xml::Schema::XmlAtomicV
 #[derive(Debug)]
 pub struct XmlAtomicValue_NamespacePrefixForQName {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub ns: *mut quest_hook::libil2cpp::Il2CppString,
+    pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -529,7 +531,7 @@ for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
 }
 #[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XmlAtomicValue_Union {
     padding: [u8; 8usize],
 }

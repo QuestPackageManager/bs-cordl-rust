@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NativeParticleData {
     pub count: i32,
     pub positions: crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3,
@@ -9,13 +9,15 @@ pub struct NativeParticleData {
     pub rotations: crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3,
     pub rotationalSpeeds: crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3,
     pub sizes: crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3,
-    pub startColors: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub aliveTimePercent: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub inverseStartLifetimes: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub randomSeeds: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub startColors: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub aliveTimePercent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub inverseStartLifetimes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub randomSeeds: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub customData1: crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4,
     pub customData2: crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4,
-    pub meshIndices: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub meshIndices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -43,11 +45,11 @@ impl crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
 }
 #[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NativeParticleData_Array3 {
-    pub x: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub y: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub z: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -70,12 +72,12 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
 impl crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {}
 #[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NativeParticleData_Array4 {
-    pub x: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub y: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub z: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub w: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub w: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

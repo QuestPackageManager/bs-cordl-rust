@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct ArrayList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _items: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _items: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _size: i32,
     pub _version: i32,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Collections+ArrayList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -552,10 +552,10 @@ for crate::System::Collections::ArrayList_ArrayListDebugView {
 #[derive(Debug)]
 pub struct ArrayList_ArrayListEnumeratorSimple {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _list: *mut crate::System::Collections::ArrayList,
+    pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _index: i32,
     pub _version: i32,
-    pub _currentElement: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _currentElement: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _isArrayList: bool,
 }
 #[cfg(feature = "System+Collections+ArrayList+ArrayListEnumeratorSimple")]

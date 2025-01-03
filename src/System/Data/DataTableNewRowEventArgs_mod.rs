@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DataTableNewRowEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub _Row_k__BackingField: *mut crate::System::Data::DataRow,
+    pub _Row_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
 }
 #[cfg(feature = "System+Data+DataTableNewRowEventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

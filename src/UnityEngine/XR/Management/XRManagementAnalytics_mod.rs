@@ -49,13 +49,13 @@ for crate::UnityEngine::XR::Management::XRManagementAnalytics {
 }
 #[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct XRManagementAnalytics_BuildEvent {
-    pub buildGuid: *mut quest_hook::libil2cpp::Il2CppString,
-    pub buildTarget: *mut quest_hook::libil2cpp::Il2CppString,
-    pub buildTargetGroup: *mut quest_hook::libil2cpp::Il2CppString,
-    pub assigned_loaders: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub buildGuid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub buildTarget: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub buildTargetGroup: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub assigned_loaders: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent")]

@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct SingleResponse {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub certID: *mut crate::Org::BouncyCastle::Asn1::Ocsp::CertID,
-    pub certStatus: *mut crate::Org::BouncyCastle::Asn1::Ocsp::CertStatus,
-    pub thisUpdate: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
-    pub nextUpdate: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
-    pub singleExtensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    pub certID: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Ocsp::CertID>,
+    pub certStatus: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Ocsp::CertStatus,
+    >,
+    pub thisUpdate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+    >,
+    pub nextUpdate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+    >,
+    pub singleExtensions: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+SingleResponse")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

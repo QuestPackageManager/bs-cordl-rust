@@ -4,12 +4,12 @@
 pub struct BeatmapLevelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _version: i32,
-    pub _levelID: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _songName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _songSubName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _songAuthorName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _levelAuthorName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _previewAudioClip: *mut crate::UnityEngine::AudioClip,
+    pub _levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _songName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _songSubName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _songAuthorName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _levelAuthorName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _previewAudioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     pub _beatsPerMinute: f32,
     pub _integratedLufs: f32,
     pub _songTimeOffset: f32,
@@ -18,17 +18,21 @@ pub struct BeatmapLevelSO {
     pub _previewStartTime: f32,
     pub _previewDuration: f32,
     pub _songDuration: f32,
-    pub _coverImage: *mut crate::UnityEngine::Sprite,
+    pub _coverImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub _environmentName: crate::GlobalNamespace::EnvironmentName,
     pub _allDirectionsEnvironmentName: crate::GlobalNamespace::EnvironmentName,
-    pub _environmentNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::EnvironmentName,
+    pub _environmentNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::EnvironmentName>,
     >,
-    pub _colorSchemes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapLevelSO_ColorScheme,
+    pub _colorSchemes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BeatmapLevelSO_ColorScheme,
+        >,
     >,
-    pub _previewDifficultyBeatmapSets: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet,
+    pub _previewDifficultyBeatmapSets: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet,
+        >,
     >,
     pub _contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
 }
@@ -486,7 +490,7 @@ for crate::GlobalNamespace::BeatmapLevelSO {
 #[derive(Debug)]
 pub struct BeatmapLevelSO_ColorScheme {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _colorSchemeId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _colorSchemeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _overrideNotes: bool,
     pub _saberAColor: crate::UnityEngine::Color,
     pub _saberBColor: crate::UnityEngine::Color,
@@ -876,9 +880,13 @@ for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
 #[derive(Debug)]
 pub struct BeatmapLevelSO_PreviewDifficultyBeatmapSet {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-    pub _previewDifficultyBeatmaps: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
+    pub _beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicSO,
+    >,
+    pub _previewDifficultyBeatmaps: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmapSet")]

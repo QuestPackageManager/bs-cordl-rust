@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct KdfCounterBytesGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub prf: *mut crate::Org::BouncyCastle::Crypto::IMac,
+    pub prf: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
     pub h: i32,
-    pub fixedInputDataCtrPrefix: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub fixedInputData_afterCtr: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub fixedInputDataCtrPrefix: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub fixedInputData_afterCtr: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub maxSizeExcl: i32,
-    pub ios: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub ios: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub generatedBytes: i32,
-    pub k: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub k: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+KdfCounterBytesGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

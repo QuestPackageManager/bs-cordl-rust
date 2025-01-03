@@ -1,9 +1,9 @@
 #[cfg(feature = "UnityEngine+SecondarySpriteTexture")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SecondarySpriteTexture {
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub texture: *mut crate::UnityEngine::Texture2D,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
 }
 #[cfg(feature = "UnityEngine+SecondarySpriteTexture")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

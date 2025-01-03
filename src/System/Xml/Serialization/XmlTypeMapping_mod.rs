@@ -3,15 +3,19 @@
 #[derive(Debug)]
 pub struct XmlTypeMapping {
     __cordl_parent: crate::System::Xml::Serialization::XmlMapping,
-    pub xmlType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub xmlTypeNamespace: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _cordl_type: *mut crate::System::Xml::Serialization::TypeData,
-    pub baseMap: *mut crate::System::Xml::Serialization::XmlTypeMapping,
+    pub xmlType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub xmlTypeNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::TypeData,
+    >,
+    pub baseMap: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTypeMapping,
+    >,
     pub multiReferenceType: bool,
     pub includeInSchema: bool,
     pub isNullable: bool,
     pub isAny: bool,
-    pub _derivedTypes: *mut crate::System::Collections::ArrayList,
+    pub _derivedTypes: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlTypeMapping")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct PKMacStreamCalculator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _stream: *mut crate::Org::BouncyCastle::Crypto::IO::MacSink,
+    pub _stream: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IO::MacSink,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+PKMacStreamCalculator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

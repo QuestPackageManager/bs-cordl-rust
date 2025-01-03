@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct BeatmapCharacteristicsDropdown {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _simpleTextDropdown: *mut crate::HMUI::SimpleTextDropdown,
-    pub _beatmapCharacteristicCollection: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
-    pub didSelectCellWithIdxEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _simpleTextDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
+    pub _beatmapCharacteristicCollection: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicCollection,
+    >,
+    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::BeatmapCharacteristicSO>,
     >,
 }
 #[cfg(feature = "BeatmapCharacteristicsDropdown")]

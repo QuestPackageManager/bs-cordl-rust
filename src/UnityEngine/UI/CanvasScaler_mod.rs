@@ -13,7 +13,7 @@ pub struct CanvasScaler {
     pub m_FallbackScreenDPI: f32,
     pub m_DefaultSpriteDPI: f32,
     pub m_DynamicPixelsPerUnit: f32,
-    pub m_Canvas: *mut crate::UnityEngine::Canvas,
+    pub m_Canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     pub m_PrevScaleFactor: f32,
     pub m_PrevReferencePixelsPerUnit: f32,
     pub m_PresetInfoIsWorld: bool,

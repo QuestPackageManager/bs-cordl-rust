@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XorEncryptLayer {
     __cordl_parent: crate::LiteNetLib::Layers::PacketLayerBase,
-    pub _byteKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _byteKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "LiteNetLib+Layers+XorEncryptLayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct AggregateException {
     __cordl_parent: crate::System::Exception,
-    pub m_innerExceptions: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-        *mut crate::System::Exception,
+    pub m_innerExceptions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            *mut crate::System::Exception,
+        >,
     >,
 }
 #[cfg(feature = "System+AggregateException")]

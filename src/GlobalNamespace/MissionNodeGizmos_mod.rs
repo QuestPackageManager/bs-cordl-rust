@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct MissionNodeGizmos {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionNode: *mut crate::GlobalNamespace::MissionNode,
-    pub _gameplayModifiersModel: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
-    pub _missionProgressModel: *mut crate::GlobalNamespace::CampaignProgressModel,
+    pub _missionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
+    pub _gameplayModifiersModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiersModelSO,
+    >,
+    pub _missionProgressModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CampaignProgressModel,
+    >,
 }
 #[cfg(feature = "MissionNodeGizmos")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

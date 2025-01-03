@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct StaticTree {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub static_tree: *mut quest_hook::libil2cpp::Il2CppArray<i16>,
-    pub extra_bits: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub static_tree: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
+    pub extra_bits: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub extra_base: i32,
     pub elems: i32,
     pub max_length: i32,

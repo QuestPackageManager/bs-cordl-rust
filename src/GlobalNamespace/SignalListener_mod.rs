@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SignalListener {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _signal: *mut crate::GlobalNamespace::Signal,
-    pub _unityEvent: *mut crate::UnityEngine::Events::UnityEvent,
+    pub _signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
+    pub _unityEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
 }
 #[cfg(feature = "SignalListener")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

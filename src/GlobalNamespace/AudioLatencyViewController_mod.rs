@@ -3,17 +3,29 @@
 #[derive(Debug)]
 pub struct AudioLatencyViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _setupCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
-    pub _volumeSettingsList: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
-    pub _ambientSettingsList: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
-    pub _overrideAudioLatencyToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _slider: *mut crate::HMUI::RangeValuesTextSlider,
-    pub _visualMetronome: *mut crate::GlobalNamespace::VisualMetronome,
+    pub _setupCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+    pub _volumeSettingsList: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FormattedFloatListSettingsController,
+    >,
+    pub _ambientSettingsList: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::FormattedFloatListSettingsController,
+    >,
+    pub _overrideAudioLatencyToggle: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::Toggle,
+    >,
+    pub _slider: quest_hook::libil2cpp::Gc<crate::HMUI::RangeValuesTextSlider>,
+    pub _visualMetronome: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VisualMetronome,
+    >,
     pub _disabledAlpha: f32,
-    pub _songPreviewPlayer: *mut crate::GlobalNamespace::SongPreviewPlayer,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub _audioManager: *mut crate::GlobalNamespace::AudioManagerSO,
-    pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
+    pub _songPreviewPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPreviewPlayer,
+    >,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
+    pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
 }
 #[cfg(feature = "AudioLatencyViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

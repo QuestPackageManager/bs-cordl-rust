@@ -4,17 +4,23 @@
 pub struct SliderInteractionManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _colorType: crate::GlobalNamespace::ColorType,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
     pub _saberInteractionParam_k__BackingField: f32,
-    pub sliderWasAddedToActiveSlidersEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::SliderInteractionManager,
-        f32,
+    pub sliderWasAddedToActiveSlidersEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::SliderInteractionManager,
+            f32,
+        >,
     >,
-    pub allSliderWereRemovedFromActiveSlidersEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::SliderInteractionManager,
+    pub allSliderWereRemovedFromActiveSlidersEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::SliderInteractionManager>,
     >,
-    pub _activeSliders: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::SliderController,
+    pub _activeSliders: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::SliderController,
+        >,
     >,
 }
 #[cfg(feature = "SliderInteractionManager")]

@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct RazorDirectiveAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Directive_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Directive_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "JetBrains+Annotations+RazorDirectiveAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

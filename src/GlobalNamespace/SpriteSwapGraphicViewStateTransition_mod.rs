@@ -5,7 +5,9 @@ pub struct SpriteSwapGraphicViewStateTransition {
     __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
         *mut crate::UnityEngine::UI::Image,
     >,
-    pub _transition: *mut crate::GlobalNamespace::SpriteSwapTransitionSO,
+    pub _transition: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SpriteSwapTransitionSO,
+    >,
 }
 #[cfg(feature = "SpriteSwapGraphicViewStateTransition")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

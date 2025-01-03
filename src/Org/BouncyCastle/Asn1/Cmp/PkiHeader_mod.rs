@@ -3,18 +3,40 @@
 #[derive(Debug)]
 pub struct PkiHeader {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub pvno: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub sender: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    pub recipient: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    pub messageTime: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
-    pub protectionAlg: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub senderKID: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub recipKID: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub transactionID: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub senderNonce: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub recipNonce: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub freeText: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiFreeText,
-    pub generalInfo: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    pub pvno: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub sender: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    >,
+    pub recipient: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    >,
+    pub messageTime: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+    >,
+    pub protectionAlg: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub senderKID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub recipKID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub transactionID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub senderNonce: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub recipNonce: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
+    pub freeText: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cmp::PkiFreeText,
+    >,
+    pub generalInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PkiHeader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

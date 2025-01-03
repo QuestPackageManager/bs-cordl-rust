@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct WrappedGeneratorStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::FilterStream,
-    pub _cordl_gen: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator,
+    pub _cordl_gen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+WrappedGeneratorStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

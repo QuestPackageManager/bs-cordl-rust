@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct VisualElementPanelActivator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Activatable: *mut crate::UnityEngine::UIElements::IVisualElementPanelActivatable,
+    pub m_Activatable: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IVisualElementPanelActivatable,
+    >,
     pub _isActive_k__BackingField: bool,
     pub _isDetaching_k__BackingField: bool,
-    pub m_OnAttachToPanelCallback: *mut crate::UnityEngine::UIElements::EventCallback_1<
-        *mut crate::UnityEngine::UIElements::AttachToPanelEvent,
+    pub m_OnAttachToPanelCallback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventCallback_1<
+            *mut crate::UnityEngine::UIElements::AttachToPanelEvent,
+        >,
     >,
-    pub m_OnDetachFromPanelCallback: *mut crate::UnityEngine::UIElements::EventCallback_1<
-        *mut crate::UnityEngine::UIElements::DetachFromPanelEvent,
+    pub m_OnDetachFromPanelCallback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventCallback_1<
+            *mut crate::UnityEngine::UIElements::DetachFromPanelEvent,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementPanelActivator")]

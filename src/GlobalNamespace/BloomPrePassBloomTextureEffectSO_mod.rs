@@ -14,8 +14,10 @@ pub struct BloomPrePassBloomTextureEffectSO {
     pub _downsamplePass: crate::GlobalNamespace::PyramidBloomRendererSO_Pass,
     pub _upsamplePass: crate::GlobalNamespace::PyramidBloomRendererSO_Pass,
     pub _finalUpsamplePass: crate::GlobalNamespace::PyramidBloomRendererSO_Pass,
-    pub _bloomRenderer: *mut crate::GlobalNamespace::PyramidBloomRendererSO,
-    pub _bloomFog: *mut crate::GlobalNamespace::BloomFogSO,
+    pub _bloomRenderer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PyramidBloomRendererSO,
+    >,
+    pub _bloomFog: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomFogSO>,
 }
 #[cfg(feature = "BloomPrePassBloomTextureEffectSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

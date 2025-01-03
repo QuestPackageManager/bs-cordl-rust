@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ItemPriority_2<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,

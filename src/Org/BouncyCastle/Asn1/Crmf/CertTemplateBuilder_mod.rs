@@ -3,16 +3,34 @@
 #[derive(Debug)]
 pub struct CertTemplateBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub serialNumber: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub signingAlg: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub issuer: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
-    pub validity: *mut crate::Org::BouncyCastle::Asn1::Crmf::OptionalValidity,
-    pub subject: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
-    pub publicKey: *mut crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
-    pub issuerUID: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
-    pub subjectUID: *mut crate::Org::BouncyCastle::Asn1::DerBitString,
-    pub extensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub serialNumber: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerInteger,
+    >,
+    pub signingAlg: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub issuer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Name,
+    >,
+    pub validity: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Crmf::OptionalValidity,
+    >,
+    pub subject: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Name,
+    >,
+    pub publicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+    >,
+    pub issuerUID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerBitString,
+    >,
+    pub subjectUID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerBitString,
+    >,
+    pub extensions: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+CertTemplateBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,14 +3,26 @@
 #[derive(Debug)]
 pub struct TextStyle {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_HashCode: i32,
-    pub m_OpeningDefinition: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_ClosingDefinition: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_OpeningTagArray: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub m_ClosingTagArray: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub m_OpeningTagUnicodeArray: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub m_ClosingTagUnicodeArray: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub m_OpeningDefinition: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_ClosingDefinition: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub m_OpeningTagArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u32>,
+    >,
+    pub m_ClosingTagArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u32>,
+    >,
+    pub m_OpeningTagUnicodeArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u32>,
+    >,
+    pub m_ClosingTagUnicodeArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u32>,
+    >,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextStyle")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

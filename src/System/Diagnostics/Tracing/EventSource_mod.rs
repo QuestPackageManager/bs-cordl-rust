@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct EventSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Diagnostics+Tracing+EventSource")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -301,7 +303,7 @@ for crate::System::Diagnostics::Tracing::EventSource {
 }
 #[cfg(feature = "System+Diagnostics+Tracing+EventSource+EventData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct EventSource_EventData {
     pub _DataPointer_k__BackingField: crate::System::IntPtr,
     pub _Size_k__BackingField: i32,

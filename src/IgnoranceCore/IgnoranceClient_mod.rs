@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct IgnoranceClient {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub ConnectAddress: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ConnectAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub ConnectPort: i32,
     pub ExpectedChannels: i32,
     pub PollTime: i32,
@@ -13,28 +13,42 @@ pub struct IgnoranceClient {
     pub ConnectionEventBufferSize: i32,
     pub UseSsl: bool,
     pub ValidateCertificate: bool,
-    pub RootCertificatePath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub RootCertificate: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Incoming: *mut crate::IgnoranceThirdparty::RingBuffer_1<
-        crate::IgnoranceCore::IgnoranceIncomingPacket,
+    pub RootCertificatePath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub Outgoing: *mut crate::IgnoranceThirdparty::RingBuffer_1<
-        crate::IgnoranceCore::IgnoranceOutgoingPacket,
+    pub RootCertificate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Incoming: quest_hook::libil2cpp::Gc<
+        crate::IgnoranceThirdparty::RingBuffer_1<
+            crate::IgnoranceCore::IgnoranceIncomingPacket,
+        >,
     >,
-    pub Commands: *mut crate::IgnoranceThirdparty::RingBuffer_1<
-        crate::IgnoranceCore::IgnoranceCommandPacket,
+    pub Outgoing: quest_hook::libil2cpp::Gc<
+        crate::IgnoranceThirdparty::RingBuffer_1<
+            crate::IgnoranceCore::IgnoranceOutgoingPacket,
+        >,
     >,
-    pub ConnectionEvents: *mut crate::IgnoranceThirdparty::RingBuffer_1<
-        crate::IgnoranceCore::IgnoranceConnectionEvent,
+    pub Commands: quest_hook::libil2cpp::Gc<
+        crate::IgnoranceThirdparty::RingBuffer_1<
+            crate::IgnoranceCore::IgnoranceCommandPacket,
+        >,
     >,
-    pub DisconnectionEvents: *mut crate::IgnoranceThirdparty::RingBuffer_1<
-        crate::IgnoranceCore::IgnoranceConnectionEvent,
+    pub ConnectionEvents: quest_hook::libil2cpp::Gc<
+        crate::IgnoranceThirdparty::RingBuffer_1<
+            crate::IgnoranceCore::IgnoranceConnectionEvent,
+        >,
     >,
-    pub StatusUpdates: *mut crate::IgnoranceThirdparty::RingBuffer_1<
-        crate::IgnoranceCore::IgnoranceClientStats,
+    pub DisconnectionEvents: quest_hook::libil2cpp::Gc<
+        crate::IgnoranceThirdparty::RingBuffer_1<
+            crate::IgnoranceCore::IgnoranceConnectionEvent,
+        >,
+    >,
+    pub StatusUpdates: quest_hook::libil2cpp::Gc<
+        crate::IgnoranceThirdparty::RingBuffer_1<
+            crate::IgnoranceCore::IgnoranceClientStats,
+        >,
     >,
     pub CeaseOperation: bool,
-    pub WorkerThread: *mut crate::System::Threading::Thread,
+    pub WorkerThread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
 }
 #[cfg(feature = "IgnoranceCore+IgnoranceClient")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -135,18 +149,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::IgnoranceCore::IgnoranceClient
 }
 #[cfg(feature = "IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct IgnoranceClient_ThreadParamInfo {
     pub Channels: i32,
     pub PollTime: i32,
     pub Port: i32,
     pub PacketSizeLimit: i32,
     pub Verbosity: i32,
-    pub Address: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Address: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub UseSsl: bool,
     pub ValidateCertificate: bool,
-    pub RootCertificatePath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub RootCertificate: *mut quest_hook::libil2cpp::Il2CppString,
+    pub RootCertificatePath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub RootCertificate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

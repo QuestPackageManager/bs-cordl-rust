@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct HEU_AssetSync {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_BaseSync,
-    pub _onAssetLoaded: *mut crate::HoudiniEngineUnity::HEU_AssetSync_AssetSyncCallback,
-    pub _assetPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _onAssetLoaded: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_AssetSync_AssetSyncCallback,
+    >,
+    pub _assetPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

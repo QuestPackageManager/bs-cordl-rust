@@ -4,7 +4,9 @@
 pub struct IntegratedSubsystem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
-    pub m_SubsystemDescriptor: *mut crate::UnityEngine::ISubsystemDescriptor,
+    pub m_SubsystemDescriptor: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ISubsystemDescriptor,
+    >,
 }
 #[cfg(feature = "UnityEngine+IntegratedSubsystem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

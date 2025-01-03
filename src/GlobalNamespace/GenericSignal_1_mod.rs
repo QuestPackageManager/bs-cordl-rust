@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct GenericSignal_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::Signal,
-    pub _floatEvent: *mut crate::System::Action_1<T>,
+    pub _floatEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "GenericSignal_1")]

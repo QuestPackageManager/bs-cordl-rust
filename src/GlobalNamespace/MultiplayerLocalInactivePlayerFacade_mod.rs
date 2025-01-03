@@ -3,15 +3,27 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerFacade {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _inactivePlayerSongSyncController: *mut crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController,
-    pub _spectatorController: *mut crate::GlobalNamespace::MultiplayerSpectatorController,
-    pub _introAnimator: *mut crate::UnityEngine::Playables::PlayableDirector,
-    pub _outroAnimator: *mut crate::GlobalNamespace::MultiplayerLocalInactivePlayerOutroAnimator,
-    pub playerDidFinishEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+    pub _inactivePlayerSongSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController,
     >,
-    pub playerNetworkDidFailedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+    pub _spectatorController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerSpectatorController,
+    >,
+    pub _introAnimator: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Playables::PlayableDirector,
+    >,
+    pub _outroAnimator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLocalInactivePlayerOutroAnimator,
+    >,
+    pub playerDidFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        >,
+    >,
+    pub playerNetworkDidFailedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+        >,
     >,
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerFacade")]

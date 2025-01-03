@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct PlayAudioOnGameEventController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioClipQueue: *mut crate::GlobalNamespace::AudioClipQueue,
-    pub _eventAudioBindings: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::PlayAudioOnGameEventController_EventAudioBinding,
+    pub _audioClipQueue: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioClipQueue,
+    >,
+    pub _eventAudioBindings: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::PlayAudioOnGameEventController_EventAudioBinding,
+        >,
     >,
 }
 #[cfg(feature = "PlayAudioOnGameEventController")]
@@ -83,14 +87,20 @@ for crate::GlobalNamespace::PlayAudioOnGameEventController {
 #[derive(Debug)]
 pub struct PlayAudioOnGameEventController_EventAudioBinding {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _signal: *mut crate::GlobalNamespace::Signal,
+    pub _signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
     pub _delay: f32,
-    pub _localizedAudioClips: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::LocalizedAudioClipSO,
+    pub _localizedAudioClips: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::LocalizedAudioClipSO,
+        >,
     >,
-    pub _audioClipQueue: *mut crate::GlobalNamespace::AudioClipQueue,
-    pub _randomObjectPicker: *mut crate::GlobalNamespace::RandomObjectPicker_1<
-        *mut crate::GlobalNamespace::LocalizedAudioClipSO,
+    pub _audioClipQueue: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioClipQueue,
+    >,
+    pub _randomObjectPicker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RandomObjectPicker_1<
+            *mut crate::GlobalNamespace::LocalizedAudioClipSO,
+        >,
     >,
 }
 #[cfg(feature = "PlayAudioOnGameEventController+EventAudioBinding")]

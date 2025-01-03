@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PlayersLobbyPermissionConfigurationNetSerializable {
     __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
-    pub _playersPermission: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
+    pub _playersPermission: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
+        >,
     >,
 }
 #[cfg(feature = "PlayersLobbyPermissionConfigurationNetSerializable")]

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct X500DistinguishedName {
     __cordl_parent: crate::System::Security::Cryptography::AsnEncodedData,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub canonEncoding: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub canonEncoding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedName")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

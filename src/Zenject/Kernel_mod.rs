@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct Kernel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _tickableManager: *mut crate::Zenject::TickableManager,
-    pub _initializableManager: *mut crate::Zenject::InitializableManager,
-    pub _disposablesManager: *mut crate::Zenject::DisposableManager,
+    pub _tickableManager: quest_hook::libil2cpp::Gc<crate::Zenject::TickableManager>,
+    pub _initializableManager: quest_hook::libil2cpp::Gc<
+        crate::Zenject::InitializableManager,
+    >,
+    pub _disposablesManager: quest_hook::libil2cpp::Gc<
+        crate::Zenject::DisposableManager,
+    >,
 }
 #[cfg(feature = "Zenject+Kernel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct Evidence {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub tstEvidence: *mut crate::Org::BouncyCastle::Asn1::Cms::TimeStampTokenEvidence,
-    pub otherEvidence: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    pub tstEvidence: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::TimeStampTokenEvidence,
+    >,
+    pub otherEvidence: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+Evidence")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

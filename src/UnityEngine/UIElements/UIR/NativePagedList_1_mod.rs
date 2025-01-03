@@ -4,13 +4,17 @@
 pub struct NativePagedList_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub k_PoolCapacity: i32,
-    pub m_Pages: *mut crate::System::Collections::Generic::List_1<
-        crate::Unity::Collections::NativeArray_1<T>,
+    pub m_Pages: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::Unity::Collections::NativeArray_1<T>,
+        >,
     >,
     pub m_CurrentPage: crate::Unity::Collections::NativeArray_1<T>,
     pub m_CurrentPageCount: i32,
-    pub m_Enumerator: *mut crate::System::Collections::Generic::List_1<
-        crate::Unity::Collections::NativeSlice_1<T>,
+    pub m_Enumerator: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::Unity::Collections::NativeSlice_1<T>,
+        >,
     >,
     pub _disposed_k__BackingField: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,

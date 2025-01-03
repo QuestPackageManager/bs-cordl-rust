@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ArgumentOutOfRangeException {
     __cordl_parent: crate::System::ArgumentException,
-    pub _actualValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _actualValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+ArgumentOutOfRangeException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

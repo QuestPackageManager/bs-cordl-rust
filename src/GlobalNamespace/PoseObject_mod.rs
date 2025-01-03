@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct PoseObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _transform: *mut crate::UnityEngine::Transform,
-    pub _poseObjectId: *mut crate::GlobalNamespace::PoseObjectIdSO,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _poseObjectId: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PoseObjectIdSO>,
 }
 #[cfg(feature = "PoseObject")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

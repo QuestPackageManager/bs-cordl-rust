@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct IdeaCbcPar {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub iv: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    pub iv: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Misc+IdeaCbcPar")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

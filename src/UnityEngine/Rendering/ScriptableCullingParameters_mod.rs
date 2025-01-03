@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+ScriptableCullingParameters")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ScriptableCullingParameters {
     pub m_IsOrthographic: i32,
     pub m_LODParameters: crate::UnityEngine::Rendering::LODParameters,
@@ -147,7 +147,7 @@ impl AsMut<
     feature = "UnityEngine+Rendering+ScriptableCullingParameters+_m_CullingPlanes_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ScriptableCullingParameters__m_CullingPlanes_e__FixedBuffer {
     pub FixedElementField: u8,
 }
@@ -181,7 +181,7 @@ impl crate::UnityEngine::Rendering::ScriptableCullingParameters__m_CullingPlanes
     feature = "UnityEngine+Rendering+ScriptableCullingParameters+_m_LayerFarCullDistances_e__FixedBuffer"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ScriptableCullingParameters__m_LayerFarCullDistances_e__FixedBuffer {
     pub FixedElementField: f32,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_TouchPadMove_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VREvent_TouchPadMove_t {
     pub bFingerDown: bool,
     pub flSecondsFingerDown: f32,

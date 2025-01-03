@@ -17,9 +17,9 @@ pub struct OVRScenePlane {
         crate::UnityEngine::Vector2,
     >,
     pub _boundaryRequested: bool,
-    pub _sceneAnchor: *mut crate::GlobalNamespace::OVRSceneAnchor,
-    pub _boundary: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::Vector2,
+    pub _sceneAnchor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
+    pub _boundary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
     >,
 }
 #[cfg(feature = "OVRScenePlane")]
@@ -311,7 +311,7 @@ for crate::GlobalNamespace::OVRScenePlane {
 }
 #[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRScenePlane_GetBoundaryJob {
     pub Space: crate::GlobalNamespace::OVRSpace,
     pub Boundary: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector2>,
@@ -379,7 +379,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
 }
 #[cfg(feature = "OVRScenePlane+GetBoundaryLengthJob")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRScenePlane_GetBoundaryLengthJob {
     pub Space: crate::GlobalNamespace::OVRSpace,
     pub Length: crate::Unity::Collections::NativeArray_1<i32>,

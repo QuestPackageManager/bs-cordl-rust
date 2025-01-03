@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct SaberTrailRenderer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _meshRenderer: *mut crate::UnityEngine::MeshRenderer,
-    pub _meshFilter: *mut crate::UnityEngine::MeshFilter,
-    pub _mesh: *mut crate::UnityEngine::Mesh,
-    pub _vertices: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-    pub _indices: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _uvs: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-    pub _colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+    pub _meshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+    pub _meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
+    pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub _vertices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
+    pub _indices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub _uvs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+    >,
+    pub _colors: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+    >,
     pub _trailWidth: f32,
     pub _trailDuration: f32,
     pub _segmentDuration: f32,

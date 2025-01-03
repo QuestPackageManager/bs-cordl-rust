@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct NewExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
-    pub _arguments: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::System::Linq::Expressions::Expression,
+    pub _arguments: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::System::Linq::Expressions::Expression,
+        >,
     >,
-    pub _Constructor_k__BackingField: *mut crate::System::Reflection::ConstructorInfo,
+    pub _Constructor_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::ConstructorInfo,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+NewExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

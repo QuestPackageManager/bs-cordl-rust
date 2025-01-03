@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct Accuracy {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub seconds: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub millis: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub micros: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+    pub seconds: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub millis: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub micros: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Tsp+Accuracy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

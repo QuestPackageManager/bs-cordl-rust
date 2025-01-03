@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct LocationCacheKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-    pub m_DesiredType: *mut crate::System::Type,
+    pub m_Location: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    >,
+    pub m_DesiredType: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+LocationCacheKey")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct RandomObjectPicker_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _objects: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub _objects: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _lastPickTime: f32,
     pub _minimumPickInterval: f32,
     __cordl_phantom_T: std::marker::PhantomData<T>,

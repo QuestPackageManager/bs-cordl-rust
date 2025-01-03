@@ -5,9 +5,9 @@ pub struct InteractableTextMeshPro {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub _interactionAlpha: f32,
     pub _noInteractionAlpha: f32,
-    pub _text: *mut crate::TMPro::TextMeshProUGUI,
-    pub _canvasGroupCache: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::CanvasGroup,
+    pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _canvasGroupCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::CanvasGroup>,
     >,
 }
 #[cfg(feature = "HMUI+InteractableTextMeshPro")]

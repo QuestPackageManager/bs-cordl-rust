@@ -10,27 +10,39 @@ pub struct CultureInfo {
     pub number_index: i32,
     pub default_calendar_type: i32,
     pub m_useUserOverride: bool,
-    pub numInfo: *mut crate::System::Globalization::NumberFormatInfo,
-    pub dateTimeInfo: *mut crate::System::Globalization::DateTimeFormatInfo,
-    pub textInfo: *mut crate::System::Globalization::TextInfo,
-    pub m_name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub englishname: *mut quest_hook::libil2cpp::Il2CppString,
-    pub nativename: *mut quest_hook::libil2cpp::Il2CppString,
-    pub iso3lang: *mut quest_hook::libil2cpp::Il2CppString,
-    pub iso2lang: *mut quest_hook::libil2cpp::Il2CppString,
-    pub win3lang: *mut quest_hook::libil2cpp::Il2CppString,
-    pub territory: *mut quest_hook::libil2cpp::Il2CppString,
-    pub native_calendar_names: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub numInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::NumberFormatInfo,
     >,
-    pub compareInfo: *mut crate::System::Globalization::CompareInfo,
-    pub textinfo_data: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub dateTimeInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::DateTimeFormatInfo,
+    >,
+    pub textInfo: quest_hook::libil2cpp::Gc<crate::System::Globalization::TextInfo>,
+    pub m_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub englishname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub nativename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub iso3lang: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub iso2lang: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub win3lang: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub territory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub native_calendar_names: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub compareInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::CompareInfo,
+    >,
+    pub textinfo_data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_dataItem: i32,
-    pub calendar: *mut crate::System::Globalization::Calendar,
-    pub parent_culture: *mut crate::System::Globalization::CultureInfo,
+    pub calendar: quest_hook::libil2cpp::Gc<crate::System::Globalization::Calendar>,
+    pub parent_culture: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::CultureInfo,
+    >,
     pub constructed: bool,
-    pub cached_serialized_form: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub m_cultureData: *mut crate::System::Globalization::CultureData,
+    pub cached_serialized_form: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub m_cultureData: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::CultureData,
+    >,
     pub m_isInherited: bool,
 }
 #[cfg(feature = "System+Globalization+CultureInfo")]
@@ -896,7 +908,7 @@ for crate::System::Globalization::CultureInfo {
 }
 #[cfg(feature = "System+Globalization+CultureInfo+Data")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CultureInfo_Data {
     pub ansi: i32,
     pub ebcdic: i32,

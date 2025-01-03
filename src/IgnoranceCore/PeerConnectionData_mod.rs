@@ -1,10 +1,10 @@
 #[cfg(feature = "IgnoranceCore+PeerConnectionData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PeerConnectionData {
     pub Port: u16,
     pub NativePeerId: u32,
-    pub IP: *mut quest_hook::libil2cpp::Il2CppString,
+    pub IP: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "IgnoranceCore+PeerConnectionData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

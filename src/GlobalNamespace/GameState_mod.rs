@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct GameState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub fsm: *mut crate::GlobalNamespace::GameplayServerFiniteStateMachine,
+    pub fsm: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayServerFiniteStateMachine,
+    >,
 }
 #[cfg(feature = "GameState")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

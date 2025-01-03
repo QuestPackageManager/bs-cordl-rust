@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct NoteFloorMovement {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _rotatedObject: *mut crate::UnityEngine::Transform,
-    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
+    pub _rotatedObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _playerTransforms: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerTransforms,
+    >,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
+    pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVariableMovementDataProvider,
+    >,
     pub _localPosition: crate::UnityEngine::Vector3,
     pub _beatTime: f32,
     pub _moveStartOffset: crate::UnityEngine::Vector3,

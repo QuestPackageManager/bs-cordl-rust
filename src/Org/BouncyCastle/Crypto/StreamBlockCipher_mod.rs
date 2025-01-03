@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct StreamBlockCipher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
-    pub oneByte: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    >,
+    pub oneByte: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+StreamBlockCipher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

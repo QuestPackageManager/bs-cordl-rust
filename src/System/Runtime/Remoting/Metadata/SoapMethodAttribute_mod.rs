@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct SoapMethodAttribute {
     __cordl_parent: crate::System::Runtime::Remoting::Metadata::SoapAttribute,
-    pub _responseElement: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _responseNamespace: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _returnElement: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _soapAction: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _responseElement: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _responseNamespace: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _returnElement: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _soapAction: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _useAttribute: bool,
-    pub _namespace: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _namespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Runtime+Remoting+Metadata+SoapMethodAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

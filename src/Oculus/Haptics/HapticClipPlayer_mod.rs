@@ -5,7 +5,7 @@ pub struct HapticClipPlayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _clipId: i32,
     pub _playerId: i32,
-    pub _haptics: *mut crate::Oculus::Haptics::Haptics,
+    pub _haptics: quest_hook::libil2cpp::Gc<crate::Oculus::Haptics::Haptics>,
 }
 #[cfg(feature = "Oculus+Haptics+HapticClipPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

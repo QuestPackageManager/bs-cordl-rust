@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct Cast6Engine {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Engines::Cast5Engine,
-    pub _Kr: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _Km: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub _Tr: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _Tm: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub _workingKey: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub _Kr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub _Km: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub _Tr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub _Tm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub _workingKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+Cast6Engine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

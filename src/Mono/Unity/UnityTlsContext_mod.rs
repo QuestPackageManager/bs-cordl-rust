@@ -3,23 +3,41 @@
 #[derive(Debug)]
 pub struct UnityTlsContext {
     __cordl_parent: crate::Mono::Net::Security::MobileTlsContext,
-    pub tlsContext: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub requestedClientCertChain: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub requestedClientKey: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub readCallback: *mut crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback,
-    pub writeCallback: *mut crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback,
-    pub certificateCallback: *mut crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback,
-    pub verifyCallback: *mut crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback,
-    pub localClientCertificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-    pub remoteCertificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
-    pub connectioninfo: *mut crate::Mono::Security::Interface::MonoTlsConnectionInfo,
+    pub tlsContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub requestedClientCertChain: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub requestedClientKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub readCallback: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback,
+    >,
+    pub writeCallback: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback,
+    >,
+    pub certificateCallback: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback,
+    >,
+    pub verifyCallback: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback,
+    >,
+    pub localClientCertificate: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+    >,
+    pub remoteCertificate: quest_hook::libil2cpp::Gc<
+        crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+    >,
+    pub connectioninfo: quest_hook::libil2cpp::Gc<
+        crate::Mono::Security::Interface::MonoTlsConnectionInfo,
+    >,
     pub isAuthenticated: bool,
     pub hasContext: bool,
     pub closedGraceful: bool,
-    pub writeBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub readBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub writeBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub readBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub handle: crate::System::Runtime::InteropServices::GCHandle,
-    pub lastException: *mut crate::System::Exception,
+    pub lastException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
 }
 #[cfg(feature = "Mono+Unity+UnityTlsContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

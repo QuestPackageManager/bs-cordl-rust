@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PkixAttrCertPathBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub certPathException: *mut crate::System::Exception,
+    pub certPathException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixAttrCertPathBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

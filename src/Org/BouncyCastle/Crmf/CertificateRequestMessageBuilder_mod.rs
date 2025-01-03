@@ -3,18 +3,36 @@
 #[derive(Debug)]
 pub struct CertificateRequestMessageBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _certReqId: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub _extGenerator: *mut crate::Org::BouncyCastle::Asn1::X509::X509ExtensionsGenerator,
-    pub _templateBuilder: *mut crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
-    pub _controls: *mut crate::System::Collections::IList,
-    pub _popSigner: *mut crate::Org::BouncyCastle::Crypto::ISignatureFactory,
-    pub _pkMacBuilder: *mut crate::Org::BouncyCastle::Crmf::PKMacBuilder,
-    pub _password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    pub _sender: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    pub _certReqId: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
+    pub _extGenerator: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509ExtensionsGenerator,
+    >,
+    pub _templateBuilder: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Crmf::CertTemplateBuilder,
+    >,
+    pub _controls: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub _popSigner: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::ISignatureFactory,
+    >,
+    pub _pkMacBuilder: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crmf::PKMacBuilder,
+    >,
+    pub _password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    pub _sender: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    >,
     pub _popoType: i32,
-    pub _popoPrivKey: *mut crate::Org::BouncyCastle::Asn1::Crmf::PopoPrivKey,
-    pub _popRaVerified: *mut crate::Org::BouncyCastle::Asn1::Asn1Null,
-    pub _agreeMac: *mut crate::Org::BouncyCastle::Asn1::Crmf::PKMacValue,
+    pub _popoPrivKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Crmf::PopoPrivKey,
+    >,
+    pub _popRaVerified: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Null,
+    >,
+    pub _agreeMac: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Crmf::PKMacValue,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+CertificateRequestMessageBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

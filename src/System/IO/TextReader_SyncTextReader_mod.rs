@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TextReader_SyncTextReader {
     __cordl_parent: crate::System::IO::TextReader,
-    pub _in: *mut crate::System::IO::TextReader,
+    pub _in: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
 }
 #[cfg(feature = "System+IO+TextReader+SyncTextReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

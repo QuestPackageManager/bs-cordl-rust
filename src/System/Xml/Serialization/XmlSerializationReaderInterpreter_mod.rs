@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct XmlSerializationReaderInterpreter {
     __cordl_parent: crate::System::Xml::Serialization::XmlSerializationReader,
-    pub _typeMap: *mut crate::System::Xml::Serialization::XmlMapping,
+    pub _typeMap: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlMapping,
+    >,
     pub _format: crate::System::Xml::Serialization::SerializationFormat,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter")]
@@ -630,8 +632,10 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
 #[derive(Debug)]
 pub struct XmlSerializationReaderInterpreter_FixupCallbackInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _sri: *mut crate::System::Xml::Serialization::XmlSerializationReaderInterpreter,
-    pub _map: *mut crate::System::Xml::Serialization::ClassMap,
+    pub _sri: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlSerializationReaderInterpreter,
+    >,
+    pub _map: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::ClassMap>,
     pub _isValueList: bool,
 }
 #[cfg(
@@ -724,8 +728,12 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_FixupCa
 #[derive(Debug)]
 pub struct XmlSerializationReaderInterpreter_ReaderCallbackInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _sri: *mut crate::System::Xml::Serialization::XmlSerializationReaderInterpreter,
-    pub _typeMap: *mut crate::System::Xml::Serialization::XmlTypeMapping,
+    pub _sri: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlSerializationReaderInterpreter,
+    >,
+    pub _typeMap: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTypeMapping,
+    >,
 }
 #[cfg(
     feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"

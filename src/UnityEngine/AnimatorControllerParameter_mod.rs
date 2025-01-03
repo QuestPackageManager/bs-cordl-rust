@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AnimatorControllerParameter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_Type: crate::UnityEngine::AnimatorControllerParameterType,
     pub m_DefaultFloat: f32,
     pub m_DefaultInt: i32,

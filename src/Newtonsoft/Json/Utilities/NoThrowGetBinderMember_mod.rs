@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct NoThrowGetBinderMember {
     __cordl_parent: crate::System::Dynamic::GetMemberBinder,
-    pub _innerBinder: *mut crate::System::Dynamic::GetMemberBinder,
+    pub _innerBinder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::GetMemberBinder>,
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowGetBinderMember")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

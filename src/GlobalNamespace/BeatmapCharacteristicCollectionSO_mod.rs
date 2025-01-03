@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BeatmapCharacteristicCollectionSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _beatmapCharacteristics: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _beatmapCharacteristics: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapCharacteristicCollectionSO")]

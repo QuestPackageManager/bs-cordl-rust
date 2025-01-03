@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct InvokableCall {
     __cordl_parent: crate::UnityEngine::Events::BaseInvokableCall,
-    pub Delegate: *mut crate::UnityEngine::Events::UnityAction,
+    pub Delegate: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
 }
 #[cfg(feature = "UnityEngine+Events+InvokableCall")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

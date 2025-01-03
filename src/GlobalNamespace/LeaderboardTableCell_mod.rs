@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct LeaderboardTableCell {
     __cordl_parent: crate::HMUI::TableCell,
-    pub _rankText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _playerNameText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _scoreText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _fullComboText: *mut crate::TMPro::TextMeshProUGUI,
+    pub _rankText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _playerNameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _scoreText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _fullComboText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _normalColor: crate::UnityEngine::Color,
     pub _specialScoreColor: crate::UnityEngine::Color,
-    pub _separatorImage: *mut crate::UnityEngine::UI::Image,
+    pub _separatorImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
 }
 #[cfg(feature = "LeaderboardTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct PlayerDataFileModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _playerDataFileManager: *mut crate::GlobalNamespace::PlayerDataFileManagerSO,
-    pub _fileStorage: *mut crate::GlobalNamespace::IFileStorage,
-    pub _beatmapCharacteristicCollection: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
-    pub _colorSchemesSettings: *mut crate::GlobalNamespace::ColorSchemesSettings,
-    pub _environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
+    pub _playerDataFileManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataFileManagerSO,
+    >,
+    pub _fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+    pub _beatmapCharacteristicCollection: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCharacteristicCollection,
+    >,
+    pub _colorSchemesSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSchemesSettings,
+    >,
+    pub _environmentsListModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentsListModel,
+    >,
 }
 #[cfg(feature = "PlayerDataFileModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

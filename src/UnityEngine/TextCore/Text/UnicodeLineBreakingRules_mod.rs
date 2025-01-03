@@ -3,15 +3,17 @@
 #[derive(Debug)]
 pub struct UnicodeLineBreakingRules {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_UnicodeLineBreakingRules: *mut crate::UnityEngine::TextAsset,
-    pub m_LeadingCharacters: *mut crate::UnityEngine::TextAsset,
-    pub m_FollowingCharacters: *mut crate::UnityEngine::TextAsset,
-    pub m_UseModernHangulLineBreakingRules: bool,
-    pub m_LeadingCharactersLookup: *mut crate::System::Collections::Generic::HashSet_1<
-        u32,
+    pub m_UnicodeLineBreakingRules: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextAsset,
     >,
-    pub m_FollowingCharactersLookup: *mut crate::System::Collections::Generic::HashSet_1<
-        u32,
+    pub m_LeadingCharacters: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+    pub m_FollowingCharacters: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+    pub m_UseModernHangulLineBreakingRules: bool,
+    pub m_LeadingCharactersLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<u32>,
+    >,
+    pub m_FollowingCharactersLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<u32>,
     >,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+UnicodeLineBreakingRules")]

@@ -3,15 +3,27 @@
 #[derive(Debug)]
 pub struct ArcAndObstacleHapticEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _hapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _obstacleSaberSparkleEffectManager: *mut crate::GlobalNamespace::ObstacleSaberSparkleEffectManager,
-    pub _sliderInteractionManagers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::SliderInteractionManager,
+    pub _hapticPreset: quest_hook::libil2cpp::Gc<
+        crate::Libraries::HM::HMLib::VR::HapticPresetSO,
     >,
-    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
-    pub _hapticFeedbackManager: *mut crate::GlobalNamespace::HapticFeedbackManager,
-    pub _leftHandEffectState: *mut crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState,
-    pub _rightHandEffectState: *mut crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState,
+    pub _obstacleSaberSparkleEffectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ObstacleSaberSparkleEffectManager,
+    >,
+    pub _sliderInteractionManagers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::SliderInteractionManager,
+        >,
+    >,
+    pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
+    pub _hapticFeedbackManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HapticFeedbackManager,
+    >,
+    pub _leftHandEffectState: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState,
+    >,
+    pub _rightHandEffectState: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState,
+    >,
 }
 #[cfg(feature = "ArcAndObstacleHapticEffectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -211,7 +223,9 @@ for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
 pub struct ArcAndObstacleHapticEffectManager_EffectState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub colorType: crate::GlobalNamespace::ColorType,
-    pub sliderInteractionManager: *mut crate::GlobalNamespace::SliderInteractionManager,
+    pub sliderInteractionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SliderInteractionManager,
+    >,
     pub isInTheObstacle: bool,
     pub isSliderActive: bool,
 }

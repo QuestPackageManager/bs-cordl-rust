@@ -3,14 +3,30 @@
 #[derive(Debug)]
 pub struct EventBasedNetListener {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub PeerConnectedEvent: *mut crate::LiteNetLib::EventBasedNetListener_OnPeerConnected,
-    pub PeerDisconnectedEvent: *mut crate::LiteNetLib::EventBasedNetListener_OnPeerDisconnected,
-    pub NetworkErrorEvent: *mut crate::LiteNetLib::EventBasedNetListener_OnNetworkError,
-    pub NetworkReceiveEvent: *mut crate::LiteNetLib::EventBasedNetListener_OnNetworkReceive,
-    pub NetworkReceiveUnconnectedEvent: *mut crate::LiteNetLib::EventBasedNetListener_OnNetworkReceiveUnconnected,
-    pub NetworkLatencyUpdateEvent: *mut crate::LiteNetLib::EventBasedNetListener_OnNetworkLatencyUpdate,
-    pub ConnectionRequestEvent: *mut crate::LiteNetLib::EventBasedNetListener_OnConnectionRequest,
-    pub DeliveryEvent: *mut crate::LiteNetLib::EventBasedNetListener_OnDeliveryEvent,
+    pub PeerConnectedEvent: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::EventBasedNetListener_OnPeerConnected,
+    >,
+    pub PeerDisconnectedEvent: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::EventBasedNetListener_OnPeerDisconnected,
+    >,
+    pub NetworkErrorEvent: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::EventBasedNetListener_OnNetworkError,
+    >,
+    pub NetworkReceiveEvent: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::EventBasedNetListener_OnNetworkReceive,
+    >,
+    pub NetworkReceiveUnconnectedEvent: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::EventBasedNetListener_OnNetworkReceiveUnconnected,
+    >,
+    pub NetworkLatencyUpdateEvent: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::EventBasedNetListener_OnNetworkLatencyUpdate,
+    >,
+    pub ConnectionRequestEvent: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::EventBasedNetListener_OnConnectionRequest,
+    >,
+    pub DeliveryEvent: quest_hook::libil2cpp::Gc<
+        crate::LiteNetLib::EventBasedNetListener_OnDeliveryEvent,
+    >,
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

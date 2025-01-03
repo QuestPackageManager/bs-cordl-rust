@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+BatchPackedCullingViewID")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BatchPackedCullingViewID {
     pub handle: u64,
 }

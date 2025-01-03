@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PbeParameter {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub salt: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
-    pub iterationCount: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
+    pub salt: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
+    pub iterationCount: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerInteger,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+PbeParameter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

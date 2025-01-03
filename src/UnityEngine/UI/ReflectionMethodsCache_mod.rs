@@ -3,12 +3,24 @@
 #[derive(Debug)]
 pub struct ReflectionMethodsCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub raycast3D: *mut crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback,
-    pub raycast3DAll: *mut crate::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback,
-    pub getRaycastNonAlloc: *mut crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback,
-    pub raycast2D: *mut crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback,
-    pub getRayIntersectionAll: *mut crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback,
-    pub getRayIntersectionAllNonAlloc: *mut crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback,
+    pub raycast3D: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback,
+    >,
+    pub raycast3DAll: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback,
+    >,
+    pub getRaycastNonAlloc: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback,
+    >,
+    pub raycast2D: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback,
+    >,
+    pub getRayIntersectionAll: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback,
+    >,
+    pub getRayIntersectionAllNonAlloc: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback,
+    >,
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

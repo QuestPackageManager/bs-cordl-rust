@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct CertificateRequest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mCertificateTypes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mSupportedSignatureAlgorithms: *mut crate::System::Collections::IList,
-    pub mCertificateAuthorities: *mut crate::System::Collections::IList,
+    pub mCertificateTypes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub mSupportedSignatureAlgorithms: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IList,
+    >,
+    pub mCertificateAuthorities: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IList,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CertificateRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

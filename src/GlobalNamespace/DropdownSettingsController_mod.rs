@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct DropdownSettingsController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _dropdown: *mut crate::HMUI::SimpleTextDropdown,
-    pub dropDownValueDidChangeEvent: *mut crate::System::Action,
+    pub _dropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
+    pub dropDownValueDidChangeEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _idx: i32,
     pub _numberOfElements: i32,
 }

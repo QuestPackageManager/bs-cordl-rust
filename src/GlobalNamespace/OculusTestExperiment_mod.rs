@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct OculusTestExperiment {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _experimentModel: *mut crate::GlobalNamespace::IExperimentModel,
+    pub _experimentModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IExperimentModel,
+    >,
 }
 #[cfg(feature = "OculusTestExperiment")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -70,7 +72,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OculusTestExp
 #[derive(Debug)]
 pub struct OculusTestExperiment_ExperimentData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _experimentPlatformKey: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _experimentPlatformKey: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "OculusTestExperiment+ExperimentData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

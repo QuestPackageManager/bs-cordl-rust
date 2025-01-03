@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+LayoutData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LayoutData {
     pub alignContent: crate::UnityEngine::UIElements::Align,
     pub alignItems: crate::UnityEngine::UIElements::Align,

@@ -5,8 +5,12 @@ pub struct PointerDownLinkTagEvent {
     __cordl_parent: crate::UnityEngine::UIElements::PointerEventBase_1<
         *mut crate::UnityEngine::UIElements::Experimental::PointerDownLinkTagEvent,
     >,
-    pub _linkID_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _linkText_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _linkID_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _linkText_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Experimental+PointerDownLinkTagEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

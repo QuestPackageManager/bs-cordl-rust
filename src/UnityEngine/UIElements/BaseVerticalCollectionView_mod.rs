@@ -3,37 +3,48 @@
 #[derive(Debug)]
 pub struct BaseVerticalCollectionView {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
-    pub itemsChosen: *mut crate::System::Action_1<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+    pub itemsChosen: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::System::Collections::Generic::IEnumerable_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     >,
-    pub selectionChanged: *mut crate::System::Action_1<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut quest_hook::libil2cpp::Il2CppObject,
+    pub selectionChanged: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::System::Collections::Generic::IEnumerable_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     >,
-    pub selectedIndicesChanged: *mut crate::System::Action_1<
-        *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+    pub selectedIndicesChanged: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     >,
-    pub itemIndexChanged: *mut crate::System::Action_2<i32, i32>,
-    pub itemsSourceChanged: *mut crate::System::Action,
-    pub selectionNotChanged: *mut crate::System::Action,
-    pub canStartDrag: *mut crate::System::Func_2<
-        crate::UnityEngine::UIElements::CanStartDragArgs,
-        bool,
+    pub itemIndexChanged: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
+    pub itemsSourceChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub selectionNotChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub canStartDrag: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<crate::UnityEngine::UIElements::CanStartDragArgs, bool>,
     >,
-    pub setupDragAndDrop: *mut crate::System::Func_2<
-        crate::UnityEngine::UIElements::SetupDragAndDropArgs,
-        crate::UnityEngine::UIElements::StartDragArgs,
+    pub setupDragAndDrop: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            crate::UnityEngine::UIElements::SetupDragAndDropArgs,
+            crate::UnityEngine::UIElements::StartDragArgs,
+        >,
     >,
-    pub dragAndDropUpdate: *mut crate::System::Func_2<
-        crate::UnityEngine::UIElements::HandleDragAndDropArgs,
-        crate::UnityEngine::UIElements::DragVisualMode,
+    pub dragAndDropUpdate: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            crate::UnityEngine::UIElements::HandleDragAndDropArgs,
+            crate::UnityEngine::UIElements::DragVisualMode,
+        >,
     >,
-    pub handleDrop: *mut crate::System::Func_2<
-        crate::UnityEngine::UIElements::HandleDragAndDropArgs,
-        crate::UnityEngine::UIElements::DragVisualMode,
+    pub handleDrop: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            crate::UnityEngine::UIElements::HandleDragAndDropArgs,
+            crate::UnityEngine::UIElements::DragVisualMode,
+        >,
     >,
     pub m_SelectionType: crate::UnityEngine::UIElements::SelectionType,
     pub m_HorizontalScrollingEnabled: bool,
@@ -41,21 +52,41 @@ pub struct BaseVerticalCollectionView {
     pub m_FixedItemHeight: f32,
     pub m_ItemHeightIsInline: bool,
     pub m_VirtualizationMethod: crate::UnityEngine::UIElements::CollectionVirtualizationMethod,
-    pub m_ScrollView: *mut crate::UnityEngine::UIElements::ScrollView,
-    pub m_ViewController: *mut crate::UnityEngine::UIElements::CollectionViewController,
-    pub m_VirtualizationController: *mut crate::UnityEngine::UIElements::CollectionVirtualizationController,
-    pub m_NavigationManipulator: *mut crate::UnityEngine::UIElements::KeyboardNavigationManipulator,
-    pub serializedVirtualizationData: *mut crate::UnityEngine::UIElements::SerializedVirtualizationData,
-    pub m_SelectedIds: *mut crate::System::Collections::Generic::List_1<i32>,
-    pub m_SelectedIndices: *mut crate::System::Collections::Generic::List_1<i32>,
-    pub m_SelectedItems: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_ScrollView: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ScrollView,
+    >,
+    pub m_ViewController: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::CollectionViewController,
+    >,
+    pub m_VirtualizationController: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::CollectionVirtualizationController,
+    >,
+    pub m_NavigationManipulator: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::KeyboardNavigationManipulator,
+    >,
+    pub serializedVirtualizationData: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::SerializedVirtualizationData,
+    >,
+    pub m_SelectedIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
+    pub m_SelectedIndices: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
+    pub m_SelectedItems: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
     pub m_LastHeight: f32,
     pub m_IsRangeSelectionDirectionUp: bool,
-    pub m_Dragger: *mut crate::UnityEngine::UIElements::ListViewDragger,
-    pub m_ItemIndexChangedCallback: *mut crate::System::Action_2<i32, i32>,
-    pub m_ItemsSourceChangedCallback: *mut crate::System::Action,
+    pub m_Dragger: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ListViewDragger,
+    >,
+    pub m_ItemIndexChangedCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<i32, i32>,
+    >,
+    pub m_ItemsSourceChangedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub m_TouchDownPosition: crate::UnityEngine::Vector3,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView")]
@@ -1203,19 +1234,33 @@ for crate::UnityEngine::UIElements::BaseVerticalCollectionView {
 #[derive(Debug)]
 pub struct BaseVerticalCollectionView_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
-    pub m_FixedItemHeight: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_VirtualizationMethod: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::CollectionVirtualizationMethod,
+    pub m_FixedItemHeight: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
     >,
-    pub m_ShowBorder: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_SelectionType: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::SelectionType,
+    pub m_VirtualizationMethod: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::CollectionVirtualizationMethod,
+        >,
     >,
-    pub m_ShowAlternatingRowBackgrounds: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::AlternatingRowBackground,
+    pub m_ShowBorder: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
-    pub m_Reorderable: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_HorizontalScrollingEnabled: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    pub m_SelectionType: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::SelectionType,
+        >,
+    >,
+    pub m_ShowAlternatingRowBackgrounds: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::AlternatingRowBackground,
+        >,
+    >,
+    pub m_Reorderable: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
+    pub m_HorizontalScrollingEnabled: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

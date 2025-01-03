@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct AudioSampleProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub sampleFramesAvailable: *mut crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler,
-    pub sampleFramesOverflow: *mut crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler,
+    pub sampleFramesAvailable: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler,
+    >,
+    pub sampleFramesOverflow: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHandler,
+    >,
 }
 #[cfg(feature = "UnityEngine+Experimental+Audio+AudioSampleProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

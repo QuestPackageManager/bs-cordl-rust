@@ -1,8 +1,10 @@
 #[cfg(feature = "UnityEngine+UIElements+Cursor")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Cursor {
-    pub _texture_k__BackingField: *mut crate::UnityEngine::Texture2D,
+    pub _texture_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Texture2D,
+    >,
     pub _hotspot_k__BackingField: crate::UnityEngine::Vector2,
     pub _defaultCursorId_k__BackingField: i32,
 }

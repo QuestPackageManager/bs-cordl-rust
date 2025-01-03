@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct RepeatButton {
     __cordl_parent: crate::UnityEngine::UIElements::TextElement,
-    pub m_Clickable: *mut crate::UnityEngine::UIElements::Clickable,
+    pub m_Clickable: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Clickable,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+RepeatButton")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -170,8 +172,12 @@ for crate::UnityEngine::UIElements::RepeatButton_UxmlFactory {
 #[derive(Debug)]
 pub struct RepeatButton_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::TextElement_UxmlTraits,
-    pub m_Delay: *mut crate::UnityEngine::UIElements::UxmlLongAttributeDescription,
-    pub m_Interval: *mut crate::UnityEngine::UIElements::UxmlLongAttributeDescription,
+    pub m_Delay: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlLongAttributeDescription,
+    >,
+    pub m_Interval: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlLongAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+RepeatButton+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

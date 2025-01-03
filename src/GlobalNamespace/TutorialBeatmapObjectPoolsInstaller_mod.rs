@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct TutorialBeatmapObjectPoolsInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _basicNotePrefab: *mut crate::GlobalNamespace::TutorialNoteController,
-    pub _bombNotePrefab: *mut crate::GlobalNamespace::BombNoteController,
-    pub _obstaclePrefab: *mut crate::GlobalNamespace::ObstacleController,
+    pub _basicNotePrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TutorialNoteController,
+    >,
+    pub _bombNotePrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BombNoteController,
+    >,
+    pub _obstaclePrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ObstacleController,
+    >,
 }
 #[cfg(feature = "TutorialBeatmapObjectPoolsInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

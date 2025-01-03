@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct ConcatenationKdfGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub mShared: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mOtherInfo: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mDigest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub mShared: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mOtherInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub mHLen: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+Kdf+ConcatenationKdfGenerator")]

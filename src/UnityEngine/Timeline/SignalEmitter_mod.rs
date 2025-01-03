@@ -5,7 +5,7 @@ pub struct SignalEmitter {
     __cordl_parent: crate::UnityEngine::Timeline::Marker,
     pub m_Retroactive: bool,
     pub m_EmitOnce: bool,
-    pub m_Asset: *mut crate::UnityEngine::Timeline::SignalAsset,
+    pub m_Asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
 }
 #[cfg(feature = "UnityEngine+Timeline+SignalEmitter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

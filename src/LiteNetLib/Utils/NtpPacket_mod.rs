@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct NtpPacket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Bytes_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _Bytes_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub _DestinationTimestamp_k__BackingField: crate::System::Nullable_1<
         crate::System::DateTime,
     >,

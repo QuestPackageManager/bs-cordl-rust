@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct X509CertPairParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub currentStream: *mut crate::System::IO::Stream,
+    pub currentStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509CertPairParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

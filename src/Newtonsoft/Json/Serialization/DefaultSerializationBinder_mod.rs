@@ -3,12 +3,14 @@
 #[derive(Debug)]
 pub struct DefaultSerializationBinder {
     __cordl_parent: crate::System::Runtime::Serialization::SerializationBinder,
-    pub _typeCache: *mut crate::Newtonsoft::Json::Utilities::ThreadSafeStore_2<
-        crate::Newtonsoft::Json::Utilities::StructMultiKey_2<
-            *mut quest_hook::libil2cpp::Il2CppString,
-            *mut quest_hook::libil2cpp::Il2CppString,
+    pub _typeCache: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Utilities::ThreadSafeStore_2<
+            crate::Newtonsoft::Json::Utilities::StructMultiKey_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+            *mut crate::System::Type,
         >,
-        *mut crate::System::Type,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultSerializationBinder")]

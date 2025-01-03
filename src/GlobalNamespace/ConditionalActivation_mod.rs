@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ConditionalActivation {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _value: *mut crate::GlobalNamespace::BoolSO,
+    pub _value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BoolSO>,
     pub _activateOnFalse: bool,
 }
 #[cfg(feature = "ConditionalActivation")]

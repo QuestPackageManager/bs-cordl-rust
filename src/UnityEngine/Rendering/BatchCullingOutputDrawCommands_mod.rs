@@ -1,12 +1,16 @@
 #[cfg(feature = "UnityEngine+Rendering+BatchCullingOutputDrawCommands")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BatchCullingOutputDrawCommands {
-    pub drawCommands: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub visibleInstances: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub drawRanges: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub instanceSortingPositions: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub drawCommandPickingInstanceIDs: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub drawCommands: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub visibleInstances: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub drawRanges: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub instanceSortingPositions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub drawCommandPickingInstanceIDs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub drawCommandCount: i32,
     pub visibleInstanceCount: i32,
     pub drawRangeCount: i32,

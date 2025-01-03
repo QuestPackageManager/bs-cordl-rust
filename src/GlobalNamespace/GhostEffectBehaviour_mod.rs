@@ -3,27 +3,27 @@
 #[derive(Debug)]
 pub struct GhostEffectBehaviour {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
-    pub alphaCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub sizeCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub distanceCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub alphaCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    pub sizeCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    pub distanceCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub _distanceMultiplier: crate::UnityEngine::Vector3,
     pub _useStartTransform: bool,
     pub _useEndTransform: bool,
     pub _startLocalPosition: crate::UnityEngine::Vector3,
-    pub _startTransform: *mut crate::UnityEngine::Transform,
+    pub _startTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _endLocalPosition: crate::UnityEngine::Vector3,
-    pub _endTransform: *mut crate::UnityEngine::Transform,
+    pub _endTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _positionEasing: crate::GlobalNamespace::EaseType,
     pub _endBehavior: crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior,
     pub progress: f32,
-    pub textMeshPros: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::TMPro::TextMeshPro,
+    pub textMeshPros: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::TMPro::TextMeshPro>,
     >,
-    pub _canvasGroups: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::CanvasGroup,
+    pub _canvasGroups: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::CanvasGroup>,
     >,
     pub _ghostEffectType: crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType,
-    pub _ghostEffectTransform: *mut crate::UnityEngine::Transform,
+    pub _ghostEffectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _direction: crate::UnityEngine::Vector3,
     pub _finished: bool,
 }

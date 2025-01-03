@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct UserIdPacket {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::ContainedPacket,
-    pub idData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub idData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+UserIdPacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

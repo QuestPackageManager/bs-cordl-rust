@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct CollectionViewController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_View: *mut crate::UnityEngine::UIElements::BaseVerticalCollectionView,
-    pub m_ItemsSource: *mut crate::System::Collections::IList,
-    pub itemsSourceChanged: *mut crate::System::Action,
-    pub itemIndexChanged: *mut crate::System::Action_2<i32, i32>,
+    pub m_View: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+    >,
+    pub m_ItemsSource: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub itemsSourceChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub itemIndexChanged: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
 }
 #[cfg(feature = "UnityEngine+UIElements+CollectionViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

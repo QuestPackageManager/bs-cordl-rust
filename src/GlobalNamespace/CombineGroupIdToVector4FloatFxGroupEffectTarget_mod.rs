@@ -3,17 +3,22 @@
 #[derive(Debug)]
 pub struct CombineGroupIdToVector4FloatFxGroupEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    pub _propertyName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
-    pub _defaultValue: crate::UnityEngine::Vector4,
-    pub _lightGroupsToIndices: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget_LightGroupSOToIndex,
+    pub _propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
     >,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _defaultValue: crate::UnityEngine::Vector4,
+    pub _lightGroupsToIndices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget_LightGroupSOToIndex,
+        >,
+    >,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
     pub _didReceiveEventThisFrame: bool,
-    pub _groupIdToIndex: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        i32,
+    pub _groupIdToIndex: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
     >,
     pub _propertyId: i32,
     pub _data: crate::UnityEngine::Vector4,
@@ -144,9 +149,9 @@ for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
 }
 #[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct CombineGroupIdToVector4FloatFxGroupEffectTarget_LightGroupSOToIndex {
-    pub lightGroup: *mut crate::GlobalNamespace::LightGroupSO,
+    pub lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
     pub index: i32,
 }
 #[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex")]

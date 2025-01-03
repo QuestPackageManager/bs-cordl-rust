@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ListMap {
     __cordl_parent: crate::System::Xml::Serialization::ObjectMap,
-    pub _itemInfo: *mut crate::System::Xml::Serialization::XmlTypeMapElementInfoList,
-    pub _choiceMember: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _itemInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTypeMapElementInfoList,
+    >,
+    pub _choiceMember: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Serialization+ListMap")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

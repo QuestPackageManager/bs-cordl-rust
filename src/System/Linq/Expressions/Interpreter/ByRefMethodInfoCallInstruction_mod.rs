@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ByRefMethodInfoCallInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::MethodInfoCallInstruction,
-    pub _byrefArgs: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
+    pub _byrefArgs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
+        >,
     >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ByRefMethodInfoCallInstruction")]

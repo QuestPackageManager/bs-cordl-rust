@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+Texture_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Texture_t {
     pub handle: crate::System::IntPtr,
     pub eType: crate::OVR::OpenVR::ETextureType,

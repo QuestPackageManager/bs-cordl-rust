@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct CustomLODGroup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _levels: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::GameObject,
+    pub _levels: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
     >,
     pub _activeLevel: i32,
 }

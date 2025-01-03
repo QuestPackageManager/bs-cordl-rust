@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct EventCallbackFunctor_1<TEventType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::EventCallbackFunctorBase,
-    pub m_Callback: *mut crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
+    pub m_Callback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
+    >,
     pub m_EventTypeId: i64,
     __cordl_phantom_TEventType: std::marker::PhantomData<TEventType>,
 }

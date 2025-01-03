@@ -4,9 +4,11 @@
 pub struct Image {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub m_ScaleMode: crate::UnityEngine::ScaleMode,
-    pub m_Image: *mut crate::UnityEngine::Texture,
-    pub m_Sprite: *mut crate::UnityEngine::Sprite,
-    pub m_VectorImage: *mut crate::UnityEngine::UIElements::VectorImage,
+    pub m_Image: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    pub m_Sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub m_VectorImage: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VectorImage,
+    >,
     pub m_UV: crate::UnityEngine::Rect,
     pub m_TintColor: crate::UnityEngine::Color,
     pub m_ImageIsInline: bool,

@@ -3,48 +3,124 @@
 #[derive(Debug)]
 pub struct MainSystemInit {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _songPackMasksModel: *mut crate::GlobalNamespace::SongPackMasksModelSO,
-    pub _playerDataFileManager: *mut crate::GlobalNamespace::PlayerDataFileManagerSO,
-    pub _standardLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-    pub _missionLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-    pub _multiplayerLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-    pub _timeHelperPrefab: *mut crate::GlobalNamespace::TimeHelper,
-    pub _playerDataModelPrefab: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _campaignProgressModelPrefab: *mut crate::GlobalNamespace::CampaignProgressModel,
-    pub _customLevelLoaderPrefab: *mut crate::GlobalNamespace::CustomLevelLoader,
-    pub _externalCamerasManagerPrefab: *mut crate::GlobalNamespace::ExternalCamerasManager,
-    pub _multiplayerSessionManagerPrefab: *mut crate::GlobalNamespace::MultiplayerSessionManager,
-    pub _voipManagerPrefab: *mut crate::GlobalNamespace::VoipManager,
-    pub _gameLiftNetworkPlayerModelPrefab: *mut crate::GlobalNamespace::GameLiftNetworkPlayerModel,
-    pub _networkPlayerEntitlementCheckerPrefab: *mut crate::GlobalNamespace::NetworkPlayerEntitlementChecker,
-    pub _tweeningManagerPrefab: *mut crate::Tweening::TimeTweeningManager,
-    pub _lightsUpdateSystemPrefab: *mut crate::GlobalNamespace::BloomPrePassLightsUpdateSystem,
-    pub _environmentAudioEffectsPlayerPrefab: *mut crate::GlobalNamespace::EnvironmentAudioEffectsPlayer,
-    pub _nodePoseSyncStateManagerPrefab: *mut crate::GlobalNamespace::NodePoseSyncStateManager,
-    pub _psVRHelperPrefab: *mut crate::GlobalNamespace::PSVRHelper,
-    pub _psVR2HelperPrefab: *mut crate::GlobalNamespace::PSVR2Helper,
-    pub _oculusVRHelperPrefab: *mut crate::GlobalNamespace::OculusVRHelper,
-    pub _unityXRHelperPrefab: *mut crate::GlobalNamespace::UnityXRHelper,
-    pub _devicelessVRHelperPrefab: *mut crate::GlobalNamespace::DevicelessVRHelper,
-    pub _richPresenceManagerPrefab: *mut crate::GlobalNamespace::RichPresenceManager,
-    pub _dlcPromoPanelData: *mut crate::GlobalNamespace::DlcPromoPanelDataSO,
-    pub _beatmapLevelsPromoData: *mut crate::GlobalNamespace::BeatmapLevelsPromoDataSO,
-    pub _networkConfig: *mut crate::GlobalNamespace::NetworkConfigSO,
-    pub _steamNetworkPlayerModelPrefab: *mut crate::GlobalNamespace::SteamNetworkPlayerModel,
-    pub _oculusNetworkPlayerModelPrefab: *mut crate::GlobalNamespace::OculusNetworkPlayerModel,
-    pub _sonyNetworkPlayerModelPrefab: *mut crate::GlobalNamespace::SonyNetworkPlayerModel,
-    pub _leaderboardScoreUploader: *mut crate::GlobalNamespace::LeaderboardScoreUploader,
-    pub _platformLeaderboardsModel: *mut crate::GlobalNamespace::PlatformLeaderboardsModel,
-    pub _ps4AchievementIdsModel: *mut crate::GlobalNamespace::SonyAchievementIdsModelSO,
-    pub _ps5AchievmentIdsModel: *mut crate::GlobalNamespace::SonyAchievementIdsModelSO,
-    pub _achievementIdsModel: *mut crate::GlobalNamespace::AchievementIdsModelSO,
-    pub _achievementsModel: *mut crate::GlobalNamespace::AchievementsModelSO,
-    pub _ps5ActivityIdsModel: *mut crate::GlobalNamespace::PS5ActivityIdsModelSO,
-    pub _coroutineStarter: *mut crate::GlobalNamespace::CoroutineStarter,
-    pub _menuTransitionHelperPrefab: *mut crate::GlobalNamespace::MenuTransitionsHelper,
+    pub _songPackMasksModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPackMasksModelSO,
+    >,
+    pub _playerDataFileManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataFileManagerSO,
+    >,
+    pub _standardLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+    >,
+    pub _missionLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+    >,
+    pub _multiplayerLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+    >,
+    pub _timeHelperPrefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TimeHelper>,
+    pub _playerDataModelPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _campaignProgressModelPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CampaignProgressModel,
+    >,
+    pub _customLevelLoaderPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CustomLevelLoader,
+    >,
+    pub _externalCamerasManagerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ExternalCamerasManager,
+    >,
+    pub _multiplayerSessionManagerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerSessionManager,
+    >,
+    pub _voipManagerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VoipManager,
+    >,
+    pub _gameLiftNetworkPlayerModelPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameLiftNetworkPlayerModel,
+    >,
+    pub _networkPlayerEntitlementCheckerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NetworkPlayerEntitlementChecker,
+    >,
+    pub _tweeningManagerPrefab: quest_hook::libil2cpp::Gc<
+        crate::Tweening::TimeTweeningManager,
+    >,
+    pub _lightsUpdateSystemPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassLightsUpdateSystem,
+    >,
+    pub _environmentAudioEffectsPlayerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentAudioEffectsPlayer,
+    >,
+    pub _nodePoseSyncStateManagerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NodePoseSyncStateManager,
+    >,
+    pub _psVRHelperPrefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PSVRHelper>,
+    pub _psVR2HelperPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PSVR2Helper,
+    >,
+    pub _oculusVRHelperPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OculusVRHelper,
+    >,
+    pub _unityXRHelperPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::UnityXRHelper,
+    >,
+    pub _devicelessVRHelperPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DevicelessVRHelper,
+    >,
+    pub _richPresenceManagerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RichPresenceManager,
+    >,
+    pub _dlcPromoPanelData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DlcPromoPanelDataSO,
+    >,
+    pub _beatmapLevelsPromoData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsPromoDataSO,
+    >,
+    pub _networkConfig: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NetworkConfigSO,
+    >,
+    pub _steamNetworkPlayerModelPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SteamNetworkPlayerModel,
+    >,
+    pub _oculusNetworkPlayerModelPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OculusNetworkPlayerModel,
+    >,
+    pub _sonyNetworkPlayerModelPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyNetworkPlayerModel,
+    >,
+    pub _leaderboardScoreUploader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LeaderboardScoreUploader,
+    >,
+    pub _platformLeaderboardsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlatformLeaderboardsModel,
+    >,
+    pub _ps4AchievementIdsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyAchievementIdsModelSO,
+    >,
+    pub _ps5AchievmentIdsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SonyAchievementIdsModelSO,
+    >,
+    pub _achievementIdsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementIdsModelSO,
+    >,
+    pub _achievementsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementsModelSO,
+    >,
+    pub _ps5ActivityIdsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PS5ActivityIdsModelSO,
+    >,
+    pub _coroutineStarter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CoroutineStarter,
+    >,
+    pub _menuTransitionHelperPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuTransitionsHelper,
+    >,
     pub _defaultMaxCachedBeatmapLevels: i32,
     pub _ps4MaxCachedBeatmapLevels: i32,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
 }
 #[cfg(feature = "MainSystemInit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

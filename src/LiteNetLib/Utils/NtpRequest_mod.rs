@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct NtpRequest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _socket: *mut crate::LiteNetLib::NetSocket,
-    pub _onRequestComplete: *mut crate::System::Action_1<
-        *mut crate::LiteNetLib::Utils::NtpPacket,
+    pub _socket: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetSocket>,
+    pub _onRequestComplete: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::LiteNetLib::Utils::NtpPacket>,
     >,
-    pub _ntpEndPoint: *mut crate::System::Net::IPEndPoint,
+    pub _ntpEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NtpRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

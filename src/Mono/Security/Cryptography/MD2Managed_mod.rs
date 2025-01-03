@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct MD2Managed {
     __cordl_parent: crate::Mono::Security::Cryptography::MD2,
-    pub state: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub checksum: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub checksum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub count: i32,
-    pub x: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Mono+Security+Cryptography+MD2Managed")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

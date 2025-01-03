@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct DisposerReplySink {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _next: *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
-    pub _disposable: *mut crate::System::IDisposable,
+    pub _next: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Remoting::Messaging::IMessageSink,
+    >,
+    pub _disposable: quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
 }
 #[cfg(feature = "System+Runtime+Remoting+DisposerReplySink")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

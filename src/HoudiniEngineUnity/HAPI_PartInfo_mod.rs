@@ -1,6 +1,6 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_PartInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct HAPI_PartInfo {
     pub id: i32,
     pub nameSH: i32,
@@ -8,7 +8,9 @@ pub struct HAPI_PartInfo {
     pub faceCount: i32,
     pub vertexCount: i32,
     pub pointCount: i32,
-    pub attributeCounts: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub attributeCounts: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     pub isInstanced: bool,
     pub instancedPartCount: i32,
     pub instanceCount: i32,

@@ -1,8 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventPtr")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InputEventPtr {
-    pub m_EventPtr: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_EventPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventPtr")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct MeshHandle {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Transform: *mut crate::UnityEngine::Transform,
-    pub m_Mesh: *mut crate::UnityEngine::Mesh,
+    pub m_Transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub m_Mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshHandle")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

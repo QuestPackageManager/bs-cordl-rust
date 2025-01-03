@@ -3,13 +3,27 @@
 #[derive(Debug)]
 pub struct AvatarData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _headTopId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _glassesId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _facialHairId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _handsId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _clothesId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _eyesId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _mouthId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _headTopId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _glassesId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _facialHairId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _handsId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _clothesId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _eyesId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _mouthId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _headTopPrimaryColor_k__BackingField: crate::UnityEngine::Color,
     pub _headTopSecondaryColor_k__BackingField: crate::UnityEngine::Color,
     pub _glassesColor_k__BackingField: crate::UnityEngine::Color,
@@ -18,7 +32,9 @@ pub struct AvatarData {
     pub _clothesPrimaryColor_k__BackingField: crate::UnityEngine::Color,
     pub _clothesSecondaryColor_k__BackingField: crate::UnityEngine::Color,
     pub _clothesDetailColor_k__BackingField: crate::UnityEngine::Color,
-    pub _skinColorId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _skinColorId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

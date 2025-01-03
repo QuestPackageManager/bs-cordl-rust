@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ControllerProfileFileModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _fileStorage: *mut crate::GlobalNamespace::IFileStorage,
+    pub _fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
 }
 #[cfg(feature = "BeatSaber+GameSettings+ControllerProfileFileModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

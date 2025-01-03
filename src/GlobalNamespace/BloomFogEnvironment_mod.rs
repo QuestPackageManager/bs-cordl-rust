@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BloomFogEnvironment {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _bloomFog: *mut crate::GlobalNamespace::BloomFogSO,
-    pub _fogParams: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
+    pub _bloomFog: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomFogSO>,
+    pub _fogParams: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomFogEnvironmentParams,
+    >,
 }
 #[cfg(feature = "BloomFogEnvironment")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

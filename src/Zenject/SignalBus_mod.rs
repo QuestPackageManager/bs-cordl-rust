@@ -3,19 +3,29 @@
 #[derive(Debug)]
 pub struct SignalBus {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _subscriptionPool: *mut crate::Zenject::SignalSubscription_Pool,
-    pub _localDeclarationMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::Zenject::BindingId,
-        *mut crate::Zenject::SignalDeclaration,
+    pub _subscriptionPool: quest_hook::libil2cpp::Gc<
+        crate::Zenject::SignalSubscription_Pool,
     >,
-    pub _parentBus: *mut crate::Zenject::SignalBus,
-    pub _subscriptionMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::Zenject::SignalSubscriptionId,
-        *mut crate::Zenject::SignalSubscription,
+    pub _localDeclarationMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::Zenject::BindingId,
+            *mut crate::Zenject::SignalDeclaration,
+        >,
     >,
-    pub _settings: *mut crate::Zenject::ZenjectSettings_SignalSettings,
-    pub _signalDeclarationFactory: *mut crate::Zenject::SignalDeclaration_Factory,
-    pub _container: *mut crate::Zenject::DiContainer,
+    pub _parentBus: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
+    pub _subscriptionMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::Zenject::SignalSubscriptionId,
+            *mut crate::Zenject::SignalSubscription,
+        >,
+    >,
+    pub _settings: quest_hook::libil2cpp::Gc<
+        crate::Zenject::ZenjectSettings_SignalSettings,
+    >,
+    pub _signalDeclarationFactory: quest_hook::libil2cpp::Gc<
+        crate::Zenject::SignalDeclaration_Factory,
+    >,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
 }
 #[cfg(feature = "Zenject+SignalBus")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

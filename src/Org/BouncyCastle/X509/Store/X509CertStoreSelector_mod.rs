@@ -3,21 +3,45 @@
 #[derive(Debug)]
 pub struct X509CertStoreSelector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub authorityKeyIdentifier: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub authorityKeyIdentifier: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub basicConstraints: i32,
-    pub certificate: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-    pub certificateValid: *mut crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
-    pub extendedKeyUsage: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    pub certificate: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::X509::X509Certificate,
+    >,
+    pub certificateValid: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
+    >,
+    pub extendedKeyUsage: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
     pub ignoreX509NameOrdering: bool,
-    pub issuer: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
-    pub keyUsage: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
-    pub policy: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub privateKeyValid: *mut crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
-    pub serialNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub subject: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
-    pub subjectKeyIdentifier: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub subjectPublicKey: *mut crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
-    pub subjectPublicKeyAlgID: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    pub issuer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Name,
+    >,
+    pub keyUsage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
+    pub policy: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
+    pub privateKeyValid: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
+    >,
+    pub serialNumber: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
+    pub subject: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::X509Name,
+    >,
+    pub subjectKeyIdentifier: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
+    pub subjectPublicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+    >,
+    pub subjectPublicKeyAlgID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509CertStoreSelector")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

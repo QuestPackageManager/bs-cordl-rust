@@ -3,17 +3,19 @@
 #[derive(Debug)]
 pub struct FileSystemBeatmapLevelData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _audioClipPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _audioDataPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _difficultyBeatmaps: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::System::ValueTuple_2<
-            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-            crate::GlobalNamespace::BeatmapDifficulty,
+    pub _audioClipPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _audioDataPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _difficultyBeatmaps: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::System::ValueTuple_2<
+                *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+                crate::GlobalNamespace::BeatmapDifficulty,
+            >,
+            *mut crate::GlobalNamespace::FileDifficultyBeatmap,
         >,
-        *mut crate::GlobalNamespace::FileDifficultyBeatmap,
     >,
-    pub _audioClip: *mut crate::UnityEngine::AudioClip,
+    pub _audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
 }
 #[cfg(feature = "FileSystemBeatmapLevelData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

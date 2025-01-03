@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct XmlSchemaSimpleContentExtension {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaContent,
-    pub attributes: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-    pub anyAttribute: *mut crate::System::Xml::Schema::XmlSchemaAnyAttribute,
-    pub baseTypeName: *mut crate::System::Xml::XmlQualifiedName,
+    pub attributes: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+    >,
+    pub anyAttribute: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+    >,
+    pub baseTypeName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleContentExtension")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

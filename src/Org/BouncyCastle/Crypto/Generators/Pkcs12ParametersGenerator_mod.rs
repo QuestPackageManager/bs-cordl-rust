@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Pkcs12ParametersGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::PbeParametersGenerator,
-    pub digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     pub u: i32,
     pub v: i32,
 }

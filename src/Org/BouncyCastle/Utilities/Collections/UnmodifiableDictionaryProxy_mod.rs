@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct UnmodifiableDictionaryProxy {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableDictionary,
-    pub d: *mut crate::System::Collections::IDictionary,
+    pub d: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableDictionaryProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

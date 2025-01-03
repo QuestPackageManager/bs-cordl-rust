@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Scope1 {
     __cordl_parent: crate::System::Linq::Expressions::ScopeExpression,
-    pub _body: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _body: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Linq+Expressions+Scope1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

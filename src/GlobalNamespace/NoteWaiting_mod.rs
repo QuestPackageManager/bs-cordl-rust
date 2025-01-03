@@ -4,8 +4,12 @@
 pub struct NoteWaiting {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _waitingPosition: crate::UnityEngine::Vector3,
-    pub _variableMovementDataProvider: *mut crate::GlobalNamespace::IVariableMovementDataProvider,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVariableMovementDataProvider,
+    >,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
     pub _beatTime: f32,
 }
 #[cfg(feature = "NoteWaiting")]

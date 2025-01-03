@@ -8,8 +8,10 @@ pub struct ParametricBoxFrameController {
     pub length: f32,
     pub edgeSize: f32,
     pub color: crate::UnityEngine::Color,
-    pub _meshRenderer: *mut crate::UnityEngine::MeshRenderer,
-    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _meshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
 }
 #[cfg(feature = "ParametricBoxFrameController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

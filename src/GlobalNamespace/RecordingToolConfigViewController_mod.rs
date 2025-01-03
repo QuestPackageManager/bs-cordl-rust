@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct RecordingToolConfigViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _textPageScrollView: *mut crate::HMUI::TextPageScrollView,
-    pub _recordingToolManager: *mut crate::GlobalNamespace::RecordingToolManager,
+    pub _textPageScrollView: quest_hook::libil2cpp::Gc<crate::HMUI::TextPageScrollView>,
+    pub _recordingToolManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecordingToolManager,
+    >,
 }
 #[cfg(feature = "RecordingToolConfigViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct RecordingToolSettingsNoTransitionInstaller {
     __cordl_parent: crate::Zenject::NoTransitionInstaller,
-    pub _recordingToolSceneSetupData: *mut crate::GlobalNamespace::RecordingToolSceneSetupData,
-    pub _scenesTransitionSetupData: *mut crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO,
+    pub _recordingToolSceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecordingToolSceneSetupData,
+    >,
+    pub _scenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO,
+    >,
 }
 #[cfg(feature = "RecordingToolSettingsNoTransitionInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

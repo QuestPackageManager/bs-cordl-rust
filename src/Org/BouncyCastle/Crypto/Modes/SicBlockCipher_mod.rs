@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct SicBlockCipher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    pub cipher: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+    >,
     pub blockSize: i32,
-    pub counter: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub counterOut: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub IV: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub counter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub counterOut: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub IV: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+SicBlockCipher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

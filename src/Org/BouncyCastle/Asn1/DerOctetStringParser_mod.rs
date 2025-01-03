@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DerOctetStringParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub stream: *mut crate::Org::BouncyCastle::Asn1::DefiniteLengthInputStream,
+    pub stream: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DefiniteLengthInputStream,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerOctetStringParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

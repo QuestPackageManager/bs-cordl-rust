@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct XMLDiffLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _tables: *mut crate::System::Collections::ArrayList,
-    pub _dataSet: *mut crate::System::Data::DataSet,
-    pub _dataTable: *mut crate::System::Data::DataTable,
+    pub _tables: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+    pub _dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
 }
 #[cfg(feature = "System+Data+XMLDiffLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

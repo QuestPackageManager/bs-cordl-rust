@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct SqlChars {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _rgchBuf: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub _rgchBuf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub _lCurLen: i64,
-    pub _stream: *mut crate::System::Data::SqlTypes::SqlStreamChars,
+    pub _stream: quest_hook::libil2cpp::Gc<
+        crate::System::Data::SqlTypes::SqlStreamChars,
+    >,
     pub _state: crate::System::Data::SqlTypes::SqlBytesCharsState,
-    pub _rgchWorkBuf: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub _rgchWorkBuf: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<char>,
+    >,
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlChars")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

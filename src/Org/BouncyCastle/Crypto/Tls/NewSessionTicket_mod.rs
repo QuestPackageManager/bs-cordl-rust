@@ -4,7 +4,7 @@
 pub struct NewSessionTicket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mTicketLifetimeHint: i64,
-    pub mTicket: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub mTicket: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+NewSessionTicket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

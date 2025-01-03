@@ -3,23 +3,31 @@
 #[derive(Debug)]
 pub struct Exception {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _className: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _message: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _data: *mut crate::System::Collections::IDictionary,
-    pub _innerException: *mut crate::System::Exception,
-    pub _helpURL: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _stackTrace: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _stackTraceString: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _remoteStackTraceString: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _remoteStackIndex: i32,
-    pub _dynamicMethods: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _HResult: i32,
-    pub _source: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _safeSerializationManager: *mut crate::System::Runtime::Serialization::SafeSerializationManager,
-    pub captured_traces: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Diagnostics::StackTrace,
+    pub _className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _data: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    pub _innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    pub _helpURL: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _stackTrace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _stackTraceString: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub native_trace_ips: *mut quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
+    pub _remoteStackTraceString: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _remoteStackIndex: i32,
+    pub _dynamicMethods: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _HResult: i32,
+    pub _source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _safeSerializationManager: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::SafeSerializationManager,
+    >,
+    pub captured_traces: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Diagnostics::StackTrace>,
+    >,
+    pub native_trace_ips: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
+    >,
     pub caught_in_unmanaged: i32,
 }
 #[cfg(feature = "System+Exception")]

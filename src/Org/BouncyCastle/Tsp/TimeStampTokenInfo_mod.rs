@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TimeStampTokenInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub tstInfo: *mut crate::Org::BouncyCastle::Asn1::Tsp::TstInfo,
+    pub tstInfo: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Tsp::TstInfo>,
     pub genTime: crate::System::DateTime,
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampTokenInfo")]

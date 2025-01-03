@@ -1,6 +1,6 @@
 #[cfg(feature = "LIV+SDK+Unity+SDKResolution")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SDKResolution {
     pub width: i32,
     pub height: i32,

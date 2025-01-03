@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct BsonProperty {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Name_k__BackingField: *mut crate::Newtonsoft::Json::Bson::BsonString,
-    pub _Value_k__BackingField: *mut crate::Newtonsoft::Json::Bson::BsonToken,
+    pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Bson::BsonString,
+    >,
+    pub _Value_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Bson::BsonToken,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonProperty")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

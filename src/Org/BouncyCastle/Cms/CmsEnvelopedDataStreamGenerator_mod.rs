@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct CmsEnvelopedDataStreamGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator,
-    pub _originatorInfo: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _unprotectedAttributes: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _originatorInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _unprotectedAttributes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub _bufferSize: i32,
     pub _berEncodeRecipientSet: bool,
 }
@@ -196,11 +198,21 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator {
 #[derive(Debug)]
 pub struct CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    pub _outer: *mut crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator,
-    pub _out: *mut crate::Org::BouncyCastle::Crypto::IO::CipherStream,
-    pub _cGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-    pub _envGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-    pub _eiGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    pub _outer: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator,
+    >,
+    pub _out: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::IO::CipherStream,
+    >,
+    pub _cGen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    >,
+    pub _envGen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    >,
+    pub _eiGen: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    >,
 }
 #[cfg(
     feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"

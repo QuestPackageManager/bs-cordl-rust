@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+EasingFunction")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct EasingFunction {
     pub m_Mode: crate::UnityEngine::UIElements::EasingMode,
 }

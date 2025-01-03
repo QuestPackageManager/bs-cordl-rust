@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct DHKekGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub digest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub algorithm: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    pub digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub algorithm: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+    >,
     pub keySize: i32,
-    pub z: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub partyAInfo: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub partyAInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+Kdf+DHKekGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

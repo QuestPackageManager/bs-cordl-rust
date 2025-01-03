@@ -4,11 +4,13 @@
 pub struct Encoding {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_codePage: i32,
-    pub dataItem: *mut crate::System::Globalization::CodePageDataItem,
+    pub dataItem: quest_hook::libil2cpp::Gc<
+        crate::System::Globalization::CodePageDataItem,
+    >,
     pub m_deserializedFromEverett: bool,
     pub m_isReadOnly: bool,
-    pub encoderFallback: *mut crate::System::Text::EncoderFallback,
-    pub decoderFallback: *mut crate::System::Text::DecoderFallback,
+    pub encoderFallback: quest_hook::libil2cpp::Gc<crate::System::Text::EncoderFallback>,
+    pub decoderFallback: quest_hook::libil2cpp::Gc<crate::System::Text::DecoderFallback>,
 }
 #[cfg(feature = "System+Text+Encoding")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -898,7 +900,7 @@ impl AsMut<crate::System::ICloneable> for crate::System::Text::Encoding {
 #[derive(Debug)]
 pub struct Encoding_DefaultDecoder {
     __cordl_parent: crate::System::Text::Decoder,
-    pub m_encoding: *mut crate::System::Text::Encoding,
+    pub m_encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     pub m_hasInitializedEncoding: bool,
 }
 #[cfg(feature = "System+Text+Encoding+DefaultDecoder")]
@@ -1129,7 +1131,7 @@ for crate::System::Text::Encoding_DefaultDecoder {
 #[derive(Debug)]
 pub struct Encoding_DefaultEncoder {
     __cordl_parent: crate::System::Text::Encoder,
-    pub m_encoding: *mut crate::System::Text::Encoding,
+    pub m_encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     pub m_hasInitializedEncoding: bool,
     pub charLeftOver: char,
 }
@@ -1333,16 +1335,18 @@ for crate::System::Text::Encoding_DefaultEncoder {
 #[derive(Debug)]
 pub struct Encoding_EncodingByteBuffer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub bytes: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub byteStart: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub byteEnd: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub chars: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub charStart: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub charEnd: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub byteStart: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub byteEnd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub charStart: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub charEnd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub byteCountResult: i32,
-    pub enc: *mut crate::System::Text::Encoding,
-    pub encoder: *mut crate::System::Text::EncoderNLS,
-    pub fallbackBuffer: *mut crate::System::Text::EncoderFallbackBuffer,
+    pub enc: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    pub encoder: quest_hook::libil2cpp::Gc<crate::System::Text::EncoderNLS>,
+    pub fallbackBuffer: quest_hook::libil2cpp::Gc<
+        crate::System::Text::EncoderFallbackBuffer,
+    >,
 }
 #[cfg(feature = "System+Text+Encoding+EncodingByteBuffer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1512,16 +1516,18 @@ for crate::System::Text::Encoding_EncodingByteBuffer {
 #[derive(Debug)]
 pub struct Encoding_EncodingCharBuffer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub chars: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub charStart: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub charEnd: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub charStart: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub charEnd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub charCountResult: i32,
-    pub enc: *mut crate::System::Text::Encoding,
-    pub decoder: *mut crate::System::Text::DecoderNLS,
-    pub byteStart: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub byteEnd: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub bytes: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub fallbackBuffer: *mut crate::System::Text::DecoderFallbackBuffer,
+    pub enc: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    pub decoder: quest_hook::libil2cpp::Gc<crate::System::Text::DecoderNLS>,
+    pub byteStart: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub byteEnd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub fallbackBuffer: quest_hook::libil2cpp::Gc<
+        crate::System::Text::DecoderFallbackBuffer,
+    >,
 }
 #[cfg(feature = "System+Text+Encoding+EncodingCharBuffer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

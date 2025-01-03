@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct ConstraintStruct {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub constraint: *mut crate::System::Xml::Schema::CompiledIdentityConstraint,
-    pub axisSelector: *mut crate::System::Xml::Schema::SelectorActiveAxis,
-    pub axisFields: *mut crate::System::Collections::ArrayList,
-    pub qualifiedTable: *mut crate::System::Collections::Hashtable,
-    pub keyrefTable: *mut crate::System::Collections::Hashtable,
+    pub constraint: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::CompiledIdentityConstraint,
+    >,
+    pub axisSelector: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::SelectorActiveAxis,
+    >,
+    pub axisFields: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub qualifiedTable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub keyrefTable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub tableDim: i32,
 }
 #[cfg(feature = "System+Xml+Schema+ConstraintStruct")]

@@ -11,10 +11,16 @@ pub struct InitializationOperation {
     pub m_loadCatalogOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
     >,
-    pub m_ProviderSuffix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_Addressables: *mut crate::UnityEngine::AddressableAssets::AddressablesImpl,
-    pub m_Diagnostics: *mut crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics,
-    pub m_InitGroupOps: *mut crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation,
+    pub m_ProviderSuffix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_Addressables: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AddressablesImpl,
+    >,
+    pub m_Diagnostics: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics,
+    >,
+    pub m_InitGroupOps: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation,
+    >,
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+Initialization+InitializationOperation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

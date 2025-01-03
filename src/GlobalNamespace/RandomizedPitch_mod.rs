@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct RandomizedPitch {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioSource: *mut crate::UnityEngine::AudioSource,
+    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _minPitchMultiplier: f32,
     pub _maxPitchMultiplier: f32,
     pub _playOnAwake: bool,
     pub _originalPitch: f32,
-    pub _restoringCoroutine: *mut crate::UnityEngine::Coroutine,
+    pub _restoringCoroutine: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
 }
 #[cfg(feature = "RandomizedPitch")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

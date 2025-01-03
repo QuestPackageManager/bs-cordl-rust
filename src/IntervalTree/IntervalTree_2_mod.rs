@@ -6,11 +6,17 @@ pub struct IntervalTree_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub root: *mut crate::IntervalTree::IntervalTreeNode_2<TKey, TValue>,
-    pub items: *mut crate::System::Collections::Generic::List_1<
-        crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+    pub root: quest_hook::libil2cpp::Gc<
+        crate::IntervalTree::IntervalTreeNode_2<TKey, TValue>,
     >,
-    pub comparer: *mut crate::System::Collections::Generic::IComparer_1<TKey>,
+    pub items: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+        >,
+    >,
+    pub comparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IComparer_1<TKey>,
+    >,
     pub isInSync: bool,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,

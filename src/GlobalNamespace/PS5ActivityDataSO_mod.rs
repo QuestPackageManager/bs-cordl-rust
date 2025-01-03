@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PS5ActivityDataSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _activityId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _activityId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "PS5ActivityDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

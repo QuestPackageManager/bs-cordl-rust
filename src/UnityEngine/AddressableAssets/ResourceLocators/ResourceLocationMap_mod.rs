@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct ResourceLocationMap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _LocatorId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub locations: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    pub _LocatorId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub locations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            >,
         >,
     >,
 }

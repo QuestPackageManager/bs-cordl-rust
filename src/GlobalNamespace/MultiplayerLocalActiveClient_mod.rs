@@ -3,14 +3,30 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalActiveClient {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
-    pub _scoreSyncStateManager: *mut crate::GlobalNamespace::IScoreSyncStateManager,
-    pub _nodePoseSyncStateManager: *mut crate::GlobalNamespace::INodePoseSyncStateManager,
-    pub _rpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
-    pub _comboController: *mut crate::GlobalNamespace::ComboController,
+    pub _playerTransforms: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerTransforms,
+    >,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
+    pub _scoreSyncStateManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IScoreSyncStateManager,
+    >,
+    pub _nodePoseSyncStateManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::INodePoseSyncStateManager,
+    >,
+    pub _rpcManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IGameplayRpcManager,
+    >,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub _scoreController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IScoreController,
+    >,
+    pub _comboController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ComboController,
+    >,
 }
 #[cfg(feature = "MultiplayerLocalActiveClient")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

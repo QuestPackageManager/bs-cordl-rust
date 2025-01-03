@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct NoekeonEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub k: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub k: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     pub _initialised: bool,
     pub _forEncryption: bool,
 }

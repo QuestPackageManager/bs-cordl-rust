@@ -3,16 +3,22 @@
 #[derive(Debug)]
 pub struct TypeData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _cordl_type: *mut crate::System::Type,
-    pub elementName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub sType: crate::System::Xml::Serialization::SchemaTypes,
-    pub listItemType: *mut crate::System::Type,
-    pub typeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub fullTypeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub listItemTypeData: *mut crate::System::Xml::Serialization::TypeData,
-    pub mappedType: *mut crate::System::Xml::Serialization::TypeData,
-    pub facet: *mut crate::System::Xml::Schema::XmlSchemaPatternFacet,
-    pub typeConvertor: *mut crate::System::Reflection::MethodInfo,
+    pub listItemType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub fullTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub listItemTypeData: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::TypeData,
+    >,
+    pub mappedType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::TypeData,
+    >,
+    pub facet: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaPatternFacet,
+    >,
+    pub typeConvertor: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     pub hasPublicConstructor: bool,
     pub nullableOverride: bool,
 }

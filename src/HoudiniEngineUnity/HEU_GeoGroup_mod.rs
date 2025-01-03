@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct HEU_GeoGroup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _groupName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _subMeshesMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::HoudiniEngineUnity::HEU_MeshData,
+    pub _groupName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _subMeshesMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::HoudiniEngineUnity::HEU_MeshData,
+        >,
     >,
-    pub _sharedNormalIndices: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::HoudiniEngineUnity::HEU_VertexEntry,
+    pub _sharedNormalIndices: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::HEU_VertexEntry,
+            >,
         >,
     >,
 }

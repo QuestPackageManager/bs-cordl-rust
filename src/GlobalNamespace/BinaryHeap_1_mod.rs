@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BinaryHeap_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _data: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub _data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _tail: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

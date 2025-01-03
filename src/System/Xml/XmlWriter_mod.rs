@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct XmlWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub writeNodeBuffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub writeNodeBuffer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<char>,
+    >,
 }
 #[cfg(feature = "System+Xml+XmlWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

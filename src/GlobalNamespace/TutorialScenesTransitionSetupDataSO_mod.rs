@@ -3,20 +3,32 @@
 #[derive(Debug)]
 pub struct TutorialScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
-    pub _environmentInfo: *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-        *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub _environmentInfo: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+            *mut crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
     >,
-    pub _tutorialSceneInfo: *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-        *mut crate::GlobalNamespace::SceneInfo,
+    pub _tutorialSceneInfo: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+            *mut crate::GlobalNamespace::SceneInfo,
+        >,
     >,
-    pub _gameCoreSceneInfo: *mut crate::GlobalNamespace::SceneInfo,
-    pub didFinishEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
-        crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
+    pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
+            crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
+        >,
     >,
-    pub _playerSpecificSettings_k__BackingField: *mut crate::GlobalNamespace::PlayerSpecificSettings,
-    pub _loadedEnvironmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
-    pub _loadedTutorialSceneInfo: *mut crate::GlobalNamespace::SceneInfo,
+    pub _playerSpecificSettings_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSpecificSettings,
+    >,
+    pub _loadedEnvironmentInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentInfoSO,
+    >,
+    pub _loadedTutorialSceneInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SceneInfo,
+    >,
 }
 #[cfg(feature = "TutorialScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

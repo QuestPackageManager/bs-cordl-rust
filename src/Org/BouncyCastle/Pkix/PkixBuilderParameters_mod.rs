@@ -4,7 +4,9 @@
 pub struct PkixBuilderParameters {
     __cordl_parent: crate::Org::BouncyCastle::Pkix::PkixParameters,
     pub maxPathLength: i32,
-    pub excludedCerts: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    pub excludedCerts: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Utilities::Collections::ISet,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixBuilderParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

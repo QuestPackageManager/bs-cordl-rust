@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct JumpMarker {
     __cordl_parent: crate::UnityEngine::Timeline::Marker,
-    pub _destination: *mut crate::GlobalNamespace::JumpDestinationMarker,
+    pub _destination: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::JumpDestinationMarker,
+    >,
     pub _id_k__BackingField: crate::UnityEngine::PropertyName,
 }
 #[cfg(feature = "JumpMarker")]

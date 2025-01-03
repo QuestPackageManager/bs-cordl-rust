@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct Pfx {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub contentInfo: *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
-    pub macData: *mut crate::Org::BouncyCastle::Asn1::Pkcs::MacData,
+    pub contentInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+    >,
+    pub macData: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Pkcs::MacData,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+Pfx")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

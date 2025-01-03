@@ -3,14 +3,14 @@
 #[derive(Debug)]
 pub struct NewDiffgramGen {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _doc: *mut crate::System::Xml::XmlDocument,
-    pub _ds: *mut crate::System::Data::DataSet,
-    pub _dt: *mut crate::System::Data::DataTable,
-    pub _xmlw: *mut crate::System::Xml::XmlWriter,
+    pub _doc: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
+    pub _ds: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+    pub _dt: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    pub _xmlw: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
     pub _fBefore: bool,
     pub _fErrors: bool,
-    pub _rowsOrder: *mut crate::System::Collections::Hashtable,
-    pub _tables: *mut crate::System::Collections::ArrayList,
+    pub _rowsOrder: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub _tables: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     pub _writeHierarchy: bool,
 }
 #[cfg(feature = "System+Data+NewDiffgramGen")]

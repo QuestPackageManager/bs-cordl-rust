@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct TimeZoneInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _id: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _displayName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _standardDisplayName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _daylightDisplayName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _standardDisplayName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _daylightDisplayName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _baseUtcOffset: crate::System::TimeSpan,
     pub _supportsDaylightSavingTime: bool,
-    pub _adjustmentRules: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::TimeZoneInfo_AdjustmentRule,
+    pub _adjustmentRules: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::TimeZoneInfo_AdjustmentRule,
+        >,
     >,
 }
 #[cfg(feature = "System+TimeZoneInfo")]
@@ -1813,7 +1819,7 @@ for crate::System::TimeZoneInfo_AdjustmentRule {
 #[derive(Debug)]
 pub struct TimeZoneInfo_CachedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _localTimeZone: *mut crate::System::TimeZoneInfo,
+    pub _localTimeZone: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
 }
 #[cfg(feature = "System+TimeZoneInfo+CachedData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1912,7 +1918,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+TimeZoneInfo+TZifHead")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TimeZoneInfo_TZifHead {
     pub Magic: u32,
     pub Version: crate::System::TimeZoneInfo_TZVersion,
@@ -1956,7 +1962,7 @@ impl crate::System::TimeZoneInfo_TZifHead {
 }
 #[cfg(feature = "System+TimeZoneInfo+TZifType")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TimeZoneInfo_TZifType {
     pub UtcOffset: crate::System::TimeSpan,
     pub IsDst: bool,
@@ -1995,7 +2001,7 @@ impl crate::System::TimeZoneInfo_TZifType {
 }
 #[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TimeZoneInfo_TransitionTime {
     pub _timeOfDay: crate::System::DateTime,
     pub _month: u8,

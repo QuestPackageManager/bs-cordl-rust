@@ -7,7 +7,9 @@ pub struct BaseCompositeField_3<
     TFieldValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<TValueType>,
-    pub m_Fields: *mut crate::System::Collections::Generic::List_1<TField>,
+    pub m_Fields: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<TField>,
+    >,
     pub m_ShouldUpdateDisplay: bool,
     pub m_ForceUpdateDisplay: bool,
     pub m_PropertyIndex: i32,
@@ -252,19 +254,21 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3<
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BaseCompositeField_3_FieldDescription<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
     TFieldValue: quest_hook::libil2cpp::Type,
 > {
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub ussName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub read: *mut crate::System::Func_2<TValueType, TFieldValue>,
-    pub write: *mut crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteDelegate<
-        TValueType,
-        TField,
-        TFieldValue,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ussName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub read: quest_hook::libil2cpp::Gc<crate::System::Func_2<TValueType, TFieldValue>>,
+    pub write: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteDelegate<
+            TValueType,
+            TField,
+            TFieldValue,
+        >,
     >,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
     __cordl_phantom_TField: std::marker::PhantomData<TField>,

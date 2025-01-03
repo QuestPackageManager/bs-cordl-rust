@@ -3,21 +3,39 @@
 #[derive(Debug)]
 pub struct ClassMap {
     __cordl_parent: crate::System::Xml::Serialization::ObjectMap,
-    pub _elements: *mut crate::System::Collections::Hashtable,
-    pub _elementMembers: *mut crate::System::Collections::ArrayList,
-    pub _attributeMembers: *mut crate::System::Collections::Hashtable,
-    pub _attributeMembersArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::Serialization::XmlTypeMapMemberAttribute,
+    pub _elements: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub _elementMembers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ArrayList,
     >,
-    pub _flatLists: *mut crate::System::Collections::ArrayList,
-    pub _allMembers: *mut crate::System::Collections::ArrayList,
-    pub _membersWithDefault: *mut crate::System::Collections::ArrayList,
-    pub _listMembers: *mut crate::System::Collections::ArrayList,
-    pub _defaultAnyElement: *mut crate::System::Xml::Serialization::XmlTypeMapMemberAnyElement,
-    pub _defaultAnyAttribute: *mut crate::System::Xml::Serialization::XmlTypeMapMemberAnyAttribute,
-    pub _namespaceDeclarations: *mut crate::System::Xml::Serialization::XmlTypeMapMemberNamespaces,
-    pub _xmlTextCollector: *mut crate::System::Xml::Serialization::XmlTypeMapMember,
-    pub _returnMember: *mut crate::System::Xml::Serialization::XmlTypeMapMember,
+    pub _attributeMembers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
+    pub _attributeMembersArray: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::Serialization::XmlTypeMapMemberAttribute,
+        >,
+    >,
+    pub _flatLists: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _allMembers: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _membersWithDefault: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ArrayList,
+    >,
+    pub _listMembers: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub _defaultAnyElement: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTypeMapMemberAnyElement,
+    >,
+    pub _defaultAnyAttribute: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTypeMapMemberAnyAttribute,
+    >,
+    pub _namespaceDeclarations: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTypeMapMemberNamespaces,
+    >,
+    pub _xmlTextCollector: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTypeMapMember,
+    >,
+    pub _returnMember: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlTypeMapMember,
+    >,
     pub _ignoreMemberNamespace: bool,
     pub _canBeSimpleType: bool,
     pub _isOrderDependentMap: crate::System::Nullable_1<bool>,

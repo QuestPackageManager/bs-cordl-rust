@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct TMP_FontFeatureTable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_GlyphPairAdjustmentRecords: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_GlyphPairAdjustmentRecord,
+    pub m_GlyphPairAdjustmentRecords: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::TMPro::TMP_GlyphPairAdjustmentRecord,
+        >,
     >,
-    pub m_GlyphPairAdjustmentRecordLookupDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        u32,
-        *mut crate::TMPro::TMP_GlyphPairAdjustmentRecord,
+    pub m_GlyphPairAdjustmentRecordLookupDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            u32,
+            *mut crate::TMPro::TMP_GlyphPairAdjustmentRecord,
+        >,
     >,
 }
 #[cfg(feature = "TMPro+TMP_FontFeatureTable")]

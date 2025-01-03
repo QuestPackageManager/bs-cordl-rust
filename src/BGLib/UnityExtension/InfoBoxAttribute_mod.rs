@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct InfoBoxAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
-    pub info: *mut quest_hook::libil2cpp::Il2CppString,
+    pub info: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub messageType: crate::BGLib::UnityExtension::InfoBoxAttribute_Type,
 }
 #[cfg(feature = "BGLib+UnityExtension+InfoBoxAttribute")]

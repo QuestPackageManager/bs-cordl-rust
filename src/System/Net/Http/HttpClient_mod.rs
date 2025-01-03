@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct HttpClient {
     __cordl_parent: crate::System::Net::Http::HttpMessageInvoker,
-    pub base_address: *mut crate::System::Uri,
-    pub cts: *mut crate::System::Threading::CancellationTokenSource,
+    pub base_address: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    pub cts: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
     pub disposed: bool,
-    pub headers: *mut crate::System::Net::Http::Headers::HttpRequestHeaders,
+    pub headers: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::Headers::HttpRequestHeaders,
+    >,
     pub buffer_size: i64,
     pub timeout: crate::System::TimeSpan,
 }

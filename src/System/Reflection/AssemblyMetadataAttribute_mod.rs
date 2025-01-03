@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct AssemblyMetadataAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Key_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _Value_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Key_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _Value_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Reflection+AssemblyMetadataAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

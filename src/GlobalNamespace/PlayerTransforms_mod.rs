@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct PlayerTransforms {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _headTransform: *mut crate::UnityEngine::Transform,
-    pub _originTransform: *mut crate::UnityEngine::Transform,
-    pub _leftHandTransform: *mut crate::UnityEngine::Transform,
-    pub _rightHandTransform: *mut crate::UnityEngine::Transform,
+    pub _headTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _originTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _leftHandTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _rightHandTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _beatmapKey: crate::System::Nullable_1<crate::GlobalNamespace::BeatmapKey>,
     pub _overrideHeadPos: bool,
     pub _headWorldPos: crate::UnityEngine::Vector3,
@@ -18,7 +18,7 @@ pub struct PlayerTransforms {
     pub _leftHandPseudoLocalRot: crate::UnityEngine::Quaternion,
     pub _rightHandPseudoLocalPos: crate::UnityEngine::Vector3,
     pub _rightHandPseudoLocalRot: crate::UnityEngine::Quaternion,
-    pub _originParentTransform: *mut crate::UnityEngine::Transform,
+    pub _originParentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _useOriginParentTransformForPseudoLocalCalculations: bool,
 }
 #[cfg(feature = "PlayerTransforms")]

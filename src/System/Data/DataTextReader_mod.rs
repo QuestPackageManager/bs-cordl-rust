@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DataTextReader {
     __cordl_parent: crate::System::Xml::XmlReader,
-    pub _xmlreader: *mut crate::System::Xml::XmlReader,
+    pub _xmlreader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
 }
 #[cfg(feature = "System+Data+DataTextReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

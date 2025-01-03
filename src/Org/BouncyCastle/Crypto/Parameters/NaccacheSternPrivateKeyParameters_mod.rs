@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct NaccacheSternPrivateKeyParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyParameters,
-    pub phiN: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub smallPrimes: *mut crate::System::Collections::IList,
+    pub phiN: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub smallPrimes: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternPrivateKeyParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

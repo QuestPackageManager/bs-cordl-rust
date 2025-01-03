@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct XmlRootAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub dataType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub elementName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub dataType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub elementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub isNullable: bool,
-    pub ns: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlRootAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

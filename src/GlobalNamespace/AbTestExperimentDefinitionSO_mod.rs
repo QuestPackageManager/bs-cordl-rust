@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct AbTestExperimentDefinitionSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _experimentName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _experimentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _test1GroupSize: f32,
     pub _test2GroupSize: f32,
     pub _controlGroupSize: f32,
-    pub _salt: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _currentUserTreatmentGroup: crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group,
 }
 #[cfg(feature = "AbTestExperimentDefinitionSO")]

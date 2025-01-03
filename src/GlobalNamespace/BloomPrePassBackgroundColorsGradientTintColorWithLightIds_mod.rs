@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundColorsGradientTintColorWithLightIds {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    pub _bloomPrePassBackgroundColorsGradient: *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient,
+    pub _bloomPrePassBackgroundColorsGradient: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient,
+    >,
 }
 #[cfg(feature = "BloomPrePassBackgroundColorsGradientTintColorWithLightIds")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

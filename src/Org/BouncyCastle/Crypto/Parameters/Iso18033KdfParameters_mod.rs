@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Iso18033KdfParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub seed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Iso18033KdfParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

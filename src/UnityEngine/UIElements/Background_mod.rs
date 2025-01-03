@@ -1,11 +1,13 @@
 #[cfg(feature = "UnityEngine+UIElements+Background")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Background {
-    pub m_Texture: *mut crate::UnityEngine::Texture2D,
-    pub m_Sprite: *mut crate::UnityEngine::Sprite,
-    pub m_RenderTexture: *mut crate::UnityEngine::RenderTexture,
-    pub m_VectorImage: *mut crate::UnityEngine::UIElements::VectorImage,
+    pub m_Texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    pub m_Sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub m_RenderTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    pub m_VectorImage: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VectorImage,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Background")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

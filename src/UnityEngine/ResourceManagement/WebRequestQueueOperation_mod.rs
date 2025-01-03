@@ -4,11 +4,17 @@
 pub struct WebRequestQueueOperation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Completed: bool,
-    pub Result: *mut crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
-    pub OnComplete: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
+    pub Result: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
     >,
-    pub m_WebRequest: *mut crate::UnityEngine::Networking::UnityWebRequest,
+    pub OnComplete: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
+        >,
+    >,
+    pub m_WebRequest: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Networking::UnityWebRequest,
+    >,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+WebRequestQueueOperation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

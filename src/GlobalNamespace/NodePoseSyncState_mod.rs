@@ -1,6 +1,6 @@
 #[cfg(feature = "NodePoseSyncState")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct NodePoseSyncState {
     pub _head: crate::GlobalNamespace::PoseSerializable,
     pub _leftController: crate::GlobalNamespace::PoseSerializable,

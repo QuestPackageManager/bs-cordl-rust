@@ -4,13 +4,13 @@
 pub struct CADMethodRef {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ctor: bool,
-    pub typeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub methodName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub param_names: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub param_names: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub generic_arg_names: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub generic_arg_names: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+CADMethodRef")]

@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct NameNode {
     __cordl_parent: crate::System::Data::ExpressionNode,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _found: bool,
-    pub _column: *mut crate::System::Data::DataColumn,
+    pub _column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
 }
 #[cfg(feature = "System+Data+NameNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,9 +1,11 @@
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LocalDefinition")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LocalDefinition {
     pub _Index_k__BackingField: i32,
-    pub _Parameter_k__BackingField: *mut crate::System::Linq::Expressions::ParameterExpression,
+    pub _Parameter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::ParameterExpression,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LocalDefinition")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

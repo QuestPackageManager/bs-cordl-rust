@@ -1,22 +1,28 @@
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InstructionArray {
     pub MaxStackDepth: i32,
     pub MaxContinuationDepth: i32,
-    pub Instructions: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Linq::Expressions::Interpreter::Instruction,
+    pub Instructions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Linq::Expressions::Interpreter::Instruction,
+        >,
     >,
-    pub Objects: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub Objects: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub Labels: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Linq::Expressions::Interpreter::RuntimeLabel,
+    pub Labels: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::System::Linq::Expressions::Interpreter::RuntimeLabel,
+        >,
     >,
-    pub DebugCookies: *mut crate::System::Collections::Generic::List_1<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            i32,
-            *mut quest_hook::libil2cpp::Il2CppObject,
+    pub DebugCookies: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::System::Collections::Generic::KeyValuePair_2<
+                i32,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     >,
 }

@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct SrpTlsServer {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsServer,
-    pub mSrpIdentityManager: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager,
-    pub mSrpIdentity: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mLoginParameters: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSrpLoginParameters,
+    pub mSrpIdentityManager: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager,
+    >,
+    pub mSrpIdentity: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mLoginParameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsSrpLoginParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SrpTlsServer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

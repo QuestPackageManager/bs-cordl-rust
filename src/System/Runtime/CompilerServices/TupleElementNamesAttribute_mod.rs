@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct TupleElementNamesAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _transformNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _transformNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+TupleElementNamesAttribute")]

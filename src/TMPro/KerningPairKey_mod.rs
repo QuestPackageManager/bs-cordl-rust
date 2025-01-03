@@ -1,6 +1,6 @@
 #[cfg(feature = "TMPro+KerningPairKey")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct KerningPairKey {
     pub ascii_Left: u32,
     pub ascii_Right: u32,

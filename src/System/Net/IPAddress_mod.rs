@@ -4,8 +4,8 @@
 pub struct IPAddress {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _addressOrScopeId: u32,
-    pub _numbers: *mut quest_hook::libil2cpp::Il2CppArray<u16>,
-    pub _toString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _numbers: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+    pub _toString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _hashCode: i32,
 }
 #[cfg(feature = "System+Net+IPAddress")]

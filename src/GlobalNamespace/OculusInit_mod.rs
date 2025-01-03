@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct OculusInit {
     __cordl_parent: crate::GlobalNamespace::BasePlatformInit,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
 }
 #[cfg(feature = "OculusInit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

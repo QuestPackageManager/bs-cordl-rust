@@ -3,26 +3,44 @@
 #[derive(Debug)]
 pub struct MultiplayerLevelScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
-    pub _multiplayerLevelSceneInfo: *mut crate::GlobalNamespace::SceneInfo,
-    pub _gameCoreSceneInfo: *mut crate::GlobalNamespace::SceneInfo,
-    pub _multiplayerEnvironmentInfo: *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-        *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub _multiplayerLevelSceneInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SceneInfo,
     >,
-    pub didFinishEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-        *mut crate::GlobalNamespace::MultiplayerResultsData,
+    pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
+    pub _multiplayerEnvironmentInfo: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+            *mut crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
     >,
-    pub didDisconnectEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-        crate::GlobalNamespace::DisconnectedReason,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::MultiplayerResultsData,
+        >,
     >,
-    pub _gameMode_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub didDisconnectEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            crate::GlobalNamespace::DisconnectedReason,
+        >,
+    >,
+    pub _gameMode_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _beatmapKey_k__BackingField: crate::GlobalNamespace::BeatmapKey,
-    pub _beatmapLevel_k__BackingField: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub _beatmapLevel_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevel,
+    >,
     pub _usingOverrideColorScheme_k__BackingField: bool,
-    pub _colorScheme_k__BackingField: *mut crate::GlobalNamespace::ColorScheme,
-    pub _beatmapLevelData_k__BackingField: *mut crate::GlobalNamespace::IBeatmapLevelData,
-    pub _loadedMultiplayerEnvironmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub _colorScheme_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorScheme,
+    >,
+    pub _beatmapLevelData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IBeatmapLevelData,
+    >,
+    pub _loadedMultiplayerEnvironmentInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentInfoSO,
+    >,
 }
 #[cfg(feature = "MultiplayerLevelScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

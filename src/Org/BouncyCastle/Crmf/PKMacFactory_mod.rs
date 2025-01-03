@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct PKMacFactory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub parameters: *mut crate::Org::BouncyCastle::Asn1::Cmp::PbmParameter,
-    pub key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub parameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cmp::PbmParameter,
+    >,
+    pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+PKMacFactory")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

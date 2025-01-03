@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Animations+AnimationOffsetPlayable")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AnimationOffsetPlayable {
     pub m_Handle: crate::UnityEngine::Playables::PlayableHandle,
 }

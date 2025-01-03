@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BsonObject {
     __cordl_parent: crate::Newtonsoft::Json::Bson::BsonToken,
-    pub _children: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Newtonsoft::Json::Bson::BsonProperty,
+    pub _children: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Bson::BsonProperty,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonObject")]

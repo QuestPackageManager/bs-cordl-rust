@@ -3,15 +3,15 @@
 #[derive(Debug)]
 pub struct AsyncStreamReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub stream: *mut crate::System::IO::Stream,
-    pub encoding: *mut crate::System::Text::Encoding,
-    pub decoder: *mut crate::System::Text::Decoder,
-    pub byteBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub charBuffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    pub decoder: quest_hook::libil2cpp::Gc<crate::System::Text::Decoder>,
+    pub byteBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub charBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     pub cancelOperation: bool,
-    pub eofEvent: *mut crate::System::Threading::ManualResetEvent,
-    pub syncObject: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub asyncReadResult: *mut crate::System::IAsyncResult,
+    pub eofEvent: quest_hook::libil2cpp::Gc<crate::System::Threading::ManualResetEvent>,
+    pub syncObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub asyncReadResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
 }
 #[cfg(feature = "System+Diagnostics+AsyncStreamReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Mathematics+double3x4")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct double3x4 {
     pub c0: crate::Unity::Mathematics::double3,
     pub c1: crate::Unity::Mathematics::double3,

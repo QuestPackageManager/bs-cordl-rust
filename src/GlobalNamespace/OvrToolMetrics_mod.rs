@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct OvrToolMetrics {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _metrics: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _metrics: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _sample: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
-    pub _samples: *mut crate::System::Collections::Generic::List_1<i64>,
+    pub _sample: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
+    pub _samples: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i64>,
+    >,
 }
 #[cfg(feature = "OvrToolMetrics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

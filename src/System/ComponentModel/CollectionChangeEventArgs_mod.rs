@@ -4,7 +4,9 @@
 pub struct CollectionChangeEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub _Action_k__BackingField: crate::System::ComponentModel::CollectionChangeAction,
-    pub _Element_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _Element_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
 }
 #[cfg(feature = "System+ComponentModel+CollectionChangeEventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

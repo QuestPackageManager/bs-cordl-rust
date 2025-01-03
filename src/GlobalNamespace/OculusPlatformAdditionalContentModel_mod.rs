@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct OculusPlatformAdditionalContentModel {
     __cordl_parent: crate::GlobalNamespace::AdditionalContentModel,
-    pub _oculusLevelProductCollectionModel: *mut crate::GlobalNamespace::OculusLevelProductCollectionModel,
-    pub _entitlementsSKU: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _oculusLevelProductCollectionModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OculusLevelProductCollectionModel,
     >,
-    pub _semaphoreSlim: *mut crate::System::Threading::SemaphoreSlim,
+    pub _entitlementsSKU: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    >,
+    pub _semaphoreSlim: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SemaphoreSlim,
+    >,
     pub _isDataValid: bool,
 }
 #[cfg(feature = "OculusPlatformAdditionalContentModel")]

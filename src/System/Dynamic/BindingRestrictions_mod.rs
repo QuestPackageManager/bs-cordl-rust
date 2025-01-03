@@ -188,11 +188,15 @@ for crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {
 #[derive(Debug)]
 pub struct BindingRestrictions_TestBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _unique: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::Dynamic::BindingRestrictions,
+    pub _unique: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::System::Dynamic::BindingRestrictions,
+        >,
     >,
-    pub _tests: *mut crate::System::Collections::Generic::Stack_1<
-        crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode,
+    pub _tests: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<
+            crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode,
+        >,
     >,
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder")]
@@ -285,10 +289,10 @@ for crate::System::Dynamic::BindingRestrictions_TestBuilder {
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TestBuilder_BindingRestrictions_AndNode {
     pub Depth: i32,
-    pub Node: *mut crate::System::Linq::Expressions::Expression,
+    pub Node: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

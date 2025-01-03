@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct InvalidKeyException {
     __cordl_parent: crate::System::Exception,
-    pub _Key_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _Type_k__BackingField: *mut crate::System::Type,
+    pub _Key_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub _Type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _MergeMode_k__BackingField: crate::System::Nullable_1<
         crate::UnityEngine::AddressableAssets::Addressables_MergeMode,
     >,
-    pub m_Addressables: *mut crate::UnityEngine::AddressableAssets::AddressablesImpl,
+    pub m_Addressables: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AddressablesImpl,
+    >,
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+InvalidKeyException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

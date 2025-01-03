@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Drawing+Size")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Size {
     pub width: i32,
     pub height: i32,

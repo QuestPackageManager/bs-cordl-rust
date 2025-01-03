@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AxisElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub curNode: *mut crate::System::Xml::Schema::DoubleLinkAxis,
+    pub curNode: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DoubleLinkAxis>,
     pub rootDepth: i32,
     pub curDepth: i32,
     pub isMatch: bool,

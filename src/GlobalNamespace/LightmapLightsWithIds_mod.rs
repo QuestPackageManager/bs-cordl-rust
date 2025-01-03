@@ -4,8 +4,10 @@
 pub struct LightmapLightsWithIds {
     __cordl_parent: crate::GlobalNamespace::LightWithIds,
     pub _maxTotalIntensity: f32,
-    pub _lightIntensityData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId,
+    pub _lightIntensityData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId,
+        >,
     >,
 }
 #[cfg(feature = "LightmapLightsWithIds")]

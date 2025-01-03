@@ -4,13 +4,23 @@
 pub struct GameEnergyCounter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _batteryLives: i32,
-    pub _initData: *mut crate::GlobalNamespace::GameEnergyCounter_InitData,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _playerHeadAndObstacleInteraction: *mut crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
-    pub _saberClashChecker: *mut crate::GlobalNamespace::SaberClashChecker,
-    pub didInitEvent: *mut crate::System::Action,
-    pub gameEnergyDidReach0Event: *mut crate::System::Action,
-    pub gameEnergyDidChangeEvent: *mut crate::System::Action_1<f32>,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameEnergyCounter_InitData,
+    >,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub _playerHeadAndObstacleInteraction: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
+    >,
+    pub _saberClashChecker: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SaberClashChecker,
+    >,
+    pub didInitEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub gameEnergyDidReach0Event: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub gameEnergyDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<f32>,
+    >,
     pub _energy_k__BackingField: f32,
     pub _energyType_k__BackingField: crate::GlobalNamespace::GameplayModifiers_EnergyType,
     pub _instaFail_k__BackingField: bool,

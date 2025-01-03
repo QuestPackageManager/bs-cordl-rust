@@ -4,8 +4,8 @@
 pub struct ChunkedInputStream {
     __cordl_parent: crate::System::Net::RequestStream,
     pub disposed: bool,
-    pub decoder: *mut crate::System::Net::MonoChunkParser,
-    pub context: *mut crate::System::Net::HttpListenerContext,
+    pub decoder: quest_hook::libil2cpp::Gc<crate::System::Net::MonoChunkParser>,
+    pub context: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListenerContext>,
     pub no_more_data: bool,
 }
 #[cfg(feature = "System+Net+ChunkedInputStream")]
@@ -135,11 +135,11 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ChunkedInputStrea
 #[derive(Debug)]
 pub struct ChunkedInputStream_ReadBufferState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub Offset: i32,
     pub Count: i32,
     pub InitialCount: i32,
-    pub Ares: *mut crate::System::Net::HttpStreamAsyncResult,
+    pub Ares: quest_hook::libil2cpp::Gc<crate::System::Net::HttpStreamAsyncResult>,
 }
 #[cfg(feature = "System+Net+ChunkedInputStream+ReadBufferState")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "Unity+Profiling+LowLevel+Unsafe+ProfilerRecorderDescription")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ProfilerRecorderDescription {
     padding: [u8; 24usize],
 }

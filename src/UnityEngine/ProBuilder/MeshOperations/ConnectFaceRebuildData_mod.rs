@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct ConnectFaceRebuildData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub faceRebuildData: *mut crate::UnityEngine::ProBuilder::FaceRebuildData,
-    pub newVertexIndexes: *mut crate::System::Collections::Generic::List_1<i32>,
+    pub faceRebuildData: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::FaceRebuildData,
+    >,
+    pub newVertexIndexes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ConnectFaceRebuildData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

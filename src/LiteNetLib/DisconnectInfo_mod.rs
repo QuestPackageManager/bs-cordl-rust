@@ -1,10 +1,10 @@
 #[cfg(feature = "LiteNetLib+DisconnectInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct DisconnectInfo {
     pub Reason: crate::LiteNetLib::DisconnectReason,
     pub SocketErrorCode: crate::System::Net::Sockets::SocketError,
-    pub AdditionalData: *mut crate::LiteNetLib::NetPacketReader,
+    pub AdditionalData: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacketReader>,
 }
 #[cfg(feature = "LiteNetLib+DisconnectInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

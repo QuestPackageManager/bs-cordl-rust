@@ -3,15 +3,15 @@
 #[derive(Debug)]
 pub struct ProjectContext {
     __cordl_parent: crate::Zenject::Context,
-    pub PreInstall: *mut crate::System::Action,
-    pub PostInstall: *mut crate::System::Action,
-    pub PreResolve: *mut crate::System::Action,
-    pub PostResolve: *mut crate::System::Action,
+    pub PreInstall: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub PostInstall: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub PreResolve: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub PostResolve: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _parentNewObjectsUnderContext: bool,
     pub _editorReflectionBakingCoverageMode: crate::Zenject::ReflectionBakingCoverageModes,
     pub _buildsReflectionBakingCoverageMode: crate::Zenject::ReflectionBakingCoverageModes,
-    pub _settings: *mut crate::Zenject::ZenjectSettings,
-    pub _container: *mut crate::Zenject::DiContainer,
+    pub _settings: quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectSettings>,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
 }
 #[cfg(feature = "Zenject+ProjectContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

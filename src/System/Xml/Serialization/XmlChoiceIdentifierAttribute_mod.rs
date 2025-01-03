@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlChoiceIdentifierAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub memberName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlChoiceIdentifierAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

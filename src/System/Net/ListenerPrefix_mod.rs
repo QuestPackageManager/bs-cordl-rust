@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct ListenerPrefix {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub original: *mut quest_hook::libil2cpp::Il2CppString,
-    pub host: *mut quest_hook::libil2cpp::Il2CppString,
+    pub original: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub port: u16,
-    pub path: *mut quest_hook::libil2cpp::Il2CppString,
+    pub path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub secure: bool,
-    pub Listener: *mut crate::System::Net::HttpListener,
+    pub Listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
 }
 #[cfg(feature = "System+Net+ListenerPrefix")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

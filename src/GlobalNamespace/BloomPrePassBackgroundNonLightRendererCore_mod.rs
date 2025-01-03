@@ -5,10 +5,14 @@ pub struct BloomPrePassBackgroundNonLightRendererCore {
     __cordl_parent: crate::GlobalNamespace::BloomPrePassNonLightPass,
     pub _keepDefaultRendering: bool,
     pub _useCustomMaterial: bool,
-    pub _customMaterial: *mut crate::UnityEngine::Material,
+    pub _customMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _useCustomPropertyBlock: bool,
-    pub _commandBuffer: *mut crate::UnityEngine::Rendering::CommandBuffer,
-    pub _customPropertyBlock: *mut crate::UnityEngine::MaterialPropertyBlock,
+    pub _commandBuffer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Rendering::CommandBuffer,
+    >,
+    pub _customPropertyBlock: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MaterialPropertyBlock,
+    >,
 }
 #[cfg(feature = "BloomPrePassBackgroundNonLightRendererCore")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

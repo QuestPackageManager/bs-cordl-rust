@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MultiplayerActivePlayersTimeOffsetAverage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
     pub _lastReturnedOffsetSyncTime: i64,
     pub _timeOfLastValidReturnedTime: i64,
 }

@@ -8,8 +8,12 @@ pub struct ListViewDraggerAnimated {
     pub m_SelectionHeight: f32,
     pub m_LocalOffsetOnStart: f32,
     pub m_CurrentPointerPosition: crate::UnityEngine::Vector3,
-    pub m_Item: *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
-    pub m_OffsetItem: *mut crate::UnityEngine::UIElements::ReusableCollectionItem,
+    pub m_Item: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ReusableCollectionItem,
+    >,
+    pub m_OffsetItem: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ReusableCollectionItem,
+    >,
     pub _isDragging_k__BackingField: bool,
 }
 #[cfg(feature = "UnityEngine+UIElements+ListViewDraggerAnimated")]

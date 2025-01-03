@@ -4,7 +4,9 @@
 pub struct PoolableMemoryPoolProviderBase_1<TContract: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _PoolId_k__BackingField: crate::System::Guid,
-    pub _Container_k__BackingField: *mut crate::Zenject::DiContainer,
+    pub _Container_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Zenject::DiContainer,
+    >,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
 #[cfg(feature = "Zenject+PoolableMemoryPoolProviderBase_1")]

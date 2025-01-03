@@ -3,20 +3,36 @@
 #[derive(Debug)]
 pub struct BeatmapLevelsModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub ostAndExtrasBeatmapLevelsRepository: *mut crate::GlobalNamespace::BeatmapLevelsRepository,
-    pub dlcBeatmapLevelsRepository: *mut crate::GlobalNamespace::BeatmapLevelsRepository,
-    pub allPacksCount: i32,
-    pub levelLoader: *mut crate::GlobalNamespace::IBeatmapLevelLoader,
-    pub _packDefinitions: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::PackDefinitionSO,
+    pub ostAndExtrasBeatmapLevelsRepository: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsRepository,
     >,
-    pub _playerDataModel: *mut crate::GlobalNamespace::IPlayerDataModel,
-    pub _localizationModel: *mut crate::BGLib::Polyglot::LocalizationModel,
-    pub _entitlements: *mut crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
-    pub _allLoadedBeatmapLevelsRepository: *mut crate::GlobalNamespace::BeatmapLevelsRepository,
-    pub _allExistingBeatmapLevelsRepository: *mut crate::GlobalNamespace::BeatmapLevelsRepository,
-    pub newPackWasCreatedFromDefinitionEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub dlcBeatmapLevelsRepository: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsRepository,
+    >,
+    pub allPacksCount: i32,
+    pub levelLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IBeatmapLevelLoader,
+    >,
+    pub _packDefinitions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::PackDefinitionSO>,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IPlayerDataModel,
+    >,
+    pub _localizationModel: quest_hook::libil2cpp::Gc<
+        crate::BGLib::Polyglot::LocalizationModel,
+    >,
+    pub _entitlements: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
+    >,
+    pub _allLoadedBeatmapLevelsRepository: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsRepository,
+    >,
+    pub _allExistingBeatmapLevelsRepository: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsRepository,
+    >,
+    pub newPackWasCreatedFromDefinitionEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::BeatmapLevelPack>,
     >,
 }
 #[cfg(feature = "BeatmapLevelsModel")]

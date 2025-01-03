@@ -1,16 +1,24 @@
 #[cfg(feature = "UnityEngine+UIElements+UQueryBuilder_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UQueryBuilder_1<T: quest_hook::libil2cpp::Type> {
-    pub m_StyleSelectors: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::StyleSelector,
+    pub m_StyleSelectors: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::StyleSelector,
+        >,
     >,
-    pub m_Parts: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::StyleSelectorPart,
+    pub m_Parts: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::StyleSelectorPart,
+        >,
     >,
-    pub m_Element: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub m_Matchers: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::RuleMatcher,
+    pub m_Element: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub m_Matchers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::RuleMatcher,
+        >,
     >,
     pub m_Relationship: crate::UnityEngine::UIElements::StyleSelectorRelationship,
     pub pseudoStatesMask: i32,

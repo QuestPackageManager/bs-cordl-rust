@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct ColorStateTransition_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<T>,
-    pub _transition: *mut crate::GlobalNamespace::ColorTransitionSO,
+    pub _transition: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorTransitionSO,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "ColorStateTransition_1")]

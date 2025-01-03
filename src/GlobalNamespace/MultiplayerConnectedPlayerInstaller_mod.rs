@@ -3,17 +3,37 @@
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _connectedPlayerAudioTimeSyncControllerPrefab: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController,
-    pub _connectedPlayerBeatmapObjectEventManagerPrefab: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager,
-    pub _multiplayerGameNoteControllerPrefab: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
-    pub _multiplayerBurstSliderHeadGameNoteControllerPrefab: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
-    pub _multiplayerBurstSliderGameNoteControllerPrefab: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
-    pub _multiplayerBombNoteControllerPrefab: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController,
-    pub _multiplayerObstacleControllerPrefab: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController,
-    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _connectedPlayerAudioTimeSyncControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController,
+    >,
+    pub _connectedPlayerBeatmapObjectEventManagerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager,
+    >,
+    pub _multiplayerGameNoteControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+    >,
+    pub _multiplayerBurstSliderHeadGameNoteControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+    >,
+    pub _multiplayerBurstSliderGameNoteControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+    >,
+    pub _multiplayerBombNoteControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController,
+    >,
+    pub _multiplayerObstacleControllerPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController,
+    >,
+    pub _connectedPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IConnectedPlayer,
+    >,
     pub _localPlayerStartState: crate::GlobalNamespace::MultiplayerPlayerStartState,
-    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
-    pub _playersSpecificSettingsAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
+    pub _sceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    >,
+    pub _playersSpecificSettingsAtGameStartModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
+    >,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

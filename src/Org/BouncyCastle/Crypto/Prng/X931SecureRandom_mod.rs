@@ -4,8 +4,12 @@
 pub struct X931SecureRandom {
     __cordl_parent: crate::Org::BouncyCastle::Security::SecureRandom,
     pub mPredictionResistant: bool,
-    pub mRandomSource: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    pub mDrbg: *mut crate::Org::BouncyCastle::Crypto::Prng::X931Rng,
+    pub mRandomSource: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
+    pub mDrbg: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Prng::X931Rng,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+X931SecureRandom")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

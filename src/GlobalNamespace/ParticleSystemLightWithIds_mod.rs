@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct ParticleSystemLightWithIds {
     __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
-    pub _particleSystem: *mut crate::UnityEngine::ParticleSystem,
+    pub _particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
     pub _setOnlyOnce: bool,
     pub _setColorOnly: bool,
     pub _minAlpha: f32,
     pub _mainModule: crate::UnityEngine::ParticleSystem_MainModule,
-    pub _particles: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::ParticleSystem_Particle,
+    pub _particles: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ParticleSystem_Particle>,
     >,
 }
 #[cfg(feature = "ParticleSystemLightWithIds")]

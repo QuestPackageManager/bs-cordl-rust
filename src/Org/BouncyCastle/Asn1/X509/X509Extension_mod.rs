@@ -4,7 +4,9 @@
 pub struct X509Extension {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub critical: bool,
-    pub value: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    pub value: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+X509Extension")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

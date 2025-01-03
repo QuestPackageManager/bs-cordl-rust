@@ -1,6 +1,6 @@
 #[cfg(feature = "LIV+SDK+Unity+SDKTexture")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SDKTexture {
     pub id: crate::LIV::SDK::Unity::TEXTURE_ID,
     pub texturePtr: crate::System::IntPtr,

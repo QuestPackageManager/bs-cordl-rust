@@ -6,18 +6,21 @@ pub struct ReadOnlyDictionary_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_dictionary: *mut crate::System::Collections::Generic::IDictionary_2<
-        TKey,
-        TValue,
+    pub m_dictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IDictionary_2<TKey, TValue>,
     >,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _keys: *mut crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_KeyCollection<
-        TKey,
-        TValue,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _keys: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_KeyCollection<
+            TKey,
+            TValue,
+        >,
     >,
-    pub _values: *mut crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_ValueCollection<
-        TKey,
-        TValue,
+    pub _values: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_ValueCollection<
+            TKey,
+            TValue,
+        >,
     >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -1018,17 +1021,18 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2<TKey, TValue> 
     feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ReadOnlyDictionary_2_DictionaryEnumerator<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    pub _dictionary: *mut crate::System::Collections::Generic::IDictionary_2<
-        TKey,
-        TValue,
+    pub _dictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IDictionary_2<TKey, TValue>,
     >,
-    pub _enumerator: *mut crate::System::Collections::Generic::IEnumerator_1<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    pub _enumerator: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerator_1<
+            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+        >,
     >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -1251,8 +1255,10 @@ pub struct ReadOnlyDictionary_2_KeyCollection<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _collection: *mut crate::System::Collections::Generic::ICollection_1<TKey>,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _collection: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::ICollection_1<TKey>,
+    >,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -1733,8 +1739,10 @@ pub struct ReadOnlyDictionary_2_ValueCollection<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _collection: *mut crate::System::Collections::Generic::ICollection_1<TValue>,
-    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _collection: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::ICollection_1<TValue>,
+    >,
+    pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }

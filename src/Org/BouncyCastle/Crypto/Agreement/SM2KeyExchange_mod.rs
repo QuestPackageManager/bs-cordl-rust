@@ -3,14 +3,24 @@
 #[derive(Debug)]
 pub struct SM2KeyExchange {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub mDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
-    pub mUserID: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub mStaticKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
-    pub mStaticPubPoint: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    pub mEphemeralPubPoint: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    pub mECParams: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
+    pub mDigest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    pub mUserID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub mStaticKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
+    >,
+    pub mStaticPubPoint: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::ECPoint,
+    >,
+    pub mEphemeralPubPoint: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::ECPoint,
+    >,
+    pub mECParams: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
+    >,
     pub mW: i32,
-    pub mEphemeralKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
+    pub mEphemeralKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
+    >,
     pub mInitiator: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+SM2KeyExchange")]

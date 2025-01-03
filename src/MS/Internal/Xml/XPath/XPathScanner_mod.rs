@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct XPathScanner {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _xpathExpr: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _xpathExpr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _xpathExprIndex: i32,
     pub _kind: crate::MS::Internal::Xml::XPath::XPathScanner_LexKind,
     pub _currentChar: char,
-    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _prefix: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _stringValue: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _stringValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _numberValue: f64,
     pub _canBeFunction: bool,
     pub _xmlCharType: crate::System::Xml::XmlCharType,

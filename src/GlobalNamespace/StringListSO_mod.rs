@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct StringListSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _strings: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _strings: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "StringListSO")]

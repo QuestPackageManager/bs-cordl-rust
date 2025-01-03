@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct DnsEndPoint {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub hostName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub hostName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub port: i32,
-    pub _getEndPointTask: *mut crate::System::Threading::Tasks::Task_1<
-        *mut crate::System::Net::IPEndPoint,
+    pub _getEndPointTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<*mut crate::System::Net::IPEndPoint>,
     >,
 }
 #[cfg(feature = "DnsEndPoint")]

@@ -3,23 +3,37 @@
 #[derive(Debug)]
 pub struct JsonSchemaNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _Id_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _Schemas_k__BackingField: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+    pub _Id_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _Properties_k__BackingField: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+    pub _Schemas_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+        >,
     >,
-    pub _PatternProperties_k__BackingField: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+    pub _Properties_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+        >,
     >,
-    pub _Items_k__BackingField: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+    pub _PatternProperties_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+        >,
     >,
-    pub _AdditionalProperties_k__BackingField: *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
-    pub _AdditionalItems_k__BackingField: *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+    pub _Items_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+        >,
+    >,
+    pub _AdditionalProperties_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+    >,
+    pub _AdditionalItems_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Schema::JsonSchemaNode,
+    >,
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

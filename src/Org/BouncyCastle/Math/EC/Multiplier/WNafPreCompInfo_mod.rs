@@ -5,13 +5,17 @@ pub struct WNafPreCompInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_promotionCountdown: i32,
     pub m_confWidth: i32,
-    pub m_preComp: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    pub m_preComp: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+        >,
     >,
-    pub m_preCompNeg: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    pub m_preCompNeg: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+        >,
     >,
-    pub m_twice: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    pub m_twice: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     pub m_width: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafPreCompInfo")]

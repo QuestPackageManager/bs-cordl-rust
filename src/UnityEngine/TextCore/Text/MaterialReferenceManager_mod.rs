@@ -3,21 +3,29 @@
 #[derive(Debug)]
 pub struct MaterialReferenceManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_FontMaterialReferenceLookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::UnityEngine::Material,
+    pub m_FontMaterialReferenceLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::UnityEngine::Material,
+        >,
     >,
-    pub m_FontAssetReferenceLookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::UnityEngine::TextCore::Text::FontAsset,
+    pub m_FontAssetReferenceLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
     >,
-    pub m_SpriteAssetReferenceLookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
+    pub m_SpriteAssetReferenceLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
+        >,
     >,
-    pub m_ColorGradientReferenceLookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::UnityEngine::TextCore::Text::TextColorGradient,
+    pub m_ColorGradientReferenceLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            *mut crate::UnityEngine::TextCore::Text::TextColorGradient,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+MaterialReferenceManager")]

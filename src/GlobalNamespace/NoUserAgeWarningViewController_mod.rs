@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct NoUserAgeWarningViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _confirmButton: *mut crate::UnityEngine::UI::Button,
-    pub didFinishEvent: *mut crate::System::Action,
+    pub _confirmButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "NoUserAgeWarningViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

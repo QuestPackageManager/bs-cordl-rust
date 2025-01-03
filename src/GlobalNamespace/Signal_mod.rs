@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Signal {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _event: *mut crate::System::Action,
+    pub _event: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "Signal")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

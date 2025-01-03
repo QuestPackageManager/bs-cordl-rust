@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VREvent_Process_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VREvent_Process_t {
     pub pid: u32,
     pub oldPid: u32,

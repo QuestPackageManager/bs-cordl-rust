@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct AppInitScenesTransitionSetupDataContainerSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub appInitScenesTransitionSetupData: *mut crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO,
+    pub appInitScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO,
+    >,
 }
 #[cfg(feature = "AppInitScenesTransitionSetupDataContainerSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

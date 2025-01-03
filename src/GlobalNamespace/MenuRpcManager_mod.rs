@@ -3,152 +3,184 @@
 #[derive(Debug)]
 pub struct MenuRpcManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _rpcHandler: *mut crate::GlobalNamespace::RpcHandler_1<
-        crate::GlobalNamespace::MenuRpcManager_RpcType,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
     >,
-    pub getPlayersPermissionConfigurationEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _rpcHandler: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RpcHandler_1<
+            crate::GlobalNamespace::MenuRpcManager_RpcType,
+        >,
     >,
-    pub setPlayersPermissionConfigurationEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable,
+    pub getPlayersPermissionConfigurationEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub setPlayersMissingEntitlementsToLevelEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+    pub setPlayersPermissionConfigurationEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable,
+        >,
     >,
-    pub getIsEntitledToLevelEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub setPlayersMissingEntitlementsToLevelEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+        >,
     >,
-    pub setIsEntitledToLevelEvent: *mut crate::System::Action_3<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppString,
-        crate::GlobalNamespace::EntitlementsStatus,
+    pub getIsEntitledToLevelEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub levelEntitlementStatusesInvalidatedEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub setIsEntitledToLevelEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_3<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            crate::GlobalNamespace::EntitlementsStatus,
+        >,
     >,
-    pub selectedLevelPackEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub levelEntitlementStatusesInvalidatedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub setSelectedBeatmapEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+    pub selectedLevelPackEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub clearSelectedBeatmapEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub setSelectedBeatmapEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+        >,
     >,
-    pub getSelectedBeatmapEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub clearSelectedBeatmapEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub recommendBeatmapEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+    pub getSelectedBeatmapEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub clearRecommendedBeatmapEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub recommendBeatmapEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+        >,
     >,
-    pub getRecommendedBeatmapEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub clearRecommendedBeatmapEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub setSelectedGameplayModifiersEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::GameplayModifiers,
+    pub getRecommendedBeatmapEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub clearSelectedGameplayModifiersEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub setSelectedGameplayModifiersEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::GameplayModifiers,
+        >,
     >,
-    pub getSelectedGameplayModifiersEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub clearSelectedGameplayModifiersEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub recommendGameplayModifiersEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::GameplayModifiers,
+    pub getSelectedGameplayModifiersEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub clearRecommendedGameplayModifiersEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub recommendGameplayModifiersEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::GameplayModifiers,
+        >,
     >,
-    pub getRecommendedGameplayModifiersEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub clearRecommendedGameplayModifiersEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub getIsStartButtonEnabledEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub getRecommendedGameplayModifiersEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub setIsStartButtonEnabledEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        crate::GlobalNamespace::CannotStartGameReason,
+    pub getIsStartButtonEnabledEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub levelLoadErrorEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub setIsStartButtonEnabledEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            crate::GlobalNamespace::CannotStartGameReason,
+        >,
     >,
-    pub levelLoadSuccessEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub levelLoadErrorEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub startedLevelEvent: *mut crate::System::Action_4<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
-        *mut crate::GlobalNamespace::GameplayModifiers,
-        i64,
+    pub levelLoadSuccessEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub getStartedLevelEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub startedLevelEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_4<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+            *mut crate::GlobalNamespace::GameplayModifiers,
+            i64,
+        >,
     >,
-    pub getMultiplayerGameStateEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub getStartedLevelEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub setMultiplayerGameStateEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        crate::GlobalNamespace::MultiplayerGameState,
+    pub getMultiplayerGameStateEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub cancelCountdownEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub setMultiplayerGameStateEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            crate::GlobalNamespace::MultiplayerGameState,
+        >,
     >,
-    pub setCountdownEndTimeEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        i64,
+    pub cancelCountdownEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub getCountdownEndTimeEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub setCountdownEndTimeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut quest_hook::libil2cpp::Il2CppString, i64>,
     >,
-    pub cancelledLevelStartEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub getCountdownEndTimeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub getIsReadyEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub cancelledLevelStartEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub setIsReadyEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        bool,
+    pub getIsReadyEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub setStartGameTimeEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        i64,
+    pub setIsReadyEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut quest_hook::libil2cpp::Il2CppString, bool>,
     >,
-    pub cancelStartGameTimeEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub setStartGameTimeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut quest_hook::libil2cpp::Il2CppString, i64>,
     >,
-    pub getIsInLobbyEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub cancelStartGameTimeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub setIsInLobbyEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        bool,
+    pub getIsInLobbyEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub getOwnedSongPacksEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub setIsInLobbyEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<*mut quest_hook::libil2cpp::Il2CppString, bool>,
     >,
-    pub setOwnedSongPacksEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        crate::GlobalNamespace::SongPackMask,
+    pub getOwnedSongPacksEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub requestedKickPlayerEvent: *mut crate::System::Action_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub setOwnedSongPacksEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            crate::GlobalNamespace::SongPackMask,
+        >,
+    >,
+    pub requestedKickPlayerEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "MenuRpcManager")]

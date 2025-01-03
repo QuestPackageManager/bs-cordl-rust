@@ -6,16 +6,18 @@ pub struct BeatmapBasicData {
     pub noteJumpMovementSpeed: f32,
     pub noteJumpStartBeatOffset: f32,
     pub environmentName: crate::GlobalNamespace::EnvironmentName,
-    pub beatmapColorScheme: *mut crate::GlobalNamespace::ColorScheme,
+    pub beatmapColorScheme: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorScheme,
+    >,
     pub notesCount: i32,
     pub cuttableObjectsCount: i32,
     pub obstaclesCount: i32,
     pub bombsCount: i32,
-    pub mappers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub mappers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub lighters: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub lighters: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "BeatmapBasicData")]

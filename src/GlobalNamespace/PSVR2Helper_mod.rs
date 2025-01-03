@@ -3,37 +3,55 @@
 #[derive(Debug)]
 pub struct PSVR2Helper {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _leftController: *mut crate::GlobalNamespace::UnityXRController_Configuration,
-    pub _rightController: *mut crate::GlobalNamespace::UnityXRController_Configuration,
-    pub _pauseGameActionReference: *mut crate::UnityEngine::InputSystem::InputActionReference,
+    pub _leftController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::UnityXRController_Configuration,
+    >,
+    pub _rightController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::UnityXRController_Configuration,
+    >,
+    pub _pauseGameActionReference: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputActionReference,
+    >,
     pub _defaultPose: crate::UnityEngine::Pose,
-    pub _controllers: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::XR::XRNode,
-        *mut crate::GlobalNamespace::UnityXRController,
+    pub _controllers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::XR::XRNode,
+            *mut crate::GlobalNamespace::UnityXRController,
+        >,
     >,
-    pub _controllersWithRumble: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::XR::XRNode,
-        *mut crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
+    pub _controllersWithRumble: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::XR::XRNode,
+            *mut crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
+        >,
     >,
-    pub _pauseGameAction: *mut crate::UnityEngine::InputSystem::InputAction,
+    pub _pauseGameAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
     pub _timeWhenStartedPlayingHaptic: f32,
     pub _lastTimeWhenTriggeredHaptic: f32,
     pub _hasInputFocus: bool,
     pub _menuButtonDown: bool,
     pub _menuButtonDownThisFrame: bool,
-    pub _maximumHapticFrequencyLimits: *mut crate::System::Collections::Generic::List_1<
-        crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit,
+    pub _maximumHapticFrequencyLimits: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit,
+        >,
     >,
-    pub controllersDidChangeReferenceEvent: *mut crate::System::Action,
-    pub vrControllersDisconnectedOnStartupEvent: *mut crate::System::Action,
+    pub controllersDidChangeReferenceEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub vrControllersDisconnectedOnStartupEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
     pub _hasVrFocus: bool,
-    pub inputFocusWasCapturedEvent: *mut crate::System::Action,
-    pub inputFocusWasReleasedEvent: *mut crate::System::Action,
-    pub vrFocusWasCapturedEvent: *mut crate::System::Action,
-    pub vrFocusWasReleasedEvent: *mut crate::System::Action,
-    pub hmdUnmountedEvent: *mut crate::System::Action,
-    pub hmdMountedEvent: *mut crate::System::Action,
-    pub controllersDidDisconnectEvent: *mut crate::System::Action,
+    pub inputFocusWasCapturedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub inputFocusWasReleasedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub vrFocusWasCapturedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub vrFocusWasReleasedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub hmdUnmountedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub hmdMountedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub controllersDidDisconnectEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "PSVR2Helper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -627,7 +645,7 @@ for crate::GlobalNamespace::PSVR2Helper {
 }
 #[cfg(feature = "PSVR2Helper+HeadsetHapticFrequencyLimit")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PSVR2Helper_HeadsetHapticFrequencyLimit {
     pub maxTimePlayed: f32,
     pub maximumFrequency: i32,

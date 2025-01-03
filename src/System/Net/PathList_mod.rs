@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PathList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_list: *mut crate::System::Collections::SortedList,
+    pub m_list: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
 }
 #[cfg(feature = "System+Net+PathList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

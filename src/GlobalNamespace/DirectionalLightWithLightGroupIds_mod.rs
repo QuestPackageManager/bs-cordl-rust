@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct DirectionalLightWithLightGroupIds {
     __cordl_parent: crate::GlobalNamespace::RuntimeLightWithLightGroupIds,
-    pub _directionalLight: *mut crate::GlobalNamespace::DirectionalLight,
+    pub _directionalLight: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DirectionalLight,
+    >,
 }
 #[cfg(feature = "DirectionalLightWithLightGroupIds")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

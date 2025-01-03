@@ -3,27 +3,41 @@
 #[derive(Debug)]
 pub struct RegexParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _stack: *mut crate::System::Text::RegularExpressions::RegexNode,
-    pub _group: *mut crate::System::Text::RegularExpressions::RegexNode,
-    pub _alternation: *mut crate::System::Text::RegularExpressions::RegexNode,
-    pub _concatenation: *mut crate::System::Text::RegularExpressions::RegexNode,
-    pub _unit: *mut crate::System::Text::RegularExpressions::RegexNode,
-    pub _pattern: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _stack: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::RegexNode,
+    >,
+    pub _group: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::RegexNode,
+    >,
+    pub _alternation: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::RegexNode,
+    >,
+    pub _concatenation: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::RegexNode,
+    >,
+    pub _unit: quest_hook::libil2cpp::Gc<
+        crate::System::Text::RegularExpressions::RegexNode,
+    >,
+    pub _pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _currentPos: i32,
-    pub _culture: *mut crate::System::Globalization::CultureInfo,
+    pub _culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     pub _autocap: i32,
     pub _capcount: i32,
     pub _captop: i32,
     pub _capsize: i32,
-    pub _caps: *mut crate::System::Collections::Hashtable,
-    pub _capnames: *mut crate::System::Collections::Hashtable,
-    pub _capnumlist: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _capnamelist: *mut crate::System::Collections::Generic::List_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub _capnames: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub _capnumlist: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    pub _capnamelist: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub _options: crate::System::Text::RegularExpressions::RegexOptions,
-    pub _optionsStack: *mut crate::System::Collections::Generic::List_1<
-        crate::System::Text::RegularExpressions::RegexOptions,
+    pub _optionsStack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::System::Text::RegularExpressions::RegexOptions,
+        >,
     >,
     pub _ignoreNextParen: bool,
 }

@@ -6,8 +6,8 @@ pub struct EventBoxGroup {
     pub t: crate::BeatmapSaveDataVersion4::EventBoxGroupType,
     pub g: i32,
     pub b: f32,
-    pub e: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::EventBox,
+    pub e: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::EventBox>,
     >,
 }
 #[cfg(feature = "BeatmapSaveDataVersion4+EventBoxGroup")]

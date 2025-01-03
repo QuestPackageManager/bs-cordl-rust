@@ -3,11 +3,21 @@
 #[derive(Debug)]
 pub struct PKMacBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub owf: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub mac: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub provider: *mut crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
-    pub parameters: *mut crate::Org::BouncyCastle::Asn1::Cmp::PbmParameter,
+    pub owf: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub mac: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub provider: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
+    >,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
+    pub parameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cmp::PbmParameter,
+    >,
     pub iterationCount: i32,
     pub saltLength: i32,
     pub maxIterations: i32,

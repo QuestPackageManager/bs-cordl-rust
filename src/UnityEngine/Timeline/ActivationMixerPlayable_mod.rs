@@ -5,7 +5,7 @@ pub struct ActivationMixerPlayable {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub m_PostPlaybackState: crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState,
     pub m_BoundGameObjectInitialStateIsActive: bool,
-    pub m_BoundGameObject: *mut crate::UnityEngine::GameObject,
+    pub m_BoundGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
 #[cfg(feature = "UnityEngine+Timeline+ActivationMixerPlayable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

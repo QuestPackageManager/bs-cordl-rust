@@ -1,9 +1,11 @@
 #[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+BufferedRumble")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BufferedRumble {
     pub _capabilities_k__BackingField: crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities,
-    pub _device_k__BackingField: *mut crate::UnityEngine::InputSystem::InputDevice,
+    pub _device_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputDevice,
+    >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+BufferedRumble")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -3,16 +3,16 @@
 #[derive(Debug)]
 pub struct HttpStreamAsyncResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub locker: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub handle: *mut crate::System::Threading::ManualResetEvent,
+    pub locker: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub handle: quest_hook::libil2cpp::Gc<crate::System::Threading::ManualResetEvent>,
     pub completed: bool,
-    pub Buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub Offset: i32,
     pub Count: i32,
-    pub Callback: *mut crate::System::AsyncCallback,
-    pub State: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub Callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+    pub State: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub SynchRead: i32,
-    pub Error: *mut crate::System::Exception,
+    pub Error: quest_hook::libil2cpp::Gc<crate::System::Exception>,
 }
 #[cfg(feature = "System+Net+HttpStreamAsyncResult")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

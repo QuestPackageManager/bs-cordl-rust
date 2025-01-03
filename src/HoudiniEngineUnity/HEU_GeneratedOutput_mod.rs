@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct HEU_GeneratedOutput {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _outputData: *mut crate::HoudiniEngineUnity::HEU_GeneratedOutputData,
-    pub _childOutputs: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HoudiniEngineUnity::HEU_GeneratedOutputData,
+    pub _outputData: quest_hook::libil2cpp::Gc<
+        crate::HoudiniEngineUnity::HEU_GeneratedOutputData,
+    >,
+    pub _childOutputs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::HoudiniEngineUnity::HEU_GeneratedOutputData,
+        >,
     >,
     pub isInstancer: bool,
 }

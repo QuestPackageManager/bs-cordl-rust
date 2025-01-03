@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SpriteLightWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    pub _spriteRenderer: *mut crate::UnityEngine::SpriteRenderer,
+    pub _spriteRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
     pub _hideIfAlphaOutOfRange: bool,
     pub _hideAlphaRangeMin: f32,
     pub _hideAlphaRangeMax: f32,

@@ -3,20 +3,28 @@
 #[derive(Debug)]
 pub struct SpriteAsyncLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _lruCache: *mut crate::BGLib::DotnetExtension::Collections::LRUCache_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _lruCache: quest_hook::libil2cpp::Gc<
+        crate::BGLib::DotnetExtension::Collections::LRUCache_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _referenceCountingCache: *mut crate::GlobalNamespace::ReferenceCountingCache_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
+    pub _referenceCountingCache: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ReferenceCountingCache_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
+        >,
     >,
-    pub _loadFunc: *mut crate::System::Func_3<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        crate::System::Threading::CancellationToken,
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
+    pub _loadFunc: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            crate::System::Threading::CancellationToken,
+            *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
+        >,
     >,
-    pub _destroyFunc: *mut crate::System::Action_1<*mut crate::UnityEngine::Sprite>,
+    pub _destroyFunc: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::Sprite>,
+    >,
 }
 #[cfg(feature = "SpriteAsyncLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

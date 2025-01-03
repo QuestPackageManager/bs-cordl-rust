@@ -4,7 +4,9 @@
 pub struct BaseTreeView {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVerticalCollectionView,
     pub m_AutoExpand: bool,
-    pub m_ExpandedItemIds: *mut crate::System::Collections::Generic::List_1<i32>,
+    pub m_ExpandedItemIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseTreeView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -357,7 +359,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::BaseT
 #[derive(Debug)]
 pub struct BaseTreeView_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits,
-    pub m_AutoExpand: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    pub m_AutoExpand: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseTreeView+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

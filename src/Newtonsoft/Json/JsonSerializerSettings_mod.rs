@@ -22,11 +22,13 @@ pub struct JsonSerializerSettings {
     pub _stringEscapeHandling: crate::System::Nullable_1<
         crate::Newtonsoft::Json::StringEscapeHandling,
     >,
-    pub _culture: *mut crate::System::Globalization::CultureInfo,
+    pub _culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     pub _checkAdditionalContent: crate::System::Nullable_1<bool>,
     pub _maxDepth: crate::System::Nullable_1<i32>,
     pub _maxDepthSet: bool,
-    pub _dateFormatString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _dateFormatString: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _dateFormatStringSet: bool,
     pub _typeNameAssemblyFormatHandling: crate::System::Nullable_1<
         crate::Newtonsoft::Json::TypeNameAssemblyFormatHandling,
@@ -61,18 +63,32 @@ pub struct JsonSerializerSettings {
     pub _metadataPropertyHandling: crate::System::Nullable_1<
         crate::Newtonsoft::Json::MetadataPropertyHandling,
     >,
-    pub _Converters_k__BackingField: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::Newtonsoft::Json::JsonConverter,
+    pub _Converters_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::JsonConverter,
+        >,
     >,
-    pub _ContractResolver_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::IContractResolver,
-    pub _EqualityComparer_k__BackingField: *mut crate::System::Collections::IEqualityComparer,
-    pub _ReferenceResolverProvider_k__BackingField: *mut crate::System::Func_1<
-        *mut crate::Newtonsoft::Json::Serialization::IReferenceResolver,
+    pub _ContractResolver_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::IContractResolver,
     >,
-    pub _TraceWriter_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::ITraceWriter,
-    pub _SerializationBinder_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::ISerializationBinder,
-    pub _Error_k__BackingField: *mut crate::System::EventHandler_1<
-        *mut crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+    pub _EqualityComparer_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::IEqualityComparer,
+    >,
+    pub _ReferenceResolverProvider_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_1<
+            *mut crate::Newtonsoft::Json::Serialization::IReferenceResolver,
+        >,
+    >,
+    pub _TraceWriter_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::ITraceWriter,
+    >,
+    pub _SerializationBinder_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Serialization::ISerializationBinder,
+    >,
+    pub _Error_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::EventHandler_1<
+            *mut crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+        >,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+JsonSerializerSettings")]

@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct Scroller {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
-    pub valueChanged: *mut crate::System::Action_1<f32>,
-    pub _slider_k__BackingField: *mut crate::UnityEngine::UIElements::Slider,
-    pub _lowButton_k__BackingField: *mut crate::UnityEngine::UIElements::RepeatButton,
-    pub _highButton_k__BackingField: *mut crate::UnityEngine::UIElements::RepeatButton,
+    pub valueChanged: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+    pub _slider_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Slider,
+    >,
+    pub _lowButton_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::RepeatButton,
+    >,
+    pub _highButton_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::RepeatButton,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Scroller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -453,12 +459,20 @@ for crate::UnityEngine::UIElements::Scroller_UxmlFactory {
 #[derive(Debug)]
 pub struct Scroller_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
-    pub m_LowValue: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_HighValue: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    pub m_Direction: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::SliderDirection,
+    pub m_LowValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
     >,
-    pub m_Value: *mut crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    pub m_HighValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
+    pub m_Direction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::SliderDirection,
+        >,
+    >,
+    pub m_Value: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -178,10 +178,18 @@ pub struct RectIntField_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         crate::UnityEngine::RectInt,
     >,
-    pub m_XValue: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_YValue: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_WValue: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_HValue: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    pub m_XValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub m_YValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub m_WValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
+    pub m_HValue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+RectIntField+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

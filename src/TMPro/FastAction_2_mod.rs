@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct FastAction_2<A: quest_hook::libil2cpp::Type, B: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub delegates: *mut crate::System::Collections::Generic::LinkedList_1<
-        *mut crate::System::Action_2<A, B>,
-    >,
-    pub lookup: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Action_2<A, B>,
-        *mut crate::System::Collections::Generic::LinkedListNode_1<
+    pub delegates: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedList_1<
             *mut crate::System::Action_2<A, B>,
+        >,
+    >,
+    pub lookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Action_2<A, B>,
+            *mut crate::System::Collections::Generic::LinkedListNode_1<
+                *mut crate::System::Action_2<A, B>,
+            >,
         >,
     >,
     __cordl_phantom_A: std::marker::PhantomData<A>,

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct UnreferencedObjectEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub o: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub id: *mut quest_hook::libil2cpp::Il2CppString,
+    pub o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Xml+Serialization+UnreferencedObjectEventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

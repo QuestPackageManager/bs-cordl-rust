@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct BeatmapObjectAvoidanceTiltEvaluator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
     pub _gravity: crate::UnityEngine::Vector2,
     pub _normalizedGravity: crate::UnityEngine::Vector2,
-    pub _bezierSplineEvaluator: *mut crate::GlobalNamespace::BezierSplineEvaluator,
+    pub _bezierSplineEvaluator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BezierSplineEvaluator,
+    >,
     pub _currentAcceleration: f32,
 }
 #[cfg(feature = "BeatmapObjectAvoidanceTiltEvaluator")]

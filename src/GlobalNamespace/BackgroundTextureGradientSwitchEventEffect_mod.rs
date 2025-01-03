@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct BackgroundTextureGradientSwitchEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _defaultTextureGradient: *mut crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient,
-    pub _boostTextureGradient: *mut crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _defaultTextureGradient: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient,
+    >,
+    pub _boostTextureGradient: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient,
+    >,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "BackgroundTextureGradientSwitchEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

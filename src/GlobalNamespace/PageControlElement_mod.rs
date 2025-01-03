@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct PageControlElement {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _rectTransform: *mut crate::UnityEngine::RectTransform,
-    pub _imageView: *mut crate::HMUI::ImageView,
+    pub _rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub _imageView: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
     pub _selectedColor: crate::UnityEngine::Color,
     pub _unselectedColor: crate::UnityEngine::Color,
 }

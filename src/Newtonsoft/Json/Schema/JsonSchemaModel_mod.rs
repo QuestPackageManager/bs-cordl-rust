@@ -14,28 +14,42 @@ pub struct JsonSchemaModel {
     pub _ExclusiveMaximum_k__BackingField: bool,
     pub _MinimumItems_k__BackingField: crate::System::Nullable_1<i32>,
     pub _MaximumItems_k__BackingField: crate::System::Nullable_1<i32>,
-    pub _Patterns_k__BackingField: *mut crate::System::Collections::Generic::IList_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Patterns_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
-    pub _Items_k__BackingField: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+    pub _Items_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+        >,
     >,
-    pub _Properties_k__BackingField: *mut crate::System::Collections::Generic::IDictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+    pub _Properties_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IDictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+        >,
     >,
-    pub _PatternProperties_k__BackingField: *mut crate::System::Collections::Generic::IDictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+    pub _PatternProperties_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IDictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+        >,
     >,
-    pub _AdditionalProperties_k__BackingField: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-    pub _AdditionalItems_k__BackingField: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+    pub _AdditionalProperties_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+    >,
+    pub _AdditionalItems_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+    >,
     pub _PositionalItemsValidation_k__BackingField: bool,
     pub _AllowAdditionalProperties_k__BackingField: bool,
     pub _AllowAdditionalItems_k__BackingField: bool,
     pub _UniqueItems_k__BackingField: bool,
-    pub _Enum_k__BackingField: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::Newtonsoft::Json::Linq::JToken,
+    pub _Enum_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            *mut crate::Newtonsoft::Json::Linq::JToken,
+        >,
     >,
     pub _Disallow_k__BackingField: crate::Newtonsoft::Json::Schema::JsonSchemaType,
 }

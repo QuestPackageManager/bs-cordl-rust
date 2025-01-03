@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct MetaData {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub hashProtected: *mut crate::Org::BouncyCastle::Asn1::DerBoolean,
-    pub fileName: *mut crate::Org::BouncyCastle::Asn1::DerUtf8String,
-    pub mediaType: *mut crate::Org::BouncyCastle::Asn1::DerIA5String,
-    pub otherMetaData: *mut crate::Org::BouncyCastle::Asn1::Cms::Attributes,
+    pub hashProtected: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerBoolean,
+    >,
+    pub fileName: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerUtf8String,
+    >,
+    pub mediaType: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::DerIA5String,
+    >,
+    pub otherMetaData: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::Attributes,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+MetaData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,14 +3,18 @@
 #[derive(Debug)]
 pub struct XmlSerializationWriter {
     __cordl_parent: crate::System::Xml::Serialization::XmlSerializationGeneratedCode,
-    pub idGenerator: *mut crate::System::Runtime::Serialization::ObjectIDGenerator,
+    pub idGenerator: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::Serialization::ObjectIDGenerator,
+    >,
     pub qnameCount: i32,
     pub topLevelElement: bool,
-    pub namespaces: *mut crate::System::Collections::ArrayList,
-    pub writer: *mut crate::System::Xml::XmlWriter,
-    pub referencedElements: *mut crate::System::Collections::Queue,
-    pub callbacks: *mut crate::System::Collections::Hashtable,
-    pub serializedObjects: *mut crate::System::Collections::Hashtable,
+    pub namespaces: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    pub writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
+    pub referencedElements: quest_hook::libil2cpp::Gc<crate::System::Collections::Queue>,
+    pub callbacks: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub serializedObjects: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -706,10 +710,12 @@ for crate::System::Xml::Serialization::XmlSerializationWriter {
 #[derive(Debug)]
 pub struct XmlSerializationWriter_WriteCallbackInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Type: *mut crate::System::Type,
-    pub TypeName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub TypeNs: *mut quest_hook::libil2cpp::Il2CppString,
-    pub Callback: *mut crate::System::Xml::Serialization::XmlSerializationWriteCallback,
+    pub Type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub TypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub TypeNs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Callback: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Serialization::XmlSerializationWriteCallback,
+    >,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationWriter+WriteCallbackInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

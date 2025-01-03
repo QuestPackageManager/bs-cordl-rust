@@ -1,6 +1,6 @@
 #[cfg(feature = "System+BRECORD")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BRECORD {
     pub pvRecord: crate::System::IntPtr,
     pub pRecInfo: crate::System::IntPtr,

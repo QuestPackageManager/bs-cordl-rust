@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct IntSwitchInstruction_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
-    pub _cases: *mut crate::System::Collections::Generic::Dictionary_2<T, i32>,
+    pub _cases: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<T, i32>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+IntSwitchInstruction_1")]

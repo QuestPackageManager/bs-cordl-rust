@@ -3,58 +3,114 @@
 #[derive(Debug)]
 pub struct XsdBuilder {
     __cordl_parent: crate::System::Xml::Schema::SchemaBuilder,
-    pub reader: *mut crate::System::Xml::XmlReader,
-    pub positionInfo: *mut crate::System::Xml::PositionInfo,
-    pub currentEntry: *mut crate::System::Xml::Schema::XsdBuilder_XsdEntry,
-    pub nextEntry: *mut crate::System::Xml::Schema::XsdBuilder_XsdEntry,
-    pub hasChild: bool,
-    pub stateHistory: *mut crate::System::Xml::HWStack,
-    pub containerStack: *mut crate::System::Collections::Stack,
-    pub nameTable: *mut crate::System::Xml::XmlNameTable,
-    pub schemaNames: *mut crate::System::Xml::Schema::SchemaNames,
-    pub namespaceManager: *mut crate::System::Xml::XmlNamespaceManager,
-    pub canIncludeImport: bool,
-    pub schema: *mut crate::System::Xml::Schema::XmlSchema,
-    pub xso: *mut crate::System::Xml::Schema::XmlSchemaObject,
-    pub element: *mut crate::System::Xml::Schema::XmlSchemaElement,
-    pub anyElement: *mut crate::System::Xml::Schema::XmlSchemaAny,
-    pub attribute: *mut crate::System::Xml::Schema::XmlSchemaAttribute,
-    pub anyAttribute: *mut crate::System::Xml::Schema::XmlSchemaAnyAttribute,
-    pub complexType: *mut crate::System::Xml::Schema::XmlSchemaComplexType,
-    pub simpleType: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
-    pub complexContent: *mut crate::System::Xml::Schema::XmlSchemaComplexContent,
-    pub complexContentExtension: *mut crate::System::Xml::Schema::XmlSchemaComplexContentExtension,
-    pub complexContentRestriction: *mut crate::System::Xml::Schema::XmlSchemaComplexContentRestriction,
-    pub simpleContent: *mut crate::System::Xml::Schema::XmlSchemaSimpleContent,
-    pub simpleContentExtension: *mut crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
-    pub simpleContentRestriction: *mut crate::System::Xml::Schema::XmlSchemaSimpleContentRestriction,
-    pub simpleTypeUnion: *mut crate::System::Xml::Schema::XmlSchemaSimpleTypeUnion,
-    pub simpleTypeList: *mut crate::System::Xml::Schema::XmlSchemaSimpleTypeList,
-    pub simpleTypeRestriction: *mut crate::System::Xml::Schema::XmlSchemaSimpleTypeRestriction,
-    pub group: *mut crate::System::Xml::Schema::XmlSchemaGroup,
-    pub groupRef: *mut crate::System::Xml::Schema::XmlSchemaGroupRef,
-    pub all: *mut crate::System::Xml::Schema::XmlSchemaAll,
-    pub choice: *mut crate::System::Xml::Schema::XmlSchemaChoice,
-    pub sequence: *mut crate::System::Xml::Schema::XmlSchemaSequence,
-    pub particle: *mut crate::System::Xml::Schema::XmlSchemaParticle,
-    pub attributeGroup: *mut crate::System::Xml::Schema::XmlSchemaAttributeGroup,
-    pub attributeGroupRef: *mut crate::System::Xml::Schema::XmlSchemaAttributeGroupRef,
-    pub notation: *mut crate::System::Xml::Schema::XmlSchemaNotation,
-    pub identityConstraint: *mut crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
-    pub xpath: *mut crate::System::Xml::Schema::XmlSchemaXPath,
-    pub include: *mut crate::System::Xml::Schema::XmlSchemaInclude,
-    pub import: *mut crate::System::Xml::Schema::XmlSchemaImport,
-    pub annotation: *mut crate::System::Xml::Schema::XmlSchemaAnnotation,
-    pub appInfo: *mut crate::System::Xml::Schema::XmlSchemaAppInfo,
-    pub documentation: *mut crate::System::Xml::Schema::XmlSchemaDocumentation,
-    pub facet: *mut crate::System::Xml::Schema::XmlSchemaFacet,
-    pub markup: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::XmlNode,
+    pub reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    pub positionInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::PositionInfo>,
+    pub currentEntry: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XsdBuilder_XsdEntry,
     >,
-    pub redefine: *mut crate::System::Xml::Schema::XmlSchemaRedefine,
-    pub validationEventHandler: *mut crate::System::Xml::Schema::ValidationEventHandler,
-    pub unhandledAttributes: *mut crate::System::Collections::ArrayList,
-    pub namespaces: *mut crate::System::Collections::Hashtable,
+    pub nextEntry: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XsdBuilder_XsdEntry,
+    >,
+    pub hasChild: bool,
+    pub stateHistory: quest_hook::libil2cpp::Gc<crate::System::Xml::HWStack>,
+    pub containerStack: quest_hook::libil2cpp::Gc<crate::System::Collections::Stack>,
+    pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+    pub schemaNames: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNames>,
+    pub namespaceManager: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::XmlNamespaceManager,
+    >,
+    pub canIncludeImport: bool,
+    pub schema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+    pub xso: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
+    pub element: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
+    pub anyElement: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAny>,
+    pub attribute: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAttribute,
+    >,
+    pub anyAttribute: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+    >,
+    pub complexType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaComplexType,
+    >,
+    pub simpleType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaSimpleType,
+    >,
+    pub complexContent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaComplexContent,
+    >,
+    pub complexContentExtension: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaComplexContentExtension,
+    >,
+    pub complexContentRestriction: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaComplexContentRestriction,
+    >,
+    pub simpleContent: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaSimpleContent,
+    >,
+    pub simpleContentExtension: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
+    >,
+    pub simpleContentRestriction: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaSimpleContentRestriction,
+    >,
+    pub simpleTypeUnion: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaSimpleTypeUnion,
+    >,
+    pub simpleTypeList: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaSimpleTypeList,
+    >,
+    pub simpleTypeRestriction: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaSimpleTypeRestriction,
+    >,
+    pub group: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroup>,
+    pub groupRef: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaGroupRef,
+    >,
+    pub all: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAll>,
+    pub choice: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaChoice>,
+    pub sequence: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaSequence,
+    >,
+    pub particle: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaParticle,
+    >,
+    pub attributeGroup: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAttributeGroup,
+    >,
+    pub attributeGroupRef: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAttributeGroupRef,
+    >,
+    pub notation: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaNotation,
+    >,
+    pub identityConstraint: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
+    >,
+    pub xpath: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaXPath>,
+    pub include: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaInclude>,
+    pub import: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaImport>,
+    pub annotation: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAnnotation,
+    >,
+    pub appInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAppInfo>,
+    pub documentation: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaDocumentation,
+    >,
+    pub facet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaFacet>,
+    pub markup: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlNode>,
+    >,
+    pub redefine: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaRedefine,
+    >,
+    pub validationEventHandler: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::ValidationEventHandler,
+    >,
+    pub unhandledAttributes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::ArrayList,
+    >,
+    pub namespaces: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Xml+Schema+XsdBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1347,8 +1403,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XsdBuilde
 #[derive(Debug)]
 pub struct XsdBuilder_BuilderNamespaceManager {
     __cordl_parent: crate::System::Xml::XmlNamespaceManager,
-    pub nsMgr: *mut crate::System::Xml::XmlNamespaceManager,
-    pub reader: *mut crate::System::Xml::XmlReader,
+    pub nsMgr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
+    pub reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
 }
 #[cfg(feature = "System+Xml+Schema+XsdBuilder+BuilderNamespaceManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1483,7 +1539,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 pub struct XsdBuilder_XsdAttributeEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Attribute: crate::System::Xml::Schema::SchemaNames_Token,
-    pub BuildFunc: *mut crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction,
+    pub BuildFunc: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdAttributeEntry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1692,14 +1750,20 @@ pub struct XsdBuilder_XsdEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Name: crate::System::Xml::Schema::SchemaNames_Token,
     pub CurrentState: crate::System::Xml::Schema::XsdBuilder_State,
-    pub NextStates: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::Schema::XsdBuilder_State,
+    pub NextStates: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::System::Xml::Schema::XsdBuilder_State>,
     >,
-    pub Attributes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry,
+    pub Attributes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry,
+        >,
     >,
-    pub InitFunc: *mut crate::System::Xml::Schema::XsdBuilder_XsdInitFunction,
-    pub EndChildFunc: *mut crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction,
+    pub InitFunc: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XsdBuilder_XsdInitFunction,
+    >,
+    pub EndChildFunc: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction,
+    >,
     pub ParseContent: bool,
 }
 #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdEntry")]

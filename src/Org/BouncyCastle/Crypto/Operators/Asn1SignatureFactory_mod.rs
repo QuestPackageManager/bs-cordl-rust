@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct Asn1SignatureFactory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub algID: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub algorithm: *mut quest_hook::libil2cpp::Il2CppString,
-    pub privateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    pub algID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+    >,
+    pub algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub privateKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    >,
+    pub random: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Security::SecureRandom,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1SignatureFactory")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SM4Engine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub rk: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub rk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+SM4Engine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

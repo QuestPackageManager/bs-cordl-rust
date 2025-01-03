@@ -1,15 +1,15 @@
 #[cfg(feature = "BeatSaber+RecPlay+PlayerPoseFrames")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct PlayerPoseFrames {
-    pub head: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatSaber::RecPlay::PoseFrame,
+    pub head: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatSaber::RecPlay::PoseFrame>,
     >,
-    pub leftHand: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatSaber::RecPlay::PoseFrame,
+    pub leftHand: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatSaber::RecPlay::PoseFrame>,
     >,
-    pub rightHand: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatSaber::RecPlay::PoseFrame,
+    pub rightHand: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatSaber::RecPlay::PoseFrame>,
     >,
 }
 #[cfg(feature = "BeatSaber+RecPlay+PlayerPoseFrames")]

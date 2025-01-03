@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct EnvironmentTracksDefinitionSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _environmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
-    pub _basicEventTrackInfos: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo,
+    pub _environmentInfo: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentInfoSO,
     >,
-    pub _eventBoxGroupPageInfos: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo,
+    pub _basicEventTrackInfos: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo,
+        >,
+    >,
+    pub _eventBoxGroupPageInfos: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo,
+        >,
     >,
 }
 #[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
@@ -140,10 +146,12 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
 #[derive(Debug)]
 pub struct EnvironmentTracksDefinitionSO_BasicEventTrackInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _trackName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _trackName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _beatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _trackToolbarType: crate::BeatSaber::TrackDefinitions::DataModels::TrackToolbarType,
-    pub _trackDefinition: *mut crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO,
+    pub _trackDefinition: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO,
+    >,
     pub _basicEventTrackPage: crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackPage,
 }
 #[cfg(
@@ -294,9 +302,13 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _eventBoxGroupPageName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _eventBoxGroupTrackInfos: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo,
+    pub _eventBoxGroupPageName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _eventBoxGroupTrackInfos: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo,
+        >,
     >,
 }
 #[cfg(
@@ -399,8 +411,8 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGr
 #[derive(Debug)]
 pub struct EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _groupName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _lightGroup: *mut crate::GlobalNamespace::LightGroupSO,
+    pub _groupName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
     pub _showColorTrack: bool,
     pub _showRotationXTrack: bool,
     pub _showRotationYTrack: bool,
@@ -412,9 +424,11 @@ pub struct EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo {
     pub _overrideDefaultTranslationAxis: crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDefaultLightAxis,
     pub _showFloatFxTrack: bool,
     pub _enableDuplicate: bool,
-    pub _duplicationGroup: *mut crate::BeatSaber::TrackDefinitions::LightGroupDuplicationGroup,
-    pub _targetLightGroups: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::LightGroupSO,
+    pub _duplicationGroup: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::TrackDefinitions::LightGroupDuplicationGroup,
+    >,
+    pub _targetLightGroups: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::LightGroupSO>,
     >,
 }
 #[cfg(

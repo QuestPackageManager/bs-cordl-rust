@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct DropdownMenu {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_MenuItems: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::DropdownMenuItem,
+    pub m_MenuItems: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::DropdownMenuItem,
+        >,
     >,
-    pub m_DropdownMenuEventInfo: *mut crate::UnityEngine::UIElements::DropdownMenuEventInfo,
+    pub m_DropdownMenuEventInfo: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::DropdownMenuEventInfo,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+DropdownMenu")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

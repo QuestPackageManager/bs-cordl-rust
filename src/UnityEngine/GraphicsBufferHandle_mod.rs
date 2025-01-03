@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+GraphicsBufferHandle")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GraphicsBufferHandle {
     pub value: u32,
 }

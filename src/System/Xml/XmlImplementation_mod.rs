@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlImplementation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub nameTable: *mut crate::System::Xml::XmlNameTable,
+    pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
 }
 #[cfg(feature = "System+Xml+XmlImplementation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

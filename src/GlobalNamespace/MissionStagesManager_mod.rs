@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct MissionStagesManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionStageLockView: *mut crate::GlobalNamespace::MissionStageLockView,
-    pub _missionStages: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MissionStage,
+    pub _missionStageLockView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionStageLockView,
     >,
-    pub _firstLockedMissionStage: *mut crate::GlobalNamespace::MissionStage,
+    pub _missionStages: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionStage>,
+    >,
+    pub _firstLockedMissionStage: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionStage,
+    >,
 }
 #[cfg(feature = "MissionStagesManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

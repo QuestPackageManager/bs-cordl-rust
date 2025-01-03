@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct BeatmapEditorSceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
-    pub _levelDirPath: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _levelAssetPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _levelDirPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _levelAssetPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "BeatmapEditorSceneSetupData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

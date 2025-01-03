@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct StringDictionary {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub contents: *mut crate::System::Collections::Hashtable,
+    pub contents: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
 }
 #[cfg(feature = "System+Collections+Specialized+StringDictionary")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

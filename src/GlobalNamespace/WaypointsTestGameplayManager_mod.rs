@@ -9,11 +9,19 @@ pub struct WaypointsTestGameplayManager {
     pub _innerSphereOffset: crate::UnityEngine::Vector3,
     pub _innerSphereRadius: f32,
     pub _layersToColliderWith: crate::UnityEngine::LayerMask,
-    pub _characterSpawnController: *mut crate::GlobalNamespace::BTSCharacterSpawnController,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _standardSceneSetupData: *mut crate::GlobalNamespace::StandardGameplaySceneSetupData,
-    pub _levelSceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
-    pub _target: *mut crate::UnityEngine::Transform,
+    pub _characterSpawnController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BTSCharacterSpawnController,
+    >,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
+    pub _standardSceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardGameplaySceneSetupData,
+    >,
+    pub _levelSceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    >,
+    pub _target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _firstPosSaved: bool,
     pub _speedSaved: bool,
     pub _lastFramePos: crate::UnityEngine::Vector3,

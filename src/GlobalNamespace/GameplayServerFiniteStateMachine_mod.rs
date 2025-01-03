@@ -3,15 +3,27 @@
 #[derive(Debug)]
 pub struct GameplayServerFiniteStateMachine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _taskUtility_k__BackingField: *mut crate::BGNet::Core::ITaskUtility,
-    pub _multiplayerSessionManager_k__BackingField: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _ownerUserId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _taskUtility_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::BGNet::Core::ITaskUtility,
+    >,
+    pub _multiplayerSessionManager_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub _ownerUserId_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _selectionMask_k__BackingField: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     pub _configuration_k__BackingField: crate::GlobalNamespace::GameplayServerConfiguration,
-    pub _beatmapProvider_k__BackingField: *mut crate::GlobalNamespace::IServerBeatmapProvider,
-    pub _menuRpcManager_k__BackingField: *mut crate::GlobalNamespace::MenuRpcManager,
-    pub _gameplayRpcManager_k__BackingField: *mut crate::GlobalNamespace::GameplayRpcManager,
-    pub state: *mut crate::GlobalNamespace::GameState,
+    pub _beatmapProvider_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IServerBeatmapProvider,
+    >,
+    pub _menuRpcManager_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuRpcManager,
+    >,
+    pub _gameplayRpcManager_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayRpcManager,
+    >,
+    pub state: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameState>,
     pub enteringState: bool,
 }
 #[cfg(feature = "GameplayServerFiniteStateMachine")]
@@ -261,14 +273,18 @@ for crate::GlobalNamespace::GameplayServerFiniteStateMachine {
 }
 #[cfg(feature = "GameplayServerFiniteStateMachine+InitParams")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GameplayServerFiniteStateMachine_InitParams {
-    pub taskUtility: *mut crate::BGNet::Core::ITaskUtility,
-    pub multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub creatorId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
+    pub multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub creatorId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     pub configuration: crate::GlobalNamespace::GameplayServerConfiguration,
-    pub beatmapProvider: *mut crate::GlobalNamespace::IServerBeatmapProvider,
+    pub beatmapProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IServerBeatmapProvider,
+    >,
 }
 #[cfg(feature = "GameplayServerFiniteStateMachine+InitParams")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

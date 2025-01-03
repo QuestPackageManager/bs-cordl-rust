@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ProtectedPart {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub header: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader,
-    pub body: *mut crate::Org::BouncyCastle::Asn1::Cmp::PkiBody,
+    pub header: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cmp::PkiHeader,
+    >,
+    pub body: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiBody>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+ProtectedPart")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

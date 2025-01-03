@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+TextCore+GlyphRect")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct GlyphRect {
     pub m_X: i32,
     pub m_Y: i32,

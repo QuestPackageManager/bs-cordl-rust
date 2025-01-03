@@ -1,6 +1,6 @@
 #[cfg(feature = "OVR+OpenVR+VROverlayIntersectionMaskPrimitive_t")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct VROverlayIntersectionMaskPrimitive_t {
     pub m_nPrimitiveType: crate::OVR::OpenVR::EVROverlayIntersectionMaskPrimitiveType,
     pub m_Primitive: crate::OVR::OpenVR::VROverlayIntersectionMaskPrimitive_Data_t,

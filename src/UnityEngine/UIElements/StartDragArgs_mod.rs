@@ -1,12 +1,18 @@
 #[cfg(feature = "UnityEngine+UIElements+StartDragArgs")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct StartDragArgs {
-    pub _title_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _title_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _visualMode_k__BackingField: crate::UnityEngine::UIElements::DragVisualMode,
-    pub _genericData_k__BackingField: *mut crate::System::Collections::Hashtable,
-    pub _unityObjectReferences_k__BackingField: *mut crate::System::Collections::Generic::IEnumerable_1<
-        *mut crate::UnityEngine::Object,
+    pub _genericData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Hashtable,
+    >,
+    pub _unityObjectReferences_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::UnityEngine::Object,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StartDragArgs")]

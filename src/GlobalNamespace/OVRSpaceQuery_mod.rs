@@ -38,7 +38,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSpaceQuery
 }
 #[cfg(feature = "OVRSpaceQuery+Options")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct OVRSpaceQuery_Options {
     pub _MaxResults_k__BackingField: i32,
     pub _Timeout_k__BackingField: f64,
@@ -46,8 +46,8 @@ pub struct OVRSpaceQuery_Options {
     pub _QueryType_k__BackingField: crate::GlobalNamespace::OVRPlugin_SpaceQueryType,
     pub _ActionType_k__BackingField: crate::GlobalNamespace::OVRPlugin_SpaceQueryActionType,
     pub _componentType: crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-    pub _uuidFilter: *mut crate::System::Collections::Generic::IEnumerable_1<
-        crate::System::Guid,
+    pub _uuidFilter: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
     >,
 }
 #[cfg(feature = "OVRSpaceQuery+Options")]

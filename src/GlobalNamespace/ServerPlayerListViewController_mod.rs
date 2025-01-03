@@ -3,25 +3,37 @@
 #[derive(Debug)]
 pub struct ServerPlayerListViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _gameServerPlayersTableView: *mut crate::GlobalNamespace::GameServerPlayersTableView,
-    pub _invitePlayerButton: *mut crate::UnityEngine::UI::Button,
-    pub _cantInvitePlayerHoverHint: *mut crate::HMUI::HoverHint,
-    pub _invitePlatformHandler: *mut crate::GlobalNamespace::IInvitePlatformHandler,
-    pub _lobbyPlayersDataModel: *mut crate::GlobalNamespace::ILobbyPlayersDataModel,
-    pub _lobbyStateDataModel: *mut crate::GlobalNamespace::ILobbyStateDataModel,
-    pub _lobbyPlayerPermissionsModel: *mut crate::GlobalNamespace::LobbyPlayerPermissionsModel,
-    pub _lobbyGameStateController: *mut crate::GlobalNamespace::ILobbyGameStateController,
-    pub selectSuggestedBeatmapEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::BeatmapKey,
+    pub _gameServerPlayersTableView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameServerPlayersTableView,
     >,
-    pub selectSuggestedGameplayModifiersEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::GameplayModifiers,
+    pub _invitePlayerButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _cantInvitePlayerHoverHint: quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>,
+    pub _invitePlatformHandler: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IInvitePlatformHandler,
     >,
-    pub kickPlayerEvent: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub _lobbyPlayersDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyPlayersDataModel,
     >,
-    pub didOpenInvitePanelEvent: *mut crate::System::Action,
-    pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
+    pub _lobbyStateDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyStateDataModel,
+    >,
+    pub _lobbyPlayerPermissionsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LobbyPlayerPermissionsModel,
+    >,
+    pub _lobbyGameStateController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyGameStateController,
+    >,
+    pub selectSuggestedBeatmapEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::BeatmapKey>,
+    >,
+    pub selectSuggestedGameplayModifiersEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::GameplayModifiers>,
+    >,
+    pub kickPlayerEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+    >,
+    pub didOpenInvitePanelEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
 }
 #[cfg(feature = "ServerPlayerListViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

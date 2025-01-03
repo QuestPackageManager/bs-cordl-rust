@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct InteriorNode {
     __cordl_parent: crate::System::Xml::Schema::SyntaxTreeNode,
-    pub leftChild: *mut crate::System::Xml::Schema::SyntaxTreeNode,
-    pub rightChild: *mut crate::System::Xml::Schema::SyntaxTreeNode,
+    pub leftChild: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SyntaxTreeNode>,
+    pub rightChild: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::SyntaxTreeNode,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+InteriorNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

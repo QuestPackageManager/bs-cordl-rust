@@ -9,12 +9,18 @@ pub struct SmoothStepPositionEventEffect {
     pub _eventValueMax: i32,
     pub _movementVector: crate::UnityEngine::Vector3,
     pub _stepSize: f32,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-    pub _positionTween: *mut crate::Tweening::Vector3Tween,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _tweeningManager: quest_hook::libil2cpp::Gc<
+        crate::Tweening::SongTimeTweeningManager,
+    >,
+    pub _positionTween: quest_hook::libil2cpp::Gc<crate::Tweening::Vector3Tween>,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _startPos: crate::UnityEngine::Vector3,
-    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "SmoothStepPositionEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

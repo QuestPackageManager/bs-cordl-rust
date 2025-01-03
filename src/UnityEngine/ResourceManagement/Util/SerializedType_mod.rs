@@ -1,10 +1,10 @@
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+SerializedType")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SerializedType {
-    pub m_AssemblyName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_ClassName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub m_CachedType: *mut crate::System::Type,
+    pub m_AssemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_ClassName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_CachedType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _ValueChanged_k__BackingField: bool,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+SerializedType")]

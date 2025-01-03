@@ -114,7 +114,9 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafMultiplier {
 #[derive(Debug)]
 pub struct WTauNafMultiplier_WTauNafCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_p: *mut crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+    pub m_p: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+    >,
     pub m_a: i8,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WTauNafMultiplier+WTauNafCallback")]

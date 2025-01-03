@@ -3,11 +3,21 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerSongSyncController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioSource: *mut crate::GlobalNamespace::CrossFadeAudioSource,
-    pub _settingsManager: *mut crate::GlobalNamespace::SettingsManager,
-    pub _initData: *mut crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_InitData,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
+    pub _audioSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CrossFadeAudioSource,
+    >,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_InitData,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
     pub _timeScale: f32,
     pub _startSongTime: f32,
     pub _songTimeOffset: f32,
@@ -15,7 +25,9 @@ pub struct MultiplayerLocalInactivePlayerSongSyncController {
     pub _songLoadingStarted: bool,
     pub _audioStarted: bool,
     pub _currentObservableIsFailed: bool,
-    pub _observable: *mut crate::GlobalNamespace::IMultiplayerObservable,
+    pub _observable: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerObservable,
+    >,
     pub _lastLatencyOffsetTime: i64,
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController")]
@@ -240,7 +252,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerSongSyncController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub audioClip: *mut crate::UnityEngine::AudioClip,
+    pub audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     pub startSongTime: f32,
     pub songTimeOffset: f32,
     pub timeScale: f32,

@@ -5,12 +5,18 @@ pub struct VRController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _node: crate::UnityEngine::XR::XRNode,
     pub _nodeIdx: i32,
-    pub _viewAnchorTransform: *mut crate::UnityEngine::Transform,
-    pub _transformOffset: *mut crate::GlobalNamespace::VRControllerTransformOffset,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
-    pub anchorUpdateEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::VRController,
-        crate::UnityEngine::Pose,
+    pub _viewAnchorTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _transformOffset: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VRControllerTransformOffset,
+    >,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
+    pub anchorUpdateEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::VRController,
+            crate::UnityEngine::Pose,
+        >,
     >,
     pub _lastTrackedPosition: crate::UnityEngine::Vector3,
     pub _lastTrackedRotation: crate::UnityEngine::Quaternion,

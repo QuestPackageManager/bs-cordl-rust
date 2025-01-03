@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct StyleSelector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Parts: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::UIElements::StyleSelectorPart,
+    pub m_Parts: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::UIElements::StyleSelectorPart,
+        >,
     >,
     pub m_PreviousRelationship: crate::UnityEngine::UIElements::StyleSelectorRelationship,
     pub pseudoStateMask: i32,

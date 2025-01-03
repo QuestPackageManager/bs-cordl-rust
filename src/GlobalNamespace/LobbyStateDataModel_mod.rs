@@ -3,21 +3,29 @@
 #[derive(Debug)]
 pub struct LobbyStateDataModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
-    pub _unifiedNetworkPlayerModel: *mut crate::GlobalNamespace::IUnifiedNetworkPlayerModel,
-    pub _connectedPlayers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
     >,
-    pub _connectedPlayersById: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut quest_hook::libil2cpp::Il2CppString,
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _unifiedNetworkPlayerModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IUnifiedNetworkPlayerModel,
+    >,
+    pub _connectedPlayers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
+    >,
+    pub _connectedPlayersById: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     >,
     pub _configuration: crate::GlobalNamespace::GameplayServerConfiguration,
-    pub playerConnectedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub playerConnectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::IConnectedPlayer>,
     >,
-    pub playerDisconnectedEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub playerDisconnectedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::IConnectedPlayer>,
     >,
 }
 #[cfg(feature = "LobbyStateDataModel")]

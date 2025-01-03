@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct PointerCaptureEventBase_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<T>,
-    pub _relatedTarget_k__BackingField: *mut crate::UnityEngine::UIElements::IEventHandler,
+    pub _relatedTarget_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IEventHandler,
+    >,
     pub _pointerId_k__BackingField: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

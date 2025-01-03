@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct BpmTimeProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _bpmChangeDataList: *mut crate::System::Collections::Generic::List_1<
-        crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData,
+    pub _bpmChangeDataList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData,
+        >,
     >,
     pub currentBpmChangesDataIdx: i32,
 }
@@ -168,7 +170,7 @@ for crate::GlobalNamespace::BpmTimeProcessor {
 }
 #[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BpmTimeProcessor_BpmChangeData {
     pub bpmChangeStartTime: f32,
     pub bpmChangeStartBpmTime: f32,

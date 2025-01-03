@@ -3,15 +3,19 @@
 #[derive(Debug)]
 pub struct UnmanagedMemoryStream {
     __cordl_parent: crate::System::IO::Stream,
-    pub _buffer: *mut crate::System::Runtime::InteropServices::SafeBuffer,
-    pub _mem: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _buffer: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::InteropServices::SafeBuffer,
+    >,
+    pub _mem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _length: i64,
     pub _capacity: i64,
     pub _position: i64,
     pub _offset: i64,
     pub _access: crate::System::IO::FileAccess,
     pub _isOpen: bool,
-    pub _lastReadTask: *mut crate::System::Threading::Tasks::Task_1<i32>,
+    pub _lastReadTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<i32>,
+    >,
 }
 #[cfg(feature = "System+IO+UnmanagedMemoryStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct RadioButtonGroup {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<i32>,
-    pub m_RadioButtons: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::RadioButton,
+    pub m_RadioButtons: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::RadioButton,
+        >,
     >,
-    pub m_RadioButtonValueChangedCallback: *mut crate::UnityEngine::UIElements::EventCallback_1<
-        *mut crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
+    pub m_RadioButtonValueChangedCallback: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventCallback_1<
+            *mut crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
+        >,
     >,
-    pub m_RadioButtonContainer: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_RadioButtonContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -265,7 +271,9 @@ pub struct RadioButtonGroup_UxmlTraits {
         i32,
         *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
     >,
-    pub m_Choices: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_Choices: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup+UxmlTraits")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct JSONString {
     __cordl_parent: crate::HoudiniEngineUnity::JSONNode,
-    pub m_Data: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "HoudiniEngineUnity+JSONString")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

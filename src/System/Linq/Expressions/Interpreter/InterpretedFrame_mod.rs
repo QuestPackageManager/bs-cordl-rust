@@ -3,17 +3,25 @@
 #[derive(Debug)]
 pub struct InterpretedFrame {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Interpreter: *mut crate::System::Linq::Expressions::Interpreter::Interpreter,
-    pub _parent: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
-    pub _continuations: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub Interpreter: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::Interpreter,
+    >,
+    pub _parent: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
+    >,
+    pub _continuations: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<i32>,
+    >,
     pub _continuationIndex: i32,
     pub _pendingContinuation: i32,
-    pub _pendingValue: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub Data: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _pendingValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub Data: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
-    pub Closure: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Runtime::CompilerServices::IStrongBox,
+    pub Closure: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Runtime::CompilerServices::IStrongBox,
+        >,
     >,
     pub StackIndex: i32,
     pub InstructionIndex: i32,

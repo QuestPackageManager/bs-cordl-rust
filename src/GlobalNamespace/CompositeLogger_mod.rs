@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct CompositeLogger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _loggers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::IBeatSaberLogger,
+    pub _loggers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::IBeatSaberLogger,
+        >,
     >,
 }
 #[cfg(feature = "CompositeLogger")]

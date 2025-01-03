@@ -4,7 +4,7 @@
 pub struct BitMaskArray {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bitCount_k__BackingField: i32,
-    pub _data: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+    pub _data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
 }
 #[cfg(feature = "BitMaskArray")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

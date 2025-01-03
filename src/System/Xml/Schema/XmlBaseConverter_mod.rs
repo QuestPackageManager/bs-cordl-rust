@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct XmlBaseConverter {
     __cordl_parent: crate::System::Xml::Schema::XmlValueConverter,
-    pub schemaType: *mut crate::System::Xml::Schema::XmlSchemaType,
+    pub schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
     pub typeCode: crate::System::Xml::Schema::XmlTypeCode,
-    pub clrTypeDefault: *mut crate::System::Type,
+    pub clrTypeDefault: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Xml+Schema+XmlBaseConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct SHA1Managed {
     __cordl_parent: crate::System::Security::Cryptography::SHA1,
-    pub _buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _count: i64,
-    pub _stateSHA1: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
-    pub _expandedBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+    pub _stateSHA1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    pub _expandedBuffer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u32>,
+    >,
 }
 #[cfg(feature = "System+Security+Cryptography+SHA1Managed")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

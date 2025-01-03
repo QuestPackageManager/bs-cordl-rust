@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct UnityLightWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
-    pub _light: *mut crate::UnityEngine::Light,
+    pub _light: quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>,
     pub _intensity: f32,
     pub _minAlpha: f32,
 }

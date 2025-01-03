@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct PanelChangedEventBase_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<T>,
-    pub _originPanel_k__BackingField: *mut crate::UnityEngine::UIElements::IPanel,
-    pub _destinationPanel_k__BackingField: *mut crate::UnityEngine::UIElements::IPanel,
+    pub _originPanel_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IPanel,
+    >,
+    pub _destinationPanel_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IPanel,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelChangedEventBase_1")]

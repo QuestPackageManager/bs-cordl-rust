@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct DelayedMenuButtonTrigger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub menuButtonTriggeredEvent: *mut crate::System::Action,
+    pub menuButtonTriggeredEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _pressDuration: f32,
     pub _timer: f32,
     pub _waitingForButtonRelease: bool,
-    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
+    pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IVRPlatformHelper,
+    >,
 }
 #[cfg(feature = "DelayedMenuButtonTrigger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

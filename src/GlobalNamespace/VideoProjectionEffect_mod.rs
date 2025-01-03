@@ -3,14 +3,26 @@
 #[derive(Debug)]
 pub struct VideoProjectionEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _videoProjectionDataModel: *mut crate::GlobalNamespace::VideoProjectionDataModelSO,
-    pub _videoPlayer: *mut crate::GlobalNamespace::SongTimeSyncedVideoPlayer,
+    pub _videoProjectionDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VideoProjectionDataModelSO,
+    >,
+    pub _videoPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongTimeSyncedVideoPlayer,
+    >,
     pub _videoEventType: crate::GlobalNamespace::BasicBeatmapEventType,
-    pub _initData: *mut crate::GlobalNamespace::VideoProjectionEffect_InitData,
+    pub _initData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VideoProjectionEffect_InitData,
+    >,
     pub _environmentContext: crate::GlobalNamespace::EnvironmentContext,
-    pub _beatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _behavior: *mut crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior,
+    pub _beatmapData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IReadonlyBeatmapData,
+    >,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _behavior: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior,
+    >,
 }
 #[cfg(feature = "VideoProjectionEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -93,8 +105,12 @@ for crate::GlobalNamespace::VideoProjectionEffect {
 #[derive(Debug)]
 pub struct VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior {
     __cordl_parent: crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _callbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _callbackWrapper: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    >,
 }
 #[cfg(feature = "VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -308,7 +324,7 @@ for crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavio
 #[derive(Debug)]
 pub struct VideoProjectionEffect_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
 }
 #[cfg(feature = "VideoProjectionEffect+InitData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -371,9 +387,13 @@ pub struct VideoProjectionEffect_VideoProjectionBehavior {
     pub _videoClipHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         *mut crate::UnityEngine::Video::VideoClip,
     >,
-    pub _model: *mut crate::GlobalNamespace::VideoProjectionDataModelSO,
-    pub _videoPlayer: *mut crate::GlobalNamespace::SongTimeSyncedVideoPlayer,
-    pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub _model: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::VideoProjectionDataModelSO,
+    >,
+    pub _videoPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongTimeSyncedVideoPlayer,
+    >,
+    pub _beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
 }
 #[cfg(feature = "VideoProjectionEffect+VideoProjectionBehavior")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

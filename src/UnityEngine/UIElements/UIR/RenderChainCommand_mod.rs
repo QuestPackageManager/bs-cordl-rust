@@ -5,16 +5,20 @@ pub struct RenderChainCommand {
     __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
     >,
-    pub owner: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub prev: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
-    pub next: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+    pub owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    pub prev: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+    >,
+    pub next: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+    >,
     pub closing: bool,
     pub _cordl_type: crate::UnityEngine::UIElements::UIR::CommandType,
     pub state: crate::UnityEngine::UIElements::UIR::State,
-    pub mesh: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+    pub mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
     pub indexOffset: i32,
     pub indexCount: i32,
-    pub callback: *mut crate::System::Action,
+    pub callback: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChainCommand")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

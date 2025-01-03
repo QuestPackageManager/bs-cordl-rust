@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct DtdValidator {
     __cordl_parent: crate::System::Xml::Schema::BaseValidator,
-    pub validationStack: *mut crate::System::Xml::HWStack,
-    pub attPresence: *mut crate::System::Collections::Hashtable,
-    pub name: *mut crate::System::Xml::XmlQualifiedName,
-    pub IDs: *mut crate::System::Collections::Hashtable,
-    pub idRefListHead: *mut crate::System::Xml::Schema::IdRefNode,
+    pub validationStack: quest_hook::libil2cpp::Gc<crate::System::Xml::HWStack>,
+    pub attPresence: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub IDs: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    pub idRefListHead: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IdRefNode>,
     pub processIdentityConstraints: bool,
 }
 #[cfg(feature = "System+Xml+Schema+DtdValidator")]

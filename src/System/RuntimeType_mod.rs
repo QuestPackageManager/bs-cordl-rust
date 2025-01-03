@@ -3,9 +3,11 @@
 #[derive(Debug)]
 pub struct RuntimeType {
     __cordl_parent: crate::System::Reflection::TypeInfo,
-    pub type_info: *mut crate::System::MonoTypeInfo,
-    pub GenericCache: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub m_serializationCtor: *mut crate::System::Reflection::RuntimeConstructorInfo,
+    pub type_info: quest_hook::libil2cpp::Gc<crate::System::MonoTypeInfo>,
+    pub GenericCache: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub m_serializationCtor: quest_hook::libil2cpp::Gc<
+        crate::System::Reflection::RuntimeConstructorInfo,
+    >,
 }
 #[cfg(feature = "System+RuntimeType")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2089,9 +2091,9 @@ for crate::System::RuntimeType {
 }
 #[cfg(feature = "System+RuntimeType+ListBuilder_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RuntimeType_ListBuilder_1<T: quest_hook::libil2cpp::Type> {
-    pub _items: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub _items: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _item: T,
     pub _count: i32,
     pub _capacity: i32,

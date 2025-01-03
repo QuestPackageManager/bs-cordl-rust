@@ -9,9 +9,15 @@ pub struct BeatmapObjectAvoidancePathEvaluator {
     pub _yOffset: f32,
     pub _noteJumpSpeed: f32,
     pub _moveToPlayerHeadTParam: f32,
-    pub _pathBezierCurveEvaluator: *mut crate::GlobalNamespace::BezierSplineEvaluator,
-    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
-    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
+    pub _pathBezierCurveEvaluator: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BezierSplineEvaluator,
+    >,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
+    pub _playerTransforms: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerTransforms,
+    >,
 }
 #[cfg(feature = "BeatmapObjectAvoidancePathEvaluator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

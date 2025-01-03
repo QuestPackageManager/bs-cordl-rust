@@ -3,18 +3,24 @@
 #[derive(Debug)]
 pub struct OptionalAvatarDataSyncHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub didChangeOptionalAvatarDataEvent: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
-        crate::BeatSaber::AvatarCore::OptionalAvatarData,
-    >,
-    pub _latestOptionalAvatarDataDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::GlobalNamespace::IConnectedPlayer,
-        *mut crate::System::Collections::Generic::Dictionary_2<
-            u32,
+    pub didChangeOptionalAvatarDataEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
             crate::BeatSaber::AvatarCore::OptionalAvatarData,
         >,
     >,
-    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _latestOptionalAvatarDataDictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+            *mut crate::System::Collections::Generic::Dictionary_2<
+                u32,
+                crate::BeatSaber::AvatarCore::OptionalAvatarData,
+            >,
+        >,
+    >,
+    pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IMultiplayerSessionManager,
+    >,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarDataSyncHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

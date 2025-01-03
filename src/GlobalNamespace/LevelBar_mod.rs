@@ -3,23 +3,33 @@
 #[derive(Debug)]
 pub struct LevelBar {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _songArtworkImageView: *mut crate::HMUI::ImageView,
-    pub _songNameText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _authorNameText: *mut crate::TMPro::TextMeshProUGUI,
+    pub _songArtworkImageView: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
+    pub _songNameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _authorNameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _showSongSubName: bool,
-    pub _singleLineSongInfoContainer: *mut crate::UnityEngine::GameObject,
-    pub _multiLineSongInfoContainer: *mut crate::UnityEngine::GameObject,
-    pub _multiLineSongNameText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _multiLineAuthorNameText: *mut crate::TMPro::TextMeshProUGUI,
+    pub _singleLineSongInfoContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _multiLineSongInfoContainer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
+    pub _multiLineSongNameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _multiLineAuthorNameText: quest_hook::libil2cpp::Gc<
+        crate::TMPro::TextMeshProUGUI,
+    >,
     pub _showDifficultyAndCharacteristic: bool,
-    pub _difficultyText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _characteristicIconImageView: *mut crate::HMUI::ImageView,
+    pub _difficultyText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+    pub _characteristicIconImageView: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
     pub _useArtworkBackground: bool,
-    pub _artworkBackgroundImage: *mut crate::HMUI::ImageView,
-    pub _defaultArtworkImage: *mut crate::UnityEngine::Sprite,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub _artworkBackgroundImage: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
+    pub _defaultArtworkImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub _cancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
+    pub _beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
 }
 #[cfg(feature = "LevelBar")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

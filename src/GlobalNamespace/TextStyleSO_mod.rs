@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TextStyleSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _textStyle: *mut crate::GlobalNamespace::TextStyle,
+    pub _textStyle: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TextStyle>,
 }
 #[cfg(feature = "TextStyleSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

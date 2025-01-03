@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct NoBeatmapDataAssetFileModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub levelDataAssetDownloadUpdateEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
+    pub levelDataAssetDownloadUpdateEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::GlobalNamespace::LevelDataAssetDownloadUpdate>,
     >,
 }
 #[cfg(feature = "NoBeatmapDataAssetFileModel")]

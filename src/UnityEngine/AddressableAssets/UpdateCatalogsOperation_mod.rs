@@ -7,9 +7,13 @@ pub struct UpdateCatalogsOperation {
             *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
         >,
     >,
-    pub m_Addressables: *mut crate::UnityEngine::AddressableAssets::AddressablesImpl,
-    pub m_LocatorInfos: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::AddressableAssets::ResourceLocatorInfo,
+    pub m_Addressables: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AddressableAssets::AddressablesImpl,
+    >,
+    pub m_LocatorInfos: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::AddressableAssets::ResourceLocatorInfo,
+        >,
     >,
     pub m_DepOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         *mut crate::System::Collections::Generic::IList_1<

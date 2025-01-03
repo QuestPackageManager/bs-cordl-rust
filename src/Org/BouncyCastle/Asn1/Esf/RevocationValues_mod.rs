@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct RevocationValues {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub crlVals: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    pub ocspVals: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    pub otherRevVals: *mut crate::Org::BouncyCastle::Asn1::Esf::OtherRevVals,
+    pub crlVals: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    pub ocspVals: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    >,
+    pub otherRevVals: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Esf::OtherRevVals,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Esf+RevocationValues")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,11 +3,15 @@
 #[derive(Debug)]
 pub struct LabelInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _node: *mut crate::System::Linq::Expressions::LabelTarget,
-    pub _label: *mut crate::System::Linq::Expressions::Interpreter::BranchLabel,
-    pub _definitions: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub _references: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+    pub _node: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+    pub _label: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::BranchLabel,
+    >,
+    pub _definitions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub _references: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+        >,
     >,
     pub _acrossBlockJump: bool,
 }

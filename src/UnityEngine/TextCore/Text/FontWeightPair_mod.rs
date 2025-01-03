@@ -1,9 +1,13 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+FontWeightPair")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FontWeightPair {
-    pub regularTypeface: *mut crate::UnityEngine::TextCore::Text::FontAsset,
-    pub italicTypeface: *mut crate::UnityEngine::TextCore::Text::FontAsset,
+    pub regularTypeface: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::FontAsset,
+    >,
+    pub italicTypeface: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TextCore::Text::FontAsset,
+    >,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+FontWeightPair")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

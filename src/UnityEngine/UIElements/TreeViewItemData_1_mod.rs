@@ -1,11 +1,13 @@
 #[cfg(feature = "UnityEngine+UIElements+TreeViewItemData_1")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TreeViewItemData_1<T: quest_hook::libil2cpp::Type> {
     pub _id_k__BackingField: i32,
     pub m_Data: T,
-    pub m_Children: *mut crate::System::Collections::Generic::IList_1<
-        crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+    pub m_Children: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IList_1<
+            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+        >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

@@ -5,7 +5,7 @@
 #[derive(Debug)]
 pub struct InitializeLocalInstruction_MutableValue {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::InitializeLocalInstruction,
-    pub _type: *mut crate::System::Type,
+    pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+MutableValue"

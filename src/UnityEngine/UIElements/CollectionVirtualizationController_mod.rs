@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CollectionVirtualizationController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_ScrollView: *mut crate::UnityEngine::UIElements::ScrollView,
+    pub m_ScrollView: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ScrollView,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+CollectionVirtualizationController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

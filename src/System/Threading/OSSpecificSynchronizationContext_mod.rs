@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct OSSpecificSynchronizationContext {
     __cordl_parent: crate::System::Threading::SynchronizationContext,
-    pub m_OSSynchronizationContext: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_OSSynchronizationContext: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
 }
 #[cfg(feature = "System+Threading+OSSpecificSynchronizationContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -143,8 +145,10 @@ for crate::System::Threading::OSSpecificSynchronizationContext {
 #[derive(Debug)]
 pub struct OSSpecificSynchronizationContext_InvocationContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Delegate: *mut crate::System::Threading::SendOrPostCallback,
-    pub m_State: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_Delegate: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SendOrPostCallback,
+    >,
+    pub m_State: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Threading+OSSpecificSynchronizationContext+InvocationContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

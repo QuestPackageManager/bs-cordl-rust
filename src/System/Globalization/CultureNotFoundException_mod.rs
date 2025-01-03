@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct CultureNotFoundException {
     __cordl_parent: crate::System::ArgumentException,
-    pub _invalidCultureName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _invalidCultureName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _invalidCultureId: crate::System::Nullable_1<i32>,
 }
 #[cfg(feature = "System+Globalization+CultureNotFoundException")]

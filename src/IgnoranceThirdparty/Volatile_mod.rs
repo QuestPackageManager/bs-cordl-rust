@@ -39,7 +39,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::IgnoranceThirdparty::Volatile 
 }
 #[cfg(feature = "IgnoranceThirdparty+Volatile+PaddedLong")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Volatile_PaddedLong {
     padding: [u8; 72usize],
 }

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct BinaryAssemblyInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub assemblyString: *mut quest_hook::libil2cpp::Il2CppString,
-    pub assembly: *mut crate::System::Reflection::Assembly,
+    pub assemblyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryAssemblyInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

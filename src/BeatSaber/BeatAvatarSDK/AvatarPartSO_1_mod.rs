@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct AvatarPartSO_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _id: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _localizationKey: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _localizationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _partAsset: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct MemoryPoolBase_1<TContract: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _inactiveItems: *mut crate::System::Collections::Generic::Stack_1<TContract>,
-    pub _factory: *mut crate::Zenject::IFactory_1<TContract>,
-    pub _settings: *mut crate::Zenject::MemoryPoolSettings,
-    pub _container: *mut crate::Zenject::DiContainer,
+    pub _inactiveItems: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<TContract>,
+    >,
+    pub _factory: quest_hook::libil2cpp::Gc<crate::Zenject::IFactory_1<TContract>>,
+    pub _settings: quest_hook::libil2cpp::Gc<crate::Zenject::MemoryPoolSettings>,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _activeCount: i32,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }

@@ -1,16 +1,16 @@
 #[cfg(feature = "TMPro+TMP_CharacterInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct TMP_CharacterInfo {
     pub character: char,
     pub index: i32,
     pub stringLength: i32,
     pub elementType: crate::TMPro::TMP_TextElementType,
-    pub textElement: *mut crate::TMPro::TMP_TextElement,
-    pub fontAsset: *mut crate::TMPro::TMP_FontAsset,
-    pub spriteAsset: *mut crate::TMPro::TMP_SpriteAsset,
+    pub textElement: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextElement>,
+    pub fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    pub spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
     pub spriteIndex: i32,
-    pub material: *mut crate::UnityEngine::Material,
+    pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub materialReferenceIndex: i32,
     pub isUsingAlternateTypeface: bool,
     pub pointSize: f32,

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct StylePropertyValueMatcher {
     __cordl_parent: crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher,
-    pub m_Values: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+    pub m_Values: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValueMatcher")]

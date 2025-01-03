@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct XmlAsyncCheckReader {
     __cordl_parent: crate::System::Xml::XmlReader,
-    pub coreReader: *mut crate::System::Xml::XmlReader,
-    pub lastTask: *mut crate::System::Threading::Tasks::Task,
+    pub coreReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    pub lastTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
 }
 #[cfg(feature = "System+Xml+XmlAsyncCheckReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

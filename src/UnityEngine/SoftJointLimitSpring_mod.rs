@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+SoftJointLimitSpring")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SoftJointLimitSpring {
     pub m_Spring: f32,
     pub m_Damper: f32,

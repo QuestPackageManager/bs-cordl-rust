@@ -1,8 +1,10 @@
 #[cfg(feature = "System+Text+ValueUtf8Converter")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ValueUtf8Converter {
-    pub _arrayToReturnToPool: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _arrayToReturnToPool: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<u8>,
+    >,
     pub _bytes: crate::System::Span_1<u8>,
 }
 #[cfg(feature = "System+Text+ValueUtf8Converter")]

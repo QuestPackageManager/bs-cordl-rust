@@ -6,7 +6,9 @@ pub struct EventAttribute {
     pub _EventId_k__BackingField: i32,
     pub _Level_k__BackingField: crate::System::Diagnostics::Tracing::EventLevel,
     pub _Keywords_k__BackingField: crate::System::Diagnostics::Tracing::EventKeywords,
-    pub _Message_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Message_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Diagnostics+Tracing+EventAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

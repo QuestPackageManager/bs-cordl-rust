@@ -3,15 +3,31 @@
 #[derive(Debug)]
 pub struct GameplaySetupViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _selectionSegmentedControl: *mut crate::HMUI::TextSegmentedControl,
-    pub _playerSettingsPanelController: *mut crate::GlobalNamespace::PlayerSettingsPanelController,
-    pub _gameplayModifiersPanelController: *mut crate::GlobalNamespace::GameplayModifiersPanelController,
-    pub _environmentOverrideSettingsPanelController: *mut crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController,
-    pub _colorsOverrideSettingsPanelController: *mut crate::GlobalNamespace::ColorsOverrideSettingsPanelController,
-    pub _multiplayerSettingsPanelController: *mut crate::GlobalNamespace::MultiplayerSettingsPanelController,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _panels: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::GameplaySetupViewController_Panel,
+    pub _selectionSegmentedControl: quest_hook::libil2cpp::Gc<
+        crate::HMUI::TextSegmentedControl,
+    >,
+    pub _playerSettingsPanelController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerSettingsPanelController,
+    >,
+    pub _gameplayModifiersPanelController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiersPanelController,
+    >,
+    pub _environmentOverrideSettingsPanelController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController,
+    >,
+    pub _colorsOverrideSettingsPanelController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorsOverrideSettingsPanelController,
+    >,
+    pub _multiplayerSettingsPanelController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MultiplayerSettingsPanelController,
+    >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _panels: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::GameplaySetupViewController_Panel,
+        >,
     >,
     pub _activePanelIdx: i32,
     pub _showModifiers: bool,
@@ -268,9 +284,9 @@ for crate::GlobalNamespace::GameplaySetupViewController {
 #[derive(Debug)]
 pub struct GameplaySetupViewController_Panel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub title: *mut quest_hook::libil2cpp::Il2CppString,
-    pub refreshable: *mut crate::GlobalNamespace::IRefreshable,
-    pub gameObject: *mut crate::UnityEngine::GameObject,
+    pub title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub refreshable: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRefreshable>,
+    pub gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
 }
 #[cfg(feature = "GameplaySetupViewController+Panel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

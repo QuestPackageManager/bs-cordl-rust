@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Data+SqlTypes+SqlInt64")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SqlInt64 {
     pub m_fNotNull: bool,
     pub m_value: i64,

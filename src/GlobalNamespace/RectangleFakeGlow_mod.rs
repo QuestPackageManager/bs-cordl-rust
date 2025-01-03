@@ -6,7 +6,9 @@ pub struct RectangleFakeGlow {
     pub _size: crate::UnityEngine::Vector2,
     pub _edgeSize: f32,
     pub _color: crate::UnityEngine::Color,
-    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _materialPropertyBlockController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MaterialPropertyBlockController,
+    >,
 }
 #[cfg(feature = "RectangleFakeGlow")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

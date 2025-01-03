@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+BatchMeshID")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BatchMeshID {
     pub value: u32,
 }

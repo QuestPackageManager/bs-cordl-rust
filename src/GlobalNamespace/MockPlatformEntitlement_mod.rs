@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MockPlatformEntitlement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _id: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _status: crate::GlobalNamespace::EntitlementStatus,
 }
 #[cfg(feature = "MockPlatformEntitlement")]

@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct RsaPrivateKeyStructure {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub modulus: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub publicExponent: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub privateExponent: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub prime1: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub prime2: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub exponent1: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub exponent2: *mut crate::Org::BouncyCastle::Math::BigInteger,
-    pub coefficient: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub modulus: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub publicExponent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
+    pub privateExponent: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
+    pub prime1: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub prime2: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub exponent1: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub exponent2: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    pub coefficient: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+RsaPrivateKeyStructure")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

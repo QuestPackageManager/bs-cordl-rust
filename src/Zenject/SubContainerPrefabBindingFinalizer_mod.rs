@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct SubContainerPrefabBindingFinalizer {
     __cordl_parent: crate::Zenject::ProviderBindingFinalizer,
-    pub _subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _subIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _resolveAll: bool,
-    pub _subContainerCreatorFactory: *mut crate::System::Func_2<
-        *mut crate::Zenject::DiContainer,
-        *mut crate::Zenject::ISubContainerCreator,
+    pub _subContainerCreatorFactory: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            *mut crate::Zenject::DiContainer,
+            *mut crate::Zenject::ISubContainerCreator,
+        >,
     >,
 }
 #[cfg(feature = "Zenject+SubContainerPrefabBindingFinalizer")]

@@ -82,8 +82,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Tasks::Task
 #[derive(Debug)]
 pub struct TaskToApm_TaskWrapperAsyncResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Task: *mut crate::System::Threading::Tasks::Task,
-    pub _state: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub Task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    pub _state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _completedSynchronously: bool,
 }
 #[cfg(feature = "System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]

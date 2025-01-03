@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct TweakableBlockCipherParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub tweak: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub key: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    pub tweak: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub key: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+TweakableBlockCipherParameters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

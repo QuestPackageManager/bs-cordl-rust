@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct HowToPlayViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _tutorialButton: *mut crate::UnityEngine::UI::Button,
-    pub _creditsButton: *mut crate::UnityEngine::UI::Button,
-    pub didFinishEvent: *mut crate::System::Action_1<
-        crate::GlobalNamespace::HowToPlayViewController_HowToPlayOptions,
+    pub _tutorialButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _creditsButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            crate::GlobalNamespace::HowToPlayViewController_HowToPlayOptions,
+        >,
     >,
 }
 #[cfg(feature = "HowToPlayViewController")]

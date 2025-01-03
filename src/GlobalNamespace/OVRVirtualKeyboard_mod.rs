@@ -2,9 +2,9 @@
     feature = "OVRVirtualKeyboard+InteractorRootTransformOverride+InteractorRootOverrideData"
 )]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData {
-    pub root: *mut crate::UnityEngine::Transform,
+    pub root: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub originalPose: crate::GlobalNamespace::OVRPose,
     pub targetPose: crate::GlobalNamespace::OVRPose,
 }
@@ -38,37 +38,55 @@ impl crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_
 #[derive(Debug)]
 pub struct OVRVirtualKeyboard {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub CommitText: *mut crate::System::Action_1<
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub CommitText: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub Backspace: *mut crate::System::Action,
-    pub Enter: *mut crate::System::Action,
-    pub KeyboardShown: *mut crate::System::Action,
-    pub KeyboardHidden: *mut crate::System::Action,
-    pub _Collider_k__BackingField: *mut crate::UnityEngine::Collider,
+    pub Backspace: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub Enter: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub KeyboardShown: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub KeyboardHidden: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _Collider_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Collider,
+    >,
     pub InitialPosition: crate::GlobalNamespace::OVRVirtualKeyboard_KeyboardPosition,
-    pub textCommitField: *mut crate::UnityEngine::UI::InputField,
-    pub leftControllerRootTransform: *mut crate::UnityEngine::Transform,
-    pub leftControllerDirectTransform: *mut crate::UnityEngine::Transform,
-    pub rightControllerRootTransform: *mut crate::UnityEngine::Transform,
-    pub rightControllerDirectTransform: *mut crate::UnityEngine::Transform,
+    pub textCommitField: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::InputField>,
+    pub leftControllerRootTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub leftControllerDirectTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub rightControllerRootTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
+    pub rightControllerDirectTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Transform,
+    >,
     pub controllerDirectInteraction: bool,
     pub controllerRayInteraction: bool,
-    pub controllerRaycaster: *mut crate::UnityEngine::EventSystems::OVRPhysicsRaycaster,
-    pub handLeft: *mut crate::GlobalNamespace::OVRHand,
-    pub handRight: *mut crate::GlobalNamespace::OVRHand,
+    pub controllerRaycaster: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::OVRPhysicsRaycaster,
+    >,
+    pub handLeft: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHand>,
+    pub handRight: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHand>,
     pub handDirectInteraction: bool,
     pub handRayInteraction: bool,
-    pub handRaycaster: *mut crate::UnityEngine::EventSystems::OVRPhysicsRaycaster,
-    pub keyboardModelShader: *mut crate::UnityEngine::Shader,
-    pub keyboardModelAlphaBlendShader: *mut crate::UnityEngine::Shader,
+    pub handRaycaster: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::EventSystems::OVRPhysicsRaycaster,
+    >,
+    pub keyboardModelShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub keyboardModelAlphaBlendShader: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Shader,
+    >,
     pub InputEnabled: bool,
     pub isKeyboardCreated_: bool,
     pub keyboardSpace_: u64,
-    pub virtualKeyboardTextures_: *mut crate::System::Collections::Generic::Dictionary_2<
-        u64,
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::Material,
+    pub virtualKeyboardTextures_: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            u64,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::Material,
+            >,
         >,
     >,
     pub virtualKeyboardScene_: crate::GlobalNamespace::OVRGLTFScene,
@@ -76,12 +94,18 @@ pub struct OVRVirtualKeyboard {
     pub modelInitialized_: bool,
     pub modelAvailable_: bool,
     pub keyboardVisible_: bool,
-    pub _interactorRootTransformOverride: *mut crate::GlobalNamespace::OVRVirtualKeyboard_InteractorRootTransformOverride,
-    pub _inputSources: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::OVRVirtualKeyboard_IInputSource,
+    pub _interactorRootTransformOverride: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRVirtualKeyboard_InteractorRootTransformOverride,
+    >,
+    pub _inputSources: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::OVRVirtualKeyboard_IInputSource,
+        >,
     >,
     pub ignoreTextCommmitFieldOnValueChanged_: bool,
-    pub runtimeInputField_: *mut crate::UnityEngine::UI::InputField,
+    pub runtimeInputField_: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UI::InputField,
+    >,
 }
 #[cfg(feature = "OVRVirtualKeyboard")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -686,7 +710,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboard {
 pub struct OVRVirtualKeyboard_BaseInputSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _operatingWithoutOVRCameraRig: bool,
-    pub _rig: *mut crate::GlobalNamespace::OVRCameraRig,
+    pub _rig: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCameraRig>,
 }
 #[cfg(feature = "OVRVirtualKeyboard+BaseInputSource")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -813,11 +837,11 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource {
 #[derive(Debug)]
 pub struct OVRVirtualKeyboard_ControllerInputSource {
     __cordl_parent: crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource,
-    pub _rootTransform: *mut crate::UnityEngine::Transform,
-    pub _directTransform: *mut crate::UnityEngine::Transform,
+    pub _rootTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _directTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _inputSource: crate::GlobalNamespace::OVRVirtualKeyboard_InputSource,
     pub _controllerType: crate::GlobalNamespace::OVRInput_Controller,
-    pub _keyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
+    pub _keyboard: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRVirtualKeyboard>,
     pub _lastFrameCount: i32,
     pub _triggerButton: crate::GlobalNamespace::OVRInput_RawButton,
 }
@@ -911,10 +935,10 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_ControllerInputSource {
 #[derive(Debug)]
 pub struct OVRVirtualKeyboard_HandInputSource {
     __cordl_parent: crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource,
-    pub _hand: *mut crate::GlobalNamespace::OVRHand,
+    pub _hand: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHand>,
     pub _inputSource: crate::GlobalNamespace::OVRVirtualKeyboard_InputSource,
-    pub _keyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
-    pub _skeleton: *mut crate::GlobalNamespace::OVRSkeleton,
+    pub _keyboard: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRVirtualKeyboard>,
+    pub _skeleton: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSkeleton>,
     pub _lastFrameCount: i32,
 }
 #[cfg(feature = "OVRVirtualKeyboard+HandInputSource")]
@@ -1054,11 +1078,15 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct OVRVirtualKeyboard_InteractorRootTransformOverride {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub applyQueue: *mut crate::System::Collections::Generic::Queue_1<
-        crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData,
+    pub applyQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<
+            crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData,
+        >,
     >,
-    pub revertQueue: *mut crate::System::Collections::Generic::Queue_1<
-        crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData,
+    pub revertQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<
+            crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData,
+        >,
     >,
 }
 #[cfg(feature = "OVRVirtualKeyboard+InteractorRootTransformOverride")]

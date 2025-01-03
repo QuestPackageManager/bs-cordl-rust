@@ -3,19 +3,27 @@
 #[derive(Debug)]
 pub struct ColumnLayout {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_StretchableColumns: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::Column,
+    pub m_StretchableColumns: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::Column,
+        >,
     >,
-    pub m_FixedColumns: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::Column,
+    pub m_FixedColumns: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::Column,
+        >,
     >,
-    pub m_RelativeWidthColumns: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::Column,
+    pub m_RelativeWidthColumns: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::Column,
+        >,
     >,
-    pub m_MixedWidthColumns: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::Column,
+    pub m_MixedWidthColumns: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::Column,
+        >,
     >,
-    pub m_Columns: *mut crate::UnityEngine::UIElements::Columns,
+    pub m_Columns: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
     pub m_ColumnsWidth: f32,
     pub m_ColumnsWidthDirty: bool,
     pub m_MaxColumnsWidth: f32,
@@ -28,20 +36,28 @@ pub struct ColumnLayout {
     pub m_DragStartPos: f32,
     pub m_DragLastPos: f32,
     pub m_DragInitialColumnWidth: f32,
-    pub m_DragStretchableColumns: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::Column,
+    pub m_DragStretchableColumns: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::Column,
+        >,
     >,
-    pub m_DragRelativeColumns: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::Column,
+    pub m_DragRelativeColumns: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::Column,
+        >,
     >,
-    pub m_DragFixedColumns: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::Column,
+    pub m_DragFixedColumns: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::Column,
+        >,
     >,
-    pub m_PreviewDesiredWidths: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::UnityEngine::UIElements::Column,
-        f32,
+    pub m_PreviewDesiredWidths: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::UnityEngine::UIElements::Column,
+            f32,
+        >,
     >,
-    pub layoutRequested: *mut crate::System::Action,
+    pub layoutRequested: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "UnityEngine+UIElements+ColumnLayout")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

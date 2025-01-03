@@ -3,13 +3,19 @@
 #[derive(Debug)]
 pub struct GameplayModifiersDropdown {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _simpleTextDropdown: *mut crate::HMUI::SimpleTextDropdown,
-    pub _gameplayModifiersModel: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
-    pub didSelectCellWithIdxEvent: *mut crate::System::Action_1<i32>,
-    pub _gameplayModifiersData: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::System::Tuple_2<
-            crate::GlobalNamespace::GameplayModifierMask,
-            *mut quest_hook::libil2cpp::Il2CppString,
+    pub _simpleTextDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
+    pub _gameplayModifiersModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayModifiersModelSO,
+    >,
+    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<i32>,
+    >,
+    pub _gameplayModifiersData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::System::Tuple_2<
+                crate::GlobalNamespace::GameplayModifierMask,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     >,
 }

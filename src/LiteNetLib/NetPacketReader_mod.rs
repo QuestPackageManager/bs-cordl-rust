@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct NetPacketReader {
     __cordl_parent: crate::LiteNetLib::Utils::NetDataReader,
-    pub _packet: *mut crate::LiteNetLib::NetPacket,
-    pub _manager: *mut crate::LiteNetLib::NetManager,
-    pub _evt: *mut crate::LiteNetLib::NetEvent,
+    pub _packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+    pub _manager: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetManager>,
+    pub _evt: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetEvent>,
 }
 #[cfg(feature = "LiteNetLib+NetPacketReader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,28 +3,46 @@
 #[derive(Debug)]
 pub struct BaseVisualElementPanel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub panelDisposed: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::BaseVisualElementPanel,
+    pub panelDisposed: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            *mut crate::UnityEngine::UIElements::BaseVisualElementPanel,
+        >,
     >,
-    pub m_UIElementsBridge: *mut crate::UnityEngine::UIElements::UIElementsBridge,
+    pub m_UIElementsBridge: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIElementsBridge,
+    >,
     pub m_Scale: f32,
-    pub yogaConfig: *mut crate::UnityEngine::Yoga::YogaConfig,
+    pub yogaConfig: quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaConfig>,
     pub m_PixelsPerPoint: f32,
     pub _referenceSpritePixelsPerUnit_k__BackingField: f32,
     pub _clearSettings_k__BackingField: crate::UnityEngine::UIElements::PanelClearSettings,
     pub _duringLayoutPhase_k__BackingField: bool,
-    pub _repaintData_k__BackingField: *mut crate::UnityEngine::UIElements::RepaintData,
-    pub _cursorManager_k__BackingField: *mut crate::UnityEngine::UIElements::ICursorManager,
-    pub _contextualMenuManager_k__BackingField: *mut crate::UnityEngine::UIElements::ContextualMenuManager,
+    pub _repaintData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::RepaintData,
+    >,
+    pub _cursorManager_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ICursorManager,
+    >,
+    pub _contextualMenuManager_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ContextualMenuManager,
+    >,
     pub _disposed_k__BackingField: bool,
-    pub m_TopElementUnderPointers: *mut crate::UnityEngine::UIElements::ElementUnderPointer,
-    pub standardShaderChanged: *mut crate::System::Action,
-    pub standardWorldSpaceShaderChanged: *mut crate::System::Action,
-    pub atlasChanged: *mut crate::System::Action,
-    pub updateMaterial: *mut crate::System::Action_1<*mut crate::UnityEngine::Material>,
-    pub hierarchyChanged: *mut crate::UnityEngine::UIElements::HierarchyEvent,
-    pub beforeUpdate: *mut crate::System::Action_1<
-        *mut crate::UnityEngine::UIElements::IPanel,
+    pub m_TopElementUnderPointers: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::ElementUnderPointer,
+    >,
+    pub standardShaderChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub standardWorldSpaceShaderChanged: quest_hook::libil2cpp::Gc<
+        crate::System::Action,
+    >,
+    pub atlasChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub updateMaterial: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::Material>,
+    >,
+    pub hierarchyChanged: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::HierarchyEvent,
+    >,
+    pub beforeUpdate: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::UnityEngine::UIElements::IPanel>,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseVisualElementPanel")]

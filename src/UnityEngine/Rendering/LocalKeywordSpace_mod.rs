@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Rendering+LocalKeywordSpace")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct LocalKeywordSpace {
     pub m_KeywordSpace: crate::System::IntPtr,
 }

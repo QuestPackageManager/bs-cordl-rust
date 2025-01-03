@@ -6,7 +6,7 @@ pub struct BloomPrePassBackgroundColor {
     pub _intensity: f32,
     pub _minAlpha: f32,
     pub _grayscaleFactor: f32,
-    pub _shader: *mut crate::UnityEngine::Shader,
+    pub _shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub _color: crate::UnityEngine::Color,
 }
 #[cfg(feature = "BloomPrePassBackgroundColor")]

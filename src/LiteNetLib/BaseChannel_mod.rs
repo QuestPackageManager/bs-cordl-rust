@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct BaseChannel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Next: *mut crate::LiteNetLib::BaseChannel,
-    pub Peer: *mut crate::LiteNetLib::NetPeer,
-    pub OutgoingQueue: *mut crate::System::Collections::Generic::Queue_1<
-        *mut crate::LiteNetLib::NetPacket,
+    pub Next: quest_hook::libil2cpp::Gc<crate::LiteNetLib::BaseChannel>,
+    pub Peer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
+    pub OutgoingQueue: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<*mut crate::LiteNetLib::NetPacket>,
     >,
 }
 #[cfg(feature = "LiteNetLib+BaseChannel")]

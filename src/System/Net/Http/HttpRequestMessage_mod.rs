@@ -3,13 +3,17 @@
 #[derive(Debug)]
 pub struct HttpRequestMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub headers: *mut crate::System::Net::Http::Headers::HttpRequestHeaders,
-    pub method: *mut crate::System::Net::Http::HttpMethod,
-    pub version: *mut crate::System::Version,
-    pub uri: *mut crate::System::Uri,
+    pub headers: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::Headers::HttpRequestHeaders,
+    >,
+    pub method: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMethod>,
+    pub version: quest_hook::libil2cpp::Gc<crate::System::Version>,
+    pub uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     pub is_used: bool,
     pub disposed: bool,
-    pub _Content_k__BackingField: *mut crate::System::Net::Http::HttpContent,
+    pub _Content_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::HttpContent,
+    >,
 }
 #[cfg(feature = "System+Net+Http+HttpRequestMessage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

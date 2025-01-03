@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SecT233FieldElement {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractF2mFieldElement,
-    pub x: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+    pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT233FieldElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

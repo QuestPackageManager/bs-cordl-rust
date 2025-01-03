@@ -3,25 +3,33 @@
 #[derive(Debug)]
 pub struct ScrollViewItemsVisibilityController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _viewport: *mut crate::UnityEngine::RectTransform,
-    pub _contentRectTransform: *mut crate::UnityEngine::RectTransform,
-    pub _items: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::HMUI::ScrollViewItemForVisibilityController,
+    pub _viewport: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub _contentRectTransform: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::RectTransform,
     >,
-    pub _lastContentAnchoredPositionY: f32,
-    pub _viewportWorldCorners: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
-    >,
-    pub _upperItemsCornes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Tuple_2<
+    pub _items: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
             *mut crate::HMUI::ScrollViewItemForVisibilityController,
-            f32,
         >,
     >,
-    pub _lowerItemsCornes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Tuple_2<
-            *mut crate::HMUI::ScrollViewItemForVisibilityController,
-            f32,
+    pub _lastContentAnchoredPositionY: f32,
+    pub _viewportWorldCorners: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
+    pub _upperItemsCornes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Tuple_2<
+                *mut crate::HMUI::ScrollViewItemForVisibilityController,
+                f32,
+            >,
+        >,
+    >,
+    pub _lowerItemsCornes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Tuple_2<
+                *mut crate::HMUI::ScrollViewItemForVisibilityController,
+                f32,
+            >,
         >,
     >,
     pub _lowerLastVisibleIndex: i32,

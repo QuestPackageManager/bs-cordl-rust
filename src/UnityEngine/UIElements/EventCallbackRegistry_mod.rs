@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct EventCallbackRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Callbacks: *mut crate::UnityEngine::UIElements::EventCallbackList,
-    pub m_TemporaryCallbacks: *mut crate::UnityEngine::UIElements::EventCallbackList,
+    pub m_Callbacks: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventCallbackList,
+    >,
+    pub m_TemporaryCallbacks: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventCallbackList,
+    >,
     pub m_IsInvoking: i32,
 }
 #[cfg(feature = "UnityEngine+UIElements+EventCallbackRegistry")]

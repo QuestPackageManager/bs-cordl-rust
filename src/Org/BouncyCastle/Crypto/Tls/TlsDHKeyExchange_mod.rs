@@ -3,13 +3,27 @@
 #[derive(Debug)]
 pub struct TlsDHKeyExchange {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsKeyExchange,
-    pub mTlsSigner: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSigner,
-    pub mDHVerifier: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsDHVerifier,
-    pub mDHParameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
-    pub mServerPublicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub mAgreementCredentials: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsAgreementCredentials,
-    pub mDHAgreePrivateKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
-    pub mDHAgreePublicKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters,
+    pub mTlsSigner: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsSigner,
+    >,
+    pub mDHVerifier: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsDHVerifier,
+    >,
+    pub mDHParameters: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+    >,
+    pub mServerPublicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    >,
+    pub mAgreementCredentials: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsAgreementCredentials,
+    >,
+    pub mDHAgreePrivateKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
+    >,
+    pub mDHAgreePublicKey: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDHKeyExchange")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

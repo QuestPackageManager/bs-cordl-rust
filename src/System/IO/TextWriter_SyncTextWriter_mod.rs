@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TextWriter_SyncTextWriter {
     __cordl_parent: crate::System::IO::TextWriter,
-    pub _out: *mut crate::System::IO::TextWriter,
+    pub _out: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
 }
 #[cfg(feature = "System+IO+TextWriter+SyncTextWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

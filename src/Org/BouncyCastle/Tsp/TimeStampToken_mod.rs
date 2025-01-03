@@ -3,10 +3,16 @@
 #[derive(Debug)]
 pub struct TimeStampToken {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub tsToken: *mut crate::Org::BouncyCastle::Cms::CmsSignedData,
-    pub tsaSignerInfo: *mut crate::Org::BouncyCastle::Cms::SignerInformation,
-    pub tstInfo: *mut crate::Org::BouncyCastle::Tsp::TimeStampTokenInfo,
-    pub certID: *mut crate::Org::BouncyCastle::Tsp::TimeStampToken_CertID,
+    pub tsToken: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSignedData>,
+    pub tsaSignerInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Cms::SignerInformation,
+    >,
+    pub tstInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Tsp::TimeStampTokenInfo,
+    >,
+    pub certID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Tsp::TimeStampToken_CertID,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampToken")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -239,8 +245,12 @@ for crate::Org::BouncyCastle::Tsp::TimeStampToken {
 #[derive(Debug)]
 pub struct TimeStampToken_CertID {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub certID: *mut crate::Org::BouncyCastle::Asn1::Ess::EssCertID,
-    pub certIDv2: *mut crate::Org::BouncyCastle::Asn1::Ess::EssCertIDv2,
+    pub certID: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Ess::EssCertID,
+    >,
+    pub certIDv2: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Ess::EssCertIDv2,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampToken+CertID")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

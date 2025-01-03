@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct MissionNode {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionDataSO: *mut crate::GlobalNamespace::MissionDataSO,
-    pub _letterPartName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _missionDataSO: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionDataSO>,
+    pub _letterPartName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _numberPartName: i32,
-    pub _rectTransform: *mut crate::UnityEngine::RectTransform,
-    pub _missionNodeVisualController: *mut crate::GlobalNamespace::MissionNodeVisualController,
-    pub _childNodes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::MissionNode,
+    pub _rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    pub _missionNodeVisualController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionNodeVisualController,
+    >,
+    pub _childNodes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionNode>,
     >,
 }
 #[cfg(feature = "MissionNode")]

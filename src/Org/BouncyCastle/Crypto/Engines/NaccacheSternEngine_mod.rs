@@ -4,9 +4,11 @@
 pub struct NaccacheSternEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub forEncryption: bool,
-    pub key: *mut crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyParameters,
-    pub lookup: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Collections::IList,
+    pub key: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyParameters,
+    >,
+    pub lookup: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Collections::IList>,
     >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+NaccacheSternEngine")]

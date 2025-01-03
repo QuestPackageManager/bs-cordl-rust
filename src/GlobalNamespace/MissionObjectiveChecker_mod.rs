@@ -3,16 +3,20 @@
 #[derive(Debug)]
 pub struct MissionObjectiveChecker {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionObjectiveType: *mut crate::GlobalNamespace::MissionObjectiveTypeSO,
-    pub statusDidChangeEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MissionObjectiveChecker,
+    pub _missionObjectiveType: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionObjectiveTypeSO,
     >,
-    pub checkedValueDidChangeEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::MissionObjectiveChecker,
+    pub statusDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::MissionObjectiveChecker>,
+    >,
+    pub checkedValueDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::MissionObjectiveChecker>,
     >,
     pub _status: crate::GlobalNamespace::MissionObjectiveChecker_Status,
     pub _checkedValue: i32,
-    pub _missionObjective: *mut crate::GlobalNamespace::MissionObjective,
+    pub _missionObjective: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MissionObjective,
+    >,
     pub _disableChecking: bool,
 }
 #[cfg(feature = "MissionObjectiveChecker")]

@@ -3,10 +3,12 @@
 #[derive(Debug)]
 pub struct SaberSound {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _saberTop: *mut crate::UnityEngine::Transform,
-    pub _audioSource: *mut crate::UnityEngine::AudioSource,
-    pub _pitchBySpeedCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _gainBySpeedCurve: *mut crate::UnityEngine::AnimationCurve,
+    pub _saberTop: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    pub _pitchBySpeedCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
+    pub _gainBySpeedCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     pub _speedMultiplier: f32,
     pub _upSmooth: f32,
     pub _downSmooth: f32,

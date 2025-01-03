@@ -4,15 +4,31 @@
 pub struct XmlSchemaComplexType {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaType,
     pub block: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
-    pub contentModel: *mut crate::System::Xml::Schema::XmlSchemaContentModel,
-    pub particle: *mut crate::System::Xml::Schema::XmlSchemaParticle,
-    pub attributes: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-    pub anyAttribute: *mut crate::System::Xml::Schema::XmlSchemaAnyAttribute,
-    pub contentTypeParticle: *mut crate::System::Xml::Schema::XmlSchemaParticle,
+    pub contentModel: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaContentModel,
+    >,
+    pub particle: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaParticle,
+    >,
+    pub attributes: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+    >,
+    pub anyAttribute: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+    >,
+    pub contentTypeParticle: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaParticle,
+    >,
     pub blockResolved: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
-    pub localElements: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub attributeUses: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub attributeWildcard: *mut crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+    pub localElements: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub attributeUses: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectTable,
+    >,
+    pub attributeWildcard: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+    >,
     pub pvFlags: u8,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaComplexType")]

@@ -3,30 +3,48 @@
 #[derive(Debug)]
 pub struct PracticeViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _songStartSlider: *mut crate::HMUI::TimeSlider,
-    pub _speedSlider: *mut crate::HMUI::PercentSlider,
-    pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
-    pub _playButton: *mut crate::UnityEngine::UI::Button,
-    pub _loader: *mut crate::UnityEngine::GameObject,
-    pub _value: *mut crate::TMPro::TextMeshProUGUI,
+    pub _songStartSlider: quest_hook::libil2cpp::Gc<crate::HMUI::TimeSlider>,
+    pub _speedSlider: quest_hook::libil2cpp::Gc<crate::HMUI::PercentSlider>,
+    pub _levelBar: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelBar>,
+    pub _playButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+    pub _loader: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _value: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _enabledColor: crate::UnityEngine::Color,
     pub _disabledColor: crate::UnityEngine::Color,
-    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
-    pub _songPreviewPlayer: *mut crate::GlobalNamespace::SongPreviewPlayer,
-    pub _perceivedLoudnessPerLevelModel: *mut crate::GlobalNamespace::PerceivedLoudnessPerLevelModel,
-    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
-    pub _beatmapLevelsEntitlementModel: *mut crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
-    pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
-    pub didPressPlayButtonEvent: *mut crate::System::Action,
-    pub _practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _songPreviewPlayer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SongPreviewPlayer,
+    >,
+    pub _perceivedLoudnessPerLevelModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PerceivedLoudnessPerLevelModel,
+    >,
+    pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub _beatmapLevelsEntitlementModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
+    >,
+    pub _audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioClipAsyncLoader,
+    >,
+    pub didPressPlayButtonEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub _practiceSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PracticeSettings,
+    >,
     pub _currentPlayingStartTime: f32,
     pub _maxStartSongTime: f32,
     pub _songLength: f32,
-    pub _getAudioClipTask: *mut crate::System::Threading::Tasks::Task,
-    pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
+    pub _getAudioClipTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task,
+    >,
+    pub _cancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
     pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
-    pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-    pub _audioClip: *mut crate::UnityEngine::AudioClip,
+    pub _beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+    pub _audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
 }
 #[cfg(feature = "PracticeViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

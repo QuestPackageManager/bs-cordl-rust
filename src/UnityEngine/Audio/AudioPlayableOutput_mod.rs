@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Audio+AudioPlayableOutput")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct AudioPlayableOutput {
     pub m_Handle: crate::UnityEngine::Playables::PlayableOutputHandle,
 }

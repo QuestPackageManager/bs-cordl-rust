@@ -4,7 +4,9 @@
 pub struct BasePlatformInit {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _IsInitialized_k__BackingField: bool,
-    pub _initializationTask: *mut crate::System::Threading::Tasks::Task_1<bool>,
+    pub _initializationTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<bool>,
+    >,
 }
 #[cfg(feature = "BasePlatformInit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

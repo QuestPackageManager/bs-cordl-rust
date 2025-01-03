@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct XmlSchemaSimpleContentRestriction {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaContent,
-    pub baseTypeName: *mut crate::System::Xml::XmlQualifiedName,
-    pub baseType: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
-    pub facets: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-    pub attributes: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-    pub anyAttribute: *mut crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+    pub baseTypeName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    pub baseType: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaSimpleType,
+    >,
+    pub facets: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+    >,
+    pub attributes: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+    >,
+    pub anyAttribute: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleContentRestriction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

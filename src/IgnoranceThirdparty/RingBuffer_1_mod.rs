@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct RingBuffer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _entries: *mut quest_hook::libil2cpp::Il2CppArray<T>,
+    pub _entries: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _modMask: i32,
     pub _consumerCursor: crate::IgnoranceThirdparty::Volatile_PaddedLong,
     pub _producerCursor: crate::IgnoranceThirdparty::Volatile_PaddedLong,

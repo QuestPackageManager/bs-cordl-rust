@@ -3,17 +3,17 @@
 #[derive(Debug)]
 pub struct ArmoredOutputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    pub outStream: *mut crate::System::IO::Stream,
-    pub buf: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    pub buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub bufPtr: i32,
-    pub crc: *mut crate::Org::BouncyCastle::Bcpg::Crc24,
+    pub crc: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::Crc24>,
     pub chunkCount: i32,
     pub lastb: i32,
     pub start: bool,
     pub clearText: bool,
     pub newLine: bool,
-    pub _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
-    pub headers: *mut crate::System::Collections::IDictionary,
+    pub _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub headers: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+ArmoredOutputStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

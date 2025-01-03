@@ -3,14 +3,20 @@
 #[derive(Debug)]
 pub struct TubeBloomPrePassLightCollisionEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _tubeBloomPrePassLight: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+    pub _tubeBloomPrePassLight: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::TubeBloomPrePassLight,
+    >,
     pub _environmentLayerMask: crate::UnityEngine::LayerMask,
     pub _showHitPoint: bool,
-    pub _hitPointGameObject: *mut crate::UnityEngine::GameObject,
-    pub _hitPointTransform: *mut crate::UnityEngine::Transform,
-    pub _hitPointLightWithId: *mut crate::GlobalNamespace::InstancedMaterialLightWithId,
-    pub _hitPointDistanceToAlphaCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _transform: *mut crate::UnityEngine::Transform,
+    pub _hitPointGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    pub _hitPointTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _hitPointLightWithId: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::InstancedMaterialLightWithId,
+    >,
+    pub _hitPointDistanceToAlphaCurve: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::AnimationCurve,
+    >,
+    pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _hitPointState: bool,
 }
 #[cfg(feature = "TubeBloomPrePassLightCollisionEffect")]

@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct MultiplayerLobbyCenterStageManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _centerObjectTransform: *mut crate::UnityEngine::Transform,
-    pub _centerStageScreenController: *mut crate::GlobalNamespace::CenterStageScreenController,
-    pub _lobbyStateDataModel: *mut crate::GlobalNamespace::ILobbyStateDataModel,
+    pub _centerObjectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _centerStageScreenController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::CenterStageScreenController,
+    >,
+    pub _lobbyStateDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ILobbyStateDataModel,
+    >,
     pub _innerCircleRadius: f32,
     pub _minOuterCircleRadius: f32,
 }

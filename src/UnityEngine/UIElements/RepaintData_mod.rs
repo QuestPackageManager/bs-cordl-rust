@@ -6,7 +6,9 @@ pub struct RepaintData {
     pub _currentOffset_k__BackingField: crate::UnityEngine::Matrix4x4,
     pub _mousePosition_k__BackingField: crate::UnityEngine::Vector2,
     pub _currentWorldClip_k__BackingField: crate::UnityEngine::Rect,
-    pub _repaintEvent_k__BackingField: *mut crate::UnityEngine::Event,
+    pub _repaintEvent_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Event,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+RepaintData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

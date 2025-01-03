@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct WellKnownServiceTypeEntry {
     __cordl_parent: crate::System::Runtime::Remoting::TypeEntry,
-    pub obj_type: *mut crate::System::Type,
-    pub obj_uri: *mut quest_hook::libil2cpp::Il2CppString,
+    pub obj_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub obj_uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub obj_mode: crate::System::Runtime::Remoting::WellKnownObjectMode,
 }
 #[cfg(feature = "System+Runtime+Remoting+WellKnownServiceTypeEntry")]

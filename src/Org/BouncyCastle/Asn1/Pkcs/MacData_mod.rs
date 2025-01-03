@@ -3,9 +3,13 @@
 #[derive(Debug)]
 pub struct MacData {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub digInfo: *mut crate::Org::BouncyCastle::Asn1::X509::DigestInfo,
-    pub salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub iterationCount: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub digInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::DigestInfo,
+    >,
+    pub salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub iterationCount: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Math::BigInteger,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+MacData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

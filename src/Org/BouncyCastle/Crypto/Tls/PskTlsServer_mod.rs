@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct PskTlsServer {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsServer,
-    pub mPskIdentityManager: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentityManager,
+    pub mPskIdentityManager: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentityManager,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+PskTlsServer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

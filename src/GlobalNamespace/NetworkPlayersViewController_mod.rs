@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct NetworkPlayersViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _networkPlayersTableView: *mut crate::GlobalNamespace::NetworkPlayersTableView,
-    pub _refreshIsNeeded: bool,
-    pub onJoinRequestEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::INetworkPlayer,
+    pub _networkPlayersTableView: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NetworkPlayersTableView,
     >,
-    pub onInviteRequestEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::INetworkPlayer,
+    pub _refreshIsNeeded: bool,
+    pub onJoinRequestEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
+    >,
+    pub onInviteRequestEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
     >,
 }
 #[cfg(feature = "NetworkPlayersViewController")]

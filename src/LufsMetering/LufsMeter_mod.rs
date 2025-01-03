@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct LufsMeter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _inputDataNative: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::Unity::Collections::NativeArray_1<f32>,
+    pub _inputDataNative: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::Unity::Collections::NativeArray_1<f32>>,
     >,
-    pub _outputDataNative: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::Unity::Collections::NativeArray_1<f32>,
+    pub _outputDataNative: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::Unity::Collections::NativeArray_1<f32>>,
     >,
 }
 #[cfg(feature = "LufsMetering+LufsMeter")]

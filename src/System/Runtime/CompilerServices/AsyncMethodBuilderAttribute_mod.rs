@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AsyncMethodBuilderAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _BuilderType_k__BackingField: *mut crate::System::Type,
+    pub _BuilderType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

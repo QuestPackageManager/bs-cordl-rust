@@ -1,9 +1,11 @@
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InterpretedFrameInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct InterpretedFrameInfo {
-    pub _methodName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _debugInfo: *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
+    pub _methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _debugInfo: quest_hook::libil2cpp::Gc<
+        crate::System::Linq::Expressions::Interpreter::DebugInfo,
+    >,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InterpretedFrameInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

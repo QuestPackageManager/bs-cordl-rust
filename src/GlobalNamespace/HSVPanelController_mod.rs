@@ -3,11 +3,17 @@
 #[derive(Debug)]
 pub struct HSVPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _colorSaturationValueSlider: *mut crate::GlobalNamespace::ColorSaturationValueSlider,
-    pub _colorHueSlider: *mut crate::GlobalNamespace::ColorHueSlider,
-    pub colorDidChangeEvent: *mut crate::System::Action_2<
-        crate::UnityEngine::Color,
-        crate::GlobalNamespace::ColorChangeUIEventType,
+    pub _colorSaturationValueSlider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorSaturationValueSlider,
+    >,
+    pub _colorHueSlider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorHueSlider,
+    >,
+    pub colorDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<
+            crate::UnityEngine::Color,
+            crate::GlobalNamespace::ColorChangeUIEventType,
+        >,
     >,
     pub _hsvColor: crate::UnityEngine::Vector3,
 }

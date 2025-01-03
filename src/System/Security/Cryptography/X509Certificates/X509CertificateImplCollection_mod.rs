@@ -5,8 +5,10 @@
 #[derive(Debug)]
 pub struct X509CertificateImplCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub list: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+    pub list: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+        >,
     >,
 }
 #[cfg(

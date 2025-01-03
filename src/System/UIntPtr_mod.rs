@@ -1,8 +1,8 @@
 #[cfg(feature = "System+UIntPtr")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct UIntPtr {
-    pub _pointer: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _pointer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+UIntPtr")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+Matrix4x4")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Matrix4x4 {
     pub m00: f32,
     pub m10: f32,

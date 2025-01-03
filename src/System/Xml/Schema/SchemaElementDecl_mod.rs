@@ -3,12 +3,16 @@
 #[derive(Debug)]
 pub struct SchemaElementDecl {
     __cordl_parent: crate::System::Xml::Schema::SchemaDeclBase,
-    pub attdefs: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Xml::XmlQualifiedName,
-        *mut crate::System::Xml::Schema::SchemaAttDef,
+    pub attdefs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Xml::XmlQualifiedName,
+            *mut crate::System::Xml::Schema::SchemaAttDef,
+        >,
     >,
-    pub defaultAttdefs: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Xml::IDtdDefaultAttributeInfo,
+    pub defaultAttdefs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::System::Xml::IDtdDefaultAttributeInfo,
+        >,
     >,
     pub isIdDeclared: bool,
     pub hasNonCDataAttribute: bool,
@@ -16,17 +20,27 @@ pub struct SchemaElementDecl {
     pub isNillable: bool,
     pub hasRequiredAttribute: bool,
     pub isNotationDeclared: bool,
-    pub prohibitedAttributes: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Xml::XmlQualifiedName,
-        *mut crate::System::Xml::XmlQualifiedName,
+    pub prohibitedAttributes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::Xml::XmlQualifiedName,
+            *mut crate::System::Xml::XmlQualifiedName,
+        >,
     >,
-    pub contentValidator: *mut crate::System::Xml::Schema::ContentValidator,
-    pub anyAttribute: *mut crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+    pub contentValidator: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::ContentValidator,
+    >,
+    pub anyAttribute: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+    >,
     pub block: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
-    pub constraints: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Xml::Schema::CompiledIdentityConstraint,
+    pub constraints: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Xml::Schema::CompiledIdentityConstraint,
+        >,
     >,
-    pub schemaElement: *mut crate::System::Xml::Schema::XmlSchemaElement,
+    pub schemaElement: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Schema::XmlSchemaElement,
+    >,
 }
 #[cfg(feature = "System+Xml+Schema+SchemaElementDecl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,42 +3,56 @@
 #[derive(Debug)]
 pub struct BeatmapSaveData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub version: *mut quest_hook::libil2cpp::Il2CppString,
-    pub colorNotes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatmapSaveDataVersion4::BeatmapBeatIndex,
+    pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub colorNotes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatmapSaveDataVersion4::BeatmapBeatIndex,
+        >,
     >,
-    pub bombNotes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatmapSaveDataVersion4::BeatmapBeatIndex,
+    pub bombNotes: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatmapSaveDataVersion4::BeatmapBeatIndex,
+        >,
     >,
-    pub obstacles: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatmapSaveDataVersion4::BeatmapBeatIndex,
+    pub obstacles: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatmapSaveDataVersion4::BeatmapBeatIndex,
+        >,
     >,
-    pub chains: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatmapSaveDataVersion4::ChainBeatIndex,
+    pub chains: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatmapSaveDataVersion4::ChainBeatIndex,
+        >,
     >,
-    pub arcs: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatmapSaveDataVersion4::ArcBeatIndex,
+    pub arcs: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatmapSaveDataVersion4::ArcBeatIndex,
+        >,
     >,
-    pub colorNotesData: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::ColorNote,
+    pub colorNotesData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::ColorNote>,
     >,
-    pub bombNotesData: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::BombNote,
+    pub bombNotesData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::BombNote>,
     >,
-    pub obstaclesData: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::Obstacle,
+    pub obstaclesData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::Obstacle>,
     >,
-    pub chainsData: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::Chain,
+    pub chainsData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::Chain>,
     >,
-    pub arcsData: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::Arc,
+    pub arcsData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::BeatmapSaveDataVersion4::Arc>,
     >,
-    pub njsEvents: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatmapSaveDataVersion4::BeatIndex,
+    pub njsEvents: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatmapSaveDataVersion4::BeatIndex,
+        >,
     >,
-    pub njsEventData: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::BeatmapSaveDataVersion4::NoteJumpMovementSpeedEvent,
+    pub njsEventData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::BeatmapSaveDataVersion4::NoteJumpMovementSpeedEvent,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapSaveDataVersion4+BeatmapSaveData")]

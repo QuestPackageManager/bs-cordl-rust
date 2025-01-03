@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct SignatureDescription {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _strKey: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _strDigest: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _strFormatter: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _strDeformatter: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _strKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _strDigest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _strFormatter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _strDeformatter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "System+Security+Cryptography+SignatureDescription")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

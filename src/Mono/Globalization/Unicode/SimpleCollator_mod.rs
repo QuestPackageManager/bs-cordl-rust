@@ -3,19 +3,27 @@
 #[derive(Debug)]
 pub struct SimpleCollator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub textInfo: *mut crate::System::Globalization::TextInfo,
-    pub cjkIndexer: *mut crate::Mono::Globalization::Unicode::CodePointIndexer,
-    pub contractions: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Mono::Globalization::Unicode::Contraction,
+    pub textInfo: quest_hook::libil2cpp::Gc<crate::System::Globalization::TextInfo>,
+    pub cjkIndexer: quest_hook::libil2cpp::Gc<
+        crate::Mono::Globalization::Unicode::CodePointIndexer,
     >,
-    pub level2Maps: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Mono::Globalization::Unicode::Level2Map,
+    pub contractions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Mono::Globalization::Unicode::Contraction,
+        >,
     >,
-    pub unsafeFlags: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub cjkCatTable: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub cjkLv1Table: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub cjkLv2Table: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub cjkLv2Indexer: *mut crate::Mono::Globalization::Unicode::CodePointIndexer,
+    pub level2Maps: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Mono::Globalization::Unicode::Level2Map,
+        >,
+    >,
+    pub unsafeFlags: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    pub cjkCatTable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub cjkLv1Table: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub cjkLv2Table: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub cjkLv2Indexer: quest_hook::libil2cpp::Gc<
+        crate::Mono::Globalization::Unicode::CodePointIndexer,
+    >,
     pub lcid: i32,
     pub frenchSort: bool,
 }
@@ -830,15 +838,15 @@ for crate::Mono::Globalization::Unicode::SimpleCollator {
 }
 #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SimpleCollator_Context {
     pub Option: crate::System::Globalization::CompareOptions,
-    pub NeverMatchFlags: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub AlwaysMatchFlags: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub Buffer1: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub Buffer2: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub NeverMatchFlags: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub AlwaysMatchFlags: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub Buffer1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub Buffer2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub PrevCode: i32,
-    pub PrevSortKey: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub PrevSortKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -878,9 +886,9 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator_Context {
 }
 #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SimpleCollator_Escape {
-    pub Source: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Index: i32,
     pub Start: i32,
     pub End: i32,
@@ -923,10 +931,10 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct SimpleCollator_PreviousInfo {
     pub Code: i32,
-    pub SortKey: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub SortKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

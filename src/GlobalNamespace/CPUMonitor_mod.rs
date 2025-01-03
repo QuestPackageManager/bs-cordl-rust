@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct CPUMonitor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _utilization: *mut crate::GlobalNamespace::RollingAverage,
-    pub _currentProcess: *mut crate::System::Diagnostics::Process,
+    pub _utilization: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RollingAverage>,
+    pub _currentProcess: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::Process>,
     pub _processorCount: i32,
     pub _lastSampleTime: i64,
     pub _lastSampleValue: i64,

@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct ClickDetector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_ClickStatus: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::ClickDetector_ButtonClickStatus,
+    pub m_ClickStatus: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::ClickDetector_ButtonClickStatus,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+ClickDetector")]
@@ -143,7 +145,9 @@ for crate::UnityEngine::UIElements::ClickDetector {
 #[derive(Debug)]
 pub struct ClickDetector_ButtonClickStatus {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Target: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_Target: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub m_PointerDownPosition: crate::UnityEngine::Vector3,
     pub m_LastPointerDownTime: i64,
     pub m_ClickCount: i32,

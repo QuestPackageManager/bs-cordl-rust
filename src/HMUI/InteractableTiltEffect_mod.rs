@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct InteractableTiltEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _rectTransform: *mut crate::UnityEngine::RectTransform,
+    pub _rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _maxHorizontalRotation: f32,
     pub _maxVerticalRotation: f32,
     pub _prevLocalPoint: crate::UnityEngine::Vector2,

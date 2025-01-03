@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct Changelog {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Entries: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::ProBuilder::ChangelogEntry,
+    pub m_Entries: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::ProBuilder::ChangelogEntry,
+        >,
     >,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Changelog")]

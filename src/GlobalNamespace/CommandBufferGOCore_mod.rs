@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct CommandBufferGOCore {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _cameras: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::UnityEngine::Camera,
-        *mut crate::GlobalNamespace::CommandBufferOwners,
+    pub _cameras: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::UnityEngine::Camera,
+            *mut crate::GlobalNamespace::CommandBufferOwners,
+        >,
     >,
-    pub _mesh: *mut crate::UnityEngine::Mesh,
+    pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
 }
 #[cfg(feature = "CommandBufferGOCore")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

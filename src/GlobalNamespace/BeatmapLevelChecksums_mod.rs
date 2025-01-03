@@ -1,13 +1,23 @@
 #[cfg(feature = "BeatmapLevelChecksums")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BeatmapLevelChecksums {
-    pub beatmapLevelChecksum: *mut quest_hook::libil2cpp::Il2CppString,
-    pub coverImageChecksum: *mut quest_hook::libil2cpp::Il2CppString,
-    pub songAudioClipChecksum: *mut quest_hook::libil2cpp::Il2CppString,
-    pub audioDataAssetChecksum: *mut quest_hook::libil2cpp::Il2CppString,
-    pub difficultyBeatmapsChecksums: *mut crate::System::Collections::Generic::List_1<
-        crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums,
+    pub beatmapLevelChecksum: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub coverImageChecksum: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub songAudioClipChecksum: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub audioDataAssetChecksum: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub difficultyBeatmapsChecksums: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapLevelChecksums")]
@@ -89,12 +99,20 @@ impl crate::GlobalNamespace::BeatmapLevelChecksums {
 }
 #[cfg(feature = "BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct BeatmapLevelChecksums_DifficultyBeatmapChecksums {
-    pub beatmapDifficulty: *mut quest_hook::libil2cpp::Il2CppString,
-    pub beatmapCharacteristic: *mut quest_hook::libil2cpp::Il2CppString,
-    pub beatmapAssetChecksum: *mut quest_hook::libil2cpp::Il2CppString,
-    pub lightshowAssetChecksum: *mut quest_hook::libil2cpp::Il2CppString,
+    pub beatmapDifficulty: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub beatmapAssetChecksum: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub lightshowAssetChecksum: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

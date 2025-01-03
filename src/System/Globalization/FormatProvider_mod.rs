@@ -381,12 +381,12 @@ for crate::System::Globalization::FormatProvider_Number {
 }
 #[cfg(feature = "System+Globalization+FormatProvider+Number+NumberBuffer")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Number_FormatProvider_NumberBuffer {
     pub precision: i32,
     pub scale: i32,
     pub sign: bool,
-    pub overrideDigits: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub overrideDigits: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "System+Globalization+FormatProvider+Number+NumberBuffer")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

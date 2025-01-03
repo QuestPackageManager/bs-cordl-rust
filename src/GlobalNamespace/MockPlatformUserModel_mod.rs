@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct MockPlatformUserModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub platformUserInfoDidChangeEvent: *mut crate::System::Action_1<
-        *mut crate::GlobalNamespace::UserInfo,
+    pub platformUserInfoDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<*mut crate::GlobalNamespace::UserInfo>,
     >,
 }
 #[cfg(feature = "MockPlatformUserModel")]

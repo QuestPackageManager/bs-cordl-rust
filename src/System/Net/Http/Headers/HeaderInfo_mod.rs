@@ -5,10 +5,12 @@ pub struct HeaderInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub AllowsMany: bool,
     pub HeaderKind: crate::System::Net::Http::Headers::HttpHeaderKind,
-    pub Name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _CustomToString_k__BackingField: *mut crate::System::Func_2<
-        *mut quest_hook::libil2cpp::Il2CppObject,
-        *mut quest_hook::libil2cpp::Il2CppString,
+    pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _CustomToString_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
 }
 #[cfg(feature = "System+Net+Http+Headers+HeaderInfo")]

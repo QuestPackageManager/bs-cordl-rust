@@ -4,10 +4,12 @@
 pub struct BeatmapLevelDataSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _version: i32,
-    pub _audioClip: *mut crate::UnityEngine::AudioClip,
-    pub _audioDataAsset: *mut crate::UnityEngine::TextAsset,
-    pub _difficultyBeatmapSets: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmapSet,
+    pub _audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    pub _audioDataAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+    pub _difficultyBeatmapSets: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmapSet,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapLevelDataSO")]
@@ -431,8 +433,8 @@ for crate::GlobalNamespace::BeatmapLevelDataSO {
 pub struct BeatmapLevelDataSO_DifficultyBeatmap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _difficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    pub _beatmapAsset: *mut crate::UnityEngine::TextAsset,
-    pub _lightshowAsset: *mut crate::UnityEngine::TextAsset,
+    pub _beatmapAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+    pub _lightshowAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
 }
 #[cfg(feature = "BeatmapLevelDataSO+DifficultyBeatmap")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -645,9 +647,13 @@ for crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmap {
 #[derive(Debug)]
 pub struct BeatmapLevelDataSO_DifficultyBeatmapSet {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _beatmapCharacteristicSerializedName: *mut quest_hook::libil2cpp::Il2CppString,
-    pub _difficultyBeatmaps: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmap,
+    pub _beatmapCharacteristicSerializedName: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _difficultyBeatmaps: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmap,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapLevelDataSO+DifficultyBeatmapSet")]

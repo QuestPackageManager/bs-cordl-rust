@@ -1,6 +1,6 @@
 #[cfg(feature = "UnityEngine+UIElements+Length")]
 #[repr(C)]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct Length {
     pub m_Value: f32,
     pub m_Unit: crate::UnityEngine::UIElements::Length_Unit,

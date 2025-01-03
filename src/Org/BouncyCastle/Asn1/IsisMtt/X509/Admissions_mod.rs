@@ -3,9 +3,15 @@
 #[derive(Debug)]
 pub struct Admissions {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub admissionAuthority: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    pub namingAuthority: *mut crate::Org::BouncyCastle::Asn1::IsisMtt::X509::NamingAuthority,
-    pub professionInfos: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    pub admissionAuthority: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+    >,
+    pub namingAuthority: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::IsisMtt::X509::NamingAuthority,
+    >,
+    pub professionInfos: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+Admissions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

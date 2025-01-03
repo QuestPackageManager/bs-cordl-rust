@@ -3,15 +3,27 @@
 #[derive(Debug)]
 pub struct BeatmapObjectExecutionRatingsRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
-    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
-    pub _playerHeadAndObstacleInteraction: *mut crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
-    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
-    pub _beatmapObjectExecutionRatings: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::BeatmapObjectExecutionRating,
+    pub _scoreController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IScoreController,
     >,
-    pub _hitObstacles: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::GlobalNamespace::ObstacleController,
+    pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub _playerHeadAndObstacleInteraction: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
+    >,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
+    pub _beatmapObjectExecutionRatings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::BeatmapObjectExecutionRating,
+        >,
+    >,
+    pub _hitObstacles: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     >,
 }
 #[cfg(feature = "BeatmapObjectExecutionRatingsRecorder")]

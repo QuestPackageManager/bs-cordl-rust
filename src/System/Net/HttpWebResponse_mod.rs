@@ -3,18 +3,22 @@
 #[derive(Debug)]
 pub struct HttpWebResponse {
     __cordl_parent: crate::System::Net::WebResponse,
-    pub uri: *mut crate::System::Uri,
-    pub webHeaders: *mut crate::System::Net::WebHeaderCollection,
-    pub cookieCollection: *mut crate::System::Net::CookieCollection,
-    pub method: *mut quest_hook::libil2cpp::Il2CppString,
-    pub version: *mut crate::System::Version,
+    pub uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    pub webHeaders: quest_hook::libil2cpp::Gc<crate::System::Net::WebHeaderCollection>,
+    pub cookieCollection: quest_hook::libil2cpp::Gc<
+        crate::System::Net::CookieCollection,
+    >,
+    pub method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub version: quest_hook::libil2cpp::Gc<crate::System::Version>,
     pub statusCode: crate::System::Net::HttpStatusCode,
-    pub statusDescription: *mut quest_hook::libil2cpp::Il2CppString,
+    pub statusDescription: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub contentLength: i64,
-    pub contentType: *mut quest_hook::libil2cpp::Il2CppString,
-    pub cookie_container: *mut crate::System::Net::CookieContainer,
+    pub contentType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub cookie_container: quest_hook::libil2cpp::Gc<crate::System::Net::CookieContainer>,
     pub disposed: bool,
-    pub stream: *mut crate::System::IO::Stream,
+    pub stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
 }
 #[cfg(feature = "System+Net+HttpWebResponse")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

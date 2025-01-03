@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct BufferedAudioStream {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub audio: *mut crate::UnityEngine::AudioSource,
-    pub audioBuffer: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+    pub audio: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    pub audioBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     pub writePos: i32,
     pub playbackDelayRemaining: f32,
     pub remainingBufferTime: f32,

@@ -4,15 +4,17 @@
 pub struct PgpPublicKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub keyId: i64,
-    pub fingerprint: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub fingerprint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub keyStrength: i32,
-    pub publicPk: *mut crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
-    pub trustPk: *mut crate::Org::BouncyCastle::Bcpg::TrustPacket,
-    pub keySigs: *mut crate::System::Collections::IList,
-    pub ids: *mut crate::System::Collections::IList,
-    pub idTrusts: *mut crate::System::Collections::IList,
-    pub idSigs: *mut crate::System::Collections::IList,
-    pub subSigs: *mut crate::System::Collections::IList,
+    pub publicPk: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
+    >,
+    pub trustPk: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::TrustPacket>,
+    pub keySigs: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub ids: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub idTrusts: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub idSigs: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    pub subSigs: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKey")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

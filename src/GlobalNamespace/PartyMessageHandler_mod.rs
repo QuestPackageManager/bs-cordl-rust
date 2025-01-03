@@ -3,12 +3,18 @@
 #[derive(Debug)]
 pub struct PartyMessageHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _serializer: *mut crate::GlobalNamespace::NetworkPacketSerializer_2<
-        crate::GlobalNamespace::PartyMessageHandler_MessageType,
-        *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _serializer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NetworkPacketSerializer_2<
+            crate::GlobalNamespace::PartyMessageHandler_MessageType,
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     >,
-    pub _connectedPlayerManager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
-    pub connectToMasterServerEvent: *mut crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate,
+    pub _connectedPlayerManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ConnectedPlayerManager,
+    >,
+    pub connectToMasterServerEvent: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate,
+    >,
 }
 #[cfg(feature = "PartyMessageHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -248,7 +254,7 @@ for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate {
 #[derive(Debug)]
 pub struct PartyMessageHandler_ConnectToMasterServerMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub secret: *mut quest_hook::libil2cpp::Il2CppString,
+    pub secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerMessage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -3,11 +3,19 @@
 #[derive(Debug)]
 pub struct EnvelopedData {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
-    pub originatorInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo,
-    pub recipientInfos: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
-    pub encryptedContentInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
-    pub unprotectedAttrs: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
+    pub version: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    pub originatorInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::OriginatorInfo,
+    >,
+    pub recipientInfos: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Set,
+    >,
+    pub encryptedContentInfo: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Cms::EncryptedContentInfo,
+    >,
+    pub unprotectedAttrs: quest_hook::libil2cpp::Gc<
+        crate::Org::BouncyCastle::Asn1::Asn1Set,
+    >,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+EnvelopedData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

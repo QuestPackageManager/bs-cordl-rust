@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct PemHeader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub name: *mut quest_hook::libil2cpp::Il2CppString,
-    pub val: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+Pem+PemHeader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

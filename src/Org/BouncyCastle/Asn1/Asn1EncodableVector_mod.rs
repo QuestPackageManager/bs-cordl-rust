@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct Asn1EncodableVector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub elements: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    pub elements: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        >,
     >,
     pub elementCount: i32,
     pub copyOnWrite: bool,

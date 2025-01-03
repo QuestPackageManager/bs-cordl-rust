@@ -163,8 +163,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UnityAsyncHel
 pub struct __c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub __1__state: i32,
-    pub __2__current: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub __4__this: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub __2__current: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub __4__this: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(
     feature = "UnityAsyncHelper+__c__DisplayClass5_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
@@ -366,8 +366,8 @@ for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsy
 pub struct __c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub __1__state: i32,
-    pub __2__current: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub __4__this: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub __2__current: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub __4__this: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(
     feature = "UnityAsyncHelper+__c__DisplayClass6_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
